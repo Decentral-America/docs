@@ -1,0 +1,35 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Jourlez
+# This file is distributed under the same license as the Template package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Template master\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-09-11 09:18-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../documentation.rst:3
+msgid "Documentation"
+msgstr "Documentación"
+
+#: ../../documentation.rst:9 ../../documentation.rst:11
+msgid "Installation"
+msgstr "Instalación"
+
+#: ../../documentation.rst:17 ../../documentation.rst:19
+msgid "Usage"
+msgstr "Utilización"
+
+#: ../../documentation.rst:25 ../../documentation.rst:27
+msgid "Development"
+msgstr "Desarrollo"
+
