@@ -26,7 +26,7 @@ pwd
 ls -lah
 
 export GITHUB_EMAIL="josue.rojas@blockchaincostarica.org"
-export OUTPUT_FILE="documentation"
+export OUTPUT_FILE="Documentation"
 
 git config --global user.name "${GITHUB_ACTOR}"
 git config --global user.email "${GITHUB_EMAIL}"
