@@ -19,8 +19,8 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'documentation'
-copyright = '2021, Decentral America'
+project = 'Decentral Chain'
+copyright = '2021, Blockchain Costa Rica'
 author = 'Josue Rojas'
 
 # The short X.Y version
