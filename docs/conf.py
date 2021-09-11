@@ -19,7 +19,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Documentation'
+project = 'documentation'
 copyright = '2021, Decentral America'
 author = 'Josue Rojas'
 
