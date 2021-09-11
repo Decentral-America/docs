@@ -1,0 +1,126 @@
+name: docs_pages_workflow
+ 
+# execute this workflow automatically when a we push to master
+on:
+  push:
+ 
+jobs:
+ 
+  build_docs_job:
+    runs-on: ubuntu-latest
+ 
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}      
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+        architecture: 'x64'
+ 
+    - name: Execute script to build our documentation and update pages
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: "docs/buildDocs.sh"
+      shell: bashname: docs_pages_workflow
+ 
+# execute this workflow automatically when a we push to master
+on:
+  push:
+ 
+jobs:
+ 
+  build_docs_job:
+    runs-on: ubuntu-latest
+ 
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}      
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+        architecture: 'x64'
+ 
+    - name: Execute script to build our documentation and update pages
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: "docs/buildDocs.sh"
+      shell: bashname: docs_pages_workflow
+ 
+# execute this workflow automatically when a we push to master
+on:
+  push:
+ 
+jobs:
+ 
+  build_docs_job:
+    runs-on: ubuntu-latest
+ 
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}      
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+        architecture: 'x64'
+ 
+    - name: Execute script to build our documentation and update pages
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: "docs/buildDocs.sh"
+      shell: bashname: docs_pages_workflow
+ 
+# execute this workflow automatically when a we push to master
+on:
+  push:
+ 
+jobs:
+ 
+  build_docs_job:
+    runs-on: ubuntu-latest
+ 
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}      
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+        architecture: 'x64'
+ 
+    - name: Execute script to build our documentation and update pages
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: "docs/buildDocs.sh"
+      shell: bashname: docs_pages_workflow
+ 
+# execute this workflow automatically when a we push to master
+on:
+  push:
+ 
+jobs:
+ 
+  build_docs_job:
+    runs-on: ubuntu-latest
+ 
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}      
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+        architecture: 'x64'
+ 
+    - name: Execute script to build our documentation and update pages
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: "docs/buildDocs.sh"
+      shell: bash
