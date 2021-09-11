@@ -19,7 +19,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Decentral Chain'
+project = 'DecentralChain'
 copyright = '2021, Blockchain Costa Rica'
 author = 'Josue Rojas'
 
