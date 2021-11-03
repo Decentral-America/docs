@@ -1,0 +1,10 @@
+Ride structure that sets action, Description
+":ref:`BinaryEntry <03_advanced:BinaryEntry>`, :ref:`BooleanEntry <03_advanced:BooleanEntry>`, :ref:`IntegerEntry <03_advanced:IntegerEntry>`, :ref:`StringEntry <03_advanced:StringEntry>`", "Adding/modifying the entry. The type of structure must match the type of entry to be added/changed. 1) If there is no entry in the account data storage with the key specified in the structure, the entry will be added. 2) If the entry is present in the :ref:`account data storage <02_intermediate:Account Data Storage>`, it will be modified."
+":ref:`DeleteEntry <03_advanced:DeleteEntry>`", "Entry deletion"
+":ref:`Issue <03_advanced:Issue>`", "Token issue"
+":ref:`Reissue <03_advanced:Reissue>`", "Token reissue"
+":ref:`Burn <03_advanced:Burn>`", "Token burn"
+":ref:`SponsorFee <03_advanced:SponsorFee>`", "Sponsorship setup"
+":ref:`ScriptTransfer <03_advanced:ScriptTransfer>`", "Token transfer"
+":ref:`Lease <03_advanced:Lease>`", "Lease"
+":ref:`LeaseCancel <03_advanced:LeaseCancel>`", "Lease cancellation"

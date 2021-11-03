@@ -1,0 +1,2 @@
+Parameter, Description
+"b: :ref:`ByteVector <03_advanced:ByteVector>`", "Transfer transaction in protobuf-encoded binary format."

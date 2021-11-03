@@ -1,0 +1,4 @@
+#, Name, Data type, Description
+":math:`1`", "recipient", ":ref:`Address <03_advanced:Address>` | :ref:`Alias <03_advanced:Alias>`", "Lessee :ref:`address <02_intermediate:Address>` or :ref:`alias <02_intermediate:Alias>`."
+":math:`2`", "amount", ":ref:`Int <03_advanced:Int>`", "Amount of :ref:`DecentralCoins <02_intermediate:DecentralCoin>` to lease (that is, amount of Decentralites multiplied by :math:`10^{8}`)."
+":math:`7`", "nonce", ":ref:`Int <03_advanced:Int>`", "Nonce that is used for lease ID generation. If the callable function creates several leases with the same parameters, you should use different nonces."

@@ -43,7 +43,13 @@ extensions = [
     'sphinx_rtd_theme',
     'sphinx.ext.viewcode',
     'sphinx.ext.githubpages',
+    'sphinx.ext.autosectionlabel',
+    'sphinx.ext.mathjax',
 ]
+
+# True to prefix each section label with the name of the document it is in, followed by a colon
+autosectionlabel_prefix_document = True
+autosectionlabel_maxdepth = 7
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -255,8 +261,7 @@ today_fmt = "%B %d, %Y"
 epub_basename = 'target'
  
 html_context['downloads'] = list()
-html_context['downloads'].append( ('pdf', '/' +REPO_NAME+ '/' +current_language+ '/' +current_version+ '/' +project+ '-docs_' +current_language+ '_' +current_version+ '.pdf') )
- 
+#html_context['downloads'].append( ('pdf', '/' +REPO_NAME+ '/' +current_language+ '/' +current_version+ '/' +project+ '-docs_' +current_language+ '_' +current_version+ '.pdf') )
 html_context['downloads'].append( ('epub', '/' +REPO_NAME+ '/' +current_language+ '/' +current_version+ '/' +project+ '-docs_' +current_language+ '_' +current_version+ '.epub') )
  
 ##########################
