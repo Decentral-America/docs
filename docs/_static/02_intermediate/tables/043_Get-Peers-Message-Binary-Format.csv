@@ -1,0 +1,6 @@
+#, Field name, Type, Length in Bytes
+":math:`1`", "Packet length (BigEndian)", "Int", ":math:`4`"
+":math:`2`", "Magic Bytes", "Bytes", ":math:`4`"
+":math:`3`", "Content ID (0x01)", "Byte", ":math:`1`"
+":math:`4`", "Payload length", "Int", ":math:`4`"
+":math:`5`", "Payload checksum", "Bytes", ":math:`4`"

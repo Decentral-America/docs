@@ -1,0 +1,8 @@
+Field, Description
+"call.function", "Callable function name. Up to :math:`255` bytes (:math:`1` character can take up to :math:`4` bytes)."
+"call.args.type", "Argument type: 1) binary. 2) boolean. 3) integer. 4) string. 5) list."
+"call.args.value", "Argument value. 1) integer: from :math:`-9,223,372,036,854,775,808` to :math:`9,223,372,036,854,755,807` inclusive. 2) string or binary: up to :math:`32,767` bytes. Binary value should be base64 encoded. 3) list: up to :math:`1000` elements."
+"dApp", "dApp address base58 encoded or dApp alias with alias:<chain_id>: prefix, for example alias:T:merry (See :ref:`Chain ID <02_intermediate:Chain ID>`)."
+"payment.amount", "Amount of token in payment: an integer value specified in atomic units."
+"payment.assetId", "ID of token in payment, base58 encoded. null means that the payment is in :ref:`DecentralCoin <02_intermediate:DecentralCoin>`."
+"stateChanges", "Script actions performed by the callable function and dApp-to-dApp invocation results."
