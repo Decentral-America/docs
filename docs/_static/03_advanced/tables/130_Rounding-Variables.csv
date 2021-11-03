@@ -1,0 +1,6 @@
+Name, Description
+"DOWN", "Rounds towards zero."
+"CEILING", "Rounds towards positive infinity."
+"FLOOR", "Rounds towards negative infinity."
+"HALFUP", "Rounds towards the nearest integer; if the integers are equidistant, then rounds away from zero."
+"HALFEVEN", "Rounds towards the nearest integer; if the integers are equidistant, then rounds towards the nearest even integer."

@@ -1,0 +1,12 @@
+#, Field name, Type, Length in Bytes
+":math:`1`", "Packet length (BigEndian)", "Int", ":math:`4`"
+":math:`2`", "Magic Bytes", "Bytes", ":math:`4`"
+":math:`3`", "Content ID (0x02)", "Byte", ":math:`1`"
+":math:`4`", "Payload length", "Int", ":math:`4`"
+":math:`5`", "Payload checksum", "Bytes", ":math:`4`"
+":math:`6`", "Peers count (N)", "Int", ":math:`4`"
+":math:`7`", "Peer #1 IP address", "Bytes", ":math:`4`"
+":math:`8`", "Peer #1 port", "Int", ":math:`4`"
+"...", "...", "...", "..."
+":math:`6 + 2 * N - 1`", "Peer #N IP address", "Bytes", ":math:`4`"
+":math:`6 + 2 * N`", "Peer #N port", "Int", ":math:`4`"
