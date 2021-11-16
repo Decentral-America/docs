@@ -16,7 +16,6 @@
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 
-
 # -- Project information -----------------------------------------------------
 
 project = 'DecentralChain'
@@ -27,7 +26,6 @@ author = 'Josue Rojas'
 version = ''
 # The full version, including alpha/beta/rc tags
 release = '0.1'
-
 
 # -- General configuration ---------------------------------------------------
 
@@ -48,9 +46,19 @@ extensions = [
     'sphinx.ext.mathjax',
 ]
 
+# Set dark mode
+default_dark_mode = True
+
 # True to prefix each section label with the name of the document it is in, followed by a colon
 autosectionlabel_prefix_document = True
 autosectionlabel_maxdepth = 7
+
+
+# Indicate the name and link of the projects you want to use with intersphinx
+#intersphinx_mapping = {
+#    'elguru': ('https://jourlez.github.io/Decentral.Exchange/en/master/', None),
+#}
+# Then you use it like this: To create an account, store keys, and sign transactions, you can use :ref:`prueba <elguru:development>`
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -78,7 +86,6 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = None
-
 
 # -- Options for HTML output -------------------------------------------------
 
@@ -108,12 +115,14 @@ html_static_path = ['_static']
 #
 # html_sidebars = {}
 
+# Include custom css to override width of tables
+def setup(app):
+   app.add_css_file('custom.css')
 
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
 htmlhelp_basename = 'Documentation'
-
 
 # -- Options for LaTeX output ------------------------------------------------
 
@@ -143,7 +152,6 @@ latex_documents = [
      'Josue Rojas', 'manual'),
 ]
 
-
 # -- Options for manual page output ------------------------------------------
 
 # One entry per manual page. List of tuples
@@ -152,7 +160,6 @@ man_pages = [
     (master_doc, 'Documentation', 'Documentation',
      [author], 1)
 ]
-
 
 # -- Options for Texinfo output ----------------------------------------------
 
@@ -164,7 +171,6 @@ texinfo_documents = [
      author, 'Documentation', 'One line description of project.',
      'Miscellaneous'),
 ]
-
 
 # -- Options for Epub output -------------------------------------------------
 
@@ -262,7 +268,8 @@ today_fmt = "%B %d, %Y"
 epub_basename = 'target'
  
 html_context['downloads'] = list()
-#html_context['downloads'].append( ('pdf', '/' +REPO_NAME+ '/' +current_language+ '/' +current_version+ '/' +project+ '-docs_' +current_language+ '_' +current_version+ '.pdf') )
+html_context['downloads'].append( ('pdf', '/' +REPO_NAME+ '/' +current_language+ '/' +current_version+ '/' +project+ '-docs_' +current_language+ '_' +current_version+ '.pdf') )
+ 
 html_context['downloads'].append( ('epub', '/' +REPO_NAME+ '/' +current_language+ '/' +current_version+ '/' +project+ '-docs_' +current_language+ '_' +current_version+ '.epub') )
  
 ##########################
@@ -273,4 +280,4 @@ html_context['display_github'] = True
 html_context['github_user'] = 'jourlez'
 html_context['github_repo'] = 'docs'
 html_context['github_version'] = 'master/docs/'
- 
+
