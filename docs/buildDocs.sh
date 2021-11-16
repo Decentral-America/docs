@@ -119,10 +119,10 @@ cat > index.html <<EOF
 <html>
    <head>
       <title>DecentralChain Documentation</title>
-      <meta http-equiv = "refresh" content="0; url='/${REPO_NAME}/en/master/'" />
+      <meta http-equiv = "refresh" content="0; url='/en/master/'" />
    </head>
    <body>
-      <p>Please wait while you're redirected to our <a href="/${REPO_NAME}/en/master/">documentation</a>.</p>
+      <p>Please wait while you're redirected to our <a href="/en/master/">documentation</a>.</p>
    </body>
 </html>
 EOF
