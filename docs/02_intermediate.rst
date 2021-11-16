@@ -15,7 +15,7 @@ DecentralChain uses an account-based model. Each transaction is created on behal
 
 To create an account, store keys, and sign transactions, you can use `Decentral.Exchange <https://decentral.exchange/>`_. 
 
-.. image:: _static/02_intermediate/images/image.jpg
+.. image:: _static/image.jpg
 
 Transactions and Blocks
 =======================
@@ -26,7 +26,7 @@ Transactions are stacked into blocks. Besides transactions, every block also con
 
 In other words, the blockchain is a sequence of blocks linked by cryptographic hashes. Each transaction stays intact indefinitely. An attempt to change any data in a block would invalidate the block and all the later blocks.
 
-.. image:: _static/02_intermediate/images/image.jpg
+.. image:: _static/image.jpg
 
 Nodes
 =====
@@ -60,7 +60,7 @@ Unlike centralized applications, users do not have usernames and passwords on th
 
 Each transaction contains the public key of the sender's account. The sender generates a digital signature of the transaction using the account's private key. The signature and the sender's public key are used to verify the authenticity of the transaction's data and to check that the signature of the transaction matches the public key.
 
-.. image:: _static/02_intermediate/images/image.jpg
+.. image:: _static/image.jpg
 
 DecentralChain uses an asymmetric cryptographic system based on the elliptic curve Curve25519-ED25519 with X25519 keys. The guideline for generating keys and signatures is given in the :ref:`cryptographic practical details <02_intermediate:Cryptographic Practical Details>` article.
 The private and public keys are :math:`32` byte arrays. In UIs, the keys are displayed as base58 encoded strings. Base58-encoded keys can be of different lengths, the maximum length is :math:`44` characters.
@@ -82,7 +82,7 @@ Secret (Seed) Phrase
 
 The private key can be generated from some random seed phrase using hashing functions. The public key is obtained from the private key using an elliptic curve multiplication. The :ref:`account address <02_intermediate:Address>` is obtained from the public key. All these transformations are unidirectional. The opposite direction is almost impossible in terms of the required computations.
 
-.. image:: _static/02_intermediate/images/image.jpg
+.. image:: _static/image.jpg
 
 The secret phrase (a.k.a. seed phrase, backup phrase) can be any combination of symbols, words, or bytes. DecentralChain wallet apps typically use a random set of :math:`15` English words out of :math:`2048` words available. Using such a phrase is secure since the probability of generating two identical seed phrases is :math:`\frac{1}{2048^{15}}`, so brute-force will take millions of years on an average CPU. The point of using a secret phrase (rather than a private key) is to simplify user experience: the secret phrase is much easier to write down or remember. 
 
@@ -256,7 +256,7 @@ The balances of any account, as well as other blockchain data, are public and ca
 
 For example, you can see the list of tokens and their amount on the account in `DecentralChain Explorer <https://decentralscan.com/>`_. To do this, find an account by its address or alias. Balances in :ref:`DecentralCoin <02_intermediate:DecentralCoin>` are displayed right under the address, balances in other assets are at the Assets tab, and :ref:`non-fungible tokens (NFT) <02_intermediate:Non-Fungible Token>` are at the Non-fungible tokens tab.
 
-.. image:: _static/02_intermediate/images/image.jpg
+.. image:: _static/image.jpg
 
 Top up Balance
 --------------
@@ -281,7 +281,7 @@ View Account Data
 
 Data storage of any account, as well as other blockchain data, are public and can be read by anyone. For example, you can see data entries in `DecentralChain Explorer <https://decentralscan.com/>`_. To do this, find an account by its :ref:`address <02_intermediate:Address>` or :ref:`alias <02_intermediate:Alias>` and switch to the Data tab.
 
-.. image:: _static/02_intermediate/images/image.jpg
+.. image:: _static/image.jpg
 
 Add, Modify, Delete Entries
 ---------------------------
@@ -665,7 +665,7 @@ After :ref:`enabling sponsorship <02_intermediate:How to Enable Sponsorship>`, i
 
 The script on the sponsor's account is not executed and does not affect the sponsorship because the transaction is sent from the user's account.
 
-.. image:: _static/02_intermediate/images/image.jpg
+.. image:: _static/image.jpg
 
 The fee in :ref:`DecentralCoins <02_intermediate:DecentralCoin>` charged to the sponsor is proportional to the fee specified by the transaction sender:
 
@@ -1063,7 +1063,7 @@ Exchange transaction exchanges two different tokens between two accounts. Common
 
 An order can be filled partially. An order can participate in several exchange transactions, with different counter orders. One of the two exchanged tokens is the amount asset (base currency): it represents the amount of token in orders and in the Exchange transaction. Another token is a price asset (quote currency): it represents the price.
 
-.. image:: _static/02_intermediate/images/image.jpg
+.. image:: _static/image.jpg
 
 :strong:`Transaction Fee`
 
@@ -1077,7 +1077,7 @@ The matcher receives a fee for order execution from each order sender. The minim
 
 If the order is fully filled with one exchange transaction, the matcher receives the entire fee specified in the order. If the order is partially filled, the matcher receives a part of the fee. The blockchain guarantees that the total matcher fee received from the order sender in all exchange transactions does not exceed the fee specified in the order.
 
-.. image:: _static/02_intermediate/images/image.jpg
+.. image:: _static/image.jpg
 
 :strong:`JSON Representation`
 
@@ -1833,7 +1833,7 @@ of transactions of the block. The root hash is the proof that the block contains
 transactions Root Сalculation
 -----------------------------
 
-.. image:: _static/02_intermediate/images/image.jpg
+.. image:: _static/image.jpg
 
 1. The hash of each transaction in the block is calculated. For example:
 
@@ -1861,7 +1861,7 @@ Let's suppose that side :math:`1` stores the full blockchain data and side :math
 * merkleProofs: Array of sibling hashes of the Merkle tree, bottom-to-top.
 * index: Index of the transaction in the block.
 
-.. image:: _static/02_intermediate/images/image.jpg
+.. image:: _static/image.jpg
 
 For example, for the :math:`T_D` transaction:
 
@@ -2557,14 +2557,14 @@ Blockchain Systems can process transactions and the maximum rate of these transa
 
 * The block interval defines the average amount of time that passes between the creation of two blocks. By deciding to reduce the block interval to solve the latency limit, the system will have less security (increase forks probability) due to the reason of new miners for every second which will lead to instability where the blockchain is subject to reorganization and the system is in disagreement (Figure 1). If we reduce the time per block, then we will have a situation where a significant number of blocks are solved in less time than it takes to relay a solved block throughout the network. So there will be no way to know which block is the "real" one and which one is a "fork" because the transactions that appeared to have multiple confirmations suddenly have fewer confirmations (or possibly go back to being unconfirmed).
 
-.. image:: _static/02_intermediate/images/image.jpg
+.. image:: _static/image.jpg
 
 Figure 1: Increasing block frequency with static block size will result in less security.
 
 * The throughput of a system is bounded by the maximum block size (given a fixed block interval), as the maximum number of included transactions is directly dependent on the block size. 
 * Larger blocks do however cause slower propagation speeds, which causes more discarded blocks (orphaning risk). An unlimited blocksize could, for example, result in a DoS attack on the system by creating a block that takes a long time to validate. If the choice is to Increase block size in order to improve throughput, there will be Network spikes with longer time to propagate in the network (Figure 2).
 
-.. image:: _static/02_intermediate/images/image.jpg
+.. image:: _static/image.jpg
 
 Figure 2: Increasing block size with Static block frequency will lead to more discarded blocks and network spikes.
 
@@ -2576,7 +2576,7 @@ It is a next-generation blockchain protocol which is an alternative bitcoin scal
 * Key blocks for the election of a leader.
 * Micro blocks for ledger records.
 
-.. image:: _static/02_intermediate/images/image.jpg
+.. image:: _static/image.jpg
 
 Figure 3: Bitcoin-M5 time periods structure with serializing transactions.
 
@@ -2603,7 +2603,7 @@ In contradiction, in DecentralChain-M5, the key-blocks can be small because they
 Because a key-block requires proof of stake, miners can not just produce one and expropriate the leadership at will.
 Following the key-block, the lead miner can quickly issue microblocks, simply by signing them with the private key corresponding to the public key named in the key-block’s coinbase (Figure 4).
 
-.. image:: _static/02_intermediate/images/image.jpg
+.. image:: _static/image.jpg
 
 Figure 4: Key-blocks and Micro-blocks signing process.
 
@@ -2635,7 +2635,7 @@ In order to motivate participants to follow the protocol, DecentralChain-M5 uses
 Each transaction pays a fee to the system, but unlike Bitcoin, this fee is distributed, with :math:`40\%` to the leader, and :math:`60\%` to the subsequent leader.
 Finally, if a leader forks the chain by generating two microblocks with the same parent, it is punished by revoking the subsidy revenue; whoever detects the fraud wins a nominal fee, (Figure 5).
 
-.. image:: _static/02_intermediate/images/image.jpg
+.. image:: _static/image.jpg
 
 Figure 5: chain structure of the DecentralChain-M5 Protocol. Microblocks (circles) are signed with the private key matching with the public key in the last key block (squares). The fee is distributed  :math:`40\%` to the leader and :math:`60\%` to the next one.
 
