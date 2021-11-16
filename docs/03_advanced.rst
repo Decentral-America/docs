@@ -4051,7 +4051,7 @@ The script code is composed of the following parts:
 * Callable function
 * Verifier function
 
-.. image:: _static/image.jpg
+.. image:: _static/02_intermediate/images/image.jpg
 
 Directives
 ^^^^^^^^^^
@@ -4382,7 +4382,7 @@ The script code is composed of the following parts:
 * Auxiliary definitions
 * Boolean expression
 
-.. image:: _static/image.jpg
+.. image:: _static/02_intermediate/images/image.jpg
 
 Directives
 ^^^^^^^^^^
@@ -4460,7 +4460,7 @@ The script code is composed of the following parts:
 * Auxiliary definitions
 * Boolean expression
 
-.. image:: _static/image.jpg
+.. image:: _static/02_intermediate/images/image.jpg
 
 Directives
 ^^^^^^^^^^
