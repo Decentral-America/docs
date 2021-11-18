@@ -1861,7 +1861,7 @@ Let's suppose that side :math:`1` stores the full blockchain data and side :math
 * merkleProofs: Array of sibling hashes of the Merkle tree, bottom-to-top.
 * index: Index of the transaction in the block.
 
-.. image:: _static/02_intermediate/images/image.png
+.. image:: _static/02_intermediate/images/image.jpg
 
 For example, for the :math:`T_D` transaction:
 
@@ -2557,14 +2557,14 @@ Blockchain Systems can process transactions and the maximum rate of these transa
 
 * The block interval defines the average amount of time that passes between the creation of two blocks. By deciding to reduce the block interval to solve the latency limit, the system will have less security (increase forks probability) due to the reason of new miners for every second which will lead to instability where the blockchain is subject to reorganization and the system is in disagreement (Figure 1). If we reduce the time per block, then we will have a situation where a significant number of blocks are solved in less time than it takes to relay a solved block throughout the network. So there will be no way to know which block is the "real" one and which one is a "fork" because the transactions that appeared to have multiple confirmations suddenly have fewer confirmations (or possibly go back to being unconfirmed).
 
-.. image:: _static/02_intermediate/images/image.png
+.. image:: _static/02_intermediate/images/image.jpg
 
 Figure 1: Increasing block frequency with static block size will result in less security.
 
 * The throughput of a system is bounded by the maximum block size (given a fixed block interval), as the maximum number of included transactions is directly dependent on the block size. 
 * Larger blocks do however cause slower propagation speeds, which causes more discarded blocks (orphaning risk). An unlimited blocksize could, for example, result in a DoS attack on the system by creating a block that takes a long time to validate. If the choice is to Increase block size in order to improve throughput, there will be Network spikes with longer time to propagate in the network (Figure 2).
 
-.. image:: _static/02_intermediate/images/image.png
+.. image:: _static/02_intermediate/images/image.jpg
 
 Figure 2: Increasing block size with Static block frequency will lead to more discarded blocks and network spikes.
 
@@ -2576,7 +2576,7 @@ It is a next-generation blockchain protocol which is an alternative bitcoin scal
 * Key blocks for the election of a leader.
 * Micro blocks for ledger records.
 
-.. image:: _static/02_intermediate/images/image.png
+.. image:: _static/02_intermediate/images/image.jpg
 
 Figure 3: Bitcoin-M5 time periods structure with serializing transactions.
 
@@ -2603,7 +2603,7 @@ In contradiction, in DecentralChain-M5, the key-blocks can be small because they
 Because a key-block requires proof of stake, miners can not just produce one and expropriate the leadership at will.
 Following the key-block, the lead miner can quickly issue microblocks, simply by signing them with the private key corresponding to the public key named in the key-block’s coinbase (Figure 4).
 
-.. image:: _static/02_intermediate/images/image.png
+.. image:: _static/02_intermediate/images/image.jpg
 
 Figure 4: Key-blocks and Micro-blocks signing process.
 
@@ -2635,7 +2635,7 @@ In order to motivate participants to follow the protocol, DecentralChain-M5 uses
 Each transaction pays a fee to the system, but unlike Bitcoin, this fee is distributed, with :math:`40\%` to the leader, and :math:`60\%` to the subsequent leader.
 Finally, if a leader forks the chain by generating two microblocks with the same parent, it is punished by revoking the subsidy revenue; whoever detects the fraud wins a nominal fee, (Figure 5).
 
-.. image:: _static/02_intermediate/images/image.png
+.. image:: _static/02_intermediate/images/image.jpg
 
 Figure 5: chain structure of the DecentralChain-M5 Protocol. Microblocks (circles) are signed with the private key matching with the public key in the last key block (squares). The fee is distributed  :math:`40\%` to the leader and :math:`60\%` to the next one.
 
