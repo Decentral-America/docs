@@ -1861,7 +1861,11 @@ Let's suppose that side :math:`1` stores the full blockchain data and side :math
 * merkleProofs: Array of sibling hashes of the Merkle tree, bottom-to-top.
 * index: Index of the transaction in the block.
 
+<<<<<<< HEAD
+.. image:: _static/02_intermediate/images/11_Proof-of-Transaction-in-Block.png
+=======
 .. image:: _static/02_intermediate/images/image.jpg
+>>>>>>> b83a891fea7eef2d472ac2e336795eea50776d03
 
 For example, for the :math:`T_D` transaction:
 
@@ -2064,7 +2068,7 @@ To start leasing, the token holder needs to create a lease transaction and speci
 * :ref:`Lease transaction <02_intermediate:Lease Transaction>` to activate the leasing process.
 * :ref:`Lease cancel transaction <02_intermediate:Lease Cancel Transaction>` to deactivate the leasing process.
 
-Create a lease
+Create a Lease
 --------------
 
 You can use `Decentral.Exchange <https://decentral.exchange/>`_ online to create a lease. 
@@ -2557,14 +2561,22 @@ Blockchain Systems can process transactions and the maximum rate of these transa
 
 * The block interval defines the average amount of time that passes between the creation of two blocks. By deciding to reduce the block interval to solve the latency limit, the system will have less security (increase forks probability) due to the reason of new miners for every second which will lead to instability where the blockchain is subject to reorganization and the system is in disagreement (Figure 1). If we reduce the time per block, then we will have a situation where a significant number of blocks are solved in less time than it takes to relay a solved block throughout the network. So there will be no way to know which block is the "real" one and which one is a "fork" because the transactions that appeared to have multiple confirmations suddenly have fewer confirmations (or possibly go back to being unconfirmed).
 
+<<<<<<< HEAD
+.. image:: _static/02_intermediate/images/12_Weaknesses-of-Current-Proposals-to-Improve-Scalability-1.png
+=======
 .. image:: _static/02_intermediate/images/image.jpg
+>>>>>>> b83a891fea7eef2d472ac2e336795eea50776d03
 
 Figure 1: Increasing block frequency with static block size will result in less security.
 
 * The throughput of a system is bounded by the maximum block size (given a fixed block interval), as the maximum number of included transactions is directly dependent on the block size. 
 * Larger blocks do however cause slower propagation speeds, which causes more discarded blocks (orphaning risk). An unlimited blocksize could, for example, result in a DoS attack on the system by creating a block that takes a long time to validate. If the choice is to Increase block size in order to improve throughput, there will be Network spikes with longer time to propagate in the network (Figure 2).
 
+<<<<<<< HEAD
+.. image:: _static/02_intermediate/images/13_Weaknesses-of-Current-Proposals-to-Improve-Scalability-2.png
+=======
 .. image:: _static/02_intermediate/images/image.jpg
+>>>>>>> b83a891fea7eef2d472ac2e336795eea50776d03
 
 Figure 2: Increasing block size with Static block frequency will lead to more discarded blocks and network spikes.
 
@@ -2576,7 +2588,11 @@ It is a next-generation blockchain protocol which is an alternative bitcoin scal
 * Key blocks for the election of a leader.
 * Micro blocks for ledger records.
 
+<<<<<<< HEAD
+.. image:: _static/02_intermediate/images/14_Brief-Summary-of-Bitcoin-M5.png
+=======
 .. image:: _static/02_intermediate/images/image.jpg
+>>>>>>> b83a891fea7eef2d472ac2e336795eea50776d03
 
 Figure 3: Bitcoin-M5 time periods structure with serializing transactions.
 
@@ -2588,7 +2604,7 @@ DecentralChain approaches this scalability matter by providing the miner with th
 This approach increases effective bandwidth and speed of block creation, which is described as being “especially significant for businesses” using the DecentralChain-M5 protocol since it allows for conducting micro-transactions - without any delays that are typical with traditional blockchain systems.
 Furthermore, it allows the blockchain to withstand high loads, such as distribution of tokens following crowdsales and airdrops of bonus tokens. The speed of processing trading transactions on the exchange gets increased as well.
 
-DecentralChain-M5 operations
+DecentralChain-M5 Operations
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The main and core idea of DecentralChain-M5 is to split the Liquid block into two types, Key blocks and Micro blocks. The process of creating liquid block works as follows:
@@ -2603,7 +2619,11 @@ In contradiction, in DecentralChain-M5, the key-blocks can be small because they
 Because a key-block requires proof of stake, miners can not just produce one and expropriate the leadership at will.
 Following the key-block, the lead miner can quickly issue microblocks, simply by signing them with the private key corresponding to the public key named in the key-block’s coinbase (Figure 4).
 
+<<<<<<< HEAD
+.. image:: _static/02_intermediate/images/15_DecentralChain-M5-Operations.png
+=======
 .. image:: _static/02_intermediate/images/image.jpg
+>>>>>>> b83a891fea7eef2d472ac2e336795eea50776d03
 
 Figure 4: Key-blocks and Micro-blocks signing process.
 
@@ -2625,7 +2645,7 @@ For a microblock to be valid, all its entries must be valid according to the spe
 Note that microblocks do not affect the weight of the chain, as they do not contain proof of stake.
 When all micro blocks have been validated, they will be merged with their key block into one block.
 
-DecentralChain-M5 reward mechanisms
+DecentralChain-M5 Reward Mechanisms
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Remuneration consists of two parts. First, each key block entitles its generator a set amount. Second, each ledger entry carries a fee.
@@ -2635,7 +2655,11 @@ In order to motivate participants to follow the protocol, DecentralChain-M5 uses
 Each transaction pays a fee to the system, but unlike Bitcoin, this fee is distributed, with :math:`40\%` to the leader, and :math:`60\%` to the subsequent leader.
 Finally, if a leader forks the chain by generating two microblocks with the same parent, it is punished by revoking the subsidy revenue; whoever detects the fraud wins a nominal fee, (Figure 5).
 
+<<<<<<< HEAD
+.. image:: _static/02_intermediate/images/16_DecentralChain-M5-Reward-Mechanisms.png
+=======
 .. image:: _static/02_intermediate/images/image.jpg
+>>>>>>> b83a891fea7eef2d472ac2e336795eea50776d03
 
 Figure 5: chain structure of the DecentralChain-M5 Protocol. Microblocks (circles) are signed with the private key matching with the public key in the last key block (squares). The fee is distributed  :math:`40\%` to the leader and :math:`60\%` to the next one.
 
