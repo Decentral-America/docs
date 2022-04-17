@@ -16,7 +16,7 @@ set -x
 # INSTALL DEPENDS #
 ###################
 
-python3 -m pip install --upgrade --force-reinstall pip wheel setuptools virtualenv gitpython py-rsync sphinx sphinx-rtd-theme sphinx-rtd-dark-mode sphinx-copybutton rinohtype pygments docutils recommonmark 
+python3 -m pip install --upgrade --force-reinstall pip gitpython sphinx sphinx-rtd-theme sphinx-rtd-dark-mode sphinx-copybutton rinohtype sphinx-intl 
 
 #####################
 # DECLARE VARIABLES #
