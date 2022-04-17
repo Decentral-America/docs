@@ -1,0 +1,4 @@
+Parameter, Description
+"str: :ref:`String <03_advanced:String>`", "The string."
+"substr: :ref:`String <03_advanced:String>`", "The substring."
+"offset: :ref:`Int <03_advanced:Int>`", "The index."

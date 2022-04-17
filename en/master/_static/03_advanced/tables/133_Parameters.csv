@@ -1,0 +1,3 @@
+Parameter, Description
+"haystack: :ref:`String <03_advanced:String>`", "String to search in."
+"needle: :ref:`String <03_advanced:String>`", "String to search for."

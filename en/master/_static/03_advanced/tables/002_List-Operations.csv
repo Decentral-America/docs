@@ -1,0 +1,4 @@
+Operation, Symbol, Complexity
+"Concatenation", "++", ":math:`4`"
+"Adding the element to the end of the list (the list is on the left, the element is on the right)", ":+", ":math:`1`"
+"Adding the element to the beginning of the list (the element is on the left, the list is on the right)", "::", ":math:`2`"

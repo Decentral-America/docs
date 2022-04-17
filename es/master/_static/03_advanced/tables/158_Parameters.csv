@@ -1,0 +1,5 @@
+Parameter, Description
+"digest: digestAlgorithmType", "The hashing algorithm applied to the data before signing. Acceptable values: 1) NOALG — data is not hashed. 2) MD5. 3) SHA1. 4) SHA224. 5) SHA256. 6) SHA384. 7) SHA512. 8) SHA3224. 9) SHA3256. 10) SHA3384. 11) SHA3512."
+"message: :ref:`ByteVector <03_advanced:ByteVector>`", "Signed data. Maximum size: 1)  For rsaVerify_<N>Kb functions — :math:`N` bytes. 2) For rsaVerify function — :math:`150` bytes."
+"sig: :ref:`ByteVector <03_advanced:ByteVector>`", "Digital signature. Fixed size: :math:`25` bytes."
+"pub: :ref:`ByteVector <03_advanced:ByteVector>`", "Binary public key. Fixed size: :math:`294` bytes."

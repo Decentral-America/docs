@@ -1,0 +1,5 @@
+Parameter, Description
+"N", "Maximum number of iterations, up to :math:`1000`."
+"list", "List of values."
+"start", "Initial value."
+"foldFunc", "Combining function."

@@ -1,0 +1,11 @@
+Name, Description, Complexity
+":ref:`addressFromRecipient(Address|Alias): Address <03_advanced:addressFromRecipient(Address|Alias): Address>`", "Gets the corresponding :ref:`address <02_intermediate:Address>` of the :ref:`alias <02_intermediate:Alias>`", ":math:`5`"
+":ref:`assetBalance(Address|Alias, ByteVector): Int <03_advanced:assetBalance(Address|Alias, ByteVector): Int>`", "Gets account balance by token ID", ":math:`10`"
+":ref:`assetInfo(ByteVector): Asset|Unit <03_advanced:assetInfo(ByteVector): Asset|Unit>`", "Gets the information about a :ref:`token <02_intermediate:Token (Asset)>`", ":math:`15`"
+":ref:`blockInfoByHeight(Int): BlockInfo|Unit <03_advanced:blockInfoByHeight(Int): BlockInfo|Unit>`", "Gets the information about a :ref:`block <02_intermediate:Block>` by the block height", ":math:`5`"
+":ref:`calculateAssetId(Issue): ByteVector <03_advanced:calculateAssetId(Issue): ByteVector>`", "Calculates ID of the token formed by the :ref:`issue <03_advanced:Issue>` structure when executing the callable function", ":math:`10`"
+":ref:`calculateLeaseId(Lease): ByteVector <03_advanced:calculateLeaseId(Lease): ByteVector>`", "Calculates ID of the lease formed by the :ref:`lease <03_advanced:Lease>` structure when executing the callable function", ":math:`1`"
+":ref:`scriptHash(Address|Alias): ByteVector|Unit <03_advanced:scriptHash(Address|Alias): ByteVector|Unit>`", "Returns BLAKE2b-256 hash of the script assigned to a given account", ":math:`200`"
+":ref:`transactionHeightById(ByteVector): Int|Unit <03_advanced:transactionHeightById(ByteVector): Int|Unit>`", "Gets the block height of a transaction", ":math:`20`"
+":ref:`transferTransactionById(ByteVector): TransferTransaction|Unit <03_advanced:transferTransactionById(ByteVector): TransferTransaction|Unit>`", "Gets the data of a :ref:`transfer transaction <02_intermediate:Transfer Transaction>`", ":math:`60`"
+":ref:`wavesBalance(Address|Alias): BalanceDetails <03_advanced:wavesBalance(Address|Alias): BalanceDetails>`", "Gets account balance in :ref:`DecentralCoins <02_intermediate:DecentralCoin>`", ":math:`10`"

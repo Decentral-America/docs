@@ -1,0 +1,4 @@
+Field, Size, Description
+"asset_id", ":math:`32` bytes", "Token ID."
+"name", "From :math:`4` to :math:`16` bytes", "Token name."
+"description", "From :math:`0` to :math:`1000` bytes", "Token description."

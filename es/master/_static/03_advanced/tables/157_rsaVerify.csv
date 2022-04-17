@@ -1,0 +1,6 @@
+Name, Max message size, Complexity
+"rsaVerify(digest: digestAlgorithmType, message: ByteVector, sig: ByteVector, pub: ByteVector): Boolean", ":math:`150` kB", ":math:`1000`"
+"rsaVerify_16Kb(digest: digestAlgorithmType, message: ByteVector, sig: ByteVector, pub: ByteVector): Boolean", ":math:`16` kB", ":math:`500`"
+"rsaVerify_32Kb(digest: digestAlgorithmType, message: ByteVector, sig: ByteVector, pub: ByteVector): Boolean", ":math:`32` kB", ":math:`550`"
+"rsaVerify_64Kb(digest: digestAlgorithmType, message: ByteVector, sig: ByteVector, pub: ByteVector): Boolean", ":math:`64` kB", ":math:`625`"
+"rsaVerify_128Kb(digest: digestAlgorithmType, message: ByteVector, sig: ByteVector, pub: ByteVector): Boolean", ":math:`128` kB", ":math:`750`"

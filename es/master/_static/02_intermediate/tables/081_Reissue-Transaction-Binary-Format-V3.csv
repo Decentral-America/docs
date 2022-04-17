@@ -1,0 +1,4 @@
+Field, Size, Description
+"asset_id", ":math:`32` bytes", "ID of token to reissue."
+"asset_amount.amount", ":math:`8` bytes", "Amount of token to reissue, specified in the minimum fraction (“cents”)."
+"reissuable", ":math:`1` byte", "Reissue availability flag."
