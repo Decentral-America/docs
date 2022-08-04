@@ -477,6 +477,6 @@ msgid ""
 "development by avoiding high gas fees for all the transactions. The "
 "native language used on the blockchain is called Ride, a non-Turing-"
 "complete language which in turn helps keep the system secure and "
-"predictable ."
+"predictable."
 msgstr ""
 
