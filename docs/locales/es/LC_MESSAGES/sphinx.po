@@ -24,11 +24,11 @@ msgstr "Lenguajes"
 
 #: ../../_templates/versions.html:22
 msgid "Versions"
-msgstr ""
+msgstr "Versiones"
 
 #: ../../_templates/versions.html:32
 msgid "Downloads"
-msgstr ""
+msgstr "Descargas"
 
 #: ../../_templates/versions.html:40
 msgid "On Read the Docs"
