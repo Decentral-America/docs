@@ -2,40 +2,40 @@
 # Copyright (C) 2021, Blockchain Costa Rica
 # This file is distributed under the same license as the DecentralChain
 # package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+# Josue Rojas <josue.rojas@blockchaincostarica.org>, 2022.
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: DecentralChain master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-28 19:25-0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2022-08-04 15:14-0600\n"
+"PO-Revision-Date: 2022-08-04 15:14-0600\n"
+"Last-Translator: Josue Rojas <josue.rojas@blockchaincostarica.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.1\n"
+"Generated-By: Babel 2.10.3\n"
 
 #: ../../02_intermediate.rst:3
 msgid "Intermediate"
-msgstr "Intermedio"
+msgstr ""
 
 #: ../../02_intermediate.rst:7
 msgid "Overview"
-msgstr "Resumen"
+msgstr ""
 
 #: ../../02_intermediate.rst:9
 msgid ""
 "DecentralChain  is an open blockchain protocol and development toolset "
 "for Web :math:`3.0` applications and decentralized solutions. Blockchain "
 "is a distributed ledger that ensures data immutability and transparency."
-msgstr "DecentralChain es un protocolo blockchain abierto y un conjunto de herramientas de desarrollo para aplicaciones Web :math:`3.0` y soluciones descentralizadas. Blockchain es una tecnología de registros distribuidos que garantiza la inmutabilidad y la transparencia de los datos."
+msgstr ""
 
 #: ../../02_intermediate.rst:12
 msgid "Accounts"
-msgstr "Cuentas"
+msgstr ""
 
 #: ../../02_intermediate.rst:14
 msgid ""
@@ -45,17 +45,17 @@ msgid ""
 " key that the account uses to sign transactions, and a public key that "
 "allows anyone to verify the signature. :ref:`More about accounts "
 "<02_intermediate:Account>`."
-msgstr "DecentralChain utiliza un modelo basado en cuentas. Cada transacción se crea en nombre de una cuenta, todos los activos y datos están asociados a una cuenta. Una cuenta tiene un par de claves vinculadas criptográficamente: una clave privada que la cuenta utiliza para firmar las transacciones, y una clave pública que permite a cualquiera verificar la firma. :ref:`Más información sobre las cuentas <02_intermediate:Account>`."
+msgstr ""
 
 #: ../../02_intermediate.rst:16
 msgid ""
 "To create an account, store keys, and sign transactions, you can use "
 "`Decentral.Exchange <https://decentral.exchange/>`_."
-msgstr "Para crear una cuenta, almacenar claves y firmar transacciones, puede utilizar `Decentral.Exchange <https://decentral.exchange/>`_."
+msgstr ""
 
 #: ../../02_intermediate.rst:21
 msgid "Transactions and Blocks"
-msgstr "Transacciones y bloques"
+msgstr ""
 
 #: ../../02_intermediate.rst:23
 msgid ""
@@ -63,7 +63,7 @@ msgid ""
 "of an action, such as a token issue, cryptocurrency transfer, smart "
 "contract creation or invocation and more. :ref:`More about transactions "
 "<02_intermediate:Transaction>`."
-msgstr "Los datos de Blockchain se presentan como transacciones. Una transacción es un registro de una acción, como una emisión de tokens, una transferencia de criptomoneda, la creación o invocación de un contrato inteligente, etc. :ref:`Más información sobre las transacciones <02_intermediate:Transaction>`."
+msgstr ""
 
 #: ../../02_intermediate.rst:25
 msgid ""
@@ -73,7 +73,7 @@ msgid ""
 "hash of its preceding block, and so on. As a result, the signature of "
 "each block depends on the data of all the preceding blocks. :ref:`More "
 "about blocks <02_intermediate:Block>`."
-msgstr "Las transacciones se apilan en bloques. Además de las transacciones, cada bloque también contiene el hash del bloque anterior y la firma digital del nodo que generó el bloque. El bloque anterior contiene el hash de datos de su bloque precedente, y así sucesivamente. Como resultado, la firma de cada bloque depende de los datos de todos los bloques precedentes. :ref:`Más información sobre los bloques <02_intermediate:Block>`."
+msgstr ""
 
 #: ../../02_intermediate.rst:27
 msgid ""
@@ -81,11 +81,11 @@ msgid ""
 "cryptographic hashes. Each transaction stays intact indefinitely. An "
 "attempt to change any data in a block would invalidate the block and all "
 "the later blocks."
-msgstr "En otras palabras, la cadena de bloques es una secuencia de bloques vinculados por hashes criptográficos. Cada transacción permanece intacta indefinidamente. Un intento de cambiar cualquier dato de un bloque invalidaría el bloque y todos los bloques posteriores."
+msgstr ""
 
 #: ../../02_intermediate.rst:32
 msgid "Nodes"
-msgstr "Nodos"
+msgstr ""
 
 #: ../../02_intermediate.rst:34
 msgid ""
@@ -93,7 +93,7 @@ msgid ""
 "DecentralChain nodes store a full copy of the blockchain data, validate "
 "transactions and blocks, verify signatures and hashes, and synchronize "
 "the data with other nodes."
-msgstr "Un nodo es un ordenador que sirve a la red blockchain. Los nodos de DecentralChain almacenan una copia completa de los datos de la cadena de bloques, validan las transacciones y los bloques, verifican las firmas y los hashes, y sincronizan los datos con otros nodos."
+msgstr ""
 
 #: ../../02_intermediate.rst:36
 msgid ""
@@ -108,11 +108,11 @@ msgid ""
 "<02_intermediate:Block Reward>` and transaction fees. The more tokens the"
 " node holds, the greater its chance to add the next block. :ref:`More "
 "about nodes <02_intermediate:Node>`."
-msgstr "La red DecentralChain está formada por nodos alojados en todo el mundo. Esto garantiza que los datos de la cadena de bloques están protegidos contra la falsificación o el borrado, ya sea malicioso o accidental. Todo el mundo puede :ref:`lanzar un nodo <documentation:placeholder>` y unirse a la red. Los nodos que posean al menos :math:`1,0000` :ref:`DecentralCoins <02_intermediate:DecentralCoin>` (por propiedad o :ref:`arrendamiento <02_intermediate:Leased Proof of Stake>`), pueden participar en la generación de bloques para recibir :ref:`recompensas por generación de bloques <02_intermediate:Block Reward>` y comisiones por transacciones. Cuantos más tokens tenga el nodo, mayor será su posibilidad de añadir el siguiente bloque. :ref:`Más información sobre los nodos <02_intermediate:Node>`."
+msgstr ""
 
 #: ../../02_intermediate.rst:39
 msgid "dApps"
-msgstr "dApps"
+msgstr ""
 
 #: ../../02_intermediate.rst:41
 msgid ""
@@ -122,53 +122,53 @@ msgid ""
 " might be hacked or compromised. Any user can view the script code and "
 "the result of its invocation. :ref:`More about dApps "
 "<02_intermediate:dApp and Smart Account>`."
-msgstr "Una aplicación descentralizada (dApp) es una aplicación potenciada por la cadena de bloques. Una dApp puede almacenar datos en la blockchain e invocar un script asignado a una cuenta. Por lo tanto, no hay una base de datos centralizada que pueda ser hackeada o comprometida. Cualquier usuario puede ver el código del script y el resultado de su invocación. :ref:`Más información sobre las dApps <02_intermediate:dApp and Smart Account>`."
+msgstr ""
 
 #: ../../02_intermediate.rst:45 ../../02_intermediate.rst:4256
 msgid "Account"
-msgstr "Cuenta"
+msgstr ""
 
 #: ../../02_intermediate.rst:47
 msgid "DecentralChain uses an account-based model:"
-msgstr "DecentralChain utiliza un modelo basado en cuentas:"
+msgstr ""
 
 #: ../../02_intermediate.rst:49
 msgid ""
 "Each :ref:`transaction <02_intermediate:Transaction>` is created on "
 "behalf of a certain account."
-msgstr "Cada :ref:`transacción <02_intermediate:Transaction>` se crea en nombre de una determinada cuenta."
+msgstr ""
 
 #: ../../02_intermediate.rst:50
 msgid ""
 "All the :ref:`tokens <02_intermediate:Token (Asset)>` belong to certain "
 "accounts."
-msgstr "Todos los :ref:`tokens <02_intermediate:Token (Asset)>` pertenecen a alguna cuenta determinada."
+msgstr ""
 
 #: ../../02_intermediate.rst:51
 msgid ""
 "All the data is associated with accounts. For details, see the "
 ":ref:`account data storage <02_intermediate:Account Data Storage>` "
 "article."
-msgstr "Todos los datos están asociados a las cuentas. Para más detalles, consulte el artículo :ref:`almacenamiento de datos de cuentas <02_intermediate:Account Data Storage>`."
+msgstr ""
 
 #: ../../02_intermediate.rst:54
 msgid "Account Keys"
-msgstr "Claves de la Cuenta"
+msgstr ""
 
 #: ../../02_intermediate.rst:56
 msgid ""
 "Unlike centralized applications, users do not have usernames and "
 "passwords on the blockchain. User identification and validation of their "
 "actions are performed using a cryptographically bound key pair:"
-msgstr "A diferencia de las aplicaciones centralizadas, los usuarios no tienen nombres de usuario ni contraseñas en la cadena de bloques. La identificación del usuario y la validación de sus acciones se realizan mediante un par de claves vinculadas criptográficamente:"
+msgstr ""
 
 #: ../../02_intermediate.rst:58
 msgid "The private key is used to sign transactions or orders."
-msgstr "La clave privada se utiliza para firmar transacciones u órdenes."
+msgstr ""
 
 #: ../../02_intermediate.rst:59
 msgid "The public key allows the verification of the digital signature."
-msgstr "La clave pública permite la verificación de la firma digital."
+msgstr ""
 
 #: ../../02_intermediate.rst:61
 msgid ""
@@ -177,7 +177,7 @@ msgid ""
 "account's private key. The signature and the sender's public key are used"
 " to verify the authenticity of the transaction's data and to check that "
 "the signature of the transaction matches the public key."
-msgstr "Cada transacción contiene la clave pública de la cuenta del remitente. El remitente genera una firma digital de la transacción utilizando la clave privada de la cuenta. La firma y la clave pública del remitente se utilizan para verificar la autenticidad de los datos de la transacción y para comprobar que la firma de la transacción coincide con la clave pública."
+msgstr ""
 
 #: ../../02_intermediate.rst:65
 msgid ""
@@ -188,19 +188,19 @@ msgid ""
 "article. The private and public keys are :math:`32` byte arrays. In UIs, "
 "the keys are displayed as base58 encoded strings. Base58-encoded keys can"
 " be of different lengths, the maximum length is :math:`44` characters."
-msgstr "DecentralChain utiliza un sistema criptográfico asimétrico basado en la curva elíptica Curve25519-ED25519 con claves X25519.La pauta para la generación de claves y firmas se da en el artículo :ref:`detalles prácticos criptográficos <02_intermediate:Cryptographic Practical Details>`.  Las claves privadas y públicas son matrices de :math:`32` bytes. En las interfaces de usuario, las claves se muestran como cadenas codificadas en base58. Las claves codificadas en base58 pueden tener diferentes longitudes, la longitud máxima es de :math:`44` caracteres."
+msgstr ""
 
 #: ../../02_intermediate.rst:68
 msgid "Example private key in base58:"
-msgstr "Ejemplo de clave privada en base58:"
+msgstr ""
 
 #: ../../02_intermediate.rst:74
 msgid "Example public key in base58:"
-msgstr "Ejemplo de clave pública en base58:"
+msgstr ""
 
 #: ../../02_intermediate.rst:81
 msgid "Secret (Seed) Phrase"
-msgstr "Frase Secreta (semilla)"
+msgstr ""
 
 #: ../../02_intermediate.rst:83
 msgid ""
@@ -210,7 +210,7 @@ msgid ""
 "<02_intermediate:Address>` is obtained from the public key. All these "
 "transformations are unidirectional. The opposite direction is almost "
 "impossible in terms of the required computations."
-msgstr "La clave privada puede generarse a partir de alguna frase semilla aleatoria utilizando funciones de hashing. La clave pública se obtiene a partir de la clave privada utilizando una multiplicación de curva elíptica. La :ref:`dirección de la cuenta <02_intermediate:Address>` se obtiene a partir de la clave pública. Todas estas transformaciones son unidireccionales. La dirección opuesta es casi imposible en términos de los cálculos requeridos."
+msgstr ""
 
 #: ../../02_intermediate.rst:87
 msgid ""
@@ -223,15 +223,15 @@ msgid ""
 "on an average CPU. The point of using a secret phrase (rather than a "
 "private key) is to simplify user experience: the secret phrase is much "
 "easier to write down or remember."
-msgstr "La frase secreta (también conocida como frase semilla o frase de respaldo) puede ser cualquier combinación de símbolos, palabras o bytes. Las billeteras ofrecidas por DecentralChain suelen utilizar un conjunto aleatorio de :math:`15` palabras en inglés de entre las :math:`2048` palabras disponibles. El uso de una frase de este tipo es seguro ya que la probabilidad de generar dos frases semilla idénticas es :math:`\frac{1}{2048^{15}}`, por lo que la fuerza bruta tardaría millones de años en una CPU promedio. El objetivo de utilizar una frase secreta (en lugar de una clave privada) es simplificar la experiencia del usuario: la frase secreta es mucho más fácil de escribir o recordar."
+msgstr ""
 
 #: ../../02_intermediate.rst:89
 msgid "Example of a secret phrase:"
-msgstr "Ejemplo de frase secreta:"
+msgstr ""
 
 #: ../../02_intermediate.rst:95
 msgid "Security Information:"
-msgstr "Información de seguridad:"
+msgstr ""
 
 #: ../../02_intermediate.rst:97
 msgid ""
@@ -239,38 +239,38 @@ msgid ""
 "control over the account, including the ability to dispose of funds. Do "
 "not give your secret phrase or private key to anyone, and do not publish "
 "or send them."
-msgstr "La frase secreta o la clave privada derivada de esta proporcionan un control total sobre la cuenta, incluida la capacidad de disponer de los fondos. No dé su frase secreta ni su clave privada a nadie, y no las publique ni las envíe."
+msgstr ""
 
 #: ../../02_intermediate.rst:98
 msgid ""
 "The secret phrase cannot be changed: another secret phrase (even one that"
 " differs by a single character) will generate a different key pair, and "
 "therefore a different account."
-msgstr "La frase secreta no puede cambiarse: otra frase secreta (incluso una que difiera en un solo carácter) generará un par de claves diferente y, por tanto, una cuenta diferente."
+msgstr ""
 
 #: ../../02_intermediate.rst:99
 msgid ""
 "If you lose your secret phrase or private key, you will no longer be able"
 " to access your account ever again. We strongly encourage you to "
 ":ref:`backup of your secret phrase <02_intermediate:Backup Seed Phrase>`."
-msgstr "Si pierde su frase secreta o su clave privada, no podrá volver a acceder a su cuenta. Le recomendamos encarecidamente que haga una copia de seguridad de su frase secreta <02_intermediate:Backup Seed Phrase>`."
+msgstr ""
 
 #: ../../02_intermediate.rst:100
 msgid ""
 "If the secret phrase is compromised (you have accidentally sent it to "
 "someone or suspect that it was taken by fraudsters), immediately create a"
 " new account and transfer all the assets to it."
-msgstr "Si la frase secreta está comprometida (la has enviado accidentalmente a alguien o sospechas que ha sido tomada por estafadores), crea inmediatamente una nueva cuenta y transfiere todos los activos a ella."
+msgstr ""
 
 #: ../../02_intermediate.rst:102
 msgid ""
 "For ways to generate account keys, see the :ref:`creating an account "
 "<02_intermediate:Creating an Account>` article."
-msgstr "Para conocer la forma de generar las claves de la cuenta, consulte el artículo :ref:`crear una cuenta <02_intermediate:Creating an Account>`."
+msgstr ""
 
 #: ../../02_intermediate.rst:105
 msgid "Creating an Account"
-msgstr "Crear una Cuenta"
+msgstr ""
 
 #: ../../02_intermediate.rst:107
 msgid ""
@@ -278,13 +278,13 @@ msgid ""
 "<02_intermediate:Account Keys>` and :ref:`address "
 "<02_intermediate:Address>` based on a :ref:`secret (seed) phrase "
 "<02_intermediate:Secret (Seed) Phrase>`."
-msgstr "Crear una cuenta significa generar un :ref:`par de claves de cuenta <02_intermediate:Account Keys>` y una dirección :ref:`address <02_intermediate:Address>` basada en una frase :ref:`frase secreta (semilla) <02_intermediate:Secret (Seed) Phrase>`."
+msgstr ""
 
 #: ../../02_intermediate.rst:109
 msgid ""
 "You can use `Decentral.Exchange <https://decentral.exchange/>`_ online to"
 " create an account."
-msgstr "Se puede utilizar `Decentral.Exchange <https://decentral.exchange/>`_ en línea para crear una cuenta."
+msgstr ""
 
 #: ../../02_intermediate.rst:111
 msgid ""
@@ -292,44 +292,44 @@ msgid ""
 "type in the password, type it again in the Confirm Password box, accept "
 "the Terms and Conditions as well as the Privacy Policy and click "
 "Continue."
-msgstr "En la pantalla principal haga clic en Crear Cuenta, luego en la casilla Crear Contraseña escriba la contraseña, vuelva a escribirla en la casilla Confirmar Contraseña, acepte los Términos y Condiciones así como la Política de Privacidad y haga clic en Continuar."
+msgstr ""
 
 #: ../../02_intermediate.rst:112
 msgid ""
 "On the next screen select Create Account and then choose the avatar you "
 "like the most for your account and click Continue."
-msgstr "En la siguiente pantalla selecciona Crear Cuenta y luego elige el avatar que más te guste para tu cuenta y haz clic en Continuar."
+msgstr ""
 
 #: ../../02_intermediate.rst:113
 msgid ""
 "After that, select the name you want the account to have on that "
 "particular device and click Continue."
-msgstr "Luego de esto, selecciona el nombre que quieres que tenga la cuenta en ese dispositivo concreto y haz clic en Continuar."
+msgstr ""
 
 #: ../../02_intermediate.rst:114
 msgid ""
 "At this point you will be forwarded to your wallet page. You must do a "
 ":ref:`backup of your seed phrase <02_intermediate:Backup Seed Phrase>`."
-msgstr "En este punto se le remitirá a la página de su cartera. Debes hacer un :ref:`respaldo de tu frase semilla <02_intermediate:Backup Seed Phrase>`."
+msgstr ""
 
 #: ../../02_intermediate.rst:117
 msgid "Backup Seed Phrase"
-msgstr "Respaldar Frase Semilla"
+msgstr ""
 
 #: ../../02_intermediate.rst:119
 msgid ""
 "Open `Decentral.Exchange <https://decentral.exchange/>`_ main screen and "
 "make sure you are logged into your account. Click on the account avatar "
 "and navigate to Settings > Security."
-msgstr "Abra la pantalla principal de `Decentral.Exchange <https://decentral.exchange/>`_ y asegúrese de haber iniciado sesión en su cuenta. Haga clic en el avatar de la cuenta y navegue hasta Configuración > Seguridad."
+msgstr ""
 
 #: ../../02_intermediate.rst:120
 msgid "Click Show in the Backup Phrase box."
-msgstr "Haga clic en Mostrar en el cuadro de Respaldar Frase Semilla."
+msgstr ""
 
 #: ../../02_intermediate.rst:121
 msgid "Write down the phrase and store it in a secure location."
-msgstr "Anote la frase y guárdela en un lugar seguro."
+msgstr ""
 
 #: ../../02_intermediate.rst:123
 msgid ""
@@ -337,11 +337,11 @@ msgid ""
 "strongly recommend backing up the seed phrase, since this is the only way"
 " to restore access to your account in case of loss or theft of the "
 "device."
-msgstr "No almacene la frase de respaldo sin encriptar en ningún dispositivo electrónico. Recomendamos encarecidamente hacer una copia de seguridad de la frase semilla, ya que es la única manera de restaurar el acceso a su cuenta en caso de pérdida o robo del dispositivo."
+msgstr ""
 
 #: ../../02_intermediate.rst:126
 msgid "Log in to Account"
-msgstr "Acceder a la Cuenta"
+msgstr ""
 
 #: ../../02_intermediate.rst:128
 msgid ""
@@ -349,51 +349,51 @@ msgid ""
 "click Create Account then in the Create Password box type in the "
 "password, type it again in the Confirm Password box, accept the Terms and"
 " Conditions as well as the Privacy Policy and click Continue."
-msgstr "Abra la pantalla principal de `Decentral.Exchange <https://decentral.exchange/>`_ y haga clic en Crear Cuenta, luego en la casilla Crear Contraseña escriba la contraseña, vuelva a escribirla en la casilla Confirmar Contraseña, acepte los Términos y Condiciones así como la Política de Privacidad y haga clic en Continuar."
+msgstr ""
 
 #: ../../02_intermediate.rst:129
 msgid ""
 "On the next screen select Import Accounts, then choose the Seed or Key "
 "option."
-msgstr "En la siguiente pantalla, seleccione Importar Cuentas y, a continuación, elija la opción Semilla o Clave."
+msgstr ""
 
 #: ../../02_intermediate.rst:130 ../../02_intermediate.rst:139
 msgid ""
 "After that type in the seed you backed up in the past and click Continue,"
 " then select the name you want the account to have on that particular "
 "device and click Continue."
-msgstr "A continuación, escribe la semilla de la que hiciste una copia de seguridad en el pasado y haz clic en Continuar, luego selecciona el nombre que quieres que tenga la cuenta en ese dispositivo en particular y haz clic en Continuar."
+msgstr ""
 
 #: ../../02_intermediate.rst:131 ../../02_intermediate.rst:140
 msgid "At this point you will be forwarded to your wallet page."
-msgstr "En este punto, se le remitirá a la página de su monedero."
+msgstr ""
 
 #: ../../02_intermediate.rst:134
 msgid "Forgot Password"
-msgstr "Olvidé mi Contraseña"
+msgstr ""
 
 #: ../../02_intermediate.rst:136
 msgid ""
 "Open `Decentral.Exchange <https://decentral.exchange/>`_ main screen and "
 "click Forgot Password then select the Reset All option."
-msgstr "Abra la pantalla principal de `Decentral.Exchange <https://decentral.exchange/>`_ y haga clic en Olvidé mi Contraseña y luego seleccione la opción Restablecer Todo."
+msgstr ""
 
 #: ../../02_intermediate.rst:137
 msgid ""
 "On the next screen, in the Create Password box type in the password, type"
 " it again in the Confirm Password box, accept the Terms and Conditions as"
 " well as the Privacy Policy and click Continue."
-msgstr "En la siguiente pantalla, en la casilla Crear Contraseña escriba la contraseña, vuelva a escribirla en la casilla Confirmar Contraseña, acepte los Términos y Condiciones así como la Política de Privacidad y haga clic en Continuar."
+msgstr ""
 
 #: ../../02_intermediate.rst:138
 msgid ""
 "When this is done, select Import Accounts, then choose the Seed or Key "
 "option."
-msgstr "Una vez hecho esto, seleccione Importar Cuentas y, a continuación, elija la opción Semilla o Clave."
+msgstr ""
 
 #: ../../02_intermediate.rst:143 ../../02_intermediate.rst:4275
 msgid "Address"
-msgstr "Dirección"
+msgstr ""
 
 #: ../../02_intermediate.rst:145
 msgid ""
@@ -402,46 +402,46 @@ msgid ""
 "also contains the :ref:`chain ID <02_intermediate:Chain ID>` that "
 "identifies the blockchain network, therefore the address on the Mainnet "
 "cannot be used on the Testnet and vice versa."
-msgstr "La dirección es un atributo de la :ref:`cuenta <02_intermediate:Account>` derivado de la :ref:`clave pública <02_intermediate:Account Keys>`. La dirección también contiene el :ref:`chain ID <02_intermediate:Chain ID>` que identifica la red blockchain, por lo que la dirección en la Mainnet no puede ser utilizada en la Testnet y viceversa."
+msgstr ""
 
 #: ../../02_intermediate.rst:147
 msgid ""
 "The address is a :math:`26` byte array (see the :ref:`address binary "
 "format <02_intermediate:Address Binary Format>`). In UIs the address is "
 "displayed as a base58 encoded string."
-msgstr "La dirección es una matriz de :math:`26` bytes (ver :ref:`formato binario de la dirección <02_intermediate:Address Binary Format>`). En las UIs la dirección se muestra como una cadena codificada en base58."
+msgstr ""
 
 #: ../../02_intermediate.rst:153
 msgid ""
 "Normally, the address starting with 3P refers to the Mainnet, and the "
 "address starting with 3M or 3N refers to Testnet or Stagenet."
-msgstr "Normalmente, la dirección que empieza por 3P se refiere a la Mainnet, y la que empieza por 3M o 3N se refiere a Testnet o Stagenet."
+msgstr ""
 
 #: ../../02_intermediate.rst:155
 msgid "The address is used to obtain information about the account:"
-msgstr "La dirección se utiliza para obtener información sobre la cuenta:"
+msgstr ""
 
 #: ../../02_intermediate.rst:157
 msgid ":ref:`Token balances <02_intermediate:Account Balance>`,"
-msgstr ":ref:`Saldo de la cuenta <02_intermediate:Account Balance>`,"
+msgstr ""
 
 #: ../../02_intermediate.rst:158
 msgid ""
 "Entries of :ref:`account data storage <02_intermediate:Account Data "
 "Storage>`,"
-msgstr "Entradas de :ref:`almacenamiento de datos de cuentas <02_intermediate:Account Data Storage>`,"
+msgstr ""
 
 #: ../../02_intermediate.rst:159
 msgid ":ref:`Aliases <02_intermediate:Alias>`,"
-msgstr ":ref:`Aliases <02_intermediate:Alias>`,"
+msgstr ""
 
 #: ../../02_intermediate.rst:160
 msgid ":ref:`Assigned script <02_intermediate:dApp and Smart Account>`, etc."
-msgstr ":ref:`Script asignado <02_intermediate:dApp and Smart Account>`, etc."
+msgstr ""
 
 #: ../../02_intermediate.rst:162
 msgid "The address is indicated:"
-msgstr "La dirección es indicada:"
+msgstr ""
 
 #: ../../02_intermediate.rst:164
 msgid ""
@@ -449,33 +449,33 @@ msgid ""
 "transfer <02_intermediate:Mass Transfer Transaction>` and :ref:`lease "
 "transaction  <02_intermediate:Lease Transaction>` to identify a "
 "recipient;"
-msgstr "En :ref:`transferencias <02_intermediate:Transfer Transaction>`, :ref:`transferencias en masa <02_intermediate:Mass Transfer Transaction>` y :ref:`transacciones de arrendamiento <02_intermediate:Lease Transaction>` para identificar a un destinatario;"
+msgstr ""
 
 #: ../../02_intermediate.rst:165
 msgid ""
 "In :ref:`invoke script transactions <02_intermediate:Invoke Script "
 "Transaction>` to identify an invoked dApp."
-msgstr "En :ref:`transacciones de invocar scripts <02_intermediate:Invoke Script Transaction>` para identificar una dApp invocada."
+msgstr ""
 
 #: ../../02_intermediate.rst:168
 msgid "Get Personal Address"
-msgstr "Obtener Dirección Personal"
+msgstr ""
 
 #: ../../02_intermediate.rst:170
 msgid ""
 "Open `Decentral.Exchange <https://decentral.exchange/>`_ main screen and "
 "make sure you are logged into your account. Click on the account avatar "
 "and navigate to Address."
-msgstr "Abra la pantalla principal de `Decentral.Exchange <https://decentral.exchange/>`_ y asegúrese de haber iniciado sesión en su cuenta. Haga clic en el avatar de la cuenta y navegue hasta Dirección."
+msgstr ""
 
 #: ../../02_intermediate.rst:171
 msgid "Copy the address and use it, or you can also use the generated QR code."
-msgstr "Copie la dirección y utilícela, o también puede utilizar el código QR generado."
+msgstr ""
 
 #: ../../02_intermediate.rst:174 ../../02_intermediate.rst:4283
 #: ../../_static/02_intermediate/tables/036_Alias-Binary-Format.csv:1
 msgid "Alias"
-msgstr "Alias"
+msgstr ""
 
 #: ../../02_intermediate.rst:176
 msgid ""
@@ -483,7 +483,7 @@ msgid ""
 "<02_intermediate:Address>`. The alias is unique on the blockchain. One "
 "address can have several aliases. The alias can be used instead of the "
 "address:"
-msgstr "El alias es un nombre corto, fácil de recordar, de la :ref:`dirección <02_intermediate:Address>`. El alias es único en el blockchain. Una dirección puede tener varios alias. El alias puede utilizarse en lugar de la dirección:"
+msgstr ""
 
 #: ../../02_intermediate.rst:178
 msgid ""
@@ -492,78 +492,78 @@ msgid ""
 "transaction <02_intermediate:Lease Transaction>` to identify a recipient;"
 " as well as in :ref:`invoke script transactions <02_intermediate:Invoke "
 "Script Transaction>` to identify an invoked dApp."
-msgstr "En :ref:`transferencias <02_intermediate:Transfer Transaction>`, :ref:`transferencias en masa <02_intermediate:Mass Transfer Transaction>` y :ref:`transacciones de arrendamiento <02_intermediate:Lease Transaction>` para identificar a un destinatario; así como también en :ref:`transacciones de invocar scripts <02_intermediate:Invoke Script Transaction>` para identificar una dApp invocada."
+msgstr ""
 
 #: ../../02_intermediate.rst:179
 msgid ""
 "To find an account in `DecentralChain Explorer "
 "<https://decentralscan.com/>`_."
-msgstr "Para encontrar una cuenta en `DecentralChain Explorer <https://decentralscan.com/>`_."
+msgstr ""
 
 #: ../../02_intermediate.rst:181
 msgid "The alias cannot be deleted."
-msgstr "El alias no puede ser eliminado."
+msgstr ""
 
 #: ../../02_intermediate.rst:184
 msgid "Alias Requirements"
-msgstr "Requisitos del Alias"
+msgstr ""
 
 #: ../../02_intermediate.rst:186
 msgid ""
 "The length of an alias can be from :math:`4` to :math:`30` bytes "
 "(:math:`1` character can take up to :math:`4` bytes). The following "
 "characters are allowed:"
-msgstr "La longitud de un alias puede ser de :math:`4` a :math:`30` bytes (el carácter :math:`1` puede ocupar hasta :math:`4` bytes). Se permiten los siguientes caracteres:"
+msgstr ""
 
 #: ../../02_intermediate.rst:188
 msgid "lowercase Latin letters"
-msgstr "letras latinas minúsculas"
+msgstr ""
 
 #: ../../02_intermediate.rst:189
 msgid "numbers"
-msgstr "números"
+msgstr ""
 
 #: ../../02_intermediate.rst:190
 msgid "dot"
-msgstr "punto"
+msgstr ""
 
 #: ../../02_intermediate.rst:191
 msgid "underscore"
-msgstr "subrayado"
+msgstr ""
 
 #: ../../02_intermediate.rst:192
 msgid "hyphen"
-msgstr "guión"
+msgstr ""
 
 #: ../../02_intermediate.rst:193
 msgid "@"
-msgstr "@"
+msgstr ""
 
 #: ../../02_intermediate.rst:196
 msgid "Create Alias"
-msgstr "Crear Alias"
+msgstr ""
 
 #: ../../02_intermediate.rst:198
 msgid ""
 "You can use `Decentral.Exchange <https://decentral.exchange/>`_ online to"
 " create an alias."
-msgstr "Puede utilizar `Decentral.Exchange <https://decentral.exchange/>`_ en línea para crear un alias."
+msgstr ""
 
 #: ../../02_intermediate.rst:200
 msgid ""
 "Make sure you are logged into your account. On the main screen click on "
 "the account avatar and navigate to Aliases."
-msgstr "Asegúrese de que está conectado a su cuenta. En la pantalla principal, haga clic en el avatar de la cuenta y navegue hasta Aliases."
+msgstr ""
 
 #: ../../02_intermediate.rst:201
 msgid ""
 "On the next screen select Create New and then type in the name of the "
 "alias and click Create New again to complete the process."
-msgstr "En la siguiente pantalla, seleccione Crear Nuevo y, a continuación, escriba el nombre del alias y vuelva a hacer clic en Crear Nuevo para completar el proceso."
+msgstr ""
 
 #: ../../02_intermediate.rst:204
 msgid "View Aliases"
-msgstr "Ver Aliases"
+msgstr ""
 
 #: ../../02_intermediate.rst:206
 msgid ""
@@ -572,7 +572,7 @@ msgid ""
 "`DecentralChain Explorer <https://decentralscan.com/>`_. To do this, find"
 " an account by its :ref:`address <02_intermediate:Address>` and switch to"
 " the Aliases tab."
-msgstr "La lista de aliases de la cuenta, así como otros datos de la cadena de bloques, son pública y puede ser leídos por cualquiera. Por ejemplo, puede ver los alias en `DecentralChain Explorer <https://decentralscan.com/>`_. Para ello, busque una cuenta por su :ref:`dirección <02_intermediate:Address>` y cambie a la pestaña Aliases."
+msgstr ""
 
 #: ../../02_intermediate.rst:208
 msgid ""
@@ -580,29 +580,29 @@ msgid ""
 "list of aliases by address using the GET/alias/by-address/{address} "
 "method and an address by alias using the GET /alias/by-alias/{alias} "
 "method."
-msgstr "Utilizando :ref:`Node REST API <documentation:placeholder>`, puede obtener una lista de alias por dirección utilizando el método GET/alias/by-address/{address} y una dirección por alias utilizando el método GET /alias/by-alias/{alias}."
+msgstr ""
 
 #: ../../02_intermediate.rst:211 ../../02_intermediate.rst:718
 #: ../../02_intermediate.rst:2691
 msgid "Binary Format"
-msgstr "Formato Binario"
+msgstr ""
 
 #: ../../02_intermediate.rst:213
 msgid ""
 "See the :ref:`alias binary format <02_intermediate:Alias Binary Format>` "
 "article."
-msgstr "Consulte el artículo del :ref:`formato binario de alias <02_intermediate:Alias Binary Format>`."
+msgstr ""
 
 #: ../../02_intermediate.rst:216
 msgid "Account Balance"
-msgstr "Saldo de la Cuenta"
+msgstr ""
 
 #: ../../02_intermediate.rst:218
 msgid ""
 "Account balance is the amount of a :ref:`token (asset) "
 "<02_intermediate:Token (Asset)>` that belongs to the :ref:`account "
 "<02_intermediate:Account>`."
-msgstr "El saldo de la cuenta es el monto de un :ref:`token (activo) <02_intermediate:Token (Asset)>` que pertenece a la :ref:`cuenta <02_intermediate:Account>`."
+msgstr ""
 
 #: ../../02_intermediate.rst:220
 msgid ""
@@ -612,31 +612,31 @@ msgid ""
 "of the Y token on the account is called the account balance in Y token. "
 "If there is no Y token on the account, it is said that the account "
 "balance in Y token is equal to zero."
-msgstr "Una cuenta puede almacenar diferentes tokens en diferentes cantidades. Por ejemplo, una cuenta puede tener :math:`50` :ref:`DecentralCoins <02_intermediate:DecentralCoin>` y USD-N al mismo tiempo. La cantidad del token Y en la cuenta se denomina saldo de la cuenta en token Y. Si no hay ningún token Y en la cuenta, se dice que el saldo de la cuenta en el token Y es igual a cero."
+msgstr ""
 
 #: ../../02_intermediate.rst:223
 msgid "Account Balance in DecentralCoin"
-msgstr "Saldo de la Cuenta en DecentralCoin"
+msgstr ""
 
 #: ../../02_intermediate.rst:225
 msgid "There are four types of balances in DecentralChain:"
-msgstr "Hay cuatro tipos de saldos en DecentralChain:"
+msgstr ""
 
 #: ../../02_intermediate.rst:227
 msgid "regular"
-msgstr "regular"
+msgstr ""
 
 #: ../../02_intermediate.rst:228
 msgid "available"
-msgstr "disponible"
+msgstr ""
 
 #: ../../02_intermediate.rst:229
 msgid "effective"
-msgstr "efectivo"
+msgstr ""
 
 #: ../../02_intermediate.rst:230
 msgid "generating"
-msgstr "generando"
+msgstr ""
 
 #: ../../02_intermediate.rst:232
 msgid ""
@@ -644,15 +644,15 @@ msgid ""
 "<02_intermediate:DecentralCoin>` that belongs directly to the account. "
 "Thе other types of balances are determined counting :ref:`leased "
 "<02_intermediate:Leased Proof of Stake>` DecentralCoins."
-msgstr "El saldo regular es el monto de :ref:`DecentralCoins <02_intermediate:DecentralCoin>` que pertenece directamente a la cuenta. Los otros tipos de saldos se determinan contando los DecentralCoins :ref:`arrendados <02_intermediate:Leased Proof of Stake>` ."
+msgstr ""
 
 #: ../../02_intermediate.rst:234
 msgid "Let us introduce the following notation:"
-msgstr "Introduzcamos la siguiente notación:"
+msgstr ""
 
 #: ../../02_intermediate.rst:242
 msgid "Then:"
-msgstr "Entonces:"
+msgstr ""
 
 #: ../../02_intermediate.rst:250
 msgid ""
@@ -661,17 +661,17 @@ msgid ""
 "blocks, you need a generating balance of at least :math:`10000` "
 "DecentralCoins. The larger the generating balance, the greater the chance"
 " to add the next block is."
-msgstr "El saldo generador de la cuenta asociada a un :ref:`nodo <02_intermedio:Nodo>` afecta a la capacidad de participar en la generación de bloques. Para generar bloques, se necesita un saldo generador de al menos :math:`10000` DecentralCoins. Cuanto mayor sea el saldo generador, mayor será la posibilidad de añadir el siguiente bloque."
+msgstr ""
 
 #: ../../02_intermediate.rst:253
 msgid "View Account Balance"
-msgstr "Ver el Saldo de la Cuenta"
+msgstr ""
 
 #: ../../02_intermediate.rst:255
 msgid ""
 "The balances of any account, as well as other blockchain data, are public"
 " and can be read by anyone."
-msgstr "Los saldos de cualquier cuenta, así como otros datos de la cadena de bloques, son públicos y pueden ser leídos por cualquiera."
+msgstr ""
 
 #: ../../02_intermediate.rst:257
 msgid ""
@@ -682,21 +682,21 @@ msgid ""
 "under the address, balances in other assets are at the Assets tab, and "
 ":ref:`non-fungible tokens (NFT) <02_intermediate:Non-Fungible Token>` are"
 " at the Non-fungible tokens tab."
-msgstr "Por ejemplo, puede ver la lista de tokens y su monto en la cuenta en `DecentralChain Explorer <https://decentralscan.com/>`_. Para ello, busque una cuenta por su dirección o su alias. Los saldos en :ref:`DecentralCoin <02_intermediate:DecentralCoin>` se muestran justo debajo de la dirección, los saldos en otros activos se encuentran en la pestaña Activos, y los :ref:`tokens no fungibles (NFT) <02_intermediate:Non-Fungible Token>` se encuentran en la pestaña Tokens no fungibles."
+msgstr ""
 
 #: ../../02_intermediate.rst:262
 msgid "Top up Balance"
-msgstr "Recarga de Saldo"
+msgstr ""
 
 #: ../../02_intermediate.rst:264
 msgid ""
 "You can buy DecentralCoin tokens at `Decentral.Exchange "
 "<https://decentral.exchange/>`_."
-msgstr "Puedes comprar DecentralCoins en `Decentral.Exchange <https://decentral.exchange/>`_."
+msgstr ""
 
 #: ../../02_intermediate.rst:267 ../../02_intermediate.rst:4260
 msgid "Account Data Storage"
-msgstr "Almacenamiento de Datos de la Cuenta"
+msgstr ""
 
 #: ../../02_intermediate.rst:269
 msgid ""
@@ -704,38 +704,38 @@ msgid ""
 ":ref:`account <02_intermediate:Account>`. The key of each entry is a "
 "unique string. The value is the data being stored, it’s store using one "
 "of the types:"
-msgstr "El almacenamiento de datos de la cuenta es un almacenamiento clave-valor asociado a una :ref:`cuenta <02_intermediate:Account>`. La clave de cada entrada es una cadena única. El valor es el dato que se almacena, se almacena utilizando uno estos dos tipos:"
+msgstr ""
 
 #: ../../02_intermediate.rst:272
 #: ../../_static/02_intermediate/tables/034_Blockchain-Data-Types.csv:1
 msgid "String"
-msgstr "Cadena de caracteres"
+msgstr ""
 
 #: ../../02_intermediate.rst:273
 #: ../../_static/02_intermediate/tables/034_Blockchain-Data-Types.csv:1
 msgid "Boolean"
-msgstr "Booleano"
+msgstr ""
 
 #: ../../02_intermediate.rst:274
 msgid "Integral"
-msgstr "Entero"
+msgstr ""
 
 #: ../../02_intermediate.rst:275
 #: ../../_static/02_intermediate/tables/035_Address-Binary-Format.csv:1
 #: ../../_static/02_intermediate/tables/036_Alias-Binary-Format.csv:1
 msgid "Array of bytes"
-msgstr "Matriz de bytes"
+msgstr ""
 
 #: ../../02_intermediate.rst:277
 msgid ""
 "The size of an account data storage is unlimited. For key and value size "
 "limitations, see the :ref:`data transaction <02_intermediate:Data "
 "Transaction>` article."
-msgstr "El tamaño del almacenamiento de datos de una cuenta es ilimitado. Para conocer las limitaciones de tamaño de las claves y los valores, consulte el artículo :ref:`transacción de datos <02_intermediate:Data Transaction>`."
+msgstr ""
 
 #: ../../02_intermediate.rst:280
 msgid "View Account Data"
-msgstr "Ver Datos de la Cuenta"
+msgstr ""
 
 #: ../../02_intermediate.rst:282
 msgid ""
@@ -744,25 +744,25 @@ msgid ""
 "`DecentralChain Explorer <https://decentralscan.com/>`_. To do this, find"
 " an account by its :ref:`address <02_intermediate:Address>` or "
 ":ref:`alias <02_intermediate:Alias>` and switch to the Data tab."
-msgstr "Los datos almacenados de cualquier cuenta, así como otros datos de la cadena de bloques, son públicos y pueden ser leídos por cualquiera. Por ejemplo, pueden verse las entradas de datos en `DecentralChain Explorer <https://decentralscan.com/>`_. Para ello, busque una cuenta por su :ref:`dirección <02_intermediate:Address>` o :ref:`alias <02_intermediate:Alias>` y cambie a la pestaña Datos."
+msgstr ""
 
 #: ../../02_intermediate.rst:287
 msgid "Add, Modify, Delete Entries"
-msgstr "Añadir, Modificar y Eliminar Entradas"
+msgstr ""
 
 #: ../../02_intermediate.rst:289
 msgid ""
 "The account owner can add, modify or delete entries of the account data "
 "storage via a :ref:`data transaction <02_intermediate:Data Transaction>`."
-msgstr "El propietario de la cuenta puede añadir, modificar o eliminar entradas del almacenamiento de datos de la cuenta a través de una :ref:`transacción de datos <02_intermediate:Data Transaction>`."
+msgstr ""
 
 #: ../../02_intermediate.rst:291
 msgid ""
 "A :ref:`dApp script <02_intermediate:dApp and Smart Account>` can add, "
 "modify or delete entries in the dApp's data storage as a result of an "
-":ref:`invoke script transaction <02_intermediate:Invoke Script Transaction>` "
-" via script actions:"
-msgstr "Un script :ref:`dApp <02_intermediate:dApp and Smart Account>` puede añadir, modificar o eliminar entradas en el almacenamiento de datos de la dApp como resultado de :ref:`transacciones de invocar scripts <02_intermediate:Invoke Script Transaction>` mediante acciones de script:"
+":ref:`invoke script <02_intermediate:Invoke Script Transaction>` "
+"transaction via script actions:"
+msgstr ""
 
 #: ../../02_intermediate.rst:293
 msgid ":ref:`BinaryEntry <03_advanced:BinaryEntry>`"
@@ -786,7 +786,7 @@ msgstr ""
 
 #: ../../02_intermediate.rst:300
 msgid "dApp and Smart Account"
-msgstr "dApp y Cuenta Inteligente"
+msgstr ""
 
 #: ../../02_intermediate.rst:302
 msgid ""
@@ -797,19 +797,19 @@ msgid ""
 "<02_intermediate:Invoke Script Transaction>`. Callable functions can "
 "accept payments to the dApp and also perform actions applied to the "
 "blockchain:"
-msgstr "Una cuenta con un script asignado se convierte en una dApp o cuenta inteligente. dApp es la cuenta con el script :ref:`dApp <03_advanced:dApp Script>` asignado. dApp es una aplicación cuyas funciones pueden ser llamadas desde otras cuentas a través de :ref:`transacciones de invocar scripts <02_intermediate:Invoke Script Transaction>`. Las funciones invocables pueden aceptar pagos a la dApp y también realizar acciones aplicadas a la blockchain:"
+msgstr ""
 
 #: ../../02_intermediate.rst:305
 msgid "Add, modify or delete entries of the dApp account data storage."
-msgstr "Añadir, modificar o eliminar entradas del almacenamiento de datos de la cuenta dApp."
+msgstr ""
 
 #: ../../02_intermediate.rst:306
 msgid "Transfer tokens from the dApp balance."
-msgstr "Transferir tokens del saldo de la dApp."
+msgstr ""
 
 #: ../../02_intermediate.rst:307
 msgid "Issue, reissue, burn tokens on behalf of the dApp, sponsorship setup."
-msgstr "Emitir, reemitir, quemar tokens en nombre de la dApp, configuración del patrocinio."
+msgstr ""
 
 #: ../../02_intermediate.rst:309
 msgid ""
@@ -819,34 +819,34 @@ msgid ""
 "replaces the default verification that is used  to verify the sender's "
 "signature and allows you to set more complex rules, such as "
 "multisignature."
-msgstr "Además, un script dApp puede incluir la función verificadora que permite o deniega las transacciones y órdenes que se envían en nombre de la cuenta dApp con base en las condiciones especificadas. La función verificadora sustituye a la verificación por defecto que se utiliza para verificar la firma del remitente y permite establecer reglas más complejas, como la multifirma."
+msgstr ""
 
 #: ../../02_intermediate.rst:311
 msgid ""
 "Using dApps, you can implement various blockchain-empowered applications:"
 " gaming and gambling, DeFi, digital identity, supply chains, and many "
 "others."
-msgstr "Mediante las dApps, se pueden implementar diversas aplicaciones potenciadas por blockchain: juegos de azar y apuestas, DeFi, identidad digital, cadenas de suministro y muchas otras."
+msgstr ""
 
 #: ../../02_intermediate.rst:313
 msgid ""
 "A smart account is an account with the :ref:`account script "
 "<03_advanced:Account Script>` assigned. The account script is similar to "
 "a verifier function of a dApp script. Please note:"
-msgstr "Una cuenta inteligente es una cuenta con el :ref:`script de cuenta <03_advanced:Account Script>` asignado. El script de cuenta es similar a la función de verificación de un script de dApp. Tenga en cuenta:"
+msgstr ""
 
 #: ../../02_intermediate.rst:315
 msgid ""
 "To assign a script to an account, you have to send a :ref:`set script "
 "transaction <02_intermediate:Set Script Transaction>` on behalf of the "
 "account."
-msgstr "Para asignar un script a una cuenta, tienes que enviar una :ref:`transacción para asignar scripts <02_intermediate:Set Script Transaction>` en nombre de la cuenta."
+msgstr ""
 
 #: ../../02_intermediate.rst:316
 msgid ""
 "You can also change or delete the script via the set script transaction, "
 "unless the script itself prohibits it."
-msgstr "También se puede modificar o eliminar el script a través de la transacción para asignar scripts, a menos que el propio script lo prohíba."
+msgstr ""
 
 #: ../../02_intermediate.rst:317
 msgid ""
@@ -855,25 +855,25 @@ msgid ""
 "DecentralCoins if the complexity of sender's account script or dApp "
 "script verifier function exceeds the :ref:`sender complexity threshold "
 "<03_advanced:Limitations>`."
-msgstr "La :ref:`tarifa mínima <02_intermediate:Minimum Fee>` para cualquier transacción enviada desde una dApp o cuenta inteligente se incrementa en :math:`0.004` DecentralCoins si la complejidad del script de la cuenta del remitente o de la función verificadora del script de la dApp supera el :ref:`límite de complejidad del remitente <03_advanced:Limitations>`."
+msgstr ""
 
 #: ../../02_intermediate.rst:321
 msgid "Token (Asset)"
-msgstr "Token (Activo)"
+msgstr ""
 
 #: ../../02_intermediate.rst:323
 msgid "Token is a digital asset on the blockchain. A token can be used:"
-msgstr "Un token representa un activo digital en la cadena de bloques. Un token puede ser utilizado:"
+msgstr ""
 
 #: ../../02_intermediate.rst:325
 msgid ""
 "As a cryptocurrency to pay for goods and services within a project, as "
 "well as for crowdfunding;"
-msgstr "Como criptomoneda para pagar bienes y servicios dentro de un proyecto, así como para el financiamiento colectivo;"
+msgstr ""
 
 #: ../../02_intermediate.rst:326
 msgid "As an object or resource in games etc."
-msgstr "Como objeto o recurso en los juegos, etc."
+msgstr ""
 
 #: ../../02_intermediate.rst:328
 msgid ""
@@ -882,18 +882,18 @@ msgid ""
 "ecosystem. DecentralCoin is the native token on the DecentralChain "
 "blockchain. :ref:`More about DecentralCoin "
 "<02_intermediate:DecentralCoin>`."
-msgstr "Un token puede representar un objeto físico o intangible. Las palabras "token" y "activo" se utilizan indistintamente en el ecosistema DecentralChain. DecentralCoin es el token nativo en la blockchain de DecentralChain. :ref:`Más sobre DecentralCoin <02_intermediate:DecentralCoin>`."
+msgstr ""
 
 #: ../../02_intermediate.rst:331
 msgid ""
 "All other tokens are custom tokens issued on behalf of some account. Any "
 "account that has enough DecentralCoins to pay the fee can issue its own "
 "token. The new token is immediately available:"
-msgstr "Todos los demás tokens son fichas personalizadas emitidas en nombre de alguna cuenta. Cualquier cuenta que tenga suficientes DecentralCoins para pagar la cuota puede emitir su propio token. El nuevo token está disponible inmediatamente:"
+msgstr ""
 
 #: ../../02_intermediate.rst:333
 msgid "For transfers between accounts,"
-msgstr "Para las transferencias entre cuentas,"
+msgstr ""
 
 #: ../../02_intermediate.rst:334
 msgid ""
@@ -901,52 +901,52 @@ msgid ""
 "(except for :ref:`NFTs <02_intermediate:Non-Fungible Token>`; :ref:`smart"
 " assets <02_intermediate:Smart Asset>` trading is temporarily "
 "unavailable),"
-msgstr "Para hacer trading en `Decentral.Exchange <https://decentral.exchange/>`_ (excepto para :ref:`NFTs <02_intermediate:Non-Fungible Token>`; el trading de :ref:`activo inteligente <02_intermediate:Smart Asset>` no está disponible temporalmente),"
+msgstr ""
 
 #: ../../02_intermediate.rst:335
 msgid ""
 "For payments attached to dApp :ref:`script invocation "
 "<02_intermediate:Invoke Script Transaction>`."
-msgstr "Para los pagos adjuntos a la dApp en :ref:`transacciones de invocar scripts <02_intermediate:Invoke Script Transaction>`."
+msgstr ""
 
 #: ../../02_intermediate.rst:338
 msgid "Token Issue"
-msgstr "Emisión de Tokens"
+msgstr ""
 
 #: ../../02_intermediate.rst:340
 msgid ""
 "You can use `Decentral.Exchange <https://decentral.exchange/>`_ online to"
 " create an asset."
-msgstr "Puede utilizar `Decentral.Exchange <https://decentral.exchange/>`_ en línea para crear un activo."
+msgstr ""
 
 #: ../../02_intermediate.rst:342
 msgid ""
 "On the main screen make sure you are logged into your account, then click"
 " on Create Token."
-msgstr "En la pantalla principal, asegúrese de haber iniciado sesión en su cuenta y, a continuación, haga clic en Crear Token."
+msgstr ""
 
 #: ../../02_intermediate.rst:343
 msgid "On the next screen specify the token parameters:"
-msgstr "En la siguiente pantalla especifique los parámetros del token:"
+msgstr ""
 
 #: ../../02_intermediate.rst:345
 msgid ""
 "Name: The name of the created asset can not be shorter than :math:`4` "
 "characters."
-msgstr "Nombre: El nombre del activo creado no puede ser más corto que :math:`4` caracteres."
+msgstr ""
 
 #: ../../02_intermediate.rst:346
 msgid ""
 "Description: A short description where you can include website links that"
 " can be particularly useful."
-msgstr "Descripción: Una breve descripción en la que puedes incluir enlaces a sitios web que puedan ser especialmente útiles."
+msgstr ""
 
 #: ../../02_intermediate.rst:347
 msgid ""
 "Quantity: Define the total supply of your asset. The total supply can "
 "either be fixed at the issuance or increased later by making the asset "
 "re-issuable."
-msgstr "Cantidad: Defina la oferta total de su activo. La oferta total puede fijarse en el momento de la emisión o aumentarse posteriormente haciendo que el activo sea reemitible."
+msgstr ""
 
 #: ../../02_intermediate.rst:348
 msgid ""
@@ -954,39 +954,39 @@ msgid ""
 "set to reissuable, the issuer can increase the supply at any time (If "
 "reissuable is selected when the asset is created, it can be changed to "
 "not reissuable at a later stage)."
-msgstr "Reeditable: Define si la oferta total del activo puede ser aumentada posteriormente. Si se establece como reemitible, el emisor puede aumentar el suministro en cualquier momento (Si se selecciona reemitible cuando se crea el activo, se puede cambiar a no reemitible en una etapa posterior)."
+msgstr ""
 
 #: ../../02_intermediate.rst:349
 msgid ""
 "Decimals: Specify how many decimals your asset will have. For example, if"
 " you specify :math:`8` decimals, as in Bitcoin, your asset can be divided"
 " down to :math:`0.00000001`."
-msgstr "Decimales: Especifique cuántos decimales tendrá su activo. Por ejemplo, si especifica :math:`8` decimales, como en el caso de Bitcoin, su activo puede dividirse hasta :math:`0.00000001`."
+msgstr ""
 
 #: ../../02_intermediate.rst:350
 msgid ""
 ":ref:`Smart asset <02_intermediate:Smart Asset>`: A smart asset is an "
 "asset with an attached script that places conditions on every transaction"
 " made for the asset in question."
-msgstr ":ref:`Activo inteligente <02_intermediate:Smart Asset>`: Un activo inteligente es un activo con un script adjunto que pone condiciones a cada transacción realizada para el activo en cuestión."
+msgstr ""
 
 #: ../../02_intermediate.rst:351
 msgid "Script (for issuing a smart asset)."
-msgstr "Script (para emitir un activo inteligente)."
+msgstr ""
 
 #: ../../02_intermediate.rst:353
 msgid ""
 "Before creating a new asset, carefully read the creation conditions. If "
 "necessary, change the name of the asset according to the conditions, then"
 " select the I understand... checkbox and click Generate."
-msgstr "Antes de crear un nuevo activo, lea atentamente las condiciones de creación. Si es necesario, cambie el nombre del activo de acuerdo con las condiciones, luego seleccione la casilla Entiendo... y haga clic en Generar."
+msgstr ""
 
 #: ../../02_intermediate.rst:354
 msgid ""
 "On the next screen double-check the entered data and if everything is "
 "correct click Send to finish the creation or click Go Back to make "
 "corrections.."
-msgstr "En la siguiente pantalla vuelva a comprobar los datos introducidos y si todo es correcto haga clic en Enviar para finalizar la creación o en Volver para hacer correcciones.."
+msgstr ""
 
 #: ../../02_intermediate.rst:356
 msgid ""
@@ -999,7 +999,7 @@ msgid ""
 "action <03_advanced:Issue>`. The minimum fee for invoke script "
 "transaction is increased by :math:`1` DecentralCoin for each non-NFT "
 "token issued."
-msgstr "La cuota de transacción es :math:`1` DecentralCoin para un token normal o :math:`0,001` DecentralCoins para un :ref:`token no fungible (NFT) <02_intermediate:Non-Fungible Token>`. Además, el token puede ser emitido por el :ref:`dApp <03_advanced:dApp Script>` script como resultado de :ref:`transacciones de invocar scripts <02_intermediate:Invoke Script Transaction>` cuando el resultado de la función invocable contiene la acción :ref:`emitir <03_advanced:Issue>`. La tarifa mínima para invocar una transacción de script se incrementa en :math:`1` DecentralCoin por cada token no NFT emitido."
+msgstr ""
 
 #: ../../02_intermediate.rst:360
 #: ../../_static/02_intermediate/tables/080_Mass-Transaction-Binary-Format-V1.csv:1
@@ -1007,17 +1007,17 @@ msgstr "La cuota de transacción es :math:`1` DecentralCoin para un token normal
 #: ../../_static/02_intermediate/tables/083_Reissue-Transaction-Binary-Format-V1.csv:1
 #: ../../_static/02_intermediate/tables/089_Sponsor-Fee-Transaction-Binary-Format-V1.csv:1
 msgid "Token ID"
-msgstr "Id del Token"
+msgstr ""
 
 #: ../../02_intermediate.rst:362
 msgid "Token ID is a byte array calculated as follows:"
-msgstr "El ID del token es una matriz de bytes calculada de la siguiente forma:"
+msgstr ""
 
 #: ../../02_intermediate.rst:364
 msgid ""
 "If the token is issued by :ref:`issue transaction <02_intermediate:Issue "
 "Transaction>`, the token ID is the same as the transaction ID."
-msgstr "Si el token es emitido por :ref:`emitir transacción <02_intermediate:Issue Transaction>`, el ID del token es el mismo que el de la transacción."
+msgstr ""
 
 #: ../../02_intermediate.rst:365
 msgid ""
@@ -1027,27 +1027,27 @@ msgid ""
 "the :ref:`issue action <03_advanced:Issue>`, the token ID is calculated "
 "as the BLAKE2b-256 hash of the byte array containing transaction ID and "
 "the fields of the Issue structure."
-msgstr "Si el token es emitido por :ref:`transacciones de invocar scripts <02_intermediate:Invoke Script Transaction>` cuando la función invocable del :ref:`dApp script <02_intermediate:dApp and Smart Account>` realizó la acción :ref:`emitir <03_advanced:Issue>`, el ID del token se calcula como el hash BLAKE2b-256 de la matriz de bytes que contiene el ID de la transacción y los campos de la estructura resultante de dicha emisión."
+msgstr ""
 
 #: ../../02_intermediate.rst:367
 msgid ""
 "In the :ref:`Node REST API <documentation:placeholder>`, the token "
 "identifier is encoded in base58. For example:"
-msgstr "En la :ref:`API REST de Node <documentation:placeholder>`, el identificador del token se codifica en base58. Por ejemplo:"
+msgstr ""
 
 #: ../../02_intermediate.rst:373
 msgid ""
 "The :ref:`DecentralCoin <02_intermediate:DecentralCoin>` token has no "
 "identifier. The Node REST API uses null for DecentralCoin."
-msgstr "El token :ref:`DecentralCoin <02_intermediate:DecentralCoin>` no tiene identificador. La API REST de Node utiliza null para DecentralCoin."
+msgstr ""
 
 #: ../../02_intermediate.rst:376
 msgid "Token Operations"
-msgstr "Operaciones con Tokens"
+msgstr ""
 
 #: ../../02_intermediate.rst:378
 msgid "Transfer to another account"
-msgstr "Transferencia a otra cuenta"
+msgstr ""
 
 #: ../../02_intermediate.rst:380
 msgid ""
@@ -1057,11 +1057,11 @@ msgid ""
 "Smart Account>` can transfer the token via a :ref:`script transfer script"
 " action <03_advanced:Issue>` as a result of an :ref:`invoke script "
 "transaction <02_intermediate:Invoke Script Transaction>`."
-msgstr "Se puede hacer mediante :ref:`transferencias <02_intermediate:Transfer Transaction>` o :ref:`transferencias en masa <02_intermediate:Mass Transfer Transaction>`. Un :ref:`dApp <02_intermediate:dApp and Smart Account>` script puede transferir el token a través de una acción de transferencia de script como resultado de :ref:`transacciones de invocar scripts <02_intermediate:Invoke Script Transaction>`."
+msgstr ""
 
 #: ../../02_intermediate.rst:383
 msgid "Exchange (trade deal)"
-msgstr "Intercambio (Acuerdo Comercial)"
+msgstr ""
 
 #: ../../02_intermediate.rst:385
 msgid ""
@@ -1070,11 +1070,11 @@ msgid ""
 " order to sell a token. The matcher combines buy and sell orders with "
 "suitable parameters and creates an :ref:`exchange transaction "
 "<02_intermediate:Exchange Transaction>`."
-msgstr "Tres cuentas pueden participar en el intercambio: un usuario crea una :ref:`orden <02_intermediate:Order>` para comprar un token, el otro crea una orden para vender un token. El comparador combina las órdenes de compra y venta con los parámetros adecuados y crea una  :ref:`transacción de intercambio <02_intermediate:Exchange Transaction>`."
+msgstr ""
 
 #: ../../02_intermediate.rst:387
 msgid "Burning"
-msgstr "Quema"
+msgstr ""
 
 #: ../../02_intermediate.rst:389
 msgid ""
@@ -1085,32 +1085,32 @@ msgid ""
 "transaction <02_intermediate:Burn Transaction>`. A dApp script can burn "
 "the token via a :ref:`burn script action <03_advanced:Burn>` as a result "
 "of the Invoke script transaction."
-msgstr "Disminuye la cantidad de tokens en la cuenta y, por tanto, la cantidad total de tokens en la blockchain. Cualquier propietario de un token puede quemarlo, no sólo el emisor. Es imposible quemar :ref:`DecentralCoin <02_intermediate:DecentralCoin>`. Se puede hacer a través de una transacción de :ref:`quemado <02_intermediate:Burn Transaction>`. Un dApp script puede quemar el token a través de una acción :ref:`quemar <03_advanced:Burn>` como resultado de transacciones de invocar scripts."
+msgstr ""
 
 #: ../../02_intermediate.rst:392
 msgid "Payment to :ref:`dApp <02_intermediate:dApp and Smart Account>`"
-msgstr "Pago a :ref:`dApp <02_intermediate:dApp y Smart Account>`."
+msgstr ""
 
 #: ../../02_intermediate.rst:394
 msgid ""
 "An :ref:`invoke script transaction <02_intermediate:Invoke Script "
 "Transaction>` can contain up to two payments to the dApp. Payment amount "
 "and token are available to the callable function."
-msgstr "Las :ref:`transacciones de invocar scripts <02_intermediate:Invoke Script Transaction>` puede contener hasta dos pagos a la dApp. El importe del pago y el token están disponibles para la función invocable."
+msgstr ""
 
 #: ../../02_intermediate.rst:397
 msgid "Operations Available Only to Issuer"
-msgstr "Operaciones Disponibles Sólo Para el Emisor"
+msgstr ""
 
 #: ../../02_intermediate.rst:399
 msgid ""
 "The following token operations can only be performed by the account that "
 "issued the token:"
-msgstr "Las siguientes operaciones con tokens sólo pueden ser realizadas por la cuenta que emitió el token:"
+msgstr ""
 
 #: ../../02_intermediate.rst:401
 msgid "Sponsorship setup"
-msgstr "Configuración del Patrocinio"
+msgstr ""
 
 #: ../../02_intermediate.rst:403
 msgid ""
@@ -1118,15 +1118,15 @@ msgid ""
 "fees in this token (instead of DecentralCoins) for invoke script "
 "transactions and transfer transactions. :ref:`More about sponsorship "
 "<02_intermediate:Sponsored Fees>`. Enabling or disabling sponsorship can "
-"be done via a :ref:`sponsor fee transaction <02_intermediate:Sponsor Fee "
+"be done via a :ref:`sponsor fee transaction<02_intermediate:Sponsor Fee "
 "Transaction>`. A dApp script can set up sponsorship using a "
 ":ref:`SponsorFee <03_advanced:SponsorFee>` as a result of the invoke "
 "script transaction."
-msgstr "El emisor del token puede habilitar el patrocinio, que permite a todos los usuarios pagar cuotas en este token (en lugar de DecentralCoins) para transacciones de invocar scripts y transacciones de transferencia. :ref:`Más sobre el patrocinio <02_intermediate:Sponsored Fees>`. Habilitar o deshabilitar el patrocinio se puede hacer a través de una transacción de cuota de patrocinio <02_intermediate:Sponsor Fee Transaction>`.  Un dApp script puede configurar el patrocinio mediante una :ref:`cuota de patrocinio <03_advanced:SponsorFee>` como resultado de transacciones de invocar scripts."
+msgstr ""
 
 #: ../../02_intermediate.rst:405
 msgid "Reissue"
-msgstr "Reemitir"
+msgstr ""
 
 #: ../../02_intermediate.rst:407
 msgid ""
@@ -12136,13 +12136,4 @@ msgstr ""
 #: ../../02_intermediate.rst:4627
 msgid "Z"
 msgstr ""
-
-#~ msgid "Create a lease"
-#~ msgstr ""
-
-#~ msgid "DecentralChain-M5 operations"
-#~ msgstr ""
-
-#~ msgid "DecentralChain-M5 reward mechanisms"
-#~ msgstr ""
 
