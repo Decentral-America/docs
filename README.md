@@ -1,8 +1,6 @@
+![docs_pages_workflow](https://github.com/Decentral-America/docs/actions/workflows/docs_pages_workflow.yml/badge.svg)
+<a href="https://gitlocalize.com/repo/7792/whole_project?utm_source=badge"> <img src="https://gitlocalize.com/repo/7792/whole_project/badge.svg" /> </a>
 # DecentralChain
-
-<p align="center">
-  <a href="https://"><img src="docs/_static/image.jpg?raw=true" alt="alt"/></a>
-</p>
 
 ## Documentation
 
