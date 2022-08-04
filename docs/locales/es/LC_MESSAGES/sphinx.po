@@ -1,0 +1,44 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Blockchain Costa Rica
+# This file is distributed under the same license as the DecentralChain
+# package.
+# Josue Rojas <josue.rojas@blockchaincostarica.org>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: DecentralChain master\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-04 15:14-0600\n"
+"PO-Revision-Date: 2022-08-04 15:14-0600\n"
+"Last-Translator: Josue Rojas <josue.rojas@blockchaincostarica.org>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.10.3\n"
+
+#: ../../_templates/versions.html:12
+msgid "Languages"
+msgstr "Lenguajes"
+
+#: ../../_templates/versions.html:22
+msgid "Versions"
+msgstr ""
+
+#: ../../_templates/versions.html:32
+msgid "Downloads"
+msgstr ""
+
+#: ../../_templates/versions.html:40
+msgid "On Read the Docs"
+msgstr "Sobre Read the Docs"
+
+#: ../../_templates/versions.html:42
+msgid "Project Home"
+msgstr "Inicio"
+
+#: ../../_templates/versions.html:45
+msgid "Builds"
+msgstr "Ediciones"
+
