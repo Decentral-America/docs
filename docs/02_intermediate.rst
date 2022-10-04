@@ -4141,7 +4141,11 @@ Learn more about :ref:`update asset info transaction <02_intermediate:Update Ass
 Transaction Proofs Binary Format
 --------------------------------
 
-Tableholder
+.. csv-table:: Transaction Proofs Binary Format
+ :file: _static/02_intermediate/tables/094_Transaction-Proofs-Binary-Format.csv
+ :header-rows: 1 
+ :class: longtable
+ :widths: 1 3 3 1 3
 
 The maximum number of proofs is :math:`8`.
 
@@ -4317,7 +4321,7 @@ B
 
     A block height is the :term:`block’s<Block>` sequence number in the :term:`blockchain<Blockchain>`.
 
-  Blockchain Height
+  Blockchain Height /#/ Altura de la Cadena de Bloques
 
     A blockchain height is a sequence number of the last :term:`block<Block>` in the :term:`blockchain<Blockchain>`.
 
