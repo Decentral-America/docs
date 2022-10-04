@@ -2,16 +2,16 @@
 # Copyright (C) 2021, Blockchain Costa Rica
 # This file is distributed under the same license as the DecentralChain
 # package.
-# Josue Rojas <josue.rojas@blockchaincostarica.org>, 2022.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: DecentralChain master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-04 15:14-0600\n"
-"PO-Revision-Date: 2022-08-04 15:14-0600\n"
-"Last-Translator: Josue Rojas <josue.rojas@blockchaincostarica.org>\n"
+"POT-Creation-Date: 2022-10-04 08:49-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -124,7 +124,7 @@ msgid ""
 "<02_intermediate:dApp and Smart Account>`."
 msgstr ""
 
-#: ../../02_intermediate.rst:45 ../../02_intermediate.rst:4256
+#: ../../02_intermediate.rst:45 ../../02_intermediate.rst:4260
 msgid "Account"
 msgstr ""
 
@@ -391,7 +391,7 @@ msgid ""
 "option."
 msgstr ""
 
-#: ../../02_intermediate.rst:143 ../../02_intermediate.rst:4275
+#: ../../02_intermediate.rst:143 ../../02_intermediate.rst:4279
 msgid "Address"
 msgstr ""
 
@@ -472,7 +472,7 @@ msgstr ""
 msgid "Copy the address and use it, or you can also use the generated QR code."
 msgstr ""
 
-#: ../../02_intermediate.rst:174 ../../02_intermediate.rst:4283
+#: ../../02_intermediate.rst:174 ../../02_intermediate.rst:4287
 #: ../../_static/02_intermediate/tables/036_Alias-Binary-Format.csv:1
 msgid "Alias"
 msgstr ""
@@ -694,7 +694,7 @@ msgid ""
 "<https://decentral.exchange/>`_."
 msgstr ""
 
-#: ../../02_intermediate.rst:267 ../../02_intermediate.rst:4260
+#: ../../02_intermediate.rst:267 ../../02_intermediate.rst:4264
 msgid "Account Data Storage"
 msgstr ""
 
@@ -1206,7 +1206,7 @@ msgid ""
 " token."
 msgstr ""
 
-#: ../../02_intermediate.rst:438 ../../02_intermediate.rst:4554
+#: ../../02_intermediate.rst:438 ../../02_intermediate.rst:4558
 msgid "Smart Asset"
 msgstr ""
 
@@ -1315,7 +1315,7 @@ msgid ""
 "DecentralCoins."
 msgstr ""
 
-#: ../../02_intermediate.rst:470 ../../02_intermediate.rst:4429
+#: ../../02_intermediate.rst:470 ../../02_intermediate.rst:4433
 msgid "Leasing"
 msgstr ""
 
@@ -1421,6 +1421,7 @@ msgstr ""
 #: ../../_static/02_intermediate/tables/091_Transfer-Transaction-Binary-Format-V2.csv:1
 #: ../../_static/02_intermediate/tables/092_Transfer-Transaction-Binary-Format-V1.csv:1
 #: ../../_static/02_intermediate/tables/093_Update-Asset-Info-Transaction-Binary-Format-V1.csv:1
+#: ../../_static/02_intermediate/tables/094_Transaction-Proofs-Binary-Format.csv:1
 msgid "Field"
 msgstr ""
 
@@ -1685,7 +1686,7 @@ msgid ""
 ":math:`7420` corresponds to :math:`0.007420` USD-N."
 msgstr ""
 
-#: ../../02_intermediate.rst:521 ../../02_intermediate.rst:4575
+#: ../../02_intermediate.rst:521 ../../02_intermediate.rst:4579
 msgid "Transaction"
 msgstr ""
 
@@ -1984,6 +1985,7 @@ msgstr ""
 #: ../../_static/02_intermediate/tables/083_Reissue-Transaction-Binary-Format-V1.csv:1
 #: ../../_static/02_intermediate/tables/085_Set-Asset-Transaction-Binary-Format-V1.csv:1
 #: ../../_static/02_intermediate/tables/089_Sponsor-Fee-Transaction-Binary-Format-V1.csv:1
+#: ../../_static/02_intermediate/tables/094_Transaction-Proofs-Binary-Format.csv:1
 msgid ":math:`6`"
 msgstr ""
 
@@ -2152,6 +2154,7 @@ msgstr ""
 #: ../../_static/02_intermediate/tables/089_Sponsor-Fee-Transaction-Binary-Format-V1.csv:1
 #: ../../_static/02_intermediate/tables/091_Transfer-Transaction-Binary-Format-V2.csv:1
 #: ../../_static/02_intermediate/tables/092_Transfer-Transaction-Binary-Format-V1.csv:1
+#: ../../_static/02_intermediate/tables/094_Transaction-Proofs-Binary-Format.csv:1
 msgid ":math:`3`"
 msgstr ""
 
@@ -2309,6 +2312,7 @@ msgstr ""
 #: ../../_static/02_intermediate/tables/085_Set-Asset-Transaction-Binary-Format-V1.csv:1
 #: ../../_static/02_intermediate/tables/087_Set-Script-Transaction-Binary-Format-V1.csv:1
 #: ../../_static/02_intermediate/tables/089_Sponsor-Fee-Transaction-Binary-Format-V1.csv:1
+#: ../../_static/02_intermediate/tables/094_Transaction-Proofs-Binary-Format.csv:1
 msgid ":math:`5`"
 msgstr ""
 
@@ -2371,6 +2375,7 @@ msgstr ""
 #: ../../_static/02_intermediate/tables/089_Sponsor-Fee-Transaction-Binary-Format-V1.csv:1
 #: ../../_static/02_intermediate/tables/091_Transfer-Transaction-Binary-Format-V2.csv:1
 #: ../../_static/02_intermediate/tables/092_Transfer-Transaction-Binary-Format-V1.csv:1
+#: ../../_static/02_intermediate/tables/094_Transaction-Proofs-Binary-Format.csv:1
 msgid ":math:`1`"
 msgstr ""
 
@@ -2445,6 +2450,7 @@ msgstr ""
 #: ../../_static/02_intermediate/tables/089_Sponsor-Fee-Transaction-Binary-Format-V1.csv:1
 #: ../../_static/02_intermediate/tables/091_Transfer-Transaction-Binary-Format-V2.csv:1
 #: ../../_static/02_intermediate/tables/092_Transfer-Transaction-Binary-Format-V1.csv:1
+#: ../../_static/02_intermediate/tables/094_Transaction-Proofs-Binary-Format.csv:1
 msgid ":math:`4`"
 msgstr ""
 
@@ -4010,7 +4016,7 @@ msgid ""
 "to :math:`1000` elements."
 msgstr ""
 
-#: ../../02_intermediate.rst:4349
+#: ../../02_intermediate.rst:4353
 #: ../../_static/02_intermediate/tables/017_Invoke-Script-Transaction-JSON.csv:1
 #: ../../_static/02_intermediate/tables/069_Invoke-Script-Transaction-Binary-Format-V1.csv:1
 msgid "dApp"
@@ -4281,7 +4287,7 @@ msgid ""
 "blockchain."
 msgstr ""
 
-#: ../../02_intermediate.rst:1684 ../../02_intermediate.rst:4398
+#: ../../02_intermediate.rst:1684 ../../02_intermediate.rst:4402
 msgid "Genesis Transaction"
 msgstr ""
 
@@ -4534,7 +4540,7 @@ msgid ""
 "successful and the sender is charged the fee."
 msgstr ""
 
-#: ../../02_intermediate.rst:1764 ../../02_intermediate.rst:4307
+#: ../../02_intermediate.rst:1764 ../../02_intermediate.rst:4311
 msgid "Block"
 msgstr ""
 
@@ -4627,7 +4633,7 @@ msgid ""
 "concrete block generator."
 msgstr ""
 
-#: ../../02_intermediate.rst:1802 ../../02_intermediate.rst:4315
+#: ../../02_intermediate.rst:1802 ../../02_intermediate.rst:4319
 msgid "Block Height"
 msgstr ""
 
@@ -4637,7 +4643,7 @@ msgid ""
 "<02_intermediate:Block>` in the blockchain."
 msgstr ""
 
-#: ../../02_intermediate.rst:1807 ../../02_intermediate.rst:4327
+#: ../../02_intermediate.rst:1807 ../../02_intermediate.rst:4331
 msgid "Block Signature"
 msgstr ""
 
@@ -4669,7 +4675,7 @@ msgid ""
 " FPoS."
 msgstr ""
 
-#: ../../02_intermediate.rst:1820 ../../02_intermediate.rst:4394
+#: ../../02_intermediate.rst:1820 ../../02_intermediate.rst:4398
 msgid "Genesis Block"
 msgstr ""
 
@@ -4897,7 +4903,7 @@ msgid ""
 "transactionsRoot value in the block header."
 msgstr ""
 
-#: ../../02_intermediate.rst:1919 ../../02_intermediate.rst:4483
+#: ../../02_intermediate.rst:1919 ../../02_intermediate.rst:4487
 msgid "Node"
 msgstr ""
 
@@ -4960,7 +4966,7 @@ msgid ""
 "required parameters (:math:`1` by default)."
 msgstr ""
 
-#: ../../02_intermediate.rst:1938 ../../02_intermediate.rst:4597
+#: ../../02_intermediate.rst:1938 ../../02_intermediate.rst:4601
 msgid "Validating Node"
 msgstr ""
 
@@ -5273,7 +5279,7 @@ msgstr ""
 msgid "Verify all the information and click Start Lease again to confirm."
 msgstr ""
 
-#: ../../02_intermediate.rst:2082 ../../02_intermediate.rst:4500
+#: ../../02_intermediate.rst:2082 ../../02_intermediate.rst:4504
 msgid "Order"
 msgstr ""
 
@@ -5533,7 +5539,7 @@ msgid ""
 "page."
 msgstr ""
 
-#: ../../02_intermediate.rst:2176 ../../02_intermediate.rst:4492
+#: ../../02_intermediate.rst:2176 ../../02_intermediate.rst:4496
 msgid "Oracle"
 msgstr ""
 
@@ -5660,12 +5666,12 @@ msgid ""
 "between different blockchain networks."
 msgstr ""
 
-#: ../../02_intermediate.rst:4323
+#: ../../02_intermediate.rst:4327
 #: ../../_static/02_intermediate/tables/024_Chain-ID.csv:1
 msgid "Blockchain Network"
 msgstr ""
 
-#: ../../02_intermediate.rst:4442
+#: ../../02_intermediate.rst:4446
 #: ../../_static/02_intermediate/tables/024_Chain-ID.csv:1
 #: ../../_static/02_intermediate/tables/025_API-of-Pool-of-Public-Nodes.csv:1
 #: ../../_static/02_intermediate/tables/026_Data-Service-API.csv:1
@@ -5694,7 +5700,7 @@ msgstr ""
 msgid "T or :math:`84` (ASCII code of T)."
 msgstr ""
 
-#: ../../02_intermediate.rst:4558
+#: ../../02_intermediate.rst:4562
 #: ../../_static/02_intermediate/tables/024_Chain-ID.csv:1
 #: ../../_static/02_intermediate/tables/025_API-of-Pool-of-Public-Nodes.csv:1
 #: ../../_static/02_intermediate/tables/026_Data-Service-API.csv:1
@@ -6157,6 +6163,7 @@ msgstr ""
 #: ../../_static/02_intermediate/tables/089_Sponsor-Fee-Transaction-Binary-Format-V1.csv:1
 #: ../../_static/02_intermediate/tables/091_Transfer-Transaction-Binary-Format-V2.csv:1
 #: ../../_static/02_intermediate/tables/092_Transfer-Transaction-Binary-Format-V1.csv:1
+#: ../../_static/02_intermediate/tables/094_Transaction-Proofs-Binary-Format.csv:1
 msgid "#"
 msgstr ""
 
@@ -6174,6 +6181,7 @@ msgstr ""
 #: ../../_static/02_intermediate/tables/052_Order-Binary-Format-V2.csv:1
 #: ../../_static/02_intermediate/tables/053_Order-Binary-Format-V1.csv:1
 #: ../../_static/02_intermediate/tables/054_Order-Binary-Format-V1-Bytes.csv:1
+#: ../../_static/02_intermediate/tables/094_Transaction-Proofs-Binary-Format.csv:1
 msgid "Type"
 msgstr ""
 
@@ -6258,6 +6266,7 @@ msgstr ""
 #: ../../_static/02_intermediate/tables/089_Sponsor-Fee-Transaction-Binary-Format-V1.csv:1
 #: ../../_static/02_intermediate/tables/091_Transfer-Transaction-Binary-Format-V2.csv:1
 #: ../../_static/02_intermediate/tables/092_Transfer-Transaction-Binary-Format-V1.csv:1
+#: ../../_static/02_intermediate/tables/094_Transaction-Proofs-Binary-Format.csv:1
 msgid ":math:`2`"
 msgstr ""
 
@@ -6307,6 +6316,7 @@ msgstr ""
 #: ../../_static/02_intermediate/tables/063_Data-Transaction-Binary-Format-V1.csv:1
 #: ../../_static/02_intermediate/tables/069_Invoke-Script-Transaction-Binary-Format-V1.csv:1
 #: ../../_static/02_intermediate/tables/080_Mass-Transaction-Binary-Format-V1.csv:1
+#: ../../_static/02_intermediate/tables/094_Transaction-Proofs-Binary-Format.csv:1
 msgid "..."
 msgstr ""
 
@@ -6419,7 +6429,7 @@ msgstr ""
 msgid ":math:`87 (119\\_ ) (151*\\_ )`"
 msgstr ""
 
-#: ../../02_intermediate.rst:4476
+#: ../../02_intermediate.rst:4480
 #: ../../_static/02_intermediate/tables/032_Signing-Bytes.csv:1
 #: ../../_static/02_intermediate/tables/040_Block-Message-Binary-Format.csv:1
 #: ../../_static/02_intermediate/tables/045_Handshake-Message-Binary-Format.csv:1
@@ -7637,6 +7647,7 @@ msgstr ""
 #: ../../_static/02_intermediate/tables/089_Sponsor-Fee-Transaction-Binary-Format-V1.csv:1
 #: ../../_static/02_intermediate/tables/091_Transfer-Transaction-Binary-Format-V2.csv:1
 #: ../../_static/02_intermediate/tables/092_Transfer-Transaction-Binary-Format-V1.csv:1
+#: ../../_static/02_intermediate/tables/094_Transaction-Proofs-Binary-Format.csv:1
 msgid ":ref:`Byte <02_intermediate:Blockchain Data Types>`"
 msgstr ""
 
@@ -7717,6 +7728,7 @@ msgstr ""
 #: ../../_static/02_intermediate/tables/089_Sponsor-Fee-Transaction-Binary-Format-V1.csv:1
 #: ../../_static/02_intermediate/tables/091_Transfer-Transaction-Binary-Format-V2.csv:1
 #: ../../_static/02_intermediate/tables/092_Transfer-Transaction-Binary-Format-V1.csv:1
+#: ../../_static/02_intermediate/tables/094_Transaction-Proofs-Binary-Format.csv:1
 msgid "Array[:ref:`Byte <02_intermediate:Blockchain Data Types>`]"
 msgstr ""
 
@@ -7735,6 +7747,7 @@ msgstr ""
 #: ../../_static/02_intermediate/tables/078_Lease-Transaction-Binary-Format-V1.csv:1
 #: ../../_static/02_intermediate/tables/083_Reissue-Transaction-Binary-Format-V1.csv:1
 #: ../../_static/02_intermediate/tables/092_Transfer-Transaction-Binary-Format-V1.csv:1
+#: ../../_static/02_intermediate/tables/094_Transaction-Proofs-Binary-Format.csv:1
 msgid ":math:`64`"
 msgstr ""
 
@@ -7835,6 +7848,7 @@ msgstr ""
 #: ../../_static/02_intermediate/tables/087_Set-Script-Transaction-Binary-Format-V1.csv:1
 #: ../../_static/02_intermediate/tables/091_Transfer-Transaction-Binary-Format-V2.csv:1
 #: ../../_static/02_intermediate/tables/092_Transfer-Transaction-Binary-Format-V1.csv:1
+#: ../../_static/02_intermediate/tables/094_Transaction-Proofs-Binary-Format.csv:1
 msgid ":ref:`Short <02_intermediate:Blockchain Data Types>`"
 msgstr ""
 
@@ -8087,7 +8101,7 @@ msgstr ""
 msgid "Node name (UTF-8 encoded bytes)"
 msgstr ""
 
-#: ../../02_intermediate.rst:4439
+#: ../../02_intermediate.rst:4443
 #: ../../_static/02_intermediate/tables/045_Handshake-Message-Binary-Format.csv:1
 msgid "M"
 msgstr ""
@@ -8104,7 +8118,7 @@ msgstr ""
 msgid "Declared address bytes (if length is not :math:`0`)"
 msgstr ""
 
-#: ../../02_intermediate.rst:4423
+#: ../../02_intermediate.rst:4427
 #: ../../_static/02_intermediate/tables/045_Handshake-Message-Binary-Format.csv:1
 msgid "K"
 msgstr ""
@@ -8441,7 +8455,7 @@ msgstr ""
 msgid "Asset B (amount Asset) ID"
 msgstr ""
 
-#: ../../02_intermediate.rst:4539
+#: ../../02_intermediate.rst:4543
 #: ../../_static/02_intermediate/tables/051_Order-Binary-Format-V3.csv:1
 #: ../../_static/02_intermediate/tables/057_Burn-Transaction-Binary-Format-V2.csv:1
 #: ../../_static/02_intermediate/tables/060_Create-Alias-Transaction-Binary-Format-V2.csv:1
@@ -8562,7 +8576,7 @@ msgstr ""
 msgid "matcherFeeAssetId"
 msgstr ""
 
-#: ../../02_intermediate.rst:4378
+#: ../../02_intermediate.rst:4382
 #: ../../_static/02_intermediate/tables/051_Order-Binary-Format-V3.csv:1
 msgid "F"
 msgstr ""
@@ -9063,6 +9077,7 @@ msgstr ""
 #: ../../_static/02_intermediate/tables/089_Sponsor-Fee-Transaction-Binary-Format-V1.csv:1
 #: ../../_static/02_intermediate/tables/091_Transfer-Transaction-Binary-Format-V2.csv:1
 #: ../../_static/02_intermediate/tables/092_Transfer-Transaction-Binary-Format-V1.csv:1
+#: ../../_static/02_intermediate/tables/094_Transaction-Proofs-Binary-Format.csv:1
 msgid "Comment"
 msgstr ""
 
@@ -9536,7 +9551,7 @@ msgstr ""
 msgid "Value 1"
 msgstr ""
 
-#: ../../02_intermediate.rst:4564
+#: ../../02_intermediate.rst:4568
 #: ../../_static/02_intermediate/tables/063_Data-Transaction-Binary-Format-V1.csv:1
 msgid "T"
 msgstr ""
@@ -10907,7 +10922,7 @@ msgstr ""
 msgid "Script length"
 msgstr ""
 
-#: ../../02_intermediate.rst:4542
+#: ../../02_intermediate.rst:4546
 #: ../../_static/02_intermediate/tables/087_Set-Script-Transaction-Binary-Format-V1.csv:1
 msgid "Script"
 msgstr ""
@@ -11133,27 +11148,59 @@ msgstr ""
 msgid "Token ID."
 msgstr ""
 
-#: ../../02_intermediate.rst:4142
+#: ../../02_intermediate.rst:4142 ../../02_intermediate.rst:4144
 msgid "Transaction Proofs Binary Format"
 msgstr ""
 
-#: ../../02_intermediate.rst:4144
-msgid "Tableholder"
+#: ../../_static/02_intermediate/tables/094_Transaction-Proofs-Binary-Format.csv:1
+msgid "Size in bytes"
 msgstr ""
 
-#: ../../02_intermediate.rst:4146
+#: ../../_static/02_intermediate/tables/094_Transaction-Proofs-Binary-Format.csv:1
+msgid "Proofs version"
+msgstr ""
+
+#: ../../_static/02_intermediate/tables/094_Transaction-Proofs-Binary-Format.csv:1
+msgid "Value is 1."
+msgstr ""
+
+#: ../../_static/02_intermediate/tables/094_Transaction-Proofs-Binary-Format.csv:1
+msgid "Proofs count"
+msgstr ""
+
+#: ../../_static/02_intermediate/tables/094_Transaction-Proofs-Binary-Format.csv:1
+msgid "Proof 1 length"
+msgstr ""
+
+#: ../../_static/02_intermediate/tables/094_Transaction-Proofs-Binary-Format.csv:1
+msgid "Value is 64."
+msgstr ""
+
+#: ../../_static/02_intermediate/tables/094_Transaction-Proofs-Binary-Format.csv:1
+msgid "Proofs 1"
+msgstr ""
+
+#: ../../_static/02_intermediate/tables/094_Transaction-Proofs-Binary-Format.csv:1
+msgid "Proof 2 length"
+msgstr ""
+
+#: ../../_static/02_intermediate/tables/094_Transaction-Proofs-Binary-Format.csv:1
+msgid "Proof 2"
+msgstr ""
+
+#: ../../02_intermediate.rst:4150
 msgid "The maximum number of proofs is :math:`8`."
 msgstr ""
 
-#: ../../02_intermediate.rst:4149
+#: ../../02_intermediate.rst:4153
 msgid "Validation Rules"
 msgstr ""
 
-#: ../../02_intermediate.rst:4152
+#: ../../02_intermediate.rst:4156
 msgid "Account Validation"
 msgstr ""
 
-#: ../../02_intermediate.rst:4154
+#: ../../02_intermediate.rst:4158
 msgid ""
 "Account is valid then it is a valid Base58 string and the length of the "
 "corresponding array is :math:`26` bytes. Version of address (1st byte) is"
@@ -11161,187 +11208,187 @@ msgid ""
 "The checksum of address (last :math:`4` bytes) is correct."
 msgstr ""
 
-#: ../../02_intermediate.rst:4157
+#: ../../02_intermediate.rst:4161
 msgid "Transactions Validation"
 msgstr ""
 
-#: ../../02_intermediate.rst:4160
+#: ../../02_intermediate.rst:4164
 msgid "Transfer Transaction Validation"
 msgstr ""
 
-#: ../../02_intermediate.rst:4162
+#: ../../02_intermediate.rst:4166
 msgid "Transfer transaction is valid then:"
 msgstr ""
 
-#: ../../02_intermediate.rst:4164
+#: ../../02_intermediate.rst:4168
 msgid ""
 "Recipient address is valid. If not, InvalidAddress validation result will"
 " be returned."
 msgstr ""
 
-#: ../../02_intermediate.rst:4165
+#: ../../02_intermediate.rst:4169
 msgid ""
 "Size of attachment is less than or equals MaxAttachementSize(:math:`140` "
 "bytes). In other case TooBigArray validation result will be returned."
 msgstr ""
 
-#: ../../02_intermediate.rst:4166
+#: ../../02_intermediate.rst:4170
 msgid ""
 "Transaction's amount is more than :math:`0`, otherwise NegativeAmount "
 "validation result is returned."
 msgstr ""
 
-#: ../../02_intermediate.rst:4167
+#: ../../02_intermediate.rst:4171
 msgid ""
 "Transaction's fee is positive, otherwise InsufficientFee validation "
 "result is returned."
 msgstr ""
 
-#: ../../02_intermediate.rst:4168
+#: ../../02_intermediate.rst:4172
 msgid ""
 "Adding fee to amount does not lead to Long overflow. In case of Long "
 "overflow OverflowError validation result will be returned."
 msgstr ""
 
-#: ../../02_intermediate.rst:4169 ../../02_intermediate.rst:4182
-#: ../../02_intermediate.rst:4192
+#: ../../02_intermediate.rst:4173 ../../02_intermediate.rst:4186
+#: ../../02_intermediate.rst:4196
 msgid ""
 "Transaction's signature is valid, otherwise InvalidSignature validation "
 "result is returned."
 msgstr ""
 
-#: ../../02_intermediate.rst:4172
+#: ../../02_intermediate.rst:4176
 msgid "Issue Transaction Validation"
 msgstr ""
 
-#: ../../02_intermediate.rst:4174
+#: ../../02_intermediate.rst:4178
 msgid "Issue transaction is valid then:"
 msgstr ""
 
-#: ../../02_intermediate.rst:4176
+#: ../../02_intermediate.rst:4180
 msgid ""
 "Sender's address is valid. If not, InvalidAddress validation result will "
 "be returned."
 msgstr ""
 
-#: ../../02_intermediate.rst:4177
+#: ../../02_intermediate.rst:4181
 msgid ""
 "Quantity of asset is positive, otherwise NegativeAmount validation result"
 " is returned."
 msgstr ""
 
-#: ../../02_intermediate.rst:4178
+#: ../../02_intermediate.rst:4182
 msgid ""
 "Transaction's fee is more than or equals MinFee(:math:`100000000` "
 "Decentralites = :math:`1` DecentralCoin), in other case InsufficientFee "
 "validation result is returned."
 msgstr ""
 
-#: ../../02_intermediate.rst:4179
+#: ../../02_intermediate.rst:4183
 msgid ""
 "Size of description is less than or equals "
 "MaxDescriptionLength(:math:`1000` bytes), otherwise TooBigArray is "
 "returned."
 msgstr ""
 
-#: ../../02_intermediate.rst:4180
+#: ../../02_intermediate.rst:4184
 msgid ""
 "Size of name is more than or equals MinAssetNameLength and less or equals"
 " MaxAssetNameLength, in other case InvalidName validation result will be "
 "returned."
 msgstr ""
 
-#: ../../02_intermediate.rst:4181
+#: ../../02_intermediate.rst:4185
 msgid ""
 "Decimals is positive and less than or equals MaxDecimals, in other case "
 "TooBigArray is returned."
 msgstr ""
 
-#: ../../02_intermediate.rst:4185
+#: ../../02_intermediate.rst:4189
 msgid "Reissue Transaction Validation"
 msgstr ""
 
-#: ../../02_intermediate.rst:4187
+#: ../../02_intermediate.rst:4191
 msgid "Reissue transaction is valid then:"
 msgstr ""
 
-#: ../../02_intermediate.rst:4189
+#: ../../02_intermediate.rst:4193
 msgid ""
 "Sender's account is valid. Otherwise InvalidAddress validation result is "
 "returned."
 msgstr ""
 
-#: ../../02_intermediate.rst:4190
+#: ../../02_intermediate.rst:4194
 msgid ""
 "Quantity is positive, in other case NegativeAmount validation result will"
 " be returned."
 msgstr ""
 
-#: ../../02_intermediate.rst:4191
+#: ../../02_intermediate.rst:4195
 msgid ""
 "Transaction's fee is positive, in other case InsufficientFee result will "
 "be returned."
 msgstr ""
 
-#: ../../02_intermediate.rst:4195
+#: ../../02_intermediate.rst:4199
 msgid "Block Validations"
 msgstr ""
 
-#: ../../02_intermediate.rst:4197
+#: ../../02_intermediate.rst:4201
 msgid "Block is valid then:"
 msgstr ""
 
-#: ../../02_intermediate.rst:4199
+#: ../../02_intermediate.rst:4203
 msgid "Block chain contains referenced blocks."
 msgstr ""
 
-#: ../../02_intermediate.rst:4200
+#: ../../02_intermediate.rst:4204
 msgid "Block's signature is valid."
 msgstr ""
 
-#: ../../02_intermediate.rst:4201
+#: ../../02_intermediate.rst:4205
 msgid "Block's consensus data is valid."
 msgstr ""
 
-#: ../../02_intermediate.rst:4202
+#: ../../02_intermediate.rst:4206
 msgid "Block's transactions are valid."
 msgstr ""
 
-#: ../../02_intermediate.rst:4205
+#: ../../02_intermediate.rst:4209
 msgid "Consensus Data Validation"
 msgstr ""
 
-#: ../../02_intermediate.rst:4207
+#: ../../02_intermediate.rst:4211
 msgid "Block's consensus data is valid then:"
 msgstr ""
 
-#: ../../02_intermediate.rst:4209
+#: ../../02_intermediate.rst:4213
 msgid ""
 "Block creation time is no more than MaxTimeDrift(:math:`15` seconds) in "
 "future."
 msgstr ""
 
-#: ../../02_intermediate.rst:4210
+#: ../../02_intermediate.rst:4214
 msgid ""
 "Block's transactions are sorted. This rule works only after "
 ":math:`1477958400000` on Testnet and :math:`1479168000000` on Mainnet."
 msgstr ""
 
-#: ../../02_intermediate.rst:4211
+#: ../../02_intermediate.rst:4215
 msgid ""
 "Block chain contains parent block or block chain height is equal "
 ":math:`1`."
 msgstr ""
 
-#: ../../02_intermediate.rst:4212
+#: ../../02_intermediate.rst:4216
 msgid "Block's base target is valid."
 msgstr ""
 
-#: ../../02_intermediate.rst:4213
+#: ../../02_intermediate.rst:4217
 msgid "Block's generator signature is valid."
 msgstr ""
 
-#: ../../02_intermediate.rst:4214
+#: ../../02_intermediate.rst:4218
 msgid ""
 "Generator's balance is more than or equals "
 "MinimalEffectiveBalanceForGeneration(:math:`1000000000000` "
@@ -11349,123 +11396,123 @@ msgid ""
 ":math:`1479168000000` on Mainnet."
 msgstr ""
 
-#: ../../02_intermediate.rst:4215
+#: ../../02_intermediate.rst:4219
 msgid "Block's hit is less than calculated block's target."
 msgstr ""
 
-#: ../../02_intermediate.rst:4216
+#: ../../02_intermediate.rst:4220
 msgid "Voted features are sorted in ascending order and are not repeated."
 msgstr ""
 
-#: ../../02_intermediate.rst:4219
+#: ../../02_intermediate.rst:4223
 msgid "Transactions Data Validation"
 msgstr ""
 
-#: ../../02_intermediate.rst:4221
+#: ../../02_intermediate.rst:4225
 msgid "Block's transactions are valid then:"
 msgstr ""
 
-#: ../../02_intermediate.rst:4223
+#: ../../02_intermediate.rst:4227
 msgid ""
 "Creation time of every transaction in block is less than block's creation"
 " time no more than on MaxTxAndBlockDiff(:math:`2` hours)."
 msgstr ""
 
-#: ../../02_intermediate.rst:4224
+#: ../../02_intermediate.rst:4228
 msgid "All transactions are valid against state."
 msgstr ""
 
-#: ../../02_intermediate.rst:4226
+#: ../../02_intermediate.rst:4230
 msgid "Transaction validation against state. Transactions are valid then:"
 msgstr ""
 
-#: ../../02_intermediate.rst:4228 ../../02_intermediate.rst:4240
+#: ../../02_intermediate.rst:4232 ../../02_intermediate.rst:4244
 msgid "Transaction is valid by transaction validation rules."
 msgstr ""
 
-#: ../../02_intermediate.rst:4229
+#: ../../02_intermediate.rst:4233
 msgid ""
 "Transaction creation time more than block's creation time no more than on"
 " MaxTimeForUnconfirmed(:math:`90` minutes). This limitation works always "
 "on Testnet and only after :math:`1479168000000` on Mainnet."
 msgstr ""
 
-#: ../../02_intermediate.rst:4230
+#: ../../02_intermediate.rst:4234
 msgid ""
 "Application of transaction to accounts should not lead to temporary "
 "negative balance. This rule works after :math:`1479168000000` on Mainnet "
 "and after :math:`1477958400000` on Testnet."
 msgstr ""
 
-#: ../../02_intermediate.rst:4231
+#: ../../02_intermediate.rst:4235
 msgid ""
 "Changes made by transaction should be sorted by their amount. This rule "
 "works on both Mainnet and Testnet after :math:`1479416400000`."
 msgstr ""
 
-#: ../../02_intermediate.rst:4232
+#: ../../02_intermediate.rst:4236
 msgid ""
 "Application of transaction's amount to current balance should not lead to"
 " Long overflow."
 msgstr ""
 
-#: ../../02_intermediate.rst:4233
+#: ../../02_intermediate.rst:4237
 msgid ""
 "After application of all block's transactions affected balances should "
 "not be negative."
 msgstr ""
 
-#: ../../02_intermediate.rst:4236
+#: ../../02_intermediate.rst:4240
 msgid "Unconfirmed Transactions Pool Validation"
 msgstr ""
 
-#: ../../02_intermediate.rst:4238
+#: ../../02_intermediate.rst:4242
 msgid "Transaction could be inserted in unconfirmed transactions pool then:"
 msgstr ""
 
-#: ../../02_intermediate.rst:4241
+#: ../../02_intermediate.rst:4245
 msgid ""
 "If transaction's fee is more than or equals minimum fee that was set by "
 "the owner of a node."
 msgstr ""
 
-#: ../../02_intermediate.rst:4242
+#: ../../02_intermediate.rst:4246
 msgid ""
 "There is a space for a new transaction if unconfirmed transactions pool. "
 "By default the pool is limited by :math:`1000` transactions."
 msgstr ""
 
-#: ../../02_intermediate.rst:4243
+#: ../../02_intermediate.rst:4247
 msgid ""
 "unconfirmed transactions pool does not contain transaction with the same "
 "ID."
 msgstr ""
 
-#: ../../02_intermediate.rst:4244
+#: ../../02_intermediate.rst:4248
 msgid ""
 "Transaction created not later than MaxTimeForUncofimed(:math:`90` "
 "minutes) after the last block was created."
 msgstr ""
 
-#: ../../02_intermediate.rst:4245
+#: ../../02_intermediate.rst:4249
 msgid ""
 "Transaction creation time is no more than MaxTimeDrift(:math:`15` "
 "seconds) in future."
 msgstr ""
 
-#: ../../02_intermediate.rst:4246
+#: ../../02_intermediate.rst:4250
 msgid "Transaction is valid against state."
 msgstr ""
 
-#: ../../02_intermediate.rst:4250
+#: ../../02_intermediate.rst:4254
 msgid "Glossary"
 msgstr ""
 
-#: ../../02_intermediate.rst:4253
+#: ../../02_intermediate.rst:4257
 msgid "A"
 msgstr ""
 
-#: ../../02_intermediate.rst:4259
+#: ../../02_intermediate.rst:4263
 msgid ""
 "An account is a cryptographically connected pair of :term:`public<Public "
 "Key>` and on the :term:`private key<Private Key>`. Accounts uniquely "
@@ -11473,24 +11520,24 @@ msgid ""
 "with their senders."
 msgstr ""
 
-#: ../../02_intermediate.rst:4263
+#: ../../02_intermediate.rst:4267
 msgid ""
 "An account data storage is the store of data records in the key-value "
 "format associated with the :term:`account<Account>`. Each account has "
 "single data storage. The size of the account data storage is unlimited."
 msgstr ""
 
-#: ../../02_intermediate.rst:4264
+#: ../../02_intermediate.rst:4268
 msgid "Account Script"
 msgstr ""
 
-#: ../../02_intermediate.rst:4267
+#: ../../02_intermediate.rst:4271
 msgid ""
 "An account script is a :term:`Ride<Ride>` :term:`script<Script>` that has"
 " the following directives:"
 msgstr ""
 
-#: ../../02_intermediate.rst:4274
+#: ../../02_intermediate.rst:4278
 msgid ""
 "The account script is attached to the :term:`account<Account>` using the "
 "set script transaction. Only one script can be attached to an account. An"
@@ -11498,17 +11545,17 @@ msgid ""
 "account<Smart Account>`."
 msgstr ""
 
-#: ../../02_intermediate.rst:4278
+#: ../../02_intermediate.rst:4282
 msgid ""
 "An address is a unique :term:`account<Account>` identifier. The address "
 "can be represented as an alphanumeric string."
 msgstr ""
 
-#: ../../02_intermediate.rst:4279
+#: ../../02_intermediate.rst:4283
 msgid "Airdrop"
 msgstr ""
 
-#: ../../02_intermediate.rst:4282
+#: ../../02_intermediate.rst:4286
 msgid ""
 "An airdrop is a simultaneous sending of :term:`tokens<Token>` to multiple"
 " :term:`addresses<Address>`. As a rule, the airdrop is used as an "
@@ -11516,32 +11563,32 @@ msgid ""
 "to promote a project, increase its recognition, and attract investors."
 msgstr ""
 
-#: ../../02_intermediate.rst:4286
+#: ../../02_intermediate.rst:4290
 msgid ""
 "An alias is a short, easy-to-remember :term:`address<Address>` name. "
 "There cannot be two aliases with the same name. A single address can have"
 " multiple aliases."
 msgstr ""
 
-#: ../../02_intermediate.rst:4287
+#: ../../02_intermediate.rst:4291
 msgid "Asset"
 msgstr ""
 
-#: ../../02_intermediate.rst:4290
+#: ../../02_intermediate.rst:4294
 msgid "An asset is a synonym for the :term:`token<Token>`."
 msgstr ""
 
-#: ../../02_intermediate.rst:4291
+#: ../../02_intermediate.rst:4295
 msgid "Asset Script"
 msgstr ""
 
-#: ../../02_intermediate.rst:4294
+#: ../../02_intermediate.rst:4298
 msgid ""
 "An asset script is a :term:`Ride<Ride>` :term:`script<Script>` that has "
 "the following directives:"
 msgstr ""
 
-#: ../../02_intermediate.rst:4301
+#: ../../02_intermediate.rst:4305
 msgid ""
 "The asset script is attached to the asset using the set asset script "
 "transaction. You can attach a script to an asset only at the time of the "
@@ -11550,51 +11597,51 @@ msgid ""
 "Asset>`."
 msgstr ""
 
-#: ../../02_intermediate.rst:4304
+#: ../../02_intermediate.rst:4308
 msgid "B"
 msgstr ""
 
-#: ../../02_intermediate.rst:4310
+#: ../../02_intermediate.rst:4314
 msgid ""
 "A block is a unit of the :term:`blockchain<Blockchain>` chain. The block "
 "contains :term:`transactions<Transaction>`: from :math:`0` to "
 ":math:`6000` inclusive. The maximum block size is :math:`1` MB."
 msgstr ""
 
-#: ../../02_intermediate.rst:4311
+#: ../../02_intermediate.rst:4315
 msgid "Blockchain"
 msgstr ""
 
-#: ../../02_intermediate.rst:4314
+#: ../../02_intermediate.rst:4318
 msgid ""
 "A blockchain is a continuous sequential chain of :term:`blocks<Block>` "
 "that are linked using cryptography. The blockchain has its own "
 ":term:`blockchain height<Blockchain Height>`."
 msgstr ""
 
-#: ../../02_intermediate.rst:4318
+#: ../../02_intermediate.rst:4322
 msgid ""
 "A block height is the :term:`block’s<Block>` sequence number in the "
 ":term:`blockchain<Blockchain>`."
 msgstr ""
 
-#: ../../02_intermediate.rst:4319
+#: ../../02_intermediate.rst:4323
 msgid "Blockchain Height"
 msgstr ""
 
-#: ../../02_intermediate.rst:4322
+#: ../../02_intermediate.rst:4326
 msgid ""
 "A blockchain height is a sequence number of the last :term:`block<Block>`"
 " in the :term:`blockchain<Blockchain>`."
 msgstr ""
 
-#: ../../02_intermediate.rst:4326
+#: ../../02_intermediate.rst:4330
 msgid ""
 "A blockchain network is a computer network that consists of "
 ":term:`node<Node>`."
 msgstr ""
 
-#: ../../02_intermediate.rst:4330
+#: ../../02_intermediate.rst:4334
 msgid ""
 "A block signature is a :term:`hash<Hash>` that the :term:`mining "
 "node<Mining Node>` receives when it signs the generated "
@@ -11602,87 +11649,87 @@ msgid ""
 ":term:`mining account<Mining Account>`."
 msgstr ""
 
-#: ../../02_intermediate.rst:4333
+#: ../../02_intermediate.rst:4337
 msgid "C"
 msgstr ""
 
-#: ../../02_intermediate.rst:4336
+#: ../../02_intermediate.rst:4340
 msgid "Consensus"
 msgstr ""
 
-#: ../../02_intermediate.rst:4339
+#: ../../02_intermediate.rst:4343
 msgid ""
 "The consensus is a set of rules in accordance with which "
 ":term:`blockchain<Blockchain>` operates. DecentralChain uses the "
 ":term:`LPoS consensus<LPoS>`."
 msgstr ""
 
-#: ../../02_intermediate.rst:4340
+#: ../../02_intermediate.rst:4344
 msgid "Cryptocurrency"
 msgstr ""
 
-#: ../../02_intermediate.rst:4343
+#: ../../02_intermediate.rst:4347
 msgid ""
 "A cryptocurrency is a type of digital currency, the creation and control "
 "of which is based on cryptographic methods."
 msgstr ""
 
-#: ../../02_intermediate.rst:4346
+#: ../../02_intermediate.rst:4350
 msgid "D"
 msgstr ""
 
-#: ../../02_intermediate.rst:4352
+#: ../../02_intermediate.rst:4356
 msgid ""
 "A dApp is an :term:`account<Account>` with the :term:`dApp script<dApp "
 "Script>` attached."
 msgstr ""
 
-#: ../../02_intermediate.rst:4353
+#: ../../02_intermediate.rst:4357
 msgid "dApp Script"
 msgstr ""
 
-#: ../../02_intermediate.rst:4356
+#: ../../02_intermediate.rst:4360
 msgid ""
 "A dApp script is a Ride script used to create dApp. The dApp script has "
 "the following directive:"
 msgstr ""
 
-#: ../../02_intermediate.rst:4362
+#: ../../02_intermediate.rst:4366
 msgid ""
 "dApp Script can be attached to the :term:`account<Account>` using the set"
 " script transaction, and, as a result, the dApp will be created."
 msgstr ""
 
-#: ../../02_intermediate.rst:4363
+#: ../../02_intermediate.rst:4367
 msgid "Decentralized Application"
 msgstr ""
 
-#: ../../02_intermediate.rst:4366
+#: ../../02_intermediate.rst:4370
 msgid ""
 "A decentralized application is an application that is stored and executed"
 " on the :term:`blockchain<Blockchain>` network."
 msgstr ""
 
-#: ../../02_intermediate.rst:4369
+#: ../../02_intermediate.rst:4373
 msgid "E"
 msgstr ""
 
-#: ../../02_intermediate.rst:4372
+#: ../../02_intermediate.rst:4376
 msgid "Explorer"
 msgstr ""
 
-#: ../../02_intermediate.rst:4375
+#: ../../02_intermediate.rst:4379
 msgid ""
 "Explorer (or `DecentralChain Explorer <https://decentralscan.com/>`_) is "
 "an online service that displays DecentralChain blockchain data in a "
 "human-readable form."
 msgstr ""
 
-#: ../../02_intermediate.rst:4381
+#: ../../02_intermediate.rst:4385
 msgid "Faucet"
 msgstr ""
 
-#: ../../02_intermediate.rst:4384
+#: ../../02_intermediate.rst:4388
 msgid ""
 "A test network faucet (or faucet) is a `DecentralChain Explorer "
 "<https://decentralscan.com/>`_ tool that refills the :term:`test "
@@ -11691,15 +11738,15 @@ msgid ""
 "testnet DecentralCoins."
 msgstr ""
 
-#: ../../02_intermediate.rst:4387
+#: ../../02_intermediate.rst:4391
 msgid "G"
 msgstr ""
 
-#: ../../02_intermediate.rst:4390
+#: ../../02_intermediate.rst:4394
 msgid "Gateway"
 msgstr ""
 
-#: ../../02_intermediate.rst:4393
+#: ../../02_intermediate.rst:4397
 msgid ""
 "Gateway is a centralized payment solution that allows transferring "
 ":term:`cryptocurrencies<Cryptocurrency>` from one "
@@ -11707,14 +11754,14 @@ msgid ""
 "transferring fiat money to and out of the blockchain."
 msgstr ""
 
-#: ../../02_intermediate.rst:4397
+#: ../../02_intermediate.rst:4401
 msgid ""
 "The genesis block (or genesis) is the very first :term:`block<Block>` of "
 "the :term:`blockchain<Blockchain>`. The genesis block contains one or "
 "several genesis transactions."
 msgstr ""
 
-#: ../../02_intermediate.rst:4401
+#: ../../02_intermediate.rst:4405
 msgid ""
 "Genesis transaction is a :term:`genesis block<Genesis Block>` transaction"
 " that charges DecentralCoins to an :term:`account<Account>`. The genesis "
@@ -11722,42 +11769,42 @@ msgid ""
 "accounts during the creation of the :term:`blockchain<Blockchain>`."
 msgstr ""
 
-#: ../../02_intermediate.rst:4404
+#: ../../02_intermediate.rst:4408
 msgid "H"
 msgstr ""
 
-#: ../../02_intermediate.rst:4407
+#: ../../02_intermediate.rst:4411
 msgid "Hash"
 msgstr ""
 
-#: ../../02_intermediate.rst:4410
+#: ../../02_intermediate.rst:4414
 msgid "A hash is a result of applying a :term:`hash function<Hash Function>`."
 msgstr ""
 
-#: ../../02_intermediate.rst:4411
+#: ../../02_intermediate.rst:4415
 msgid "Hash Function"
 msgstr ""
 
-#: ../../02_intermediate.rst:4414
+#: ../../02_intermediate.rst:4418
 msgid ""
 "A hash function (or fold function) is a function that converts an array "
 "of input data of arbitrary length into a bit string of a fixed length, "
 "performed by a certain algorithm."
 msgstr ""
 
-#: ../../02_intermediate.rst:4417
+#: ../../02_intermediate.rst:4421
 msgid "I"
 msgstr ""
 
-#: ../../02_intermediate.rst:4420
+#: ../../02_intermediate.rst:4424
 msgid "J"
 msgstr ""
 
-#: ../../02_intermediate.rst:4426
+#: ../../02_intermediate.rst:4430
 msgid "L"
 msgstr ""
 
-#: ../../02_intermediate.rst:4432
+#: ../../02_intermediate.rst:4436
 msgid ""
 "Leasing is a temporary reversible transfer of DecentralCoins from one "
 "account to another to increase the stability and security of the network,"
@@ -11775,11 +11822,11 @@ msgid ""
 "invoking the Lease Cancel transaction."
 msgstr ""
 
-#: ../../02_intermediate.rst:4433
+#: ../../02_intermediate.rst:4437
 msgid "LPoS"
 msgstr ""
 
-#: ../../02_intermediate.rst:4436
+#: ../../02_intermediate.rst:4440
 msgid ""
 "LPoS (or Leased Proof-of-Stake) is a :term:`consensus<Consensus>` "
 "algorithm in which the probability of generating the next "
@@ -11791,44 +11838,44 @@ msgid ""
 " of generating the next block."
 msgstr ""
 
-#: ../../02_intermediate.rst:4445
+#: ../../02_intermediate.rst:4449
 msgid ""
 "The mainnet (or main network) is the main DecentralChain "
 ":term:`blockchain<Blockchain>` network."
 msgstr ""
 
-#: ../../02_intermediate.rst:4446
+#: ../../02_intermediate.rst:4450
 msgid "Matcher"
 msgstr ""
 
-#: ../../02_intermediate.rst:4449
+#: ../../02_intermediate.rst:4453
 msgid "Matcher is a service that executes :term:`orders<Order>` on the exchange."
 msgstr ""
 
-#: ../../02_intermediate.rst:4450
+#: ../../02_intermediate.rst:4454
 msgid "Matcher Fee"
 msgstr ""
 
-#: ../../02_intermediate.rst:4453
+#: ../../02_intermediate.rst:4457
 msgid ""
 "A matcher fee is a fee that :term:`matcher<Matcher>` takes from both "
 ":term:`accounts<Account>` that participate in the exchange of the pair of"
 " :term:`tokens<Token>`."
 msgstr ""
 
-#: ../../02_intermediate.rst:4454
+#: ../../02_intermediate.rst:4458
 msgid "Miner"
 msgstr ""
 
-#: ../../02_intermediate.rst:4457
+#: ../../02_intermediate.rst:4461
 msgid "A miner is the owner of the :term:`mining node<Mining Node>`."
 msgstr ""
 
-#: ../../02_intermediate.rst:4458
+#: ../../02_intermediate.rst:4462
 msgid "Mining"
 msgstr ""
 
-#: ../../02_intermediate.rst:4461
+#: ../../02_intermediate.rst:4465
 msgid ""
 "Mining is the process of generating a :term:`block<Block>` by a "
 ":term:`mining node<Mining Node>`, as a result of which a new block is "
@@ -11838,44 +11885,44 @@ msgid ""
 " fees, according to the rules of the DecentralChain-M5 protocol."
 msgstr ""
 
-#: ../../02_intermediate.rst:4462
+#: ../../02_intermediate.rst:4466
 msgid "Mining Account"
 msgstr ""
 
-#: ../../02_intermediate.rst:4465
+#: ../../02_intermediate.rst:4469
 msgid ""
 "A mining account is an :term:`account<Account>` that the :term:`mining "
 "node<Mining Node>` uses to :term:`block<Block Signature>` the generated "
 ":term:`blocks<Block>`."
 msgstr ""
 
-#: ../../02_intermediate.rst:4466
+#: ../../02_intermediate.rst:4470
 msgid "Mining Node"
 msgstr ""
 
-#: ../../02_intermediate.rst:4469
+#: ../../02_intermediate.rst:4473
 msgid ""
 "A mining node is a :term:`node<Node>` that can perform "
 ":term:`mining<Mining>`. Each mining node is a validating node "
 ":term:`node<Node>`."
 msgstr ""
 
-#: ../../02_intermediate.rst:4470
+#: ../../02_intermediate.rst:4474
 msgid "Multisignature"
 msgstr ""
 
-#: ../../02_intermediate.rst:4473
+#: ../../02_intermediate.rst:4477
 msgid ""
 "Multisignature is an implementation of an electronic signature that "
 "requires the use of several  :term:`private key<Private Key>` as a "
 "condition for  :term:`transactions<Transaction>` execution."
 msgstr ""
 
-#: ../../02_intermediate.rst:4479
+#: ../../02_intermediate.rst:4483
 msgid "NFT"
 msgstr ""
 
-#: ../../02_intermediate.rst:4482
+#: ../../02_intermediate.rst:4486
 msgid ""
 "NFT (Non-Fungible Token) is a :term:`tokens<Token>` with unique ID. Two "
 "'regular' tokens can not be distinguished from each other — they are the "
@@ -11883,7 +11930,7 @@ msgid ""
 "NFTs. Most often NFTs are used in games."
 msgstr ""
 
-#: ../../02_intermediate.rst:4486
+#: ../../02_intermediate.rst:4490
 msgid ""
 "A node is a host that is connected to the :term:`blockchain<Blockchain>` "
 "network using the DecentralChain node application. The node stores "
@@ -11891,42 +11938,42 @@ msgid ""
 ":term:`transactions<Transaction>`."
 msgstr ""
 
-#: ../../02_intermediate.rst:4489
+#: ../../02_intermediate.rst:4493
 msgid "O"
 msgstr ""
 
-#: ../../02_intermediate.rst:4495
+#: ../../02_intermediate.rst:4499
 msgid ""
 "Oracle is a provider of data from the outside world to the "
 ":term:`blockchain<Blockchain>`."
 msgstr ""
 
-#: ../../02_intermediate.rst:4496
+#: ../../02_intermediate.rst:4500
 msgid "Oracle Card"
 msgstr ""
 
-#: ../../02_intermediate.rst:4499
+#: ../../02_intermediate.rst:4503
 msgid ""
 "An oracle card is a public description of the :term:`oracle<Oracle>` in "
 "the :term:`blockchain<Blockchain>` according to a standardized protocol "
 "in the form of a data transaction."
 msgstr ""
 
-#: ../../02_intermediate.rst:4503
+#: ../../02_intermediate.rst:4507
 msgid ""
 "Order (or exchange order) is an instruction to buy or sell a "
 ":term:`tokens<Token>` on the exchange."
 msgstr ""
 
-#: ../../02_intermediate.rst:4506
+#: ../../02_intermediate.rst:4510
 msgid "P"
 msgstr ""
 
-#: ../../02_intermediate.rst:4509
+#: ../../02_intermediate.rst:4513
 msgid "PoS"
 msgstr ""
 
-#: ../../02_intermediate.rst:4512
+#: ../../02_intermediate.rst:4516
 msgid ""
 "PoS (Proof-of-Stake) is a :term:`consensus<Consensus>` algorithm in which"
 " the probability of generating the next :term:`block<Block>` is "
@@ -11937,11 +11984,11 @@ msgid ""
 "block."
 msgstr ""
 
-#: ../../02_intermediate.rst:4513
+#: ../../02_intermediate.rst:4517
 msgid "PoW"
 msgstr ""
 
-#: ../../02_intermediate.rst:4516
+#: ../../02_intermediate.rst:4520
 msgid ""
 "PoW (Proof-of-Work) is a :term:`consensus<Consensus>` algorithm in which "
 "it is required to perform a complex calculation in order to generate a "
@@ -11950,11 +11997,11 @@ msgid ""
 "generating the next block."
 msgstr ""
 
-#: ../../02_intermediate.rst:4517
+#: ../../02_intermediate.rst:4521
 msgid "Private Key"
 msgstr ""
 
-#: ../../02_intermediate.rst:4520
+#: ../../02_intermediate.rst:4524
 msgid ""
 "The private key is one of a pair of :term:`account<Account>` keys. The "
 "account owner signs the :term:`transaction<Transaction>` with the private"
@@ -11962,28 +12009,28 @@ msgid ""
 "the transaction."
 msgstr ""
 
-#: ../../02_intermediate.rst:4521
+#: ../../02_intermediate.rst:4525
 msgid "Public Key"
 msgstr ""
 
-#: ../../02_intermediate.rst:4524 ../../02_intermediate.rst:4582
-#: ../../02_intermediate.rst:4618
+#: ../../02_intermediate.rst:4528 ../../02_intermediate.rst:4586
+#: ../../02_intermediate.rst:4622
 msgid "An account script is a Ride script that has the following directives:"
 msgstr ""
 
-#: ../../02_intermediate.rst:4527
+#: ../../02_intermediate.rst:4531
 msgid "Q"
 msgstr ""
 
-#: ../../02_intermediate.rst:4530
+#: ../../02_intermediate.rst:4534
 msgid "R"
 msgstr ""
 
-#: ../../02_intermediate.rst:4533
+#: ../../02_intermediate.rst:4537
 msgid "Ride"
 msgstr ""
 
-#: ../../02_intermediate.rst:4536
+#: ../../02_intermediate.rst:4540
 msgid ""
 "The Ride is a functional expression-based programming language. Ride is "
 "used to write :term:`scripts<Script>`. The language has strong static "
@@ -11991,18 +12038,18 @@ msgid ""
 " therefore it is Turing-incomplete"
 msgstr ""
 
-#: ../../02_intermediate.rst:4545
+#: ../../02_intermediate.rst:4549
 msgid ""
 "A script is the source code on the :term:`Ride<Ride>` language. There are"
 " three types of scripts: :term:`dApp script<dApp Script>`, :term:`account"
 " script<Account Script>`, :term:`asset script<Asset Script>`."
 msgstr ""
 
-#: ../../02_intermediate.rst:4546
+#: ../../02_intermediate.rst:4550
 msgid "Secret Phrase"
 msgstr ""
 
-#: ../../02_intermediate.rst:4549
+#: ../../02_intermediate.rst:4553
 msgid ""
 "Secret phrase (or Seed) is a set of characters (usually, it is 15 English"
 " words with spaces between them) that allows you to access your "
@@ -12011,24 +12058,24 @@ msgid ""
 " to keep your secret phrase safe."
 msgstr ""
 
-#: ../../02_intermediate.rst:4550
+#: ../../02_intermediate.rst:4554
 msgid "Smart Account"
 msgstr ""
 
-#: ../../02_intermediate.rst:4553
+#: ../../02_intermediate.rst:4557
 msgid ""
 "A smart account is an :term:`account<Account>` with an account script "
 "attached. Only one script can be attached to an account. The account "
 "script is attached to the account using the set script transaction."
 msgstr ""
 
-#: ../../02_intermediate.rst:4557
+#: ../../02_intermediate.rst:4561
 msgid ""
 "A smart asset is a :term:`tokens<Token>` with an :term:`asset "
 "script<Asset Script>` attached."
 msgstr ""
 
-#: ../../02_intermediate.rst:4561
+#: ../../02_intermediate.rst:4565
 msgid ""
 "Stagenet (or staging network) is the DecentralChain "
 ":term:`blockchain<Blockchain>` network, which is used for experiments, "
@@ -12038,11 +12085,11 @@ msgid ""
 "of blockchain data to the N-th height in the past is possible."
 msgstr ""
 
-#: ../../02_intermediate.rst:4567
+#: ../../02_intermediate.rst:4571
 msgid "Test Network"
 msgstr ""
 
-#: ../../02_intermediate.rst:4570
+#: ../../02_intermediate.rst:4574
 msgid ""
 "Test network (or testnet) is a DecentralChain "
 ":term:`blockchain<Blockchain>` test network, which is used by developers "
@@ -12050,90 +12097,90 @@ msgid ""
 "blockchain."
 msgstr ""
 
-#: ../../02_intermediate.rst:4571
+#: ../../02_intermediate.rst:4575
 msgid "Token"
 msgstr ""
 
-#: ../../02_intermediate.rst:4574
+#: ../../02_intermediate.rst:4578
 msgid ""
 "A token is a :term:`blockchain<Blockchain>` object that represents "
 "another object from the physical or virtual world or an abstract concept."
 msgstr ""
 
-#: ../../02_intermediate.rst:4578
+#: ../../02_intermediate.rst:4582
 msgid ""
 "Transaction is an action on the :term:`blockchain<Blockchain>` on behalf "
 "of the :term:`account<Account>`. Transactions can be sent only from the "
 "account — thus, any transaction can be correlated with a certain account."
 msgstr ""
 
-#: ../../02_intermediate.rst:4579
+#: ../../02_intermediate.rst:4583
 msgid "Transaction Body Bytes"
 msgstr ""
 
-#: ../../02_intermediate.rst:4585
+#: ../../02_intermediate.rst:4589
 msgid "U"
 msgstr ""
 
-#: ../../02_intermediate.rst:4588
+#: ../../02_intermediate.rst:4592
 msgid "UTX pool"
 msgstr ""
 
-#: ../../02_intermediate.rst:4591
+#: ../../02_intermediate.rst:4595
 msgid ""
 "UTX pool (or Unconfirmed Transactions pool) is a pool of unconfirmed "
 ":term:`node<Node>` :term:`transactions<Transaction>` that are waiting for"
 " validation."
 msgstr ""
 
-#: ../../02_intermediate.rst:4594
+#: ../../02_intermediate.rst:4598
 msgid "V"
 msgstr ""
 
-#: ../../02_intermediate.rst:4600
+#: ../../02_intermediate.rst:4604
 msgid ""
 "A validating node is a :term:`node<Node>` that validates "
 ":term:`transactions<Transaction>`."
 msgstr ""
 
-#: ../../02_intermediate.rst:4603
+#: ../../02_intermediate.rst:4607
 msgid "W"
 msgstr ""
 
-#: ../../02_intermediate.rst:4607
+#: ../../02_intermediate.rst:4611
 msgid "Decentralites"
 msgstr ""
 
-#: ../../02_intermediate.rst:4610
+#: ../../02_intermediate.rst:4614
 msgid ""
 "One Decentralite is 1/100 000 000 DecentralCoin. 1 Decentralite is the "
 "minimum number of DecentralCoins that you can work with within the "
 "DecentralChain :term:`blockchain<Blockchain>`."
 msgstr ""
 
-#: ../../02_intermediate.rst:4611
+#: ../../02_intermediate.rst:4615
 msgid "DecentralCoins"
 msgstr ""
 
-#: ../../02_intermediate.rst:4614
+#: ../../02_intermediate.rst:4618
 msgid ""
 "DecentralCoin is the main token of the DecentralChain blockchain. 1 "
 "DecentralCoin equals 100,000,000 Decentralites."
 msgstr ""
 
-#: ../../02_intermediate.rst:4615
+#: ../../02_intermediate.rst:4619
 msgid "WCT"
 msgstr ""
 
-#: ../../02_intermediate.rst:4621
+#: ../../02_intermediate.rst:4625
 msgid "X"
 msgstr ""
 
-#: ../../02_intermediate.rst:4624
+#: ../../02_intermediate.rst:4628
 msgid "Y"
 msgstr ""
 
-#: ../../02_intermediate.rst:4627
+#: ../../02_intermediate.rst:4631
 msgid "Z"
 msgstr ""
 
