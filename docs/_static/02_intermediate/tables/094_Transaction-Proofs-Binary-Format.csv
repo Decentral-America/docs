@@ -1,0 +1,8 @@
+#, Field, Type, Size in bytes, Comment
+":math:`1`", "Proofs version", "Byte", ":math:`1`", "Value is 1."
+":math:`2`", "Proofs count", "Short", ":math:`1`", ""
+":math:`3`", "Proof 1 length", "Short", ":math:`1`", "Value is 64."
+":math:`4`", "Proof 1", "Array[Byte]", ":math:`1`", "" 
+":math:`5`", "Proof 2 length", "Short", ":math:`1`", ""
+":math:`6`", "Proof 2", "Array[Byte]", ":math:`1`", ""
+"...", "...", "...", "...", "..."
