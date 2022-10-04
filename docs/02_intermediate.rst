@@ -4321,7 +4321,7 @@ B
 
     A block height is the :term:`block’s<Block>` sequence number in the :term:`blockchain<Blockchain>`.
 
-  Blockchain Height /#/ Altura de la Cadena de Bloques
+  Blockchain Height
 
     A blockchain height is a sequence number of the last :term:`block<Block>` in the :term:`blockchain<Blockchain>`.
 
