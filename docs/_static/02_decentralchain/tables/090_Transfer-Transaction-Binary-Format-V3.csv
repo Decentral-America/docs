@@ -1,0 +1,6 @@
+Field, Size, Description
+"recipient.public_key_hash", ":math:`20` bytes", "Recipient's account public key hash (a component of an address, see the :ref:`address binary format <02_decentralchain:Address Binary Format>` article)."
+"recipient.alias", "From :math:`4` to :math:`30` bytes", "Recipient's :ref:`alias <02_decentralchain:Alias>`."
+"amount.asset_id", ":math:`32` bytes", "ID of token to transfer."
+"amount.amount", ":math:`8` bytes", "Amount of token to transfer, specified in the minimum fraction (“cents”)."
+"attachment", "Up to :math:`140` bytes", "Arbitrary data (typically a comment to transfer)."

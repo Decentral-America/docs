@@ -1,2 +1,0 @@
-Parameter, Description
-"bytes: :ref:`ByteVector <03_advanced:ByteVector>`", "The array of bytes to encode. Maximum size: 1) For sha256_<N>Kb functions — N kB. 2) For sha256 function — 150 kB."
