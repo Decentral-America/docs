@@ -1,3 +1,0 @@
-Parameter, Description
-"addressOrAlias: :ref:`Address <03_advanced:Address>` | :ref:`Alias <03_advanced:Alias>`", ":ref:`Address <02_intermediate:Address>` or :ref:`alias <02_intermediate:Alias>` of the account."
-"assetId: :ref:`ByteVector <03_advanced:ByteVector>`", ":ref:`Token ID <02_intermediate:Token ID>`"

@@ -1,5 +1,0 @@
-Field, Description
-"assetId", "Token ID base58 encoded."
-"quantity", "Amount of token to reissue: an integer value specified in the minimum fraction (“cents”) of token. The total quantity of token as a result of the reissue should not exceed :math:`9,223,372,036,854,775,807`."
-"chainId", ":ref:`Chain ID <02_intermediate:Chain ID>`"
-"reissuable", "Reissue availability flag."

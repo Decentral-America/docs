@@ -1,0 +1,9 @@
+Field, Description
+"name", "Token name. From :math:`4` to :math:`16` bytes (:math:`1` character can take up to :math:`4` bytes)."
+"description", "Token description. From :math:`0` to :math:`1000` bytes."
+"quantity", "Token quantity: an integer value specified in the minimum fraction (“cents”), that is, the real quantity multiplied by :math:`10^{decimals}`. From :math:`1` to :math:`9,223,372,036,854,775,807`. :math:`1` for NFT."
+"decimals", "Number of decimal places, from :math:`0` to :math:`8`. :math:`0` for NFTs."
+"reissuable", "Reissue availability flag, see the :ref:`reissue transaction <02_decentralchain:Reissue Transaction>` article. False for NFTs."
+"script", "For the :ref:`smart asset <02_decentralchain:Smart Asset>`: the compiled :ref:`Asset script <03_ride-language:Asset Script>`, up to :math:`8192` bytes, base64 encoded. For the token without a script: null. The token issued without a script cannot be converted to a smart asset."
+"chainId", ":ref:`Chain ID <02_decentralchain:Chain ID>`"
+"assetId", "Token ID base58 encoded. The token ID is the same as the Issue transaction ID."

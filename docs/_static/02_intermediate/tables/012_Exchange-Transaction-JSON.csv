@@ -1,6 +1,0 @@
-Field, Description
-"amount", "Amount of the amount asset: an integer value specified in the minimum fraction (“cent”) of asset."
-"price", "Price for the amount asset nominated in the price asset, multiplied by the factor: 1) :math:`10^{8}` for the exchange transaction version 3. 2) :math:`10^{(8 + priceAssetDecimals – amountAssetDecimals)}`. Where amountAssetDecimals, priceAssetDecimals are decimals of the assets, for the exchange transaction version 2 or 1."
-"buyMatcherFee","Matcher fee for the buy order execution. The fee token ID is indicated in buy order."
-"sellMatcherFee", "Matcher fee for the sell order execution. The fee token ID is indicated in sell order."
-"order1, order2", "Buy and sell orders. See the :ref:`order <02_intermediate:Order>` article for details."

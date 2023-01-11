@@ -1,0 +1,3 @@
+Parameter, Description
+"xs: :ref:`ByteVector <03_ride-language:ByteVector>`", "Byte array."
+"number: :ref:`Int <03_ride-language:Int>`", "N bytes."

@@ -1,0 +1,3 @@
+#, Name, Data type, Description
+":math:`1`", "amountAsset", ":ref:`ByteVector <03_ride-language:ByteVector>` | :ref:`Unit <03_ride-language:Unit>`", "The first token of a pair."
+":math:`2`", "priceAsset", ":ref:`ByteVector <03_ride-language:ByteVector>` | :ref:`Unit <03_ride-language:Unit>`", "The second token of a pair."

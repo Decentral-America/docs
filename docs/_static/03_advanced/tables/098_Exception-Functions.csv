@@ -1,3 +1,0 @@
-Name, Description, Complexity
-":ref:`throw() <03_advanced:throw()>`", "Raises an exception", ":math:`1`"
-":ref:`throw(String) <03_advanced:throw(String)>`", "Raises an exception with a message", ":math:`1`"

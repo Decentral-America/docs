@@ -1,7 +1,0 @@
-Parameter, Description
-"value: :ref:`Int <03_advanced:Int>`", "Number a without decimal point."
-"vp: :ref:`Int <03_advanced:Int>`", "Number of decimals of a."
-"base: :ref:`Int <03_advanced:Int>`", "Logarithm base b without decimal point."
-"bp: :ref:`Int <03_advanced:Int>`", "Number of decimals of b."
-"rp: :ref:`Int <03_advanced:Int>`", "Number of decimals in the resulting value, from :math:`0` to :math:`8` inclusive. Specifies the accuracy of the calculated result."
-"round: DOWN|CEILING|FLOOR|HALFUP|HALFEVEN", "One of the rounding variables."

@@ -1,0 +1,12 @@
+Data type name, Ride keyword
+":ref:`Big Integer <03_ride-language:BigInt>`", "BigInt"
+":ref:`Boolean <03_ride-language:Boolean>`", "Boolean"
+":ref:`Byte array <03_ride-language:ByteVector>`", "ByteVector"
+":ref:`Integer <03_ride-language:Int>`", "Int"
+":ref:`String <03_ride-language:String>`", "String"
+":ref:`Empty value <03_ride-language:Unit>`", "Unit"
+":ref:`List <03_ride-language:List>`", "List"
+":ref:`Tuple <03_ride-language:Tuple>`", "—"
+":ref:`Union <03_ride-language:Union>`", "—"
+":ref:`Structure <03_ride-language:Structures>`", "—"
+":ref:`Arbitrary type <03_ride-language:Any>`", "Any"

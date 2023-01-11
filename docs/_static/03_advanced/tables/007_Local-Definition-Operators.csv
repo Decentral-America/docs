@@ -1,4 +1,0 @@
-Operator, Description
-"func", "Function local definition."
-"let", "Lazy definition of a variable."
-"strict", ":ref:`Strict definition <03_advanced:Variables>` of a variable."
