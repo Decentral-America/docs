@@ -1,0 +1,5 @@
+Parameter, Description
+"dApp: :ref:`Address <03_ride-language:Address>` | :ref:`Alias <03_ride-language:Alias>`", ":ref:`Address <02_decentralchain:Address>` or :ref:`alias <02_decentralchain:Alias>` of a dApp to invoke."
+"function: :ref:`String <03_ride-language:String>` | :ref:`Unit <03_ride-language:Unit>`", "Name of a callable function. Unit for a default function invocation."
+"arguments: :ref:`List <03_ride-language:List>` [:ref:`Any <03_ride-language:Any>`]", "Parameters of a callable function."
+"payments: :ref:`List <03_ride-language:List>` [:ref:`AttachedPayment <03_ride-language:AttachedPayment>`]", "Payments to transfer from the parent dApp to the invoked dApp, up to :math:`10`."

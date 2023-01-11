@@ -1,0 +1,11 @@
+#, Name, Data type, Description
+":math:`1`", "id", ":ref:`ByteVector <03_ride-language:ByteVector>`", ":ref:`Token ID <02_decentralchain:Token ID>`."
+":math:`2`", "quantity", ":ref:`Int <03_ride-language:Int>`", "Amount of issued token, multiplied by :math:`10^{decimals}`. Up to :math:`9 223 372 036 854 775 806`."
+":math:`3`", "decimals", ":ref:`Int <03_ride-language:Int>`", "Number of decimal places, :math:`0` to :math:`8`."
+":math:`4`", "issuer", ":ref:`Address <03_ride-language:Address>`", ":ref:`Address <02_decentralchain:Address>` of the :ref:`account <02_decentralchain:Account>` that issued a token."
+":math:`5`", "issuerPublicKey", ":ref:`ByteVector <03_ride-language:ByteVector>`", "Public key of the account that issued a token."
+":math:`6`", "reissuable", ":ref:`Boolean <03_ride-language:Boolean>`", "true — token can be reissued, false — cannot be reissued."
+":math:`7`", "scripted", ":ref:`Boolean <03_ride-language:Boolean>`", "true — :ref:`smart asset <documentation:placeholder>`, false — regular token."
+":math:`8`", "minSponsoredFee", ":ref:`Int <03_ride-language:Int>` | :ref:`Unit <03_ride-language:Unit>`", "Amount of asset that is equivalent to :math:`0.001` :ref:`DecentralCoins <02_decentralchain:DecentralCoin>` (:math:`100,000` Decentralites), specified in the minimum fraction (“cents”) of asset. See the :ref:`Sponsored fee <02_decentralchain:Sponsored Fees>` article. unit: sponsorship is disabled."
+":math:`9`", "name", ":ref:`String <03_ride-language:String>`", "Token name, up to :math:`16` characters."
+":math:`10`", "description", ":ref:`String <03_ride-language:String>`", "Token description, up to :math:`1000` characters."

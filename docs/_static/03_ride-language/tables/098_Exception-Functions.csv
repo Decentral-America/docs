@@ -1,0 +1,3 @@
+Name, Description, Complexity
+":ref:`throw() <03_ride-language:throw()>`", "Raises an exception", ":math:`1`"
+":ref:`throw(String) <03_ride-language:throw(String)>`", "Raises an exception with a message", ":math:`1`"

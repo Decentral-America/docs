@@ -1,3 +1,0 @@
-#, Name, Data type, Description
-":math:`1`", "assetId", ":ref:`ByteVector <03_advanced:ByteVector>`", ":ref:`ID of the token <02_intermediate:Token ID>` to burn."
-":math:`2`", "quantity", ":ref:`Int <03_advanced:Int>`", "Amount of the token."

@@ -1,5 +1,0 @@
-Parameter, Description
-"dApp: :ref:`Address <03_advanced:Address>` | :ref:`Alias <03_advanced:Alias>`", ":ref:`Address <02_intermediate:Address>` or :ref:`alias <02_intermediate:Alias>` of a dApp to invoke."
-"function: :ref:`String <03_advanced:String>` | :ref:`Unit <03_advanced:Unit>`", "Name of a callable function. Unit for a default function invocation."
-"arguments: :ref:`List <03_advanced:List>` [:ref:`Any <03_advanced:Any>`]", "Parameters of a callable function."
-"payments: :ref:`List <03_advanced:List>` [:ref:`AttachedPayment <03_advanced:AttachedPayment>`]", "Payments to transfer from the parent dApp to the invoked dApp, up to :math:`10`."

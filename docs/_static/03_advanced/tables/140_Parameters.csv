@@ -1,3 +1,0 @@
-Parameter, Description
-"arr: :ref:`List <03_advanced:List>` [:ref:`String <03_advanced:String>`]", "List of strings to concatenate."
-"separator: :ref:`String <03_advanced:String>`", "Separator."

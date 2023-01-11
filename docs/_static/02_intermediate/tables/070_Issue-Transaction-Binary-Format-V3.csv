@@ -1,7 +1,0 @@
-Field, Size, Description
-"name", "From :math:`4` to :math:`16` bytes", "Token name."
-"description", "From :math:`0` to :math:`1000` bytes", "Token description."
-"amount", ":math:`8` bytes", "Amount of token to issue, specified in the minimum fraction (“cents”)."
-"decimals", ":math:`1` byte", "Number of decimal places."
-"reissuable", ":math:`1` byte", "Reissue availability flag."
-"script", "Up to :math:`8192` bytes", ":ref:`Asset script <03_advanced:Asset Script>`."

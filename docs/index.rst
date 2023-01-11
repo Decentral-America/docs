@@ -10,6 +10,6 @@ Welcome to DecentralChain's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-   01_beginner
-   02_intermediate
-   03_advanced
+   01_introduction
+   02_decentralchain
+   03_ride-language

@@ -1,0 +1,7 @@
+Field order number, Field, Field type, Field size in bytes, Comment
+":math:`1`", ":ref:`Transaction type ID <02_decentralchain:Transaction Types>`", ":ref:`Byte <02_decentralchain:Blockchain Data Types>`", ":math:`1`", "Value must be :math:`9`."
+":math:`2`", "Public key of the transaction sender", "Array[:ref:`Byte <02_decentralchain:Blockchain Data Types>`]", ":math:`32`", " "
+":math:`3`", ":ref:`Transaction fee <02_decentralchain:Transaction Fees>`", ":ref:`Long <02_decentralchain:Blockchain Data Types>`", ":math:`8`", " "
+":math:`4`", "Transaction timestamp", ":ref:`Long <02_decentralchain:Blockchain Data Types>`", ":math:`8`", " "
+":math:`5`", "Lease ID", "Array[:ref:`Byte <02_decentralchain:Blockchain Data Types>`]", ":math:`32`", " "
+":math:`6`", "Transaction signature", "Array[:ref:`Byte <02_decentralchain:Blockchain Data Types>`]", ":math:`64`", " "

@@ -1,9 +1,0 @@
-#, Name, Data type, Description
-":math:`1`", "caller", ":ref:`Address <03_advanced:Address>`", ":ref:`Address <02_intermediate:Address>` of the account that sent the invoke script transaction."
-":math:`2`", "callerPublicKey", ":ref:`ByteVector <03_advanced:ByteVector>`", "Public key of the account that sent the invoke script transaction."
-":math:`3`", "originCaller", "Address", "Duplicates the caller field."
-":math:`4`", "originCallerPublicKey", ":ref:`ByteVector <03_advanced:ByteVector>`", "Duplicates the callerPublicKey field."
-":math:`5`", "payments", ":ref:`List <03_advanced:List>` [:ref:`AttachedPayment <03_advanced:AttachedPayment>`]", "Payments indicated in the invoke script transaction."
-":math:`6`", "transactionId", ":ref:`ByteVector <03_advanced:ByteVector>`", "ID of the invoke script transaction."
-":math:`7`", "fee", ":ref:`Int <03_advanced:Int>`", ":ref:`Transaction fee <02_intermediate:Transaction Fees>`."
-":math:`8`", "feeAssetId", ":ref:`ByteVector <03_advanced:ByteVector>` | :ref:`Unit <03_advanced:Unit>`", "ID of the fee token."
