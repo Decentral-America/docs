@@ -1,3 +1,0 @@
-Parameter, Description
-"data: :ref:`List <03_advanced:List>` []", "List of data entries, usually tx.data."
-"key: :ref:`String <03_advanced:String>`", "Key."

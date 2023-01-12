@@ -1,3 +1,0 @@
-#, Name, Data type, Description
-":math:`1`", "assetId", ":ref:`ByteVector <03_advanced:ByteVector>` | :ref:`Unit <03_advanced:Unit>`", "ID of a :ref:`token <02_intermediate:Token (Asset)>`."
-":math:`2`", "amount", ":ref:`Int <03_advanced:Int>`", "Payment amount."

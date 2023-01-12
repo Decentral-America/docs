@@ -1,0 +1,5 @@
+Field, Description
+"name", "Token name. From :math:`4` to :math:`16` bytes."
+"description", "Token description. From :math:`0` to :math:`1000` bytes."
+"chainId", ":ref:`Chain ID <02_decentralchain:Chain ID>`"
+"assetId", "Token ID base58 encoded."

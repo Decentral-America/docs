@@ -1,0 +1,2 @@
+Field, Size, Description
+"script", "Up to :math:`32,768` bytes", ":ref:`Account script <03_ride-language:Account Script>` or :ref:`dApp script <03_ride-language:dApp Script>`."

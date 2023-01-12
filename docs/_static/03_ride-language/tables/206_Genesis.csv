@@ -1,0 +1,2 @@
+Transaction type ID, Name, Description
+":math:`1`", ":ref:`GenesisTransaction <03_ride-language:GenesisTransaction>`", "Structure of :ref:`genesis transaction <02_decentralchain:Genesis Transaction>`."

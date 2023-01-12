@@ -1,3 +1,0 @@
-Field, Size, Description
-"min_fee.asset_id", ":math:`32` bytes", "ID of asset."
-"min_fee.amount", ":math:`8` bytes", "Amount of asset that is equivalent to :math:`0.001` DecentralCoins (:math:`100 000` Decentralites), specified in the minimum fraction (“cents”) of asset. See the :ref:`sponsored fee <02_intermediate:Sponsored Fees>` article."

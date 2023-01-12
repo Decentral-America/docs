@@ -1,4 +1,0 @@
-Name, Description, Complexity
-":ref:`blake2b256(ByteVector): ByteVector <03_advanced:blake2b256(ByteVector): ByteVector>`", "Range of functions. Hash an array of bytes using BLAKE2b-256", ":math:`10–200`"
-":ref:`keccak256(ByteVector): ByteVector <03_advanced:keccak256(ByteVector): ByteVector>`", "Range of functions. Hash an array of bytes using Keccak-256", ":math:`10–200`"
-":ref:`sha256(ByteVector): ByteVector <03_advanced:sha256(ByteVector): ByteVector>`", "Range of functions. Hash an array of bytes using SHA-256", ":math:`10–200`"

@@ -1,4 +1,0 @@
-Transaction type ID, Name, Description
-":math:`8`", ":ref:`LeaseTransaction <03_advanced:LeaseTransaction>`", "Structure of :ref:`lease transaction <02_intermediate:Lease Transaction>`."
-":math:`9`", ":ref:`LeaseCancelTransaction <03_advanced:LeaseCancelTransaction>`", "Structure of :ref:`lease cancel transaction <02_intermediate:Lease Cancel Transaction>`."
-":math:`14`", ":ref:`SponsorFeeTransaction <03_advanced:SponsorFeeTransaction>`", "Structure of :ref:`sponsor fee transaction <02_intermediate:Sponsor Fee Transaction>`."

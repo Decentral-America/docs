@@ -1,0 +1,5 @@
+Field order number, Field, Field type, Field size in bytes, Comments
+":math:`1`", "Entity type", "Byte", ":math:`1`", "Value must be :math:`1`."
+":math:`2`", ":ref:`Chain ID <02_decentralchain:Chain ID>`", "Byte", ":math:`1`", ":math:`87` — for Mainnet. :math:`84` — for Testnet. :math:`83` — for Stagenet."
+":math:`3`", "Account public key hash", "Array of bytes", ":math:`20`", "First :math:`20` bytes of the result of the Keccak256 (Blake2b256 (publicKey)) hashing function. Here publicKey is the array of bytes of the account public key."
+":math:`4`", "Checksum", "Array of bytes", ":math:`4`", "First :math:`4` bytes of the result of the Keccak256 (Blake2b256 (data)) hashing function. Here data is the array of bytes of three fields put together: 1) Entity type. 2) Chain ID. 3) Account public key hash."
