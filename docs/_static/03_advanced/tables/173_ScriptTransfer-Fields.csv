@@ -1,4 +1,0 @@
-#, Name, Data type, Description
-":math:`1`", "recipient", ":ref:`Address <03_advanced:Address>` | :ref:`Alias <03_advanced:Alias>`", ":ref:`Address <02_intermediate:Address>` or the :ref:`alias <02_intermediate:Alias>` of a recipient of tokens."
-":math:`2`", "amount", ":ref:`Int <03_advanced:Int>`", "Number of tokens."
-":math:`3`", "asset", ":ref:`ByteVector <03_advanced:ByteVector>` | :ref:`Unit <03_advanced:Unit>`", ":ref:`ID of the token <02_intermediate:Token ID>`."

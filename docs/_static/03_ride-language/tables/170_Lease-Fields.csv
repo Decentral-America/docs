@@ -1,0 +1,4 @@
+#, Name, Data type, Description
+":math:`1`", "recipient", ":ref:`Address <03_ride-language:Address>` | :ref:`Alias <03_ride-language:Alias>`", "Lessee :ref:`address <02_decentralchain:Address>` or :ref:`alias <02_decentralchain:Alias>`."
+":math:`2`", "amount", ":ref:`Int <03_ride-language:Int>`", "Amount of :ref:`DecentralCoins <02_decentralchain:DecentralCoin>` to lease (that is, amount of Decentralites multiplied by :math:`10^{8}`)."
+":math:`7`", "nonce", ":ref:`Int <03_ride-language:Int>`", "Nonce that is used for lease ID generation. If the callable function creates several leases with the same parameters, you should use different nonces."

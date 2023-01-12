@@ -1,5 +1,0 @@
-#, Name, Data type, Description
-":math:`1`", "available", ":ref:`Int <03_advanced:Int>`", "Available balance."
-":math:`2`", "regular", ":ref:`Int <03_advanced:Int>`", "Regular balance."
-":math:`3`", "generating", ":ref:`Int <03_advanced:Int>`", "Generating balance."
-":math:`4`", "effective", ":ref:`Int <03_advanced:Int>`", "Effective balance."

@@ -1,5 +1,0 @@
-Parameter,Description
-"a: :ref:`Int <03_advanced:Int>`", "Integer a"
-"b: :ref:`Int <03_advanced:Int>`", "Integer b"
-"c: :ref:`Int <03_advanced:Int>`", "Integer c"
-"round: DOWN|CEILING|FLOOR|HALFUP|HALFEVEN", "One of the rounding variables"
