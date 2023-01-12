@@ -1,6 +1,0 @@
-Transaction type ID, Name, Description
-":math:`3`", ":ref:`IssueTransaction <03_ride-language:IssueTransaction>`", "Structure of :ref:`issue transaction <02_decentralchain:Issue Transaction>`."
-":math:`5`", ":ref:`ReissueTransaction <03_ride-language:ReissueTransaction>`", "Structure of :ref:`reissue transaction <02_decentralchain:Reissue Transaction>`."
-":math:`6`", ":ref:`BurnTransaction <03_ride-language:BurnTransaction>`", "Structure of :ref:`burn transaction <02_decentralchain:Burn Transaction>`."
-":math:`15`", ":ref:`SetAssetScriptTransaction <03_ride-language:SetAssetScriptTransaction>`", "Structure of :ref:`set asset script transaction <02_decentralchain:Set Asset Script Transaction>`."
-":math:`17`", ":ref:`UpdateAssetInfoTransaction <03_ride-language:UpdateAssetInfoTransaction>`", "Structure of :ref:`update asset info transaction <02_decentralchain:Update Asset Info Transaction>`."

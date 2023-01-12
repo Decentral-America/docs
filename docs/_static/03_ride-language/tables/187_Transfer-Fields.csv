@@ -1,3 +1,0 @@
-#, Name, Data type, Description
-":math:`1`", "recipient", ":ref:`Address <03_ride-language:Address>` | :ref:`Alias <03_ride-language:Alias>`", ":ref:`Address <02_decentralchain:Address>` of a recipient of tokens."
-":math:`2`", "amount", ":ref:`Int <03_ride-language:Int>`", "Number of tokens."

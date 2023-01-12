@@ -1,8 +1,0 @@
-#, Name, Data type, Description
-":math:`1`", "timestamp", ":ref:`Int <03_ride-language:Int>`", ":ref:`Block timestamp <02_decentralchain:Block Timestamp>`."
-":math:`2`", "height", ":ref:`Int <03_ride-language:Int>`", ":ref:`Block height <02_decentralchain:Block Height>`."
-":math:`3`", "baseTarget", ":ref:`Int <03_ride-language:Int>`", ":ref:`Base target <02_decentralchain:Base Target>`."
-":math:`4`", "generationSignature", ":ref:`ByteVector <03_ride-language:ByteVector>`", ":ref:`Generation signature <02_decentralchain:Block Generation>`."
-":math:`5`", "generator", ":ref:`Address <03_ride-language:Address>`", ":ref:`Address <02_decentralchain:Address>` of the :ref:`account <02_decentralchain:Account>` that created a block."
-":math:`6`", "generatorPublicKey", ":ref:`ByteVector <03_ride-language:ByteVector>`", "Public key of the account that created a block."
-":math:`7`", "vrf", ":ref:`ByteVector <03_ride-language:ByteVector>` | :ref:`Unit <03_ride-language:Unit>`", "VRF for block version 5, unit otherwise."

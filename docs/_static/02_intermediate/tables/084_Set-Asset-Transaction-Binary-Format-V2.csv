@@ -1,0 +1,3 @@
+Field, Size, Description
+"asset_id",":math:`32` bytes", "ID of asset."
+"script", "Up to :math:`8192` bytes", ":ref:`Asset script <03_advanced:Asset Script>`."

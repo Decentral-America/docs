@@ -1,4 +1,0 @@
-Field, Size, Description
-"recipient.public_key_hash", ":math:`20` bytes", "Recipient's account public key hash (a component of an :ref:`address <02_decentralchain:Address>`, see the :ref:`address binary format <02_decentralchain:Address Binary Format>` article)."
-"recipient.alias", "From :math:`4` to :math:`30` bytes", "Recipient's :ref:`alias <02_decentralchain:Alias>`."
-"amount", ":math:`8` bytes", "Amount of :ref:`DecentralCoins <02_decentralchain:DecentralCoin>` to lease (that is, amount of Decentralites multiplied by :math:`10^{8}`)."

@@ -1,0 +1,12 @@
+#, Name, Data type, Description
+":math:`1`", "quantity", ":ref:`Int <03_advanced:Int>`", "Amount of the :ref:`token <02_intermediate:Token (Asset)>`."
+":math:`2`", "assetId", ":ref:`ByteVector <03_advanced:ByteVector>`", ":ref:`Token ID <02_intermediate:Token ID>`."
+":math:`3`", "reissuable", ":ref:`Boolean <03_advanced:Boolean>`", "Reissue flag."
+":math:`4`", "id", ":ref:`ByteVector <03_advanced:ByteVector>`", "Transaction ID."
+":math:`5`", "fee", ":ref:`Int <03_advanced:Int>`", ":ref:`Transaction fee <02_intermediate:Transaction Fees>`."
+":math:`6`", "timestamp", ":ref:`Int <03_advanced:Int>`", "Transaction timestamp."
+":math:`7`", "version", ":ref:`Int <03_advanced:Int>`", "Transaction version."
+":math:`8`", "sender", ":ref:`Address <03_advanced:Address>`", ":ref:`Address <02_intermediate:Address>` of the transaction sender."
+":math:`9`", "senderPublicKey", ":ref:`ByteVector <03_advanced:ByteVector>`", "Public key of the transaction sender."
+":math:`10`", "bodyBytes", ":ref:`ByteVector <03_advanced:ByteVector>`", "Transaction body bytes."
+":math:`11`", "proofs", ":ref:`List <03_advanced:List>` [:ref:`ByteVector <03_advanced:ByteVector>`]", "Proofs."

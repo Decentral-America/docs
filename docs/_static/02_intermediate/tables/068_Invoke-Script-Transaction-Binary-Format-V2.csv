@@ -1,0 +1,6 @@
+Field, Size, Description
+"d_app.public_key_hash", ":math:`20` bytes", "dApp account public key hash (a component of an address, see the Address binary format article)."
+"d_app.alias", "From :math:`4` to :math:`30` bytes", "dApp alias."
+"function_call", " ", "Function name and arguments. Binary format of function call is the same as in version 1."
+"payments.asset_id", ":math:`32` bytes for asset. :math:`0` for :ref:`DecentralCoins <02_intermediate:DecentralCoin>`.", "ID of token in payment."
+"payments.amount", ":math:`8` bytes", "Amount of token in payment, specified in the atomic units."

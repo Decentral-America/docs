@@ -1,0 +1,3 @@
+Parameter, Description
+"addressOrAlias: :ref:`Address <03_advanced:Address>` | :ref:`Alias <03_advanced:Alias>`", ":ref:`Address <02_intermediate:Address>` or :ref:`alias <02_intermediate:Alias>` of the account."
+"key: :ref:`String <03_advanced:String>`", "Entry key."

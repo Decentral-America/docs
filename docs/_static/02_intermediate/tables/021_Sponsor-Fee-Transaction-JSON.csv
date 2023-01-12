@@ -1,0 +1,3 @@
+Field, Description
+"minSponsoredAssetFee", "Amount of asset that is equivalent to :math:`0.001` :ref:`DecentralCoins <02_intermediate:DecentralCoin>` (:math:`100,000` Decentralites): an integer value specified in the minimum fraction (“cents”) of asset. null – disable sponsorship."
+"assetId", "Token ID base58 encoded."

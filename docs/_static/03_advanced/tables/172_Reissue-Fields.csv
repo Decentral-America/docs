@@ -1,0 +1,4 @@
+#, Name, Data type ,Description
+":math:`1`", "assetId", ":ref:`ByteVector <03_advanced:ByteVector>`", ":ref:`ID of the token <02_intermediate:Token ID>` to reissue."
+":math:`2`", "quantity", ":ref:`Int <03_advanced:Int>`", "Amount of the token."
+":math:`3`", "isReissuable", ":ref:`Boolean <03_advanced:Boolean>`", "Reissue ability flag."
