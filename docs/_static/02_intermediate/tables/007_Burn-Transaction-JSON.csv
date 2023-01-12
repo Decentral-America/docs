@@ -1,4 +1,0 @@
-Field, Description
-"amount", "Amount of token to burn: an integer value specified in the minimum fraction (“cents”) of token."
-"assetId", "Token ID base58 encoded."
-"chainId", ":ref:`Chain ID <02_intermediate:Chain ID>`"

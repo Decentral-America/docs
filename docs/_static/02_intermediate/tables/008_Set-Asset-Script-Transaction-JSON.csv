@@ -1,4 +1,0 @@
-Field, Description
-"assetId", "Token ID base58 encoded."
-"chainId", ":ref:`Chain ID <02_intermediate:Chain ID>`"
-"script", "Compiled asset script, up to :math:`8192` bytes, base64 encoded."

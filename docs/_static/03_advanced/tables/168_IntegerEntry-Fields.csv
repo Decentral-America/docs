@@ -1,3 +1,0 @@
-#, Name, Data type, Description
-":math:`1`", "key", ":ref:`String <03_advanced:String>`", "Entry key. The maximum size is :math:`400` bytes."
-":math:`2`", "value", ":ref:`Int <03_advanced:Int>`", "Entry value."

@@ -1,0 +1,4 @@
+Parameter, Description
+"bin: :ref:`ByteVector <03_ride-language:ByteVector>`", "Array of bytes to convert."
+"offset: :ref:`Int <03_ride-language:Int>`", "Index to start from."
+"size: :ref:`Int <03_ride-language:Int>`", "Number of bytes (subarray length) to convert."

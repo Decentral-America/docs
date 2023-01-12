@@ -1,8 +1,0 @@
-Transaction type ID, Name, Description
-":math:`4`", ":ref:`TransferTransaction <03_advanced:TransferTransaction>`", "Structure of :ref:`transfer transaction <02_intermediate:Transfer Transaction>`."
-":math:`7`", ":ref:`ExchangeTransaction <03_advanced:ExchangeTransaction>`", "Structure of :ref:`exchange transaction <02_intermediate:Exchange Transaction>`."
-":math:`10`", ":ref:`CreateAliasTransaction <03_advanced:CreateAliasTransaction>`", "Structure of :ref:`create alias transaction <02_intermediate:Create Alias Transaction>`."
-":math:`11`", ":ref:`MassTransferTransaction <03_advanced:MassTransferTransaction>`", "Structure of :ref:`mass transfer transaction <02_intermediate:Mass Transfer Transaction>`."
-":math:`12`", ":ref:`DataTransaction <03_advanced:DataTransaction>`", "Structure of :ref:`data transaction <02_intermediate:Data Transaction>`."
-":math:`13`", ":ref:`SetScriptTransaction <03_advanced:SetScriptTransaction>`", "Structure of :ref:`set script transaction <02_intermediate:Set Script Transaction>`."
-":math:`16`", ":ref:`InvokeScriptTransaction <03_advanced:InvokeScriptTransaction>`", "Structure of :ref:`invoke script transaction <02_intermediate:Invoke Script Transaction>`."

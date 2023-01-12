@@ -1,6 +1,0 @@
-Transaction type ID, Name, Description
-":math:`3`", ":ref:`IssueTransaction <03_advanced:IssueTransaction>`", "Structure of :ref:`issue transaction <02_intermediate:Issue Transaction>`."
-":math:`5`", ":ref:`ReissueTransaction <03_advanced:ReissueTransaction>`", "Structure of :ref:`reissue transaction <02_intermediate:Reissue Transaction>`."
-":math:`6`", ":ref:`BurnTransaction <03_advanced:BurnTransaction>`", "Structure of :ref:`burn transaction <02_intermediate:Burn Transaction>`."
-":math:`15`", ":ref:`SetAssetScriptTransaction <03_advanced:SetAssetScriptTransaction>`", "Structure of :ref:`set asset script transaction <02_intermediate:Set Asset Script Transaction>`."
-":math:`17`", ":ref:`UpdateAssetInfoTransaction <03_advanced:UpdateAssetInfoTransaction>`", "Structure of :ref:`update asset info transaction <02_intermediate:Update Asset Info Transaction>`."

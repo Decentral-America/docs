@@ -1,3 +1,0 @@
-Parameter, Description
-"data: :ref:`List <03_advanced:List>` []", "List of data entries, usually tx.data."
-"index: :ref:`Int <03_advanced:Int>`", "Index."

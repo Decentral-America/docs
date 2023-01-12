@@ -1,0 +1,10 @@
+Data type, Weight of value
+":ref:`BigInt <03_ride-language:BigInt>`", ":math:`64`"
+":ref:`Boolean <03_ride-language:Boolean>`", ":math:`1`"
+":ref:`ByteVector <03_ride-language:ByteVector>`", "Size in bytes."
+":ref:`Int <03_ride-language:Int>`", ":math:`8`"
+":ref:`List <03_ride-language:List>`", "See weight of list below."
+":ref:`String <03_ride-language:String>`", "Size in bytes."
+":ref:`Structure <03_ride-language:Structures>`", "See weight of tuple or structure."
+":ref:`Tuple <03_ride-language:Tuple>`", "See weight of tuple or structure."
+":ref:`Unit <03_ride-language:Unit>`", ":math:`40`"

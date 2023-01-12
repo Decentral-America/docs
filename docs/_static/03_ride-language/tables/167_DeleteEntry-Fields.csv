@@ -1,0 +1,2 @@
+#, Name, Data type, Description
+":math:`1`", "key", ":ref:`String <03_ride-language:String>`", "Entry key. The maximum size is :math:`400` bytes."
