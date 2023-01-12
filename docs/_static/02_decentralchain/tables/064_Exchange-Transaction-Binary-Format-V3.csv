@@ -1,6 +1,0 @@
-Field, Size, Description
-"amount", ":math:`8` bytes", "Amount of the amount asset (base currency) that the buyer received from the seller, specified in the minimum fraction (“cent”) of asset."
-"price", ":math:`8` bytes", "Price for the amount asset (base currency) nominated in the price asset (quote currency), multiplied by :math:`10^{8}`. For more details see the :ref:`order <02_decentralchain:Order>` article."
-"buy_matcher_fee", ":math:`8` bytes", "Buy matcher fee. The fee token ID is indicated in buy order."
-"sell_matcher_fee", ":math:`8` bytes", "Sell matcher fee The fee token ID is indicated in sell order."
-"orders", " ", "Buy order and sell order. See the :ref:`order binary format <02_decentralchain:Order Binary Format>`."

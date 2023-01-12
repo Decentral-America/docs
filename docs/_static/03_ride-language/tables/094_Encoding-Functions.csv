@@ -1,4 +1,0 @@
-Name, Description, Complexity
-":ref:`toBase16String(ByteVector): String <03_ride-language:toBase16String(ByteVector): String>`", "Encodes array of bytes to base16 string", ":math:`10`"
-":ref:`toBase58String(ByteVector): String <03_ride-language:toBase58String(ByteVector): String>`", "Encodes array of bytes to base58 string", ":math:`3`"
-":ref:`toBase64String(ByteVector): String <03_ride-language:toBase64String(ByteVector): String>`", "Encodes array of bytes to base64 string", ":math:`35`"

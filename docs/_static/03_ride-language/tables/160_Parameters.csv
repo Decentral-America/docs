@@ -1,4 +1,0 @@
-Parameter, Description
-"message: :ref:`ByteVector <03_ride-language:ByteVector>`", "Signed data. Maximum size: 1)  For sigVerify_<N>Kb functions — :math:`N` bytes. 2) For sigVerify function — :math:`150` bytes."
-"sig: :ref:`ByteVector <03_ride-language:ByteVector>`", "Digital signature. Fixed size: :math:`25` bytes."
-"pub: :ref:`ByteVector <03_ride-language:ByteVector>`", "Binary public key. Fixed size: :math:`294` bytes."

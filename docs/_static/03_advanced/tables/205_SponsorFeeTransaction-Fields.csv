@@ -1,0 +1,11 @@
+#, Name, Data type ,Description
+":math:`1`", "assetId", ":ref:`ByteVector <03_advanced:ByteVector>`", ":ref:`Token ID <02_intermediate:Token ID>`."
+":math:`2`", "minSponsoredAssetFee", ":ref:`Int <03_advanced:Int>` |  :ref:`Unit <03_advanced:Unit>`", "Amount of asset that is equivalent to 0.001 :ref:`DecentralCoins <02_intermediate:DecentralCoin>` (100,000 Decentralites): an integer value specified in atomic units. unit – disable sponsorship."
+":math:`3`", "id", ":ref:`ByteVector <03_advanced:ByteVector>`", "Transaction ID."
+":math:`4`", "fee", ":ref:`Int <03_advanced:Int>`", ":ref:`Transaction fee <02_intermediate:Transaction Fees>`."
+":math:`5`", "timestamp", ":ref:`Int <03_advanced:Int>`", "Transaction timestamp."
+":math:`6`", "version", ":ref:`Int <03_advanced:Int>`", "Transaction version."
+":math:`7`", "sender", ":ref:`Address <03_advanced:Address>`", ":ref:`Address <02_intermediate:Address>` of the transaction sender."
+":math:`8`", "senderPublicKey", ":ref:`ByteVector <03_advanced:ByteVector>`", "Public key of the transaction sender."
+":math:`9`", "bodyBytes", ":ref:`ByteVector <03_advanced:ByteVector>`", "Transaction body bytes."
+":math:`10`", "proofs", ":ref:`List <03_advanced:List>` [:ref:`ByteVector <03_advanced:ByteVector>`]", "Proofs."

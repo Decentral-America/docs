@@ -1,0 +1,8 @@
+#, Field, Type, Size in bytes, Comment
+":math:`1`", "Proofs version", ":ref:`Byte <02_intermediate:Blockchain Data Types>`", ":math:`1`", "Value is 1."
+":math:`2`", "Proofs count", ":ref:`Short <02_intermediate:Blockchain Data Types>`", ":math:`2`", " "
+":math:`3`", "Proof 1 length", ":ref:`Short <02_intermediate:Blockchain Data Types>`", ":math:`2`", "Value is 64."
+":math:`4`", "Proofs 1", "Array[:ref:`Byte <02_intermediate:Blockchain Data Types>`]", ":math:`64`", " "
+":math:`5`", "Proof 2 length", ":ref:`Short <02_intermediate:Blockchain Data Types>`", ":math:`2`", " "
+":math:`6`", "Proof 2", "Array[:ref:`Byte <02_intermediate:Blockchain Data Types>`]", ":math:`64`", " "
+"...", "...", "...", "...", "..."

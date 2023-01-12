@@ -1,7 +1,0 @@
-Parameter, Description
-"base: :ref:`BigInt <03_ride-language:BigInt>`", "Logarithm base b without decimal point."
-"bp: :ref:`Int <03_ride-language:Int>`", "Number of decimals of a."
-"exponent: :ref:`BigInt <03_ride-language:BigInt>`", "Exponent b without decimal point."
-"ep: :ref:`Int <03_ride-language:Int>`", "Number of decimals of b."
-"rp: :ref:`Int <03_ride-language:Int>`", "Number of decimals in the resulting value, from :math:`0` to :math:`18` inclusive. Specifies the accuracy of the calculated result."
-"round: DOWN|CEILING|FLOOR|HALFUP|HALFEVEN", "One of the rounding variables."

@@ -1,0 +1,13 @@
+Action, Description
+":ref:`BinaryEntry <03_advanced:BinaryEntry>`", "Add or modify a binary entry of the :ref:`account data storage <02_intermediate:Account Data Storage>`."
+":ref:`BooleanEntry <03_advanced:BooleanEntry>`", "Add or modify a boolean entry."
+":ref:`Burn <03_advanced:Burn>`", "Burn a token."
+":ref:`DeleteEntry <03_advanced:DeleteEntry>`", "Delete an entry."
+":ref:`IntegerEntry <03_advanced:IntegerEntry>`", "Add or modify an integer entry."
+":ref:`Issue <03_advanced:Issue>`", "Issue a token."
+":ref:`Lease <03_advanced:Lease>`", "Lease."
+":ref:`LeaseCancel <03_advanced:LeaseCancel>`", "Cancel lease."
+":ref:`Reissue <03_advanced:Reissue>`", "Reissue a token."
+":ref:`ScriptTransfer <03_advanced:ScriptTransfer>`", "Transfer a token."
+":ref:`SponsorFee <03_advanced:SponsorFee>`", "Set up a sponsorship."
+":ref:`StringEntry <03_advanced:StringEntry>`", "Add or modify a string entry."
