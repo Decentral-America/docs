@@ -1,0 +1,2 @@
+Transaction type ID, Name, Description
+":math:`1`", ":ref:`GenesisTransaction <03_advanced:GenesisTransaction>`", "Structure of :ref:`genesis transaction <02_intermediate:Genesis Transaction>`."

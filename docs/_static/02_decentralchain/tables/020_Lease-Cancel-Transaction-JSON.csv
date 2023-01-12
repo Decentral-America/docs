@@ -1,4 +1,0 @@
-Field, Description
-"leaseId", "Lease transaction ID."
-"chainId", ":ref:`Chain ID <02_decentralchain:Chain ID>`"
-"lease", "Parameters of canceled lease."

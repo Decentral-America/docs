@@ -1,3 +1,0 @@
-Field, Description
-"chainId", ":ref:`Chain ID <02_decentralchain:Chain ID>`"
-"script", "Compiled script, base64 encoded. Account script up to :math:`8192` bytes, dApp script up to :math:`32,767` bytes. null – delete script."

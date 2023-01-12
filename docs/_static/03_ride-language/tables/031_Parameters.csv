@@ -1,3 +1,0 @@
-Parameter, Description
-"addressOrAlias: :ref:`Address <03_ride-language:Address>` | :ref:`Alias <03_ride-language:Alias>`", ":ref:`Address <02_decentralchain:Address>` or :ref:`alias <02_decentralchain:Alias>` of the account."
-"Address or alias, usually tx.recipient", " "

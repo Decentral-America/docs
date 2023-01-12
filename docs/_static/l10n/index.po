@@ -20,9 +20,9 @@ msgstr ""
 
 #: ../../index.rst:9
 msgid "Contents:"
-msgstr "Contenidos:"
+msgstr ""
 
 #: ../../index.rst:7
 msgid "Welcome to DecentralChain's documentation!"
-msgstr "¡Bienvenido a la documentación de DecentralChain!"
+msgstr ""
 

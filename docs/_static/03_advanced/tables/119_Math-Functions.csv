@@ -1,0 +1,11 @@
+Name, Description, Complexity
+":ref:`fraction(Int, Int, Int): Int <03_advanced:fraction(Int, Int, Int): Int>`", "Multiplies and divides integers to avoid overflow", ":math:`14`"
+":ref:`fraction(Int, Int, Int, Union): Int <03_advanced:fraction(Int, Int, Int, Union): Int>`", "Multiplies and divides integers to avoid overflow, applying the specified rounding method", ":math:`17`"
+":ref:`fraction(BigInt, BigInt, BigInt): BigInt <03_advanced:fraction(BigInt, BigInt, BigInt): BigInt>`", "Multiplies and divides bid integers to avoid overflow", ":math:`128`"
+":ref:`fraction(BigInt, BigInt, BigInt, Union): BigInt <03_advanced:fraction(BigInt, BigInt, BigInt, Union): BigInt>`", "Multiplies and divides big integers to avoid overflow, applying the specified rounding method", ":math:`128`"
+":ref:`log(Int, Int, Int, Int, Int, Union): Int <03_advanced:log(Int, Int, Int, Int, Int, Union): Int>`", "Calculates logarithm of a number with a base", ":math:`100`"
+":ref:`log(BigInt, Int, BigInt, Int, Int, Union): BigInt <03_advanced:log(BigInt, Int, BigInt, Int, Int, Union): BigInt>`", "Calculates logarithm of a number to a given base with high accuracy", ":math:`200`"
+":ref:`median(List[Int]): Int <03_advanced:median(List[Int]): Int>`", "Returns the median of a list of integers", ":math:`20`"
+":ref:`median(List[BigInt]): BigInt <03_advanced:median(List[BigInt]): BigInt>`", "Returns the median of a list of big integers", ":math:`160`"
+":ref:`pow(Int, Int, Int, Int, Int, Union): Int <03_advanced:pow(Int, Int, Int, Int, Int, Union): Int>`", "Raises a number to a given power", ":math:`100`"
+":ref:`pow(BigInt, Int, BigInt, Int, Int, Union): BigInt <03_advanced:pow(BigInt, Int, BigInt, Int, Int, Union): BigInt>`", "Raises a number to a given power with high accuracy", ":math:`200`"

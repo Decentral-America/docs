@@ -1,0 +1,4 @@
+Transaction type ID, Name, Description
+":math:`8`", ":ref:`Lease transaction <02_intermediate:Lease Transaction>`", "Leases :ref:`DecentralCoins <02_intermediate:DecentralCoin>`."
+":math:`9`", ":ref:`Lease cancel transaction <02_intermediate:Lease Cancel Transaction>`", "Cancels the leasing."
+":math:`14`", ":ref:`Sponsor fee transaction <02_intermediate:Sponsor Fee Transaction>`", "Configures sponsorship."

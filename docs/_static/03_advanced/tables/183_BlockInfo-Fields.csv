@@ -1,0 +1,8 @@
+#, Name, Data type, Description
+":math:`1`", "timestamp", ":ref:`Int <03_advanced:Int>`", ":ref:`Block timestamp <02_intermediate:Block Timestamp>`."
+":math:`2`", "height", ":ref:`Int <03_advanced:Int>`", ":ref:`Block height <02_intermediate:Block Height>`."
+":math:`3`", "baseTarget", ":ref:`Int <03_advanced:Int>`", ":ref:`Base target <02_intermediate:Base Target>`."
+":math:`4`", "generationSignature", ":ref:`ByteVector <03_advanced:ByteVector>`", ":ref:`Generation signature <02_intermediate:Block Generation>`."
+":math:`5`", "generator", ":ref:`Address <03_advanced:Address>`", ":ref:`Address <02_intermediate:Address>` of the :ref:`account <02_intermediate:Account>` that created a block."
+":math:`6`", "generatorPublicKey", ":ref:`ByteVector <03_advanced:ByteVector>`", "Public key of the account that created a block."
+":math:`7`", "vrf", ":ref:`ByteVector <03_advanced:ByteVector>` | :ref:`Unit <03_advanced:Unit>`", "VRF for block version 5, unit otherwise."

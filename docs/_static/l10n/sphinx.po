@@ -20,25 +20,25 @@ msgstr ""
 
 #: ../../_templates/versions.html:12
 msgid "Languages"
-msgstr "Lenguajes"
+msgstr ""
 
 #: ../../_templates/versions.html:22
 msgid "Versions"
-msgstr "Versiones"
+msgstr ""
 
 #: ../../_templates/versions.html:32
 msgid "Downloads"
-msgstr "Descargas"
+msgstr ""
 
 #: ../../_templates/versions.html:40
 msgid "On Read the Docs"
-msgstr "Sobre Read the Docs"
+msgstr ""
 
 #: ../../_templates/versions.html:42
 msgid "Project Home"
-msgstr "Inicio"
+msgstr ""
 
 #: ../../_templates/versions.html:45
 msgid "Builds"
-msgstr "Ediciones"
+msgstr ""
 

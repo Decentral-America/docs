@@ -1,5 +1,0 @@
-Name, Description, Complexity
-":ref:`isDefined(T|Unit): Boolean <03_ride-language:isDefined(T|Unit): Boolean>`", "Checks if an argument is not unit", ":math:`1`"
-":ref:`value(T|Unit): T <03_ride-language:value(T|Unit): T>`", "Gets a value from a union type argument. Fails if it is unit", ":math:`2`"
-":ref:`valueOrElse(T|Unit, T): T <03_ride-language:valueOrElse(T|Unit, T): T>`", "Returns a value from a union type argument if it's not unit. Otherwise, returns the second argument", ":math:`2`"
-":ref:`valueOrErrorMessage(T|Unit, String): T <03_ride-language:valueOrErrorMessage(T|Unit, String): T>`", "Gets a value from a union type argument if it's not unit. Otherwise, fails with the message specified in the second argument", ":math:`2`"

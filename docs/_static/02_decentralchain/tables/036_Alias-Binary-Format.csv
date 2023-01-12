@@ -1,5 +1,0 @@
-Field order number, Field, Field type, Field size in bytes, Comments
-":math:`1`", "Entity type", "Byte", ":math:`1`", "Value must be :math:`2`."
-":math:`2`", ":ref:`Chain ID <02_decentralchain:Chain ID>`", "Byte", ":math:`1`", ":math:`87` — for Mainnet. :math:`84` — for Testnet. :math:`83` — for Stagenet."
-":math:`3`", "Number of characters in the alias", "Short", ":math:`2`"
-":math:`4`", "Alias", "Array of bytes", "From :math:`4` to :math:`30`."

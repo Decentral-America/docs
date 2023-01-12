@@ -1,0 +1,7 @@
+#, Name, Data type, Description
+":math:`1`", "amount", ":ref:`Int <03_advanced:Int>`", "Amount of the :ref:`token <02_intermediate:Token (Asset)>`."
+":math:`2`", "recipient", ":ref:`Address <03_advanced:Address>` | :ref:`Alias <03_advanced:Alias>`", ":ref:`Address <02_intermediate:Address>` or :ref:`alias <02_intermediate:Alias>` of the token recipient."
+":math:`3`", "id", ":ref:`ByteVector <03_advanced:ByteVector>`", "Transaction ID."
+":math:`4`", "fee", ":ref:`Int <03_advanced:Int>`", ":ref:`Transaction fee <02_intermediate:Transaction Fees>`."
+":math:`5`", "timestamp", ":ref:`Int <03_advanced:Int>`", "Transaction timestamp."
+":math:`6`", "version", ":ref:`Int <03_advanced:Int>`", "Transaction version."

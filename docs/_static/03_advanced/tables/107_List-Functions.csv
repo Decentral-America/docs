@@ -1,0 +1,12 @@
+Name, Description, Complexity
+":ref:`cons(A, List[B]): List[A|B] <03_advanced:cons(A, List[B]): List[A|B]>`", "Inserts element to the beginning of the list", ":math:`1`"
+":ref:`containsElement(List[T], T): Boolean <03_advanced:containsElement(List[T], T): Boolean>`", "Check if the element is in the list", ":math:`5`"
+":ref:`getElement(List[T], Int): T <03_advanced:getElement(List[T], Int): T>`", "Gets element from the list", ":math:`2`"
+":ref:`indexOf(List[T], T): Int|Unit <03_advanced:indexOf(List[T], T): Int|Unit>`", "Returns the index of the first occurrence of the element in the list", ":math:`5`"
+":ref:`lastIndexOf(List[T], T): Int|Unit <03_advanced:lastIndexOf(List[T], T): Int|Unit>`", "Returns the index of the last occurrence of the element in the list", ":math:`5`"
+":ref:`max(List[Int]): Int <03_advanced:max(List[Int]): Int>`", "Returns the largest element in the list of integers", ":math:`3`"
+":ref:`max(List[BigInt]): BigInt <03_advanced:max(List[BigInt]): BigInt>`", "Returns the largest element in the list of big integers", ":math:`192`"
+":ref:`min(List[Int]): Int <03_advanced:min(List[Int]): Int>`", "Returns the smallest element in the list of integers", ":math:`3`"
+":ref:`min(List[BigInt]): BigInt <03_advanced:min(List[BigInt]): BigInt>`", "Returns the smallest element in the list of big integers", ":math:`192`"
+":ref:`removeByIndex(List[T], Int): List[T] <03_advanced:removeByIndex(List[T], Int): List[T]>`", "Removes an element from the list by index", ":math:`7`"
+":ref:`size(List[T]): Int <03_advanced:size(List[T]): Int>`", "Returns the size of the list", ":math:`2`"

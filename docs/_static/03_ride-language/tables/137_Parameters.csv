@@ -1,4 +1,0 @@
-Parameter, Description
-"str: :ref:`String <03_ride-language:String>`", "The string."
-"substr: :ref:`String <03_ride-language:String>`", "The substring."
-"offset: :ref:`Int <03_ride-language:Int>`", "The index."

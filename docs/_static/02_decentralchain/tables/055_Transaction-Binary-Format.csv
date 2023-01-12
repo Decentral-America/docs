@@ -1,8 +1,0 @@
-Field, Size, Description
-"chain_id", ":math:`1` byte", ":ref:`Chain ID <02_decentralchain:Chain ID>`"
-"sender_public_key", ":math:`32` bytes", "Public key of the transaction sender."
-"fee.amount", ":math:`8` bytes", ":ref:`Transaction fee <02_decentralchain:Transaction Fees>` in the minimum fraction (“cent”) of the fee asset."
-"fee.asset_id", ":math:`32` bytes for the fee in a sponsored asset. :math:`0` for the fee in DecentralCoins", "ID of the token of the fee. The fee in a sponsored asset is only available for invoke script transactions and transfer transactions. See the :ref:`sponsored fee <02_decentralchain:Sponsored Fees>` article."
-"timestamp", ":math:`8` bytes", "Transaction timestamp: Unix time in milliseconds. The transaction won't be added to the blockchain if the timestamp value is more than :math:`2` hours back or :math:`1.5` hours forward of the current block timestamp."
-"version", ":math:`1` byte", "Transaction version."
-"proofs", "Each proof up to :math:`64` bytes,up to :math:`8` proofs.", ":ref:`Transaction proofs <02_decentralchain:Transaction Proofs>` that are used to check the validity of the transaction. The array can contain several transaction signatures (but not limited to signatures only)."
