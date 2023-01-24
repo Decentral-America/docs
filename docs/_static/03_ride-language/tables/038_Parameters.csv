@@ -1,2 +1,2 @@
 Parameter, Description
-"id: :ref:`ByteVector <03_ride-language:ByteVector>`", "ID of the transaction."
+"id: :ref:`ByteVector <03_ride-language/02_data-types:ByteVector>`", "ID of the transaction."

@@ -3,13 +3,23 @@
     white-space: normal;
 }
 
-/* Hide "On GitHub" section from versions menu. */
+/* Hide "On GitHub" section from versions menu. 
 div.rst-versions > div.rst-other-versions > div.injected > dl:nth-child(4) {
     display: none;
 }
 
-/*Removes the content column width limit so the content can expand to the full width of the browser.
+Removes the content column width limit so the content can expand to the full width of the browser.
 .wy-nav-content
 {
   max-width: unset;
+}
+
+html[data-theme="light"] {
+  --pst-color-primary: #3a2bb8;
+  --pst-color-info: #3a2bb8;
+}
+
+html[data-theme="dark"] {
+  --pst-color-primary: #3a2bb8;
+  --pst-color-info: #3a2bb8;
 }*/

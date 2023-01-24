@@ -1,5 +1,5 @@
 Field, Size, Description
-"chain_id", ":math:`1` byte", ":ref:`Chain ID <02_decentralchain:Chain ID>`"
+"chain_id", ":math:`1` byte", ":ref:`Chain ID <02_decentralchain/08_mainnet-testnet-stagenet:Chain ID>`"
 "sender_public_key", ":math:`32` bytes", "Public key of the order sender."
 "matcher_public_key", ":math:`32` bytes", "Public key of matcher."
 "asset_pair.amount_asset_id", ":math:`32` bytes for asset. :math:`0` for DecentralCoins.", "ID of the amount asset."

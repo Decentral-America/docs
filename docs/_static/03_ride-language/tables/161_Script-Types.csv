@@ -1,7 +1,7 @@
 #, dApp script, Account script ,Asset script
 "Directives", "{-# CONTENT_TYPE DAPP #-} {-# SCRIPT_TYPE ACCOUNT #-}", "{-# CONTENT_TYPE EXPRESSION #-} {-# SCRIPT_TYPE ACCOUNT #-}", "{-# CONTENT_TYPE EXPRESSION #-} {-# SCRIPT_TYPE ASSET #-}"
 "Content", "Set of definitions", "Boolean expression", "Boolean expression"
-"this variable", ":ref:`Address <03_ride-language:Address>` structure containing dApp address", "Address structure containing smart account address", ":ref:`Asset <03_ride-language:Asset>` structure"
+"this variable", ":ref:`address <03_ride-language/05_structures:Address>` structure containing dApp address", "Address structure containing smart account address", ":ref:`Asset <03_ride-language/03_functions:Math Functions>` structure"
 "Transaction or order that is checked", "Check is performed by the verifier function only. Annotation of the function sets the name of the variable that contains the outgoing transaction or the order, for example: @Verifier(tx)", "Built-in variable tx: Transaction|Order contains the outgoing transaction or the order", "Build-in variable tx: Transaction contains the transaction involving the asset. Order check is not supported."
 "Proofs accessibility", "\1) Proofs of the outgoing transaction or the order are accessible to the verifier function. 2) Proofs of the invoke script transaction are inaccessible to the callable function", "Accessible", "Inaccessible"
 "Blockchain data", "\1) Accessible to the callable function. 2) Accessible to the verifier function when checking a transaction. 3) Inaccessible to the verifier function when checking an order", "\1) Accessible when checking a transaction. 2) Inaccessible when checking an order", "Accessible"

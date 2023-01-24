@@ -1,2 +1,2 @@
 Parameter, Description
-"addr: :ref:`Address <03_ride-language:Address>`", "Address to convert."
+"addr: :ref:`address <03_ride-language/05_structures:Address>`", "Address to convert."

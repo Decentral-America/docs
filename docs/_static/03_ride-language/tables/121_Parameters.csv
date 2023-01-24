@@ -1,5 +1,5 @@
 Parameter,Description
-"a: :ref:`Int <03_ride-language:Int>`", "Integer a"
-"b: :ref:`Int <03_ride-language:Int>`", "Integer b"
-"c: :ref:`Int <03_ride-language:Int>`", "Integer c"
+"a: :ref:`Int <03_ride-language/02_data-types:Int>`", "Integer a"
+"b: :ref:`Int <03_ride-language/02_data-types:Int>`", "Integer b"
+"c: :ref:`Int <03_ride-language/02_data-types:Int>`", "Integer c"
 "round: DOWN|CEILING|FLOOR|HALFUP|HALFEVEN", "One of the rounding variables"

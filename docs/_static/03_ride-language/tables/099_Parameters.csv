@@ -1,2 +1,2 @@
 Parameter, Description
-"err: :ref:`String <03_ride-language:String>`", "The exception message."
+"err: :ref:`String <03_ride-language/02_data-types:String>`", "The exception message."

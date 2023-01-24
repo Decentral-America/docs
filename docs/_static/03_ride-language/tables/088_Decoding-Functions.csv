@@ -1,6 +1,6 @@
 Name, Description, Complexity
-":ref:`addressFromString(String): Address|Unit <03_ride-language:addressFromString(String): Address|Unit>`", "Decodes address from base58 string", ":math:`1`"
-":ref:`addressFromStringValue(String): Address <03_ride-language:addressFromStringValue(String): Address>`", "Decodes address from base58 string. Fails if the address cannot be decoded", ":math:`1`"
-":ref:`fromBase16String(String): ByteVector <03_ride-language:fromBase16String(String): ByteVector>`", "Decodes base16 string to an array of bytes", ":math:`10`"
-":ref:`fromBase58String(String): ByteVector <03_ride-language:fromBase58String(String): ByteVector>`", "Decodes base58 string to an array of bytes", ":math:`1`"
-":ref:`fromBase64String(String): ByteVector <03_ride-language:fromBase64String(String): ByteVector>`", "Decodes base64 string to an array of bytes", ":math:`40`"
+":ref:`addressFromString(String): Address|Unit <03_ride-language/03_functions:addressFromString(String): Address|Unit>`", "Decodes address from base58 string", ":math:`1`"
+":ref:`addressFromStringValue(String): Address <03_ride-language/03_functions:addressFromStringValue(String): Address>`", "Decodes address from base58 string. Fails if the address cannot be decoded", ":math:`1`"
+":ref:`fromBase16String(String): ByteVector <03_ride-language/03_functions:fromBase16String(String): ByteVector>`", "Decodes base16 string to an array of bytes", ":math:`10`"
+":ref:`fromBase58String(String): ByteVector <03_ride-language/03_functions:fromBase58String(String): ByteVector>`", "Decodes base58 string to an array of bytes", ":math:`1`"
+":ref:`fromBase64String(String): ByteVector <03_ride-language/03_functions:fromBase64String(String): ByteVector>`", "Decodes base64 string to an array of bytes", ":math:`40`"

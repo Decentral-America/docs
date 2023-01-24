@@ -1,3 +1,3 @@
 Parameter, Description
 "a: T|Unit", "Argument to return value from."
-"msg: :ref:`String <03_ride-language:String>`", "Error message."
+"msg: :ref:`String <03_ride-language/02_data-types:String>`", "Error message."
