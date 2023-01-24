@@ -1,3 +1,3 @@
 Parameter, Description
-"addressOrAlias: :ref:`Address <03_ride-language:Address>` | :ref:`Alias <03_ride-language:Alias>`", ":ref:`Address <02_decentralchain:Address>` or :ref:`alias <02_decentralchain:Alias>` of the account."
-"assetId: :ref:`ByteVector <03_ride-language:ByteVector>`", ":ref:`Token ID <02_decentralchain:Token ID>`"
+"addressOrAlias: :ref:`address <03_ride-language/05_structures:Address>` | :ref:`Alias <03_ride-language/05_structures:Alias>`", ":ref:`address <02_decentralchain/01_account:Address>` or :ref:`alias <02_decentralchain/01_account:Alias>` of the account."
+"assetId: :ref:`ByteVector <03_ride-language/02_data-types:ByteVector>`", ":ref:`token ID <02_decentralchain/02_token(asset):Token ID>`"

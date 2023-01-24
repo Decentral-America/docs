@@ -1,3 +1,3 @@
 #, Name, Data type, Description
-":math:`1`", "key", ":ref:`String <03_ride-language:String>`", "Entry key. The maximum size is :math:`400` bytes."
-":math:`2`", "value", ":ref:`String <03_ride-language:String>`", "Entry value. The maximum size is :math:`5` Kbytes."
+":math:`1`", "key", ":ref:`String <03_ride-language/02_data-types:String>`", "Entry key. The maximum size is :math:`400` bytes."
+":math:`2`", "value", ":ref:`String <03_ride-language/02_data-types:String>`", "Entry value. The maximum size is :math:`5` Kbytes."

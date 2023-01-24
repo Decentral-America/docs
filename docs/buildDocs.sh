@@ -16,7 +16,7 @@ set -x
 # INSTALL DEPENDS #
 ###################
 
-python3 -m pip install --upgrade --force-reinstall pip gitpython sphinx sphinx-rtd-theme sphinx-rtd-dark-mode sphinx-copybutton rinohtype sphinx-intl 
+python3 -m pip install --upgrade --force-reinstall pip gitpython sphinx pydata-sphinx-theme sphinx-design sphinx-copybutton rinohtype sphinx-intl myst_nb linkify-it-py ablog jupyter_sphinx matplotlib numpydoc sphinx_togglebutton
 
 #####################
 # DECLARE VARIABLES #

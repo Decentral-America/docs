@@ -1,2 +1,2 @@
 Parameter, Description
-"id: :ref:`ByteVector <03_ride-language:ByteVector>`", ":ref:`Token ID <02_decentralchain:Token ID>`"
+"id: :ref:`ByteVector <03_ride-language/02_data-types:ByteVector>`", ":ref:`token ID <02_decentralchain/02_token(asset):Token ID>`"

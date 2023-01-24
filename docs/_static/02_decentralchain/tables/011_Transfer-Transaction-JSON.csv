@@ -1,5 +1,5 @@
 Field, Description
-"assetId", "Token ID base58 encoded. null means :ref:`DecentralCoins <02_decentralchain:DecentralCoin>`."
+"assetId", "Token ID base58 encoded. null means :ref:`DecentralCoins <02_decentralchain/02_token(asset):DecentralCoin>`."
 "amount", "Amount of token to transfer: an integer value specified in the minimum fraction (“cents”) of token."
 "attachment", "Arbitrary binary data (typically a comment to transfer) base58 encoded, up to :math:`4` bytes."
-"recipient", "Recipient address base58 encoded or recipient alias with alias:<chain_id>: prefix, for example alias:T:merry (See :ref:`chain ID <02_decentralchain:Chain ID>`)."
+"recipient", "Recipient address base58 encoded or recipient alias with alias:<chain_id>: prefix, for example alias:T:merry (See :ref:`chain ID <02_decentralchain/08_mainnet-testnet-stagenet:Chain ID>`)."

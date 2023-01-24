@@ -24,9 +24,9 @@ copyright = '2021, Blockchain Costa Rica'
 author = 'Josue Rojas'
 
 # The short X.Y version
-version = ''
+#version = ''
 # The full version, including alpha/beta/rc tags
-release = '0.1'
+#release = '0.1'
 
 
 # -- General configuration ---------------------------------------------------
@@ -39,14 +39,74 @@ release = '0.1'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'sphinx_copybutton',
-    'sphinx_rtd_theme',
-    'sphinx_rtd_dark_mode',
+    'sphinx.ext.autodoc',
+    'sphinx.ext.autosummary',
+    'sphinx.ext.todo',
     'sphinx.ext.viewcode',
     'sphinx.ext.githubpages',	
     'sphinx.ext.autosectionlabel',
     'sphinx.ext.mathjax',
+    'sphinx_design',
+    'sphinx_copybutton',
+    # For extension examples and demos
+    'ablog',
+    'jupyter_sphinx',
+    'matplotlib.sphinxext.plot_directive',
+    'myst_nb',
+    #'nbsphinx',  # Uncomment and comment-out MyST-NB for local testing purposes.
+    'numpydoc',
+    'sphinx_togglebutton',
 ]
+
+html_theme = "pydata_sphinx_theme"
+html_logo = "_static/logo.png"
+html_favicon = "_static/icon.svg"
+html_sourcelink_suffix = ""
+
+html_theme_options = {
+   "external_links": [
+        {
+            "url": "http://decentralchain.io/",
+            "name": "Website",
+        },
+        {
+            "url": "http://decentral.exchange/",
+            "name": "Wallet & Exchange",
+        },
+        {
+            "url": "https://decentralscan.com/",
+            "name": "Explorer",
+        },
+    ],
+    "github_url": "https://github.com/Decentral-America/docs",
+    "twitter_url": "https://twitter.com/decentralchain",
+    "header_links_before_dropdown": 3,
+    "logo": {
+        #"text": "",
+        "image_dark": "logo-dark.png",
+        "alt_text": "DecentralChain",
+    },
+    "use_edit_page_button": True,
+    "show_toc_level": 1,
+    "navbar_align": "left",  # [left, content, right] For testing that the navbar items align properly
+    #"navbar_center": ["version-switcher", "navbar-nav"],
+    #"announcement": "https://raw.githubusercontent.com/pydata/pydata-sphinx-theme/main/docs/_templates/custom-template.html",
+    # "show_nav_level": 2,
+    # "navbar_start": ["navbar-logo"],
+    # "navbar_end": ["theme-switcher", "navbar-icon-links"],
+    # "navbar_persistent": ["search-button"],
+    # "primary_sidebar_end": ["custom-template.html", "sidebar-ethical-ads.html"],
+    "footer_items": ["copyright"],# "sphinx-version", "theme-version"],
+    # "secondary_sidebar_items": ["page-toc.html"],  # Remove the source buttons
+    # "search_bar_position": "navbar",  # TODO: Deprecated - remove in future version
+}
+
+# This allows us to use ::: to denote directives, useful for admonitions
+myst_enable_extensions = ["colon_fence", "linkify", "substitution"]
+
+myst_heading_anchors = 2
+myst_substitutions = {"rtd": "[Read the Docs](https://readthedocs.org/)"}
+
 
 # True to prefix each section label with the name of the document it is in, followed by a colon
 autosectionlabel_prefix_document = True
@@ -59,7 +119,7 @@ templates_path = ['_templates']
 # You can specify multiple suffix as a list of string:
 #
 # source_suffix = ['.rst', '.md']
-source_suffix = '.rst'
+source_suffix = ['.rst', '.md']
 
 # The master toctree document.
 master_doc = 'index'
@@ -85,7 +145,7 @@ pygments_style = None
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'sphinx_rtd_theme'
+html_theme = "pydata_sphinx_theme"
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -97,6 +157,8 @@ html_theme = 'sphinx_rtd_theme'
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
+html_css_files = ["custom.css"]
+todo_include_todos = True
 
 # Custom sidebar templates, must be a dictionary that maps document names
 # to template names.
@@ -188,6 +250,8 @@ epub_exclude_files = ['search.html']
 
 # add sourcecode to path
 import sys, os
+sys.path.append("scripts")
+from gallery_directive import GalleryDirective
 sys.path.insert(0, os.path.abspath('../src'))
  
 ############################
@@ -274,3 +338,6 @@ html_context['github_user'] = 'jourlez'
 html_context['github_repo'] = 'docs'
 html_context['github_version'] = 'master/docs/'
  
+def setup(app):
+    # Add the gallery directive
+    app.add_directive("gallery-grid", GalleryDirective)

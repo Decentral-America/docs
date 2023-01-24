@@ -1,2 +1,2 @@
 Parameter, Description
-"u: :ref:`ByteVector <03_ride-language:ByteVector>`", "Array of bytes to convert."
+"u: :ref:`ByteVector <03_ride-language/02_data-types:ByteVector>`", "Array of bytes to convert."
