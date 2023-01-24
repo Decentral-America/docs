@@ -58,6 +58,10 @@ extensions = [
     'sphinx_togglebutton',
 ]
 
+# -- Internationalization ------------------------------------------------
+# specifying the natural language populates some key tags
+language = "en"
+
 html_theme = "pydata_sphinx_theme"
 html_logo = "_static/logo.png"
 html_favicon = "_static/icon.svg"
