@@ -1,4 +1,4 @@
 Parameter, Description
-"vk: :ref:`ByteVector <03_ride-language:ByteVector>`", "Key for the check. Maximum size: 1) For bn256groth16Verify_<N>inputs function — :math:`256 + 32 × N` bytes. 2) For bn256groth16Verify function — :math:`256 + 32 × 16 = 768` bytes."
-"proof: :ref:`ByteVector <03_ride-language:ByteVector>`", "Zero-knowledge proof. Fixed size: :math:`128` bytes."
-"inputs: :ref:`ByteVector <03_ride-language:ByteVector>`", "Zero-knowledge proof's public inputs array. For example, array of UTXO hashes in case of shielded transactions. Maximum size: 1) For bn256groth16Verify_<N>inputs function – :math:`32 × N` bytes. 2) For bn256groth16Verify function – :math:`512` bytes."
+"vk: :ref:`ByteVector <03_ride-language/02_data-types:ByteVector>`", "Key for the check. Maximum size: 1) For bn256groth16Verify_<N>inputs function — :math:`256 + 32 × N` bytes. 2) For bn256groth16Verify function — :math:`256 + 32 × 16 = 768` bytes."
+"proof: :ref:`ByteVector <03_ride-language/02_data-types:ByteVector>`", "Zero-knowledge proof. Fixed size: :math:`128` bytes."
+"inputs: :ref:`ByteVector <03_ride-language/02_data-types:ByteVector>`", "Zero-knowledge proof's public inputs array. For example, array of UTXO hashes in case of shielded transactions. Maximum size: 1) For bn256groth16Verify_<N>inputs function – :math:`32 × N` bytes. 2) For bn256groth16Verify function – :math:`512` bytes."

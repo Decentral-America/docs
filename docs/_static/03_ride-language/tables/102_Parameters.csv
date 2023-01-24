@@ -1,2 +1,2 @@
 Parameter, Description
-"bytes: :ref:`ByteVector <03_ride-language:ByteVector>`", "The array of bytes to encode. Maximum size: 1) For blake2b256_<N>Kb functions — N kB. 2) For blake2b256 function — 150 kB."
+"bytes: :ref:`ByteVector <03_ride-language/02_data-types:ByteVector>`", "The array of bytes to encode. Maximum size: 1) For blake2b256_<N>Kb functions — N kB. 2) For blake2b256 function — 150 kB."

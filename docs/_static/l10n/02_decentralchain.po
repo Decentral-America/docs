@@ -44,7 +44,7 @@ msgid ""
 "account. An account has a pair of cryptographically bound keys: a private"
 " key that the account uses to sign transactions, and a public key that "
 "allows anyone to verify the signature. :ref:`More about accounts "
-"<02_decentralchain:Account>`."
+"<02_decentralchain/01_account:Account>`."
 msgstr ""
 
 #: ../../02_decentralchain.rst:16
@@ -62,7 +62,7 @@ msgid ""
 "Blockchain data is presented as transactions. A transaction is a record "
 "of an action, such as a token issue, cryptocurrency transfer, smart "
 "contract creation or invocation and more. :ref:`More about transactions "
-"<02_decentralchain:Transaction>`."
+"<02_decentralchain/03_transaction:Transaction>`."
 msgstr ""
 
 #: ../../02_decentralchain.rst:25
@@ -72,7 +72,7 @@ msgid ""
 " the node that generated the block. The previous block contains the data "
 "hash of its preceding block, and so on. As a result, the signature of "
 "each block depends on the data of all the preceding blocks. :ref:`More "
-"about blocks <02_decentralchain:Block>`."
+"about blocks <02_decentralchain/04_block:Block>`."
 msgstr ""
 
 #: ../../02_decentralchain.rst:27
@@ -102,12 +102,12 @@ msgid ""
 "or deletion, either malicious or accidental. Everyone can :ref:`launch a "
 "node <documentation:placeholder>` and join the network. The nodes that "
 "hold at least :math:`1,0000` :ref:`DecentralCoins "
-"<02_decentralchain:DecentralCoin>` (by ownership or :ref:`lease "
-"<02_decentralchain:Leased Proof of Stake>`), can participate in block "
+"<02_decentralchain/02_token(asset):DecentralCoin>` (by ownership or :ref:`lease "
+"<02_decentralchain/05_node:Leased Proof of Stake>`), can participate in block "
 "generation to receive :ref:`block generation rewards "
-"<02_decentralchain:Block Reward>` and transaction fees. The more tokens the"
+"<02_decentralchain/05_node:Block Reward>` and transaction fees. The more tokens the"
 " node holds, the greater its chance to add the next block. :ref:`More "
-"about nodes <02_decentralchain:Node>`."
+"about nodes <02_decentralchain/05_node:Node>`."
 msgstr ""
 
 #: ../../02_decentralchain.rst:39
@@ -121,7 +121,7 @@ msgid ""
 "assigned to an account. There is, therefore, no centralized database that"
 " might be hacked or compromised. Any user can view the script code and "
 "the result of its invocation. :ref:`More about dApps "
-"<02_decentralchain:dApp and Smart Account>`."
+"<02_decentralchain/01_account:dApp and Smart Account>`."
 msgstr ""
 
 #: ../../02_decentralchain.rst:45 ../../02_decentralchain.rst:4260
@@ -134,20 +134,20 @@ msgstr ""
 
 #: ../../02_decentralchain.rst:49
 msgid ""
-"Each :ref:`transaction <02_decentralchain:Transaction>` is created on "
+"Each :ref:`transaction <02_decentralchain/03_transaction:Transaction>` is created on "
 "behalf of a certain account."
 msgstr ""
 
 #: ../../02_decentralchain.rst:50
 msgid ""
-"All the :ref:`tokens <02_decentralchain:Token (Asset)>` belong to certain "
+"All the :ref:`tokens <02_decentralchain/02_token(asset):Token (Asset)>` belong to certain "
 "accounts."
 msgstr ""
 
 #: ../../02_decentralchain.rst:51
 msgid ""
 "All the data is associated with accounts. For details, see the "
-":ref:`account data storage <02_decentralchain:Account Data Storage>` "
+":ref:`account data storage <02_decentralchain/01_account:Account Data Storage>` "
 "article."
 msgstr ""
 
@@ -184,7 +184,7 @@ msgid ""
 "DecentralChain uses an asymmetric cryptographic system based on the "
 "elliptic curve Curve25519-ED25519 with X25519 keys. The guideline for "
 "generating keys and signatures is given in the :ref:`cryptographic "
-"practical details <02_decentralchain:Cryptographic Practical Details>` "
+"practical details <02_decentralchain/09_protocol:Cryptographic Practical Details>` "
 "article. The private and public keys are :math:`32` byte arrays. In UIs, "
 "the keys are displayed as base58 encoded strings. Base58-encoded keys can"
 " be of different lengths, the maximum length is :math:`44` characters."
@@ -207,7 +207,7 @@ msgid ""
 "The private key can be generated from some random seed phrase using "
 "hashing functions. The public key is obtained from the private key using "
 "an elliptic curve multiplication. The :ref:`account address "
-"<02_decentralchain:Address>` is obtained from the public key. All these "
+"<02_decentralchain/01_account:Address>` is obtained from the public key. All these "
 "transformations are unidirectional. The opposite direction is almost "
 "impossible in terms of the required computations."
 msgstr ""
@@ -252,7 +252,7 @@ msgstr ""
 msgid ""
 "If you lose your secret phrase or private key, you will no longer be able"
 " to access your account ever again. We strongly encourage you to "
-":ref:`backup of your secret phrase <02_decentralchain:Backup Seed Phrase>`."
+":ref:`backup of your secret phrase <02_decentralchain/01_account:Backup Seed Phrase>`."
 msgstr ""
 
 #: ../../02_decentralchain.rst:100
@@ -265,7 +265,7 @@ msgstr ""
 #: ../../02_decentralchain.rst:102
 msgid ""
 "For ways to generate account keys, see the :ref:`creating an account "
-"<02_decentralchain:Creating an Account>` article."
+"<02_decentralchain/01_account:Creating an Account>` article."
 msgstr ""
 
 #: ../../02_decentralchain.rst:105
@@ -275,9 +275,9 @@ msgstr ""
 #: ../../02_decentralchain.rst:107
 msgid ""
 "To create an account means to generate an :ref:`account key pair "
-"<02_decentralchain:Account Keys>` and :ref:`address "
-"<02_decentralchain:Address>` based on a :ref:`secret (seed) phrase "
-"<02_decentralchain:Secret (Seed) Phrase>`."
+"<02_decentralchain/01_account:Account Keys>` and :ref:`address "
+"<02_decentralchain/01_account:Address>` based on a :ref:`secret (seed) phrase "
+"<02_decentralchain/01_account:Secret (Seed) Phrase>`."
 msgstr ""
 
 #: ../../02_decentralchain.rst:109
@@ -309,7 +309,7 @@ msgstr ""
 #: ../../02_decentralchain.rst:114
 msgid ""
 "At this point you will be forwarded to your wallet page. You must do a "
-":ref:`backup of your seed phrase <02_decentralchain:Backup Seed Phrase>`."
+":ref:`backup of your seed phrase <02_decentralchain/01_account:Backup Seed Phrase>`."
 msgstr ""
 
 #: ../../02_decentralchain.rst:117
@@ -397,9 +397,9 @@ msgstr ""
 
 #: ../../02_decentralchain.rst:145
 msgid ""
-"Address is an :ref:`account <02_decentralchain:Account>` attribute derived "
-"from the :ref:`public key <02_decentralchain:Account Keys>`. The address "
-"also contains the :ref:`chain ID <02_decentralchain:Chain ID>` that "
+"Address is an :ref:`account <02_decentralchain/01_account:Account>` attribute derived "
+"from the :ref:`public key <02_decentralchain/01_account:Account Keys>`. The address "
+"also contains the :ref:`chain ID <02_decentralchain/08_mainnet-testnet-stagenet:Chain ID>` that "
 "identifies the blockchain network, therefore the address on the Mainnet "
 "cannot be used on the Testnet and vice versa."
 msgstr ""
@@ -407,7 +407,7 @@ msgstr ""
 #: ../../02_decentralchain.rst:147
 msgid ""
 "The address is a :math:`26` byte array (see the :ref:`address binary "
-"format <02_decentralchain:Address Binary Format>`). In UIs the address is "
+"format <02_decentralchain/10_binary-format:Address Binary Format>`). In UIs the address is "
 "displayed as a base58 encoded string."
 msgstr ""
 
@@ -422,7 +422,7 @@ msgid "The address is used to obtain information about the account:"
 msgstr ""
 
 #: ../../02_decentralchain.rst:157
-msgid ":ref:`Token balances <02_decentralchain:Account Balance>`,"
+msgid ":ref:`Token balances <02_decentralchain/01_account:Account Balance>`,"
 msgstr ""
 
 #: ../../02_decentralchain.rst:158
@@ -432,11 +432,11 @@ msgid ""
 msgstr ""
 
 #: ../../02_decentralchain.rst:159
-msgid ":ref:`Aliases <02_decentralchain:Alias>`,"
+msgid ":ref:`Aliases <02_decentralchain/01_account:Alias>`,"
 msgstr ""
 
 #: ../../02_decentralchain.rst:160
-msgid ":ref:`Assigned script <02_decentralchain:dApp and Smart Account>`, etc."
+msgid ":ref:`Assigned script <02_decentralchain/01_account:dApp and Smart Account>`, etc."
 msgstr ""
 
 #: ../../02_decentralchain.rst:162
@@ -445,9 +445,9 @@ msgstr ""
 
 #: ../../02_decentralchain.rst:164
 msgid ""
-"In :ref:`transfer <02_decentralchain:Transfer Transaction>`, :ref:`mass "
-"transfer <02_decentralchain:Mass Transfer Transaction>` and :ref:`lease "
-"transaction  <02_decentralchain:Lease Transaction>` to identify a "
+"In :ref:`transfer <02_decentralchain/03_transaction:Transfer Transaction>`, :ref:`mass "
+"transfer <02_decentralchain/03_transaction:Mass Transfer Transaction>` and :ref:`lease "
+"transaction  <02_decentralchain/03_transaction:Lease Transaction>` to identify a "
 "recipient;"
 msgstr ""
 
@@ -480,16 +480,16 @@ msgstr ""
 #: ../../02_decentralchain.rst:176
 msgid ""
 "Alias is a short, easy to remember, name of the :ref:`address "
-"<02_decentralchain:Address>`. The alias is unique on the blockchain. One "
+"<02_decentralchain/01_account:Address>`. The alias is unique on the blockchain. One "
 "address can have several aliases. The alias can be used instead of the "
 "address:"
 msgstr ""
 
 #: ../../02_decentralchain.rst:178
 msgid ""
-"In :ref:`transfer <02_decentralchain:Transfer Transaction>`, :ref:`mass "
-"transfer <02_decentralchain:Mass Transfer Transaction>` and :ref:`lease "
-"transaction <02_decentralchain:Lease Transaction>` to identify a recipient;"
+"In :ref:`transfer <02_decentralchain/03_transaction:Transfer Transaction>`, :ref:`mass "
+"transfer <02_decentralchain/03_transaction:Mass Transfer Transaction>` and :ref:`lease "
+"transaction <02_decentralchain/03_transaction:Lease Transaction>` to identify a recipient;"
 " as well as in :ref:`invoke script transactions <02_decentralchain:Invoke "
 "Script Transaction>` to identify an invoked dApp."
 msgstr ""
@@ -570,7 +570,7 @@ msgid ""
 "The list of account aliases, as well as other blockchain data, is public "
 "and can be read by anyone. For example, you can see aliases in "
 "`DecentralChain Explorer <https://decentralscan.com/>`_. To do this, find"
-" an account by its :ref:`address <02_decentralchain:Address>` and switch to"
+" an account by its :ref:`address <02_decentralchain/01_account:Address>` and switch to"
 " the Aliases tab."
 msgstr ""
 
@@ -589,7 +589,7 @@ msgstr ""
 
 #: ../../02_decentralchain.rst:213
 msgid ""
-"See the :ref:`alias binary format <02_decentralchain:Alias Binary Format>` "
+"See the :ref:`alias binary format <02_decentralchain/10_binary-format:Alias Binary Format>` "
 "article."
 msgstr ""
 
@@ -600,15 +600,15 @@ msgstr ""
 #: ../../02_decentralchain.rst:218
 msgid ""
 "Account balance is the amount of a :ref:`token (asset) "
-"<02_decentralchain:Token (Asset)>` that belongs to the :ref:`account "
-"<02_decentralchain:Account>`."
+"<02_decentralchain/02_token(asset):Token (Asset)>` that belongs to the :ref:`account "
+"<02_decentralchain/01_account:Account>`."
 msgstr ""
 
 #: ../../02_decentralchain.rst:220
 msgid ""
 "One account can store different tokens in different amounts. For example,"
 " an account can have :math:`50` :ref:`DecentralCoins "
-"<02_decentralchain:DecentralCoin>` and USD-N at the same time. The amount "
+"<02_decentralchain/02_token(asset):DecentralCoin>` and USD-N at the same time. The amount "
 "of the Y token on the account is called the account balance in Y token. "
 "If there is no Y token on the account, it is said that the account "
 "balance in Y token is equal to zero."
@@ -641,9 +641,9 @@ msgstr ""
 #: ../../02_decentralchain.rst:232
 msgid ""
 "The regular balance is the amount of :ref:`DecentralCoins "
-"<02_decentralchain:DecentralCoin>` that belongs directly to the account. "
+"<02_decentralchain/02_token(asset):DecentralCoin>` that belongs directly to the account. "
 "Thе other types of balances are determined counting :ref:`leased "
-"<02_decentralchain:Leased Proof of Stake>` DecentralCoins."
+"<02_decentralchain/05_node:Leased Proof of Stake>` DecentralCoins."
 msgstr ""
 
 #: ../../02_decentralchain.rst:234
@@ -656,7 +656,7 @@ msgstr ""
 
 #: ../../02_decentralchain.rst:250
 msgid ""
-"The generating balance of a :ref:`node <02_decentralchain:Node>` account "
+"The generating balance of a :ref:`node <02_decentralchain/05_node:Node>` account "
 "affects the ability to participate in block generation. To generate "
 "blocks, you need a generating balance of at least :math:`10000` "
 "DecentralCoins. The larger the generating balance, the greater the chance"
@@ -678,9 +678,9 @@ msgid ""
 "For example, you can see the list of tokens and their amount on the "
 "account in `DecentralChain Explorer <https://decentralscan.com/>`_. To do"
 " this, find an account by its address or alias. Balances in "
-":ref:`DecentralCoin <02_decentralchain:DecentralCoin>` are displayed right "
+":ref:`DecentralCoin <02_decentralchain/02_token(asset):DecentralCoin>` are displayed right "
 "under the address, balances in other assets are at the Assets tab, and "
-":ref:`non-fungible tokens (NFT) <02_decentralchain:Non-Fungible Token>` are"
+":ref:`non-fungible tokens (NFT) <02_decentralchain/02_token(asset):Non-Fungible Token>` are"
 " at the Non-fungible tokens tab."
 msgstr ""
 
@@ -701,14 +701,14 @@ msgstr ""
 #: ../../02_decentralchain.rst:269
 msgid ""
 "Account data storage is a key-value storage associated with an "
-":ref:`account <02_decentralchain:Account>`. The key of each entry is a "
+":ref:`account <02_decentralchain/01_account:Account>`. The key of each entry is a "
 "unique string. The value is the data being stored, it’s store using one "
 "of the types:"
 msgstr ""
 
 #: ../../02_decentralchain.rst:272
 #: ../../_static/02_decentralchain/tables/034_Blockchain-Data-Types.csv:1
-msgid "String"
+msgid :ref:`String<02_decentralchain/09_protocol:Blockchain Data Types>`
 msgstr ""
 
 #: ../../02_decentralchain.rst:273
@@ -742,8 +742,8 @@ msgid ""
 "Data storage of any account, as well as other blockchain data, are public"
 " and can be read by anyone. For example, you can see data entries in "
 "`DecentralChain Explorer <https://decentralscan.com/>`_. To do this, find"
-" an account by its :ref:`address <02_decentralchain:Address>` or "
-":ref:`alias <02_decentralchain:Alias>` and switch to the Data tab."
+" an account by its :ref:`address <02_decentralchain/01_account:Address>` or "
+":ref:`alias <02_decentralchain/01_account:Alias>` and switch to the Data tab."
 msgstr ""
 
 #: ../../02_decentralchain.rst:287
@@ -753,35 +753,35 @@ msgstr ""
 #: ../../02_decentralchain.rst:289
 msgid ""
 "The account owner can add, modify or delete entries of the account data "
-"storage via a :ref:`data transaction <02_decentralchain:Data Transaction>`."
+"storage via a :ref:`data transaction <02_decentralchain/03_transaction:Data Transaction>`."
 msgstr ""
 
 #: ../../02_decentralchain.rst:291
 msgid ""
-"A :ref:`dApp script <02_decentralchain:dApp and Smart Account>` can add, "
+"A :ref:`dApp script <02_decentralchain/01_account:dApp and Smart Account>` can add, "
 "modify or delete entries in the dApp's data storage as a result of an "
-":ref:`invoke script <02_decentralchain:Invoke Script Transaction>` "
+":ref:`invoke script transaction <02_decentralchain/03_transaction:Invoke Script Transaction>` "
 "transaction via script actions:"
 msgstr ""
 
 #: ../../02_decentralchain.rst:293
-msgid ":ref:`BinaryEntry <03_ride-language:BinaryEntry>`"
+msgid ":ref:`BinaryEntry <03_ride-language/05_structures:BinaryEntry>`"
 msgstr ""
 
 #: ../../02_decentralchain.rst:294
-msgid ":ref:`BooleanEntry <03_ride-language:BooleanEntry>`"
+msgid ":ref:`BooleanEntry <03_ride-language/05_structures:BooleanEntry>`"
 msgstr ""
 
 #: ../../02_decentralchain.rst:295
-msgid ":ref:`IntegerEntry <03_ride-language:IntegerEntry>`"
+msgid ":ref:`IntegerEntry <03_ride-language/05_structures:IntegerEntry>`"
 msgstr ""
 
 #: ../../02_decentralchain.rst:296
-msgid ":ref:`StringEntry <03_ride-language:StringEntry>`"
+msgid ":ref:`StringEntry <03_ride-language/05_structures:StringEntry>`"
 msgstr ""
 
 #: ../../02_decentralchain.rst:297
-msgid ":ref:`DeleteEntry <03_ride-language:DeleteEntry>`"
+msgid ":ref:`DeleteEntry <03_ride-language/05_structures:DeleteEntry>`"
 msgstr ""
 
 #: ../../02_decentralchain.rst:300
@@ -791,10 +791,10 @@ msgstr ""
 #: ../../02_decentralchain.rst:302
 msgid ""
 "An account with a script assigned to it becomes a dApp or smart account. "
-"dApp is the account with the :ref:`dApp script <03_ride-language:dApp Script>`"
+"dApp is the account with the :ref:`dApp script <03_ride-language/04_script-types:dApp Script>`"
 " assigned. dApp is an application whose functions can be called from "
 "other accounts via an :ref:`invoke script transaction "
-"<02_decentralchain:Invoke Script Transaction>`. Callable functions can "
+"<02_decentralchain/03_transaction:Invoke Script Transaction>`. Callable functions can "
 "accept payments to the dApp and also perform actions applied to the "
 "blockchain:"
 msgstr ""
@@ -831,14 +831,14 @@ msgstr ""
 #: ../../02_decentralchain.rst:313
 msgid ""
 "A smart account is an account with the :ref:`account script "
-"<03_ride-language:Account Script>` assigned. The account script is similar to "
+"<03_ride-language/04_script-types:Account Script>` assigned. The account script is similar to "
 "a verifier function of a dApp script. Please note:"
 msgstr ""
 
 #: ../../02_decentralchain.rst:315
 msgid ""
 "To assign a script to an account, you have to send a :ref:`set script "
-"transaction <02_decentralchain:Set Script Transaction>` on behalf of the "
+"transaction <02_decentralchain/03_transaction:Set Script Transaction>` on behalf of the "
 "account."
 msgstr ""
 
@@ -850,11 +850,11 @@ msgstr ""
 
 #: ../../02_decentralchain.rst:317
 msgid ""
-"The :ref:`minimum fee <02_decentralchain:Minimum Fee>` for any transaction "
+"The :ref:`minimum fee <02_decentralchain/03_transaction:Minimum Fee>` for any transaction "
 "sent from a dApp or smart account is increased by :math:`0.004` "
 "DecentralCoins if the complexity of sender's account script or dApp "
 "script verifier function exceeds the :ref:`sender complexity threshold "
-"<03_ride-language:Limitations>`."
+"<03_ride-language/07_dapp-to-app-invocation:Limitations>`."
 msgstr ""
 
 #: ../../02_decentralchain.rst:321
@@ -881,7 +881,7 @@ msgid ""
 "“token” and “asset” are used interchangeably in the DecentralChain "
 "ecosystem. DecentralCoin is the native token on the DecentralChain "
 "blockchain. :ref:`More about DecentralCoin "
-"<02_decentralchain:DecentralCoin>`."
+"<02_decentralchain/02_token(asset):DecentralCoin>`."
 msgstr ""
 
 #: ../../02_decentralchain.rst:331
@@ -898,15 +898,15 @@ msgstr ""
 #: ../../02_decentralchain.rst:334
 msgid ""
 "For trading on `Decentral.Exchange <https://decentral.exchange/>`_ "
-"(except for :ref:`NFTs <02_decentralchain:Non-Fungible Token>`; :ref:`smart"
-" assets <02_decentralchain:Smart Asset>` trading is temporarily "
+"(except for :ref:`NFTs <02_decentralchain/02_token(asset):Non-Fungible Token>`; :ref:`smart"
+" assets <02_decentralchain/02_token(asset):Smart Asset>` trading is temporarily "
 "unavailable),"
 msgstr ""
 
 #: ../../02_decentralchain.rst:335
 msgid ""
 "For payments attached to dApp :ref:`script invocation "
-"<02_decentralchain:Invoke Script Transaction>`."
+"<02_decentralchain/03_transaction:Invoke Script Transaction>`."
 msgstr ""
 
 #: ../../02_decentralchain.rst:338
@@ -965,7 +965,7 @@ msgstr ""
 
 #: ../../02_decentralchain.rst:350
 msgid ""
-":ref:`Smart asset <02_decentralchain:Smart Asset>`: A smart asset is an "
+":ref:`Smart asset <02_decentralchain/02_token(asset):Smart Asset>`: A smart asset is an "
 "asset with an attached script that places conditions on every transaction"
 " made for the asset in question."
 msgstr ""
@@ -992,11 +992,11 @@ msgstr ""
 msgid ""
 "The transaction fee is :math:`1` DecentralCoin for a regular token or "
 ":math:`0.001` DecentralCoins for a :ref:`non-fungible token (NFT) "
-"<02_decentralchain:Non-Fungible Token>`. Moreover, the token can be issued "
-"by the :ref:`dApp script <03_ride-language:dApp Script>` as a result of the "
+"<02_decentralchain/02_token(asset):Non-Fungible Token>`. Moreover, the token can be issued "
+"by the :ref:`dApp script <03_ride-language/04_script-types:dApp Script>` as a result of the "
 ":ref:`invoke script transaction <02_decentralchain:Invoke Script "
 "Transaction>` when the callable function result contains the :ref:`issue "
-"action <03_ride-language:Issue>`. The minimum fee for invoke script "
+"action <03_ride-language/05_structures:Issue>`. The minimum fee for invoke script "
 "transaction is increased by :math:`1` DecentralCoin for each non-NFT "
 "token issued."
 msgstr ""
@@ -1022,9 +1022,9 @@ msgstr ""
 #: ../../02_decentralchain.rst:365
 msgid ""
 "If the token is issued by :ref:`invoke script transaction "
-"<02_decentralchain:Invoke Script Transaction>` when the callable function "
-"of :ref:`dApp script <02_decentralchain:dApp and Smart Account>` performed "
-"the :ref:`issue action <03_ride-language:Issue>`, the token ID is calculated "
+"<02_decentralchain/03_transaction:Invoke Script Transaction>` when the callable function "
+"of :ref:`dApp script <02_decentralchain/01_account:dApp and Smart Account>` performed "
+"the :ref:`issue action <03_ride-language/05_structures:Issue>`, the token ID is calculated "
 "as the BLAKE2b-256 hash of the byte array containing transaction ID and "
 "the fields of the Issue structure."
 msgstr ""
@@ -1037,7 +1037,7 @@ msgstr ""
 
 #: ../../02_decentralchain.rst:373
 msgid ""
-"The :ref:`DecentralCoin <02_decentralchain:DecentralCoin>` token has no "
+"The :ref:`DecentralCoin <02_decentralchain/02_token(asset):DecentralCoin>` token has no "
 "identifier. The Node REST API uses null for DecentralCoin."
 msgstr ""
 
@@ -1055,8 +1055,8 @@ msgid ""
 "Transaction>` or a :ref:`mass transfer transaction <02_decentralchain:Mass "
 "Transfer Transaction>`. A :ref:`dApp script <02_decentralchain:dApp and "
 "Smart Account>` can transfer the token via a :ref:`script transfer script"
-" action <03_ride-language:Issue>` as a result of an :ref:`invoke script "
-"transaction <02_decentralchain:Invoke Script Transaction>`."
+" action <03_ride-language/05_structures:Issue>` as a result of an :ref:`invoke script "
+"transaction <02_decentralchain/03_transaction:Invoke Script Transaction>`."
 msgstr ""
 
 #: ../../02_decentralchain.rst:383
@@ -1066,10 +1066,10 @@ msgstr ""
 #: ../../02_decentralchain.rst:385
 msgid ""
 "Three accounts can participate in the exchange: one user creates an "
-":ref:`order <02_decentralchain:Order>` to buy a token, the other creates an"
+":ref:`order <02_decentralchain/06_order:Order>` to buy a token, the other creates an"
 " order to sell a token. The matcher combines buy and sell orders with "
 "suitable parameters and creates an :ref:`exchange transaction "
-"<02_decentralchain:Exchange Transaction>`."
+"<02_decentralchain/03_transaction:Exchange Transaction>`."
 msgstr ""
 
 #: ../../02_decentralchain.rst:387
@@ -1081,14 +1081,14 @@ msgid ""
 "Decreases the amount of token on the account and thereby the total amount"
 " of the token on the blockchain. Any token owner can burn it, not only "
 "the issuer. It is impossible to burn :ref:`DecentralCoin "
-"<02_decentralchain:DecentralCoin>`. Can be done via a :ref:`burn "
-"transaction <02_decentralchain:Burn Transaction>`. A dApp script can burn "
-"the token via a :ref:`burn script action <03_ride-language:Burn>` as a result "
+"<02_decentralchain/02_token(asset):DecentralCoin>`. Can be done via a :ref:`burn "
+"transaction <02_decentralchain/03_transaction:Burn Transaction>`. A dApp script can burn "
+"the token via a :ref:`burn script action <03_ride-language/05_structures:Burn>` as a result "
 "of the Invoke script transaction."
 msgstr ""
 
 #: ../../02_decentralchain.rst:392
-msgid "Payment to :ref:`dApp <02_decentralchain:dApp and Smart Account>`"
+msgid "Payment to :ref:`dApp <02_decentralchain/01_account:dApp and Smart Account>`"
 msgstr ""
 
 #: ../../02_decentralchain.rst:394
@@ -1117,10 +1117,10 @@ msgid ""
 "The token issuer can enable sponsorship which allows all users to pay "
 "fees in this token (instead of DecentralCoins) for invoke script "
 "transactions and transfer transactions. :ref:`More about sponsorship "
-"<02_decentralchain:Sponsored Fees>`. Enabling or disabling sponsorship can "
+"<02_decentralchain/03_transaction:Sponsored Fees>`. Enabling or disabling sponsorship can "
 "be done via a :ref:`sponsor fee transaction<02_decentralchain:Sponsor Fee "
 "Transaction>`. A dApp script can set up sponsorship using a "
-":ref:`SponsorFee <03_ride-language:SponsorFee>` as a result of the invoke "
+":ref:`SponsorFee <03_ride-language/05_structures:SponsorFee>` as a result of the invoke "
 "script transaction."
 msgstr ""
 
@@ -1132,9 +1132,9 @@ msgstr ""
 msgid ""
 "Increases the amount of token on the blockchain. The reissuable field of "
 "token determines whether the token can be reissued. Can be done via a "
-":ref:`reissue transaction <02_decentralchain:Reissue Transaction>`. A dApp "
+":ref:`reissue transaction <02_decentralchain/03_transaction:Reissue Transaction>`. A dApp "
 "script can reissue the token via a :ref:`reissue script action "
-"<03_ride-language:Reissue>` as a result of the invoke script transaction."
+"<03_ride-language/05_structures:Reissue>` as a result of the invoke script transaction."
 msgstr ""
 
 #: ../../02_decentralchain.rst:410
@@ -1156,7 +1156,7 @@ msgstr ""
 #: ../../02_decentralchain.rst:416
 msgid ""
 "Can be done via an :ref:`update asset info transaction "
-"<02_decentralchain:Update Asset Info Transaction>`."
+"<02_decentralchain/03_transaction:Update Asset Info Transaction>`."
 msgstr ""
 
 #: ../../02_decentralchain.rst:419
@@ -1170,7 +1170,7 @@ msgstr ""
 #: ../../02_decentralchain.rst:424
 msgid ""
 "Non-fungible token or NFT is a special type of a :ref:`token "
-"<02_decentralchain:Token (Asset)>` that is issued with the following "
+"<02_decentralchain/02_token(asset):Token (Asset)>` that is issued with the following "
 "parameters:"
 msgstr ""
 
@@ -1201,7 +1201,7 @@ msgstr ""
 #: ../../02_decentralchain.rst:435
 msgid ""
 "NFT can be issued in the same ways as a regular token, see :ref:`token "
-"issue <02_decentralchain:Token Issue>`. The minimum fee for an NFT issue is"
+"issue <02_decentralchain/02_token(asset):Token Issue>`. The minimum fee for an NFT issue is"
 " :math:`0.001` DecentralCoins, :math:`1000` times less than for a regular"
 " token."
 msgstr ""
@@ -1212,8 +1212,8 @@ msgstr ""
 
 #: ../../02_decentralchain.rst:440
 msgid ""
-"Smart asset is a :ref:`token <02_decentralchain:Token (Asset)>` that has an"
-" :ref:`asset script <03_ride-language:Asset Script>` assigned to it. By "
+"Smart asset is a :ref:`token <02_decentralchain/02_token(asset):Token (Asset)>` that has an"
+" :ref:`asset script <03_ride-language/04_script-types:Asset Script>` assigned to it. By "
 "default, tokens on the DecentralChain blockchain are not smart contracts,"
 " and any transactions with them are allowed. The script endows a token "
 "with functionality that sets the rules for its circulation. Each "
@@ -1222,7 +1222,7 @@ msgid ""
 "transaction, it will be executed; if the script denies the transaction, "
 "it is either not put onto the blockchain at all or saved as failed (for "
 "details, see the :ref:`transaction validation "
-"<02_decentralchain:Transaction Validation>` article)."
+"<02_decentralchain/03_transaction:Transaction Validation>` article)."
 msgstr ""
 
 #: ../../02_decentralchain.rst:443
@@ -1248,15 +1248,15 @@ msgstr ""
 #: ../../02_decentralchain.rst:447
 msgid ""
 "The asset script can be changed using the :ref:`set asset script "
-"transaction <02_decentralchain:Set Asset Script Transaction>`, unless "
+"transaction <02_decentralchain/03_transaction:Set Asset Script Transaction>`, unless "
 "prohibited by the asset script itself (as well as by the :ref:`dApp or "
-"account script <02_decentralchain:dApp and Smart Account>` assigned to the "
+"account script <02_decentralchain/01_account:dApp and Smart Account>` assigned to the "
 "issuer account)."
 msgstr ""
 
 #: ../../02_decentralchain.rst:448
 msgid ""
-"The :ref:`minimum fee <02_decentralchain:Minimum Fee>` for transaction is "
+"The :ref:`minimum fee <02_decentralchain/03_transaction:Minimum Fee>` for transaction is "
 "increased by :math:`0.004` DecentralCoins for each smart asset involved, "
 "except for:"
 msgstr ""
@@ -1270,7 +1270,7 @@ msgstr ""
 #: ../../02_decentralchain.rst:451
 msgid ""
 "Smart assets used as matcher fee in :ref:`exchange transaction "
-"<02_decentralchain:Exchange Transaction>`."
+"<02_decentralchain/03_transaction:Exchange Transaction>`."
 msgstr ""
 
 #: ../../02_decentralchain.rst:454
@@ -1291,11 +1291,11 @@ msgstr ""
 
 #: ../../02_decentralchain.rst:461
 msgid ""
-"DecentralCoin is the native :ref:`token <02_decentralchain:Token (Asset)>` "
+"DecentralCoin is the native :ref:`token <02_decentralchain/02_token(asset):Token (Asset)>` "
 "of the DecentralChain blockchain. :ref:`Block generators "
-"<02_decentralchain:Generating Node>` receive :ref:`transaction fees "
-"<02_decentralchain:Transaction Fees>` and :ref:`block rewards "
-"<02_decentralchain:Block Reward>` in DecentralCoins, which encourages "
+"<02_decentralchain/05_node:Generating Node>` receive :ref:`transaction fees "
+"<02_decentralchain/03_transaction:Transaction Fees>` and :ref:`block rewards "
+"<02_decentralchain/05_node:Block Reward>` in DecentralCoins, which encourages "
 "generators to maintain and develop the blockchain network infrastructure."
 " The more DecentralCoins the generator holds (by ownership or lease), the"
 " greater its chance to add the next block is."
@@ -1322,12 +1322,12 @@ msgstr ""
 #: ../../02_decentralchain.rst:472
 msgid ""
 "The owner of DecentralCoins can lease them via a :ref:`lease transaction "
-"<02_decentralchain:Lease Transaction>`. DecentralCoins received on lease "
+"<02_decentralchain/03_transaction:Lease Transaction>`. DecentralCoins received on lease "
 "are included in the :ref:`generating balance <02_decentralchain:Account "
 "Balance>`. Block generators send back different percentages as rewards to"
 " lessors. A lessor can cancel the lease at any time via a :ref:`lease "
-"cancel transaction <02_decentralchain:Lease Cancel Transaction>`. "
-":ref:`More about leasing <02_decentralchain:Leased Proof of Stake>`."
+"cancel transaction <02_decentralchain/03_transaction:Lease Cancel Transaction>`. "
+":ref:`More about leasing <02_decentralchain/05_node:Leased Proof of Stake>`."
 msgstr ""
 
 #: ../../02_decentralchain.rst:475
@@ -1491,7 +1491,7 @@ msgstr ""
 msgid ""
 "Token ID: base58 encoded byte array. The token ID is calculated as a hash"
 " of the token parameters upon issue. See also the :ref:`token ID "
-"<02_decentralchain:Token ID>` article."
+"<02_decentralchain/02_token(asset):Token ID>` article."
 msgstr ""
 
 #: ../../_static/02_decentralchain/tables/001_Token-Custom-Parameters.csv:1
@@ -1518,7 +1518,7 @@ msgstr ""
 
 #: ../../_static/02_decentralchain/tables/001_Token-Custom-Parameters.csv:1
 msgid ""
-":ref:`Address <02_decentralchain:Address>` of issuer account: base58 "
+":ref:`address <02_decentralchain/01_account:Address>` of issuer account: base58 "
 "encoded byte array."
 msgstr ""
 
@@ -1528,7 +1528,7 @@ msgstr ""
 
 #: ../../_static/02_decentralchain/tables/001_Token-Custom-Parameters.csv:1
 msgid ""
-":ref:`Public key <02_decentralchain:Account Keys>` of issuer account: "
+":ref:`Public key <02_decentralchain/01_account:Account Keys>` of issuer account: "
 "base58 encoded byte array."
 msgstr ""
 
@@ -1602,7 +1602,7 @@ msgstr ""
 #: ../../_static/02_decentralchain/tables/001_Token-Custom-Parameters.csv:1
 msgid ""
 "Total supply of token on the blockchain specified in :ref:`atomic units "
-"<02_decentralchain:Atomic Unit>`. From :math:`1` to "
+"<02_decentralchain/02_token(asset):Atomic Unit>`. From :math:`1` to "
 ":math:`9,223,372,036,854,775,807`. Total supply can change as a result of"
 " reissue or burning, see :ref:`token operations <02_decentralchain:Token "
 "Operations>` below."
@@ -1615,7 +1615,7 @@ msgstr ""
 #: ../../_static/02_decentralchain/tables/001_Token-Custom-Parameters.csv:1
 msgid ""
 "There being a script: true for smart asset, false for regular token. "
-":ref:`More about smart assets <02_decentralchain:Smart Asset>`."
+":ref:`More about smart assets <02_decentralchain/02_token(asset):Smart Asset>`."
 msgstr ""
 
 #: ../../_static/02_decentralchain/tables/001_Token-Custom-Parameters.csv:1
@@ -1627,8 +1627,8 @@ msgstr ""
 #: ../../_static/02_decentralchain/tables/001_Token-Custom-Parameters.csv:1
 msgid ""
 "For sponsored asset only: an amount of asset that is equivalent to "
-":math:`0.001` :ref:`DecentralCoins <02_decentralchain:DecentralCoin>`. "
-":ref:`More about sponsorship <02_decentralchain:Sponsored Fees>`."
+":math:`0.001` :ref:`DecentralCoins <02_decentralchain/02_token(asset):DecentralCoin>`. "
+":ref:`More about sponsorship <02_decentralchain/03_transaction:Sponsored Fees>`."
 msgstr ""
 
 #: ../../_static/02_decentralchain/tables/001_Token-Custom-Parameters.csv:1
@@ -1637,7 +1637,7 @@ msgstr ""
 
 #: ../../_static/02_decentralchain/tables/001_Token-Custom-Parameters.csv:1
 msgid ""
-"ID of the :ref:`transaction <02_decentralchain:Transaction>` that issued "
+"ID of the :ref:`transaction <02_decentralchain/03_transaction:Transaction>` that issued "
 "the token: base58 encoded byte array."
 msgstr ""
 
@@ -1647,8 +1647,8 @@ msgstr ""
 
 #: ../../_static/02_decentralchain/tables/001_Token-Custom-Parameters.csv:1
 msgid ""
-"For :ref:`smart asset <02_decentralchain:Smart Asset>` only: :ref:`asset "
-"script <03_ride-language:Asset Script>` and its attributes."
+"For :ref:`smart asset <02_decentralchain/02_token(asset):Smart Asset>` only: :ref:`asset "
+"script <03_ride-language/04_script-types:Asset Script>` and its attributes."
 msgstr ""
 
 #: ../../02_decentralchain.rst:509
@@ -1658,7 +1658,7 @@ msgstr ""
 #: ../../02_decentralchain.rst:511
 msgid ""
 "The amount of token is displayed differently in UIs and in the :ref:`JSON"
-" representation <02_decentralchain:JSON Representation>` used by the "
+" representation <02_decentralchain/03_transaction:JSON Representation>` used by the "
 ":ref:`Node REST API <documentation:placeholder>`. In API requests and "
 "responses, amount values are integers indicated in atomic units to avoid "
 "precision issues in floating-point calculations. An atomic unit is the "
@@ -1729,7 +1729,7 @@ msgstr ""
 msgid ""
 "Each transaction contains the public key of the sender’s account, on "
 "behalf of which the action is performed on the blockchain. :ref:`Smart "
-"accounts and dApps <02_decentralchain:dApp and Smart Account>` can set "
+"accounts and dApps <02_decentralchain/01_account:dApp and Smart Account>` can set "
 "their own rules for outgoing transactions verification."
 msgstr ""
 
@@ -1752,7 +1752,7 @@ msgstr ""
 msgid ""
 "Upon receiving a transaction, the node validates its signature, checks "
 "the sender's balance, and so on, see the :ref:`transaction validation "
-"<02_decentralchain:Transaction Validation>` article for details. If the "
+"<02_decentralchain/03_transaction:Transaction Validation>` article for details. If the "
 "transaction is valid, the node puts the transaction to the UTX pool, "
 "which is a list of transactions awaiting to be added, and also broadcasts"
 " the transaction to other nodes of the blockchain network."
@@ -1784,7 +1784,7 @@ msgstr ""
 #: ../../02_decentralchain.rst:557
 msgid ""
 "If the transaction sender is a :ref:`dApp or smart account "
-"<02_decentralchain:dApp and Smart Account>`, then the transaction is "
+"<02_decentralchain/01_account:dApp and Smart Account>`, then the transaction is "
 "verified by the script assigned to the account instead of signature "
 "verification. The script allows or denies the transaction depending on "
 "whether it meets the specified conditions. In particular, the script can "
@@ -1803,17 +1803,17 @@ msgstr ""
 
 #: ../../02_decentralchain.rst:564
 msgid ""
-"Transaction fee is a fee that an :ref:`account <02_decentralchain:Account>`"
-" owner pays to send a :ref:`transaction <02_decentralchain:Transaction>`. A"
+"Transaction fee is a fee that an :ref:`account <02_decentralchain/01_account:Account>`"
+" owner pays to send a :ref:`transaction <02_decentralchain/03_transaction:Transaction>`. A"
 " transaction sender can specify any amount of fee but not less than the "
 "minimum amount. The larger the fee is, the quicker the transaction will "
-"be added to the new :ref:`block <02_decentralchain:Block>`. For "
+"be added to the new :ref:`block <02_decentralchain/04_block:Block>`. For "
 ":ref:`invoke script transactions <02_decentralchain:Invoke Script "
 "Transaction>` and :ref:`transfer transaction <02_decentralchain:Transfer "
 "Transaction>`, a sender can specify a transaction fee nominated in a "
 "sponsored asset instead of :ref:`DecentralCoins "
-"<02_decentralchain:DecentralCoin>`, see the section :ref:`fee in sponsored "
-"asset <02_decentralchain:Fee in Sponsored Asset>` below."
+"<02_decentralchain/02_token(asset):DecentralCoin>`, see the section :ref:`fee in sponsored "
+"asset <02_decentralchain/03_transaction:Fee in Sponsored Asset>` below."
 msgstr ""
 
 #: ../../02_decentralchain.rst:568
@@ -1833,11 +1833,11 @@ msgstr ""
 #: ../../02_decentralchain.rst:575
 msgid ""
 "If the transaction sender is a :ref:`dApp or smart account "
-"<02_decentralchain:dApp and Smart Account>`, and the complexity of the "
+"<02_decentralchain/01_account:dApp and Smart Account>`, and the complexity of the "
 "account script or dApp script verifier function exceeds the :ref:`sender "
-"complexity threshold <03_ride-language:Limitations>`, the minimum fee is "
+"complexity threshold <03_ride-language/07_dapp-to-app-invocation:Limitations>`, the minimum fee is "
 "increased by :math:`0.004` DecentralCoins. If the order sender in "
-":ref:`exchange transaction <02_decentralchain:Exchange Transaction>` is a "
+":ref:`exchange transaction <02_decentralchain/03_transaction:Exchange Transaction>` is a "
 "dApp or smart account, this does nor affect the minimum fee."
 msgstr ""
 
@@ -1849,7 +1849,7 @@ msgstr ""
 
 #: ../../02_decentralchain.rst:579
 msgid ""
-":ref:`Smart assets <02_decentralchain:Smart Asset>` used as matcher fees in"
+":ref:`Smart assets <02_decentralchain/02_token(asset):Smart Asset>` used as matcher fees in"
 " exchange transactions."
 msgstr ""
 
@@ -1884,7 +1884,7 @@ msgstr ""
 #: ../../02_decentralchain.rst:589 ../../02_decentralchain.rst:600
 msgid ""
 "If the account script complexity is higher than the :ref:`sender "
-"complexity threshold <03_ride-language:Limitations>`."
+"complexity threshold <03_ride-language/07_dapp-to-app-invocation:Limitations>`."
 msgstr ""
 
 #: ../../02_decentralchain.rst:591 ../../02_decentralchain.rst:2030
@@ -1908,7 +1908,7 @@ msgstr ""
 #: ../../02_decentralchain.rst:597
 msgid ""
 "dApp script invocation issues an asset that is not :ref:`non-fungible "
-"tokens <02_decentralchain:Non-Fungible Token>`: :math:`0.005 + 1 = 1.005` "
+"tokens <02_decentralchain/02_token(asset):Non-Fungible Token>`: :math:`0.005 + 1 = 1.005` "
 "DecentralCoins."
 msgstr ""
 
@@ -1942,12 +1942,12 @@ msgstr ""
 #: ../../_static/02_decentralchain/tables/002_Minimum-Fees.csv:1
 msgid ""
 "Minimum transaction fee in :ref:`DecentralCoins "
-"<02_decentralchain:DecentralCoin>`"
+"<02_decentralchain/02_token(asset):DecentralCoin>`"
 msgstr ""
 
 #: ../../_static/02_decentralchain/tables/002_Minimum-Fees.csv:1
 #: ../../_static/02_decentralchain/tables/004_Tokenization.csv:1
-msgid ":ref:`Burn transaction <02_decentralchain:Burn Transaction>`"
+msgid ":ref:`Burn transaction <02_decentralchain/03_transaction:Burn Transaction>`"
 msgstr ""
 
 #: ../../_static/02_decentralchain/tables/002_Minimum-Fees.csv:1
@@ -1995,7 +1995,7 @@ msgstr ""
 
 #: ../../_static/02_decentralchain/tables/002_Minimum-Fees.csv:1
 #: ../../_static/02_decentralchain/tables/010_Usage.csv:1
-msgid ":ref:`Create alias transaction <02_decentralchain:Create Alias Transaction>`"
+msgid ":ref:`Create alias transaction <02_decentralchain/03_transaction:Create Alias Transaction>`"
 msgstr ""
 
 #: ../../_static/02_decentralchain/tables/002_Minimum-Fees.csv:1
@@ -2023,7 +2023,7 @@ msgstr ""
 
 #: ../../_static/02_decentralchain/tables/002_Minimum-Fees.csv:1
 #: ../../_static/02_decentralchain/tables/010_Usage.csv:1
-msgid ":ref:`Data transaction <02_decentralchain:Data Transaction>`"
+msgid ":ref:`data transaction <02_decentralchain/03_transaction:Data Transaction>`"
 msgstr ""
 
 #: ../../_static/02_decentralchain/tables/002_Minimum-Fees.csv:1
@@ -2048,7 +2048,7 @@ msgstr ""
 
 #: ../../_static/02_decentralchain/tables/002_Minimum-Fees.csv:1
 #: ../../_static/02_decentralchain/tables/010_Usage.csv:1
-msgid ":ref:`Exchange transaction <02_decentralchain:Exchange Transaction>`"
+msgid ":ref:`Exchange transaction <02_decentralchain/03_transaction:Exchange Transaction>`"
 msgstr ""
 
 #: ../../_static/02_decentralchain/tables/002_Minimum-Fees.csv:1
@@ -2108,7 +2108,7 @@ msgstr ""
 
 #: ../../_static/02_decentralchain/tables/002_Minimum-Fees.csv:1
 #: ../../_static/02_decentralchain/tables/004_Tokenization.csv:1
-msgid ":ref:`Issue transaction <02_decentralchain:Issue Transaction>`"
+msgid ":ref:`Issue transaction <02_decentralchain/03_transaction:Issue Transaction>`"
 msgstr ""
 
 #: ../../_static/02_decentralchain/tables/002_Minimum-Fees.csv:1
@@ -2161,12 +2161,12 @@ msgstr ""
 #: ../../_static/02_decentralchain/tables/002_Minimum-Fees.csv:1
 msgid ""
 ":math:`1` for reqular token. :math:`0.001` for :ref:`non-fungible token "
-"<02_decentralchain:Non-Fungible Token>`."
+"<02_decentralchain/02_token(asset):Non-Fungible Token>`."
 msgstr ""
 
 #: ../../_static/02_decentralchain/tables/002_Minimum-Fees.csv:1
 #: ../../_static/02_decentralchain/tables/018_Network.csv:1
-msgid ":ref:`Lease cancel transaction <02_decentralchain:Lease Cancel Transaction>`"
+msgid ":ref:`Lease cancel transaction <02_decentralchain/03_transaction:Lease Cancel Transaction>`"
 msgstr ""
 
 #: ../../_static/02_decentralchain/tables/002_Minimum-Fees.csv:1
@@ -2200,7 +2200,7 @@ msgstr ""
 
 #: ../../_static/02_decentralchain/tables/002_Minimum-Fees.csv:1
 #: ../../_static/02_decentralchain/tables/018_Network.csv:1
-msgid ":ref:`Lease transaction <02_decentralchain:Lease Transaction>`"
+msgid ":ref:`Lease transaction <02_decentralchain/03_transaction:Lease Transaction>`"
 msgstr ""
 
 #: ../../_static/02_decentralchain/tables/002_Minimum-Fees.csv:1
@@ -2275,7 +2275,7 @@ msgstr ""
 
 #: ../../_static/02_decentralchain/tables/002_Minimum-Fees.csv:1
 #: ../../_static/02_decentralchain/tables/004_Tokenization.csv:1
-msgid ":ref:`Reissue transaction <02_decentralchain:Reissue Transaction>`"
+msgid ":ref:`Reissue transaction <02_decentralchain/03_transaction:Reissue Transaction>`"
 msgstr ""
 
 #: ../../_static/02_decentralchain/tables/002_Minimum-Fees.csv:1
@@ -2380,7 +2380,7 @@ msgid ":math:`1`"
 msgstr ""
 
 #: ../../_static/02_decentralchain/tables/002_Minimum-Fees.csv:1
-msgid ":ref:`Set script transaction <02_decentralchain:Set Script Transaction>`"
+msgid ":ref:`set script transaction <02_decentralchain/03_transaction:Set Script Transaction>`"
 msgstr ""
 
 #: ../../_static/02_decentralchain/tables/002_Minimum-Fees.csv:1
@@ -2395,7 +2395,7 @@ msgstr ""
 
 #: ../../_static/02_decentralchain/tables/002_Minimum-Fees.csv:1
 #: ../../_static/02_decentralchain/tables/018_Network.csv:1
-msgid ":ref:`Sponsor fee transaction <02_decentralchain:Sponsor Fee Transaction>`"
+msgid ":ref:`Sponsor fee transaction <02_decentralchain/03_transaction:Sponsor Fee Transaction>`"
 msgstr ""
 
 #: ../../_static/02_decentralchain/tables/002_Minimum-Fees.csv:1
@@ -2407,7 +2407,7 @@ msgstr ""
 
 #: ../../_static/02_decentralchain/tables/002_Minimum-Fees.csv:1
 #: ../../_static/02_decentralchain/tables/010_Usage.csv:1
-msgid ":ref:`Transfer transaction <02_decentralchain:Transfer Transaction>`"
+msgid ":ref:`Transfer transaction <02_decentralchain/03_transaction:Transfer Transaction>`"
 msgstr ""
 
 #: ../../_static/02_decentralchain/tables/002_Minimum-Fees.csv:1
@@ -2490,10 +2490,10 @@ msgstr ""
 msgid ""
 "An issuer of an asset can set up sponsorship — so that any user can "
 "specify a transaction fee in this asset for :ref:`invoke script "
-"transactions <02_decentralchain:Invoke Script Transaction>` and "
-":ref:`transfer transactions <02_decentralchain:Transfer Transaction>`. To "
+"transactions <02_decentralchain/03_transaction:Invoke Script Transaction>` and "
+":ref:`transfer transactions <02_decentralchain/03_transaction:Transfer Transaction>`. To "
 "activate sponsorship, the issuer puts a :ref:`sponsor fee "
-"transaction<02_decentralchain:Sponsor Fee Transaction>` that specifies an "
+"transaction<02_decentralchain/03_transaction:Sponsor Fee Transaction>` that specifies an "
 "amount of asset that is equivalent to the minimum fee of :math:`0.001` "
 "DecentralCoins. For example, if minSponsoredAssetFee: :math:`5`, then the"
 " fee in this asset for an invoke script transaction equals :math:`5 * "
@@ -2508,7 +2508,7 @@ msgstr ""
 msgid ""
 "Users of DecentralChain-based apps should pay a fee for each transaction."
 " This is the entry threshold for new users. Sometimes users don't know "
-"anything about :ref:`DecentralCoins <02_decentralchain:DecentralCoin>` or "
+"anything about :ref:`DecentralCoins <02_decentralchain/02_token(asset):DecentralCoin>` or "
 "don't understand how to get DecentralCoins or don't want to spend money. "
 "Sponsorship enables launching apps that do not require DecentralCoins "
 "from users."
@@ -2522,8 +2522,8 @@ msgstr ""
 msgid ""
 "An account that issued an asset can enable sponsorship, that is, allow "
 "all users to pay a fee in this asset for :ref:`invoke script transactions"
-" <02_decentralchain:Invoke Script Transaction>` and :ref:`transfer "
-"transactions <02_decentralchain:Transfer Transaction>`. The sponsor can "
+" <02_decentralchain/03_transaction:Invoke Script Transaction>` and :ref:`transfer "
+"transactions <02_decentralchain/03_transaction:Transfer Transaction>`. The sponsor can "
 "distribute the sponsored asset among app users."
 msgstr ""
 
@@ -2615,8 +2615,8 @@ msgstr ""
 #: ../../02_decentralchain.rst:655
 msgid ""
 "The fee in the sponsored asset can only be specified for :ref:`invoke "
-"script transactions <02_decentralchain:Invoke Script Transaction>` and "
-":ref:`transfer transactions <02_decentralchain:Transfer Transaction>`."
+"script transactions <02_decentralchain/03_transaction:Invoke Script Transaction>` and "
+":ref:`transfer transactions <02_decentralchain/03_transaction:Transfer Transaction>`."
 msgstr ""
 
 #: ../../02_decentralchain.rst:658
@@ -2627,7 +2627,7 @@ msgstr ""
 msgid ""
 "After :ref:`enabling sponsorship <02_decentralchain:How to Enable "
 "Sponsorship>`, if the requirements described in the :ref:`restrictions "
-"<02_decentralchain:Restrictions>` section are met, the sponsorship works as"
+"<02_decentralchain/03_transaction:Restrictions>` section are met, the sponsorship works as"
 " follows:"
 msgstr ""
 
@@ -2647,7 +2647,7 @@ msgstr ""
 msgid ""
 "Block generators receive the fee in DecentralCoins from the sponsor's "
 "account (in accordance with the :ref:`DecentralChain-M5 protocol "
-"<02_decentralchain:DecentralChain-M5 Protocol>`, the fee is distributed "
+"<02_decentralchain/09_protocol:DecentralChain-M5 Protocol>`, the fee is distributed "
 "between the current block generator and the next block generator in a "
 "ratio of :math:`\\frac{40}{60}`."
 msgstr ""
@@ -2660,7 +2660,7 @@ msgstr ""
 
 #: ../../02_decentralchain.rst:670
 msgid ""
-"The fee in :ref:`DecentralCoins <02_decentralchain:DecentralCoin>` charged "
+"The fee in :ref:`DecentralCoins <02_decentralchain/02_token(asset):DecentralCoin>` charged "
 "to the sponsor is proportional to the fee specified by the transaction "
 "sender:"
 msgstr ""
@@ -2671,7 +2671,7 @@ msgid ""
 ":math:`0.001` DecentralCoins. The sponsor sets this value when enabling "
 "sponsorship. For example, if the sponsor sets :math:`3` tokens = "
 ":math:`0.001` DecentralCoins, then the minimum fee for :ref:`invoke "
-"script transactions <02_decentralchain:Invoke Script Transaction>` is "
+"script transactions <02_decentralchain/03_transaction:Invoke Script Transaction>` is "
 ":math:`15` tokens, which corresponds to :math:`0.005` DecentralCoins. "
 "Please note:"
 msgstr ""
@@ -2724,7 +2724,7 @@ msgstr ""
 
 #: ../../_static/02_decentralchain/tables/003_JSON-Representation.csv:1
 msgid ""
-":ref:`Public key <02_decentralchain:Account Keys>` of the transaction "
+":ref:`Public key <02_decentralchain/01_account:Account Keys>` of the transaction "
 "sender: base58 encoded byte array."
 msgstr ""
 
@@ -2734,7 +2734,7 @@ msgstr ""
 
 #: ../../_static/02_decentralchain/tables/003_JSON-Representation.csv:1
 msgid ""
-":ref:`Address <02_decentralchain:Address>` of the transaction sender: "
+":ref:`address <02_decentralchain/01_account:Address>` of the transaction sender: "
 "base58 encoded byte array."
 msgstr ""
 
@@ -2747,11 +2747,11 @@ msgstr ""
 #: ../../_static/02_decentralchain/tables/003_JSON-Representation.csv:1
 msgid ""
 "ID of the fee token. null means that the fee is in :ref:`DecentralCoins "
-"<02_decentralchain:DecentralCoin>`. The sender can specify the fee for "
+"<02_decentralchain/02_token(asset):DecentralCoin>`. The sender can specify the fee for "
 ":ref:`invoke script transactions <02_decentralchain:Invoke Script "
 "Transaction>` and :ref:`transfer transactions <02_decentralchain:Transfer "
 "Transaction>` in a sponsored asset, see the :ref:`sponsored fee "
-"<02_decentralchain:Sponsored Fees>` article for details."
+"<02_decentralchain/03_transaction:Sponsored Fees>` article for details."
 msgstr ""
 
 #: ../../_static/02_decentralchain/tables/003_JSON-Representation.csv:1
@@ -2777,7 +2777,7 @@ msgstr ""
 
 #: ../../_static/02_decentralchain/tables/003_JSON-Representation.csv:1
 msgid ""
-"Array of :ref:`transaction proofs <02_decentralchain:Transaction Proofs>`. "
+"Array of :ref:`transaction proofs <02_decentralchain/03_transaction:Transaction Proofs>`. "
 "Up to :math:`8` proofs, each proof up to :math:`64` bytes base58 encoded."
 msgstr ""
 
@@ -2802,7 +2802,7 @@ msgstr ""
 
 #: ../../_static/02_decentralchain/tables/003_JSON-Representation.csv:1
 msgid ""
-":ref:`Transaction fee <02_decentralchain:Transaction Fees>`: an integer "
+":ref:`Transaction fee <02_decentralchain/03_transaction:Transaction Fees>`: an integer "
 "value indicated in the minimum fraction (“cent”) of the fee asset. For "
 "example, if the fee is :math:`0.001` DecentralCoins, :math:`100000` is "
 "indicated in the JSON representation, so far as :math:`1` DecentralCoin ="
@@ -2842,7 +2842,7 @@ msgstr ""
 #: ../../_static/02_decentralchain/tables/003_JSON-Representation.csv:1
 msgid ""
 "Transaction type. Type IDs are listed in the :ref:`transaction type "
-"<02_decentralchain:Transaction Types>` article."
+"<02_decentralchain/03_transaction:Transaction Types>` article."
 msgstr ""
 
 #: ../../_static/02_decentralchain/tables/003_JSON-Representation.csv:1
@@ -2932,7 +2932,7 @@ msgid ""
 "blockchain. The node calculates these fields when providing transaction "
 "data via the Node REST API. The fields that depend on the type of "
 "transaction are listed in the description of each :ref:`type of "
-"transaction <02_decentralchain:Transaction Types>`."
+"transaction <02_decentralchain/03_transaction:Transaction Types>`."
 msgstr ""
 
 #: ../../02_decentralchain.rst:720
@@ -2943,9 +2943,9 @@ msgid ""
 "data in binary format. The transaction signature and ID are also formed "
 "on the basis of the binary format. The guideline for generating a "
 "signature and ID is given in the :ref:`cryptographic practical details "
-"<02_decentralchain:Cryptographic Practical Details>` article. Transaction "
+"<02_decentralchain/09_protocol:Cryptographic Practical Details>` article. Transaction "
 "binary format is described in the :ref:`transaction binary format "
-"<02_decentralchain:Transaction Binary Format>` article."
+"<02_decentralchain/10_binary-format:Transaction Binary Format>` article."
 msgstr ""
 
 #: ../../02_decentralchain.rst:724
@@ -3037,10 +3037,10 @@ msgstr ""
 
 #: ../../02_decentralchain.rst:752
 msgid ""
-"The :ref:`minimum fee <02_decentralchain:Minimum Fee>` for an issue "
+"The :ref:`minimum fee <02_decentralchain/03_transaction:Minimum Fee>` for an issue "
 "transaction is :math:`1` :ref:`DecentralCoins "
-"<02_decentralchain:DecentralCoin>`, in case of issue of a :ref:`non-"
-"fungible tokens (NFT) <02_decentralchain:Non-Fungible Token>` :math:`0.001`"
+"<02_decentralchain/02_token(asset):DecentralCoin>`, in case of issue of a :ref:`non-"
+"fungible tokens (NFT) <02_decentralchain/02_token(asset):Non-Fungible Token>` :math:`0.001`"
 " DecentralCoins."
 msgstr ""
 
@@ -3053,9 +3053,9 @@ msgstr ""
 #: ../../02_decentralchain.rst:1573 ../../02_decentralchain.rst:1635
 msgid ""
 "If the transaction sender is a :ref:`dApp or smart account "
-"<02_decentralchain:dApp and Smart Account>`, and the complexity of the "
+"<02_decentralchain/01_account:dApp and Smart Account>`, and the complexity of the "
 "account script or dApp script verifier function exceeds the :ref:`sender "
-"complexity threshold <03_ride-language:Limitations>`, the minimum fee is "
+"complexity threshold <03_ride-language/07_dapp-to-app-invocation:Limitations>`, the minimum fee is "
 "increased by :math:`0.004` DecentralCoins."
 msgstr ""
 
@@ -3089,7 +3089,7 @@ msgstr ""
 #: ../../_static/02_decentralchain/tables/005_Issue-Transaction-JSON.csv:1
 msgid ""
 "Reissue availability flag, see the :ref:`reissue transaction "
-"<02_decentralchain:Reissue Transaction>` article. False for NFTs."
+"<02_decentralchain/03_transaction:Reissue Transaction>` article. False for NFTs."
 msgstr ""
 
 #: ../../_static/02_decentralchain/tables/005_Issue-Transaction-JSON.csv:1
@@ -3106,8 +3106,8 @@ msgstr ""
 
 #: ../../_static/02_decentralchain/tables/005_Issue-Transaction-JSON.csv:1
 msgid ""
-"For the :ref:`smart asset <02_decentralchain:Smart Asset>`: the compiled "
-":ref:`Asset script <03_ride-language:Asset Script>`, up to :math:`8192` bytes,"
+"For the :ref:`smart asset <02_decentralchain/02_token(asset):Smart Asset>`: the compiled "
+":ref:`Asset script <03_ride-language/04_script-types:Asset Script>`, up to :math:`8192` bytes,"
 " base64 encoded. For the token without a script: null. The token issued "
 "without a script cannot be converted to a smart asset."
 msgstr ""
@@ -3147,7 +3147,7 @@ msgstr ""
 #: ../../_static/02_decentralchain/tables/082_Reissue-Transaction-Binary-Format-V2.csv:1
 #: ../../_static/02_decentralchain/tables/085_Set-Asset-Transaction-Binary-Format-V1.csv:1
 #: ../../_static/02_decentralchain/tables/087_Set-Script-Transaction-Binary-Format-V1.csv:1
-msgid ":ref:`Chain ID <02_decentralchain:Chain ID>`"
+msgid ":ref:`Chain ID <02_decentralchain/08_mainnet-testnet-stagenet:Chain ID>`"
 msgstr ""
 
 #: ../../_static/02_decentralchain/tables/005_Issue-Transaction-JSON.csv:1
@@ -3162,7 +3162,7 @@ msgid ""
 "and it is not stored on the blockchain. The node calculates these fields "
 "when providing transaction data via the REST API. The fields that are "
 "common to all types of transactions are described in the "
-":ref:`transaction <02_decentralchain:Transaction>` article."
+":ref:`transaction <02_decentralchain/03_transaction:Transaction>` article."
 msgstr ""
 
 #: ../../02_decentralchain.rst:791 ../../02_decentralchain.rst:841
@@ -3195,7 +3195,7 @@ msgstr ""
 
 #: ../../02_decentralchain.rst:797
 msgid ""
-"The :ref:`IssueTransaction structure <03_ride-language:IssueTransaction>` is "
+"The :ref:`IssueTransaction structure <03_ride-language/05_structures:IssueTransaction>` is "
 "used for transaction handling in smart contracts."
 msgstr ""
 
@@ -3206,7 +3206,7 @@ msgstr ""
 #: ../../02_decentralchain.rst:802
 msgid ""
 "Reissue transaction increases the amount of the :ref:`token "
-"<02_decentralchain:Token (Asset)>` on the blockchain and/or prohibits its "
+"<02_decentralchain/02_token(asset):Token (Asset)>` on the blockchain and/or prohibits its "
 "reissue. Only the token issuer can send a reissue transaction. The "
 "additional amount of token increases the balance of the transaction "
 "sender. The reissuable field of the token determines whether the token "
@@ -3215,9 +3215,9 @@ msgstr ""
 
 #: ../../02_decentralchain.rst:806
 msgid ""
-"The :ref:`minimum fee <02_decentralchain:Minimum Fee>` for a reissue "
+"The :ref:`minimum fee <02_decentralchain/03_transaction:Minimum Fee>` for a reissue "
 "transaction is :math:`0.001` :ref:`DecentralCoins "
-"<02_decentralchain:DecentralCoin>`. If the token is a smart asset, the "
+"<02_decentralchain/02_token(asset):DecentralCoin>`. If the token is a smart asset, the "
 "minimum fee is increased by :math:`0.004` DecentralCoins."
 msgstr ""
 
@@ -3249,7 +3249,7 @@ msgstr ""
 #: ../../02_decentralchain.rst:1614 ../../02_decentralchain.rst:1664
 msgid ""
 "The fields that are common to all types of transactions are described in "
-"the :ref:`transaction <02_decentralchain:Transaction>` article."
+"the :ref:`transaction <02_decentralchain/03_transaction:Transaction>` article."
 msgstr ""
 
 #: ../../02_decentralchain.rst:843
@@ -3260,7 +3260,7 @@ msgstr ""
 
 #: ../../02_decentralchain.rst:847
 msgid ""
-"The :ref:`ReissueTransaction structure <03_ride-language:ReissueTransaction>` "
+"The :ref:`ReissueTransaction structure <03_ride-language/05_structures:ReissueTransaction>` "
 "is used for transaction handling in smart contracts."
 msgstr ""
 
@@ -3278,9 +3278,9 @@ msgstr ""
 
 #: ../../02_decentralchain.rst:856
 msgid ""
-"The :ref:`minimum fee <02_decentralchain:Minimum Fee>` for a burn "
+"The :ref:`minimum fee <02_decentralchain/03_transaction:Minimum Fee>` for a burn "
 "transaction is :math:`0.001` :ref:`DecentralCoins "
-"<02_decentralchain:DecentralCoin>`, in case of burning a smart asset "
+"<02_decentralchain/02_token(asset):DecentralCoin>`, in case of burning a smart asset "
 ":math:`0.005` DecentralCoins."
 msgstr ""
 
@@ -3322,7 +3322,7 @@ msgstr ""
 
 #: ../../02_decentralchain.rst:896
 msgid ""
-"The :ref:`BurnTransaction structure <03_ride-language:BurnTransaction>` is "
+"The :ref:`BurnTransaction structure <03_ride-language/05_structures:BurnTransaction>` is "
 "used for transaction handling in smart contracts."
 msgstr ""
 
@@ -3333,7 +3333,7 @@ msgstr ""
 #: ../../02_decentralchain.rst:901
 msgid ""
 "Set asset script transaction replaces the :ref:`asset script "
-"<03_ride-language:Asset Script>`. Only the token issuer can send an asset "
+"<03_ride-language/04_script-types:Asset Script>`. Only the token issuer can send an asset "
 "script transaction. If a token is issued without a script, then no script"
 " can be assigned to it. It is also impossible to remove the script and "
 "turn the smart asset into a regular one."
@@ -3341,9 +3341,9 @@ msgstr ""
 
 #: ../../02_decentralchain.rst:905
 msgid ""
-"The :ref:`minimum fee <02_decentralchain:Minimum Fee>` for a set asset "
+"The :ref:`minimum fee <02_decentralchain/03_transaction:Minimum Fee>` for a set asset "
 "script transaction is :math:`1` :ref:`DecentralCoin "
-"<02_decentralchain:DecentralCoin>`."
+"<02_decentralchain/02_token(asset):DecentralCoin>`."
 msgstr ""
 
 #: ../../02_decentralchain.rst:931
@@ -3357,13 +3357,13 @@ msgstr ""
 #: ../../02_decentralchain.rst:941
 msgid ""
 "See the :ref:`set asset script transaction binary format "
-"<02_decentralchain:Set Asset Script Transaction Binary Format>`."
+"<02_decentralchain/10_binary-format:Set Asset Script Transaction Binary Format>`."
 msgstr ""
 
 #: ../../02_decentralchain.rst:945
 msgid ""
 "The :ref:`SetAssetScriptTransaction structure "
-"<03_ride-language:SetAssetScriptTransaction>` is used for transaction handling"
+"<03_ride-language/05_structures:SetAssetScriptTransaction>` is used for transaction handling"
 " in smart contracts."
 msgstr ""
 
@@ -3379,9 +3379,9 @@ msgstr ""
 
 #: ../../02_decentralchain.rst:954
 msgid ""
-"The :ref:`minimum fee <02_decentralchain:Minimum Fee>` for an update asset "
+"The :ref:`minimum fee <02_decentralchain/03_transaction:Minimum Fee>` for an update asset "
 "info transaction is :math:`0.001` :ref:`DecentralCoins "
-"<02_decentralchain:DecentralCoin>`, in case of a smart asset :math:`0.005` "
+"<02_decentralchain/02_token(asset):DecentralCoin>`, in case of a smart asset :math:`0.005` "
 "DecentralCoins."
 msgstr ""
 
@@ -3396,13 +3396,13 @@ msgstr ""
 #: ../../02_decentralchain.rst:992
 msgid ""
 "See the :ref:`update asset info transaction binary format "
-"<02_decentralchain:Update Asset Info Transaction Binary Format>`."
+"<02_decentralchain/10_binary-format:Update Asset Info Transaction Binary Format>`."
 msgstr ""
 
 #: ../../02_decentralchain.rst:996
 msgid ""
 "The :ref:`UpdateAssetInfoTransaction structure "
-"<03_ride-language:UpdateAssetInfoTransaction>` is used for transaction "
+"<03_ride-language/05_structures:UpdateAssetInfoTransaction>` is used for transaction "
 "handling in smart contracts."
 msgstr ""
 
@@ -3435,7 +3435,7 @@ msgid ""
 msgstr ""
 
 #: ../../_static/02_decentralchain/tables/010_Usage.csv:1
-msgid ":ref:`Set Script transaction <02_decentralchain:Set Script Transaction>`"
+msgid ":ref:`set script transaction <02_decentralchain/03_transaction:Set Script Transaction>`"
 msgstr ""
 
 #: ../../_static/02_decentralchain/tables/010_Usage.csv:1
@@ -3464,9 +3464,9 @@ msgstr ""
 
 #: ../../02_decentralchain.rst:1014
 msgid ""
-"The :ref:`minimum fee <02_decentralchain:Minimum Fee>` for a transfer "
+"The :ref:`minimum fee <02_decentralchain/03_transaction:Minimum Fee>` for a transfer "
 "transaction is :math:`0.001` :ref:`DecentralCoins "
-"<02_decentralchain:DecentralCoin>`, in case of transferring a smart asset "
+"<02_decentralchain/02_token(asset):DecentralCoin>`, in case of transferring a smart asset "
 ":math:`0.005` DecentralCoins."
 msgstr ""
 
@@ -3478,7 +3478,7 @@ msgstr ""
 #: ../../_static/02_decentralchain/tables/014_Mass-Transfer-Transaction-JSON.csv:1
 msgid ""
 "Token ID base58 encoded. null means :ref:`DecentralCoins "
-"<02_decentralchain:DecentralCoin>`."
+"<02_decentralchain/02_token(asset):DecentralCoin>`."
 msgstr ""
 
 #: ../../_static/02_decentralchain/tables/011_Transfer-Transaction-JSON.csv:1
@@ -3517,19 +3517,19 @@ msgstr ""
 msgid ""
 "Recipient address base58 encoded or recipient alias with "
 "alias:<chain_id>: prefix, for example alias:T:merry (See :ref:`chain ID "
-"<02_decentralchain:Chain ID>`)."
+"<02_decentralchain/08_mainnet-testnet-stagenet:Chain ID>`)."
 msgstr ""
 
 #: ../../02_decentralchain.rst:1053
 msgid ""
 "See the :ref:`transfer transaction binary format "
-"<02_decentralchain:Transfer Transaction Binary Format>`."
+"<02_decentralchain/10_binary-format:Transfer Transaction Binary Format>`."
 msgstr ""
 
 #: ../../02_decentralchain.rst:1057
 msgid ""
 "The :ref:`TransferTransaction structure "
-"<03_ride-language:TransferTransaction>` is used for transaction handling in "
+"<03_ride-language/05_structures:TransferTransaction>` is used for transaction handling in "
 "smart contracts."
 msgstr ""
 
@@ -3562,10 +3562,10 @@ msgstr ""
 
 #: ../../02_decentralchain.rst:1070
 msgid ""
-"The :ref:`minimum fee <02_decentralchain:Minimum Fee>` for an exchange "
+"The :ref:`minimum fee <02_decentralchain/03_transaction:Minimum Fee>` for an exchange "
 "transaction is :math:`0.003` :ref:`DecentralCoins "
-"<02_decentralchain:DecentralCoin>`. In case of exchange of a :ref:`smart "
-"asset <02_decentralchain:Smart Asset>` for an ordinary asset the minimum "
+"<02_decentralchain/02_token(asset):DecentralCoin>`. In case of exchange of a :ref:`smart "
+"asset <02_decentralchain/02_token(asset):Smart Asset>` for an ordinary asset the minimum "
 "fee is :math:`0.007` DecentralCoins, in case of exchange of two smart "
 "assets the minimum fee is :math:`0.011` DecentralCoins."
 msgstr ""
@@ -3645,20 +3645,20 @@ msgstr ""
 
 #: ../../_static/02_decentralchain/tables/012_Exchange-Transaction-JSON.csv:1
 msgid ""
-"Buy and sell orders. See the :ref:`order <02_decentralchain:Order>` article"
+"Buy and sell orders. See the :ref:`order <02_decentralchain/06_order:Order>` article"
 " for details."
 msgstr ""
 
 #: ../../02_decentralchain.rst:1159
 msgid ""
 "See the :ref:`exchange transaction binary format "
-"<02_decentralchain:Exchange Transaction Binary Format>`."
+"<02_decentralchain/10_binary-format:Exchange Transaction Binary Format>`."
 msgstr ""
 
 #: ../../02_decentralchain.rst:1163
 msgid ""
 "The :ref:`ExchangeTransaction structure "
-"<03_ride-language:ExchangeTransaction>` is used for transaction handling in "
+"<03_ride-language/05_structures:ExchangeTransaction>` is used for transaction handling in "
 "smart contracts."
 msgstr ""
 
@@ -3668,15 +3668,15 @@ msgstr ""
 
 #: ../../02_decentralchain.rst:1168
 msgid ""
-"Create Alias transaction creates an :ref:`alias <02_decentralchain:Alias>` "
+"Create Alias transaction creates an :ref:`alias <02_decentralchain/01_account:Alias>` "
 "for the sender's address.A created alias cannot be deleted."
 msgstr ""
 
 #: ../../02_decentralchain.rst:1172
 msgid ""
-"The :ref:`minimum fee <02_decentralchain:Minimum Fee>` for a Create Alias "
+"The :ref:`minimum fee <02_decentralchain/03_transaction:Minimum Fee>` for a Create Alias "
 "transaction is :math:`0.001` :ref:`DecentralCoins "
-"<02_decentralchain:DecentralCoin>`."
+"<02_decentralchain/02_token(asset):DecentralCoin>`."
 msgstr ""
 
 #: ../../02_decentralchain.rst:1196
@@ -3698,13 +3698,13 @@ msgstr ""
 #: ../../02_decentralchain.rst:1206
 msgid ""
 "See the :ref:`create alias transaction binary format "
-"<02_decentralchain:Create Alias Transaction Binary Format>`."
+"<02_decentralchain/10_binary-format:Create Alias Transaction Binary Format>`."
 msgstr ""
 
 #: ../../02_decentralchain.rst:1210
 msgid ""
 "The :ref:`CreateAliasTransaction structure "
-"<03_ride-language:CreateAliasTransaction>` is used for transaction handling in"
+"<03_ride-language/05_structures:CreateAliasTransaction>` is used for transaction handling in"
 " smart contracts."
 msgstr ""
 
@@ -3716,14 +3716,14 @@ msgstr ""
 msgid ""
 "Mass transfer transaction transfers a :ref:`token <02_decentralchain:Token "
 "(Asset)>` to several accounts, from :math:`1` :ref:`DecentralCoin "
-"<02_decentralchain:DecentralCoin>` to :math:`100` DecentralCoins ."
+"<02_decentralchain/02_token(asset):DecentralCoin>` to :math:`100` DecentralCoins ."
 msgstr ""
 
 #: ../../02_decentralchain.rst:1219
 msgid ""
-"The :ref:`minimum fee <02_decentralchain:Minimum Fee>` for a Mass Transfer "
+"The :ref:`minimum fee <02_decentralchain/03_transaction:Minimum Fee>` for a Mass Transfer "
 "transaction is :math:`0.001 + 0.0005 × N` DecentralCoins, in case of "
-"transferring a :ref:`smart asset <02_decentralchain:Smart Asset>` "
+"transferring a :ref:`smart asset <02_decentralchain/02_token(asset):Smart Asset>` "
 ":math:`0.001 + 0.0005 × N` DecentralCoins, where :math:`N` DecentralCoins"
 " is the number of recipients. The fee value is rounded up to three "
 "decimals."
@@ -3747,7 +3747,7 @@ msgstr ""
 msgid ""
 "Recipient address base58 encoded or recipient alias with "
 "alias:<chain_id>: prefix, for example alias:T:merry (See :ref:`Chain ID "
-"<02_decentralchain:Chain ID>`)."
+"<02_decentralchain/08_mainnet-testnet-stagenet:Chain ID>`)."
 msgstr ""
 
 #: ../../_static/02_decentralchain/tables/014_Mass-Transfer-Transaction-JSON.csv:1
@@ -3783,13 +3783,13 @@ msgstr ""
 #: ../../02_decentralchain.rst:1273
 msgid ""
 "See the :ref:`mass transfer transaction binary format "
-"<02_decentralchain:Mass Transfer Transaction Binary Format>`."
+"<02_decentralchain/10_binary-format:Mass Transfer Transaction Binary Format>`."
 msgstr ""
 
 #: ../../02_decentralchain.rst:1277
 msgid ""
 "The :ref:`MassTransferTransaction structure "
-"<03_ride-language:MassTransferTransaction>` is used for transaction handling "
+"<03_ride-language/05_structures:MassTransferTransaction>` is used for transaction handling "
 "in smart contracts."
 msgstr ""
 
@@ -3800,7 +3800,7 @@ msgstr ""
 #: ../../02_decentralchain.rst:1282
 msgid ""
 "Data transaction adds, modifies and deletes data entries in sender's "
-":ref:`account data storage <02_decentralchain:Account Data Storage>`. "
+":ref:`account data storage <02_decentralchain/01_account:Account Data Storage>`. "
 "Limitations are as follows:"
 msgstr ""
 
@@ -3822,9 +3822,9 @@ msgstr ""
 
 #: ../../02_decentralchain.rst:1290
 msgid ""
-"The :ref:`minimum fee <02_decentralchain:Minimum Fee>` for a Data "
+"The :ref:`minimum fee <02_decentralchain/03_transaction:Minimum Fee>` for a Data "
 "transaction is :math:`0.001` :ref:`DecentralCoins "
-"<02_decentralchain:DecentralCoin>` per kilobyte, the size is rounded up to "
+"<02_decentralchain/02_token(asset):DecentralCoin>` per kilobyte, the size is rounded up to "
 "an integer number of kilobytes."
 msgstr ""
 
@@ -3870,7 +3870,7 @@ msgstr ""
 
 #: ../../02_decentralchain.rst:1349
 msgid ""
-"The :ref:`DataTransaction structure <03_ride-language:Limitations>` is used "
+"The :ref:`DataTransaction structure <03_ride-language/07_dapp-to-app-invocation:Limitations>` is used "
 "for transaction handling in smart contracts."
 msgstr ""
 
@@ -3881,15 +3881,15 @@ msgstr ""
 #: ../../02_decentralchain.rst:1354
 msgid ""
 "Set script transaction assigns the dApp script :ref:`dApp script "
-"<03_ride-language:dApp Script>` or :ref:`account script <03_ride-language:Account "
+"<03_ride-language/04_script-types:dApp Script>` or :ref:`account script <03_ride-language:Account "
 "Script>` to the sender's account."
 msgstr ""
 
 #: ../../02_decentralchain.rst:1358
 msgid ""
-"The :ref:`minimum fee <02_decentralchain:Minimum Fee>` for a Set Script "
+"The :ref:`minimum fee <02_decentralchain/03_transaction:Minimum Fee>` for a Set Script "
 "transaction is :math:`0.001` :ref:`DecentralCoins "
-"<02_decentralchain:DecentralCoin>`."
+"<02_decentralchain/02_token(asset):DecentralCoin>`."
 msgstr ""
 
 #: ../../02_decentralchain.rst:1383
@@ -3911,7 +3911,7 @@ msgstr ""
 #: ../../02_decentralchain.rst:1397
 msgid ""
 "The :ref:`SetScriptTransaction structure "
-"<03_ride-language:SetScriptTransaction>` is used for transaction handling in "
+"<03_ride-language/05_structures:SetScriptTransaction>` is used for transaction handling in "
 "smart contracts."
 msgstr ""
 
@@ -3922,7 +3922,7 @@ msgstr ""
 #: ../../02_decentralchain.rst:1402
 msgid ""
 "Invoke script transaction invokes the :ref:`callable function "
-"<03_ride-language:Callable Function>` of the :ref:`dApp <02_decentralchain:dApp "
+"<03_ride-language/03_functions:Callable Functions>` of the :ref:`dApp <02_decentralchain:dApp "
 "and Smart Account>`."
 msgstr ""
 
@@ -3937,13 +3937,13 @@ msgstr ""
 msgid ""
 "The sender can specify a transaction fee nominated in a sponsored asset "
 "instead of DecentralCoins, see the :ref:`sponsored fee "
-"<02_decentralchain:Sponsored Fees>` article."
+"<02_decentralchain/03_transaction:Sponsored Fees>` article."
 msgstr ""
 
 #: ../../02_decentralchain.rst:1410
 msgid ""
-"The :ref:`minimum fee <02_decentralchain:Minimum Fee>` in "
-":ref:`DecentralCoins <02_decentralchain:DecentralCoin>` for an invoke "
+"The :ref:`minimum fee <02_decentralchain/03_transaction:Minimum Fee>` in "
+":ref:`DecentralCoins <02_decentralchain/02_token(asset):DecentralCoin>` for an invoke "
 "script transaction is Fee :math:`= 0.005 + S + 1 × I`."
 msgstr ""
 
@@ -3958,7 +3958,7 @@ msgstr ""
 #: ../../02_decentralchain.rst:1413
 msgid ""
 ":math:`I` is the number of issued assets that are not :ref:`NFT "
-"<02_decentralchain:Non-Fungible Token>`."
+"<02_decentralchain/02_token(asset):Non-Fungible Token>`."
 msgstr ""
 
 #: ../../02_decentralchain.rst:1415
@@ -3976,7 +3976,7 @@ msgstr ""
 
 #: ../../02_decentralchain.rst:1419
 msgid ""
-"The total :ref:`complexity <03_ride-language:Script Complexity>` is limited by"
+"The total :ref:`complexity <03_ride-language/07_dapp-to-app-invocation:Script Complexity>` is limited by"
 " :math:`26,000` for all callable functions and asset scripts of involved "
 "smart assets in a single invoke script transaction. The sender's account "
 "script complexity is not included in that limit."
@@ -4044,7 +4044,7 @@ msgstr ""
 #: ../../_static/02_decentralchain/tables/017_Invoke-Script-Transaction-JSON.csv:1
 msgid ""
 "ID of token in payment, base58 encoded. null means that the payment is in"
-" :ref:`DecentralCoin <02_decentralchain:DecentralCoin>`."
+" :ref:`DecentralCoin <02_decentralchain/02_token(asset):DecentralCoin>`."
 msgstr ""
 
 #: ../../_static/02_decentralchain/tables/017_Invoke-Script-Transaction-JSON.csv:1
@@ -4067,13 +4067,13 @@ msgstr ""
 #: ../../02_decentralchain.rst:1495
 msgid ""
 "See the :ref:`invoke script transaction binary format "
-"<02_decentralchain:Invoke Script Transaction Binary Format>`."
+"<02_decentralchain/10_binary-format:Invoke Script Transaction Binary Format>`."
 msgstr ""
 
 #: ../../02_decentralchain.rst:1499
 msgid ""
 "The :ref:`InvokeScriptTransaction structure "
-"<03_ride-language:InvokeScriptTransaction>` is used for transaction handling "
+"<03_ride-language/05_structures:InvokeScriptTransaction>` is used for transaction handling "
 "in smart contracts."
 msgstr ""
 
@@ -4082,7 +4082,7 @@ msgid "Network"
 msgstr ""
 
 #: ../../_static/02_decentralchain/tables/018_Network.csv:1
-msgid "Leases :ref:`DecentralCoins <02_decentralchain:DecentralCoin>`."
+msgid "Leases :ref:`DecentralCoins <02_decentralchain/02_token(asset):DecentralCoin>`."
 msgstr ""
 
 #: ../../_static/02_decentralchain/tables/018_Network.csv:1
@@ -4100,12 +4100,12 @@ msgstr ""
 #: ../../02_decentralchain.rst:1513
 msgid ""
 "Lease transaction leases :ref:`DecentralCoins "
-"<02_decentralchain:DecentralCoin>` to another account. After :math:`1000` "
+"<02_decentralchain/02_token(asset):DecentralCoin>` to another account. After :math:`1000` "
 "block the leased tokens are accounted for by the recipient's generating "
 "balance. The larger the generating balance of the node is, the higher the"
 " chances for that node to be selected to generate the next block. "
 "Commonly node owners share the reward for generated blocks with lessors. "
-":ref:`More about leasing <02_decentralchain:Leased Proof of Stake>`."
+":ref:`More about leasing <02_decentralchain/05_node:Leased Proof of Stake>`."
 msgstr ""
 
 #: ../../02_decentralchain.rst:1515
@@ -4118,9 +4118,9 @@ msgstr ""
 
 #: ../../02_decentralchain.rst:1519
 msgid ""
-"The :ref:`minimum fee <02_decentralchain:Minimum Fee>` for a lease "
+"The :ref:`minimum fee <02_decentralchain/03_transaction:Minimum Fee>` for a lease "
 "transaction is :math:`0.001` :ref:`DecentralCoins "
-"<02_decentralchain:DecentralCoin>`."
+"<02_decentralchain/02_token(asset):DecentralCoin>`."
 msgstr ""
 
 #: ../../02_decentralchain.rst:1546
@@ -4128,7 +4128,7 @@ msgid "Lease Transaction JSON Representation"
 msgstr ""
 
 #: ../../_static/02_decentralchain/tables/019_Lease-Transaction-JSON.csv:1
-msgid "Amount of :ref:`DecentralCoins <02_decentralchain:DecentralCoin>` to lease."
+msgid "Amount of :ref:`DecentralCoins <02_decentralchain/02_token(asset):DecentralCoin>` to lease."
 msgstr ""
 
 #: ../../_static/02_decentralchain/tables/019_Lease-Transaction-JSON.csv:1
@@ -4161,7 +4161,7 @@ msgstr ""
 
 #: ../../02_decentralchain.rst:1562
 msgid ""
-"The :ref:`LeaseTransaction structure <03_ride-language:LeaseTransaction>` is "
+"The :ref:`LeaseTransaction structure <03_ride-language/05_structures:LeaseTransaction>` is "
 "used for transaction handling in smart contracts."
 msgstr ""
 
@@ -4172,14 +4172,14 @@ msgstr ""
 #: ../../02_decentralchain.rst:1567
 msgid ""
 "Lease cancel transaction cancels the leasing. See the :ref:`lease "
-"transaction <02_decentralchain:Lease Transaction>` article."
+"transaction <02_decentralchain/03_transaction:Lease Transaction>` article."
 msgstr ""
 
 #: ../../02_decentralchain.rst:1571
 msgid ""
-"The :ref:`minimum fee <02_decentralchain:Minimum Fee>` for a lease cancel "
+"The :ref:`minimum fee <02_decentralchain/03_transaction:Minimum Fee>` for a lease cancel "
 "transaction is :math:`0.001` :ref:`DecentralCoins "
-"<02_decentralchain:DecentralCoin>`."
+"<02_decentralchain/02_token(asset):DecentralCoin>`."
 msgstr ""
 
 #: ../../02_decentralchain.rst:1606
@@ -4212,13 +4212,13 @@ msgstr ""
 #: ../../02_decentralchain.rst:1618
 msgid ""
 "See the :ref:`lease cancel transaction binary format "
-"<02_decentralchain:Lease Cancel Transaction Binary Format>`."
+"<02_decentralchain/10_binary-format:Lease Cancel Transaction Binary Format>`."
 msgstr ""
 
 #: ../../02_decentralchain.rst:1622
 msgid ""
 "The :ref:`LeaseCancelTransaction structure "
-"<03_ride-language:LeaseCancelTransaction>` is used for transaction handling in"
+"<03_ride-language/05_structures:LeaseCancelTransaction>` is used for transaction handling in"
 " smart contracts."
 msgstr ""
 
@@ -4231,7 +4231,7 @@ msgid ""
 "Sponsor fee transaction enables or disables sponsorship. Sponsorship "
 "allows any user to pay a fee in the sponsored asset (instead of "
 "DecentralCoins) for invoke script transactions and transfer transactions."
-" :ref:`More about sponsorship <02_decentralchain:Sponsored Fees>`."
+" :ref:`More about sponsorship <02_decentralchain/03_transaction:Sponsored Fees>`."
 msgstr ""
 
 #: ../../02_decentralchain.rst:1629
@@ -4242,9 +4242,9 @@ msgstr ""
 
 #: ../../02_decentralchain.rst:1633
 msgid ""
-"The :ref:`minimum fee <02_decentralchain:Minimum Fee>` for the sponsor fee "
+"The :ref:`minimum fee <02_decentralchain/03_transaction:Minimum Fee>` for the sponsor fee "
 "transaction is :math:`0.001` :ref:`DecentralCoins "
-"<02_decentralchain:DecentralCoin>`."
+"<02_decentralchain/02_token(asset):DecentralCoin>`."
 msgstr ""
 
 #: ../../02_decentralchain.rst:1658
@@ -4254,7 +4254,7 @@ msgstr ""
 #: ../../_static/02_decentralchain/tables/021_Sponsor-Fee-Transaction-JSON.csv:1
 msgid ""
 "Amount of asset that is equivalent to :math:`0.001` :ref:`DecentralCoins "
-"<02_decentralchain:DecentralCoin>` (:math:`100,000` Decentralites): an "
+"<02_decentralchain/02_token(asset):DecentralCoin>` (:math:`100,000` Decentralites): an "
 "integer value specified in the minimum fraction (“cents”) of asset. null "
 "– disable sponsorship."
 msgstr ""
@@ -4262,13 +4262,13 @@ msgstr ""
 #: ../../02_decentralchain.rst:1668
 msgid ""
 "See the :ref:`sponsor fee transaction binary format "
-"<02_decentralchain:Sponsor Fee Transaction Binary Format>`."
+"<02_decentralchain/10_binary-format:Sponsor Fee Transaction Binary Format>`."
 msgstr ""
 
 #: ../../02_decentralchain.rst:1672
 msgid ""
 "The :ref:`SponsorFeeTransaction structure "
-"<03_ride-language:SponsorFeeTransaction>` is used for transaction handling in "
+"<03_ride-language/05_structures:SponsorFeeTransaction>` is used for transaction handling in "
 "smart contracts."
 msgstr ""
 
@@ -4277,12 +4277,12 @@ msgid "Genesis"
 msgstr ""
 
 #: ../../_static/02_decentralchain/tables/022_Genesis.csv:1
-msgid ":ref:`Genesis transaction <02_decentralchain:Genesis Transaction>`"
+msgid ":ref:`Genesis transaction <02_decentralchain/03_transaction:Genesis Transaction>`"
 msgstr ""
 
 #: ../../_static/02_decentralchain/tables/022_Genesis.csv:1
 msgid ""
-"Accrues :ref:`DecentralCoins <02_decentralchain:DecentralCoin>` to an "
+"Accrues :ref:`DecentralCoins <02_decentralchain/02_token(asset):DecentralCoin>` to an "
 "account upon the initial distribution during the creation of the "
 "blockchain."
 msgstr ""
@@ -4294,7 +4294,7 @@ msgstr ""
 #: ../../02_decentralchain.rst:1686
 msgid ""
 "Genesis transaction accrues :ref:`DecentralCoins "
-"<02_decentralchain:DecentralCoin>` to account upon the initial distribution"
+"<02_decentralchain/02_token(asset):DecentralCoin>` to account upon the initial distribution"
 " of DecentralCoins during the creation of the blockchain. The first block"
 " of the blockchain, the genesis block, consists of genesis transactions."
 msgstr ""
@@ -4385,8 +4385,8 @@ msgstr ""
 msgid ""
 "Depending on the type of transaction, the sender should have enough "
 "assets for transfer or for payments attached to the :ref:`invoke script "
-"transactions <02_decentralchain:Invoke Script Transaction>`. Order senders "
-"in the :ref:`exchange transaction <02_decentralchain:Exchange Transaction>`"
+"transactions <02_decentralchain/03_transaction:Invoke Script Transaction>`. Order senders "
+"in the :ref:`exchange transaction <02_decentralchain/03_transaction:Exchange Transaction>`"
 " should have enough funds to exchange."
 msgstr ""
 
@@ -4401,19 +4401,19 @@ msgstr ""
 #: ../../02_decentralchain.rst:1720
 msgid ""
 "For account script execution if the sender is a :ref:`smart account "
-"<02_decentralchain:dApp and Smart Account>`."
+"<02_decentralchain/01_account:dApp and Smart Account>`."
 msgstr ""
 
 #: ../../02_decentralchain.rst:1721
 msgid ""
 "For verifier function execution if the sender is :ref:`dApp "
-"<02_decentralchain:dApp and Smart Account>`."
+"<02_decentralchain/01_account:dApp and Smart Account>`."
 msgstr ""
 
 #: ../../02_decentralchain.rst:1722
 msgid ""
 "A similar check is performed for orders in an :ref:`exchange transaction "
-"<02_decentralchain:Exchange Transaction>`."
+"<02_decentralchain/03_transaction:Exchange Transaction>`."
 msgstr ""
 
 #: ../../02_decentralchain.rst:1724 ../../02_decentralchain.rst:1744
@@ -4427,19 +4427,19 @@ msgstr ""
 #: ../../02_decentralchain.rst:1727
 msgid ""
 "dApp balance check: dApp account should have enough funds for :ref:`dApp "
-"script actions <03_ride-language:Script Actions>`."
+"script actions <03_ride-language/05_structures:Script Actions>`."
 msgstr ""
 
 #: ../../02_decentralchain.rst:1728
 msgid ""
 "Check that the transaction fee is not less than the :ref:`minimum fee "
-"<02_decentralchain:Minimum Fee>` based on script actions."
+"<02_decentralchain/03_transaction:Minimum Fee>` based on script actions."
 msgstr ""
 
 #: ../../02_decentralchain.rst:1730
 msgid ""
 "Execution of asset scripts if the transaction uses :ref:`smart assets "
-"<02_decentralchain:Smart Asset>`, including scripts of assets used in dApp "
+"<02_decentralchain/02_token(asset):Smart Asset>`, including scripts of assets used in dApp "
 "script actions."
 msgstr ""
 
@@ -4450,7 +4450,7 @@ msgid ""
 "performs full validation of the transaction. When receiving an invoke "
 "script transaction over the network, the node performs calculations of "
 "the callable function (check 4.1) up to the :ref:`threshold for saving "
-"unsuccessful transactions <03_ride-language:Limitations>`."
+"unsuccessful transactions <03_ride-language/07_dapp-to-app-invocation:Limitations>`."
 msgstr ""
 
 #: ../../02_decentralchain.rst:1735
@@ -4485,10 +4485,10 @@ msgstr ""
 msgid ""
 "If checks 1–3 passed, and the calculation of the result of the dApp "
 "callable function (check 4.1) failed with an error or :ref:`throwing an "
-"exception <03_ride-language:Exceptions>` before the :ref:`complexity "
-"<03_ride-language:Script Complexity>` of performed calculations exceeded the "
+"exception <03_ride-language/01_syntax-basics:Exceptions>` before the :ref:`complexity "
+"<03_ride-language/07_dapp-to-app-invocation:Script Complexity>` of performed calculations exceeded the "
 ":ref:`threshold for saving failed transactions "
-"<03_ride-language:Limitations>`, the transaction is also discarded."
+"<03_ride-language/07_dapp-to-app-invocation:Limitations>`, the transaction is also discarded."
 msgstr ""
 
 #: ../../02_decentralchain.rst:1748
@@ -4565,16 +4565,16 @@ msgstr ""
 #: ../../02_decentralchain.rst:1773
 msgid ""
 "A block generation is a creation of a new :ref:`block "
-"<02_decentralchain:Block>` on the blockchain. Blocks are generated by "
-":ref:`generating nodes <02_decentralchain:Generating Node>` according to "
-":ref:`FPoS algorithm <02_decentralchain:Fair Proof of Stake>` and the "
+"<02_decentralchain/04_block:Block>` on the blockchain. Blocks are generated by "
+":ref:`generating nodes <02_decentralchain/05_node:Generating Node>` according to "
+":ref:`FPoS algorithm <02_decentralchain/09_protocol:Fair Proof of Stake>` and the "
 ":ref:`DecentralChain-M5 protocol <02_decentralchain:DecentralChain-M5 "
 "Protocol>`. The block generator signs the block headers only. The block "
 "headers contain the merkle root hash of the block transactions. This "
 "makes it possible to verify the block headers apart from transactions and"
 " to provide evidence of the presence of transactions in the block without"
 " the presence of all transactions. See details in the :ref:`transactions "
-"root hash <02_decentralchain:Transactions Root Hash>` article."
+"root hash <02_decentralchain/04_block:Transactions Root Hash>` article."
 msgstr ""
 
 #: ../../02_decentralchain.rst:1778
@@ -4596,7 +4596,7 @@ msgstr ""
 msgid ""
 "Generation signature is the variable in the average block generation time"
 " formula. It is used to check whether the current :ref:`generating node "
-"<02_decentralchain:Generating Node>` is eligible to generate the next "
+"<02_decentralchain/05_node:Generating Node>` is eligible to generate the next "
 "block. The generation signature is calculated using VRF (verifiable "
 "random function with short proofs and keys) — a pseudo-random function "
 "that uses a message and the private key of an account to provide a non-"
@@ -4640,7 +4640,7 @@ msgstr ""
 #: ../../02_decentralchain.rst:1804
 msgid ""
 "The block height is a sequence number of a :ref:`block "
-"<02_decentralchain:Block>` in the blockchain."
+"<02_decentralchain/04_block:Block>` in the blockchain."
 msgstr ""
 
 #: ../../02_decentralchain.rst:1807 ../../02_decentralchain.rst:4331
@@ -4650,8 +4650,8 @@ msgstr ""
 #: ../../02_decentralchain.rst:1809
 msgid ""
 "A block signature is a hash that a :ref:`generating node "
-"<02_decentralchain:Generating Node>` acquires when it signs the "
-":ref:`generated block <02_decentralchain:Block Generation>` with the "
+"<02_decentralchain/05_node:Generating Node>` acquires when it signs the "
+":ref:`generated block <02_decentralchain/04_block:Block Generation>` with the "
 "private key of the account from the node's wallet."
 msgstr ""
 
@@ -4662,13 +4662,13 @@ msgstr ""
 #: ../../02_decentralchain.rst:1814
 msgid ""
 "A block timestamp is a time of :ref:`block generation "
-"<02_decentralchain:Block Generation>`. The time is specified in "
+"<02_decentralchain/04_block:Block Generation>`. The time is specified in "
 "milliseconds that have passed since the beginning of the unix epoch."
 msgstr ""
 
 #: ../../02_decentralchain.rst:1816
 msgid ""
-"When the :ref:`node <02_decentralchain:Node>` receives a new block from the"
+"When the :ref:`node <02_decentralchain/05_node:Node>` receives a new block from the"
 " blockchain network, it verifies that the timestamp value of the block "
 "does not outpace the UTC time by more than :math:`100` milliseconds. The "
 "timestamp value of the block is validated by nodes using the formula from"
@@ -4681,9 +4681,9 @@ msgstr ""
 
 #: ../../02_decentralchain.rst:1822
 msgid ""
-"A genesis block is the first :ref:`block <02_decentralchain:Block>` of the "
+"A genesis block is the first :ref:`block <02_decentralchain/04_block:Block>` of the "
 "blockchain. A genesis block contains one or more :ref:`genesis "
-"transactions <02_decentralchain:Genesis Transaction>`. There is one genesis"
+"transactions <02_decentralchain/03_transaction:Genesis Transaction>`. There is one genesis"
 " block in the blockchain."
 msgstr ""
 
@@ -4784,7 +4784,7 @@ msgstr ""
 
 #: ../../02_decentralchain.rst:1864
 msgid ""
-"<<<<<<< HEAD .. image:: _static/02_decentralchain/images/11_Proof-of-"
+"<<<<<<< HEAD .. image:: ../_static/02_decentralchain/images/11_Proof-of-"
 "Transaction-in-Block.png ======= .. image:: "
 "_static/02_decentralchain/images/image.jpg >>>>>>> "
 "b83a891fea7eef2d472ac2e336795eea50776d03"
@@ -4878,7 +4878,7 @@ msgstr ""
 #: ../../02_decentralchain.rst:1901
 msgid ""
 "The methods are described in the :ref:`transaction "
-"<02_decentralchain:Transaction>` article. You can check a transaction on "
+"<02_decentralchain/03_transaction:Transaction>` article. You can check a transaction on "
 "the same blockchain without using a root hash, since the DecentralChain "
 "nodes store the entire blockchain data, including all transactions. Use "
 "the following built-in Ride function:"
@@ -4912,15 +4912,15 @@ msgid "A node is a host connected to the blockchain network. Node functions are:
 msgstr ""
 
 #: ../../02_decentralchain.rst:1923
-msgid ":ref:`Block <02_decentralchain:Block>` storage."
+msgid ":ref:`Block <02_decentralchain/04_block:Block>` storage."
 msgstr ""
 
 #: ../../02_decentralchain.rst:1924
-msgid ":ref:`Transaction validation <02_decentralchain:Transaction Validation>`."
+msgid ":ref:`Transaction validation <02_decentralchain/03_transaction:Transaction Validation>`."
 msgstr ""
 
 #: ../../02_decentralchain.rst:1925
-msgid "Sending :ref:`transactions <02_decentralchain:Transaction>`."
+msgid "Sending :ref:`transactions <02_decentralchain/03_transaction:Transaction>`."
 msgstr ""
 
 #: ../../02_decentralchain.rst:1928
@@ -4930,20 +4930,20 @@ msgstr ""
 #: ../../02_decentralchain.rst:1930
 msgid ""
 "Generating node is a node that generates blocks. Each generating node is "
-"a :ref:`validating node <02_decentralchain:Validating Node>`. Generating "
-"account is an :ref:`account <02_decentralchain:Account>` that a node uses "
-"for :ref:`signing <02_decentralchain:Block Signature>` generated blocks. A "
+"a :ref:`validating node <02_decentralchain/05_node:Validating Node>`. Generating "
+"account is an :ref:`account <02_decentralchain/01_account:Account>` that a node uses "
+"for :ref:`signing <02_decentralchain/04_block:Block Signature>` generated blocks. A "
 "node can generate blocks if the following conditions are met:"
 msgstr ""
 
 #: ../../02_decentralchain.rst:1932
 msgid ""
 "The node's generating balance is at least :math:`10000` "
-":ref:`DecentralCoins <02_decentralchain:DecentralCoin>`. This means that "
+":ref:`DecentralCoins <02_decentralchain/02_token(asset):DecentralCoin>`. This means that "
 "the account balance in DecentralCoins, taking into account leasing, was "
 "not less than :math:`10000` DecentralCoins in each of the last "
 ":math:`1000` blocks (more details in the :ref:`account balance "
-"<02_decentralchain:Account Balance>` article). The greater the generating "
+"<02_decentralchain/01_account:Account Balance>` article). The greater the generating "
 "balance, the higher is your chance of being eligible to generate the next"
 " block."
 msgstr ""
@@ -4973,7 +4973,7 @@ msgstr ""
 #: ../../02_decentralchain.rst:1940
 msgid ""
 "A validating node is a node that :ref:`validates "
-"<02_decentralchain:Transaction Validation>` transactions."
+"<02_decentralchain/03_transaction:Transaction Validation>` transactions."
 msgstr ""
 
 #: ../../02_decentralchain.rst:1943
@@ -4989,8 +4989,8 @@ msgstr ""
 #: ../../02_decentralchain.rst:1947
 msgid ""
 "Block reward: The current reward size is :math:`6` :ref:`DecentralCoins "
-"<02_decentralchain:DecentralCoin>` but it can be changed by voting, see the"
-" :ref:`block reward <02_decentralchain:Block Reward>` article."
+"<02_decentralchain/02_token(asset):DecentralCoin>` but it can be changed by voting, see the"
+" :ref:`block reward <02_decentralchain/05_node:Block Reward>` article."
 msgstr ""
 
 #: ../../02_decentralchain.rst:1949
@@ -5026,7 +5026,7 @@ msgstr ""
 
 #: ../../02_decentralchain.rst:1959
 msgid ""
-"If the :ref:`transaction fees <02_decentralchain:Transaction Fees>` are "
+"If the :ref:`transaction fees <02_decentralchain/03_transaction:Transaction Fees>` are "
 "specified in a sponsored asset, then the block generators receive the fee"
 " equivalent in DecentralCoins instead of the fee (as a general rule, in a"
 " :math:`\\frac{40}{60}` ratio):"
@@ -5037,7 +5037,7 @@ msgid ""
 "minSponsoredAssetFee is the amount of the sponsored asset equivalent to "
 ":math:`0.001` DecentralCoins. The sponsor sets this value when enabling "
 "sponsorship. For details, see the :ref:`sponsored fees "
-"<02_decentralchain:Sponsored Fees>` article."
+"<02_decentralchain/03_transaction:Sponsored Fees>` article."
 msgstr ""
 
 #: ../../02_decentralchain.rst:1968
@@ -5047,9 +5047,9 @@ msgstr ""
 #: ../../02_decentralchain.rst:1970
 msgid ""
 "Block reward is a blockchain feature under which :ref:`generating nodes "
-"<02_decentralchain:Generating Node>` receive a fixed fee in "
-":ref:`DecentralCoins <02_decentralchain:DecentralCoin>` for each "
-":ref:`generated block <02_decentralchain:Block Generation>`. Block rewards "
+"<02_decentralchain/05_node:Generating Node>` receive a fixed fee in "
+":ref:`DecentralCoins <02_decentralchain/02_token(asset):DecentralCoin>` for each "
+":ref:`generated block <02_decentralchain/04_block:Block Generation>`. Block rewards "
 "are paid due to the additional issue of the DecentralCoin token. The "
 "community of generating nodes can change the size of reward through "
 "voting."
@@ -5075,7 +5075,7 @@ msgstr ""
 msgid ""
 "In the example above, the value of the JSON's currentReward field is "
 "600,000,000 Decentralites— i.e. it's 6 :ref:`DecentralCoins "
-"<02_decentralchain:DecentralCoin>`."
+"<02_decentralchain/02_token(asset):DecentralCoin>`."
 msgstr ""
 
 #: ../../02_decentralchain.rst:2002
@@ -5129,7 +5129,7 @@ msgid ""
 "of the :math:`10,000` votes — i.e. :math:`5,001` votes or more — were "
 "given for increase/decrease. The amount of the current reward is "
 "increased/decreased by :math:`0.5` :ref:`DecentralCoins "
-"<02_decentralchain:DecentralCoin>`."
+"<02_decentralchain/02_token(asset):DecentralCoin>`."
 msgstr ""
 
 #: ../../02_decentralchain.rst:2025
@@ -5178,10 +5178,10 @@ msgstr ""
 
 #: ../../02_decentralchain.rst:2046
 msgid ""
-":ref:`Nodes <02_decentralchain:Node>` can use the leased tokens to generate"
-" blocks and get the :ref:`mining reward <02_decentralchain:Block Reward>`. "
+":ref:`Nodes <02_decentralchain/05_node:Node>` can use the leased tokens to generate"
+" blocks and get the :ref:`mining reward <02_decentralchain/05_node:Block Reward>`. "
 "For that purpose, the generating balance of a node must be at least "
-":math:`10000` :ref:`DecentralCoins <02_decentralchain:DecentralCoin>`."
+":math:`10000` :ref:`DecentralCoins <02_decentralchain/02_token(asset):DecentralCoin>`."
 msgstr ""
 
 #: ../../02_decentralchain.rst:2049
@@ -5224,7 +5224,7 @@ msgstr ""
 #: ../../02_decentralchain.rst:2061
 msgid ""
 "These rewards mostly are in :ref:`DecentralCoins "
-"<02_decentralchain:DecentralCoin>` but also they can be in the form of "
+"<02_decentralchain/02_token(asset):DecentralCoin>` but also they can be in the form of "
 "different tokens with the unique DecentralCoins feature where different "
 "tokens can be accepted as a fee."
 msgstr ""
@@ -5237,13 +5237,13 @@ msgstr ""
 msgid ""
 "To start leasing, the token holder needs to create a lease transaction "
 "and specify the recipient address (node address) along with the amount of"
-" :ref:`DecentralCoins <02_decentralchain:DecentralCoin>` to lease. There "
+" :ref:`DecentralCoins <02_decentralchain/02_token(asset):DecentralCoin>` to lease. There "
 "are two types of transactions which are used in the LPoS:"
 msgstr ""
 
 #: ../../02_decentralchain.rst:2068
 msgid ""
-":ref:`Lease transaction <02_decentralchain:Lease Transaction>` to activate "
+":ref:`Lease transaction <02_decentralchain/03_transaction:Lease Transaction>` to activate "
 "the leasing process."
 msgstr ""
 
@@ -5286,8 +5286,8 @@ msgstr ""
 #: ../../02_decentralchain.rst:2084
 msgid ""
 "Order is the instruction from the :ref:`account "
-"<02_decentralchain:Account>` to matcher to buy or sell a :ref:`token "
-"<02_decentralchain:Token (Asset)>` on the exchange."
+"<02_decentralchain/01_account:Account>` to matcher to buy or sell a :ref:`token "
+"<02_decentralchain/02_token(asset):Token (Asset)>` on the exchange."
 msgstr ""
 
 #: ../../02_decentralchain.rst:2087
@@ -5353,7 +5353,7 @@ msgstr ""
 msgid ""
 "ID of the pair's second asset, in which the price of the order is "
 "expressed. null value means that asset is :ref:`DecentralCoins "
-"<02_decentralchain:DecentralCoin>`."
+"<02_decentralchain/02_token(asset):DecentralCoin>`."
 msgstr ""
 
 #: ../../02_decentralchain.rst:2109
@@ -5373,7 +5373,7 @@ msgstr ""
 msgid ""
 "In the user interface, the amount and price are usually presented as "
 "values with a fractional part (for example, :math:`0.74585728` "
-":ref:`DecentralCoins <02_decentralchain:DecentralCoin>`), i.e. in the "
+":ref:`DecentralCoins <02_decentralchain/02_token(asset):DecentralCoin>`), i.e. in the "
 "denormalized form. The denormalized form is convenient for humans, but "
 "not for calculations. To solve the problem of calculation accuracy, the "
 "normalization is performed, i.e. amount and price are represented as an "
@@ -5535,7 +5535,7 @@ msgstr ""
 
 #: ../../02_decentralchain.rst:2172
 msgid ""
-"See the :ref:`order binary format <02_decentralchain:Order Binary Format>` "
+"See the :ref:`order binary format <02_decentralchain/10_binary-format:Order Binary Format>` "
 "page."
 msgstr ""
 
@@ -6768,7 +6768,7 @@ msgstr ""
 
 #: ../../02_decentralchain.rst:2564
 msgid ""
-"<<<<<<< HEAD .. image:: _static/02_decentralchain/images/12_Weaknesses-of-"
+"<<<<<<< HEAD .. image:: ../_static/02_decentralchain/images/12_Weaknesses-of-"
 "Current-Proposals-to-Improve-Scalability-1.png ======= .. image:: "
 "_static/02_decentralchain/images/image.jpg >>>>>>> "
 "b83a891fea7eef2d472ac2e336795eea50776d03"
@@ -6799,7 +6799,7 @@ msgstr ""
 
 #: ../../02_decentralchain.rst:2575
 msgid ""
-"<<<<<<< HEAD .. image:: _static/02_decentralchain/images/13_Weaknesses-of-"
+"<<<<<<< HEAD .. image:: ../_static/02_decentralchain/images/13_Weaknesses-of-"
 "Current-Proposals-to-Improve-Scalability-2.png ======= .. image:: "
 "_static/02_decentralchain/images/image.jpg >>>>>>> "
 "b83a891fea7eef2d472ac2e336795eea50776d03"
@@ -6838,7 +6838,7 @@ msgstr ""
 
 #: ../../02_decentralchain.rst:2591
 msgid ""
-"<<<<<<< HEAD .. image:: _static/02_decentralchain/images/14_Brief-Summary-"
+"<<<<<<< HEAD .. image:: ../_static/02_decentralchain/images/14_Brief-Summary-"
 "of-Bitcoin-M5.png ======= .. image:: "
 "_static/02_decentralchain/images/image.jpg >>>>>>> "
 "b83a891fea7eef2d472ac2e336795eea50776d03"
@@ -6927,7 +6927,7 @@ msgstr ""
 msgid ""
 "<<<<<<< HEAD .. image:: "
 "_static/02_decentralchain/images/15_DecentralChain-M5-Operations.png "
-"======= .. image:: _static/02_decentralchain/images/image.jpg >>>>>>> "
+"======= .. image:: ../_static/02_decentralchain/images/image.jpg >>>>>>> "
 "b83a891fea7eef2d472ac2e336795eea50776d03"
 msgstr ""
 
@@ -7003,7 +7003,7 @@ msgstr ""
 msgid ""
 "<<<<<<< HEAD .. image:: "
 "_static/02_decentralchain/images/16_DecentralChain-M5-Reward-Mechanisms.png"
-" ======= .. image:: _static/02_decentralchain/images/image.jpg >>>>>>> "
+" ======= .. image:: ../_static/02_decentralchain/images/image.jpg >>>>>>> "
 "b83a891fea7eef2d472ac2e336795eea50776d03"
 msgstr ""
 
@@ -7101,7 +7101,7 @@ msgstr ""
 #: ../../_static/02_decentralchain/tables/047_Score-Message-Binary-Format.csv:1
 #: ../../_static/02_decentralchain/tables/048_Signatures-Message-Binary-Format.csv:1
 #: ../../_static/02_decentralchain/tables/049_Transaction-Message-Binary-Format.csv:1
-msgid "Int"
+msgid :ref:`Int <02_decentralchain/09_protocol:Blockchain Data Types>`
 msgstr ""
 
 #: ../../_static/02_decentralchain/tables/034_Blockchain-Data-Types.csv:1
@@ -7127,15 +7127,15 @@ msgid "From :math:`1` to :math:`4` bytes per character."
 msgstr ""
 
 #: ../../02_decentralchain.rst:2693
-msgid ":ref:`Address binary format <02_decentralchain:Address Binary Format>`"
+msgid ":ref:`Address binary format <02_decentralchain/10_binary-format:Address Binary Format>`"
 msgstr ""
 
 #: ../../02_decentralchain.rst:2694
-msgid ":ref:`Alias binary format <02_decentralchain:Alias Binary Format>`"
+msgid ":ref:`Alias binary format <02_decentralchain/10_binary-format:Alias Binary Format>`"
 msgstr ""
 
 #: ../../02_decentralchain.rst:2695
-msgid ":ref:`Block binary format <02_decentralchain:Block Binary Format>`"
+msgid ":ref:`Block binary format <02_decentralchain/10_binary-format:Block Binary Format>`"
 msgstr ""
 
 #: ../../02_decentralchain.rst:2696
@@ -7205,7 +7205,7 @@ msgid ""
 msgstr ""
 
 #: ../../02_decentralchain.rst:2709
-msgid ":ref:`Order binary format <02_decentralchain:Order Binary Format>`"
+msgid ":ref:`Order binary format <02_decentralchain/10_binary-format:Order Binary Format>`"
 msgstr ""
 
 #: ../../02_decentralchain.rst:2710
@@ -7315,7 +7315,7 @@ msgid "Address Binary Format"
 msgstr ""
 
 #: ../../02_decentralchain.rst:2733
-msgid "Learn more about :ref:`address <02_decentralchain:Address>`."
+msgid "Learn more about :ref:`address <02_decentralchain/01_account:Address>`."
 msgstr ""
 
 #: ../../_static/02_decentralchain/tables/035_Address-Binary-Format.csv:1
@@ -7454,7 +7454,7 @@ msgid "Alias Binary Format"
 msgstr ""
 
 #: ../../02_decentralchain.rst:2744
-msgid "Learn more about :ref:`alias <02_decentralchain:Alias>`."
+msgid "Learn more about :ref:`alias <02_decentralchain/01_account:Alias>`."
 msgstr ""
 
 #: ../../_static/02_decentralchain/tables/036_Alias-Binary-Format.csv:1
@@ -7482,7 +7482,7 @@ msgid "Block Binary Format"
 msgstr ""
 
 #: ../../02_decentralchain.rst:2755
-msgid "Learn more about :ref:`block <02_decentralchain:Block>`."
+msgid "Learn more about :ref:`block <02_decentralchain/04_block:Block>`."
 msgstr ""
 
 #: ../../02_decentralchain.rst:2757
@@ -7521,7 +7521,7 @@ msgstr ""
 
 #: ../../_static/02_decentralchain/tables/037_Block-Binary-Format-V5.csv:1
 msgid ""
-":ref:`Base target <02_decentralchain:Base Target>`: а variable that is used"
+":ref:`Base target <02_decentralchain/04_block:Base Target>`: а variable that is used"
 " in the block generation algorithm."
 msgstr ""
 
@@ -7531,7 +7531,7 @@ msgstr ""
 
 #: ../../_static/02_decentralchain/tables/037_Block-Binary-Format-V5.csv:1
 msgid ""
-"\":ref:`Generation signature <02_decentralchain:Block Generation>`: а "
+"\":ref:`Generation signature <02_decentralchain/04_block:Block Generation>`: а "
 "variable that is used in the block generation algorithm (:math:`32` "
 "bytes).\""
 msgstr ""
@@ -7548,7 +7548,7 @@ msgstr ""
 
 #: ../../_static/02_decentralchain/tables/037_Block-Binary-Format-V5.csv:1
 msgid ""
-":ref:`Block timestamp <02_decentralchain:Block Timestamp>`: Unix time in "
+":ref:`Block timestamp <02_decentralchain/04_block:Block Timestamp>`: Unix time in "
 "milliseconds."
 msgstr ""
 
@@ -7570,7 +7570,7 @@ msgstr ""
 
 #: ../../_static/02_decentralchain/tables/037_Block-Binary-Format-V5.csv:1
 msgid ""
-":ref:`Block generation reward <02_decentralchain:Block Reward>` for which "
+":ref:`Block generation reward <02_decentralchain/05_node:Block Reward>` for which "
 "the block generator votes. :math:`-1` means that block generator votes "
 "for the current reward size."
 msgstr ""
@@ -7581,7 +7581,7 @@ msgstr ""
 
 #: ../../_static/02_decentralchain/tables/037_Block-Binary-Format-V5.csv:1
 msgid ""
-":ref:`Transactions Root Hash <02_decentralchain:Transactions Root Hash>` "
+":ref:`Transactions Root Hash <02_decentralchain/04_block:Transactions Root Hash>` "
 "(:math:`32` bytes)."
 msgstr ""
 
@@ -7591,7 +7591,7 @@ msgstr ""
 
 #: ../../_static/02_decentralchain/tables/037_Block-Binary-Format-V5.csv:1
 msgid ""
-":ref:`Block header signature <02_decentralchain:Block Signature>` "
+":ref:`Block header signature <02_decentralchain/04_block:Block Signature>` "
 "(:math:`64` bytes)."
 msgstr ""
 
@@ -7603,7 +7603,7 @@ msgstr ""
 msgid ""
 "For each transaction: 1) Body bytes: up to :math:`165,487` bytes. 2) "
 "Proofs: up to :math:`531` bytes. See the :ref:`transaction binary format "
-"<02_decentralchain:Transaction Binary Format>` article for details."
+"<02_decentralchain/10_binary-format:Transaction Binary Format>` article for details."
 msgstr ""
 
 #: ../../02_decentralchain.rst:2788 ../../02_decentralchain.rst:2925
@@ -7648,7 +7648,7 @@ msgstr ""
 #: ../../_static/02_decentralchain/tables/091_Transfer-Transaction-Binary-Format-V2.csv:1
 #: ../../_static/02_decentralchain/tables/092_Transfer-Transaction-Binary-Format-V1.csv:1
 #: ../../_static/02_decentralchain/tables/094_Transaction-Proofs-Binary-Format.csv:1
-msgid ":ref:`Byte <02_decentralchain:Blockchain Data Types>`"
+msgid ":ref:`Byte <02_decentralchain/09_protocol:Blockchain Data Types>`"
 msgstr ""
 
 #: ../../_static/02_decentralchain/tables/038_Block-Binary-Format-V4.csv:1
@@ -7658,7 +7658,7 @@ msgstr ""
 
 #: ../../_static/02_decentralchain/tables/038_Block-Binary-Format-V4.csv:1
 #: ../../_static/02_decentralchain/tables/039_Block-Binary-Format-V3.csv:1
-msgid ":ref:`Block timestamp <02_decentralchain:Block Timestamp>`"
+msgid ":ref:`Block timestamp <02_decentralchain/04_block:Block Timestamp>`"
 msgstr ""
 
 #: ../../_static/02_decentralchain/tables/038_Block-Binary-Format-V4.csv:1
@@ -7689,7 +7689,7 @@ msgstr ""
 #: ../../_static/02_decentralchain/tables/089_Sponsor-Fee-Transaction-Binary-Format-V1.csv:1
 #: ../../_static/02_decentralchain/tables/091_Transfer-Transaction-Binary-Format-V2.csv:1
 #: ../../_static/02_decentralchain/tables/092_Transfer-Transaction-Binary-Format-V1.csv:1
-msgid ":ref:`Long <02_decentralchain:Blockchain Data Types>`"
+msgid ":ref:`Long <02_decentralchain/09_protocol:Blockchain Data Types>`"
 msgstr ""
 
 #: ../../_static/02_decentralchain/tables/038_Block-Binary-Format-V4.csv:1
@@ -7699,7 +7699,7 @@ msgstr ""
 
 #: ../../_static/02_decentralchain/tables/038_Block-Binary-Format-V4.csv:1
 #: ../../_static/02_decentralchain/tables/039_Block-Binary-Format-V3.csv:1
-msgid ":ref:`Signature <02_decentralchain:Block Signature>` of the previous block"
+msgid ":ref:`Signature <02_decentralchain/04_block:Block Signature>` of the previous block"
 msgstr ""
 
 #: ../../_static/02_decentralchain/tables/038_Block-Binary-Format-V4.csv:1
@@ -7729,7 +7729,7 @@ msgstr ""
 #: ../../_static/02_decentralchain/tables/091_Transfer-Transaction-Binary-Format-V2.csv:1
 #: ../../_static/02_decentralchain/tables/092_Transfer-Transaction-Binary-Format-V1.csv:1
 #: ../../_static/02_decentralchain/tables/094_Transaction-Proofs-Binary-Format.csv:1
-msgid "Array[:ref:`Byte <02_decentralchain:Blockchain Data Types>`]"
+msgid "Array[:ref:`Byte <02_decentralchain/09_protocol:Blockchain Data Types>`]"
 msgstr ""
 
 #: ../../_static/02_decentralchain/tables/038_Block-Binary-Format-V4.csv:1
@@ -7753,12 +7753,12 @@ msgstr ""
 
 #: ../../_static/02_decentralchain/tables/038_Block-Binary-Format-V4.csv:1
 #: ../../_static/02_decentralchain/tables/039_Block-Binary-Format-V3.csv:1
-msgid ":ref:`Base target <02_decentralchain:Base Target>`"
+msgid ":ref:`Base target <02_decentralchain/04_block:Base Target>`"
 msgstr ""
 
 #: ../../_static/02_decentralchain/tables/038_Block-Binary-Format-V4.csv:1
 #: ../../_static/02_decentralchain/tables/039_Block-Binary-Format-V3.csv:1
-msgid ":ref:`Generation signature <02_decentralchain:Block Generation>`"
+msgid ":ref:`Generation signature <02_decentralchain/04_block:Block Generation>`"
 msgstr ""
 
 #: ../../_static/02_decentralchain/tables/038_Block-Binary-Format-V4.csv:1
@@ -7768,7 +7768,7 @@ msgstr ""
 
 #: ../../_static/02_decentralchain/tables/038_Block-Binary-Format-V4.csv:1
 #: ../../_static/02_decentralchain/tables/039_Block-Binary-Format-V3.csv:1
-msgid ":ref:`Integer <02_decentralchain:Blockchain Data Types>`"
+msgid ":ref:`Integer <02_decentralchain/09_protocol:Blockchain Data Types>`"
 msgstr ""
 
 #: ../../_static/02_decentralchain/tables/038_Block-Binary-Format-V4.csv:1
@@ -7849,7 +7849,7 @@ msgstr ""
 #: ../../_static/02_decentralchain/tables/091_Transfer-Transaction-Binary-Format-V2.csv:1
 #: ../../_static/02_decentralchain/tables/092_Transfer-Transaction-Binary-Format-V1.csv:1
 #: ../../_static/02_decentralchain/tables/094_Transaction-Proofs-Binary-Format.csv:1
-msgid ":ref:`Short <02_decentralchain:Blockchain Data Types>`"
+msgid ":ref:`Short <02_decentralchain/09_protocol:Blockchain Data Types>`"
 msgstr ""
 
 #: ../../_static/02_decentralchain/tables/038_Block-Binary-Format-V4.csv:1
@@ -7862,7 +7862,7 @@ msgstr ""
 
 #: ../../_static/02_decentralchain/tables/038_Block-Binary-Format-V4.csv:1
 msgid ""
-":ref:`Block generation reward <02_decentralchain:Block Reward>` for which "
+":ref:`Block generation reward <02_decentralchain/05_node:Block Reward>` for which "
 "the block generator votes"
 msgstr ""
 
@@ -7877,7 +7877,7 @@ msgstr ""
 
 #: ../../_static/02_decentralchain/tables/038_Block-Binary-Format-V4.csv:1
 #: ../../_static/02_decentralchain/tables/039_Block-Binary-Format-V3.csv:1
-msgid ":ref:`Block signature <02_decentralchain:Block Signature>`"
+msgid ":ref:`Block signature <02_decentralchain/04_block:Block Signature>`"
 msgstr ""
 
 #: ../../02_decentralchain.rst:2796 ../../02_decentralchain.rst:2965
@@ -8204,7 +8204,7 @@ msgid "Transaction (N bytes)"
 msgstr ""
 
 #: ../../02_decentralchain.rst:2919
-msgid "Learn more about :ref:`order <02_decentralchain:Order>`."
+msgid "Learn more about :ref:`order <02_decentralchain/06_order:Order>`."
 msgstr ""
 
 #: ../../02_decentralchain.rst:2921
@@ -8406,7 +8406,7 @@ msgid "Length in bytes"
 msgstr ""
 
 #: ../../_static/02_decentralchain/tables/051_Order-Binary-Format-V3.csv:1
-msgid ":ref:`Order <02_decentralchain:Order>` binary format version number"
+msgid ":ref:`Order <02_decentralchain/06_order:Order>` binary format version number"
 msgstr ""
 
 #: ../../_static/02_decentralchain/tables/051_Order-Binary-Format-V3.csv:1
@@ -8630,14 +8630,14 @@ msgstr ""
 
 #: ../../_static/02_decentralchain/tables/052_Order-Binary-Format-V2.csv:1
 msgid ""
-":ref:`Byte <02_decentralchain:Blockchain Data Types>` (constant, value = "
+":ref:`Byte <02_decentralchain/09_protocol:Blockchain Data Types>` (constant, value = "
 ":math:`2`)"
 msgstr ""
 
 #: ../../_static/02_decentralchain/tables/052_Order-Binary-Format-V2.csv:1
 #: ../../_static/02_decentralchain/tables/053_Order-Binary-Format-V1.csv:1
 #: ../../_static/02_decentralchain/tables/054_Order-Binary-Format-V1-Bytes.csv:1
-msgid "PublicKey (Array[:ref:`Byte <02_decentralchain:Blockchain Data Types>`])"
+msgid "PublicKey (Array[:ref:`Byte <02_decentralchain/09_protocol:Blockchain Data Types>`])"
 msgstr ""
 
 #: ../../_static/02_decentralchain/tables/052_Order-Binary-Format-V2.csv:1
@@ -8757,7 +8757,7 @@ msgid "Transaction Binary Format"
 msgstr ""
 
 #: ../../02_decentralchain.rst:3025
-msgid "Learn more about :ref:`transaction <02_decentralchain:Transaction>`."
+msgid "Learn more about :ref:`transaction <02_decentralchain/03_transaction:Transaction>`."
 msgstr ""
 
 #: ../../02_decentralchain.rst:3027
@@ -8824,7 +8824,7 @@ msgstr ""
 msgid ""
 "Addresses should be specified in the shortened binary format (without the"
 " first two and the last four bytes). See the :ref:`address binary format "
-"<02_decentralchain:Address Binary Format>`) article."
+"<02_decentralchain/10_binary-format:Address Binary Format>`) article."
 msgstr ""
 
 #: ../../02_decentralchain.rst:3047
@@ -8874,7 +8874,7 @@ msgstr ""
 
 #: ../../_static/02_decentralchain/tables/055_Transaction-Binary-Format.csv:1
 msgid ""
-":ref:`Transaction fee <02_decentralchain:Transaction Fees>` in the minimum "
+":ref:`Transaction fee <02_decentralchain/03_transaction:Transaction Fees>` in the minimum "
 "fraction (“cent”) of the fee asset."
 msgstr ""
 
@@ -8892,7 +8892,7 @@ msgstr ""
 msgid ""
 "ID of the token of the fee. The fee in a sponsored asset is only "
 "available for invoke script transactions and transfer transactions. See "
-"the :ref:`sponsored fee <02_decentralchain:Sponsored Fees>` article."
+"the :ref:`sponsored fee <02_decentralchain/03_transaction:Sponsored Fees>` article."
 msgstr ""
 
 #: ../../_static/02_decentralchain/tables/055_Transaction-Binary-Format.csv:1
@@ -8912,7 +8912,7 @@ msgstr ""
 
 #: ../../_static/02_decentralchain/tables/055_Transaction-Binary-Format.csv:1
 msgid ""
-":ref:`Transaction proofs <02_decentralchain:Transaction Proofs>` that are "
+":ref:`Transaction proofs <02_decentralchain/03_transaction:Transaction Proofs>` that are "
 "used to check the validity of the transaction. The array can contain "
 "several transaction signatures (but not limited to signatures only)."
 msgstr ""
@@ -9047,7 +9047,7 @@ msgid "asset_amount.asset_id"
 msgstr ""
 
 #: ../../_static/02_decentralchain/tables/056_Burn-Transaction-Binary-Format-V3.csv:1
-msgid ":ref:`ID <02_decentralchain:Token ID>` of token to burn."
+msgid ":ref:`ID <02_decentralchain/02_token(asset):Token ID>` of token to burn."
 msgstr ""
 
 #: ../../02_decentralchain.rst:3146
@@ -9137,7 +9137,7 @@ msgstr ""
 #: ../../_static/02_decentralchain/tables/089_Sponsor-Fee-Transaction-Binary-Format-V1.csv:1
 #: ../../_static/02_decentralchain/tables/091_Transfer-Transaction-Binary-Format-V2.csv:1
 #: ../../_static/02_decentralchain/tables/092_Transfer-Transaction-Binary-Format-V1.csv:1
-msgid ":ref:`Transaction type ID <02_decentralchain:Transaction Types>`"
+msgid ":ref:`Transaction type ID <02_decentralchain/03_transaction:Transaction Types>`"
 msgstr ""
 
 #: ../../_static/02_decentralchain/tables/057_Burn-Transaction-Binary-Format-V2.csv:1
@@ -9192,7 +9192,7 @@ msgstr ""
 
 #: ../../_static/02_decentralchain/tables/057_Burn-Transaction-Binary-Format-V2.csv:1
 #: ../../_static/02_decentralchain/tables/058_Burn-Transaction-Binary-Format-V1.csv:1
-msgid ":ref:`ID <02_decentralchain:Token ID>` of the token to burn"
+msgid ":ref:`ID <02_decentralchain/02_token(asset):Token ID>` of the token to burn"
 msgstr ""
 
 #: ../../_static/02_decentralchain/tables/057_Burn-Transaction-Binary-Format-V2.csv:1
@@ -9222,7 +9222,7 @@ msgstr ""
 #: ../../_static/02_decentralchain/tables/089_Sponsor-Fee-Transaction-Binary-Format-V1.csv:1
 #: ../../_static/02_decentralchain/tables/091_Transfer-Transaction-Binary-Format-V2.csv:1
 #: ../../_static/02_decentralchain/tables/092_Transfer-Transaction-Binary-Format-V1.csv:1
-msgid ":ref:`Transaction fee <02_decentralchain:Transaction Fees>`"
+msgid ":ref:`Transaction fee <02_decentralchain/03_transaction:Transaction Fees>`"
 msgstr ""
 
 #: ../../_static/02_decentralchain/tables/057_Burn-Transaction-Binary-Format-V2.csv:1
@@ -9369,7 +9369,7 @@ msgstr ""
 #: ../../_static/02_decentralchain/tables/059_Create-Alias-Transaction-Binary-Format-V3.csv:1
 #: ../../_static/02_decentralchain/tables/060_Create-Alias-Transaction-Binary-Format-V2.csv:1
 #: ../../_static/02_decentralchain/tables/061_Create-Alias-Transaction-Binary-Format-V1.csv:1
-msgid ":ref:`Alias <02_decentralchain:Alias>`"
+msgid ":ref:`Alias <02_decentralchain/01_account:Alias>`"
 msgstr ""
 
 #: ../../02_decentralchain.rst:3207
@@ -9397,7 +9397,7 @@ msgstr ""
 #: ../../_static/02_decentralchain/tables/071_Issue-Transaction-Binary-Format-V2.csv:1
 #: ../../_static/02_decentralchain/tables/085_Set-Asset-Transaction-Binary-Format-V1.csv:1
 #: ../../_static/02_decentralchain/tables/087_Set-Script-Transaction-Binary-Format-V1.csv:1
-msgid ":ref:`String <02_decentralchain:Blockchain Data Types>`"
+msgid ":ref:`String <02_decentralchain/09_protocol:Blockchain Data Types>`"
 msgstr ""
 
 #: ../../_static/02_decentralchain/tables/060_Create-Alias-Transaction-Binary-Format-V2.csv:1
@@ -9522,10 +9522,10 @@ msgstr ""
 
 #: ../../_static/02_decentralchain/tables/063_Data-Transaction-Binary-Format-V1.csv:1
 msgid ""
-"Options are: 0 - :ref:`Long <02_decentralchain:Blockchain Data Types>`. 1 -"
-" :ref:`Boolean <02_decentralchain:Blockchain Data Types>`. 2 - "
-"Array[:ref:`Byte <02_decentralchain:Blockchain Data Types>`]. 3 - "
-":ref:`String <02_decentralchain:Blockchain Data Types>`."
+"Options are: 0 - :ref:`Long <02_decentralchain/09_protocol:Blockchain Data Types>`. 1 -"
+" :ref:`Boolean <02_decentralchain/09_protocol:Blockchain Data Types>`. 2 - "
+"Array[:ref:`Byte <02_decentralchain/09_protocol:Blockchain Data Types>`]. 3 - "
+":ref:`String <02_decentralchain/09_protocol:Blockchain Data Types>`."
 msgstr ""
 
 #: ../../_static/02_decentralchain/tables/063_Data-Transaction-Binary-Format-V1.csv:1
@@ -9561,8 +9561,8 @@ msgid ""
 "T is one of the following: 1) :ref:`Long <02_decentralchain:Blockchain Data"
 " Types>`, :math:`S = 8`. 2) :ref:`Boolean <02_decentralchain:Blockchain "
 "Data Types>`, :math:`S = 1`. 3) Array[:ref:`Byte "
-"<02_decentralchain:Blockchain Data Types>`], :math:`S ⩽ 32,767`. 4) "
-":ref:`String <02_decentralchain:Blockchain Data Types>`, :math:`S ⩽ "
+"<02_decentralchain/09_protocol:Blockchain Data Types>`], :math:`S ⩽ 32,767`. 4) "
+":ref:`String <02_decentralchain/09_protocol:Blockchain Data Types>`, :math:`S ⩽ "
 "32,767`."
 msgstr ""
 
@@ -9693,7 +9693,7 @@ msgstr ""
 msgid ""
 "Price for the amount asset (base currency) nominated in the price asset "
 "(quote currency), multiplied by :math:`10^{8}`. For more details see the "
-":ref:`order <02_decentralchain:Order>` article."
+":ref:`order <02_decentralchain/06_order:Order>` article."
 msgstr ""
 
 #: ../../_static/02_decentralchain/tables/064_Exchange-Transaction-Binary-Format-V3.csv:1
@@ -9719,7 +9719,7 @@ msgstr ""
 #: ../../_static/02_decentralchain/tables/064_Exchange-Transaction-Binary-Format-V3.csv:1
 msgid ""
 "Buy order and sell order. See the :ref:`order binary format "
-"<02_decentralchain:Order Binary Format>`."
+"<02_decentralchain/10_binary-format:Order Binary Format>`."
 msgstr ""
 
 #: ../../02_decentralchain.rst:3368
@@ -9742,7 +9742,7 @@ msgstr ""
 #: ../../_static/02_decentralchain/tables/065_Exchange-Transaction-Binary-Format-V2.csv:1
 #: ../../_static/02_decentralchain/tables/066_Exchange-Transaction-Binary-Format-V1.csv:1
 #: ../../_static/02_decentralchain/tables/069_Invoke-Script-Transaction-Binary-Format-V1.csv:1
-msgid ":ref:`Int <02_decentralchain:Blockchain Data Types>`"
+msgid ":ref:`Int <02_decentralchain/09_protocol:Blockchain Data Types>`"
 msgstr ""
 
 #: ../../_static/02_decentralchain/tables/065_Exchange-Transaction-Binary-Format-V2.csv:1
@@ -9778,7 +9778,7 @@ msgstr ""
 
 #: ../../_static/02_decentralchain/tables/065_Exchange-Transaction-Binary-Format-V2.csv:1
 #: ../../_static/02_decentralchain/tables/066_Exchange-Transaction-Binary-Format-V1.csv:1
-msgid "See :ref:`order binary format <02_decentralchain:Order Binary Format>`"
+msgid "See :ref:`order binary format <02_decentralchain/10_binary-format:Order Binary Format>`"
 msgstr ""
 
 #: ../../_static/02_decentralchain/tables/065_Exchange-Transaction-Binary-Format-V2.csv:1
@@ -9885,7 +9885,7 @@ msgstr ""
 
 #: ../../_static/02_decentralchain/tables/067_Genesis-Transaction-Binary-Format.csv:1
 msgid ""
-"Amount of :ref:`DecentralCoins <02_decentralchain:DecentralCoin>` that will"
+"Amount of :ref:`DecentralCoins <02_decentralchain/02_token(asset):DecentralCoin>` that will"
 " be transferred to the account"
 msgstr ""
 
@@ -9945,7 +9945,7 @@ msgstr ""
 #: ../../_static/02_decentralchain/tables/068_Invoke-Script-Transaction-Binary-Format-V2.csv:1
 msgid ""
 ":math:`32` bytes for asset. :math:`0` for :ref:`DecentralCoins "
-"<02_decentralchain:DecentralCoin>`."
+"<02_decentralchain/02_token(asset):DecentralCoin>`."
 msgstr ""
 
 #: ../../_static/02_decentralchain/tables/068_Invoke-Script-Transaction-Binary-Format-V2.csv:1
@@ -10083,9 +10083,9 @@ msgstr ""
 
 #: ../../_static/02_decentralchain/tables/069_Invoke-Script-Transaction-Binary-Format-V1.csv:1
 msgid ""
-"Options are: 1) :ref:`Long <02_decentralchain:Blockchain Data Types>`. 2) "
-"Array[:ref:`Byte <02_decentralchain:Blockchain Data Types>`]. 3) "
-":ref:`String <02_decentralchain:Blockchain Data Types>`. 4) Logical True. "
+"Options are: 1) :ref:`Long <02_decentralchain/09_protocol:Blockchain Data Types>`. 2) "
+"Array[:ref:`Byte <02_decentralchain/09_protocol:Blockchain Data Types>`]. 3) "
+":ref:`String <02_decentralchain/09_protocol:Blockchain Data Types>`. 4) Logical True. "
 "5) Logical False. 6) List."
 msgstr ""
 
@@ -10176,7 +10176,7 @@ msgstr ""
 
 #: ../../_static/02_decentralchain/tables/069_Invoke-Script-Transaction-Binary-Format-V1.csv:1
 msgid ""
-":math:`0` — :ref:`DecentralCoins <02_decentralchain:DecentralCoin>`. "
+":math:`0` — :ref:`DecentralCoins <02_decentralchain/02_token(asset):DecentralCoin>`. "
 ":math:`1` — other token."
 msgstr ""
 
@@ -10191,7 +10191,7 @@ msgstr ""
 #: ../../_static/02_decentralchain/tables/069_Invoke-Script-Transaction-Binary-Format-V1.csv:1
 msgid ""
 "Field is applicable if the token is not :ref:`DecentralCoins "
-"<02_decentralchain:DecentralCoin>`."
+"<02_decentralchain/02_token(asset):DecentralCoin>`."
 msgstr ""
 
 #: ../../_static/02_decentralchain/tables/069_Invoke-Script-Transaction-Binary-Format-V1.csv:1
@@ -10247,7 +10247,7 @@ msgstr ""
 #: ../../_static/02_decentralchain/tables/069_Invoke-Script-Transaction-Binary-Format-V1.csv:1
 msgid ""
 ":math:`S = 0`, if token is :ref:`DecentralCoins "
-"<02_decentralchain:DecentralCoin>`. :math:`S = 32`, if it is other token."
+"<02_decentralchain/02_token(asset):DecentralCoin>`. :math:`S = 32`, if it is other token."
 msgstr ""
 
 #: ../../02_decentralchain.rst:3534
@@ -10305,7 +10305,7 @@ msgstr ""
 
 #: ../../_static/02_decentralchain/tables/070_Issue-Transaction-Binary-Format-V3.csv:1
 #: ../../_static/02_decentralchain/tables/084_Set-Asset-Transaction-Binary-Format-V2.csv:1
-msgid ":ref:`Asset script <03_ride-language:Asset Script>`."
+msgid ":ref:`Asset script <03_ride-language/04_script-types:Asset Script>`."
 msgstr ""
 
 #: ../../02_decentralchain.rst:3562
@@ -10323,7 +10323,7 @@ msgstr ""
 
 #: ../../_static/02_decentralchain/tables/071_Issue-Transaction-Binary-Format-V2.csv:1
 #: ../../_static/02_decentralchain/tables/072_Issue-Transaction-Binary-Format-V1.csv:1
-msgid ":ref:`Token <02_decentralchain:Token (Asset)>` name length"
+msgid ":ref:`Token <02_decentralchain/02_token(asset):Token (Asset)>` name length"
 msgstr ""
 
 #: ../../_static/02_decentralchain/tables/071_Issue-Transaction-Binary-Format-V2.csv:1
@@ -10374,7 +10374,7 @@ msgstr ""
 #: ../../_static/02_decentralchain/tables/083_Reissue-Transaction-Binary-Format-V1.csv:1
 #: ../../_static/02_decentralchain/tables/085_Set-Asset-Transaction-Binary-Format-V1.csv:1
 #: ../../_static/02_decentralchain/tables/087_Set-Script-Transaction-Binary-Format-V1.csv:1
-msgid ":ref:`Boolean <02_decentralchain:Blockchain Data Types>`"
+msgid ":ref:`Boolean <02_decentralchain/09_protocol:Blockchain Data Types>`"
 msgstr ""
 
 #: ../../_static/02_decentralchain/tables/071_Issue-Transaction-Binary-Format-V2.csv:1
@@ -10423,7 +10423,7 @@ msgstr ""
 
 #: ../../_static/02_decentralchain/tables/071_Issue-Transaction-Binary-Format-V2.csv:1
 #: ../../_static/02_decentralchain/tables/085_Set-Asset-Transaction-Binary-Format-V1.csv:1
-msgid ":ref:`Asset script <03_ride-language:Asset Script>`"
+msgid ":ref:`Asset script <03_ride-language/04_script-types:Asset Script>`"
 msgstr ""
 
 #: ../../_static/02_decentralchain/tables/071_Issue-Transaction-Binary-Format-V2.csv:1
@@ -10538,8 +10538,8 @@ msgstr ""
 #: ../../_static/02_decentralchain/tables/076_Lease-Transaction-Binary-Format-V3.csv:1
 msgid ""
 "Recipient's account public key hash (a component of an :ref:`address "
-"<02_decentralchain:Address>`, see the :ref:`address binary format "
-"<02_decentralchain:Address Binary Format>` article)."
+"<02_decentralchain/01_account:Address>`, see the :ref:`address binary format "
+"<02_decentralchain/10_binary-format:Address Binary Format>` article)."
 msgstr ""
 
 #: ../../_static/02_decentralchain/tables/076_Lease-Transaction-Binary-Format-V3.csv:1
@@ -10550,12 +10550,12 @@ msgstr ""
 #: ../../_static/02_decentralchain/tables/076_Lease-Transaction-Binary-Format-V3.csv:1
 #: ../../_static/02_decentralchain/tables/079_Mass-Transaction-Binary-Format-V2.csv:1
 #: ../../_static/02_decentralchain/tables/090_Transfer-Transaction-Binary-Format-V3.csv:1
-msgid "Recipient's :ref:`alias <02_decentralchain:Alias>`."
+msgid "Recipient's :ref:`alias <02_decentralchain/01_account:Alias>`."
 msgstr ""
 
 #: ../../_static/02_decentralchain/tables/076_Lease-Transaction-Binary-Format-V3.csv:1
 msgid ""
-"Amount of :ref:`DecentralCoins <02_decentralchain:DecentralCoin>` to lease "
+"Amount of :ref:`DecentralCoins <02_decentralchain/02_token(asset):DecentralCoin>` to lease "
 "(that is, amount of Decentralites multiplied by :math:`10^{8}`)."
 msgstr ""
 
@@ -10580,8 +10580,8 @@ msgstr ""
 #: ../../_static/02_decentralchain/tables/078_Lease-Transaction-Binary-Format-V1.csv:1
 #: ../../_static/02_decentralchain/tables/080_Mass-Transaction-Binary-Format-V1.csv:1
 msgid ""
-":ref:`Address <02_decentralchain:Address>` or :ref:`alias "
-"<02_decentralchain:Alias>` of the recipient"
+":ref:`address <02_decentralchain/01_account:Address>` or :ref:`alias "
+"<02_decentralchain/01_account:Alias>` of the recipient"
 msgstr ""
 
 #: ../../_static/02_decentralchain/tables/077_Lease-Transaction-Binary-Format-V2.csv:1
@@ -10590,14 +10590,14 @@ msgstr ""
 #: ../../_static/02_decentralchain/tables/091_Transfer-Transaction-Binary-Format-V2.csv:1
 #: ../../_static/02_decentralchain/tables/092_Transfer-Transaction-Binary-Format-V1.csv:1
 msgid ""
-"See :ref:`address binary format <02_decentralchain:Address Binary Format>`,"
-" :ref:`alias binary format <02_decentralchain:Alias Binary Format>`"
+"See :ref:`address binary format <02_decentralchain/10_binary-format:Address Binary Format>`,"
+" :ref:`alias binary format <02_decentralchain/10_binary-format:Alias Binary Format>`"
 msgstr ""
 
 #: ../../_static/02_decentralchain/tables/077_Lease-Transaction-Binary-Format-V2.csv:1
 #: ../../_static/02_decentralchain/tables/078_Lease-Transaction-Binary-Format-V1.csv:1
 msgid ""
-"Amount of :ref:`DecentralCoins <02_decentralchain:DecentralCoin>` that will"
+"Amount of :ref:`DecentralCoins <02_decentralchain/02_token(asset):DecentralCoin>` that will"
 " be leased to the account"
 msgstr ""
 
@@ -10639,7 +10639,7 @@ msgstr ""
 #: ../../_static/02_decentralchain/tables/090_Transfer-Transaction-Binary-Format-V3.csv:1
 msgid ""
 "Recipient's account public key hash (a component of an address, see the "
-":ref:`address binary format <02_decentralchain:Address Binary Format>` "
+":ref:`address binary format <02_decentralchain/10_binary-format:Address Binary Format>` "
 "article)."
 msgstr ""
 
@@ -10900,8 +10900,8 @@ msgstr ""
 
 #: ../../_static/02_decentralchain/tables/086_Set-Script-Transaction-Binary-Format-V2.csv:1
 msgid ""
-":ref:`Account script <03_ride-language:Account Script>` or :ref:`dApp script "
-"<03_ride-language:dApp Script>`."
+":ref:`Account script <03_ride-language/04_script-types:Account Script>` or :ref:`dApp script "
+"<03_ride-language/04_script-types:dApp Script>`."
 msgstr ""
 
 #: ../../02_decentralchain.rst:3987
@@ -10961,7 +10961,7 @@ msgid ""
 "Amount of asset that is equivalent to :math:`0.001` DecentralCoins "
 "(:math:`100 000` Decentralites), specified in the minimum fraction "
 "(“cents”) of asset. See the :ref:`sponsored fee "
-"<02_decentralchain:Sponsored Fees>` article."
+"<02_decentralchain/03_transaction:Sponsored Fees>` article."
 msgstr ""
 
 #: ../../02_decentralchain.rst:4040
@@ -11137,7 +11137,7 @@ msgstr ""
 #: ../../02_decentralchain.rst:4123
 msgid ""
 "Learn more about :ref:`update asset info transaction "
-"<02_decentralchain:Update Asset Info Transaction>`."
+"<02_decentralchain/03_transaction:Update Asset Info Transaction>`."
 msgstr ""
 
 #: ../../02_decentralchain.rst:4135

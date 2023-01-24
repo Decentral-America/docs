@@ -1,7 +1,7 @@
 #, Keyword, Possible values, Variable size in bytes
 ":math:`1`", "Boolean", ":math:`0` and :math:`1`.", ":math:`1`"
-":math:`2`", "Byte", "Integer from :math:`-128` to :math:`127` inclusive.", ":math:`1`"
-":math:`3`", "Int", "Integer from :math:`-2,147,483,648` to :math:`2,147,483,647` inclusive.", ":math:`4`"
-":math:`4`", "Long", "Integer from :math:`-9,223,372,036,854,775,808` to :math:`9,223,372,036,854,775,807` inclusive.", ":math:`8`"
-":math:`5`", "Short", "Integer from :math:`-32,768` to :math:`32,767` inclusive.", ":math:`2`"
-":math:`6`", "String", "From :math:`0` to :math:`2,147,483,647` characters inclusive.", "From :math:`1` to :math:`4` bytes per character."
+":math:`2`", ":ref:`Byte <02_decentralchain/09_protocol:Blockchain Data Types>`", "Integer from :math:`-128` to :math:`127` inclusive.", ":math:`1`"
+":math:`3`", :ref:`Int <02_decentralchain/09_protocol:Blockchain Data Types>`, "Integer from :math:`-2,147,483,648` to :math:`2,147,483,647` inclusive.", ":math:`4`"
+":math:`4`", :ref:`Long <02_decentralchain/09_protocol:Blockchain Data Types>`, "Integer from :math:`-9,223,372,036,854,775,808` to :math:`9,223,372,036,854,775,807` inclusive.", ":math:`8`"
+":math:`5`", :ref:`Short<02_decentralchain/09_protocol:Blockchain Data Types>`, "Integer from :math:`-32,768` to :math:`32,767` inclusive.", ":math:`2`"
+":math:`6`", :ref:`String<02_decentralchain/09_protocol:Blockchain Data Types>`, "From :math:`0` to :math:`2,147,483,647` characters inclusive.", "From :math:`1` to :math:`4` bytes per character."

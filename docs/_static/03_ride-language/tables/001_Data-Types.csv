@@ -1,12 +1,12 @@
 Data type name, Ride keyword
-":ref:`Big Integer <03_ride-language:BigInt>`", "BigInt"
-":ref:`Boolean <03_ride-language:Boolean>`", "Boolean"
-":ref:`Byte array <03_ride-language:ByteVector>`", "ByteVector"
-":ref:`Integer <03_ride-language:Int>`", "Int"
-":ref:`String <03_ride-language:String>`", "String"
-":ref:`Empty value <03_ride-language:Unit>`", "Unit"
-":ref:`List <03_ride-language:List>`", "List"
-":ref:`Tuple <03_ride-language:Tuple>`", "—"
-":ref:`Union <03_ride-language:Union>`", "—"
-":ref:`Structure <03_ride-language:Structures>`", "—"
-":ref:`Arbitrary type <03_ride-language:Any>`", "Any"
+":ref:`Big Integer <03_ride-language/02_data-types:BigInt>`", "BigInt"
+":ref:`Boolean <03_ride-language/02_data-types:Boolean>`", "Boolean"
+":ref:`Byte array <03_ride-language/02_data-types:ByteVector>`", "ByteVector"
+":ref:`Integer <03_ride-language/02_data-types:Int>`", :ref:`Int <02_decentralchain/09_protocol:Blockchain Data Types>`
+":ref:`String <03_ride-language/02_data-types:String>`", :ref:`String<02_decentralchain/09_protocol:Blockchain Data Types>`
+":ref:`Empty value <03_ride-language/02_data-types:Unit>`", "Unit"
+":ref:`List <03_ride-language/02_data-types:List>`", "List"
+":ref:`Tuple <03_ride-language/02_data-types:Tuple>`", "—"
+":ref:`Union <03_ride-language/02_data-types:Union>`", "—"
+":ref:`Structure <03_ride-language/05_structures:Structures>`", "—"
+":ref:`Arbitrary type <03_ride-language/02_data-types:Any>`", "Any"

@@ -1,6 +1,6 @@
 Name, Description, Complexity
-":ref:`drop(ByteVector, Int): ByteVector <03_ride-language:drop(ByteVector, Int): ByteVector>`", "Returns the byte array without the first N bytes", ":math:`6`"
-":ref:`dropRight(ByteVector, Int): ByteVector <03_ride-language:dropRight(ByteVector, Int): ByteVector>`", "Returns the byte array without the last N bytes", ":math:`6`"
-":ref:`size(ByteVector): Int <03_ride-language:size(ByteVector): Int>`", "Returns the number of bytes in the byte array", ":math:`1`"
-":ref:`take(ByteVector, Int): ByteVector <03_ride-language:take(ByteVector, Int): ByteVector>`", "Returns the first N bytes of the byte array", ":math:`6`"
-":ref:`takeRight(ByteVector, Int): ByteVector <03_ride-language:takeRight(ByteVector, Int): ByteVector>`", "Returns the last N bytes of the byte array", ":math:`6`"
+":ref:`drop(ByteVector, Int): ByteVector <03_ride-language/03_functions:drop(ByteVector, Int): ByteVector>`", "Returns the byte array without the first N bytes", ":math:`6`"
+":ref:`dropRight(ByteVector, Int): ByteVector <03_ride-language/03_functions:dropRight(ByteVector, Int): ByteVector>`", "Returns the byte array without the last N bytes", ":math:`6`"
+":ref:`size(ByteVector): Int <03_ride-language/03_functions:size(ByteVector): Int>`", "Returns the number of bytes in the byte array", ":math:`1`"
+":ref:`take(ByteVector, Int): ByteVector <03_ride-language/03_functions:take(ByteVector, Int): ByteVector>`", "Returns the first N bytes of the byte array", ":math:`6`"
+":ref:`takeRight(ByteVector, Int): ByteVector <03_ride-language/03_functions:takeRight(ByteVector, Int): ByteVector>`", "Returns the last N bytes of the byte array", ":math:`6`"
