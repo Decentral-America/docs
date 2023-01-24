@@ -9,20 +9,32 @@ msgid ""
 msgstr ""
 "Project-Id-Version: DecentralChain master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-04 15:14-0600\n"
+"POT-Creation-Date: 2023-01-24 15:12-0600\n"
 "PO-Revision-Date: 2022-08-04 15:14-0600\n"
 "Last-Translator: Josue Rojas <josue.rojas@blockchaincostarica.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.10.3\n"
+"Generated-By: Babel 2.11.0\n"
 
-#: ../../index.rst:9
-msgid "Contents:"
-msgstr "Contenidos:"
-
-#: ../../index.rst:7
-msgid "Welcome to DecentralChain's documentation!"
+#: ../../index.md:10
+#, fuzzy
+msgid "DecentralChain Official Documentation"
 msgstr "¡Bienvenido a la documentación de DecentralChain!"
+
+#: ../../index.md:31
+msgid "Introduction"
+msgstr ""
+
+#: ../../index.md:39
+msgid "DecentralChain"
+msgstr ""
+
+#: ../../index.md:47
+msgid "Ride Language"
+msgstr ""
+
+#~ msgid "Contents:"
+#~ msgstr "Contenidos:"
 
