@@ -78,8 +78,43 @@ html_theme_options = {
             "name": "Explorer",
         },
     ],
-    "github_url": "https://github.com/Decentral-America/docs",
-    "twitter_url": "https://twitter.com/decentralchain",
+   "icon_links": [
+        {
+            "name": "GitHub",
+            "url": "https://github.com/Decentral-America/docs",
+            "icon": "fa-brands fa-github",
+        },
+        {
+            "name": "Twitter",
+            "url": "https://twitter.com/decentralchain",
+            "icon": "fa-brands fa-twitter",
+        },
+        {
+            "name": "LinkedIn",
+            "url": "https://www.linkedin.com/company/decentralchain/",
+            "icon": "fa-brands fa-linkedin",
+        },
+        {
+            "name": "Youtube",
+            "url": "https://www.youtube.com/@decentralchain",
+            "icon": "fa-brands fa-youtube",
+        },
+        {
+            "name": "Discord",
+            "url": "https://discord.gg/9UUbNBPQ3D",
+            "icon": "fa-brands fa-discord",
+        },
+        {
+            "name": "Discord",
+            "url": "https://www.instagram.com/decentralchain/",
+            "icon": "fa-brands fa-instagram",
+        },
+        {
+            "name": "Medium",
+            "url": "https://medium.com/@decentralchain",
+            "icon": "fa-brands fa-medium",
+        },
+    ],
     "header_links_before_dropdown": 3,
     "logo": {
         #"text": "",
