@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: DecentralChain master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-24 15:12-0600\n"
+"POT-Creation-Date: 2023-02-18 07:10-0600\n"
 "PO-Revision-Date: 2022-08-04 15:14-0600\n"
 "Last-Translator: Josue Rojas <josue.rojas@decentralchain.io>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../../index.md:10
 #, fuzzy
-msgid "DecentralChain Official Documentation"
+msgid "DecentralChain Documentation"
 msgstr "¡Bienvenido a la documentación de DecentralChain!"
 
 #: ../../index.md:31
