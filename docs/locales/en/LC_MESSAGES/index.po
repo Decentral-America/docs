@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: DecentralChain master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-17 15:49-0600\n"
+"POT-Creation-Date: 2023-02-18 07:10-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Generated-By: Babel 2.11.0\n"
 
 #: ../../index.md:10
-msgid "DecentralChain Official Documentation"
+msgid "DecentralChain Documentation"
 msgstr ""
 
 #: ../../index.md:31
@@ -33,4 +33,7 @@ msgstr ""
 #: ../../index.md:47
 msgid "Ride Language"
 msgstr ""
+
+#~ msgid "DecentralChain Official Documentation"
+#~ msgstr ""
 
