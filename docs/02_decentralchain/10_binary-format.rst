@@ -21,21 +21,21 @@ Binary Format
 * :ref:`Order binary format <02_decentralchain/10_binary-format:Order Binary Format>`
 * :ref:`Transaction binary format <02_decentralchain/10_binary-format:Transaction Binary Format>`
 
-  * :ref:`Burn transaction binary format <02_decentralchain/10_binary-format:Block Message Binary Format>`
-  * :ref:`Create alias transaction binary format <02_decentralchain/10_binary-format:Block Message Binary Format>`
-  * :ref:`Data transaction binary format <02_decentralchain/10_binary-format:Block Message Binary Format>`
-  * :ref:`Exchange transaction binary format <02_decentralchain/10_binary-format:Block Message Binary Format>`
-  * :ref:`Genesis transaction binary format <02_decentralchain/10_binary-format:Block Message Binary Format>`
-  * :ref:`Invoke script transaction binary format <02_decentralchain/10_binary-format:Block Message Binary Format>`
-  * :ref:`Issue transaction binary format <02_decentralchain/10_binary-format:Block Message Binary Format>`
-  * :ref:`Lease cancel transaction binary format <02_decentralchain/10_binary-format:Block Message Binary Format>`
-  * :ref:`Lease transaction binary format <02_decentralchain/10_binary-format:Block Message Binary Format>`
-  * :ref:`Mass transfer transaction binary format <02_decentralchain/10_binary-format:Block Message Binary Format>`
-  * :ref:`Reissue transaction binary format <02_decentralchain/10_binary-format:Block Message Binary Format>`
-  * :ref:`Set asset script transaction binary format <02_decentralchain/10_binary-format:Block Message Binary Format>`
-  * :ref:`Set script transaction binary format <02_decentralchain/10_binary-format:Block Message Binary Format>`
-  * :ref:`Sponsor fee transaction binary format <02_decentralchain/10_binary-format:Block Message Binary Format>`
-  * :ref:`Transfer transaction binary format <02_decentralchain/10_binary-format:Block Message Binary Format>`
+  * :ref:`Burn transaction binary format <02_decentralchain/10_binary-format:Burn Transaction Binary Format>`
+  * :ref:`Create alias transaction binary format <02_decentralchain/10_binary-format:Create Alias Transaction Binary Format>`
+  * :ref:`Data transaction binary format <02_decentralchain/10_binary-format:Data Transaction Binary Format>`
+  * :ref:`Exchange transaction binary format <02_decentralchain/10_binary-format:Exchange Transaction Binary Format>`
+  * :ref:`Genesis transaction binary format <02_decentralchain/10_binary-format:Genesis Transaction Binary Format>`
+  * :ref:`Invoke script transaction binary format <02_decentralchain/10_binary-format:Invoke Script Transaction Binary Format>`
+  * :ref:`Issue transaction binary format <02_decentralchain/10_binary-format:Issue Transaction Binary Format>`
+  * :ref:`Lease cancel transaction binary format <02_decentralchain/10_binary-format:Lease Cancel Transaction Binary Format>`
+  * :ref:`Lease transaction binary format <02_decentralchain/10_binary-format:Lease Transaction Binary Format>`
+  * :ref:`Mass transfer transaction binary format <02_decentralchain/10_binary-format:Mass Transfer Transaction Binary Format>`
+  * :ref:`Reissue transaction binary format <02_decentralchain/10_binary-format:Reissue Transaction Binary Format>`
+  * :ref:`Set asset script transaction binary format <02_decentralchain/10_binary-format:Set Asset Script Transaction Binary Format>`
+  * :ref:`Set script transaction binary format <02_decentralchain/10_binary-format:Set Script Transaction Binary Format>`
+  * :ref:`Sponsor fee transaction binary format <02_decentralchain/10_binary-format:Sponsor Fee Transaction Binary Format>`
+  * :ref:`Transfer transaction binary format <02_decentralchain/10_binary-format:Transfer Transaction Binary Format>`
 
 * :ref:`Transaction proofs binary format <02_decentralchain/10_binary-format:Transaction Proofs Binary Format>`
 
@@ -1444,7 +1444,7 @@ Learn more about :ref:`update asset info transaction <02_decentralchain/03_trans
     string description = 3;
   }
 
-.. csv-table:: Update Asset Transaction Binary Format Version 1
+.. csv-table:: Update Asset Info Transaction Binary Format Version 1
  :file: ../_static/02_decentralchain/tables/093_Update-Asset-Info-Transaction-Binary-Format-V1.csv
  :header-rows: 1 
  :class: longtable
