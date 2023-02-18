@@ -7,7 +7,7 @@ myst:
 html_theme.sidebar_secondary.remove: true
 ---
 
-# DecentralChain Official Documentation
+# DecentralChain Documentation
 <!---
 ```{gallery-grid}
 :grid-columns: 1 2 2 3
