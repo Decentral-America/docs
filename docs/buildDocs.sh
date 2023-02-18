@@ -6,7 +6,7 @@ set -x
 #          Pages. This script is executed by:
 #            .github/workflows/docs_pages_workflow.yml
 #
-# Authors: Josue Rojas <josue.rojas@blockchaincostarica.org>
+# Authors: Josue Rojas <josue.rojas@decentralchain.io>
 # Created: 2021-09-11
 # Updated: 2021-09-11
 # Version: 0.1
