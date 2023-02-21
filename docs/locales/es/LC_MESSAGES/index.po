@@ -24,16 +24,16 @@ msgstr "¡Bienvenido a la documentación de DecentralChain!"
 
 #: ../../index.md:31
 msgid "Introduction"
-msgstr ""
+msgstr "Introducción"
 
 #: ../../index.md:39
 msgid "DecentralChain"
-msgstr ""
+msgstr "DecentralChain"
 
 #: ../../index.md:47
 msgid "Ride Language"
-msgstr ""
+msgstr "Lenguaje Ride"
 
 #~ msgid "DecentralChain Official Documentation"
-msgstr "¡Bienvenido a la documentación de DecentralChain!"
+msgstr "Documentación Oficial DecentralChain"
 
