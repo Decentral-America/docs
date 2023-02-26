@@ -369,7 +369,7 @@ html_context['downloads'].append( ('epub', '/' +current_language+ '/' +current_v
 ##########################
  
 html_context['display_github'] = True
-html_context['github_user'] = 'jourlez'
+html_context['github_user'] = 'Decentral-America'
 html_context['github_repo'] = 'docs'
 html_context['github_version'] = 'master/docs/'
  
