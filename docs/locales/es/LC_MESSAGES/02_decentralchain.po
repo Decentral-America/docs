@@ -7320,7 +7320,7 @@ msgstr "Indica que la versión de la transacción es :math:`2` o superior. El va
 #: ../../_static/02_decentralchain/tables/091_Transfer-Transaction-Binary-Format-V2.csv:1
 #: ../../_static/02_decentralchain/tables/092_Transfer-Transaction-Binary-Format-V1.csv:1
 msgid ":ref:`Transaction type ID <02_decentralchain/03_transaction:Transaction Types>`"
-msgstr ":ref:`ID de tipo de transacción <02_decentralchain/03_transaction:Transaction Types`"
+msgstr ":ref:`ID de tipo de transacción <02_decentralchain/03_transaction:Transaction Types>`"
 
 #: ../../_static/02_decentralchain/tables/057_Burn-Transaction-Binary-Format-V2.csv:1
 #: ../../_static/02_decentralchain/tables/058_Burn-Transaction-Binary-Format-V1.csv:1
