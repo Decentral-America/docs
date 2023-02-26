@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: DecentralChain master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-24 15:12-0600\n"
+"POT-Creation-Date: 2023-02-17 15:49-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Josue Rojas <josue.rojas@decentralchain.io>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -913,7 +913,7 @@ msgid "this"
 msgstr ""
 
 #: ../../_static/03_ride-language/tables/003_Built-in-Variables.csv:1
-msgid "\\1) For a :ref:`dApp script <03_ride-language/04_script-types:dApp Script>` or an :ref:`account script <03_ride-language/04_script-types:Account Script>`: the :ref:`address <03_ride-language/05_structures:Address>` structure. 2) For an :ref:`asset script <03_ride-language/04_script-types:Asset Script>`: the :ref:`asset <03_ride-language/03_functions:Math Functions>` structure."
+msgid "\\1) For a :ref:`dApp script <03_ride-language/04_script-types:dApp Script>` or an :ref:`account script <03_ride-language/04_script-types:Account Script>`: the :ref:`Address <03_ride-language/05_structures:Address>` structure. 2) For an :ref:`asset script <03_ride-language/04_script-types:Asset Script>`: the :ref:`asset <03_ride-language/03_functions:Math Functions>` structure."
 msgstr ""
 
 #: ../../_static/03_ride-language/tables/003_Built-in-Variables.csv:1
@@ -2495,7 +2495,7 @@ msgstr ""
 #: ../../_static/03_ride-language/tables/032_Parameters.csv:1
 #: ../../_static/03_ride-language/tables/037_Parameters.csv:1
 #: ../../_static/03_ride-language/tables/040_Parameters.csv:1
-msgid "addressOrAlias: :ref:`address <03_ride-language/05_structures:Address>` | :ref:`Alias <03_ride-language/05_structures:Alias>`"
+msgid "addressOrAlias: :ref:`Address <03_ride-language/05_structures:Address>` | :ref:`Alias <03_ride-language/05_structures:Alias>`"
 msgstr ""
 
 #: ../../_static/03_ride-language/tables/013_Parameters.csv:1
@@ -2805,7 +2805,7 @@ msgid ":ref:`calculateAssetId(Issue): ByteVector <03_ride-language/03_functions:
 msgstr ""
 
 #: ../../_static/03_ride-language/tables/030_Blockchain-Functions.csv:1
-msgid "Calculates ID of the token formed by the :ref:`issue <03_ride-language/05_structures:Issue>` structure when executing the callable function"
+msgid "Calculates ID of the token formed by the :ref:`Issue <03_ride-language/05_structures:Issue>` structure when executing the callable function"
 msgstr ""
 
 #: ../../_static/03_ride-language/tables/030_Blockchain-Functions.csv:1
@@ -2813,7 +2813,7 @@ msgid ":ref:`calculateLeaseId(Lease): ByteVector <03_ride-language/03_functions:
 msgstr ""
 
 #: ../../_static/03_ride-language/tables/030_Blockchain-Functions.csv:1
-msgid "Calculates ID of the lease formed by the :ref:`lease <03_ride-language/05_structures:Lease>` structure when executing the callable function"
+msgid "Calculates ID of the lease formed by the :ref:`Lease <03_ride-language/05_structures:Lease>` structure when executing the callable function"
 msgstr ""
 
 #: ../../_static/03_ride-language/tables/030_Blockchain-Functions.csv:1
@@ -2880,7 +2880,7 @@ msgstr ""
 #: ../../03_ride-language/03_functions.rst:888
 #: ../../03_ride-language/03_functions.rst:1792
 #: ../../03_ride-language/03_functions.rst:1817
-msgid "For a description of the return value, see the :ref:`address <03_ride-language/05_structures:Address>` article."
+msgid "For a description of the return value, see the :ref:`Address <03_ride-language/05_structures:Address>` structure article."
 msgstr ""
 
 #: ../../_static/03_ride-language/tables/031_Parameters.csv:1
@@ -2914,7 +2914,7 @@ msgstr ""
 
 #: ../../03_ride-language/03_functions.rst:507
 #: ../../03_ride-language/03_functions.rst:537
-msgid "For a description of the return value, see the :ref:`BlockInfo <03_ride-language/05_structures:BlockInfo>` article."
+msgid "For a description of the return value, see the :ref:`BlockInfo <03_ride-language/05_structures:BlockInfo>` structure article."
 msgstr ""
 
 #: ../../_static/03_ride-language/tables/033_Parameters.csv:1
@@ -2944,7 +2944,7 @@ msgid "calculateAssetId(Issue): ByteVector"
 msgstr ""
 
 #: ../../03_ride-language/03_functions.rst:560
-msgid "Calculates ID of the token formed by the :ref:`issue structure <03_ride-language/05_structures:Issue>` when executing the :ref:`callable function <03_ride-language/03_functions:Callable Functions>`."
+msgid "Calculates ID of the token formed by the :ref:`Issue <03_ride-language/05_structures:Issue>` structure when executing the :ref:`callable function <03_ride-language/03_functions:Callable Functions>`."
 msgstr ""
 
 #: ../../_static/03_ride-language/tables/035_Parameters.csv:1
@@ -2960,7 +2960,7 @@ msgid "calculateLeaseId(Lease): ByteVector"
 msgstr ""
 
 #: ../../03_ride-language/03_functions.rst:598
-msgid "Calculates ID of the lease formed by the :ref:`lease structure <03_ride-language/05_structures:Lease>` when executing the :ref:`callable function <03_ride-language/03_functions:Callable Functions>`."
+msgid "Calculates ID of the lease formed by the :ref:`Lease <03_ride-language/05_structures:Lease>` structure when executing the :ref:`callable function <03_ride-language/03_functions:Callable Functions>`."
 msgstr ""
 
 #: ../../_static/03_ride-language/tables/036_Parameters.csv:1
@@ -3001,7 +3001,7 @@ msgstr ""
 
 #: ../../03_ride-language/03_functions.rst:693
 #: ../../03_ride-language/03_functions.rst:1316
-msgid "For a description of the return value, see the :ref:`TransferTransaction <03_ride-language/05_structures:TransferTransaction>` article."
+msgid "For a description of the return value, see the :ref:`TransferTransaction <03_ride-language/05_structures:TransferTransaction>` structure article."
 msgstr ""
 
 #: ../../_static/03_ride-language/tables/039_Parameters.csv:1
@@ -3517,7 +3517,7 @@ msgid "Converts an array of bytes of an :ref:`address <02_decentralchain/01_acco
 msgstr ""
 
 #: ../../_static/03_ride-language/tables/063_Parameters.csv:1
-msgid "addr: :ref:`address <03_ride-language/05_structures:Address>`"
+msgid "addr: :ref:`Address <03_ride-language/05_structures:Address>`"
 msgstr ""
 
 #: ../../_static/03_ride-language/tables/063_Parameters.csv:1
@@ -3631,7 +3631,7 @@ msgid "The invocation can contain payments that will be transferred from the bal
 msgstr ""
 
 #: ../../03_ride-language/03_functions.rst:1365
-msgid "If a payment token is a smart asset, the asset script verifies the invoke as if it was :ref:`InvokeScriptTransaction <03_ride-language/05_structures:InvokeScriptTransaction>` with the following fields:"
+msgid "If a payment token is a smart asset, the asset script verifies the invoke as if it was :ref:`InvokeScriptTransaction <03_ride-language/05_structures:InvokeScriptTransaction>` structure with the following fields:"
 msgstr ""
 
 #: ../../03_ride-language/03_functions.rst:1367
@@ -3667,7 +3667,7 @@ msgid "The following invocation stacks are valid:"
 msgstr ""
 
 #: ../../_static/03_ride-language/tables/070_Parameters.csv:1
-msgid "dApp: :ref:`address <03_ride-language/05_structures:Address>` | :ref:`Alias <03_ride-language/05_structures:Alias>`"
+msgid "dApp: :ref:`Address <03_ride-language/05_structures:Address>` | :ref:`Alias <03_ride-language/05_structures:Alias>`"
 msgstr ""
 
 #: ../../_static/03_ride-language/tables/070_Parameters.csv:1
@@ -3746,7 +3746,7 @@ msgid "Data Transaction Functions"
 msgstr ""
 
 #: ../../03_ride-language/03_functions.rst:1494
-msgid "The functions listed below retrieve data by key from the :ref:`data transaction structure <03_ride-language/05_structures:DataTransaction>` or from any list of data entries."
+msgid "The functions listed below retrieve data by key from the :ref:`DataTransaction <03_ride-language/05_structures:DataTransaction>` structure or from any list of data entries."
 msgstr ""
 
 #: ../../_static/03_ride-language/tables/071_Data-Transaction-Functions.csv:1
@@ -6409,7 +6409,7 @@ msgid "this variable"
 msgstr ""
 
 #: ../../_static/03_ride-language/tables/161_Script-Types.csv:1
-msgid ":ref:`address <03_ride-language/05_structures:Address>` structure containing dApp address"
+msgid ":ref:`Address <03_ride-language/05_structures:Address>` structure containing dApp address"
 msgstr ""
 
 #: ../../_static/03_ride-language/tables/161_Script-Types.csv:1
@@ -6539,7 +6539,7 @@ msgid "Callable Functions (dApp Script)"
 msgstr ""
 
 #: ../../03_ride-language/04_script-types.rst:69
-msgid "The callable function should be marked with the @Callable(i) annotation, where i is an :ref:`invocation <03_ride-language/05_structures:Invocation>` structure that contains fields of the script invocation that are accessible to the callable function. The variable name in the annotation is required even if the function does not use it. Callable function result is a set of :ref:`script actions <03_ride-language/05_structures:Script Actions>` that are performed on the blockchain: adding/deleting/modifying entries to the account data storages, token transfers, issue/reissue/burning, and others. The result format and the available actions depend on the Standard library version used. For a detailed description, see the :ref:`callable function <03_ride-language/03_functions:Callable Functions>` article."
+msgid "The callable function should be marked with the @Callable(i) annotation, where i is an :ref:`Invocation <03_ride-language/05_structures:Invocation>` structure that contains fields of the script invocation that are accessible to the callable function. The variable name in the annotation is required even if the function does not use it. Callable function result is a set of :ref:`script actions <03_ride-language/05_structures:Script Actions>` that are performed on the blockchain: adding/deleting/modifying entries to the account data storages, token transfers, issue/reissue/burning, and others. The result format and the available actions depend on the Standard library version used. For a detailed description, see the :ref:`callable function <03_ride-language/03_functions:Callable Functions>` article."
 msgstr ""
 
 #: ../../03_ride-language/04_script-types.rst:73
@@ -6611,7 +6611,7 @@ msgid "Data accessible to the callable function:"
 msgstr ""
 
 #: ../../03_ride-language/04_script-types.rst:138
-msgid "Particular fields of the invocation, including payments, fee, sender address and public key. See the :ref:`invocation <03_ride-language/05_structures:Invocation>` article for the fields description. Proofs are inaccessible."
+msgid "Particular fields of the invocation, including payments, fee, sender address and public key. See the :ref:`Invocation <03_ride-language/05_structures:Invocation>` structure article for the fields description. Proofs are inaccessible."
 msgstr ""
 
 #: ../../03_ride-language/04_script-types.rst:139
@@ -6627,11 +6627,11 @@ msgstr ""
 
 #: ../../03_ride-language/04_script-types.rst:143
 #: ../../03_ride-language/04_script-types.rst:421
-msgid "Fields of the current verified transaction/order, including proofs. The built-in variable tx contains this transaction or order. The set of fields depends on the type of transaction/order, see the :ref:`transaction structures <03_ride-language/05_structures:Transaction Structures>` chapter and :ref:`order <03_ride-language/05_structures:Order>` article."
+msgid "Fields of the current verified transaction/order, including proofs. The built-in variable tx contains this transaction or order. The set of fields depends on the type of transaction/order, see the :ref:`transaction structures <03_ride-language/05_structures:Transaction Structures>` chapter and :ref:`Order <03_ride-language/05_structures:Order>` structure article."
 msgstr ""
 
 #: ../../03_ride-language/04_script-types.rst:149
-msgid "Annotation is a form of metadata that is added to a :ref:`function :ref:`functions <03_ride-language/03_functions:Functions>` of a :ref:`dApp script <03_ride-language/04_script-types:dApp Script>`. At the present moment, there are two annotations: @Callable(i) and @Verifier(tx). The variable name in the annotation is required even if the function does not use it. An annotated function cannot be called inside a dApp script."
+msgid "Annotation is a form of metadata that is added to a :ref:`function <03_ride-language/03_functions:Functions>` of a :ref:`dApp script <03_ride-language/04_script-types:dApp Script>`. At the present moment, there are two annotations: @Callable(i) and @Verifier(tx). The variable name in the annotation is required even if the function does not use it. An annotated function cannot be called inside a dApp script."
 msgstr ""
 
 #: ../../03_ride-language/04_script-types.rst:153
@@ -6639,7 +6639,7 @@ msgid "@Callable(i)"
 msgstr ""
 
 #: ../../03_ride-language/04_script-types.rst:155
-msgid "Annotation of a :ref:`callable function <03_ride-language/03_functions:Callable Functions>`. Variable i contains an :ref:`invocation <03_ride-language/05_structures:Invocation>` structure representing certain fields of the invocation."
+msgid "Annotation of a :ref:`callable function <03_ride-language/03_functions:Callable Functions>`. Variable i contains an :ref:`Invocation <03_ride-language/05_structures:Invocation>` structure representing certain fields of the invocation."
 msgstr ""
 
 #: ../../03_ride-language/04_script-types.rst:159
@@ -6647,7 +6647,7 @@ msgid "@Verifier(tx)"
 msgstr ""
 
 #: ../../03_ride-language/04_script-types.rst:161
-msgid "Annotation of a verifier function. Variable tx contains a structure of transaction or :ref:`order <03_ride-language/05_structures:Order>` sent from a dApp's account."
+msgid "Annotation of a verifier function. Variable tx contains a structure of transaction or order sent from a dApp's account."
 msgstr ""
 
 #: ../../03_ride-language/04_script-types.rst:165
@@ -6691,7 +6691,7 @@ msgid "Annotation"
 msgstr ""
 
 #: ../../03_ride-language/04_script-types.rst:182
-msgid "The callable function should be marked with the @Callable(i) annotation, where i is an :ref:`invocation <03_ride-language/05_structures:Invocation>` structure that contains invocation fields that are available to the callable function. The variable name in the annotation is required even if the callable function does not use it."
+msgid "The callable function should be marked with the @Callable(i) annotation, where i is an :ref:`Invocation <03_ride-language/05_structures:Invocation>` structure that contains invocation fields that are available to the callable function. The variable name in the annotation is required even if the callable function does not use it."
 msgstr ""
 
 #: ../../03_ride-language/04_script-types.rst:185
@@ -7582,7 +7582,7 @@ msgstr ""
 #: ../../_static/03_ride-language/tables/201_InvokeScriptTransaction-Fields.csv:1
 #: ../../_static/03_ride-language/tables/203_LeaseTransaction-Fields.csv:1
 #: ../../_static/03_ride-language/tables/207_GenesisTransaction-Fields.csv:1
-msgid ":ref:`address <03_ride-language/05_structures:Address>` | :ref:`Alias <03_ride-language/05_structures:Alias>`"
+msgid ":ref:`Address <03_ride-language/05_structures:Address>` | :ref:`Alias <03_ride-language/05_structures:Alias>`"
 msgstr ""
 
 #: ../../_static/03_ride-language/tables/170_Lease-Fields.csv:1
@@ -7765,7 +7765,7 @@ msgstr ""
 #: ../../_static/03_ride-language/tables/204_LeaseCancelTransaction-Fields.csv:1
 #: ../../_static/03_ride-language/tables/205_SponsorFeeTransaction-Fields.csv:1
 #: ../../_static/03_ride-language/tables/210_Invocation-Fields.csv:1
-msgid ":ref:`address <03_ride-language/05_structures:Address>`"
+msgid ":ref:`Address <03_ride-language/05_structures:Address>`"
 msgstr ""
 
 #: ../../_static/03_ride-language/tables/176_Common-Structures.csv:1
@@ -8027,7 +8027,7 @@ msgid "AssetPair"
 msgstr ""
 
 #: ../../03_ride-language/05_structures.rst:522
-msgid "Structure of a pair of :ref:`tokens <02_decentralchain/02_token(asset):Token (Asset)>` of an order within the :ref:`order <03_ride-language/05_structures:Order>` structure."
+msgid "Structure of a pair of :ref:`tokens <02_decentralchain/02_token(asset):Token (Asset)>` of an order within the :ref:`Order <03_ride-language/05_structures:Order>` structure."
 msgstr ""
 
 #: ../../03_ride-language/05_structures.rst:532
@@ -8408,7 +8408,7 @@ msgid "When checking an outgoing order by the :ref:`account script <03_ride-lang
 msgstr ""
 
 #: ../../03_ride-language/05_structures.rst:676
-msgid "In the :ref:`InvokeScriptTransaction <03_ride-language/05_structures:InvokeScriptTransaction>`."
+msgid "In the :ref:`InvokeScriptTransaction <03_ride-language/05_structures:InvokeScriptTransaction>` structure."
 msgstr ""
 
 #: ../../03_ride-language/05_structures.rst:686
@@ -9581,7 +9581,7 @@ msgid "Invocation Fields"
 msgstr ""
 
 #: ../../03_ride-language/07_dapp-to-app-invocation.rst:65
-msgid "For dApp-to-dApp invocation, the fields of :ref:`invocation <03_ride-language/05_structures:Invocation>` structure used by the invoked function are filled with the following values:"
+msgid "For dApp-to-dApp invocation, the fields of :ref:`Invocation <03_ride-language/05_structures:Invocation>` structure used by the invoked function are filled with the following values:"
 msgstr ""
 
 #: ../../_static/03_ride-language/tables/210_Invocation-Fields.csv:1
@@ -9938,4 +9938,3 @@ msgstr ""
 #: ../../03_ride-language/index.md:3
 msgid "Ride is a straightforward, developer-friendly functional programming language for smart contracts and decentralized applications (dApps) on the DecentralChain blockchain. Ride is a strong statically-typed, lazy, functional, expression-based compiled programming language. It is designed for building developer-friendly decentralized applications (dApps)."
 msgstr ""
-
