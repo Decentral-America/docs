@@ -33,7 +33,3 @@ msgstr "DecentralChain"
 #: ../../index.md:47
 msgid "Ride Language"
 msgstr "Lenguaje Ride"
-
-#~ msgid "DecentralChain Official Documentation"
-msgstr "Documentación Oficial DecentralChain"
-

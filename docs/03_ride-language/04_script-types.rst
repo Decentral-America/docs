@@ -66,7 +66,7 @@ After the directives, you can define auxiliary variables and functions. These va
 Callable Functions (dApp Script)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The callable function should be marked with the @Callable(i) annotation, where i is an :ref:`invocation <03_ride-language/05_structures:Invocation>` structure that contains fields of the script invocation that are accessible to the callable function. The variable name in the annotation is required even if the function does not use it. 
+The callable function should be marked with the @Callable(i) annotation, where i is an :ref:`Invocation <03_ride-language/05_structures:Invocation>` structure that contains fields of the script invocation that are accessible to the callable function. The variable name in the annotation is required even if the function does not use it. 
 Callable function result is a set of :ref:`script actions <03_ride-language/05_structures:Script Actions>` that are performed on the blockchain: adding/deleting/modifying entries to the account data storages, token transfers, issue/reissue/burning, and others. The result format and the available actions depend on the Standard library version used.
 For a detailed description, see the :ref:`callable function <03_ride-language/03_functions:Callable Functions>` article.
 
@@ -135,31 +135,31 @@ Data Accessible to dApp Script
 
 Data accessible to the callable function:
 
-* Particular fields of the invocation, including payments, fee, sender address and public key. See the :ref:`invocation <03_ride-language/05_structures:Invocation>` article for the fields description. Proofs are inaccessible.
+* Particular fields of the invocation, including payments, fee, sender address and public key. See the :ref:`Invocation <03_ride-language/05_structures:Invocation>` structure article for the fields description. Proofs are inaccessible.
 * Blockchain data: current height, account balances, entries in account data storages, parameters of tokens, etc.
 
 Data accessible to the verifier function:
 
-* Fields of the current verified transaction/order, including proofs. The built-in variable tx contains this transaction or order. The set of fields depends on the type of transaction/order, see the :ref:`transaction structures <03_ride-language/05_structures:Transaction Structures>` chapter and :ref:`order <03_ride-language/05_structures:Order>` article.
+* Fields of the current verified transaction/order, including proofs. The built-in variable tx contains this transaction or order. The set of fields depends on the type of transaction/order, see the :ref:`transaction structures <03_ride-language/05_structures:Transaction Structures>` chapter and :ref:`Order <03_ride-language/05_structures:Order>` structure article.
 * Blockchain data: current height, account balances, entries in account data storages, parameters of tokens, etc.
 
 Annotations
 -----------
 
-Annotation is a form of metadata that is added to a :ref:`function :ref:`functions <03_ride-language/03_functions:Functions>` of a :ref:`dApp script <03_ride-language/04_script-types:dApp Script>`. At the present moment, there are two annotations: @Callable(i) and @Verifier(tx). The variable name in the annotation is required even if the function does not use it.
+Annotation is a form of metadata that is added to a :ref:`function <03_ride-language/03_functions:Functions>` of a :ref:`dApp script <03_ride-language/04_script-types:dApp Script>`. At the present moment, there are two annotations: @Callable(i) and @Verifier(tx). The variable name in the annotation is required even if the function does not use it.
 An annotated function cannot be called inside a dApp script.
 
 @Callable(i)
 ^^^^^^^^^^^^
 
 Annotation of a :ref:`callable function <03_ride-language/03_functions:Callable Functions>`.
-Variable i contains an :ref:`invocation <03_ride-language/05_structures:Invocation>` structure representing certain fields of the invocation.
+Variable i contains an :ref:`Invocation <03_ride-language/05_structures:Invocation>` structure representing certain fields of the invocation.
 
 @Verifier(tx)
 ^^^^^^^^^^^^^
 
 Annotation of a verifier function.
-Variable tx contains a structure of transaction or :ref:`order <03_ride-language/05_structures:Order>` sent from a dApp's account.
+Variable tx contains a structure of transaction or order sent from a dApp's account.
 
 Callable Function
 ------------------
@@ -179,7 +179,7 @@ The invocation can contain payments to dApp. Tokens obtained in these payments c
 Annotation
 ^^^^^^^^^^
 
-The callable function should be marked with the @Callable(i) annotation, where i is an :ref:`invocation <03_ride-language/05_structures:Invocation>` structure that contains invocation fields that are available to the callable function. The variable name in the annotation is required even if the callable function does not use it.
+The callable function should be marked with the @Callable(i) annotation, where i is an :ref:`Invocation <03_ride-language/05_structures:Invocation>` structure that contains invocation fields that are available to the callable function. The variable name in the annotation is required even if the callable function does not use it.
 
 Arguments
 ^^^^^^^^^
@@ -418,7 +418,7 @@ Data Accessible to Account Script
 
 The following data can be used for checks:
 
-* Fields of the current verified transaction/order, including proofs. The built-in variable tx contains this transaction or order. The set of fields depends on the type of transaction/order, see the :ref:`transaction structures <03_ride-language/05_structures:Transaction Structures>` chapter and :ref:`order <03_ride-language/05_structures:Order>` article.
+* Fields of the current verified transaction/order, including proofs. The built-in variable tx contains this transaction or order. The set of fields depends on the type of transaction/order, see the :ref:`transaction structures <03_ride-language/05_structures:Transaction Structures>` chapter and :ref:`Order <03_ride-language/05_structures:Order>` structure article.
 * Blockchain data: current height, account balances, entries in account data storages, parameters of tokens, etc.
 
 Asset Script

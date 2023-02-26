@@ -276,7 +276,7 @@ See the :ref:`issue transaction binary format <02_decentralchain/10_binary-forma
 
 :strong:`Ride Structure`
 
-The :ref:`IssueTransaction structure <03_ride-language/05_structures:IssueTransaction>` is used for transaction handling in smart contracts.
+The :ref:`IssueTransaction <03_ride-language/05_structures:IssueTransaction>` structure is used for transaction handling in smart contracts.
 
 Reissue Transaction
 ^^^^^^^^^^^^^^^^^^^
@@ -326,7 +326,7 @@ See the :ref:`reissue transaction binary format <02_decentralchain/10_binary-for
 
 :strong:`Ride Structure`
 
-The :ref:`ReissueTransaction structure <03_ride-language/05_structures:ReissueTransaction>` is used for transaction handling in smart contracts.
+The :ref:`ReissueTransaction <03_ride-language/05_structures:ReissueTransaction>` structure is used for transaction handling in smart contracts.
 
 Burn Transaction
 ^^^^^^^^^^^^^^^^
@@ -375,7 +375,7 @@ See the :ref:`burn transaction binary format <02_decentralchain/10_binary-format
 
 :strong:`Ride Structure`
 
-The :ref:`BurnTransaction structure <03_ride-language/05_structures:BurnTransaction>` is used for transaction handling in smart contracts.
+The :ref:`BurnTransaction <03_ride-language/05_structures:BurnTransaction>` structure is used for transaction handling in smart contracts.
 
 Set Asset Script Transaction
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -424,7 +424,7 @@ See the :ref:`set asset script transaction binary format <02_decentralchain/10_b
 
 :strong:`Ride Structure`
 
-The :ref:`SetAssetScriptTransaction structure <03_ride-language/05_structures:SetAssetScriptTransaction>` is used for transaction handling in smart contracts.
+The :ref:`SetAssetScriptTransaction <03_ride-language/05_structures:SetAssetScriptTransaction>` structure is used for transaction handling in smart contracts.
 
 Update Asset Info Transaction
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -475,7 +475,7 @@ See the :ref:`update asset info transaction binary format <02_decentralchain/10_
 
 :strong:`Ride Structure`
 
-The :ref:`UpdateAssetInfoTransaction structure <03_ride-language/05_structures:UpdateAssetInfoTransaction>` is used for transaction handling in smart contracts.
+The :ref:`UpdateAssetInfoTransaction <03_ride-language/05_structures:UpdateAssetInfoTransaction>` structure is used for transaction handling in smart contracts.
 
 Usage
 -----
@@ -536,7 +536,7 @@ See the :ref:`transfer transaction binary format <02_decentralchain/10_binary-fo
 
 :strong:`Ride Structure`
 
-The :ref:`TransferTransaction structure <03_ride-language/05_structures:TransferTransaction>` is used for transaction handling in smart contracts.
+The :ref:`TransferTransaction <03_ride-language/05_structures:TransferTransaction>` structure is used for transaction handling in smart contracts.
 
 Exchange Transaction
 ^^^^^^^^^^^^^^^^^^^^
@@ -642,7 +642,7 @@ See the :ref:`exchange transaction binary format <02_decentralchain/10_binary-fo
 
 :strong:`Ride Structure`
 
-The :ref:`ExchangeTransaction structure <03_ride-language/05_structures:ExchangeTransaction>` is used for transaction handling in smart contracts.
+The :ref:`ExchangeTransaction <03_ride-language/05_structures:ExchangeTransaction>` structure is used for transaction handling in smart contracts.
 
 Create Alias Transaction
 ^^^^^^^^^^^^^^^^^^^^^^^^
@@ -689,7 +689,7 @@ See the :ref:`create alias transaction binary format <02_decentralchain/10_binar
 
 :strong:`Ride Structure`
 
-The :ref:`CreateAliasTransaction structure <03_ride-language/05_structures:CreateAliasTransaction>` is used for transaction handling in smart contracts.
+The :ref:`CreateAliasTransaction <03_ride-language/05_structures:CreateAliasTransaction>` structure is used for transaction handling in smart contracts.
 
 Mass Transfer Transaction
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -756,7 +756,7 @@ See the :ref:`mass transfer transaction binary format <02_decentralchain/10_bina
 
 :strong:`Ride Structure`
 
-The :ref:`MassTransferTransaction structure <03_ride-language/05_structures:MassTransferTransaction>` is used for transaction handling in smart contracts.
+The :ref:`MassTransferTransaction <03_ride-language/05_structures:MassTransferTransaction>` structure is used for transaction handling in smart contracts.
 
 Data Transaction
 ^^^^^^^^^^^^^^^^
@@ -876,7 +876,7 @@ See the :ref:`set script transaction binary format <02_decentralchain/10_binary-
 
 :strong:`Ride Structure`
 
-The :ref:`SetScriptTransaction structure <03_ride-language/05_structures:SetScriptTransaction>` is used for transaction handling in smart contracts.
+The :ref:`SetScriptTransaction <03_ride-language/05_structures:SetScriptTransaction>` structure is used for transaction handling in smart contracts.
 
 Invoke Script Transaction
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -978,7 +978,7 @@ See the :ref:`invoke script transaction binary format <02_decentralchain/10_bina
 
 :strong:`Ride Structure`
 
-The :ref:`InvokeScriptTransaction structure <03_ride-language/05_structures:InvokeScriptTransaction>` is used for transaction handling in smart contracts.
+The :ref:`InvokeScriptTransaction <03_ride-language/05_structures:InvokeScriptTransaction>` structure is used for transaction handling in smart contracts.
 
 Network
 -------
@@ -1041,7 +1041,7 @@ See the :ref:`lease transaction binary format <02_decentralchain/10_binary-forma
 
 :strong:`Ride Structure`
 
-The :ref:`LeaseTransaction structure <03_ride-language/05_structures:LeaseTransaction>` is used for transaction handling in smart contracts.
+The :ref:`LeaseTransaction <03_ride-language/05_structures:LeaseTransaction>` structure is used for transaction handling in smart contracts.
 
 Lease Cancel Transaction
 ^^^^^^^^^^^^^^^^^^^^^^^^
@@ -1101,7 +1101,7 @@ See the :ref:`lease cancel transaction binary format <02_decentralchain/10_binar
 
 :strong:`Ride Structure`
 
-The :ref:`LeaseCancelTransaction structure <03_ride-language/05_structures:LeaseCancelTransaction>` is used for transaction handling in smart contracts.
+The :ref:`LeaseCancelTransaction <03_ride-language/05_structures:LeaseCancelTransaction>` structure is used for transaction handling in smart contracts.
 
 Sponsor Fee Transaction
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -1151,7 +1151,7 @@ See the :ref:`sponsor fee transaction binary format <02_decentralchain/10_binary
 
 :strong:`Ride Structure`
 
-The :ref:`SponsorFeeTransaction structure <03_ride-language/05_structures:SponsorFeeTransaction>` is used for transaction handling in smart contracts.
+The :ref:`SponsorFeeTransaction <03_ride-language/05_structures:SponsorFeeTransaction>` structure is used for transaction handling in smart contracts.
 
 Genesis
 -------
