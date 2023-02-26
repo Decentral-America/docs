@@ -9,7 +9,7 @@
 ":math:`8`", "expiration", ":ref:`Int <03_ride-language/02_data-types:Int>`", "Unix time when an uncompleted order will be cancelled."
 ":math:`9`", "matcherFee", ":ref:`Int <03_ride-language/02_data-types:Int>`", ":ref:`Transaction fee <02_decentralchain/03_transaction:Transaction Fees>`."
 ":math:`10`", "matcherFeeAssetId", ":ref:`ByteVector <03_ride-language/02_data-types:ByteVector>` | :ref:`Unit <03_ride-language/02_data-types:Unit>`", "Token of a transaction fee. It can only be :ref:`DecentralCoins <02_decentralchain/02_token(asset):DecentralCoin>`."
-":math:`11`", "sender", ":ref:`address <03_ride-language/05_structures:Address>`", ":ref:`address <02_decentralchain/01_account:Address>` of the sender of an order."
+":math:`11`", "sender", ":ref:`Address <03_ride-language/05_structures:Address>`", ":ref:`address <02_decentralchain/01_account:Address>` of the sender of an order."
 ":math:`12`", "senderPublicKey", ":ref:`ByteVector <03_ride-language/02_data-types:ByteVector>`", "Public key of the sender of an order."
 ":math:`13`", "bodyBytes", ":ref:`ByteVector <03_ride-language/02_data-types:ByteVector>`", "Array of bytes of an order."
 ":math:`14`", "proofs", ":ref:`List <03_ride-language/02_data-types:List>` [:ref:`ByteVector <03_ride-language/02_data-types:ByteVector>`]", "Array of proofs."

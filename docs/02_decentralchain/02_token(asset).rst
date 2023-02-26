@@ -36,7 +36,7 @@ You can use `Decentral.Exchange <https://decentral.exchange/>`_ online to create
 * On the next screen double-check the entered data and if everything is correct click Send to finish the creation or click Go Back to make corrections..
 
 The transaction fee is :math:`1` DecentralCoin for a regular token or :math:`0.001` DecentralCoins for a :ref:`non-fungible token (NFT) <02_decentralchain/02_token(asset):Non-Fungible Token>`.
-Moreover, the token can be issued by the :ref:`dApp script <03_ride-language/04_script-types:dApp Script>` as a result of the :ref:`invoke script transaction <02_decentralchain/03_transaction:Invoke Script Transaction>` when the callable function result contains the :ref:`issue action <03_ride-language/05_structures:Issue>`. The minimum fee for invoke script transaction is increased by :math:`1` DecentralCoin for each non-NFT token issued.
+Moreover, the token can be issued by the :ref:`dApp script <03_ride-language/04_script-types:dApp Script>` as a result of the :ref:`invoke script transaction <02_decentralchain/03_transaction:Invoke Script Transaction>` when the callable function result contains the :ref:`Issue <03_ride-language/05_structures:Issue>` action. The minimum fee for invoke script transaction is increased by :math:`1` DecentralCoin for each non-NFT token issued.
 
 Token ID
 ========
@@ -44,7 +44,7 @@ Token ID
 Token ID is a byte array calculated as follows:
 
 * If the token is issued by :ref:`issue transaction <02_decentralchain/03_transaction:Issue Transaction>`, the token ID is the same as the transaction ID.
-* If the token is issued by :ref:`invoke script transaction <02_decentralchain/03_transaction:Invoke Script Transaction>` when the callable function of :ref:`dApp script <02_decentralchain/01_account:dApp and Smart Account>` performed the :ref:`issue action <03_ride-language/05_structures:Issue>`, the token ID is calculated as the BLAKE2b-256 hash of the byte array containing transaction ID and the fields of the Issue structure.
+* If the token is issued by :ref:`invoke script transaction <02_decentralchain/03_transaction:Invoke Script Transaction>` when the callable function of :ref:`dApp script <02_decentralchain/01_account:dApp and Smart Account>` performed the :ref:`Issue <03_ride-language/05_structures:Issue>` action, the token ID is calculated as the BLAKE2b-256 hash of the byte array containing transaction ID and the fields of the Issue structure.
 
 In the :ref:`Node REST API <documentation:placeholder>`, the token identifier is encoded in base58. For example:
 
@@ -60,7 +60,7 @@ Token Operations
 * Transfer to another account
 
 Can be done via a :ref:`transfer transaction <02_decentralchain/03_transaction:Transfer Transaction>` or a :ref:`mass transfer transaction <02_decentralchain/03_transaction:Mass Transfer Transaction>`.
-A :ref:`dApp script <02_decentralchain/01_account:dApp and Smart Account>` can transfer the token via a :ref:`script transfer script action <03_ride-language/05_structures:Issue>` as a result of an :ref:`invoke script transaction <02_decentralchain/03_transaction:Invoke Script Transaction>`.
+A :ref:`dApp script <02_decentralchain/01_account:dApp and Smart Account>` can transfer the token via a :ref:`ScriptTransfer <03_ride-language/05_structures:ScriptTransfer>` script action as a result of an :ref:`invoke script transaction <02_decentralchain/03_transaction:Invoke Script Transaction>`.
 
 * Exchange (trade deal)
 
@@ -69,7 +69,7 @@ Three accounts can participate in the exchange: one user creates an :ref:`order 
 * Burning
 
 Decreases the amount of token on the account and thereby the total amount of the token on the blockchain. Any token owner can burn it, not only the issuer. It is impossible to burn :ref:`DecentralCoin <02_decentralchain/02_token(asset):DecentralCoin>`. Can be done via a :ref:`burn transaction <02_decentralchain/03_transaction:Burn Transaction>`.
-A dApp script can burn the token via a :ref:`burn script action <03_ride-language/05_structures:Burn>` as a result of the Invoke script transaction.
+A dApp script can burn the token via a :ref:`Burn <03_ride-language/05_structures:Burn>` script action as a result of the Invoke script transaction.
 
 * Payment to :ref:`dApp <02_decentralchain/01_account:dApp and Smart Account>`
 
@@ -87,7 +87,7 @@ The token issuer can enable sponsorship which allows all users to pay fees in th
 * Reissue
 
 Increases the amount of token on the blockchain. The reissuable field of token determines whether the token can be reissued. Can be done via a :ref:`reissue transaction <02_decentralchain/03_transaction:Reissue Transaction>`.
-A dApp script can reissue the token via a :ref:`reissue script action <03_ride-language/05_structures:Reissue>` as a result of the invoke script transaction.
+A dApp script can reissue the token via a :ref:`Reissue <03_ride-language/05_structures:Reissue>` script action as a result of the invoke script transaction.
 
 * Replacing the asset script
 

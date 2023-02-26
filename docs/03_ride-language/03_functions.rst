@@ -461,7 +461,7 @@ Gets the corresponding :ref:`address <02_decentralchain/01_account:Address>` of 
 
  addressFromRecipient(AddressOrAlias: Address|Alias): Address
 
-For a description of the return value, see the :ref:`address <03_ride-language/05_structures:Address>` article.
+For a description of the return value, see the :ref:`Address <03_ride-language/05_structures:Address>` structure article.
 
 :strong:`Parameters`
 
@@ -504,7 +504,7 @@ Gets the information about a :ref:`token (asset) <02_decentralchain/02_token(ass
 
  assetInfo(id: ByteVector): Asset|Unit
 
-For a description of the return value, see the :ref:`BlockInfo <03_ride-language/05_structures:BlockInfo>` article.
+For a description of the return value, see the :ref:`BlockInfo <03_ride-language/05_structures:BlockInfo>` structure article.
 
 :strong:`Parameters`
 
@@ -534,7 +534,7 @@ Gets the information about a :ref:`block <02_decentralchain/04_block:Block>` by 
 
  blockInfoByHeight(height: Int): BlockInfo|Unit
 
-For a description of the return value, see the :ref:`BlockInfo <03_ride-language/05_structures:BlockInfo>` article.
+For a description of the return value, see the :ref:`BlockInfo <03_ride-language/05_structures:BlockInfo>` structure article.
 
 :strong:`Parameters`
 
@@ -557,7 +557,7 @@ For a description of the return value, see the :ref:`BlockInfo <03_ride-language
 calculateAssetId(Issue): ByteVector
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Calculates ID of the token formed by the :ref:`issue structure <03_ride-language/05_structures:Issue>` when executing the :ref:`callable function <03_ride-language/03_functions:Callable Functions>`.
+Calculates ID of the token formed by the :ref:`Issue <03_ride-language/05_structures:Issue>` structure when executing the :ref:`callable function <03_ride-language/03_functions:Callable Functions>`.
 
 .. code-block:: none
 
@@ -595,7 +595,7 @@ Calculates ID of the token formed by the :ref:`issue structure <03_ride-language
 calculateLeaseId(Lease): ByteVector
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Calculates ID of the lease formed by the :ref:`lease structure <03_ride-language/05_structures:Lease>` when executing the :ref:`callable function <03_ride-language/03_functions:Callable Functions>`.
+Calculates ID of the lease formed by the :ref:`Lease <03_ride-language/05_structures:Lease>` structure when executing the :ref:`callable function <03_ride-language/03_functions:Callable Functions>`.
 
 .. code-block:: none
 
@@ -690,7 +690,7 @@ Gets the data of a :ref:`transfer transaction <02_decentralchain/03_transaction:
 
  transferTransactionById(id: ByteVector): TransferTransaction|Unit
 
-For a description of the return value, see the :ref:`TransferTransaction <03_ride-language/05_structures:TransferTransaction>` article.
+For a description of the return value, see the :ref:`TransferTransaction <03_ride-language/05_structures:TransferTransaction>` structure article.
 
 :strong:`Parameters`
 
@@ -885,7 +885,7 @@ Gets the corresponding :ref:`address <02_decentralchain/01_account:Address>` of 
 
  addressFromPublicKey(publicKey: ByteVector): Address
 
-For a description of the return value, see the :ref:`address <03_ride-language/05_structures:Address>` article.
+For a description of the return value, see the :ref:`Address <03_ride-language/05_structures:Address>` structure article.
 
 :strong:`Parameters`
 
@@ -1313,7 +1313,7 @@ Deserializes transfer transaction: converts protobuf-encoded :ref:`binary format
 
  transferTransactionFromProto(b: ByteVector): TransferTransaction|Unit
 
-For a description of the return value, see the :ref:`TransferTransaction <03_ride-language/05_structures:TransferTransaction>` article.
+For a description of the return value, see the :ref:`TransferTransaction <03_ride-language/05_structures:TransferTransaction>` structure article.
 
 :strong:`Parameters`
 
@@ -1362,7 +1362,7 @@ To ensure executing callable functions and applying their actions in the right o
 
 The invocation can contain payments that will be transferred from the balance of the parent dApp to the balance of the invoked dApp. Payments are forbidden if the dApp invokes itself.
 
-If a payment token is a smart asset, the asset script verifies the invoke as if it was :ref:`InvokeScriptTransaction <03_ride-language/05_structures:InvokeScriptTransaction>` with the following fields:
+If a payment token is a smart asset, the asset script verifies the invoke as if it was :ref:`InvokeScriptTransaction <03_ride-language/05_structures:InvokeScriptTransaction>` structure with the following fields:
 
 * DApp, payments, function, args indicated in the invoke function.
 * Sender, senderPublicKey of the dApp that performs the invocation.
@@ -1491,7 +1491,7 @@ For example, the invocation stack:
 Data Transaction Functions
 --------------------------
 
-The functions listed below retrieve data by key from the :ref:`data transaction structure <03_ride-language/05_structures:DataTransaction>` or from any list of data entries.
+The functions listed below retrieve data by key from the :ref:`DataTransaction <03_ride-language/05_structures:DataTransaction>` structure or from any list of data entries.
 
 .. csv-table:: Data Transaction Functions
   :file: ../_static/03_ride-language/tables/071_Data-Transaction-Functions.csv
@@ -1789,7 +1789,7 @@ Decodes address from base58 string.
 
  addressFromString(string: String): Address|Unit
 
-For a description of the return value, see the :ref:`address <03_ride-language/05_structures:Address>` article.
+For a description of the return value, see the :ref:`Address <03_ride-language/05_structures:Address>` structure article.
 
 :strong:`Parameters`
 
@@ -1814,7 +1814,7 @@ Decodes address from base58 string. Fails if the address cannot be decoded.
 
  addressFromStringValue(string: String): Address
 
-For a description of the return value, see the :ref:`address <03_ride-language/05_structures:Address>` article.
+For a description of the return value, see the :ref:`Address <03_ride-language/05_structures:Address>` structure article.
 
 :strong:`Parameters`
 

@@ -519,7 +519,7 @@ Get the account balance in a given asset:
 AssetPair
 ---------
 
-Structure of a pair of :ref:`tokens <02_decentralchain/02_token(asset):Token (Asset)>` of an order within the :ref:`order <03_ride-language/05_structures:Order>` structure.
+Structure of a pair of :ref:`tokens <02_decentralchain/02_token(asset):Token (Asset)>` of an order within the :ref:`Order <03_ride-language/05_structures:Order>` structure.
 
 :strong:`Constructor`
 
@@ -673,7 +673,7 @@ Order
 Structure of an order :ref:`dApp-to-dApp invocation <03_ride-language/07_dapp-to-app-invocation:dApp-to-App Invocation>`. The structure is used:
 
 * When checking an outgoing order by the :ref:`account script <03_ride-language/04_script-types:Account Script>` or the verifier function of the :ref:`dApp script <03_ride-language/04_script-types:dApp Script>`.
-* In the :ref:`InvokeScriptTransaction <03_ride-language/05_structures:InvokeScriptTransaction>`.
+* In the :ref:`InvokeScriptTransaction <03_ride-language/05_structures:InvokeScriptTransaction>` structure.
 
 :strong:`Constructor`
 
