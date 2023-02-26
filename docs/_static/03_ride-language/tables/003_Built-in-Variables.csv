@@ -6,6 +6,6 @@
 ":math:`5`", "nil", "Variable that contains an empty list. The variable is used for creating :ref:`lists <03_ride-language/02_data-types:List>`. For example, instead of: let a = [5,6]."
 ":math:`6`", "\1) NOALG. 2) MD5. 3) SHA1. 4) SHA224. 5) SHA256. 6) SHA384. 7) SHA512. 8) SHA3224. 9) SHA3256. 10) SHA3384. 11) SHA3512.", "Variables that are passed as the first parameter to the rsaVerify function."
 ":math:`7`", "Sell", "Order type."
-":math:`8`", "this", "\1) For a :ref:`dApp script <03_ride-language/04_script-types:dApp Script>` or an :ref:`account script <03_ride-language/04_script-types:Account Script>`: the :ref:`address <03_ride-language/05_structures:Address>` structure. 2) For an :ref:`asset script <03_ride-language/04_script-types:Asset Script>`: the :ref:`asset <03_ride-language/03_functions:Math Functions>` structure."
+":math:`8`", "this", "\1) For a :ref:`dApp script <03_ride-language/04_script-types:dApp Script>` or an :ref:`account script <03_ride-language/04_script-types:Account Script>`: the :ref:`Address <03_ride-language/05_structures:Address>` structure. 2) For an :ref:`asset script <03_ride-language/04_script-types:Asset Script>`: the :ref:`asset <03_ride-language/03_functions:Math Functions>` structure."
 ":math:`9`", "tx", ":ref:`Transaction <02_decentralchain/03_transaction:Transaction>` or order."
 ":math:`10`", "unit", "Variable that contains an object of Unit type."

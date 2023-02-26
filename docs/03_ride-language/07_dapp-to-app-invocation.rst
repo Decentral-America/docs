@@ -62,7 +62,7 @@ The invoke and reentrantInvoke functions differ only in the reentrancy restricti
 Invocation Fields
 =================
 
-For dApp-to-dApp invocation, the fields of :ref:`invocation <03_ride-language/05_structures:Invocation>` structure used by the invoked function are filled with the following values:
+For dApp-to-dApp invocation, the fields of :ref:`Invocation <03_ride-language/05_structures:Invocation>` structure used by the invoked function are filled with the following values:
 
 .. csv-table:: Invocation Fields
   :file: ../_static/03_ride-language/tables/210_Invocation-Fields.csv

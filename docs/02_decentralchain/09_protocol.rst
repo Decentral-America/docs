@@ -207,8 +207,10 @@ Microblock Structure
   totalResBlockSig: BlockId
   signature: ByteStr
 
-totalResBlockSigis the new total signature of a block with all transactions from blockId=prevResBlockSigand owntransactionData. This means that having a_liquid block_consisting of 1_keyblock_and 3_microblock_s:
+totalResBlockSig is the new total signature of a block with all transactions from blockId=prevResBlockSig and transactionData. This means that having a liquid block consisting of 1 keyblock and 3 microblocks:
+
 KEYBLOCK() <-MICRO1(tx1,tx2) <-MICRO2(tx3,tx4) <-MICRO3(tx5,tx6)
+
 We have 4 versions of last block:
 
 .. csv-table:: Microblock Structure
@@ -246,7 +248,7 @@ API changes
 
 * Upon applying every microblock, the last block gets changed, which means/blocks/lastand/blocks/at/...will reflect that.
 * /peers/blacklistednow expose ban reason, one can clear a node's blacklist via/peers/clearblacklist
-* /debug/and/consensus/section are expanded, _stateHash _doesn't take _liquid block _into consideration.
+* /debug/and/consensus/section are expanded, stateHash doesn't take liquid block into consideration.
 
 DecentralChain-M5 Protocol
 ==========================
@@ -370,7 +372,7 @@ We analyzed the model of the new algorithm for its correspondence to the stake s
 Blockchain Data Types
 =====================
 
-The blockchain data types are the data types that are used to describe 02_decentralchain of blockchain entities. Here’s a list of blockchain data types:
+The blockchain data types are the data types that are used to describe the :ref:`binary format <02_decentralchain/10_binary-format:Binary Format>` of blockchain entities. Here’s a list of blockchain data types:
 
 .. csv-table:: Blockchain Data Types
   :file: ../_static/02_decentralchain/tables/034_Blockchain-Data-Types.csv 
