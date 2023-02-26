@@ -568,7 +568,7 @@ msgstr "Para operar en `Decentral.Exchange <https://decentral.exchange/>`_ (exce
 
 #: ../../02_decentralchain/02_token(asset).rst:17
 msgid "For payments attached to dApp :ref:`script invocation <02_decentralchain/03_transaction:Invoke Script Transaction>`."
-msgstr "Para pagos adjuntos a la: ref: `invocación de script <02_decentralchain/03_transaction: Invoke Script Transaction>` de una dApp."
+msgstr "Para pagos adjuntos a la :ref:`invocación de script <02_decentralchain/03_transaction:Invoke Script Transaction>` de una dApp."
 
 #: ../../02_decentralchain/02_token(asset).rst:20
 msgid "Token Issue"
@@ -988,7 +988,7 @@ msgstr "assetId"
 
 #: ../../_static/02_decentralchain/tables/001_Token-Custom-Parameters.csv:1
 msgid "Token ID: base58 encoded byte array. The token ID is calculated as a hash of the token parameters upon issue. See also the :ref:`token ID <02_decentralchain/02_token(asset):Token ID>` article."
-msgstr "ID de token: matriz de bytes codificados en base58. El identificador del token se calcula como un hash de los parámetros del token en el momento de la emisión. Consulte también el artículo :ref:` ID del token <02_decentralchain/02_token(asset):Token ID>`."
+msgstr "ID de token: matriz de bytes codificados en base58. El identificador del token se calcula como un hash de los parámetros del token en el momento de la emisión. Consulte también el artículo sobre el :ref:`ID del token <02_decentralchain/02_token(asset):Token ID>`."
 
 #: ../../_static/02_decentralchain/tables/001_Token-Custom-Parameters.csv:1
 msgid "issueHeight"
@@ -2825,7 +2825,7 @@ msgstr "Transacción para Transferencia Masiva"
 
 #: ../../02_decentralchain/03_transaction.rst:697
 msgid "Mass transfer transaction transfers a :ref:`token <02_decentralchain/02_token(asset):Token (Asset)>` to several accounts, from :math:`1` :ref:`DecentralCoin <02_decentralchain/02_token(asset):DecentralCoin>` to :math:`100` DecentralCoins ."
-msgstr "La transacción para transferencia masiva transfiere un :ref:`token <02_decentralchain/02_token(asset):Token (Asset)>` a varias cuentas, desde :math:`1` :ref:`DecentralCoin <02_decentralchain/02_token(asset):DecentralCoin> ` a :math:`100` DecentralCoins ."
+msgstr "La transacción para transferencia masiva transfiere un :ref:`token <02_decentralchain/02_token(asset):Token (Asset)>` a varias cuentas, desde :math:`1` :ref:`DecentralCoin <02_decentralchain/02_token(asset):DecentralCoin>` a :math:`100` DecentralCoins ."
 
 #: ../../02_decentralchain/03_transaction.rst:701
 msgid "The :ref:`minimum fee <02_decentralchain/03_transaction:Minimum Fee>` for a Mass Transfer transaction is :math:`0.001 + 0.0005 × N` DecentralCoins, in case of transferring a :ref:`smart asset <02_decentralchain/02_token(asset):Smart Asset>` :math:`0.001 + 0.0005 × N` DecentralCoins, where :math:`N` DecentralCoins is the number of recipients. The fee value is rounded up to three decimals."
@@ -2884,7 +2884,7 @@ msgstr "Transacción para Datos"
 
 #: ../../02_decentralchain/03_transaction.rst:764
 msgid "Data transaction adds, modifies and deletes data entries in sender's :ref:`account data storage <02_decentralchain/01_account:Account Data Storage>`. Limitations are as follows:"
-msgstr "La transacción de datos agrega, modifica y elimina entradas de datos en el :ref:`almacenamiento de datos de la cuenta <02_decentralchain/01_account:Account Data Storage> del remitente. Las limitaciones son las siguientes:"
+msgstr "La transacción de datos agrega, modifica y elimina entradas de datos en el :ref:`almacenamiento de datos de la cuenta <02_decentralchain/01_account:Account Data Storage>` del remitente. Las limitaciones son las siguientes:"
 
 #: ../../02_decentralchain/03_transaction.rst:766
 msgid "The maximum number of entries is :math:`100`."
@@ -3764,7 +3764,7 @@ msgstr "Recompensa de Bloque"
 
 #: ../../02_decentralchain/05_node.rst:54
 msgid "Block reward is a blockchain feature under which :ref:`generating nodes <02_decentralchain/05_node:Generating Node>` receive a fixed fee in :ref:`DecentralCoins <02_decentralchain/02_token(asset):DecentralCoin>` for each :ref:`generated block <02_decentralchain/04_block:Block Generation>`. Block rewards are paid due to the additional issue of the DecentralCoin token. The community of generating nodes can change the size of reward through voting."
-msgstr "La recompensa de bloque es una función de cadena de bloques en virtud de la cual los :ref:`nodos generadores <02_decentralchain/05_node:Generating Node>` reciben una tarifa fija en :ref:`DecentralCoins <02_decentralchain/02_token(asset):DecentralCoin>` por cada :ref:` bloque generado <02_decentralchain/04_block:Block Generation>`. Las recompensas en bloque se pagan debido a la emisión adicional del token DecentralCoin. La comunidad de nodos generadores puede cambiar el tamaño de la recompensa mediante la votación."
+msgstr "La recompensa de bloque es una función de cadena de bloques en virtud de la cual los :ref:`nodos generadores <02_decentralchain/05_node:Generating Node>` reciben una tarifa fija en :ref:`DecentralCoins <02_decentralchain/02_token(asset):DecentralCoin>` por cada :ref:`bloque generado <02_decentralchain/04_block:Block Generation>`. Las recompensas en bloque se pagan debido a la emisión adicional del token DecentralCoin. La comunidad de nodos generadores puede cambiar el tamaño de la recompensa mediante la votación."
 
 #: ../../02_decentralchain/05_node.rst:59
 msgid "Current Reward Size"
