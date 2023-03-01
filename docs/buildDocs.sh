@@ -61,6 +61,8 @@ for current_version in ${versions}; do
       continue
    fi
  
+   #python ./docs/scripts/generate_gallery_images.py
+   
    languages="en `find docs/locales/ -mindepth 1 -maxdepth 1 -type d -exec basename '{}' \;`"
    for current_language in ${languages}; do
  
