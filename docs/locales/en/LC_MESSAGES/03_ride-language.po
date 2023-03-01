@@ -1,7 +1,6 @@
-# SOME DESCRIPTIVE TITLE.
+# DecentralChain is an open blockchain protocol and development toolset for Web 3.0 applications and decentralized solutions.
 # Copyright (C) 2023, Blockchain Costa Rica
-# This file is distributed under the same license as the DecentralChain
-# package.
+# This file is distributed under the same license as the DecentralChain package.
 # Josue Rojas <josue.rojas@decentralchain.io>, 2023.
 #
 #, fuzzy
@@ -9931,10 +9930,58 @@ msgstr ""
 msgid ":math:`W_{AssetPair} = 40 + 30 × 2 + (32 + 40) = 172`"
 msgstr ""
 
-#: ../../03_ride-language/index.md:1 ../../03_ride-language/index.md:5
+#: ../../03_ride-language/index.md:1 ../../03_ride-language/index.md:22
 msgid "Ride Language"
 msgstr ""
 
 #: ../../03_ride-language/index.md:3
-msgid "Ride is a straightforward, developer-friendly functional programming language for smart contracts and decentralized applications (dApps) on the DecentralChain blockchain. Ride is a strong statically-typed, lazy, functional, expression-based compiled programming language. It is designed for building developer-friendly decentralized applications (dApps)."
+msgid "Ride is a straightforward, developer-friendly functional programming language for smart contracts and decentralized applications (dApps) on the DecentralChain blockchain. Ride is a strong statically-typed, lazy, functional, expression-based compiled programming language."
+msgstr ""
+
+#: ../../03_ride-language/index.md:18
+msgid "Statically-Typed"
+msgstr ""
+
+#: ../../03_ride-language/index.md:22
+msgid "Variable types are explicitly declared and thus are determined at compile time."
+msgstr ""
+
+#: ../../03_ride-language/index.md:34
+msgid "Lazy evaluation"
+msgstr ""
+
+#: ../../03_ride-language/index.md:38
+msgid "Evaluation of expressions is delayed until their values are actually needed."
+msgstr ""
+
+#: ../../03_ride-language/index.md:50
+msgid "Functional Programs"
+msgstr ""
+
+#: ../../03_ride-language/index.md:54
+msgid "Programming paradigm where programs are constructed by applying and composing functions"
+msgstr ""
+
+#: ../../03_ride-language/index.md:66
+msgid "Expression-Based"
+msgstr ""
+
+#: ../../03_ride-language/index.md:70
+msgid "Every (or nearly every) construction is an expression and thus yields a value."
+msgstr ""
+
+#: ../../03_ride-language/index.md:82
+msgid "Compiled Language"
+msgstr ""
+
+#: ../../03_ride-language/index.md:86
+msgid "Converted directly into machine code that the processor can execute."
+msgstr ""
+
+#: ../../03_ride-language/index.md:98
+msgid "Non-Turing Complete"
+msgstr ""
+
+#: ../../03_ride-language/index.md:102
+msgid "Limitations by design help ensure execution is secure and straightforward."
 msgstr ""

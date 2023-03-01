@@ -48,6 +48,7 @@ def regenerate_gallery():
             for ii in range(3):
                 try:
                     page.goto(item["website"])
+                    page.wait_for_load_state('networkidle')
                     page.screenshot(path=screenshot)
                     break
                 except TimeoutError:

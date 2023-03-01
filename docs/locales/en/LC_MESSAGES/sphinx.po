@@ -1,7 +1,6 @@
-# SOME DESCRIPTIVE TITLE.
+# DecentralChain is an open blockchain protocol and development toolset for Web 3.0 applications and decentralized solutions.
 # Copyright (C) 2023, Blockchain Costa Rica
-# This file is distributed under the same license as the DecentralChain
-# package.
+# This file is distributed under the same license as the DecentralChain package.
 # Josue Rojas <josue.rojas@decentralchain.io>, 2023.
 #
 #, fuzzy
@@ -103,4 +102,3 @@ msgstr ""
 #: ../../_templates/versions.html:45
 msgid "Builds"
 msgstr ""
-

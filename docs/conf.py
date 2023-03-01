@@ -109,11 +109,11 @@ html_theme_options = {
             "url": "https://www.instagram.com/decentralchain/",
             "icon": "fa-brands fa-instagram",
         },
-        {
-            "name": "Medium",
-            "url": "https://medium.com/@decentralchain",
-            "icon": "fa-brands fa-medium",
-        },
+        #{
+        #    "name": "Medium",
+        #    "url": "https://medium.com/@decentralchain",
+        #    "icon": "fa-brands fa-medium",
+        #},
     ],
     "header_links_before_dropdown": 3,
     "logo": {
