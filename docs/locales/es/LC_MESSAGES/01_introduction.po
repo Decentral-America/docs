@@ -1,7 +1,6 @@
-# SOME DESCRIPTIVE TITLE.
+# DecentralChain is an open blockchain protocol and development toolset for Web 3.0 applications and decentralized solutions.
 # Copyright (C) 2023, Blockchain Costa Rica
-# This file is distributed under the same license as the DecentralChain
-# package.
+# This file is distributed under the same license as the DecentralChain package.
 # Josue Rojas <josue.rojas@decentralchain.io>, 2023.
 #
 #, fuzzy
@@ -18,372 +17,382 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.11.0\n"
 
-#: ../../01_introduction.rst:3 ../../01_introduction/index.md:1
+#: ../../01_introduction.md:1 ../../01_introduction/index.md:1
 #: ../../01_introduction/index.md:3
 msgid "Introduction"
 msgstr "Introducción"
 
-#: ../../01_introduction.rst:5
+#: ../../01_introduction.md:3
 msgid "How did money become the basis of trade for such a long time? To have an answer for such question we must understand what money is and the different ways money has been used through the time."
 msgstr "¿Cómo se convirtió el dinero en la base del comercio durante tanto tiempo? Para tener una respuesta a esta pregunta debemos entender qué es el dinero y las diferentes formas en que ha utilizado a lo largo del tiempo."
 
-#: ../../01_introduction.rst:9
+#: ../../01_introduction.md:5
 msgid "Definition of Money"
 msgstr "Definición de Dinero"
 
-#: ../../01_introduction.rst:11
+#: ../../01_introduction.md:7
 msgid "Money is often defined it by the roles it plays:"
 msgstr "El dinero se define a menudo por las funciones que desempeña:"
 
-#: ../../01_introduction.rst:13
+#: ../../01_introduction.md:9
 msgid "It's a store of value, meaning that money allows you to defer consumption until a later date."
 msgstr "Es un depósito del valor, lo que significa que el dinero permite aplazar su consumo hasta una fecha posterior."
 
-#: ../../01_introduction.rst:14
+#: ../../01_introduction.md:10
 msgid "It's a unit of account, meaning that it allows you to assign a value to different goods without having to compare them. So instead of saying that a Rolex watch is worth six cows, you can just say it (or the cows) cost $10 000."
 msgstr "Es una unidad de medida, lo que significa que permite asignar un valor a diferentes bienes sin tener que compararlos. Así, en lugar de decir que un reloj Rolex vale seis vacas, se puede decir simplemente que este (o las vacas) cuestan $10 000."
 
-#: ../../01_introduction.rst:15
+#: ../../01_introduction.md:11
 msgid "And it's a medium of exchange, meaning it's an easy and efficient way for different parties to trade goods and services with one another."
 msgstr "Y es un medio de intercambio, lo que significa que es una forma fácil y eficiente para que diferentes partes intercambien bienes y servicios entre sí."
 
-#: ../../01_introduction.rst:19
+#: ../../01_introduction.md:13
 msgid "History of Money"
 msgstr "Historia del Dinero"
 
-#: ../../01_introduction.rst:21
+#: ../../01_introduction.md:15
 msgid "Even though we're able to define what money is, when it comes to its origins, money has been mum about them. For such a central element of our lives, money’s ancient roots and the reasons for its invention are unclear, most of the available knowledge is based on conjectures and logical inferences."
 msgstr "Somos capaces de definir lo que es el dinero; sin embargo cuando se trata de sus orígenes, no se ha llegado a encontrar una respuesta definitiva. Para un elemento tan central de nuestras vidas, las antiguas raíces del dinero y las razones de su invención no están claras, la mayor parte del conocimiento disponible se basa en conjeturas e inferencias lógicas."
 
-#: ../../01_introduction.rst:23
+#: ../../01_introduction.md:17
 msgid "Some economists assume that bartering of goods and services inspired money’s invention. On the other hand there are anthropologists and archaeologists contending that early states invented currency as a means of debt payment."
 msgstr "Algunos economistas suponen que el trueque de bienes y servicios inspiró la invención del dinero. Por otro lado, hay antropólogos y arqueólogos que sostienen que los primeros estados inventaron la moneda como medio de pago de las deudas."
 
-#: ../../01_introduction.rst:25
+#: ../../01_introduction.md:19
 msgid "Several investigations suggest that money independently appeared for different reasons and assumed different tangible forms in many parts of the world, starting thousands of years ago and bartering had nothing to do with it but instead, money grew out of older systems of credit and debt. In small-scale societies, debts concern obligations to others while among hunter-gatherer and farming groups daughters given away in marriage create debts that are partially repaid with goods known as bridewealth where full repayment requires that the recipient of the first bride provide a bride in return. No cash needed."
 msgstr "Varias investigaciones sugieren que el dinero apareció de forma independiente por diferentes razones y asumió diferentes formas tangibles en muchas partes del mundo, comenzando hace miles de años y que el trueque no tuvo nada que ver con esto, sino que el dinero surgió de sistemas más antiguos de crédito y deuda. En las sociedades de pequeña escala, las deudas se referían a las obligaciones contraídas con otras personas, mientras que entre los grupos de cazadores-recolectores y agricultores las hijas entregadas en matrimonio creaban deudas que se pagaban parcialmente con bienes y cuyo pago completo requería que el receptor de la primera novia proporcionara una novia a cambio."
 
-#: ../../01_introduction.rst:27
+#: ../../01_introduction.md:21
 msgid "Revisionists argue that a transition to a new form of money-friendly debt started at least 5,500 years ago in the agricultural states of Mesopotamia and Egypt. In Mesopotamia, the silver shekel — a lump of metal, not a coin — was a basic monetary measure. Rulers decreed that one shekel’s weight in silver was equivalent to a bushel of barley. Shekels of silver, gold and other metals were used in other ancient societies. Precise weights of shekels appear to have varied from one to the next one and therefore are difficult to pin down. Farmers were taxed to support royal lifestyles and public works, what the farmers and other commoners couldn’t pay in goods was recorded as debt in shekels. Merchants and tradespeople acquired goods from temple and palace officials on credit."
 msgstr "Múltiples revisionistas sostienen que la transición a una nueva forma de deuda que favorece al dinero comenzó hace al menos 5.500 años en los estados agrícolas de Mesopotamia y Egipto. En Mesopotamia, el siclo de plata -un trozo de metal, no una moneda- era una medida monetaria básica. Los gobernantes decretaban que el peso de un siclo de plata equivalía a un celemín de cebada. En otras sociedades antiguas se utilizaban siclos de plata, oro y otros metales. Los pesos precisos de los siclos parecen haber variado de unos a otros y, por tanto, son difíciles de precisar. Los agricultores pagaban impuestos para mantener el estilo de vida de la realeza y las obras públicas; lo que los agricultores y otros plebeyos no podían pagar en bienes se registraba como deuda en siclos. Los mercaderes y comerciantes adquirían los bienes de los funcionarios del templo y del palacio a crédito."
 
-#: ../../01_introduction.rst:29
+#: ../../01_introduction.md:23
 msgid "Coins stamped with images of animals or rulers, acting as denominations and guaranteeing the metal’s value, first appeared in the kingdom of Lydia around 2,600 years ago. Located in what is now Turkey, Lydia sat on the cusp between the Mediterranean and the Near East, and commerce with foreign travelers was common which was one of the major promoters for this coin mint to happen. To understand why, imagine doing a trade in the absence of money or in other words through barter. The chief problem with barter is the double coincidence of wants. Say you have a bunch of bananas and would like a pair of shoes, but it's not enough to find someone who has some shoes or someone who wants some bananas. To make the trade, you need to find someone who has shoes they're willing to trade and that wants bananas which is no easy task."
 msgstr "Las monedas estampadas con imágenes de animales o gobernantes, que actuaban como denominaciones y garantizaban el valor del metal, aparecieron por primera vez en el reino de Lidia hace unos 2.600 años. Situada en lo que hoy es Turquía, Lidia se encontraba en la cúspide entre el Mediterráneo y Oriente Próximo, y el comercio con viajeros extranjeros era habitual, lo cual fue uno de los principales promotores de que se acuñara esta moneda. Para entender el porqué, imaginemos que se realiza un comercio en ausencia de dinero o, en otras palabras, a través del trueque. El principal problema del trueque es que se requiere un doble coincidencia de necesidades; supongamos que tienes un racimo de plátanos y quieres un par de zapatos, pero no basta con encontrar a alguien que tenga unos zapatos o a alguien que quiera unos plátanos. Para hacer el trueque, hay que encontrar a alguien que tenga zapatos que esté dispuesto a intercambiar y que quiera plátanos, lo cual no es tarea fácil."
 
-#: ../../01_introduction.rst:31
+#: ../../01_introduction.md:25
 msgid "With a common currency, the task becomes easier: You just sell your bananas to someone in exchange for money, with which you then buy shoes from someone else. And if, as in Lydia, you have foreigners from whom you'd like to buy or to whom you'd like to sell, having a common medium of exchange is obviously valuable. That is, money is especially useful when dealing with people you don't know and may never see again."
 msgstr "Con una moneda común, la tarea se hace más fácil: Simplemente vendes tus plátanos a alguien a cambio de dinero, con el que luego compras zapatos a alguien más. Y si, como en Lidia, hay extranjeros a los que quieres comprar o a los que quieres vender, tener un medio de cambio en común es obviamente valioso. Es decir, el dinero es especialmente útil cuando se trata de personas que no conoces y que quizá no vuelvas a ver."
 
-#: ../../01_introduction.rst:33
+#: ../../01_introduction.md:27
 msgid "The Lydian system's breakthrough was the standardized metal coin. Made of a gold-silver alloy called electrum, one coin was exactly like another—unlike, say, cattle. Also unlike cattle, the coins didn't age or die or otherwise change over time. And they were much easier to carry around. Other kingdoms followed Lydia's example, and coins became ubiquitous throughout the Mediterranean, with kingdoms stamping their insignia on the coins they minted. This had a dual effect: it facilitated the flow of trade, and it established the authority of the state."
 msgstr "Una gran innovación en el avance del reino del Lidia fue la moneda metálica estandarizada. Fabricada con una aleación de oro y plata llamada electrum, una moneda era exactamente igual a otra, a diferencia, por ejemplo, del ganado. A diferencia del ganado, las monedas no envejecían, ni morían, ni cambiaban con el tiempo y además eran mucho más fáciles de transportar. Otros reinos siguieron el ejemplo de Lidia, y las monedas se hicieron presentes en todo el Mediterráneo, con reinos que estampaban su insignia en las monedas que acuñaban. Esto tenía un efecto doble: facilitaba el flujo comercial y establecía la autoridad del estado."
 
-#: ../../01_introduction.rst:35
+#: ../../01_introduction.md:29
 msgid "The spread of money throughout the Mediterranean didn't mean that it was universally used; soon after Lydia, cities and states in Greece, Persia, India and China began to strike their own coins, but even then most people were still subsistence farmers and existed largely outside the money economy. But as money became more common, it encouraged the spread of markets. Once a small part of the economy is taken over by markets and money, they tend to colonize the rest of the economy, gradually forcing out barter, feudalism, and other economic arrangements. This happens mostly because money makes market transactions so much easier and also because using money seems to redefine what people value, pushing them to view things in economic, rather than social, terms."
 msgstr "La difusión de la moneda por el Mediterráneo no significó su uso universal; poco después de Lidia, las ciudades y los estados de Grecia, Persia, India y China empezaron a acuñar sus propias monedas, pero incluso entonces la mayoría de la gente seguía siendo agricultora de subsistencia y vivía en gran medida al margen de la economía monetaria. Pero a medida que el dinero se hizo más común, fomentó la expansión de los mercados. Una vez que los mercados y el dinero se apoderan de una pequeña parte de la economía, tienden a colonizar el resto de la economía, forzando gradualmente el trueque, el feudalismo y otros acuerdos económicos. Esto sucede sobre todo porque el dinero facilita mucho las transacciones de mercado y también porque el uso del dinero parece redefinir lo que la gente valora, empujándola a ver las cosas en términos económicos, en lugar de sociales."
 
-#: ../../01_introduction.rst:37
+#: ../../01_introduction.md:31
 msgid "Governments were quick to embrace hard currency because it facilitated the collection of taxes and the building of military forces, coins funded armies and wars of conquest. In the process, coins became legal tender for all sorts of transactions. Marketplaces were a result of this system, not its cause, revisionists argue."
 msgstr "Los gobiernos se apresuraron en adoptar las monedas metálicas porque facilitaban la recaudación de impuestos y la creación de fuerzas militares ya estas financiaban los ejércitos y las guerras de conquista. En el proceso, las monedas se convirtieron en moneda de curso legal para todo tipo de transacciones. Múltiples revisionistas sostienen que los mercados fueron un resultado de este sistema, no su causa."
 
-#: ../../01_introduction.rst:39
+#: ../../01_introduction.md:33
 msgid "Once the Chinese had started making comparatively inexpensive paper from natural fibers, and discovered block-printing, paper currency came into use in the country. The first known use of paper currency in China is reported from the Tang dynasty and despite the fact that scarce information remains about this early system of paper currency there's evidence that these were certificates issued by the Tang government to pay local merchants in distants parts of the empire. By using certificates, the government could avoid having to transport metal money far away. Each certificate had a certain amount of money stated on it and was redeemable for metal cash on demand in the Chinese capital. Most merchants never went through the trouble of going to the capital to get cash for their certificate, instead the certificates were used as money locally, since they were transfereable. The view of money as commodity began to shift only with the widespread adoption of paper currency."
 msgstr "Una vez que los chinos empezaron a fabricar papel comparativamente barato a partir de fibras naturales y descubrieron la impresión de bloque, el papel moneda empezó a utilizarse en el país. El primer uso conocido del papel moneda en China se remonta a la dinastía Tang y, a pesar de la escasa información que se conserva sobre este primer sistema de papel moneda, hay pruebas de que se trataba de certificados emitidos por el gobierno Tang para pagar a los comerciantes locales en partes distantes del imperio. Mediante el uso de certificados, el gobierno podía evitar tener que transportar monedas metálicas a lugares lejanos. Cada certificado tenía una cantidad de monedas metálicas determinada y era canjeable por las monedas a petición en la capital china. La mayoría de los comerciantes nunca se tomaban la molestia de ir a la capital para obtener monedas metálicas por su certificado, sino que los certificados se utilizaban como dinero a nivel local, ya que eran transferibles. La visión del dinero como mercancía sólo empezó a cambiar con la adopción generalizada del papel moneda."
 
-#: ../../01_introduction.rst:41
+#: ../../01_introduction.md:35
 msgid "Compared to traditional money made from precious metals, paper currency was easier to transport, and the use of paper currency also freed up metal that could be put to other use. In 1821, the Bank of England adopted the gold standard, promising to redeem its notes for gold upon request. As other countries followed suit, the gold standard became the general rule for developed economies. The discovery of major new gold fields over the course of the 19th century ensured that the money supply kept growing."
 msgstr "En comparación con las monedas metálicas hechas de metales preciosos, el papel moneda era más fácil de transportar, y el uso del papel moneda también liberaba metal que podía destinarse a otros usos. En 1821, el Banco de Inglaterra adoptó el estándar oro, prometiendo canjear sus billetes por oro si se le solicitaba. Cuando otros países siguieron su ejemplo, el patrón oro se convirtió en la norma general de las economías desarrolladas. El descubrimiento de nuevos e importantes yacimientos de oro a lo largo del siglo XIX hizo que el suministro de monedas siguiera creciendo."
 
-#: ../../01_introduction.rst:43
+#: ../../01_introduction.md:37
 msgid "The gold standard, as it was intended to do, brought stability to prices and was enormously beneficial to property holders and lenders. However, it also brought deflation—that is, prices generally fell—because as countries, populations and economies grew, their governments had no easy way to increase the money supply short of mining more gold, and so money in effect became more scarce. Deflation was hard on farmers and borrowers, who longed for a little inflation to help them with their debts; when money gradually loses some of its value, so, too, do people's debts."
 msgstr "El estándar oro, como se pretendía, aportó estabilidad a los precios y fue enormemente beneficioso para los propietarios y prestamistas. Sin embargo, también trajo consigo la deflación -es decir, los precios cayeron en general- porque a medida que los países, las poblaciones y las economías crecían, sus gobiernos no tenían una forma fácil de aumentar la oferta monetaria si no era extrayendo más oro, por lo que el dinero en efecto se volvió más escaso. La deflación fue dura para los agricultores y los prestatarios, que anhelaban un poco de inflación para ayudarles con sus deudas; cuando el dinero pierde gradualmente parte de su valor, también lo hacen las deudas de la gente."
 
-#: ../../01_introduction.rst:45
+#: ../../01_introduction.md:39
 msgid "What finally derailed the gold standard was World War I. Since governments needed more money for their militaries than they had in gold, and so they simply began printing it. And though many countries tried to return to the gold standard after the war, the Great Depression consequences made it end for good. Because of this currencies today are “fiat\" currencies, meaning they're backed by the authority of the issuing government, and nothing more."
-msgstr "Lo que finalmente acabó con el patrón oro fue la Primera Guerra Mundial. Como los gobiernos necesitaban más dinero para sus ejércitos que el que tenían en oro, simplemente empezaron a imprimirlo. Y aunque muchos países intentaron volver al patrón oro después de la guerra, las consecuencias de la Gran Depresión hicieron que se acabara definitivamente. Por ello, las monedas actuales son monedas \fiduciarias\, lo que significa que están respaldadas por la autoridad del gobierno emisor, y nada más."
+msgstr "Lo que finalmente acabó con el patrón oro fue la Primera Guerra Mundial. Como los gobiernos necesitaban más dinero para sus ejércitos que el que tenían en oro, simplemente empezaron a imprimirlo. Y aunque muchos países intentaron volver al patrón oro después de la guerra, las consecuencias de la Gran Depresión hicieron que se acabara definitivamente. Por ello, las monedas actuales son monedas \\fiduciarias\\, lo que significa que están respaldadas por la autoridad del gobierno emisor, y nada más."
 
-#: ../../01_introduction.rst:47
+#: ../../01_introduction.md:41
 msgid "In the United States, for example, that means the government accepts only dollars as payment for taxes and requires its creditors to accept dollars in payment for debts. But if people were to lose faith in the dollar and stop accepting it in everyday transactions, it would eventually become worthless. The reliance on fiat money, we're told, gives too much power to the government, which can recklessly print as much money as it wants. Yet the truth is that this has always been possible. Even with the gold standard, governments revalued their currencies from time to time, in effect dictating a new price for gold, or they ignored the standard when it proved too limiting, as during the First World War. What's more, the notion that gold is somehow more “real\" than paper is, well, a mirage. Gold is valuable because we've collectively decided that it's valuable and that we'll accept goods and services in exchange for it. And that's no different, ultimately, from our collective decision that colorful rectangles of paper are valuable and that we'll accept goods and services in exchange for them."
-msgstr "En Estados Unidos, por ejemplo, eso significa que el gobierno sólo acepta dólares para el pago de impuestos y exige a sus acreedores que acepten dólares para el pago de deudas. Pero si la gente perdiera la fe en el dólar y dejara de aceptarlo en las transacciones cotidianas, acabaría por perder su valor. La dependencia del dinero fiduciario otorga demasiado poder al gobierno, que puede imprimir imprudentemente todo el dinero que quiera. Pero la verdad es que esto siempre ha sido posible. Incluso con el patrón oro, los gobiernos revalorizaban sus monedas cuando era necesario, dictando de hecho un nuevo precio para el oro, o ignoraban el patrón cuando resultaba demasiado limitante, como durante la Primera Guerra Mundial. Además, la idea de que el oro es de alguna manera más \real\ que el papel es, bueno, un espejismo. El oro es valioso porque hemos decidido colectivamente que lo es y que aceptaremos bienes y servicios a cambio de él. Y eso no es diferente, en última instancia, de nuestra decisión colectiva de que los rectángulos de papel de colores son valiosos y que aceptaremos bienes y servicios a cambio de ellos."
+msgstr "En Estados Unidos, por ejemplo, eso significa que el gobierno sólo acepta dólares para el pago de impuestos y exige a sus acreedores que acepten dólares para el pago de deudas. Pero si la gente perdiera la fe en el dólar y dejara de aceptarlo en las transacciones cotidianas, acabaría por perder su valor. La dependencia del dinero fiduciario otorga demasiado poder al gobierno, que puede imprimir imprudentemente todo el dinero que quiera. Pero la verdad es que esto siempre ha sido posible. Incluso con el patrón oro, los gobiernos revalorizaban sus monedas cuando era necesario, dictando de hecho un nuevo precio para el oro, o ignoraban el patrón cuando resultaba demasiado limitante, como durante la Primera Guerra Mundial. Además, la idea de que el oro es de alguna manera más \real\\ que el papel es, bueno, un espejismo. El oro es valioso porque hemos decidido colectivamente que lo es y que aceptaremos bienes y servicios a cambio de él. Y eso no es diferente, en última instancia, de nuestra decisión colectiva de que los rectángulos de papel de colores son valiosos y que aceptaremos bienes y servicios a cambio de ellos."
 
-#: ../../01_introduction.rst:51
+#: ../../01_introduction.md:43
 msgid "Difference Between Money and Currency"
 msgstr "Diferencia entre Dinero y Moneda"
 
-#: ../../01_introduction.rst:53
+#: ../../01_introduction.md:45
 msgid "While most of the time, the terms \"money\" and \"currency\" are used interchangeably, there are some suggestions that these terms are not identical terms; these suggest that money is inherently an intangible concept, while currency is the physical or tangible manifestation of the intangible concept of money. By extension, according to this suggestions, money cannot be touched or smelled. Currency is the coin, note, or object that is presented as the physical form of money. The basic form of money is numbers; today some of the basic forms of currency are paper notes, coins, or plastic cards."
-msgstr "Aunque la mayoría de las veces los términos \dinero\ y \moneda\ se utilizan indistintamente, hay algunas sugerencias de que estos términos no son idénticos; éstas sugieren que el dinero es inherentemente un concepto intangible, mientras que la moneda es la manifestación física (tangible) del concepto intangible de dinero. Por extensión, según estas sugerencias, el dinero no se puede tocar ni oler. La moneda suele presentarse en formas metálicas redondas conocidas igualmente como monedas, o en forma de piezas de papel, llamadas billetes o papel moneda. La forma básica del dinero son los números; algunas de las formas básicas de moneda actualmente son los billetes de papel, las monedas y las tarjetas de plástico."
+msgstr "Aunque la mayoría de las veces los términos \\dinero\\ y \\moneda\\ se utilizan indistintamente, hay algunas sugerencias de que estos términos no son idénticos; éstas sugieren que el dinero es inherentemente un concepto intangible, mientras que la moneda es la manifestación física (tangible) del concepto intangible de dinero. Por extensión, según estas sugerencias, el dinero no se puede tocar ni oler. La moneda suele presentarse en formas metálicas redondas conocidas igualmente como monedas, o en forma de piezas de papel, llamadas billetes o papel moneda. La forma básica del dinero son los números; algunas de las formas básicas de moneda actualmente son los billetes de papel, las monedas y las tarjetas de plástico."
 
-#: ../../01_introduction.rst:55
+#: ../../01_introduction.md:47
 msgid "The powerful combination of computers and telecommunications, of smartphones and social media, of cryptography and virtual economies makes it seem like it's a possibility to create a cashless society. What matters most about money is not what it is, but what it does. After all, people will use the currencies that lubricate commerce, allow people to exchange goods and services, and thus encourage people to work and create. Money, whether it's represented by a metal coin, a shell or a piece of paper, doesn't always have value. Its value depends on the importance that people place on it—as a store of value, a unit of account, and a medium of exchange. Money is valuable merely because everyone knows that it will be accepted as a form of payment. However, throughout history, both the usage and the form of money have evolved."
 msgstr "La poderosa combinación de computadoras y telecomunicaciones, de teléfonos inteligentes y medios sociales, de criptografía y economías virtuales hace que parezca posible crear una sociedad sin dinero en efectivo (monedas metálicas ni papel moneda). Lo más relevante del dinero no es su representación, sino el efecto que tiene. Al fin y al cabo, las personas utilizan monedas que lubrican el comercio, permiten el intercambio de bienes y servicios y, por lo tanto promueven el trabajo y la creación. El dinero, ya sea representado por una moneda de metal, una concha o un trozo de papel, no siempre tiene valor. Su valor depende de la importancia que le atribuyan las personas: como depósito del valor, unidad de medida y medio de intercambio. El dinero tiene valor simplemente porque todo el mundo sabe que será aceptado como forma de pago. Sin embargo, a lo largo de la historia, tanto el uso como la forma del dinero han evolucionado."
 
-#: ../../01_introduction.rst:59
+#: ../../01_introduction.md:49
 msgid "Definition of Cryptocurrencies"
 msgstr "Definición de Criptomonedas"
 
-#: ../../01_introduction.rst:61
+#: ../../01_introduction.md:51
 msgid "Cryptocurrency is a digital or virtual form of currency; meaning it's a representations of value, that uses cryptography to secure and verify transactions as well as to control the creation of new units."
 msgstr "La criptomoneda es una forma de moneda digital o virtual; lo que significa que es una representación de valor, que utiliza criptografía para asegurar y verificar transacciones, así como para controlar la creación de nuevas unidades."
 
-#: ../../01_introduction.rst:63
+#: ../../01_introduction.md:53
 msgid "Cryptocurrencies operate on systems that allow for secure online transactions to take place without the need for any central banks or intermediaries. Instead, transactions are recorded on a decentralized and distributed public ledger (DLT) called a blockchain, which is maintained by a network of computers around the world that record all transactions in a secure and transparent manner."
 msgstr "Las criptomonedas operan en sistemas que permiten que se realicen transacciones en línea seguras sin la necesidad de bancos centrales o intermediarios. En cambio, las transacciones se registran en un libro público descentralizado y distribuido (DLT) llamado blockchain, que es mantenido por una red de computadoras en todo el mundo que registra todas las transacciones de manera segura y transparente."
 
-#: ../../01_introduction.rst:67
+#: ../../01_introduction.md:55
 msgid "Definition of Blockchain Technology"
 msgstr "Definición de la Tecnología Blockchain"
 
-#: ../../01_introduction.rst:69
+#: ../../01_introduction.md:57
 msgid "Blockchain technology is crucial to cryptocurrencies as it allows transactions to be processed and authenticated without any central authority. Instead of relying on a single, centralized authority to manage and store the data, blockchains rely on a network of computers to validate and record transactions, which makes them more secure and resistant to tampering or hacking. A blockchain offers a commonly agreed record of truth to multiple, mutually distrusting participants in an economic system since it keeps track of cryptocurrency transactions which are grouped into blocks. Each block is cryptographically linked to the previous one so as new blocks are added the older blocks become more difficult to modify. New blocks are replicated across all copies of the blockchain within the network, and any conflicts are resolved automatically using established rules."
 msgstr "La tecnología Blockchain es crucial para las criptomonedas, ya que permite que las transacciones se procesen y autentiquen sin ninguna autoridad central. En lugar de depender de una única autoridad centralizada para administrar y almacenar los datos, las cadenas de bloques se basan en una red de computadoras para validar y registrar las transacciones, lo que las hace más seguras y resistentes a la manipulación o la piratería. Una cadena de bloques ofrece un registro de la verdad comúnmente acordado a múltiples participantes en un sistema económico que desconfían mutuamente, ya que realiza un seguimiento de las transacciones de criptomonedas que se agrupan en bloques. Cada bloque está vinculado criptográficamente al anterior, por lo que a medida que se agregan nuevos bloques, los bloques más antiguos se vuelven más difíciles de modificar. Los nuevos bloques se replican en todas las copias de la cadena de bloques dentro de la red y cualquier conflicto se resuelve automáticamente utilizando las reglas establecidas."
 
-#: ../../01_introduction.rst:71
+#: ../../01_introduction.md:59
 msgid "A blockchain is spread across nodes usually in different locations. This is one of the key ideas about blockchain, and gives it its unique decentralized features. Because of this, anyone can submit information to be stored onto a blockchain and therefore it is important that there are processes in place that can ensure everyone agrees on what information to add and what to discard. Different networks use different methods but this procesess together are what's called a consensus protocol and they are essentially the rules by which a network operates."
 msgstr "Una cadena de bloques está esparcida entre nodos situados normalmente en diferentes lugares. Esta es una de las ideas clave de la cadena de bloques, y le otorga sus características únicas de descentralización. Por ello, cualquiera puede enviar información para ser almacenada en una cadena de bloques y, por lo tanto, es importante que existan procesos que garanticen que todo el mundo se ponga de acuerdo sobre qué información añadir y qué información desechar Diferentes redes utilizan diferentes métodos, pero estos procesos juntos son lo que se conoce como un protocolo de consenso y son esencialmente las reglas mediante las cuales se rige el funcionamiento de la red."
 
-#: ../../01_introduction.rst:74
+#: ../../01_introduction.md:61
 msgid "Definition of Consensus Protocol"
 msgstr "Definición de Protocolo de Consenso"
 
-#: ../../01_introduction.rst:76
+#: ../../01_introduction.md:63
 msgid "Consensus is a pervasive problem in many areas of human endeavor; consensus is the process of agreeing to one of several alternates proposed by a number of agents. Consensus can be defined as an agreement, protocols are rules which describe how an activity should be performed. Simply put, consensus protocols could be viewed as “agreement rules”."
-msgstr "\El consenso es un problema dominante en muchos ámbitos del quehacer humano; el consenso es el proceso de acordar en una de varias alternativas propuestas por varios agentes. El consenso puede definirse como un acuerdo, los protocolos son reglas que describen cómo debe realizarse una actividad. En pocas palabras, los protocolos de consenso pueden verse como las \reglas del acuerdo\."
+msgstr "\\El consenso es un problema dominante en muchos ámbitos del quehacer humano; el consenso es el proceso de acordar en una de varias alternativas propuestas por varios agentes. El consenso puede definirse como un acuerdo, los protocolos son reglas que describen cómo debe realizarse una actividad. En pocas palabras, los protocolos de consenso pueden verse como las \reglas del acuerdo\\."
 
-#: ../../01_introduction.rst:78
+#: ../../01_introduction.md:65
 msgid "A consensus protocol (also known as consensus mechanism or consensus algorithm) is used to achieve the necessary agreement on a single data value or a single state of the distributed ledger at any given time. It provides a method of review and confirmation of what data should be added to a blockchain's record. Because blockchain networks typically don't have a centralized authority dictating who is right or wrong, nodes on a blockchain all must agree on the state of the network, following the predefined rules, or protocol."
 msgstr "Un protocolo de consenso (también conocido como mecanismo de consenso o algoritmo de consenso) se utiliza para lograr el acuerdo necesario sobre un único valor de datos o un único estado de la cadena de bloques en un momento dado. Proporciona un método de revisión y confirmación acerca de cuales datos que deben añadirse al registro de una cadena de bloques. Debido a que no existe una autoridad centralizada que dicte quién tiene razón o no, todos los nodos participantes deben llegar a un acuerdo sobre el estado de la red, siguiendo las reglas predefinidas o protocolo."
 
-#: ../../01_introduction.rst:82
+#: ../../01_introduction.md:67
 msgid "Current State of Blockchain Technology"
 msgstr "Estado Actual de la Tecnología Blockchain"
 
-#: ../../01_introduction.rst:85
+#: ../../01_introduction.md:69
 msgid "Bitcoin"
 msgstr "Bitcoin"
 
-#: ../../01_introduction.rst:87
+#: ../../01_introduction.md:71
 msgid "The Bitcoin blockchain was first introduced in 2008 through a white paper by its pseudonymous creator Satoshi Nakamoto as a peer-to-peer electronic cash system that allows users to send payments directly to each other using Bitcoin (BTC), the blockchain's native currency, without the need for intermediaries such as financial institutions. The first Bitcoin transaction took place in January 2009, when Satoshi Nakamoto sent 10 Bitcoins to the first person who downloaded the software. The first commercial transaction using Bitcoin took place in 2010, when a programmer named Laszlo Hanyecz ordered two pizzas by paying 10,000 Bitcoins to an intermediary."
 msgstr "La cadena de bloques de Bitcoin se introdujo por primera vez en 2008 a través de un libro blanco de su creador seudónimo Satoshi Nakamoto como un sistema de efectivo electrónico entre pares que permite a los usuarios enviar pagos directamente entre sí utilizando Bitcoin (BTC), la moneda nativa de la cadena de bloques, sin la necesidad de intermediarios como las instituciones financieras. La primera transacción de Bitcoin tuvo lugar en enero de 2009, cuando Satoshi Nakamoto envió 10 Bitcoins a la primera persona que descargó el software. La primera transacción comercial con Bitcoin tuvo lugar en 2010, cuando un programador llamado Laszlo Hanyecz pidió dos pizzas pagando 10.000 Bitcoins a un intermediario."
 
-#: ../../01_introduction.rst:89
+#: ../../01_introduction.md:73
 msgid "Bitcoin uses a proof of work (PoW) consensus protocol, in which miners compete to solve complex mathematical equations using their computing power. The first miner who succeeds in solving the cryptographic puzzle adds the latest block of transactions to the blockchain and receives rewards in the form of newly minted coins and transaction fees. This process is energy-intensive and was designed to be difficult on purpose to \"prove\" that participants have done the \"work\" and are eligible to add a new block to the blockchain."
 msgstr "Bitcoin utiliza un protocolo de consenso de prueba de trabajo (PoW), en el que los mineros compiten para resolver ecuaciones matemáticas complejas utilizando su potencia informática. El primer minero que logra resolver el rompecabezas criptográfico agrega el último bloque de transacciones a la cadena de bloques y recibe recompensas en forma de monedas recién acuñadas y tarifas de transacción. Este proceso consume mucha energía y fue diseñado para ser difícil a propósito para \"probar\" que los participantes han hecho el \"trabajo\" y son elegibles para agregar un nuevo bloque a la cadena de bloques."
 
-#: ../../01_introduction.rst:91
+#: ../../01_introduction.md:75
 msgid "The scripting language used in Bitcoin transactions is called Script. It is used almost exclusively to define how outputs can be spent and is responsible for enforcing the rules that govern Bitcoin transactions. In other words, Script determines who the BTC was sent to, how much was sent, and under what conditions it can be spent."
 msgstr "El lenguaje de secuencias de comandos utilizado en las transacciones de Bitcoin se llama Script. Se utiliza casi exclusivamente para definir cómo se pueden gastar los productos y es responsable de hacer cumplir las reglas que rigen las transacciones de Bitcoin. En otras palabras, Script determina a quién se envió el BTC, cuánto se envió y en qué condiciones se puede gastar."
 
-#: ../../01_introduction.rst:94
+#: ../../01_introduction.md:77
 msgid "Ethereum"
 msgstr "Ethereum"
 
-#: ../../01_introduction.rst:96
+#: ../../01_introduction.md:79
 msgid "Ethereum is a decentralized blockchain platform that revolutionized the way applications are built and executed. Founded in 2015 by co-founder Vitalik Buterin, who published its white paper in 2013, Ethereum offers a range of features that go beyond those of Bitcoin, including the possibility to create new cryptocurrencies and the ability to execute smart contracts, which are self-executing agreements encoded onto the blockchain, with the terms of the agreement between buyer and seller being directly written into lines of code without the need for intermediaries all while enforcing the negotiation or performance of the contract automatically. By enabling the execution of smart contracts, Ethereum opens up the possibility of creating decentralized applications (DApps), which operate transparently and independently without any central authority."
 msgstr "Ethereum es una plataforma blockchain descentralizada que revolucionó la forma en que se crean y ejecutan las aplicaciones. Fundada en 2015 por el cofundador Vitalik Buterin, quien publicó su libro blanco en 2013, Ethereum ofrece una gama de funciones que van más allá de las de Bitcoin, incluida la posibilidad de crear nuevas criptomonedas y la capacidad de ejecutar contratos inteligentes, que son autónomos. ejecutar acuerdos codificados en la cadena de bloques, con los términos del acuerdo entre el comprador y el vendedor escritos directamente en líneas de código sin la necesidad de intermediarios, todo mientras se hace cumplir la negociación o el cumplimiento del contrato automáticamente. Al permitir la ejecución de contratos inteligentes, Ethereum abre la posibilidad de crear aplicaciones descentralizadas (DApps), que operan de forma transparente e independiente sin ninguna autoridad central."
 
-#: ../../01_introduction.rst:98
+#: ../../01_introduction.md:81
 msgid "Like Bitcoin, Ethereum initially used a proof-of-work (PoW) consensus protocol, similar to Bitcoin, but it has undergone a major upgrade that moved it to a proof-of-stake (PoS) consensus protocol. Unlike Proof of Work (PoW) consensus models, where miners' ability to validate block transactions is based on their hardware's computing power, PoS models assign the task of validating new blocks based on the size of the node's stake, with larger stakes having a higher likelihood of producing the next block. The PoS system aims to provide a more energy-efficient alternative to PoW while still maintaining the security of the blockchain. This upgrade on the concensus protocol aims to increase efficiency, security, and reduce environmental impact by eliminating the need for the intensive computational power that PoW requires."
 msgstr "Al igual que Bitcoin, Ethereum inicialmente usó un protocolo de consenso de prueba de trabajo (PoW), similar a Bitcoin, pero se sometió a una actualización importante que lo movió a un protocolo de consenso de prueba de participación (PoS). A diferencia de los modelos de consenso de Prueba de trabajo (PoW), en los que la capacidad de los mineros para validar transacciones de bloques se basa en la potencia informática de su hardware, los modelos PoS asignan la tarea de validar nuevos bloques en función del tamaño de la participación del nodo, y las participaciones más grandes tienen una mayor participación. probabilidad de producir el siguiente bloque. El sistema PoS tiene como objetivo proporcionar una alternativa más eficiente energéticamente a PoW mientras mantiene la seguridad de la cadena de bloques. Esta actualización del protocolo de consenso tiene como objetivo aumentar la eficiencia, la seguridad y reducir el impacto ambiental al eliminar la necesidad de la potencia computacional intensiva que requiere PoW."
 
-#: ../../01_introduction.rst:100
+#: ../../01_introduction.md:83
 msgid "The blockchain's native currency is called Ether or ETH. Ether is used mainly for two purposes—it is traded as a digital currency on exchanges in the same fashion as other cryptocurrencies, and it is used on the Ethereum network to run applications. Therefore all decentralized applications built on Ethereum allow Ether and other crypto assets to be used in a plethora of different ways including as collateral for loans or be lent out to borrowers to earn interest. Collateral refers to assets pledged as security for repayment of a loan."
 msgstr "La moneda nativa de la cadena de bloques se llama Ether o ETH. El Ether se utiliza principalmente para dos propósitos: se negocia como criptomoneda en los intercambios de la misma manera que otras criptomonedas, y se utiliza en la red Ethereum para ejecutar aplicaciones. Por lo tanto, todas las aplicaciones descentralizadas construidas sobre Ethereum permiten que el Ether y otras criptomonedas sean utilizadas en una gran variedad de formas diferentes, incluyendo por ejemplo como garantía para los préstamos o pueden ser prestados a los prestatarios para ganar intereses. La garantía se refiere a las criptomonedas ofrecidas como seguridad de que será pagado el préstamo."
 
-#: ../../01_introduction.rst:102
+#: ../../01_introduction.md:85
 msgid "Ethereum offers multiple languages for programmers to develop smart contracts. The two most active and maintained languages are:"
 msgstr "Ethereum ofrece múltiples lenguajes para que los programadores desarrollen contratos inteligentes. Los dos lenguajes más activos y mantenidos son:"
 
-#: ../../01_introduction.rst:104
+#: ../../01_introduction.md:87
 msgid "Solidity"
 msgstr "Solidity"
 
-#: ../../01_introduction.rst:105
+#: ../../01_introduction.md:88
 msgid "Vyper"
 msgstr "Vyper"
 
-#: ../../01_introduction.rst:108
+#: ../../01_introduction.md:90
 msgid "DecentralChain"
 msgstr "DecentralChain"
 
-#: ../../01_introduction.rst:110
+#: ../../01_introduction.md:92
 msgid "DecentralChain is a cutting-edge, secure and efficient blockchain ecosystem empowering smart contract creation, decentralized application (DApps) development and a thriving decentralized finance (DeFi) community. It utilizes a consensus protocol called Leased Proof of Stake (LPoS) which aims to improve upon traditional Proof of Stake (PoS) by allowing users to lease their stakes to other users, which increases the latter's ability to produce new blocks. In return, the lender receives a percentage of the transaction fees earned by the validator. This leasing mechanism aims to address the possible centralization problem in traditional PoS models where a few large stakeholders control a significant portion of the network, and the decision-making power is concentrated in the hands of a small group of individuals or entities while at the same time allowing all users to earn rewards, extending the ability to participate in the network to not only minority stakeholders but also users who just want to lease their stakes to other users."
 msgstr "DecentralChain es un ecosistema de cadena de bloques de vanguardia, seguro y eficiente que permite la creación de contratos inteligentes, el desarrollo de aplicaciones descentralizadas (DApps) y una próspera comunidad de finanzas descentralizadas (DeFi). Utiliza un protocolo de consenso llamado Leased Proof of Stake (LPoS) que tiene como objetivo mejorar la Prueba de participación tradicional (PoS) al permitir a los usuarios arrendar sus participaciones a otros usuarios, lo que aumenta la capacidad de este último para producir nuevos bloques. A cambio, el prestamista recibe un porcentaje de las tarifas de transacción ganadas por el validador. Este mecanismo de arrendamiento tiene como objetivo abordar el posible problema de centralización en los modelos de PoS tradicionales, donde unas pocas partes interesadas importantes controlan una parte significativa de la red y el poder de toma de decisiones se concentra en manos de un pequeño grupo de personas o entidades mientras que al mismo tiempo tiempo que permite a todos los usuarios ganar recompensas, extendiendo la capacidad de participar en la red no solo a las partes interesadas minoritarias sino también a los usuarios que solo desean arrendar sus participaciones a otros usuarios."
 
-#: ../../01_introduction.rst:112
+#: ../../01_introduction.md:94
 msgid "DecentralChain offers a unique approach to decentralized application development by avoiding high gas fees for all transactions. The blockchain's native language, called Ride, is a non-Turing-complete language, which helps keep the system secure and predictable. Ride allows for the creation of smart contracts, which are self-executing agreements written in code that run without a central entity behind them. This provides a platform for decentralized applications (DApps), which are applications that work without a central authority. DecentralChain's use of Ride and LPoS helps to ensure the stability and security of the network, making it an attractive option for decentralized application development."
 msgstr "DecentralChain ofrece un enfoque único para el desarrollo de aplicaciones descentralizadas al evitar altas tarifas de gas para todas las transacciones. El lenguaje nativo de blockchain, llamado Ride, es un lenguaje no completo de Turing, lo que ayuda a mantener el sistema seguro y predecible. Ride permite la creación de contratos inteligentes, que son acuerdos autoejecutables escritos en código que se ejecutan sin una entidad central detrás de ellos. Esto proporciona una plataforma para aplicaciones descentralizadas (DApps), que son aplicaciones que funcionan sin una autoridad central. El uso de Ride y LPoS por parte de DecentralChain ayuda a garantizar la estabilidad y la seguridad de la red, lo que la convierte en una opción atractiva para el desarrollo de aplicaciones descentralizadas."
 
-#: ../../01_introduction.rst:116
+#: ../../01_introduction.md:96
 msgid "DecentralChain Ecosystem"
 msgstr "Ecosistema DecentralChain"
 
-#: ../../01_introduction.rst:118
+#: ../../01_introduction.md:98
 msgid "The DecentralChain ecosystem enables secure communication and interoperability between different blockchain networks. The ecosystem uses protocols to facilitate the transfer of assets and information between blockchain networks, as well as incentivize sustainability by reducing carbon emissions per transaction and generating carbon credits. Additionally, the ecosystem encourages carbon sequestration, where the sequestered carbon is tokenized and can be traded on a blockchain platform. There is also a decentralized wallet and exchange built on the DecentralChain network that offers various benefits, such as fast execution rates, multi-chain capability, low fees, and interoperability."
 msgstr "El ecosistema DecentralChain permite la comunicación segura y la interoperabilidad entre diferentes redes de blockchain. El ecosistema utiliza protocolos para facilitar la transferencia de activos e información entre redes blockchain, así como incentivar la sostenibilidad al reducir las emisiones de carbono por transacción y generar créditos de carbono. Además, el ecosistema fomenta el secuestro de carbono, donde el carbono secuestrado se tokeniza y se puede comercializar en una plataforma de cadena de bloques. También hay una billetera descentralizada y un intercambio construido en la red DecentralChain que ofrece varios beneficios, como tasas de ejecución rápidas, capacidad de múltiples cadenas, tarifas bajas e interoperabilidad."
 
-#: ../../01_introduction.rst:121
-msgid "Inter-Chain Gateway Protocol"
-msgstr "Protocolo de Puerta de Enlace entre Cadenas"
+#: ../../01_introduction.md:100
+msgid "Here are some of our most visited websites:"
+msgstr ""
 
-#: ../../01_introduction.rst:123
-msgid "The DecentralChain Inter-Chain Gateway is a blockchain mechanism designed to enable secure communication and interoperability between different blockchain networks. This is achieved by creating a decentralized network of nodes that utilize smart contract technology to validate and process transactions between different blockchains."
-msgstr "El protocolo de puerta de enlace entre cadenas de DecentralChain es un mecanismo de cadena de bloques diseñado para permitir la comunicación segura y la interoperabilidad entre diferentes redes de cadena de bloques. Esto se logra mediante la creación de una red descentralizada de nodos que utilizan tecnología de contrato inteligente para validar y procesar transacciones entre diferentes cadenas de bloques."
+#: ../../01_introduction.md:110 ../../01_introduction.md:121
+#: ../../01_introduction.md:132
+msgid "card-img-bottom"
+msgstr ""
 
-#: ../../01_introduction.rst:125
-msgid "One major use case of the gateway is the ability to transfer assets between different blockchain networks. For example, if you hold Bitcoin but want to use it on another blockchain network, such as DecentralChain, the gateway can allow you to transfer your Bitcoin to the DecentralChain network, where it is converted into a form that is compatible with the DecentralChain blockchain."
-msgstr "Un caso de uso importante de la puerta de enlace es la capacidad de transferir activos entre diferentes redes de blockchain. Por ejemplo, si tiene Bitcoin pero desea usarlo en otra red de cadena de bloques, como DecentralChain, la puerta de enlace puede permitirle transferir su Bitcoin a la red DecentralChain, donde se convierte en una forma compatible con la cadena de bloques DecentralChain."
-
-#: ../../01_introduction.rst:127
-msgid "In addition, the gateway facilitates the sharing of information between different blockchain networks. By creating a decentralized oracle network, smart contracts on different blockchain networks can access and utilize external data, enabling the creation of decentralized applications that use data from multiple sources and blockchain networks."
-msgstr "Además, la puerta de enlace facilita el intercambio de información entre diferentes redes de blockchain. Al crear una red Oracle descentralizada, los contratos inteligentes en diferentes redes de cadenas de bloques pueden acceder y utilizar datos externos, lo que permite la creación de aplicaciones descentralizadas que usan datos de múltiples fuentes y redes de cadenas de bloques."
-
-#: ../../01_introduction.rst:129
-msgid "To ensure the network's security, the gateway uses smart contract technology with predefined rules and conditions that are automatically executed when specific conditions are met. These conditions include input validation and access controls to ensure that only authorized parties can access and utilize the network's information."
-msgstr "Para garantizar la seguridad de la red, la puerta de enlace utiliza tecnología de contrato inteligente con reglas y condiciones predefinidas que se ejecutan automáticamente cuando se cumplen condiciones específicas. Estas condiciones incluyen validación de entrada y controles de acceso para garantizar que solo las partes autorizadas puedan acceder y utilizar la información de la red."
-
-#: ../../01_introduction.rst:132
-msgid "Proof of Incentivized Sustainability Protocol"
-msgstr "Protocolo de Prueba de Sostenibilidad Incentivada"
-
-#: ../../01_introduction.rst:134
-msgid "As society becomes increasingly aware of the impact of climate change, businesses and individuals are looking for ways to reduce their carbon footprint. In the realm of blockchain technology, the high energy consumption and resulting carbon emissions of Bitcoin transactions are particularly problematic. However, the DecentralChain blockchain presents a solution to this problem through the use of its proof of incentivized sustainability protocol."
-msgstr "A medida que la sociedad se vuelve cada vez más consciente del impacto del cambio climático, las empresas y las personas buscan formas de reducir su huella de carbono. En el ámbito de la tecnología blockchain, el alto consumo de energía y las emisiones de carbono resultantes de las transacciones de Bitcoin son particularmente problemáticos. Sin embargo, la cadena de bloques DecentralChain presenta una solución a este problema mediante el uso de su protocolo de prueba de sostenibilidad incentivada."
-
-#: ../../01_introduction.rst:136
-msgid "The traditional Bitcoin blockchain consumes a significant amount of energy for each transaction, releasing large amounts of carbon emissions into the atmosphere. In contrast, the DecentralChain blockchain utilizes a proof of stake protocol which is more energy efficient, resulting in significantly lower carbon emissions per transaction."
-msgstr "La cadena de bloques tradicional de Bitcoin consume una cantidad significativa de energía para cada transacción, liberando grandes cantidades de emisiones de carbono a la atmósfera. Por el contrario, la cadena de bloques DecentralChain utiliza un protocolo de prueba de participación que es más eficiente energéticamente, lo que resulta en emisiones de carbono significativamente más bajas por transacción."
-
-#: ../../01_introduction.rst:138
-msgid "The DecentralChain blockchain generates carbon credits through the proof of incentivized sustainability protocol. Every Bitcoin transaction on the DecentralChain blockchain creates new carbon credits, which can be sold or used to offset the carbon emissions of other activities. DecentralChain shares a percentage of these carbon credits as incentives to node owners who host their nodes on eco-friendly servers."
-msgstr "La cadena de bloques DecentralChain genera créditos de carbono a través de la prueba del protocolo de sostenibilidad incentivada. Cada transacción de Bitcoin en la cadena de bloques DecentralChain crea nuevos créditos de carbono, que pueden venderse o usarse para compensar las emisiones de carbono de otras actividades. DecentralChain comparte un porcentaje de estos créditos de carbono como incentivos para los propietarios de nodos que alojan sus nodos en servidores ecológicos."
-
-#: ../../01_introduction.rst:140
-msgid "The equation to calculate the carbon emissions of the Bitcoin blockchain is:"
-msgstr "La ecuación para calcular las emisiones de carbono de la cadena de bloques de Bitcoin es:"
-
-#: ../../01_introduction.rst:142
-msgid "Carbon Emissions = Electricity used (kWh) x Carbon Intensity (gCO2/kWh)"
-msgstr "Emisiones de carbono = Electricidad utilizada (kWh) x Intensidad de carbono (gCO2/kWh)"
-
-#: ../../01_introduction.rst:144
-msgid "Using this equation, the carbon emissions of the Bitcoin blockchain can be compared to a proof of stake blockchain protocol like DecentralChain. The difference in carbon emissions between the two can then be used to generate carbon credits, creating a new market for businesses and individuals to offset their carbon emissions and invest in a sustainable future."
-msgstr "Usando esta ecuación, las emisiones de carbono de la cadena de bloques de Bitcoin se pueden comparar con un protocolo de cadena de bloques de prueba de participación como DecentralChain. La diferencia en las emisiones de carbono entre los dos se puede usar para generar créditos de carbono, creando un nuevo mercado para que las empresas y las personas compensen sus emisiones de carbono e inviertan en un futuro sostenible."
-
-#: ../../01_introduction.rst:146
-msgid "According to a study by the World Bank, carbon credits can yield a return of up to 7.2 percent annually over a 15-year period. This makes them an attractive investment for individuals and companies alike."
-msgstr "Según un estudio del Banco Mundial, los créditos de carbono pueden generar un rendimiento de hasta el 7,2 por ciento anual durante un período de 15 años. Esto los convierte en una inversión atractiva tanto para particulares como para empresas."
-
-#: ../../01_introduction.rst:148
-msgid "The DecentralChain blockchain not only provides a more sustainable alternative to traditional Bitcoin transactions but also creates new opportunities for businesses and individuals to invest in a sustainable future. By incentivizing sustainable practices through the proof of incentivized sustainability protocol and the hosting of nodes on eco-friendly servers, DecentralChain is paving the way for a greener, more sustainable future."
-msgstr "La cadena de bloques DecentralChain no solo proporciona una alternativa más sostenible a las transacciones tradicionales de Bitcoin, sino que también crea nuevas oportunidades para que las empresas y las personas inviertan en un futuro sostenible. Al incentivar las prácticas sostenibles a través de la prueba del protocolo de sostenibilidad incentivado y el alojamiento de nodos en servidores ecológicos, DecentralChain allana el camino para un futuro más verde y sostenible."
-
-#: ../../01_introduction.rst:151
-msgid "Carbon Sequestration"
-msgstr "Secuestro de Carbono"
-
-#: ../../01_introduction.rst:153
-msgid "Carbon sequestration, the process of capturing and storing carbon dioxide (CO2) to reduce its concentration in the atmosphere, is a critical strategy in mitigating the effects of climate change. Through the use of blockchain technology, carbon sequestration can be further incentivized, creating a new market for carbon credits."
-msgstr "El secuestro de carbono, el proceso de capturar y almacenar dióxido de carbono (CO2) para reducir su concentración en la atmósfera, es una estrategia fundamental para mitigar los efectos del cambio climático. Mediante el uso de la tecnología blockchain, se puede incentivar aún más el secuestro de carbono, creando un nuevo mercado para los créditos de carbono."
-
-#: ../../01_introduction.rst:155
-msgid "One of the ways to achieve carbon sequestration is by buying property in Costa Rica and tokenizing the sequestered carbon in the form of a digital token that can be traded on a blockchain platform. The Costa Rican government's initiative of National Forest Financing Fund (FONAFIFO) provides a financial incentive for private landowners to reforest and conserve their land, while also allowing them to receive payments for the carbon sequestered on their property in the form of carbon credits. By tokenizing these carbon credits on a blockchain platform, the carbon sequestration process can be further incentivized, creating a new market for carbon credits and a carbon credit-backed crypto-asset."
-msgstr "Una de las formas de lograr el secuestro de carbono es comprando propiedades en Costa Rica y tokenizando el carbono secuestrado en forma de token digital que se puede comercializar en una plataforma de cadena de bloques. La iniciativa del gobierno costarricense del Fondo Nacional de Financiamiento Forestal (FONAFIFO) brinda un incentivo financiero para que los propietarios privados reforesten y conserven sus tierras, al mismo tiempo que les permite recibir pagos por el carbono secuestrado en su propiedad en forma de créditos de carbono. Al tokenizar estos créditos de carbono en una plataforma blockchain, el proceso de secuestro de carbono puede incentivarse aún más, creando un nuevo mercado para los créditos de carbono y un criptoactivo respaldado por créditos de carbono."
-
-#: ../../01_introduction.rst:157
-msgid "The tokenization of carbon credits on a blockchain platform not only increases transparency and traceability in the carbon market, but it also provides a new way for people to invest in the conservation of natural areas while obtaining the economic benefit of the carbon credits. This creates a win-win situation, in which the carbon sequestration is incentivized, and the conservation of natural areas is supported."
-msgstr "La tokenización de créditos de carbono en una plataforma blockchain no solo aumenta la transparencia y la trazabilidad en el mercado de carbono, sino que también brinda una nueva forma para que las personas inviertan en la conservación de áreas naturales mientras obtienen el beneficio económico de los créditos de carbono. Esto crea una situación de ganar-ganar, en la que se incentiva la captura de carbono y se apoya la conservación de las áreas naturales."
-
-#: ../../01_introduction.rst:159
-msgid "The tokenization of carbon credits on a blockchain platform creates a new market for carbon credits and enables the creation of a carbon credit-backed crypto-asset. This approach can increase transparency and traceability in the carbon market, making it easier to track and verify the carbon credits being traded. Moreover, it provides a new way for people to invest in the conservation of natural areas, while also obtaining the economic benefit of the carbon credits. The Costa Rican government's initiative of National Forest Financing Fund (FONAFIFO) has set the base for this process, and with more involvement of the private sector, decentralized finance, and blockchain technology, this approach can be a step towards a sustainable future where everyone can participate in the conservation and mitigation of climate change."
-msgstr "La tokenización de créditos de carbono en una plataforma blockchain crea un nuevo mercado para créditos de carbono y permite la creación de un criptoactivo respaldado por créditos de carbono. Este enfoque puede aumentar la transparencia y la trazabilidad en el mercado de carbono, lo que facilita el seguimiento y la verificación de los créditos de carbono que se comercializan. Además, proporciona una nueva forma para que las personas inviertan en la conservación de áreas naturales, al mismo tiempo que obtienen el beneficio económico de los créditos de carbono. La iniciativa del gobierno costarricense del Fondo Nacional de Financiamiento Forestal (FONAFIFO) ha sentado las bases para este proceso, y con una mayor participación del sector privado, las finanzas descentralizadas y la tecnología blockchain, este enfoque puede ser un paso hacia un futuro sostenible donde todos puedan participar en la conservación y mitigación del cambio climático."
-
-#: ../../01_introduction.rst:162
+#: ../../01_introduction.md:107
 msgid "Wallet and Exchange"
 msgstr "Billetera e Intercambio"
 
-#: ../../01_introduction.rst:164
-msgid "`Decentral.Exchange <https://decentral.exchange/>`_ is an all-in-one platform that combines the features of a wallet, decentralized exchange, and cryptocurrency management tool into a single, seamless platform. Built on the DecentralChain blockchain, this platform offers numerous benefits to its users, including fast execution rates, multi-chain capability, low fees, and interoperability."
+#: ../../01_introduction.md:109
+#, fuzzy
+msgid "[Decentral.Exchange](<https://decentral.exchange/) is an all-in-one platform that combines the features of a wallet, decentralized exchange, and cryptocurrency management tool into a single, seamless platform. Built on the DecentralChain blockchain, this platform offers numerous benefits to its users, including fast execution rates, multi-chain capability, low fees, and interoperability."
 msgstr "`Decentral.Exchange <https://decentral.exchange/>`_ es una plataforma todo en uno que combina las características de una billetera, un intercambio descentralizado y una herramienta de administración de criptomonedas en una sola plataforma sin problemas. Construida sobre la cadena de bloques DecentralChain, esta plataforma ofrece numerosos beneficios a sus usuarios, que incluyen tasas de ejecución rápidas, capacidad de cadena múltiple, tarifas bajas e interoperabilidad."
 
-#: ../../01_introduction.rst:166
+#: ../../01_introduction.md:111
 msgid "One of the most significant advantages of decentralized exchanges is that they are not controlled by any central authority, giving users complete control over their assets. Unlike centralized exchanges, there is no risk of funds being frozen or confiscated by a centralized entity. With Decentral.Exchange, users can also enjoy enhanced security, as their private keys are stored locally on their device, reducing the risk of cybercrime. Decentralized exchanges also provide access to a wider range of assets, thanks to the absence of restrictions on the number of tokens that can be traded. Decentral.Exchange takes this further with its multi-chain capability, allowing users to trade tokens across different blockchains seamlessly. Decentral.Exchange's interoperability enables users to trade tokens across various chains and different decentralized exchanges, making it possible to access a broader range of assets effortlessly."
 msgstr "Una de las ventajas más significativas de los intercambios descentralizados es que no están controlados por ninguna autoridad central, lo que brinda a los usuarios un control total sobre sus activos. A diferencia de los intercambios centralizados, no hay riesgo de que una entidad centralizada congele o confisque los fondos. Con Decentral.Exchange, los usuarios también pueden disfrutar de una seguridad mejorada, ya que sus claves privadas se almacenan localmente en su dispositivo, lo que reduce el riesgo de ciberdelincuencia. Los intercambios descentralizados también brindan acceso a una gama más amplia de activos, gracias a la ausencia de restricciones en la cantidad de tokens que se pueden intercambiar. Decentral.Exchange lleva esto más allá con su capacidad de múltiples cadenas, lo que permite a los usuarios intercambiar tokens en diferentes cadenas de bloques sin problemas. La interoperabilidad de Decentral.Exchange permite a los usuarios intercambiar tokens en varias cadenas y diferentes intercambios descentralizados, lo que hace posible acceder a una gama más amplia de activos sin esfuerzo."
 
-#: ../../01_introduction.rst:168
+#: ../../01_introduction.md:113
 msgid "One of the key selling points of Decentral.Exchange is its low fees, which sets it apart from traditional centralized exchanges that often charge exorbitant fees. The absence of intermediaries means that users can keep more of their profits, making trading more accessible to everyone. In the DecentralChain ecosystem, having a native decentralized exchange is essential, as it facilitates easy buying and selling of DecentralChain tokens within the ecosystem. Additionally, project participants can create their tokens and trade them on the exchange. Decentral.Exchange also enables users to send and receive coins without the need for a centralized intermediary."
 msgstr "Uno de los puntos clave de venta de Decentral.Exchange son sus bajas tarifas, lo que lo diferencia de los intercambios centralizados tradicionales que a menudo cobran tarifas exorbitantes. La ausencia de intermediarios significa que los usuarios pueden conservar una mayor parte de sus ganancias, lo que hace que el comercio sea más accesible para todos. En el ecosistema DecentralChain, tener un intercambio descentralizado nativo es esencial, ya que facilita la compra y venta de tokens DecentralChain dentro del ecosistema. Además, los participantes del proyecto pueden crear sus tokens e intercambiarlos en el intercambio. Decentral.Exchange también permite a los usuarios enviar y recibir monedas sin necesidad de un intermediario centralizado."
 
-#: ../../01_introduction.rst:170
+#: ../../01_introduction.md:115
 msgid "Decentral.Exchange is at the forefront of the future of crypto trading, providing users with a wide range of benefits that centralized exchanges cannot match. With its native blockchain, DecentralChain, Decentral.Exchange is ideally positioned to revolutionize the crypto industry and redefine the way we trade cryptocurrencies."
 msgstr "Decentral.Exchange está a la vanguardia del futuro del comercio de criptomonedas, brindando a los usuarios una amplia gama de beneficios que los intercambios centralizados no pueden igualar. Con su cadena de bloques nativa, DecentralChain, Decentral.Exchange está en una posición ideal para revolucionar la industria de las criptomonedas y redefinir la forma en que comerciamos con criptomonedas."
 
-#: ../../01_introduction.rst:173
+#: ../../01_introduction.md:117
 msgid "Blockchain Explorer"
 msgstr "Explorador Blockchain"
 
-#: ../../01_introduction.rst:175
-msgid "`DecentralScan.com <https://decentralscan.com/>`_  is the official block explorer of the DecentralChain blockchain. It is a powerful tool that allows users to view, track, and analyze transactions on the DecentralChain blockchain. The block explorer provides a user-friendly interface that simplifies the navigation of the complex data stored on the blockchain."
+#: ../../01_introduction.md:119
+#, fuzzy
+msgid "[DecentralScan.com](<https://decentralscan.com/>) is the official block explorer of the DecentralChain blockchain. It is a powerful tool that allows users to view, track, and analyze transactions on the DecentralChain blockchain. The block explorer provides a user-friendly interface that simplifies the navigation of the complex data stored on the blockchain."
 msgstr "`DecentralScan.com <https://decentralscan.com/>`_ es el explorador de bloques oficial de la cadena de bloques DecentralChain. Es una herramienta poderosa que permite a los usuarios ver, rastrear y analizar transacciones en la cadena de bloques DecentralChain. El explorador de bloques proporciona una interfaz fácil de usar que simplifica la navegación de los datos complejos almacenados en la cadena de bloques."
 
-#: ../../01_introduction.rst:177
+#: ../../01_introduction.md:121
 msgid "One of the key benefits of DecentralScan.com is its ability to provide transparency to the DecentralChain ecosystem. It enables users to view all the transactions that have occurred on the blockchain in real-time, including the number of DecentralCoins (DCC) transferred, the addresses involved in the transaction, and the transaction timestamp. This makes it easy to track the movement of DCC and understand how the ecosystem is being used."
 msgstr "Uno de los beneficios clave de DecentralScan.com es su capacidad para brindar transparencia al ecosistema DecentralChain. Permite a los usuarios ver todas las transacciones que se han producido en la cadena de bloques en tiempo real, incluida la cantidad de DecentralCoins (DCC) transferidas, las direcciones involucradas en la transacción y la marca de tiempo de la transacción. Esto facilita el seguimiento del movimiento de DCC y la comprensión de cómo se utiliza el ecosistema."
 
-#: ../../01_introduction.rst:179
+#: ../../01_introduction.md:123
 msgid "The block explorer is also valuable in its ability to provide detailed information about the nodes in the network. Users can view the current number of nodes, their geographical distribution, and information about each node, such as its uptime and the number of blocks it has mined. This information is essential for the DecentralChain ecosystem, as it allows users to view the distribution of the network and understand the ecosystem's health."
 msgstr "El explorador de bloques también es valioso por su capacidad para proporcionar información detallada sobre los nodos de la red. Los usuarios pueden ver la cantidad actual de nodos, su distribución geográfica e información sobre cada nodo, como su tiempo de actividad y la cantidad de bloques que ha extraído. Esta información es esencial para el ecosistema DecentralChain, ya que permite a los usuarios ver la distribución de la red y comprender la salud del ecosistema."
 
-#: ../../01_introduction.rst:181
+#: ../../01_introduction.md:125
 msgid "In addition to tracking transactions and nodes, the block explorer also offers users a detailed view of the smart contract deployment on the blockchain. This is particularly useful for developers and businesses building on the DecentralChain blockchain, as it enables them to view and analyze deployed smart contracts, making it easier to identify bugs or potential vulnerabilities in the contract code."
 msgstr "Además de rastrear transacciones y nodos, el explorador de bloques también ofrece a los usuarios una vista detallada de la implementación del contrato inteligente en la cadena de bloques. Esto es particularmente útil para los desarrolladores y las empresas que se basan en la cadena de bloques DecentralChain, ya que les permite ver y analizar los contratos inteligentes implementados, lo que facilita la identificación de errores o posibles vulnerabilidades en el código del contrato."
 
-#: ../../01_introduction.rst:183
+#: ../../01_introduction.md:127
 msgid "Furthermore, the block explorer plays a vital role in ensuring the security of the DecentralChain ecosystem. By providing detailed information about transactions and nodes, it makes it easier for users to identify suspicious activity or potential security threats. The block explorer can also be used to track the movement of coins that have been stolen or lost, making it easier to recover them."
 msgstr "Además, el explorador de bloques juega un papel vital para garantizar la seguridad del ecosistema DecentralChain. Al proporcionar información detallada sobre transacciones y nodos, facilita a los usuarios identificar actividades sospechosas o posibles amenazas a la seguridad. El explorador de bloques también se puede utilizar para rastrear el movimiento de monedas robadas o perdidas, lo que facilita su recuperación."
 
-#: ../../01_introduction.rst:186
-msgid "CR Coin"
-msgstr "CR Coin"
+#: ../../01_introduction.md:129
+msgid "Inter-Chain Gateway Protocol"
+msgstr "Protocolo de Puerta de Enlace entre Cadenas"
 
-#: ../../01_introduction.rst:188
-msgid "CR Coin is a social currency proposed for Costa Rica, designed to provide a secure, efficient and environmentally-friendly medium of exchange for its citizens. The currency is built on the DecentralChain blockchain, a specialized platform for social currencies that ensures maximum security and scalability. It also incorporates carbon negative technology, which aims to minimize the environmental impact of blockchain-based transactions."
-msgstr "CR Coin es una moneda social propuesta para Costa Rica, diseñada para proporcionar un medio de intercambio seguro, eficiente y respetuoso con el medio ambiente para sus ciudadanos. La moneda se basa en la cadena de bloques DecentralChain, una plataforma especializada para monedas sociales que garantiza la máxima seguridad y escalabilidad. También incorpora tecnología de carbono negativo, cuyo objetivo es minimizar el impacto ambiental de las transacciones basadas en blockchain."
+#: ../../01_introduction.md:131
+msgid "The DecentralChain Inter-Chain Gateway is a blockchain mechanism designed to enable secure communication and interoperability between different blockchain networks. This is achieved by creating a decentralized network of nodes that utilize smart contract technology to validate and process transactions between different blockchains."
+msgstr "El protocolo de puerta de enlace entre cadenas de DecentralChain es un mecanismo de cadena de bloques diseñado para permitir la comunicación segura y la interoperabilidad entre diferentes redes de cadena de bloques. Esto se logra mediante la creación de una red descentralizada de nodos que utilizan tecnología de contrato inteligente para validar y procesar transacciones entre diferentes cadenas de bloques."
 
-#: ../../01_introduction.rst:190
-msgid "By introducing CR Coin, Costa Rica's economy can enjoy the advantages of blockchain technology, such as transparency, low transaction costs, and secure transactions. Currently, cash, bank transfers and online payment systems are the most commonly used methods for payments in Costa Rica, but these traditional forms of money and payment systems have limitations and vulnerabilities, including fraud and high costs."
-msgstr "Al introducir CR Coin, la economía de Costa Rica puede disfrutar de las ventajas de la tecnología blockchain, como la transparencia, los bajos costos de transacción y las transacciones seguras. Actualmente, el efectivo, las transferencias bancarias y los sistemas de pago en línea son los métodos de pago más utilizados en Costa Rica, pero estas formas tradicionales de dinero y sistemas de pago tienen limitaciones y vulnerabilidades, incluido el fraude y los altos costos."
+#: ../../01_introduction.md:133
+msgid "One major use case of the gateway is the ability to transfer assets between different blockchain networks. For example, if you hold Bitcoin but want to use it on another blockchain network, such as DecentralChain, the gateway can allow you to transfer your Bitcoin to the DecentralChain network, where it is converted into a form that is compatible with the DecentralChain blockchain."
+msgstr "Un caso de uso importante de la puerta de enlace es la capacidad de transferir activos entre diferentes redes de blockchain. Por ejemplo, si tiene Bitcoin pero desea usarlo en otra red de cadena de bloques, como DecentralChain, la puerta de enlace puede permitirle transferir su Bitcoin a la red DecentralChain, donde se convierte en una forma compatible con la cadena de bloques DecentralChain."
 
-#: ../../01_introduction.rst:192
-msgid "The launch of CR Coin is planned to involve a comprehensive marketing strategy, the establishment of a network of merchants and exchanges that accept CR Coin, and measures to ensure the security, stability and reliability of the currency. It is hoped that the introduction of CR Coin will not only provide a new medium of exchange for citizens but also create new opportunities for businesses, entrepreneurs and investors. CR Coin aims to revolutionize the way payments are made in Costa Rica, promoting sustainable development and environmental conservation with the potential to contribute to the country's goal of becoming a carbon-neutral economy that could have significant benefits for Costa Rica and its citizens."
-msgstr "Se planea que el lanzamiento de CR Coin involucre una estrategia de marketing integral, el establecimiento de una red de comerciantes e intercambios que acepten CR Coin, y medidas para garantizar la seguridad, estabilidad y confiabilidad de la moneda. Se espera que la introducción de CR Coin no solo proporcione un nuevo medio de intercambio para los ciudadanos, sino que también cree nuevas oportunidades para empresas, empresarios e inversores. CR Coin tiene como objetivo revolucionar la forma en que se realizan los pagos en Costa Rica, promoviendo el desarrollo sostenible y la conservación del medio ambiente con el potencial de contribuir al objetivo del país de convertirse en una economía neutral en carbono que podría tener beneficios significativos para Costa Rica y sus ciudadanos."
+#: ../../01_introduction.md:135
+msgid "In addition, the gateway facilitates the sharing of information between different blockchain networks. By creating a decentralized oracle network, smart contracts on different blockchain networks can access and utilize external data, enabling the creation of decentralized applications that use data from multiple sources and blockchain networks."
+msgstr "Además, la puerta de enlace facilita el intercambio de información entre diferentes redes de blockchain. Al crear una red Oracle descentralizada, los contratos inteligentes en diferentes redes de cadenas de bloques pueden acceder y utilizar datos externos, lo que permite la creación de aplicaciones descentralizadas que usan datos de múltiples fuentes y redes de cadenas de bloques."
 
-#: ../../01_introduction.rst:194
-msgid "Moreover, the education and awareness initiatives and partnerships with schools and non-profit organizations planned by CR Coin will help raise awareness about the importance of preserving the environment and promoting sustainable practices. By combining technology, community engagement and education, CR Coin aims to be a driving force for sustainable development and environmental conservation in Costa Rica."
-msgstr "Además, las iniciativas de educación y concientización y las asociaciones con escuelas y organizaciones sin fines de lucro planificadas por CR Coin ayudarán a crear conciencia sobre la importancia de preservar el medio ambiente y promover prácticas sostenibles. Al combinar tecnología, participación comunitaria y educación, CR Coin pretende ser una fuerza impulsora para el desarrollo sostenible y la conservación del medio ambiente en Costa Rica."
+#: ../../01_introduction.md:137
+msgid "To ensure the network's security, the gateway uses smart contract technology with predefined rules and conditions that are automatically executed when specific conditions are met. These conditions include input validation and access controls to ensure that only authorized parties can access and utilize the network's information."
+msgstr "Para garantizar la seguridad de la red, la puerta de enlace utiliza tecnología de contrato inteligente con reglas y condiciones predefinidas que se ejecutan automáticamente cuando se cumplen condiciones específicas. Estas condiciones incluyen validación de entrada y controles de acceso para garantizar que solo las partes autorizadas puedan acceder y utilizar la información de la red."
 
-#: ../../01_introduction.rst:197
+#: ../../01_introduction.md:139
+msgid "Proof of Incentivized Sustainability Protocol"
+msgstr "Protocolo de Prueba de Sostenibilidad Incentivada"
+
+#: ../../01_introduction.md:141
+msgid "As society becomes increasingly aware of the impact of climate change, businesses and individuals are looking for ways to reduce their carbon footprint. In the realm of blockchain technology, the high energy consumption and resulting carbon emissions of Bitcoin transactions are particularly problematic. However, the DecentralChain blockchain presents a solution to this problem through the use of its proof of incentivized sustainability protocol."
+msgstr "A medida que la sociedad se vuelve cada vez más consciente del impacto del cambio climático, las empresas y las personas buscan formas de reducir su huella de carbono. En el ámbito de la tecnología blockchain, el alto consumo de energía y las emisiones de carbono resultantes de las transacciones de Bitcoin son particularmente problemáticos. Sin embargo, la cadena de bloques DecentralChain presenta una solución a este problema mediante el uso de su protocolo de prueba de sostenibilidad incentivada."
+
+#: ../../01_introduction.md:143
+msgid "The traditional Bitcoin blockchain consumes a significant amount of energy for each transaction, releasing large amounts of carbon emissions into the atmosphere. In contrast, the DecentralChain blockchain utilizes a proof of stake protocol which is more energy efficient, resulting in significantly lower carbon emissions per transaction."
+msgstr "La cadena de bloques tradicional de Bitcoin consume una cantidad significativa de energía para cada transacción, liberando grandes cantidades de emisiones de carbono a la atmósfera. Por el contrario, la cadena de bloques DecentralChain utiliza un protocolo de prueba de participación que es más eficiente energéticamente, lo que resulta en emisiones de carbono significativamente más bajas por transacción."
+
+#: ../../01_introduction.md:145
+msgid "The DecentralChain blockchain generates carbon credits through the proof of incentivized sustainability protocol. Every Bitcoin transaction on the DecentralChain blockchain creates new carbon credits, which can be sold or used to offset the carbon emissions of other activities. DecentralChain shares a percentage of these carbon credits as incentives to node owners who host their nodes on eco-friendly servers."
+msgstr "La cadena de bloques DecentralChain genera créditos de carbono a través de la prueba del protocolo de sostenibilidad incentivada. Cada transacción de Bitcoin en la cadena de bloques DecentralChain crea nuevos créditos de carbono, que pueden venderse o usarse para compensar las emisiones de carbono de otras actividades. DecentralChain comparte un porcentaje de estos créditos de carbono como incentivos para los propietarios de nodos que alojan sus nodos en servidores ecológicos."
+
+#: ../../01_introduction.md:147
+msgid "The equation to calculate the carbon emissions of the Bitcoin blockchain is:"
+msgstr "La ecuación para calcular las emisiones de carbono de la cadena de bloques de Bitcoin es:"
+
+#: ../../01_introduction.md:149
+msgid "Carbon Emissions = Electricity used (kWh) x Carbon Intensity (gCO2/kWh)"
+msgstr "Emisiones de carbono = Electricidad utilizada (kWh) x Intensidad de carbono (gCO2/kWh)"
+
+#: ../../01_introduction.md:151
+msgid "Using this equation, the carbon emissions of the Bitcoin blockchain can be compared to a proof of stake blockchain protocol like DecentralChain. The difference in carbon emissions between the two can then be used to generate carbon credits, creating a new market for businesses and individuals to offset their carbon emissions and invest in a sustainable future."
+msgstr "Usando esta ecuación, las emisiones de carbono de la cadena de bloques de Bitcoin se pueden comparar con un protocolo de cadena de bloques de prueba de participación como DecentralChain. La diferencia en las emisiones de carbono entre los dos se puede usar para generar créditos de carbono, creando un nuevo mercado para que las empresas y las personas compensen sus emisiones de carbono e inviertan en un futuro sostenible."
+
+#: ../../01_introduction.md:153
+msgid "According to a study by the World Bank, carbon credits can yield a return of up to 7.2 percent annually over a 15-year period. This makes them an attractive investment for individuals and companies alike."
+msgstr "Según un estudio del Banco Mundial, los créditos de carbono pueden generar un rendimiento de hasta el 7,2 por ciento anual durante un período de 15 años. Esto los convierte en una inversión atractiva tanto para particulares como para empresas."
+
+#: ../../01_introduction.md:155
+msgid "The DecentralChain blockchain not only provides a more sustainable alternative to traditional Bitcoin transactions but also creates new opportunities for businesses and individuals to invest in a sustainable future. By incentivizing sustainable practices through the proof of incentivized sustainability protocol and the hosting of nodes on eco-friendly servers, DecentralChain is paving the way for a greener, more sustainable future."
+msgstr "La cadena de bloques DecentralChain no solo proporciona una alternativa más sostenible a las transacciones tradicionales de Bitcoin, sino que también crea nuevas oportunidades para que las empresas y las personas inviertan en un futuro sostenible. Al incentivar las prácticas sostenibles a través de la prueba del protocolo de sostenibilidad incentivado y el alojamiento de nodos en servidores ecológicos, DecentralChain allana el camino para un futuro más verde y sostenible."
+
+#: ../../01_introduction.md:157
+msgid "Carbon Sequestration"
+msgstr "Secuestro de Carbono"
+
+#: ../../01_introduction.md:159
+msgid "Carbon sequestration, the process of capturing and storing carbon dioxide (CO2) to reduce its concentration in the atmosphere, is a critical strategy in mitigating the effects of climate change. Through the use of blockchain technology, carbon sequestration can be further incentivized, creating a new market for carbon credits."
+msgstr "El secuestro de carbono, el proceso de capturar y almacenar dióxido de carbono (CO2) para reducir su concentración en la atmósfera, es una estrategia fundamental para mitigar los efectos del cambio climático. Mediante el uso de la tecnología blockchain, se puede incentivar aún más el secuestro de carbono, creando un nuevo mercado para los créditos de carbono."
+
+#: ../../01_introduction.md:161
+msgid "One of the ways to achieve carbon sequestration is by buying property in Costa Rica and tokenizing the sequestered carbon in the form of a digital token that can be traded on a blockchain platform. The Costa Rican government's initiative of National Forest Financing Fund (FONAFIFO) provides a financial incentive for private landowners to reforest and conserve their land, while also allowing them to receive payments for the carbon sequestered on their property in the form of carbon credits. By tokenizing these carbon credits on a blockchain platform, the carbon sequestration process can be further incentivized, creating a new market for carbon credits and a carbon credit-backed crypto-asset."
+msgstr "Una de las formas de lograr el secuestro de carbono es comprando propiedades en Costa Rica y tokenizando el carbono secuestrado en forma de token digital que se puede comercializar en una plataforma de cadena de bloques. La iniciativa del gobierno costarricense del Fondo Nacional de Financiamiento Forestal (FONAFIFO) brinda un incentivo financiero para que los propietarios privados reforesten y conserven sus tierras, al mismo tiempo que les permite recibir pagos por el carbono secuestrado en su propiedad en forma de créditos de carbono. Al tokenizar estos créditos de carbono en una plataforma blockchain, el proceso de secuestro de carbono puede incentivarse aún más, creando un nuevo mercado para los créditos de carbono y un criptoactivo respaldado por créditos de carbono."
+
+#: ../../01_introduction.md:163
+msgid "The tokenization of carbon credits on a blockchain platform not only increases transparency and traceability in the carbon market, but it also provides a new way for people to invest in the conservation of natural areas while obtaining the economic benefit of the carbon credits. This creates a win-win situation, in which the carbon sequestration is incentivized, and the conservation of natural areas is supported."
+msgstr "La tokenización de créditos de carbono en una plataforma blockchain no solo aumenta la transparencia y la trazabilidad en el mercado de carbono, sino que también brinda una nueva forma para que las personas inviertan en la conservación de áreas naturales mientras obtienen el beneficio económico de los créditos de carbono. Esto crea una situación de ganar-ganar, en la que se incentiva la captura de carbono y se apoya la conservación de las áreas naturales."
+
+#: ../../01_introduction.md:165
+msgid "The tokenization of carbon credits on a blockchain platform creates a new market for carbon credits and enables the creation of a carbon credit-backed crypto-asset. This approach can increase transparency and traceability in the carbon market, making it easier to track and verify the carbon credits being traded. Moreover, it provides a new way for people to invest in the conservation of natural areas, while also obtaining the economic benefit of the carbon credits. The Costa Rican government's initiative of National Forest Financing Fund (FONAFIFO) has set the base for this process, and with more involvement of the private sector, decentralized finance, and blockchain technology, this approach can be a step towards a sustainable future where everyone can participate in the conservation and mitigation of climate change."
+msgstr "La tokenización de créditos de carbono en una plataforma blockchain crea un nuevo mercado para créditos de carbono y permite la creación de un criptoactivo respaldado por créditos de carbono. Este enfoque puede aumentar la transparencia y la trazabilidad en el mercado de carbono, lo que facilita el seguimiento y la verificación de los créditos de carbono que se comercializan. Además, proporciona una nueva forma para que las personas inviertan en la conservación de áreas naturales, al mismo tiempo que obtienen el beneficio económico de los créditos de carbono. La iniciativa del gobierno costarricense del Fondo Nacional de Financiamiento Forestal (FONAFIFO) ha sentado las bases para este proceso, y con una mayor participación del sector privado, las finanzas descentralizadas y la tecnología blockchain, este enfoque puede ser un paso hacia un futuro sostenible donde todos puedan participar en la conservación y mitigación del cambio climático."
+
+#: ../../01_introduction.md:167
 msgid "Native Swap"
 msgstr "Intercambio Nativo"
 
-#: ../../01_introduction.rst:199
+#: ../../01_introduction.md:169
 msgid "DecentralChain is an innovative blockchain platform that offers a wide range of features to its users, one of which is the upcoming DecentralChain native swap. A swap is a way for users to exchange one cryptocurrency for another, without the need for a centralized intermediary. In this essay, we will delve into how the DecentralChain native swap is expected to work, and explain how users will be able to use it to swap their DecentralCoin for other cryptocurrencies."
 msgstr "DecentralChain es una innovadora plataforma de cadena de bloques que ofrece una amplia gama de características a sus usuarios, una de las cuales es el próximo intercambio nativo de DecentralChain. Un intercambio es una forma en que los usuarios intercambian una criptomoneda por otra, sin la necesidad de un intermediario centralizado. En este ensayo, profundizaremos en cómo se espera que funcione el intercambio nativo de DecentralChain y explicaremos cómo los usuarios podrán usarlo para intercambiar su DecentralCoin por otras criptomonedas."
 
-#: ../../01_introduction.rst:201
+#: ../../01_introduction.md:171
 msgid "A swap is essentially a smart contract that facilitates the exchange of one cryptocurrency for another. When a user initiates a swap, their cryptocurrency is locked into the smart contract, and they receive the equivalent amount of the other cryptocurrency in return. The smart contract then releases the locked up cryptocurrency to the other user. This process happens on-chain, meaning that the swap is settled on the blockchain, and the transaction is recorded on the blockchain's ledger."
 msgstr "Un intercambio es esencialmente un contrato inteligente que facilita el intercambio de una criptomoneda por otra. Cuando un usuario inicia un intercambio, su criptomoneda se bloquea en el contrato inteligente y recibe a cambio la cantidad equivalente de la otra criptomoneda. El contrato inteligente luego libera la criptomoneda bloqueada al otro usuario. Este proceso ocurre en la cadena, lo que significa que el intercambio se liquida en la cadena de bloques y la transacción se registra en el libro mayor de la cadena de bloques."
 
-#: ../../01_introduction.rst:203
+#: ../../01_introduction.md:173
 msgid "The DecentralChain native swap is expected to be powered by an Automated Market Maker (AMM) algorithm. This algorithm will calculate the price of the coin based on the token supply and the liquidity in the swap. The price will be calculated using the constant product formula."
 msgstr "Se espera que el intercambio nativo de DecentralChain funcione con un algoritmo Automated Market Maker (AMM). Este algoritmo calculará el precio de la moneda en función del suministro de tokens y la liquidez en el intercambio. El precio se calculará utilizando la fórmula del producto constante."
 
-#: ../../01_introduction.rst:205
+#: ../../01_introduction.md:175
 msgid "A swap platform can be thought of as a liquidity pool where users can deposit their tokens, and then use those tokens to swap for other tokens on the platform. As more users deposit tokens into the pool, the pool's liquidity increases, making it more attractive for users to swap their tokens on the platform."
 msgstr "Se puede pensar en una plataforma de intercambio como un grupo de liquidez donde los usuarios pueden depositar sus tokens y luego usar esos tokens para intercambiarlos por otros tokens en la plataforma. A medida que más usuarios depositan tokens en el grupo, la liquidez del grupo aumenta, lo que hace que sea más atractivo para los usuarios intercambiar sus tokens en la plataforma."
 
-#: ../../01_introduction.rst:207
+#: ../../01_introduction.md:177
 msgid "The DecentralChain native swap is expected to offer users a secure, efficient, and decentralized way to swap their cryptocurrencies. By eliminating the need for centralized intermediaries, users will be able to exchange their cryptocurrencies without relying on third parties, which can be slow, expensive, and risky. With the upcoming launch of the DecentralChain native swap, users will be able to experience the future of crypto swapping firsthand."
 msgstr "Se espera que el intercambio nativo de DecentralChain ofrezca a los usuarios una forma segura, eficiente y descentralizada de intercambiar sus criptomonedas. Al eliminar la necesidad de intermediarios centralizados, los usuarios podrán intercambiar sus criptomonedas sin depender de terceros, lo que puede ser lento, costoso y riesgoso. Con el próximo lanzamiento del intercambio nativo de DecentralChain, los usuarios podrán experimentar el futuro del intercambio de criptomonedas de primera mano."
 
+#: ../../01_introduction.md:179
+msgid "CR Coin"
+msgstr "CR Coin"
+
+#: ../../01_introduction.md:181
+msgid "CR Coin is a social currency proposed for Costa Rica, designed to provide a secure, efficient and environmentally-friendly medium of exchange for its citizens. The currency is built on the DecentralChain blockchain, a specialized platform for social currencies that ensures maximum security and scalability. It also incorporates carbon negative technology, which aims to minimize the environmental impact of blockchain-based transactions."
+msgstr "CR Coin es una moneda social propuesta para Costa Rica, diseñada para proporcionar un medio de intercambio seguro, eficiente y respetuoso con el medio ambiente para sus ciudadanos. La moneda se basa en la cadena de bloques DecentralChain, una plataforma especializada para monedas sociales que garantiza la máxima seguridad y escalabilidad. También incorpora tecnología de carbono negativo, cuyo objetivo es minimizar el impacto ambiental de las transacciones basadas en blockchain."
+
+#: ../../01_introduction.md:183
+msgid "By introducing CR Coin, Costa Rica's economy can enjoy the advantages of blockchain technology, such as transparency, low transaction costs, and secure transactions. Currently, cash, bank transfers and online payment systems are the most commonly used methods for payments in Costa Rica, but these traditional forms of money and payment systems have limitations and vulnerabilities, including fraud and high costs."
+msgstr "Al introducir CR Coin, la economía de Costa Rica puede disfrutar de las ventajas de la tecnología blockchain, como la transparencia, los bajos costos de transacción y las transacciones seguras. Actualmente, el efectivo, las transferencias bancarias y los sistemas de pago en línea son los métodos de pago más utilizados en Costa Rica, pero estas formas tradicionales de dinero y sistemas de pago tienen limitaciones y vulnerabilidades, incluido el fraude y los altos costos."
+
+#: ../../01_introduction.md:185
+msgid "The launch of CR Coin is planned to involve a comprehensive marketing strategy, the establishment of a network of merchants and exchanges that accept CR Coin, and measures to ensure the security, stability and reliability of the currency. It is hoped that the introduction of CR Coin will not only provide a new medium of exchange for citizens but also create new opportunities for businesses, entrepreneurs and investors. CR Coin aims to revolutionize the way payments are made in Costa Rica, promoting sustainable development and environmental conservation with the potential to contribute to the country's goal of becoming a carbon-neutral economy that could have significant benefits for Costa Rica and its citizens."
+msgstr "Se planea que el lanzamiento de CR Coin involucre una estrategia de marketing integral, el establecimiento de una red de comerciantes e intercambios que acepten CR Coin, y medidas para garantizar la seguridad, estabilidad y confiabilidad de la moneda. Se espera que la introducción de CR Coin no solo proporcione un nuevo medio de intercambio para los ciudadanos, sino que también cree nuevas oportunidades para empresas, empresarios e inversores. CR Coin tiene como objetivo revolucionar la forma en que se realizan los pagos en Costa Rica, promoviendo el desarrollo sostenible y la conservación del medio ambiente con el potencial de contribuir al objetivo del país de convertirse en una economía neutral en carbono que podría tener beneficios significativos para Costa Rica y sus ciudadanos."
+
+#: ../../01_introduction.md:187
+msgid "Moreover, the education and awareness initiatives and partnerships with schools and non-profit organizations planned by CR Coin will help raise awareness about the importance of preserving the environment and promoting sustainable practices. By combining technology, community engagement and education, CR Coin aims to be a driving force for sustainable development and environmental conservation in Costa Rica."
+msgstr "Además, las iniciativas de educación y concientización y las asociaciones con escuelas y organizaciones sin fines de lucro planificadas por CR Coin ayudarán a crear conciencia sobre la importancia de preservar el medio ambiente y promover prácticas sostenibles. Al combinar tecnología, participación comunitaria y educación, CR Coin pretende ser una fuerza impulsora para el desarrollo sostenible y la conservación del medio ambiente en Costa Rica."

@@ -1,7 +1,6 @@
-# SOME DESCRIPTIVE TITLE.
+# DecentralChain is an open blockchain protocol and development toolset for Web 3.0 applications and decentralized solutions.
 # Copyright (C) 2023, Blockchain Costa Rica
-# This file is distributed under the same license as the DecentralChain
-# package.
+# This file is distributed under the same license as the DecentralChain package.
 # Josue Rojas <josue.rojas@decentralchain.io>, 2023.
 #
 #, fuzzy
@@ -9120,10 +9119,58 @@ msgstr ""
 msgid "The maximum number of proofs is :math:`8`."
 msgstr ""
 
-#: ../../02_decentralchain/index.md:1 ../../02_decentralchain/index.md:5
+#: ../../02_decentralchain/index.md:1 ../../02_decentralchain/index.md:23
 msgid "DecentralChain"
 msgstr ""
 
 #: ../../02_decentralchain/index.md:3
 msgid "DecentralChain is an open blockchain protocol and development toolset for Web 3.0 applications and decentralized solutions."
+msgstr ""
+
+#: ../../02_decentralchain/index.md:19
+msgid "Blazingly Fast"
+msgstr ""
+
+#: ../../02_decentralchain/index.md:23
+msgid "Thousands of transactions a second."
+msgstr ""
+
+#: ../../02_decentralchain/index.md:35
+msgid "Eco-Friendly"
+msgstr ""
+
+#: ../../02_decentralchain/index.md:39
+msgid "Carbon neutral technology."
+msgstr ""
+
+#: ../../02_decentralchain/index.md:51
+msgid "Low Fees"
+msgstr ""
+
+#: ../../02_decentralchain/index.md:55
+msgid "Say goodbye to expensive fees."
+msgstr ""
+
+#: ../../02_decentralchain/index.md:67
+msgid "Governance Mechanism"
+msgstr ""
+
+#: ../../02_decentralchain/index.md:71
+msgid "Community-driven decisions."
+msgstr ""
+
+#: ../../02_decentralchain/index.md:83
+msgid "Cross-Chain Interoperability"
+msgstr ""
+
+#: ../../02_decentralchain/index.md:87
+msgid "Connect to other blockchains."
+msgstr ""
+
+#: ../../02_decentralchain/index.md:99
+msgid "Decentralized Data Storage"
+msgstr ""
+
+#: ../../02_decentralchain/index.md:103
+msgid "Permanently secured data."
 msgstr ""
