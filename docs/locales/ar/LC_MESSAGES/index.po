@@ -1,29 +1,26 @@
-# DecentralChain is an open blockchain protocol and development toolset for Web 3.0 applications and decentralized solutions.
-# Copyright (C) 2023, Blockchain Costa Rica
-# This file is distributed under the same license as the DecentralChain package.
 
 #: ../../index.rst:8
 msgid "DecentralChain Documentation"
 msgstr ""
 
 #: ../../index.rst:10
-msgid "Welcome to the Decentralchain documentation, a comprehensive guide tounderstanding and using the next-generation blockchain technology ofDecentralChain. Our protocol is designed to enable businesses andorganizations to store and manage data in a secure, transparent, andtamper-proof manner."
+msgid "Welcome to the Decentralchain documentation, a comprehensive guide to understanding and using the next-generation blockchain technology of DecentralChain. Our protocol is designed to enable businesses and organizations to store and manage data in a secure, transparent, and tamper-proof manner."
 msgstr ""
 
 #: ../../index.rst:12
-msgid "DecentralChain utilizes the Leased Proof of Stake (LPoS) consensusmechanism and sharding to enable faster transaction processing times,lower energy consumption, and increased scalability. Our native token,DecentralCoin (DCC), is used for standard payments such as block rewards, and our on-chain governance system allows us to make changes to theprotocol through voting."
+msgid "DecentralChain utilizes the Leased Proof of Stake (LPoS) consensus mechanism and sharding to enable faster transaction processing times, lower energy consumption, and increased scalability. Our native token, DecentralCoin (DCC), is used for standard payments such as block rewards, and our on-chain governance system allows us to make changes to the protocol through voting."
 msgstr ""
 
 #: ../../index.rst:14
-msgid "Our documentation covers various aspects of the DecentralChain protocol,including its architecture, consensus mechanism, data structures, andAPIs. It also provides a comprehensive guide to setting up and running aDecentralChain node, as well as integrating the protocol into existingapplications."
+msgid "Our documentation covers various aspects of the DecentralChain protocol, including its architecture, consensus mechanism, data structures, and APIs. It also provides a comprehensive guide to setting up and running a DecentralChain node, as well as integrating the protocol into existing applications."
 msgstr ""
 
 #: ../../index.rst:16
-msgid "We place a strong emphasis on security, with regular security audits toidentify and address potential vulnerabilities. Data is stored andmanaged using cryptography and distributed storage to ensure dataintegrity and security."
+msgid "We place a strong emphasis on security, with regular security audits to identify and address potential vulnerabilities. Data is stored and managed using cryptography and distributed storage to ensure data integrity and security."
 msgstr ""
 
 #: ../../index.rst:18
-msgid "Whether you're a developer or a business owner looking to leverageblockchain technology for data management and security, theDecentralChain documentation is a valuable resource for understanding and using the protocol. We invite you to explore our documentation and getstarted with DecentralChain today."
+msgid "Whether you're a developer or a business owner looking to leverage blockchain technology for data management and security, the DecentralChain documentation is a valuable resource for understanding and using the protocol. We invite you to explore our documentation and get started with DecentralChain today."
 msgstr ""
 
 #: ../../index.rst:22 ../../index.rst:39 ../../index.rst:55 ../../index.rst:72
@@ -36,7 +33,7 @@ msgid "Introduction"
 msgstr ""
 
 #: ../../index.rst:28
-msgid "Get ready to jump into the exciting world of cryptocurrency andblockchain with DecentralChain. Start here to learn the basics and findout how this innovative platform is revolutionizing the industry."
+msgid "Get ready to jump into the exciting world of cryptocurrency and blockchain with DecentralChain. Start here to learn the basics and find out how this innovative platform is revolutionizing the industry."
 msgstr ""
 
 #: ../../index.rst:32 ../../index.rst:48 ../../index.rst:65
@@ -48,7 +45,7 @@ msgid "DecentralChain"
 msgstr ""
 
 #: ../../index.rst:44
-msgid "DecentralChain is a blockchain protocol and development toolkit thatempowers users to create decentralized applications (dApps) and Web 3.0solutions on a secure and scalable platform using tools such as accounts, tokens, transactions, blocks, nodes, orders, and oracles."
+msgid "DecentralChain is a blockchain protocol and development toolkit that empowers users to create decentralized applications (dApps) and Web 3.0 solutions on a secure and scalable platform using tools such as accounts, tokens, transactions, blocks, nodes, orders, and oracles."
 msgstr ""
 
 #: ../../index.rst:58 ../../index.rst:142
@@ -56,7 +53,7 @@ msgid "Ride Language"
 msgstr ""
 
 #: ../../index.rst:61
-msgid "Ride is a straightforward, developer-friendly functional programminglanguage for smart contracts and decentralized applications (dApps) onthe DecentralChain blockchain. Here you will learn about syntax basics,data types, functions, script types, structures, and FOLD<N> iterations."
+msgid "Ride is a straightforward, developer-friendly functional programming language for smart contracts and decentralized applications (dApps) on the DecentralChain blockchain. Here you will learn about syntax basics, data types, functions, script types, structures, and FOLD<N> iterations."
 msgstr ""
 
 #: ../../index.rst:75
@@ -64,7 +61,7 @@ msgid "Node Guide"
 msgstr ""
 
 #: ../../index.rst:78
-msgid "Learn about topics such as generating blocks, generation rewards,upgrading the node, configuring logging and node settings, using the node wallet, creating a custom blockchain, and utilizing the Node Go tool."
+msgid "Learn about topics such as generating blocks, generation rewards, upgrading the node, configuring logging and node settings, using the node wallet, creating a custom blockchain, and utilizing the Node Go tool."
 msgstr ""
 
 #: ../../index.rst:82 ../../index.rst:99 ../../index.rst:115
@@ -76,7 +73,7 @@ msgid "Smart Contracts and dApps"
 msgstr ""
 
 #: ../../index.rst:95
-msgid "Lean everything you need to know in order to start creating your ownsmart contracts and decentralized applications (dApps) withDecentralChain's developer tools, APIs and SDKs."
+msgid "Lean everything you need to know in order to start creating your own smart contracts and decentralized applications (dApps) with DecentralChain's developer tools, APIs and SDKs."
 msgstr ""
 
 #: ../../index.rst:109
@@ -84,6 +81,5 @@ msgid "Contributing"
 msgstr ""
 
 #: ../../index.rst:111
-msgid "More information about the community that leads, supports, and developsthis documentation, including how you can contribute to it by fixing anytypos, adding translations, examples or updating any outdatedinformation. Join the community to help improve this resource foreveryone."
+msgid "More information about the community that leads, supports, and develops this documentation, including how you can contribute to it by fixing any typos, adding translations, examples or updating any outdated information. Join the community to help improve this resource for everyone."
 msgstr ""
-
