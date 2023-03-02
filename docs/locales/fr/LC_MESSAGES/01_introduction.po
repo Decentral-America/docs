@@ -1,21 +1,4 @@
-# DecentralChain is an open blockchain protocol and development toolset for Web 3.0 applications and decentralized solutions.
-# Copyright (C) 2023, Blockchain Costa Rica
-# This file is distributed under the same license as the DecentralChain package.
-# Josue Rojas <josue.rojas@decentralchain.io>, 2023.
-#
-#, fuzzy
-msgid ""
-msgstr ""
-"Project-Id-Version: DecentralChain master\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-17 15:49-0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Josue Rojas <josue.rojas@decentralchain.io>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.11.0\n"
+
 
 #: ../../01_introduction.md:1 ../../01_introduction/index.md:1
 #: ../../01_introduction/index.md:3
