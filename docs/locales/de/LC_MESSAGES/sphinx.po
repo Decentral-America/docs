@@ -17,7 +17,6 @@ msgid "Read more ..."
 msgstr ""
 
 #: ../../../../../.envs/docs/lib/python3.10/site-packages/ablog/templates/languages.html:3
-#: ../../_templates/versions.html:12
 msgid "Languages"
 msgstr ""
 
@@ -66,22 +65,3 @@ msgstr ""
 msgid "Recent Posts"
 msgstr ""
 
-#: ../../_templates/versions.html:22
-msgid "Versions"
-msgstr ""
-
-#: ../../_templates/versions.html:32
-msgid "Downloads"
-msgstr ""
-
-#: ../../_templates/versions.html:40
-msgid "On Read the Docs"
-msgstr ""
-
-#: ../../_templates/versions.html:42
-msgid "Project Home"
-msgstr ""
-
-#: ../../_templates/versions.html:45
-msgid "Builds"
-msgstr ""

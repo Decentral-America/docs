@@ -1,4 +1,5 @@
 
+
 #: ../../01_introduction.md:1 ../../01_introduction/index.md:1
 #: ../../01_introduction/index.md:3
 msgid "Introduction"
@@ -218,7 +219,7 @@ msgid "Wallet and Exchange"
 msgstr ""
 
 #: ../../01_introduction.md:109
-msgid "[Decentral.Exchange](<https://decentral.exchange/) is an all-in-one platform that combines the features of a wallet, decentralized exchange, and cryptocurrency management tool into a single, seamless platform. Built on the DecentralChain blockchain, this platform offers numerous benefits to its users, including fast execution rates, multi-chain capability, low fees, and interoperability."
+msgid "[Decentral.Exchange](<https://decentral.exchange/>) is an all-in-one platform that combines the features of a wallet, decentralized exchange, and cryptocurrency management tool into a single, seamless platform. Built on the DecentralChain blockchain, this platform offers numerous benefits to its users, including fast execution rates, multi-chain capability, low fees, and interoperability."
 msgstr ""
 
 #: ../../01_introduction.md:111

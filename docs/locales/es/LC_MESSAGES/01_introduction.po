@@ -220,7 +220,7 @@ msgstr "Billetera e Intercambio"
 
 #: ../../01_introduction.md:109
 #, fuzzy
-msgid "[Decentral.Exchange](<https://decentral.exchange/) is an all-in-one platform that combines the features of a wallet, decentralized exchange, and cryptocurrency management tool into a single, seamless platform. Built on the DecentralChain blockchain, this platform offers numerous benefits to its users, including fast execution rates, multi-chain capability, low fees, and interoperability."
+msgid "[Decentral.Exchange](<https://decentral.exchange/>) is an all-in-one platform that combines the features of a wallet, decentralized exchange, and cryptocurrency management tool into a single, seamless platform. Built on the DecentralChain blockchain, this platform offers numerous benefits to its users, including fast execution rates, multi-chain capability, low fees, and interoperability."
 msgstr "`Decentral.Exchange <https://decentral.exchange/>`_ es una plataforma todo en uno que combina las características de una billetera, un intercambio descentralizado y una herramienta de administración de criptomonedas en una sola plataforma sin problemas. Construida sobre la cadena de bloques DecentralChain, esta plataforma ofrece numerosos beneficios a sus usuarios, que incluyen tasas de ejecución rápidas, capacidad de cadena múltiple, tarifas bajas e interoperabilidad."
 
 #: ../../01_introduction.md:111
@@ -379,3 +379,4 @@ msgstr "Se planea que el lanzamiento de CR Coin involucre una estrategia de mark
 #: ../../01_introduction.md:187
 msgid "Moreover, the education and awareness initiatives and partnerships with schools and non-profit organizations planned by CR Coin will help raise awareness about the importance of preserving the environment and promoting sustainable practices. By combining technology, community engagement and education, CR Coin aims to be a driving force for sustainable development and environmental conservation in Costa Rica."
 msgstr "Además, las iniciativas de educación y concientización y las asociaciones con escuelas y organizaciones sin fines de lucro planificadas por CR Coin ayudarán a crear conciencia sobre la importancia de preservar el medio ambiente y promover prácticas sostenibles. Al combinar tecnología, participación comunitaria y educación, CR Coin pretende ser una fuerza impulsora para el desarrollo sostenible y la conservación del medio ambiente en Costa Rica."
+
