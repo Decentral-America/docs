@@ -1,0 +1,1302 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="zh" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>Script Types &#8212; DecentralChain  文档</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/jupyter-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/thebelab.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/plot_directive.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d" />
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/thebelab-helper.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/design-tabs.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@jupyter-widgets/html-manager@^1.0.1/dist/embed-amd.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '03_ride-language/04_script-types';</script>
+    <link rel="shortcut icon" href="../_static/icon.svg"/>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="Structures" href="05_structures.html" />
+    <link rel="prev" title="Functions" href="03_functions.html" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="zh"/>  
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+<div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+    <span class="fa-solid fa-bars"></span>
+  </label>
+  
+  <div class="navbar-header-items__start">
+    
+      <div class="navbar-item">
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="DecentralChain"/>
+    <script>document.write(`<img src="../_static/logo-dark.png" class="logo__image only-dark" alt="DecentralChain"/>`);</script>
+  
+  
+</a></div>
+    
+  </div>
+  
+  
+  <div class=" navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item"><nav class="navbar-nav">
+  <p class="sidebar-header-items__title"
+     role="heading"
+     aria-level="1"
+     aria-label="Site Navigation">
+    Site Navigation
+  </p>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../01_introduction.html">
+                        Introduction
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../02_decentralchain/index.html">
+                        DecentralChain
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="index.html">
+                        Ride Language
+                      </a>
+                    </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="http://decentralchain.io/">
+                    Website
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="http://decentral.exchange/">
+                    Wallet & Exchange
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://decentralscan.com/">
+                    Explorer
+                  </a>
+                </li>
+                
+                </div>
+            </div>
+            
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="搜索" aria-label="搜索" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+        </div>
+      
+      
+        <div class="navbar-item">
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/Decentral-America/docs" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-github"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://twitter.com/decentralchain" title="Twitter" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-twitter"></i></span>
+            <label class="sr-only">Twitter</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.linkedin.com/company/decentralchain/" title="LinkedIn" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-linkedin"></i></span>
+            <label class="sr-only">LinkedIn</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.youtube.com/@decentralchain" title="Youtube" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-youtube"></i></span>
+            <label class="sr-only">Youtube</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://discord.gg/9UUbNBPQ3D" title="Discord" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-discord"></i></span>
+            <label class="sr-only">Discord</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.instagram.com/decentralchain/" title="Discord" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-instagram"></i></span>
+            <label class="sr-only">Discord</label></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="搜索" aria-label="搜索" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+    </div>
+  
+
+  
+    <label class="sidebar-toggle secondary-toggle" for="__secondary">
+      <span class="fa-solid fa-outdent"></span>
+    </label>
+  
+</div>
+
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          <div class="navbar-item"><nav class="navbar-nav">
+  <p class="sidebar-header-items__title"
+     role="heading"
+     aria-level="1"
+     aria-label="Site Navigation">
+    Site Navigation
+  </p>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../01_introduction.html">
+                        Introduction
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../02_decentralchain/index.html">
+                        DecentralChain
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="index.html">
+                        Ride Language
+                      </a>
+                    </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="http://decentralchain.io/">
+                    Website
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="http://decentral.exchange/">
+                    Wallet & Exchange
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://decentralscan.com/">
+                    Explorer
+                  </a>
+                </li>
+                
+                </div>
+            </div>
+            
+  </ul>
+</nav></div>
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/Decentral-America/docs" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-github"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://twitter.com/decentralchain" title="Twitter" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-twitter"></i></span>
+            <label class="sr-only">Twitter</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.linkedin.com/company/decentralchain/" title="LinkedIn" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-linkedin"></i></span>
+            <label class="sr-only">LinkedIn</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.youtube.com/@decentralchain" title="Youtube" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-youtube"></i></span>
+            <label class="sr-only">Youtube</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://discord.gg/9UUbNBPQ3D" title="Discord" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-discord"></i></span>
+            <label class="sr-only">Discord</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.instagram.com/decentralchain/" title="Discord" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-instagram"></i></span>
+            <label class="sr-only">Discord</label></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item"><nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Ride Language</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="01_syntax-basics.html">Syntax Basics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_data-types.html">Data Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03_functions.html">Functions</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Script Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05_structures.html">Structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06_iterations-with-fold.html">Iterations with FOLD&lt;N&gt;</a></li>
+<li class="toctree-l1"><a class="reference internal" href="07_dapp-to-app-invocation.html">dApp-to-App Invocation</a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+
+
+<nav aria-label="Breadcrumbs">
+  <ul class="bd-breadcrumbs" role="navigation" aria-label="Breadcrumb">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="index.html" class="nav-link">Ride Language</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page">Script Types</li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                   <section id="script-types">
+<h1>Script Types<a class="headerlink" href="#script-types" title="此标题的永久链接">#</a></h1>
+<p>There are three types of scripts:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#dapp-script"><span class="std std-ref">dApp script</span></a> enables you to define <a class="reference internal" href="03_functions.html#callable-functions"><span class="std std-ref">сallable functions</span></a> that can be called from other accounts, accept payments to the dApp, and perform various actions on the blockchain. Also dApp script can comprise a verifier function that allows or denies transactions and orders that are sent on behalf of the dApp account.</p></li>
+<li><p><a class="reference internal" href="#account-script"><span class="std std-ref">Account script</span></a> allows or denies transactions and orders that are sent on behalf of the account (like a verifier function of a dApp script).</p></li>
+<li><p><a class="reference internal" href="#asset-script"><span class="std std-ref">Asset script</span></a> allows or denies transactions involving the asset.</p></li>
+</ul>
+<p>Features of each script type are described in the table.</p>
+<table class="longtable table" id="id9">
+<caption><span class="caption-text">Script Types</span><a class="headerlink" href="#id9" title="此表格的永久链接">#</a></caption>
+<colgroup>
+<col style="width: 11.1%" />
+<col style="width: 44.4%" />
+<col style="width: 22.2%" />
+<col style="width: 22.2%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>#</p></th>
+<th class="head"><p>dApp script</p></th>
+<th class="head"><p>Account script</p></th>
+<th class="head"><p>Asset script</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Directives</p></td>
+<td><p>{-# CONTENT_TYPE DAPP #-} {-# SCRIPT_TYPE ACCOUNT #-}</p></td>
+<td><p>{-# CONTENT_TYPE EXPRESSION #-} {-# SCRIPT_TYPE ACCOUNT #-}</p></td>
+<td><p>{-# CONTENT_TYPE EXPRESSION #-} {-# SCRIPT_TYPE ASSET #-}</p></td>
+</tr>
+<tr class="row-odd"><td><p>Content</p></td>
+<td><p>Set of definitions</p></td>
+<td><p>Boolean expression</p></td>
+<td><p>Boolean expression</p></td>
+</tr>
+<tr class="row-even"><td><p>this variable</p></td>
+<td><p><a class="reference internal" href="05_structures.html#address"><span class="std std-ref">Address</span></a> structure containing dApp address</p></td>
+<td><p>Address structure containing smart account address</p></td>
+<td><p><a class="reference internal" href="03_functions.html#math-functions"><span class="std std-ref">Asset</span></a> structure</p></td>
+</tr>
+<tr class="row-odd"><td><p>Transaction or order that is checked</p></td>
+<td><p>Check is performed by the verifier function only. Annotation of the function sets the name of the variable that contains the outgoing transaction or the order, for example: &#64;Verifier(tx)</p></td>
+<td><p>Built-in variable tx: Transaction|Order contains the outgoing transaction or the order</p></td>
+<td><p>Build-in variable tx: Transaction contains the transaction involving the asset. Order check is not supported.</p></td>
+</tr>
+<tr class="row-even"><td><p>Proofs accessibility</p></td>
+<td><p>1) Proofs of the outgoing transaction or the order are accessible to the verifier function. 2) Proofs of the invoke script transaction are inaccessible to the callable function</p></td>
+<td><p>Accessible</p></td>
+<td><p>Inaccessible</p></td>
+</tr>
+<tr class="row-odd"><td><p>Blockchain data</p></td>
+<td><p>1) Accessible to the callable function. 2) Accessible to the verifier function when checking a transaction. 3) Inaccessible to the verifier function when checking an order</p></td>
+<td><p>1) Accessible when checking a transaction. 2) Inaccessible when checking an order</p></td>
+<td><p>Accessible</p></td>
+</tr>
+</tbody>
+</table>
+<section id="dapp-script">
+<h2>dApp Script<a class="headerlink" href="#dapp-script" title="此标题的永久链接">#</a></h2>
+<p>dApp script enables you to define callable functions that can be called from other accounts by sending an <a class="reference internal" href="../02_decentralchain/03_transaction.html#invoke-script-transaction"><span class="std std-ref">invoke script transaction</span></a> or by a <a class="reference internal" href="07_dapp-to-app-invocation.html#dapp-to-app-invocation"><span class="std std-ref">dApp-to-dApp invocation</span></a>.
+Callable functions can accept payments to the dApp and perform various actions on the blockchain. Also dApp script can comprise a verifier function that allows or denies transactions and orders that are sent on behalf of the dApp account. An account with a dApp script assigned to it is called a dApp.</p>
+<section id="dapp-script-format">
+<h3>dApp Script Format<a class="headerlink" href="#dapp-script-format" title="此标题的永久链接">#</a></h3>
+<p>The script code is composed of the following parts:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#id5"><span class="std std-ref">Directives</span></a></p></li>
+<li><p><a class="reference internal" href="#id6"><span class="std std-ref">Auxiliary definitions</span></a></p></li>
+<li><p><a class="reference internal" href="#callable-function"><span class="std std-ref">Callable function</span></a></p></li>
+<li><p><a class="reference internal" href="#id1"><span class="std std-ref">Verifier function</span></a></p></li>
+</ul>
+<img alt="../_images/01_dApp-Script-Format.png" src="../_images/01_dApp-Script-Format.png" />
+<section id="directives">
+<h4>Directives<a class="headerlink" href="#directives" title="此标题的永久链接">#</a></h4>
+<p>The dApp script should start with directives:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>{-# STDLIB_VERSION 5 #-}
+{-# CONTENT_TYPE DAPP #-}
+{-# SCRIPT_TYPE ACCOUNT #-}
+</pre></div>
+</div>
+<p>The above directives tell the compiler that:</p>
+<ul class="simple">
+<li><p>The script uses the standard library version 5.</p></li>
+<li><p>The script contains a set of definitions.</p></li>
+<li><p>The script will be assigned to an account (not asset).</p></li>
+</ul>
+</section>
+<section id="auxiliary-definitions">
+<h4>Auxiliary definitions<a class="headerlink" href="#auxiliary-definitions" title="此标题的永久链接">#</a></h4>
+<p>After the directives, you can define auxiliary variables and functions. These variables and functions are accessible within the entire script. Please note that functions without annotations cannot be called from other accounts. Let's see an exaxmple:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>let someConstant = 42
+func doSomething() = {
+ 1+1
+}
+</pre></div>
+</div>
+</section>
+<section id="callable-functions-dapp-script">
+<h4>Callable Functions (dApp Script)<a class="headerlink" href="#callable-functions-dapp-script" title="此标题的永久链接">#</a></h4>
+<p>The callable function should be marked with the &#64;Callable(i) annotation, where i is an <a class="reference internal" href="05_structures.html#invocation"><span class="std std-ref">Invocation</span></a> structure that contains fields of the script invocation that are accessible to the callable function. The variable name in the annotation is required even if the function does not use it.
+Callable function result is a set of <a class="reference internal" href="05_structures.html#script-actions"><span class="std std-ref">script actions</span></a> that are performed on the blockchain: adding/deleting/modifying entries to the account data storages, token transfers, issue/reissue/burning, and others. The result format and the available actions depend on the Standard library version used.
+For a detailed description, see the <a class="reference internal" href="03_functions.html#callable-functions"><span class="std std-ref">callable function</span></a> article.</p>
+<p>In the example below the callable function transfers 1 DecentralCoin to an account that called it and records the request information in the account data storage. If the same account tries to call the function again, the callable function throws an exception.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>@Callable(i)
+func faucet () = {
+ let isKnownCaller =  match getBoolean(this, toBase58String(i.caller.bytes)) {
+   case hist: Boolean =&gt;
+     hist
+   case _ =&gt;
+     false
+ }
+ if (!isKnownCaller) then
+ (
+   [
+     BooleanEntry(toBase58String(i.caller.bytes), true),
+     ScriptTransfer(i.caller, 100000000, unit)
+   ],
+   unit
+ )
+ else throw(&quot;Can be used only once&quot;)
+}
+</pre></div>
+</div>
+</section>
+<section id="verifier-function">
+<h4>Verifier Function<a class="headerlink" href="#verifier-function" title="此标题的永久链接">#</a></h4>
+<p>Verifier function checks transactions and orders that are sent on behalf of the dApp account for compliance with the specified conditions (in other words it works similar to the account script).
+The verifier function should be marked with the &#64;Verifier(tx) annotation, where tx is the transaction or the order that the function is currently checking. The variable name in the annotation is required even if the function does not use it.
+The verifier function has no arguments.Possible results of the verifier function are:</p>
+<ul class="simple">
+<li><p>True (the transaction or the order is allowed),</p></li>
+<li><p>False (the transaction or the order is denied),</p></li>
+<li><p>An error (the transaction or the order is denied).</p></li>
+</ul>
+<p>For a detailed description, see verifier function the article.
+Using the <a class="reference internal" href="01_syntax-basics.html#match-case"><span class="std std-ref">match ... case</span></a> operator, you can set up different conditions depending on the type of the transaction/order. For example, the following function allows <a class="reference internal" href="../02_decentralchain/03_transaction.html#transfer-transaction"><span class="std std-ref">transfer transactions</span></a> and denies orders and other types of transactions.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>@Verifier(tx)
+func verify() = {
+ match tx {
+   case ttx:TransferTransaction =&gt; sigVerify(ttx.bodyBytes, ttx.proofs[0], ttx.senderPublicKey)
+   case _ =&gt; false
+ }
+}
+</pre></div>
+</div>
+<p>dApp script that has no verifier function performs default verification, that is, checking that the transaction or the order is indeed signed by this account.</p>
+</section>
+</section>
+<section id="failed-transactions">
+<h3>Failed Transactions<a class="headerlink" href="#failed-transactions" title="此标题的永久链接">#</a></h3>
+<p>If the callable function failed or threw an <a class="reference internal" href="01_syntax-basics.html#exceptions"><span class="std std-ref">exception</span></a> when a block generator adds the transaction to a block, such a transaction is saved on the blockchain and marked with the attribute &quot;applicationStatus&quot;: &quot;script_execution_failed&quot;, provided that: There are two annotations: &#64;Callable(i) and &#64;Verifier(tx). The variable name in the annotation is required even if the function does not use it.
+An annotated function cannot be called inside a dApp script.</p>
+<ul class="simple">
+<li><p>The <a class="reference internal" href="../02_decentralchain/03_transaction.html#invoke-script-transaction"><span class="std std-ref">invoke script transaction</span></a> passed the sender signature verification or the account script verification.</p></li>
+<li><p>The complexity of performed computations exceeded the <a class="reference internal" href="07_dapp-to-app-invocation.html#limitations"><span class="std std-ref">threshold for saving failed transactions</span></a>.</p></li>
+</ul>
+<p>The transaction sender is charged a fee. The transaction doesn't entail any other changes on the blockchain.</p>
+</section>
+<section id="data-accessible-to-dapp-script">
+<h3>Data Accessible to dApp Script<a class="headerlink" href="#data-accessible-to-dapp-script" title="此标题的永久链接">#</a></h3>
+<p>Data accessible to the callable function:</p>
+<ul class="simple">
+<li><p>Particular fields of the invocation, including payments, fee, sender address and public key. See the <a class="reference internal" href="05_structures.html#invocation"><span class="std std-ref">Invocation</span></a> structure article for the fields description. Proofs are inaccessible.</p></li>
+<li><p>Blockchain data: current height, account balances, entries in account data storages, parameters of tokens, etc.</p></li>
+</ul>
+<p>Data accessible to the verifier function:</p>
+<ul class="simple">
+<li><p>Fields of the current verified transaction/order, including proofs. The built-in variable tx contains this transaction or order. The set of fields depends on the type of transaction/order, see the <a class="reference internal" href="05_structures.html#transaction-structures"><span class="std std-ref">transaction structures</span></a> chapter and <a class="reference internal" href="05_structures.html#order"><span class="std std-ref">Order</span></a> structure article.</p></li>
+<li><p>Blockchain data: current height, account balances, entries in account data storages, parameters of tokens, etc.</p></li>
+</ul>
+</section>
+<section id="annotations">
+<h3>Annotations<a class="headerlink" href="#annotations" title="此标题的永久链接">#</a></h3>
+<p>Annotation is a form of metadata that is added to a <a class="reference internal" href="03_functions.html#functions"><span class="std std-ref">function</span></a> of a <a class="reference internal" href="#dapp-script"><span class="std std-ref">dApp script</span></a>. At the present moment, there are two annotations: &#64;Callable(i) and &#64;Verifier(tx). The variable name in the annotation is required even if the function does not use it.
+An annotated function cannot be called inside a dApp script.</p>
+<section id="callable-i">
+<h4>&#64;Callable(i)<a class="headerlink" href="#callable-i" title="此标题的永久链接">#</a></h4>
+<p>Annotation of a <a class="reference internal" href="03_functions.html#callable-functions"><span class="std std-ref">callable function</span></a>.
+Variable i contains an <a class="reference internal" href="05_structures.html#invocation"><span class="std std-ref">Invocation</span></a> structure representing certain fields of the invocation.</p>
+</section>
+<section id="verifier-tx">
+<h4>&#64;Verifier(tx)<a class="headerlink" href="#verifier-tx" title="此标题的永久链接">#</a></h4>
+<p>Annotation of a verifier function.
+Variable tx contains a structure of transaction or order sent from a dApp's account.</p>
+</section>
+</section>
+<section id="callable-function">
+<h3>Callable Function<a class="headerlink" href="#callable-function" title="此标题的永久链接">#</a></h3>
+<p>Callable function is a <a class="reference internal" href="#dapp-script"><span class="std std-ref">dApp script</span></a> function which can be invoked by a <a class="reference internal" href="../02_decentralchain/03_transaction.html#invoke-script-transaction"><span class="std std-ref">invoke script transaction</span></a> or an invoke or reentrantInvoke functions (see details in the <a class="reference internal" href="03_functions.html#dapp-to-dapp-invocation-functions"><span class="std std-ref">dApp-to-dApp invocation functions</span></a> article).</p>
+<ul class="simple">
+<li><p>Add, modify, delete dApp <a class="reference internal" href="../02_decentralchain/01_account.html#account-data-storage"><span class="std std-ref">account data storage</span></a> entries.</p></li>
+<li><p>Transfer tokens.</p></li>
+<li><p>Add, modify, delete dApp.</p></li>
+<li><p>Issue tokens on behalf of the dApp, reissue and burn tokens.</p></li>
+<li><p>Setup <a class="reference internal" href="../02_decentralchain/03_transaction.html#how-to-enable-sponsorship"><span class="std std-ref">sponsorship</span></a>.</p></li>
+<li><p>Lease, cancel lease.</p></li>
+</ul>
+<p>The callable function can return a value that is passed to the invoking function in case of the <a class="reference internal" href="07_dapp-to-app-invocation.html#dapp-to-app-invocation"><span class="std std-ref">dApp-to-dApp invocation</span></a>.
+The invocation can contain payments to dApp. Tokens obtained in these payments can be used in script actions performed by the callable function and in payments attached to nested invocations.</p>
+<section id="annotation">
+<h4>Annotation<a class="headerlink" href="#annotation" title="此标题的永久链接">#</a></h4>
+<p>The callable function should be marked with the &#64;Callable(i) annotation, where i is an <a class="reference internal" href="05_structures.html#invocation"><span class="std std-ref">Invocation</span></a> structure that contains invocation fields that are available to the callable function. The variable name in the annotation is required even if the callable function does not use it.</p>
+</section>
+<section id="arguments">
+<h4>Arguments<a class="headerlink" href="#arguments" title="此标题的永久链接">#</a></h4>
+<p>The callable function can have arguments of the following types:</p>
+<ul class="simple">
+<li><p>The script uses the standard library version 5.</p></li>
+<li><p><a class="reference internal" href="02_data-types.html#boolean"><span class="std std-ref">Boolean</span></a></p></li>
+<li><p><a class="reference internal" href="02_data-types.html#bytevector"><span class="std std-ref">ByteVector</span></a></p></li>
+<li><p><a class="reference internal" href="02_data-types.html#int"><span class="std std-ref">Int</span></a></p></li>
+<li><p><a class="reference internal" href="02_data-types.html#string"><span class="std std-ref">String</span></a></p></li>
+<li><p><a class="reference internal" href="02_data-types.html#union"><span class="std std-ref">Union</span></a> with elements having types listed above.</p></li>
+<li><p><a class="reference internal" href="02_data-types.html#list"><span class="std std-ref">List</span></a> with elements having types listed above.</p></li>
+</ul>
+</section>
+<section id="invocation-result">
+<h4>Invocation Result<a class="headerlink" href="#invocation-result" title="此标题的永久链接">#</a></h4>
+<p>The callable function invocation result is a <a class="reference internal" href="02_data-types.html#tuple"><span class="std std-ref">tuple</span></a> of two elements:
+List of script actions. Actions are executed in the same order as the elements in the list.
+Return value that is passed to the invoking function in case of the <a class="reference internal" href="07_dapp-to-app-invocation.html#dapp-to-app-invocation"><span class="std std-ref">dApp-to-dApp invocation</span></a>.</p>
+<p>Let's see an example of invocation of an invocation result:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>(
+  [
+    BooleanEntry(&quot;key1&quot;, true),
+    IntegerEntry(&quot;key2&quot;, 42),
+    StringEntry(&quot;key3&quot;, &quot;some string&quot;),
+    BinaryEntry(&quot;key4&quot;, base58&#39;encoded&#39;),
+    DeleteEntry(&quot;key5&quot;),
+    ScriptTransfer(Address(base58&#39;3Ms8fSfAxBLDjKvNVgACRzQoBLCtCWxtawu&#39;), 100, base58&#39;someAssetid&#39;),
+    Issue(&quot;RegularToken&quot;, &quot;This is an ordinary token&quot;, 10000, 2, true),
+    Reissue(&quot;4ZzED8WJXsvuo2MEm2BmZ87Azw8Sx7TVC6ufSUA5LyTV&quot;, 1000, true),
+    Burn(&quot;4ZzED8WJXsvuo2MEm2BmZ87Azw8Sx7TVC6ufSUA5LyTV&quot;, 1000)]
+    SponsorFee(&quot;4ZzED8WJXsvuo2MEm2BmZ87Azw8Sx7TVC6ufSUA5LyTV&quot;, 300),
+    Lease(Address(base58&#39;3Mn5hzck8nYd52Ytd2ZjzoiQLVoMcn1VAs9&#39;,1000),
+    LeaseCancel(base58&#39;Pxaf8pGKHS5ufGhqjmwRRcHQtC9T3h4d1XaJMnkhR1Vt&#39;)
+  ],
+  42
+)
+</pre></div>
+</div>
+</section>
+<section id="script-actions-callable-function">
+<h4>Script Actions (Callable Function)<a class="headerlink" href="#script-actions-callable-function" title="此标题的永久链接">#</a></h4>
+<p>Script actions performed by the callable function are set by Ride structures.</p>
+<table class="longtable table" id="id10">
+<caption><span class="caption-text">Script Actions (Callable Function)</span><a class="headerlink" href="#id10" title="此表格的永久链接">#</a></caption>
+<colgroup>
+<col style="width: 16.7%" />
+<col style="width: 83.3%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Ride structure that sets action</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="05_structures.html#binaryentry"><span class="std std-ref">BinaryEntry</span></a>, <a class="reference internal" href="05_structures.html#booleanentry"><span class="std std-ref">BooleanEntry</span></a>, <a class="reference internal" href="05_structures.html#integerentry"><span class="std std-ref">IntegerEntry</span></a>, <a class="reference internal" href="05_structures.html#stringentry"><span class="std std-ref">StringEntry</span></a></p></td>
+<td><p>Adding/modifying the entry. The type of structure must match the type of entry to be added/changed. 1) If there is no entry in the account data storage with the key specified in the structure, the entry will be added. 2) If the entry is present in the <a class="reference internal" href="../02_decentralchain/01_account.html#account-data-storage"><span class="std std-ref">account data storage</span></a>, it will be modified.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="05_structures.html#deleteentry"><span class="std std-ref">DeleteEntry</span></a></p></td>
+<td><p>Entry deletion</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="05_structures.html#issue"><span class="std std-ref">Issue</span></a></p></td>
+<td><p>Token issue</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="05_structures.html#reissue"><span class="std std-ref">Reissue</span></a></p></td>
+<td><p>Token reissue</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="05_structures.html#burn"><span class="std std-ref">Burn</span></a></p></td>
+<td><p>Token burn</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="05_structures.html#sponsorfee"><span class="std std-ref">SponsorFee</span></a></p></td>
+<td><p>Sponsorship setup</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="05_structures.html#scripttransfer"><span class="std std-ref">ScriptTransfer</span></a></p></td>
+<td><p>Token transfer</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="05_structures.html#lease"><span class="std std-ref">Lease</span></a></p></td>
+<td><p>Lease</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="05_structures.html#leasecancel"><span class="std std-ref">LeaseCancel</span></a></p></td>
+<td><p>Lease cancellation</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="limitations-callable-function">
+<h4>Limitations  (Callable Function)<a class="headerlink" href="#limitations-callable-function" title="此标题的永久链接">#</a></h4>
+<ul class="simple">
+<li><p>The maximum total number of Issue, Reissue, Burn, SponsorFee, ScriptTransfer, Lease, LeaseCancelscript actions executed by all callable functions in a single transaction is <span class="math notranslate nohighlight">\(30\)</span>.</p></li>
+<li><p>The maximum total number of BinaryEntry, BooleanEntry, IntegerEntry, StringEntry, DeleteEntryscript actions executed by all callable functions in a single transaction is <span class="math notranslate nohighlight">\(100\)</span>.</p></li>
+<li><p>The maximum number of the payments to dApp in invocation is <span class="math notranslate nohighlight">\(10\)</span>.</p></li>
+</ul>
+<p>See also the <a class="reference internal" href="07_dapp-to-app-invocation.html#limitations"><span class="std std-ref">limitations</span></a> article.</p>
+</section>
+<section id="threshold-for-saving-failed-transactions">
+<h4>Threshold for Saving Failed Transactions<a class="headerlink" href="#threshold-for-saving-failed-transactions" title="此标题的永久链接">#</a></h4>
+<p>The Invoke Script transaction is saved on the blockchain and a fee is charged for it even if the dApp script or the asset script fails when a block generator adds the transaction to a block, provided that the sender's signature or account script verification passed.</p>
+<p>However, if the callable function failed or <a class="reference internal" href="01_syntax-basics.html#exceptions"><span class="std std-ref">threw an exception</span></a> before the <a class="reference internal" href="07_dapp-to-app-invocation.html#script-complexity"><span class="std std-ref">complexity</span></a> of performed calculations exceeded the <a class="reference internal" href="07_dapp-to-app-invocation.html#limitations"><span class="std std-ref">threshold for saving failed transactions</span></a>, the transaction is discarded and the fee is not charged.</p>
+</section>
+<section id="example">
+<h4>Example<a class="headerlink" href="#example" title="此标题的永久链接">#</a></h4>
+<p>The example listed below is a wallet application which allows sending DecentralCoins to a certain address and withdrawing them (withdrawing others' DecentralCoins is prevented). There are two callable functions in the example(deposit and withdraw):</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>{-# STDLIB_VERSION 5 #-}
+{-# CONTENT_TYPE DAPP #-}
+{-# SCRIPT_TYPE ACCOUNT #-}
+
+@Callable(i)
+func deposit() = {
+ let pmt =
+   if i.payments.size() == 1 then
+     i.payments[0]
+   else throw(&quot;Attached payment is required&quot;)
+ if (isDefined(pmt.assetId))
+   then throw(&quot;Works with DecentralCoins only&quot;)
+   else {
+     let currentKey = toBase58String(i.caller.bytes)
+     let currentAmount = match getInteger(this, currentKey) {
+       case a:Int =&gt; a
+       case _ =&gt; 0
+     }
+     let newAmount = currentAmount + pmt.amount
+     (
+       [
+         IntegerEntry(currentKey, newAmount)
+       ],
+       unit
+     )
+   }
+}
+
+@Callable(i)
+func withdraw(amount: Int) = {
+ let currentKey = toBase58String(i.caller.bytes)
+ let currentAmount = match getInteger(this, currentKey) {
+   case a:Int =&gt; a
+   case _ =&gt; 0
+ }
+ let newAmount = currentAmount - amount
+ if (amount &lt; 0)
+   then throw(&quot;Can&#39;t withdraw negative amount&quot;)
+   else if (newAmount &lt; 0)
+     then throw(&quot;Not enough balance&quot;)
+     else (
+       [
+         IntegerEntry(currentKey, newAmount),
+         ScriptTransfer(i.caller, amount, unit)
+       ],
+       unit
+     )
+}
+
+@Verifier(tx)
+func verify() = false
+</pre></div>
+</div>
+</section>
+</section>
+<section id="id1">
+<h3>Verifier Function<a class="headerlink" href="#id1" title="此标题的永久链接">#</a></h3>
+<p>Verifier function is a function of <a class="reference internal" href="#dapp-script"><span class="std std-ref">dApp script</span></a> that is responsible for <a class="reference internal" href="../02_decentralchain/03_transaction.html#transaction-validation"><span class="std std-ref">verification of transactions</span></a> and orders sent from a <a class="reference internal" href="../02_decentralchain/01_account.html#dapp-and-smart-account"><span class="std std-ref">dApp</span></a> account. The verifier function does the same as an <a class="reference internal" href="#account-script"><span class="std std-ref">account script</span></a>.
+dApp script can have only one verifier function. The verifier function should be adorned with the &#64;Verifier(tx) annotation, where tx: Transaction|Order is the transaction or the order that the function is currently checking.
+Verifier function has no arguments.
+Verifier function can have one of the following execution results:</p>
+<ul class="simple">
+<li><p>True (the transaction or the order is allowed).</p></li>
+<li><p>False (the transaction or the order is denied).</p></li>
+<li><p>an error (the transaction or the order is denied).</p></li>
+</ul>
+<p>dApp that has no verifier function performs default verification, that is, checking that the first proof of the transaction/order has the correct sender's signature. The following function does the same as the default implementation:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>@Verifier(tx)
+func verify() = {
+ sigVerify(tx.bodyBytes, tx.proofs[0], tx.senderPublicKey)
+}
+</pre></div>
+</div>
+<p>If the verifier function is defined, only verification by this function is performed, proofs are not checked additionally.</p>
+<section id="id2">
+<h4>Example<a class="headerlink" href="#id2" title="此标题的永久链接">#</a></h4>
+<p>dApp with the verifier function listed below only allows <a class="reference internal" href="../02_decentralchain/03_transaction.html#transfer-transaction"><span class="std std-ref">transfer transaction</span></a> with an amount of token lower than 100. Orders and other transactions are denied. The match operator is used to specify verification rules depending on the type of the transaction/order.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>@Verifier(tx)
+func verify() = {
+   match tx {
+     case ttx:TransferTransaction =&gt; ttx.amount &lt; 100 &amp;&amp; sigVerify(ttx.bodyBytes, ttx.proofs[0], ttx.senderPublicKey)
+     case _ =&gt; false
+   }
+}
+</pre></div>
+</div>
+<p>See available fields for each transaction type in the <a class="reference internal" href="05_structures.html#transaction-structures"><span class="std std-ref">transaction structures</span></a> article.</p>
+</section>
+</section>
+</section>
+<section id="account-script">
+<h2>Account Script<a class="headerlink" href="#account-script" title="此标题的永久链接">#</a></h2>
+<p>Account script verifies transactions and orders that are sent on behalf of the account. That is, the account script allows or denies the transaction or the order depending on whether it meets the specified conditions.</p>
+<section id="account-script-format">
+<h3>Account Script Format<a class="headerlink" href="#account-script-format" title="此标题的永久链接">#</a></h3>
+<p>The script code is composed of the following parts:</p>
+<ul class="simple">
+<li><p>Directives</p></li>
+<li><p>Auxiliary definitions</p></li>
+<li><p>Boolean expression</p></li>
+</ul>
+<img alt="../_images/02_Account-Script-Format.png" src="../_images/02_Account-Script-Format.png" />
+<section id="id3">
+<h4>Directives<a class="headerlink" href="#id3" title="此标题的永久链接">#</a></h4>
+<p>The account script should start with directives:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>{- # STDLIB_VERSION 5 # -}
+{- # CONTENT_TYPE EXPRESSION # -}
+{- # SCRIPT_TYPE ACCOUNT # -}
+</pre></div>
+</div>
+<p>The above directives tell the compiler that:</p>
+<ul class="simple">
+<li><p>The script uses the standard library version 5.</p></li>
+<li><p>The script contains a boolean expression.</p></li>
+<li><p>The script will be assigned to an account (not asset).</p></li>
+</ul>
+</section>
+<section id="id4">
+<h4>Auxiliary Definitions<a class="headerlink" href="#id4" title="此标题的永久链接">#</a></h4>
+<p>After the directives, you can define auxiliary variables and functions. Let's see an example:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>let someConstant = 42
+func doSomething () = {
+ height + someConstant
+}
+</pre></div>
+</div>
+</section>
+<section id="boolean-expression">
+<h4>Boolean Expression<a class="headerlink" href="#boolean-expression" title="此标题的永久链接">#</a></h4>
+<p>The expression checks transactions and orders that are sent on behalf of the account for compliance with the specified conditions. If the conditions are not met, the transaction/order is denied. Possible results of evaluating the expression are:</p>
+<ul class="simple">
+<li><p>True (the transaction or the order is allowed),</p></li>
+<li><p>False (the transaction or the order is denied),</p></li>
+<li><p>An error (the transaction or the order is denied).</p></li>
+</ul>
+<p>Using the <a class="reference internal" href="01_syntax-basics.html#match-case"><span class="std std-ref">match ... case</span></a>, you can set up different conditions depending on the type of the transaction/order. For example, the following expression prohibits sending orders and changing the account script, and allows other transactions, provided that the array of confirmations (proofs) contains the correct signature of the account at position <span class="math notranslate nohighlight">\(0\)</span>:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>match tx {
+ case t: Order | SetScriptTransaction =&gt; false
+ case _ =&gt; sigVerify (tx.bodyBytes, tx.proofs [0], tx.senderPublicKey)
+}
+</pre></div>
+</div>
+</section>
+</section>
+<section id="data-accessible-to-account-script">
+<h3>Data Accessible to Account Script<a class="headerlink" href="#data-accessible-to-account-script" title="此标题的永久链接">#</a></h3>
+<p>The following data can be used for checks:</p>
+<ul class="simple">
+<li><p>Fields of the current verified transaction/order, including proofs. The built-in variable tx contains this transaction or order. The set of fields depends on the type of transaction/order, see the <a class="reference internal" href="05_structures.html#transaction-structures"><span class="std std-ref">transaction structures</span></a> chapter and <a class="reference internal" href="05_structures.html#order"><span class="std std-ref">Order</span></a> structure article.</p></li>
+<li><p>Blockchain data: current height, account balances, entries in account data storages, parameters of tokens, etc.</p></li>
+</ul>
+</section>
+</section>
+<section id="asset-script">
+<h2>Asset Script<a class="headerlink" href="#asset-script" title="此标题的永久链接">#</a></h2>
+<p>Asset script verifies transactions within the <a class="reference internal" href="../02_decentralchain/02_token%28asset%29.html#token-asset"><span class="std std-ref">asset (token)</span></a>, that is, allows or denies the transaction depending on the specified conditions. Asset with a script assigned to it is called a <a class="reference internal" href="../02_decentralchain/02_token%28asset%29.html#smart-asset"><span class="std std-ref">smart asset</span></a>.
+Keep the following in mind:</p>
+<ul class="simple">
+<li><p>The asset script can only verify transactions, but not orders.</p></li>
+<li><p>If a token is issued without a script, then the script cannot be added later.</p></li>
+<li><p>The script cannot be removed, so it is impossible to turn a smart asset into a regular one.</p></li>
+<li><p>Smart asset cannot be a sponsored asset.</p></li>
+</ul>
+<section id="asset-script-format">
+<h3>Asset Script Format<a class="headerlink" href="#asset-script-format" title="此标题的永久链接">#</a></h3>
+<p>The script code is composed of the following parts:</p>
+<ul class="simple">
+<li><p>Directives</p></li>
+<li><p>Auxiliary definitions</p></li>
+<li><p>Boolean expression</p></li>
+</ul>
+<img alt="../_images/03_Asset-Script-Format.png" src="../_images/03_Asset-Script-Format.png" />
+<section id="id5">
+<h4>Directives<a class="headerlink" href="#id5" title="此标题的永久链接">#</a></h4>
+<p>The asset script should start with directives:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>{- # STDLIB_VERSION 5 # -}
+{- # CONTENT_TYPE EXPRESSION # -}
+{- # SCRIPT_TYPE ACCOUNT # -}
+</pre></div>
+</div>
+<p>The above directives tell the compiler that:</p>
+<ul class="simple">
+<li><p>The script uses the standard library version 5.</p></li>
+<li><p>The script contains a boolean expression.</p></li>
+<li><p>The script will be assigned to an asset.</p></li>
+</ul>
+</section>
+<section id="id6">
+<h4>Auxiliary Definitions<a class="headerlink" href="#id6" title="此标题的永久链接">#</a></h4>
+<p>After the directives, you can define auxiliary variables and functions. Let's see an example:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>let someConstant = 42
+func doSomething () = {
+ height + someConstant
+}
+</pre></div>
+</div>
+</section>
+<section id="id7">
+<h4>Boolean Expression<a class="headerlink" href="#id7" title="此标题的永久链接">#</a></h4>
+<p>The expression checks transactions and orders that are sent on behalf of the account for compliance with the specified conditions. If the conditions are not met, the transaction/order is denied. Possible results of evaluating the expression are:</p>
+<ul class="simple">
+<li><p>True (the transaction or the order is allowed),</p></li>
+<li><p>False (the transaction or the order is denied),</p></li>
+<li><p>An error (the transaction or the order is denied).</p></li>
+</ul>
+<p>Using the <a class="reference internal" href="01_syntax-basics.html#match-case"><span class="std std-ref">match ... case</span></a>, you can set up different conditions depending on the type of the transaction/order. For example, the following expression prohibits sending orders and changing the account script, and allows other transactions, provided that the array of confirmations (proofs) contains the correct signature of the account at position <span class="math notranslate nohighlight">\(0\)</span>:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>match tx {
+ case t : SetAssetScriptTransaction =&gt; false
+ case _ =&gt; true
+}
+</pre></div>
+</div>
+</section>
+</section>
+<section id="id8">
+<h3>Failed Transactions<a class="headerlink" href="#id8" title="此标题的永久链接">#</a></h3>
+<p>If the asset script denies the Exchange transaction when a block generator adds the transaction to a block (provided that the sender signature verification or the account script verification passed), the transaction is saved on the blockchain but marked as failed (&quot;applicationStatus&quot;: &quot;script_execution_failed&quot;). The sender of the transaction (matcher) is charged a fee. The transaction doesn't entail any other changes in balances, in particular, the order senders don't pay the matcher fee.</p>
+<p>If the asset script denies the Invoke Script transaction when a block generator adds the transaction to a block (provided that the sender signature verification or the account script verification passed and the complexity of calculations performed by dApp script exceeded the <a class="reference internal" href="07_dapp-to-app-invocation.html#limitations"><span class="std std-ref">threshold for saving failed transactions</span></a>), the transaction is saved on the blockchain but marked as failed (&quot;applicationStatus&quot;: script_execution_failed&quot;). The transaction sender is charged a fee. The transaction doesn't entail any other changes on the blockchain.</p>
+</section>
+<section id="data-accessible-to-asset-script">
+<h3>Data Accessible to Asset Script<a class="headerlink" href="#data-accessible-to-asset-script" title="此标题的永久链接">#</a></h3>
+<p>The following data can be used for checks:</p>
+<ul class="simple">
+<li><p>Fields of the current verified transaction, excluding proofs. The built-in variable tx contains this transaction. The set of fields depends on the type of transaction, see the <a class="reference internal" href="05_structures.html#transaction-structures"><span class="std std-ref">transaction structures</span></a> chapter.</p></li>
+<li><p>Blockchain data: current height, account balances, entries in account data storages, parameters of tokens, etc.</p></li>
+</ul>
+</section>
+</section>
+</section>
+
+<div class="section">
+   
+</div>
+
+                </article>
+              
+              
+              
+                <footer class="bd-footer-article">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="03_functions.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">上一页</p>
+        <p class="prev-next-title">Functions</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="05_structures.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">下一页</p>
+        <p class="prev-next-title">Structures</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dapp-script">dApp Script</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dapp-script-format">dApp Script Format</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#directives">Directives</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#auxiliary-definitions">Auxiliary definitions</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#callable-functions-dapp-script">Callable Functions (dApp Script)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#verifier-function">Verifier Function</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#failed-transactions">Failed Transactions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-accessible-to-dapp-script">Data Accessible to dApp Script</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#annotations">Annotations</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#callable-i">@Callable(i)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#verifier-tx">@Verifier(tx)</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#callable-function">Callable Function</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#annotation">Annotation</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#arguments">Arguments</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#invocation-result">Invocation Result</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#script-actions-callable-function">Script Actions (Callable Function)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#limitations-callable-function">Limitations  (Callable Function)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#threshold-for-saving-failed-transactions">Threshold for Saving Failed Transactions</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example">Example</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Verifier Function</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Example</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#account-script">Account Script</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#account-script-format">Account Script Format</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Directives</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Auxiliary Definitions</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#boolean-expression">Boolean Expression</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-accessible-to-account-script">Data Accessible to Account Script</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#asset-script">Asset Script</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#asset-script-format">Asset Script Format</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Directives</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Auxiliary Definitions</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Boolean Expression</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Failed Transactions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-accessible-to-asset-script">Data Accessible to Asset Script</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+  
+  <div class="tocsection editthispage">
+    <a href="https://github.com/Decentral-America/docs/edit/master/docs//03_ride-language/04_script-types.rst">
+      <i class="fa-solid fa-pencil"></i>
+      
+      
+        
+          Edit on GitHub
+        
+      
+    </a>
+  </div>
+</div>
+
+  <div class="sidebar-secondary-item">
+  <div class="tocsection sourcelink">
+    <a href="../_sources/03_ride-language/04_script-types.rst">
+      <i class="fa-solid fa-file-lines"></i> 显示源代码
+    </a>
+  </div>
+</div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            <div class="bd-footer-content__inner"></div>
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+  <p class="copyright">
+    
+      © Copyright 2023, Blockchain Costa Rica.
+      <br/>
+    
+  </p>
+</div>
+      
+    </div>
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item"><p class="theme-version">
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.13.0.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

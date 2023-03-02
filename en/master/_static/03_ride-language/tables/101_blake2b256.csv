@@ -1,0 +1,6 @@
+Name, Max data size, Complexity
+"blake2b256(bytes: ByteVector): ByteVector", ":math:`150` kB", ":math:`200`"
+"blake2b256_16Kb(bytes: ByteVector): ByteVector", ":math:`16` kB", ":math:`10`"
+"blake2b256_32Kb(bytes: ByteVector): ByteVector", ":math:`32` kB", ":math:`25`"
+"blake2b256_64Kb(bytes: ByteVector): ByteVector", ":math:`64` kB", ":math:`50`"
+"blake2b256_128Kb(bytes: ByteVector): ByteVector", ":math:`128` kB", ":math:`100`"

@@ -1,0 +1,1366 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="es" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>Protocolo &#8212; documentación de DecentralChain - </title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/jupyter-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/thebelab.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/plot_directive.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d" />
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/thebelab-helper.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script src="../_static/design-tabs.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@jupyter-widgets/html-manager@^1.0.1/dist/embed-amd.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '02_decentralchain/09_protocol';</script>
+    <link rel="shortcut icon" href="../_static/icon.svg"/>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="Formato Binario" href="10_binary-format.html" />
+    <link rel="prev" title="Redes Principal, Prueba, Escenario" href="08_mainnet-testnet-stagenet.html" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="es"/>  
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+<div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+    <span class="fa-solid fa-bars"></span>
+  </label>
+  
+  <div class="navbar-header-items__start">
+    
+      <div class="navbar-item">
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="DecentralChain"/>
+    <script>document.write(`<img src="../_static/logo-dark.png" class="logo__image only-dark" alt="DecentralChain"/>`);</script>
+  
+  
+</a></div>
+    
+  </div>
+  
+  
+  <div class=" navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item"><nav class="navbar-nav">
+  <p class="sidebar-header-items__title"
+     role="heading"
+     aria-level="1"
+     aria-label="Navegación del sitio">
+    Navegación del sitio
+  </p>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../01_introduction.html">
+                        Introducción
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="index.html">
+                        DecentralChain
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../03_ride-language/index.html">
+                        Ride Language
+                      </a>
+                    </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="http://decentralchain.io/">
+                    Website
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="http://decentral.exchange/">
+                    Wallet & Exchange
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://decentralscan.com/">
+                    Explorer
+                  </a>
+                </li>
+                
+                </div>
+            </div>
+            
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+        </div>
+      
+      
+        <div class="navbar-item">
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="claro/oscuro" aria-label="claro/oscuro" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/Decentral-America/docs" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-github"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://twitter.com/decentralchain" title="Twitter" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-twitter"></i></span>
+            <label class="sr-only">Twitter</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.linkedin.com/company/decentralchain/" title="LinkedIn" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-linkedin"></i></span>
+            <label class="sr-only">LinkedIn</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.youtube.com/@decentralchain" title="Youtube" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-youtube"></i></span>
+            <label class="sr-only">Youtube</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://discord.gg/9UUbNBPQ3D" title="Discord" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-discord"></i></span>
+            <label class="sr-only">Discord</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.instagram.com/decentralchain/" title="Discord" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-instagram"></i></span>
+            <label class="sr-only">Discord</label></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+    </div>
+  
+
+  
+    <label class="sidebar-toggle secondary-toggle" for="__secondary">
+      <span class="fa-solid fa-outdent"></span>
+    </label>
+  
+</div>
+
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          <div class="navbar-item"><nav class="navbar-nav">
+  <p class="sidebar-header-items__title"
+     role="heading"
+     aria-level="1"
+     aria-label="Navegación del sitio">
+    Navegación del sitio
+  </p>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../01_introduction.html">
+                        Introducción
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="index.html">
+                        DecentralChain
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../03_ride-language/index.html">
+                        Ride Language
+                      </a>
+                    </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="http://decentralchain.io/">
+                    Website
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="http://decentral.exchange/">
+                    Wallet & Exchange
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://decentralscan.com/">
+                    Explorer
+                  </a>
+                </li>
+                
+                </div>
+            </div>
+            
+  </ul>
+</nav></div>
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="claro/oscuro" aria-label="claro/oscuro" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/Decentral-America/docs" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-github"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://twitter.com/decentralchain" title="Twitter" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-twitter"></i></span>
+            <label class="sr-only">Twitter</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.linkedin.com/company/decentralchain/" title="LinkedIn" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-linkedin"></i></span>
+            <label class="sr-only">LinkedIn</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.youtube.com/@decentralchain" title="Youtube" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-youtube"></i></span>
+            <label class="sr-only">Youtube</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://discord.gg/9UUbNBPQ3D" title="Discord" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-discord"></i></span>
+            <label class="sr-only">Discord</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.instagram.com/decentralchain/" title="Discord" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-instagram"></i></span>
+            <label class="sr-only">Discord</label></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item"><nav class="bd-docs-nav bd-links"
+     aria-label="Navegación del sección">
+  <p class="bd-links__title" role="heading" aria-level="1">Navegación del sección</p>
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">DecentralChain</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="01_account.html">Cuenta</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_token%28asset%29.html">Token (Activo)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03_transaction.html">Transacción</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04_block.html">Bloque</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05_node.html">Nodo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06_order.html">Orden</a></li>
+<li class="toctree-l1"><a class="reference internal" href="07_oracle.html">Oráculo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="08_mainnet-testnet-stagenet.html">Redes Principal, Prueba, Escenario</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Protocolo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="10_binary-format.html">Formato Binario</a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+
+
+<nav aria-label="Migas de pan">
+  <ul class="bd-breadcrumbs" role="navigation" aria-label="Miga de pan">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../index.html" class="nav-link" aria-label="Inicio">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="index.html" class="nav-link">DecentralChain</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page">Protocolo</li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                   <section id="protocol">
+<h1>Protocolo<a class="headerlink" href="#protocol" title="Enlace permanente a este encabezado">#</a></h1>
+<section id="cryptographic-practical-details">
+<h2>Detalles Prácticos Criptográficos<a class="headerlink" href="#cryptographic-practical-details" title="Enlace permanente a este encabezado">#</a></h2>
+<section id="description">
+<h3>Descripción<a class="headerlink" href="#description" title="Enlace permanente a este encabezado">#</a></h3>
+<p>Esta sección describe todos los detalles de los algoritmos criptográficos que se utilizan para:</p>
+<ul class="simple">
+<li><p>Cree claves públicas y privadas a partir de semillas.</p></li>
+<li><p>Crear direcciones a partir de claves públicas.</p></li>
+<li><p>Creación de bloques y firma de transacciones.</p></li>
+</ul>
+<p>Usamos los algoritmos Blake2b256 y Keccak256 (en forma de cadena hash) para crear hashes criptográficos. Y Curve25519 (ED25519 con claves X25519) para crear y verificar firmas. Base58 para crear la forma de cadena de bytes.</p>
+</section>
+<section id="bytes-encoding-base58">
+<h3>Codificación de Bytes Base58<a class="headerlink" href="#bytes-encoding-base58" title="Enlace permanente a este encabezado">#</a></h3>
+<p>Todas las matrices de bytes en el proyecto están codificadas por el algoritmo Base58 con el alfabeto de Bitcoin para que sea más fácil de leer para los humanos (legibilidad del texto).</p>
+<p><strong>Ejemplo</strong></p>
+<p>La cadena teststring está codificada en los bytes <span class="math notranslate nohighlight">\([5, 83, 9, -20, 82, -65, 120, -11]\)</span>. Los bytes <span class="math notranslate nohighlight">\([1, 2, 3, 4, 5]\)</span> están codificados en la cadena 7bWpTW.</p>
+</section>
+<section id="creating-a-private-key-from-a-seed">
+<h3>Creación de una Clave Privada desde una Semilla<a class="headerlink" href="#creating-a-private-key-from-a-seed" title="Enlace permanente a este encabezado">#</a></h3>
+<p>Una cadena semilla es una representación de la entropía, a partir de la cual puede volver a crear de manera determinista todas las claves privadas para una billetera. Debe ser lo suficientemente largo para que la probabilidad de selección sea despreciable y poco realista. De hecho, la semilla debe ser una matriz de bytes, pero para facilitar la memorización, lite wallet usa Brainwallet, para garantizar que la semilla esté compuesta de palabras y sea fácil de escribir o recordar. La aplicación toma los bytes UTF-8 de la cadena y los usa para crear claves y direcciones. Por ejemplo,</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>seed string manage manual recall harvest series desert melt police rose hollow moral pledge kitten position add
+</pre></div>
+</div>
+<p>Después de leer esta cadena como bytes UTF-8 y codificarlos en Base58, la cadena se codificará como:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>xrv7ffrv2A9g5pKSxt7gHGrPYJgRnsEMDyc4G7srbia6PhXYLDKVsDxnqsEqhAVbbko7N1tDyaSrWCZBoMyvdwaFNjWNPjKdcoZTKbKr2Vw9vu53Uf4dYpyWCyvfPbRskHfgt9q
+</pre></div>
+</div>
+<p>Una cadena semilla está involucrada en la creación de claves privadas. Para crear una clave privada utilizando la billetera web oficial o el nodo, a <span class="math notranslate nohighlight">\(4\)</span> bytes del campo int “nonce” (representación big-endian), que inicialmente tiene un valor de <span class="math notranslate nohighlight">\(0\)</span> y aumenta cada vez que crea la nueva dirección, debe anteponerse a los bytes iniciales. Luego usamos esta matriz de bytes para calcular hash keccak256 (blake2b256 (bytes)). Esta matriz resultante de bytes la llamamos semilla de cuenta, a partir de ella definitivamente puede generar un par de claves pública y privada. Luego, este hash de bytes pasó en el método de creación de un par de claves públicas y privadas del algoritmo Curve25519. DecentralChain usa la firma Curve25519-ED25519 con claves X25519 (forma de Montgomery), pero la mayoría de los dispositivos y bibliotecas de criptografía integrados no admiten claves X25519. Hay bibliotecas con funciones de conversión de:</p>
+<ul class="simple">
+<li><p>Claves ED25519 para X25519 (Curve25519) crypto_sign_ed25519_pk_to_curve25519(curve25519_pk, ed25519_pk) para clave pública.</p></li>
+<li><p>Crypto_sign_ed25519_sk_to_curve25519(curve25519_sk, ed25519_skpk) para clave privada.</p></li>
+</ul>
+<p>NOTA: No todos los <span class="math notranslate nohighlight">\(32\)</span> bytes aleatorios se pueden usar como claves privadas (pero cualquier byte de cualquier tamaño puede ser una semilla). El esquema de firma para el ED25519 introduce restricciones en las claves, así que cree las claves solo a través de los métodos de las bibliotecas Curve25519 y asegúrese de hacer una prueba de la capacidad de firmar datos con una clave privada y luego verifíquelo con una clave pública. por obvia que parezca esta prueba. Hay realizaciones de Curve25519 válidas para diferentes idiomas:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/signalapp/curve25519-java/">Java</a></p></li>
+<li><p><a class="reference external" href="https://github.com/signalapp/curve25519-java/tree/master/android/jni">C</a></p></li>
+<li><p><a class="reference external" href="https://github.com/tgalal/python-axolotl-curve25519">Python</a></p></li>
+</ul>
+<p>Además, algunas bibliotecas Curve25519 (como la que se usa en nuestro proyecto) tienen el hash Sha256 integrado, otras no (como la mayoría de las bibliotecas c/c++/python), por lo que es posible que deba aplicarlo manualmente. Tenga en cuenta que la clave privada está sujeta, por lo que ningún <span class="math notranslate nohighlight">\(32\)</span> byte aleatorio puede ser una clave privada válida.</p>
+<p><strong>Ejemplo</strong></p>
+<p>Cadena de semillas Brainwallet</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>manage manual recall harvest series desert melt police rose hollow moral pledge kitten position add
+</pre></div>
+</div>
+<p>Como bytes UTF-8 codificados</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>xrv7ffrv2A9g5pKSxt7gHGrPYJgRnsEMDyc4G7srbia6PhXYLDKVsDxnqsEqhAVbbko7N1tDyaSrWCZBoMyvdwaFNjWNPjKdcoZTKbKr2Vw9vu53Uf4dYpyWCyvfPbRskHfgt9q
+</pre></div>
+</div>
+<p>Contabilice bytes iniciales con nonce <span class="math notranslate nohighlight">\(0\)</span> antes de aplicar la función hash en Base58</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>1111xrv7ffrv2A9g5pKSxt7gHGrPYJgRnsEMDyc4G7srbia6PhXYLDKVsDxnqsEqhAVbbko7N1tDyaSrWCZBoMyvdwaFNjWNPjKdcoZTKbKr2Vw9vu53Uf4dYpyWCyvfPbRskHfgt9q
+</pre></div>
+</div>
+<p>blake2b256(bytes de semilla de cuenta)</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>6sKMMHVLyCQN7Juih2e9tbSmeE5Hu7L8XtBRgowJQvU7
+</pre></div>
+</div>
+<p>Semilla de cuenta (keccak256(blake2b256(bytes de semilla de cuenta)))</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>H4do9ZcPUASvtFJHvESapnxfmQ8tjBXMU7NtUARk9Jrf
+</pre></div>
+</div>
+<p>Semilla de cuenta después del hashing Sha256 (opcional, si su biblioteca no lo hace usted mismo)</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>49mgaSSVQw6tDoZrHSr9rFySgHHXwgQbCRwFssboVLWX
+</pre></div>
+</div>
+<p>Clave privada creada</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>3kMEhU5z3v8bmer1ERFUUhW58Dtuhyo9hE5vrhjqAWYT
+</pre></div>
+</div>
+<p>Clave pública creada</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>HBqhfdFASRQ5eBBpu2y6c6KKi1az6bMx8v1JxX4iW1Q8
+</pre></div>
+</div>
+</section>
+<section id="creating-address-from-a-public-key">
+<h3>Creación de una Dirección desde una Llave Privada<a class="headerlink" href="#creating-address-from-a-public-key" title="Enlace permanente a este encabezado">#</a></h3>
+<p>Nuestra dirección de red obtenida de la clave pública depende del byte chainID (“T” para Testnet, “W” para Mainnet, “S” para Stagenet), por lo que diferentes redes obtuvieron una dirección diferente para una sola semilla (y, por lo tanto, claves públicas) .</p>
+<p><strong>Ejemplo</strong></p>
+<p>Para la clave pública:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>HBqhfdFASRQ5eBBpu2y6c6KKi1az6bMx8v1JxX4iW1Q8
+</pre></div>
+</div>
+<p>Clave pública creada:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>3PPbMwqLtwBGcJrTA5whqJfY95GqnNnFMDX
+</pre></div>
+</div>
+</section>
+<section id="signing">
+<h3>Firma<a class="headerlink" href="#signing" title="Enlace permanente a este encabezado">#</a></h3>
+<p>Curve25519 se utiliza para todas las firmas del proyecto. El proceso es el siguiente: cree los bytes especiales para firmar transacciones o bloques, luego cree una firma usando estos bytes y los bytes de la clave privada. Para la validación de firmas basta con bytes de firma, bytes de objeto firmado y la clave pública. No olvide que hay muchas firmas válidas (¡no únicas!) para una matriz de bytes (bloque o transacción). Además, no debe asumir que la ID del bloque o transacción es única. ¡La colisión puede ocurrir algún día! Ya han tenido lugar para algunas claves débiles.</p>
+<p><strong>Ejemplo</strong></p>
+<p>Datos de la Transacción:</p>
+<table class="longtable table" id="id5">
+<caption><span class="caption-text">Datos de la Transacción</span><a class="headerlink" href="#id5" title="Enlace permanente a esta tabla">#</a></caption>
+<colgroup>
+<col style="width: 33.3%" />
+<col style="width: 66.7%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Campo</p></th>
+<th class="head"><p>Valor</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Dirección del remitente (no utilizada, solo para información)</p></td>
+<td><p>3N9Q2sdkkhAnbR4XCveuRaSMLiVtvebZ3wp</p></td>
+</tr>
+<tr class="row-odd"><td><p>Clave privada (usada para firmar, no en datos tx)</p></td>
+<td><p>7VLYNhmuvAo5Us4mNGxWpzhMSdSSdEbEPFUDKSna6eBv</p></td>
+</tr>
+<tr class="row-even"><td><p>Llave pública</p></td>
+<td><p>EENPV1mRhUD9gSKbcWt84cqnfSGQP5LkCu5gMBfAanYH</p></td>
+</tr>
+<tr class="row-odd"><td><p>Dirección del receptor</p></td>
+<td><p>3NBVqYXrapgJP9atQccdBPAgJPwHDKkh6A8</p></td>
+</tr>
+<tr class="row-even"><td><p>ID del Activo</p></td>
+<td><p>BG39cCNUFWPQYeyLnu7tjKHaiUGRxYwJjvntt9gdDPxG</p></td>
+</tr>
+<tr class="row-odd"><td><p>Cantidad</p></td>
+<td><p><span class="math notranslate nohighlight">\(1\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>Tarifa</p></td>
+<td><p><span class="math notranslate nohighlight">\(1\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>ID de Activo de la Tarifa</p></td>
+<td><p>BG39cCNUFWPQYeyLnu7tjKHaiUGRxYwJjvntt9gdDPxG</p></td>
+</tr>
+<tr class="row-even"><td><p>Marca de Tiempo</p></td>
+<td><p><span class="math notranslate nohighlight">\(1479287120875\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Adjunto (como matriz de bytes)</p></td>
+<td><p><span class="math notranslate nohighlight">\(1[1, 2, 3, 4]\)</span></p></td>
+</tr>
+</tbody>
+</table>
+<p>Bytes:</p>
+<table class="longtable table" id="id6">
+<caption><span class="caption-text">Bytes</span><a class="headerlink" href="#id6" title="Enlace permanente a esta tabla">#</a></caption>
+<colgroup>
+<col style="width: 9.1%" />
+<col style="width: 18.2%" />
+<col style="width: 9.1%" />
+<col style="width: 18.2%" />
+<col style="width: 9.1%" />
+<col style="width: 9.1%" />
+<col style="width: 27.3%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>#</p></th>
+<th class="head"><p>Nombre del campo</p></th>
+<th class="head"><p>Tipo</p></th>
+<th class="head"><p>Posición</p></th>
+<th class="head"><p>Longitud</p></th>
+<th class="head"><p>Valor</p></th>
+<th class="head"><p>Valor de bytes base58</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(1\)</span></p></td>
+<td><p>Tipo de transacción (0x04)</p></td>
+<td><p><a class="reference internal" href="#blockchain-data-types"><span class="std std-ref">Byte</span></a></p></td>
+<td><p><span class="math notranslate nohighlight">\(0\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(1\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(4\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(5\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(2\)</span></p></td>
+<td><p>Clave pública del remitente</p></td>
+<td><p>Bytes</p></td>
+<td><p><span class="math notranslate nohighlight">\(1\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(32\)</span></p></td>
+<td><p>…</p></td>
+<td><p>EENPV1mRhUD9gSKbcWt84cqnfSGQP5LkCu5gMBfAanYH</p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(3\)</span></p></td>
+<td><p>Bandera de la cantidad de activos (0-DecentralCoins, 1-Activo)</p></td>
+<td><p><a class="reference internal" href="#blockchain-data-types"><span class="std std-ref">Byte</span></a></p></td>
+<td><p><span class="math notranslate nohighlight">\(33\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(1\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(1\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(2\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(4\)</span></p></td>
+<td><p>ID de activo de la cantidad (<a href="#id1"><span class="problematic" id="id2">*</span></a>si se usa)</p></td>
+<td><p>Bytes</p></td>
+<td><p><span class="math notranslate nohighlight">\(34\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(0 (32*)\)</span></p></td>
+<td><p>…</p></td>
+<td><p>BG39cCNUFWPQYeyLnu7tjKHaiUGRxYwJjvntt9gdDPxG</p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(5\)</span></p></td>
+<td><p>Bandera de activo de la tarifa (0-DecentralCoins, 1-Activo)</p></td>
+<td><p><a class="reference internal" href="#blockchain-data-types"><span class="std std-ref">Byte</span></a></p></td>
+<td><p><span class="math notranslate nohighlight">\(34 (66*)\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(1\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(1\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(2\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(6\)</span></p></td>
+<td><p>ID de activo de la tarifa (<a href="#id1"><span class="problematic" id="id2">**</span></a>si se usa)</p></td>
+<td><p>Bytes</p></td>
+<td><p><span class="math notranslate nohighlight">\(35 (67*)\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(0 (32**)\)</span></p></td>
+<td><p>…</p></td>
+<td><p>BG39cCNUFWPQYeyLnu7tjKHaiUGRxYwJjvntt9gdDPxG</p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(7\)</span></p></td>
+<td><p>Marca de Tiempo</p></td>
+<td><p><a class="reference internal" href="#blockchain-data-types"><span class="std std-ref">Long</span></a></p></td>
+<td><p><span class="math notranslate nohighlight">\(35 (67\_ ) (99*\_ )\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(8\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(1479287120875\)</span></p></td>
+<td><p>11frnYASv</p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(8\)</span></p></td>
+<td><p>Cantidad</p></td>
+<td><p><a class="reference internal" href="#blockchain-data-types"><span class="std std-ref">Long</span></a></p></td>
+<td><p><span class="math notranslate nohighlight">\(43 (75\_ ) (107*\_ )\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(8\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(1\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(11111112\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(9\)</span></p></td>
+<td><p>Tarifa</p></td>
+<td><p><a class="reference internal" href="#blockchain-data-types"><span class="std std-ref">Long</span></a></p></td>
+<td><p><span class="math notranslate nohighlight">\(51 (83\_ ) (115*\_ )\)</span></p></td>
+<td><p>	«<span class="math notranslate nohighlight">\(8\)</span>»</p></td>
+<td><p><span class="math notranslate nohighlight">\(1\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(11111112\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(10\)</span></p></td>
+<td><p>Dirección del destinatario</p></td>
+<td><p>Bytes</p></td>
+<td><p><span class="math notranslate nohighlight">\(59  (91\_ ) (123*\_ )\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(26\)</span></p></td>
+<td><p>…</p></td>
+<td><p>3NBVqYXrapgJP9atQccdBPAgJPwHDKkh6A8</p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(11\)</span></p></td>
+<td><p>Longitud del archivo adjunto (N)</p></td>
+<td><p><a class="reference internal" href="#blockchain-data-types"><span class="std std-ref">Short</span></a></p></td>
+<td><p><span class="math notranslate nohighlight">\(85 (117\_ ) (149*\_ )\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(2\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(4\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(15\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(12\)</span></p></td>
+<td><p>Bytes del archivo adjunto</p></td>
+<td><p>Bytes</p></td>
+<td><p><span class="math notranslate nohighlight">\(87 (119\_ ) (151*\_ )\)</span></p></td>
+<td><p>N</p></td>
+<td><p><span class="math notranslate nohighlight">\([1,2,3,4]\)</span></p></td>
+<td><p>2VfUX</p></td>
+</tr>
+</tbody>
+</table>
+<p>Bytes de datos totales por signo</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Ht7FtLJBrnukwWtywum4o1PbQSNyDWMgb4nXR5ZkV78krj9qVt17jz74XYSrKSTQe6wXuPdt3aCvmnF5hfjhnd1gyij36hN1zSDaiDg3TFi7c7RbXTHDDUbRgGajXci8PJB3iJM1tZvh8AL5wD4o4DCo1VJoKk2PUWX3cUydB7brxWGUxC6mPxKMdXefXwHeB4khwugbvcsPgk8F6YB
+</pre></div>
+</div>
+<p>Firma de bytes de datos de transacción (una de un número infinito de firmas válidas)</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>2mQvQFLQYJBe9ezj7YnAQFq7k9MxZstkrbcSKpLzv7vTxUfnbvWMUyyhJAc1u3vhkLqzQphKDecHcutUrhrHt22D
+</pre></div>
+</div>
+<p>Total de bytes de transacción con firma:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>6zY3LYmrh981Qbzj7SRLQ2FP9EmXFpUTX9cA7bD5b7VSGmtoWxfpCrP4y5NPGou7XDYHx5oASPsUzB92aj3623SUpvc1xaaPjfLn6dCPVEa6SPjTbwvmDwMT8UVoAfdMwb7t4okLcURcZCFugf2Wc9tBGbVu7mgznLGLxooYiJmRQSeAACN8jYZVnUuXv4V7jrDJVXTFNCz1mYevnpA5RXAoehPRXKiBPJLnvVmV2Wae2TCNvweHGgknioZU6ZaixSCxM1YzY24Prv9qThszohojaWq4cRuRHwMAA5VUBvUs
+</pre></div>
+</div>
+</section>
+<section id="calculating-transaction-id">
+<h3>Cálculo de ID de Transacción<a class="headerlink" href="#calculating-transaction-id" title="Enlace permanente a este encabezado">#</a></h3>
+<p>El ID de transacción no se almacena en los bytes de transacción y para la mayoría de las transacciones (excepto Pago) se puede calcular fácilmente a partir de los bytes especiales para firmar usando blake2b256(bytes_for_signing). Para los pagos, el ID de la transacción es solo la firma de esta transacción.</p>
+</section>
+</section>
+<section id="decentralchain-m5-solution">
+<h2>Solución DecentralChain-M5<a class="headerlink" href="#decentralchain-m5-solution" title="Enlace permanente a este encabezado">#</a></h2>
+<section id="reasoning">
+<h3>Razonamiento<a class="headerlink" href="#reasoning" title="Enlace permanente a este encabezado">#</a></h3>
+<p>La tasa máxima de transacciones en los sistemas de cadena de bloques está limitada por la elección de dos parámetros: el tamaño del bloque y el intervalo del bloque.</p>
+<p>El intervalo de bloque define la cantidad promedio de tiempo que pasa entre la creación de dos bloques. Si reducimos este tiempo, las bifurcaciones aparecerán con más frecuencia, lo que conducirá a bifurcaciones no resueltas o a una disminución del rendimiento, ya que se dedicaría una cantidad considerable de tiempo a resolver estas bifurcaciones. Los bloques más grandes conducen a grandes picos de uso de la red durante la propagación del bloque, lo que a su vez generará problemas de rendimiento y enormes bifurcaciones.</p>
+<section id="decentralchain-m5-solution-with-technical-details">
+<h4>Solución DecentralChain-M5 con Detalles Técnicos<a class="headerlink" href="#decentralchain-m5-solution-with-technical-details" title="Enlace permanente a este encabezado">#</a></h4>
+<p>DecentralChain aborda este problema al permitir que el minero cultive continuamente un bloque durante el tiempo de la minería. Este bloque que aumenta continuamente se denomina bloque líquido, que se vuelve inmutable cuando se construye y agrega el siguiente bloque que hace referencia a él. Un bloque líquido consta de un bloque clave y una cadena de microbloques. El proceso de creación de bloque líquido es el siguiente:</p>
+<ul class="simple">
+<li><p>Cuando un nodo minero observa que tiene derecho a crear un bloque, crea y envía keyBlock, que normalmente es solo un bloque vacío.</p></li>
+<li><p>Después de eso, crea y envía microbloques cada <span class="math notranslate nohighlight">\(3\)</span> segundos. El microbloque es muy similar a un bloque regular: es un paquete de transacciones no vacío, que hace referencia a su padre: microbloque anterior o bloque clave.</p></li>
+<li><p>Los microbloques se extraen continuamente y se propagan a la red hasta que aparece un nuevo bloque clave, que hace referencia al bloque líquido actual.</p></li>
+</ul>
+</section>
+<section id="microblock-structure">
+<h4>Estructura de Microbloques<a class="headerlink" href="#microblock-structure" title="Enlace permanente a este encabezado">#</a></h4>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>generator: PublicKeyAccount
+transactionData: Seq[Transaction]
+prevResBlockSig: BlockId
+totalResBlockSig: BlockId
+signature: ByteStr
+</pre></div>
+</div>
+<p>totalResBlockSig is the new total signature of a block with all transactions from blockId=prevResBlockSig and transactionData. This means that having a liquid block consisting of 1 keyblock and 3 microblocks:</p>
+<p>KEYBLOCK() &lt;-MICRO1(tx1,tx2) &lt;-MICRO2(tx3,tx4) &lt;-MICRO3(tx5,tx6)</p>
+<p>We have 4 versions of last block:</p>
+<table class="longtable table" id="id7">
+<caption><span class="caption-text">Estructura de Microbloques</span><a class="headerlink" href="#id7" title="Enlace permanente a esta tabla">#</a></caption>
+<colgroup>
+<col style="width: 50.0%" />
+<col style="width: 50.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>ID</p></th>
+<th class="head"><p>Transacciones</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>KEYBLOCK.uniqueId</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>MICRO1.totalResBlockSig</p></td>
+<td><p>tx1,tx2</p></td>
+</tr>
+<tr class="row-even"><td><p>MICRO2.totalResBlockSig</p></td>
+<td><p>tx1,tx2,tx3,tx4</p></td>
+</tr>
+<tr class="row-odd"><td><p>MICRO3.totalResBlockSig</p></td>
+<td><p>tx1,tx2,tx3,tx4,tx5,tx6</p></td>
+</tr>
+</tbody>
+</table>
+<p>El próximo minero puede hacer referencia a cualquiera de estos identificadores en su keyBlock.</p>
+</section>
+</section>
+<section id="economy">
+<h3>Economía<a class="headerlink" href="#economy" title="Enlace permanente a este encabezado">#</a></h3>
+<p>Para un minero, puede parecer una buena idea hacer referencia a KEYBLOCK del ejemplo anterior y empaquetar todos los txs de los microbloques en su propio (micro)bloque(s). Para hacer que las transacciones de «robo» sean menos rentables que hacer referencia a la versión más conocida de Liquid Block (= el último microbloque conocido), cambiamos la mecánica de las tarifas: después de activar M5, el minero recibirá <span class="math notranslate nohighlight">\(40\% ` de tarifas del bloque que crea y :math:`60\%\)</span> de tarifas del bloque al que hace referencia.</p>
+</section>
+<section id="related-protocol-changes">
+<h3>Cambios de Protocolo Relacionados<a class="headerlink" href="#related-protocol-changes" title="Enlace permanente a este encabezado">#</a></h3>
+<ul class="simple">
+<li><p>Un bloque puede contener hasta <span class="math notranslate nohighlight">\(65535\)</span> transacciones y no requiere clasificación de transacciones.</p></li>
+<li><p>Por defecto, los mineros primero crearán un bloque de clave vacío. Es un bloque normal, propagado porBlockForgedmessage, pero ahora se transmite si está vacío.</p></li>
+<li><p>Los microbloques se propagan transmitiendo su encabezado para cada nodo que lo aplicó (MicroBlockInv) MicroBlockInv contiene una firma verificable para evitar que un nodo se inunde. El microbloque se solicitará posteriormente a través de MicroBlockRequest y se recibirá dentro de MicroBlockResponse. Los microbloques se volverán a solicitar desde otro nodo que lo tenga si un nodo no responde.</p></li>
+</ul>
+</section>
+<section id="configuration">
+<h3>Configuración<a class="headerlink" href="#configuration" title="Enlace permanente a este encabezado">#</a></h3>
+<p>Se pueden ajustar los siguientes parámetros mineros (aunque es mejor no cambiarlos para maximizar la versión final de su bloque líquido en la cadena de bloques resultante):</p>
+<ul class="simple">
+<li><p>Tamaño de KeyBlock (maxTransactionsInKeyBlock, predeterminado = <span class="math notranslate nohighlight">\(0\)</span>). Si se modifica, no se retransmitirá y se utilizará la mecánica habitual de solicitud de prórroga.</p></li>
+<li><p>Intervalo de minería de microbloques (microBlockInterval, predeterminado = <span class="math notranslate nohighlight">\(3\)</span> s).</p></li>
+<li><p>Cantidad máxima de transacciones por microbloque (maxTransactionsInMicroBlock, predeterminado = <span class="math notranslate nohighlight">\(200\)</span>).</p></li>
+<li><p>Miner intentará hacer referencia al microbloque más conocido con al menos minMicroBlockAgeage (predeterminado = <span class="math notranslate nohighlight">\(3\)</span> s). Esto es necesario para que un minero haga referencia a un bloque ya propagado para que su bloque clave no quede huérfano.</p></li>
+<li><p>El mecanismo de sincronización de microbloques se puede ajustar con waitResponseTimeout(predeterminado = <a href="#id1"><span class="problematic" id="id2">:matemáticas:`2`</span></a> s), procesadoMicroBlocksCacheTimeout(predeterminado = <a href="#id3"><span class="problematic" id="id4">:matemáticas:`10`</span></a> s), invCacheTimeout(predeterminado = <a href="#id5"><span class="problematic" id="id6">:matemáticas:`10`</span></a> s) que son básicamente el tiempo de en espera de un microbloque y tiempos para almacenar en caché las identificaciones de un microbloque procesado y una lista de nodos que tienen un microbloque (por identificación).</p></li>
+</ul>
+</section>
+<section id="api-changes">
+<h3>Cambios en la API<a class="headerlink" href="#api-changes" title="Enlace permanente a este encabezado">#</a></h3>
+<ul class="simple">
+<li><p>Al aplicar cada microbloque, se cambia el último bloque, lo que significa que /blocks/laststand/blocks/at/… reflejará eso.</p></li>
+<li><p>/peers/blacklistednow expone el motivo de la prohibición, uno puede borrar la lista negra de un nodo a través de/peers/clearblacklist</p></li>
+<li><p>/debug/and/consensus/section are expanded, stateHash doesn’t take liquid block into consideration.</p></li>
+</ul>
+</section>
+</section>
+<section id="decentralchain-m5-protocol">
+<h2>Protocolo DecentralChain-M5<a class="headerlink" href="#decentralchain-m5-protocol" title="Enlace permanente a este encabezado">#</a></h2>
+<section id="scalability-limits-and-challenges-in-current-blockchain-systems">
+<h3>Límites de Escalabilidad y Desafíos en los Sistemas Blockchain Actuales<a class="headerlink" href="#scalability-limits-and-challenges-in-current-blockchain-systems" title="Enlace permanente a este encabezado">#</a></h3>
+<section id="problem-statement-and-motivation">
+<h4>Declaración del Problema y Motivación<a class="headerlink" href="#problem-statement-and-motivation" title="Enlace permanente a este encabezado">#</a></h4>
+<p>Los protocolos de cadenas de bloques tienen algunos límites de escalabilidad y desafíos que compensan el rendimiento y la latencia. La tecnología blockchain actual no es lo suficientemente rápida y no se escala para incluir más transacciones en el sistema, por lo que tenemos un desafío de rendimiento que considerar. Existe un acuerdo conjunto entre mineros, consumidores y desarrolladores con varias perspectivas de que necesitamos implementar medidas de escalabilidad, y ha habido un debate continuo sobre cómo mejorar la escalabilidad de Bitcoin. Las propuestas actuales se han centrado en el tamaño de los bloques y cómo manejar los aumentos de tamaño de los bloques en el futuro.</p>
+<p>Todas las propuestas sufren un gran cuello de botella de escalabilidad: no importa qué tamaño de bloque se elija, el sistema de cadena de bloques puede, en el mejor de los casos, alcanzar un rendimiento de transacciones adecuado, aumentando de ~ <span class="math notranslate nohighlight">\(3\)</span> transacciones por segundo a ~ <span class="math notranslate nohighlight">\(7\)</span> transacciones por segundo. Esto está muy lejos de las <span class="math notranslate nohighlight">\(30,000\)</span> transacciones por segundo que son necesarias para competir con los sistemas existentes como las transacciones VISA. Las mismas limitaciones principales se aplican a litecoin, Ethereum y todas las demás monedas que comparten el protocolo de cadena de bloques de Bitcoin.</p>
+<p>DecentralChain-M5 abordará el cuello de botella de escalabilidad al hacer que la red alcance el rendimiento más alto según las condiciones de la red. No solo mejorará el rendimiento de las transacciones, sino que también reducirá las latencias de las transacciones. Por lo tanto, será posible obtener una confirmación de transacción inicial en segundos en lugar de minutos.</p>
+</section>
+<section id="weaknesses-of-current-proposals-to-improve-scalability">
+<h4>Debilidades de las Propuestas Actuales para Mejorar la Escalabilidad<a class="headerlink" href="#weaknesses-of-current-proposals-to-improve-scalability" title="Enlace permanente a este encabezado">#</a></h4>
+<p>Los sistemas blockchain pueden procesar transacciones y la tasa máxima de estas transacciones está limitada por la elección de dos parámetros: tamaño de bloque e intervalo de bloque.</p>
+<ul class="simple">
+<li><p>El intervalo de bloque define la cantidad promedio de tiempo que pasa entre la creación de dos bloques. Al decidir reducir el intervalo de bloque para resolver el límite de latencia, el sistema tendrá menos seguridad (aumentará la probabilidad de bifurcaciones) debido a la razón de que habrá nuevos mineros por cada segundo, lo que conducirá a una inestabilidad en la que la cadena de bloques está sujeta a reorganización y el sistema está en desacuerdo (Figura 1). Si reducimos el tiempo por bloque, tendremos una situación en la que se resolverá un número significativo de bloques en menos tiempo del que se tarda en transmitir un bloque resuelto a través de la red. Por lo tanto, no habrá forma de saber qué bloque es el
+ealy cuál es un forkporque las transacciones que parecían tener múltiples confirmaciones de repente tienen menos confirmaciones (o posiblemente vuelven a estar sin confirmar).</p></li>
+</ul>
+<img alt="../_images/12_Weaknesses-of-Current-Proposals-to-Improve-Scalability-1.png" src="../_images/12_Weaknesses-of-Current-Proposals-to-Improve-Scalability-1.png" />
+<p>Figura 1: El aumento de la frecuencia de los bloques con un tamaño de bloque estático dará como resultado una menor seguridad.</p>
+<ul class="simple">
+<li><p>El rendimiento de un sistema está limitado por el tamaño máximo del bloque (dado un intervalo de bloque fijo), ya que el número máximo de transacciones incluidas depende directamente del tamaño del bloque.</p></li>
+<li><p>Sin embargo, los bloques más grandes causan velocidades de propagación más lentas, lo que genera más bloques descartados (riesgo de huérfano). Un tamaño de bloque ilimitado podría, por ejemplo, dar lugar a un ataque DoS en el sistema al crear un bloque que tarda mucho tiempo en validarse. Si la opción es aumentar el tamaño del bloque para mejorar el rendimiento, habrá picos de red con más tiempo para propagarse en la red (Figura 2).</p></li>
+</ul>
+<img alt="../_images/13_Weaknesses-of-Current-Proposals-to-Improve-Scalability-2.png" src="../_images/13_Weaknesses-of-Current-Proposals-to-Improve-Scalability-2.png" />
+<p>Figura 2: aumentar el tamaño del bloque con la frecuencia de bloque estático dará lugar a más bloques descartados y picos de red.</p>
+</section>
+<section id="brief-summary-of-bitcoin-m5">
+<h4>Breve Resumen de Bitcoin-M5<a class="headerlink" href="#brief-summary-of-bitcoin-m5" title="Enlace permanente a este encabezado">#</a></h4>
+<p>Es un protocolo de cadena de bloques de nueva generación que es una solución alternativa de escalado de bitcoin que no implica aumentar el tamaño de los bloques ni disminuir el intervalo de tiempo del bloque. Esto reduce el riesgo de horquillas entre otras ventajas. Bitcoin-M5 describe que las compensaciones básicas en Bitcoin se pueden reducir con un protocolo de cadena de bloques alternativo, que ofrece un retraso de consenso y un ancho de banda limitado solo por el plano de la red. El protocolo divide el tiempo en períodos de tiempo (época). En cada período de tiempo, un líder en particular es responsable de serializar las transacciones (Figura 3). Los líderes toman la regla de generar bloques:</p>
+<ul class="simple">
+<li><p>Bloques clave para la elección de un líder.</p></li>
+<li><p>Microbloques para registros contables.</p></li>
+</ul>
+<img alt="../_images/14_Brief-Summary-of-Bitcoin-M5.png" src="../_images/14_Brief-Summary-of-Bitcoin-M5.png" />
+<p>Figura 3: estructura de períodos de tiempo de Bitcoin-M5 con transacciones serializadas.</p>
+</section>
+</section>
+<section id="decentralchain-m5-overlay">
+<h3>Marco DecentralChain-M5<a class="headerlink" href="#decentralchain-m5-overlay" title="Enlace permanente a este encabezado">#</a></h3>
+<p>DecentralChain-M5 se basa en el protocolo de próxima generación de bitcoin que serializa las transacciones y ofrece importantes mejoras en la latencia de la transacción (menor latencia) y el ancho de banda (mayor rendimiento) en comparación con Bitcoin sin sacrificar otras propiedades. DecentralChain aborda esta cuestión de escalabilidad al proporcionar al minero la capacidad de cultivar un bloque durante el tiempo de minería en un enfoque continuo. Este bloque continúa con incrementos llamados bloques líquidos. Este bloque líquido no se puede cambiar con el tiempo una vez que se crea y se agrega la siguiente referencia de bloque. Este enfoque aumenta el ancho de banda efectivo y la velocidad de creación de bloques, que se describe como «especialmente importante para las empresas» que utilizan el protocolo DecentralChain-M5, ya que permite realizar microtransacciones, sin los retrasos típicos de los sistemas de cadena de bloques tradicionales. Además, permite que la cadena de bloques soporte grandes cargas, como la distribución de tokens después de las ventas masivas y los lanzamientos aéreos de tokens de bonificación. La velocidad de procesamiento de transacciones comerciales en el intercambio también aumenta.</p>
+<section id="decentralchain-m5-operations">
+<h4>Operaciones DecentralChain-M5<a class="headerlink" href="#decentralchain-m5-operations" title="Enlace permanente a este encabezado">#</a></h4>
+<p>La idea principal y central de DecentralChain-M5 es dividir el bloque Liquid en dos tipos, Key blocks y Microblocks. El proceso de creación de bloques líquidos funciona de la siguiente manera:</p>
+<ul class="simple">
+<li><p>El nodo minero obtiene el permiso para crear un bloque.</p></li>
+<li><p>El nodo minero crea y envía el bloque de claves (que no contiene transacciones).</p></li>
+<li><p>El nodo minero crea y envía los microbloques (que contienen transacciones como en los bloques normales con referencia a microbloques o bloques clave anteriores) con un intervalo de tiempo de minería de tres segundos.</p></li>
+<li><p>Los mineros extraerán esos microbloques y los propagarán directamente a la red hasta que aparezca el siguiente bloque clave nuevo con una referencia al bloque líquido.</p></li>
+</ul>
+<p>Todas las transacciones son parte del mismo bloque y se aportan todas juntas. Entre bloques, el sistema tradicional de Bitcoin parece inactivo para un espectador, ya que los mineros están trabajando para descubrir el siguiente bloque, pero sin un progreso aparente en el frente del consenso. En contradicción, en DecentralChain-M5, los bloques de claves pueden ser pequeños porque necesitan contener solo la transacción coinbase, que define la clave pública que el minero usará para firmar microbloques. Debido a que un bloque clave requiere una prueba de participación, los mineros no pueden simplemente producir uno y expropiar el liderazgo a voluntad. Siguiendo el bloque de claves, el minero principal puede emitir rápidamente microbloques, simplemente firmándolos con la clave privada correspondiente a la clave pública nombrada en la base de monedas del bloque de claves (Figura 4).</p>
+<img alt="../_images/15_DecentralChain-M5-Operations.png" src="../_images/15_DecentralChain-M5-Operations.png" />
+<p>Figura 4: Proceso de firma de Key-blocks y Micro-blocks.</p>
+<p><strong>Bloques líder</strong></p>
+<p>También se denominan «Bloques Clave», estos bloques se generan con prueba de participación pero no contienen transacciones. Sirven como mecanismo de elección de líder y contienen una clave pública que identifica al líder elegido. Cada bloque tiene un encabezado que contiene, entre otros campos, la referencia única de su predecesor, que es un hash criptográfico del encabezado anterior (ya sea un bloque clave o un microbloque).</p>
+<p><strong>Micro Bloques</strong></p>
+<p>Una vez que un nodo genera un bloque clave, se convierte en el líder. Como líder, el nodo puede generar microbloques a una tasa establecida más pequeña que un máximo predefinido. Estos microbloques contendrán las entradas del libro mayor sin ningún requisito de prueba de participación y son generados por el líder electo en cada ciclo de generación de bloques. Este ciclo de generación de bloques es iniciado por un bloque líder. El único requisito es firmar los microbloques con la clave privada del líder electo. El líder elegido (minero) puede generar los microbloques a una velocidad muy alta, lo que resulta en un mayor rendimiento y velocidad de transacción.</p>
+<p>Para que un microbloque sea válido, todas sus entradas deben ser válidas según la especificación de la máquina de estado y la firma debe ser válida. La Figura 5 ilustra la estructura. Tenga en cuenta que los microbloques no afectan el peso de la cadena, ya que no contienen prueba de participación. Cuando se hayan validado todos los microbloques, se fusionarán con su bloque clave en un solo bloque.</p>
+</section>
+<section id="decentralchain-m5-reward-mechanisms">
+<h4>Mecanismos de Recompensa de DecentralChain-M5<a class="headerlink" href="#decentralchain-m5-reward-mechanisms" title="Enlace permanente a este encabezado">#</a></h4>
+<p>La remuneración consta de dos partes. Primero, cada bloque clave da derecho a su generador a una cantidad fija. En segundo lugar, cada entrada del libro mayor conlleva una tarifa. Esta tarifa se divide entre el líder que coloca esta entrada en un microbloque y el líder posterior que genera el siguiente bloque clave.</p>
+<p>Para motivar a los participantes a seguir el protocolo, DecentralChain-M5 utiliza los siguientes mecanismos: cada transacción paga una tarifa al sistema, pero a diferencia de Bitcoin, esta tarifa se distribuye, con <span class="math notranslate nohighlight">\(40\%\)</span> al líder, y <span class="math notranslate nohighlight">\(60\%\)</span> al siguiente líder. Finalmente, si un líder bifurca la cadena generando dos microbloques con el mismo padre, es sancionado con la revocación de los ingresos del subsidio; quien detecta el fraude gana una tarifa nominal (Figura 5).</p>
+<img alt="../_images/16_DecentralChain-M5-Reward-Mechanisms.png" src="../_images/16_DecentralChain-M5-Reward-Mechanisms.png" />
+<p>Figura 5: estructura de cadena del Protocolo DecentralChain-M5. Los microbloques (círculos) se firman con la clave privada que coincide con la clave pública en el último bloque de claves (cuadrados). La tarifa se distribuye <span class="math notranslate nohighlight">\(40\%\)</span> al líder y <span class="math notranslate nohighlight">\(60\%\)</span> al siguiente.</p>
+<p>En la práctica, la remuneración se implementa haciendo que cada bloque clave contenga una sola transacción de base de monedas que acuña nuevas monedas y deposita los fondos a los líderes actuales y anteriores. Al igual que en Bitcoin, esta transacción solo se puede gastar después de un período de vencimiento de <span class="math notranslate nohighlight">\(100\)</span> bloques clave, para evitar transacciones no fusionables después de una bifurcación.</p>
+</section>
+</section>
+</section>
+<section id="fair-proof-of-stake">
+<h2>Prueba Justa de Participación<a class="headerlink" href="#fair-proof-of-stake" title="Enlace permanente a este encabezado">#</a></h2>
+<p>En este modelo, la elección de la cuenta que tiene derecho a generar el siguiente bloque y recibir las tarifas de transacción correspondientes se basa en la cantidad de tokens en la cuenta. Cuantos más tokens se mantengan en la cuenta, mayor será la posibilidad de que la cuenta obtenga el derecho a generar un bloqueo.</p>
+<p>En DecentralChain estamos convencidos de que cada participante en la cadena de bloques debe participar en el proceso de generación de bloques de forma proporcional a su participación: hemos decidido corregir la fórmula PoS. Por el momento no tenemos el objetivo de cambiar completamente el algoritmo, ya que no hay necesidad; simplemente queremos hacer algunos ajustes. Presentamos un algoritmo PoS mejorado que hace que la elección del creador de bloques sea justa y reduce la vulnerabilidad a los ataques de ramificación múltiple, de acuerdo con las deficiencias del algoritmo actual.</p>
+<p>Analizamos el modelo del nuevo algoritmo para su correspondencia con la participación de participación y la participación de bloques, y los resultados fueron positivos. Además, se analizó la vulnerabilidad del algoritmo a los ataques y los resultados obtenidos con el nuevo modelo fueron mejores que con el antiguo. Los resultados de los ataques para el atacante no fueron tan exitosos en términos de las ganancias obtenidas. El número de horquillas y su longitud disminuyó.</p>
+</section>
+<section id="blockchain-data-types">
+<h2>Tipos de Datos del Blockchain<a class="headerlink" href="#blockchain-data-types" title="Enlace permanente a este encabezado">#</a></h2>
+<p>The blockchain data types are the data types that are used to describe the <a class="reference internal" href="10_binary-format.html#binary-format"><span class="std std-ref">binary format</span></a> of blockchain entities. Here’s a list of blockchain data types:</p>
+<table class="longtable table" id="id8">
+<caption><span class="caption-text">Tipos de Datos del Blockchain</span><a class="headerlink" href="#id8" title="Enlace permanente a esta tabla">#</a></caption>
+<colgroup>
+<col style="width: 12.5%" />
+<col style="width: 12.5%" />
+<col style="width: 50.0%" />
+<col style="width: 25.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>#</p></th>
+<th class="head"><p>Palabra clave</p></th>
+<th class="head"><p>Valores posibles</p></th>
+<th class="head"><p>Tamaño variable en bytes</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(1\)</span></p></td>
+<td><p>Booleano</p></td>
+<td><p><span class="math notranslate nohighlight">\(0\)</span> y <span class="math notranslate nohighlight">\(1\)</span>.</p></td>
+<td><p><span class="math notranslate nohighlight">\(1\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(2\)</span></p></td>
+<td><p><a class="reference internal" href="#blockchain-data-types"><span class="std std-ref">Byte</span></a></p></td>
+<td><p>Entero de <span class="math notranslate nohighlight">\(-128\)</span> a <span class="math notranslate nohighlight">\(127\)</span> inclusive.</p></td>
+<td><p><span class="math notranslate nohighlight">\(1\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(3\)</span></p></td>
+<td><p><a class="reference internal" href="#blockchain-data-types"><span class="std std-ref">Int</span></a></p></td>
+<td><p>Número entero de <span class="math notranslate nohighlight">\(-2,147,483,648\)</span> a <span class="math notranslate nohighlight">\(2,147,483,647\)</span> inclusive.</p></td>
+<td><p><span class="math notranslate nohighlight">\(4\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(4\)</span></p></td>
+<td><p><a class="reference internal" href="#blockchain-data-types"><span class="std std-ref">Long</span></a></p></td>
+<td><p>Entero de <span class="math notranslate nohighlight">\(-9,223,372,036,854,775,808\)</span> a <span class="math notranslate nohighlight">\(9,223,372,036,854,775,807\)</span> inclusive.</p></td>
+<td><p><span class="math notranslate nohighlight">\(8\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(5\)</span></p></td>
+<td><p><a class="reference internal" href="#blockchain-data-types"><span class="std std-ref">Short</span></a></p></td>
+<td><p>Número entero de <span class="math notranslate nohighlight">\(-32,768\)</span> a <span class="math notranslate nohighlight">\(32,767\)</span> inclusive.</p></td>
+<td><p><span class="math notranslate nohighlight">\(2\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(6\)</span></p></td>
+<td><p><a class="reference internal" href="#blockchain-data-types"><span class="std std-ref">String</span></a></p></td>
+<td><p>Desde <span class="math notranslate nohighlight">\(0\)</span> hasta <span class="math notranslate nohighlight">\(2,147,483,647\)</span> caracteres inclusive.</p></td>
+<td><p>Desde <span class="math notranslate nohighlight">\(1\)</span> hasta <span class="math notranslate nohighlight">\(4\)</span> bytes por carácter.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="validation-rules">
+<h2>Reglas de Validación<a class="headerlink" href="#validation-rules" title="Enlace permanente a este encabezado">#</a></h2>
+<section id="account-validation">
+<h3>Validación de Cuenta<a class="headerlink" href="#account-validation" title="Enlace permanente a este encabezado">#</a></h3>
+<p>La cuenta es válida, entonces es una cadena Base58 válida y la longitud de la matriz correspondiente es <span class="math notranslate nohighlight">\(26\)</span> bytes. La versión de la dirección (1er byte) es igual a <span class="math notranslate nohighlight">\(1\)</span>. El byte de red (segundo byte) es igual a la ID de red. La suma de comprobación de la dirección (últimos <span class="math notranslate nohighlight">\(4\)</span> bytes) es correcta.</p>
+</section>
+<section id="transactions-validation">
+<h3>Validación de Transacciones<a class="headerlink" href="#transactions-validation" title="Enlace permanente a este encabezado">#</a></h3>
+<section id="transfer-transaction-validation">
+<h4>Validación de Transacción para Transferencia<a class="headerlink" href="#transfer-transaction-validation" title="Enlace permanente a este encabezado">#</a></h4>
+<p>La transacción para transferencia es válida entonces:</p>
+<ul class="simple">
+<li><p>La dirección del destinatario es válida. De lo contrario, se devolverá el resultado de validación de InvalidAddress.</p></li>
+<li><p>El tamaño del archivo adjunto es menor o igual a MaxAttachementSize(<span class="math notranslate nohighlight">\(140\)</span> bytes). En otro caso, se devolverá el resultado de la validación de TooBigArray.</p></li>
+<li><p>El monto de la transacción es mayor que <span class="math notranslate nohighlight">\(0\)</span>; de lo contrario, se devuelve el resultado de la validación NegativeAmount.</p></li>
+<li><p>La tarifa de la transacción es positiva; de lo contrario, se devuelve el resultado de validación de tarifa insuficiente.</p></li>
+<li><p>Agregar una tarifa a la cantidad no conduce a un desbordamiento largo. En caso de desbordamiento prolongado, se devolverá el resultado de la validación OverflowError.</p></li>
+<li><p>La firma de la transacción es válida; de lo contrario, se devuelve el resultado de la validación InvalidSignature.</p></li>
+</ul>
+</section>
+<section id="issue-transaction-validation">
+<h4>Validación de Transacción para Emisión<a class="headerlink" href="#issue-transaction-validation" title="Enlace permanente a este encabezado">#</a></h4>
+<p>La transacción para emisión es válida entonces:</p>
+<ul class="simple">
+<li><p>La dirección del remitente es válida. De lo contrario, se devolverá el resultado de validación de InvalidAddress.</p></li>
+<li><p>La cantidad de activos es positiva; de lo contrario, se devuelve el resultado de la validación NegativeAmount.</p></li>
+<li><p>La tarifa de la transacción es mayor o igual a MinFee(<span class="math notranslate nohighlight">\(100000000\)</span> Decentralites = <span class="math notranslate nohighlight">\(1\)</span> DecentralCoin), en otro caso, se devuelve un resultado de validación de tarifa insuficiente.</p></li>
+<li><p>El tamaño de la descripción es menor o igual a MaxDescriptionLength(<span class="math notranslate nohighlight">\(1000\)</span> bytes); de lo contrario, se devuelve TooBigArray.</p></li>
+<li><p>El tamaño del nombre es mayor o igual a MinAssetNameLength y menor o igual a MaxAssetNameLength; en otro caso, se devolverá el resultado de validación de InvalidName.</p></li>
+<li><p>Decimals es positivo y menor o igual a MaxDecimals; en otro caso, se devuelve TooBigArray.</p></li>
+<li><p>La firma de la transacción es válida; de lo contrario, se devuelve el resultado de la validación InvalidSignature.</p></li>
+</ul>
+</section>
+<section id="reissue-transaction-validation">
+<h4>Validación de Transacción para Reemisión<a class="headerlink" href="#reissue-transaction-validation" title="Enlace permanente a este encabezado">#</a></h4>
+<p>La transacción para reemisión es válida entonces:</p>
+<ul class="simple">
+<li><p>La cuenta del remitente es válida. De lo contrario, se devuelve el resultado de validación de InvalidAddress.</p></li>
+<li><p>Quantity es positivo; en otro caso, se devolverá el resultado de la validación NegativeAmount.</p></li>
+<li><p>La tarifa de la transacción es positiva, en caso contrario, se devolverá el resultado de Tarifa Insuficiente.</p></li>
+<li><p>La firma de la transacción es válida; de lo contrario, se devuelve el resultado de la validación InvalidSignature.</p></li>
+</ul>
+</section>
+</section>
+<section id="block-validations">
+<h3>Validaciones de Bloque<a class="headerlink" href="#block-validations" title="Enlace permanente a este encabezado">#</a></h3>
+<p>El bloque es válido entonces:</p>
+<ul class="simple">
+<li><p>La cadena de bloques contiene bloques a los que se hace referencia.</p></li>
+<li><p>La firma del bloque es válida.</p></li>
+<li><p>Los datos de consenso del bloque son válidos.</p></li>
+<li><p>Las transacciones del bloque son válidas.</p></li>
+</ul>
+<section id="consensus-data-validation">
+<h4>Validación de Datos de Consenso<a class="headerlink" href="#consensus-data-validation" title="Enlace permanente a este encabezado">#</a></h4>
+<p>Los datos de consenso del bloque son válidos entonces:</p>
+<ul class="simple">
+<li><p>El tiempo de creación del bloque no es más que MaxTimeDrift(<span class="math notranslate nohighlight">\(15\)</span> segundos) en el futuro.</p></li>
+<li><p>Las transacciones del bloque están ordenadas. Esta regla solo funciona después de <span class="math notranslate nohighlight">\(1477958400000\)</span> en Testnet y <span class="math notranslate nohighlight">\(1479168000000\)</span> en Mainnet.</p></li>
+<li><p>La cadena de bloques contiene el bloque principal o la altura de la cadena de bloques es igual <span class="math notranslate nohighlight">\(1\)</span>.</p></li>
+<li><p>El objetivo base del bloque es válido.</p></li>
+<li><p>La firma del generador del bloque es válida.</p></li>
+<li><p>El saldo del generador es mayor o igual a MinimalEffectiveBalanceForGeneration(<span class="math notranslate nohighlight">\(1000000000000\)</span> Decentralites). Esta regla siempre funciona en Testnet y funciona solo después de <span class="math notranslate nohighlight">\(1479168000000\)</span> en Mainnet.</p></li>
+<li><p>El golpe del bloque es menor que el objetivo del bloque calculado.</p></li>
+<li><p>Las características votadas se ordenan en orden ascendente y no se repiten.</p></li>
+</ul>
+</section>
+<section id="transactions-data-validation">
+<h4>Validación de Datos de Transacciones<a class="headerlink" href="#transactions-data-validation" title="Enlace permanente a este encabezado">#</a></h4>
+<p>Las transacciones del bloque son válidas entonces:</p>
+<ul class="simple">
+<li><p>El tiempo de creación de cada transacción en el bloque es menor que el tiempo de creación del bloque no más que en MaxTxAndBlockDiff(<a href="#id1"><span class="problematic" id="id2">:matemáticas:`2`</span></a> horas).</p></li>
+<li><p>Todas las transacciones son válidas contra el estado.</p></li>
+</ul>
+<p>Validación de transacciones contra el estado. Las transacciones son válidas entonces:</p>
+<ul class="simple">
+<li><p>La transacción es válida según las reglas de validación de transacciones.</p></li>
+<li><p>El tiempo de creación de la transacción es más que el tiempo de creación del bloque no más que en MaxTimeForUnconfirmed(<span class="math notranslate nohighlight">\(90\)</span> minutos). Esta limitación funciona siempre en Testnet y solo después de <span class="math notranslate nohighlight">\(1479168000000\)</span> en Mainnet.</p></li>
+<li><p>La aplicación de la transacción a las cuentas no debe dar lugar a un saldo negativo temporal. Esta regla funciona después de <span class="math notranslate nohighlight">\(1479168000000\)</span> en Mainnet y después de <span class="math notranslate nohighlight">\(1477958400000\)</span> en Testnet.</p></li>
+<li><p>Los cambios realizados por transacción deben ordenarse por su monto. Esta regla funciona tanto en Mainnet como en Testnet después de <span class="math notranslate nohighlight">\(1479416400000\)</span>.</p></li>
+<li><p>La aplicación del monto de la transacción al saldo actual no debe conducir a un desbordamiento largo.</p></li>
+<li><p>Después de la aplicación de todas las transacciones del bloque, los saldos afectados no deben ser negativos.</p></li>
+</ul>
+</section>
+</section>
+<section id="unconfirmed-transactions-pool-validation">
+<h3>Validación del Grupo de Transacciones no Confirmadas<a class="headerlink" href="#unconfirmed-transactions-pool-validation" title="Enlace permanente a este encabezado">#</a></h3>
+<p>La transacción podría insertarse en el grupo de transacciones no confirmadas entonces:</p>
+<ul class="simple">
+<li><p>La transacción es válida según las reglas de validación de transacciones.</p></li>
+<li><p>Si la tarifa de la transacción es mayor o igual a la tarifa mínima establecida por el propietario de un nodo.</p></li>
+<li><p>Hay un espacio para una nueva transacción si hay un grupo de transacciones no confirmadas. De forma predeterminada, el grupo está limitado por <span class="math notranslate nohighlight">\(1000\)</span> transacciones.</p></li>
+<li><p>El grupo de transacciones no confirmadas no contiene transacciones con el mismo ID.</p></li>
+<li><p>Transacción creada a más tardar MaxTimeForUncofimed(<a href="#id1"><span class="problematic" id="id2">:matemáticas:`90`</span></a> minutos) después de la creación del último bloque.</p></li>
+<li><p>El tiempo de creación de la transacción no es más que MaxTimeDrift(<span class="math notranslate nohighlight">\(15\)</span> segundos) en el futuro.</p></li>
+<li><p>La transacción es válida contra el estado.</p></li>
+</ul>
+</section>
+</section>
+</section>
+
+<div class="section">
+   
+</div>
+
+                </article>
+              
+              
+              
+                <footer class="bd-footer-article">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="08_mainnet-testnet-stagenet.html"
+       title="página anterior">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">anterior</p>
+        <p class="prev-next-title">Redes Principal, Prueba, Escenario</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="10_binary-format.html"
+       title="siguiente página">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">siguiente</p>
+        <p class="prev-next-title">Formato Binario</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> En esta página
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cryptographic-practical-details">Detalles Prácticos Criptográficos</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#description">Descripción</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bytes-encoding-base58">Codificación de Bytes Base58</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-private-key-from-a-seed">Creación de una Clave Privada desde una Semilla</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-address-from-a-public-key">Creación de una Dirección desde una Llave Privada</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#signing">Firma</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#calculating-transaction-id">Cálculo de ID de Transacción</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#decentralchain-m5-solution">Solución DecentralChain-M5</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reasoning">Razonamiento</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#decentralchain-m5-solution-with-technical-details">Solución DecentralChain-M5 con Detalles Técnicos</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#microblock-structure">Estructura de Microbloques</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#economy">Economía</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#related-protocol-changes">Cambios de Protocolo Relacionados</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#configuration">Configuración</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#api-changes">Cambios en la API</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#decentralchain-m5-protocol">Protocolo DecentralChain-M5</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scalability-limits-and-challenges-in-current-blockchain-systems">Límites de Escalabilidad y Desafíos en los Sistemas Blockchain Actuales</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#problem-statement-and-motivation">Declaración del Problema y Motivación</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#weaknesses-of-current-proposals-to-improve-scalability">Debilidades de las Propuestas Actuales para Mejorar la Escalabilidad</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#brief-summary-of-bitcoin-m5">Breve Resumen de Bitcoin-M5</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#decentralchain-m5-overlay">Marco DecentralChain-M5</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#decentralchain-m5-operations">Operaciones DecentralChain-M5</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#decentralchain-m5-reward-mechanisms">Mecanismos de Recompensa de DecentralChain-M5</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fair-proof-of-stake">Prueba Justa de Participación</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#blockchain-data-types">Tipos de Datos del Blockchain</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#validation-rules">Reglas de Validación</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#account-validation">Validación de Cuenta</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transactions-validation">Validación de Transacciones</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#transfer-transaction-validation">Validación de Transacción para Transferencia</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#issue-transaction-validation">Validación de Transacción para Emisión</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#reissue-transaction-validation">Validación de Transacción para Reemisión</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#block-validations">Validaciones de Bloque</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#consensus-data-validation">Validación de Datos de Consenso</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#transactions-data-validation">Validación de Datos de Transacciones</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#unconfirmed-transactions-pool-validation">Validación del Grupo de Transacciones no Confirmadas</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+  
+  <div class="tocsection editthispage">
+    <a href="https://github.com/Decentral-America/docs/edit/master/docs//02_decentralchain/09_protocol.rst">
+      <i class="fa-solid fa-pencil"></i>
+      
+      
+        
+          Editar en GitHub
+        
+      
+    </a>
+  </div>
+</div>
+
+  <div class="sidebar-secondary-item">
+  <div class="tocsection sourcelink">
+    <a href="../_sources/02_decentralchain/09_protocol.rst">
+      <i class="fa-solid fa-file-lines"></i> Mostrar el código
+    </a>
+  </div>
+</div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            <div class="bd-footer-content__inner"></div>
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+  <p class="copyright">
+    
+      © Copyright 2023, Blockchain Costa Rica.
+      <br/>
+    
+  </p>
+</div>
+      
+    </div>
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item"><p class="theme-version">
+  Construido con el <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">Tema PyData Sphinx</a> 0.13.0.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

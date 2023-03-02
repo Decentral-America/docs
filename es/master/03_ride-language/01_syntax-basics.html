@@ -1,0 +1,1319 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="es" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>Syntax Basics &#8212; documentación de DecentralChain - </title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/jupyter-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/thebelab.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/plot_directive.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d" />
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/thebelab-helper.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script src="../_static/design-tabs.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@jupyter-widgets/html-manager@^1.0.1/dist/embed-amd.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '03_ride-language/01_syntax-basics';</script>
+    <link rel="shortcut icon" href="../_static/icon.svg"/>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="Data Types" href="02_data-types.html" />
+    <link rel="prev" title="Ride Language" href="index.html" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="es"/>  
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+<div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+    <span class="fa-solid fa-bars"></span>
+  </label>
+  
+  <div class="navbar-header-items__start">
+    
+      <div class="navbar-item">
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="DecentralChain"/>
+    <script>document.write(`<img src="../_static/logo-dark.png" class="logo__image only-dark" alt="DecentralChain"/>`);</script>
+  
+  
+</a></div>
+    
+  </div>
+  
+  
+  <div class=" navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item"><nav class="navbar-nav">
+  <p class="sidebar-header-items__title"
+     role="heading"
+     aria-level="1"
+     aria-label="Navegación del sitio">
+    Navegación del sitio
+  </p>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../01_introduction.html">
+                        Introducción
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../02_decentralchain/index.html">
+                        DecentralChain
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="index.html">
+                        Ride Language
+                      </a>
+                    </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="http://decentralchain.io/">
+                    Website
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="http://decentral.exchange/">
+                    Wallet & Exchange
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://decentralscan.com/">
+                    Explorer
+                  </a>
+                </li>
+                
+                </div>
+            </div>
+            
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+        </div>
+      
+      
+        <div class="navbar-item">
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="claro/oscuro" aria-label="claro/oscuro" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/Decentral-America/docs" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-github"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://twitter.com/decentralchain" title="Twitter" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-twitter"></i></span>
+            <label class="sr-only">Twitter</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.linkedin.com/company/decentralchain/" title="LinkedIn" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-linkedin"></i></span>
+            <label class="sr-only">LinkedIn</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.youtube.com/@decentralchain" title="Youtube" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-youtube"></i></span>
+            <label class="sr-only">Youtube</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://discord.gg/9UUbNBPQ3D" title="Discord" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-discord"></i></span>
+            <label class="sr-only">Discord</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.instagram.com/decentralchain/" title="Discord" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-instagram"></i></span>
+            <label class="sr-only">Discord</label></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+    </div>
+  
+
+  
+    <label class="sidebar-toggle secondary-toggle" for="__secondary">
+      <span class="fa-solid fa-outdent"></span>
+    </label>
+  
+</div>
+
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          <div class="navbar-item"><nav class="navbar-nav">
+  <p class="sidebar-header-items__title"
+     role="heading"
+     aria-level="1"
+     aria-label="Navegación del sitio">
+    Navegación del sitio
+  </p>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../01_introduction.html">
+                        Introducción
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../02_decentralchain/index.html">
+                        DecentralChain
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="index.html">
+                        Ride Language
+                      </a>
+                    </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="http://decentralchain.io/">
+                    Website
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="http://decentral.exchange/">
+                    Wallet & Exchange
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://decentralscan.com/">
+                    Explorer
+                  </a>
+                </li>
+                
+                </div>
+            </div>
+            
+  </ul>
+</nav></div>
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="claro/oscuro" aria-label="claro/oscuro" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/Decentral-America/docs" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-github"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://twitter.com/decentralchain" title="Twitter" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-twitter"></i></span>
+            <label class="sr-only">Twitter</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.linkedin.com/company/decentralchain/" title="LinkedIn" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-linkedin"></i></span>
+            <label class="sr-only">LinkedIn</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.youtube.com/@decentralchain" title="Youtube" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-youtube"></i></span>
+            <label class="sr-only">Youtube</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://discord.gg/9UUbNBPQ3D" title="Discord" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-discord"></i></span>
+            <label class="sr-only">Discord</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.instagram.com/decentralchain/" title="Discord" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-instagram"></i></span>
+            <label class="sr-only">Discord</label></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item"><nav class="bd-docs-nav bd-links"
+     aria-label="Navegación del sección">
+  <p class="bd-links__title" role="heading" aria-level="1">Navegación del sección</p>
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Ride Language</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Syntax Basics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_data-types.html">Data Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03_functions.html">Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04_script-types.html">Script Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05_structures.html">Structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06_iterations-with-fold.html">Iterations with FOLD&lt;N&gt;</a></li>
+<li class="toctree-l1"><a class="reference internal" href="07_dapp-to-app-invocation.html">dApp-to-App Invocation</a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+
+
+<nav aria-label="Migas de pan">
+  <ul class="bd-breadcrumbs" role="navigation" aria-label="Miga de pan">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../index.html" class="nav-link" aria-label="Inicio">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="index.html" class="nav-link">Ride Language</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page">Syntax Basics</li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                   <section id="syntax-basics">
+<h1>Syntax Basics<a class="headerlink" href="#syntax-basics" title="Enlace permanente a este encabezado">#</a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="#directives"><span class="std std-ref">Directives</span></a></p></li>
+<li><p><a class="reference internal" href="#definitions"><span class="std std-ref">Definitions</span></a></p></li>
+<li><p><a class="reference internal" href="#expressions"><span class="std std-ref">Expressions</span></a></p></li>
+<li><p><a class="reference internal" href="#constants"><span class="std std-ref">Constants</span></a></p></li>
+<li><p><a class="reference internal" href="#variables"><span class="std std-ref">Variables</span></a></p></li>
+<li><p><a class="reference internal" href="#operators"><span class="std std-ref">Operators</span></a></p></li>
+<li><p><a class="reference internal" href="#functions"><span class="std std-ref">Functions</span></a></p></li>
+<li><p><a class="reference internal" href="#exceptions"><span class="std std-ref">Exceptions</span></a></p></li>
+<li><p><a class="reference internal" href="#comments"><span class="std std-ref">Comments</span></a></p></li>
+</ul>
+<section id="directives">
+<h2>Directives<a class="headerlink" href="#directives" title="Enlace permanente a este encabezado">#</a></h2>
+<p>Every Ride script should start with directives for the compiler. The directives define the script format and available functions, structures and variables.
+Directive format is as follows:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>{-# DIRECTIVE_NAME VALUE #-}
+</pre></div>
+</div>
+<section id="directive-list">
+<h3>Directive List<a class="headerlink" href="#directive-list" title="Enlace permanente a este encabezado">#</a></h3>
+<p>There are three types of directives, with different possible values.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>{-# STDLIB_VERSION 5 #-}
+{-# CONTENT_TYPE DAPP #-}
+{-# SCRIPT_TYPE ACCOUNT #-}
+</pre></div>
+</div>
+<p>{-# STDLIB_VERSION 5 #-} sets the version of the standard library. The latest version currently in production is 5.</p>
+<p>{-# CONTENT_TYPE DAPP #-} sets the type of the file you’re working on. There are different content types, DAPP and EXPRESSION. The DAPP type allows you to define functions and finish execution with certain actions which result in account balances, asset properties, and entries in the dApp account data storage. The EXPRESSION type should always return a boolean value, since it’s used as a predicate for transaction validation.</p>
+<p>{-# SCRIPT_TYPE ACCOUNT #-} sets the entity type we want to add to the script to change its default behavior. Ride scripts can be attached to either an ACCOUNT or ASSET.</p>
+<p><strong>Examples</strong></p>
+<p>For a <a class="reference internal" href="04_script-types.html#dapp-script"><span class="std std-ref">dApp script</span></a>:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>{-# STDLIB_VERSION 5 #-}
+{-# CONTENT_TYPE DAPP #-}
+{-# SCRIPT_TYPE ACCOUNT #-}
+</pre></div>
+</div>
+<p>For an <a class="reference internal" href="04_script-types.html#account-script"><span class="std std-ref">account script</span></a>:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>{-# STDLIB_VERSION 5 #-}
+{-# CONTENT_TYPE EXPRESSION #-}
+{-# SCRIPT_TYPE ACCOUNT #-}
+</pre></div>
+</div>
+<p>For an <a class="reference internal" href="04_script-types.html#asset-script"><span class="std std-ref">asset script</span></a>:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>{-# STDLIB_VERSION 5 #-}
+{-# CONTENT_TYPE EXPRESSION #-}
+{-# SCRIPT_TYPE ASSET #-}
+</pre></div>
+</div>
+<p>Not all combinations of directives are correct. The example below will not work, because DAPP content type is allowed only for accounts:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span># Wrong example, will not work
+
+{-# STDLIB_VERSION 5 #-}
+{-# CONTENT_TYPE DAPP #-}
+{-# SCRIPT_TYPE ASSET #-}
+</pre></div>
+</div>
+</section>
+</section>
+<section id="definitions">
+<h2>Definitions<a class="headerlink" href="#definitions" title="Enlace permanente a este encabezado">#</a></h2>
+<p>A definition is a linking of the name to the value or to the <a class="reference internal" href="#functions"><span class="std std-ref">function</span></a> body.</p>
+<p><strong>Examples</strong></p>
+<p>Linking the name to the value.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>let x = 5 + 5
+</pre></div>
+</div>
+<p>Linking the name to the <a class="reference internal" href="#functions"><span class="std std-ref">function</span></a> body.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>func f(x: Int) = {
+ x + 5
+}
+</pre></div>
+</div>
+</section>
+<section id="expressions">
+<h2>Expressions<a class="headerlink" href="#expressions" title="Enlace permanente a este encabezado">#</a></h2>
+<p>An expression is a combination of one or more <a class="reference internal" href="#constants"><span class="std std-ref">constants</span></a>, <a class="reference internal" href="#variables"><span class="std std-ref">variables</span></a>, <a class="reference internal" href="#operators"><span class="std std-ref">operators</span></a> and <a class="reference internal" href="#functions"><span class="std std-ref">function</span></a> calls.</p>
+<section id="expression-result">
+<h3>Expression Result<a class="headerlink" href="#expression-result" title="Enlace permanente a este encabezado">#</a></h3>
+<p>An expression result is a value, which is obtained by the fold of the syntactic tree of the expression.
+Ride interprets the expression and calculates its result.</p>
+</section>
+<section id="expression-type">
+<h3>Expression Type<a class="headerlink" href="#expression-type" title="Enlace permanente a este encabezado">#</a></h3>
+<p>An expression type is a <a class="reference internal" href="02_data-types.html#data-types"><span class="std std-ref">data type</span></a> of the expression result.</p>
+<p><strong>Examples</strong></p>
+<p>The expression that consists of a single constant.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>7
+</pre></div>
+</div>
+<p>The expression that consists of a single variable.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>7 + x * size(&quot;apple&quot;)
+</pre></div>
+</div>
+<p>The expression that consists of the constant <span class="math notranslate nohighlight">\(7\)</span>, operators + and *, variable x and the size function call.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>7 + x * size(&quot;apple&quot;)
+</pre></div>
+</div>
+</section>
+</section>
+<section id="constants">
+<h2>Constants<a class="headerlink" href="#constants" title="Enlace permanente a este encabezado">#</a></h2>
+<p>A constant is a value that cannot be changed by the program during its execution.</p>
+<section id="examples">
+<h3>Examples<a class="headerlink" href="#examples" title="Enlace permanente a este encabezado">#</a></h3>
+<p>Below <span class="math notranslate nohighlight">\(7\)</span> and «apple» are constants.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>7 + x + size(&quot;apple&quot;)
+</pre></div>
+</div>
+</section>
+</section>
+<section id="variables">
+<h2>Variables<a class="headerlink" href="#variables" title="Enlace permanente a este encabezado">#</a></h2>
+<p>These are declared and initialized with the let keyword.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>let a = &quot;Bob&quot;
+let b = 1
+</pre></div>
+</div>
+<p>In Ride, you can only declare a variable along with a value assignment. The = sign must be followed by an expression. The value of the variable is the expression result.
+Ride variables are immutable: the value of a variable cannot be changed after it is defined.
+Ride is strongly typed and the variable’s type is inferred from the value.
+Ride allows you to define variables globally, inside any function, or even inside a variable definition.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>func lazyIsGood() = {
+ let a = &quot;Bob&quot;
+ let b = {
+    let x = 1
+    &quot;Alice&quot;
+   }
+ true
+}
+</pre></div>
+</div>
+<section id="lazy-variables">
+<h3>Lazy Variables<a class="headerlink" href="#lazy-variables" title="Enlace permanente a este encabezado">#</a></h3>
+<p>Let keyword defines a variable with lazy evaluation: the value of a variable is evaluated the first time it is used. Let’s see an example:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>let a = 42                 # Integer variable definition
+let b = &quot;Ride!&quot;  # String variable definition
+</pre></div>
+</div>
+<p>Ride allows you to define variables globally, inside any function, or even inside a variable definition.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>func lazyIsGood() = {
+ let c = {
+    let d = 1
+    true
+   }
+ c
+}
+</pre></div>
+</div>
+<p>The function above returns true, but variable d won’t be initialized because unused lazy variables are not evaluated.
+Since a function is a definition and not an expression, you can assign a function value to a variable but not the function itself.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>let result = lazyIsGood()  # result is true
+</pre></div>
+</div>
+</section>
+<section id="strict-variables">
+<h3>Strict Variables<a class="headerlink" href="#strict-variables" title="Enlace permanente a este encabezado">#</a></h3>
+<p>The strict keyword defines a variable with strict (eager) evaluation. Unlike lazy variables defined with let, a strict variable is evaluated immediately when script execution reaches it, that is, before the next expression.
+Strict variables can only be used inside another definition, for example, inside the body of a function. A strict variable will not be evaluated if it is defined inside another definition that is not used: for example, inside a function that has not been called.
+Strict variables are suitable for <a class="reference internal" href="07_dapp-to-app-invocation.html#dapp-to-app-invocation"><span class="std std-ref">dApp-to-dApp invocation</span></a> as they ensure executing callable functions and applying their actions in the right order. Let’s see an example:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>func foo() = {
+  ...
+  strict balanceBefore = decentralchainBalance(this).regular
+  strict z = invoke(dapp2,&quot;bar&quot;,args,[AttachedPayment(unit,100000000)])
+  strict balanceAfter = decentralchainBalance(this).regular
+
+  if(balanceAfter &lt; balanceBefore) then ... else...
+}
+</pre></div>
+</div>
+<p>In this example,  balanceBefore and balanceAfter may differ because payments to dApp2 and actions performed by the bar callable function can affect the balance.</p>
+</section>
+<section id="built-in-variables">
+<h3>Built-in Variables<a class="headerlink" href="#built-in-variables" title="Enlace permanente a este encabezado">#</a></h3>
+<p>The Standard library defines built-in variables that can be used in scripts.</p>
+<table class="longtable table" id="id1">
+<caption><span class="caption-text">Built-in Variables</span><a class="headerlink" href="#id1" title="Enlace permanente a esta tabla">#</a></caption>
+<colgroup>
+<col style="width: 11.1%" />
+<col style="width: 22.2%" />
+<col style="width: 66.7%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>#</p></th>
+<th class="head"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(1\)</span></p></td>
+<td><p>Buy</p></td>
+<td><p><a class="reference internal" href="../02_decentralchain/06_order.html#order"><span class="std std-ref">Order</span></a> type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(2\)</span></p></td>
+<td><p>1) CEILING. 2) DOWN. 3) FLOOR. 4) HALFEVEN. 5) HALFUP.</p></td>
+<td><p>Rounding methods used in the <a class="reference internal" href="03_functions.html#math-functions"><span class="std std-ref">math functions</span></a> fraction, log, pow.</p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(3\)</span></p></td>
+<td><p>height</p></td>
+<td><p>Blockchain height at the script execution time.</p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(4\)</span></p></td>
+<td><p>lastBlock</p></td>
+<td><p>Information about the last <a class="reference internal" href="../02_decentralchain/04_block.html#block"><span class="std std-ref">block</span></a> of the blockchain at the script execution time.</p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(5\)</span></p></td>
+<td><p>nil</p></td>
+<td><p>Variable that contains an empty list. The variable is used for creating <a class="reference internal" href="02_data-types.html#list"><span class="std std-ref">lists</span></a>. For example, instead of: let a = [5,6].</p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(6\)</span></p></td>
+<td><p>1) NOALG. 2) MD5. 3) SHA1. 4) SHA224. 5) SHA256. 6) SHA384. 7) SHA512. 8) SHA3224. 9) SHA3256. 10) SHA3384. 11) SHA3512.</p></td>
+<td><p>Variables that are passed as the first parameter to the rsaVerify function.</p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(7\)</span></p></td>
+<td><p>Sell</p></td>
+<td><p>Order type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(8\)</span></p></td>
+<td><p>this</p></td>
+<td><p>1) For a <a class="reference internal" href="04_script-types.html#dapp-script"><span class="std std-ref">dApp script</span></a> or an <a class="reference internal" href="04_script-types.html#account-script"><span class="std std-ref">account script</span></a>: the <a class="reference internal" href="05_structures.html#address"><span class="std std-ref">Address</span></a> structure. 2) For an <a class="reference internal" href="04_script-types.html#asset-script"><span class="std std-ref">asset script</span></a>: the <a class="reference internal" href="03_functions.html#math-functions"><span class="std std-ref">asset</span></a> structure.</p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(9\)</span></p></td>
+<td><p>tx</p></td>
+<td><p><a class="reference internal" href="../02_decentralchain/03_transaction.html#transaction"><span class="std std-ref">Transaction</span></a> or order.</p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(10\)</span></p></td>
+<td><p>unit</p></td>
+<td><p>Variable that contains an object of Unit type.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="operators">
+<h2>Operators<a class="headerlink" href="#operators" title="Enlace permanente a este encabezado">#</a></h2>
+<section id="arithmetic-operators">
+<h3>Arithmetic Operators<a class="headerlink" href="#arithmetic-operators" title="Enlace permanente a este encabezado">#</a></h3>
+<table class="longtable table" id="id2">
+<caption><span class="caption-text">Arithmetic Operators</span><a class="headerlink" href="#id2" title="Enlace permanente a esta tabla">#</a></caption>
+<colgroup>
+<col style="width: 50.0%" />
+<col style="width: 50.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Operator</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>+</p></td>
+<td><p>Addition</p></td>
+</tr>
+<tr class="row-odd"><td><p>-</p></td>
+<td><p>Subtraction</p></td>
+</tr>
+<tr class="row-even"><td><p>*</p></td>
+<td><p>Multiplication</p></td>
+</tr>
+<tr class="row-odd"><td><p>/</p></td>
+<td><p>Division</p></td>
+</tr>
+<tr class="row-even"><td><p>%</p></td>
+<td><p>Remainder</p></td>
+</tr>
+</tbody>
+</table>
+<p>The / operator uses the FLOOR rounding method.</p>
+</section>
+<section id="comparison-operators">
+<h3>Comparison Operators<a class="headerlink" href="#comparison-operators" title="Enlace permanente a este encabezado">#</a></h3>
+<table class="longtable table" id="id3">
+<caption><span class="caption-text">Comparison Operators</span><a class="headerlink" href="#id3" title="Enlace permanente a esta tabla">#</a></caption>
+<colgroup>
+<col style="width: 50.0%" />
+<col style="width: 50.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Operator</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>&lt;</p></td>
+<td><p>Less than</p></td>
+</tr>
+<tr class="row-odd"><td><p>&gt;</p></td>
+<td><p>Greater than</p></td>
+</tr>
+<tr class="row-even"><td><p>&lt;=</p></td>
+<td><p>Less than or equal</p></td>
+</tr>
+<tr class="row-odd"><td><p>&gt;=</p></td>
+<td><p>Greater than or equal</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="equality-operators">
+<h3>Equality Operators<a class="headerlink" href="#equality-operators" title="Enlace permanente a este encabezado">#</a></h3>
+<table class="longtable table" id="id4">
+<caption><span class="caption-text">Equality Operators</span><a class="headerlink" href="#id4" title="Enlace permanente a esta tabla">#</a></caption>
+<colgroup>
+<col style="width: 50.0%" />
+<col style="width: 50.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Operator</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>==</p></td>
+<td><p>Equality</p></td>
+</tr>
+<tr class="row-odd"><td><p>!=</p></td>
+<td><p>Inequality</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="local-definition-operators">
+<h3>Local Definition Operators<a class="headerlink" href="#local-definition-operators" title="Enlace permanente a este encabezado">#</a></h3>
+<table class="longtable table" id="id5">
+<caption><span class="caption-text">Local Definition Operators</span><a class="headerlink" href="#id5" title="Enlace permanente a esta tabla">#</a></caption>
+<colgroup>
+<col style="width: 50.0%" />
+<col style="width: 50.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Operator</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>func</p></td>
+<td><p>Function local definition.</p></td>
+</tr>
+<tr class="row-odd"><td><p>let</p></td>
+<td><p>Lazy definition of a variable.</p></td>
+</tr>
+<tr class="row-even"><td><p>strict</p></td>
+<td><p><a class="reference internal" href="#variables"><span class="std std-ref">Strict definition</span></a> of a variable.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="conditional-operators">
+<h3>Conditional Operators<a class="headerlink" href="#conditional-operators" title="Enlace permanente a este encabezado">#</a></h3>
+<table class="longtable table" id="id6">
+<caption><span class="caption-text">Conditional Operators</span><a class="headerlink" href="#id6" title="Enlace permanente a esta tabla">#</a></caption>
+<colgroup>
+<col style="width: 50.0%" />
+<col style="width: 50.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Operator</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>if-then-else</p></td>
+<td><p>Conditional statement.</p></td>
+</tr>
+<tr class="row-odd"><td><p>match-case</p></td>
+<td><p><a class="reference internal" href="#match-case"><span class="std std-ref">Spot a type from union</span></a>.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="list-operators">
+<h3>List Operators<a class="headerlink" href="#list-operators" title="Enlace permanente a este encabezado">#</a></h3>
+<table class="longtable table" id="id7">
+<caption><span class="caption-text">List Operators</span><a class="headerlink" href="#id7" title="Enlace permanente a esta tabla">#</a></caption>
+<colgroup>
+<col style="width: 50.0%" />
+<col style="width: 50.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Operator</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>++</p></td>
+<td><p>Concatenation.</p></td>
+</tr>
+<tr class="row-odd"><td><p>:+</p></td>
+<td><p>Adding the element to the end of the list.</p></td>
+</tr>
+<tr class="row-even"><td><p>::</p></td>
+<td><p>Adding the element to the beginning of the list.</p></td>
+</tr>
+</tbody>
+</table>
+<p>See examples of the <a class="reference internal" href="02_data-types.html#list"><span class="std std-ref">list</span></a> article.</p>
+</section>
+<section id="unary-operators">
+<h3>Unary Operators<a class="headerlink" href="#unary-operators" title="Enlace permanente a este encabezado">#</a></h3>
+<table class="longtable table" id="id8">
+<caption><span class="caption-text">Unary Operators</span><a class="headerlink" href="#id8" title="Enlace permanente a esta tabla">#</a></caption>
+<colgroup>
+<col style="width: 50.0%" />
+<col style="width: 50.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Operator</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>-</p></td>
+<td><p>Unary minus</p></td>
+</tr>
+<tr class="row-odd"><td><p>!</p></td>
+<td><p>Logical negation</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="logical-operators">
+<h3>Logical Operators<a class="headerlink" href="#logical-operators" title="Enlace permanente a este encabezado">#</a></h3>
+<table class="longtable table" id="id9">
+<caption><span class="caption-text">Logical Operators</span><a class="headerlink" href="#id9" title="Enlace permanente a esta tabla">#</a></caption>
+<colgroup>
+<col style="width: 50.0%" />
+<col style="width: 50.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Operator</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>&amp;&amp;</p></td>
+<td><p>Logical AND</p></td>
+</tr>
+<tr class="row-odd"><td><p>||</p></td>
+<td><p>Logical OR</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="match-case">
+<h3>Match-Case<a class="headerlink" href="#match-case" title="Enlace permanente a este encabezado">#</a></h3>
+<p>match-case operator is used to spot a certain type from <a class="reference internal" href="02_data-types.html#union"><span class="std std-ref">union</span></a> or <a class="reference internal" href="02_data-types.html#any"><span class="std std-ref">any</span></a> type . The spotting is required to perform certain operations. Let’s review the following example.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>match tx {
+ case _: TransferTransaction|ExchangeTransaction =&gt; t.amount &gt; 100 &amp;&amp; sigVerify(tx.bodyBytes, tx.proofs[0], tx.senderPublicKey)
+ case _ =&gt; false
+}
+</pre></div>
+</div>
+<p>In this example, if:</p>
+<ul class="simple">
+<li><p>The type of transaction is transfer transaction or exchange transaction.</p></li>
+<li><p>Amount field value is greater than <span class="math notranslate nohighlight">\(100\)</span>.</p></li>
+</ul>
+<p>Then it will be sent to the blockchain. If the transaction has a different type and/or amount field value is lesser than 100, then it will be rejected.</p>
+<section id="possible-issue">
+<h4>Possible Issue<a class="headerlink" href="#possible-issue" title="Enlace permanente a este encabezado">#</a></h4>
+<p>Let’s review the following code.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>{-# STDLIB_VERSION 2 #-}
+{-# CONTENT_TYPE EXPRESSION #-}
+{-# SCRIPT_TYPE ACCOUNT #-}
+
+match (tx) {
+ case t: TransferTransaction|ExchangeTransaction|MassTransferTransaction|Order =&gt; false   # Prohibit any transfer of funds from the account
+
+ case _ =&gt; sigVerify(...)
+}
+</pre></div>
+</div>
+<p>In this example we are using version 2 of Ride standard library, STDLIB_VERSION 2, and we want to reject any funds transfer from our account. In order to do this, we are returning false for:</p>
+<ul class="simple">
+<li><p>TransferTransaction</p></li>
+<li><p>ExchangeTransaction</p></li>
+<li><p>MassTransferTransaction</p></li>
+</ul>
+<p>Transactions of other types (for example transactions that do not transfer funds) are being sent to the blockchain. But Ride is developing rapidly, and  new transaction types are emerging. Features of invoke script transaction which is not supported by Ride v2 include attaching payments to transfer tokens to the account of the called dApp. This means that the InvokeScriptTransaction won’t be caught by the first case. It will pass to the default branch case _ =&gt; and sent to blockchain. As a result, the funds could be transferred from the account instead of the transfers being prohibited like we wanted.</p>
+</section>
+<section id="solution">
+<h4>Solution<a class="headerlink" href="#solution" title="Enlace permanente a este encabezado">#</a></h4>
+<p>To prevent the reviewed issue, it is recommended to return false inside of the default case. Then for the entities, not listed in previous branches, sending information to the blockchain will be prohibited.
+Below is the sample of script which rejects any funds transfer from account, but allows all other transactions existing in Ride v2. Usage of case _ =&gt; false rejects any other transactions, not supported by the Ride v2 (i.e. invoke script transaction).</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>{-# STDLIB_VERSION 2 #-}
+{-# CONTENT_TYPE EXPRESSION #-}
+{-# SCRIPT_TYPE ACCOUNT #-}
+
+match tx {
+ case t: TransferTransaction|ExchangeTransaction|MassTransferTransaction|Order =&gt; false   # Prohibit any transfer of funds from the account
+ case _: Transaction =&gt; sigVerify(tx.bodyBytes, tx.proofs[0], tx.senderPublicKey) # Allow all other known transaction types as long as the signature is correct
+ case _ =&gt; false  # Reject all other (new, unknown) entity types, since they are not in the version of the language used at the moment
+}
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+<section id="functions">
+<h2>Functions<a class="headerlink" href="#functions" title="Enlace permanente a este encabezado">#</a></h2>
+<p>Functions in Ride can only be used after they are declared.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>func greet(name: String) = {
+  &quot;Hello, &quot; + name
+}
+
+func add(a: Int, b: Int) = {
+  func m(a:Int) = a
+  m(a) + b
+}
+</pre></div>
+</div>
+<p>The type (Int, String, etc) comes after the argument’s name.</p>
+<p>As in many other languages, functions should not be overloaded. It helps to keep the code simple, readable and maintainable.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>func calc() = {
+  42
+}
+
+func do() = {
+  let a = calc()
+  true
+}
+</pre></div>
+</div>
+<p>The callable function will not be called either, because variable a is unused.</p>
+<p>Unlike most languages, variable shadowing is not allowed. Declaring a variable with a name that is already used in a parent scope will result in a compilation error.</p>
+<p>Functions should be defined before they are used. Functions can be invoked in prefix and postfix order:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>let list = [1, 2, 3]
+let a1 = list.size()
+let a2 = size(list)
+
+let b1 = getInteger(this, “key”)
+let b2 = this.getInteger(“key”)
+</pre></div>
+</div>
+<p>In these examples <span class="math notranslate nohighlight">\(a1\)</span> is the same as <span class="math notranslate nohighlight">\(a2\)</span> and <span class="math notranslate nohighlight">\(b1\)</span> is the same as <span class="math notranslate nohighlight">\(b2\)</span>.</p>
+<p>Learn more about <a class="reference internal" href="03_functions.html#functions"><span class="std std-ref">functions</span></a>.</p>
+</section>
+<section id="exceptions">
+<h2>Exceptions<a class="headerlink" href="#exceptions" title="Enlace permanente a este encabezado">#</a></h2>
+<p>There is no exception handling in Ride: after an exception has been thrown, the script execution fails. The transaction can be either discarded or saved on the blockchain as failed, see the <a class="reference internal" href="../02_decentralchain/03_transaction.html#transaction-validation"><span class="std std-ref">transaction validation</span></a> article for details
+The throw function will terminate script execution immediately, with the provided text. There is no way to catch thrown exceptions.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>throw(&quot;Here is exception text&quot;)
+</pre></div>
+</div>
+<p>The idea of throw is to stop execution and send useful feedback to the user.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>let a = 12
+if (a != 100) then
+ throw (&quot;a is not 100, actual value is &quot; + a.toString())
+ else throw(&quot;A is 100&quot;)
+</pre></div>
+</div>
+</section>
+<section id="comments">
+<h2>Comments<a class="headerlink" href="#comments" title="Enlace permanente a este encabezado">#</a></h2>
+<p>To write comments use the pound sign.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>let month = 7 # Sets the month
+</pre></div>
+</div>
+<p>There are no multi-line comments.</p>
+</section>
+</section>
+
+<div class="section">
+   
+</div>
+
+                </article>
+              
+              
+              
+                <footer class="bd-footer-article">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="index.html"
+       title="página anterior">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">anterior</p>
+        <p class="prev-next-title">Ride Language</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="02_data-types.html"
+       title="siguiente página">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">siguiente</p>
+        <p class="prev-next-title">Data Types</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> En esta página
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#directives">Directives</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#directive-list">Directive List</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions">Definitions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#expressions">Expressions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#expression-result">Expression Result</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#expression-type">Expression Type</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#constants">Constants</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#examples">Examples</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variables">Variables</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lazy-variables">Lazy Variables</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#strict-variables">Strict Variables</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#built-in-variables">Built-in Variables</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operators">Operators</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#arithmetic-operators">Arithmetic Operators</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comparison-operators">Comparison Operators</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#equality-operators">Equality Operators</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#local-definition-operators">Local Definition Operators</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conditional-operators">Conditional Operators</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#list-operators">List Operators</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#unary-operators">Unary Operators</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#logical-operators">Logical Operators</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#match-case">Match-Case</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#possible-issue">Possible Issue</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#solution">Solution</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#functions">Functions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exceptions">Exceptions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comments">Comments</a></li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+  
+  <div class="tocsection editthispage">
+    <a href="https://github.com/Decentral-America/docs/edit/master/docs//03_ride-language/01_syntax-basics.rst">
+      <i class="fa-solid fa-pencil"></i>
+      
+      
+        
+          Editar en GitHub
+        
+      
+    </a>
+  </div>
+</div>
+
+  <div class="sidebar-secondary-item">
+  <div class="tocsection sourcelink">
+    <a href="../_sources/03_ride-language/01_syntax-basics.rst">
+      <i class="fa-solid fa-file-lines"></i> Mostrar el código
+    </a>
+  </div>
+</div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            <div class="bd-footer-content__inner"></div>
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+  <p class="copyright">
+    
+      © Copyright 2023, Blockchain Costa Rica.
+      <br/>
+    
+  </p>
+</div>
+      
+    </div>
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item"><p class="theme-version">
+  Construido con el <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">Tema PyData Sphinx</a> 0.13.0.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,982 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="ar" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>Token (Asset) &#8212; DecentralChain  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/jupyter-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/thebelab.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/plot_directive.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d" />
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/thebelab-helper.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script src="../_static/design-tabs.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@jupyter-widgets/html-manager@^1.0.1/dist/embed-amd.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '02_decentralchain/02_token(asset)';</script>
+    <link rel="shortcut icon" href="../_static/icon.svg"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="بحث" href="../search.html" />
+    <link rel="next" title="Transaction" href="03_transaction.html" />
+    <link rel="prev" title="Account" href="01_account.html" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="ar"/>  
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+<div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+    <span class="fa-solid fa-bars"></span>
+  </label>
+  
+  <div class="navbar-header-items__start">
+    
+      <div class="navbar-item">
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="DecentralChain"/>
+    <script>document.write(`<img src="../_static/logo-dark.png" class="logo__image only-dark" alt="DecentralChain"/>`);</script>
+  
+  
+</a></div>
+    
+  </div>
+  
+  
+  <div class=" navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item"><nav class="navbar-nav">
+  <p class="sidebar-header-items__title"
+     role="heading"
+     aria-level="1"
+     aria-label="Site Navigation">
+    Site Navigation
+  </p>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../01_introduction.html">
+                        Introduction
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="index.html">
+                        DecentralChain
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../03_ride-language/index.html">
+                        Ride Language
+                      </a>
+                    </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="http://decentralchain.io/">
+                    Website
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="http://decentral.exchange/">
+                    Wallet & Exchange
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://decentralscan.com/">
+                    Explorer
+                  </a>
+                </li>
+                
+                </div>
+            </div>
+            
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="بحث" aria-label="بحث" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+        </div>
+      
+      
+        <div class="navbar-item">
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/Decentral-America/docs" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-github"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://twitter.com/decentralchain" title="Twitter" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-twitter"></i></span>
+            <label class="sr-only">Twitter</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.linkedin.com/company/decentralchain/" title="LinkedIn" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-linkedin"></i></span>
+            <label class="sr-only">LinkedIn</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.youtube.com/@decentralchain" title="Youtube" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-youtube"></i></span>
+            <label class="sr-only">Youtube</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://discord.gg/9UUbNBPQ3D" title="Discord" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-discord"></i></span>
+            <label class="sr-only">Discord</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.instagram.com/decentralchain/" title="Discord" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-instagram"></i></span>
+            <label class="sr-only">Discord</label></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="بحث" aria-label="بحث" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+    </div>
+  
+
+  
+    <label class="sidebar-toggle secondary-toggle" for="__secondary">
+      <span class="fa-solid fa-outdent"></span>
+    </label>
+  
+</div>
+
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          <div class="navbar-item"><nav class="navbar-nav">
+  <p class="sidebar-header-items__title"
+     role="heading"
+     aria-level="1"
+     aria-label="Site Navigation">
+    Site Navigation
+  </p>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../01_introduction.html">
+                        Introduction
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="index.html">
+                        DecentralChain
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../03_ride-language/index.html">
+                        Ride Language
+                      </a>
+                    </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="http://decentralchain.io/">
+                    Website
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="http://decentral.exchange/">
+                    Wallet & Exchange
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://decentralscan.com/">
+                    Explorer
+                  </a>
+                </li>
+                
+                </div>
+            </div>
+            
+  </ul>
+</nav></div>
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/Decentral-America/docs" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-github"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://twitter.com/decentralchain" title="Twitter" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-twitter"></i></span>
+            <label class="sr-only">Twitter</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.linkedin.com/company/decentralchain/" title="LinkedIn" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-linkedin"></i></span>
+            <label class="sr-only">LinkedIn</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.youtube.com/@decentralchain" title="Youtube" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-youtube"></i></span>
+            <label class="sr-only">Youtube</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://discord.gg/9UUbNBPQ3D" title="Discord" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-discord"></i></span>
+            <label class="sr-only">Discord</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.instagram.com/decentralchain/" title="Discord" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-instagram"></i></span>
+            <label class="sr-only">Discord</label></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item"><nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">DecentralChain</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="01_account.html">Account</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Token (Asset)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03_transaction.html">Transaction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04_block.html">Block</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05_node.html">Node</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06_order.html">Order</a></li>
+<li class="toctree-l1"><a class="reference internal" href="07_oracle.html">Oracle</a></li>
+<li class="toctree-l1"><a class="reference internal" href="08_mainnet-testnet-stagenet.html">Mainnet, Testnet, Stagenet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="09_protocol.html">Protocol</a></li>
+<li class="toctree-l1"><a class="reference internal" href="10_binary-format.html">Binary Format</a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+
+
+<nav aria-label="Breadcrumbs">
+  <ul class="bd-breadcrumbs" role="navigation" aria-label="Breadcrumb">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="index.html" class="nav-link">DecentralChain</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page">Token (Asset)</li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                   <section id="token-asset">
+<h1>Token (Asset)<a class="headerlink" href="#token-asset" title="Permalink to this heading">#</a></h1>
+<p>Token is a digital asset on the blockchain. A token can be used:</p>
+<ul class="simple">
+<li><p>As a cryptocurrency to pay for goods and services within a project, as well as for crowdfunding;</p></li>
+<li><p>As an object or resource in games etc.</p></li>
+</ul>
+<p>A token can represent a physical or an intangible object. The words “token” and “asset” are used interchangeably in the DecentralChain ecosystem.
+DecentralCoin is the native token on the DecentralChain blockchain. <a class="reference internal" href="#decentralcoin"><span class="std std-ref">More about DecentralCoin</span></a>.</p>
+<p>All other tokens are custom tokens issued on behalf of some account. Any account that has enough DecentralCoins to pay the fee can issue its own token. The new token is immediately available:</p>
+<ul class="simple">
+<li><p>For transfers between accounts,</p></li>
+<li><p>For trading on <a class="reference external" href="https://decentral.exchange/">Decentral.Exchange</a> (except for <a class="reference internal" href="#non-fungible-token"><span class="std std-ref">NFTs</span></a>; <a class="reference internal" href="#smart-asset"><span class="std std-ref">smart assets</span></a> trading is temporarily unavailable),</p></li>
+<li><p>For payments attached to dApp <a class="reference internal" href="03_transaction.html#invoke-script-transaction"><span class="std std-ref">script invocation</span></a>.</p></li>
+</ul>
+<section id="token-issue">
+<h2>Token Issue<a class="headerlink" href="#token-issue" title="Permalink to this heading">#</a></h2>
+<p>You can use <a class="reference external" href="https://decentral.exchange/">Decentral.Exchange</a> online to create an asset.</p>
+<ul class="simple">
+<li><p>On the main screen make sure you are logged into your account, then click on Create Token.</p></li>
+<li><p>On the next screen specify the token parameters:</p>
+<ul>
+<li><p>Name: The name of the created asset can not be shorter than <span class="math notranslate nohighlight">\(4\)</span> characters.</p></li>
+<li><p>Description: A short description where you can include website links that can be particularly useful.</p></li>
+<li><p>Quantity: Define the total supply of your asset. The total supply can either be fixed at the issuance or increased later by making the asset re-issuable.</p></li>
+<li><p>Reissuable: Defines if the asset total supply can be increased later. If set to reissuable, the issuer can increase the supply at any time (If reissuable is selected when the asset is created, it can be changed to not reissuable at a later stage).</p></li>
+<li><p>Decimals: Specify how many decimals your asset will have. For example, if you specify <span class="math notranslate nohighlight">\(8\)</span> decimals, as in Bitcoin, your asset can be divided down to <span class="math notranslate nohighlight">\(0.00000001\)</span>.</p></li>
+<li><p><a class="reference internal" href="#smart-asset"><span class="std std-ref">Smart asset</span></a>: A smart asset is an asset with an attached script that places conditions on every transaction made for the asset in question.</p></li>
+<li><p>Script (for issuing a smart asset).</p></li>
+</ul>
+</li>
+<li><p>Before creating a new asset, carefully read the creation conditions. If necessary, change the name of the asset according to the conditions, then select the I understand... checkbox and click Generate.</p></li>
+<li><p>On the next screen double-check the entered data and if everything is correct click Send to finish the creation or click Go Back to make corrections..</p></li>
+</ul>
+<p>The transaction fee is <span class="math notranslate nohighlight">\(1\)</span> DecentralCoin for a regular token or <span class="math notranslate nohighlight">\(0.001\)</span> DecentralCoins for a <a class="reference internal" href="#non-fungible-token"><span class="std std-ref">non-fungible token (NFT)</span></a>.
+Moreover, the token can be issued by the <a class="reference internal" href="../03_ride-language/04_script-types.html#dapp-script"><span class="std std-ref">dApp script</span></a> as a result of the <a class="reference internal" href="03_transaction.html#invoke-script-transaction"><span class="std std-ref">invoke script transaction</span></a> when the callable function result contains the <a class="reference internal" href="../03_ride-language/05_structures.html#issue"><span class="std std-ref">Issue</span></a> action. The minimum fee for invoke script transaction is increased by <span class="math notranslate nohighlight">\(1\)</span> DecentralCoin for each non-NFT token issued.</p>
+</section>
+<section id="token-id">
+<h2>Token ID<a class="headerlink" href="#token-id" title="Permalink to this heading">#</a></h2>
+<p>Token ID is a byte array calculated as follows:</p>
+<ul class="simple">
+<li><p>If the token is issued by <a class="reference internal" href="03_transaction.html#issue-transaction"><span class="std std-ref">issue transaction</span></a>, the token ID is the same as the transaction ID.</p></li>
+<li><p>If the token is issued by <a class="reference internal" href="03_transaction.html#invoke-script-transaction"><span class="std std-ref">invoke script transaction</span></a> when the callable function of <a class="reference internal" href="01_account.html#dapp-and-smart-account"><span class="std std-ref">dApp script</span></a> performed the <a class="reference internal" href="../03_ride-language/05_structures.html#issue"><span class="std std-ref">Issue</span></a> action, the token ID is calculated as the BLAKE2b-256 hash of the byte array containing transaction ID and the fields of the Issue structure.</p></li>
+</ul>
+<p>In the <span class="xref std std-ref">Node REST API</span>, the token identifier is encoded in base58. For example:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>&quot;assetId&quot;: &quot;8LQW8f7P5d5PZM7GtZEBgaqRPGSzS3DfPuiXrURJ4AJS&quot;
+</pre></div>
+</div>
+<p>The <a class="reference internal" href="#decentralcoin"><span class="std std-ref">DecentralCoin</span></a> token has no identifier. The Node REST API uses null for DecentralCoin.</p>
+</section>
+<section id="token-operations">
+<h2>Token Operations<a class="headerlink" href="#token-operations" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Transfer to another account</p></li>
+</ul>
+<p>Can be done via a <a class="reference internal" href="03_transaction.html#transfer-transaction"><span class="std std-ref">transfer transaction</span></a> or a <a class="reference internal" href="03_transaction.html#mass-transfer-transaction"><span class="std std-ref">mass transfer transaction</span></a>.
+A <a class="reference internal" href="01_account.html#dapp-and-smart-account"><span class="std std-ref">dApp script</span></a> can transfer the token via a <a class="reference internal" href="../03_ride-language/05_structures.html#scripttransfer"><span class="std std-ref">ScriptTransfer</span></a> script action as a result of an <a class="reference internal" href="03_transaction.html#invoke-script-transaction"><span class="std std-ref">invoke script transaction</span></a>.</p>
+<ul class="simple">
+<li><p>Exchange (trade deal)</p></li>
+</ul>
+<p>Three accounts can participate in the exchange: one user creates an <a class="reference internal" href="06_order.html#order"><span class="std std-ref">order</span></a> to buy a token, the other creates an order to sell a token. The matcher combines buy and sell orders with suitable parameters and creates an <a class="reference internal" href="03_transaction.html#exchange-transaction"><span class="std std-ref">exchange transaction</span></a>.</p>
+<ul class="simple">
+<li><p>Burning</p></li>
+</ul>
+<p>Decreases the amount of token on the account and thereby the total amount of the token on the blockchain. Any token owner can burn it, not only the issuer. It is impossible to burn <a class="reference internal" href="#decentralcoin"><span class="std std-ref">DecentralCoin</span></a>. Can be done via a <a class="reference internal" href="03_transaction.html#burn-transaction"><span class="std std-ref">burn transaction</span></a>.
+A dApp script can burn the token via a <a class="reference internal" href="../03_ride-language/05_structures.html#burn"><span class="std std-ref">Burn</span></a> script action as a result of the Invoke script transaction.</p>
+<ul class="simple">
+<li><p>Payment to <a class="reference internal" href="01_account.html#dapp-and-smart-account"><span class="std std-ref">dApp</span></a></p></li>
+</ul>
+<p>An <a class="reference internal" href="03_transaction.html#invoke-script-transaction"><span class="std std-ref">invoke script transaction</span></a> can contain up to two payments to the dApp. Payment amount and token are available to the callable function.</p>
+<section id="operations-available-only-to-issuer">
+<h3>Operations Available Only to Issuer<a class="headerlink" href="#operations-available-only-to-issuer" title="Permalink to this heading">#</a></h3>
+<p>The following token operations can only be performed by the account that issued the token:</p>
+<ul class="simple">
+<li><p>Sponsorship setup</p></li>
+</ul>
+<p>The token issuer can enable sponsorship which allows all users to pay fees in this token (instead of DecentralCoins) for invoke script transactions and transfer transactions. <a class="reference internal" href="03_transaction.html#sponsored-fees"><span class="std std-ref">More about sponsorship</span></a>. Enabling or disabling sponsorship can be done via a <a class="reference internal" href="03_transaction.html#sponsor-fee-transaction"><span class="std std-ref">sponsor fee transaction</span></a>. A dApp script can set up sponsorship using a <a class="reference internal" href="../03_ride-language/05_structures.html#sponsorfee"><span class="std std-ref">SponsorFee</span></a> as a result of the invoke script transaction.</p>
+<ul class="simple">
+<li><p>Reissue</p></li>
+</ul>
+<p>Increases the amount of token on the blockchain. The reissuable field of token determines whether the token can be reissued. Can be done via a <a class="reference internal" href="03_transaction.html#reissue-transaction"><span class="std std-ref">reissue transaction</span></a>.
+A dApp script can reissue the token via a <a class="reference internal" href="../03_ride-language/05_structures.html#reissue"><span class="std std-ref">Reissue</span></a> script action as a result of the invoke script transaction.</p>
+<ul class="simple">
+<li><p>Replacing the asset script</p></li>
+</ul>
+<p>Can be done via a <a class="reference internal" href="03_transaction.html#set-asset-script-transaction"><span class="std std-ref">set asset script transaction</span></a>. If the token is not a smart asset, that is, the script was not attached when the token was issued, then it is impossible to attach the script later.</p>
+<ul class="simple">
+<li><p>Modifying the token name and / or description</p></li>
+</ul>
+<p>Can be done via an <a class="reference internal" href="03_transaction.html#update-asset-info-transaction"><span class="std std-ref">update asset info transaction</span></a>.</p>
+</section>
+</section>
+<section id="token-types">
+<h2>Token Types<a class="headerlink" href="#token-types" title="Permalink to this heading">#</a></h2>
+<section id="non-fungible-token">
+<h3>Non-Fungible Token<a class="headerlink" href="#non-fungible-token" title="Permalink to this heading">#</a></h3>
+<p>Non-fungible token or NFT is a special type of a <a class="reference internal" href="#token-asset"><span class="std std-ref">token</span></a> that is issued with the following parameters:</p>
+<ul class="simple">
+<li><p>&quot;quantity&quot;: <span class="math notranslate nohighlight">\(1\)</span></p></li>
+<li><p>&quot;decimals&quot;: <span class="math notranslate nohighlight">\(0\)</span></p></li>
+<li><p>&quot;reissuable&quot;: false</p></li>
+</ul>
+<p>NFT is a singular entity that has a unique ID. This contrasts with a regular token, two coins of which (for example, two WBTC) cannot be distinguished from each other. NFTs can be used as in-game items, collectibles, certificates, or unique coupons.</p>
+<section id="issue-of-nft">
+<h4>Issue of NFT<a class="headerlink" href="#issue-of-nft" title="Permalink to this heading">#</a></h4>
+<p>NFT can be issued in the same ways as a regular token, see <a class="reference internal" href="#token-issue"><span class="std std-ref">token issue</span></a>. The minimum fee for an NFT issue is <span class="math notranslate nohighlight">\(0.001\)</span> DecentralCoins, <span class="math notranslate nohighlight">\(1000\)</span> times less than for a regular token.</p>
+</section>
+</section>
+<section id="smart-asset">
+<h3>Smart Asset<a class="headerlink" href="#smart-asset" title="Permalink to this heading">#</a></h3>
+<p>Smart asset is a <a class="reference internal" href="#token-asset"><span class="std std-ref">token</span></a> that has an <a class="reference internal" href="../03_ride-language/04_script-types.html#asset-script"><span class="std std-ref">asset script</span></a> assigned to it.
+By default, tokens on the DecentralChain blockchain are not smart contracts, and any transactions with them are allowed. The script endows a token with functionality that sets the rules for its circulation. Each transaction involving a smart asset is automatically checked against the conditions specified in the script. If the asset's script allows the transaction, it will be executed; if the script denies the transaction, it is either not put onto the blockchain at all or saved as failed (for details, see the <a class="reference internal" href="03_transaction.html#transaction-validation"><span class="std std-ref">transaction validation</span></a> article).</p>
+<p>Using smart assets, you can implement various financial instruments on the blockchain (options, interval trading, taxation), game mechanics (allowing transactions only between characters with certain properties). Please note:</p>
+<ul class="simple">
+<li><p>If a token is issued without a script, then the script cannot be added later.</p></li>
+<li><p>The script cannot be removed, so it is impossible to turn a smart asset into a regular one.</p></li>
+<li><p>The asset script can be changed using the <a class="reference internal" href="03_transaction.html#set-asset-script-transaction"><span class="std std-ref">set asset script transaction</span></a>, unless prohibited by the asset script itself (as well as by the <a class="reference internal" href="01_account.html#dapp-and-smart-account"><span class="std std-ref">dApp or account script</span></a> assigned to the issuer account).</p></li>
+<li><p>The <a class="reference internal" href="03_transaction.html#minimum-fee"><span class="std std-ref">minimum fee</span></a> for transaction is increased by <span class="math notranslate nohighlight">\(0.004\)</span> DecentralCoins for each smart asset involved, except for:</p>
+<ul>
+<li><p><a class="reference internal" href="03_transaction.html#invoke-script-transaction"><span class="std std-ref">Invoke script transactions</span></a>,</p></li>
+<li><p>Smart assets used as matcher fee in <a class="reference internal" href="03_transaction.html#exchange-transaction"><span class="std std-ref">exchange transaction</span></a>.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="tokens-of-other-blockchains">
+<h3>Tokens of Other Blockchains<a class="headerlink" href="#tokens-of-other-blockchains" title="Permalink to this heading">#</a></h3>
+<p>A token issued on another blockchain cannot be used directly on the DecentralChain blockchain. A new token representing the original one can be issued on the DecentralChain blockchain, and a gateway that pegs the two tokens <span class="math notranslate nohighlight">\(1:1\)</span> can be deployed.</p>
+</section>
+</section>
+<section id="decentralcoin">
+<h2>DecentralCoin<a class="headerlink" href="#decentralcoin" title="Permalink to this heading">#</a></h2>
+<p>DecentralCoin is the native <a class="reference internal" href="#token-asset"><span class="std std-ref">token</span></a> of the DecentralChain blockchain. <a class="reference internal" href="05_node.html#generating-node"><span class="std std-ref">Block generators</span></a> receive <a class="reference internal" href="03_transaction.html#transaction-fees"><span class="std std-ref">transaction fees</span></a> and <a class="reference internal" href="05_node.html#block-reward"><span class="std std-ref">block rewards</span></a> in DecentralCoins, which encourages generators to maintain and develop the blockchain network infrastructure. The more DecentralCoins the generator holds (by ownership or lease), the greater its chance to add the next block is.</p>
+<section id="decentralcoin-parameters">
+<h3>DecentralCoin Parameters<a class="headerlink" href="#decentralcoin-parameters" title="Permalink to this heading">#</a></h3>
+<p>DecentralCoins are present on the blockchain since inception, there is no issue transaction for it, therefore the DecentralCoin token does not have an ID. The REST API uses null for DecentralCoins.
+The number of decimal places (decimals) for DecentralCoins is <span class="math notranslate nohighlight">\(8\)</span>. The atomic unit called Decentralite is <span class="math notranslate nohighlight">\(\frac{1}{100,000,000}\)</span> DecentralCoins.</p>
+</section>
+<section id="leasing">
+<h3>Leasing<a class="headerlink" href="#leasing" title="Permalink to this heading">#</a></h3>
+<p>The owner of DecentralCoins can lease them via a <a class="reference internal" href="03_transaction.html#lease-transaction"><span class="std std-ref">lease transaction</span></a>. DecentralCoins received on lease are included in the <a class="reference internal" href="01_account.html#account-balance"><span class="std std-ref">generating balance</span></a>. Block generators send back different percentages as rewards to lessors. A lessor can cancel the lease at any time via a <a class="reference internal" href="03_transaction.html#lease-cancel-transaction"><span class="std std-ref">lease cancel transaction</span></a>. <a class="reference internal" href="05_node.html#leased-proof-of-stake"><span class="std std-ref">More about leasing</span></a>.</p>
+</section>
+<section id="how-to-get-decentralcoin">
+<h3>How to Get DecentralCoin<a class="headerlink" href="#how-to-get-decentralcoin" title="Permalink to this heading">#</a></h3>
+<p>You can buy DecentralCoins tokens at <a class="reference external" href="https://decentral.exchange/">Decentral.Exchange</a>, or at one of the centralized exchanges. In addition, cryptocurrency gateways can be used to transfer external cryptocurrencies such as Bitcoin, Ethereum etc. from the external blockchain to the DecentralChain blockchain and vice versa. The gateway provides the user with the address on the external blockchain. After receiving a confirmation of transfer to this external address, the gateway transfers the corresponding asset (minus the fee) to the user's DecentralChain address.</p>
+</section>
+</section>
+<section id="token-custom-parameters">
+<h2>Token Custom Parameters<a class="headerlink" href="#token-custom-parameters" title="Permalink to this heading">#</a></h2>
+<p>Below is an example of JSON representation returned by the GET /assets/details/{assetId} method of <span class="xref std std-ref">Node REST API</span>:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>{
+  &quot;assetId&quot;: &quot;DG2xFkPdDwKUoBkzGAhQtLpSGzfXLiCYPEzeKH2Ad24p&quot;,
+  &quot;issueHeight&quot;: 1806810,
+  &quot;issueTimestamp&quot;: 1574429393962,
+  &quot;issuer&quot;: &quot;3PC9BfRwJWWiw9AREE2B3eWzCks3CYtg4yo&quot;,
+  &quot;issuerPublicKey&quot;: &quot;BRnVwSVctnV8pge5vRpsJdWnkjWEJspFb6QvrmZvu3Ht&quot;,
+  &quot;name&quot;: &quot;USD-N&quot;,
+  &quot;description&quot;: &quot;Neutrino USD&quot;,
+  &quot;decimals&quot;: 6,
+  &quot;reissuable&quot;: false,
+  &quot;quantity&quot;: 999999999471258900,
+  &quot;scripted&quot;: false,
+  &quot;minSponsoredAssetFee&quot;: 7420,
+  &quot;originTransactionId&quot;: &quot;DG2xFkPdDwKUoBkzGAhQtLpSGzfXLiCYPEzeKH2Ad24p&quot;
+}
+</pre></div>
+</div>
+<table class="longtable table" id="id3">
+<caption><span class="caption-text">Token Custom Parameters</span><a class="headerlink" href="#id3" title="Permalink to this table">#</a></caption>
+<colgroup>
+<col style="width: 25.0%" />
+<col style="width: 75.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>assetId</p></td>
+<td><p>Token ID: base58 encoded byte array. The token ID is calculated as a hash of the token parameters upon issue. See also the <a class="reference internal" href="#token-id"><span class="std std-ref">token ID</span></a> article.</p></td>
+</tr>
+<tr class="row-odd"><td><p>issueHeight</p></td>
+<td><p>Blockchain height (the sequence number of the block) at which the token is issued.</p></td>
+</tr>
+<tr class="row-even"><td><p>issueTimestamp</p></td>
+<td><p>Token issue timestamp: Unix time in milliseconds.</p></td>
+</tr>
+<tr class="row-odd"><td><p>issuer</p></td>
+<td><p><a class="reference internal" href="01_account.html#address"><span class="std std-ref">address</span></a> of issuer account: base58 encoded byte array.</p></td>
+</tr>
+<tr class="row-even"><td><p>issuerPublicKey</p></td>
+<td><p><a class="reference internal" href="01_account.html#account-keys"><span class="std std-ref">Public key</span></a> of issuer account: base58 encoded byte array.</p></td>
+</tr>
+<tr class="row-odd"><td><p>name</p></td>
+<td><p>Token name. From <span class="math notranslate nohighlight">\(4\)</span> to <span class="math notranslate nohighlight">\(16\)</span> bytes (<span class="math notranslate nohighlight">\(1\)</span> character can take up to <span class="math notranslate nohighlight">\(4\)</span> bytes).</p></td>
+</tr>
+<tr class="row-even"><td><p>description</p></td>
+<td><p>Token description. From <span class="math notranslate nohighlight">\(0\)</span> to <span class="math notranslate nohighlight">\(1000\)</span> bytes.</p></td>
+</tr>
+<tr class="row-odd"><td><p>decimals</p></td>
+<td><p>Number of decimal places, from <span class="math notranslate nohighlight">\(0\)</span> to <span class="math notranslate nohighlight">\(8\)</span>.</p></td>
+</tr>
+<tr class="row-even"><td><p>reissuable</p></td>
+<td><p>Reissue availability flag.</p></td>
+</tr>
+<tr class="row-odd"><td><p>quantity</p></td>
+<td><p>Total supply of token on the blockchain specified in <a class="reference internal" href="#atomic-unit"><span class="std std-ref">atomic units</span></a>. From <span class="math notranslate nohighlight">\(1\)</span> to <span class="math notranslate nohighlight">\(9,223,372,036,854,775,807\)</span>. Total supply can change as a result of reissue or burning, see <a class="reference internal" href="#token-operations"><span class="std std-ref">token operations</span></a> below.</p></td>
+</tr>
+<tr class="row-even"><td><p>scripted</p></td>
+<td><p>There being a script: true for smart asset, false for regular token. <a class="reference internal" href="#smart-asset"><span class="std std-ref">More about smart assets</span></a>.</p></td>
+</tr>
+<tr class="row-odd"><td><p>minSponsoredAssetFee</p></td>
+<td><p>For sponsored asset only: an amount of asset that is equivalent to <span class="math notranslate nohighlight">\(0.001\)</span> <a class="reference internal" href="#decentralcoin"><span class="std std-ref">DecentralCoins</span></a>. <a class="reference internal" href="03_transaction.html#sponsored-fees"><span class="std std-ref">More about sponsorship</span></a>.</p></td>
+</tr>
+<tr class="row-even"><td><p>originTransactionId</p></td>
+<td><p>ID of the <a class="reference internal" href="03_transaction.html#transaction"><span class="std std-ref">transaction</span></a> that issued the token: base58 encoded byte array.</p></td>
+</tr>
+<tr class="row-odd"><td><p>scriptDetails</p></td>
+<td><p>For <a class="reference internal" href="#smart-asset"><span class="std std-ref">smart asset</span></a> only: <a class="reference internal" href="../03_ride-language/04_script-types.html#asset-script"><span class="std std-ref">asset script</span></a> and its attributes.</p></td>
+</tr>
+</tbody>
+</table>
+<section id="atomic-unit">
+<h3>Atomic Unit<a class="headerlink" href="#atomic-unit" title="Permalink to this heading">#</a></h3>
+<p>The amount of token is displayed differently in UIs and in the <a class="reference internal" href="03_transaction.html#json-representation"><span class="std std-ref">JSON representation</span></a> used by the <span class="xref std std-ref">Node REST API</span>. In API requests and responses, amount values are integers indicated in atomic units to avoid precision issues in floating-point calculations. An atomic unit is the minimum fraction (“cent”) of a token, it is equal to <span class="math notranslate nohighlight">\(10^{-decimals}\)</span>. The amount of token in JSON is the real quantity multiplied by <span class="math notranslate nohighlight">\(10^{decimals}\)</span>.</p>
+<p>For USD-N in the example above:</p>
+<ul class="simple">
+<li><p>decimals = <span class="math notranslate nohighlight">\(6\)</span>,</p></li>
+<li><p>atomic unit is <span class="math notranslate nohighlight">\(\frac{1}{1,000,000}\)</span> USD-N.</p></li>
+<li><p>&quot;quantity&quot;: <span class="math notranslate nohighlight">\(999999999471258900\)</span> corresponds to <span class="math notranslate nohighlight">\(999,999,999,471.258900\)</span> USD-N in UIs, &quot;minSponsoredAssetFee&quot;: <span class="math notranslate nohighlight">\(7420\)</span> corresponds to <span class="math notranslate nohighlight">\(0.007420\)</span> USD-N.</p></li>
+</ul>
+</section>
+</section>
+</section>
+
+<div class="section">
+   
+</div>
+
+                </article>
+              
+              
+              
+                <footer class="bd-footer-article">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="01_account.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">السابق</p>
+        <p class="prev-next-title">Account</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="03_transaction.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">التالي</p>
+        <p class="prev-next-title">Transaction</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#token-issue">Token Issue</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#token-id">Token ID</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#token-operations">Token Operations</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operations-available-only-to-issuer">Operations Available Only to Issuer</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#token-types">Token Types</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#non-fungible-token">Non-Fungible Token</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#issue-of-nft">Issue of NFT</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#smart-asset">Smart Asset</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tokens-of-other-blockchains">Tokens of Other Blockchains</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#decentralcoin">DecentralCoin</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#decentralcoin-parameters">DecentralCoin Parameters</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#leasing">Leasing</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-get-decentralcoin">How to Get DecentralCoin</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#token-custom-parameters">Token Custom Parameters</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#atomic-unit">Atomic Unit</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+  
+  <div class="tocsection editthispage">
+    <a href="https://github.com/Decentral-America/docs/edit/master/docs//02_decentralchain/02_token(asset).rst">
+      <i class="fa-solid fa-pencil"></i>
+      
+      
+        
+          Edit on GitHub
+        
+      
+    </a>
+  </div>
+</div>
+
+  <div class="sidebar-secondary-item">
+  <div class="tocsection sourcelink">
+    <a href="../_sources/02_decentralchain/02_token(asset).rst">
+      <i class="fa-solid fa-file-lines"></i> إظهار المصدر
+    </a>
+  </div>
+</div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            <div class="bd-footer-content__inner"></div>
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+  <p class="copyright">
+    
+      © Copyright 2023, Blockchain Costa Rica.
+      <br/>
+    
+  </p>
+</div>
+      
+    </div>
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item"><p class="theme-version">
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.13.0.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

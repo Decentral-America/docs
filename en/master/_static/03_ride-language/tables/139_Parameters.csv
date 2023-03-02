@@ -1,0 +1,4 @@
+Parameter, Description
+"str: :ref:`String <03_ride-language/02_data-types:String>`", "The string."
+"substr: :ref:`String <03_ride-language/02_data-types:String>`", "The substring."
+"offset: :ref:`Int <03_ride-language/02_data-types:Int>`", "The index."

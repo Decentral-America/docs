@@ -1,0 +1,2 @@
+Transaction type ID, Name, Description
+":math:`1`", ":ref:`Genesis transaction <02_decentralchain/03_transaction:Genesis Transaction>`", "Accrues :ref:`DecentralCoins <02_decentralchain/02_token(asset):DecentralCoin>` to an account upon the initial distribution during the creation of the blockchain."

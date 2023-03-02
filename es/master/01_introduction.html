@@ -1,0 +1,889 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="es" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>Introducción &#8212; documentación de DecentralChain - </title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/jupyter-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="_static/thebelab.css" />
+    <link rel="stylesheet" type="text/css" href="_static/plot_directive.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d" />
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/thebelab-helper.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/translations.js"></script>
+    <script src="_static/design-tabs.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@jupyter-widgets/html-manager@^1.0.1/dist/embed-amd.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '01_introduction';</script>
+    <link rel="shortcut icon" href="_static/icon.svg"/>
+    <link rel="index" title="Índice" href="genindex.html" />
+    <link rel="search" title="Búsqueda" href="search.html" />
+    <link rel="next" title="DecentralChain" href="02_decentralchain/index.html" />
+    <link rel="prev" title="¡Bienvenido a la documentación de DecentralChain!" href="index.html" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="es"/>  
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+<div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+    <span class="fa-solid fa-bars"></span>
+  </label>
+  
+  <div class="navbar-header-items__start">
+    
+      <div class="navbar-item">
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="DecentralChain"/>
+    <script>document.write(`<img src="_static/logo-dark.png" class="logo__image only-dark" alt="DecentralChain"/>`);</script>
+  
+  
+</a></div>
+    
+  </div>
+  
+  
+  <div class=" navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item"><nav class="navbar-nav">
+  <p class="sidebar-header-items__title"
+     role="heading"
+     aria-level="1"
+     aria-label="Navegación del sitio">
+    Navegación del sitio
+  </p>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="#">
+                        Introducción
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="02_decentralchain/index.html">
+                        DecentralChain
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="03_ride-language/index.html">
+                        Ride Language
+                      </a>
+                    </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="http://decentralchain.io/">
+                    Website
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="http://decentral.exchange/">
+                    Wallet & Exchange
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://decentralscan.com/">
+                    Explorer
+                  </a>
+                </li>
+                
+                </div>
+            </div>
+            
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+        </div>
+      
+      
+        <div class="navbar-item">
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="claro/oscuro" aria-label="claro/oscuro" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/Decentral-America/docs" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-github"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://twitter.com/decentralchain" title="Twitter" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-twitter"></i></span>
+            <label class="sr-only">Twitter</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.linkedin.com/company/decentralchain/" title="LinkedIn" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-linkedin"></i></span>
+            <label class="sr-only">LinkedIn</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.youtube.com/@decentralchain" title="Youtube" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-youtube"></i></span>
+            <label class="sr-only">Youtube</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://discord.gg/9UUbNBPQ3D" title="Discord" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-discord"></i></span>
+            <label class="sr-only">Discord</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.instagram.com/decentralchain/" title="Discord" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-instagram"></i></span>
+            <label class="sr-only">Discord</label></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+    </div>
+  
+
+  
+    <label class="sidebar-toggle secondary-toggle" for="__secondary">
+      <span class="fa-solid fa-outdent"></span>
+    </label>
+  
+</div>
+
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar hide-on-wide">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          <div class="navbar-item"><nav class="navbar-nav">
+  <p class="sidebar-header-items__title"
+     role="heading"
+     aria-level="1"
+     aria-label="Navegación del sitio">
+    Navegación del sitio
+  </p>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="#">
+                        Introducción
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="02_decentralchain/index.html">
+                        DecentralChain
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="03_ride-language/index.html">
+                        Ride Language
+                      </a>
+                    </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="http://decentralchain.io/">
+                    Website
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="http://decentral.exchange/">
+                    Wallet & Exchange
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://decentralscan.com/">
+                    Explorer
+                  </a>
+                </li>
+                
+                </div>
+            </div>
+            
+  </ul>
+</nav></div>
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="claro/oscuro" aria-label="claro/oscuro" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/Decentral-America/docs" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-github"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://twitter.com/decentralchain" title="Twitter" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-twitter"></i></span>
+            <label class="sr-only">Twitter</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.linkedin.com/company/decentralchain/" title="LinkedIn" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-linkedin"></i></span>
+            <label class="sr-only">LinkedIn</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.youtube.com/@decentralchain" title="Youtube" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-youtube"></i></span>
+            <label class="sr-only">Youtube</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://discord.gg/9UUbNBPQ3D" title="Discord" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-discord"></i></span>
+            <label class="sr-only">Discord</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.instagram.com/decentralchain/" title="Discord" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-instagram"></i></span>
+            <label class="sr-only">Discord</label></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+
+
+<nav aria-label="Migas de pan">
+  <ul class="bd-breadcrumbs" role="navigation" aria-label="Miga de pan">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="index.html" class="nav-link" aria-label="Inicio">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    <li class="breadcrumb-item active" aria-current="page">Introducción</li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                   <section id="introduction">
+<h1>Introducción<a class="headerlink" href="#introduction" title="Enlace permanente a este encabezado">#</a></h1>
+<p>¿Cómo se convirtió el dinero en la base del comercio durante tanto tiempo? Para tener una respuesta a esta pregunta debemos entender qué es el dinero y las diferentes formas en que ha utilizado a lo largo del tiempo.</p>
+<section id="definition-of-money">
+<h2>Definición de Dinero<a class="headerlink" href="#definition-of-money" title="Enlace permanente a este encabezado">#</a></h2>
+<p>El dinero se define a menudo por las funciones que desempeña:</p>
+<ul class="simple">
+<li><p>Es un depósito del valor, lo que significa que el dinero permite aplazar su consumo hasta una fecha posterior.</p></li>
+<li><p>Es una unidad de medida, lo que significa que permite asignar un valor a diferentes bienes sin tener que compararlos. Así, en lugar de decir que un reloj Rolex vale seis vacas, se puede decir simplemente que este (o las vacas) cuestan $10 000.</p></li>
+<li><p>Y es un medio de intercambio, lo que significa que es una forma fácil y eficiente para que diferentes partes intercambien bienes y servicios entre sí.</p></li>
+</ul>
+</section>
+<section id="history-of-money">
+<h2>Historia del Dinero<a class="headerlink" href="#history-of-money" title="Enlace permanente a este encabezado">#</a></h2>
+<p>Somos capaces de definir lo que es el dinero; sin embargo cuando se trata de sus orígenes, no se ha llegado a encontrar una respuesta definitiva. Para un elemento tan central de nuestras vidas, las antiguas raíces del dinero y las razones de su invención no están claras, la mayor parte del conocimiento disponible se basa en conjeturas e inferencias lógicas.</p>
+<p>Algunos economistas suponen que el trueque de bienes y servicios inspiró la invención del dinero. Por otro lado, hay antropólogos y arqueólogos que sostienen que los primeros estados inventaron la moneda como medio de pago de las deudas.</p>
+<p>Varias investigaciones sugieren que el dinero apareció de forma independiente por diferentes razones y asumió diferentes formas tangibles en muchas partes del mundo, comenzando hace miles de años y que el trueque no tuvo nada que ver con esto, sino que el dinero surgió de sistemas más antiguos de crédito y deuda. En las sociedades de pequeña escala, las deudas se referían a las obligaciones contraídas con otras personas, mientras que entre los grupos de cazadores-recolectores y agricultores las hijas entregadas en matrimonio creaban deudas que se pagaban parcialmente con bienes y cuyo pago completo requería que el receptor de la primera novia proporcionara una novia a cambio.</p>
+<p>Múltiples revisionistas sostienen que la transición a una nueva forma de deuda que favorece al dinero comenzó hace al menos 5.500 años en los estados agrícolas de Mesopotamia y Egipto. En Mesopotamia, el siclo de plata -un trozo de metal, no una moneda- era una medida monetaria básica. Los gobernantes decretaban que el peso de un siclo de plata equivalía a un celemín de cebada. En otras sociedades antiguas se utilizaban siclos de plata, oro y otros metales. Los pesos precisos de los siclos parecen haber variado de unos a otros y, por tanto, son difíciles de precisar. Los agricultores pagaban impuestos para mantener el estilo de vida de la realeza y las obras públicas; lo que los agricultores y otros plebeyos no podían pagar en bienes se registraba como deuda en siclos. Los mercaderes y comerciantes adquirían los bienes de los funcionarios del templo y del palacio a crédito.</p>
+<p>Las monedas estampadas con imágenes de animales o gobernantes, que actuaban como denominaciones y garantizaban el valor del metal, aparecieron por primera vez en el reino de Lidia hace unos 2.600 años. Situada en lo que hoy es Turquía, Lidia se encontraba en la cúspide entre el Mediterráneo y Oriente Próximo, y el comercio con viajeros extranjeros era habitual, lo cual fue uno de los principales promotores de que se acuñara esta moneda. Para entender el porqué, imaginemos que se realiza un comercio en ausencia de dinero o, en otras palabras, a través del trueque. El principal problema del trueque es que se requiere un doble coincidencia de necesidades; supongamos que tienes un racimo de plátanos y quieres un par de zapatos, pero no basta con encontrar a alguien que tenga unos zapatos o a alguien que quiera unos plátanos. Para hacer el trueque, hay que encontrar a alguien que tenga zapatos que esté dispuesto a intercambiar y que quiera plátanos, lo cual no es tarea fácil.</p>
+<p>Con una moneda común, la tarea se hace más fácil: Simplemente vendes tus plátanos a alguien a cambio de dinero, con el que luego compras zapatos a alguien más. Y si, como en Lidia, hay extranjeros a los que quieres comprar o a los que quieres vender, tener un medio de cambio en común es obviamente valioso. Es decir, el dinero es especialmente útil cuando se trata de personas que no conoces y que quizá no vuelvas a ver.</p>
+<p>Una gran innovación en el avance del reino del Lidia fue la moneda metálica estandarizada. Fabricada con una aleación de oro y plata llamada electrum, una moneda era exactamente igual a otra, a diferencia, por ejemplo, del ganado. A diferencia del ganado, las monedas no envejecían, ni morían, ni cambiaban con el tiempo y además eran mucho más fáciles de transportar. Otros reinos siguieron el ejemplo de Lidia, y las monedas se hicieron presentes en todo el Mediterráneo, con reinos que estampaban su insignia en las monedas que acuñaban. Esto tenía un efecto doble: facilitaba el flujo comercial y establecía la autoridad del estado.</p>
+<p>La difusión de la moneda por el Mediterráneo no significó su uso universal; poco después de Lidia, las ciudades y los estados de Grecia, Persia, India y China empezaron a acuñar sus propias monedas, pero incluso entonces la mayoría de la gente seguía siendo agricultora de subsistencia y vivía en gran medida al margen de la economía monetaria. Pero a medida que el dinero se hizo más común, fomentó la expansión de los mercados. Una vez que los mercados y el dinero se apoderan de una pequeña parte de la economía, tienden a colonizar el resto de la economía, forzando gradualmente el trueque, el feudalismo y otros acuerdos económicos. Esto sucede sobre todo porque el dinero facilita mucho las transacciones de mercado y también porque el uso del dinero parece redefinir lo que la gente valora, empujándola a ver las cosas en términos económicos, en lugar de sociales.</p>
+<p>Los gobiernos se apresuraron en adoptar las monedas metálicas porque facilitaban la recaudación de impuestos y la creación de fuerzas militares ya estas financiaban los ejércitos y las guerras de conquista. En el proceso, las monedas se convirtieron en moneda de curso legal para todo tipo de transacciones. Múltiples revisionistas sostienen que los mercados fueron un resultado de este sistema, no su causa.</p>
+<p>Una vez que los chinos empezaron a fabricar papel comparativamente barato a partir de fibras naturales y descubrieron la impresión de bloque, el papel moneda empezó a utilizarse en el país. El primer uso conocido del papel moneda en China se remonta a la dinastía Tang y, a pesar de la escasa información que se conserva sobre este primer sistema de papel moneda, hay pruebas de que se trataba de certificados emitidos por el gobierno Tang para pagar a los comerciantes locales en partes distantes del imperio. Mediante el uso de certificados, el gobierno podía evitar tener que transportar monedas metálicas a lugares lejanos. Cada certificado tenía una cantidad de monedas metálicas determinada y era canjeable por las monedas a petición en la capital china. La mayoría de los comerciantes nunca se tomaban la molestia de ir a la capital para obtener monedas metálicas por su certificado, sino que los certificados se utilizaban como dinero a nivel local, ya que eran transferibles. La visión del dinero como mercancía sólo empezó a cambiar con la adopción generalizada del papel moneda.</p>
+<p>En comparación con las monedas metálicas hechas de metales preciosos, el papel moneda era más fácil de transportar, y el uso del papel moneda también liberaba metal que podía destinarse a otros usos. En 1821, el Banco de Inglaterra adoptó el estándar oro, prometiendo canjear sus billetes por oro si se le solicitaba. Cuando otros países siguieron su ejemplo, el patrón oro se convirtió en la norma general de las economías desarrolladas. El descubrimiento de nuevos e importantes yacimientos de oro a lo largo del siglo XIX hizo que el suministro de monedas siguiera creciendo.</p>
+<p>El estándar oro, como se pretendía, aportó estabilidad a los precios y fue enormemente beneficioso para los propietarios y prestamistas. Sin embargo, también trajo consigo la deflación -es decir, los precios cayeron en general- porque a medida que los países, las poblaciones y las economías crecían, sus gobiernos no tenían una forma fácil de aumentar la oferta monetaria si no era extrayendo más oro, por lo que el dinero en efecto se volvió más escaso. La deflación fue dura para los agricultores y los prestatarios, que anhelaban un poco de inflación para ayudarles con sus deudas; cuando el dinero pierde gradualmente parte de su valor, también lo hacen las deudas de la gente.</p>
+<p>Lo que finalmente acabó con el patrón oro fue la Primera Guerra Mundial. Como los gobiernos necesitaban más dinero para sus ejércitos que el que tenían en oro, simplemente empezaron a imprimirlo. Y aunque muchos países intentaron volver al patrón oro después de la guerra, las consecuencias de la Gran Depresión hicieron que se acabara definitivamente. Por ello, las monedas actuales son monedas \fiduciarias, lo que significa que están respaldadas por la autoridad del gobierno emisor, y nada más.</p>
+<p>En Estados Unidos, por ejemplo, eso significa que el gobierno sólo acepta dólares para el pago de impuestos y exige a sus acreedores que acepten dólares para el pago de deudas. Pero si la gente perdiera la fe en el dólar y dejara de aceptarlo en las transacciones cotidianas, acabaría por perder su valor. La dependencia del dinero fiduciario otorga demasiado poder al gobierno, que puede imprimir imprudentemente todo el dinero que quiera. Pero la verdad es que esto siempre ha sido posible. Incluso con el patrón oro, los gobiernos revalorizaban sus monedas cuando era necesario, dictando de hecho un nuevo precio para el oro, o ignoraban el patrón cuando resultaba demasiado limitante, como durante la Primera Guerra Mundial. Además, la idea de que el oro es de alguna manera más
+eal\ que el papel es, bueno, un espejismo. El oro es valioso porque hemos decidido colectivamente que lo es y que aceptaremos bienes y servicios a cambio de él. Y eso no es diferente, en última instancia, de nuestra decisión colectiva de que los rectángulos de papel de colores son valiosos y que aceptaremos bienes y servicios a cambio de ellos.</p>
+</section>
+<section id="difference-between-money-and-currency">
+<h2>Diferencia entre Dinero y Moneda<a class="headerlink" href="#difference-between-money-and-currency" title="Enlace permanente a este encabezado">#</a></h2>
+<p>Aunque la mayoría de las veces los términos \dinero\ y \moneda\ se utilizan indistintamente, hay algunas sugerencias de que estos términos no son idénticos; éstas sugieren que el dinero es inherentemente un concepto intangible, mientras que la moneda es la manifestación física (tangible) del concepto intangible de dinero. Por extensión, según estas sugerencias, el dinero no se puede tocar ni oler. La moneda suele presentarse en formas metálicas redondas conocidas igualmente como monedas, o en forma de piezas de papel, llamadas billetes o papel moneda. La forma básica del dinero son los números; algunas de las formas básicas de moneda actualmente son los billetes de papel, las monedas y las tarjetas de plástico.</p>
+<p>La poderosa combinación de computadoras y telecomunicaciones, de teléfonos inteligentes y medios sociales, de criptografía y economías virtuales hace que parezca posible crear una sociedad sin dinero en efectivo (monedas metálicas ni papel moneda). Lo más relevante del dinero no es su representación, sino el efecto que tiene. Al fin y al cabo, las personas utilizan monedas que lubrican el comercio, permiten el intercambio de bienes y servicios y, por lo tanto promueven el trabajo y la creación. El dinero, ya sea representado por una moneda de metal, una concha o un trozo de papel, no siempre tiene valor. Su valor depende de la importancia que le atribuyan las personas: como depósito del valor, unidad de medida y medio de intercambio. El dinero tiene valor simplemente porque todo el mundo sabe que será aceptado como forma de pago. Sin embargo, a lo largo de la historia, tanto el uso como la forma del dinero han evolucionado.</p>
+</section>
+<section id="definition-of-cryptocurrencies">
+<h2>Definición de Criptomonedas<a class="headerlink" href="#definition-of-cryptocurrencies" title="Enlace permanente a este encabezado">#</a></h2>
+<p>La criptomoneda es una forma de moneda digital o virtual; lo que significa que es una representación de valor, que utiliza criptografía para asegurar y verificar transacciones, así como para controlar la creación de nuevas unidades.</p>
+<p>Las criptomonedas operan en sistemas que permiten que se realicen transacciones en línea seguras sin la necesidad de bancos centrales o intermediarios. En cambio, las transacciones se registran en un libro público descentralizado y distribuido (DLT) llamado blockchain, que es mantenido por una red de computadoras en todo el mundo que registra todas las transacciones de manera segura y transparente.</p>
+</section>
+<section id="definition-of-blockchain-technology">
+<h2>Definición de la Tecnología Blockchain<a class="headerlink" href="#definition-of-blockchain-technology" title="Enlace permanente a este encabezado">#</a></h2>
+<p>La tecnología Blockchain es crucial para las criptomonedas, ya que permite que las transacciones se procesen y autentiquen sin ninguna autoridad central. En lugar de depender de una única autoridad centralizada para administrar y almacenar los datos, las cadenas de bloques se basan en una red de computadoras para validar y registrar las transacciones, lo que las hace más seguras y resistentes a la manipulación o la piratería. Una cadena de bloques ofrece un registro de la verdad comúnmente acordado a múltiples participantes en un sistema económico que desconfían mutuamente, ya que realiza un seguimiento de las transacciones de criptomonedas que se agrupan en bloques. Cada bloque está vinculado criptográficamente al anterior, por lo que a medida que se agregan nuevos bloques, los bloques más antiguos se vuelven más difíciles de modificar. Los nuevos bloques se replican en todas las copias de la cadena de bloques dentro de la red y cualquier conflicto se resuelve automáticamente utilizando las reglas establecidas.</p>
+<p>Una cadena de bloques está esparcida entre nodos situados normalmente en diferentes lugares. Esta es una de las ideas clave de la cadena de bloques, y le otorga sus características únicas de descentralización. Por ello, cualquiera puede enviar información para ser almacenada en una cadena de bloques y, por lo tanto, es importante que existan procesos que garanticen que todo el mundo se ponga de acuerdo sobre qué información añadir y qué información desechar Diferentes redes utilizan diferentes métodos, pero estos procesos juntos son lo que se conoce como un protocolo de consenso y son esencialmente las reglas mediante las cuales se rige el funcionamiento de la red.</p>
+<section id="definition-of-consensus-protocol">
+<h3>Definición de Protocolo de Consenso<a class="headerlink" href="#definition-of-consensus-protocol" title="Enlace permanente a este encabezado">#</a></h3>
+<p>\El consenso es un problema dominante en muchos ámbitos del quehacer humano; el consenso es el proceso de acordar en una de varias alternativas propuestas por varios agentes. El consenso puede definirse como un acuerdo, los protocolos son reglas que describen cómo debe realizarse una actividad. En pocas palabras, los protocolos de consenso pueden verse como las
+eglas del acuerdo.</p>
+<p>Un protocolo de consenso (también conocido como mecanismo de consenso o algoritmo de consenso) se utiliza para lograr el acuerdo necesario sobre un único valor de datos o un único estado de la cadena de bloques en un momento dado. Proporciona un método de revisión y confirmación acerca de cuales datos que deben añadirse al registro de una cadena de bloques. Debido a que no existe una autoridad centralizada que dicte quién tiene razón o no, todos los nodos participantes deben llegar a un acuerdo sobre el estado de la red, siguiendo las reglas predefinidas o protocolo.</p>
+</section>
+</section>
+<section id="current-state-of-blockchain-technology">
+<h2>Estado Actual de la Tecnología Blockchain<a class="headerlink" href="#current-state-of-blockchain-technology" title="Enlace permanente a este encabezado">#</a></h2>
+<section id="bitcoin">
+<h3>Bitcoin<a class="headerlink" href="#bitcoin" title="Enlace permanente a este encabezado">#</a></h3>
+<p>La cadena de bloques de Bitcoin se introdujo por primera vez en 2008 a través de un libro blanco de su creador seudónimo Satoshi Nakamoto como un sistema de efectivo electrónico entre pares que permite a los usuarios enviar pagos directamente entre sí utilizando Bitcoin (BTC), la moneda nativa de la cadena de bloques, sin la necesidad de intermediarios como las instituciones financieras. La primera transacción de Bitcoin tuvo lugar en enero de 2009, cuando Satoshi Nakamoto envió 10 Bitcoins a la primera persona que descargó el software. La primera transacción comercial con Bitcoin tuvo lugar en 2010, cuando un programador llamado Laszlo Hanyecz pidió dos pizzas pagando 10.000 Bitcoins a un intermediario.</p>
+<p>Bitcoin utiliza un protocolo de consenso de prueba de trabajo (PoW), en el que los mineros compiten para resolver ecuaciones matemáticas complejas utilizando su potencia informática. El primer minero que logra resolver el rompecabezas criptográfico agrega el último bloque de transacciones a la cadena de bloques y recibe recompensas en forma de monedas recién acuñadas y tarifas de transacción. Este proceso consume mucha energía y fue diseñado para ser difícil a propósito para «probar» que los participantes han hecho el «trabajo» y son elegibles para agregar un nuevo bloque a la cadena de bloques.</p>
+<p>El lenguaje de secuencias de comandos utilizado en las transacciones de Bitcoin se llama Script. Se utiliza casi exclusivamente para definir cómo se pueden gastar los productos y es responsable de hacer cumplir las reglas que rigen las transacciones de Bitcoin. En otras palabras, Script determina a quién se envió el BTC, cuánto se envió y en qué condiciones se puede gastar.</p>
+</section>
+<section id="ethereum">
+<h3>Ethereum<a class="headerlink" href="#ethereum" title="Enlace permanente a este encabezado">#</a></h3>
+<p>Ethereum es una plataforma blockchain descentralizada que revolucionó la forma en que se crean y ejecutan las aplicaciones. Fundada en 2015 por el cofundador Vitalik Buterin, quien publicó su libro blanco en 2013, Ethereum ofrece una gama de funciones que van más allá de las de Bitcoin, incluida la posibilidad de crear nuevas criptomonedas y la capacidad de ejecutar contratos inteligentes, que son autónomos. ejecutar acuerdos codificados en la cadena de bloques, con los términos del acuerdo entre el comprador y el vendedor escritos directamente en líneas de código sin la necesidad de intermediarios, todo mientras se hace cumplir la negociación o el cumplimiento del contrato automáticamente. Al permitir la ejecución de contratos inteligentes, Ethereum abre la posibilidad de crear aplicaciones descentralizadas (DApps), que operan de forma transparente e independiente sin ninguna autoridad central.</p>
+<p>Al igual que Bitcoin, Ethereum inicialmente usó un protocolo de consenso de prueba de trabajo (PoW), similar a Bitcoin, pero se sometió a una actualización importante que lo movió a un protocolo de consenso de prueba de participación (PoS). A diferencia de los modelos de consenso de Prueba de trabajo (PoW), en los que la capacidad de los mineros para validar transacciones de bloques se basa en la potencia informática de su hardware, los modelos PoS asignan la tarea de validar nuevos bloques en función del tamaño de la participación del nodo, y las participaciones más grandes tienen una mayor participación. probabilidad de producir el siguiente bloque. El sistema PoS tiene como objetivo proporcionar una alternativa más eficiente energéticamente a PoW mientras mantiene la seguridad de la cadena de bloques. Esta actualización del protocolo de consenso tiene como objetivo aumentar la eficiencia, la seguridad y reducir el impacto ambiental al eliminar la necesidad de la potencia computacional intensiva que requiere PoW.</p>
+<p>La moneda nativa de la cadena de bloques se llama Ether o ETH. El Ether se utiliza principalmente para dos propósitos: se negocia como criptomoneda en los intercambios de la misma manera que otras criptomonedas, y se utiliza en la red Ethereum para ejecutar aplicaciones. Por lo tanto, todas las aplicaciones descentralizadas construidas sobre Ethereum permiten que el Ether y otras criptomonedas sean utilizadas en una gran variedad de formas diferentes, incluyendo por ejemplo como garantía para los préstamos o pueden ser prestados a los prestatarios para ganar intereses. La garantía se refiere a las criptomonedas ofrecidas como seguridad de que será pagado el préstamo.</p>
+<p>Ethereum ofrece múltiples lenguajes para que los programadores desarrollen contratos inteligentes. Los dos lenguajes más activos y mantenidos son:</p>
+<ul class="simple">
+<li><p>Solidity</p></li>
+<li><p>Vyper</p></li>
+</ul>
+</section>
+<section id="decentralchain">
+<h3>DecentralChain<a class="headerlink" href="#decentralchain" title="Enlace permanente a este encabezado">#</a></h3>
+<p>DecentralChain es un ecosistema de cadena de bloques de vanguardia, seguro y eficiente que permite la creación de contratos inteligentes, el desarrollo de aplicaciones descentralizadas (DApps) y una próspera comunidad de finanzas descentralizadas (DeFi). Utiliza un protocolo de consenso llamado Leased Proof of Stake (LPoS) que tiene como objetivo mejorar la Prueba de participación tradicional (PoS) al permitir a los usuarios arrendar sus participaciones a otros usuarios, lo que aumenta la capacidad de este último para producir nuevos bloques. A cambio, el prestamista recibe un porcentaje de las tarifas de transacción ganadas por el validador. Este mecanismo de arrendamiento tiene como objetivo abordar el posible problema de centralización en los modelos de PoS tradicionales, donde unas pocas partes interesadas importantes controlan una parte significativa de la red y el poder de toma de decisiones se concentra en manos de un pequeño grupo de personas o entidades mientras que al mismo tiempo tiempo que permite a todos los usuarios ganar recompensas, extendiendo la capacidad de participar en la red no solo a las partes interesadas minoritarias sino también a los usuarios que solo desean arrendar sus participaciones a otros usuarios.</p>
+<p>DecentralChain ofrece un enfoque único para el desarrollo de aplicaciones descentralizadas al evitar altas tarifas de gas para todas las transacciones. El lenguaje nativo de blockchain, llamado Ride, es un lenguaje no completo de Turing, lo que ayuda a mantener el sistema seguro y predecible. Ride permite la creación de contratos inteligentes, que son acuerdos autoejecutables escritos en código que se ejecutan sin una entidad central detrás de ellos. Esto proporciona una plataforma para aplicaciones descentralizadas (DApps), que son aplicaciones que funcionan sin una autoridad central. El uso de Ride y LPoS por parte de DecentralChain ayuda a garantizar la estabilidad y la seguridad de la red, lo que la convierte en una opción atractiva para el desarrollo de aplicaciones descentralizadas.</p>
+</section>
+</section>
+<section id="decentralchain-ecosystem">
+<h2>Ecosistema DecentralChain<a class="headerlink" href="#decentralchain-ecosystem" title="Enlace permanente a este encabezado">#</a></h2>
+<p>El ecosistema DecentralChain permite la comunicación segura y la interoperabilidad entre diferentes redes de blockchain. El ecosistema utiliza protocolos para facilitar la transferencia de activos e información entre redes blockchain, así como incentivar la sostenibilidad al reducir las emisiones de carbono por transacción y generar créditos de carbono. Además, el ecosistema fomenta el secuestro de carbono, donde el carbono secuestrado se tokeniza y se puede comercializar en una plataforma de cadena de bloques. También hay una billetera descentralizada y un intercambio construido en la red DecentralChain que ofrece varios beneficios, como tasas de ejecución rápidas, capacidad de múltiples cadenas, tarifas bajas e interoperabilidad.</p>
+<p>Here are some of our most visited websites:</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 gallery-directive docutils">
+<div class="sd-row sd-row-cols-1 sd-row-cols-xs-1 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-3 sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+DecentralChain Website</div>
+</div>
+<img alt="card-img-bottom" class="sd-card-img-bottom" src="_images/decentralchain_website.png" />
+<a class="sd-stretched-link reference external" href="https://decentralchain.io/"></a></div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Decentral Exchange</div>
+</div>
+<img alt="card-img-bottom" class="sd-card-img-bottom" src="_images/decentral_exchange.png" />
+<a class="sd-stretched-link reference external" href="https://decentral.exchange/"></a></div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Decentral Scan</div>
+</div>
+<img alt="card-img-bottom" class="sd-card-img-bottom" src="_images/decentral_scan.png" />
+<a class="sd-stretched-link reference external" href="https://decentralscan.com/"></a></div>
+</div>
+</div>
+</div>
+<section id="wallet-and-exchange">
+<h3>Billetera e Intercambio<a class="headerlink" href="#wallet-and-exchange" title="Enlace permanente a este encabezado">#</a></h3>
+<p><a class="reference external" href="https://decentral.exchange/">Decentral.Exchange</a> is an all-in-one platform that combines the features of a wallet, decentralized exchange, and cryptocurrency management tool into a single, seamless platform. Built on the DecentralChain blockchain, this platform offers numerous benefits to its users, including fast execution rates, multi-chain capability, low fees, and interoperability.</p>
+<p>Una de las ventajas más significativas de los intercambios descentralizados es que no están controlados por ninguna autoridad central, lo que brinda a los usuarios un control total sobre sus activos. A diferencia de los intercambios centralizados, no hay riesgo de que una entidad centralizada congele o confisque los fondos. Con Decentral.Exchange, los usuarios también pueden disfrutar de una seguridad mejorada, ya que sus claves privadas se almacenan localmente en su dispositivo, lo que reduce el riesgo de ciberdelincuencia. Los intercambios descentralizados también brindan acceso a una gama más amplia de activos, gracias a la ausencia de restricciones en la cantidad de tokens que se pueden intercambiar. Decentral.Exchange lleva esto más allá con su capacidad de múltiples cadenas, lo que permite a los usuarios intercambiar tokens en diferentes cadenas de bloques sin problemas. La interoperabilidad de Decentral.Exchange permite a los usuarios intercambiar tokens en varias cadenas y diferentes intercambios descentralizados, lo que hace posible acceder a una gama más amplia de activos sin esfuerzo.</p>
+<p>Uno de los puntos clave de venta de Decentral.Exchange son sus bajas tarifas, lo que lo diferencia de los intercambios centralizados tradicionales que a menudo cobran tarifas exorbitantes. La ausencia de intermediarios significa que los usuarios pueden conservar una mayor parte de sus ganancias, lo que hace que el comercio sea más accesible para todos. En el ecosistema DecentralChain, tener un intercambio descentralizado nativo es esencial, ya que facilita la compra y venta de tokens DecentralChain dentro del ecosistema. Además, los participantes del proyecto pueden crear sus tokens e intercambiarlos en el intercambio. Decentral.Exchange también permite a los usuarios enviar y recibir monedas sin necesidad de un intermediario centralizado.</p>
+<p>Decentral.Exchange está a la vanguardia del futuro del comercio de criptomonedas, brindando a los usuarios una amplia gama de beneficios que los intercambios centralizados no pueden igualar. Con su cadena de bloques nativa, DecentralChain, Decentral.Exchange está en una posición ideal para revolucionar la industria de las criptomonedas y redefinir la forma en que comerciamos con criptomonedas.</p>
+</section>
+<section id="blockchain-explorer">
+<h3>Explorador Blockchain<a class="headerlink" href="#blockchain-explorer" title="Enlace permanente a este encabezado">#</a></h3>
+<p><a class="reference external" href="https://decentralscan.com/">DecentralScan.com</a> is the official block explorer of the DecentralChain blockchain. It is a powerful tool that allows users to view, track, and analyze transactions on the DecentralChain blockchain. The block explorer provides a user-friendly interface that simplifies the navigation of the complex data stored on the blockchain.</p>
+<p>Uno de los beneficios clave de <a class="reference external" href="http://DecentralScan.com">DecentralScan.com</a> es su capacidad para brindar transparencia al ecosistema DecentralChain. Permite a los usuarios ver todas las transacciones que se han producido en la cadena de bloques en tiempo real, incluida la cantidad de DecentralCoins (DCC) transferidas, las direcciones involucradas en la transacción y la marca de tiempo de la transacción. Esto facilita el seguimiento del movimiento de DCC y la comprensión de cómo se utiliza el ecosistema.</p>
+<p>El explorador de bloques también es valioso por su capacidad para proporcionar información detallada sobre los nodos de la red. Los usuarios pueden ver la cantidad actual de nodos, su distribución geográfica e información sobre cada nodo, como su tiempo de actividad y la cantidad de bloques que ha extraído. Esta información es esencial para el ecosistema DecentralChain, ya que permite a los usuarios ver la distribución de la red y comprender la salud del ecosistema.</p>
+<p>Además de rastrear transacciones y nodos, el explorador de bloques también ofrece a los usuarios una vista detallada de la implementación del contrato inteligente en la cadena de bloques. Esto es particularmente útil para los desarrolladores y las empresas que se basan en la cadena de bloques DecentralChain, ya que les permite ver y analizar los contratos inteligentes implementados, lo que facilita la identificación de errores o posibles vulnerabilidades en el código del contrato.</p>
+<p>Además, el explorador de bloques juega un papel vital para garantizar la seguridad del ecosistema DecentralChain. Al proporcionar información detallada sobre transacciones y nodos, facilita a los usuarios identificar actividades sospechosas o posibles amenazas a la seguridad. El explorador de bloques también se puede utilizar para rastrear el movimiento de monedas robadas o perdidas, lo que facilita su recuperación.</p>
+</section>
+<section id="inter-chain-gateway-protocol">
+<h3>Protocolo de Puerta de Enlace entre Cadenas<a class="headerlink" href="#inter-chain-gateway-protocol" title="Enlace permanente a este encabezado">#</a></h3>
+<p>El protocolo de puerta de enlace entre cadenas de DecentralChain es un mecanismo de cadena de bloques diseñado para permitir la comunicación segura y la interoperabilidad entre diferentes redes de cadena de bloques. Esto se logra mediante la creación de una red descentralizada de nodos que utilizan tecnología de contrato inteligente para validar y procesar transacciones entre diferentes cadenas de bloques.</p>
+<p>Un caso de uso importante de la puerta de enlace es la capacidad de transferir activos entre diferentes redes de blockchain. Por ejemplo, si tiene Bitcoin pero desea usarlo en otra red de cadena de bloques, como DecentralChain, la puerta de enlace puede permitirle transferir su Bitcoin a la red DecentralChain, donde se convierte en una forma compatible con la cadena de bloques DecentralChain.</p>
+<p>Además, la puerta de enlace facilita el intercambio de información entre diferentes redes de blockchain. Al crear una red Oracle descentralizada, los contratos inteligentes en diferentes redes de cadenas de bloques pueden acceder y utilizar datos externos, lo que permite la creación de aplicaciones descentralizadas que usan datos de múltiples fuentes y redes de cadenas de bloques.</p>
+<p>Para garantizar la seguridad de la red, la puerta de enlace utiliza tecnología de contrato inteligente con reglas y condiciones predefinidas que se ejecutan automáticamente cuando se cumplen condiciones específicas. Estas condiciones incluyen validación de entrada y controles de acceso para garantizar que solo las partes autorizadas puedan acceder y utilizar la información de la red.</p>
+</section>
+<section id="proof-of-incentivized-sustainability-protocol">
+<h3>Protocolo de Prueba de Sostenibilidad Incentivada<a class="headerlink" href="#proof-of-incentivized-sustainability-protocol" title="Enlace permanente a este encabezado">#</a></h3>
+<p>A medida que la sociedad se vuelve cada vez más consciente del impacto del cambio climático, las empresas y las personas buscan formas de reducir su huella de carbono. En el ámbito de la tecnología blockchain, el alto consumo de energía y las emisiones de carbono resultantes de las transacciones de Bitcoin son particularmente problemáticos. Sin embargo, la cadena de bloques DecentralChain presenta una solución a este problema mediante el uso de su protocolo de prueba de sostenibilidad incentivada.</p>
+<p>La cadena de bloques tradicional de Bitcoin consume una cantidad significativa de energía para cada transacción, liberando grandes cantidades de emisiones de carbono a la atmósfera. Por el contrario, la cadena de bloques DecentralChain utiliza un protocolo de prueba de participación que es más eficiente energéticamente, lo que resulta en emisiones de carbono significativamente más bajas por transacción.</p>
+<p>La cadena de bloques DecentralChain genera créditos de carbono a través de la prueba del protocolo de sostenibilidad incentivada. Cada transacción de Bitcoin en la cadena de bloques DecentralChain crea nuevos créditos de carbono, que pueden venderse o usarse para compensar las emisiones de carbono de otras actividades. DecentralChain comparte un porcentaje de estos créditos de carbono como incentivos para los propietarios de nodos que alojan sus nodos en servidores ecológicos.</p>
+<p>La ecuación para calcular las emisiones de carbono de la cadena de bloques de Bitcoin es:</p>
+<p>Emisiones de carbono = Electricidad utilizada (kWh) x Intensidad de carbono (gCO2/kWh)</p>
+<p>Usando esta ecuación, las emisiones de carbono de la cadena de bloques de Bitcoin se pueden comparar con un protocolo de cadena de bloques de prueba de participación como DecentralChain. La diferencia en las emisiones de carbono entre los dos se puede usar para generar créditos de carbono, creando un nuevo mercado para que las empresas y las personas compensen sus emisiones de carbono e inviertan en un futuro sostenible.</p>
+<p>Según un estudio del Banco Mundial, los créditos de carbono pueden generar un rendimiento de hasta el 7,2 por ciento anual durante un período de 15 años. Esto los convierte en una inversión atractiva tanto para particulares como para empresas.</p>
+<p>La cadena de bloques DecentralChain no solo proporciona una alternativa más sostenible a las transacciones tradicionales de Bitcoin, sino que también crea nuevas oportunidades para que las empresas y las personas inviertan en un futuro sostenible. Al incentivar las prácticas sostenibles a través de la prueba del protocolo de sostenibilidad incentivado y el alojamiento de nodos en servidores ecológicos, DecentralChain allana el camino para un futuro más verde y sostenible.</p>
+</section>
+<section id="carbon-sequestration">
+<h3>Secuestro de Carbono<a class="headerlink" href="#carbon-sequestration" title="Enlace permanente a este encabezado">#</a></h3>
+<p>El secuestro de carbono, el proceso de capturar y almacenar dióxido de carbono (CO2) para reducir su concentración en la atmósfera, es una estrategia fundamental para mitigar los efectos del cambio climático. Mediante el uso de la tecnología blockchain, se puede incentivar aún más el secuestro de carbono, creando un nuevo mercado para los créditos de carbono.</p>
+<p>Una de las formas de lograr el secuestro de carbono es comprando propiedades en Costa Rica y tokenizando el carbono secuestrado en forma de token digital que se puede comercializar en una plataforma de cadena de bloques. La iniciativa del gobierno costarricense del Fondo Nacional de Financiamiento Forestal (FONAFIFO) brinda un incentivo financiero para que los propietarios privados reforesten y conserven sus tierras, al mismo tiempo que les permite recibir pagos por el carbono secuestrado en su propiedad en forma de créditos de carbono. Al tokenizar estos créditos de carbono en una plataforma blockchain, el proceso de secuestro de carbono puede incentivarse aún más, creando un nuevo mercado para los créditos de carbono y un criptoactivo respaldado por créditos de carbono.</p>
+<p>La tokenización de créditos de carbono en una plataforma blockchain no solo aumenta la transparencia y la trazabilidad en el mercado de carbono, sino que también brinda una nueva forma para que las personas inviertan en la conservación de áreas naturales mientras obtienen el beneficio económico de los créditos de carbono. Esto crea una situación de ganar-ganar, en la que se incentiva la captura de carbono y se apoya la conservación de las áreas naturales.</p>
+<p>La tokenización de créditos de carbono en una plataforma blockchain crea un nuevo mercado para créditos de carbono y permite la creación de un criptoactivo respaldado por créditos de carbono. Este enfoque puede aumentar la transparencia y la trazabilidad en el mercado de carbono, lo que facilita el seguimiento y la verificación de los créditos de carbono que se comercializan. Además, proporciona una nueva forma para que las personas inviertan en la conservación de áreas naturales, al mismo tiempo que obtienen el beneficio económico de los créditos de carbono. La iniciativa del gobierno costarricense del Fondo Nacional de Financiamiento Forestal (FONAFIFO) ha sentado las bases para este proceso, y con una mayor participación del sector privado, las finanzas descentralizadas y la tecnología blockchain, este enfoque puede ser un paso hacia un futuro sostenible donde todos puedan participar en la conservación y mitigación del cambio climático.</p>
+</section>
+<section id="native-swap">
+<h3>Intercambio Nativo<a class="headerlink" href="#native-swap" title="Enlace permanente a este encabezado">#</a></h3>
+<p>DecentralChain es una innovadora plataforma de cadena de bloques que ofrece una amplia gama de características a sus usuarios, una de las cuales es el próximo intercambio nativo de DecentralChain. Un intercambio es una forma en que los usuarios intercambian una criptomoneda por otra, sin la necesidad de un intermediario centralizado. En este ensayo, profundizaremos en cómo se espera que funcione el intercambio nativo de DecentralChain y explicaremos cómo los usuarios podrán usarlo para intercambiar su DecentralCoin por otras criptomonedas.</p>
+<p>Un intercambio es esencialmente un contrato inteligente que facilita el intercambio de una criptomoneda por otra. Cuando un usuario inicia un intercambio, su criptomoneda se bloquea en el contrato inteligente y recibe a cambio la cantidad equivalente de la otra criptomoneda. El contrato inteligente luego libera la criptomoneda bloqueada al otro usuario. Este proceso ocurre en la cadena, lo que significa que el intercambio se liquida en la cadena de bloques y la transacción se registra en el libro mayor de la cadena de bloques.</p>
+<p>Se espera que el intercambio nativo de DecentralChain funcione con un algoritmo Automated Market Maker (AMM). Este algoritmo calculará el precio de la moneda en función del suministro de tokens y la liquidez en el intercambio. El precio se calculará utilizando la fórmula del producto constante.</p>
+<p>Se puede pensar en una plataforma de intercambio como un grupo de liquidez donde los usuarios pueden depositar sus tokens y luego usar esos tokens para intercambiarlos por otros tokens en la plataforma. A medida que más usuarios depositan tokens en el grupo, la liquidez del grupo aumenta, lo que hace que sea más atractivo para los usuarios intercambiar sus tokens en la plataforma.</p>
+<p>Se espera que el intercambio nativo de DecentralChain ofrezca a los usuarios una forma segura, eficiente y descentralizada de intercambiar sus criptomonedas. Al eliminar la necesidad de intermediarios centralizados, los usuarios podrán intercambiar sus criptomonedas sin depender de terceros, lo que puede ser lento, costoso y riesgoso. Con el próximo lanzamiento del intercambio nativo de DecentralChain, los usuarios podrán experimentar el futuro del intercambio de criptomonedas de primera mano.</p>
+</section>
+<section id="cr-coin">
+<h3>CR Coin<a class="headerlink" href="#cr-coin" title="Enlace permanente a este encabezado">#</a></h3>
+<p>CR Coin es una moneda social propuesta para Costa Rica, diseñada para proporcionar un medio de intercambio seguro, eficiente y respetuoso con el medio ambiente para sus ciudadanos. La moneda se basa en la cadena de bloques DecentralChain, una plataforma especializada para monedas sociales que garantiza la máxima seguridad y escalabilidad. También incorpora tecnología de carbono negativo, cuyo objetivo es minimizar el impacto ambiental de las transacciones basadas en blockchain.</p>
+<p>Al introducir CR Coin, la economía de Costa Rica puede disfrutar de las ventajas de la tecnología blockchain, como la transparencia, los bajos costos de transacción y las transacciones seguras. Actualmente, el efectivo, las transferencias bancarias y los sistemas de pago en línea son los métodos de pago más utilizados en Costa Rica, pero estas formas tradicionales de dinero y sistemas de pago tienen limitaciones y vulnerabilidades, incluido el fraude y los altos costos.</p>
+<p>Se planea que el lanzamiento de CR Coin involucre una estrategia de marketing integral, el establecimiento de una red de comerciantes e intercambios que acepten CR Coin, y medidas para garantizar la seguridad, estabilidad y confiabilidad de la moneda. Se espera que la introducción de CR Coin no solo proporcione un nuevo medio de intercambio para los ciudadanos, sino que también cree nuevas oportunidades para empresas, empresarios e inversores. CR Coin tiene como objetivo revolucionar la forma en que se realizan los pagos en Costa Rica, promoviendo el desarrollo sostenible y la conservación del medio ambiente con el potencial de contribuir al objetivo del país de convertirse en una economía neutral en carbono que podría tener beneficios significativos para Costa Rica y sus ciudadanos.</p>
+<p>Además, las iniciativas de educación y concientización y las asociaciones con escuelas y organizaciones sin fines de lucro planificadas por CR Coin ayudarán a crear conciencia sobre la importancia de preservar el medio ambiente y promover prácticas sostenibles. Al combinar tecnología, participación comunitaria y educación, CR Coin pretende ser una fuerza impulsora para el desarrollo sostenible y la conservación del medio ambiente en Costa Rica.</p>
+</section>
+</section>
+</section>
+
+<div class="section">
+   
+</div>
+
+                </article>
+              
+              
+              
+                <footer class="bd-footer-article">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="index.html"
+       title="página anterior">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">anterior</p>
+        <p class="prev-next-title">¡Bienvenido a la documentación de DecentralChain!</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="02_decentralchain/index.html"
+       title="siguiente página">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">siguiente</p>
+        <p class="prev-next-title">DecentralChain</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> En esta página
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definition-of-money">Definición de Dinero</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#history-of-money">Historia del Dinero</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#difference-between-money-and-currency">Diferencia entre Dinero y Moneda</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definition-of-cryptocurrencies">Definición de Criptomonedas</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definition-of-blockchain-technology">Definición de la Tecnología Blockchain</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#definition-of-consensus-protocol">Definición de Protocolo de Consenso</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#current-state-of-blockchain-technology">Estado Actual de la Tecnología Blockchain</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bitcoin">Bitcoin</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ethereum">Ethereum</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#decentralchain">DecentralChain</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#decentralchain-ecosystem">Ecosistema DecentralChain</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#wallet-and-exchange">Billetera e Intercambio</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#blockchain-explorer">Explorador Blockchain</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#inter-chain-gateway-protocol">Protocolo de Puerta de Enlace entre Cadenas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#proof-of-incentivized-sustainability-protocol">Protocolo de Prueba de Sostenibilidad Incentivada</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#carbon-sequestration">Secuestro de Carbono</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#native-swap">Intercambio Nativo</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cr-coin">CR Coin</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+  
+  <div class="tocsection editthispage">
+    <a href="https://github.com/Decentral-America/docs/edit/master/docs//01_introduction.md">
+      <i class="fa-solid fa-pencil"></i>
+      
+      
+        
+          Editar en GitHub
+        
+      
+    </a>
+  </div>
+</div>
+
+  <div class="sidebar-secondary-item">
+  <div class="tocsection sourcelink">
+    <a href="_sources/01_introduction.md">
+      <i class="fa-solid fa-file-lines"></i> Mostrar el código
+    </a>
+  </div>
+</div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            <div class="bd-footer-content__inner"></div>
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+  <p class="copyright">
+    
+      © Copyright 2023, Blockchain Costa Rica.
+      <br/>
+    
+  </p>
+</div>
+      
+    </div>
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item"><p class="theme-version">
+  Construido con el <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">Tema PyData Sphinx</a> 0.13.0.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

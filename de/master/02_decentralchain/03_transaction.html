@@ -1,0 +1,2359 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="de" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>Transaction &#8212; DecentralChain  Dokumentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/jupyter-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/thebelab.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/plot_directive.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d" />
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/thebelab-helper.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script src="../_static/design-tabs.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@jupyter-widgets/html-manager@^1.0.1/dist/embed-amd.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '02_decentralchain/03_transaction';</script>
+    <link rel="shortcut icon" href="../_static/icon.svg"/>
+    <link rel="index" title="Stichwortverzeichnis" href="../genindex.html" />
+    <link rel="search" title="Suche" href="../search.html" />
+    <link rel="next" title="Block" href="04_block.html" />
+    <link rel="prev" title="Token (Asset)" href="02_token%28asset%29.html" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="de"/>  
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+<div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+    <span class="fa-solid fa-bars"></span>
+  </label>
+  
+  <div class="navbar-header-items__start">
+    
+      <div class="navbar-item">
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="DecentralChain"/>
+    <script>document.write(`<img src="../_static/logo-dark.png" class="logo__image only-dark" alt="DecentralChain"/>`);</script>
+  
+  
+</a></div>
+    
+  </div>
+  
+  
+  <div class=" navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item"><nav class="navbar-nav">
+  <p class="sidebar-header-items__title"
+     role="heading"
+     aria-level="1"
+     aria-label="Site Navigation">
+    Site Navigation
+  </p>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../01_introduction.html">
+                        Introduction
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="index.html">
+                        DecentralChain
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../03_ride-language/index.html">
+                        Ride Language
+                      </a>
+                    </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="http://decentralchain.io/">
+                    Website
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="http://decentral.exchange/">
+                    Wallet & Exchange
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://decentralscan.com/">
+                    Explorer
+                  </a>
+                </li>
+                
+                </div>
+            </div>
+            
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Suche" aria-label="Suche" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+        </div>
+      
+      
+        <div class="navbar-item">
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/Decentral-America/docs" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-github"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://twitter.com/decentralchain" title="Twitter" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-twitter"></i></span>
+            <label class="sr-only">Twitter</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.linkedin.com/company/decentralchain/" title="LinkedIn" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-linkedin"></i></span>
+            <label class="sr-only">LinkedIn</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.youtube.com/@decentralchain" title="Youtube" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-youtube"></i></span>
+            <label class="sr-only">Youtube</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://discord.gg/9UUbNBPQ3D" title="Discord" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-discord"></i></span>
+            <label class="sr-only">Discord</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.instagram.com/decentralchain/" title="Discord" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-instagram"></i></span>
+            <label class="sr-only">Discord</label></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Suche" aria-label="Suche" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+    </div>
+  
+
+  
+    <label class="sidebar-toggle secondary-toggle" for="__secondary">
+      <span class="fa-solid fa-outdent"></span>
+    </label>
+  
+</div>
+
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          <div class="navbar-item"><nav class="navbar-nav">
+  <p class="sidebar-header-items__title"
+     role="heading"
+     aria-level="1"
+     aria-label="Site Navigation">
+    Site Navigation
+  </p>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../01_introduction.html">
+                        Introduction
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="index.html">
+                        DecentralChain
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../03_ride-language/index.html">
+                        Ride Language
+                      </a>
+                    </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="http://decentralchain.io/">
+                    Website
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="http://decentral.exchange/">
+                    Wallet & Exchange
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://decentralscan.com/">
+                    Explorer
+                  </a>
+                </li>
+                
+                </div>
+            </div>
+            
+  </ul>
+</nav></div>
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/Decentral-America/docs" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-github"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://twitter.com/decentralchain" title="Twitter" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-twitter"></i></span>
+            <label class="sr-only">Twitter</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.linkedin.com/company/decentralchain/" title="LinkedIn" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-linkedin"></i></span>
+            <label class="sr-only">LinkedIn</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.youtube.com/@decentralchain" title="Youtube" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-youtube"></i></span>
+            <label class="sr-only">Youtube</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://discord.gg/9UUbNBPQ3D" title="Discord" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-discord"></i></span>
+            <label class="sr-only">Discord</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.instagram.com/decentralchain/" title="Discord" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-instagram"></i></span>
+            <label class="sr-only">Discord</label></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item"><nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">DecentralChain</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="01_account.html">Account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_token%28asset%29.html">Token (Asset)</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Transaction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04_block.html">Block</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05_node.html">Node</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06_order.html">Order</a></li>
+<li class="toctree-l1"><a class="reference internal" href="07_oracle.html">Oracle</a></li>
+<li class="toctree-l1"><a class="reference internal" href="08_mainnet-testnet-stagenet.html">Mainnet, Testnet, Stagenet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="09_protocol.html">Protocol</a></li>
+<li class="toctree-l1"><a class="reference internal" href="10_binary-format.html">Binary Format</a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+
+
+<nav aria-label="Breadcrumbs">
+  <ul class="bd-breadcrumbs" role="navigation" aria-label="Breadcrumb">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="index.html" class="nav-link">DecentralChain</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page">Transaction</li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                   <section id="transaction">
+<h1>Transaction<a class="headerlink" href="#transaction" title="Permalink to this heading">#</a></h1>
+<section id="transaction-issue">
+<h2>Transaction Issue<a class="headerlink" href="#transaction-issue" title="Permalink to this heading">#</a></h2>
+<section id="how-to-sign-and-send-transactions">
+<h3>How to Sign and Send Transactions<a class="headerlink" href="#how-to-sign-and-send-transactions" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>In <a class="reference external" href="https://decentral.exchange/">Decentral.Exchange</a> you can create some types of transactions such as transfer, issue/reissue/burn, sponsor fee transaction, set asset script, create alias.</p></li>
+<li><p>Via <span class="xref std std-ref">Node REST API</span>:</p>
+<ul>
+<li><p>The POST /transactions/broadcast method sends a signed transaction to a node;</p></li>
+<li><p>The POST /transactions/sign method generates transaction signature (but this method is only available to the node owner).</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="transaction-sender-and-signature">
+<h3>Transaction Sender and Signature<a class="headerlink" href="#transaction-sender-and-signature" title="Permalink to this heading">#</a></h3>
+<p>Each transaction contains the public key of the sender’s account, on behalf of which the action is performed on the blockchain. <a class="reference internal" href="01_account.html#dapp-and-smart-account"><span class="std std-ref">Smart accounts and dApps</span></a> can set their own rules for outgoing transactions verification.</p>
+<p>Transactions that are sent from an ordinary account (without script) must contain the sender’s digital signature. The sender generates a signature using the account’s private key. Along with the signature, the transaction contains the sender’s public key, so the node (and anyone) can verify the integrity of the transaction data and the authenticity of the signature, that is, make sure that the signature of the transaction matches the public key.</p>
+</section>
+<section id="after-transaction-is-sent">
+<h3>After Transaction is Sent<a class="headerlink" href="#after-transaction-is-sent" title="Permalink to this heading">#</a></h3>
+<p>Upon receiving a transaction, the node validates its signature, checks the sender’s balance, and so on, see the <a class="reference internal" href="#transaction-validation"><span class="std std-ref">transaction validation</span></a> article for details. If the transaction is valid, the node puts the transaction to the UTX pool, which is a list of transactions awaiting to be added, and also broadcasts the transaction to other nodes of the blockchain network.</p>
+<p>Due to block size limitation (<span class="math notranslate nohighlight">\(1\)</span> MB) the transaction may not get to the block immediately. First of all, nodes add the most “profitable” transactions with the highest fee per byte.
+After being added to a block, the transaction changes the blockchain state: account balances, records in the account data storage, and so on.
+The transaction may never be added to a block if it becomes invalid while waiting in the UTX pool. For example, the transaction has expired (the timestamp is more than <span class="math notranslate nohighlight">\(2\)</span> hours behind current time) or another transaction has changed the blockchain state and now the sender’s balance is insufficient to execute the transaction or the account or asset script denies the transaction.</p>
+</section>
+</section>
+<section id="transaction-proofs">
+<h2>Transaction Proofs<a class="headerlink" href="#transaction-proofs" title="Permalink to this heading">#</a></h2>
+<section id="verification-by-script">
+<h3>Verification by Script<a class="headerlink" href="#verification-by-script" title="Permalink to this heading">#</a></h3>
+<p>If the transaction sender is a <a class="reference internal" href="01_account.html#dapp-and-smart-account"><span class="std std-ref">dApp or smart account</span></a>, then the transaction is verified by the script assigned to the account instead of signature verification. The script allows or denies the transaction depending on whether it meets the specified conditions. In particular, the script can run various verifications of the proofs.</p>
+<p>A common example is a smart account with a multisignature where three co-owner users store shared funds.</p>
+</section>
+</section>
+<section id="transaction-fees">
+<h2>Transaction Fees<a class="headerlink" href="#transaction-fees" title="Permalink to this heading">#</a></h2>
+<p>Transaction fee is a fee that an <a class="reference internal" href="01_account.html#account"><span class="std std-ref">account</span></a> owner pays to send a <a class="reference internal" href="#transaction"><span class="std std-ref">transaction</span></a>. A transaction sender can specify any amount of fee but not less than the minimum amount. The larger the fee is, the quicker the transaction will be added to the new <a class="reference internal" href="04_block.html#block"><span class="std std-ref">block</span></a>.
+For <a class="reference internal" href="#invoke-script-transaction"><span class="std std-ref">invoke script transactions</span></a> and <a class="reference internal" href="#transfer-transaction"><span class="std std-ref">transfer transaction</span></a>, a sender can specify a transaction fee nominated in a sponsored asset instead of <a class="reference internal" href="02_token%28asset%29.html#decentralcoin"><span class="std std-ref">DecentralCoins</span></a>, see the section <a class="reference internal" href="#fee-in-sponsored-asset"><span class="std std-ref">fee in sponsored asset</span></a> below.</p>
+<section id="regular-fees">
+<h3>Regular Fees<a class="headerlink" href="#regular-fees" title="Permalink to this heading">#</a></h3>
+<section id="minimum-fee">
+<h4>Minimum Fee<a class="headerlink" href="#minimum-fee" title="Permalink to this heading">#</a></h4>
+<p>The minimum fees in DecentralCoins for each type of transaction are listed below.</p>
+<ul class="simple">
+<li><p>If the transaction sender is a <a class="reference internal" href="01_account.html#dapp-and-smart-account"><span class="std std-ref">dApp or smart account</span></a>, and the complexity of the account script or dApp script verifier function exceeds the <a class="reference internal" href="../03_ride-language/07_dapp-to-app-invocation.html#limitations"><span class="std std-ref">sender complexity threshold</span></a>, the minimum fee is increased by <span class="math notranslate nohighlight">\(0.004\)</span> DecentralCoins. If the order sender in <a class="reference internal" href="#exchange-transaction"><span class="std std-ref">exchange transaction</span></a> is a dApp or smart account, this does nor affect the minimum fee.</p></li>
+<li><p>The minimum fee is increased by <span class="math notranslate nohighlight">\(0.004\)</span> DecentralCoins for each smart asset involved, except for:</p>
+<ul>
+<li><p><a class="reference internal" href="#invoke-script-transaction"><span class="std std-ref">Invoke script transactions</span></a>,</p></li>
+<li><p><a class="reference internal" href="02_token%28asset%29.html#smart-asset"><span class="std std-ref">Smart assets</span></a> used as matcher fees in exchange transactions.</p></li>
+</ul>
+</li>
+</ul>
+<p><strong>Example 1</strong></p>
+<ul class="simple">
+<li><p>The minimum fee for a transfer transaction:</p></li>
+<li><p>No smart account or smart assets: <span class="math notranslate nohighlight">\(0.001\)</span> DecentralCoins.</p></li>
+<li><p>Transfer from smart account*: <span class="math notranslate nohighlight">\(0.001 + 0.004 = 0.005\)</span> DecentralCoins.</p></li>
+<li><p>Transfer of smart asset: <span class="math notranslate nohighlight">\(0.001 + 0.004 = 0.005\)</span> DecentralCoins.</p></li>
+<li><p>Transfer of smart asset sent from smart account*: <span class="math notranslate nohighlight">\(0.001 + 0.004 + 0.004 = 0.009\)</span> DecentralCoins.</p></li>
+</ul>
+<p>If the account script complexity is higher than the <a class="reference internal" href="../03_ride-language/07_dapp-to-app-invocation.html#limitations"><span class="std std-ref">sender complexity threshold</span></a>.</p>
+<p><strong>Example 2</strong></p>
+<p>The minimum fee for an Invoke Script transaction:</p>
+<ul class="simple">
+<li><p>No smart account, no assets issued: <span class="math notranslate nohighlight">\(0.005\)</span> DecentralCoins.</p></li>
+<li><p>dApp script invocation is sent from a smart account*: <span class="math notranslate nohighlight">\(0.005 + 0.004 = 0.009\)</span> DecentralCoins.</p></li>
+<li><p>dApp script invocation issues an asset that is not <a class="reference internal" href="02_token%28asset%29.html#non-fungible-token"><span class="std std-ref">non-fungible tokens</span></a>: <span class="math notranslate nohighlight">\(0.005 + 1 = 1.005\)</span> DecentralCoins.</p></li>
+<li><p>dApp script invocation is sent from smart account*, and <span class="math notranslate nohighlight">\(10\)</span> assets that are not non-fungible tokens are issued: <span class="math notranslate nohighlight">\(0.005 + 0.004 + 10 × 1 = 10.009\)</span> DecentralCoins.</p></li>
+</ul>
+<p>If the account script complexity is higher than the <a class="reference internal" href="../03_ride-language/07_dapp-to-app-invocation.html#limitations"><span class="std std-ref">sender complexity threshold</span></a>.</p>
+<table class="longtable table" id="id3">
+<caption><span class="caption-text">Minimum Fees</span><a class="headerlink" href="#id3" title="Link zu dieser Tabelle">#</a></caption>
+<colgroup>
+<col style="width: 33.3%" />
+<col style="width: 16.7%" />
+<col style="width: 50.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Transaction type</p></th>
+<th class="head"><p>Transaction type ID</p></th>
+<th class="head"><p>Minimum transaction fee in <a class="reference internal" href="02_token%28asset%29.html#decentralcoin"><span class="std std-ref">DecentralCoins</span></a></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="#burn-transaction"><span class="std std-ref">Burn transaction</span></a></p></td>
+<td><p><span class="math notranslate nohighlight">\(6\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(0.001\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#create-alias-transaction"><span class="std std-ref">Create alias transaction</span></a></p></td>
+<td><p><span class="math notranslate nohighlight">\(10\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(0.001\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#data-transaction"><span class="std std-ref">data transaction</span></a></p></td>
+<td><p><span class="math notranslate nohighlight">\(12\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(0.001\)</span> per kilobyte. The size is rounded up to an integer number of kilobytes.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#exchange-transaction"><span class="std std-ref">Exchange transaction</span></a></p></td>
+<td><p><span class="math notranslate nohighlight">\(7\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(0.003\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#invoke-script-transaction"><span class="std std-ref">invoke script transaction</span></a></p></td>
+<td><p><span class="math notranslate nohighlight">\(16\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(0.005 + K\)</span>. <span class="math notranslate nohighlight">\(K\)</span> is the number of assets issued as a result of dApp script invocation that are not non-fungible tokens.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#issue-transaction"><span class="std std-ref">Issue transaction</span></a></p></td>
+<td><p><span class="math notranslate nohighlight">\(3\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(1\)</span> for reqular token. <span class="math notranslate nohighlight">\(0.001\)</span> for <a class="reference internal" href="02_token%28asset%29.html#non-fungible-token"><span class="std std-ref">non-fungible token</span></a>.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#lease-cancel-transaction"><span class="std std-ref">Lease cancel transaction</span></a></p></td>
+<td><p><span class="math notranslate nohighlight">\(9\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(0.001\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#lease-transaction"><span class="std std-ref">Lease transaction</span></a></p></td>
+<td><p><span class="math notranslate nohighlight">\(8\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(0.001\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#mass-transfer-transaction"><span class="std std-ref">Mass transfer transaction</span></a></p></td>
+<td><p><span class="math notranslate nohighlight">\(11\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(0.001 + 0.0005 × N\)</span>. <span class="math notranslate nohighlight">\(N\)</span> is the number of transfers inside of the transaction. The value is rounded up to the three decimals.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#reissue-transaction"><span class="std std-ref">Reissue transaction</span></a></p></td>
+<td><p><span class="math notranslate nohighlight">\(5\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(0.001\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#set-asset-script-transaction"><span class="std std-ref">Set asset script transaction</span></a></p></td>
+<td><p><span class="math notranslate nohighlight">\(15\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(1\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#set-script-transaction"><span class="std std-ref">set script transaction</span></a></p></td>
+<td><p><span class="math notranslate nohighlight">\(13\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(0.01\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#sponsor-fee-transaction"><span class="std std-ref">Sponsor fee transaction</span></a></p></td>
+<td><p><span class="math notranslate nohighlight">\(14\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(0.001\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#transfer-transaction"><span class="std std-ref">Transfer transaction</span></a></p></td>
+<td><p><span class="math notranslate nohighlight">\(4\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(0.001\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#update-asset-info-transaction"><span class="std std-ref">Update asset info transaction</span></a></p></td>
+<td><p><span class="math notranslate nohighlight">\(17\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(0.001\)</span></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="fee-for-failed-transactions">
+<h4>Fee for Failed Transactions<a class="headerlink" href="#fee-for-failed-transactions" title="Permalink to this heading">#</a></h4>
+<p><a class="reference internal" href="#invoke-script-transaction"><span class="std std-ref">Invoke script transactions</span></a> and <a class="reference internal" href="#exchange-transaction"><span class="std std-ref">exchange transactions</span></a> can be saved on the blockchain even if the result of a dApp script or asset script execution failed. In this case, the sender is charged a fee. For an exchange transaction, the matcher is charged the transaction fee but the order senders are not charged the matcher fee. <a class="reference internal" href="#transaction-validation"><span class="std std-ref">More about transaction validation</span></a>.</p>
+</section>
+<section id="fee-in-sponsored-asset">
+<h4>Fee in Sponsored Asset<a class="headerlink" href="#fee-in-sponsored-asset" title="Permalink to this heading">#</a></h4>
+<p>An issuer of an asset can set up sponsorship — so that any user can specify a transaction fee in this asset for <a class="reference internal" href="#invoke-script-transaction"><span class="std std-ref">invoke script transactions</span></a> and <a class="reference internal" href="#transfer-transaction"><span class="std std-ref">transfer transactions</span></a>.
+To activate sponsorship, the issuer puts a <a class="reference internal" href="#sponsor-fee-transaction"><span class="std std-ref">sponsor fee transaction</span></a> that specifies an amount of asset that is equivalent to the minimum fee of <span class="math notranslate nohighlight">\(0.001\)</span> DecentralCoins. For example, if minSponsoredAssetFee: <span class="math notranslate nohighlight">\(5\)</span>, then the fee in this asset for an invoke script transaction equals <span class="math notranslate nohighlight">\(5 * \frac{0.005}{0.001} = 25\)</span>.</p>
+</section>
+</section>
+<section id="sponsored-fees">
+<h3>Sponsored Fees<a class="headerlink" href="#sponsored-fees" title="Permalink to this heading">#</a></h3>
+<p>Users of DecentralChain-based apps should pay a fee for each transaction. This is the entry threshold for new users. Sometimes users don’t know anything about <a class="reference internal" href="02_token%28asset%29.html#decentralcoin"><span class="std std-ref">DecentralCoins</span></a> or don’t understand how to get DecentralCoins or don’t want to spend money. Sponsorship enables launching apps that do not require DecentralCoins from users.</p>
+<section id="sponsored-asset">
+<h4>Sponsored Asset<a class="headerlink" href="#sponsored-asset" title="Permalink to this heading">#</a></h4>
+<p>An account that issued an asset can enable sponsorship, that is, allow all users to pay a fee in this asset for <a class="reference internal" href="#invoke-script-transaction"><span class="std std-ref">invoke script transactions</span></a> and <a class="reference internal" href="#transfer-transaction"><span class="std std-ref">transfer transactions</span></a>. The sponsor can distribute the sponsored asset among app users.</p>
+</section>
+<section id="how-to-enable-sponsorship">
+<h4>How to Enable Sponsorship<a class="headerlink" href="#how-to-enable-sponsorship" title="Permalink to this heading">#</a></h4>
+<p>You can use <a class="reference external" href="https://decentral.exchange/">Decentral.Exchange</a> online to enable sponsorship.</p>
+<ul class="simple">
+<li><p>Make sure you are logged into your account. Find the desired asset in the list, hover cursor over it and in its menu (⋮) click Enable Sponsorship.</p></li>
+<li><p>Carefully read the Terms and Conditions before proceeding and then in the Amount per transaction box specify the required amount of sponsored asset to be charged to users. Then click Continue.</p></li>
+<li><p>In the following window double-check the entered data and if everything is correct click Send or click Go Back to make corrections. Activation will be processed with the next block.</p></li>
+<li><p>After activation you’ll be able to change the specified amount without deactivation. To do so, find your asset in the list, hover cursor over it and in its menu (⋮) click Change Sponsorship.</p></li>
+</ul>
+<p>The fee for this type of transaction is <span class="math notranslate nohighlight">\(0.001\)</span> DecentralCoins.</p>
+</section>
+<section id="how-to-disable-sponsorship">
+<h4>How to Disable Sponsorship<a class="headerlink" href="#how-to-disable-sponsorship" title="Permalink to this heading">#</a></h4>
+<p>You can use <a class="reference external" href="https://decentral.exchange/">Decentral.Exchange</a> online to disable sponsorship.</p>
+<ul class="simple">
+<li><p>Make sure you are logged into your account. Find the desired asset in the list, hover cursor over it and in its menu (⋮) click Disable Sponsorship.</p></li>
+<li><p>In the following window click Sign to deactivate the sponsorship. Deactivation will be processed with the next block.</p></li>
+</ul>
+</section>
+<section id="restrictions">
+<h4>Restrictions<a class="headerlink" href="#restrictions" title="Permalink to this heading">#</a></h4>
+<ul class="simple">
+<li><p>Only the issuer of the asset can be a sponsor.</p></li>
+<li><p>Smart assets cannot be sponsored assets.</p></li>
+<li><p>Sponsorship only works if the sponsor’s account balance is greater than <span class="math notranslate nohighlight">\(1.005\)</span> DecentralCoins. If the account balance becomes less than <span class="math notranslate nohighlight">\(1.005\)</span> DecentralCoins, the sponsorship is suspended, and if the balance becomes more than <span class="math notranslate nohighlight">\(1.005\)</span> DecentralCoins the sponsorship is resumed.</p></li>
+<li><p>The fee in the sponsored asset can only be specified for <a class="reference internal" href="#invoke-script-transaction"><span class="std std-ref">invoke script transactions</span></a> and <a class="reference internal" href="#transfer-transaction"><span class="std std-ref">transfer transactions</span></a>.</p></li>
+</ul>
+</section>
+<section id="how-it-works">
+<h4>How It Works<a class="headerlink" href="#how-it-works" title="Permalink to this heading">#</a></h4>
+<p>After <a class="reference internal" href="#how-to-enable-sponsorship"><span class="std std-ref">enabling sponsorship</span></a>, if the requirements described in the <a class="reference internal" href="#restrictions"><span class="std std-ref">restrictions</span></a> section are met, the sponsorship works as follows:</p>
+<ul class="simple">
+<li><p>A user broadcasts a transaction and specifies a fee in the sponsored asset.</p></li>
+<li><p>The sponsor receives the fee in the sponsored asset from the user’s account.</p></li>
+<li><p>Block generators receive the fee in DecentralCoins from the sponsor’s account (in accordance with the <a class="reference internal" href="09_protocol.html#decentralchain-m5-protocol"><span class="std std-ref">DecentralChain-M5 protocol</span></a>, the fee is distributed between the current block generator and the next block generator in a ratio of <span class="math notranslate nohighlight">\(\frac{40}{60}\)</span>.</p></li>
+</ul>
+<p>The script on the sponsor’s account is not executed and does not affect the sponsorship because the transaction is sent from the user’s account.</p>
+<img alt="../_images/07_How-It-Works.png" src="../_images/07_How-It-Works.png" />
+<p>The fee in <a class="reference internal" href="02_token%28asset%29.html#decentralcoin"><span class="std std-ref">DecentralCoins</span></a> charged to the sponsor is proportional to the fee specified by the transaction sender:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>feeInDecentralCoins = feeInSponsoredAsset × 0,001 / minSponsoredAssetFee
+</pre></div>
+</div>
+<p>minSponsoredAssetFee is the amount of sponsored asset equivalent to <span class="math notranslate nohighlight">\(0.001\)</span> DecentralCoins. The sponsor sets this value when enabling sponsorship.
+For example, if the sponsor sets <span class="math notranslate nohighlight">\(3\)</span> tokens = <span class="math notranslate nohighlight">\(0.001\)</span> DecentralCoins, then the minimum fee for <a class="reference internal" href="#invoke-script-transaction"><span class="std std-ref">invoke script transactions</span></a> is <span class="math notranslate nohighlight">\(15\)</span> tokens, which corresponds to <span class="math notranslate nohighlight">\(0.005\)</span> DecentralCoins. Please note:</p>
+<ul class="simple">
+<li><p>The user can use the sponsored asset to pay for transactions that are not related to a certain app.</p></li>
+<li><p>The user can specify any amount of fee, such as the one significantly exceeding the minimum.</p></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="transaction-representations">
+<h2>Transaction Representations<a class="headerlink" href="#transaction-representations" title="Permalink to this heading">#</a></h2>
+<section id="json-representation">
+<h3>JSON Representation<a class="headerlink" href="#json-representation" title="Permalink to this heading">#</a></h3>
+<p>The <span class="xref std std-ref">Node REST API</span> of DecentralChain nodes uses the JSON representation of transactions. You can send transactions to a node and read transactions stored on the blockchain via REST API in JSON. Here is an example of JSON representation:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>{
+  &quot;senderPublicKey&quot;: &quot;BVv1ZuE3gKFa6krwWJQwEmrLYUESuUabNCXgYTmCoBt6&quot;,
+  &quot;sender&quot;: &quot;3N8S4UtauvDAzpLiaRyDdHn9muexWHhBP4D&quot;,
+  &quot;feeAssetId&quot;: null,
+  &quot;proofs&quot;: [
+    &quot;22QJfRKX7kUQt4qjdnUqZAnhqukqhnofE27uvP8Q5xnBf8M6PCNtWVGq2ngm6m7Voe7duys59D1yU9jhKrmdXDCe&quot;
+  ],
+  &quot;fee&quot;: 100000,
+  &quot;alias&quot;: &quot;91f452553298770f&quot;,
+  &quot;id&quot;: &quot;AD7KmXwoVNc2fXsmaxsHsrnT1tfPF3HsWYtfjFijVsvM&quot;,
+  &quot;type&quot;: 10,
+  &quot;version&quot;: 2,
+  &quot;timestamp&quot;: 1548443069053,
+  &quot;height&quot;: 466104
+}
+</pre></div>
+</div>
+<table class="longtable table" id="id4">
+<caption><span class="caption-text">JSON Representation</span><a class="headerlink" href="#id4" title="Link zu dieser Tabelle">#</a></caption>
+<colgroup>
+<col style="width: 25.0%" />
+<col style="width: 75.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>senderPublicKey</p></td>
+<td><p><a class="reference internal" href="01_account.html#account-keys"><span class="std std-ref">Public key</span></a> of the transaction sender: base58 encoded byte array.</p></td>
+</tr>
+<tr class="row-odd"><td><p>sender</p></td>
+<td><p><a class="reference internal" href="01_account.html#address"><span class="std std-ref">address</span></a> of the transaction sender: base58 encoded byte array.</p></td>
+</tr>
+<tr class="row-even"><td><p>feeAssetId</p></td>
+<td><p>ID of the fee token. null means that the fee is in <a class="reference internal" href="02_token%28asset%29.html#decentralcoin"><span class="std std-ref">DecentralCoins</span></a>. The sender can specify the fee for <a class="reference internal" href="#invoke-script-transaction"><span class="std std-ref">invoke script transactions</span></a> and <a class="reference internal" href="#transfer-transaction"><span class="std std-ref">transfer transactions</span></a> in a sponsored asset, see the <a class="reference internal" href="#sponsored-fees"><span class="std std-ref">sponsored fee</span></a> article for details.</p></td>
+</tr>
+<tr class="row-odd"><td><p>proofs</p></td>
+<td><p>Array of <a class="reference internal" href="#transaction-proofs"><span class="std std-ref">transaction proofs</span></a>. Up to <span class="math notranslate nohighlight">\(8\)</span> proofs, each proof up to <span class="math notranslate nohighlight">\(64\)</span> bytes base58 encoded.</p></td>
+</tr>
+<tr class="row-even"><td><p>fee</p></td>
+<td><p><a class="reference internal" href="#transaction-fees"><span class="std std-ref">Transaction fee</span></a>: an integer value indicated in the minimum fraction (“cent”) of the fee asset. For example, if the fee is <span class="math notranslate nohighlight">\(0.001\)</span> DecentralCoins, <span class="math notranslate nohighlight">\(100000\)</span> is indicated in the JSON representation, so far as <span class="math notranslate nohighlight">\(1\)</span> DecentralCoin = <span class="math notranslate nohighlight">\(10^{8}\)</span> Decentralites.</p></td>
+</tr>
+<tr class="row-odd"><td><p>id</p></td>
+<td><p>Transaction ID. For the transaction ID calculation method, see the <a class="reference internal" href="09_protocol.html#cryptographic-practical-details"><span class="std std-ref">cryptographic practical details</span></a> article.</p></td>
+</tr>
+<tr class="row-even"><td><p>type</p></td>
+<td><p>Transaction type. Type IDs are listed in the <a class="reference internal" href="#transaction-types"><span class="std std-ref">transaction type</span></a> article.</p></td>
+</tr>
+<tr class="row-odd"><td><p>version</p></td>
+<td><p>Transaction version. Versions for each type of transaction are listed in <a class="reference internal" href="10_binary-format.html#transaction-binary-format"><span class="std std-ref">transaction binary format</span></a> descriptions.</p></td>
+</tr>
+<tr class="row-even"><td><p>applicationStatus</p></td>
+<td><p>Status of transaction execution: 1) succeeded: transaction is successful. 2) script_execution_failed: the dApp script or the asset script failed. See the <a class="reference internal" href="#transaction-validation"><span class="std std-ref">transaction validation</span></a> article for details.</p></td>
+</tr>
+<tr class="row-odd"><td><p>timestamp</p></td>
+<td><p>Transaction timestamp specified by the sender: Unix time in milliseconds. The transaction cannot be added to the blockchain if the timestamp value is more than <span class="math notranslate nohighlight">\(2\)</span> hours behind or <span class="math notranslate nohighlight">\(1.5\)</span> hours ahead of current block timestamp.“</p></td>
+</tr>
+<tr class="row-even"><td><p>height</p></td>
+<td><p>The sequence number of the block that contains the transaction.</p></td>
+</tr>
+</tbody>
+</table>
+<p>The sender, id, applicationStatus, and height fields do not need to be filled when sending a transaction, and they are not stored on the blockchain. The node calculates these fields when providing transaction data via the Node REST API.
+The fields that depend on the type of transaction are listed in the description of each <a class="reference internal" href="#transaction-types"><span class="std std-ref">type of transaction</span></a>.</p>
+</section>
+<section id="binary-format">
+<h3>Binary Format<a class="headerlink" href="#binary-format" title="Permalink to this heading">#</a></h3>
+<p>Transactions are stored on the blockchain in the binary format (byte representation). <span class="xref std std-ref">Node extensions</span> such as <span class="xref std std-ref">gRPC server</span> can work directly with data in binary format.
+The transaction signature and ID are also formed on the basis of the binary format. The guideline for generating a signature and ID is given in the <a class="reference internal" href="09_protocol.html#cryptographic-practical-details"><span class="std std-ref">cryptographic practical details</span></a> article.
+Transaction binary format is described in the <a class="reference internal" href="10_binary-format.html#transaction-binary-format"><span class="std std-ref">transaction binary format</span></a> article.</p>
+<p>You can get the transaction by ID, or the list of transactions by certain account address, or the list of all transactions in the block:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>In <a class="reference external" href="https://decentralscan.com/">DecentralChain Explorer</a>.</p></li>
+<li><p>Via <span class="xref std std-ref">Node REST API</span> using the following methods:</p>
+<ul>
+<li><p>GET /transactions/info/{id} returns transaction data by transaction ID.</p></li>
+<li><p>GET /transactions/address/{address}/limit/{limit} returns the list of transactions where the specified address is involved.</p></li>
+<li><p>GET /blocks/at/{height} returns block data at the specified height including all transactions in the block.</p></li>
+</ul>
+</li>
+</ul>
+</div></blockquote>
+</section>
+</section>
+<section id="transaction-types">
+<h2>Transaction Types<a class="headerlink" href="#transaction-types" title="Permalink to this heading">#</a></h2>
+<section id="tokenization">
+<h3>Tokenization<a class="headerlink" href="#tokenization" title="Permalink to this heading">#</a></h3>
+<table class="longtable table" id="id5">
+<caption><span class="caption-text">Tokenization</span><a class="headerlink" href="#id5" title="Link zu dieser Tabelle">#</a></caption>
+<colgroup>
+<col style="width: 16.7%" />
+<col style="width: 33.3%" />
+<col style="width: 50.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Transaction type ID</p></th>
+<th class="head"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(3\)</span></p></td>
+<td><p><a class="reference internal" href="#issue-transaction"><span class="std std-ref">Issue transaction</span></a></p></td>
+<td><p>Issues a token.</p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(5\)</span></p></td>
+<td><p><a class="reference internal" href="#reissue-transaction"><span class="std std-ref">Reissue transaction</span></a></p></td>
+<td><p>Reissues a token.</p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(6\)</span></p></td>
+<td><p><a class="reference internal" href="#burn-transaction"><span class="std std-ref">Burn transaction</span></a></p></td>
+<td><p>Decreases the amount of token.</p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(15\)</span></p></td>
+<td><p><a class="reference internal" href="#set-asset-script-transaction"><span class="std std-ref">Set asset script transaction</span></a></p></td>
+<td><p>Modifies the asset script.</p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(17\)</span></p></td>
+<td><p><a class="reference internal" href="#update-asset-info-transaction"><span class="std std-ref">Update asset info transaction</span></a></p></td>
+<td><p>Changes the token name and description.</p></td>
+</tr>
+</tbody>
+</table>
+<section id="issue-transaction">
+<h4>Issue Transaction<a class="headerlink" href="#issue-transaction" title="Permalink to this heading">#</a></h4>
+<p>Issue transaction creates a new <a class="reference internal" href="02_token%28asset%29.html#token-asset"><span class="std std-ref">token</span></a>.</p>
+<p><strong>Fee</strong></p>
+<p>The <a class="reference internal" href="#minimum-fee"><span class="std std-ref">minimum fee</span></a> for an issue transaction is <span class="math notranslate nohighlight">\(1\)</span> <a class="reference internal" href="02_token%28asset%29.html#decentralcoin"><span class="std std-ref">DecentralCoins</span></a>, in case of issue of a <a class="reference internal" href="02_token%28asset%29.html#non-fungible-token"><span class="std std-ref">non-fungible tokens (NFT)</span></a> <span class="math notranslate nohighlight">\(0.001\)</span> DecentralCoins.</p>
+<p>If the transaction sender is a <a class="reference internal" href="01_account.html#dapp-and-smart-account"><span class="std std-ref">dApp or smart account</span></a>, and the complexity of the account script or dApp script verifier function exceeds the <a class="reference internal" href="../03_ride-language/07_dapp-to-app-invocation.html#limitations"><span class="std std-ref">sender complexity threshold</span></a>, the minimum fee is increased by <span class="math notranslate nohighlight">\(0.004\)</span> DecentralCoins.</p>
+<p><strong>JSON Representation</strong></p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>{
+  &quot;senderPublicKey&quot;: &quot;2M25DqL2W4rGFLCFadgATboS8EPqyWAN3DjH12AH5Kdr&quot;,
+  &quot;quantity&quot;: 50000,
+  &quot;fee&quot;: 100000000,
+  &quot;description&quot;: &quot;Script true.&quot;,
+  &quot;type&quot;: 3,
+  &quot;version&quot;: 2,
+  &quot;reissuable&quot;: true,
+  &quot;script&quot;: &quot;base64:AQa3b8tH&quot;,
+  &quot;sender&quot;: &quot;3Mz9N7YPfZPWGd4yYaX6H53Gcgrq6ifYiH7&quot;,
+  &quot;feeAssetId&quot;: null,
+  &quot;chainId&quot;: 84,
+  &quot;proofs&quot;: [
+    &quot;4yjVxzrLuXUq5y2QCa2LDn1Fp9P63hPBmqDLGQCqn41EB1uZ1pys79NP81h7FxRBnZSbpNGbz1xjwckHcPAQHmFX&quot;
+  ],
+  &quot;assetId&quot;: &quot;7Xpp9PPeZbG4wboJrcbRQdq3SxCJqbeFRUjjKccM1DsD&quot;,
+  &quot;decimals&quot;: 2,
+  &quot;name&quot;: &quot;Smart&quot;,
+  &quot;id&quot;: &quot;7Xpp9PPeZbG4wboJrcbRQdq3SxCJqbeFRUjjKccM1DsD&quot;,
+  &quot;timestamp&quot;: 1548653407494,
+  &quot;height&quot;: 469677
+}
+</pre></div>
+</div>
+<table class="longtable table" id="id6">
+<caption><span class="caption-text">Issue Transaction JSON Representation</span><a class="headerlink" href="#id6" title="Link zu dieser Tabelle">#</a></caption>
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>name</p></td>
+<td><p>Token name. From <span class="math notranslate nohighlight">\(4\)</span> to <span class="math notranslate nohighlight">\(16\)</span> bytes (<span class="math notranslate nohighlight">\(1\)</span> character can take up to <span class="math notranslate nohighlight">\(4\)</span> bytes).</p></td>
+</tr>
+<tr class="row-odd"><td><p>description</p></td>
+<td><p>Token description. From <span class="math notranslate nohighlight">\(0\)</span> to <span class="math notranslate nohighlight">\(1000\)</span> bytes.</p></td>
+</tr>
+<tr class="row-even"><td><p>quantity</p></td>
+<td><p>Token quantity: an integer value specified in the minimum fraction (“cents”), that is, the real quantity multiplied by <span class="math notranslate nohighlight">\(10^{decimals}\)</span>. From <span class="math notranslate nohighlight">\(1\)</span> to <span class="math notranslate nohighlight">\(9,223,372,036,854,775,807\)</span>. <span class="math notranslate nohighlight">\(1\)</span> for NFT.</p></td>
+</tr>
+<tr class="row-odd"><td><p>decimals</p></td>
+<td><p>Number of decimal places, from <span class="math notranslate nohighlight">\(0\)</span> to <span class="math notranslate nohighlight">\(8\)</span>. <span class="math notranslate nohighlight">\(0\)</span> for NFTs.</p></td>
+</tr>
+<tr class="row-even"><td><p>reissuable</p></td>
+<td><p>Reissue availability flag, see the <a class="reference internal" href="#reissue-transaction"><span class="std std-ref">reissue transaction</span></a> article. False for NFTs.</p></td>
+</tr>
+<tr class="row-odd"><td><p>script</p></td>
+<td><p>For the <a class="reference internal" href="02_token%28asset%29.html#smart-asset"><span class="std std-ref">smart asset</span></a>: the compiled <a class="reference internal" href="../03_ride-language/04_script-types.html#asset-script"><span class="std std-ref">Asset script</span></a>, up to <span class="math notranslate nohighlight">\(8192\)</span> bytes, base64 encoded. For the token without a script: null. The token issued without a script cannot be converted to a smart asset.</p></td>
+</tr>
+<tr class="row-even"><td><p>chainId</p></td>
+<td><p><a class="reference internal" href="08_mainnet-testnet-stagenet.html#chain-id"><span class="std std-ref">Chain ID</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>assetId</p></td>
+<td><p>Token ID base58 encoded. The token ID is the same as the Issue transaction ID.</p></td>
+</tr>
+</tbody>
+</table>
+<p>The assetId field does not need to be filled when sending a transaction, and it is not stored on the blockchain. The node calculates these fields when providing transaction data via the REST API. The fields that are common to all types of transactions are described in the <a class="reference internal" href="#transaction"><span class="std std-ref">transaction</span></a> article.</p>
+<p><strong>Binary Format</strong></p>
+<p>See the <a class="reference internal" href="10_binary-format.html#issue-transaction-binary-format"><span class="std std-ref">issue transaction binary format</span></a>.</p>
+<p><strong>Ride Structure</strong></p>
+<p>The <a class="reference internal" href="../03_ride-language/05_structures.html#issuetransaction"><span class="std std-ref">IssueTransaction</span></a> structure is used for transaction handling in smart contracts.</p>
+</section>
+<section id="reissue-transaction">
+<h4>Reissue Transaction<a class="headerlink" href="#reissue-transaction" title="Permalink to this heading">#</a></h4>
+<p>Reissue transaction increases the amount of the <a class="reference internal" href="02_token%28asset%29.html#token-asset"><span class="std std-ref">token</span></a> on the blockchain and/or prohibits its reissue. Only the token issuer can send a reissue transaction. The additional amount of token increases the balance of the transaction sender. The reissuable field of the token determines whether the token can be reissued.</p>
+<p><strong>Fee</strong></p>
+<p>The <a class="reference internal" href="#minimum-fee"><span class="std std-ref">minimum fee</span></a> for a reissue transaction is <span class="math notranslate nohighlight">\(0.001\)</span> <a class="reference internal" href="02_token%28asset%29.html#decentralcoin"><span class="std std-ref">DecentralCoins</span></a>. If the token is a smart asset, the minimum fee is increased by <span class="math notranslate nohighlight">\(0.004\)</span> DecentralCoins.</p>
+<p>If the transaction sender is a <a class="reference internal" href="01_account.html#dapp-and-smart-account"><span class="std std-ref">dApp or smart account</span></a>, and the complexity of the account script or dApp script verifier function exceeds the <a class="reference internal" href="../03_ride-language/07_dapp-to-app-invocation.html#limitations"><span class="std std-ref">sender complexity threshold</span></a>, the minimum fee is increased by <span class="math notranslate nohighlight">\(0.004\)</span> DecentralCoins.</p>
+<p><strong>JSON Representation</strong></p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>{
+  &quot;senderPublicKey&quot;: &quot;DjYEAb3NsQiB6QdmVAzkwJh7iLgUs3yDLf7oFEeuZjfM&quot;,
+  &quot;quantity&quot;: 200000,
+  &quot;fee&quot;: 100000000,
+  &quot;type&quot;: 5,
+  &quot;version&quot;: 2,
+  &quot;reissuable&quot;: true,
+  &quot;sender&quot;: &quot;3PLJciboJqgKsZWLj7k1VariHgre6uu4S2T&quot;,
+  &quot;feeAssetId&quot;: null,
+  &quot;chainId&quot;: 87,
+  &quot;proofs&quot;: [
+    &quot;5mEveeUwBdBqe8naNoV5eAe5vj6fk8U743eHGkhxhs3v9PMsb3agHqpe4EtzpUFdpASJegXyjrGSbynZg557cnSq&quot;
+  ],
+  &quot;assetId&quot;: &quot;GA4gB3Lf3AQdF1vBCbqGMTeDrkUxY7L83xskRx6Z7kEH&quot;,
+  &quot;id&quot;: &quot;27ETigYaHym2Zbdp4x1gnXnZPF1VJCqQpXmhszC35Qac&quot;,
+  &quot;timestamp&quot;: 1548521785933,
+  &quot;height&quot;: 1368623
+}
+</pre></div>
+</div>
+<table class="longtable table" id="id7">
+<caption><span class="caption-text">Reissue Transaction JSON Representation</span><a class="headerlink" href="#id7" title="Link zu dieser Tabelle">#</a></caption>
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>assetId</p></td>
+<td><p>Token ID base58 encoded.</p></td>
+</tr>
+<tr class="row-odd"><td><p>quantity</p></td>
+<td><p>Amount of token to reissue: an integer value specified in the minimum fraction (“cents”) of token. The total quantity of token as a result of the reissue should not exceed <span class="math notranslate nohighlight">\(9,223,372,036,854,775,807\)</span>.</p></td>
+</tr>
+<tr class="row-even"><td><p>chainId</p></td>
+<td><p><a class="reference internal" href="08_mainnet-testnet-stagenet.html#chain-id"><span class="std std-ref">Chain ID</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>reissuable</p></td>
+<td><p>Reissue availability flag.</p></td>
+</tr>
+</tbody>
+</table>
+<p>The fields that are common to all types of transactions are described in the <a class="reference internal" href="#transaction"><span class="std std-ref">transaction</span></a> article.</p>
+<p><strong>Binary Format</strong></p>
+<p>See the <a class="reference internal" href="10_binary-format.html#reissue-transaction-binary-format"><span class="std std-ref">reissue transaction binary format</span></a>.</p>
+<p><strong>Ride Structure</strong></p>
+<p>The <a class="reference internal" href="../03_ride-language/05_structures.html#reissuetransaction"><span class="std std-ref">ReissueTransaction</span></a> structure is used for transaction handling in smart contracts.</p>
+</section>
+<section id="burn-transaction">
+<h4>Burn Transaction<a class="headerlink" href="#burn-transaction" title="Permalink to this heading">#</a></h4>
+<p>Burn transaction decreases the amount of token on sender’s account and thereby the total amount of the token on the blockchain. Any account that owns a token (not necessarily the token issuer) can send the burn transaction. Burned tokens cannot be restored back to the account.</p>
+<p><strong>Fee</strong></p>
+<p>The <a class="reference internal" href="#minimum-fee"><span class="std std-ref">minimum fee</span></a> for a burn transaction is <span class="math notranslate nohighlight">\(0.001\)</span> <a class="reference internal" href="02_token%28asset%29.html#decentralcoin"><span class="std std-ref">DecentralCoins</span></a>, in case of burning a smart asset <span class="math notranslate nohighlight">\(0.005\)</span> DecentralCoins.</p>
+<p>If the transaction sender is a <a class="reference internal" href="01_account.html#dapp-and-smart-account"><span class="std std-ref">dApp or smart account</span></a>, and the complexity of the account script or dApp script verifier function exceeds the <a class="reference internal" href="../03_ride-language/07_dapp-to-app-invocation.html#limitations"><span class="std std-ref">sender complexity threshold</span></a>, the minimum fee is increased by <span class="math notranslate nohighlight">\(0.004\)</span> DecentralCoins.</p>
+<p><strong>JSON Representation</strong></p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>{
+  &quot;senderPublicKey&quot;: &quot;9GaQj7gktEiiS1TTTjGbVjU9bva3AbCiawZ11qFZenBX&quot;,
+  &quot;amount&quot;: 9999,
+  &quot;fee&quot;: 100000,
+  &quot;type&quot;: 6,
+  &quot;version&quot;: 2,
+  &quot;sender&quot;: &quot;3P9QZNrHbyxXj8P9VrJZmVu2euodNtA11UW&quot;,
+  &quot;feeAssetId&quot;: null,
+  &quot;chainId&quot;: 87,
+  &quot;proofs&quot;: [
+    &quot;61jCivdv3KTuTY6QHgxt4jaGrXcszWg3vb9TmUR26xv7mjWWwjyqs7X5VDUs9c2ksndaPogmdunHDdjWCuG1GGhh&quot;
+  ],
+  &quot;assetId&quot;: &quot;FVxhjrxZYTFCa9Bd4JYhRqXTjwKuhYbSAbD2DWhsGidQ&quot;,
+  &quot;id&quot;: &quot;csr25XQHT1c965Fg7cY2vJ7XHYVsudPYrUbdaFqgaqL&quot;,
+  &quot;timestamp&quot;: 1548660675277,
+  &quot;height&quot;: 1370971
+}
+</pre></div>
+</div>
+<table class="longtable table" id="id8">
+<caption><span class="caption-text">Burn Transaction JSON Representation</span><a class="headerlink" href="#id8" title="Link zu dieser Tabelle">#</a></caption>
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>amount</p></td>
+<td><p>Amount of token to burn: an integer value specified in the minimum fraction (“cents”) of token.</p></td>
+</tr>
+<tr class="row-odd"><td><p>assetId</p></td>
+<td><p>Token ID base58 encoded.</p></td>
+</tr>
+<tr class="row-even"><td><p>chainId</p></td>
+<td><p><a class="reference internal" href="08_mainnet-testnet-stagenet.html#chain-id"><span class="std std-ref">Chain ID</span></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>The fields that are common to all types of transactions are described in the <a class="reference internal" href="#transaction"><span class="std std-ref">transaction</span></a> article.</p>
+<p><strong>Binary Format</strong></p>
+<p>See the <a class="reference internal" href="10_binary-format.html#burn-transaction-binary-format"><span class="std std-ref">burn transaction binary format</span></a>.</p>
+<p><strong>Ride Structure</strong></p>
+<p>The <a class="reference internal" href="../03_ride-language/05_structures.html#burntransaction"><span class="std std-ref">BurnTransaction</span></a> structure is used for transaction handling in smart contracts.</p>
+</section>
+<section id="set-asset-script-transaction">
+<h4>Set Asset Script Transaction<a class="headerlink" href="#set-asset-script-transaction" title="Permalink to this heading">#</a></h4>
+<p>Set asset script transaction replaces the <a class="reference internal" href="../03_ride-language/04_script-types.html#asset-script"><span class="std std-ref">asset script</span></a>. Only the token issuer can send an asset script transaction. If a token is issued without a script, then no script can be assigned to it. It is also impossible to remove the script and turn the smart asset into a regular one.</p>
+<p><strong>Fee</strong></p>
+<p>The <a class="reference internal" href="#minimum-fee"><span class="std std-ref">minimum fee</span></a> for a set asset script transaction is <span class="math notranslate nohighlight">\(1\)</span> <a class="reference internal" href="02_token%28asset%29.html#decentralcoin"><span class="std std-ref">DecentralCoin</span></a>.</p>
+<p>If the transaction sender is a <a class="reference internal" href="01_account.html#dapp-and-smart-account"><span class="std std-ref">dApp or smart account</span></a>, and the complexity of the account script or dApp script verifier function exceeds the <a class="reference internal" href="../03_ride-language/07_dapp-to-app-invocation.html#limitations"><span class="std std-ref">sender complexity threshold</span></a>, the minimum fee is increased by <span class="math notranslate nohighlight">\(0.004\)</span> DecentralCoins.</p>
+<p><strong>JSON Representation</strong></p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>{
+  &quot;senderPublicKey&quot;: &quot;AwQYJRHZNd9bvF7C13uwnPiLQfTzvDFJe7DTUXxzrGQS&quot;,
+  &quot;fee&quot;: 100000000,
+  &quot;type&quot;: 15,
+  &quot;version&quot;: 1,
+  &quot;script&quot;: &quot;base64:AQa3b8tH&quot;,
+  &quot;sender&quot;: &quot;3P67JUW8Djit7hMjKhADmn6CWvKPbRuh2sQ&quot;,
+  &quot;feeAssetId&quot;: null,
+  &quot;chainId&quot;: 87,
+  &quot;proofs&quot;: [
+    &quot;nzYhVKmRmd7BiFDDfrFVnY6Yo98xDGsKrBLWentF7ibe4P9cGWg4RtomHum2NEMBhuyZb5yjThcW7vsCLg7F8NQ&quot;
+  ],
+  &quot;assetId&quot;: &quot;7qJUQFxniMQx45wk12UdZwknEW9cDgvfoHuAvwDNVjYv&quot;,
+  &quot;id&quot;: &quot;FwYSpmVDbWQ2BA5NCBZ9z5GSjY39PSyfNZzBayDiMA88&quot;,
+  &quot;timestamp&quot;: 1547201038106,
+  &quot;height&quot;: 1346345
+}
+</pre></div>
+</div>
+<table class="longtable table" id="id9">
+<caption><span class="caption-text">Set Asset Script Transaction JSON Representation</span><a class="headerlink" href="#id9" title="Link zu dieser Tabelle">#</a></caption>
+<colgroup>
+<col style="width: 25.0%" />
+<col style="width: 75.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>assetId</p></td>
+<td><p>Token ID base58 encoded.</p></td>
+</tr>
+<tr class="row-odd"><td><p>chainId</p></td>
+<td><p><a class="reference internal" href="08_mainnet-testnet-stagenet.html#chain-id"><span class="std std-ref">Chain ID</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>script</p></td>
+<td><p>Compiled asset script, up to <span class="math notranslate nohighlight">\(8192\)</span> bytes, base64 encoded.</p></td>
+</tr>
+</tbody>
+</table>
+<p>The fields that are common to all types of transactions are described in the <a class="reference internal" href="#transaction"><span class="std std-ref">transaction</span></a> article.</p>
+<p><strong>Binary Format</strong></p>
+<p>See the <a class="reference internal" href="10_binary-format.html#set-asset-script-transaction-binary-format"><span class="std std-ref">set asset script transaction binary format</span></a>.</p>
+<p><strong>Ride Structure</strong></p>
+<p>The <a class="reference internal" href="../03_ride-language/05_structures.html#setassetscripttransaction"><span class="std std-ref">SetAssetScriptTransaction</span></a> structure is used for transaction handling in smart contracts.</p>
+</section>
+<section id="update-asset-info-transaction">
+<h4>Update Asset Info Transaction<a class="headerlink" href="#update-asset-info-transaction" title="Permalink to this heading">#</a></h4>
+<p>Update asset info transaction modifies the name and description of the token.</p>
+<p><strong>Fee</strong></p>
+<p>The <a class="reference internal" href="#minimum-fee"><span class="std std-ref">minimum fee</span></a> for an update asset info transaction is <span class="math notranslate nohighlight">\(0.001\)</span> <a class="reference internal" href="02_token%28asset%29.html#decentralcoin"><span class="std std-ref">DecentralCoins</span></a>, in case of a smart asset <span class="math notranslate nohighlight">\(0.005\)</span> DecentralCoins.</p>
+<p>If the transaction sender is a <a class="reference internal" href="01_account.html#dapp-and-smart-account"><span class="std std-ref">dApp or smart account</span></a>, and the complexity of the account script or dApp script verifier function exceeds the <a class="reference internal" href="../03_ride-language/07_dapp-to-app-invocation.html#limitations"><span class="std std-ref">sender complexity threshold</span></a>, the minimum fee is increased by <span class="math notranslate nohighlight">\(0.004\)</span> DecentralCoins.</p>
+<p><strong>JSON Representation</strong></p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>{
+  &quot;senderPublicKey&quot;: &quot;6a6r9d3r2ccyE9SvuxmdZbfSHXmKPUoExnigvippJLfu&quot;,
+  &quot;fee&quot;: 100000,
+  &quot;description&quot;: &quot;xxxXXXxxx&quot;,
+  &quot;type&quot;: 17,
+  &quot;version&quot;: 1,
+  &quot;applicationStatus&quot;: &quot;succeeded&quot;,
+  &quot;sender&quot;: &quot;3MQdH4MAmM5RNz5TAT43UXXCvMtCa9YgHq9&quot;,
+  &quot;feeAssetId&quot;: null,
+  &quot;chainId&quot;: 83,
+  &quot;proofs&quot;: [
+    &quot;4DfvJL4cVisQaMuMB7ar15EtYZTvTZzAUQQMkq4RA3uTMzziVYLrbNHSL2a1eCqBV3YQb7dddXdjywETXHuu65ij&quot;
+  ],
+  &quot;assetId&quot;: &quot;syXBywr2HVY7wxqkaci1jKY73KMpoLh46cp1peJAZNJ&quot;,
+  &quot;name&quot;: &quot;zzzz&quot;,
+  &quot;id&quot;: &quot;4DL8K4bRvYb9Qrys9Auq7hSGuLGq8XsUYZqDDBBfVGMf&quot;,
+  &quot;timestamp&quot;: 1591886337668,
+  &quot;height&quot;: 411389
+}
+</pre></div>
+</div>
+<table class="longtable table" id="id10">
+<caption><span class="caption-text">Update Asset Info Transaction JSON Representation</span><a class="headerlink" href="#id10" title="Link zu dieser Tabelle">#</a></caption>
+<colgroup>
+<col style="width: 25.0%" />
+<col style="width: 75.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>name</p></td>
+<td><p>Token name. From <span class="math notranslate nohighlight">\(4\)</span> to <span class="math notranslate nohighlight">\(16\)</span> bytes.</p></td>
+</tr>
+<tr class="row-odd"><td><p>description</p></td>
+<td><p>Token description. From <span class="math notranslate nohighlight">\(0\)</span> to <span class="math notranslate nohighlight">\(1000\)</span> bytes.</p></td>
+</tr>
+<tr class="row-even"><td><p>chainId</p></td>
+<td><p><a class="reference internal" href="08_mainnet-testnet-stagenet.html#chain-id"><span class="std std-ref">Chain ID</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>assetId</p></td>
+<td><p>Token ID base58 encoded.</p></td>
+</tr>
+</tbody>
+</table>
+<p>The fields that are common to all types of transactions are described in the <a class="reference internal" href="#transaction"><span class="std std-ref">transaction</span></a> article.</p>
+<p><strong>Binary Format</strong></p>
+<p>See the <a class="reference internal" href="10_binary-format.html#update-asset-info-transaction-binary-format"><span class="std std-ref">update asset info transaction binary format</span></a>.</p>
+<p><strong>Ride Structure</strong></p>
+<p>The <a class="reference internal" href="../03_ride-language/05_structures.html#updateassetinfotransaction"><span class="std std-ref">UpdateAssetInfoTransaction</span></a> structure is used for transaction handling in smart contracts.</p>
+</section>
+</section>
+<section id="usage">
+<h3>Usage<a class="headerlink" href="#usage" title="Permalink to this heading">#</a></h3>
+<table class="longtable table" id="id11">
+<caption><span class="caption-text">Usage</span><a class="headerlink" href="#id11" title="Link zu dieser Tabelle">#</a></caption>
+<colgroup>
+<col style="width: 16.7%" />
+<col style="width: 33.3%" />
+<col style="width: 50.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Transaction type ID</p></th>
+<th class="head"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(4\)</span></p></td>
+<td><p><a class="reference internal" href="#transfer-transaction"><span class="std std-ref">Transfer transaction</span></a></p></td>
+<td><p>Transfers a token to another account.</p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(7\)</span></p></td>
+<td><p><a class="reference internal" href="#exchange-transaction"><span class="std std-ref">Exchange transaction</span></a></p></td>
+<td><p>Exchanges two different tokens between two accounts. Contains two counter orders: a buy order and a sell order.</p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(10\)</span></p></td>
+<td><p><a class="reference internal" href="#create-alias-transaction"><span class="std std-ref">Create alias transaction</span></a></p></td>
+<td><p>Creates alias for the sender’s address.</p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(11\)</span></p></td>
+<td><p><a class="reference internal" href="#mass-transfer-transaction"><span class="std std-ref">Mass transfer transaction</span></a></p></td>
+<td><p>Transfers a token, up to <span class="math notranslate nohighlight">\(100\)</span> recipients.</p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(12\)</span></p></td>
+<td><p><a class="reference internal" href="#data-transaction"><span class="std std-ref">Data transaction</span></a></p></td>
+<td><p>Adds, modifies and deletes data entries in the sender’s account data storage.</p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(13\)</span></p></td>
+<td><p><a class="reference internal" href="#set-script-transaction"><span class="std std-ref">Set script transaction</span></a></p></td>
+<td><p>Assigns the dApp script or account script to the sender’s account.</p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(16\)</span></p></td>
+<td><p><a class="reference internal" href="#invoke-script-transaction"><span class="std std-ref">Invoke script transaction</span></a></p></td>
+<td><p>Invokes a callable function of a dApp.</p></td>
+</tr>
+</tbody>
+</table>
+<section id="transfer-transaction">
+<h4>Transfer Transaction<a class="headerlink" href="#transfer-transaction" title="Permalink to this heading">#</a></h4>
+<p>Transfer transaction transfers a certain amount of token to another account.</p>
+<p><strong>Fee</strong></p>
+<p>The <a class="reference internal" href="#minimum-fee"><span class="std std-ref">minimum fee</span></a> for a transfer transaction is <span class="math notranslate nohighlight">\(0.001\)</span> <a class="reference internal" href="02_token%28asset%29.html#decentralcoin"><span class="std std-ref">DecentralCoins</span></a>, in case of transferring a smart asset <span class="math notranslate nohighlight">\(0.005\)</span> DecentralCoins.</p>
+<p>If the transaction sender is a <a class="reference internal" href="01_account.html#dapp-and-smart-account"><span class="std std-ref">dApp or smart account</span></a>, and the complexity of the account script or dApp script verifier function exceeds the <a class="reference internal" href="../03_ride-language/07_dapp-to-app-invocation.html#limitations"><span class="std std-ref">sender complexity threshold</span></a>, the minimum fee is increased by <span class="math notranslate nohighlight">\(0.004\)</span> DecentralCoins.</p>
+<p><strong>JSON Representation</strong></p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>{
+  &quot;senderPublicKey&quot;: &quot;Cs4DShy4nTx6WyxjKRoDtoYsGhvT663pYLysPCLeVZHE&quot;,
+  &quot;amount&quot;: 15540,
+  &quot;signature&quot;: &quot;5EaYqFx2xFJmdvwZ1gT3yLecKr88z3jByCj5GE1MjE1ossvehExZKoT7uhGatiYCGM9Co8iUR8Q5ce52XDmno3rn&quot;,
+  &quot;fee&quot;: 100000,
+  &quot;type&quot;: 4,
+  &quot;version&quot;: 1,
+  &quot;attachment&quot;: &quot;3vrgtyozxuY88J9RqMBBAci2UzAq9DBMFTpMWLPzMygGeSWnD7k&quot;,
+  &quot;sender&quot;: &quot;3PN2bVFxJjgudPKqEGZ41TVsD5ZJmxqnPSu&quot;,
+  &quot;feeAssetId&quot;: null,
+  &quot;proofs&quot;: [
+    &quot;5EaYqFx2xFJmdvwZ1gT3yLecKr88z3jByCj5GE1MjE1ossvehExZKoT7uhGatiYCGM9Co8iUR8Q5ce52XDmno3rn&quot;
+  ],
+  &quot;assetId&quot;: &quot;7uncmN7dZfV3fYVvNdYTngrrbamPYMgwpDnYG1bGy6nA&quot;,
+  &quot;recipient&quot;: &quot;3PFmoN5YLoPNsL4cmNGkRxbUKrUVntwyAhf&quot;,
+  &quot;feeAsset&quot;: null,
+  &quot;id&quot;: &quot;D79kL1Jr5xyL2Rmw2FnafQHugJGvuBhNEbLnhMuwMkDC&quot;,
+  &quot;timestamp&quot;: 1548660895034,
+  &quot;height&quot;: 1370973
+}
+</pre></div>
+</div>
+<table class="longtable table" id="id12">
+<caption><span class="caption-text">Transfer Transaction JSON Representation</span><a class="headerlink" href="#id12" title="Link zu dieser Tabelle">#</a></caption>
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>assetId</p></td>
+<td><p>Token ID base58 encoded. null means <a class="reference internal" href="02_token%28asset%29.html#decentralcoin"><span class="std std-ref">DecentralCoins</span></a>.</p></td>
+</tr>
+<tr class="row-odd"><td><p>amount</p></td>
+<td><p>Amount of token to transfer: an integer value specified in the minimum fraction (“cents”) of token.</p></td>
+</tr>
+<tr class="row-even"><td><p>attachment</p></td>
+<td><p>Arbitrary binary data (typically a comment to transfer) base58 encoded, up to <span class="math notranslate nohighlight">\(4\)</span> bytes.</p></td>
+</tr>
+<tr class="row-odd"><td><p>recipient</p></td>
+<td><p>Recipient address base58 encoded or recipient alias with alias:&lt;chain_id&gt;: prefix, for example alias:T:merry (See <a class="reference internal" href="08_mainnet-testnet-stagenet.html#chain-id"><span class="std std-ref">chain ID</span></a>).</p></td>
+</tr>
+</tbody>
+</table>
+<p>The fields that are common to all types of transactions are described in the <a class="reference internal" href="#transaction"><span class="std std-ref">transaction</span></a> article.</p>
+<p><strong>Binary Format</strong></p>
+<p>See the <a class="reference internal" href="10_binary-format.html#transfer-transaction-binary-format"><span class="std std-ref">transfer transaction binary format</span></a>.</p>
+<p><strong>Ride Structure</strong></p>
+<p>The <a class="reference internal" href="../03_ride-language/05_structures.html#transfertransaction"><span class="std std-ref">TransferTransaction</span></a> structure is used for transaction handling in smart contracts.</p>
+</section>
+<section id="exchange-transaction">
+<h4>Exchange Transaction<a class="headerlink" href="#exchange-transaction" title="Permalink to this heading">#</a></h4>
+<p>Exchange transaction exchanges two different tokens between two accounts. Commonly the exchange transaction is created by the matcher service that executes orders to buy and sell tokens. The exchange transaction contains two counter orders: a buy order and a sell order. The blockchain guarantees that the terms of the exchange are not worse than those indicated in each order.</p>
+<p>An order can be filled partially. An order can participate in several exchange transactions, with different counter orders. One of the two exchanged tokens is the amount asset (base currency): it represents the amount of token in orders and in the Exchange transaction. Another token is a price asset (quote currency): it represents the price.</p>
+<img alt="../_images/08_Exchange-Transaction.png" src="../_images/08_Exchange-Transaction.png" />
+<p><strong>Transaction Fee</strong></p>
+<p>The <a class="reference internal" href="#minimum-fee"><span class="std std-ref">minimum fee</span></a> for an exchange transaction is <span class="math notranslate nohighlight">\(0.003\)</span> <a class="reference internal" href="02_token%28asset%29.html#decentralcoin"><span class="std std-ref">DecentralCoins</span></a>. In case of exchange of a <a class="reference internal" href="02_token%28asset%29.html#smart-asset"><span class="std std-ref">smart asset</span></a> for an ordinary asset the minimum fee is <span class="math notranslate nohighlight">\(0.007\)</span> DecentralCoins, in case of exchange of two smart assets the minimum fee is <span class="math notranslate nohighlight">\(0.011\)</span> DecentralCoins.</p>
+<p>If the transaction sender is a <a class="reference internal" href="01_account.html#dapp-and-smart-account"><span class="std std-ref">dApp or smart account</span></a>, and the complexity of the account script or dApp script verifier function exceeds the <a class="reference internal" href="../03_ride-language/07_dapp-to-app-invocation.html#limitations"><span class="std std-ref">sender complexity threshold</span></a>, the minimum fee is increased by <span class="math notranslate nohighlight">\(0.004\)</span> DecentralCoins.</p>
+<p><strong>Matcher Fee</strong></p>
+<p>The matcher receives a fee for order execution from each order sender. The minimum matcher fee is set by the matcher. The order sender specifies the fee not less than the minimum amount.</p>
+<p>If the order is fully filled with one exchange transaction, the matcher receives the entire fee specified in the order. If the order is partially filled, the matcher receives a part of the fee. The blockchain guarantees that the total matcher fee received from the order sender in all exchange transactions does not exceed the fee specified in the order.</p>
+<img alt="../_images/09_Matcher-Fee.png" src="../_images/09_Matcher-Fee.png" />
+<p><strong>JSON Representation</strong></p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>{
+  &quot;senderPublicKey&quot;: &quot;9cpfKN9suPNvfeUNphzxXMjcnn974eme8ZhWUjaktzU5&quot;,
+  &quot;amount&quot;: 100000000,
+  &quot;fee&quot;: 300000,
+  &quot;type&quot;: 7,
+  &quot;version&quot;: 2,
+  &quot;sellMatcherFee&quot;: 750,
+  &quot;sender&quot;: &quot;3PEjHv3JGjcWNpYEEkif2w8NXV4kbhnoGgu&quot;,
+  &quot;feeAssetId&quot;: null,
+  &quot;proofs&quot;: [
+    &quot;LQD8VoFhHEW2b6o2e2ujzDHdZatwMMwigC2tmoSHcFNRGXrowA1yyVxD6nZBNeABLWjs59dnuLhgNP7UMfFKDuR&quot;
+  ],
+  &quot;price&quot;: 1134500,
+  &quot;id&quot;: &quot;EHLccXcemZPEvUpM9UkASG1GciwMt9R5B3QuYFxywj9g&quot;,
+  &quot;order2&quot;: {
+    &quot;version&quot;: 3,
+    &quot;id&quot;: &quot;JCiF3gmprLc8u7xdWR7KUkJ3YfM6yfgxB6CvhJYGJFAa&quot;,
+    &quot;sender&quot;: &quot;3PRBeeFD64wvTMfS3HEoDDFPXfJs3gFdAxk&quot;,
+    &quot;senderPublicKey&quot;: &quot;ytgWVbKG9e6TSsQ5buMryr2QyxNoL3RezXP3f9RJ2As&quot;,
+    &quot;matcherPublicKey&quot;: &quot;9cpfKN9suPNvfeUNphzxXMjcnn974eme8ZhWUjaktzU5&quot;,
+    &quot;assetPair&quot;: {
+      &quot;amountAsset&quot;: null,
+      &quot;priceAsset&quot;: &quot;DG2xFkPdDwKUoBkzGAhQtLpSGzfXLiCYPEzeKH2Ad24p&quot;
+    },
+    &quot;orderType&quot;: &quot;sell&quot;,
+    &quot;amount&quot;: 40000000000,
+    &quot;price&quot;: 1134500,
+    &quot;timestamp&quot;: 1591356602063,
+    &quot;expiration&quot;: 1593862202062,
+    &quot;matcherFee&quot;: 300000,
+    &quot;matcherFeeAssetId&quot;: null,
+    &quot;signature&quot;: &quot;3D2Ngr7H6MQRs1izMQSix3dMHmDfg4bcRjxamFXFsb4Ku28neNWHdtwE6LtR3eq69Jqr1CvEsAKCWkQEeEEomcoK&quot;,
+    &quot;proofs&quot;: [
+      &quot;3D2Ngr7H6MQRs1izMQSix3dMHmDfg4bcRjxamFXFsb4Ku28neNWHdtwE6LtR3eq69Jqr1CvEsAKCWkQEeEEomcoK&quot;
+    ]
+  },
+  &quot;order1&quot;: {
+    &quot;version&quot;: 3,
+    &quot;id&quot;: &quot;FNvEGPgUqEWnrnpxevZQnaZS3DUTBGE2wa6L75xCw7mo&quot;,
+    &quot;sender&quot;: &quot;3PDxxx7eSeYLgzTAtuAV7gUCtHeeXeU85fP&quot;,
+    &quot;senderPublicKey&quot;: &quot;3WEkbavP3Sw4y5tsgxbZvKkWh87BdB3CPVVxhcRUDBsJ&quot;,
+    &quot;matcherPublicKey&quot;: &quot;9cpfKN9suPNvfeUNphzxXMjcnn974eme8ZhWUjaktzU5&quot;,
+      &quot;assetPair&quot;: {
+      &quot;amountAsset&quot;: null,
+      &quot;priceAsset&quot;: &quot;DG2xFkPdDwKUoBkzGAhQtLpSGzfXLiCYPEzeKH2Ad24p&quot;
+    },
+    &quot;orderType&quot;: &quot;buy&quot;,
+    &quot;amount&quot;: 100000000,
+    &quot;price&quot;: 1134500,
+    &quot;timestamp&quot;: 1591356752271,
+    &quot;expiration&quot;: 1593862352271,
+    &quot;matcherFee&quot;: 300000,
+    &quot;matcherFeeAssetId&quot;: null,
+    &quot;signature&quot;: &quot;2gvqaYy2BFbK4BJZS8taRJnhgfQ1z2CytF2RqjcyEfzFiu9tkTjN5q4UyFXpPqS3E6eD2WQBUaYCTYDKv98iW1sy&quot;,
+    &quot;proofs&quot;: [
+      &quot;2gvqaYy2BFbK4BJZS8taRJnhgfQ1z2CytF2RqjcyEfzFiu9tkTjN5q4UyFXpPqS3E6eD2WQBUaYCTYDKv98iW1sy&quot;
+    ]
+  },
+  &quot;buyMatcherFee&quot;: 300000,
+  &quot;timestamp&quot;: 1591356752456,
+  &quot;height&quot;: 2093333
+}
+</pre></div>
+</div>
+<table class="longtable table" id="id13">
+<caption><span class="caption-text">Exchange Transaction JSON Representation</span><a class="headerlink" href="#id13" title="Link zu dieser Tabelle">#</a></caption>
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>amount</p></td>
+<td><p>Amount of the amount asset: an integer value specified in the minimum fraction (“cent”) of asset.</p></td>
+</tr>
+<tr class="row-odd"><td><p>price</p></td>
+<td><p>Price for the amount asset nominated in the price asset, multiplied by the factor: 1) <span class="math notranslate nohighlight">\(10^{8}\)</span> for the exchange transaction version 3. 2) <span class="math notranslate nohighlight">\(10^{(8 + priceAssetDecimals – amountAssetDecimals)}\)</span>. Where amountAssetDecimals, priceAssetDecimals are decimals of the assets, for the exchange transaction version 2 or 1.</p></td>
+</tr>
+<tr class="row-even"><td><p>buyMatcherFee</p></td>
+<td><p>Matcher fee for the buy order execution. The fee token ID is indicated in buy order.</p></td>
+</tr>
+<tr class="row-odd"><td><p>sellMatcherFee</p></td>
+<td><p>Matcher fee for the sell order execution. The fee token ID is indicated in sell order.</p></td>
+</tr>
+<tr class="row-even"><td><p>order1, order2</p></td>
+<td><p>Buy and sell orders. See the <a class="reference internal" href="06_order.html#order"><span class="std std-ref">order</span></a> article for details.</p></td>
+</tr>
+</tbody>
+</table>
+<p>The fields that are common to all types of transactions are described in the <a class="reference internal" href="#transaction"><span class="std std-ref">transaction</span></a> article.</p>
+<p><strong>Binary Format</strong></p>
+<p>See the <a class="reference internal" href="10_binary-format.html#exchange-transaction-binary-format"><span class="std std-ref">exchange transaction binary format</span></a>.</p>
+<p><strong>Ride Structure</strong></p>
+<p>The <a class="reference internal" href="../03_ride-language/05_structures.html#exchangetransaction"><span class="std std-ref">ExchangeTransaction</span></a> structure is used for transaction handling in smart contracts.</p>
+</section>
+<section id="create-alias-transaction">
+<h4>Create Alias Transaction<a class="headerlink" href="#create-alias-transaction" title="Permalink to this heading">#</a></h4>
+<p>Create Alias transaction creates an <a class="reference internal" href="01_account.html#alias"><span class="std std-ref">alias</span></a> for the sender’s address.A created alias cannot be deleted.</p>
+<p><strong>Fee</strong></p>
+<p>The <a class="reference internal" href="#minimum-fee"><span class="std std-ref">minimum fee</span></a> for a Create Alias transaction is <span class="math notranslate nohighlight">\(0.001\)</span> <a class="reference internal" href="02_token%28asset%29.html#decentralcoin"><span class="std std-ref">DecentralCoins</span></a>.</p>
+<p>If the transaction sender is a <a class="reference internal" href="01_account.html#dapp-and-smart-account"><span class="std std-ref">dApp or smart account</span></a>, and the complexity of the account script or dApp script verifier function exceeds the <a class="reference internal" href="../03_ride-language/07_dapp-to-app-invocation.html#limitations"><span class="std std-ref">sender complexity threshold</span></a>, the minimum fee is increased by <span class="math notranslate nohighlight">\(0.004\)</span> DecentralCoins.</p>
+<p><strong>JSON Representation</strong></p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>{
+  &quot;senderPublicKey&quot;:&quot;BVv1ZuE3gKFa6krwWJQwEmrLYUESuUabNCXgYTmCoBt6&quot;,
+  &quot;sender&quot;:&quot;3N8S4UtauvDAzpLiaRyDdHn9muexWHhBP4D&quot;,
+  &quot;feeAssetId&quot;:null,
+  &quot;proofs&quot;: [
+    &quot;22QJfRKX7kUQt4qjdnUqZAnhqukqhnofE27uvP8Q5xnBf8M6PCNtWVGq2ngm6m7Voe7duys59D1yU9jhKrmdXDCe&quot;
+  ],
+  &quot;fee&quot;:100000,
+  &quot;alias&quot;:&quot;91f452553298770f&quot;,
+  &quot;id&quot;:&quot;AD7KmXwoVNc2fXsmaxsHsrnT1tfPF3HsWYtfjFijVsvM&quot;,
+  &quot;type&quot;:10,
+  &quot;version&quot;:2,
+  &quot;timestamp&quot;:1548443069053,
+  &quot;height&quot;:466104
+}
+</pre></div>
+</div>
+<table class="longtable table" id="id14">
+<caption><span class="caption-text">Create Alias Transaction JSON Representation</span><a class="headerlink" href="#id14" title="Link zu dieser Tabelle">#</a></caption>
+<colgroup>
+<col style="width: 25.0%" />
+<col style="width: 75.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>alias</p></td>
+<td><p>Alias. From <span class="math notranslate nohighlight">\(4\)</span> to <span class="math notranslate nohighlight">\(30\)</span> bytes (<span class="math notranslate nohighlight">\(1\)</span> character can take up to <span class="math notranslate nohighlight">\(4\)</span> bytes).</p></td>
+</tr>
+</tbody>
+</table>
+<p>The fields that are common to all types of transactions are described in the <a class="reference internal" href="#transaction"><span class="std std-ref">transaction</span></a> article.</p>
+<p><strong>Binary Format</strong></p>
+<p>See the <a class="reference internal" href="10_binary-format.html#create-alias-transaction-binary-format"><span class="std std-ref">create alias transaction binary format</span></a>.</p>
+<p><strong>Ride Structure</strong></p>
+<p>The <a class="reference internal" href="../03_ride-language/05_structures.html#createaliastransaction"><span class="std std-ref">CreateAliasTransaction</span></a> structure is used for transaction handling in smart contracts.</p>
+</section>
+<section id="mass-transfer-transaction">
+<h4>Mass Transfer Transaction<a class="headerlink" href="#mass-transfer-transaction" title="Permalink to this heading">#</a></h4>
+<p>Mass transfer transaction transfers a <a class="reference internal" href="02_token%28asset%29.html#token-asset"><span class="std std-ref">token</span></a> to several accounts, from <span class="math notranslate nohighlight">\(1\)</span> <a class="reference internal" href="02_token%28asset%29.html#decentralcoin"><span class="std std-ref">DecentralCoin</span></a> to <span class="math notranslate nohighlight">\(100\)</span> DecentralCoins .</p>
+<p><strong>Fee</strong></p>
+<p>The <a class="reference internal" href="#minimum-fee"><span class="std std-ref">minimum fee</span></a> for a Mass Transfer transaction is <span class="math notranslate nohighlight">\(0.001 + 0.0005 × N\)</span> DecentralCoins, in case of transferring a <a class="reference internal" href="02_token%28asset%29.html#smart-asset"><span class="std std-ref">smart asset</span></a> <span class="math notranslate nohighlight">\(0.001 + 0.0005 × N\)</span> DecentralCoins, where <span class="math notranslate nohighlight">\(N\)</span> DecentralCoins is the number of recipients. The fee value is rounded up to three decimals.</p>
+<p>If the transaction sender is a <a class="reference internal" href="01_account.html#dapp-and-smart-account"><span class="std std-ref">dApp or smart account</span></a>, and the complexity of the account script or dApp script verifier function exceeds the <a class="reference internal" href="../03_ride-language/07_dapp-to-app-invocation.html#limitations"><span class="std std-ref">sender complexity threshold</span></a>, the minimum fee is increased by <span class="math notranslate nohighlight">\(0.004\)</span> DecentralCoins.</p>
+<p><strong>JSON Representation</strong></p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>{
+  &quot;senderPublicKey&quot;: &quot;5DphrhGy6MM4N3yxfB2uR2oFUkp2MNMpSzhZ4uJEm3U1&quot;,
+  &quot;fee&quot;: 5100000,
+  &quot;type&quot;: 11,
+  &quot;transferCount&quot;: 100,
+  &quot;version&quot;: 1,
+  &quot;totalAmount&quot;: 500000000000,
+  &quot;attachment&quot;: &quot;xZBWqm9Ddt5BJVFvHUaQwB7Dsj78UQ5HatQjD8VQKj4CHG48WswJxUUeHEDZJkHgt9LycUpHBFc8ENu8TF8vvnDJCgfy1NeKaUNydqy9vkACLZjSqaVmvfaM3NQB&quot;,
+  &quot;sender&quot;: &quot;3P2rvn2Hpz6pJcH8oPNrwLsetvYP852QQ2m&quot;,
+  &quot;feeAssetId&quot;: null,
+  &quot;proofs&quot;: [
+    &quot;FmGBaWABAy5bif7Qia2LWQ5B4KNmBnbXETL1mE6XEy4AAMjftt3FrxAa8x2pZ9ux391oY5c2c6ZSDEM4nzrvJDo&quot;
+  ],
+  &quot;assetId&quot;: &quot;Fx2rhWK36H1nfXsiD4orNpBm2QG1JrMhx3eUcPVcoZm2&quot;,
+  &quot;transfers&quot;: [
+    {
+      &quot;recipient&quot;: &quot;3PHnjQrdK389SbzwPEJHYKzhCqWvaoy3GQB&quot;,
+      &quot;amount&quot;: 5000000000
+    },
+    {
+      &quot;recipient&quot;: &quot;3PGNLwUG2GPpw74teTAxXFLxgFt3T2uQJsF&quot;,
+      &quot;amount&quot;: 5000000000
+    },
+    {
+      &quot;recipient&quot;: &quot;3P5kQneM9EdpVUbFLgefD385LLYTXY5J32c&quot;,
+      &quot;amount&quot;: 5000000000
+    },
+    ...
+  ],
+  &quot;id&quot;: &quot;3LRfudet7avpQcW1AdauiBGb8SSRAaoCugDzngDPLVcv&quot;,
+  &quot;timestamp&quot;: 1528973951321,
+  &quot;height&quot;: 1041197
+}
+</pre></div>
+</div>
+<table class="longtable table" id="id15">
+<caption><span class="caption-text">Mass Transfer Transaction JSON Representation</span><a class="headerlink" href="#id15" title="Link zu dieser Tabelle">#</a></caption>
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>assetId</p></td>
+<td><p>Token ID base58 encoded. null means <a class="reference internal" href="02_token%28asset%29.html#decentralcoin"><span class="std std-ref">DecentralCoins</span></a>.</p></td>
+</tr>
+<tr class="row-odd"><td><p>attachment</p></td>
+<td><p>Arbitrary binary data (typically a comment to transfer) base58 encoded, up to <span class="math notranslate nohighlight">\(140\)</span> bytes.</p></td>
+</tr>
+<tr class="row-even"><td><p>transfers.recipient</p></td>
+<td><p>Recipient address base58 encoded or recipient alias with alias:&lt;chain_id&gt;: prefix, for example alias:T:merry (See <a class="reference internal" href="08_mainnet-testnet-stagenet.html#chain-id"><span class="std std-ref">chain ID</span></a>).</p></td>
+</tr>
+<tr class="row-odd"><td><p>transfers.amount</p></td>
+<td><p>Amount of token to transfer: an integer value specified in the minimum fraction (“cents”) of token.</p></td>
+</tr>
+<tr class="row-even"><td><p>transferCount</p></td>
+<td><p>Number of recipients.</p></td>
+</tr>
+<tr class="row-odd"><td><p>totalAmount</p></td>
+<td><p>Total amount of transfers in transaction.</p></td>
+</tr>
+</tbody>
+</table>
+<p>The transferCount and totalAmount fields do not need to be filled when sending a transaction, and they are not stored on the blockchain. The node calculates these fields when providing transaction data via the REST API.</p>
+<p>The fields that are common to all types of transactions are described in the <a class="reference internal" href="#transaction"><span class="std std-ref">transaction</span></a> article.</p>
+<p><strong>Binary Format</strong></p>
+<p>See the <a class="reference internal" href="10_binary-format.html#mass-transfer-transaction-binary-format"><span class="std std-ref">mass transfer transaction binary format</span></a>.</p>
+<p><strong>Ride Structure</strong></p>
+<p>The <a class="reference internal" href="../03_ride-language/05_structures.html#masstransfertransaction"><span class="std std-ref">MassTransferTransaction</span></a> structure is used for transaction handling in smart contracts.</p>
+</section>
+<section id="data-transaction">
+<h4>Data Transaction<a class="headerlink" href="#data-transaction" title="Permalink to this heading">#</a></h4>
+<p>Data transaction adds, modifies and deletes data entries in sender’s <a class="reference internal" href="01_account.html#account-data-storage"><span class="std std-ref">account data storage</span></a>. Limitations are as follows:</p>
+<ul class="simple">
+<li><p>The maximum number of entries is <span class="math notranslate nohighlight">\(100\)</span>.</p></li>
+<li><p>For a transaction version 2 the maximum data size (keys + values) is <span class="math notranslate nohighlight">\(165,890\)</span> bytes.</p></li>
+<li><p>For a transaction version 1 the maximum transaction size (except proofs) is <span class="math notranslate nohighlight">\(153,600\)</span> bytes.</p></li>
+</ul>
+<p><strong>Fee</strong></p>
+<p>The <a class="reference internal" href="#minimum-fee"><span class="std std-ref">minimum fee</span></a> for a Data transaction is <span class="math notranslate nohighlight">\(0.001\)</span> <a class="reference internal" href="02_token%28asset%29.html#decentralcoin"><span class="std std-ref">DecentralCoins</span></a> per kilobyte, the size is rounded up to an integer number of kilobytes.</p>
+<p>If the transaction sender is a <a class="reference internal" href="01_account.html#dapp-and-smart-account"><span class="std std-ref">dApp or smart account</span></a>, and the complexity of the account script or dApp script verifier function exceeds the <a class="reference internal" href="../03_ride-language/07_dapp-to-app-invocation.html#limitations"><span class="std std-ref">sender complexity threshold</span></a>, the minimum fee is increased by <span class="math notranslate nohighlight">\(0.004\)</span> DecentralCoins.</p>
+<p><strong>JSON Representation</strong></p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>{
+  &quot;senderPublicKey&quot;: &quot;38bYRUxFCaoa9h822nMnsoTX1qfczqtHJLgouNcNnd8h&quot;,
+  &quot;data&quot;: [
+    {
+      &quot;type&quot;: &quot;boolean&quot;,
+      &quot;value&quot;: true,
+      &quot;key&quot;: &quot;bool&quot;
+    },
+    {
+      &quot;type&quot;: &quot;binary&quot;,
+      &quot;value&quot;: &quot;base64:SGVsbG8gV2F2ZXM=&quot;,
+      &quot;key&quot;: &quot;bin&quot;
+    },
+    {
+      &quot;type&quot;: &quot;integer&quot;,
+      &quot;value&quot;: 1234567,
+      &quot;key&quot;: &quot;int&quot;
+    },
+    {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;value&quot;: &quot;some text&quot;,
+      &quot;key&quot;: &quot;str&quot;
+    }
+  ],
+  &quot;sender&quot;: &quot;3N4iKL6ikwxiL7yNvWQmw7rg3wGna8uL6LU&quot;,
+  &quot;feeAssetId&quot;: null,
+  &quot;proofs&quot;: [
+    &quot;kE1hjN1yW68j8DsYGNB7Gg1ydC4hqRmt3wBaFQUPkftnbiM7QfJCn1gTHgveJ7pCLXvvqffhKBmiF8qS1Uqk6SR&quot;
+  ],
+  &quot;fee&quot;: 100000,
+  &quot;id&quot;: &quot;3EPJuvQiJYiu9Y5g6mYDQgHVu8GFUfnZurHrVwwF1ViH&quot;,
+  &quot;type&quot;: 12,
+  &quot;version&quot;: 2,
+  &quot;timestamp&quot;: 1591351545000,
+  &quot;height&quot;: 1029815
+}
+</pre></div>
+</div>
+<table class="longtable table" id="id16">
+<caption><span class="caption-text">Data Transaction JSON Representation</span><a class="headerlink" href="#id16" title="Link zu dieser Tabelle">#</a></caption>
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>data.key</p></td>
+<td><p>Entry key. String, up to <span class="math notranslate nohighlight">\(400\)</span> bytes for version 2, up to <span class="math notranslate nohighlight">\(100\)</span> characters for version 1.</p></td>
+</tr>
+<tr class="row-odd"><td><p>data.type</p></td>
+<td><p>Entry type: 1) binary. 2) boolean. 3) integer. 4) string. 5) null – delete entry.</p></td>
+</tr>
+<tr class="row-even"><td><p>data.value</p></td>
+<td><p>Entry value. Up to <span class="math notranslate nohighlight">\(32,767\)</span> bytes. Binary value is base64 encoded. null – delete entry.</p></td>
+</tr>
+</tbody>
+</table>
+<p>The fields that are common to all types of transactions are described in the <a class="reference internal" href="#transaction"><span class="std std-ref">transaction</span></a> article.</p>
+<p><strong>Binary Format</strong></p>
+<p>See the <a class="reference internal" href="10_binary-format.html#data-transaction-binary-format"><span class="std std-ref">data transaction binary format</span></a>.</p>
+<p><strong>Ride Structure</strong></p>
+<p>The <a class="reference internal" href="../03_ride-language/07_dapp-to-app-invocation.html#limitations"><span class="std std-ref">DataTransaction structure</span></a> is used for transaction handling in smart contracts.</p>
+</section>
+<section id="set-script-transaction">
+<h4>Set Script Transaction<a class="headerlink" href="#set-script-transaction" title="Permalink to this heading">#</a></h4>
+<p>Set script transaction assigns the dApp script <a class="reference internal" href="../03_ride-language/04_script-types.html#dapp-script"><span class="std std-ref">dApp script</span></a> or <a class="reference internal" href="../03_ride-language/04_script-types.html#account-script"><span class="std std-ref">account script</span></a> to the sender’s account.</p>
+<p><strong>Fee</strong></p>
+<p>The <a class="reference internal" href="#minimum-fee"><span class="std std-ref">minimum fee</span></a> for a Set Script transaction is <span class="math notranslate nohighlight">\(0.001\)</span> <a class="reference internal" href="02_token%28asset%29.html#decentralcoin"><span class="std std-ref">DecentralCoins</span></a>.</p>
+<p>If the transaction sender is a <a class="reference internal" href="01_account.html#dapp-and-smart-account"><span class="std std-ref">dApp or smart account</span></a>, and the complexity of the account script or dApp script verifier function exceeds the <a class="reference internal" href="../03_ride-language/07_dapp-to-app-invocation.html#limitations"><span class="std std-ref">sender complexity threshold</span></a>, the minimum fee is increased by <span class="math notranslate nohighlight">\(0.004\)</span> DecentralCoins.</p>
+<p><strong>JSON Representation</strong></p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>{
+  &quot;senderPublicKey&quot;: &quot;7nLAwoiRA4fWF4VHd6gRsbwF2UFFmRADXHqRcgy3h27w&quot;,
+  &quot;sender&quot;: &quot;3N9yCRmNsLK2aPStjLBne3EUiPSKvVHYgKk&quot;,
+  &quot;feeAssetId&quot;: null,
+  &quot;chainId&quot;: 84,
+  &quot;proofs&quot;: [
+    &quot;2ihGFLUbvJHEpuGRqx5MXEXsEzwMuCmB8FgUTZgSPdANA4iab4M3nsNJ7a7hyiuqjrvwNCHoWn69hvUeziJiSAie&quot;
+  ],
+  &quot;fee&quot;: 1400000,
+  &quot;id&quot;: &quot;28hbeFhYBq6uir1bbjt2dxbpqxCM2B6GKq4c7zf7AbkX&quot;,
+  &quot;type&quot;: 13,
+  &quot;version&quot;: 1,
+  &quot;script&quot;: &quot;base64:AAIDAAAAAAAAAAYIARIAEgAAAAACAQAAAApyYW5kb21pemVyAAAAAQAAAANpbnYEAAAACGxhc3RQbGF5BAAAAAckbWF0Y2gwCQAEHAAAAAIFAAAABHRoaXMCAAAACGxhc3RQbGF5AwkAAAEAAAACBQAAAAckbWF0Y2gwAgAAAApCeXRlVmVjdG9yBAAAAAFzBQAAAAckbWF0Y2gwBQAAAAFzAwkAAAEAAAACBQAAAAckbWF0Y2gwAgAAAARVbml0BAAAAAFhBQAAAAckbWF0Y2gwAQAAAAxXYXZlc0xvdHRvVjIJAQAAAAV0aHJvdwAAAAAEAAAABHJhbmQJAADLAAAAAgkAAMsAAAACCQAAywAAAAIJAADLAAAAAgkAAMsAAAACBQAAAAhsYXN0UGxheQgFAAAAA2ludgAAAA10cmFuc2FjdGlvbklkCAUAAAADaW52AAAAD2NhbGxlclB1YmxpY0tleQgFAAAACWxhc3RCbG9jawAAABNnZW5lcmF0aW9uU2lnbmF0dXJlCQABmgAAAAEIBQAAAAlsYXN0QmxvY2sAAAAJdGltZXN0YW1wCQABmgAAAAEIBQAAAAlsYXN0QmxvY2sAAAAGaGVpZ2h0CQAB9wAAAAEFAAAABHJhbmQBAAAACnN0YXJ0TG90dG8AAAABAAAAA2ludgQAAAAJcGxheUxpbWl0CQAAaQAAAAIJAQAAAAx3YXZlc0JhbGFuY2UAAAABBQAAAAR0aGlzAAAAAAAAAABkBAAAAAdwYXltZW50CQEAAAAHZXh0cmFjdAAAAAEIBQAAAANpbnYAAAAHcGF5bWVudAMJAQAAAAEhAAAAAQkBAAAACWlzRGVmaW5lZAAAAAEIBQAAAANpbnYAAAAHcGF5bWVudAkAAAIAAAABAgAAAB9TaG91bGQgYmUgd2l0aCBQYXltZW50IGluIFdhdmVzAwkBAAAACWlzRGVmaW5lZAAAAAEIBQAAAAdwYXltZW50AAAAB2Fzc2V0SWQJAAACAAAAAQIAAAAaUGF5bWVudCBzaG91bGQgYmUgaW4gV2F2ZXMDCQAAZgAAAAIIBQAAAAdwYXltZW50AAAABmFtb3VudAUAAAAJcGxheUxpbWl0CQAAAgAAAAEJAAEsAAAAAgIAAAAcUGF5bWVudCBzaG91bGQgYmUgbGVzcyB0aGFuIAkAAaQAAAABBQAAAAlwbGF5TGltaXQEAAAACHJhbmRoYXNoCQEAAAAKcmFuZG9taXplcgAAAAEFAAAAA2ludgQAAAALd2luVHJhbnNmZXIJAQAAAAtUcmFuc2ZlclNldAAAAAEJAARMAAAAAgkBAAAADlNjcmlwdFRyYW5zZmVyAAAAAwgFAAAAA2ludgAAAAZjYWxsZXIJAABpAAAAAgkAAGgAAAACCAUAAAAHcGF5bWVudAAAAAZhbW91bnQAAAAAAAAAAL4AAAAAAAAAAGQFAAAABHVuaXQFAAAAA25pbAQAAAANd3JpdGVMYXN0UGxheQkBAAAACFdyaXRlU2V0AAAAAQkABEwAAAACCQEAAAAJRGF0YUVudHJ5AAAAAgIAAAAIbGFzdFBsYXkFAAAACHJhbmRoYXNoBQAAAANuaWwDCQAAZgAAAAIAAAAAAAAAAfQJAABqAAAAAgkABLEAAAABBQAAAAhyYW5kaGFzaAAAAAAAAAAD6AkBAAAADFNjcmlwdFJlc3VsdAAAAAIFAAAADXdyaXRlTGFzdFBsYXkFAAAAC3dpblRyYW5zZmVyCQEAAAAMU2NyaXB0UmVzdWx0AAAAAgUAAAANd3JpdGVMYXN0UGxheQkBAAAAC1RyYW5zZmVyU2V0AAAAAQUAAAADbmlsAAAAAgAAAANpbnYBAAAABWxvdHRvAAAAAAkBAAAACnN0YXJ0TG90dG8AAAABBQAAAANpbnYAAAADaW52AQAAAAdkZWZhdWx0AAAAAAkBAAAACnN0YXJ0TG90dG8AAAABBQAAAANpbnYAAAAA4XqnJg==&quot;,
+  &quot;timestamp&quot;: 1592408917668,
+  &quot;height&quot;: 1047736
+}
+</pre></div>
+</div>
+<table class="longtable table" id="id17">
+<caption><span class="caption-text">Set Script Transaction JSON Representation</span><a class="headerlink" href="#id17" title="Link zu dieser Tabelle">#</a></caption>
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>chainId</p></td>
+<td><p><a class="reference internal" href="08_mainnet-testnet-stagenet.html#chain-id"><span class="std std-ref">Chain ID</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>script</p></td>
+<td><p>Compiled script, base64 encoded. Account script up to <span class="math notranslate nohighlight">\(8192\)</span> bytes, dApp script up to <span class="math notranslate nohighlight">\(32,767\)</span> bytes. null – delete script.</p></td>
+</tr>
+</tbody>
+</table>
+<p>The fields that are common to all types of transactions are described in the <a class="reference internal" href="#transaction"><span class="std std-ref">transaction</span></a> article.</p>
+<p><strong>Binary Format</strong></p>
+<p>See the <a class="reference internal" href="10_binary-format.html#set-script-transaction-binary-format"><span class="std std-ref">set script transaction binary format</span></a>.</p>
+<p><strong>Ride Structure</strong></p>
+<p>The <a class="reference internal" href="../03_ride-language/05_structures.html#setscripttransaction"><span class="std std-ref">SetScriptTransaction</span></a> structure is used for transaction handling in smart contracts.</p>
+</section>
+<section id="invoke-script-transaction">
+<h4>Invoke Script Transaction<a class="headerlink" href="#invoke-script-transaction" title="Permalink to this heading">#</a></h4>
+<p>Invoke script transaction invokes the <a class="reference internal" href="../03_ride-language/03_functions.html#callable-functions"><span class="std std-ref">callable function</span></a> of the <a class="reference internal" href="01_account.html#dapp-and-smart-account"><span class="std std-ref">dApp</span></a>.</p>
+<p>In addition to the dApp address, callable function name, and arguments, the Invoke Script transaction can contain payments to dApp. The maximum number of payments is 10.</p>
+<p><strong>Fee</strong></p>
+<p>The sender can specify a transaction fee nominated in a sponsored asset instead of DecentralCoins, see the <a class="reference internal" href="#sponsored-fees"><span class="std std-ref">sponsored fee</span></a> article.</p>
+<p>The <a class="reference internal" href="#minimum-fee"><span class="std std-ref">minimum fee</span></a> in <a class="reference internal" href="02_token%28asset%29.html#decentralcoin"><span class="std std-ref">DecentralCoins</span></a> for an invoke script transaction is Fee <span class="math notranslate nohighlight">\(= 0.005 + S + 1 × I\)</span>.</p>
+<ul class="simple">
+<li><p>If the transaction sender is a dApp or smart account, and that the complexity of the account script or dApp script verifier function exceeds the sender complexity threshold, then <span class="math notranslate nohighlight">\(S = 0.004\)</span>, otherwise <span class="math notranslate nohighlight">\(S = 0\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(I\)</span> is the number of issued assets that are not <a class="reference internal" href="02_token%28asset%29.html#non-fungible-token"><span class="std std-ref">NFT</span></a>.</p></li>
+</ul>
+<p><strong>Total Complexity</strong></p>
+<p>A dApp callable function can invoke a callable function of another dApp, or another callable function of the same dApp, or even itself. All invoked functions are executed within a single Invoke Script transaction. <a class="reference internal" href="../03_ride-language/07_dapp-to-app-invocation.html#dapp-to-app-invocation"><span class="std std-ref">More about dApp-to-dApp invocation</span></a>.</p>
+<p>The total <a class="reference internal" href="../03_ride-language/07_dapp-to-app-invocation.html#script-complexity"><span class="std std-ref">complexity</span></a> is limited by <span class="math notranslate nohighlight">\(26,000\)</span> for all callable functions and asset scripts of involved smart assets in a single invoke script transaction. The sender’s account script complexity is not included in that limit.</p>
+<p><strong>JSON Representation</strong></p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>{
+  &quot;type&quot;: 16,
+  &quot;id&quot;: &quot;DN9Ny8mph4tLjn58e9CqhckPymH9zwPqBSZtcv2bBi3u&quot;,
+  &quot;sender&quot;: &quot;3Mw48B85LvkBUhhDDmUvLhF9koAzfsPekDb&quot;,
+  &quot;senderPublicKey&quot;: &quot;BvJEWY79uQEFetuyiZAF5U4yjPioMj9J6ZrF9uTNfe3E&quot;,
+  &quot;fee&quot;: 500000,
+  &quot;feeAssetId&quot;: null,
+  &quot;timestamp&quot;: 1601652119485,
+  &quot;proofs&quot;: [
+    &quot;2536V2349X3cuVEK1rSxQf3HneJwLimjCmCfoG1QyMLLq1CNp6dpPKUG3Lb4pu76XqLe3nWyo3HAEwGoALgBhxkF&quot;
+  ],
+  &quot;version&quot;: 2,
+  &quot;chainId&quot;: 84,
+  &quot;dApp&quot;: &quot;3N28o4ZDhPK77QFFKoKBnN3uNeoaNSNXzXm&quot;,
+  &quot;payment&quot;: [],
+  &quot;call&quot;: {
+    &quot;function&quot;: &quot;foo&quot;,
+    &quot;args&quot;: [
+      {
+        &quot;type&quot;: &quot;list&quot;,
+        &quot;value&quot;: [
+          {
+            &quot;type&quot;: &quot;string&quot;,
+            &quot;value&quot;: &quot;alpha&quot;
+          },
+          {
+            &quot;type&quot;: &quot;string&quot;,
+            &quot;value&quot;: &quot;beta&quot;
+          },
+          {
+            &quot;type&quot;: &quot;string&quot;,
+            &quot;value&quot;: &quot;gamma&quot;
+          }
+        ]
+      }
+    ]
+  },
+  &quot;height&quot;: 1203100,
+  &quot;applicationStatus&quot;: &quot;succeeded&quot;,
+  &quot;stateChanges&quot;: {
+    &quot;data&quot;: [
+      {
+        &quot;key&quot;: &quot;3Mw48B85LvkBUhhDDmUvLhF9koAzfsPekDb&quot;,
+        &quot;type&quot;: &quot;string&quot;,
+        &quot;value&quot;: &quot;alphabetagamma&quot;
+      }
+    ],
+    &quot;transfers&quot;: [],
+    &quot;issues&quot;: [],
+    &quot;reissues&quot;: [],
+    &quot;burns&quot;: [],
+    &quot;sponsorFees&quot;: [],
+    &quot;leases&quot;: [],
+    &quot;leaseCancels&quot;: [],
+    &quot;invokes&quot;: []
+  }
+}
+</pre></div>
+</div>
+<table class="longtable table" id="id18">
+<caption><span class="caption-text">Invoke Script Transaction JSON Representation</span><a class="headerlink" href="#id18" title="Link zu dieser Tabelle">#</a></caption>
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>call.function</p></td>
+<td><p>Callable function name. Up to <span class="math notranslate nohighlight">\(255\)</span> bytes (<span class="math notranslate nohighlight">\(1\)</span> character can take up to <span class="math notranslate nohighlight">\(4\)</span> bytes).</p></td>
+</tr>
+<tr class="row-odd"><td><p>call.args.type</p></td>
+<td><p>Argument type: 1) binary. 2) boolean. 3) integer. 4) string. 5) list.</p></td>
+</tr>
+<tr class="row-even"><td><p>call.args.value</p></td>
+<td><p>Argument value. 1) integer: from <span class="math notranslate nohighlight">\(-9,223,372,036,854,775,808\)</span> to <span class="math notranslate nohighlight">\(9,223,372,036,854,755,807\)</span> inclusive. 2) string or binary: up to <span class="math notranslate nohighlight">\(32,767\)</span> bytes. Binary value should be base64 encoded. 3) list: up to <span class="math notranslate nohighlight">\(1000\)</span> elements.</p></td>
+</tr>
+<tr class="row-odd"><td><p>dApp</p></td>
+<td><p>dApp address base58 encoded or dApp alias with alias:&lt;chain_id&gt;: prefix, for example alias:T:merry (See <a class="reference internal" href="08_mainnet-testnet-stagenet.html#chain-id"><span class="std std-ref">Chain ID</span></a>).</p></td>
+</tr>
+<tr class="row-even"><td><p>payment.amount</p></td>
+<td><p>Amount of token in payment: an integer value specified in atomic units.</p></td>
+</tr>
+<tr class="row-odd"><td><p>payment.assetId</p></td>
+<td><p>ID of token in payment, base58 encoded. null means that the payment is in <a class="reference internal" href="02_token%28asset%29.html#decentralcoin"><span class="std std-ref">DecentralCoin</span></a>.</p></td>
+</tr>
+<tr class="row-even"><td><p>stateChanges</p></td>
+<td><p>Script actions performed by the callable function and dApp-to-dApp invocation results.</p></td>
+</tr>
+</tbody>
+</table>
+<p>The stateChanges structure does not need to be filled when sending a transaction, and it is not stored on the blockchain. The node returns this structure when providing transaction data via the REST API.</p>
+<p>The fields that are common to all types of transactions are described in the <a class="reference internal" href="#transaction"><span class="std std-ref">transaction</span></a> article.</p>
+<p><strong>Binary Format</strong></p>
+<p>See the <a class="reference internal" href="10_binary-format.html#invoke-script-transaction-binary-format"><span class="std std-ref">invoke script transaction binary format</span></a>.</p>
+<p><strong>Ride Structure</strong></p>
+<p>The <a class="reference internal" href="../03_ride-language/05_structures.html#invokescripttransaction"><span class="std std-ref">InvokeScriptTransaction</span></a> structure is used for transaction handling in smart contracts.</p>
+</section>
+</section>
+<section id="network">
+<h3>Network<a class="headerlink" href="#network" title="Permalink to this heading">#</a></h3>
+<table class="longtable table" id="id19">
+<caption><span class="caption-text">Network</span><a class="headerlink" href="#id19" title="Link zu dieser Tabelle">#</a></caption>
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 40.0%" />
+<col style="width: 40.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Transaction type ID</p></th>
+<th class="head"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(8\)</span></p></td>
+<td><p><a class="reference internal" href="#lease-transaction"><span class="std std-ref">Lease transaction</span></a></p></td>
+<td><p>Leases <a class="reference internal" href="02_token%28asset%29.html#decentralcoin"><span class="std std-ref">DecentralCoins</span></a>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(9\)</span></p></td>
+<td><p><a class="reference internal" href="#lease-cancel-transaction"><span class="std std-ref">Lease cancel transaction</span></a></p></td>
+<td><p>Cancels the leasing.</p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(14\)</span></p></td>
+<td><p><a class="reference internal" href="#sponsor-fee-transaction"><span class="std std-ref">Sponsor fee transaction</span></a></p></td>
+<td><p>Configures sponsorship.</p></td>
+</tr>
+</tbody>
+</table>
+<section id="lease-transaction">
+<h4>Lease Transaction<a class="headerlink" href="#lease-transaction" title="Permalink to this heading">#</a></h4>
+<p>Lease transaction leases <a class="reference internal" href="02_token%28asset%29.html#decentralcoin"><span class="std std-ref">DecentralCoins</span></a> to another account. After <span class="math notranslate nohighlight">\(1000\)</span> block the leased tokens are accounted for by the recipient’s generating balance. The larger the generating balance of the node is, the higher the chances for that node to be selected to generate the next block. Commonly node owners share the reward for generated blocks with lessors. <a class="reference internal" href="05_node.html#leased-proof-of-stake"><span class="std std-ref">More about leasing</span></a>.</p>
+<p>Leased tokens remain locked on the sender’s account with the full control of their owner. The sender can cancel the lease at any time by the <a class="reference internal" href="#lease-cancel-transaction"><span class="std std-ref">lease cancel transaction</span></a>.</p>
+<p><strong>Fee</strong></p>
+<p>The <a class="reference internal" href="#minimum-fee"><span class="std std-ref">minimum fee</span></a> for a lease transaction is <span class="math notranslate nohighlight">\(0.001\)</span> <a class="reference internal" href="02_token%28asset%29.html#decentralcoin"><span class="std std-ref">DecentralCoins</span></a>.</p>
+<p>If the transaction sender is a <a class="reference internal" href="01_account.html#dapp-and-smart-account"><span class="std std-ref">dApp or smart account</span></a>, and the complexity of the account script or dApp script verifier function exceeds the <a class="reference internal" href="../03_ride-language/07_dapp-to-app-invocation.html#limitations"><span class="std std-ref">sender complexity threshold</span></a>, the minimum fee is increased by <span class="math notranslate nohighlight">\(0.004\)</span> DecentralCoins.</p>
+<p><strong>JSON Representation</strong></p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>{
+  &quot;senderPublicKey&quot;: &quot;b8AB1PQWE7kH55cS48uDTV5fezrAyDTCf7iePyXNzNm&quot;,
+  &quot;amount&quot;: 500000000,
+  &quot;signature&quot;: &quot;3n34MYd3Acx1JpTtvYffdVYCVySuRgZvSbHMA3AxqQwr4xvfZedv9UbqSB9k84PGY5C8RSwGRjDnMGcYwQu2x7B5&quot;,
+  &quot;fee&quot;: 100000,
+  &quot;type&quot;: 8,
+  &quot;version&quot;: 1,
+  &quot;sender&quot;: &quot;3P6iv9tYo3ELne7tc9HR8BzhK3LE2aDDu1A&quot;,
+  &quot;feeAssetId&quot;: null,
+  &quot;proofs&quot;: [
+    &quot;3n34MYd3Acx1JpTtvYffdVYCVySuRgZvSbHMA3AxqQwr4xvfZedv9UbqSB9k84PGY5C8RSwGRjDnMGcYwQu2x7B5&quot;
+  ],
+  &quot;recipient&quot;: &quot;3P2HNUd5VUPLMQkJmctTPEeeHumiPN2GkTb&quot;,
+  &quot;id&quot;: &quot;7k4EPgA3VxoE56TMJLjvF9FMpywyfeS5qRJSEEN9XGuU&quot;,
+  &quot;timestamp&quot;: 1528813353617,
+  &quot;status&quot;: &quot;canceled&quot;,
+  &quot;height&quot;: 1038624
+}
+</pre></div>
+</div>
+<table class="longtable table" id="id20">
+<caption><span class="caption-text">Lease Transaction JSON Representation</span><a class="headerlink" href="#id20" title="Link zu dieser Tabelle">#</a></caption>
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>amount</p></td>
+<td><p>Amount of <a class="reference internal" href="02_token%28asset%29.html#decentralcoin"><span class="std std-ref">DecentralCoins</span></a> to lease.</p></td>
+</tr>
+<tr class="row-odd"><td><p>recipient</p></td>
+<td><p>Recipient address base58 encoded or recipient alias.</p></td>
+</tr>
+<tr class="row-even"><td><p>status</p></td>
+<td><p>Lease status: 1) active: lease is active. 2) canceled: lease is cancelled, see <a class="reference internal" href="#lease-cancel-transaction"><span class="std std-ref">lease cancel transaction</span></a>.</p></td>
+</tr>
+</tbody>
+</table>
+<p>The status field does not need to be filled when sending a transaction, and it is not stored on the blockchain. The node calculates these fields when providing transaction data via the REST API.</p>
+<p>The fields that are common to all types of transactions are described in the <a class="reference internal" href="#transaction"><span class="std std-ref">transaction</span></a> article.</p>
+<p><strong>Binary Format</strong></p>
+<p>See the <a class="reference internal" href="10_binary-format.html#lease-transaction-binary-format"><span class="std std-ref">lease transaction binary format</span></a>.</p>
+<p><strong>Ride Structure</strong></p>
+<p>The <a class="reference internal" href="../03_ride-language/05_structures.html#leasetransaction"><span class="std std-ref">LeaseTransaction</span></a> structure is used for transaction handling in smart contracts.</p>
+</section>
+<section id="lease-cancel-transaction">
+<h4>Lease Cancel Transaction<a class="headerlink" href="#lease-cancel-transaction" title="Permalink to this heading">#</a></h4>
+<p>Lease cancel transaction cancels the leasing. See the <a class="reference internal" href="#lease-transaction"><span class="std std-ref">lease transaction</span></a> article.</p>
+<p><strong>Fee</strong></p>
+<p>The <a class="reference internal" href="#minimum-fee"><span class="std std-ref">minimum fee</span></a> for a lease cancel transaction is <span class="math notranslate nohighlight">\(0.001\)</span> <a class="reference internal" href="02_token%28asset%29.html#decentralcoin"><span class="std std-ref">DecentralCoins</span></a>.</p>
+<p>If the transaction sender is a <a class="reference internal" href="01_account.html#dapp-and-smart-account"><span class="std std-ref">dApp or smart account</span></a>, and the complexity of the account script or dApp script verifier function exceeds the <a class="reference internal" href="../03_ride-language/07_dapp-to-app-invocation.html#limitations"><span class="std std-ref">sender complexity threshold</span></a>, the minimum fee is increased by <span class="math notranslate nohighlight">\(0.004\)</span> DecentralCoins.</p>
+<p><strong>JSON Representation</strong></p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>{
+  &quot;type&quot;: 9,
+  &quot;id&quot;: &quot;6rzxZ3rEsCxgmkcn6DDPB9f9Phi28D4JWZsCtwcViD8C&quot;,
+  &quot;sender&quot;: &quot;3Mx7kNAFcGrAeCebnt3yXceiRSwru6N3XZd&quot;,
+  &quot;senderPublicKey&quot;: &quot;81fxJw7HM2VX1ucq1vNKiedM1XBGX7H2TDUtxN6ib68Z&quot;,
+  &quot;fee&quot;: 100000,
+  &quot;feeAssetId&quot;: null,
+  &quot;timestamp&quot;: 1622579112096,
+  &quot;proofs&quot;: [
+    &quot;3eFnprsRSeczc371bQ7AUsbh6qjiUFze6y5BZGKbxyHG27K1cU6jVUgRdthYz9uWVw1FgVpLjMciGCb64rJnMp3k&quot;
+  ],
+  &quot;version&quot;: 2,
+  &quot;leaseId&quot;: &quot;BhHPPHBZpfp8FBy8DE7heTpWGJySYg2uU2r4YM6qaisw&quot;,
+  &quot;chainId&quot;: 84,
+  &quot;height&quot;: 1551763,
+  &quot;applicationStatus&quot;: &quot;succeeded&quot;,
+  &quot;lease&quot;: {
+    &quot;id&quot;: &quot;BhHPPHBZpfp8FBy8DE7heTpWGJySYg2uU2r4YM6qaisw&quot;,
+    &quot;originTransactionId&quot;: &quot;BhHPPHBZpfp8FBy8DE7heTpWGJySYg2uU2r4YM6qaisw&quot;,
+    &quot;sender&quot;: &quot;3Mx7kNAFcGrAeCebnt3yXceiRSwru6N3XZd&quot;,
+    &quot;recipient&quot;: &quot;3Mz9N7YPfZPWGd4yYaX6H53Gcgrq6ifYiH7&quot;,
+    &quot;amount&quot;: 124935000,
+    &quot;height&quot;: 1551763,
+    &quot;status&quot;: &quot;canceled&quot;
+  }
+}
+</pre></div>
+</div>
+<table class="longtable table" id="id21">
+<caption><span class="caption-text">Lease Cancel Transaction JSON Representation</span><a class="headerlink" href="#id21" title="Link zu dieser Tabelle">#</a></caption>
+<colgroup>
+<col style="width: 25.0%" />
+<col style="width: 75.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>leaseId</p></td>
+<td><p>Lease transaction ID.</p></td>
+</tr>
+<tr class="row-odd"><td><p>chainId</p></td>
+<td><p><a class="reference internal" href="08_mainnet-testnet-stagenet.html#chain-id"><span class="std std-ref">Chain ID</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>lease</p></td>
+<td><p>Parameters of canceled lease.</p></td>
+</tr>
+</tbody>
+</table>
+<p>The lease structure does not need to be filled when sending a transaction, and it is not stored on the blockchain. The node returns this structure when providing transaction data via the REST API.</p>
+<p>The fields that are common to all types of transactions are described in the <a class="reference internal" href="#transaction"><span class="std std-ref">transaction</span></a> article.</p>
+<p><strong>Binary Format</strong></p>
+<p>See the <a class="reference internal" href="10_binary-format.html#lease-cancel-transaction-binary-format"><span class="std std-ref">lease cancel transaction binary format</span></a>.</p>
+<p><strong>Ride Structure</strong></p>
+<p>The <a class="reference internal" href="../03_ride-language/05_structures.html#leasecanceltransaction"><span class="std std-ref">LeaseCancelTransaction</span></a> structure is used for transaction handling in smart contracts.</p>
+</section>
+<section id="sponsor-fee-transaction">
+<h4>Sponsor Fee Transaction<a class="headerlink" href="#sponsor-fee-transaction" title="Permalink to this heading">#</a></h4>
+<p>Sponsor fee transaction enables or disables sponsorship. Sponsorship allows any user to pay a fee in the sponsored asset (instead of DecentralCoins) for invoke script transactions and transfer transactions. <a class="reference internal" href="#sponsored-fees"><span class="std std-ref">More about sponsorship</span></a>.</p>
+<p>Only the asset issuer can set up sponsorship. Smart asset cannot be a sponsored asset.</p>
+<p><strong>Fee</strong></p>
+<p>The <a class="reference internal" href="#minimum-fee"><span class="std std-ref">minimum fee</span></a> for the sponsor fee transaction is <span class="math notranslate nohighlight">\(0.001\)</span> <a class="reference internal" href="02_token%28asset%29.html#decentralcoin"><span class="std std-ref">DecentralCoins</span></a>.</p>
+<p>If the transaction sender is a <a class="reference internal" href="01_account.html#dapp-and-smart-account"><span class="std std-ref">dApp or smart account</span></a>, and the complexity of the account script or dApp script verifier function exceeds the <a class="reference internal" href="../03_ride-language/07_dapp-to-app-invocation.html#limitations"><span class="std std-ref">sender complexity threshold</span></a>, the minimum fee is increased by <span class="math notranslate nohighlight">\(0.004\)</span> DecentralCoins.</p>
+<p><strong>JSON Representation</strong></p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>{
+  &quot;senderPublicKey&quot;: &quot;5HNegWomhj1nzyggf1oAvujNJGCqbzFjM72BLYtrBecw&quot;,
+  &quot;sender&quot;: &quot;3N3ErpmUdJWy6DW4ruAr14YDis9UaiTwHd6&quot;,
+  &quot;feeAssetId&quot;: null,
+  &quot;proofs&quot;: [
+    &quot;5jF8WpF7jxf5SBMHMbc2WcfqX3R6fRvssBGSNfzAM8p3uSmno9XzYy5b565ez5fG9vqUGrENFvcrbhk36bzCaqkP&quot;
+  ],
+  &quot;assetId&quot;: &quot;p1vuxnGyfH9VFiuyKmsh25rn6MedjGbQu7d6Zt1sY4U&quot;,
+  &quot;fee&quot;: 100000000,
+  &quot;minSponsoredAssetFee&quot;: 100,
+  &quot;id&quot;: &quot;5gHUMzmBfn4KP3tELzHtw3EYR947rzWUp5PuyF7hUW23&quot;,
+  &quot;type&quot;: 14,
+  &quot;version&quot;: 1,
+  &quot;timestamp&quot;: 1585725309659,
+  &quot;height&quot;: 934757
+}
+</pre></div>
+</div>
+<table class="longtable table" id="id22">
+<caption><span class="caption-text">Sponsor Fee Transaction JSON Representation</span><a class="headerlink" href="#id22" title="Link zu dieser Tabelle">#</a></caption>
+<colgroup>
+<col style="width: 25.0%" />
+<col style="width: 75.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>minSponsoredAssetFee</p></td>
+<td><p>Amount of asset that is equivalent to <span class="math notranslate nohighlight">\(0.001\)</span> <a class="reference internal" href="02_token%28asset%29.html#decentralcoin"><span class="std std-ref">DecentralCoins</span></a> (<span class="math notranslate nohighlight">\(100,000\)</span> Decentralites): an integer value specified in the minimum fraction (“cents”) of asset. null – disable sponsorship.</p></td>
+</tr>
+<tr class="row-odd"><td><p>assetId</p></td>
+<td><p>Token ID base58 encoded.</p></td>
+</tr>
+</tbody>
+</table>
+<p>The fields that are common to all types of transactions are described in the <a class="reference internal" href="#transaction"><span class="std std-ref">transaction</span></a> article.</p>
+<p><strong>Binary Format</strong></p>
+<p>See the <a class="reference internal" href="10_binary-format.html#sponsor-fee-transaction-binary-format"><span class="std std-ref">sponsor fee transaction binary format</span></a>.</p>
+<p><strong>Ride Structure</strong></p>
+<p>The <a class="reference internal" href="../03_ride-language/05_structures.html#sponsorfeetransaction"><span class="std std-ref">SponsorFeeTransaction</span></a> structure is used for transaction handling in smart contracts.</p>
+</section>
+</section>
+<section id="genesis">
+<h3>Genesis<a class="headerlink" href="#genesis" title="Permalink to this heading">#</a></h3>
+<table class="longtable table" id="id23">
+<caption><span class="caption-text">Genesis</span><a class="headerlink" href="#id23" title="Link zu dieser Tabelle">#</a></caption>
+<colgroup>
+<col style="width: 16.7%" />
+<col style="width: 33.3%" />
+<col style="width: 50.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Transaction type ID</p></th>
+<th class="head"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(1\)</span></p></td>
+<td><p><a class="reference internal" href="#genesis-transaction"><span class="std std-ref">Genesis transaction</span></a></p></td>
+<td><p>Accrues <a class="reference internal" href="02_token%28asset%29.html#decentralcoin"><span class="std std-ref">DecentralCoins</span></a> to an account upon the initial distribution during the creation of the blockchain.</p></td>
+</tr>
+</tbody>
+</table>
+<section id="genesis-transaction">
+<h4>Genesis Transaction<a class="headerlink" href="#genesis-transaction" title="Permalink to this heading">#</a></h4>
+<p>Genesis transaction accrues <a class="reference internal" href="02_token%28asset%29.html#decentralcoin"><span class="std std-ref">DecentralCoins</span></a> to account upon the initial distribution of DecentralCoins during the creation of the blockchain. The first block of the blockchain, the genesis block, consists of genesis transactions.</p>
+<p><strong>Binary Format</strong></p>
+<p>See the <a class="reference internal" href="10_binary-format.html#genesis-transaction-binary-format"><span class="std std-ref">genesis transaction binary format</span></a>.</p>
+</section>
+</section>
+</section>
+<section id="transaction-validation">
+<h2>Transaction Validation<a class="headerlink" href="#transaction-validation" title="Permalink to this heading">#</a></h2>
+<p>A DecentralChain node validates each transaction in the following cases:</p>
+<ul class="simple">
+<li><p>The node receives the transaction via the broadcast endpoint of <span class="xref std std-ref">Node extensions</span> or <span class="xref std std-ref">gRPC server</span>.</p></li>
+<li><p>The node receives the transaction from another node of the blockchain network using the binary protocol.</p></li>
+<li><p>The block generator adds the transaction to a block.</p></li>
+<li><p>The node receives a block (or microblock) from another node in the network.</p></li>
+</ul>
+<p>Full transaction validation includes the following checks:</p>
+<ol class="arabic simple">
+<li><p>Transaction fields check including:</p></li>
+</ol>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Timestamp check: the transaction timestamp should be not more than <span class="math notranslate nohighlight">\(2\)</span> hours ago or <span class="math notranslate nohighlight">\(1.5\)</span> hours ahead from the current block timestamp.</p></li>
+<li><p>Transaction version check: all the features required to support this version should be activated.</p></li>
+<li><p>Transaction type check: all the features required to support this type should be activated.</p></li>
+<li><p>Check of token amounts: the values must be non-negative.</p></li>
+<li><p>Check different fields depending on the transaction type.</p></li>
+</ol>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li><p>Sender’s balance check.</p></li>
+</ol>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>The sender should have enough funds to pay the fee. If a sponsored asset is used for the fee, the sponsor’s balance is also checked.</p></li>
+<li><p>Depending on the type of transaction, the sender should have enough assets for transfer or for payments attached to the <a class="reference internal" href="#invoke-script-transaction"><span class="std std-ref">invoke script transactions</span></a>. Order senders in the <a class="reference internal" href="#exchange-transaction"><span class="std std-ref">exchange transaction</span></a> should have enough funds to exchange.</p></li>
+</ol>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li><p>The sender’s signature verification</p></li>
+</ol>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>For ordinary accounts (without script).</p></li>
+<li><p>For account script execution if the sender is a <a class="reference internal" href="01_account.html#dapp-and-smart-account"><span class="std std-ref">smart account</span></a>.</p></li>
+<li><p>For verifier function execution if the sender is <a class="reference internal" href="01_account.html#dapp-and-smart-account"><span class="std std-ref">dApp</span></a>.</p></li>
+<li><p>A similar check is performed for orders in an <a class="reference internal" href="#exchange-transaction"><span class="std std-ref">exchange transaction</span></a>.</p></li>
+</ol>
+</div></blockquote>
+<ol class="arabic simple" start="4">
+<li><p>For the invoke script transaction:</p></li>
+</ol>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Calculation of the result of dApp callable function.</p></li>
+<li><p>dApp balance check: dApp account should have enough funds for <a class="reference internal" href="../03_ride-language/05_structures.html#script-actions"><span class="std std-ref">dApp script actions</span></a>.</p></li>
+<li><p>Check that the transaction fee is not less than the <a class="reference internal" href="#minimum-fee"><span class="std std-ref">minimum fee</span></a> based on script actions.</p></li>
+</ol>
+</div></blockquote>
+<ol class="arabic simple" start="5">
+<li><p>Execution of asset scripts if the transaction uses <a class="reference internal" href="02_token%28asset%29.html#smart-asset"><span class="std std-ref">smart assets</span></a>, including scripts of assets used in dApp script actions.</p></li>
+</ol>
+<p>When receiving the transaction via the broadcast endpoint, or adding a transaction to a block, or receiving a block over the network, the node performs full validation of the transaction. When receiving an invoke script transaction over the network, the node performs calculations of the callable function (check 4.1) up to the <a class="reference internal" href="../03_ride-language/07_dapp-to-app-invocation.html#limitations"><span class="std std-ref">threshold for saving unsuccessful transactions</span></a>.</p>
+<section id="validation-result">
+<h3>Validation Result<a class="headerlink" href="#validation-result" title="Permalink to this heading">#</a></h3>
+<p>When the transaction is received via broadcast or over the network:</p>
+<ul class="simple">
+<li><p>If one of the checks fails, the transaction is discarded.</p></li>
+<li><p>If all the checks passed, the transaction is added to the UTX pool, which is the list of transactions waiting to be added to the block.</p></li>
+</ul>
+<p>When adding the transaction to the block, the result of validation depends on the transaction type.</p>
+<p>For the invoke script transaction:</p>
+<ul class="simple">
+<li><p>If one of the checks 1–3 failed, the transaction is discarded.</p></li>
+<li><p>If checks 1–3 passed, and the calculation of the result of the dApp callable function (check 4.1) failed with an error or <a class="reference internal" href="../03_ride-language/01_syntax-basics.html#exceptions"><span class="std std-ref">throwing an exception</span></a> before the <a class="reference internal" href="../03_ride-language/07_dapp-to-app-invocation.html#script-complexity"><span class="std std-ref">complexity</span></a> of performed calculations exceeded the <a class="reference internal" href="../03_ride-language/07_dapp-to-app-invocation.html#limitations"><span class="std std-ref">threshold for saving failed transactions</span></a>, the transaction is also discarded.</p></li>
+<li><p>If checks 1–3 passed but checks 4–5 failed and besides the result of the callable function is calculated successfully or the complexity exceeded the threshold, the transaction is saved on the blockchain but marked as failed: „applicationStatus“: „script_execution_failed“. The sender is charged the transaction fee. The transaction doesn’t entail any other changes to the state of the blockchain.</p></li>
+<li><p>If all checks passed, the transaction is saved on the blockchain as successful: „applicationStatus“: „succeeded“ and the sender is charged the fee.</p></li>
+</ul>
+<p>For the exchange transaction:</p>
+<ul class="simple">
+<li><p>If one of the checks 1–3 failed, the transaction is discarded.</p></li>
+<li><p>If checks 1–3 passed but check 5 failed, the transaction is saved on the blockchain but marked as failed: „applicationStatus“: „script_execution_failed“. The sender of the transaction (matcher) is charged the transaction fee. The transaction doesn’t entail any other changes in balances, in particular, the order senders don’t pay the matcher fee.</p></li>
+<li><p>If all checks passed, the transaction is saved on the blockchain as successful: „applicationStatus“: „succeeded“. The matcher is charged the transaction fee as well as the order senders are charged the matcher fee.</p></li>
+</ul>
+<p>For the other transactions:</p>
+<ul class="simple">
+<li><p>If one of the checks fails, the transaction is discarded.</p></li>
+<li><p>If all checks passed, the transaction is saved on the blockchain as successful and the sender is charged the fee.</p></li>
+</ul>
+</section>
+</section>
+</section>
+
+<div class="section">
+   
+</div>
+
+                </article>
+              
+              
+              
+                <footer class="bd-footer-article">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="02_token%28asset%29.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">zurück</p>
+        <p class="prev-next-title">Token (Asset)</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="04_block.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">weiter</p>
+        <p class="prev-next-title">Block</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#transaction-issue">Transaction Issue</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-sign-and-send-transactions">How to Sign and Send Transactions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transaction-sender-and-signature">Transaction Sender and Signature</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#after-transaction-is-sent">After Transaction is Sent</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#transaction-proofs">Transaction Proofs</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#verification-by-script">Verification by Script</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#transaction-fees">Transaction Fees</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#regular-fees">Regular Fees</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#minimum-fee">Minimum Fee</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#fee-for-failed-transactions">Fee for Failed Transactions</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#fee-in-sponsored-asset">Fee in Sponsored Asset</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sponsored-fees">Sponsored Fees</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#sponsored-asset">Sponsored Asset</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-enable-sponsorship">How to Enable Sponsorship</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-disable-sponsorship">How to Disable Sponsorship</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#restrictions">Restrictions</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#how-it-works">How It Works</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#transaction-representations">Transaction Representations</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#json-representation">JSON Representation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#binary-format">Binary Format</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#transaction-types">Transaction Types</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tokenization">Tokenization</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#issue-transaction">Issue Transaction</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#reissue-transaction">Reissue Transaction</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#burn-transaction">Burn Transaction</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#set-asset-script-transaction">Set Asset Script Transaction</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#update-asset-info-transaction">Update Asset Info Transaction</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#usage">Usage</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#transfer-transaction">Transfer Transaction</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#exchange-transaction">Exchange Transaction</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#create-alias-transaction">Create Alias Transaction</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#mass-transfer-transaction">Mass Transfer Transaction</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#data-transaction">Data Transaction</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#set-script-transaction">Set Script Transaction</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#invoke-script-transaction">Invoke Script Transaction</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#network">Network</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#lease-transaction">Lease Transaction</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#lease-cancel-transaction">Lease Cancel Transaction</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#sponsor-fee-transaction">Sponsor Fee Transaction</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#genesis">Genesis</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#genesis-transaction">Genesis Transaction</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#transaction-validation">Transaction Validation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#validation-result">Validation Result</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+  
+  <div class="tocsection editthispage">
+    <a href="https://github.com/Decentral-America/docs/edit/master/docs//02_decentralchain/03_transaction.rst">
+      <i class="fa-solid fa-pencil"></i>
+      
+      
+        
+          Edit on GitHub
+        
+      
+    </a>
+  </div>
+</div>
+
+  <div class="sidebar-secondary-item">
+  <div class="tocsection sourcelink">
+    <a href="../_sources/02_decentralchain/03_transaction.rst">
+      <i class="fa-solid fa-file-lines"></i> Quellcode anzeigen
+    </a>
+  </div>
+</div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            <div class="bd-footer-content__inner"></div>
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+  <p class="copyright">
+    
+      © Copyright 2023, Blockchain Costa Rica.
+      <br/>
+    
+  </p>
+</div>
+      
+    </div>
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item"><p class="theme-version">
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.13.0.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

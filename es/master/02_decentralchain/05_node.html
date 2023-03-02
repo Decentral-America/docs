@@ -1,0 +1,873 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="es" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>Nodo &#8212; documentación de DecentralChain - </title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/jupyter-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/thebelab.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/plot_directive.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d" />
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/thebelab-helper.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script src="../_static/design-tabs.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@jupyter-widgets/html-manager@^1.0.1/dist/embed-amd.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '02_decentralchain/05_node';</script>
+    <link rel="shortcut icon" href="../_static/icon.svg"/>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="Orden" href="06_order.html" />
+    <link rel="prev" title="Bloque" href="04_block.html" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="es"/>  
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+<div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+    <span class="fa-solid fa-bars"></span>
+  </label>
+  
+  <div class="navbar-header-items__start">
+    
+      <div class="navbar-item">
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="DecentralChain"/>
+    <script>document.write(`<img src="../_static/logo-dark.png" class="logo__image only-dark" alt="DecentralChain"/>`);</script>
+  
+  
+</a></div>
+    
+  </div>
+  
+  
+  <div class=" navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item"><nav class="navbar-nav">
+  <p class="sidebar-header-items__title"
+     role="heading"
+     aria-level="1"
+     aria-label="Navegación del sitio">
+    Navegación del sitio
+  </p>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../01_introduction.html">
+                        Introducción
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="index.html">
+                        DecentralChain
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../03_ride-language/index.html">
+                        Ride Language
+                      </a>
+                    </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="http://decentralchain.io/">
+                    Website
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="http://decentral.exchange/">
+                    Wallet & Exchange
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://decentralscan.com/">
+                    Explorer
+                  </a>
+                </li>
+                
+                </div>
+            </div>
+            
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+        </div>
+      
+      
+        <div class="navbar-item">
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="claro/oscuro" aria-label="claro/oscuro" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/Decentral-America/docs" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-github"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://twitter.com/decentralchain" title="Twitter" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-twitter"></i></span>
+            <label class="sr-only">Twitter</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.linkedin.com/company/decentralchain/" title="LinkedIn" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-linkedin"></i></span>
+            <label class="sr-only">LinkedIn</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.youtube.com/@decentralchain" title="Youtube" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-youtube"></i></span>
+            <label class="sr-only">Youtube</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://discord.gg/9UUbNBPQ3D" title="Discord" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-discord"></i></span>
+            <label class="sr-only">Discord</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.instagram.com/decentralchain/" title="Discord" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-instagram"></i></span>
+            <label class="sr-only">Discord</label></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+    </div>
+  
+
+  
+    <label class="sidebar-toggle secondary-toggle" for="__secondary">
+      <span class="fa-solid fa-outdent"></span>
+    </label>
+  
+</div>
+
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          <div class="navbar-item"><nav class="navbar-nav">
+  <p class="sidebar-header-items__title"
+     role="heading"
+     aria-level="1"
+     aria-label="Navegación del sitio">
+    Navegación del sitio
+  </p>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../01_introduction.html">
+                        Introducción
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="index.html">
+                        DecentralChain
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../03_ride-language/index.html">
+                        Ride Language
+                      </a>
+                    </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="http://decentralchain.io/">
+                    Website
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="http://decentral.exchange/">
+                    Wallet & Exchange
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://decentralscan.com/">
+                    Explorer
+                  </a>
+                </li>
+                
+                </div>
+            </div>
+            
+  </ul>
+</nav></div>
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="claro/oscuro" aria-label="claro/oscuro" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/Decentral-America/docs" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-github"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://twitter.com/decentralchain" title="Twitter" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-twitter"></i></span>
+            <label class="sr-only">Twitter</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.linkedin.com/company/decentralchain/" title="LinkedIn" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-linkedin"></i></span>
+            <label class="sr-only">LinkedIn</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.youtube.com/@decentralchain" title="Youtube" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-youtube"></i></span>
+            <label class="sr-only">Youtube</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://discord.gg/9UUbNBPQ3D" title="Discord" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-discord"></i></span>
+            <label class="sr-only">Discord</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.instagram.com/decentralchain/" title="Discord" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-instagram"></i></span>
+            <label class="sr-only">Discord</label></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item"><nav class="bd-docs-nav bd-links"
+     aria-label="Navegación del sección">
+  <p class="bd-links__title" role="heading" aria-level="1">Navegación del sección</p>
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">DecentralChain</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="01_account.html">Cuenta</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_token%28asset%29.html">Token (Activo)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03_transaction.html">Transacción</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04_block.html">Bloque</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Nodo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06_order.html">Orden</a></li>
+<li class="toctree-l1"><a class="reference internal" href="07_oracle.html">Oráculo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="08_mainnet-testnet-stagenet.html">Redes Principal, Prueba, Escenario</a></li>
+<li class="toctree-l1"><a class="reference internal" href="09_protocol.html">Protocolo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="10_binary-format.html">Formato Binario</a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+
+
+<nav aria-label="Migas de pan">
+  <ul class="bd-breadcrumbs" role="navigation" aria-label="Miga de pan">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../index.html" class="nav-link" aria-label="Inicio">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="index.html" class="nav-link">DecentralChain</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page">Nodo</li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                   <section id="node">
+<h1>Nodo<a class="headerlink" href="#node" title="Enlace permanente a este encabezado">#</a></h1>
+<p>Un nodo es un host conectado a la red blockchain. Las funciones de nodo son:</p>
+<ul class="simple">
+<li><p><span class="xref std std-ref">Almacenamiento de bloque</span>.</p></li>
+<li><p><a class="reference internal" href="03_transaction.html#transaction-validation"><span class="std std-ref">Validación de transacciones</span></a>.</p></li>
+<li><p>Envio de <a class="reference internal" href="03_transaction.html#transaction"><span class="std std-ref">transacciones</span></a>.</p></li>
+</ul>
+<section id="generating-node">
+<h2>Nodo Generador<a class="headerlink" href="#generating-node" title="Enlace permanente a este encabezado">#</a></h2>
+<p>El nodo generador es un nodo que genera bloques. Cada nodo generador es un <a class="reference internal" href="#validating-node"><span class="std std-ref">nodo validador</span></a>. La cuenta generadora es una <a class="reference internal" href="01_account.html#account"><span class="std std-ref">cuenta</span></a> que un nodo usa para <a class="reference internal" href="04_block.html#block-signature"><span class="std std-ref">firmar bloques</span></a> generados. Un nodo puede generar bloques si se cumplen las siguientes condiciones:</p>
+<ul class="simple">
+<li><p>El saldo de generación del nodo es al menos <span class="math notranslate nohighlight">\(10000\)</span> <a class="reference internal" href="02_token%28asset%29.html#decentralcoin"><span class="std std-ref">DecentralCoins</span></a>. Esto significa que el saldo de la cuenta en DecentralCoins, teniendo en cuenta el arrendamiento, no fue inferior a <span class="math notranslate nohighlight">\(10000\)</span> DecentralCoins en cada uno de los últimos <span class="math notranslate nohighlight">\(1000\)</span> bloques (más detalles en el artículo sobre <a class="reference internal" href="01_account.html#account-balance"><span class="std std-ref">saldo de cuenta</span></a>). Cuanto mayor sea el saldo de generación, mayor será su probabilidad de ser elegible para generar el siguiente bloque.</p></li>
+<li><p>La cuenta del nodo no es una <a class="reference internal" href="01_account.html#dapp-and-smart-account"><span class="std std-ref">smart account o dApp</span></a>.</p></li>
+<li><p>La generación de bloques no está deshabilitada en la configuración del nodo. De forma predeterminada, la generación de bloques está habilitada.</p></li>
+<li><p>El nodo está conectado al menos a la cantidad de pares especificados en los parámetros requeridos (<span class="math notranslate nohighlight">\(1\)</span> por defecto).</p></li>
+</ul>
+</section>
+<section id="validating-node">
+<h2>Nodo de Validación<a class="headerlink" href="#validating-node" title="Enlace permanente a este encabezado">#</a></h2>
+<p>Un nodo de validación es un nodo que <a class="reference internal" href="03_transaction.html#transaction-validation"><span class="std std-ref">valida</span></a> transacciones.</p>
+</section>
+<section id="generators-income">
+<h2>Ingresos para Generador<a class="headerlink" href="#generators-income" title="Enlace permanente a este encabezado">#</a></h2>
+<p>Los ingresos de un nodo por agregar un nuevo bloque a la cadena de bloques consisten en las siguientes cantidades:</p>
+<ol class="arabic simple">
+<li><p>Recompensa de bloque: el tamaño de la recompensa actual es <span class="math notranslate nohighlight">\(6\)</span> <a class="reference internal" href="02_token%28asset%29.html#decentralcoin"><span class="std std-ref">DecentralCoins</span></a> pero se puede cambiar votando, consulte el artículo sobre la <span class="xref std std-ref">recompensa de bloque</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(40\%\)</span> de las tarifas de transacción totales en el bloque actual. El valor exacto se calcula de la siguiente manera:</p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\sum_{i}^{} 2 * (\frac{f_i}{5})\)</span></p></li>
+<li><p>Aquí f <span class="math notranslate nohighlight">\(_i\)</span> es la tarifa por la <span class="math notranslate nohighlight">\(i\)</span>-ésima transacción. Para cada tarifa de transacción, se realiza una división entera por <span class="math notranslate nohighlight">\(5\)</span>, luego una multiplicación por <span class="math notranslate nohighlight">\(2\)</span>, y finalmente se suman.</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li><p><span class="math notranslate nohighlight">\(60\%\)</span> de las tarifas de transacción totales en el bloque anterior.</p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\sum_{i}^{} (f_i - 2 * (\frac{f_i}{5}))\)</span></p></li>
+<li><p>El generador de bloques recibe exactamente la parte de la tarifa que no recibió el generador de bloques anterior.</p></li>
+</ul>
+</div></blockquote>
+<p>Si las <a class="reference internal" href="03_transaction.html#transaction-fees"><span class="std std-ref">tarifas de transacción</span></a> se especifican en un activo patrocinado, los generadores de bloques reciben la tarifa equivalente en DecentralCoins en lugar de la tarifa (como regla general, en :matemáticas:` relación frac{40}{60}`):</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>feeInDecentralCoins = feeInSponsoredAsset × 0.001 / minSponsoredAssetFee
+</pre></div>
+</div>
+<p>minSponsoredAssetFee es la cantidad del activo patrocinado equivalente a <span class="math notranslate nohighlight">\(0.001\)</span> DecentralCoins. El patrocinador establece este valor al habilitar el patrocinio. Para obtener más información, consulte el artículo sobre <a class="reference internal" href="03_transaction.html#sponsored-fees"><span class="std std-ref">tarifas patrocinadas</span></a>.</p>
+</section>
+<section id="block-reward">
+<h2>Recompensa de Bloque<a class="headerlink" href="#block-reward" title="Enlace permanente a este encabezado">#</a></h2>
+<p>La recompensa de bloque es una función de cadena de bloques en virtud de la cual los <a class="reference internal" href="#generating-node"><span class="std std-ref">nodos generadores</span></a> reciben una tarifa fija en <a class="reference internal" href="02_token%28asset%29.html#decentralcoin"><span class="std std-ref">DecentralCoins</span></a> por cada <a class="reference internal" href="04_block.html#block-generation"><span class="std std-ref">bloque generado</span></a>. Las recompensas en bloque se pagan debido a la emisión adicional del token DecentralCoin. La comunidad de nodos generadores puede cambiar el tamaño de la recompensa mediante la votación.</p>
+<section id="current-reward-size">
+<h3>Tamaño Actual de la Decompensa<a class="headerlink" href="#current-reward-size" title="Enlace permanente a este encabezado">#</a></h3>
+<p>Puede ver el tamaño de la recompensa actual realizando una solicitud a la <span class="xref std std-ref">Node REST API</span>. En respuesta a la solicitud, se devuelve un archivo JSON, cuyo valor del campo currentReward es el tamaño actual de la recompensa del bloque en Decentralitos.</p>
+<p>Ejemplo de Respuesta:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>{
+  &quot;height&quot;: 1742254,
+  &quot;totalDecentralCoinsAmount&quot;: 10001353000000000,
+  &quot;currentReward&quot;: 600000000,
+  &quot;minIncrement&quot;: 50000000,
+  &quot;term&quot;: 100000,
+  &quot;nextCheck&quot;: 1839999,
+  &quot;votingIntervalStart&quot;: 1830000,
+  &quot;votingInterval&quot;: 10000,
+  &quot;votingThreshold&quot;: 5001,
+  &quot;votes&quot;: {
+    &quot;increase&quot;: 0,
+    &quot;decrease&quot;: 0
+  }
+}
+</pre></div>
+</div>
+<p>En el ejemplo anterior, el valor del campo currentReward del JSON es 600 000 000 decentralitos, es decir, es 6 <a class="reference internal" href="02_token%28asset%29.html#decentralcoin"><span class="std std-ref">DecentralCoins</span></a>.</p>
+</section>
+<section id="the-change-of-block-reward-size-over-time">
+<h3>Cambio del Tamaño de la Recompensa en Bloque a lo Largo del Tiempo<a class="headerlink" href="#the-change-of-block-reward-size-over-time" title="Enlace permanente a este encabezado">#</a></h3>
+<p>Cada <span class="math notranslate nohighlight">\(100,000\)</span> bloques, es decir, aproximadamente cada <span class="math notranslate nohighlight">\(70\)</span> días, comienza una nueva votación entre los generadores para cambiar el tamaño de la recompensa actual. La duración de la votación es <span class="math notranslate nohighlight">\(10,000\)</span> bloques. Durante este tiempo, los nodos generadores votan para aumentar, disminuir o dejar sin cambios el tamaño de la recompensa actual. El tamaño de la recompensa elegido permanece sin cambios para <span class="math notranslate nohighlight">\(100,000\)</span> bloques después del final de la votación.</p>
+</section>
+<section id="voting">
+<h3>Votación<a class="headerlink" href="#voting" title="Enlace permanente a este encabezado">#</a></h3>
+<p>Un nodo generador especifica el nuevo tamaño de recompensa deseado a través de la configuración en el archivo de configuración del nodo, el valor de configuración se especifica en Decentralites. Si el valor es mayor que el tamaño de la recompensa actual, entonces el generador vota por el aumento del tamaño de la recompensa actual; si el valor es más pequeño — para la disminución. Si el valor de configuración no se especifica en el archivo de configuración, entonces el generador vota por mantener el tamaño de la recompensa actual. Cuando un nodo genera un bloque, escribe en ese bloque el valor del tamaño de recompensa deseado especificado en la configuración de su propio archivo de configuración de nodo. Si el valor de configuración no se especifica en el archivo de configuración, <span class="math notranslate nohighlight">\(-1\)</span> se escribe en el bloque. Durante el tiempo de votación en <span class="math notranslate nohighlight">\(10,000\)</span> bloques, un solo nodo puede generar varios bloques, por lo tanto, un nodo puede votar varias veces. La frecuencia con la que un nodo genera bloques está determinada por el consenso LPoS.</p>
+</section>
+<section id="how-votes-are-counted">
+<h3>Cómo se Cuentan los Votos<a class="headerlink" href="#how-votes-are-counted" title="Enlace permanente a este encabezado">#</a></h3>
+<p>Para contar los votos, se inspeccionan todos los <span class="math notranslate nohighlight">\(10,000\)</span> bloques generados durante el período de votación. Si se registra en el bloque <span class="math notranslate nohighlight">\(-1\)</span> o el valor que es igual al tamaño de la recompensa actual, entonces el generador vota por mantener el tamaño de la recompensa actual. Si el valor registrado en el bloque es mayor que el tamaño de la recompensa actual, entonces el generador vota por el aumento del tamaño de la recompensa actual; si el valor es más pequeño — para la disminución. La recompensa del bloque aumenta/disminuye solo si más de la mitad de los <span class="math notranslate nohighlight">\(10,000\)</span> votos, es decir, <span class="math notranslate nohighlight">\(5,001\)</span> votos o más, se otorgaron para aumentar/disminuir. La cantidad de la recompensa actual aumenta/disminuye en <span class="math notranslate nohighlight">\(0.5\)</span> <a class="reference internal" href="02_token%28asset%29.html#decentralcoin"><span class="std std-ref">DecentralCoins</span></a>.</p>
+<p><a href="#id1"><span class="problematic" id="id2">:stong:`Ejemplo 1`</span></a></p>
+<p>A la altura de la cadena de bloques de <span class="math notranslate nohighlight">\(2,000,000\)</span>, la recompensa del bloque es igual a <span class="math notranslate nohighlight">\(5\)</span> DecentralCoins. A la altura de <span class="math notranslate nohighlight">\(2,090,000\)</span>, comienza otra votación. Durante los <span class="math notranslate nohighlight">\(10,000\)</span> bloques de votación, se otorgaron <span class="math notranslate nohighlight">\(6,000\)</span> votos para aumentar la recompensa, <span class="math notranslate nohighlight">\(1,000\)</span> — para disminuir, <span class="math notranslate nohighlight">\(3,000\)</span> — para mantener el tamaño actual de la recompensa. Desde la altura de <span class="math notranslate nohighlight">\(2\)</span>, <span class="math notranslate nohighlight">\(100,000\)</span> hasta la altura de <span class="math notranslate nohighlight">\(2,199,999\)</span>, el nuevo tamaño de recompensa será <span class="math notranslate nohighlight">\(5.5\)</span> DecentralCoins, porque el paso de cambio de recompensa es :math :<cite>0.5</cite> Monedas descentralizadas. La próxima votación tendrá lugar desde la altura de <span class="math notranslate nohighlight">\(2,190,000\)</span> hasta <span class="math notranslate nohighlight">\(2,199,999\)</span>.</p>
+<p><strong>Ejemplo 2</strong></p>
+<p>A la altura de la cadena de bloques de <span class="math notranslate nohighlight">\(2,100,000\)</span>, la recompensa del bloque es igual a <span class="math notranslate nohighlight">\(5.5\)</span> DecentralCoins. A la altura de <span class="math notranslate nohighlight">\(2,190,000\)</span>, comienza otra votación. Durante los <span class="math notranslate nohighlight">\(10,000\)</span> bloques de votación, se otorgaron <span class="math notranslate nohighlight">\(4,500\)</span> votos para aumentar la recompensa, <span class="math notranslate nohighlight">\(4,000\)</span> — para disminuir, <span class="math notranslate nohighlight">\(1,500\)</span> — para mantener el tamaño actual de la recompensa. Desde la altura de <span class="math notranslate nohighlight">\(2,200,000\)</span> hasta la altura de <span class="math notranslate nohighlight">\(2,299,999\)</span>, el «nuevo» tamaño de la recompensa será el mismo: <span class="math notranslate nohighlight">\(5.5\)</span> DecentralCoins. Aunque se otorgó la mayor cantidad de votos para el aumento de la recompensa, no fue suficiente para cambiar el tamaño actual de la recompensa. Para aumentar el tamaño de la recompensa actual, se deben otorgar al menos <span class="math notranslate nohighlight">\(5,001\)</span> votos para el aumento. La próxima votación tendrá lugar desde la altura de <span class="math notranslate nohighlight">\(2,290,000\)</span> hasta <span class="math notranslate nohighlight">\(2,299,999\)</span>.</p>
+</section>
+</section>
+<section id="leased-proof-of-stake">
+<h2>Prueba de Participación Arrendada<a class="headerlink" href="#leased-proof-of-stake" title="Enlace permanente a este encabezado">#</a></h2>
+<p>Leased Proof of Stake (LPoS) es un tipo mejorado de algoritmo de consenso de prueba de participación mediante el cual la red blockchain DecentralChain tiene como objetivo lograr el consenso distribuido para asegurar la red.</p>
+<section id="leasing-benefits-for-the-node-owner">
+<h3>Beneficios del Arrendamiento para el Propietario del Nodo<a class="headerlink" href="#leasing-benefits-for-the-node-owner" title="Enlace permanente a este encabezado">#</a></h3>
+<p>Los <a class="reference internal" href="#node"><span class="std std-ref">nodes</span></a> puede usar los tokens arrendados para generar bloques y obtener la <a class="reference internal" href="#block-reward"><span class="std std-ref">recompensa</span></a>. Para ello, el saldo generador de un nodo debe ser al menos <span class="math notranslate nohighlight">\(10000\)</span> <a class="reference internal" href="02_token%28asset%29.html#decentralcoin"><span class="std std-ref">DecentralCoins</span></a>.</p>
+</section>
+<section id="leasing-benefits-for-the-token-holder">
+<h3>Beneficios de Arrendamiento para el Titular del Token<a class="headerlink" href="#leasing-benefits-for-the-token-holder" title="Enlace permanente a este encabezado">#</a></h3>
+<p>LPoS permite a los titulares de tokens arrendar sus tokens a los nodos de DecentralChain y obtener un porcentaje del pago como recompensa. Al usar LPoS, los arrendadores podrán participar en el proceso de generación de nuevos bloques porque cuanto mayor sea la cantidad arrendada a un nodo DecentralChain, mayores serán las posibilidades de que ese nodo sea seleccionado para generar el siguiente bloque. Si se selecciona ese nodo, el arrendatario recibirá una recompensa. Cuando el usuario comienza a arrendar los tokens, esos tokens arrendados se bloquean y permanecen en la misma dirección con el control total de su propietario (no se transfieren al nodo, simplemente no se pueden gastar hasta que el arrendador cancele el arrendamiento). Lo único que se debe tener en cuenta al arrendar es elegir el operador de nodo correcto, ya que el nodo del operador puede funcionar con una eficiencia diferente y devolver diferentes porcentajes como recompensa.</p>
+<section id="rewards">
+<h4>Recompensas<a class="headerlink" href="#rewards" title="Enlace permanente a este encabezado">#</a></h4>
+<ul class="simple">
+<li><p>El propietario del nodo podrá enviar al arrendador una parte de las recompensas según sus condiciones.</p></li>
+<li><p>Cuantas más transacciones se realicen en la red, más recompensas obtienen los arrendadores.</p></li>
+<li><p>Estas recompensas se encuentran principalmente en <a class="reference internal" href="02_token%28asset%29.html#decentralcoin"><span class="std std-ref">DecentralCoins</span></a> pero también pueden ser en forma de diferentes tokens con la característica única DecentralCoins donde se pueden aceptar diferentes tokens como tarifa.</p></li>
+</ul>
+</section>
+</section>
+<section id="lpos-transactions">
+<h3>Transacciones LPoS<a class="headerlink" href="#lpos-transactions" title="Enlace permanente a este encabezado">#</a></h3>
+<p>Para comenzar el arrendamiento, el titular del token debe crear una transacción de arrendamiento y especificar la dirección del destinatario (dirección del nodo) junto con la cantidad de <a class="reference internal" href="02_token%28asset%29.html#decentralcoin"><span class="std std-ref">DecentralCoins</span></a> para arrendar. Hay dos tipos de transacciones que se utilizan en el LPoS:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="03_transaction.html#lease-transaction"><span class="std std-ref">Transacción para arrendamiento</span></a> para activar el proceso de arrendamiento.</p></li>
+<li><p><a class="reference internal" href="03_transaction.html#lease-cancel-transaction"><span class="std std-ref">Transacción para cancelar arrendamiento</span></a> para desactivar el proceso de arrendamiento.</p></li>
+</ul>
+</section>
+<section id="create-a-lease">
+<h3>Crear un Contrato de Arrendamiento<a class="headerlink" href="#create-a-lease" title="Enlace permanente a este encabezado">#</a></h3>
+<p>Puedes usar <a class="reference external" href="https://decentral.exchange/">Decentral.Exchange</a> en línea para crear un arrendamiento</p>
+<ul class="simple">
+<li><p>Asegúrate de haber iniciado sesión en tu cuenta. En la pantalla principal, vaya a Billetera &gt; Arrendamiento.</p></li>
+<li><p>En la siguiente pantalla, haga clic en Iniciar Arrendamiento y luego seleccione el destinatario entre la lista de nodos e indique la cantidad que desea arrendar.</p></li>
+<li><p>Verifique toda la información y haga clic en Iniciar Arrendamiento nuevamente para confirmar.</p></li>
+</ul>
+</section>
+</section>
+</section>
+
+<div class="section">
+   
+</div>
+
+                </article>
+              
+              
+              
+                <footer class="bd-footer-article">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="04_block.html"
+       title="página anterior">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">anterior</p>
+        <p class="prev-next-title">Bloque</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="06_order.html"
+       title="siguiente página">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">siguiente</p>
+        <p class="prev-next-title">Orden</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> En esta página
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#generating-node">Nodo Generador</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#validating-node">Nodo de Validación</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#generators-income">Ingresos para Generador</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#block-reward">Recompensa de Bloque</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#current-reward-size">Tamaño Actual de la Decompensa</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-change-of-block-reward-size-over-time">Cambio del Tamaño de la Recompensa en Bloque a lo Largo del Tiempo</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#voting">Votación</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-votes-are-counted">Cómo se Cuentan los Votos</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#leased-proof-of-stake">Prueba de Participación Arrendada</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#leasing-benefits-for-the-node-owner">Beneficios del Arrendamiento para el Propietario del Nodo</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#leasing-benefits-for-the-token-holder">Beneficios de Arrendamiento para el Titular del Token</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#rewards">Recompensas</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lpos-transactions">Transacciones LPoS</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#create-a-lease">Crear un Contrato de Arrendamiento</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+  
+  <div class="tocsection editthispage">
+    <a href="https://github.com/Decentral-America/docs/edit/master/docs//02_decentralchain/05_node.rst">
+      <i class="fa-solid fa-pencil"></i>
+      
+      
+        
+          Editar en GitHub
+        
+      
+    </a>
+  </div>
+</div>
+
+  <div class="sidebar-secondary-item">
+  <div class="tocsection sourcelink">
+    <a href="../_sources/02_decentralchain/05_node.rst">
+      <i class="fa-solid fa-file-lines"></i> Mostrar el código
+    </a>
+  </div>
+</div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            <div class="bd-footer-content__inner"></div>
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+  <p class="copyright">
+    
+      © Copyright 2023, Blockchain Costa Rica.
+      <br/>
+    
+  </p>
+</div>
+      
+    </div>
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item"><p class="theme-version">
+  Construido con el <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">Tema PyData Sphinx</a> 0.13.0.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

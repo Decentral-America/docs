@@ -1,0 +1,984 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="es" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>Cuenta &#8212; documentación de DecentralChain - </title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/jupyter-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/thebelab.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/plot_directive.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d" />
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/thebelab-helper.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script src="../_static/design-tabs.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@jupyter-widgets/html-manager@^1.0.1/dist/embed-amd.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '02_decentralchain/01_account';</script>
+    <link rel="shortcut icon" href="../_static/icon.svg"/>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="Token (Activo)" href="02_token%28asset%29.html" />
+    <link rel="prev" title="DecentralChain" href="index.html" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="es"/>  
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+<div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+    <span class="fa-solid fa-bars"></span>
+  </label>
+  
+  <div class="navbar-header-items__start">
+    
+      <div class="navbar-item">
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="DecentralChain"/>
+    <script>document.write(`<img src="../_static/logo-dark.png" class="logo__image only-dark" alt="DecentralChain"/>`);</script>
+  
+  
+</a></div>
+    
+  </div>
+  
+  
+  <div class=" navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item"><nav class="navbar-nav">
+  <p class="sidebar-header-items__title"
+     role="heading"
+     aria-level="1"
+     aria-label="Navegación del sitio">
+    Navegación del sitio
+  </p>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../01_introduction.html">
+                        Introducción
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="index.html">
+                        DecentralChain
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../03_ride-language/index.html">
+                        Ride Language
+                      </a>
+                    </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="http://decentralchain.io/">
+                    Website
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="http://decentral.exchange/">
+                    Wallet & Exchange
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://decentralscan.com/">
+                    Explorer
+                  </a>
+                </li>
+                
+                </div>
+            </div>
+            
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+        </div>
+      
+      
+        <div class="navbar-item">
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="claro/oscuro" aria-label="claro/oscuro" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/Decentral-America/docs" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-github"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://twitter.com/decentralchain" title="Twitter" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-twitter"></i></span>
+            <label class="sr-only">Twitter</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.linkedin.com/company/decentralchain/" title="LinkedIn" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-linkedin"></i></span>
+            <label class="sr-only">LinkedIn</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.youtube.com/@decentralchain" title="Youtube" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-youtube"></i></span>
+            <label class="sr-only">Youtube</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://discord.gg/9UUbNBPQ3D" title="Discord" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-discord"></i></span>
+            <label class="sr-only">Discord</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.instagram.com/decentralchain/" title="Discord" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-instagram"></i></span>
+            <label class="sr-only">Discord</label></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+    </div>
+  
+
+  
+    <label class="sidebar-toggle secondary-toggle" for="__secondary">
+      <span class="fa-solid fa-outdent"></span>
+    </label>
+  
+</div>
+
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          <div class="navbar-item"><nav class="navbar-nav">
+  <p class="sidebar-header-items__title"
+     role="heading"
+     aria-level="1"
+     aria-label="Navegación del sitio">
+    Navegación del sitio
+  </p>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../01_introduction.html">
+                        Introducción
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="index.html">
+                        DecentralChain
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../03_ride-language/index.html">
+                        Ride Language
+                      </a>
+                    </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="http://decentralchain.io/">
+                    Website
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="http://decentral.exchange/">
+                    Wallet & Exchange
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://decentralscan.com/">
+                    Explorer
+                  </a>
+                </li>
+                
+                </div>
+            </div>
+            
+  </ul>
+</nav></div>
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="claro/oscuro" aria-label="claro/oscuro" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/Decentral-America/docs" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-github"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://twitter.com/decentralchain" title="Twitter" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-twitter"></i></span>
+            <label class="sr-only">Twitter</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.linkedin.com/company/decentralchain/" title="LinkedIn" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-linkedin"></i></span>
+            <label class="sr-only">LinkedIn</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.youtube.com/@decentralchain" title="Youtube" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-youtube"></i></span>
+            <label class="sr-only">Youtube</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://discord.gg/9UUbNBPQ3D" title="Discord" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-discord"></i></span>
+            <label class="sr-only">Discord</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.instagram.com/decentralchain/" title="Discord" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-instagram"></i></span>
+            <label class="sr-only">Discord</label></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item"><nav class="bd-docs-nav bd-links"
+     aria-label="Navegación del sección">
+  <p class="bd-links__title" role="heading" aria-level="1">Navegación del sección</p>
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">DecentralChain</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Cuenta</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_token%28asset%29.html">Token (Activo)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03_transaction.html">Transacción</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04_block.html">Bloque</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05_node.html">Nodo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06_order.html">Orden</a></li>
+<li class="toctree-l1"><a class="reference internal" href="07_oracle.html">Oráculo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="08_mainnet-testnet-stagenet.html">Redes Principal, Prueba, Escenario</a></li>
+<li class="toctree-l1"><a class="reference internal" href="09_protocol.html">Protocolo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="10_binary-format.html">Formato Binario</a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+
+
+<nav aria-label="Migas de pan">
+  <ul class="bd-breadcrumbs" role="navigation" aria-label="Miga de pan">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../index.html" class="nav-link" aria-label="Inicio">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="index.html" class="nav-link">DecentralChain</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page">Cuenta</li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                   <section id="account">
+<h1>Cuenta<a class="headerlink" href="#account" title="Enlace permanente a este encabezado">#</a></h1>
+<p>DecentralChain utiliza un modelo basado en cuentas:</p>
+<ul class="simple">
+<li><p>Cada <a class="reference internal" href="03_transaction.html#transaction"><span class="std std-ref">transacción</span></a> se crea en nombre de una determinada cuenta.</p></li>
+<li><p>Todos los <a class="reference internal" href="02_token%28asset%29.html#token-asset"><span class="std std-ref">tokens</span></a> pertenecen a ciertas cuentas.</p></li>
+<li><p>Todos los datos están asociados a cuentas. Para obtener más información, consulte el artículo <a class="reference internal" href="#account-data-storage"><span class="std std-ref">almacenamiento de datos de cuenta</span></a>.</p></li>
+</ul>
+<section id="account-keys">
+<h2>Llaves de Cuenta<a class="headerlink" href="#account-keys" title="Enlace permanente a este encabezado">#</a></h2>
+<p>A diferencia de las aplicaciones centralizadas, los usuarios no tienen nombres de usuario ni contraseñas en la cadena de bloques. La identificación del usuario y la validación de sus acciones se realizan mediante un par de claves vinculadas criptográficamente:</p>
+<ul class="simple">
+<li><p>La clave privada se utiliza para firmar transacciones u órdenes.</p></li>
+<li><p>La clave pública permite la verificación de la firma digital.</p></li>
+</ul>
+<p>Cada transacción contiene la clave pública de la cuenta del remitente. El remitente genera una firma digital de la transacción utilizando la clave privada de la cuenta. La firma y la clave pública del remitente se utilizan para verificar la autenticidad de los datos de la transacción y para verificar que la firma de la transacción coincida con la clave pública.</p>
+<img alt="../_images/03_Account-Keys.png" src="../_images/03_Account-Keys.png" />
+<p>DecentralChain utiliza un sistema criptográfico asimétrico basado en la curva elíptica Curve25519-ED25519 con claves X25519. La guía para generar claves y firmas se proporciona en el artículo <a class="reference internal" href="09_protocol.html#cryptographic-practical-details"><span class="std std-ref">detalles prácticos criptográficos</span></a>. Las claves privadas y públicas son matrices de bytes <span class="math notranslate nohighlight">\(32\)</span>. En las interfaces de usuario, las claves se muestran como cadenas codificadas en base58. Las claves codificadas en Base58 pueden tener diferentes longitudes, la longitud máxima es <span class="math notranslate nohighlight">\(44\)</span> caracteres.</p>
+<p>Ejemplo de clave privada en base58:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>6yCStrsBs4VgTmYcSgF37pmQhCo6t9LZk5bQqUyUNSAs
+</pre></div>
+</div>
+<p>Ejemplo de clave pública en base58:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>5cqzmxsmFPBHm4tb7D8DMA7s5eutLXTDnnNMQKy2AYxh
+</pre></div>
+</div>
+</section>
+<section id="secret-seed-phrase">
+<h2>Frase Secreta (Semilla)<a class="headerlink" href="#secret-seed-phrase" title="Enlace permanente a este encabezado">#</a></h2>
+<p>La clave privada se puede generar a partir de alguna frase inicial aleatoria utilizando funciones hash. La clave pública se obtiene a partir de la clave privada mediante una multiplicación de curva elíptica. La <a class="reference internal" href="#address"><span class="std std-ref">dirreción</span></a> de la cuenta se obtiene de la llave pública. Todas estas transformaciones son unidireccionales. La dirección opuesta es casi imposible en términos de los cálculos requeridos.</p>
+<img alt="../_images/04_Secret-%28Seed%29-Phrase.png" src="../_images/04_Secret-%28Seed%29-Phrase.png" />
+<p>La frase secreta (también conocida como frase semilla, frase de respaldo) puede ser cualquier combinación de símbolos, palabras o bytes. Las aplicaciones de billetera DecentralChain generalmente usan un conjunto aleatorio de <span class="math notranslate nohighlight">\(15\)</span> palabras en inglés de <span class="math notranslate nohighlight">\(2048\)</span> palabras disponibles. Usar una frase de este tipo es seguro ya que la probabilidad de generar dos frases semilla idénticas es <span class="math notranslate nohighlight">\(\frac{1}{2048^{15}}\)</span>, por lo que la fuerza bruta llevará millones de años en una CPU promedio. El objetivo de usar una frase secreta (en lugar de una clave privada) es simplificar la experiencia del usuario: la frase secreta es mucho más fácil de escribir o recordar.</p>
+<p>Ejemplo de una frase secreta:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>body key praise enter toss road cup result shrimp bus blame typical sphere pottery claim
+</pre></div>
+</div>
+<p>Informacion de Seguridad:</p>
+<ul class="simple">
+<li><p>La frase secreta o la clave privada derivada de ella brindan un control completo sobre la cuenta, incluida la capacidad de disponer de fondos. No le des tu frase secreta o clave privada a nadie, y no los publiques ni los envíes.</p></li>
+<li><p>La frase secreta no se puede cambiar: otra frase secreta (incluso una que difiera en un solo carácter) generará un par de claves diferente y, por lo tanto, una cuenta diferente.</p></li>
+<li><p>Si pierde su frase secreta o clave privada, ya no podrá acceder a su cuenta nunca más. Le recomendamos encarecidamente que <a class="reference internal" href="#backup-seed-phrase"><span class="std std-ref">haga una copia de seguridad de su frase secreta</span></a>.</p></li>
+<li><p>Si la frase secreta está comprometida (se la envió accidentalmente a alguien o sospecha que los estafadores se la llevaron), cree inmediatamente una nueva cuenta y transfiérale todos los activos.</p></li>
+</ul>
+<p>Para conocer formas de generar claves de cuenta, consulte el artículo <a class="reference internal" href="#creating-an-account"><span class="std std-ref">creación de una cuenta</span></a>.</p>
+</section>
+<section id="creating-an-account">
+<h2>Crear una Cuenta<a class="headerlink" href="#creating-an-account" title="Enlace permanente a este encabezado">#</a></h2>
+<p>Crear una cuenta significa generar un <a class="reference internal" href="#account-keys"><span class="std std-ref">par de llaves de cuenta</span></a> y una <a class="reference internal" href="#address"><span class="std std-ref">dirección</span></a> con base en una <a class="reference internal" href="#secret-seed-phrase"><span class="std std-ref">frase secreta (semilla)</span></a>.</p>
+<p>Puede usar <a class="reference external" href="https://decentral.exchange/">Decentral.Exchange</a> en línea para crear una cuenta.</p>
+<ul class="simple">
+<li><p>En la pantalla principal, haga clic en Crear Cuenta, luego en el cuadro Crear Contraseña, escriba la contraseña, escríbala nuevamente en el cuadro Confirmar Contraseña, acepte los Términos y Condiciones, así como la Política de Privacidad y haga clic en Continuar.</p></li>
+<li><p>En la siguiente pantalla, seleccione Crear Cuenta y luego elija el avatar que más le guste para su cuenta y haga clic en Continuar.</p></li>
+<li><p>Después de eso, seleccione el nombre que desea que tenga la cuenta en ese dispositivo en particular y haga clic en Continuar.</p></li>
+<li><p>En este punto, será redirigido a la página de su billetera. Debe hacer una <a class="reference internal" href="#backup-seed-phrase"><span class="std std-ref">copia de seguridad de su frase semilla</span></a>.</p></li>
+</ul>
+</section>
+<section id="backup-seed-phrase">
+<h2>Respaldar Frase Semilla<a class="headerlink" href="#backup-seed-phrase" title="Enlace permanente a este encabezado">#</a></h2>
+<ul class="simple">
+<li><p>Abra la pantalla principal <a class="reference external" href="https://decentral.exchange/">Decentral.Exchange</a> y asegúrese de haber iniciado sesión en su cuenta. Haga clic en el avatar de la cuenta y vaya a Configuración &gt; Seguridad.</p></li>
+<li><p>Haga clic en Mostrar en el cuadro Respaldar Frase Semilla.</p></li>
+<li><p>Escriba la frase y guárdela en un lugar seguro.</p></li>
+</ul>
+<p>No almacene la frase de respaldo sin cifrar en ningún dispositivo electrónico. Recomendamos encarecidamente hacer una copia de seguridad de la frase semilla, ya que esta es la única forma de restaurar el acceso a su cuenta en caso de pérdida o robo del dispositivo.</p>
+</section>
+<section id="log-in-to-account">
+<h2>Ingresar a la Cuenta<a class="headerlink" href="#log-in-to-account" title="Enlace permanente a este encabezado">#</a></h2>
+<ul class="simple">
+<li><p>Abra la pantalla principal <a class="reference external" href="https://decentral.exchange/">Decentral.Exchange</a> y haga clic en Crear Cuenta, luego en el cuadro Crear Contraseña escriba la contraseña, escríbala nuevamente en el cuadro Confirmar Contraseña, acepte los Términos y Condiciones también como la Política de Privacidad y haga clic en Continuar.</p></li>
+<li><p>En la siguiente pantalla, seleccione Importar Cuentas, luego elija la opción Semilla o Clave.</p></li>
+<li><p>Después de eso, escriba la semilla de la que hizo una copia de seguridad en el pasado y haga clic en Continuar, luego seleccione el nombre que desea que tenga la cuenta en ese dispositivo en particular y haga clic en Continuar.</p></li>
+<li><p>En este punto, será redirigido a la página de su billetera.</p></li>
+</ul>
+</section>
+<section id="forgot-password">
+<h2>Olvidé mi Contraseña<a class="headerlink" href="#forgot-password" title="Enlace permanente a este encabezado">#</a></h2>
+<ul class="simple">
+<li><p>Abra la pantalla principal de <a class="reference external" href="https://decentral.exchange/">Decentral.Exchange</a> y haga clic en Olvidé mi Contraseña y luego seleccione la opción Restablecer todo.</p></li>
+<li><p>En la siguiente pantalla, en el cuadro Crear Contraseña, ingrese la contraseña, escríbala nuevamente en el cuadro Confirmar Contraseña, acepte los Términos y Condiciones, así como la Política de Privacidad y haga clic en Continuar.</p></li>
+<li><p>Cuando termine, seleccione Importar Cuentas, luego elija la opción Semilla o Clave.</p></li>
+<li><p>Después de eso, escriba la semilla de la que hizo una copia de seguridad en el pasado y haga clic en Continuar, luego seleccione el nombre que desea que tenga la cuenta en ese dispositivo en particular y haga clic en Continuar.</p></li>
+<li><p>En este punto, será redirigido a la página de su billetera.</p></li>
+</ul>
+</section>
+<section id="address">
+<h2>Dirección<a class="headerlink" href="#address" title="Enlace permanente a este encabezado">#</a></h2>
+<p>La dirección es un atributo de la <a class="reference internal" href="#account"><span class="std std-ref">cuenta</span></a> derivado de la <a class="reference internal" href="#account-keys"><span class="std std-ref">llave pública</span></a>. La dirección también contiene el <a class="reference internal" href="08_mainnet-testnet-stagenet.html#chain-id"><span class="std std-ref">ID de la cadena</span></a> que identifica la red blockchain, por lo tanto, la dirección en Mainnet no se puede usar en Testnet y viceversa.</p>
+<p>La dirección es una matriz de <span class="math notranslate nohighlight">\(26\)</span> bytes (consulte el <a class="reference internal" href="10_binary-format.html#address-binary-format"><span class="std std-ref">formato binario de dirección</span></a>). En las interfaces de usuario, la dirección se muestra como una cadena codificada en base58.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>3PDfnPknnYrg2k2HMvkNLDb3Y1tDTtEnp9X
+</pre></div>
+</div>
+<p>Normalmente, la dirección que comienza con 3P se refiere a Mainnet, y la dirección que comienza con 3M o 3N se refiere a Testnet o Stagenet.</p>
+<p>La dirección se utiliza para obtener información sobre la cuenta:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#account-balance"><span class="std std-ref">Saldos de tokens</span></a>,</p></li>
+<li><p>Entradas de <a class="reference internal" href="#account-data-storage"><span class="std std-ref">almacenamiento de datos de cuenta</span></a>,</p></li>
+<li><p><a class="reference internal" href="#alias"><span class="std std-ref">Alias</span></a>,</p></li>
+<li><p><a class="reference internal" href="#dapp-and-smart-account"><span class="std std-ref">Script asignado</span></a>, etc.</p></li>
+</ul>
+<p>Se indica la dirección:</p>
+<ul class="simple">
+<li><p>En transacciones para <a class="reference internal" href="03_transaction.html#transfer-transaction"><span class="std std-ref">transferencia</span></a>, <a class="reference internal" href="03_transaction.html#mass-transfer-transaction"><span class="std std-ref">transferencia masiva</span></a> y <a class="reference internal" href="03_transaction.html#lease-transaction"><span class="std std-ref">arrendamiento</span></a> para identificar un destinatario;</p></li>
+<li><p>En <a class="reference internal" href="03_transaction.html#invoke-script-transaction"><span class="std std-ref">transacción para invocar scripts</span></a> para identificar una dApp invocada.</p></li>
+</ul>
+</section>
+<section id="get-personal-address">
+<h2>Obtener Dirección Personal<a class="headerlink" href="#get-personal-address" title="Enlace permanente a este encabezado">#</a></h2>
+<ul class="simple">
+<li><p>Abra la pantalla principal <a class="reference external" href="https://decentral.exchange/">Decentral.Exchange</a> y asegúrese de haber iniciado sesión en su cuenta. Haga clic en el avatar de la cuenta y navegue hasta Dirección.</p></li>
+<li><p>Copie la dirección y úsela, o también puede usar el código QR generado.</p></li>
+</ul>
+</section>
+<section id="alias">
+<h2>Alias<a class="headerlink" href="#alias" title="Enlace permanente a este encabezado">#</a></h2>
+<p>Alias es un nombre corto y fácil de recordar de la <a class="reference internal" href="#address"><span class="std std-ref">dirección</span></a>. El alias es único en la cadena de bloques. Una dirección puede tener varios alias. El alias se puede utilizar en lugar de la dirección:</p>
+<ul class="simple">
+<li><p>En transacciones para <a class="reference internal" href="03_transaction.html#transfer-transaction"><span class="std std-ref">transferencia</span></a>, <a class="reference internal" href="03_transaction.html#mass-transfer-transaction"><span class="std std-ref">transferencia masiva</span></a> y <a class="reference internal" href="03_transaction.html#lease-transaction"><span class="std std-ref">arrendamiento</span></a> para identificar un destinatario; así como en <a class="reference internal" href="03_transaction.html#invoke-script-transaction"><span class="std std-ref">transacciones para invocar scripts</span></a> para identificar una dApp invocada.</p></li>
+<li><p>Para encontrar una cuenta en <a class="reference external" href="https://decentralscan.com/">DecentralChain Explorer</a>.</p></li>
+</ul>
+<p>El alias no se puede eliminar.</p>
+<section id="alias-requirements">
+<h3>Requisitos de Alias<a class="headerlink" href="#alias-requirements" title="Enlace permanente a este encabezado">#</a></h3>
+<p>La longitud de un alias puede ser de <span class="math notranslate nohighlight">\(4\)</span> a <span class="math notranslate nohighlight">\(30\)</span> bytes (el carácter <span class="math notranslate nohighlight">\(1\)</span> puede ocupar hasta <span class="math notranslate nohighlight">\(4\)</span> bytes). Se permiten los siguientes caracteres:</p>
+<ul class="simple">
+<li><p>letras latinas minúsculas</p></li>
+<li><p>números</p></li>
+<li><p>punto</p></li>
+<li><p>guión bajo</p></li>
+<li><p>guión</p></li>
+<li><p>&#64;</p></li>
+</ul>
+</section>
+<section id="create-alias">
+<h3>Crear Alias<a class="headerlink" href="#create-alias" title="Enlace permanente a este encabezado">#</a></h3>
+<p>Puedes usar <a class="reference external" href="https://decentral.exchange/">Decentral.Exchange</a> en línea para crear un alias.</p>
+<ul class="simple">
+<li><p>Asegúrate de haber iniciado sesión en tu cuenta. En la pantalla principal, haga clic en el avatar de la cuenta y navegue hasta Alias.</p></li>
+<li><p>En la siguiente pantalla, seleccione Crear Nuevo y luego escriba el nombre del alias y haga clic en Crear Nuevo otra vez para completar el proceso.</p></li>
+</ul>
+</section>
+<section id="view-aliases">
+<h3>Ver Alias<a class="headerlink" href="#view-aliases" title="Enlace permanente a este encabezado">#</a></h3>
+<p>La lista de alias de cuenta, así como otros datos de la cadena de bloques, es pública y cualquiera puede leerla. Por ejemplo, puede ver los alias en <a class="reference external" href="https://decentralscan.com/">DecentralChain Explorer</a>. Para hacer esto, busque una cuenta por su <a class="reference internal" href="#address"><span class="std std-ref">dirección</span></a> y cambie a la pestaña Alias.</p>
+<p>Usando <span class="xref std std-ref">Node REST API</span>, puedes obtener una lista de alias por dirección usando el método GET/alias/by-address/{address} y una dirección por alias usando el método GET /alias/by-alias/{alias}.</p>
+</section>
+<section id="binary-format">
+<h3>Formato Binario<a class="headerlink" href="#binary-format" title="Enlace permanente a este encabezado">#</a></h3>
+<p>Consulte el artículo <a class="reference internal" href="10_binary-format.html#alias-binary-format"><span class="std std-ref">formato binario de dirección</span></a>.</p>
+</section>
+</section>
+<section id="account-balance">
+<h2>Saldo de Cuenta<a class="headerlink" href="#account-balance" title="Enlace permanente a este encabezado">#</a></h2>
+<p>Account balance is the amount of a <a class="reference internal" href="02_token%28asset%29.html#token-asset"><span class="std std-ref">token (asset)</span></a> that belongs to the <a class="reference internal" href="#account"><span class="std std-ref">cuenta</span></a>.</p>
+<p>Una cuenta puede almacenar diferentes tokens en diferentes cantidades. Por ejemplo, una cuenta puede tener <span class="math notranslate nohighlight">\(50\)</span> <a class="reference internal" href="02_token%28asset%29.html#decentralcoin"><span class="std std-ref">DecentralCoins</span></a> y USD-N al mismo tiempo. La cantidad del token Y en la cuenta se denomina saldo de la cuenta en el token Y. Si no hay un token Y en la cuenta, se dice que el saldo de la cuenta en el token Y es igual a cero.</p>
+<section id="account-balance-in-decentralcoin">
+<h3>Saldo de Cuenta en DecentralCoin<a class="headerlink" href="#account-balance-in-decentralcoin" title="Enlace permanente a este encabezado">#</a></h3>
+<p>Hay cuatro tipos de saldos en DecentralChain:</p>
+<ul class="simple">
+<li><p>regular</p></li>
+<li><p>disponible</p></li>
+<li><p>efectivo</p></li>
+<li><p>generador</p></li>
+</ul>
+<p>El saldo regular es la cantidad de <a class="reference internal" href="02_token%28asset%29.html#decentralcoin"><span class="std std-ref">DecentralCoins</span></a> que pertenece directamente a la cuenta. Los otros tipos de saldos se determinan contando <a class="reference internal" href="05_node.html#leased-proof-of-stake"><span class="std std-ref">arrendamientos</span></a> DecentralCoins.</p>
+<p>Introduzcamos la siguiente notación:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>R is the regular balance,
+Lo is the amount of DecentralCoins which the account leased to other accounts,
+Li is the amount of DecentralCoins which are leased to the account by other accounts.
+</pre></div>
+</div>
+<p>Entonces:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Available balance = R – Lo
+Effective balance = R – Lo + Li
+Generating balance is the minimum value of the effective balance during the last 1000 blocks.
+</pre></div>
+</div>
+<p>El saldo de generación de un <a class="reference internal" href="05_node.html#node"><span class="std std-ref">nodo</span></a> afecta la capacidad de participar en la generación de bloques. Para generar bloques, necesita un saldo de generación de al menos <span class="math notranslate nohighlight">\(10000\)</span> DecentralCoins. Cuanto mayor sea el saldo de generación, mayor será la posibilidad de agregar el siguiente bloque.</p>
+</section>
+<section id="view-account-balance">
+<h3>Ver Saldo de Cuenta<a class="headerlink" href="#view-account-balance" title="Enlace permanente a este encabezado">#</a></h3>
+<p>Los saldos de cualquier cuenta, así como otros datos de blockchain, son públicos y cualquiera puede leerlos.</p>
+<p>Por ejemplo, puede ver la lista de tokens y su cantidad en la cuenta en el <a class="reference external" href="https://decentralscan.com/">Explorador DecentralChain</a>. Para hacer esto, busque una cuenta por su dirección o alias. Los saldos en <a class="reference internal" href="02_token%28asset%29.html#decentralcoin"><span class="std std-ref">DecentralCoins</span></a> se muestran justo debajo de la dirección, los saldos en otros activos están en la pestaña Activos y <span class="xref std std-ref">tokens no fungibles (NFT)</span> están en la pestaña de tokens no fungibles.</p>
+<img alt="../_images/05_View-Account-Balance.png" src="../_images/05_View-Account-Balance.png" />
+</section>
+<section id="top-up-balance">
+<h3>Recargar Saldo<a class="headerlink" href="#top-up-balance" title="Enlace permanente a este encabezado">#</a></h3>
+<p>Puedes comprar tokens DecentralCoin en <a class="reference external" href="https://decentral.exchange/">Decentral.Exchange</a>.</p>
+</section>
+</section>
+<section id="account-data-storage">
+<h2>Almacenamiento de Datos de Cuenta<a class="headerlink" href="#account-data-storage" title="Enlace permanente a este encabezado">#</a></h2>
+<p>El almacenamiento de datos de cuenta es un almacenamiento de llave-valor asociado con una <a class="reference internal" href="#account"><span class="std std-ref">cuenta</span></a>. La llave de cada entrada es una cadena única. El valor son los datos que se almacenan, se almacenan utilizando uno de los tipos:</p>
+<ul class="simple">
+<li><p>Cadena</p></li>
+<li><p>Booleano</p></li>
+<li><p>Entero</p></li>
+<li><p>Matriz de bytes</p></li>
+</ul>
+<p>El tamaño del almacenamiento de datos de una cuenta es ilimitado. Para conocer las limitaciones de tamaño de llave y valor, consulte el artículo <a class="reference internal" href="03_transaction.html#data-transaction"><span class="std std-ref">transacción para datos</span></a>.</p>
+<section id="view-account-data">
+<h3>Ver Datos de Cuenta<a class="headerlink" href="#view-account-data" title="Enlace permanente a este encabezado">#</a></h3>
+<p>El almacenamiento de datos de cualquier cuenta, así como otros datos de blockchain, son públicos y cualquiera puede leerlos. Por ejemplo, puede ver las entradas de datos en <a class="reference external" href="https://decentralscan.com/">DecentralChain Explorer</a>. Para hacer esto, busque una cuenta por su <a class="reference internal" href="#address"><span class="std std-ref">dirección</span></a> o <a class="reference internal" href="#alias"><span class="std std-ref">alias</span></a> y cambie a la pestaña Datos.</p>
+<img alt="../_images/06_View-Account-Data.png" src="../_images/06_View-Account-Data.png" />
+</section>
+<section id="add-modify-delete-entries">
+<h3>Agregar, Modificar, Eliminar Entradas<a class="headerlink" href="#add-modify-delete-entries" title="Enlace permanente a este encabezado">#</a></h3>
+<p>El propietario de la cuenta puede agregar, modificar o eliminar entradas del almacenamiento de datos de la cuenta a través de una <a class="reference internal" href="03_transaction.html#data-transaction"><span class="std std-ref">transacción para datos</span></a>.</p>
+<p>Un <a class="reference internal" href="#dapp-and-smart-account"><span class="std std-ref">dApp script</span></a> puede agregar, modificar o eliminar entradas en el almacenamiento de datos de la dApp como resultado de una <span class="xref std std-ref">transacción para invocar scripts</span> a través de acciones de script:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="../03_ride-language/05_structures.html#binaryentry"><span class="std std-ref">BinaryEntry</span></a></p></li>
+<li><p><a class="reference internal" href="../03_ride-language/05_structures.html#booleanentry"><span class="std std-ref">BooleanEntry</span></a></p></li>
+<li><p><a class="reference internal" href="../03_ride-language/05_structures.html#integerentry"><span class="std std-ref">IntegerEntry</span></a></p></li>
+<li><p><a class="reference internal" href="../03_ride-language/05_structures.html#stringentry"><span class="std std-ref">StringEntry</span></a></p></li>
+<li><p><a class="reference internal" href="../03_ride-language/05_structures.html#deleteentry"><span class="std std-ref">DeleteEntry</span></a></p></li>
+</ul>
+</section>
+</section>
+<section id="dapp-and-smart-account">
+<h2>dApp y Cuenta Inteligente<a class="headerlink" href="#dapp-and-smart-account" title="Enlace permanente a este encabezado">#</a></h2>
+<p>Una cuenta con un script asignado se convierte en una dApp o cuenta inteligente. dApp es la cuenta con el <a class="reference internal" href="../03_ride-language/04_script-types.html#dapp-script"><span class="std std-ref">dApp script</span></a> asignado. dApp es una aplicación cuyas funciones se pueden llamar desde otras cuentas a través de una <a class="reference internal" href="03_transaction.html#invoke-script-transaction"><span class="std std-ref">transacción para invocar scripts</span></a>. Las funciones a las que se puede llamar pueden aceptar pagos a la dApp y también realizar acciones aplicadas a la cadena de bloques:</p>
+<ul class="simple">
+<li><p>Agregue, modifique o elimine entradas del almacenamiento de datos de la cuenta dApp.</p></li>
+<li><p>Transferir tokens del saldo de dApp.</p></li>
+<li><p>Emitir, reemitir, quemar tokens en nombre de la dApp, configuración de patrocinio.</p></li>
+</ul>
+<p>Más allá de eso, un script de dApp puede comprender la función de verificación que permite o deniega transacciones y pedidos que se envían en nombre de la cuenta de dApp según las condiciones especificadas. La función de verificación reemplaza la verificación predeterminada que se usa para verificar la firma del remitente y le permite establecer reglas más complejas, como la firma múltiple.</p>
+<p>Con dApps, puedes implementar varias aplicaciones potenciadas por blockchain: juegos y apuestas, DeFi, identidad digital, cadenas de suministro y muchas otras.</p>
+<p>Una cuenta inteligente es una cuenta con el <a class="reference internal" href="../03_ride-language/04_script-types.html#account-script"><span class="std std-ref">script de cuenta</span></a> asignado. La secuencia de comandos de la cuenta es similar a una función de verificación de una secuencia de comandos dApp. Tenga en cuenta:</p>
+<ul class="simple">
+<li><p>Para asignar un script a una cuenta, debe enviar una <a class="reference internal" href="03_transaction.html#set-script-transaction"><span class="std std-ref">transacción para asignar scripts</span></a> en nombre de la cuenta.</p></li>
+<li><p>También puede cambiar o eliminar el script a través de la transacción set script, a menos que el propio script lo prohíba.</p></li>
+<li><p>La <a class="reference internal" href="03_transaction.html#minimum-fee"><span class="std std-ref">tarifa mínima</span></a> para cualquier transacción enviada desde una dApp o una cuenta inteligente se incrementa en <span class="math notranslate nohighlight">\(0.004\)</span> DecentralCoins si la complejidad del script de cuenta del remitente o la función de verificación del script de dApp excede el <a class="reference internal" href="../03_ride-language/07_dapp-to-app-invocation.html#limitations"><span class="std std-ref">umbral de complejidad del remitente</span></a>.</p></li>
+</ul>
+</section>
+</section>
+
+<div class="section">
+   
+</div>
+
+                </article>
+              
+              
+              
+                <footer class="bd-footer-article">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="index.html"
+       title="página anterior">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">anterior</p>
+        <p class="prev-next-title">DecentralChain</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="02_token%28asset%29.html"
+       title="siguiente página">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">siguiente</p>
+        <p class="prev-next-title">Token (Activo)</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> En esta página
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#account-keys">Llaves de Cuenta</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#secret-seed-phrase">Frase Secreta (Semilla)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-an-account">Crear una Cuenta</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#backup-seed-phrase">Respaldar Frase Semilla</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#log-in-to-account">Ingresar a la Cuenta</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#forgot-password">Olvidé mi Contraseña</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#address">Dirección</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#get-personal-address">Obtener Dirección Personal</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#alias">Alias</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#alias-requirements">Requisitos de Alias</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#create-alias">Crear Alias</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#view-aliases">Ver Alias</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#binary-format">Formato Binario</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#account-balance">Saldo de Cuenta</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#account-balance-in-decentralcoin">Saldo de Cuenta en DecentralCoin</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#view-account-balance">Ver Saldo de Cuenta</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#top-up-balance">Recargar Saldo</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#account-data-storage">Almacenamiento de Datos de Cuenta</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#view-account-data">Ver Datos de Cuenta</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#add-modify-delete-entries">Agregar, Modificar, Eliminar Entradas</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dapp-and-smart-account">dApp y Cuenta Inteligente</a></li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+  
+  <div class="tocsection editthispage">
+    <a href="https://github.com/Decentral-America/docs/edit/master/docs//02_decentralchain/01_account.rst">
+      <i class="fa-solid fa-pencil"></i>
+      
+      
+        
+          Editar en GitHub
+        
+      
+    </a>
+  </div>
+</div>
+
+  <div class="sidebar-secondary-item">
+  <div class="tocsection sourcelink">
+    <a href="../_sources/02_decentralchain/01_account.rst">
+      <i class="fa-solid fa-file-lines"></i> Mostrar el código
+    </a>
+  </div>
+</div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            <div class="bd-footer-content__inner"></div>
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+  <p class="copyright">
+    
+      © Copyright 2023, Blockchain Costa Rica.
+      <br/>
+    
+  </p>
+</div>
+      
+    </div>
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item"><p class="theme-version">
+  Construido con el <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">Tema PyData Sphinx</a> 0.13.0.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

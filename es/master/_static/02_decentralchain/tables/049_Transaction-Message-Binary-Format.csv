@@ -1,0 +1,7 @@
+#, Field name, Type, Length in Bytes
+":math:`1`", "Packet length (BigEndian)", :ref:`Int <02_decentralchain/09_protocol:Blockchain Data Types>`, ":math:`4`"
+":math:`2`", "Magic Bytes", "Bytes", ":math:`4`"
+":math:`3`", "Content ID (0x19)", ":ref:`Byte <02_decentralchain/09_protocol:Blockchain Data Types>`", ":math:`1`"
+":math:`4`", "Payload length", :ref:`Int <02_decentralchain/09_protocol:Blockchain Data Types>`, ":math:`4`"
+":math:`5`", "Payload checksum", "Bytes", ":math:`4`"
+":math:`6`", "Transaction (N bytes)", "Bytes", "N"

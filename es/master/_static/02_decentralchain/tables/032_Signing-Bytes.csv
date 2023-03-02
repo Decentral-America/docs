@@ -1,0 +1,13 @@
+#, Field name, Type, Position, Length, Value, Base58 bytes value
+":math:`1`", "Transaction type (0x04)", ":ref:`Byte <02_decentralchain/09_protocol:Blockchain Data Types>`", ":math:`0`", ":math:`1`", ":math:`4`", ":math:`5`"
+":math:`2`", "Sender's public key", "Bytes", ":math:`1`", ":math:`32`", "...", "EENPV1mRhUD9gSKbcWt84cqnfSGQP5LkCu5gMBfAanYH"
+":math:`3`", "Amount's asset flag (0-DecentralCoins, 1-Asset)", ":ref:`Byte <02_decentralchain/09_protocol:Blockchain Data Types>`", ":math:`33`", ":math:`1`", ":math:`1`", ":math:`2`"
+":math:`4`", "Amount's asset ID (*if used)", "Bytes", ":math:`34`", ":math:`0 (32*)`", "...", "BG39cCNUFWPQYeyLnu7tjKHaiUGRxYwJjvntt9gdDPxG"
+":math:`5`", "Fee's asset flag (0-DecentralCoins, 1-Asset)", ":ref:`Byte <02_decentralchain/09_protocol:Blockchain Data Types>`", ":math:`34 (66*)`", ":math:`1`", ":math:`1`", ":math:`2`"
+":math:`6`", "Fee's asset ID (**if used)", "Bytes", ":math:`35 (67*)`", ":math:`0 (32**)`", "...", "BG39cCNUFWPQYeyLnu7tjKHaiUGRxYwJjvntt9gdDPxG"
+":math:`7`", "Timestamp", :ref:`Long <02_decentralchain/09_protocol:Blockchain Data Types>`, ":math:`35 (67\_ ) (99*\_ )`", ":math:`8`", ":math:`1479287120875`", "11frnYASv"
+":math:`8`", "Amount", :ref:`Long <02_decentralchain/09_protocol:Blockchain Data Types>`, ":math:`43 (75\_ ) (107*\_ )`", ":math:`8`", ":math:`1`", ":math:`11111112`"
+":math:`9`", "Fee", :ref:`Long <02_decentralchain/09_protocol:Blockchain Data Types>`, ":math:`51 (83\_ ) (115*\_ )`",	":math:`8`", ":math:`1`", ":math:`11111112`"
+":math:`10`", "Recipient's address", "Bytes", ":math:`59  (91\_ ) (123*\_ )`", ":math:`26`", "...", "3NBVqYXrapgJP9atQccdBPAgJPwHDKkh6A8"
+":math:`11`", "Attachment's length (N)", :ref:`Short<02_decentralchain/09_protocol:Blockchain Data Types>`, ":math:`85 (117\_ ) (149*\_ )`", ":math:`2`", ":math:`4`", ":math:`15`"
+":math:`12`", "Attachment's bytes", "Bytes", ":math:`87 (119\_ ) (151*\_ )`", "N", ":math:`[1,2,3,4]`", "2VfUX"

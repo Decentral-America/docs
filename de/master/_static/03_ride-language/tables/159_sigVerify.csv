@@ -1,0 +1,7 @@
+Name, Max message size, Complexity
+"sigVerify(message: ByteVector, sig: ByteVector, pub: ByteVector): Boolean", ":math:`150` kB", ":math:`200`"
+"sigVerify_8Kb(message: ByteVector, sig: ByteVector, pub: ByteVector): Boolean", ":math:`8` kB", ":math:`47`"
+"sigVerify_16Kb(message: ByteVector, sig: ByteVector, pub: ByteVector): Boolean", ":math:`16` kB", ":math:`57`"
+"sigVerify_32Kb(message: ByteVector, sig: ByteVector, pub: ByteVector): Boolean", ":math:`32` kB", ":math:`70`"
+"sigVerify_64Kb(message: ByteVector, sig: ByteVector, pub: ByteVector): Boolean", ":math:`64` kB", ":math:`102`"
+"sigVerify_128Kb(message: ByteVector, sig: ByteVector, pub: ByteVector): Boolean", ":math:`128` kB", ":math:`172`"

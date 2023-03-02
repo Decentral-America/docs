@@ -1,0 +1,13 @@
+Field, Description
+"chain_id", ":ref:`Chain ID <02_decentralchain/08_mainnet-testnet-stagenet:Chain ID>`"
+"reference", "BLAKE2b-256 hash of the previous block header."
+"base_target", ":ref:`Base target <02_decentralchain/04_block:Base Target>`: а variable that is used in the block generation algorithm."
+"generation_signature",	":ref:`Generation signature <02_decentralchain/04_block:Block Generation>`: а variable that is used in the block generation algorithm (:math:`32` bytes)."
+"feature_votes", "List of features for which the block generator votes. See the :ref:`features <documentation:placeholder>`."
+"timestamp", ":ref:`Block timestamp <02_decentralchain/04_block:Block Timestamp>`: Unix time in milliseconds."
+"version", "Block version: :math:`5`."
+"generator", "Block generator's account public key (:math:`32` bytes)."
+"reward_vote", ":ref:`Block generation reward <02_decentralchain/05_node:Block Reward>` for which the block generator votes. :math:`-1` means that block generator votes for the current reward size."
+"transactions_root", ":ref:`Transactions Root Hash <02_decentralchain/04_block:Transactions Root Hash>` (:math:`32` bytes)."
+"signature", ":ref:`Block header signature <02_decentralchain/04_block:Block Signature>` (:math:`64` bytes)."
+"transactions", "For each transaction: 1) Body bytes: up to :math:`165,487` bytes. 2) Proofs: up to :math:`531` bytes. See the :ref:`transaction binary format <02_decentralchain/10_binary-format:Transaction Binary Format>` article for details."

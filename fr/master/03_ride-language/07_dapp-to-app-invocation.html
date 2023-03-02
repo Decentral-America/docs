@@ -1,0 +1,1066 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="fr" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>dApp-to-App Invocation &#8212; Documentation DecentralChain </title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/jupyter-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/thebelab.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/plot_directive.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d" />
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/thebelab-helper.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script src="../_static/design-tabs.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@jupyter-widgets/html-manager@^1.0.1/dist/embed-amd.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '03_ride-language/07_dapp-to-app-invocation';</script>
+    <link rel="shortcut icon" href="../_static/icon.svg"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Recherche" href="../search.html" />
+    <link rel="prev" title="Iterations with FOLD&lt;N&gt;" href="06_iterations-with-fold.html" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="fr"/>  
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Passer au contenu principal</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+<div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+    <span class="fa-solid fa-bars"></span>
+  </label>
+  
+  <div class="navbar-header-items__start">
+    
+      <div class="navbar-item">
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="DecentralChain"/>
+    <script>document.write(`<img src="../_static/logo-dark.png" class="logo__image only-dark" alt="DecentralChain"/>`);</script>
+  
+  
+</a></div>
+    
+  </div>
+  
+  
+  <div class=" navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item"><nav class="navbar-nav">
+  <p class="sidebar-header-items__title"
+     role="heading"
+     aria-level="1"
+     aria-label="Navigation du site">
+    Navigation du site
+  </p>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../01_introduction.html">
+                        Introduction
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../02_decentralchain/index.html">
+                        DecentralChain
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="index.html">
+                        Ride Language
+                      </a>
+                    </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="http://decentralchain.io/">
+                    Website
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="http://decentral.exchange/">
+                    Wallet & Exchange
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://decentralscan.com/">
+                    Explorer
+                  </a>
+                </li>
+                
+                </div>
+            </div>
+            
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Recherche" aria-label="Recherche" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+        </div>
+      
+      
+        <div class="navbar-item">
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="clair/sombre" aria-label="clair/sombre" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/Decentral-America/docs" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-github"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://twitter.com/decentralchain" title="Twitter" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-twitter"></i></span>
+            <label class="sr-only">Twitter</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.linkedin.com/company/decentralchain/" title="LinkedIn" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-linkedin"></i></span>
+            <label class="sr-only">LinkedIn</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.youtube.com/@decentralchain" title="Youtube" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-youtube"></i></span>
+            <label class="sr-only">Youtube</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://discord.gg/9UUbNBPQ3D" title="Discord" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-discord"></i></span>
+            <label class="sr-only">Discord</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.instagram.com/decentralchain/" title="Discord" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-instagram"></i></span>
+            <label class="sr-only">Discord</label></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Recherche" aria-label="Recherche" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+    </div>
+  
+
+  
+    <label class="sidebar-toggle secondary-toggle" for="__secondary">
+      <span class="fa-solid fa-outdent"></span>
+    </label>
+  
+</div>
+
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          <div class="navbar-item"><nav class="navbar-nav">
+  <p class="sidebar-header-items__title"
+     role="heading"
+     aria-level="1"
+     aria-label="Navigation du site">
+    Navigation du site
+  </p>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../01_introduction.html">
+                        Introduction
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../02_decentralchain/index.html">
+                        DecentralChain
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="index.html">
+                        Ride Language
+                      </a>
+                    </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="http://decentralchain.io/">
+                    Website
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="http://decentral.exchange/">
+                    Wallet & Exchange
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://decentralscan.com/">
+                    Explorer
+                  </a>
+                </li>
+                
+                </div>
+            </div>
+            
+  </ul>
+</nav></div>
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="clair/sombre" aria-label="clair/sombre" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/Decentral-America/docs" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-github"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://twitter.com/decentralchain" title="Twitter" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-twitter"></i></span>
+            <label class="sr-only">Twitter</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.linkedin.com/company/decentralchain/" title="LinkedIn" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-linkedin"></i></span>
+            <label class="sr-only">LinkedIn</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.youtube.com/@decentralchain" title="Youtube" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-youtube"></i></span>
+            <label class="sr-only">Youtube</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://discord.gg/9UUbNBPQ3D" title="Discord" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-discord"></i></span>
+            <label class="sr-only">Discord</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.instagram.com/decentralchain/" title="Discord" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-instagram"></i></span>
+            <label class="sr-only">Discord</label></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item"><nav class="bd-docs-nav bd-links"
+     aria-label="Navigation de la section">
+  <p class="bd-links__title" role="heading" aria-level="1">Navigation de la section</p>
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Ride Language</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="01_syntax-basics.html">Syntax Basics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_data-types.html">Data Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03_functions.html">Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04_script-types.html">Script Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05_structures.html">Structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06_iterations-with-fold.html">Iterations with FOLD&lt;N&gt;</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">dApp-to-App Invocation</a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+
+
+<nav aria-label="Fils d'Ariane">
+  <ul class="bd-breadcrumbs" role="navigation" aria-label="Fil d'Ariane">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../index.html" class="nav-link" aria-label="Acceuil">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="index.html" class="nav-link">Ride Language</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page">dApp-to-App Invocation</li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                   <section id="dapp-to-app-invocation">
+<h1>dApp-to-App Invocation<a class="headerlink" href="#dapp-to-app-invocation" title="Lien permanent vers cette rubrique">#</a></h1>
+<p>A dApp callable function can invoke a callable function of another dApp, or another callable function of the same dApp, or even itself. The invocation is synchronous. The invoked function returns a value that the invoking function can use.</p>
+<p>dApp-to-dApp invocation is processed as follows:</p>
+<ul class="simple">
+<li><p>A user sends an Invoke Script transaction that invokes the callable function <span class="math notranslate nohighlight">\(1\)</span>.</p></li>
+<li><p>The callable function <span class="math notranslate nohighlight">\(1\)</span> invokes the callable function <span class="math notranslate nohighlight">\(2\)</span> via a <a class="reference internal" href="#strict-variable"><span class="std std-ref">strict variable</span></a> initialized by the <a class="reference internal" href="#dapp-to-app-invocation"><span class="std std-ref">invoke or reentrantInvoke</span></a> function.</p></li>
+<li><p>The callable function <span class="math notranslate nohighlight">\(2\)</span> is executed; the script actions and return value are calculated.</p></li>
+<li><p>The <a class="reference internal" href="#callable-function-result"><span class="std std-ref">return value</span></a> is assigned to the strict variable. The subsequent operations of callable function 1 are executed, taking into account script actions of callable function <span class="math notranslate nohighlight">\(2\)</span> (as if the actions were applied to the blockchain state).</p></li>
+<li><p>Finally, the script actions of callable functions <span class="math notranslate nohighlight">\(2\)</span> and <span class="math notranslate nohighlight">\(1\)</span> are applied to the blockchain state.</p></li>
+</ul>
+<section id="features">
+<h2>Features<a class="headerlink" href="#features" title="Lien permanent vers cette rubrique">#</a></h2>
+<ul class="simple">
+<li><p>dApp-to-dApp invocations can be nested.</p></li>
+<li><p>All invoked callable functions are executed within a single Invoke Script transaction.</p></li>
+<li><p>A dApp-to-dApp invocation can contain payments that are transferred from the balance of the parent dApp to the balance of the invoked dApp.</p></li>
+<li><p>Payments attached to a callable function invocation can be used in script actions and in payments attached to nested invocations.</p></li>
+</ul>
+</section>
+<section id="conditions">
+<h2>Conditions<a class="headerlink" href="#conditions" title="Lien permanent vers cette rubrique">#</a></h2>
+<ul class="simple">
+<li><p>Both the parent and invoked dApp scripts use standard library version 5.</p></li>
+<li><p>If the dApp invokes itself, the invocation must not contain payments.</p></li>
+<li><p>The number of the <a class="reference internal" href="#dapp-to-app-invocation"><span class="std std-ref">invoke or reentrantInvoke</span></a> function calls is up to 100 within a single Invoke Script transaction.</p></li>
+<li><p>The maximum total number of Issue, Reissue, Burn, SponsorFee, ScriptTransfer, Lease, LeaseCancel script actions executed by all callable functions in a single transaction is <span class="math notranslate nohighlight">\(30\)</span>.</p></li>
+<li><p>The maximum total number of BinaryEntry, BooleanEntry, IntegerEntry, StringEntry, DeleteEntry script actions executed by all callable functions in a single transaction is <span class="math notranslate nohighlight">\(100\)</span>.</p></li>
+<li><p>The total complexity is limited by <span class="math notranslate nohighlight">\(26,000\)</span> for all callable functions and asset scripts of involved smart assets. The sender’s account script complexity is not included in that limit.</p></li>
+</ul>
+</section>
+<section id="strict-variable">
+<h2>Strict Variable<a class="headerlink" href="#strict-variable" title="Lien permanent vers cette rubrique">#</a></h2>
+<p>strict keyword defines a variable with eager evaluation. Unlike lazy variables defined with let, a strict variable is evaluated immediately when script execution reaches it, that is, before the next expression.</p>
+</section>
+<section id="invoke-and-reentrantinvoke-functions">
+<h2>Invoke and reentrantInvoke Functions<a class="headerlink" href="#invoke-and-reentrantinvoke-functions" title="Lien permanent vers cette rubrique">#</a></h2>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>invoke(dApp: Address|Alias, function: String, arguments: List[Any], payments: List[AttachedPayments]): Any
+reentrantInvoke(dApp: Address|Alias, function: String, arguments: List[Any], payments: List[AttachedPayments]): Any
+</pre></div>
+</div>
+<p><strong>Parameters:</strong></p>
+<table class="longtable table" id="id1">
+<caption><span class="caption-text">Invoke and ReentrantInvoke Functions</span><a class="headerlink" href="#id1" title="Lien permanent vers ce tableau">#</a></caption>
+<colgroup>
+<col style="width: 28.6%" />
+<col style="width: 71.4%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Parameter</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>dApp: Address|Alias</p></td>
+<td><p>Address or alias of a dApp to invoke.</p></td>
+</tr>
+<tr class="row-odd"><td><p>function: String|Unit</p></td>
+<td><p>Name of a callable function. unit for a default function invocation.</p></td>
+</tr>
+<tr class="row-even"><td><p>arguments: List[Any]</p></td>
+<td><p>Parameters of a callable function.</p></td>
+</tr>
+<tr class="row-odd"><td><p>payments: List[AttachedPayment]</p></td>
+<td><p>Payments to transfer from the parent dApp to the invoked dApp, up to <span class="math notranslate nohighlight">\(10\)</span>.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>strict z = invoke(dapp,foo,args,[AttachedPayment(unit,100000000)])
+</pre></div>
+</div>
+<p>The return value is of type Any, which means any valid type. You can extract a particular type from it using as[T] and exactAs[T] macros or the match … case operator, see the <a class="reference internal" href="02_data-types.html#any"><span class="std std-ref">any</span></a> article.</p>
+<p>The invoke and reentrantInvoke functions differ only in the reentrancy restriction. For details, see the <a class="reference internal" href="03_functions.html#dapp-to-dapp-invocation-functions"><span class="std std-ref">dApp-to-dApp invocation function</span></a> article.</p>
+</section>
+<section id="invocation-fields">
+<h2>Invocation Fields<a class="headerlink" href="#invocation-fields" title="Lien permanent vers cette rubrique">#</a></h2>
+<p>For dApp-to-dApp invocation, the fields of <a class="reference internal" href="05_structures.html#invocation"><span class="std std-ref">Invocation</span></a> structure used by the invoked function are filled with the following values:</p>
+<table class="longtable table" id="id2">
+<caption><span class="caption-text">Invocation Fields</span><a class="headerlink" href="#id2" title="Lien permanent vers ce tableau">#</a></caption>
+<colgroup>
+<col style="width: 10.0%" />
+<col style="width: 20.0%" />
+<col style="width: 20.0%" />
+<col style="width: 50.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>#</p></th>
+<th class="head"><p>Name</p></th>
+<th class="head"><p>Data type</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(1\)</span></p></td>
+<td><p>caller</p></td>
+<td><p><a class="reference internal" href="05_structures.html#address"><span class="std std-ref">Address</span></a></p></td>
+<td><p><a class="reference internal" href="../02_decentralchain/01_account.html#address"><span class="std std-ref">address</span></a> of the dApp that invokes the callable function.</p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(2\)</span></p></td>
+<td><p>callerPublicKey</p></td>
+<td><p><a class="reference internal" href="02_data-types.html#bytevector"><span class="std std-ref">ByteVector</span></a></p></td>
+<td><p>Public key of the dApp that invokes the callable function.</p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(3\)</span></p></td>
+<td><p>originCaller</p></td>
+<td><p>Address</p></td>
+<td><p>Address of the account that sent the invoke script transaction.</p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(4\)</span></p></td>
+<td><p>originCallerPublicKey</p></td>
+<td><p><a class="reference internal" href="02_data-types.html#bytevector"><span class="std std-ref">ByteVector</span></a></p></td>
+<td><p>Public key of the account that sent the invoke script transaction.</p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(5\)</span></p></td>
+<td><p>payments</p></td>
+<td><p><a class="reference internal" href="02_data-types.html#list"><span class="std std-ref">List</span></a> [<a class="reference internal" href="05_structures.html#attachedpayment"><span class="std std-ref">AttachedPayment</span></a>]</p></td>
+<td><p>Payments indicated in the invoke or reentrantInvoke function.</p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(6\)</span></p></td>
+<td><p>transactionId</p></td>
+<td><p><a class="reference internal" href="02_data-types.html#bytevector"><span class="std std-ref">ByteVector</span></a></p></td>
+<td><p>ID of the invoke script transaction.</p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(7\)</span></p></td>
+<td><p>fee</p></td>
+<td><p><a class="reference internal" href="../02_decentralchain/09_protocol.html#blockchain-data-types"><span class="std std-ref">Int</span></a></p></td>
+<td><p><a class="reference internal" href="../02_decentralchain/03_transaction.html#transaction-fees"><span class="std std-ref">Transaction fee</span></a>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(8\)</span></p></td>
+<td><p>feeAssetId</p></td>
+<td><p><a class="reference internal" href="02_data-types.html#bytevector"><span class="std std-ref">ByteVector</span></a> | <a class="reference internal" href="02_data-types.html#unit"><span class="std std-ref">Unit</span></a></p></td>
+<td><p>ID of the fee token.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="callable-function-result">
+<h2>Callable Function Result<a class="headerlink" href="#callable-function-result" title="Lien permanent vers cette rubrique">#</a></h2>
+<p>In standard library version 5, a callable function result is a <a class="reference internal" href="02_data-types.html#tuple"><span class="std std-ref">tuple</span></a> of two elements:</p>
+<ul class="simple">
+<li><p>List of script actions.</p></li>
+<li><p>Return value that is passed to the invoking function.</p></li>
+</ul>
+<p>Let’s see an example:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>(
+  [
+    ScriptTransfer(i.caller,100,unit)
+  ],
+  42
+)
+</pre></div>
+</div>
+<p>In standard library version 4 or 3, there is no return value, so unit is implied.</p>
+<p>For details, see the <a class="reference internal" href="03_functions.html#callable-functions"><span class="std std-ref">callable function</span></a> article.</p>
+</section>
+<section id="updating-balance-and-account-data-storage-entries">
+<h2>Updating Balance and Account Data Storage Entries<a class="headerlink" href="#updating-balance-and-account-data-storage-entries" title="Lien permanent vers cette rubrique">#</a></h2>
+<p>If the callable function invoked by the invoke or reentrantInvoke function performs script actions, the results of those actions are available to the invoking function:</p>
+<ul class="simple">
+<li><p>If the invoked function adds an entry to the account’s data storage, the invoking function can obtain the entry after the invocation.</p></li>
+<li><p>If the invoked function deletes an entry from the account’s data storage, the invoking function cannot obtain the entry after the invocation.</p></li>
+<li><p>If the invoked function performs actions with tokens (transfer, issue/reissue/burn, and others) and the invoking function obtains balances after the invocation, it receives the updated balances.</p></li>
+</ul>
+</section>
+<section id="transaction-fail">
+<h2>Transaction Fail<a class="headerlink" href="#transaction-fail" title="Lien permanent vers cette rubrique">#</a></h2>
+<p>If the callable function’s execution fails or <a class="reference internal" href="03_functions.html#exception-functions"><span class="std std-ref">throws an exception</span></a>, the Invoke Script transaction could be rejected or saved on the blockchain as failed. This depends on whether the complexity of performed computations has exceeded the <a class="reference internal" href="#limitations"><span class="std std-ref">threshold for saving a failed transaction</span></a> (currently <span class="math notranslate nohighlight">\(1000\)</span>). The complexity is summed up for all invocations.</p>
+<p>Consider the example: callable function <span class="math notranslate nohighlight">\(1\)</span> performs computations of 800 complexity, then invokes callable function <span class="math notranslate nohighlight">\(2\)</span> which performs computations of 300 complexity and then fails. The complexity <span class="math notranslate nohighlight">\(800 + 300\)</span> has exceeded the threshold, so the transaction is saved as failed, and the sender is charged a fee.</p>
+<p>If the total complexity of executed callable functions and asset scripts exceeds the limit of <span class="math notranslate nohighlight">\(26,000\)</span>, the transaction is saved as failed as well. For example, if the complexity of executed callable functions is <span class="math notranslate nohighlight">\(25,000\)</span> in total, and there is a smart asset in script action whose script’s complexity is <span class="math notranslate nohighlight">\(1500\)</span>.</p>
+<p>In case of failure, no payments and script actions are applied to the blockchain state, even if some of the invoked functions are executed completely. The only state change the failed transaction entails is charging the fee.</p>
+</section>
+<section id="limitations">
+<h2>Limitations<a class="headerlink" href="#limitations" title="Lien permanent vers cette rubrique">#</a></h2>
+<table class="longtable table" id="id3">
+<caption><span class="caption-text">Limitations</span><a class="headerlink" href="#id3" title="Lien permanent vers ce tableau">#</a></caption>
+<colgroup>
+<col style="width: 75.0%" />
+<col style="width: 25.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Limitation</p></th>
+<th class="head"><p>Maximum value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>dApp script size</p></td>
+<td><p><span class="math notranslate nohighlight">\(32\)</span> Kbytes.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Account script or asset script size</p></td>
+<td><p><span class="math notranslate nohighlight">\(8\)</span> Kbytes.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#script-complexity"><span class="std std-ref">Complexity</span></a> of account script</p></td>
+<td><p><span class="math notranslate nohighlight">\(2000\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Complexity of asset script</p></td>
+<td><p><span class="math notranslate nohighlight">\(4000\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>Complexity of each callable function of dApp script</p></td>
+<td><p><span class="math notranslate nohighlight">\(10,000\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Total number of <a class="reference internal" href="#dapp-to-app-invocation"><span class="std std-ref">dApp-to-dApp invocations</span></a> within a single Invoke Script transaction</p></td>
+<td><p><span class="math notranslate nohighlight">\(100\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>Total complexity for all callable functions and asset scripts involved in an Invoke Script transaction. The sender’s account script complexity is not included in this limit</p></td>
+<td><p><span class="math notranslate nohighlight">\(26,000\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Complexity threshold for saving failed transactions: if the callable function failed with an error or throwing an exception before the threshold exceeded, the invoke script transaction is rejected and the fee is not charged</p></td>
+<td><p><span class="math notranslate nohighlight">\(1000\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>Complexity of verifier function of dApp script</p></td>
+<td><p><span class="math notranslate nohighlight">\(2000\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Sender complexity threshold: if the complexity of an account script or the verifier function of a dApp script exceeds this limit, the minimum fee for a transaction sent from the account is increased by 0.004 <a class="reference internal" href="../02_decentralchain/02_token%28asset%29.html#decentralcoin"><span class="std std-ref">DecentralCoins</span></a></p></td>
+<td><p><span class="math notranslate nohighlight">\(200\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>Function name or variable name</p></td>
+<td><p><span class="math notranslate nohighlight">\(255\)</span> bytes</p></td>
+</tr>
+<tr class="row-odd"><td><p>Size of <a class="reference internal" href="02_data-types.html#string"><span class="std std-ref">String</span></a> variable</p></td>
+<td><p><span class="math notranslate nohighlight">\(32,767\)</span> bytes</p></td>
+</tr>
+<tr class="row-even"><td><p>Size of <a class="reference internal" href="02_data-types.html#bytevector"><span class="std std-ref">ByteVector</span></a> variable</p></td>
+<td><p><span class="math notranslate nohighlight">\(32,767\)</span> bytes (except bodyBytes field of transaction structure).</p></td>
+</tr>
+<tr class="row-odd"><td><p>Data weight</p></td>
+<td><p>See <a class="reference internal" href="#data-weight"><span class="std std-ref">data weight</span></a>.</p></td>
+</tr>
+<tr class="row-even"><td><p>Number of callable function arguments</p></td>
+<td><p><span class="math notranslate nohighlight">\(22\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Number of payments attached to an invocation</p></td>
+<td><p><span class="math notranslate nohighlight">\(10\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>Total number of <a class="reference internal" href="05_structures.html#issue"><span class="std std-ref">Issue</span></a>, <a class="reference internal" href="05_structures.html#reissue"><span class="std std-ref">Reissue</span></a>, <a class="reference internal" href="05_structures.html#burn"><span class="std std-ref">Burn</span></a>, <a class="reference internal" href="05_structures.html#sponsorfee"><span class="std std-ref">SponsorFee</span></a>, <a class="reference internal" href="05_structures.html#scripttransfer"><span class="std std-ref">ScriptTransfer</span></a>, <a class="reference internal" href="05_structures.html#lease"><span class="std std-ref">Lease</span></a>, and <a class="reference internal" href="05_structures.html#leasecancel"><span class="std std-ref">LeaseCancel</span></a> script actions executed by all callable functions in a single transaction</p></td>
+<td><p><span class="math notranslate nohighlight">\(30\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Total number of <a class="reference internal" href="05_structures.html#binaryentry"><span class="std std-ref">BinaryEntry</span></a>, <a class="reference internal" href="05_structures.html#booleanentry"><span class="std std-ref">BooleanEntry</span></a>, <a class="reference internal" href="05_structures.html#deleteentry"><span class="std std-ref">DeleteEntry</span></a>, <a class="reference internal" href="05_structures.html#integerentry"><span class="std std-ref">IntegerEntry</span></a>, <a class="reference internal" href="05_structures.html#stringentry"><span class="std std-ref">StringEntry</span></a> script actions executed by all callable functions in a single transaction</p></td>
+<td><p><span class="math notranslate nohighlight">\(100\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>Total size of data written to the <a class="reference internal" href="../02_decentralchain/01_account.html#account-data-storage"><span class="std std-ref">account data storage</span></a> by all BinaryEntry, BooleanEntry, IntegerEntry, StringEntry script actions executed by a callable function</p></td>
+<td><p><span class="math notranslate nohighlight">\(5\)</span> Kbytes.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Total size of data written to the account data storage by all BinaryEntry, BooleanEntry, IntegerEntry, StringEntry script actions executed by all callable functions in a single transaction</p></td>
+<td><p><span class="math notranslate nohighlight">\(15\)</span> Kbytes.</p></td>
+</tr>
+</tbody>
+</table>
+<section id="script-complexity">
+<h3>Script Complexity<a class="headerlink" href="#script-complexity" title="Lien permanent vers cette rubrique">#</a></h3>
+<p>Script complexity is a dimensionless quantity that estimates computational resources needed to execute a script. The complexity of a script is estimated based on complexities of all the operators and functions it consists of. The complexity of the built-in functions is listed in the built-in functions article.</p>
+<p>Limitations on script complexity are given in the <a class="reference internal" href="#limitations"><span class="std std-ref">limitations</span></a> article.</p>
+</section>
+<section id="data-weight">
+<h3>Data Weight<a class="headerlink" href="#data-weight" title="Lien permanent vers cette rubrique">#</a></h3>
+<p>The weight of each value approximately corresponds to its size in bytes. Weight is used in <a class="reference internal" href="#limitations"><span class="std std-ref">limitations</span></a> on creating and comparing values.</p>
+<section id="weight-calculation">
+<h4>Weight Calculation<a class="headerlink" href="#weight-calculation" title="Lien permanent vers cette rubrique">#</a></h4>
+<table class="longtable table" id="id4">
+<caption><span class="caption-text">Weight Calculation</span><a class="headerlink" href="#id4" title="Lien permanent vers ce tableau">#</a></caption>
+<colgroup>
+<col style="width: 50.0%" />
+<col style="width: 50.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Data type</p></th>
+<th class="head"><p>Weight of value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="02_data-types.html#bigint"><span class="std std-ref">BigInt</span></a></p></td>
+<td><p><span class="math notranslate nohighlight">\(64\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="02_data-types.html#boolean"><span class="std std-ref">Boolean</span></a></p></td>
+<td><p><span class="math notranslate nohighlight">\(1\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="02_data-types.html#bytevector"><span class="std std-ref">ByteVector</span></a></p></td>
+<td><p>Size in bytes.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="02_data-types.html#int"><span class="std std-ref">Int</span></a></p></td>
+<td><p><span class="math notranslate nohighlight">\(8\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="02_data-types.html#list"><span class="std std-ref">List</span></a></p></td>
+<td><p>See weight of list below.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="02_data-types.html#string"><span class="std std-ref">String</span></a></p></td>
+<td><p>Size in bytes.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="05_structures.html#structures"><span class="std std-ref">Structure</span></a></p></td>
+<td><p>See weight of tuple or structure.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="02_data-types.html#tuple"><span class="std std-ref">Tuple</span></a></p></td>
+<td><p>See weight of tuple or structure.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="02_data-types.html#unit"><span class="std std-ref">Unit</span></a></p></td>
+<td><p><span class="math notranslate nohighlight">\(40\)</span></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="weight-of-list">
+<h4>Weight of List<a class="headerlink" href="#weight-of-list" title="Lien permanent vers cette rubrique">#</a></h4>
+<p>The weight of the list is calculated as follows:</p>
+<p><span class="math notranslate nohighlight">\(W_{list} = 20 + 20 × Q + W_{elems}\)</span></p>
+<p>where:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(Q\)</span> is a number of elements.</p></li>
+<li><p><span class="math notranslate nohighlight">\(W_{elems}\)</span> is a total weight of elements.</p></li>
+</ul>
+</section>
+<section id="weight-of-tuple-or-structure">
+<h4>Weight of Tuple or Structure<a class="headerlink" href="#weight-of-tuple-or-structure" title="Lien permanent vers cette rubrique">#</a></h4>
+<p>The weight of the tuple or structure is calculated as follows:</p>
+<p><span class="math notranslate nohighlight">\(W_{struct} = 40 + 30 × Q + W_{fields}\)</span></p>
+<p>where:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(Q\)</span> is a number of fields.</p></li>
+<li><p><span class="math notranslate nohighlight">\(W_{fields}\)</span> is a total weight of fields.</p></li>
+</ul>
+</section>
+<section id="weight-limitations">
+<h4>Weight Limitations<a class="headerlink" href="#weight-limitations" title="Lien permanent vers cette rubrique">#</a></h4>
+<ul class="simple">
+<li><p>The maximum weight of the value is <span class="math notranslate nohighlight">\(307200\)</span>.</p></li>
+<li><p>A comparison of values is not allowed if the weight of each value exceeds <span class="math notranslate nohighlight">\(13000\)</span>.</p></li>
+</ul>
+<p>If the limitations are exceeded, the script fails.</p>
+<p>Let’s consider an example, using the AssetPair structure:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>AssetPair(amountAsset: ByteVector|Unit, priceAsset: ByteVector|Unit)
+</pre></div>
+</div>
+<p>An asset ID is a ByteVector of <span class="math notranslate nohighlight">\(32\)</span> bytes, its weight is <span class="math notranslate nohighlight">\(32\)</span>. If both assets in the pair are not DecentralCoins, then the weight of the AssetPair structure is:</p>
+<p><span class="math notranslate nohighlight">\(W_{AssetPair} = 40 + 30 × 2 + (32 + 32) = 164\)</span></p>
+<p>If one of the assets is DecentralCoin, then the corresponding field is of type Unit and its weight is <span class="math notranslate nohighlight">\(40\)</span>. Then the weight of the AssetPair structure is:</p>
+<p><span class="math notranslate nohighlight">\(W_{AssetPair} = 40 + 30 × 2 + (32 + 40) = 172\)</span></p>
+</section>
+</section>
+</section>
+</section>
+
+<div class="section">
+   
+</div>
+
+                </article>
+              
+              
+              
+                <footer class="bd-footer-article">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="06_iterations-with-fold.html"
+       title="page précédente">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">précédent</p>
+        <p class="prev-next-title">Iterations with FOLD&lt;N&gt;</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Sur cette page
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#features">Features</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conditions">Conditions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#strict-variable">Strict Variable</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#invoke-and-reentrantinvoke-functions">Invoke and reentrantInvoke Functions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#invocation-fields">Invocation Fields</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#callable-function-result">Callable Function Result</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#updating-balance-and-account-data-storage-entries">Updating Balance and Account Data Storage Entries</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#transaction-fail">Transaction Fail</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#limitations">Limitations</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#script-complexity">Script Complexity</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-weight">Data Weight</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#weight-calculation">Weight Calculation</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#weight-of-list">Weight of List</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#weight-of-tuple-or-structure">Weight of Tuple or Structure</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#weight-limitations">Weight Limitations</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+  
+  <div class="tocsection editthispage">
+    <a href="https://github.com/Decentral-America/docs/edit/master/docs//03_ride-language/07_dapp-to-app-invocation.rst">
+      <i class="fa-solid fa-pencil"></i>
+      
+      
+        
+          Modifier sur GitHub
+        
+      
+    </a>
+  </div>
+</div>
+
+  <div class="sidebar-secondary-item">
+  <div class="tocsection sourcelink">
+    <a href="../_sources/03_ride-language/07_dapp-to-app-invocation.rst">
+      <i class="fa-solid fa-file-lines"></i> Montrer le code source
+    </a>
+  </div>
+</div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            <div class="bd-footer-content__inner"></div>
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+  <p class="copyright">
+    
+      © Copyright 2023, Blockchain Costa Rica.
+      <br/>
+    
+  </p>
+</div>
+      
+    </div>
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item"><p class="theme-version">
+  Construit avec le <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">Thème PyData Sphinx</a> 0.13.0.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

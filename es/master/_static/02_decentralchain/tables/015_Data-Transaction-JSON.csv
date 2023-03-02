@@ -1,0 +1,4 @@
+Field, Description
+"data.key", "Entry key. String, up to :math:`400` bytes for version 2, up to :math:`100` characters for version 1."
+"data.type", "Entry type: 1) binary. 2) boolean. 3) integer. 4) string. 5) null – delete entry."
+"data.value", "Entry value. Up to :math:`32,767` bytes. Binary value is base64 encoded. null – delete entry."

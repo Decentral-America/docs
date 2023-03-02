@@ -1,0 +1,881 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="pt" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>Block &#8212; Documentação DecentralChain </title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/jupyter-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/thebelab.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/plot_directive.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d" />
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/thebelab-helper.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script src="../_static/design-tabs.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@jupyter-widgets/html-manager@^1.0.1/dist/embed-amd.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '02_decentralchain/04_block';</script>
+    <link rel="shortcut icon" href="../_static/icon.svg"/>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Pesquisar" href="../search.html" />
+    <link rel="next" title="Node" href="05_node.html" />
+    <link rel="prev" title="Transaction" href="03_transaction.html" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="pt"/>  
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+<div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+    <span class="fa-solid fa-bars"></span>
+  </label>
+  
+  <div class="navbar-header-items__start">
+    
+      <div class="navbar-item">
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="DecentralChain"/>
+    <script>document.write(`<img src="../_static/logo-dark.png" class="logo__image only-dark" alt="DecentralChain"/>`);</script>
+  
+  
+</a></div>
+    
+  </div>
+  
+  
+  <div class=" navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item"><nav class="navbar-nav">
+  <p class="sidebar-header-items__title"
+     role="heading"
+     aria-level="1"
+     aria-label="Site Navigation">
+    Site Navigation
+  </p>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../01_introduction.html">
+                        Introduction
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="index.html">
+                        DecentralChain
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../03_ride-language/index.html">
+                        Ride Language
+                      </a>
+                    </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="http://decentralchain.io/">
+                    Website
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="http://decentral.exchange/">
+                    Wallet & Exchange
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://decentralscan.com/">
+                    Explorer
+                  </a>
+                </li>
+                
+                </div>
+            </div>
+            
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Pesquisar" aria-label="Pesquisar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+        </div>
+      
+      
+        <div class="navbar-item">
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/Decentral-America/docs" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-github"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://twitter.com/decentralchain" title="Twitter" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-twitter"></i></span>
+            <label class="sr-only">Twitter</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.linkedin.com/company/decentralchain/" title="LinkedIn" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-linkedin"></i></span>
+            <label class="sr-only">LinkedIn</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.youtube.com/@decentralchain" title="Youtube" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-youtube"></i></span>
+            <label class="sr-only">Youtube</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://discord.gg/9UUbNBPQ3D" title="Discord" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-discord"></i></span>
+            <label class="sr-only">Discord</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.instagram.com/decentralchain/" title="Discord" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-instagram"></i></span>
+            <label class="sr-only">Discord</label></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Pesquisar" aria-label="Pesquisar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+    </div>
+  
+
+  
+    <label class="sidebar-toggle secondary-toggle" for="__secondary">
+      <span class="fa-solid fa-outdent"></span>
+    </label>
+  
+</div>
+
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          <div class="navbar-item"><nav class="navbar-nav">
+  <p class="sidebar-header-items__title"
+     role="heading"
+     aria-level="1"
+     aria-label="Site Navigation">
+    Site Navigation
+  </p>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../01_introduction.html">
+                        Introduction
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="index.html">
+                        DecentralChain
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../03_ride-language/index.html">
+                        Ride Language
+                      </a>
+                    </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="http://decentralchain.io/">
+                    Website
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="http://decentral.exchange/">
+                    Wallet & Exchange
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://decentralscan.com/">
+                    Explorer
+                  </a>
+                </li>
+                
+                </div>
+            </div>
+            
+  </ul>
+</nav></div>
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/Decentral-America/docs" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-github"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://twitter.com/decentralchain" title="Twitter" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-twitter"></i></span>
+            <label class="sr-only">Twitter</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.linkedin.com/company/decentralchain/" title="LinkedIn" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-linkedin"></i></span>
+            <label class="sr-only">LinkedIn</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.youtube.com/@decentralchain" title="Youtube" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-youtube"></i></span>
+            <label class="sr-only">Youtube</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://discord.gg/9UUbNBPQ3D" title="Discord" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-discord"></i></span>
+            <label class="sr-only">Discord</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.instagram.com/decentralchain/" title="Discord" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-instagram"></i></span>
+            <label class="sr-only">Discord</label></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item"><nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">DecentralChain</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="01_account.html">Account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_token%28asset%29.html">Token (Asset)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03_transaction.html">Transaction</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Block</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05_node.html">Node</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06_order.html">Order</a></li>
+<li class="toctree-l1"><a class="reference internal" href="07_oracle.html">Oracle</a></li>
+<li class="toctree-l1"><a class="reference internal" href="08_mainnet-testnet-stagenet.html">Mainnet, Testnet, Stagenet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="09_protocol.html">Protocol</a></li>
+<li class="toctree-l1"><a class="reference internal" href="10_binary-format.html">Binary Format</a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+
+
+<nav aria-label="Breadcrumbs">
+  <ul class="bd-breadcrumbs" role="navigation" aria-label="Breadcrumb">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="index.html" class="nav-link">DecentralChain</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page">Block</li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                   <section id="block">
+<h1>Block<a class="headerlink" href="#block" title="Permalink to this heading">#</a></h1>
+<p>A block is a link in the chain of the blockchain. Block contains transactions. A block has its height.</p>
+<p>The maximum block size is <span class="math notranslate nohighlight">\(1\)</span> MB. The maximum total complexity of scripts in transactions of the block is <span class="math notranslate nohighlight">\(2,500,000\)</span>. The complexity of all executed scripts is taken into account: dApp scripts, account scripts, and asset scripts.</p>
+<section id="block-generation">
+<h2>Block Generation<a class="headerlink" href="#block-generation" title="Permalink to this heading">#</a></h2>
+<p>A block generation is a creation of a new <a class="reference internal" href="#block"><span class="std std-ref">block</span></a> on the blockchain.
+Blocks are generated by <a class="reference internal" href="05_node.html#generating-node"><span class="std std-ref">generating nodes</span></a> according to <a class="reference internal" href="09_protocol.html#fair-proof-of-stake"><span class="std std-ref">FPoS algorithm</span></a> and the <a class="reference internal" href="09_protocol.html#decentralchain-m5-protocol"><span class="std std-ref">DecentralChain-M5 protocol</span></a>.
+The block generator signs the block headers only. The block headers contain the merkle root hash of the block transactions. This makes it possible to verify the block headers apart from transactions and to provide evidence of the presence of transactions in the block without the presence of all transactions. See details in the <a class="reference internal" href="#transactions-root-hash"><span class="std std-ref">transactions root hash</span></a> article.</p>
+<section id="base-target">
+<h3>Base Target<a class="headerlink" href="#base-target" title="Permalink to this heading">#</a></h3>
+<p>The base target is the variable in the average block generation time formula that adjusts <a class="reference internal" href="#block-generation"><span class="std std-ref">block generation</span></a> time to <span class="math notranslate nohighlight">\(60\)</span> seconds.</p>
+</section>
+<section id="generation-signature">
+<h3>Generation Signature<a class="headerlink" href="#generation-signature" title="Permalink to this heading">#</a></h3>
+<p>Generation signature is the variable in the average block generation time formula. It is used to check whether the current <a class="reference internal" href="05_node.html#generating-node"><span class="std std-ref">generating node</span></a> is eligible to generate the next block.
+The generation signature is calculated using VRF (verifiable random function with short proofs and keys) — a pseudo-random function that uses a message and the private key of an account to provide a non-interactively verifiable proof for the correctness of its output.</p>
+<p>This improvement allows resisting stake grinding attacks aimed at influencing block generation randomness to skip miner’s opportunity to create a block.
+The use of VRF makes signature generation unpredictable because of the need to know the private key for calculation. Only the holder of the private key can compute the hash, but verifying the correctness of the hash using the public key from block header is available to anyone.</p>
+<p>The VRF contains calculateVRF function, which calculates proof for some message, and verifyVRF function, which verifies proof from calculateVRF function with a message and the public key of the signer.
+Considering that a block’s generation signature is equal to calculateVRF output for a previous generation signature with account private key sk (of generator of <span class="math notranslate nohighlight">\(i+1\)</span> th block):</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>generationSignaturei+1 = VRFproof = calculateVRFsk(VRFi)
+</pre></div>
+</div>
+<p>The output of calculateVRF function is a VRF proof, which means that the validity of the signature can be checked.
+The output of function verifyVRF(pk <span class="math notranslate nohighlight">\(_i\)</span>, generationSignature <span class="math notranslate nohighlight">\(_i\)</span>) is used to define the time delay between <span class="math notranslate nohighlight">\(i+99\)</span> and <span class="math notranslate nohighlight">\(i+100\)</span> blocks for concrete block generator.</p>
+</section>
+</section>
+<section id="block-height">
+<h2>Block Height<a class="headerlink" href="#block-height" title="Permalink to this heading">#</a></h2>
+<p>The block height is a sequence number of a <a class="reference internal" href="#block"><span class="std std-ref">block</span></a> in the blockchain.</p>
+</section>
+<section id="block-signature">
+<h2>Block Signature<a class="headerlink" href="#block-signature" title="Permalink to this heading">#</a></h2>
+<p>A block signature is a hash that a <a class="reference internal" href="05_node.html#generating-node"><span class="std std-ref">generating node</span></a> acquires when it signs the <a class="reference internal" href="#block-generation"><span class="std std-ref">generated block</span></a> with the private key of the account from the node’s wallet.</p>
+</section>
+<section id="block-timestamp">
+<h2>Block Timestamp<a class="headerlink" href="#block-timestamp" title="Permalink to this heading">#</a></h2>
+<p>A block timestamp is a time of <a class="reference internal" href="#block-generation"><span class="std std-ref">block generation</span></a>. The time is specified in milliseconds that have passed since the beginning of the unix epoch.</p>
+<p>When the <a class="reference internal" href="05_node.html#node"><span class="std std-ref">node</span></a> receives a new block from the blockchain network, it verifies that the timestamp value of the block does not outpace the UTC time by more than <span class="math notranslate nohighlight">\(100\)</span> milliseconds.
+The timestamp value of the block is validated by nodes using the formula from FPoS.</p>
+</section>
+<section id="genesis-block">
+<h2>Genesis Block<a class="headerlink" href="#genesis-block" title="Permalink to this heading">#</a></h2>
+<p>A genesis block is the first <a class="reference internal" href="#block"><span class="std std-ref">block</span></a> of the blockchain. A genesis block contains one or more <a class="reference internal" href="03_transaction.html#genesis-transaction"><span class="std std-ref">genesis transactions</span></a>. There is one genesis block in the blockchain.</p>
+</section>
+<section id="transactions-root-hash">
+<h2>Transactions Root Hash<a class="headerlink" href="#transactions-root-hash" title="Permalink to this heading">#</a></h2>
+<p>The transactionsRoot field in the block header contains the root hash of the Merkle tree
+of transactions of the block. The root hash is the proof that the block contains all the transactions in the proper order. The transactions root hash in the block header has the following purposes:</p>
+<ul class="simple">
+<li><p>To prove the integrity of transactions in the block without presenting all transactions.</p></li>
+<li><p>To sign the block header only, separately from its transactions.</p></li>
+</ul>
+<section id="transactions-root-alculation">
+<h3>transactions Root Сalculation<a class="headerlink" href="#transactions-root-alculation" title="Permalink to this heading">#</a></h3>
+<img alt="../_images/10_transactionsRoot-Calculation.png" src="../_images/10_transactionsRoot-Calculation.png" />
+<ol class="arabic simple">
+<li><p>The hash of each transaction in the block is calculated. For example:</p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(H_A\)</span> = hash(<span class="math notranslate nohighlight">\(T_A\)</span>)</p></li>
+<li><p><span class="math notranslate nohighlight">\(H_B\)</span> = hash(<span class="math notranslate nohighlight">\(T_B\)</span>)</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li><p>Each pair of adjacent hashes is concatenated, and the hash is calculated for each resulting concatenation:</p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(H_{AB}\)</span> = hash(<span class="math notranslate nohighlight">\(H_A\)</span> + <span class="math notranslate nohighlight">\(H_B\)</span>)</p></li>
+<li><p>If the last hash does not have a pair, it is concatenated with the zero byte hash: <span class="math notranslate nohighlight">\(H_{GH}\)</span> = hash(<span class="math notranslate nohighlight">\(H_G\)</span> + hash(0))</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li><p>Step 2 is repeated until the root hash is obtained:</p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(H_{ABCDEFGH}\)</span></p></li>
+<li><p>The root hash is written in the transactionsRoot field.</p></li>
+</ul>
+</div></blockquote>
+<p>If the block is empty, then transactionsRoot = hash(0). DecentralChain blockchain uses BLAKE2b-256 hashing function.</p>
+</section>
+<section id="proof-of-transaction-in-block">
+<h3>Proof of Transaction in Block<a class="headerlink" href="#proof-of-transaction-in-block" title="Permalink to this heading">#</a></h3>
+<p>Let’s suppose that side <span class="math notranslate nohighlight">\(1\)</span> stores the full blockchain data and side <span class="math notranslate nohighlight">\(2\)</span> stores the block headers only. To prove that the block contains a given transaction, side <span class="math notranslate nohighlight">\(1\)</span> provides the following data:</p>
+<ul class="simple">
+<li><p>T: Transaction to check.</p></li>
+<li><p>merkleProofs: Array of sibling hashes of the Merkle tree, bottom-to-top.</p></li>
+<li><p>index: Index of the transaction in the block.</p></li>
+</ul>
+<img alt="../_images/11_Proof-of-Transaction-in-Block.png" src="../_images/11_Proof-of-Transaction-in-Block.png" />
+<p>For example, for the <span class="math notranslate nohighlight">\(T_D\)</span> transaction:</p>
+<ul class="simple">
+<li><p>merkleProofs = [ <span class="math notranslate nohighlight">\(H_C\)</span>, <span class="math notranslate nohighlight">\(H_{AB}\)</span>, <span class="math notranslate nohighlight">\(H_{EFGH}\)</span> ]</p></li>
+<li><p>index = <span class="math notranslate nohighlight">\(3\)</span></p></li>
+</ul>
+<p>Side 2 checks the proof:</p>
+<ol class="arabic simple">
+<li><p>It calculates the hash of the transaction being checked (all the transaction data is hashed, including the signature): <span class="math notranslate nohighlight">\(H_D\)</span> = hash(<span class="math notranslate nohighlight">\(T_D\)</span>)</p></li>
+</ol>
+<p>2. It concatenates the current hash with the corresponding hash of the merkleProofs array and calculates the hash of concatenation.
+index determines in which order to concatenate the hashes:</p>
+<blockquote>
+<div><ul>
+<li><p>If the nth bit of index from the end is <span class="math notranslate nohighlight">\(0\)</span>, then the order is: the current hash + the nth hash of the merkleProofsarray (proof hash is on the right).</p></li>
+<li><p>If the nth bit is <span class="math notranslate nohighlight">\(1\)</span> , the order is: the nth hash of the merkleProofsarray + the current hash (proof hash is on the left). For example, index = <span class="math notranslate nohighlight">\(3_{10}\)</span> = <span class="math notranslate nohighlight">\(11_2\)</span> , thus:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>merkleProofs[0] = <span class="math notranslate nohighlight">\(H_{C}\)</span> is on the left,</p></li>
+<li><p>merkleProofs[1] = <span class="math notranslate nohighlight">\(H_{AB}\)</span> is on the left,</p></li>
+<li><p>merkleProofs[2] = <span class="math notranslate nohighlight">\(H_{EFGH}\)</span> is on the right.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li><p>It repeats step 2 until the root hash is obtained: <span class="math notranslate nohighlight">\(H_{ABCDEFGH}\)</span></p></li>
+<li><p>It compares the root hash obtained with the already known transactionsRoot from the block header. If the hashes match, then the transaction exists in the block.</p></li>
+</ol>
+</section>
+<section id="tools">
+<h3>Tools<a class="headerlink" href="#tools" title="Permalink to this heading">#</a></h3>
+<p>The following Node API methods accept transaction IDs and provide the proof that the transaction is in a block for each transaction:</p>
+<ul class="simple">
+<li><p>GET /transactions/merkleProof</p></li>
+<li><p>POST /transactions/merkleProof</p></li>
+</ul>
+<p>The methods are described in the <a class="reference internal" href="03_transaction.html#transaction"><span class="std std-ref">transaction</span></a> article. You can check a transaction on the same blockchain without using a root hash, since the DecentralChain nodes store the entire blockchain data, including all transactions. Use the following built-in Ride function:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>transactionHeightById(id: ByteVector): Int|Unit
+</pre></div>
+</div>
+<p>The function returns the block height if the transaction with the specified ID exists. Otherwise, it returns a unit. See the function description in the <a class="reference internal" href="../03_ride-language/03_functions.html#blockchain-functions"><span class="std std-ref">blockchain functions</span></a> article. To check a transaction in a block on the external blockchain you can use the following built-in Ride function:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>createMerkleRoot(merkleProofs: List[ByteVector], valueBytes: ByteVector, index: Int): ByteVector
+</pre></div>
+</div>
+<p>This function is applicable if the external blockchain uses the same algorithm for calculating the root hash of transactions. The createMerkleRoot function calculates the root hash from the transaction hash and sibling hashes of the merkle tree (see Steps 1–3). To check a transaction in a block, compare the calculated root hash with the transactionsRoot value in the block header.</p>
+<span class="target" id="node"></span></section>
+</section>
+</section>
+
+<div class="section">
+   
+</div>
+
+                </article>
+              
+              
+              
+                <footer class="bd-footer-article">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="03_transaction.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">anterior</p>
+        <p class="prev-next-title">Transaction</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="05_node.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">próximo</p>
+        <p class="prev-next-title">Node</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#block-generation">Block Generation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#base-target">Base Target</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#generation-signature">Generation Signature</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#block-height">Block Height</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#block-signature">Block Signature</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#block-timestamp">Block Timestamp</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#genesis-block">Genesis Block</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#transactions-root-hash">Transactions Root Hash</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transactions-root-alculation">transactions Root Сalculation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#proof-of-transaction-in-block">Proof of Transaction in Block</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tools">Tools</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+  
+  <div class="tocsection editthispage">
+    <a href="https://github.com/Decentral-America/docs/edit/master/docs//02_decentralchain/04_block.rst">
+      <i class="fa-solid fa-pencil"></i>
+      
+      
+        
+          Edit on GitHub
+        
+      
+    </a>
+  </div>
+</div>
+
+  <div class="sidebar-secondary-item">
+  <div class="tocsection sourcelink">
+    <a href="../_sources/02_decentralchain/04_block.rst">
+      <i class="fa-solid fa-file-lines"></i> Exibir Fonte
+    </a>
+  </div>
+</div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            <div class="bd-footer-content__inner"></div>
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+  <p class="copyright">
+    
+      © Copyright 2023, Blockchain Costa Rica.
+      <br/>
+    
+  </p>
+</div>
+      
+    </div>
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item"><p class="theme-version">
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.13.0.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

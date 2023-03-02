@@ -1,0 +1,1082 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="ru" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>DecentralChain &#8212; документация DecentralChain </title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/jupyter-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/thebelab.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/plot_directive.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d" />
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/thebelab-helper.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script src="../_static/design-tabs.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@jupyter-widgets/html-manager@^1.0.1/dist/embed-amd.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '02_decentralchain/index';</script>
+    <link rel="shortcut icon" href="../_static/icon.svg"/>
+    <link rel="index" title="Алфавитный указатель" href="../genindex.html" />
+    <link rel="search" title="Поиск" href="../search.html" />
+    <link rel="next" title="Account" href="01_account.html" />
+    <link rel="prev" title="Introduction" href="../01_introduction.html" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="ru"/>  
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+<div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+    <span class="fa-solid fa-bars"></span>
+  </label>
+  
+  <div class="navbar-header-items__start">
+    
+      <div class="navbar-item">
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="DecentralChain"/>
+    <script>document.write(`<img src="../_static/logo-dark.png" class="logo__image only-dark" alt="DecentralChain"/>`);</script>
+  
+  
+</a></div>
+    
+  </div>
+  
+  
+  <div class=" navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item"><nav class="navbar-nav">
+  <p class="sidebar-header-items__title"
+     role="heading"
+     aria-level="1"
+     aria-label="Site Navigation">
+    Site Navigation
+  </p>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../01_introduction.html">
+                        Introduction
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="#">
+                        DecentralChain
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../03_ride-language/index.html">
+                        Ride Language
+                      </a>
+                    </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="http://decentralchain.io/">
+                    Website
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="http://decentral.exchange/">
+                    Wallet & Exchange
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://decentralscan.com/">
+                    Explorer
+                  </a>
+                </li>
+                
+                </div>
+            </div>
+            
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Поиск" aria-label="Поиск" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+        </div>
+      
+      
+        <div class="navbar-item">
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/Decentral-America/docs" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-github"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://twitter.com/decentralchain" title="Twitter" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-twitter"></i></span>
+            <label class="sr-only">Twitter</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.linkedin.com/company/decentralchain/" title="LinkedIn" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-linkedin"></i></span>
+            <label class="sr-only">LinkedIn</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.youtube.com/@decentralchain" title="Youtube" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-youtube"></i></span>
+            <label class="sr-only">Youtube</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://discord.gg/9UUbNBPQ3D" title="Discord" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-discord"></i></span>
+            <label class="sr-only">Discord</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.instagram.com/decentralchain/" title="Discord" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-instagram"></i></span>
+            <label class="sr-only">Discord</label></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Поиск" aria-label="Поиск" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+    </div>
+  
+
+  
+    <label class="sidebar-toggle secondary-toggle" for="__secondary">
+      <span class="fa-solid fa-outdent"></span>
+    </label>
+  
+</div>
+
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          <div class="navbar-item"><nav class="navbar-nav">
+  <p class="sidebar-header-items__title"
+     role="heading"
+     aria-level="1"
+     aria-label="Site Navigation">
+    Site Navigation
+  </p>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../01_introduction.html">
+                        Introduction
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="#">
+                        DecentralChain
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../03_ride-language/index.html">
+                        Ride Language
+                      </a>
+                    </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="http://decentralchain.io/">
+                    Website
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="http://decentral.exchange/">
+                    Wallet & Exchange
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://decentralscan.com/">
+                    Explorer
+                  </a>
+                </li>
+                
+                </div>
+            </div>
+            
+  </ul>
+</nav></div>
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/Decentral-America/docs" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-github"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://twitter.com/decentralchain" title="Twitter" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-twitter"></i></span>
+            <label class="sr-only">Twitter</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.linkedin.com/company/decentralchain/" title="LinkedIn" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-linkedin"></i></span>
+            <label class="sr-only">LinkedIn</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.youtube.com/@decentralchain" title="Youtube" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-youtube"></i></span>
+            <label class="sr-only">Youtube</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://discord.gg/9UUbNBPQ3D" title="Discord" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-discord"></i></span>
+            <label class="sr-only">Discord</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.instagram.com/decentralchain/" title="Discord" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-instagram"></i></span>
+            <label class="sr-only">Discord</label></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item"><nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">DecentralChain</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="01_account.html">Account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_token%28asset%29.html">Token (Asset)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03_transaction.html">Transaction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04_block.html">Block</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05_node.html">Node</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06_order.html">Order</a></li>
+<li class="toctree-l1"><a class="reference internal" href="07_oracle.html">Oracle</a></li>
+<li class="toctree-l1"><a class="reference internal" href="08_mainnet-testnet-stagenet.html">Mainnet, Testnet, Stagenet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="09_protocol.html">Protocol</a></li>
+<li class="toctree-l1"><a class="reference internal" href="10_binary-format.html">Binary Format</a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+
+
+<nav aria-label="Breadcrumbs">
+  <ul class="bd-breadcrumbs" role="navigation" aria-label="Breadcrumb">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    <li class="breadcrumb-item active" aria-current="page">DecentralChain</li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                   <section id="decentralchain">
+<h1>DecentralChain<a class="headerlink" href="#decentralchain" title="Permalink to this heading">#</a></h1>
+<p>DecentralChain is an open blockchain protocol and development toolset for Web 3.0 applications and decentralized solutions.</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 gallery-directive docutils">
+<div class="sd-row sd-row-cols-1 sd-row-cols-xs-1 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-3 sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text">Blazingly Fast</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Thousands of transactions a second.</p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text">Eco-Friendly</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Carbon neutral technology.</p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text">Low Fees</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Say goodbye to expensive fees.</p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text">Governance Mechanism</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Community-driven decisions.</p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text">Cross-Chain Interoperability</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Connect to other blockchains.</p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text">Decentralized Data Storage</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Permanently secured data.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="toctree-wrapper compound">
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">DecentralChain</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="01_account.html">Account</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="01_account.html#account-keys">Account Keys</a></li>
+<li class="toctree-l2"><a class="reference internal" href="01_account.html#secret-seed-phrase">Secret (Seed) Phrase</a></li>
+<li class="toctree-l2"><a class="reference internal" href="01_account.html#creating-an-account">Creating an Account</a></li>
+<li class="toctree-l2"><a class="reference internal" href="01_account.html#backup-seed-phrase">Backup Seed Phrase</a></li>
+<li class="toctree-l2"><a class="reference internal" href="01_account.html#log-in-to-account">Log in to Account</a></li>
+<li class="toctree-l2"><a class="reference internal" href="01_account.html#forgot-password">Forgot Password</a></li>
+<li class="toctree-l2"><a class="reference internal" href="01_account.html#address">Address</a></li>
+<li class="toctree-l2"><a class="reference internal" href="01_account.html#get-personal-address">Get Personal Address</a></li>
+<li class="toctree-l2"><a class="reference internal" href="01_account.html#alias">Alias</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="01_account.html#alias-requirements">Alias Requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="01_account.html#create-alias">Create Alias</a></li>
+<li class="toctree-l3"><a class="reference internal" href="01_account.html#view-aliases">View Aliases</a></li>
+<li class="toctree-l3"><a class="reference internal" href="01_account.html#binary-format">Binary Format</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="01_account.html#account-balance">Account Balance</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="01_account.html#account-balance-in-decentralcoin">Account Balance in DecentralCoin</a></li>
+<li class="toctree-l3"><a class="reference internal" href="01_account.html#view-account-balance">View Account Balance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="01_account.html#top-up-balance">Top up Balance</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="01_account.html#account-data-storage">Account Data Storage</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="01_account.html#view-account-data">View Account Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="01_account.html#add-modify-delete-entries">Add, Modify, Delete Entries</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="01_account.html#dapp-and-smart-account">dApp and Smart Account</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="02_token%28asset%29.html">Token (Asset)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="02_token%28asset%29.html#token-issue">Token Issue</a></li>
+<li class="toctree-l2"><a class="reference internal" href="02_token%28asset%29.html#token-id">Token ID</a></li>
+<li class="toctree-l2"><a class="reference internal" href="02_token%28asset%29.html#token-operations">Token Operations</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="02_token%28asset%29.html#operations-available-only-to-issuer">Operations Available Only to Issuer</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="02_token%28asset%29.html#token-types">Token Types</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="02_token%28asset%29.html#non-fungible-token">Non-Fungible Token</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="02_token%28asset%29.html#issue-of-nft">Issue of NFT</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="02_token%28asset%29.html#smart-asset">Smart Asset</a></li>
+<li class="toctree-l3"><a class="reference internal" href="02_token%28asset%29.html#tokens-of-other-blockchains">Tokens of Other Blockchains</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="02_token%28asset%29.html#decentralcoin">DecentralCoin</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="02_token%28asset%29.html#decentralcoin-parameters">DecentralCoin Parameters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="02_token%28asset%29.html#leasing">Leasing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="02_token%28asset%29.html#how-to-get-decentralcoin">How to Get DecentralCoin</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="02_token%28asset%29.html#token-custom-parameters">Token Custom Parameters</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="02_token%28asset%29.html#atomic-unit">Atomic Unit</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="03_transaction.html">Transaction</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="03_transaction.html#transaction-issue">Transaction Issue</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="03_transaction.html#how-to-sign-and-send-transactions">How to Sign and Send Transactions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="03_transaction.html#transaction-sender-and-signature">Transaction Sender and Signature</a></li>
+<li class="toctree-l3"><a class="reference internal" href="03_transaction.html#after-transaction-is-sent">After Transaction is Sent</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="03_transaction.html#transaction-proofs">Transaction Proofs</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="03_transaction.html#verification-by-script">Verification by Script</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="03_transaction.html#transaction-fees">Transaction Fees</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="03_transaction.html#regular-fees">Regular Fees</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="03_transaction.html#minimum-fee">Minimum Fee</a></li>
+<li class="toctree-l4"><a class="reference internal" href="03_transaction.html#fee-for-failed-transactions">Fee for Failed Transactions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="03_transaction.html#fee-in-sponsored-asset">Fee in Sponsored Asset</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="03_transaction.html#sponsored-fees">Sponsored Fees</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="03_transaction.html#sponsored-asset">Sponsored Asset</a></li>
+<li class="toctree-l4"><a class="reference internal" href="03_transaction.html#how-to-enable-sponsorship">How to Enable Sponsorship</a></li>
+<li class="toctree-l4"><a class="reference internal" href="03_transaction.html#how-to-disable-sponsorship">How to Disable Sponsorship</a></li>
+<li class="toctree-l4"><a class="reference internal" href="03_transaction.html#restrictions">Restrictions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="03_transaction.html#how-it-works">How It Works</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="03_transaction.html#transaction-representations">Transaction Representations</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="03_transaction.html#json-representation">JSON Representation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="03_transaction.html#binary-format">Binary Format</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="03_transaction.html#transaction-types">Transaction Types</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="03_transaction.html#tokenization">Tokenization</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="03_transaction.html#issue-transaction">Issue Transaction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="03_transaction.html#reissue-transaction">Reissue Transaction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="03_transaction.html#burn-transaction">Burn Transaction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="03_transaction.html#set-asset-script-transaction">Set Asset Script Transaction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="03_transaction.html#update-asset-info-transaction">Update Asset Info Transaction</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="03_transaction.html#usage">Usage</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="03_transaction.html#transfer-transaction">Transfer Transaction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="03_transaction.html#exchange-transaction">Exchange Transaction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="03_transaction.html#create-alias-transaction">Create Alias Transaction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="03_transaction.html#mass-transfer-transaction">Mass Transfer Transaction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="03_transaction.html#data-transaction">Data Transaction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="03_transaction.html#set-script-transaction">Set Script Transaction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="03_transaction.html#invoke-script-transaction">Invoke Script Transaction</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="03_transaction.html#network">Network</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="03_transaction.html#lease-transaction">Lease Transaction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="03_transaction.html#lease-cancel-transaction">Lease Cancel Transaction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="03_transaction.html#sponsor-fee-transaction">Sponsor Fee Transaction</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="03_transaction.html#genesis">Genesis</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="03_transaction.html#genesis-transaction">Genesis Transaction</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="03_transaction.html#transaction-validation">Transaction Validation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="03_transaction.html#validation-result">Validation Result</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="04_block.html">Block</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="04_block.html#block-generation">Block Generation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="04_block.html#base-target">Base Target</a></li>
+<li class="toctree-l3"><a class="reference internal" href="04_block.html#generation-signature">Generation Signature</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="04_block.html#block-height">Block Height</a></li>
+<li class="toctree-l2"><a class="reference internal" href="04_block.html#block-signature">Block Signature</a></li>
+<li class="toctree-l2"><a class="reference internal" href="04_block.html#block-timestamp">Block Timestamp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="04_block.html#genesis-block">Genesis Block</a></li>
+<li class="toctree-l2"><a class="reference internal" href="04_block.html#transactions-root-hash">Transactions Root Hash</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="04_block.html#transactions-root-alculation">transactions Root Сalculation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="04_block.html#proof-of-transaction-in-block">Proof of Transaction in Block</a></li>
+<li class="toctree-l3"><a class="reference internal" href="04_block.html#tools">Tools</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="05_node.html">Node</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="05_node.html#generating-node">Generating Node</a></li>
+<li class="toctree-l2"><a class="reference internal" href="05_node.html#validating-node">Validating Node</a></li>
+<li class="toctree-l2"><a class="reference internal" href="05_node.html#generators-income">Generator’s Income</a></li>
+<li class="toctree-l2"><a class="reference internal" href="05_node.html#block-reward">Block Reward</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="05_node.html#current-reward-size">Current Reward Size</a></li>
+<li class="toctree-l3"><a class="reference internal" href="05_node.html#the-change-of-block-reward-size-over-time">The Change of Block Reward Size Over Time</a></li>
+<li class="toctree-l3"><a class="reference internal" href="05_node.html#voting">Voting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="05_node.html#how-votes-are-counted">How Votes are Counted</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="05_node.html#leased-proof-of-stake">Leased Proof of Stake</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="05_node.html#leasing-benefits-for-the-node-owner">Leasing Benefits for the Node Owner</a></li>
+<li class="toctree-l3"><a class="reference internal" href="05_node.html#leasing-benefits-for-the-token-holder">Leasing Benefits for the Token Holder</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="05_node.html#rewards">Rewards</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="05_node.html#lpos-transactions">LPoS Transactions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="05_node.html#create-a-lease">Create a Lease</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="06_order.html">Order</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="06_order.html#asset-pair">Asset Pair</a></li>
+<li class="toctree-l2"><a class="reference internal" href="06_order.html#order-s-amount-and-price">Order’s Amount and Price</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="06_order.html#amount">Amount</a></li>
+<li class="toctree-l3"><a class="reference internal" href="06_order.html#price">Price</a></li>
+<li class="toctree-l3"><a class="reference internal" href="06_order.html#price-asset-quantity-calculation">Price Asset Quantity Calculation</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="06_order.html#order-cancellation">Order Cancellation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="06_order.html#order-expiration-date">Order Expiration Date</a></li>
+<li class="toctree-l2"><a class="reference internal" href="06_order.html#order-timestamp">Order Timestamp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="06_order.html#order-binary-format">Order Binary Format</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="07_oracle.html">Oracle</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="07_oracle.html#sources-of-the-outside-world">Sources of the Outside World</a></li>
+<li class="toctree-l2"><a class="reference internal" href="07_oracle.html#oracles-issue">Oracles Issue</a></li>
+<li class="toctree-l2"><a class="reference internal" href="07_oracle.html#consensus-of-oracles">Consensus of Oracles</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="08_mainnet-testnet-stagenet.html">Mainnet, Testnet, Stagenet</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="08_mainnet-testnet-stagenet.html#connecting-node-to-blockchain-network">Connecting Node to Blockchain Network</a></li>
+<li class="toctree-l2"><a class="reference internal" href="08_mainnet-testnet-stagenet.html#chain-id">Chain ID</a></li>
+<li class="toctree-l2"><a class="reference internal" href="08_mainnet-testnet-stagenet.html#tools">Tools</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="08_mainnet-testnet-stagenet.html#api-of-pool-of-public-nodes">API of Pool of Public Nodes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="08_mainnet-testnet-stagenet.html#data-service-api">Data Service API</a></li>
+<li class="toctree-l3"><a class="reference internal" href="08_mainnet-testnet-stagenet.html#decentral-exchange">Decentral.Exchange</a></li>
+<li class="toctree-l3"><a class="reference internal" href="08_mainnet-testnet-stagenet.html#api-of-decentral-exchange-matcher">API of Decentral.Exchange Matcher</a></li>
+<li class="toctree-l3"><a class="reference internal" href="08_mainnet-testnet-stagenet.html#decentralchain-explorer">DecentralChain Explorer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="08_mainnet-testnet-stagenet.html#faucet-obtaining-tokens">Faucet: Obtaining Tokens</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="09_protocol.html">Protocol</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="09_protocol.html#cryptographic-practical-details">Cryptographic Practical Details</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="09_protocol.html#description">Description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="09_protocol.html#bytes-encoding-base58">Bytes Encoding Base58</a></li>
+<li class="toctree-l3"><a class="reference internal" href="09_protocol.html#creating-a-private-key-from-a-seed">Creating a Private Key From a Seed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="09_protocol.html#creating-address-from-a-public-key">Creating Address from a Public Key</a></li>
+<li class="toctree-l3"><a class="reference internal" href="09_protocol.html#signing">Signing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="09_protocol.html#calculating-transaction-id">Calculating Transaction ID</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="09_protocol.html#decentralchain-m5-solution">DecentralChain-M5 Solution</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="09_protocol.html#reasoning">Reasoning</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="09_protocol.html#decentralchain-m5-solution-with-technical-details">DecentralChain-M5 Solution With Technical Details</a></li>
+<li class="toctree-l4"><a class="reference internal" href="09_protocol.html#microblock-structure">Microblock Structure</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="09_protocol.html#economy">Economy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="09_protocol.html#related-protocol-changes">Related Protocol Changes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="09_protocol.html#configuration">Configuration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="09_protocol.html#api-changes">API changes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="09_protocol.html#decentralchain-m5-protocol">DecentralChain-M5 Protocol</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="09_protocol.html#scalability-limits-and-challenges-in-current-blockchain-systems">Scalability Limits and Challenges in Current Blockchain Systems</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="09_protocol.html#problem-statement-and-motivation">Problem Statement and Motivation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="09_protocol.html#weaknesses-of-current-proposals-to-improve-scalability">Weaknesses of Current Proposals to Improve Scalability</a></li>
+<li class="toctree-l4"><a class="reference internal" href="09_protocol.html#brief-summary-of-bitcoin-m5">Brief Summary of Bitcoin-M5</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="09_protocol.html#decentralchain-m5-overlay">DecentralChain-M5 Overlay</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="09_protocol.html#decentralchain-m5-operations">DecentralChain-M5 Operations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="09_protocol.html#decentralchain-m5-reward-mechanisms">DecentralChain-M5 Reward Mechanisms</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="09_protocol.html#fair-proof-of-stake">Fair Proof of Stake</a></li>
+<li class="toctree-l2"><a class="reference internal" href="09_protocol.html#blockchain-data-types">Blockchain Data Types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="09_protocol.html#validation-rules">Validation Rules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="09_protocol.html#account-validation">Account Validation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="09_protocol.html#transactions-validation">Transactions Validation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="09_protocol.html#transfer-transaction-validation">Transfer Transaction Validation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="09_protocol.html#issue-transaction-validation">Issue Transaction Validation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="09_protocol.html#reissue-transaction-validation">Reissue Transaction Validation</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="09_protocol.html#block-validations">Block Validations</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="09_protocol.html#consensus-data-validation">Consensus Data Validation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="09_protocol.html#transactions-data-validation">Transactions Data Validation</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="09_protocol.html#unconfirmed-transactions-pool-validation">Unconfirmed Transactions Pool Validation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="10_binary-format.html">Binary Format</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="10_binary-format.html#address-binary-format">Address Binary Format</a></li>
+<li class="toctree-l2"><a class="reference internal" href="10_binary-format.html#alias-binary-format">Alias Binary Format</a></li>
+<li class="toctree-l2"><a class="reference internal" href="10_binary-format.html#block-binary-format">Block Binary Format</a></li>
+<li class="toctree-l2"><a class="reference internal" href="10_binary-format.html#network-message-binary-format">Network Message Binary Format</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="10_binary-format.html#block-message-binary-format">Block Message Binary Format</a></li>
+<li class="toctree-l3"><a class="reference internal" href="10_binary-format.html#checkpoint-message-binary-format">Checkpoint Message Binary Format</a></li>
+<li class="toctree-l3"><a class="reference internal" href="10_binary-format.html#get-block-message-binary-format">Get Block Message Binary Format</a></li>
+<li class="toctree-l3"><a class="reference internal" href="10_binary-format.html#get-peers-message-binary-format">Get Peers Message Binary Format</a></li>
+<li class="toctree-l3"><a class="reference internal" href="10_binary-format.html#get-signatures-message-binary-format">Get Signatures Message Binary Format</a></li>
+<li class="toctree-l3"><a class="reference internal" href="10_binary-format.html#handshake-message-binary-format">Handshake Message Binary Format</a></li>
+<li class="toctree-l3"><a class="reference internal" href="10_binary-format.html#peers-message-binary-format">Peers Message Binary Format</a></li>
+<li class="toctree-l3"><a class="reference internal" href="10_binary-format.html#score-message-binary-format">Score Message Binary Format</a></li>
+<li class="toctree-l3"><a class="reference internal" href="10_binary-format.html#signatures-message-binary-format">Signatures Message Binary Format</a></li>
+<li class="toctree-l3"><a class="reference internal" href="10_binary-format.html#transaction-message-binary-format">Transaction Message Binary Format</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="10_binary-format.html#order-binary-format">Order Binary Format</a></li>
+<li class="toctree-l2"><a class="reference internal" href="10_binary-format.html#transaction-binary-format">Transaction Binary Format</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="10_binary-format.html#protobuf">Protobuf</a></li>
+<li class="toctree-l3"><a class="reference internal" href="10_binary-format.html#burn-transaction-binary-format">Burn Transaction Binary Format</a></li>
+<li class="toctree-l3"><a class="reference internal" href="10_binary-format.html#create-alias-transaction-binary-format">Create Alias Transaction Binary Format</a></li>
+<li class="toctree-l3"><a class="reference internal" href="10_binary-format.html#data-transaction-binary-format">Data Transaction Binary Format</a></li>
+<li class="toctree-l3"><a class="reference internal" href="10_binary-format.html#exchange-transaction-binary-format">Exchange Transaction Binary Format</a></li>
+<li class="toctree-l3"><a class="reference internal" href="10_binary-format.html#genesis-transaction-binary-format">Genesis Transaction Binary Format</a></li>
+<li class="toctree-l3"><a class="reference internal" href="10_binary-format.html#invoke-script-transaction-binary-format">Invoke Script Transaction Binary Format</a></li>
+<li class="toctree-l3"><a class="reference internal" href="10_binary-format.html#issue-transaction-binary-format">Issue Transaction Binary Format</a></li>
+<li class="toctree-l3"><a class="reference internal" href="10_binary-format.html#lease-cancel-transaction-binary-format">Lease Cancel Transaction Binary Format</a></li>
+<li class="toctree-l3"><a class="reference internal" href="10_binary-format.html#lease-transaction-binary-format">Lease Transaction Binary Format</a></li>
+<li class="toctree-l3"><a class="reference internal" href="10_binary-format.html#mass-transfer-transaction-binary-format">Mass Transfer Transaction Binary Format</a></li>
+<li class="toctree-l3"><a class="reference internal" href="10_binary-format.html#reissue-transaction-binary-format">Reissue Transaction Binary Format</a></li>
+<li class="toctree-l3"><a class="reference internal" href="10_binary-format.html#set-asset-script-transaction-binary-format">Set Asset Script Transaction Binary Format</a></li>
+<li class="toctree-l3"><a class="reference internal" href="10_binary-format.html#set-script-transaction-binary-format">Set Script Transaction Binary Format</a></li>
+<li class="toctree-l3"><a class="reference internal" href="10_binary-format.html#sponsor-fee-transaction-binary-format">Sponsor Fee Transaction Binary Format</a></li>
+<li class="toctree-l3"><a class="reference internal" href="10_binary-format.html#transfer-transaction-binary-format">Transfer Transaction Binary Format</a></li>
+<li class="toctree-l3"><a class="reference internal" href="10_binary-format.html#update-asset-info-transaction-binary-format">Update Asset Info Transaction Binary Format</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="10_binary-format.html#transaction-proofs-binary-format">Transaction Proofs Binary Format</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+
+<div class="section">
+   
+</div>
+
+                </article>
+              
+              
+              
+                <footer class="bd-footer-article">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../01_introduction.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">назад</p>
+        <p class="prev-next-title">Introduction</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="01_account.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">вперёд</p>
+        <p class="prev-next-title">Account</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  
+  <div class="tocsection editthispage">
+    <a href="https://github.com/Decentral-America/docs/edit/master/docs//02_decentralchain/index.md">
+      <i class="fa-solid fa-pencil"></i>
+      
+      
+        
+          Edit on GitHub
+        
+      
+    </a>
+  </div>
+</div>
+
+  <div class="sidebar-secondary-item">
+  <div class="tocsection sourcelink">
+    <a href="../_sources/02_decentralchain/index.md">
+      <i class="fa-solid fa-file-lines"></i> Исходный текст
+    </a>
+  </div>
+</div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            <div class="bd-footer-content__inner"></div>
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+  <p class="copyright">
+    
+      © Copyright 2023, Blockchain Costa Rica.
+      <br/>
+    
+  </p>
+</div>
+      
+    </div>
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item"><p class="theme-version">
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.13.0.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

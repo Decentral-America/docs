@@ -1,0 +1,3 @@
+Parameter, Description
+"head: T", "Element"
+"tail: :ref:`List <03_ride-language/02_data-types:List>` [T]", "List"
