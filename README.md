@@ -255,7 +255,7 @@ DecentralChain natively supports 16 transaction types at the protocol level, eli
 
 | Parameter | Mainnet | Testnet |
 |---|---|---|
-| **Network ID / Chain ID** | `D` | `T` |
+| **Network ID / Chain ID** | `?` (63) | `!` (33) |
 | **Node API** | `https://mainnet-node.decentralchain.io/` | *(testnet node)* |
 | **Matcher (DEX)** | `https://mainnet-matcher.decentralchain.io/` | — |
 | **Explorer / Docs** | `http://docs.decentralchain.io/` | — |
