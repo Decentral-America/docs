@@ -187,7 +187,7 @@ const NODE_URL = 'https://mainnet-node.decentralchain.io';
 const signedTx = transfer(
   {
     recipient: '3P4H4E4DYpaMr84SpAfNNWwSZM5RqQNbmgN', // recipient address or alias
-    amount: 100_000_000,                               // 1 DCC (in wavelets, 10^8)
+    amount: 100_000_000,                               // 1 DCC (in dcclets, 10^8)
     assetId: null,                                     // null = DCC native token
     fee: 100_000,                                      // 0.001 DCC
     attachment: 'Payment for services',
