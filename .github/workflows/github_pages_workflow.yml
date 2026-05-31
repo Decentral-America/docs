@@ -1,4 +1,4 @@
-name: docs_pages_workflow
+name: Deploy Documentation
 
 on: workflow_dispatch
 
