@@ -1,0 +1,15 @@
+# Pinned for reproducible builds. Update periodically.
+sphinx==9.1.0
+pydata-sphinx-theme==0.18.0
+sphinx-design==0.6.1
+sphinx-copybutton==0.5.2
+rinohtype==0.5.5
+sphinx-intl==2.3.0
+myst-nb==1.2.0
+linkify-it-py==2.0.3
+ablog==0.11.14
+jupyter-sphinx==0.5.3
+matplotlib==3.10.3
+numpydoc==1.8.0
+sphinx-togglebutton==0.3.2
+gitpython==3.1.44
