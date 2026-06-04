@@ -1,4 +1,5 @@
 #!/bin/bash
+set -euo pipefail
 set -x
 ################################################################################
 # File:    buildDocs.sh
@@ -16,7 +17,8 @@ set -x
 # INSTALL DEPENDS #
 ###################
 
-python3 -m pip install --upgrade --force-reinstall pip gitpython sphinx pydata-sphinx-theme sphinx-design sphinx-copybutton rinohtype sphinx-intl myst_nb linkify-it-py ablog jupyter_sphinx matplotlib numpydoc sphinx_togglebutton
+python3 -m pip install --upgrade pip
+python3 -m pip install -r docs/requirements.txt
 
 #####################
 # DECLARE VARIABLES #
@@ -34,7 +36,7 @@ git config --global user.email "${GITHUB_EMAIL}"
 export SOURCE_DATE_EPOCH=$(git log -1 --pretty=%ct)
  
 # make a new temp dir which will be our GitHub Pages docroot
-docroot=`mktemp -d`
+docroot="$(mktemp -d)"
 
 export REPO_NAME="${GITHUB_REPOSITORY##*/}"
  
@@ -46,12 +48,18 @@ export REPO_NAME="${GITHUB_REPOSITORY##*/}"
 make -C docs clean
  
 # get a list of branches, excluding 'HEAD' and 'gh-pages'
-versions="`git for-each-ref '--format=%(refname:lstrip=-1)' refs/remotes/origin/ | grep -viE '^(HEAD|gh-pages)$'`"
+versions="$(git for-each-ref '--format=%(refname:lstrip=-1)' refs/remotes/origin/ | grep -viE '^(HEAD|gh-pages)$')"
 for current_version in ${versions}; do
- 
+
+   # Sanitize branch name — reject names with shell metacharacters
+   if [[ ! "${current_version}" =~ ^[a-zA-Z0-9._/-]+$ ]]; then
+     echo "::error::Unsafe branch name: ${current_version}"
+     continue
+   fi
+
    # make the current language available to conf.py
    export current_version
-   git checkout ${current_version}
+   git checkout "${current_version}"
  
    echo "INFO: Building sites for ${current_version}"
  
@@ -63,7 +71,7 @@ for current_version in ${versions}; do
  
    #python ./docs/scripts/generate_gallery_images.py
    
-   languages="en `find docs/locales/ -mindepth 1 -maxdepth 1 -type d -exec basename '{}' \;`"
+   languages="en $(find docs/locales/ -mindepth 1 -maxdepth 1 -type d -exec basename '{}' \;)"
    for current_language in ${languages}; do
  
       # make the current language available to conf.py
@@ -75,7 +83,7 @@ for current_version in ${versions}; do
       echo "INFO: Building for ${current_language}"
  
       # HTML #
-      sphinx-build -b html docs/ docs/_build/html/${current_language}/${current_version} -D language="${current_language}"
+      sphinx-build -b html docs/ "docs/_build/html/${current_language}/${current_version}" -D language="${current_language}"
  
       # PDF #
       #sphinx-build -b rinoh docs/ docs/_build/rinoh -D language="${current_language}"
@@ -108,7 +116,7 @@ pushd "${docroot}"
  
 # don't bother maintaining history; just generate fresh
 git init
-git remote add deploy "https://token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+git remote add deploy "https://github.com/${GITHUB_REPOSITORY}.git"
 git checkout -b gh-pages
  
 # add .nojekyll to the root so that github won't 404 on content added to dirs
@@ -142,11 +150,11 @@ EOF
 git add .
  
 # commit all the new files
-msg="Updating Docs for commit ${GITHUB_SHA} made on `date -d"@${SOURCE_DATE_EPOCH}" --iso-8601=seconds` from ${GITHUB_REF} by ${GITHUB_ACTOR}"
+msg="Updating Docs for commit ${GITHUB_SHA} made on $(date -d "@${SOURCE_DATE_EPOCH}" --iso-8601=seconds) from ${GITHUB_REF} by ${GITHUB_ACTOR}"
 git commit -am "${msg}"
  
 # overwrite the contents of the gh-pages branch on our github.com repo
-git push deploy gh-pages --force
+git -c "http.extraHeader=Authorization: Bearer ${GITHUB_TOKEN}" push deploy gh-pages --force
  
 popd # return to main repo sandbox root
  

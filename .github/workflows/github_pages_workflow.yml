@@ -3,18 +3,23 @@ name: Deploy Documentation
 on: workflow_dispatch
 
 permissions:
-  contents: write
+  contents: write  # required: buildDocs.sh pushes to gh-pages branch
 
-env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+concurrency:
+  group: pages-deploy
+  cancel-in-progress: false
 
 jobs:
 
   build_docs_job:
     runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
+    timeout-minutes: 30
 
     steps:
     - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd  # v6.0.2
+      with:
+        persist-credentials: false
     - name: Set up Python
       uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405  # v6.2.0
       with:
