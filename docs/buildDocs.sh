@@ -116,7 +116,7 @@ pushd "${docroot}"
  
 # don't bother maintaining history; just generate fresh
 git init
-git remote add deploy "https://github.com/${GITHUB_REPOSITORY}.git"
+git remote add deploy "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
 git checkout -b gh-pages
  
 # add .nojekyll to the root so that github won't 404 on content added to dirs
@@ -154,7 +154,7 @@ msg="Updating Docs for commit ${GITHUB_SHA} made on $(date -d "@${SOURCE_DATE_EP
 git commit -am "${msg}"
  
 # overwrite the contents of the gh-pages branch on our github.com repo
-git -c "http.extraHeader=Authorization: Bearer ${GITHUB_TOKEN}" push deploy gh-pages --force
+git push deploy gh-pages --force
  
 popd # return to main repo sandbox root
  
