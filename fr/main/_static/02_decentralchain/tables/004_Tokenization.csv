@@ -1,0 +1,6 @@
+Transaction type ID, Name, Description
+":math:`3`", ":ref:`Issue transaction <02_decentralchain/03_transaction:Issue Transaction>`", "Issues a token."
+":math:`5`", ":ref:`Reissue transaction <02_decentralchain/03_transaction:Reissue Transaction>`", "Reissues a token."
+":math:`6`", ":ref:`Burn transaction <02_decentralchain/03_transaction:Burn Transaction>`", "Decreases the amount of token."
+":math:`15`", ":ref:`Set asset script transaction <02_decentralchain/03_transaction:Set Asset Script Transaction>`", "Modifies the asset script."
+":math:`17`", ":ref:`Update asset info transaction <02_decentralchain/03_transaction:Update Asset Info Transaction>`", "Changes the token name and description."

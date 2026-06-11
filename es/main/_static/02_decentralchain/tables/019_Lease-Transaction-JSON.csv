@@ -1,0 +1,4 @@
+Field, Description
+"amount", "Amount of :ref:`DecentralCoins <02_decentralchain/02_token(asset):DecentralCoin>` to lease."
+"recipient", "Recipient address base58 encoded or recipient alias."
+"status", "Lease status: 1) active: lease is active. 2) canceled: lease is cancelled, see :ref:`lease cancel transaction <02_decentralchain/03_transaction:Lease Cancel Transaction>`."

@@ -1,0 +1,4 @@
+Field, Description
+"leaseId", "Lease transaction ID."
+"chainId", ":ref:`Chain ID <02_decentralchain/08_mainnet-testnet-stagenet:Chain ID>`"
+"lease", "Parameters of canceled lease."

@@ -1,0 +1,8 @@
+Transaction type ID, Name, Description
+":math:`4`", ":ref:`Transfer transaction <02_decentralchain/03_transaction:Transfer Transaction>`", "Transfers a token to another account."
+":math:`7`", ":ref:`Exchange transaction <02_decentralchain/03_transaction:Exchange Transaction>`", "Exchanges two different tokens between two accounts. Contains two counter orders: a buy order and a sell order."
+":math:`10`", ":ref:`Create alias transaction <02_decentralchain/03_transaction:Create Alias Transaction>`", "Creates alias for the sender's address."
+":math:`11`", ":ref:`Mass transfer transaction <02_decentralchain/03_transaction:Mass Transfer Transaction>`", "Transfers a token, up to :math:`100` recipients."
+":math:`12`", ":ref:`Data transaction <02_decentralchain/03_transaction:Data Transaction>`", "Adds, modifies and deletes data entries in the sender's account data storage."
+":math:`13`", ":ref:`Set script transaction <02_decentralchain/03_transaction:Set Script Transaction>`", "Assigns the dApp script or account script to the sender's account."
+":math:`16`", ":ref:`Invoke script transaction <02_decentralchain/03_transaction:Invoke Script Transaction>`", "Invokes a callable function of a dApp."

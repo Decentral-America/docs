@@ -1,0 +1,5 @@
+#, Name, Data type, Description
+":math:`1`", "available", ":ref:`Int <03_ride-language/02_data-types:Int>`", "Available balance."
+":math:`2`", "regular", ":ref:`Int <03_ride-language/02_data-types:Int>`", "Regular balance."
+":math:`3`", "generating", ":ref:`Int <03_ride-language/02_data-types:Int>`", "Generating balance."
+":math:`4`", "effective", ":ref:`Int <03_ride-language/02_data-types:Int>`", "Effective balance."

@@ -1,0 +1,3 @@
+#, Name, Data type, Description
+":math:`1`", "assetId", ":ref:`ByteVector <03_ride-language/02_data-types:ByteVector>` | :ref:`Unit <03_ride-language/02_data-types:Unit>`", "ID of a :ref:`token <02_decentralchain/02_token(asset):Token (Asset)>`."
+":math:`2`", "amount", ":ref:`Int <03_ride-language/02_data-types:Int>`", "Payment amount."

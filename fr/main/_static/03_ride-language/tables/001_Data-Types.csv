@@ -1,0 +1,12 @@
+Data type name, Ride keyword
+":ref:`Big Integer <03_ride-language/02_data-types:BigInt>`", "BigInt"
+":ref:`Boolean <03_ride-language/02_data-types:Boolean>`", "Boolean"
+":ref:`Byte array <03_ride-language/02_data-types:ByteVector>`", "ByteVector"
+":ref:`Integer <03_ride-language/02_data-types:Int>`", :ref:`Int <02_decentralchain/09_protocol:Blockchain Data Types>`
+":ref:`String <03_ride-language/02_data-types:String>`", :ref:`String<02_decentralchain/09_protocol:Blockchain Data Types>`
+":ref:`Empty value <03_ride-language/02_data-types:Unit>`", "Unit"
+":ref:`List <03_ride-language/02_data-types:List>`", "List"
+":ref:`Tuple <03_ride-language/02_data-types:Tuple>`", "—"
+":ref:`Union <03_ride-language/02_data-types:Union>`", "—"
+":ref:`Structure <03_ride-language/05_structures:Structures>`", "—"
+":ref:`Arbitrary type <03_ride-language/02_data-types:Any>`", "Any"

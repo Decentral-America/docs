@@ -1,0 +1,8 @@
+#, Name, Data type, Description
+":math:`1`", "name", ":ref:`String <03_ride-language/02_data-types:String>`", ":ref:`Token <02_decentralchain/02_token(asset):Token (Asset)>` name."
+":math:`2`", "description", ":ref:`String <03_ride-language/02_data-types:String>`", "Token description."
+":math:`3`", "quantity", ":ref:`Int <03_ride-language/02_data-types:Int>`", "Amount of the token. Set to :math:`1` for :ref:`NFT <02_decentralchain/02_token(asset):Non-Fungible Token>`."
+":math:`4`", "decimals", ":ref:`Int <03_ride-language/02_data-types:Int>`", "Number of digits in decimal part. Set to :math:`0` for NFT."
+":math:`5`", "isReissuable", ":ref:`Boolean <03_ride-language/02_data-types:Boolean>`", "Reissue ability flag. Set to :math:`0` for NFT."
+":math:`6`", "compiledScript", ":ref:`Script <03_ride-language/04_script-types:Script Types>` | :ref:`Unit <03_ride-language/02_data-types:Unit>`", "Set it to unit. Smart asset issue is currently unavailable."
+":math:`7`", "nonce", ":ref:`Int <03_ride-language/02_data-types:Int>`", "Nonce that is used for token ID generation. If the callable function issues several tokens with the same parameters, you should use different nonce."

@@ -1,0 +1,3 @@
+Parameter, Description
+"messageHash: :ref:`ByteVector <03_ride-language/02_data-types:ByteVector>`", "Keccak-256 hash of the message. Fixed size: :math:`32`."
+"signature: :ref:`ByteVector <03_ride-language/02_data-types:ByteVector>`", "ECDSA digital signature. Fixed size: :math:`65` bytes."

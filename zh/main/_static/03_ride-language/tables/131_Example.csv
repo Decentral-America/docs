@@ -1,0 +1,11 @@
+Input number/Rounding method, DOWN, CEILING, FLOOR, HALFUP, HALFEVEN
+":math:`5.5`", ":math:`5`", ":math:`6`", ":math:`5`", ":math:`6`", ":math:`6`"
+":math:`2.5`", ":math:`2`", ":math:`3`", ":math:`2`", ":math:`3`", ":math:`2`"
+":math:`1.6`", ":math:`1`", ":math:`2`", ":math:`1`", ":math:`2`", ":math:`2`"
+":math:`1.1`", ":math:`1`", ":math:`2`", ":math:`1`", ":math:`1`", ":math:`1`"
+":math:`1.0`", ":math:`1`", ":math:`1`", ":math:`1`", ":math:`1`", ":math:`1`"
+":math:`-1.0`", ":math:`-1`", ":math:`-1`", ":math:`-1`", ":math:`-1`", ":math:`-1`"
+":math:`-1.1`", ":math:`-1`", ":math:`-1`", ":math:`-2`", ":math:`-1`", ":math:`-1`"
+":math:`-1.6`", ":math:`-1`", ":math:`-1`", ":math:`-2`", ":math:`-2`", ":math:`-2`"
+":math:`-2.5`", ":math:`-2`", ":math:`-2`", ":math:`-3`", ":math:`-3`", ":math:`-2`"
+":math:`-5.5`", ":math:`-5`", ":math:`-5`", ":math:`-6`", ":math:`-6`", ":math:`-6`"

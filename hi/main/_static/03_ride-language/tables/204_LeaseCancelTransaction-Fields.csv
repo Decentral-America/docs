@@ -1,0 +1,10 @@
+#, Name, Data type, Description
+":math:`1`", "leaseId", ":ref:`ByteVector <03_ride-language/02_data-types:ByteVector>`", "Leasing ID."
+":math:`2`", "id", ":ref:`ByteVector <03_ride-language/02_data-types:ByteVector>`", "Transaction ID."
+":math:`3`", "fee", ":ref:`Int <03_ride-language/02_data-types:Int>`", ":ref:`Transaction fee <02_decentralchain/03_transaction:Transaction Fees>`."
+":math:`4`", "timestamp", ":ref:`Int <03_ride-language/02_data-types:Int>`", "Transaction timestamp."
+":math:`5`", "version", ":ref:`Int <03_ride-language/02_data-types:Int>`", "Transaction version."
+":math:`6`", "sender", ":ref:`Address <03_ride-language/05_structures:Address>`", ":ref:`address <02_decentralchain/01_account:Address>` of the transaction sender."
+":math:`7`", "senderPublicKey", ":ref:`ByteVector <03_ride-language/02_data-types:ByteVector>`", "Public key of the transaction sender."
+":math:`8`", "bodyBytes", ":ref:`ByteVector <03_ride-language/02_data-types:ByteVector>`", "Transaction body bytes."
+":math:`9`", "proofs", ":ref:`List <03_ride-language/02_data-types:List>` [:ref:`ByteVector <03_ride-language/02_data-types:ByteVector>`]", "Proofs."

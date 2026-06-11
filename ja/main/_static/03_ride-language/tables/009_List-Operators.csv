@@ -1,0 +1,4 @@
+Operator, Description
+"++", "Concatenation."
+":+", "Adding the element to the end of the list."
+"\:\:", "Adding the element to the beginning of the list."

@@ -1,0 +1,3 @@
+#, Name, Data type, Description
+":math:`1`", "assetId", ":ref:`ByteVector <03_ride-language/02_data-types:ByteVector>`", "Asset ID"
+":math:`2`", "minSponsoredAssetFee", ":ref:`ByteVector <03_ride-language/02_data-types:ByteVector>` | :ref:`Unit <03_ride-language/02_data-types:Unit>`", "Amount of sponsored asset that is equivalent to 0.001 :ref:`DecentralCoins <02_decentralchain/02_token(asset):DecentralCoin>`, specified in the minimum fraction (“cent”) of the sponsored asset. unit — disable the sponsorship."

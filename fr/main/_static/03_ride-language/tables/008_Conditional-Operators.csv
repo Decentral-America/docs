@@ -1,0 +1,3 @@
+Operator, Description
+"if-then-else", "Conditional statement."
+"match-case", ":ref:`Spot a type from union <03_ride-language/01_syntax-basics:Match-Case>`."

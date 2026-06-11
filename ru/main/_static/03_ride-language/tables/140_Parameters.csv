@@ -1,0 +1,3 @@
+Parameter, Description
+"arr: :ref:`List <03_ride-language/02_data-types:List>` [:ref:`String <03_ride-language/02_data-types:String>`]", "List of strings to concatenate."
+"separator: :ref:`String <03_ride-language/02_data-types:String>`", "Separator."
