@@ -102,8 +102,8 @@ for current_version in ${versions}; do
  
 done
  
-# return to master branch
-git checkout master
+# return to main branch
+git checkout main
  
 #######################
 # Update GitHub Pages #
@@ -129,10 +129,10 @@ cat > index.html <<EOF
 <html>
    <head>
       <title>DecentralChain Documentation</title>
-      <meta http-equiv = "refresh" content="0; url='/${current_language}/master/'" />
+      <meta http-equiv = "refresh" content="0; url='/${current_language}/main/'" />
    </head>
    <body>
-      <p>Please wait while you're redirected to our <a href="/${current_language}/master/">documentation</a>.</p>
+      <p>Please wait while you're redirected to our <a href="/${current_language}/main/">documentation</a>.</p>
    </body>
 </html>
 EOF
