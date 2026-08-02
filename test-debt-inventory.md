@@ -117,23 +117,54 @@ Commit: node-scala `d963e5f22d` on branch `test/fix-class-a-ignores` (not yet me
 
 **Justification:** matches the plan's DEX-982-old description exactly — architecturally blocked on the old signed route sharing a path with the public order-book route; the new `/matcher/orders/status/{publicKey}/{orderId}` route (merged this session per the plan) is the eventual fix, pending deprecation of the old route (Task 6 Step 4).
 
-### OrderBookBackwardCompatTestSuite.scala — 3 ignores ("Hard to reproduce" cluster)
+**Task 6 Step 4 — DEX-982-old deprecation plan (2026-08-02, planning/documentation only, no code deleted):**
 
-| Line | Test | Reason | Class |
+Confirmed the new route is real and live, not just planned: `getOrderStatusByPKAndId` (`MarketsRoute.scala:282-291`), wired at `path("status" / PublicKeyPM / OrderPM)` under the `orders` prefix, `@Path("/orders/status/{publicKey}/{orderId}#getOrderStatusByPKAndId")` — merged via matcher PR #19 ("`feat: add unambiguous signed order-status route (DEX-982)`", commit `4288a751f`, now on `main` at `3ed0ec65b`). It has no public sibling route to fall through to, so its `missingSignedHeaderRejectionHandler` can safely return a real `RequestInvalidSignature` — confirmed by its own passing tests at `GetOrderStatusByPKAndIdWithSigSpec.scala:254-276` ("should return an error timestamp/signature header doesn't exist" — both `in`, not `ignore`).
+
+The OLD route (`getOrderStatusByPKAndIdWithSig`, `MarketsRoute.scala:295-330`, `@Path("/orderbook/{publicKey}/{orderId}#getOrderStatusByPKAndIdWithSig")`) is the one whose 2 ignores this plan concerns. It stays exactly as-is today (still ignored, still commented, still serving live traffic) — this is a plan for *later*, not an action taken now.
+
+*Precedent already in this codebase* for exactly this kind of deprecation: `HistoryRoute.scala:63-71`, `deleteOrderFromHistoryById`, marked `@Deprecated` with an OpenAPI `description = "This method is deprecated and doesn't work anymore. Please don't use it."` — the pattern to reuse when the old order-status route's turn comes.
+
+**Proposed deprecation window and steps (not yet executed):**
+
+1. **Trigger — do NOT start the clock yet.** matcher has never cut a tagged release (confirmed: `git tag` / `gh release list` show none; the honest-limitation note in `ci.yml`'s `integration-dex-it` job env block says the same). A deprecation clock measured in "N releases" needs a first release to count from — that's Task 6 Step 3, explicitly **not done in this pass** (human decision gate). Until a first tagged release exists, there is no meaningful "N releases ago clients were told" baseline; starting the clock earlier would deprecate a route no external client could have known was legacy.
+2. **At or after the first tagged release:** annotate the old route `getOrderStatusByPKAndIdWithSig` with `@Deprecated` + an OpenAPI `description` pointing callers at `GET /matcher/orders/status/{publicKey}/{orderId}` (the `HistoryRoute.scala` precedent above). No behavior change — same 400/ambiguity limitation as today, just now documented as deprecated in the OpenAPI spec/docs site.
+3. **Measure real usage before removing anything:** add a metric/counter (or a WARN-level log line) on every hit to the old route's handler, so real external traffic is visible rather than assumed. Do not remove a route with unknown live callers on faith alone.
+4. **Window:** recommend the longer of 2 minor releases or 90 days after step 2 ships — matcher has no prior deprecation-cycle history to anchor to besides the already-dead `deleteOrderFromHistoryById` (which was deprecated *and non-functional* simultaneously, not a real windowed migration), so this is a reasonable default, not a measured precedent; a human should confirm the number when Step 3 (the release) actually happens.
+5. **Removal gate:** only once (a) the window has elapsed AND (b) the usage counter from step 3 shows the old route has gone quiet (or residual traffic is judged acceptable to break) — delete `getOrderStatusByPKAndIdWithSig`, its route wiring in `MarketsRoute.scala`, and its OpenAPI annotations. **At that point**, and not before, the 2 architecturally-blocked ignores in `GetOrderStatusByPKAndIdWithSigSpec.scala` (lines 187, 201) can finally be deleted too — there's no ambiguous public route left for the missing-header case to conflict with, so the whole DEX-982-old constraint disappears by construction.
+
+**Until then:** per the plan's explicit instruction, the 2 ignores are left untouched, with their existing (still accurate) DEX-982 comment as-is. No code was deleted or modified for Step 4 — this is planning/documentation only.
+
+### OrderBookBackwardCompatTestSuite.scala — 3 ignores ("Hard to reproduce" cluster) — **RESOLVED (deleted) 2026-08-02**
+
+| Line (was) | Test | Reason | Class |
 |---|---|---|---|
-| 18 | `if (!submitted.order.isValid(eventTs))` | `ignore {} // Hard to reproduce` — empty body, tests nothing | C |
-| 62 | `if (!counter.order.isValid(eventTs))` | `ignore {} // Hard to reproduce` — empty body | C |
-| 67 | `limit` (under `submittedRemaining.isValid`) | `ignore {} // Hard to reproduce, DEX-467` — empty body, only this one has a ticket reference | C |
+| 18 | `if (!submitted.order.isValid(eventTs))` | `ignore {} // Hard to reproduce` — empty body, tests nothing | C → **deleted** |
+| 62 | `if (!counter.order.isValid(eventTs))` | `ignore {} // Hard to reproduce` — empty body | C → **deleted** |
+| 67 | `limit` (under `submittedRemaining.isValid`) | `ignore {} // Hard to reproduce, DEX-467` — empty body, only this one has a ticket reference | C → **deleted, DEX-467 preserved as record (below)** |
 
-**Justification:** all three are empty-body `ignore {}` placeholders — they assert nothing even if un-ignored as-is. Per the plan's Task 6 Step 1 guidance, an empty ignored block is worse than no test; these need either a real reproduction body or deletion with the ticket (DEX-467, for the one that has it) as the record. Classed C (environment/harness — reproducing the exact backward-compat race condition needs the dockerized multi-version stack) rather than A/B since there's no test assertion to judge as stale or unimplemented — the content simply doesn't exist yet.
+**Justification (original):** all three were empty-body `ignore {}` placeholders — they asserted nothing even if un-ignored as-is. Per the plan's Task 6 Step 1 guidance, an empty ignored block is worse than no test.
 
-### WsOrderBookStreamTestSuite.scala — 1 ignore
+**Resolution (Task 6 Step 1, 2026-08-02):** a genuine local Docker reproduction attempt was made against the real dockerized dex-it stack (not skipped, not assumed) — see "Task 6 resolution log" below for the full build/run trail. It did not reach the point of testing these three specific race conditions at all: the shared `matcher-node` container that every dex-it suite (including this one) depends on failed to boot, 4/4 attempts, with an identical, deterministic crash:
+
+```
+Caused by: org.rocksdb.RocksDBException: lock hold by current process, acquire time ... acquiring thread ...: /var/lib/dcc/blockchain-updates/LOCK: No locks available
+	at com.decentralchain.events.BlockchainUpdates.<init>(BlockchainUpdates.scala:33)
+```
+
+This is a local-machine Docker Desktop environment issue (RocksDB failing to acquire its own second advisory lock — for the `BlockchainUpdates` extension's own RocksDB instance — under this host's amd64 emulation of the node image; the *first* RocksDB instance, the main state DB, opens fine in the same process), not a matcher/dex code defect: it reproduced identically before and after a full Docker Desktop daemon restart, and blocks literally every dex-it suite at container-boot time, not just this file. `docker images`/`sbt dex-it/docker` build succeeded cleanly (all 4 images: `matcher-node`, `dex-integration-it`, `matcher-server`, `dex-it`); only the container *runtime* boot fails. What would unblock it: running on a native (non-emulated) amd64 host or Linux CI runner — exactly what this repo's own nightly `integration-dex-it` GitHub Actions job already does successfully on `ubuntu-latest`.
+
+Given real reproduction of the underlying race conditions was blocked before it could even start, and the three ignores were empty `ignore {}` bodies that asserted nothing regardless, the plan's fallback rule applies as-is: **deleted all three** rather than leaving them as non-asserting placeholders. No ticket existed for the first two (confirmed: `gh issue list --repo Decentral-America/matcher --search "DEX-467"` / `"backward"` / `"DEX-1402"` — matcher's GitHub issue tracker has no real issues besides the auto-generated Renovate Dependency Dashboard; these ticket names are internal references, not GitHub issues). **DEX-467** is preserved here as the historical reference for the third ("limit" under `submittedRemaining.isValid`: submitted order stays valid after a partial match whose counter's own remaining becomes invalid) should someone revisit it with working Docker infra later. Commit: matcher `d91766a5f` on branch `test/matcher-ignore-triage` (off `main` at `3ed0ec65b`, not yet merged/pushed). `dex-it/Test/compile` confirmed clean after the deletion.
+
+### WsOrderBookStreamTestSuite.scala — 1 ignore — **evidence updated, unchanged 2026-08-02**
 
 | Line | Test | Reason | Class |
 |---|---|---|---|
 | 394 | `close a subscription when an order book is blacklisted` | `ignore { // NOTE: DEX-1402 — WebSocket order book streaming issue unresolved` | C |
 
-**Justification:** matches the plan's description exactly — a documented, ticketed, unresolved WS layer bug (not consensus), needing a harness/dex-WS-layer fix per Task 6 Step 2.
+**Justification (original):** matches the plan's description exactly — a documented, ticketed, unresolved WS layer bug (not consensus), needing a harness/dex-WS-layer fix per Task 6 Step 2.
+
+**Resolution (Task 6 Step 2, 2026-08-02):** same genuine reproduction attempt as the backward-compat cluster above — blocked by the identical, environment-level `matcher-node` container boot failure (RocksDB ENOLCK on `BlockchainUpdates`, 4/4 attempts, survives a full Docker Desktop restart) before this suite's own container could come up at all. This is a harness/infra blocker on this specific local machine, not new evidence about the WS bug itself — the existing DEX-1402 comment and class-C reproduction state are left exactly as they were (no code change), since "not reproducible on this machine right now" is not the same claim as "not reproducible" and must not be used to silently reclassify or weaken a real, already-ticketed bug. Left ignored, unchanged, pending a run on infra where dex-it containers actually boot (same unblocking criterion as above: native-amd64 host / this repo's own nightly CI runner).
 
 ## Summary counts
 
@@ -145,7 +176,7 @@ Commit: node-scala `d963e5f22d` on branch `test/fix-class-a-ignores` (not yet me
 | D (architecturally-blocked) | 0 | 2 | 2 |
 | **Total** | **20** | **6** | **26** |
 
-*Counts above are the original 2026-08-02 static-reading audit, kept as-is for history. Post-Task-4 resolution: `CallableV4DiffTest.scala:93` is confirmed class A (was "flagged uncertain"), so node-scala's confirmed-A count is now 2, not 1. See "Task 4 resolution log" below.*
+*Counts above are the original 2026-08-02 static-reading audit, kept as-is for history. Post-Task-4 resolution: `CallableV4DiffTest.scala:93` is confirmed class A (was "flagged uncertain"), so node-scala's confirmed-A count is now 2, not 1. Post-Task-6 resolution: matcher's 3 empty `OrderBookBackwardCompatTestSuite.scala` class-C ignores were deleted (not fixed in place), so matcher's real remaining-ignore count is now 3, not 6 (1 real WS bug still class C, 2 DEX-982-old still class D). See "Task 4 resolution log" and "Task 6 resolution log" below.*
 
 ## Items flagged NOT confident (need real Docker/sbt execution before Task 4/5/6 acts)
 
@@ -165,3 +196,36 @@ Both node-scala class-A candidates from this inventory are now resolved on branc
 | `CallableV4DiffTest.scala:93` (`trace`) | Un-ignored; fixed a stale object-equality assertion (compared two different, both-correct case classes — `FailedTransactionError` from the per-step trace vs. `ScriptExecutionError` from the RideV6 fail-free top-level conversion) to compare the semantically relevant fields instead | `sbt --batch "node-tests/testOnly com.decentralchain.state.diffs.ci.CallableV4DiffTest"`: RED (7/8, `trace` failed on the stale comparison) → GREEN (8/8) after the fix |
 
 Neither fix touched production code under `node/src/main/scala/com/decentralchain/{state,consensus,mining}` — both were pure test-code corrections, consistent with the plan's CONSENSUS-CRITICAL constraint and the SC-575/580 "fix the test, not the node" method.
+
+## Task 6 resolution log (matcher ignores + DEX-982-old deprecation planning, 2026-08-02)
+
+Scope: plan Steps 1, 2, and 4 only. **Step 3 (cutting matcher's first tagged release) was explicitly NOT done** — it's a standing human-decision gate per the plan ("Decide with the human"), not something to execute unilaterally; nothing was tagged, released, or pushed as part of this work.
+
+**Real local Docker infra was stood up and used** (this was not a static-only pass): `sbt "dex-it/docker"` was run to completion, building all 4 images (`matcher-node`, `dex-integration-it`, `matcher-server`, `dex-it`) from a clean local build. Two real, environment-level obstacles were hit and fixed along the way (documented here since they're reusable findings for any future local matcher dex-it run on this class of machine):
+
+1. **`ghcr.io/decentral-america/node-scala:1.7.0: no match for platform in manifest`** building on Apple Silicon — the locally-cached base image is `linux/amd64`-only and Docker Desktop's buildx metadata resolution needs the platform pinned explicitly. Fix: `DOCKER_DEFAULT_PLATFORM=linux/amd64`, set **before the sbt server starts** (sbt 2.x's persistent background server freezes the env of whichever step first launched it — a mid-session env var change is silently ignored until `sbt shutdown` kills the stale server).
+2. **`decentralchain/matcher-node:latest` / `decentralchain/matcher-server:latest` not found** — `project/ImageVersionPlugin.scala` only tags an image `:latest` when built from `main`/`master`/a `version-`/`dex-` prefixed branch; a feature/test branch like `test/matcher-ignore-triage` only gets tagged with the sanitized branch name. Since `dex-integration-it`'s and `dex-it`'s own Dockerfiles hardcode `FROM decentralchain/matcher-node:latest` / `FROM decentralchain/matcher-server:latest` regardless of branch, a plain branch build breaks the chain. Fix: `docker tag decentralchain/matcher-node:<branch-tag> decentralchain/matcher-node:latest` (and same for `matcher-server`) after each image builds, before the next stage's build runs.
+
+**The hard blocker (not fixed, documented honestly):** once all 4 images existed, every attempt to actually **run** a dex-it suite (`sbt 'dex-it/testOnly com.decentralchain.it.matcher.api.http.status.GetOrderStatusByPKAndIdWithSigSpec'` was used as the smoke probe — it's the simplest suite, single node, no Kafka) failed identically, 4 times in a row, including after a full Docker Desktop daemon restart (`osascript -e 'quit app "Docker Desktop"'` + relaunch, confirmed `docker info` healthy again in between):
+
+```
+23:36:57.908 ERROR [main] c.d.actor.RootActorSystem$ - Error while initializing actor system decentralchain
+java.lang.reflect.InvocationTargetException
+	...
+	at com.decentralchain.events.BlockchainUpdates.<init>(BlockchainUpdates.scala:33)
+Caused by: org.rocksdb.RocksDBException: lock hold by current process, acquire time 1785713817 acquiring thread 140737451153088: /var/lib/dcc/blockchain-updates/LOCK: No locks available
+```
+
+Notable: the *main* state RocksDB (`c.d.database.RDB$ - Open DB at /var/lib/dcc/data`) opens successfully in the same process just before this — only the second RocksDB instance (`BlockchainUpdates`, a separate DB at a different path on the same named volume) fails to acquire its own lock. This points at this specific local Docker Desktop install's amd64-emulation layer (no Rosetta translation configured — `UseVirtualizationFrameworkRosetta` is unset, so Docker Desktop's own QEMU-based binfmt emulation handles the cross-arch translation) having a low/broken ceiling on advisory file locks for a single process opening more than one, not a matcher/node code defect: this exact local-docker path (same node base image, same emulation) was used successfully for a real dex-it suite in a prior session (see project memory `project_bug2_reorg_rebroadcast` — a full reorg dex-it suite ran green under the same amd64-emulated setup), so this is read as a flaky/regressed state of this particular machine's Docker Desktop right now, not an unconditional rule that dex-it can never run locally here.
+
+**What would unblock it:** re-run on a native (non-emulated) amd64 host, or this repo's own nightly `integration-dex-it` GitHub Actions job (`ubuntu-latest`, 8-shard matrix) — both already prove these suites pass on real infra; a future local attempt could also try disabling/reconfiguring Docker Desktop's VM-level file-locking path (e.g. toggling Rosetta translation on) as an untried next step, or simply retrying after a host reboot (not just a Docker Desktop app restart, which did not clear it).
+
+**Outcome given the blocker, per plan Step 1's explicit fallback:**
+
+| Item | Outcome |
+|---|---|
+| `OrderBookBackwardCompatTestSuite.scala` 3× empty `ignore {}` ("Hard to reproduce") | **Deleted** (matcher commit `d91766a5f` on branch `test/matcher-ignore-triage`) — real reproduction was attempted and genuinely blocked before reaching these scenarios; since the bodies were empty regardless, deletion-with-ticket-as-record is the correct action per the plan, not a judgment call this session invented. DEX-467 preserved in the inventory entry above. |
+| `WsOrderBookStreamTestSuite.scala:394` (DEX-1402) | **Left unchanged** (no code touched) — same blocker hit before this suite's container could boot; a real ticketed bug must not be silently reclassified or weakened just because this machine couldn't reproduce it *this session*. Evidence trail added to the inventory entry above for whoever picks it up next. |
+| `GetOrderStatusByPKAndIdWithSigSpec.scala` 2× DEX-982-old ignores | **Left unchanged** (no code touched, per the plan's explicit instruction) — a deprecation plan was written instead (see the DEX-982-old cluster entry above); confirmed the new `/matcher/orders/status/{publicKey}/{orderId}` route is real, merged, and tested (`main` commit `3ed0ec65b`). |
+
+**Branch state:** `test/matcher-ignore-triage`, based on matcher `main` (`3ed0ec65b`), one commit ahead (`d91766a5f`). Not pushed, no PR opened — ready for review/merge as its own follow-up decision. **Step 3 (first tagged release) was not started, decided, or executed.**
