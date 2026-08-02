@@ -43,13 +43,15 @@ That leaves **26 real ScalaTest ignores**, which matches the plan's audited head
 
 **Justification:** `MaxListLengthV4` (`lang/.../PureContext.scala:41`) and the "List size should not exceed …" message (`lang/.../compiler/Terms.scala:400`) are only enforced when a script constructs a list itself with the `limited=true` path (`ARR(..., limited=true)`/FOLD limits). These three tests instead build the argument value directly with `limited = false` — i.e. they simulate an *external* invoke-transaction argument that never goes through that compiler-time gate — and no equivalent runtime/API-level enforcement was found in `node/src/main/scala` (searched for `MaxListLengthV4`/size-check usages outside `lang`). That reads as a genuine, not-yet-implemented validation gap on externally-supplied list arguments rather than a stale assertion, but this is not proven by execution — **flagged low-to-moderate confidence, recommend a real Docker run before Task 4/5 acts on it** (it could turn out the getElement bounds-check message is already correct and only the size-limit sub-case is the real gap, which would split this cluster A/B rather than all-B).
 
-### InvokeScriptTransactionSuite.scala — 1 ignore
+### InvokeScriptTransactionSuite.scala — 1 ignore — **RESOLVED 2026-08-02**
 
 | Line | Test | Reason | Class |
 |---|---|---|---|
-| 103 | `Allow to use "this" if DApp is called by alias` | no comment | **A** |
+| 103 | `Allow to use "this" if DApp is called by alias` | no comment | **A — RESOLVED** |
 
 **Justification:** the ignored test body is a byte-for-byte duplicate of the active, passing test `"translate alias to the address"` at line 177 (same `invokeScript(caller, "alias:I:alias", func=Some("baz"), ...)` call, same `getDataByKey` assertion). The active duplicate already proves the alias→`this` behavior works in production. This is a stale, redundant leftover — safe to delete (not just un-ignore) once confirmed.
+
+**Resolution (Task 4, 2026-08-02):** confirmed byte-for-byte identical to the active test by direct read (both invoke `"alias:I:alias"` → `baz()` and assert the same `getDataByKey` result). Deleted the ignored duplicate rather than un-ignoring it, since un-ignoring would only run the exact same assertion the active test already runs — no new coverage. `node-it/Test/compile` confirmed the file still compiles clean after removal. Commit: node-scala `d963e5f22d` on branch `test/fix-class-a-ignores` (not yet merged).
 
 ### LeasingExpirySpec.scala — 3 ignores (dormant feature-27 cluster)
 
@@ -77,7 +79,7 @@ That leaves **26 real ScalaTest ignores**, which matches the plan's audited head
 | `smartasset/AssetSupportedTransactionsSuite.scala:262` | `burn by some height` | no comment; asserts a height-parity-gated asset script (`height % 2 == 0`) permits/rejects `burn` deterministically across a height-arise wait — timing-sensitive against `nodes.waitForHeightArise()` in a live multi-node it-suite | C |
 | `transaction/smart/script/ScriptCompilerV1Test.scala:364` | `forbid unused case variables` | no comment; expects a compiler error for `match` case-bound variables that shadow an unused `let`/`func` param of the same name — this diagnostic does not appear implemented in `ScriptCompiler`/`ExpressionCompiler` (no "unused case variable" message found in `lang/`) | B |
 | `state/diffs/freecall/InvokeExpressionTest.scala:268` | `available versions` | in-line comment: `// NOTE: Version check is commented out in CommonValidation` | B |
-| `state/diffs/ci/CallableV4DiffTest.scala:93` | `trace` | no comment; asserts an exact `r.trace.size shouldBe 4` shape for a scripted multi-asset invoke failure trace — ignored since at least Feb 2026 per git history, predates several trace-model changes | **A or C — not confident, could not execute (sandboxed, no network to resolve sbt deps)** |
+| `state/diffs/ci/CallableV4DiffTest.scala:93` | `trace` | no comment; asserts an exact `r.trace.size shouldBe 4` shape for a scripted multi-asset invoke failure trace — ignored since at least Feb 2026 per git history, predates several trace-model changes | **A — RESOLVED, confirmed by real execution 2026-08-02 (see below); confidence flag from the original audit is corrected, not carried forward** |
 | `state/diffs/smart/performance/SigVerifyPerformanceTest.scala:34` | `parallel native signature verification vs sequential scripted signature verification` | no comment; runs 10,000 transfers signed vs 10,000 scripted-signed transfers and only `println`s the timing comparison — zero assertions | C |
 | `state/diffs/smart/predef/ContextFunctionsTest.scala:189` | `base64 amplification` | no comment; ~180-line chained `toBase64String`/`toBytes` script exercising base64 expansion-amplification (decompression-bomb-style) cost, no timeout/assertion visible in the excerpt read | C |
 
@@ -85,7 +87,22 @@ That leaves **26 real ScalaTest ignores**, which matches the plan's audited head
 
 **Justification for `InvokeExpressionTest:268`:** the comment directly states production's own version-check code path is commented out in `CommonValidation` — the test can't pass while that stays disabled. This is a real feature gap (or a deliberate, currently-undocumented relaxation) — either way it needs a design/product decision, so classed B, not C.
 
-**`CallableV4DiffTest:93` flagged not-confident:** this environment could not run `sbt` (no network, dependency resolution failed offline) to actually see whether it currently passes or fails, so I could not distinguish "stale trace-shape assertion after a refactor" (A) from "legitimately slow/flaky trace test excluded for harness reasons" (C). Recommend Task 4 run it against real Docker/local sbt first before deciding.
+**`CallableV4DiffTest:93` flagged not-confident (ORIGINAL, superseded — see Resolution below):** this environment could not run `sbt` (no network, dependency resolution failed offline) to actually see whether it currently passes or fails, so I could not distinguish "stale trace-shape assertion after a refactor" (A) from "legitimately slow/flaky trace test excluded for harness reasons" (C). Recommend Task 4 run it against real Docker/local sbt first before deciding.
+
+**Resolution (Task 4, 2026-08-02) — classification corrected to A, confirmed by real execution:** un-ignored and ran `sbt --batch "node-tests/testOnly com.decentralchain.state.diffs.ci.CallableV4DiffTest"` (pure in-JVM unit test — `node-tests` module, no Docker/network needed, contrary to the original audit's assumption that no execution was possible; only top-level `sbt` dependency resolution needed network, and it resolved fine on this machine).
+
+First run (before any fix) — 7/8 passed, 1 failed:
+```
+[info] - trace *** FAILED *** (75 milliseconds)
+[info]   FailedTransactionError(AssetScriptInAction, 4, List(), None, Some(3KNoggfBFFcmSEtnd6kEitFtQY2gxH41ingB9Cdxh8gR), List()) was not equal to ScriptExecutionError("Transaction is not allowed by script of the asset 3KNoggfBFFcmSEtnd6kEitFtQY2gxH41ingB9Cdxh8gR", List(), Some(3KNoggfBFFcmSEtnd6kEitFtQY2gxH41ingB9Cdxh8gR)) (CallableV4DiffTest.scala:105)
+```
+Notably, `r.trace.size shouldBe 4` (line 100, the assertion the original audit worried about) **passed** — the trace shape is not stale. The real stale assertion was line 105, comparing the per-step `AssetVerifierTrace`'s raw `FailedTransactionError` directly against the top-level `TransactionValidationError`'s `cause`.
+
+Root-caused by reading `TransactionDiffer.validate`'s final `leftMap` (`node/src/main/scala/com/decentralchain/state/diffs/TransactionDiffer.scala`): under RideV6 (SynchronousCalls), a fail-free (`isFailFree`, i.e. `spentComplexity <= FailFreeInvokeComplexity`) `FailedTransactionError` with `Cause.AssetScriptInAction` is intentionally converted to `ScriptExecutionError(fte.message, fte.log, fte.assetId)` for the top-level transaction result only. The per-step trace entries are built earlier (`InvokeDiffsCommon.scala`) and never go through that conversion, so they correctly retain the raw `FailedTransactionError`. `FailedTransactionError.message` synthesizes the exact same string (`"Transaction is not allowed by script of the asset $assetId"`) that ends up in the `ScriptExecutionError`, confirming both values describe the same failure — they are just two different case classes by current, intentional design (this is real, existing production code, not something added to make the test pass), so the test's direct `shouldBe` object-equality was always going to fail once this fail-free conversion was introduced.
+
+Fix applied (test-only, no production code touched — consensus-adjacent directory, only the test's assertion changed): compare the semantically relevant fields (`message`, `assetId`) between the last trace step's `FailedTransactionError` and the final result's `ScriptExecutionError`, instead of asserting full object equality across two different case classes. Re-ran after the fix: **8/8 tests pass**, `trace` green.
+
+Commit: node-scala `d963e5f22d` on branch `test/fix-class-a-ignores` (not yet merged). No production code under `node/src/main/scala/com/decentralchain/{state,consensus,mining}` was changed — this was purely a test-assertion correction, consistent with the SC-575/580 method and the plan's CONSENSUS-CRITICAL constraint (no production change was needed or made).
 
 ## matcher (6 ignores, 4 files)
 
@@ -126,10 +143,23 @@ That leaves **26 real ScalaTest ignores**, which matches the plan's audited head
 | D (architecturally-blocked) | 0 | 2 | 2 |
 | **Total** | **20** | **6** | **26** |
 
+*Counts above are the original 2026-08-02 static-reading audit, kept as-is for history. Post-Task-4 resolution: `CallableV4DiffTest.scala:93` is confirmed class A (was "flagged uncertain"), so node-scala's confirmed-A count is now 2, not 1. See "Task 4 resolution log" below.*
+
 ## Items flagged NOT confident (need real Docker/sbt execution before Task 4/5/6 acts)
 
 1. **`InvokeListForCallable.scala:133,149,166`** (3 tests) — classified B on static reading (no runtime arg-size/bounds enforcement found outside the RIDE compiler's own `limited=true` path), but not proven by execution.
-2. **`CallableV4DiffTest.scala:93` (`trace`)** — could not run locally (sandboxed, no network for sbt dependency resolution); genuinely unclear whether this is A (stale trace-shape assertion) or C (slow/fragile, intentionally excluded).
+2. ~~**`CallableV4DiffTest.scala:93` (`trace`)** — could not run locally (sandboxed, no network for sbt dependency resolution); genuinely unclear whether this is A (stale trace-shape assertion) or C (slow/fragile, intentionally excluded).~~ **RESOLVED 2026-08-02 — this environment DID have Docker/sbt/network access; ran it for real, confirmed class A, fixed the stale assertion, un-ignored, now green. See the `CallableV4DiffTest.scala:93` entry above for full evidence.**
 3. **`BlockSpecification.scala:198` (`serialize and deserialize big block`)** — classed C (heavy generator, likely excluded for runtime) but has a real assertion; arguably worth periodic re-enablement rather than permanent ignore — a judgment call, not a hard fact.
 
 All other 21 classifications are backed by either an explicit in-file/comment citation (SC-695, DEX-982, DEX-467, DEX-1402, LeaseExpiration pre-activation) or a direct code-reading finding (duplicate test, commented-out production check, missing compiler diagnostic, zero-assertion benchmark).
+
+## Task 4 resolution log (class-A fixes, 2026-08-02)
+
+Both node-scala class-A candidates from this inventory are now resolved on branch `test/fix-class-a-ignores` (commit `d963e5f22d`), pending review/merge:
+
+| Item | Resolution | Evidence |
+|---|---|---|
+| `InvokeScriptTransactionSuite.scala:103` | Deleted (confirmed byte-for-byte duplicate of the active `"translate alias to the address"` test at line 177) | Direct code read; `node-it/Test/compile` clean after removal |
+| `CallableV4DiffTest.scala:93` (`trace`) | Un-ignored; fixed a stale object-equality assertion (compared two different, both-correct case classes — `FailedTransactionError` from the per-step trace vs. `ScriptExecutionError` from the RideV6 fail-free top-level conversion) to compare the semantically relevant fields instead | `sbt --batch "node-tests/testOnly com.decentralchain.state.diffs.ci.CallableV4DiffTest"`: RED (7/8, `trace` failed on the stale comparison) → GREEN (8/8) after the fix |
+
+Neither fix touched production code under `node/src/main/scala/com/decentralchain/{state,consensus,mining}` — both were pure test-code corrections, consistent with the plan's CONSENSUS-CRITICAL constraint and the SC-575/580 "fix the test, not the node" method.
