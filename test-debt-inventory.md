@@ -1,7 +1,19 @@
 # Test-Debt Inventory — Ignored Test Triage
 
-**Date:** 2026-08-02
+**Date:** 2026-08-02 · **Addendum 2026-08-04 below** (SC-695 status changed since this was written)
 **Scope:** Task 3 of `docs/superpowers/plans/2026-08-02-launch-readiness.md` (Phase 2).
+
+> **2026-08-04 addendum:** the SC-695 cluster below (`InvokeScriptTransactionRideV5Suite.scala`, 5
+> ignores) says the design spec was written but "the `BlockchainFeature` flag is NOT scaffolded —
+> implementation is separate future work." That has since changed: after the spec
+> (`node-scala/docs/features/feature-30-sc695-spec.md`) was signed off, SC-695 **was** implemented and
+> merged to node-scala `main` behind a new `BlockchainFeature` id 30, dormant until governance activation
+> (verified: `node-it/src/test/scala/com/decentralchain/it/sync/smartcontract/InvokeScriptTransactionRideV5Suite.scala`
+> now pre-activates `BlockchainFeatures.InvokeVersionGating.id` and the previously-ignored tests are
+> resolved, not left as bare ignores). This does not change the inventory's node-scala ignore count
+> retroactively (that count is a dated snapshot), but the "NOT scaffolded" framing below is superseded —
+> do not treat SC-695 as unimplemented going forward. No other section of this inventory is affected;
+> matcher's 6 ignores and the rest of node-scala's 20 are unchanged and still accurate as of this check.
 **Method:** `grep -rn '" ignore\b\|ignore {\|ignore(' --include='*.scala' node-scala/node-it node-scala/node/tests matcher/dex-it matcher/dex/src/test` from the Ecosystem root, then each hit was read in full (test body + a quick look at the production code it targets) to classify it. No Docker/sbt test execution was possible in this environment (sandboxed, no network — `sbt` could not resolve dependencies), so classifications are evidence-based static-reading judgments, not RED→GREEN proof; several are flagged below as needing that proof before Task 4/5/6 act on them.
 
 ## Classification legend
