@@ -163,7 +163,7 @@ View Aliases
 
 The list of account aliases, as well as other blockchain data, is public and can be read by anyone. For example, you can see aliases in `DecentralChain Explorer <https://decentralscan.com/>`_. To do this, find an account by its :ref:`address <02_decentralchain/01_account:Address>` and switch to the Aliases tab.
 
-Using :ref:`Node REST API <documentation:placeholder>`, you can obtain a list of aliases by address using the GET/alias/by-address/{address} method and an address by alias using the GET /alias/by-alias/{alias} method.
+Using :ref:`Node REST API <05_node-guide/01_node-rest-api:Node REST API>`, you can obtain a list of aliases by address using the GET/alias/by-address/{address} method and an address by alias using the GET /alias/by-alias/{alias} method.
 
 Binary Format
 -------------
