@@ -33,4 +33,6 @@ DecentralChain is an open blockchain protocol and development toolset for Web 3.
 08_mainnet-testnet-stagenet
 09_protocol
 10_binary-format
+11_tokenomics
+12_cr-coin
 ```
