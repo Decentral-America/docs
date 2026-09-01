@@ -58,7 +58,7 @@ The community of generating nodes can change the size of reward through voting.
 Current Reward Size
 -------------------
 
-You can view the current reward size by making a request to the :ref:`Node REST API <documentation:placeholder>`. In response to the request, a JSON file is returned,  the value of the currentReward field of which is the current block reward size in Decentralites. 
+You can view the current reward size by making a request to the :ref:`Node REST API <05_node-guide/01_node-rest-api:Node REST API>`. In response to the request, a JSON file is returned,  the value of the currentReward field of which is the current block reward size in Decentralites.
 
 Example of response:
 

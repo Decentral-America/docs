@@ -7,9 +7,9 @@ Connecting Node to Blockchain Network
 
 You can launch your node in any blockchain network. Select the network in the node configuration file. 
 
-* For more information about the configuration file, see the :ref:`node configuration <documentation:placeholder>` article. 
-* For installing a node, see the :ref:`install DecentralChain node <documentation:placeholder>` article. 
-* For starting your own blockchain network, see the :ref:`custom blockchain <documentation:placeholder>` article.
+* For more information about the configuration file, see the :ref:`node configuration <05_node-guide/index:Configuration>` article. 
+* For installing a node, see the :ref:`install DecentralChain node <05_node-guide/index:Getting the Node>` article. 
+* For starting your own blockchain network, see the :ref:`custom blockchain <05_node-guide/03_custom-blockchain:Custom Blockchain>` article.
 
 Chain ID
 ========

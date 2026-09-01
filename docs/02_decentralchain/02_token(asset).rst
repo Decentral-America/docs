@@ -46,7 +46,7 @@ Token ID is a byte array calculated as follows:
 * If the token is issued by :ref:`issue transaction <02_decentralchain/03_transaction:Issue Transaction>`, the token ID is the same as the transaction ID.
 * If the token is issued by :ref:`invoke script transaction <02_decentralchain/03_transaction:Invoke Script Transaction>` when the callable function of :ref:`dApp script <02_decentralchain/01_account:dApp and Smart Account>` performed the :ref:`Issue <03_ride-language/05_structures:Issue>` action, the token ID is calculated as the BLAKE2b-256 hash of the byte array containing transaction ID and the fields of the Issue structure.
 
-In the :ref:`Node REST API <documentation:placeholder>`, the token identifier is encoded in base58. For example:
+In the :ref:`Node REST API <05_node-guide/01_node-rest-api:Node REST API>`, the token identifier is encoded in base58. For example:
 
 .. code-block:: none
 
@@ -161,7 +161,7 @@ You can buy DecentralCoins tokens at `Decentral.Exchange <https://decentral.exch
 Token Custom Parameters
 =======================
 
-Below is an example of JSON representation returned by the GET /assets/details/{assetId} method of :ref:`Node REST API <documentation:placeholder>`:
+Below is an example of JSON representation returned by the GET /assets/details/{assetId} method of :ref:`Node REST API <05_node-guide/01_node-rest-api:Node REST API>`:
 
 .. code-block:: none
 
@@ -190,7 +190,7 @@ Below is an example of JSON representation returned by the GET /assets/details/{
 Atomic Unit
 -----------
 
-The amount of token is displayed differently in UIs and in the :ref:`JSON representation <02_decentralchain/03_transaction:JSON Representation>` used by the :ref:`Node REST API <documentation:placeholder>`. In API requests and responses, amount values are integers indicated in atomic units to avoid precision issues in floating-point calculations. An atomic unit is the minimum fraction (“cent”) of a token, it is equal to :math:`10^{-decimals}`. The amount of token in JSON is the real quantity multiplied by :math:`10^{decimals}`.
+The amount of token is displayed differently in UIs and in the :ref:`JSON representation <02_decentralchain/03_transaction:JSON Representation>` used by the :ref:`Node REST API <05_node-guide/01_node-rest-api:Node REST API>`. In API requests and responses, amount values are integers indicated in atomic units to avoid precision issues in floating-point calculations. An atomic unit is the minimum fraction (“cent”) of a token, it is equal to :math:`10^{-decimals}`. The amount of token in JSON is the real quantity multiplied by :math:`10^{decimals}`.
 
 For USD-N in the example above:
 

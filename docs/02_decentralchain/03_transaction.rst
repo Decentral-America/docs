@@ -9,7 +9,7 @@ How to Sign and Send Transactions
 ---------------------------------
 
 * In `Decentral.Exchange <https://decentral.exchange/>`_ you can create some types of transactions such as transfer, issue/reissue/burn, sponsor fee transaction, set asset script, create alias.
-* Via :ref:`Node REST API <documentation:placeholder>`:
+* Via :ref:`Node REST API <05_node-guide/01_node-rest-api:Node REST API>`:
 
   * The POST /transactions/broadcast method sends a signed transaction to a node;
   * The POST /transactions/sign method generates transaction signature (but this method is only available to the node owner).
@@ -167,7 +167,7 @@ Transaction Representations
 JSON Representation
 -------------------
 
-The :ref:`Node REST API <documentation:placeholder>` of DecentralChain nodes uses the JSON representation of transactions. You can send transactions to a node and read transactions stored on the blockchain via REST API in JSON. Here is an example of JSON representation:
+The :ref:`Node REST API <05_node-guide/01_node-rest-api:Node REST API>` of DecentralChain nodes uses the JSON representation of transactions. You can send transactions to a node and read transactions stored on the blockchain via REST API in JSON. Here is an example of JSON representation:
 
 .. code-block:: none
 
@@ -199,14 +199,14 @@ The fields that depend on the type of transaction are listed in the description 
 Binary Format
 -------------
 
-Transactions are stored on the blockchain in the binary format (byte representation). :ref:`Node extensions <documentation:placeholder>` such as :ref:`gRPC server <documentation:placeholder>` can work directly with data in binary format.
+Transactions are stored on the blockchain in the binary format (byte representation). :ref:`Node extensions <05_node-guide/02_node-extensions:Node Extensions>` such as :ref:`gRPC server <05_node-guide/02_node-extensions:gRPC Server>` can work directly with data in binary format.
 The transaction signature and ID are also formed on the basis of the binary format. The guideline for generating a signature and ID is given in the :ref:`cryptographic practical details <02_decentralchain/09_protocol:Cryptographic Practical Details>` article.
 Transaction binary format is described in the :ref:`transaction binary format <02_decentralchain/10_binary-format:Transaction Binary Format>` article.
 
 You can get the transaction by ID, or the list of transactions by certain account address, or the list of all transactions in the block:
 
  * In `DecentralChain Explorer <https://decentralscan.com/>`_.
- * Via :ref:`Node REST API <documentation:placeholder>` using the following methods:
+ * Via :ref:`Node REST API <05_node-guide/01_node-rest-api:Node REST API>` using the following methods:
 
    * GET /transactions/info/{id} returns transaction data by transaction ID.
    * GET /transactions/address/{address}/limit/{limit} returns the list of transactions where the specified address is involved.
@@ -1176,7 +1176,7 @@ Transaction Validation
 
 A DecentralChain node validates each transaction in the following cases:
 
-* The node receives the transaction via the broadcast endpoint of :ref:`Node extensions <documentation:placeholder>` or :ref:`gRPC server <documentation:placeholder>`.
+* The node receives the transaction via the broadcast endpoint of :ref:`Node extensions <05_node-guide/02_node-extensions:Node Extensions>` or :ref:`gRPC server <05_node-guide/02_node-extensions:gRPC Server>`.
 * The node receives the transaction from another node of the blockchain network using the binary protocol.
 * The block generator adds the transaction to a block.
 * The node receives a block (or microblock) from another node in the network.

@@ -66,7 +66,7 @@ Block Binary Format
 
 Learn more about :ref:`block <02_decentralchain/04_block:Block>`.
 
-Blocks are stored on the blockchain in a binary format (byte representation). :ref:`Node extensions <documentation:placeholder>` such as :ref:`gRPC server <documentation:placeholder>` can work directly with data in binary format.
+Blocks are stored on the blockchain in a binary format (byte representation). :ref:`Node extensions <05_node-guide/02_node-extensions:Node Extensions>` such as :ref:`gRPC server <05_node-guide/02_node-extensions:gRPC Server>` can work directly with data in binary format.
 
 :strong:`Version 5`
 
@@ -336,7 +336,7 @@ Transaction Binary Format
 
 Learn more about :ref:`transaction <02_decentralchain/03_transaction:Transaction>`.
 
-Transactions are stored on the blockchain in a binary format (byte representation). :ref:`Node extensions <documentation:placeholder>` such as :ref:`gRPC server <documentation:placeholder>` can work directly with data in binary format.
+Transactions are stored on the blockchain in a binary format (byte representation). :ref:`Node extensions <05_node-guide/02_node-extensions:Node Extensions>` such as :ref:`gRPC server <05_node-guide/02_node-extensions:gRPC Server>` can work directly with data in binary format.
 The transaction signature and ID are also formed on the basis of the binary format, namely the transaction body bytes. The contents of transaction body bytes is given in the description of the binary format of each type and version of the transaction. Normally the transaction body bytes include all transaction fields, with the exception of the following fields:
 
 * Transaction ID (it is not stored on the blockchain),
@@ -361,8 +361,8 @@ Protobuf facilitates the development of client libraries for the DecentralChain 
 
 The byte representation of a transaction based on the protobuf schema must not contain default values. Make sure that your protocol buffers compiler does not write the field value when serializing if it is equal to the default value for this data type, otherwise the transaction signature will be invalid. Send the signed transaction to a node:
 
-* If you use your own node and :ref:`gRPC server <documentation:placeholder>`, send the SignedTransaction object.
-* If you use :ref:`Node REST API <documentation:placeholder>`, compose the JSON representation of the transaction and add the base58-encoded signature to the proof array. Send the transaction to a node using POST /transactions/broadcast method.
+* If you use your own node and :ref:`gRPC server <05_node-guide/02_node-extensions:gRPC Server>`, send the SignedTransaction object.
+* If you use :ref:`Node REST API <05_node-guide/01_node-rest-api:Node REST API>`, compose the JSON representation of the transaction and add the base58-encoded signature to the proof array. Send the transaction to a node using POST /transactions/broadcast method.
 
 .. code-block:: none
 

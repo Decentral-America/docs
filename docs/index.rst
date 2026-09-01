@@ -75,16 +75,16 @@ Whether you're a developer or a business owner looking to leverage blockchain te
         Node Guide
         ^^^^^^^^^^
 
-        Learn about topics such as generating blocks, generation rewards, upgrading the node, configuring logging and node settings, using the node wallet, creating a custom blockchain, and utilizing the Node Go tool.
+        Learn how to get, build, and configure a DecentralChain node, and what its REST API exposes. For block generation and leasing rewards, see the DecentralChain fundamentals section.
 
         +++
 
-        .. button-ref:: index 
+        .. button-ref:: 05_node-guide/index
             :expand:
             :color: primary
             :click-parent:
 
-            Coming Soon
+            Learn More
 
     .. grid-item-card::
         :img-top: _static/index_ride-language.svg
@@ -96,12 +96,12 @@ Whether you're a developer or a business owner looking to leverage blockchain te
 
         +++
 
-        .. button-ref:: index 
+        .. button-ref:: 04_building-apps/index
             :expand:
             :color: primary
             :click-parent:
 
-            Coming Soon
+            Learn More
 
     .. grid-item-card::
         :img-top: _static/index_contributing.svg
@@ -112,12 +112,12 @@ Whether you're a developer or a business owner looking to leverage blockchain te
 
         +++
 
-        .. button-ref:: index 
+        .. button-ref:: 06_contributing
             :expand:
             :color: primary
             :click-parent:
 
-            Coming Soon
+            Learn More
             
 ************
 Introduction
@@ -145,3 +145,30 @@ Ride Language
    :maxdepth: 2
 
    03_ride-language/index
+
+*************************
+Smart Contracts and dApps
+*************************
+
+.. toctree::
+   :maxdepth: 2
+
+   04_building-apps/index
+
+**********
+Node Guide
+**********
+
+.. toctree::
+   :maxdepth: 2
+
+   05_node-guide/index
+
+************
+Contributing
+************
+
+.. toctree::
+   :maxdepth: 1
+
+   06_contributing
