@@ -1,0 +1,11 @@
+Name, Description
+":ref:`Address <03_ride-language/05_structures:Address>`", ":ref:`Account address <02_decentralchain/01_account:Address>`."
+":ref:`Alias <03_ride-language/05_structures:Alias>`", ":ref:`Alias <02_decentralchain/01_account:Alias>`."
+":ref:`Asset <03_ride-language/03_functions:Math Functions>`", ":ref:`Token <02_decentralchain/02_token(asset):Token (Asset)>` info."
+":ref:`AssetPair <03_ride-language/05_structures:AssetPair>`", "Pair of tokens of an order within the order structure."
+":ref:`AttachedPayment <03_ride-language/05_structures:AttachedPayment>`", "Payment attached to the script invocation and available to the :ref:`callable function <03_ride-language/03_functions:Callable Functions>`."
+":ref:`BalanceDetails <03_ride-language/05_structures:BalanceDetails>`", "Account balance in :ref:`DecentralCoins <02_decentralchain/02_token(asset):DecentralCoin>`."
+":ref:`BlockInfo <03_ride-language/05_structures:BlockInfo>`", ":ref:`Block <02_decentralchain/04_block:Block>` header."
+":ref:`Invocation <03_ride-language/05_structures:Invocation>`", "Script invocation fields that the callable function can use."
+":ref:`Order <03_ride-language/05_structures:Order>`", "Order"
+":ref:`Transfer <03_ride-language/05_structures:Transfer>`", "Transfer within the :ref:`MassTransferTransaction <03_ride-language/05_structures:MassTransferTransaction>` structure."

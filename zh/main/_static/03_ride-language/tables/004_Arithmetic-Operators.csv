@@ -1,0 +1,6 @@
+Operator, Description
+"\+", "Addition"
+"\-", "Subtraction"
+"\*", "Multiplication"
+"/", "Division"
+"%", "Remainder"

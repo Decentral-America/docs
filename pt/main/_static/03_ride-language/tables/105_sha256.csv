@@ -1,0 +1,6 @@
+Name, Max data size, Complexity
+sha256(bytes: ByteVector): ByteVector", ":math:`150` kB", ":math:`200`"
+sha256_16Kb(bytes: ByteVector): ByteVector", ":math:`16` kB", ":math:`10`"
+sha256_32Kb(bytes: ByteVector): ByteVector", ":math:`32` kB", ":math:`25`"
+sha256_64Kb(bytes: ByteVector): ByteVector", ":math:`64` kB", ":math:`50`"
+sha256_128Kb(bytes: ByteVector): ByteVector", ":math:`128` kB", ":math:`100`"

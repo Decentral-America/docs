@@ -1,0 +1,4 @@
+Parameter, Description
+"merkleProofs: :ref:`List <03_ride-language/02_data-types:List>` [:ref:`ByteVector <03_ride-language/02_data-types:ByteVector>`]", "Array of sibling hashes of the Merkle tree. Up to :math:`16` items, :math:`32` bytes each."
+"valueBytes: :ref:`ByteVector <03_ride-language/02_data-types:ByteVector>`", "Hash of transaction. Fixed size: :math:`32` bytes. You can use blake2b256 function. The transaction must be hashed together with the signature."
+"index: :ref:`Int <03_ride-language/02_data-types:Int>`", "Index of the transaction in the block."

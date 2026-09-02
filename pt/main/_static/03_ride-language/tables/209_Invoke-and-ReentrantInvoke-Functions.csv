@@ -1,0 +1,5 @@
+Parameter, Description
+"dApp: Address|Alias", "Address or alias of a dApp to invoke."
+"function: String|Unit", "Name of a callable function. unit for a default function invocation."
+"arguments: List[Any]", "Parameters of a callable function."
+"payments: List[AttachedPayment]", "Payments to transfer from the parent dApp to the invoked dApp, up to :math:`10`."

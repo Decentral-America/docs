@@ -1,0 +1,11 @@
+Field, Value
+"Sender address (not used, just for information)", "3N9Q2sdkkhAnbR4XCveuRaSMLiVtvebZ3wp"
+"Private key (used for signing, not in tx data)", "7VLYNhmuvAo5Us4mNGxWpzhMSdSSdEbEPFUDKSnA6eBv"
+"Public key", "EENPV1mRhUD9gSKbcWt84cqnfSGQP5LkCu5gMBfAanYH"
+"Recipient address", "3NBVqYXrapgJP9atQccdBPAgJPwHDKkh6A8"
+"Asset id", "BG39cCNUFWPQYeyLnu7tjKHaiUGRxYwJjvntt9gdDPxG"
+"Amount", ":math:`1`"
+"Fee", ":math:`1`"
+"Fee asset id", "BG39cCNUFWPQYeyLnu7tjKHaiUGRxYwJjvntt9gdDPxG"
+"Timestamp", ":math:`1479287120875`"
+"Attachment (as byte array)", ":math:`1[1, 2, 3, 4]`"

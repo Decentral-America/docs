@@ -1,0 +1,3 @@
+Parameter, Description
+"str: :ref:`String <03_ride-language/02_data-types:String>`", "The string."
+"separator: :ref:`String <03_ride-language/02_data-types:String>`", "The separator."

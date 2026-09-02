@@ -1,0 +1,2 @@
+Parameter, Description
+"bytes: :ref:`ByteVector <03_ride-language/02_data-types:ByteVector>`", "Array of bytes to encode."

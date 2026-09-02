@@ -1,0 +1,4 @@
+Operator, Description
+"func", "Function local definition."
+"let", "Lazy definition of a variable."
+"strict", ":ref:`Strict definition <03_ride-language/01_syntax-basics:Variables>` of a variable."

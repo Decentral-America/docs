@@ -1,0 +1,13 @@
+Action, Description
+":ref:`BinaryEntry <03_ride-language/05_structures:BinaryEntry>`", "Add or modify a binary entry of the :ref:`account data storage <02_decentralchain/01_account:Account Data Storage>`."
+":ref:`BooleanEntry <03_ride-language/05_structures:BooleanEntry>`", "Add or modify a boolean entry."
+":ref:`Burn <03_ride-language/05_structures:Burn>`", "Burn a token."
+":ref:`DeleteEntry <03_ride-language/05_structures:DeleteEntry>`", "Delete an entry."
+":ref:`IntegerEntry <03_ride-language/05_structures:IntegerEntry>`", "Add or modify an integer entry."
+":ref:`Issue <03_ride-language/05_structures:Issue>`", "Issue a token."
+":ref:`Lease <03_ride-language/05_structures:Lease>`", "Lease."
+":ref:`LeaseCancel <03_ride-language/05_structures:LeaseCancel>`", "Cancel lease."
+":ref:`Reissue <03_ride-language/05_structures:Reissue>`", "Reissue a token."
+":ref:`ScriptTransfer <03_ride-language/05_structures:ScriptTransfer>`", "Transfer a token."
+":ref:`SponsorFee <03_ride-language/05_structures:SponsorFee>`", "Set up a sponsorship."
+":ref:`StringEntry <03_ride-language/05_structures:StringEntry>`", "Add or modify a string entry."

@@ -1,0 +1,3 @@
+Field name, Description
+"amountAsset", "ID of the pair's first asset, that the order's sender wants to buy or sell."
+"priceAsset", "ID of the pair's second asset, in which the price of the order is expressed. null value means that asset is :ref:`DecentralCoins <02_decentralchain/02_token(asset):DecentralCoin>`."

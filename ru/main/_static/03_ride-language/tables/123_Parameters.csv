@@ -1,0 +1,5 @@
+Parameter,Description
+"a: :ref:`BigInt <03_ride-language/02_data-types:BigInt>`", "Big integer a"
+"b: :ref:`BigInt <03_ride-language/02_data-types:BigInt>`", "Big integer b"
+"c: :ref:`BigInt <03_ride-language/02_data-types:BigInt>`", "Big integer c"
+"round: DOWN|CEILING|FLOOR|HALFUP|HALFEVEN", "One of the rounding variables"
