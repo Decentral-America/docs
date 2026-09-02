@@ -147,6 +147,11 @@ myst_substitutions = {"rtd": "[Read the Docs](https://readthedocs.org/)"}
 autosectionlabel_prefix_document = True
 autosectionlabel_maxdepth = 7
 
+# 04_script-types.rst repeats headings (e.g. two "Verifier Function" sections)
+# across script types on purpose; silence the resulting duplicate-label noise
+# instead of treating it as a build-breaking warning.
+suppress_warnings = ["autosectionlabel.*"]
+
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 
