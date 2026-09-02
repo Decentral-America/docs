@@ -131,7 +131,7 @@ html_theme_options = {
     # "navbar_end": ["theme-switcher", "navbar-icon-links"],
     # "navbar_persistent": ["search-button"],
     # "primary_sidebar_end": ["custom-template.html", "sidebar-ethical-ads.html"],
-    "footer_items": ["copyright"],# "sphinx-version", "theme-version"],
+    "footer_start": ["copyright"],
     # "secondary_sidebar_items": ["page-toc.html"],  # Remove the source buttons
     # "search_bar_position": "navbar",  # TODO: Deprecated - remove in future version
 }
