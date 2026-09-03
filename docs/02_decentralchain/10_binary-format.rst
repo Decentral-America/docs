@@ -356,7 +356,7 @@ Protobuf facilitates the development of client libraries for the DecentralChain 
    * Asset IDs should be specified in the binary format.
    * Addresses should be specified in the shortened binary format (without the first two and the last four bytes). See the :ref:`address binary format <02_decentralchain/10_binary-format:Address Binary Format>`) article.
 
-* Serialize the transaction object to get transaction body bytes. Detailed instructions for various programming languages are provided in `protocol buffers tutorials <https://developers.google.com/protocol-buffers/docs/tutorials>`_.
+* Serialize the transaction object to get transaction body bytes. Detailed instructions for various programming languages are provided in `protocol buffers tutorials <https://protobuf.dev/getting-started/>`_.
 * Generate the signature for the transaction body bytes with the Curve25519 function using sender private key bytes.
 
 The byte representation of a transaction based on the protobuf schema must not contain default values. Make sure that your protocol buffers compiler does not write the field value when serializing if it is equal to the default value for this data type, otherwise the transaction signature will be invalid. Send the signed transaction to a node:

@@ -4,7 +4,7 @@ Extensions are optional modules a node operator can enable alongside the core {r
 
 ## gRPC Server
 
-The node ships a `grpc-server` module (built alongside the core node in [node-scala](https://github.com/Decentral-America/node-scala/tree/master/grpc-server)) that exposes {ref}`blocks <02_decentralchain/10_binary-format:Block Binary Format>` and {ref}`transactions <02_decentralchain/10_binary-format:Transaction Binary Format>` directly in their protobuf-serialized binary format, rather than the JSON representation the REST API returns. This is the recommended way to consume chain data for a service that needs to process a large volume of blocks or transactions efficiently.
+The node ships a `grpc-server` module (built alongside the core node in [node-scala](https://github.com/Decentral-America/node-scala/tree/main/grpc-server)) that exposes {ref}`blocks <02_decentralchain/10_binary-format:Block Binary Format>` and {ref}`transactions <02_decentralchain/10_binary-format:Transaction Binary Format>` directly in their protobuf-serialized binary format, rather than the JSON representation the REST API returns. This is the recommended way to consume chain data for a service that needs to process a large volume of blocks or transactions efficiently.
 
 If you use your own node with the gRPC server enabled, you can send it a `SignedTransaction` object directly instead of composing a JSON transaction for the REST API's `POST /transactions/broadcast` method. See the [`protobuf-serialization`](https://github.com/Decentral-America/protobuf-serialization) package for building and parsing these binary structures from JavaScript/TypeScript.
 

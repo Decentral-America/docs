@@ -21,4 +21,4 @@ Report bugs or feature requests in the repository the bug actually belongs to, n
 
 This documentation site ([Decentral-America/docs](https://github.com/Decentral-America/docs)) accepts pull requests for corrections, missing content, and new articles. If you spot a gap or an inaccuracy, opening an issue first is welcome, especially before a large rewrite.
 
-The docs are also translated via [Gitlocalize](https://gitlocalize.com/repo/8397) — translation contributions in any of the supported languages are welcome; see the badges on the [repository README](https://github.com/Decentral-America/docs#readme) for current translation coverage per language.
+The docs are also translated via [Gitlocalize](https://gitlocalize.com/repo/8397) — translation contributions in any of the supported languages are welcome; see the badges on the [repository README](https://github.com/Decentral-America/docs) for current translation coverage per language.

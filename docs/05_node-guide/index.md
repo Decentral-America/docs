@@ -46,11 +46,11 @@ sbt -Dnetwork=testnet packageAll # Testnet
 sudo dpkg -i node/target/*.deb
 ```
 
-This requires [SBT](https://www.scala-sbt.org/1.0/docs/Setup.html) in addition to the JDK. See the [node-scala README](https://github.com/Decentral-America/node-scala#readme) for integration test setup and IDE configuration.
+This requires [SBT](https://www.scala-sbt.org/1.x/docs/Setup.html) in addition to the JDK. See the [node-scala README](https://github.com/Decentral-America/node-scala) for integration test setup and IDE configuration.
 
 ## Configuration
 
-Network-specific defaults are defined in [`network-defaults.conf`](https://github.com/Decentral-America/node-scala/blob/master/node/src/main/resources/network-defaults.conf) in the node-scala repository. Pass your own config file (based on the mainnet/testnet template) as the argument to the JAR to override generating-node settings such as the {ref}`block reward vote <02_decentralchain/05_node:Voting>` and wallet seed.
+Network-specific defaults are defined in [`network-defaults.conf`](https://github.com/Decentral-America/node-scala/blob/main/node/src/main/resources/network-defaults.conf) in the node-scala repository. Pass your own config file (based on the mainnet/testnet template) as the argument to the JAR to override generating-node settings such as the {ref}`block reward vote <02_decentralchain/05_node:Voting>` and wallet seed.
 
 ```{toctree}
 :caption: Node Guide
