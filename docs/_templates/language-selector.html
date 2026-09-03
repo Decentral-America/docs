@@ -1,0 +1,5 @@
+<select class="dropdown" id="language-selector" aria-label="Choose a language">
+  {%- for lang, url in languages -%}
+    <option value="{{ url }}"{% if lang == current_language %} selected{% endif %}>{{ lang }}</option>
+  {%- endfor -%}
+</select>

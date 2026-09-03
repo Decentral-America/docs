@@ -12,7 +12,7 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
-# import os
+import os
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 
@@ -63,7 +63,16 @@ html_logo = "_static/logo.png"
 html_favicon = "_static/icon.svg"
 html_sourcelink_suffix = ""
 
+# Set by buildDocs.sh's per-branch loop (export current_version) before each
+# sphinx-build invocation; falls back to "dev" for local builds. `language`
+# itself is set further below and overridden per-build via `-D language=`.
+version = os.environ.get("current_version", "dev")
+
 html_theme_options = {
+   "switcher": {
+        "json_url": "https://docs.decentralchain.io/_static/switcher.json",
+        "version_match": version,
+    },
    "external_links": [
         {
             "url": "http://decentralchain.io/",
@@ -124,7 +133,9 @@ html_theme_options = {
     "use_edit_page_button": True,
     "show_toc_level": 1,
     "navbar_align": "left",  # [left, content, right] For testing that the navbar items align properly
-    #"navbar_center": ["version-switcher", "navbar-nav"],
+    "navbar_center": ["version-switcher", "navbar-nav"],
+    "navbar_persistent": ["language-selector", "search-button"],
+    "check_switcher": False,  # switcher.json URL only resolves on the live site, not PR/local builds
     #"announcement": "https://raw.githubusercontent.com/pydata/pydata-sphinx-theme/main/docs/_templates/custom-template.html",
     # "show_nav_level": 2,
     # "navbar_start": ["navbar-logo"],
@@ -198,6 +209,7 @@ html_theme = "pydata_sphinx_theme"
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 html_css_files = ["custom.css"]
+html_js_files = ["language_select.js"]
 todo_include_todos = True
 
 # Custom sidebar templates, must be a dictionary that maps document names
@@ -289,7 +301,7 @@ epub_exclude_files = ['search.html']
 # -- Extension configuration -------------------------------------------------
 
 # add sourcecode to path
-import sys, os
+import sys
 sys.path.append("scripts")
 from gallery_directive import GalleryDirective
 sys.path.insert(0, os.path.abspath('../src'))
@@ -338,8 +350,8 @@ html_context['current_version'] = current_version
 html_context['version'] = current_version
  
 # POPULATE LINKS TO OTHER LANGUAGES
-html_context['languages'] = [ ('en', '/en/' +current_version+ '/') ]
- 
+html_context['languages'] = []
+
 languages = [lang.name for lang in os.scandir('locales') if lang.is_dir()]
 for lang in languages:
    html_context['languages'].append( (lang, '/' +lang+ '/' +current_version+ '/') )
@@ -348,8 +360,8 @@ for lang in languages:
 html_context['versions'] = list()
  
 versions = [branch.name for branch in repo.branches]
-for version in versions:
-   html_context['versions'].append( (version, '/'  +current_language+ '/' +version+ '/') )
+for branch_version in versions:
+   html_context['versions'].append( (branch_version, '/'  +current_language+ '/' +branch_version+ '/') )
  
 # POPULATE LINKS TO OTHER FORMATS/DOWNLOADS
  
@@ -376,7 +388,7 @@ html_context['downloads'].append( ('epub', '/' +current_language+ '/' +current_v
 html_context['display_github'] = True
 html_context['github_user'] = 'Decentral-America'
 html_context['github_repo'] = 'docs'
-html_context['github_version'] = 'master/docs/'
+html_context['github_version'] = 'main/docs/'
  
 def setup(app):
     # Add the gallery directive

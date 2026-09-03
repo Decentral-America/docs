@@ -1,0 +1,13 @@
+[
+  {
+    "name": "main (stable)",
+    "version": "main",
+    "url": "https://docs.decentralchain.io/en/main/",
+    "preferred": true
+  },
+  {
+    "name": "dev",
+    "version": "dev",
+    "url": "https://docs.decentralchain.io/en/dev/"
+  }
+]
