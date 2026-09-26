@@ -22,6 +22,36 @@ Chain ID is a symbol that is passed over a network during a handshake and allows
   :class: longtable
   :widths: 1 1
 
+Network Parameters
+==================
+
+.. list-table:: Parameters shipped in node v1.7.0 (``network-defaults.conf``)
+  :header-rows: 1
+  :widths: 2 2 2
+
+  * - Parameter
+    - Mainnet
+    - Testnet
+  * - Chain ID
+    - ``?`` (63)
+    - ``!`` (33)
+  * - Address prefix (Base58)
+    - 3D
+    - 31
+  * - P2P port
+    - 6868
+    - 6863
+  * - REST API port
+    - 6869
+    - 6869
+  * - Minimum peer connections
+    - 5
+    - 5
+
+Stagenet is planned but not yet available as a public network; no Stagenet parameters are published.
+
+The default known peers for each network are listed in ``network-defaults.conf`` in the `node-scala <https://github.com/Decentral-America/node-scala>`_ repository.
+
 Tools
 =====
 

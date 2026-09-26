@@ -33,7 +33,7 @@ There are three types of directives, with different possible values.
  {-# CONTENT_TYPE DAPP #-}
  {-# SCRIPT_TYPE ACCOUNT #-}
 
-{-# STDLIB_VERSION 5 #-} sets the version of the standard library. The latest version currently in production is 5.
+{-# STDLIB_VERSION 5 #-} sets the version of the standard library. The compiler in node v1.7.0 supports versions 1 to 9; see :ref:`standard library versions <03_ride-language/08_stdlib-versions:Standard Library Versions>` for which version a network accepts. The examples on this page use version 5.
 
 {-# CONTENT_TYPE DAPP #-} sets the type of the file you're working on. There are different content types, DAPP and EXPRESSION. The DAPP type allows you to define functions and finish execution with certain actions which result in account balances, asset properties, and entries in the dApp account data storage. The EXPRESSION type should always return a boolean value, since it’s used as a predicate for transaction validation.
 

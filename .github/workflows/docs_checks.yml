@@ -1,0 +1,34 @@
+name: Docs Independence Check
+
+# Strict build and link check already run in pr_check_workflow.yml. This
+# workflow only adds the third-party-reference grep from the docs expansion
+# plan (PLAN-docs-expansion.md §7) so the two don't duplicate CI minutes.
+
+on:
+  pull_request:
+    branches: [main, dev]
+  push:
+    branches: [dev]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: docs-independence-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  independence_check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+    - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
+
+    - name: No third-party project references
+      run: |
+        if grep -rniE 'waves|wavelet|@waves/|keeper wallet|wavesplatform' \
+             --include='*.md' --include='*.rst' --include='*.py' --include='*.svg' \
+             docs --exclude-dir=locales --exclude-dir=_build; then
+          echo "::error::Forbidden third-party reference found"; exit 1
+        fi

@@ -421,14 +421,14 @@ For any account:
 
 .. code-block:: none
 
- let address=base58'3N4iKL6ikwxiL7yNvWQmw7rg3wGna8uL6LU'
+ let address=base58'3DcceepTi3AyvwsT6zbnEwDxXigNm7hDvLz'
  decentralchainBalance(Address(address))
 
 Get an entry value by key from the account data storage:
 
 .. code-block:: none
 
- let address2=base58'3N6dFJ6XBQsWz1VV1i5aW4CyYpVKc39MUGZ'
+ let address2=base58'3DeXacpG8W5naqPZCCGaosaG2btuo98FvYR'
  getBoolean(Address(address2),"allow_orders")
 
 Convert the address that invoked the function to a base58 string:
@@ -454,7 +454,7 @@ Check the recipient's address in the transfer transaction:
  {-# SCRIPT_TYPE ACCOUNT #-}
 
  # Bank dApp address
- let BANK = base58'3MpFRn3X9ZqcLimFoqNeZwPBnwP7Br5Fmgs'
+ let BANK = base58'3DN9m6mG6f3swYfKzKZeskkUGinhNuXwnvV'
 
  match (tx) {
   case t: TransferTransaction => addressFromRecipient(t.recipient).bytes == BANK
@@ -512,7 +512,7 @@ Get the account balance in a given asset:
 
 .. code-block:: none
 
- let address=base58'3Mw48B85LvkBUhhDDmUvLhF9koAzfsPekDb'
+ let address=base58'3DUxTVqpJ1xT5XbHQFfveWcSEaaarzQGrWp'
  let assetId=base58'GpxmxorKXLz1V7xootrvGyFgqP2tTTBib5HEm8QGZTHX'
  assetBalance(Address(address), assetId)
 
@@ -541,7 +541,7 @@ Get the account balance in a given asset:
 
 .. code-block:: none
 
- let address=base58'3Mw48B85LvkBUhhDDmUvLhF9koAzfsPekDb'
+ let address=base58'3DUxTVqpJ1xT5XbHQFfveWcSEaaarzQGrWp'
  let assetId=base58'GpxmxorKXLz1V7xootrvGyFgqP2tTTBib5HEm8QGZTHX'
  assetBalance(Address(address), assetId)
 

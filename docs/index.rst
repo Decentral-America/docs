@@ -164,6 +164,17 @@ Node Guide
 
    05_node-guide/index
 
+*********
+Reference
+*********
+
+.. toctree::
+   :maxdepth: 1
+
+   06_glossary
+   07_ecosystem-apps
+   08_release-notes
+
 ************
 Contributing
 ************

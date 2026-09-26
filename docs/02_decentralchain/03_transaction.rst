@@ -173,7 +173,7 @@ The :ref:`Node REST API <05_node-guide/01_node-rest-api:Node REST API>` of Decen
 
   {
     "senderPublicKey": "BVv1ZuE3gKFa6krwWJQwEmrLYUESuUabNCXgYTmCoBt6",
-    "sender": "3N8S4UtauvDAzpLiaRyDdHn9muexWHhBP4D",
+    "sender": "3DgLPocKs1RSbeEnkvADw79SFh4YhMLSCo4",
     "feeAssetId": null,
     "proofs": [
       "22QJfRKX7kUQt4qjdnUqZAnhqukqhnofE27uvP8Q5xnBf8M6PCNtWVGq2ngm6m7Voe7duys59D1yU9jhKrmdXDCe"
@@ -248,9 +248,9 @@ If the transaction sender is a :ref:`dApp or smart account <02_decentralchain/01
     "version": 2,
     "reissuable": true,
     "script": "base64:AQa3b8tH",
-    "sender": "3Mz9N7YPfZPWGd4yYaX6H53Gcgrq6ifYiH7",
+    "sender": "3DY3hSG8cebmsSy3j4i6atQZ6UGRHpi7kvZ",
     "feeAssetId": null,
-    "chainId": 84,
+    "chainId": 33,
     "proofs": [
       "4yjVxzrLuXUq5y2QCa2LDn1Fp9P63hPBmqDLGQCqn41EB1uZ1pys79NP81h7FxRBnZSbpNGbz1xjwckHcPAQHmFX"
     ],
@@ -300,9 +300,9 @@ If the transaction sender is a :ref:`dApp or smart account <02_decentralchain/01
     "type": 5,
     "version": 2,
     "reissuable": true,
-    "sender": "3PLJciboJqgKsZWLj7k1VariHgre6uu4S2T",
+    "sender": "3DgC95zePoMCqw6zeXg1qwrBQakTTrNFx8d",
     "feeAssetId": null,
-    "chainId": 87,
+    "chainId": 63,
     "proofs": [
       "5mEveeUwBdBqe8naNoV5eAe5vj6fk8U743eHGkhxhs3v9PMsb3agHqpe4EtzpUFdpASJegXyjrGSbynZg557cnSq"
     ],
@@ -349,9 +349,9 @@ If the transaction sender is a :ref:`dApp or smart account <02_decentralchain/01
     "fee": 100000,
     "type": 6,
     "version": 2,
-    "sender": "3P9QZNrHbyxXj8P9VrJZmVu2euodNtA11UW",
+    "sender": "3DVJ5kF8gwdQhVyoRGEa7rtVmohSjpcsX2Y",
     "feeAssetId": null,
-    "chainId": 87,
+    "chainId": 63,
     "proofs": [
       "61jCivdv3KTuTY6QHgxt4jaGrXcszWg3vb9TmUR26xv7mjWWwjyqs7X5VDUs9c2ksndaPogmdunHDdjWCuG1GGhh"
     ],
@@ -398,9 +398,9 @@ If the transaction sender is a :ref:`dApp or smart account <02_decentralchain/01
     "type": 15,
     "version": 1,
     "script": "base64:AQa3b8tH",
-    "sender": "3P67JUW8Djit7hMjKhADmn6CWvKPbRuh2sQ",
+    "sender": "3DRzpqtyJhPm64xPF76E895fdpDCxQKL2Yt",
     "feeAssetId": null,
-    "chainId": 87,
+    "chainId": 63,
     "proofs": [
       "nzYhVKmRmd7BiFDDfrFVnY6Yo98xDGsKrBLWentF7ibe4P9cGWg4RtomHum2NEMBhuyZb5yjThcW7vsCLg7F8NQ"
     ],
@@ -448,9 +448,9 @@ If the transaction sender is a :ref:`dApp or smart account <02_decentralchain/01
     "type": 17,
     "version": 1,
     "applicationStatus": "succeeded",
-    "sender": "3MQdH4MAmM5RNz5TAT43UXXCvMtCa9YgHq9",
+    "sender": "3DMsDNBD19U9rdQfRxfP6q1mBmo3huDww6Q",
     "feeAssetId": null,
-    "chainId": 83,
+    "chainId": 63,
     "proofs": [
       "4DfvJL4cVisQaMuMB7ar15EtYZTvTZzAUQQMkq4RA3uTMzziVYLrbNHSL2a1eCqBV3YQb7dddXdjywETXHuu65ij"
     ],
@@ -472,6 +472,33 @@ The fields that are common to all types of transactions are described in the :re
 :strong:`Binary Format`
 
 See the :ref:`update asset info transaction binary format <02_decentralchain/10_binary-format:Update Asset Info Transaction Binary Format>`.
+
+Commit To Generation Transaction
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Commit to generation transaction registers a generator for the next generation period under :ref:`Deterministic Finality <02_decentralchain/09_protocol:Finality>` (blockchain feature 25). It binds the sender's address to a BLS public key that the generator later uses to endorse blocks. The transaction has type :math:`19`, version :math:`1`, and is serialized as a Protobuf transaction.
+
+:strong:`Fee`
+
+The :ref:`minimum fee <02_decentralchain/03_transaction:Minimum Fee>` is :math:`0.01` :ref:`DecentralCoins <02_decentralchain/02_token(asset):DecentralCoin>`, paid in DecentralCoins only.
+
+:strong:`Fields`
+
+* ``endorserPublicKey`` — the generator's BLS public key (Base58).
+* ``generationPeriodStart`` — the first height of the period being committed to. It must equal the start height of the *next* generation period.
+* ``commitmentSignature`` — a BLS proof-of-possession: the signature of the BLS public key concatenated with ``generationPeriodStart`` by the matching BLS private key.
+
+:strong:`Validation`
+
+The transaction is rejected if:
+
+* Deterministic Finality is not yet activated;
+* ``generationPeriodStart`` is not the start of the next period;
+* the commitment signature is invalid;
+* the sender address, or the BLS key, is already committed for that period;
+* the sender's generating balance after paying the fee is below the :math:`1000` DecentralCoin generation minimum.
+
+The fields that are common to all types of transactions are described in the :ref:`transaction <02_decentralchain/03_transaction:Transaction>` article.
 
 :strong:`Ride Structure`
 
@@ -509,13 +536,13 @@ If the transaction sender is a :ref:`dApp or smart account <02_decentralchain/01
     "type": 4,
     "version": 1,
     "attachment": "3vrgtyozxuY88J9RqMBBAci2UzAq9DBMFTpMWLPzMygGeSWnD7k",
-    "sender": "3PN2bVFxJjgudPKqEGZ41TVsD5ZJmxqnPSu",
+    "sender": "3Dhv7reoPhMnbkvV9gV4MpVLKyT88uPkE39",
     "feeAssetId": null,
     "proofs": [
       "5EaYqFx2xFJmdvwZ1gT3yLecKr88z3jByCj5GE1MjE1ossvehExZKoT7uhGatiYCGM9Co8iUR8Q5ce52XDmno3rn"
     ],
     "assetId": "7uncmN7dZfV3fYVvNdYTngrrbamPYMgwpDnYG1bGy6nA",
-    "recipient": "3PFmoN5YLoPNsL4cmNGkRxbUKrUVntwyAhf",
+    "recipient": "3DbfKjUPRm4FqhfGgnCknKawSkNK9sdLPqb",
     "feeAsset": null,
     "id": "D79kL1Jr5xyL2Rmw2FnafQHugJGvuBhNEbLnhMuwMkDC",
     "timestamp": 1548660895034,
@@ -572,7 +599,7 @@ If the order is fully filled with one exchange transaction, the matcher receives
     "type": 7,
     "version": 2,
     "sellMatcherFee": 750,
-    "sender": "3PEjHv3JGjcWNpYEEkif2w8NXV4kbhnoGgu",
+    "sender": "3DacpHS9MhHPMC8tAAefPJ7qeNxZxdssfqY",
     "feeAssetId": null,
     "proofs": [
       "LQD8VoFhHEW2b6o2e2ujzDHdZatwMMwigC2tmoSHcFNRGXrowA1yyVxD6nZBNeABLWjs59dnuLhgNP7UMfFKDuR"
@@ -582,7 +609,7 @@ If the order is fully filled with one exchange transaction, the matcher receives
     "order2": {
       "version": 3,
       "id": "JCiF3gmprLc8u7xdWR7KUkJ3YfM6yfgxB6CvhJYGJFAa",
-      "sender": "3PRBeeFD64wvTMfS3HEoDDFPXfJs3gFdAxk",
+      "sender": "3Dm5B1e4B2coRjG5xhAoZaEreZCgQdVyQ7d",
       "senderPublicKey": "ytgWVbKG9e6TSsQ5buMryr2QyxNoL3RezXP3f9RJ2As",
       "matcherPublicKey": "9cpfKN9suPNvfeUNphzxXMjcnn974eme8ZhWUjaktzU5",
       "assetPair": {
@@ -604,7 +631,7 @@ If the order is fully filled with one exchange transaction, the matcher receives
     "order1": {
       "version": 3,
       "id": "FNvEGPgUqEWnrnpxevZQnaZS3DUTBGE2wa6L75xCw7mo",
-      "sender": "3PDxxx7eSeYLgzTAtuAV7gUCtHeeXeU85fP",
+      "sender": "3DZrVKWVXcDDfN3ppK6VU3Tg1BYTtZQEufc",
       "senderPublicKey": "3WEkbavP3Sw4y5tsgxbZvKkWh87BdB3CPVVxhcRUDBsJ",
       "matcherPublicKey": "9cpfKN9suPNvfeUNphzxXMjcnn974eme8ZhWUjaktzU5",
         "assetPair": {
@@ -661,7 +688,7 @@ If the transaction sender is a :ref:`dApp or smart account <02_decentralchain/01
 
   {
     "senderPublicKey":"BVv1ZuE3gKFa6krwWJQwEmrLYUESuUabNCXgYTmCoBt6",
-    "sender":"3N8S4UtauvDAzpLiaRyDdHn9muexWHhBP4D",
+    "sender":"3DgLPocKs1RSbeEnkvADw79SFh4YhMLSCo4",
     "feeAssetId":null,
     "proofs": [
       "22QJfRKX7kUQt4qjdnUqZAnhqukqhnofE27uvP8Q5xnBf8M6PCNtWVGq2ngm6m7Voe7duys59D1yU9jhKrmdXDCe"
@@ -714,7 +741,7 @@ If the transaction sender is a :ref:`dApp or smart account <02_decentralchain/01
     "version": 1,
     "totalAmount": 500000000000,
     "attachment": "xZBWqm9Ddt5BJVFvHUaQwB7Dsj78UQ5HatQjD8VQKj4CHG48WswJxUUeHEDZJkHgt9LycUpHBFc8ENu8TF8vvnDJCgfy1NeKaUNydqy9vkACLZjSqaVmvfaM3NQB",
-    "sender": "3P2rvn2Hpz6pJcH8oPNrwLsetvYP852QQ2m",
+    "sender": "3DNkT9R8uwmhGysnioJsHhs81pSCV256NRU",
     "feeAssetId": null,
     "proofs": [
       "FmGBaWABAy5bif7Qia2LWQ5B4KNmBnbXETL1mE6XEy4AAMjftt3FrxAa8x2pZ9ux391oY5c2c6ZSDEM4nzrvJDo"
@@ -722,15 +749,15 @@ If the transaction sender is a :ref:`dApp or smart account <02_decentralchain/01
     "assetId": "Fx2rhWK36H1nfXsiD4orNpBm2QG1JrMhx3eUcPVcoZm2",
     "transfers": [
       {
-        "recipient": "3PHnjQrdK389SbzwPEJHYKzhCqWvaoy3GQB",
+        "recipient": "3DdgFnFUPzo2QybbJeEHtgzAKjQjwgm5Mvc",
         "amount": 5000000000
       },
       {
-        "recipient": "3PGNLwUG2GPpw74teTAxXFLxgFt3T2uQJsF",
+        "recipient": "3DcFsJs77E4huUfYZs6xscLRo9mrozNsHTf",
         "amount": 5000000000
       },
       {
-        "recipient": "3P5kQneM9EdpVUbFLgefD385LLYTXY5J32c",
+        "recipient": "3DRdwA3CECJhTrBuG6afZQ7YTESGtSgZbZr",
         "amount": 5000000000
       },
       ...
@@ -801,7 +828,7 @@ If the transaction sender is a :ref:`dApp or smart account <02_decentralchain/01
         "key": "str"
       }
     ],
-    "sender": "3N4iKL6ikwxiL7yNvWQmw7rg3wGna8uL6LU",
+    "sender": "3DcceepTi3AyvwsT6zbnEwDxXigNm7hDvLz",
     "feeAssetId": null,
     "proofs": [
       "kE1hjN1yW68j8DsYGNB7Gg1ydC4hqRmt3wBaFQUPkftnbiM7QfJCn1gTHgveJ7pCLXvvqffhKBmiF8qS1Uqk6SR"
@@ -847,9 +874,9 @@ If the transaction sender is a :ref:`dApp or smart account <02_decentralchain/01
 
   {
     "senderPublicKey": "7nLAwoiRA4fWF4VHd6gRsbwF2UFFmRADXHqRcgy3h27w",
-    "sender": "3N9yCRmNsLK2aPStjLBne3EUiPSKvVHYgKk",
+    "sender": "3DhsXkV7pRXJBDLxupNnwrbmCAqv7Yn8CN2",
     "feeAssetId": null,
-    "chainId": 84,
+    "chainId": 33,
     "proofs": [
       "2ihGFLUbvJHEpuGRqx5MXEXsEzwMuCmB8FgUTZgSPdANA4iab4M3nsNJ7a7hyiuqjrvwNCHoWn69hvUeziJiSAie"
     ],
@@ -907,7 +934,7 @@ The total :ref:`complexity <03_ride-language/07_dapp-to-app-invocation:Script Co
   {
     "type": 16,
     "id": "DN9Ny8mph4tLjn58e9CqhckPymH9zwPqBSZtcv2bBi3u",
-    "sender": "3Mw48B85LvkBUhhDDmUvLhF9koAzfsPekDb",
+    "sender": "3DUxTVqpJ1xT5XbHQFfveWcSEaaarzQGrWp",
     "senderPublicKey": "BvJEWY79uQEFetuyiZAF5U4yjPioMj9J6ZrF9uTNfe3E",
     "fee": 500000,
     "feeAssetId": null,
@@ -916,8 +943,8 @@ The total :ref:`complexity <03_ride-language/07_dapp-to-app-invocation:Script Co
       "2536V2349X3cuVEK1rSxQf3HneJwLimjCmCfoG1QyMLLq1CNp6dpPKUG3Lb4pu76XqLe3nWyo3HAEwGoALgBhxkF"
     ],
     "version": 2,
-    "chainId": 84,
-    "dApp": "3N28o4ZDhPK77QFFKoKBnN3uNeoaNSNXzXm",
+    "chainId": 33,
+    "dApp": "3Da38PGxeUXNiE9KWHWC6BRBrSDAZZEa4uz",
     "payment": [],
     "call": {
       "function": "foo",
@@ -946,7 +973,7 @@ The total :ref:`complexity <03_ride-language/07_dapp-to-app-invocation:Script Co
     "stateChanges": {
       "data": [
         {
-          "key": "3Mw48B85LvkBUhhDDmUvLhF9koAzfsPekDb",
+          "key": "3DUxTVqpJ1xT5XbHQFfveWcSEaaarzQGrWp",
           "type": "string",
           "value": "alphabetagamma"
         }
@@ -1013,12 +1040,12 @@ If the transaction sender is a :ref:`dApp or smart account <02_decentralchain/01
     "fee": 100000,
     "type": 8,
     "version": 1,
-    "sender": "3P6iv9tYo3ELne7tc9HR8BzhK3LE2aDDu1A",
+    "sender": "3DScSXHPszuDm1iYXZDRUYzARwE3PYMtKFC",
     "feeAssetId": null,
     "proofs": [
       "3n34MYd3Acx1JpTtvYffdVYCVySuRgZvSbHMA3AxqQwr4xvfZedv9UbqSB9k84PGY5C8RSwGRjDnMGcYwQu2x7B5"
     ],
-    "recipient": "3P2HNUd5VUPLMQkJmctTPEeeHumiPN2GkTb",
+    "recipient": "3DNAtr1vaS4DKnLxh2pTjbe7QofXkLYBW2u",
     "id": "7k4EPgA3VxoE56TMJLjvF9FMpywyfeS5qRJSEEN9XGuU",
     "timestamp": 1528813353617,
     "status": "canceled",
@@ -1061,7 +1088,7 @@ If the transaction sender is a :ref:`dApp or smart account <02_decentralchain/01
   {
     "type": 9,
     "id": "6rzxZ3rEsCxgmkcn6DDPB9f9Phi28D4JWZsCtwcViD8C",
-    "sender": "3Mx7kNAFcGrAeCebnt3yXceiRSwru6N3XZd",
+    "sender": "3DW25gszZN4SF2YfyNEyqS1zuEMT67MZcRb",
     "senderPublicKey": "81fxJw7HM2VX1ucq1vNKiedM1XBGX7H2TDUtxN6ib68Z",
     "fee": 100000,
     "feeAssetId": null,
@@ -1071,14 +1098,14 @@ If the transaction sender is a :ref:`dApp or smart account <02_decentralchain/01
     ],
     "version": 2,
     "leaseId": "BhHPPHBZpfp8FBy8DE7heTpWGJySYg2uU2r4YM6qaisw",
-    "chainId": 84,
+    "chainId": 33,
     "height": 1551763,
     "applicationStatus": "succeeded",
     "lease": {
       "id": "BhHPPHBZpfp8FBy8DE7heTpWGJySYg2uU2r4YM6qaisw",
       "originTransactionId": "BhHPPHBZpfp8FBy8DE7heTpWGJySYg2uU2r4YM6qaisw",
-      "sender": "3Mx7kNAFcGrAeCebnt3yXceiRSwru6N3XZd",
-      "recipient": "3Mz9N7YPfZPWGd4yYaX6H53Gcgrq6ifYiH7",
+      "sender": "3DW25gszZN4SF2YfyNEyqS1zuEMT67MZcRb",
+      "recipient": "3DY3hSG8cebmsSy3j4i6atQZ6UGRHpi7kvZ",
       "amount": 124935000,
       "height": 1551763,
       "status": "canceled"
@@ -1122,7 +1149,7 @@ If the transaction sender is a :ref:`dApp or smart account <02_decentralchain/01
 
   {
     "senderPublicKey": "5HNegWomhj1nzyggf1oAvujNJGCqbzFjM72BLYtrBecw",
-    "sender": "3N3ErpmUdJWy6DW4ruAr14YDis9UaiTwHd6",
+    "sender": "3Db9C9VDaPjEh3Q93PMrJsuWCeZ4mpgwRrG",
     "feeAssetId": null,
     "proofs": [
       "5jF8WpF7jxf5SBMHMbc2WcfqX3R6fRvssBGSNfzAM8p3uSmno9XzYy5b565ez5fG9vqUGrENFvcrbhk36bzCaqkP"

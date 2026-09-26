@@ -59,4 +59,12 @@ Network-specific defaults are defined in [`network-defaults.conf`](https://githu
 01_node-rest-api
 02_node-extensions
 03_custom-blockchain
+04_install-docker
+05_configuration
+06_sync-and-rollback
+07_upgrade
+08_wallet-and-generating
+09_logging
+10_features-and-activation
+11_troubleshooting
 ```
