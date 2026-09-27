@@ -85,7 +85,7 @@ const { height } = await api.blocks.fetchHeight();
 console.log('Current height:', height);
 ```
 
-For richer historical queries (asset search, DEX order history, aggregated transaction data) use [`data-service-client`](https://github.com/Decentral-America/DecentralChain/tree/main/packages/sdk/data-service-client) against the data service API instead of querying a node directly.
+For richer historical queries (asset search, DEX order history, aggregated transaction data) use [`data-service-client`](https://github.com/Decentral-America/DecentralChain/tree/main/packages/sdk/data-service-client) against the data service API instead of querying a node directly — see [Data Service API](06_data-service-api).
 
 ## Signing with a Ledger Hardware Wallet
 

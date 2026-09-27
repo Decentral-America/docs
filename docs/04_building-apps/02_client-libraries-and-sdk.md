@@ -12,10 +12,10 @@ Package names and versions verified against the monorepo `main` branch. All Type
 |---|---|
 | Build, sign and broadcast transactions | [`@decentralchain/transactions`](https://github.com/Decentral-America/DecentralChain/tree/main/packages/sdk/transactions) |
 | Read chain state from a node (REST) | [`@decentralchain/node-api`](https://github.com/Decentral-America/DecentralChain/tree/main/packages/sdk/node-api) |
-| Read chain data over gRPC / subscribe to blockchain updates | [`@decentralchain/node-api-grpc`](https://github.com/Decentral-America/DecentralChain/tree/main/packages/sdk/node-api-grpc) |
+| Read chain data over gRPC / subscribe to blockchain updates | [`@decentralchain/node-api-grpc`](https://github.com/Decentral-America/DecentralChain/tree/main/packages/sdk/node-api-grpc) — see [Node gRPC API](05_node-grpc) |
 | Let browser users sign with their own wallet | [`@decentralchain/signer`](https://github.com/Decentral-America/DecentralChain/tree/main/packages/sdk/signer) + [`@decentralchain/cubensis-connect-provider`](https://github.com/Decentral-America/DecentralChain/tree/main/packages/sdk/cubensis-connect-provider) |
 | Sign with a Ledger hardware wallet | [`@decentralchain/ledger`](https://github.com/Decentral-America/DecentralChain/tree/main/packages/sdk/ledger) |
-| Query the data service (asset search, history, DEX data) | [`@decentralchain/data-service-client`](https://github.com/Decentral-America/DecentralChain/tree/main/packages/sdk/data-service-client) |
+| Query the data service (asset search, history, DEX data) | [`@decentralchain/data-service-client`](https://github.com/Decentral-America/DecentralChain/tree/main/packages/sdk/data-service-client) — see [Data Service API](06_data-service-api) |
 | Compile or decompile Ride | [`@decentralchain/ride`](https://github.com/Decentral-America/DecentralChain/tree/main/packages/ride/ts) |
 | Work from Java or the JVM | [`io.decentralchain:java-sdk`](https://central.sonatype.com/artifact/io.decentralchain/java-sdk) |
 
