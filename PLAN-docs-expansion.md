@@ -176,3 +176,21 @@ Baseline verified against node-scala **v1.7.0** and the SDK monorepo `main`.
 **Errors found in existing pages and fixed from source:** chain IDs (Mainnet `?`/63, Testnet `!`/33, not W/T/S) and address prefixes (`3D`/`31`); all 77 example addresses regenerated with the DCC chain byte and valid checksums; `chainId` values in JSON examples; minimum fee in protocol validation (0.001 DCC per unit, not 1 DCC); block time drift (100 ms); UTX pool size (100000); generating balance with feature 1 (1000 DCC); node-scala links (`master` -> `main`); package names (`node-api`, not `node-api-js`).
 
 **Not done / needs input:** Ride function tables for stdlib V6-V9 (needs a generator over `lang`; the reference is V5-level); per-language install pages for macOS/Windows/Ubuntu DEB (not verified on clean machines); data-service page (URL/API surface unconfirmed); matcher API base URL; public node/faucet URL liveness (unreachable from the authoring sandbox); `.po` regeneration and Gitlocalize sync (WP6); Vale and sample-runner CI jobs; "feature 30" does not exist in v1.7.0 (features end at 28), so that item is dropped.
+
+## 12. Audit (2026-09-27)
+
+Re-verified the whole PR against a fresh `origin/dev` and against source, independently of the work that produced it.
+
+**Found and fixed:**
+- The branch had been cut from a stale `dev`; `dev` had since gained a Sphinx 9 upgrade, a `pr_check_workflow.yml` (duplicating this PR's build/link CI), and other changes. Rebased; dropped the now-redundant `conf.py` duplicate-label/footer fixes (upstream already made them) and reduced the added workflow to just the independence-grep job so it doesn't duplicate the existing build/link jobs.
+- `conf.py` called `repo.active_branch.name`, which raises on a detached HEAD — exactly what every GitHub Actions PR checkout is. This broke `pr_check_workflow.yml`'s build job for **every** PR against this repo, confirmed by reproducing it locally on a detached checkout before and after the fix. Not something this work introduced, but it blocked this PR's own CI signal, so fixed with a fallback to the commit SHA.
+- `POST /transactions/calculateFee` requires the node's API key (confirmed against `openapi.yaml`); the REST API page had listed it as an unauthenticated endpoint.
+- The Commit To Generation Transaction section omitted the 100 DCC generation deposit (`CommitToGenerationTransaction.DepositInDcclets`) it locks in addition to the fee.
+- 9 binary-format CSV tables (address, alias, burn, invoke script, issue, lease cancel, reissue, set asset script, set script) still had the old chain-ID byte values (87/84/83) — the first pass fixed the `.rst` prose and JSON examples but missed these tables.
+- `06_contributing.md` linked to GitHub Discussions on the SDK repo; confirmed via `gh api …has_discussions` that no Decentral-America repository has Discussions enabled. Replaced with a pointer to per-repo issues.
+
+**Checked and found correct:** the from-scratch Base58/Keccak/Blake2b address-checksum conversion (cross-verified against `pycryptodome`, 71 addresses, 0 checksum failures); the Docker `DCC_LOG_LEVEL` default (Dockerfile's `INFO` is authoritative over a stale `DEBUG` in `docker/README.md`); the Commit To Generation transaction type ID (19) and fee (0.01 DCC); the full 28-entry feature list; the stdlib-version-to-feature mapping; every other REST endpoint's auth requirement against `openapi.yaml`.
+
+**Judgment call, not a bug:** the ~20 example addresses that originally used the fork's Testnet/Stagenet prefixes (3M/3N) were all normalized to the DecentralChain Mainnet chain ID, since none of them were in a context that specifically called for Testnet — no evidence the original mixture was meaningful rather than cosmetic.
+
+**Still unverified, unchanged from §11:** live node/faucet/matcher/data-service URLs, Docker registry (ghcr.io vs. the v1.7.0 release notes' "Docker Hub" mention), install pages for macOS/Windows/Ubuntu, Ride stdlib V6-V9 function tables, `.po` regeneration.

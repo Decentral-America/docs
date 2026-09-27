@@ -25,6 +25,6 @@ The docs are also translated via [Gitlocalize](https://gitlocalize.com/repo/8397
 
 ## Community
 
-* **Discussions:** ask questions and propose ideas in [GitHub Discussions](https://github.com/Decentral-America/DecentralChain/discussions).
+* **Questions and proposals:** open an issue in the repository the topic belongs to (node-scala for protocol questions, the relevant SDK package for library questions). None of the Decentral-America repositories has GitHub Discussions enabled at the time of writing.
 * **Security issues:** report vulnerabilities privately to security@decentral.exchange rather than in a public issue.
 * **Documentation:** this site is built with Sphinx; every page must build without warnings (`sphinx-build -W`) and must not reference third-party projects — CI enforces both.
