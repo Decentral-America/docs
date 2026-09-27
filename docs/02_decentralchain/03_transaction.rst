@@ -488,6 +488,10 @@ The :ref:`minimum fee <02_decentralchain/03_transaction:Minimum Fee>` is :math:`
 * ``generationPeriodStart`` — the first height of the period being committed to. It must equal the start height of the *next* generation period.
 * ``commitmentSignature`` — a BLS proof-of-possession: the signature of the BLS public key concatenated with ``generationPeriodStart`` by the matching BLS private key.
 
+:strong:`Generation Deposit`
+
+Besides the fee, committing locks a deposit of :math:`100` DecentralCoins per committed period against the sender's spendable balance — it counts toward the account's own balance but not toward funds available to spend or to send in further transactions. The deposit is separate from, and in addition to, the generating balance itself.
+
 :strong:`Validation`
 
 The transaction is rejected if:

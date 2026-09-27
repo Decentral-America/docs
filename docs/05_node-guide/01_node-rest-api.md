@@ -32,7 +32,7 @@ Verified against node-scala v1.7.0.
 
 ## Authentication
 
-Read-only endpoints are public. Privileged ones — wallet and address management, transaction signing on behalf of the node wallet, `/debug/*`, `/peers/connect`, `/peers/clearblacklist` and `/node/stop` — require an `X-Api-Key` header matching the hash in `dcc.rest-api.api-key-hash`. See [Configuration](05_configuration). Requests with a wrong key get `403`.
+Most read-only endpoints are public. Privileged ones — wallet and address management (`GET/POST /addresses`, `GET /wallet/seed`), transaction signing on behalf of the node wallet and fee estimation (`POST /transactions/sign`, `POST /transactions/calculateFee`), `/debug/*`, `/peers/connect`, `/peers/clearblacklist` and `/node/stop` — require an `X-Api-Key` header matching the hash in `dcc.rest-api.api-key-hash`. See [Configuration](05_configuration). Requests with a wrong key get `403`.
 
 ## Commonly used endpoints
 
