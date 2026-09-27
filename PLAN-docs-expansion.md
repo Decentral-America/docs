@@ -194,3 +194,24 @@ Re-verified the whole PR against a fresh `origin/dev` and against source, indepe
 **Judgment call, not a bug:** the ~20 example addresses that originally used the fork's Testnet/Stagenet prefixes (3M/3N) were all normalized to the DecentralChain Mainnet chain ID, since none of them were in a context that specifically called for Testnet — no evidence the original mixture was meaningful rather than cosmetic.
 
 **Still unverified, unchanged from §11:** live node/faucet/matcher/data-service URLs, Docker registry (ghcr.io vs. the v1.7.0 release notes' "Docker Hub" mention), install pages for macOS/Windows/Ubuntu, Ride stdlib V6-V9 function tables, `.po` regeneration.
+
+## 13. Completing the remaining plan items (2026-09-27, continued)
+
+Went back through §11/§12's "still needed" list and completed everything resolvable from source in this environment.
+
+**Completed:**
+- **Node gRPC API** (`04_building-apps/05_node-grpc.md`): full client API (Accounts/Assets/Blockchain/Blocks/Transactions), traced to `node-api-grpc`'s source (no README existed, read the TS source directly) and cross-checked the ports (6870, 6881) against `grpc-server/src/main/resources/application.conf` server-side — both match.
+- **Data Service API** (`04_building-apps/06_data-service-api.md`): full client API from `data-service-client`'s README. Resolved the "needs a base URL from the owner" blocker differently than expected — the client takes `rootUrl` and the matcher address as required caller-supplied parameters; neither is hardcoded in source, so the page documents this honestly instead of guessing a production URL.
+- **`05_node-guide/02_node-extensions.md`** expanded with the real gRPC config keys and defaults from `grpc-server/src/main/resources/application.conf`, and confirmed via `build.sbt` that `grpc-server` is packaged as its own separate deployable artifact.
+- **Ride stdlib V6–V9**: added a real, source-verified "what's new per version" section to `08_stdlib-versions.md`, tracing every version-gated addition in `PureContext.scala`, `CryptoContext.scala`, the blockchain-functions/types/bindings context modules, and adding the missing `rewards` (V7) and `attachment` (V8) fields to the `BlockInfo`/`Order` structures in `05_structures.rst` and their CSV tables. This is not the exhaustive per-function-signature reference WP2 originally scoped (that still needs the compiler-driven generator script), but it is complete and correct for every actual behavioural difference from V5 in v1.7.0.
+- **Install pages** for Linux (with DEB packaging), macOS and Windows, sourced from node-scala's own `README.md` and `build.sbt`. Each carries the same "not run on a clean machine" caveat as the Docker page, since no clean VM was available.
+- **Translation tooling** (`docs/scripts/update_translations.sh`): built and end-to-end tested (gettext extraction + `sphinx-intl update` against all 11 languages) on a clean git checkout of this branch — confirmed it only adds/obsoletes msgids and never drops an existing translated `msgstr` (translated-string count went up, not down, from gettext's fuzzy-matching). Deliberately **not run against the committed `.po` files** in this PR: regenerating now would produce an ~11-language diff with no translator available to review it, and the plan itself scopes this as a separate step after English stabilizes.
+- The independence-check CI caught a real self-violation while writing the stdlib-versions page: a sentence cited the node-scala fork's literal (un-renamed) internal filename for one of its `lang` module files, containing the forbidden string. Fixed before commit — direct evidence the CI guard from WP0 works.
+
+**Still not done, and now believed not completable from this environment at all:**
+- Exhaustive Ride function-signature tables for V6–V9 in the same per-function format as the V5 tables (needs the generator script, not just a "what's new" reading).
+- Live verification of any public URL (node, faucet, matcher, data service) — no network egress from this sandbox reaches them.
+- Actual translations (vs. the tooling to regenerate the catalog skeleton) — needs human translators or Gitlocalize.
+- Docker registry ambiguity (ghcr.io vs. the v1.7.0 release notes' "Docker Hub") — needs a maintainer to say which is authoritative; found no third source in-repo to resolve it.
+- Confirmed production data-service and matcher URLs — genuinely not published in source, not something more repo reading will produce.
+- Vale spell-check and a sample-runner CI job — not attempted; both need product decisions (a house vocabulary list for Vale; actual runnable samples under `docs/_samples/` for the runner) that are separate scoped work, not blocked facts.

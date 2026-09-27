@@ -600,11 +600,13 @@ Structure containing block headers. The structure is returned by the blockInfoBy
 
  BlockInfo(timestamp: Int, height: Int, baseTarget: Int, generationSignature: ByteVector, generator: Address, generatorPublicKey: ByteVector, vrf: ByteVector|Unit)
 
+The constructor above is for standard library version 5. Standard library version 7 and above adds a further ``rewards: List[(Address, Int)]`` field; see :doc:`Standard Library Versions </03_ride-language/08_stdlib-versions>`.
+
 :strong:`Fields`
 
 .. csv-table:: BlockInfo Fields
   :file: ../_static/03_ride-language/tables/183_BlockInfo-Fields.csv
-  :header-rows: 1 
+  :header-rows: 1
   :class: longtable
   :widths: 1 2 2 5
 
@@ -680,6 +682,8 @@ Structure of an order :ref:`dApp-to-dApp invocation <03_ride-language/07_dapp-to
 .. code-block:: none
 
  Order(id: ByteVector, matcherPublicKey: ByteVector, assetPair: AssetPair, orderType: Buy|Sell, price: Int, amount: Int, timestamp: Int, expiration: Int, matcherFee: Int, matcherFeeAssetId: ByteVector|Unit, sender: Address, senderPublicKey: ByteVector, bodyBytes: ByteVector, proofs: List[ByteVector])
+
+The constructor above is for standard library version 5. Standard library version 8 and above adds a further ``attachment: ByteVector|Unit`` field; see :doc:`Standard Library Versions </03_ride-language/08_stdlib-versions>`.
 
 :strong:`Fields`
 
