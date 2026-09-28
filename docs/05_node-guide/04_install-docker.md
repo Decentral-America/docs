@@ -24,7 +24,7 @@ Verified against node-scala v1.7.0.
 | `testnet-latest` | Latest build for Testnet |
 | `sha-<commit>` | A build pinned to one git commit — use this for reproducible deployments and rollbacks |
 
-All images live at `ghcr.io/decentral-america/node-scala`.
+All images live at `ghcr.io/decentral-america/node-scala`. Confirmed live: `ghcr.io/v2/decentral-america/node-scala/tags/list` returns `mainnet-latest`, `testnet-latest`, `stagenet-latest`, `1.7.0` and per-commit `sha-*` tags. No image is published under any Docker Hub name tried (`decentral-america/node-scala`, `decentralamerica/*`, `decentralchain/*`).
 
 ## Ports
 

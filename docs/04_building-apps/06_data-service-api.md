@@ -1,9 +1,9 @@
 # Data Service API
 
-For historical or aggregated queries — asset search, DEX exchange history, paginated transaction lists — a data service is faster than replaying a node's transaction history yourself. [`@decentralchain/data-service-client`](https://github.com/Decentral-America/DecentralChain/tree/main/packages/sdk/data-service-client) is the official TypeScript client for it.
+For historical or aggregated queries — asset search, DEX exchange history, paginated transaction lists — a data service is faster than replaying a node's transaction history yourself. [`@decentralchain/data-service-client-js`](https://www.npmjs.com/package/@decentralchain/data-service-client-js) is the official TypeScript client for it.
 
 ```{note}
-Verified against `@decentralchain/data-service-client` v5.0.0 (monorepo `main`).
+Verified against the published package on npm, `@decentralchain/data-service-client-js` v4.2.0 (2026-09-28) — its README's API matches the monorepo's in-progress `data-service-client` (renamed, unpublished) source exactly, so both are covered by the examples below. Install the current, published name.
 ```
 
 ```{important}
@@ -13,15 +13,15 @@ The package does not hardcode a production data-service URL — `rootUrl` is a r
 ## Installing
 
 ```bash
-npm install @decentralchain/data-service-client
+npm install @decentralchain/data-service-client-js
 ```
 
-> Requires **Node.js >= 24** and an ESM environment (`"type": "module"`).
+> Requires **Node.js >= 24** and an ESM environment (`"type": "module"`). Note the **default export** — this package doesn't use a named `{ DataServiceClient }` import.
 
 ## Connecting
 
 ```typescript
-import { DataServiceClient } from '@decentralchain/data-service-client';
+import DataServiceClient from '@decentralchain/data-service-client-js';
 
 const client = new DataServiceClient({
   rootUrl: 'https://<your-data-service-host>/v0',

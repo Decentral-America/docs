@@ -32,3 +32,59 @@ jobs:
              docs --exclude-dir=locales --exclude-dir=_build; then
           echo "::error::Forbidden third-party reference found"; exit 1
         fi
+
+  samples_typecheck:
+    # Static-only tier: confirms docs/_samples/*.ts still compiles against
+    # each dependency's currently *published* npm version. Does not
+    # broadcast anything — no network beyond npm, no funded account. See
+    # docs/_samples/README.md for the samples that are excluded because
+    # their package isn't published yet, and for the live/broadcast tier
+    # this does not attempt.
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+    - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
+    - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020  # v7.0.0
+      with:
+        node-version: '24'
+
+    - name: Install sample dependencies
+      working-directory: docs/_samples
+      run: npm install
+
+    - name: Typecheck samples against published packages
+      working-directory: docs/_samples
+      run: npm run typecheck
+
+  vale:
+    # House-vocabulary lint from docs/_terminology.md, operationalised as
+    # .vale/styles/DecentralChain/*.yml. Currently just the two rules the
+    # independence_check job also enforces (belt-and-suspenders, catches
+    # the same thing at authoring time in an editor) plus the Decentralite
+    # substitution — extend the style files as the terminology sheet
+    # grows, rather than adding ad hoc rules here.
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+    - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
+    - uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405  # v6.2.0
+      with:
+        python-version: '3.x'
+
+    - name: Install docutils (Vale's RST linter shells out to rst2html)
+      run: python3 -m pip install docutils
+
+    - name: Install Vale
+      # The release asset name is versioned (vale_<version>_Linux_64-bit.tar.gz),
+      # so it's resolved from the API rather than guessed — a guessed
+      # unversioned filename 404s. Tested against v3.23.0.
+      env:
+        GH_TOKEN: ${{ github.token }}
+      run: |
+        url="$(gh api repos/vale-cli/vale/releases/latest -q '.assets[] | select(.name | test("Linux_64-bit")) | .browser_download_url')"
+        curl -sL "$url" | tar -xz -C /usr/local/bin vale
+
+    - name: Lint docs against the DecentralChain style
+      run: vale --config .vale.ini docs --glob='!locales/**'

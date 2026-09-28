@@ -6,7 +6,11 @@ For services that need to process a large volume of blocks or transactions, the 
 Verified against `@decentralchain/node-api-grpc` v2.0.0 (monorepo `main`).
 ```
 
-## Installing
+```{warning}
+`@decentralchain/node-api-grpc` is **not published to npm yet** (checked 2026-09-28: `npm install` returns 404). This page reflects the package's source, showing the API you'll get once it's released. Check [npmjs.com/package/@decentralchain/node-api-grpc](https://www.npmjs.com/package/@decentralchain/node-api-grpc) before relying on it.
+```
+
+## Installing (once published)
 
 ```bash
 npm install @decentralchain/node-api-grpc
@@ -39,7 +43,7 @@ for await (const tx of txApi.getTransactions({ sender: '3D...' })) {
 | `mkBlocksApi(channel)` | BlocksApi | `getBlock`, `getBlockRange` |
 | `mkTransactionsApi(channel)` | TransactionsApi | `getTransactions`, `getTransactionSnapshots`, `getStateChanges`, `getStatuses`, `getUnconfirmed`, `sign`, `broadcast` |
 
-Request and response types are re-exported from [`@decentralchain/protobuf-schemas`](https://github.com/Decentral-America/DecentralChain/tree/main/packages/sdk/protobuf-schemas), so importing `@decentralchain/node-api-grpc` alone is enough — no separate import is needed.
+Request and response types are re-exported from the protobuf schema package (published today as [`@decentralchain/protobuf-serialization`](https://www.npmjs.com/package/@decentralchain/protobuf-serialization); the monorepo is renaming it to `protobuf-schemas`), so importing `@decentralchain/node-api-grpc` alone is enough — no separate import is needed.
 
 ## Blockchain Updates
 

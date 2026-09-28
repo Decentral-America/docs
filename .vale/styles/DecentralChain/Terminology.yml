@@ -1,0 +1,11 @@
+# Derived from docs/_terminology.md. Keep the two in sync — this is the
+# machine-enforced subset (exact tokens Vale can safely flag); the
+# terminology sheet also documents the reasoning and the protocol
+# baseline for each choice.
+extends: substitution
+message: "Use '%s' instead of '%s'."
+level: error
+ignorecase: true
+swap:
+  Wavelet: Decentralite
+  Wavelets: Decentralites

@@ -1,11 +1,13 @@
-% Code samples verified directly against the current READMEs of
-% @decentralchain/transactions, @decentralchain/node-api and @decentralchain/signer
-% (2026-08) — do not copy older samples that reference `nodeInteraction.broadcast`
-% from node-api, that function has moved into the `transactions` package itself.
+% Code samples verified two ways: transfer/issue/broadcast typechecked
+% against the real published @decentralchain/transactions@5.0.0 and
+% node-api-js@2.0.0 (npm registry, 2026-09-28); everything else against
+% the current READMEs (2026-08). Package install commands use the names
+% actually live on npm — see the rename table in Client Libraries and
+% SDK before copying a name from the monorepo source instead.
 
 # How-To Guides
 
-Practical examples for the most common tasks when building on DecentralChain. These use the [`transactions`](https://github.com/Decentral-America/DecentralChain/tree/main/packages/sdk/transactions) and [`node-api`](https://github.com/Decentral-America/DecentralChain/tree/main/packages/sdk/node-api) packages — see [Client Libraries and SDK](02_client-libraries-and-sdk) for the full package list.
+Practical examples for the most common tasks when building on DecentralChain. These use the [`transactions`](https://www.npmjs.com/package/@decentralchain/transactions) and [`node-api-js`](https://www.npmjs.com/package/@decentralchain/node-api-js) packages — see [Client Libraries and SDK](02_client-libraries-and-sdk) for the full package list, including which of these names the monorepo is mid-renaming.
 
 Both packages are ESM-only and require Node.js 24+.
 
@@ -67,14 +69,14 @@ See {doc}`Token (Asset) <../02_decentralchain/02_token(asset)>` for the full mea
 
 ## Reading Blockchain Data
 
-Use `node-api` to query {ref}`account <02_decentralchain/01_account:Account>` balances and other node state without running your own indexer. `create(nodeUrl)` returns a client namespaced by API area (`addresses`, `assets`, `blocks`, `transactions`, `leasing`, and more):
+Use `node-api-js` to query {ref}`account <02_decentralchain/01_account:Account>` balances and other node state without running your own indexer. `create(nodeUrl)` returns a client namespaced by API area (`addresses`, `assets`, `blocks`, `transactions`, `leasing`, and more):
 
 ```bash
-npm install @decentralchain/node-api
+npm install @decentralchain/node-api-js
 ```
 
 ```typescript
-import { create } from '@decentralchain/node-api';
+import { create } from '@decentralchain/node-api-js';
 
 const api = create('https://nodes.decentralchain.io');
 
@@ -85,7 +87,11 @@ const { height } = await api.blocks.fetchHeight();
 console.log('Current height:', height);
 ```
 
-For richer historical queries (asset search, DEX order history, aggregated transaction data) use [`data-service-client`](https://github.com/Decentral-America/DecentralChain/tree/main/packages/sdk/data-service-client) against the data service API instead of querying a node directly — see [Data Service API](06_data-service-api).
+```{note}
+The monorepo is renaming this package to `@decentralchain/node-api`, but that name isn't published yet — install `node-api-js` (above) until it is.
+```
+
+For richer historical queries (asset search, DEX order history, aggregated transaction data) use [`data-service-client-js`](https://www.npmjs.com/package/@decentralchain/data-service-client-js) against the data service API instead of querying a node directly — see [Data Service API](06_data-service-api).
 
 ## Signing with a Ledger Hardware Wallet
 
