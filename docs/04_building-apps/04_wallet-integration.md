@@ -24,7 +24,7 @@ console.log('Logged in as:', user.address);
 // Build, sign (via the extension) and broadcast a Transfer
 const [broadcastedTx] = await signer
   .transfer({
-    recipient: '3P4H4E4DYpaMr84SpAfNNWwSZM5RqQNbmgN',
+    recipient: '3DQAabT4dnFEpVf6jabNisvugEyFCGQZ9MF',
     amount: 100_000_000, // 1 DCC
   })
   .broadcast();

@@ -112,7 +112,7 @@ Created public key
 Creating Address from a Public Key
 ----------------------------------
 
-Our network address obtained from the public key depends on the byte chainID ('T' for Testnet, 'W' for Mainnet, 'S' for Stagenet), so different networks obtained a different address for a single seed (and hence public keys).
+Our network address obtained from the public key depends on the byte chainID ('!' for Testnet, '?' for Mainnet), so different networks obtained a different address for a single seed (and hence public keys).
 
 :strong:`Example`
 
@@ -126,7 +126,7 @@ Created public key:
 
 .. code-block:: none
 
-  3PPbMwqLtwBGcJrTA5whqJfY95GqnNnFMDX
+  3DjUtKEBytr9agT75VsiBff1FyAf9J8RCFC
 
 Signing
 -------
@@ -410,7 +410,7 @@ Issue transaction is valid then:
 
 * Sender's address is valid. If not, InvalidAddress validation result will be returned.
 * Quantity of asset is positive, otherwise NegativeAmount validation result is returned.
-* Transaction's fee is more than or equals MinFee(:math:`100000000` Decentralites = :math:`1` DecentralCoin), in other case InsufficientFee validation result is returned.
+* Transaction's fee is more than or equals the minimum fee for its type (one fee unit is :math:`100000` Decentralites = :math:`0.001` DecentralCoin; a transfer costs :math:`1` unit — see :ref:`minimum fee <02_decentralchain/03_transaction:Minimum Fee>`), in other case InsufficientFee validation result is returned.
 * Size of description is less than or equals MaxDescriptionLength(:math:`1000` bytes), otherwise TooBigArray is returned.
 * Size of name is more than or equals MinAssetNameLength and less or equals MaxAssetNameLength, in other case InvalidName validation result will be returned.
 * Decimals is positive and less than or equals MaxDecimals, in other case TooBigArray is returned.
@@ -441,12 +441,12 @@ Consensus Data Validation
 
 Block's consensus data is valid then:
 
-* Block creation time is no more than MaxTimeDrift(:math:`15` seconds) in future.
+* Block creation time is no more than MaxTimeDrift(:math:`100` milliseconds) in future.
 * Block's transactions are sorted. This rule works only after :math:`1477958400000` on Testnet and :math:`1479168000000` on Mainnet.
 * Block chain contains parent block or block chain height is equal :math:`1`.
 * Block's base target is valid.
 * Block's generator signature is valid.
-* Generator's balance is more than or equals MinimalEffectiveBalanceForGeneration(:math:`1000000000000` Decentralites). This rule always works on Testnet and works only after :math:`1479168000000` on Mainnet.
+* Generator's balance is more than or equals MinimalEffectiveBalanceForGeneration(:math:`1000000000000` Decentralites = :math:`10000` DecentralCoins, or :math:`100000000000` Decentralites = :math:`1000` DecentralCoins once feature 1 is active). This rule always works on Testnet and works only after :math:`1479168000000` on Mainnet.
 * Block's hit is less than calculated block's target.
 * Voted features are sorted in ascending order and are not repeated.
 
@@ -455,7 +455,7 @@ Transactions Data Validation
 
 Block's transactions are valid then:
 
-* Creation time of every transaction in block is less than block's creation time no more than on MaxTxAndBlockDiff(:math:`2` hours).
+* Creation time of every transaction in block is less than block's creation time no more than on MaxTxAndBlockDiff(:math:`2` hours, ``max-transaction-time-back-offset``).
 * All transactions are valid against state.
 
 Transaction validation against state. Transactions are valid then:
@@ -474,8 +474,15 @@ Transaction could be inserted in unconfirmed transactions pool then:
 
 * Transaction is valid by transaction validation rules.
 * If transaction's fee is more than or equals minimum fee that was set by the owner of a node.
-* There is a space for a new transaction if unconfirmed transactions pool. By default the pool is limited by :math:`1000` transactions.
+* There is a space for a new transaction if unconfirmed transactions pool. By default the pool is limited by :math:`100000` transactions, :math:`50` MB in total, and :math:`5000` scripted transactions (``dcc.utx`` settings).
 * unconfirmed transactions pool does not contain transaction with the same ID.
 * Transaction created not later than MaxTimeForUncofimed(:math:`90` minutes) after the last block was created.
 * Transaction creation time is no more than MaxTimeDrift(:math:`15` seconds) in future.
 * Transaction is valid against state.
+
+Finality
+========
+
+Besides the probabilistic finality every proof-of-stake chain has, node v1.7.0 implements **Deterministic Finality** (blockchain feature 25). Generators register a BLS key on-chain with a ``CommitToGenerationTransaction`` for each generation period. A block is finalized once generators holding at least :math:`2/3` of the committed stake have endorsed it, and the finalized height is exposed by the node REST API (``/blocks/height/finalized``). Whether finality is active on a given network depends on feature activation — check ``/activation/status``.
+
+The release also contains an experimental HotStuff BFT fast-finality engine. It is disabled by default (``dcc.hotstuff.enabled = false``), its design is still being reworked, and it is not part of the supported protocol. Finality never halts block production: if voting stalls, the chain keeps growing.

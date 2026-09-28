@@ -6,6 +6,20 @@ Extensions are optional modules a node operator can enable alongside the core {r
 
 The node ships a `grpc-server` module (built alongside the core node in [node-scala](https://github.com/Decentral-America/node-scala/tree/main/grpc-server)) that exposes {ref}`blocks <02_decentralchain/10_binary-format:Block Binary Format>` and {ref}`transactions <02_decentralchain/10_binary-format:Transaction Binary Format>` directly in their protobuf-serialized binary format, rather than the JSON representation the REST API returns. This is the recommended way to consume chain data for a service that needs to process a large volume of blocks or transactions efficiently.
 
-If you use your own node with the gRPC server enabled, you can send it a `SignedTransaction` object directly instead of composing a JSON transaction for the REST API's `POST /transactions/broadcast` method. See the [`protobuf-serialization`](https://github.com/Decentral-America/protobuf-serialization) package for building and parsing these binary structures from JavaScript/TypeScript.
+If you use your own node with the gRPC server enabled, you can send it a `SignedTransaction` object directly instead of composing a JSON transaction for the REST API's `POST /transactions/broadcast` method. See [`@decentralchain/protobuf-serialization`](https://www.npmjs.com/package/@decentralchain/protobuf-serialization) (published on npm today; the monorepo is renaming it to `protobuf-schemas`) for building and parsing these binary structures from JavaScript/TypeScript, or [Node gRPC API](../04_building-apps/05_node-grpc) for the typed client.
 
-Enabling and configuring the gRPC server is done through the node's own configuration file — see the `grpc-server` module in the node-scala repository for its current configuration options.
+```{note}
+Verified against node-scala v1.7.0 (`grpc-server/src/main/resources/application.conf`).
+```
+
+The module listens on two ports:
+
+| Setting | Default | Purpose |
+|---|---|---|
+| `dcc.grpc.port` | `6870` | AccountsApi, AssetsApi, BlockchainApi, BlocksApi, TransactionsApi |
+| `dcc.blockchain-updates.grpc-port` | `6881` | BlockchainUpdates — a real-time stream of block-level events |
+| `dcc.grpc.host` | `localhost` | Interface the main gRPC service binds to |
+| `dcc.grpc.worker-threads` | `4` | Worker threads for the gRPC service |
+| `dcc.blockchain-updates.min-keep-alive` | `5m` | Minimum time a BlockchainUpdates subscription is kept alive |
+
+The `grpc-server` module is a separate process/JAR built alongside the core node; enabling it is a deployment decision for the node operator, not a REST API toggle.

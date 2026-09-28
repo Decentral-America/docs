@@ -27,4 +27,6 @@ Everything you need to start building decentralized applications, smart contract
 02_client-libraries-and-sdk
 03_how-to-guides
 04_wallet-integration
+05_node-grpc
+06_data-service-api
 ```

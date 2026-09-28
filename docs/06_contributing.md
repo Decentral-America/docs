@@ -8,7 +8,7 @@ The node is developed at [node-scala](https://github.com/Decentral-America/node-
 
 ## SDK and Tooling
 
-Each SDK package ([`transactions`](https://github.com/Decentral-America/transactions), [`node-api-js`](https://github.com/Decentral-America/node-api-js), [`signer`](https://github.com/Decentral-America/signer), [`cubensis-connect`](https://github.com/Decentral-America/cubensis-connect), and the rest listed in [Client Libraries and SDK](04_building-apps/02_client-libraries-and-sdk)) is written in TypeScript under the MIT license:
+Each SDK package ([`transactions`](https://github.com/Decentral-America/DecentralChain/tree/main/packages/sdk/transactions), [`node-api`](https://github.com/Decentral-America/DecentralChain/tree/main/packages/sdk/node-api), [`signer`](https://github.com/Decentral-America/DecentralChain/tree/main/packages/sdk/signer), [`cubensis-connect`](https://github.com/Decentral-America/cubensis-connect), and the rest listed in [Client Libraries and SDK](04_building-apps/02_client-libraries-and-sdk)) is written in TypeScript under the MIT license:
 
 1. Fork the relevant repository.
 2. Create a feature branch (`git checkout -b feature/your-feature-name`).
@@ -21,4 +21,10 @@ Report bugs or feature requests in the repository the bug actually belongs to, n
 
 This documentation site ([Decentral-America/docs](https://github.com/Decentral-America/docs)) accepts pull requests for corrections, missing content, and new articles. If you spot a gap or an inaccuracy, opening an issue first is welcome, especially before a large rewrite.
 
-The docs are also translated via [Gitlocalize](https://gitlocalize.com/repo/8397) — translation contributions in any of the supported languages are welcome; see the badges on the [repository README](https://github.com/Decentral-America/docs) for current translation coverage per language.
+The docs are also translated via [Gitlocalize](https://gitlocalize.com/repo/8397) — translation contributions in any of the supported languages are welcome; see the badges on the [repository README](https://github.com/Decentral-America/docs#readme) for current translation coverage per language.
+
+## Community
+
+* **Questions and proposals:** open an issue in the repository the topic belongs to (node-scala for protocol questions, the relevant SDK package for library questions). None of the Decentral-America repositories has GitHub Discussions enabled at the time of writing.
+* **Security issues:** report vulnerabilities privately to security@decentral.exchange rather than in a public issue.
+* **Documentation:** this site is built with Sphinx; every page must build without warnings (`sphinx-build -W`) and must not reference third-party projects — CI enforces both.

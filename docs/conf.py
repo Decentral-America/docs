@@ -143,6 +143,7 @@ html_theme_options = {
     # "navbar_persistent": ["search-button"],
     # "primary_sidebar_end": ["custom-template.html", "sidebar-ethical-ads.html"],
     "footer_start": ["copyright"],
+    "footer_end": [],
     # "secondary_sidebar_items": ["page-toc.html"],  # Remove the source buttons
     # "search_bar_position": "navbar",  # TODO: Deprecated - remove in future version
 }
@@ -157,7 +158,6 @@ myst_substitutions = {"rtd": "[Read the Docs](https://readthedocs.org/)"}
 # True to prefix each section label with the name of the document it is in, followed by a colon
 autosectionlabel_prefix_document = True
 autosectionlabel_maxdepth = 7
-
 # 04_script-types.rst repeats headings (e.g. two "Verifier Function" sections)
 # across script types on purpose; silence the resulting duplicate-label noise
 # instead of treating it as a build-breaking warning.
@@ -185,7 +185,7 @@ language = "en"
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
+exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', '_terminology.md', '_samples/**']
 
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = None
@@ -342,7 +342,11 @@ if 'current_version' in os.environ:
 else:
    # the user is probably doing `make html`
    # set this build's current version by looking at the branch
-   current_version = repo.active_branch.name
+   try:
+      current_version = repo.active_branch.name
+   except TypeError:
+      # detached HEAD (e.g. a CI checkout of a pull request) has no branch name
+      current_version = repo.head.commit.hexsha[:7]
  
 # tell the theme which version we're currently on ('current_version' affects
 # the lower-left rtd menu and 'version' affects the logo-area version)

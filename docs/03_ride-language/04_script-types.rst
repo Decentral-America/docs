@@ -212,12 +212,12 @@ Let's see an example of invocation of an invocation result:
       StringEntry("key3", "some string"),
       BinaryEntry("key4", base58'encoded'),
       DeleteEntry("key5"),
-      ScriptTransfer(Address(base58'3Ms8fSfAxBLDjKvNVgACRzQoBLCtCWxtawu'), 100, base58'someAssetid'),
+      ScriptTransfer(Address(base58'3DR2zmNuuGYVL9pSgAMCjon5f7cUPYjPmx8'), 100, base58'someAssetid'),
       Issue("RegularToken", "This is an ordinary token", 10000, 2, true),
       Reissue("4ZzED8WJXsvuo2MEm2BmZ87Azw8Sx7TVC6ufSUA5LyTV", 1000, true),
       Burn("4ZzED8WJXsvuo2MEm2BmZ87Azw8Sx7TVC6ufSUA5LyTV", 1000)]
       SponsorFee("4ZzED8WJXsvuo2MEm2BmZ87Azw8Sx7TVC6ufSUA5LyTV", 300),
-      Lease(Address(base58'3Mn5hzck8nYd52Ytd2ZjzoiQLVoMcn1VAs9',1000),
+      Lease(Address(base58'3DjKeJSnNawMYft6tYB5d7CxbuiCkTRen5c',1000),
       LeaseCancel(base58'Pxaf8pGKHS5ufGhqjmwRRcHQtC9T3h4d1XaJMnkhR1Vt')
     ],
     42
