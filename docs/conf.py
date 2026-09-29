@@ -342,8 +342,13 @@ if 'current_version' in os.environ:
 else:
    # the user is probably doing `make html`
    # set this build's current version by looking at the branch
-   current_version = repo.active_branch.name
- 
+   try:
+      current_version = repo.active_branch.name
+   except TypeError:
+      # Detached HEAD (e.g. GitHub Actions' pull-request checkout): use the CI
+      # branch name, else the same "dev" default `version` uses above.
+      current_version = os.environ.get('GITHUB_HEAD_REF') or os.environ.get('GITHUB_REF_NAME') or 'dev'
+
 # tell the theme which version we're currently on ('current_version' affects
 # the lower-left rtd menu and 'version' affects the logo-area version)
 html_context['current_version'] = current_version
