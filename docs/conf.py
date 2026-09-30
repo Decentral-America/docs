@@ -395,6 +395,11 @@ html_context['github_user'] = 'Decentral-America'
 html_context['github_repo'] = 'docs'
 html_context['github_version'] = 'main/docs/'
  
+# GitHub renders README heading ids client-side with a 'user-content-' prefix, so
+# linkcheck can never find anchors such as github.com/<org>/<repo>#some-heading even
+# when the heading exists. Still check that the page itself resolves.
+linkcheck_anchors_ignore_for_url = [r"https://github\.com/.*"]
+
 def setup(app):
     # Add the gallery directive
     app.add_directive("gallery-grid", GalleryDirective)

@@ -4,7 +4,7 @@ DecentralChain provides several tools to write, test, and deploy RIDE smart cont
 
 ## RIDE IDE
 
-[decentralchain-ide.com](https://decentralchain-ide.com/) is a browser-based IDE for RIDE. It provides syntax highlighting, static complexity/type checking, and one-click deployment of account scripts, dApp scripts, and asset scripts to Mainnet or Testnet, without installing anything locally.
+[ide.decentralchain.io](https://ide.decentralchain.io/) is a browser-based IDE for RIDE. It provides syntax highlighting, static complexity/type checking, and one-click deployment of account scripts, dApp scripts, and asset scripts to Mainnet or Testnet, without installing anything locally.
 
 ## Surfboard
 
