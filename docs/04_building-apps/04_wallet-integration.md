@@ -14,7 +14,7 @@ npm install @decentralchain/signer @decentralchain/cubensis-connect-provider
 import Signer from '@decentralchain/signer';
 import { ProviderCubensis } from '@decentralchain/cubensis-connect-provider';
 
-const signer = new Signer({ NODE_URL: 'https://nodes.decentralchain.io' });
+const signer = new Signer({ NODE_URL: 'https://testnet-node.decentralchain.io' });
 signer.setProvider(new ProviderCubensis());
 
 // Prompt the user to connect and authenticate via the Cubensis Connect extension
