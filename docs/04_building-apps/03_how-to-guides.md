@@ -32,7 +32,7 @@ const signedTx = transfer(
 );
 
 // Broadcast it
-const result = await broadcast(signedTx, 'https://nodes.decentralchain.io');
+const result = await broadcast(signedTx, 'https://testnet-node.decentralchain.io');
 console.log('Transaction ID:', result.id);
 ```
 
@@ -60,7 +60,7 @@ const signedTx = issue(
   seed,
 );
 
-await broadcast(signedTx, 'https://nodes.decentralchain.io');
+await broadcast(signedTx, 'https://testnet-node.decentralchain.io');
 ```
 
 See {doc}`Token (Asset) <../02_decentralchain/02_token(asset)>` for the full meaning of each issue parameter.
@@ -76,7 +76,7 @@ npm install @decentralchain/node-api-js
 ```typescript
 import { create } from '@decentralchain/node-api-js';
 
-const api = create('https://nodes.decentralchain.io');
+const api = create('https://testnet-node.decentralchain.io');
 
 const { balance } = await api.addresses.fetchBalance('3P4H4E4DYpaMr84SpAfNNWwSZM5RqQNbmgN');
 console.log('DCC balance (in Decentralites):', balance);
