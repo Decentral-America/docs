@@ -1,4 +1,4 @@
 Blockchain Network, Chain ID
-"Mainnet", "W or :math:`87` (ASCII code of W)."
-"Testnet", "T or :math:`84` (ASCII code of T)."
-"Stagenet", "S or :math:`83` (ASCII code of s)."
+"Mainnet", "? or :math:`63` (ASCII code of ?)."
+"Testnet", "! or :math:`33` (ASCII code of !)."
+"Stagenet", "S or :math:`83` (ASCII code of S)."
