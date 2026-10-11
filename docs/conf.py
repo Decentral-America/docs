@@ -345,9 +345,10 @@ else:
    try:
       current_version = repo.active_branch.name
    except TypeError:
-      # detached HEAD (e.g. a CI checkout of a pull request) has no branch name
-      current_version = repo.head.commit.hexsha[:7]
- 
+      # Detached HEAD (e.g. GitHub Actions' pull-request checkout): use the CI
+      # branch name, else the same "dev" default `version` uses above.
+      current_version = os.environ.get('GITHUB_HEAD_REF') or os.environ.get('GITHUB_REF_NAME') or 'dev'
+
 # tell the theme which version we're currently on ('current_version' affects
 # the lower-left rtd menu and 'version' affects the logo-area version)
 html_context['current_version'] = current_version
@@ -394,6 +395,11 @@ html_context['github_user'] = 'Decentral-America'
 html_context['github_repo'] = 'docs'
 html_context['github_version'] = 'main/docs/'
  
+# GitHub renders README heading ids client-side with a 'user-content-' prefix, so
+# linkcheck can never find anchors such as github.com/<org>/<repo>#some-heading even
+# when the heading exists. Still check that the page itself resolves.
+linkcheck_anchors_ignore_for_url = [r"https://github\.com/.*"]
+
 def setup(app):
     # Add the gallery directive
     app.add_directive("gallery-grid", GalleryDirective)

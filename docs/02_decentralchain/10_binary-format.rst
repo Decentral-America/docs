@@ -465,6 +465,12 @@ The fields :math:`2`, :math:`3`, :math:`4`, :math:`5`, :math:`6`, :math:`7`, :ma
 
 :strong:`JSON Representation of Transaction`
 
+
+.. note::
+   The JSON examples on this page are reference samples and carry ``chainId`` values (84, 87) from their
+   original network. DecentralChain uses ``33`` (``!``) on Testnet, ``63`` (``?``) on Mainnet and ``83`` (``S``)
+   on Stagenet (see the Chain ID table on the Mainnet, Testnet, Stagenet page).
+
 .. code-block:: none
 
   {

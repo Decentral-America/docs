@@ -112,7 +112,7 @@ Created public key
 Creating Address from a Public Key
 ----------------------------------
 
-Our network address obtained from the public key depends on the byte chainID ('!' for Testnet, '?' for Mainnet), so different networks obtained a different address for a single seed (and hence public keys).
+Our network address obtained from the public key depends on the byte chainID ('!' (33) for Testnet, '?' (63) for Mainnet, 'S' (83) for Stagenet), so different networks obtained a different address for a single seed (and hence public keys).
 
 :strong:`Example`
 

@@ -237,6 +237,12 @@ If the transaction sender is a :ref:`dApp or smart account <02_decentralchain/01
 
 :strong:`JSON Representation`
 
+
+.. note::
+   The JSON examples on this page are reference samples and carry ``chainId`` values (84, 87) from their
+   original network. DecentralChain uses ``33`` (``!``) on Testnet, ``63`` (``?``) on Mainnet and ``83`` (``S``)
+   on Stagenet (see the Chain ID table on the Mainnet, Testnet, Stagenet page).
+
 .. code-block:: none
 
   {

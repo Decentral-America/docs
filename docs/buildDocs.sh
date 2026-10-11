@@ -41,8 +41,12 @@ export REPO_NAME="${GITHUB_REPOSITORY##*/}"
 # first, cleanup any old builds' static assets
 make -C docs clean
  
-# get a list of branches, excluding 'HEAD' and 'gh-pages'
-versions="$(git for-each-ref '--format=%(refname:lstrip=-1)' refs/remotes/origin/ | grep -viE '^(HEAD|gh-pages)$')"
+# Build exactly the versions the public version switcher lists
+# (docs/_static/switcher.json), so the switcher and the deployed site can't drift.
+# Building every remote branch broke the deploy: `lstrip=-1` turned
+# 'docs/expansion-wp0' into 'expansion-wp0', and `git checkout` failed. It also
+# published unreviewed work-in-progress branches.
+versions="$(python3 -c 'import json; print(" ".join(v["version"] for v in json.load(open("docs/_static/switcher.json"))))')"
 for current_version in ${versions}; do
 
    # Sanitize branch name — reject names with shell metacharacters

@@ -285,7 +285,7 @@ DecentralChain natively supports 16 transaction types at the protocol level, eli
 
 ### Development Tools
 
-- **RIDE IDE**: [`https://decentralchain-ide.com/`](https://decentralchain-ide.com/) — browser-based IDE with syntax highlighting, type checking, and one-click deployment
+- **RIDE IDE**: [`https://ide.decentralchain.io/`](https://ide.decentralchain.io/) — browser-based IDE with syntax highlighting, type checking, and one-click deployment
 - Complexity limits ensure all scripts execute in bounded time with no infinite loops and no unexpected failures
 
 ---

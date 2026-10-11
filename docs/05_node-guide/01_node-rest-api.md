@@ -20,7 +20,7 @@ You normally don't call this API with raw HTTP requests — use [`@decentralchai
 | `activation` | Feature activation status |
 | `utils` | Hashing, seed generation, script compilation |
 
-If you're running your own node, point the client at its own host and port instead of a public endpoint like `https://nodes.decentralchain.io` — check your node's configuration file for the REST API port it's bound to.
+If you're running your own node, point the client at its own host and port instead of a public endpoint like `https://testnet-node.decentralchain.io` — check your node's configuration file for the REST API port it's bound to.
 
 ## Base URL, port and interactive docs
 
