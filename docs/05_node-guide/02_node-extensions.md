@@ -22,4 +22,4 @@ The module listens on two ports:
 | `dcc.grpc.worker-threads` | `4` | Worker threads for the gRPC service |
 | `dcc.blockchain-updates.min-keep-alive` | `5m` | Minimum time a BlockchainUpdates subscription is kept alive |
 
-The `grpc-server` module is a separate process/JAR built alongside the core node; enabling it is a deployment decision for the node operator, not a REST API toggle.
+The `grpc-server` module is not a separate process: it is an in-process node extension. Put its JARs on the node's classpath (the Docker image loads extensions from `lib/plugins/`) and enable it in the node config with `dcc.extensions = [com.decentralchain.api.grpc.GRPCServerExtension]` (commented out in the node's default `application.conf`). Enabling it is a deployment decision for the node operator, not a REST API toggle.

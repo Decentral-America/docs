@@ -82,6 +82,10 @@ volumes:
   dcc-logs:
 ```
 
+```{note}
+`DCC_WALLET_SEED` and `DCC_WALLET_PASSWORD` only take effect when a config file is mounted at `/etc/dcc/dcc.conf` (and no command arguments are passed to the container): the entrypoint layers the wallet secrets on top of that file. Without a mounted config they are silently ignored. See [Configuration](05_configuration).
+```
+
 ## Verify it is running
 
 ```bash

@@ -32,7 +32,9 @@ Verified against node-scala v1.7.0.
 
 ## Authentication
 
-Most read-only endpoints are public. Privileged ones — wallet and address management (`GET/POST /addresses`, `GET /wallet/seed`), transaction signing on behalf of the node wallet and fee estimation (`POST /transactions/sign`, `POST /transactions/calculateFee`), `/debug/*`, `/peers/connect`, `/peers/clearblacklist` and `/node/stop` — require an `X-Api-Key` header matching the hash in `dcc.rest-api.api-key-hash`. See [Configuration](05_configuration). Requests with a wrong key get `403`.
+Most read-only endpoints are public. Privileged ones — wallet and address management (`GET/POST /addresses`, `GET /wallet/seed`), transaction signing on behalf of the node wallet (`POST /transactions/sign`), `/debug/*`, all `/peers/*` endpoints (including the read-only `GET /peers/all`, `/peers/connected`, `/peers/blacklisted` and `/peers/suspended`, plus `/peers/connect` and `/peers/clearblacklist`) and `/node/stop` — require an `X-Api-Key` header matching the hash in `dcc.rest-api.api-key-hash`. See [Configuration](05_configuration). Requests with a wrong key get `403`. Fee estimation (`POST /transactions/calculateFee`) does not need a key.
+
+The public Testnet gateway (`https://testnet-node.decentralchain.io`) deliberately exposes the read-only `GET /peers/*` lists without a key; on your own node they require `X-Api-Key`.
 
 ## Commonly used endpoints
 
@@ -50,7 +52,7 @@ Most read-only endpoints are public. Privileged ones — wallet and address mana
 | `GET /transactions/unconfirmed` | Unconfirmed pool |
 | `GET /blockchain/rewards` | Block reward state |
 | `GET /activation/status` | [Feature activation](10_features-and-activation) |
-| `GET /peers/all`, `/peers/connected` | Peer lists |
+| `GET /peers/all`, `/peers/connected` | Peer lists (require `X-Api-Key` on a node) |
 | `POST /utils/script/compileCode` | Compile Ride source |
 | `POST /utils/hash/secure`, `/utils/hash/fast` | Hashing helpers |
 | `GET /utils/seed`, `/utils/time` | Random seed, node time |

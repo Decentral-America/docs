@@ -10,8 +10,9 @@ const signedTx = issue(
     quantity: 1_000_000,
     decimals: 2,
     reissuable: true,
+    chainId: '!', // Testnet chain ID
   },
   seed,
 );
 
-await broadcast(signedTx, 'https://nodes.decentralchain.io');
+await broadcast(signedTx, 'https://testnet-node.decentralchain.io');

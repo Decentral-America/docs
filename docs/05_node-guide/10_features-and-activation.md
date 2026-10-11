@@ -57,6 +57,10 @@ By default `dcc.features.auto-shutdown-on-unsupported-feature = yes`: if the net
 | 27 | Lease expiration |
 | 28 | Modern Groth16 verifier |
 
+```{important}
+From v1.8.0 (running on the live Testnet) the numbering of the last features changed: **26 = Adjusted Block Reward Distribution**, 27 = Continuation transaction, 28 = Lease expiration, and the Groth16 verifier is no longer a feature. Only feature 26 is votable/reported in `/activation/status`; 27 and 28 are defined in the source but not exposed.
+```
+
 Which of these are active on a given network is a runtime fact — read it from `/activation/status` rather than from this table.
 
 ## Finality and HotStuff

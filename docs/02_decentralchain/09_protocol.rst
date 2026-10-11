@@ -446,7 +446,7 @@ Block's consensus data is valid then:
 * Block chain contains parent block or block chain height is equal :math:`1`.
 * Block's base target is valid.
 * Block's generator signature is valid.
-* Generator's balance is more than or equals MinimalEffectiveBalanceForGeneration(:math:`1000000000000` Decentralites = :math:`10000` DecentralCoins, or :math:`100000000000` Decentralites = :math:`1000` DecentralCoins once feature 1 is active). This rule always works on Testnet and works only after :math:`1479168000000` on Mainnet.
+* Generator's balance is more than or equals MinimalEffectiveBalanceForGeneration(:math:`1000000000000` Decentralites = :math:`10000` DecentralCoins, or :math:`100000000000` Decentralites = :math:`1000` DecentralCoins once feature 1 is active). This rule applies only to blocks with a timestamp of at least :math:`1530161445559` on Mainnet (:math:`1492560000000` on the built-in Testnet profile).
 * Block's hit is less than calculated block's target.
 * Voted features are sorted in ascending order and are not repeated.
 

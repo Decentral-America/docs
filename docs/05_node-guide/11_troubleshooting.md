@@ -20,7 +20,7 @@ Verified against node-scala v1.7.0.
 ```bash
 curl -s http://localhost:6869/node/status      # heights, timestamps, generationPeriodLength
 curl -s http://localhost:6869/node/version
-curl -s http://localhost:6869/peers/connected
+curl -s http://localhost:6869/peers/connected -H 'X-Api-Key: my-secret-api-key'   # /peers/* needs the API key
 curl -s http://localhost:6869/activation/status
 ```
 

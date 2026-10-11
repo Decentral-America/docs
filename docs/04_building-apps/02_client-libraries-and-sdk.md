@@ -30,7 +30,7 @@ Versions are each package's `latest` tag on npm, not the monorepo's (ahead-of-re
 | npm package (install this) | Version | Monorepo name, if renamed | Description |
 |---|---|---|---|
 | `transactions` | 5.0.0 | — | Build and sign (including multi-sign) transactions and broadcast them |
-| `node-api-js` | 2.0.0 | `node-api` | Typed client for the node REST API |
+| `node-api-js` | 2.0.1 (`next` tag; `latest` is still 1.2.5-beta.18 — install `@decentralchain/node-api-js@2.0.1`) | `node-api` | Typed client for the node REST API |
 | `node-api-grpc` | ❌ not published | — | gRPC client: accounts, assets, blockchain, blocks, transactions, blockchain updates |
 | `data-service-client-js` | 4.2.0 | `data-service-client` | Data service client |
 | `signer` | 1.1.0-beta | — | Signing orchestrator that delegates to a provider so keys never reach your app |
@@ -57,7 +57,7 @@ Versions are each package's `latest` tag on npm, not the monorepo's (ahead-of-re
 Install only the layers you need. For a Node.js backend that builds, signs, broadcasts and reads state:
 
 ```bash
-npm install @decentralchain/transactions @decentralchain/node-api-js
+npm install @decentralchain/transactions @decentralchain/node-api-js@2.0.1
 ```
 
 `transactions`' own `broadcast()` is enough to send a signed transaction to a node without `node-api-js` at all — see [How-To Guides](03_how-to-guides).

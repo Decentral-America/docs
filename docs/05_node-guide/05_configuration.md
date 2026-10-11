@@ -20,7 +20,7 @@ The Docker entrypoint translates these variables into JVM options:
 | `DCC_WALLET_PASSWORD` | — | Wallet file password, handled the same way |
 | `JAVA_OPTS` | — | Extra JVM options |
 
-To use your own file, mount it at `/etc/dcc/dcc.conf`. The entrypoint loads it automatically and layers wallet secrets on top.
+To use your own file, mount it at `/etc/dcc/dcc.conf`. The entrypoint loads it automatically and layers wallet secrets on top. `DCC_WALLET_SEED` and `DCC_WALLET_PASSWORD` only take effect when such a file is mounted (and no command arguments are passed to the container); without `/etc/dcc/dcc.conf` they are ignored.
 
 ## Ports and network defaults
 
@@ -30,6 +30,10 @@ To use your own file, mount it at `/etc/dcc/dcc.conf`. The entrypoint loads it a
 | Testnet | 6863 | 5 |
 
 The REST API listens on port `6869` on every network. Known peers for each network ship in `network-defaults.conf`.
+
+```{note}
+The public DecentralChain Testnet (`testnet-node.decentralchain.io`) is a custom chain (`dcc.blockchain.type = CUSTOM`, chain ID `!`) whose nodes use P2P port `6868`. The built-in `testnet` profile (`DCC_NETWORK=testnet`) uses port `6863` and its own known peers, so a node started with it will not join the public Testnet; use a custom config matching the Testnet's genesis and peers instead.
+```
 
 ## Commonly changed settings
 

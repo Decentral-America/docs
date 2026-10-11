@@ -21,7 +21,7 @@ Where a function has more than one row, each row is a distinct overload (differe
 | `fraction` | V5=128, V6=1 |
 | `getElement` | V1=2, V9=1 |
 | `max` (list) | V5=192, V8=6 |
-| `median` | V8=35 |
+| `median` (BigInt list) | V5=160, V6=160, V7=160, V8=35 |
 | `min` (list) | V5=192, V6=192, V7=192, V8=6 |
 | `parseBigInt` | V5=65, V8=1 |
 | `parseBigIntValue` | V5=65, V8=1 |
@@ -42,7 +42,7 @@ Where a function has more than one row, each row is a distinct overload (differe
 | `toString` (BigInt) | V5=65, V6=1 |
 | `toString` (Int/Boolean) | V3=10, V4=10, V5=10, V6=1 |
 
-A missing version in a row means the cost from the previous listed version carries forward unchanged — e.g. `median` at `V8=35` had no defined cost before V8, because the function itself doesn't exist before V8.
+A missing version in a row means the cost from the previous listed version carries forward unchanged — e.g. `removeByIndex` stays at `4` for V8 until it drops to `1` at V9. `median` exists before V8: the `List[Int]` overload costs a flat `20` from V4 onward (so it has no row here), and the `List[BigInt]` overload costs `160` for V5–V7 and `35` from V8.
 
 ## Coverage
 

@@ -11,15 +11,15 @@ Verified against node-scala v1.7.0's `README.md`. Not run on a clean machine as 
 * **Java 25 JDK** — install [Eclipse Temurin 25](https://adoptium.net/temurin/releases/?version=25) using its Windows installer.
 * A network configuration file — the repository ships defaults for Mainnet and Testnet in `node/src/main/resources/network-defaults.conf`.
 
-## Run from the JAR
+## Run from the tarball
 
-With Temurin 25 installed, download a released JAR (see [Release Notes](../08_release-notes) or the [node-scala releases page](https://github.com/Decentral-America/node-scala/releases)), or [build from source](#build-from-source) below, then run it from a terminal (Command Prompt or PowerShell):
+node-scala releases do not ship a node JAR or a Windows installer (the v1.7.0 release assets are only `dcc-grpc-server` tarballs). The supported way to run a node is Docker Desktop with the [Docker image](04_install-docker) `ghcr.io/decentral-america/node-scala`. To run it directly, [build from source](#build-from-source) below, extract the universal tarball `node/target/universal/decentralchain-<version>.tgz`, and start the node from a terminal (Command Prompt or PowerShell) with the Windows launcher in its `bin\` directory:
 
-```bash
-java -jar node/target/dcc-all*.jar path/to/config/decentralchain-{network}.conf
+```bat
+decentralchain-<version>\bin\node.bat path\to\config\dcc.conf
 ```
 
-node-scala doesn't publish a Windows installer — run it from the JAR, or use Docker Desktop with the [Docker instructions](04_install-docker) if you'd rather not manage the JVM yourself.
+There is no single "fat" JAR; the launcher runs the node from the tarball's `lib\` directory.
 
 ## Build from source
 

@@ -8,12 +8,13 @@ const seed = 'your secret seed phrase here';
 // Build and sign a Transfer transaction
 const signedTx = transfer(
   {
-    recipient: '3DQAabT4dnFEpVf6jabNisvugEyFCGQZ9MF', // recipient address or alias
+    recipient: '31LAqgqVTLySNCPuYqgLAYhcgS76wvBaLr9', // recipient address or alias (Testnet)
     amount: 100_000_000,                               // 1 DCC (8 decimals, i.e. 10^8 Decentralites)
+    chainId: '!',                                      // Testnet chain ID
   },
   seed,
 );
 
 // Broadcast it
-const result = await broadcast(signedTx, 'https://nodes.decentralchain.io');
+const result = await broadcast(signedTx, 'https://testnet-node.decentralchain.io');
 console.log('Transaction ID:', result.id);

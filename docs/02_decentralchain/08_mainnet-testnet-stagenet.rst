@@ -48,7 +48,11 @@ Network Parameters
     - 5
     - 5
 
-Stagenet is planned but not yet available as a public network; no Stagenet parameters are published.
+Stagenet has chain ID ``S`` (83) and a built-in profile in the node (``dcc.defaults.blockchain.type = STAGENET``, P2P port 6862 in ``network-defaults.conf``), but there is no public Stagenet network yet.
+
+.. note::
+
+   The public DecentralChain Testnet (``testnet-node.decentralchain.io``) is a custom chain (``dcc.blockchain.type = CUSTOM``, chain ID ``!``) whose nodes use P2P port 6868, not the built-in Testnet profile shown above. A node started with the built-in ``testnet`` profile (``DCC_NETWORK=testnet``: port 6863 and its own known peers) will not join it.
 
 The default known peers for each network are listed in ``network-defaults.conf`` in the `node-scala <https://github.com/Decentral-America/node-scala>`_ repository.
 

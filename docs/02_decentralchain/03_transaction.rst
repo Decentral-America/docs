@@ -256,7 +256,7 @@ If the transaction sender is a :ref:`dApp or smart account <02_decentralchain/01
     "script": "base64:AQa3b8tH",
     "sender": "3DY3hSG8cebmsSy3j4i6atQZ6UGRHpi7kvZ",
     "feeAssetId": null,
-    "chainId": 33,
+    "chainId": 63,
     "proofs": [
       "4yjVxzrLuXUq5y2QCa2LDn1Fp9P63hPBmqDLGQCqn41EB1uZ1pys79NP81h7FxRBnZSbpNGbz1xjwckHcPAQHmFX"
     ],
@@ -492,7 +492,7 @@ The :ref:`minimum fee <02_decentralchain/03_transaction:Minimum Fee>` is :math:`
 
 * ``endorserPublicKey`` — the generator's BLS public key (Base58).
 * ``generationPeriodStart`` — the first height of the period being committed to. It must equal the start height of the *next* generation period.
-* ``commitmentSignature`` — a BLS proof-of-possession: the signature of the BLS public key concatenated with ``generationPeriodStart`` by the matching BLS private key.
+* ``commitmentSignature`` — a BLS proof-of-possession made with the matching BLS private key. From node v1.8.0 the signed message is ``chainId (1 byte) ‖ senderPublicKey (32 bytes) ‖ endorserPublicKey (48 bytes) ‖ generationPeriodStart (4 bytes, big-endian)``, signed with the ``BLS_SIG_BLS12381G2_XMD:SHA-256_SSWU_RO_POP_`` domain separation tag. Earlier commitments signed only ``endorserPublicKey ‖ generationPeriodStart`` (with the ``..._NUL_`` tag); nodes still accept that legacy layout when verifying existing transactions but never create it.
 
 :strong:`Generation Deposit`
 
@@ -506,7 +506,7 @@ The transaction is rejected if:
 * ``generationPeriodStart`` is not the start of the next period;
 * the commitment signature is invalid;
 * the sender address, or the BLS key, is already committed for that period;
-* the sender's generating balance after paying the fee is below the :math:`1000` DecentralCoin generation minimum.
+* the sender's generating balance, computed after the fee and the generation deposit are applied, is below the minimum generating balance: :math:`1000` DecentralCoins once feature 1 (Minimum Generating Balance of 1000 DCC) is active, otherwise :math:`10000` DecentralCoins.
 
 The fields that are common to all types of transactions are described in the :ref:`transaction <02_decentralchain/03_transaction:Transaction>` article.
 
@@ -886,7 +886,7 @@ If the transaction sender is a :ref:`dApp or smart account <02_decentralchain/01
     "senderPublicKey": "7nLAwoiRA4fWF4VHd6gRsbwF2UFFmRADXHqRcgy3h27w",
     "sender": "3DhsXkV7pRXJBDLxupNnwrbmCAqv7Yn8CN2",
     "feeAssetId": null,
-    "chainId": 33,
+    "chainId": 63,
     "proofs": [
       "2ihGFLUbvJHEpuGRqx5MXEXsEzwMuCmB8FgUTZgSPdANA4iab4M3nsNJ7a7hyiuqjrvwNCHoWn69hvUeziJiSAie"
     ],
@@ -953,7 +953,7 @@ The total :ref:`complexity <03_ride-language/07_dapp-to-app-invocation:Script Co
       "2536V2349X3cuVEK1rSxQf3HneJwLimjCmCfoG1QyMLLq1CNp6dpPKUG3Lb4pu76XqLe3nWyo3HAEwGoALgBhxkF"
     ],
     "version": 2,
-    "chainId": 33,
+    "chainId": 63,
     "dApp": "3Da38PGxeUXNiE9KWHWC6BRBrSDAZZEa4uz",
     "payment": [],
     "call": {
@@ -1108,7 +1108,7 @@ If the transaction sender is a :ref:`dApp or smart account <02_decentralchain/01
     ],
     "version": 2,
     "leaseId": "BhHPPHBZpfp8FBy8DE7heTpWGJySYg2uU2r4YM6qaisw",
-    "chainId": 33,
+    "chainId": 63,
     "height": 1551763,
     "applicationStatus": "succeeded",
     "lease": {

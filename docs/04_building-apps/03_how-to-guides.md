@@ -1,6 +1,6 @@
 % Code samples verified two ways: transfer/issue/broadcast typechecked
 % against the real published @decentralchain/transactions@5.0.0 and
-% node-api-js@2.0.0 (npm registry, 2026-09-28); everything else against
+% node-api-js@2.0.1 (npm registry); everything else against
 % the current READMEs (2026-08). Package install commands use the names
 % actually live on npm — see the rename table in Client Libraries and
 % SDK before copying a name from the monorepo source instead.
@@ -10,6 +10,8 @@
 Practical examples for the most common tasks when building on DecentralChain. These use the [`transactions`](https://www.npmjs.com/package/@decentralchain/transactions) and [`node-api-js`](https://www.npmjs.com/package/@decentralchain/node-api-js) packages — see [Client Libraries and SDK](02_client-libraries-and-sdk) for the full package list, including which of these names the monorepo is mid-renaming.
 
 Both packages are ESM-only and require Node.js 24+.
+
+All examples on this page target the public Testnet: node `https://testnet-node.decentralchain.io`, chain ID `!` (passed as `chainId: '!'` to the transaction builders) and Testnet addresses starting with `31`. For Mainnet, use a Mainnet node and `chainId: '?'`.
 
 ## Build, Sign, and Broadcast a Transaction
 
@@ -27,8 +29,9 @@ const seed = 'your secret seed phrase here';
 // Build and sign a Transfer transaction
 const signedTx = transfer(
   {
-    recipient: '3DQAabT4dnFEpVf6jabNisvugEyFCGQZ9MF', // recipient address or alias
+    recipient: '31LAqgqVTLySNCPuYqgLAYhcgS76wvBaLr9', // recipient address or alias (Testnet)
     amount: 100_000_000,                               // 1 DCC (8 decimals, i.e. 10^8 Decentralites)
+    chainId: '!',                                      // Testnet chain ID
   },
   seed,
 );
@@ -58,6 +61,7 @@ const signedTx = issue(
     quantity: 1_000_000,
     decimals: 2,
     reissuable: true,
+    chainId: '!', // Testnet chain ID
   },
   seed,
 );
@@ -72,7 +76,7 @@ See {doc}`Token (Asset) <../02_decentralchain/02_token(asset)>` for the full mea
 Use `node-api-js` to query {ref}`account <02_decentralchain/01_account:Account>` balances and other node state without running your own indexer. `create(nodeUrl)` returns a client namespaced by API area (`addresses`, `assets`, `blocks`, `transactions`, `leasing`, and more):
 
 ```bash
-npm install @decentralchain/node-api-js
+npm install @decentralchain/node-api-js@2.0.1
 ```
 
 ```typescript
@@ -80,7 +84,7 @@ import { create } from '@decentralchain/node-api-js';
 
 const api = create('https://testnet-node.decentralchain.io');
 
-const { balance } = await api.addresses.fetchBalance('3DQAabT4dnFEpVf6jabNisvugEyFCGQZ9MF');
+const { balance } = await api.addresses.fetchBalance('31LAqgqVTLySNCPuYqgLAYhcgS76wvBaLr9');
 console.log('DCC balance (in Decentralites):', balance);
 
 const { height } = await api.blocks.fetchHeight();

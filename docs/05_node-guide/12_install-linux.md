@@ -21,23 +21,9 @@ sudo apt-get update && sudo apt-get install -y temurin-25-jdk
 
 For a distribution without APT, install Eclipse Temurin 25 through your package manager or from the [Adoptium releases page](https://adoptium.net/temurin/releases/?version=25).
 
-## Install from the DEB package
+## Supported path: Docker
 
-node-scala publishes DEB packages built with `sbt-native-packager`, for both `amd64` and `arm64`. Get the package for your release (see [Release Notes](../08_release-notes) or the [node-scala releases page](https://github.com/Decentral-America/node-scala/releases)), then:
-
-```bash
-sudo dpkg -i dcc-node_<version>_<arch>.deb
-```
-
-Installing the package sets up the node as a system service; see its post-install scripts for the exact paths and service name on your distribution.
-
-## Run from the JAR
-
-If you'd rather not install a package, run the node directly:
-
-```bash
-java -jar node/target/dcc-all*.jar path/to/config/decentralchain-{network}.conf
-```
+node-scala releases do not ship a node DEB package or JAR — the v1.7.0 release assets are only `dcc-grpc-server` tarballs. The supported way to run a node is the [Docker image](04_install-docker) `ghcr.io/decentral-america/node-scala`. To run the node directly on the host, build it from source as below.
 
 ## Build from source
 
@@ -48,15 +34,37 @@ cd node-scala
 # Compile and run tests
 sbt checkPR
 
-# Build packages (JAR, DEB, tarball) for one network
+# Build the node tarball and DEB packages for one network
 sbt packageAll                   # Mainnet
 sbt -Dnetwork=testnet packageAll # Testnet
-
-# Install the resulting DEB package
-sudo dpkg -i node/target/*.deb
 ```
 
+`sbt packageAll` produces:
+
+* the universal tarball `node/target/universal/decentralchain-<version>.tgz` (also copied to `docker/target/dcc.tgz`), and
+* DEB packages for `amd64` and `arm64` in `node/target/`. The node package is named `decentralchain` for Mainnet and `decentralchain-<network>` for other networks (for example `decentralchain-testnet`).
+
+There is no single "fat" JAR; the node runs from its `lib/` directory through the launcher script.
+
 Building from source additionally requires [SBT](https://www.scala-sbt.org/1.0/docs/Installing-sbt-on-Linux.html). See the [node-scala README](https://github.com/Decentral-America/node-scala#readme) for integration-test setup and IDE configuration.
+
+## Install the DEB package you built
+
+```bash
+sudo dpkg -i node/target/decentralchain_<version>_<arch>.deb           # Mainnet
+sudo dpkg -i node/target/decentralchain-testnet_<version>_<arch>.deb   # Testnet
+```
+
+Installing the package sets up the node as a system service named after the package; see its post-install scripts for the exact paths on your distribution.
+
+## Run from the tarball
+
+If you'd rather not install a package, extract the tarball and start the node with its `bin/` launcher:
+
+```bash
+tar -xzf node/target/universal/decentralchain-<version>.tgz
+decentralchain-<version>/bin/node path/to/config/dcc.conf
+```
 
 ## Next steps
 

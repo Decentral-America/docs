@@ -22,13 +22,11 @@ are mid-rename (`node-api-js` → `node-api`,
    the "verified against README X" comments going stale. No network,
    no funded account, safe to run on every PR.
 2. **Live (not set up yet):** actually broadcasting to Testnet needs a
-   funded Testnet account held as a CI secret, and this environment had
-   no route to `nodes.decentralchain.io` or the Testnet faucet while
-   writing these samples (see PLAN-docs-expansion.md — the domain
-   itself doesn't currently resolve on the public internet, confirmed
-   from a network that reaches github.com, npmjs.org and Maven Central
-   fine). Wiring up broadcast-level validation is separate follow-up
-   work, blocked on that changing.
+   funded Testnet account held as a CI secret. The samples target the
+   public Testnet node `https://testnet-node.decentralchain.io` with
+   chain ID `!` (the old `nodes.decentralchain.io` hostname does not
+   resolve). Wiring up broadcast-level validation is separate follow-up
+   work, blocked on provisioning that funded account.
 
 ## Adding a sample
 
