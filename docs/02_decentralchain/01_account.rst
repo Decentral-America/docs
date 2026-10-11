@@ -106,9 +106,9 @@ The address is a :math:`26` byte array (see the :ref:`address binary format <02_
 
 .. code-block:: none
 
-  3PDfnPknnYrg2k2HMvkNLDb3Y1tDTtEnp9X
+  3DZZJm9dsWXZ17cwHLgNgaaWeun2po5PDsE
 
-Normally, the address starting with 3P refers to the Mainnet, and the address starting with 3M or 3N refers to Testnet or Stagenet.
+Because the chain ID is part of the address, Mainnet addresses (chain ID ``?``) start with 3D, and Testnet addresses (chain ID ``!``) start with 31.
 
 The address is used to obtain information about the account:
 

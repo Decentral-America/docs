@@ -344,7 +344,7 @@ To get a value of a particular type from a Union, you can use:
 
 .. code-block:: none
 
-  let valueFromBlockchain = getString("3PHHD7dsVqBFnZfUuDPLwbayJiQudQJ9Ngf", "someKey") # Union(String | Unit)
+  let valueFromBlockchain = getString("3DdAjV2ianr8kwG8pdKMHxaSRcJizJkvwi8", "someKey") # Union(String | Unit)
 
 The simplest example of Union types is given below (please bear in mind that defining custom user types in dApp code will be supported in future versions):
 

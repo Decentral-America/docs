@@ -14,3 +14,4 @@ Transaction type, Transaction type ID, Minimum transaction fee in :ref:`Decentra
 ":ref:`Sponsor fee transaction <02_decentralchain/03_transaction:Sponsor Fee Transaction>`", ":math:`14`", ":math:`0.001`"
 ":ref:`Transfer transaction <02_decentralchain/03_transaction:Transfer Transaction>`", ":math:`4`", ":math:`0.001`"
 ":ref:`Update asset info transaction <02_decentralchain/03_transaction:Update Asset Info Transaction>`", ":math:`17`", ":math:`0.001`"
+":ref:`Commit to generation transaction <02_decentralchain/03_transaction:Commit To Generation Transaction>`", ":math:`19`", ":math:`0.01`"

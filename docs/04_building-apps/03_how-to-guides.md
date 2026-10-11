@@ -1,17 +1,21 @@
-% Code samples verified directly against the current READMEs of
-% @decentralchain/transactions, @decentralchain/node-api-js and @decentralchain/signer
-% (2026-08) — do not copy older samples that reference `nodeInteraction.broadcast`
-% from node-api-js, that function has moved into the `transactions` package itself.
+% Code samples verified two ways: transfer/issue/broadcast typechecked
+% against the real published @decentralchain/transactions@5.0.0 and
+% node-api-js@2.0.1 (npm registry); everything else against
+% the current READMEs (2026-08). Package install commands use the names
+% actually live on npm — see the rename table in Client Libraries and
+% SDK before copying a name from the monorepo source instead.
 
 # How-To Guides
 
-Practical examples for the most common tasks when building on DecentralChain. These use the [`transactions`](https://github.com/Decentral-America/transactions) and [`node-api-js`](https://github.com/Decentral-America/node-api-js) packages — see [Client Libraries and SDK](02_client-libraries-and-sdk) for the full package list.
+Practical examples for the most common tasks when building on DecentralChain. These use the [`transactions`](https://www.npmjs.com/package/@decentralchain/transactions) and [`node-api-js`](https://www.npmjs.com/package/@decentralchain/node-api-js) packages — see [Client Libraries and SDK](02_client-libraries-and-sdk) for the full package list, including which of these names the monorepo is mid-renaming.
 
 Both packages are ESM-only and require Node.js 24+.
 
+All examples on this page target the public Testnet: node `https://testnet-node.decentralchain.io`, chain ID `!` (passed as `chainId: '!'` to the transaction builders) and Testnet addresses starting with `31`. For Mainnet, use a Mainnet node and `chainId: '?'`.
+
 ## Build, Sign, and Broadcast a Transaction
 
-This example builds a {ref}`Transfer transaction <02_decentralchain/03_transaction:Transfer Transaction>`, signs it with a seed phrase, and broadcasts it. `broadcast()` is exported by `@decentralchain/transactions` itself — you don't need `node-api-js` just to send a transaction.
+This example builds a {ref}`Transfer transaction <02_decentralchain/03_transaction:Transfer Transaction>`, signs it with a seed phrase, and broadcasts it. `broadcast()` is exported by `@decentralchain/transactions` itself — you don't need `node-api` just to send a transaction.
 
 ```bash
 npm install @decentralchain/transactions
@@ -25,8 +29,9 @@ const seed = 'your secret seed phrase here';
 // Build and sign a Transfer transaction
 const signedTx = transfer(
   {
-    recipient: '3P4H4E4DYpaMr84SpAfNNWwSZM5RqQNbmgN', // recipient address or alias
+    recipient: '31LAqgqVTLySNCPuYqgLAYhcgS76wvBaLr9', // recipient address or alias (Testnet)
     amount: 100_000_000,                               // 1 DCC (8 decimals, i.e. 10^8 Decentralites)
+    chainId: '!',                                      // Testnet chain ID
   },
   seed,
 );
@@ -56,6 +61,7 @@ const signedTx = issue(
     quantity: 1_000_000,
     decimals: 2,
     reissuable: true,
+    chainId: '!', // Testnet chain ID
   },
   seed,
 );
@@ -70,7 +76,7 @@ See {doc}`Token (Asset) <../02_decentralchain/02_token(asset)>` for the full mea
 Use `node-api-js` to query {ref}`account <02_decentralchain/01_account:Account>` balances and other node state without running your own indexer. `create(nodeUrl)` returns a client namespaced by API area (`addresses`, `assets`, `blocks`, `transactions`, `leasing`, and more):
 
 ```bash
-npm install @decentralchain/node-api-js
+npm install @decentralchain/node-api-js@2.0.1
 ```
 
 ```typescript
@@ -78,11 +84,25 @@ import { create } from '@decentralchain/node-api-js';
 
 const api = create('https://testnet-node.decentralchain.io');
 
-const { balance } = await api.addresses.fetchBalance('3P4H4E4DYpaMr84SpAfNNWwSZM5RqQNbmgN');
+const { balance } = await api.addresses.fetchBalance('31LAqgqVTLySNCPuYqgLAYhcgS76wvBaLr9');
 console.log('DCC balance (in Decentralites):', balance);
 
 const { height } = await api.blocks.fetchHeight();
 console.log('Current height:', height);
 ```
 
-For richer historical queries (asset search, DEX order history, aggregated transaction data) use [`data-service-client-js`](https://github.com/Decentral-America/data-service-client-js) against the data service API instead of querying a node directly.
+```{note}
+The monorepo is renaming this package to `@decentralchain/node-api`, but that name isn't published yet — install `node-api-js` (above) until it is.
+```
+
+For richer historical queries (asset search, DEX order history, aggregated transaction data) use [`data-service-client-js`](https://www.npmjs.com/package/@decentralchain/data-service-client-js) against the data service API instead of querying a node directly — see [Data Service API](06_data-service-api).
+
+## Signing with a Ledger Hardware Wallet
+
+[`@decentralchain/ledger`](https://github.com/Decentral-America/DecentralChain/tree/main/packages/sdk/ledger) talks to a Ledger Nano S or X running the DCC application. It derives public keys and signs on the device, so the private key never leaves the hardware. It supports WebUSB, Web Bluetooth and Node HID transports, and you install a Ledger transport package alongside it:
+
+```bash
+npm install @decentralchain/ledger @ledgerhq/hw-transport-webusb
+```
+
+The package README documents the current `DCCLedger` API for connecting, reading the user's address and signing a transaction; start from its Quick Start.

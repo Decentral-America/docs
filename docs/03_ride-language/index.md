@@ -30,4 +30,6 @@ Ride is a straightforward, developer-friendly functional programming language fo
 05_structures
 06_iterations-with-fold
 07_dapp-to-app-invocation
+08_stdlib-versions
+09_complexity-changes
 ```

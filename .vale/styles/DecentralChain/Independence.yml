@@ -1,0 +1,13 @@
+# Belt-and-suspenders alongside the CI grep in docs_checks.yml — catches
+# the same forbidden strings at authoring time in an editor, not just
+# at PR time.
+extends: existence
+message: "'%s' names a third-party project; this docs set must not reference one (see docs/_terminology.md)."
+level: error
+ignorecase: true
+tokens:
+  - waves
+  - wavelet
+  - '@waves/'
+  - keeper wallet
+  - wavesplatform

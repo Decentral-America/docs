@@ -1,6 +1,6 @@
 # Custom Blockchain
 
-Besides Mainnet and Testnet, the node software supports running a fully private, custom network — useful for local development or an isolated test environment. This is configured by setting the blockchain type to `CUSTOM` in the node configuration file, as seen in the `devnet` template shipped in [`network-defaults.conf`](https://github.com/Decentral-America/node-scala/blob/master/node/src/main/resources/network-defaults.conf):
+Besides Mainnet and Testnet, the node software supports running a fully private, custom network — useful for local development or an isolated test environment. This is configured by setting the blockchain type to `CUSTOM` in the node configuration file, as seen in the `devnet` template shipped in [`network-defaults.conf`](https://github.com/Decentral-America/node-scala/blob/main/node/src/main/resources/network-defaults.conf):
 
 ```text
 dcc {
