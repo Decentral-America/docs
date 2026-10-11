@@ -440,7 +440,7 @@ Checks if the data storage of a given account never contained any entries. Retur
 
 .. code-block:: none
 
- let addr = Address(base58'3N4iKL6ikwxiL7yNvWQmw7rg3wGna8uL6LU')
+ let addr = Address(base58'3DcceepTi3AyvwsT6zbnEwDxXigNm7hDvLz')
  isDataStorageUntouched(addr) # Returns false
 
 Blockchain Functions
@@ -475,7 +475,7 @@ For a description of the return value, see the :ref:`Address <03_ride-language/0
 
 .. code-block:: none
 
- let address = Address(base58'3NADPfTVhGvVvvRZuqQjhSU4trVqYHwnqjF')
+ let address = Address(base58'3Di7izBEeN8mXkKe6Kbk1FqMNduRjRqpU9y')
  addressFromRecipient(address)
 
 assetBalance(Address|Alias, ByteVector): Int
@@ -550,7 +550,7 @@ For a description of the return value, see the :ref:`BlockInfo <03_ride-language
 
  let x = match blockInfoByHeight(1234567) {
   case block:BlockInfo =>
-    block.generator.toString() # "3P38Z9aMhGKAWnCiyMW4T3PcHcRaTAmTztH"
+    block.generator.toString() # "3DP25WyCnDz3V9oNtmS4oQP5QWKPp6TX2g9"
   case _ => throw("Can't find block")
  }
 
@@ -651,7 +651,7 @@ Returns BLAKE2b-256 hash of the script assigned to a given account. Returns unit
 
 .. code-block:: none
 
- let addr = Address(base58'3MxBZbnN8Z8sbYjjL5N3oG5C8nWq9NMeCEm')
+ let addr = Address(base58'3DW5tvW75eM9CNdoWZZ475SUcZvRLWqUWH3')
  scriptHash(addr) # Returns base58'G6ihnWN5mMedauCgNa8TDrSKWACPJKGQyYagmMQhPuja'
 
 transactionHeightById(ByteVector): Int|Unit
@@ -1213,8 +1213,8 @@ Converts an array of bytes of an :ref:`address <02_decentralchain/01_account:Add
 
 .. code-block:: none
   
- let address = Address(base58'3NADPfTVhGvVvvRZuqQjhSU4trVqYHwnqjF')
- toString(address) # Returns "3NADPfTVhGvVvvRZuqQjhSU4trVqYHwnqjF"
+ let address = Address(base58'3Di7izBEeN8mXkKe6Kbk1FqMNduRjRqpU9y')
+ toString(address) # Returns "3Di7izBEeN8mXkKe6Kbk1FqMNduRjRqpU9y"
 
 toString(Boolean): String
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -1803,7 +1803,7 @@ For a description of the return value, see the :ref:`Address <03_ride-language/0
 
 .. code-block:: none
   
- let address = addressFromString("3NADPfTVhGvVvvRZuqQjhSU4trVqYHwnqjF")
+ let address = addressFromString("3Di7izBEeN8mXkKe6Kbk1FqMNduRjRqpU9y")
 
 addressFromStringValue(String): Address
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -1828,7 +1828,7 @@ For a description of the return value, see the :ref:`Address <03_ride-language/0
 
 .. code-block:: none
   
- let address = addressFromStringValue("3NADPfTVhGvVvvRZuqQjhSU4trVqYHwnqjF")
+ let address = addressFromStringValue("3Di7izBEeN8mXkKe6Kbk1FqMNduRjRqpU9y")
 
 fromBase16String(String): ByteVector
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

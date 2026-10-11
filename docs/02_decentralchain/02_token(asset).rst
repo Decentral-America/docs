@@ -169,7 +169,7 @@ Below is an example of JSON representation returned by the GET /assets/details/{
     "assetId": "DG2xFkPdDwKUoBkzGAhQtLpSGzfXLiCYPEzeKH2Ad24p",
     "issueHeight": 1806810,
     "issueTimestamp": 1574429393962,
-    "issuer": "3PC9BfRwJWWiw9AREE2B3eWzCks3CYtg4yo",
+    "issuer": "3DY2i2pnPUBbuWm59dxBQ1WTKekrZVuKvzn",
     "issuerPublicKey": "BRnVwSVctnV8pge5vRpsJdWnkjWEJspFb6QvrmZvu3Ht",
     "name": "USD-N",
     "description": "Neutrino USD",
