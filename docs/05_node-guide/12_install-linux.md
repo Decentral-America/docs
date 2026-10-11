@@ -46,7 +46,7 @@ sbt -Dnetwork=testnet packageAll # Testnet
 
 There is no single "fat" JAR; the node runs from its `lib/` directory through the launcher script.
 
-Building from source additionally requires [SBT](https://www.scala-sbt.org/1.0/docs/Installing-sbt-on-Linux.html). See the [node-scala README](https://github.com/Decentral-America/node-scala#readme) for integration-test setup and IDE configuration.
+Building from source additionally requires [SBT](https://www.scala-sbt.org/1.x/docs/Installing-sbt-on-Linux.html). See the [node-scala README](https://github.com/Decentral-America/node-scala#readme) for integration-test setup and IDE configuration.
 
 ## Install the DEB package you built
 

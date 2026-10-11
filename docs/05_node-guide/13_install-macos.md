@@ -47,7 +47,7 @@ sbt packageAll                   # Mainnet
 sbt -Dnetwork=testnet packageAll # Testnet
 ```
 
-Building from source additionally requires [SBT](https://www.scala-sbt.org/1.0/docs/Installing-sbt-on-Mac.html). See the [node-scala README](https://github.com/Decentral-America/node-scala#readme) for integration-test setup.
+Building from source additionally requires [SBT](https://www.scala-sbt.org/1.x/docs/Installing-sbt-on-Mac.html). See the [node-scala README](https://github.com/Decentral-America/node-scala#readme) for integration-test setup.
 
 ## Next steps
 
