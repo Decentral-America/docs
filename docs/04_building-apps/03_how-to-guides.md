@@ -69,6 +69,38 @@ await broadcast(signedTx, 'https://testnet-node.decentralchain.io');
 
 See {doc}`Token (Asset) <../02_decentralchain/02_token(asset)>` for the full meaning of each issue parameter.
 
+## Sending a Transaction That Depends on Another
+
+A node checks each new transaction against the state of the chain's blocks (including the current microblock), **not** against other transactions still waiting in its unconfirmed pool. If transaction B spends funds that transaction A delivers, broadcast B only after A is in a block. Broadcasting B while A is still unconfirmed fails with HTTP 400 and a `negative dcc balance` (or `negative asset balance`) error. A `200` response to A's broadcast only means the node accepted A into its pool. It does not mean A is in a block yet.
+
+`waitForTx` from `@decentralchain/transactions` polls the node until the transaction is in a block (on the Testnet this usually takes 1 to 4 seconds):
+
+```typescript
+import { transfer, broadcast, waitForTx, libs } from '@decentralchain/transactions';
+
+const nodeUrl = 'https://testnet-node.decentralchain.io';
+const funderSeed = 'funder secret seed phrase here';
+const newAccountSeed = 'new account secret seed phrase here';
+const newAccountAddress = libs.crypto.address(newAccountSeed, '!');
+
+// Parent: fund a new, empty account
+const parent = transfer(
+  { recipient: newAccountAddress, amount: 200_000_000, chainId: '!' },
+  funderSeed,
+);
+await broadcast(parent, nodeUrl);
+
+// Wait until the parent is in a block before spending what it delivered
+await waitForTx(parent.id, { apiBase: nodeUrl, timeout: 120_000 });
+
+// Child: spends the funds the parent delivered
+const child = transfer(
+  { recipient: '31LAqgqVTLySNCPuYqgLAYhcgS76wvBaLr9', amount: 100_000_000, chainId: '!' },
+  newAccountSeed,
+);
+await broadcast(child, nodeUrl);
+```
+
 ## Reading Blockchain Data
 
 Use `node-api-js` to query {ref}`account <02_decentralchain/01_account:Account>` balances and other node state without running your own indexer. `create(nodeUrl)` returns a client namespaced by API area (`addresses`, `assets`, `blocks`, `transactions`, `leasing`, and more):
