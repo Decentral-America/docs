@@ -138,7 +138,7 @@ curl -s http://127.0.0.1:6869/blocks/headers/at/1 | jq -r .id
 curl -s http://127.0.0.1:6869/blocks/height
 curl -s https://testnet-node.decentralchain.io/blocks/height
 
-curl -s http://127.0.0.1:6869/peers/connected | jq '.peers | length'   # 1 or more
+docker logs dcc-testnet 2>&1 | grep -c 'Accepted handshake'   # 1 or more: your node is connected to a peer
 ```
 
 Once the two heights match, pick a height a few blocks below the tip and compare the block IDs. They must be identical:
