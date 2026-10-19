@@ -1,36 +1,33 @@
 # Docs code samples
 
 Runnable versions of the code shown in the How-To Guides and elsewhere,
-kept here so they can be validated in CI instead of drifting silently
+kept here so they are validated in CI instead of drifting silently
 out of date with the SDK.
 
 ```{note}
-All three samples typecheck against packages actually published to npm
-today (checked 2026-09-28), not just against the monorepo's source —
-see the rename table in `docs/04_building-apps/02_client-libraries-and-sdk.md`
-before assuming a package name from the monorepo is installable; several
-are mid-rename (`node-api-js` → `node-api`,
-`data-service-client-js` → `data-service-client`) and one,
-`node-api-grpc`, has no published release under any name yet.
+`package.json` pins the exact versions the docs tell readers to install
+(see `docs/04_building-apps/02_client-libraries-and-sdk.md`). Several of
+them are on the npm `next` tag because the `latest` release fails to
+import on Node.js 24. `node-api-grpc` has no published release yet, so
+its page is not sampled here.
 ```
 
-## Two validation tiers
+## Validation tiers
 
-1. **Static (this CI job, every PR):** `npm install && npm run typecheck`.
-   Confirms every sample still compiles against the SDK's current
-   published types — catches renamed exports, changed signatures, and
-   the "verified against README X" comments going stale. No network,
-   no funded account, safe to run on every PR.
-2. **Live (not set up yet):** actually broadcasting to Testnet needs a
-   funded Testnet account held as a CI secret. The samples target the
-   public Testnet node `https://testnet-node.decentralchain.io` with
-   chain ID `!` (the old `nodes.decentralchain.io` hostname does not
-   resolve). Wiring up broadcast-level validation is separate follow-up
-   work, blocked on provisioning that funded account.
+1. **Static + runtime (every PR, `docs_checks.yml`):** `npm install`,
+   `npm run typecheck`, then a dynamic `import()` of every dependency on
+   Node.js 24. `docs/scripts/check_install_snippets.py` additionally runs
+   every `npm install` line in the docs exactly as written and checks
+   that every imported name exists. `docs/scripts/check_sdk_table.py`
+   installs and imports every version in the SDK table. No network
+   beyond npm, no funded account.
+2. **Drift (weekly, `sdk_drift.yml`):** `check_sdk_table.py --drift`
+   fails when an npm publish or dist-tag change makes the SDK table stale.
+3. **Live broadcast (not set up):** broadcasting to the Testnet needs a
+   funded Testnet account held as a CI secret. The samples target
+   `https://testnet-node.decentralchain.io` with chain ID `!`.
 
 ## Adding a sample
 
-Each file's top comment names the doc page it illustrates. Install
-whichever package name is actually live on npm today (check
-`npm view @decentralchain/<name> version`), even where the monorepo
-source uses a different, in-progress name — see the note above.
+Each file's top comment names the doc page it illustrates. Pin the same
+exact version the page's `npm install` line uses.

@@ -1,13 +1,11 @@
-% Code samples verified two ways: transfer/issue/broadcast typechecked
-% against the real published @decentralchain/transactions@5.0.0 and
-% node-api-js@2.0.1 (npm registry); everything else against
-% the current READMEs (2026-08). Package install commands use the names
-% actually live on npm — see the rename table in Client Libraries and
-% SDK before copying a name from the monorepo source instead.
+% Every `npm install` line and every `import ... from '@decentralchain/...'`
+% on this page is installed and imported on Node.js 24 by CI
+% (docs/scripts/check_install_snippets.py), and docs/_samples/*.ts typecheck
+% the full examples against the same pinned versions.
 
 # How-To Guides
 
-Practical examples for the most common tasks when building on DecentralChain. These use the [`transactions`](https://www.npmjs.com/package/@decentralchain/transactions) and [`node-api-js`](https://www.npmjs.com/package/@decentralchain/node-api-js) packages — see [Client Libraries and SDK](02_client-libraries-and-sdk) for the full package list, including which of these names the monorepo is mid-renaming.
+Practical examples for the most common tasks when building on DecentralChain. These use the [`transactions`](https://www.npmjs.com/package/@decentralchain/transactions) and [`node-api-js`](https://www.npmjs.com/package/@decentralchain/node-api-js) packages — see [Client Libraries and SDK](02_client-libraries-and-sdk) for the full package list and the exact version of each to install.
 
 Both packages are ESM-only and require Node.js 24+.
 
@@ -18,7 +16,7 @@ All examples on this page target the public Testnet: node `https://testnet-node.
 This example builds a {ref}`Transfer transaction <02_decentralchain/03_transaction:Transfer Transaction>`, signs it with a seed phrase, and broadcasts it. `broadcast()` is exported by `@decentralchain/transactions` itself — you don't need `node-api` just to send a transaction.
 
 ```bash
-npm install @decentralchain/transactions
+npm install @decentralchain/transactions@5.0.1
 ```
 
 ```typescript
@@ -102,7 +100,7 @@ For richer historical queries (asset search, DEX order history, aggregated trans
 [`@decentralchain/ledger`](https://github.com/Decentral-America/DecentralChain/tree/main/packages/sdk/ledger) talks to a Ledger Nano S or X running the DCC application. It derives public keys and signs on the device, so the private key never leaves the hardware. It supports WebUSB, Web Bluetooth and Node HID transports, and you install a Ledger transport package alongside it:
 
 ```bash
-npm install @decentralchain/ledger @ledgerhq/hw-transport-webusb
+npm install @decentralchain/ledger@5.1.0 @ledgerhq/hw-transport-webusb@6.35.0
 ```
 
 The package README documents the current `DCCLedger` API for connecting, reading the user's address and signing a transaction; start from its Quick Start.

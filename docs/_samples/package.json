@@ -9,8 +9,10 @@
     "typescript": "^5.7.0"
   },
   "dependencies": {
-    "@decentralchain/transactions": "^5.0.0",
+    "@decentralchain/transactions": "5.0.1",
     "@decentralchain/node-api-js": "2.0.1",
-    "@decentralchain/data-service-client-js": "^4.2.0"
+    "@decentralchain/data-service-client-js": "4.2.0",
+    "@decentralchain/signer": "2.0.1",
+    "@decentralchain/cubensis-connect-provider": "1.0.1"
   }
 }

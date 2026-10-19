@@ -34,14 +34,13 @@ jobs:
         fi
 
   samples_typecheck:
-    # Static-only tier: confirms docs/_samples/*.ts still compiles against
-    # each dependency's currently *published* npm version. Does not
-    # broadcast anything — no network beyond npm, no funded account. See
-    # docs/_samples/README.md for the samples that are excluded because
-    # their package isn't published yet, and for the live/broadcast tier
-    # this does not attempt.
+    # Confirms docs/_samples/*.ts compiles against the pinned, *published*
+    # npm versions, that those packages load at runtime on Node.js 24, and
+    # that every `npm install` line and SDK-table version in the docs
+    # installs and imports. Does not broadcast anything: no network beyond
+    # npm, no funded account. See docs/_samples/README.md.
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 25
 
     steps:
     - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
@@ -56,6 +55,19 @@ jobs:
     - name: Typecheck samples against published packages
       working-directory: docs/_samples
       run: npm run typecheck
+
+    - name: Samples import at runtime on Node.js 24
+      working-directory: docs/_samples
+      run: |
+        for pkg in $(node -p "Object.keys(require('./package.json').dependencies).join(' ')"); do
+          node --input-type=module -e "await import('${pkg}'); console.log('ok ${pkg}')"
+        done
+
+    - name: Every documented npm install line installs and imports on Node.js 24
+      run: python3 docs/scripts/check_install_snippets.py
+
+    - name: Every version in the SDK package table installs and imports on Node.js 24
+      run: python3 docs/scripts/check_sdk_table.py
 
   vale:
     # House-vocabulary lint from docs/_terminology.md, operationalised as
