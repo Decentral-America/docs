@@ -3,7 +3,7 @@
 A node reads a [HOCON](https://github.com/lightbend/config/blob/master/HOCON.md) configuration file whose settings live under the `dcc` key. Built-in defaults (`application.conf` and `network-defaults.conf`) are merged with your file, so your file only needs the settings you want to change.
 
 ```{note}
-Verified against node-scala v1.7.0. Do not use the shipped `application.conf` as your own config file; it is a defaults file.
+Verified against node-scala v1.8.0. Do not use the shipped `application.conf` as your own config file; it is a defaults file.
 ```
 
 ## Environment variables (Docker)
@@ -55,6 +55,9 @@ The public DecentralChain Testnet (`testnet-node.decentralchain.io`) is a custom
 | `dcc.utx.max-size` | `100000` | Max unconfirmed transactions held |
 | `dcc.network.max-inbound-connections` | `100` | Inbound peer limit |
 | `dcc.network.max-outbound-connections` | `100` | Outbound peer limit |
+| `dcc.hotstuff.authoritative` | `false` | Testnet-only: lets a HotStuff commit certificate raise the finalized height. Requires `enabled = true`. Never set it on Mainnet |
+| `dcc.miner.self-commit-to-generation` | `no` | The node's miner submits its own Commit To Generation transaction for each generation period |
+| `dcc.network.peer-stall-threshold` | `900` | Ticks (about 1 s each) of peer-reconnection stall before the node clears suspensions and redials |
 | `dcc.hotstuff.enabled` | `false` | HotStuff fast-finality engine. Leave it off on Mainnet. The public Testnet's own nodes run it enabled and authoritative (see [Features and Activation](10_features-and-activation)) |
 
 ## API key

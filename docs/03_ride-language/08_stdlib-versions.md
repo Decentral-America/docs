@@ -1,10 +1,10 @@
 # Standard Library Versions
 
 ```{note}
-Verified against node-scala v1.7.0 (`StdLibVersion.scala` and `RideVersionProvider.scala`).
+Verified against node-scala v1.8.0 (`StdLibVersion.scala` and `RideVersionProvider.scala`).
 ```
 
-The `{-# STDLIB_VERSION n #-}` directive selects the version of the Ride standard library a script is compiled against. The compiler in node v1.7.0 supports versions 1 to 9; the default when the directive is omitted is 3.
+The `{-# STDLIB_VERSION n #-}` directive selects the version of the Ride standard library a script is compiled against. The compiler in node v1.8.0 supports versions 1 to 9; the default when the directive is omitted is 3.
 
 A script can only use a version once the network has activated the matching {doc}`blockchain feature <../05_node-guide/10_features-and-activation>`:
 

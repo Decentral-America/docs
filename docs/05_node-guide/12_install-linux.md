@@ -1,7 +1,7 @@
 # Installing on Linux
 
 ```{note}
-Verified against node-scala v1.7.0's `README.md` and `build.sbt`. Not run on a clean machine as part of this documentation pass — if a step doesn't match what you see, please report it.
+Verified against node-scala v1.8.0's `README.md` and `build.sbt`. Not run on a clean machine as part of this documentation pass — if a step doesn't match what you see, please report it.
 ```
 
 For most operators, [Docker](04_install-docker) is simpler than a bare-metal install. Use this page if you need to run the node directly on the host, for example to package it for your own init system.

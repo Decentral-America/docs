@@ -1,7 +1,7 @@
 # Logging
 
 ```{note}
-Verified against node-scala v1.7.0.
+Verified against node-scala v1.8.0.
 ```
 
 ## Docker

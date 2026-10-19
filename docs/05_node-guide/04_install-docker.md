@@ -3,7 +3,7 @@
 Docker is the recommended way to run a DecentralChain node. The image is built from `docker/Dockerfile` in [node-scala](https://github.com/Decentral-America/node-scala) and runs the node as the unprivileged user `dcc`.
 
 ```{note}
-Verified against node-scala v1.7.0.
+Verified against node-scala v1.8.0.
 ```
 
 ## Requirements

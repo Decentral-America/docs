@@ -1,7 +1,7 @@
 # Node Wallet and Block Generation
 
 ```{note}
-Verified against node-scala v1.7.0.
+Verified against node-scala v1.8.0.
 ```
 
 ## The node wallet

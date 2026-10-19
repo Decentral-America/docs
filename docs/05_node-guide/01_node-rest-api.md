@@ -27,7 +27,7 @@ If you're running your own node, point the client at its own host and port inste
 A node listens on port `6869` (`dcc.rest-api.port`) and, by default, only on `127.0.0.1`. The node bundles an OpenAPI description (`openapi.yaml`) and Swagger UI; open the node's API root in a browser to explore every endpoint.
 
 ```{note}
-Verified against node-scala v1.7.0.
+Verified against node-scala v1.8.0.
 ```
 
 ## Authentication
