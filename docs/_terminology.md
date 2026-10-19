@@ -13,4 +13,4 @@ Canonical names. CI fails on the forbidden strings.
 | Chain IDs: Mainnet `?` (63), Testnet `!` (33) | any other chain ID |
 | Address prefixes: Mainnet `3D`, Testnet `31` | any other prefix |
 
-Baseline: **node-scala v1.7.0**. Every page that states protocol facts should say "Verified against node-scala v1.7.0" (or the version it was checked against).
+Baseline: **node-scala v1.8.0**. Every page that states protocol facts should say "Verified against node-scala v1.8.0" (or the version it was checked against).

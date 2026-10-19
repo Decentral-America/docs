@@ -1,7 +1,7 @@
 # Installing on Windows
 
 ```{note}
-Verified against node-scala v1.7.0's `README.md`. Not run on a clean machine as part of this documentation pass — if a step doesn't match what you see, please report it.
+Verified against node-scala v1.8.0's `README.md`. Not run on a clean machine as part of this documentation pass — if a step doesn't match what you see, please report it.
 ```
 
 [Docker](04_install-docker) (via Docker Desktop) is the simplest way to run a node on Windows; this page is for running it directly.

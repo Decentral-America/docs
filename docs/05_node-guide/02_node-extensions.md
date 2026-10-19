@@ -9,7 +9,7 @@ The node ships a `grpc-server` module (built alongside the core node in [node-sc
 If you use your own node with the gRPC server enabled, you can send it a `SignedTransaction` object directly instead of composing a JSON transaction for the REST API's `POST /transactions/broadcast` method. See [`@decentralchain/protobuf-serialization`](https://www.npmjs.com/package/@decentralchain/protobuf-serialization) (published on npm today; the monorepo is renaming it to `protobuf-schemas`) for building and parsing these binary structures from JavaScript/TypeScript, or [Node gRPC API](../04_building-apps/05_node-grpc) for the typed client.
 
 ```{note}
-Verified against node-scala v1.7.0 (`grpc-server/src/main/resources/application.conf`).
+Verified against node-scala v1.8.0 (`grpc-server/src/main/resources/application.conf`).
 ```
 
 The module listens on two ports:

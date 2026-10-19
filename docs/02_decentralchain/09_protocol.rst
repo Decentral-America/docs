@@ -483,6 +483,6 @@ Transaction could be inserted in unconfirmed transactions pool then:
 Finality
 ========
 
-Besides the probabilistic finality every proof-of-stake chain has, node v1.7.0 implements **Deterministic Finality** (blockchain feature 25). Generators register a BLS key on-chain with a ``CommitToGenerationTransaction`` for each generation period. A block is finalized once generators holding at least :math:`2/3` of the committed stake have endorsed it, and the finalized height is exposed by the node REST API (``/blocks/height/finalized``). Whether finality is active on a given network depends on feature activation — check ``/activation/status``.
+Besides the probabilistic finality every proof-of-stake chain has, node v1.8.0 implements **Deterministic Finality** (blockchain feature 25). Generators register a BLS key on-chain with a ``CommitToGenerationTransaction`` for each generation period. A block is finalized once generators holding at least :math:`2/3` of the committed stake have endorsed it, and the finalized height is exposed by the node REST API (``/blocks/height/finalized``). Whether finality is active on a given network depends on feature activation — check ``/activation/status``.
 
 The release also contains an experimental HotStuff BFT fast-finality engine. It is disabled by default (``dcc.hotstuff.enabled = false``), its design is still being reworked, and it is not part of the supported protocol. Finality never halts block production: if voting stalls, the chain keeps growing.

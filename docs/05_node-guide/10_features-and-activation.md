@@ -1,7 +1,7 @@
 # Features and Activation
 
 ```{note}
-Verified against node-scala v1.7.0.
+Verified against node-scala v1.8.0.
 ```
 
 Protocol changes ship as numbered **blockchain features**. A feature is not active just because a node supports it: it must be activated on the network, either by a generator vote or because the network defaults pre-activate it.
@@ -24,7 +24,7 @@ The response includes `height`, `votingInterval`, `votingThreshold`, `nextCheck`
 
 By default `dcc.features.auto-shutdown-on-unsupported-feature = yes`: if the network activates a feature your node does not know, the node shuts down rather than follow a chain it cannot validate. The fix is to [upgrade](07_upgrade). Generators can list the features they vote for in `dcc.features.supported`.
 
-## Feature list in v1.7.0
+## Feature list in v1.8.0
 
 | ID | Feature |
 |---|---|
@@ -53,12 +53,12 @@ By default `dcc.features.auto-shutdown-on-unsupported-feature = yes`: if the net
 | 23 | Boost block reward |
 | 24 | `ecrecover` fix |
 | 25 | Deterministic finality and Ride V9 |
-| 26 | Continuation transaction |
-| 27 | Lease expiration |
-| 28 | Modern Groth16 verifier |
+| 26 | Adjusted block reward distribution |
+| 27 | Continuation transaction (not exposed) |
+| 28 | Lease expiration (not exposed) |
 
 ```{important}
-From v1.8.0 (running on the live Testnet) the numbering of the last features changed: **26 = Adjusted Block Reward Distribution**, 27 = Continuation transaction, 28 = Lease expiration, and the Groth16 verifier is no longer a feature. Only feature 26 is votable/reported in `/activation/status`; 27 and 28 are defined in the source but not exposed.
+Since v1.8.0 the numbering of the last features differs from v1.7.0: **26 = Adjusted Block Reward Distribution**, 27 = Continuation transaction, 28 = Lease expiration, and the Groth16 verifier is no longer a feature. Only feature 26 is votable and reported in `/activation/status`; 27 and 28 are defined in the source but not exposed.
 ```
 
 Which of these are active on a given network is a runtime fact — read it from `/activation/status` rather than from this table.
