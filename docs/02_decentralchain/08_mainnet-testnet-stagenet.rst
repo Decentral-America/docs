@@ -25,13 +25,13 @@ Chain ID is a symbol that is passed over a network during a handshake and allows
 Network Parameters
 ==================
 
-.. list-table:: Parameters shipped in node v1.7.0 (``network-defaults.conf``)
+.. list-table:: Network parameters
   :header-rows: 1
   :widths: 2 2 2
 
   * - Parameter
     - Mainnet
-    - Testnet
+    - Public Testnet
   * - Chain ID
     - ``?`` (63)
     - ``!`` (33)
@@ -40,29 +40,25 @@ Network Parameters
     - 31
   * - P2P port
     - 6868
-    - 6863
+    - 6868
   * - REST API port
     - 6869
     - 6869
-  * - Minimum peer connections
-    - 5
-    - 5
+  * - Target block time
+    - 60 seconds
+    - 30 seconds
 
 Stagenet has chain ID ``S`` (83) and a built-in profile in the node (``dcc.defaults.blockchain.type = STAGENET``, P2P port 6862 in ``network-defaults.conf``), but there is no public Stagenet network yet.
 
 .. note::
 
-   The public DecentralChain Testnet (``testnet-node.decentralchain.io``) is a custom chain (``dcc.blockchain.type = CUSTOM``, chain ID ``!``) whose nodes use P2P port 6868, not the built-in Testnet profile shown above. A node started with the built-in ``testnet`` profile (``DCC_NETWORK=testnet``: port 6863 and its own known peers) will not join it.
-
-The default known peers for each network are listed in ``network-defaults.conf`` in the `node-scala <https://github.com/Decentral-America/node-scala>`_ repository.
+   The public DecentralChain Testnet (``testnet-node.decentralchain.io``) is a custom chain (``dcc.blockchain.type = CUSTOM``, chain ID ``!``). The node's built-in ``testnet`` profile (``DCC_NETWORK=testnet`` without a config file) is a different network and will not join it. To run a node on the public Testnet, follow :doc:`Join the Public Testnet <../05_node-guide/15_join-testnet>`, which gives the genesis, the configuration file and the peer to connect to.
 
 Tools
 =====
 
 API of Pool of Public Nodes
 ---------------------------
-
-Chain ID is a symbol that is passed over a network during a handshake and allows nodes not to connect to the nodes of other networks. The chain ID is used while building account addresses, therefore, an address on one blockchain network cannot be used on another network. The chain ID is also indicated in transactions so it is impossible to move transactions between different blockchain networks.
 
 .. csv-table:: API of Pool of Public Nodes
   :file: ../_static/02_decentralchain/tables/025_API-of-Pool-of-Public-Nodes.csv 
@@ -93,7 +89,7 @@ Decentral.Exchange
 API of Decentral.Exchange Matcher
 ---------------------------------
 
-The addresses for order sending and market data obtaining are as follows:
+The addresses for order sending and market data obtaining are as follows. The Testnet matcher's public key is ``BEtB5b2kX8Yge4sb5RRbTUqd5Va8Ah8PhphowcW31z6Y`` and its address is ``31VMNVAvVh67dPZ41nMnYZvhoZFW7wwPrmq``.
 
 .. csv-table:: API of Decentral.Exchange Matcher
   :file: ../_static/02_decentralchain/tables/028_API-of-Decentral.Exchange-Matcher.csv 
