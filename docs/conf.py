@@ -48,9 +48,6 @@ extensions = [
     'sphinx.ext.mathjax',
     'sphinx_design',
     'sphinx_copybutton',
-    # For extension examples and demos
-    'ablog',
-    'jupyter_sphinx',
     'matplotlib.sphinxext.plot_directive',
     'myst_nb',
     #'nbsphinx',  # Uncomment and comment-out MyST-NB for local testing purposes.
