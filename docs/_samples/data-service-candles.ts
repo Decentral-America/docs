@@ -2,12 +2,12 @@
 import DataServiceClient from '@decentralchain/data-service-client-js';
 
 const client = new DataServiceClient({
-  rootUrl: 'https://<your-data-service-host>/v0',
+  rootUrl: 'https://testnet-data-service.decentralchain.io/v0',
 });
 
 const amountAssetId = 'DCC';
-const priceAssetId = '8LQW8f7P5d5PZM7GtZEBgaqRPGSzS3DfPuiXrURJ4AJS';
-const matcherAddress = 'MATCHER_ADDRESS';
+const priceAssetId = '<price asset ID>'; // any asset traded on the matcher
+const matcherAddress = '31VMNVAvVh67dPZ41nMnYZvhoZFW7wwPrmq'; // Testnet matcher
 
 const { data: candles } = await client.getCandles(amountAssetId, priceAssetId, {
   timeStart: '2026-01-01',
