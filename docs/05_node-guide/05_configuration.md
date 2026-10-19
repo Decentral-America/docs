@@ -55,7 +55,7 @@ The public DecentralChain Testnet (`testnet-node.decentralchain.io`) is a custom
 | `dcc.utx.max-size` | `100000` | Max unconfirmed transactions held |
 | `dcc.network.max-inbound-connections` | `100` | Inbound peer limit |
 | `dcc.network.max-outbound-connections` | `100` | Outbound peer limit |
-| `dcc.hotstuff.enabled` | `false` | Experimental fast-finality engine — leave off (see [Features and Activation](10_features-and-activation)) |
+| `dcc.hotstuff.enabled` | `false` | HotStuff fast-finality engine. Leave it off on Mainnet. The public Testnet's own nodes run it enabled and authoritative (see [Features and Activation](10_features-and-activation)) |
 
 ## API key
 
