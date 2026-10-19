@@ -7,7 +7,7 @@ Verified against node-scala v1.7.0.
 | Symptom | Likely cause | What to do |
 |---|---|---|
 | `curl localhost:6869` fails from the host while the container is healthy | REST API bound to the container's loopback | Set `DCC_REST_API_BIND=0.0.0.0` and publish `-p 127.0.0.1:6869:6869` |
-| Node stays behind after hours | Still in initial sync, or few peers | Check `/node/status` and `/peers/connected`; open inbound port 6868 (Testnet 6863) |
+| Node stays behind after hours | Still in initial sync, or few peers | Check `/node/status` and `/peers/connected`; open inbound port 6868 |
 | No peers | Firewall, wrong network | Confirm `DCC_NETWORK`; add a peer with `POST /peers/connect` |
 | Node exits shortly after start | JVM out of memory (`ExitOnOutOfMemoryError`) | Raise `DCC_HEAP_SIZE` |
 | Node stops after a network activation | Unsupported feature, auto-shutdown | [Upgrade](07_upgrade) the node |

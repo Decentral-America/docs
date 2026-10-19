@@ -21,8 +21,10 @@ The node implementation lives at [Decentral-America/node-scala](https://github.c
 
 ```bash
 sbt packageAll                   # Mainnet
-sbt -Dnetwork=testnet packageAll # Testnet
+sbt -Dnetwork=testnet packageAll # built-in testnet profile, NOT the public Testnet
 ```
+
+To run a node on the public Testnet, use the Docker image with the configuration file in [Join the Public Testnet](15_join-testnet).
 
 ## Configuration
 
@@ -46,4 +48,5 @@ Network-specific defaults are defined in [`network-defaults.conf`](https://githu
 12_install-linux
 13_install-macos
 14_install-windows
+15_join-testnet
 ```

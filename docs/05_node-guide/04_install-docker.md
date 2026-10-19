@@ -30,10 +30,12 @@ All images live at `ghcr.io/decentral-america/node-scala`. Confirmed live: `ghcr
 
 | Port | Purpose | Exposure |
 |---|---|---|
-| `6868` | P2P, Mainnet (Testnet uses `6863`) | Open to the internet so peers can reach you |
+| `6868` | P2P (Mainnet and the public Testnet) | Open to the internet so peers can reach you |
 | `6869` | REST API | Keep private: bind to localhost, or place behind a reverse proxy |
 
 ## Quick start
+
+The examples below run a Mainnet node. To run a node on the public Testnet, follow [Join the Public Testnet](15_join-testnet) instead: it needs a configuration file, not just `DCC_NETWORK=testnet`.
 
 ```bash
 docker run -d \
