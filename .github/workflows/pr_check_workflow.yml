@@ -34,10 +34,15 @@ jobs:
     - name: Build docs (warnings as errors)
       run: sphinx-build -W -b html docs/ /tmp/docs-pr-build
 
+    - name: Every local asset a page references exists in the build
+      run: python3 docs/scripts/check_static_refs.py /tmp/docs-pr-build
+
+    - name: Site root redirects to /en/main/
+      run: bash docs/scripts/test_root_redirect.sh
+
   link_check:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
-    continue-on-error: true
+    timeout-minutes: 20
 
     steps:
     - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
@@ -53,5 +58,9 @@ jobs:
         python3 -m pip install --upgrade pip
         python3 -m pip install -r docs/requirements.txt
 
-    - name: Check external links
+    - name: Check external links (fails on any broken link)
       run: sphinx-build -b linkcheck docs/ /tmp/docs-pr-linkcheck
+
+    - name: Show broken links
+      if: failure()
+      run: grep -E '\[broken\]' /tmp/docs-pr-linkcheck/output.txt || true
