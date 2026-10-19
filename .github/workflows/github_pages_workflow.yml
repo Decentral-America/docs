@@ -40,6 +40,17 @@ jobs:
       run: "docs/buildDocs.sh"
       shell: bash
 
+    - name: Built site root redirects to /en/main/
+      env:
+        DOCROOT: ${{ steps.build.outputs.docroot }}
+      run: |
+        grep -q "content=\"0; url='/en/main/'\"" "${DOCROOT}/index.html" || { cat "${DOCROOT}/index.html"; exit 1; }
+
+    - name: Every local asset a page references exists in the built site
+      env:
+        DOCROOT: ${{ steps.build.outputs.docroot }}
+      run: python3 docs/scripts/check_static_refs.py "${DOCROOT}/en/main"
+
     - name: Upload Pages artifact
       uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9  # v5.0.0
       with:
@@ -58,3 +69,23 @@ jobs:
     - name: Deploy to GitHub Pages
       id: deployment
       uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346  # v5.0.1
+
+  verify_live_job:
+    # The Pages CDN can serve the previous build for a few minutes; retry for up to 15 minutes.
+    needs: deploy_pages_job
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+    - name: Published root redirects to /en/main/ and the English site is up
+      run: |
+        for attempt in $(seq 1 30); do
+          if curl -fsS https://docs.decentralchain.io/ | grep -q "url='/en/main/'" \
+             && [ "$(curl -s -o /dev/null -w '%{http_code}' https://docs.decentralchain.io/en/main/)" = "200" ]; then
+            echo "live site OK (attempt ${attempt})"; exit 0
+          fi
+          sleep 30
+        done
+        echo "::error::https://docs.decentralchain.io/ does not redirect to /en/main/ after 15 minutes"
+        curl -sS https://docs.decentralchain.io/ || true
+        exit 1

@@ -24,15 +24,15 @@ To use your own file, mount it at `/etc/dcc/dcc.conf`. The entrypoint loads it a
 
 ## Ports and network defaults
 
-| Network | P2P port | Minimum connections |
+| Network | P2P port | Peer to connect to |
 |---|---|---|
-| Mainnet | 6868 | 5 |
-| Testnet | 6863 | 5 |
+| Mainnet | 6868 | not published yet |
+| Public Testnet | 6868 | `50.116.30.244:6868` |
 
-The REST API listens on port `6869` on every network. Known peers for each network ship in `network-defaults.conf`.
+The REST API listens on port `6869` on every network.
 
 ```{note}
-The public DecentralChain Testnet (`testnet-node.decentralchain.io`) is a custom chain (`dcc.blockchain.type = CUSTOM`, chain ID `!`) whose nodes use P2P port `6868`. The built-in `testnet` profile (`DCC_NETWORK=testnet`) uses port `6863` and its own known peers, so a node started with it will not join the public Testnet; use a custom config matching the Testnet's genesis and peers instead.
+The public DecentralChain Testnet (`testnet-node.decentralchain.io`) is a custom chain (`dcc.blockchain.type = CUSTOM`, chain ID `!`). The built-in `testnet` profile (`DCC_NETWORK=testnet` without a config file) is a different network and will not join it. [Join the Public Testnet](15_join-testnet) gives the complete configuration file.
 ```
 
 ## Commonly changed settings
@@ -55,7 +55,7 @@ The public DecentralChain Testnet (`testnet-node.decentralchain.io`) is a custom
 | `dcc.utx.max-size` | `100000` | Max unconfirmed transactions held |
 | `dcc.network.max-inbound-connections` | `100` | Inbound peer limit |
 | `dcc.network.max-outbound-connections` | `100` | Outbound peer limit |
-| `dcc.hotstuff.enabled` | `false` | Experimental fast-finality engine — leave off (see [Features and Activation](10_features-and-activation)) |
+| `dcc.hotstuff.enabled` | `false` | HotStuff fast-finality engine. Leave it off on Mainnet. The public Testnet's own nodes run it enabled and authoritative (see [Features and Activation](10_features-and-activation)) |
 
 ## API key
 

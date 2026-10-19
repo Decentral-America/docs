@@ -1,0 +1,30 @@
+name: SDK Version Drift
+
+# Weekly: fail when an npm publish or dist-tag change makes the SDK package
+# table in docs/04_building-apps/02_client-libraries-and-sdk.md stale, so the
+# docs get updated instead of drifting silently.
+
+on:
+  schedule:
+    - cron: '23 7 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  sdk_drift:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+    - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
+    - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020  # v7.0.0
+      with:
+        node-version: '24'
+
+    - name: Table matches npm dist-tags, and every pinned version installs and imports
+      run: python3 docs/scripts/check_sdk_table.py --drift
+
+    - name: Every documented npm install line still installs and imports
+      run: python3 docs/scripts/check_install_snippets.py

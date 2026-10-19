@@ -65,4 +65,8 @@ Which of these are active on a given network is a runtime fact — read it from 
 
 ## Finality and HotStuff
 
-Finality in v1.7.0 is provided by **Deterministic Finality (feature 25)**. The release also contains an experimental HotStuff BFT fast-finality engine, controlled by `dcc.hotstuff.enabled`. It is **off by default**, its design documents describe rework still pending, and it is gated on an external audit before any Mainnet use. Do not enable it on a production node. When it is enabled, `/node/status` additionally reports `hotStuffFinalizedHeight`.
+Finality is provided by **Deterministic Finality (feature 25)**. The node also contains a HotStuff BFT fast-finality engine, controlled by `dcc.hotstuff.enabled`. It is **off by default** and gated on an external audit before any Mainnet use. Do not enable it on a Mainnet node. When it is enabled, `/node/status` additionally reports `hotStuffFinalizedHeight`.
+
+```{note}
+**On the public Testnet, HotStuff is enabled and authoritative.** The Testnet's own nodes run `dcc.hotstuff.enabled = true` and `dcc.hotstuff.authoritative = true`, so a HotStuff commit certificate raises the finalized height that `/blocks/height/finalized` reports. That is why Testnet finality runs only a few blocks behind the tip (`hotStuffFinalizedHeight` in `/node/status`). Mainnet does not run HotStuff. Integrators should not expect Testnet finality latency on Mainnet.
+```

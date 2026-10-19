@@ -3,61 +3,61 @@
 DecentralChain's SDK is developed in one open-source monorepo, [Decentral-America/DecentralChain](https://github.com/Decentral-America/DecentralChain), released under the MIT license. The TypeScript packages are published to npm under the `@decentralchain` scope; the Java SDK is published to Maven Central.
 
 ```{note}
-Publication status and published names/versions checked directly against the npm registry (2026-09-28), by installing each package and reading its actual exports — not assumed from a README. The monorepo's `main` branch is ahead of what's released: several packages are being renamed there (dropping a `-js`/`-serialization` suffix, or splitting `ts-types` into `types`) and a few are new. **This page follows what `npm install` actually fetches today**, not the in-progress monorepo names, and calls out the rename explicitly wherever one is pending. All packages are ESM-only and require Node.js 24 or later.
+Every `npm install` line in these docs pins an exact version that CI installs and imports on Node.js 24 on every pull request (`docs/scripts/check_install_snippets.py`). Several packages have a newer working release on the npm `next` tag than on `latest`; until those are promoted, **install the exact versions shown here**, not a bare package name. All packages are ESM-only and require Node.js 24 or later.
 ```
 
 ```{warning}
-`@decentralchain/node-api-grpc` is the only package with **no published npm release at all** yet — genuinely new, not a rename. Everything else below has something installable today, even where the monorepo is mid-rename.
+`@decentralchain/node-api-grpc` has **no published npm release** yet. See [Node gRPC API](05_node-grpc).
 ```
 
 ## Which package do I need?
 
-| I want to… | Use (current npm name) |
+| I want to… | Install |
 |---|---|
-| Build, sign and broadcast transactions | [`@decentralchain/transactions`](https://www.npmjs.com/package/@decentralchain/transactions) |
-| Read chain state from a node (REST) | [`@decentralchain/node-api-js`](https://www.npmjs.com/package/@decentralchain/node-api-js) — being renamed to `node-api` in the monorepo; that name isn't published yet |
-| Read chain data over gRPC / subscribe to blockchain updates | `@decentralchain/node-api-grpc` — ⚠️ not on npm at all yet; see [Node gRPC API](05_node-grpc) |
-| Let browser users sign with their own wallet | [`@decentralchain/signer`](https://www.npmjs.com/package/@decentralchain/signer) + [`@decentralchain/cubensis-connect-provider`](https://www.npmjs.com/package/@decentralchain/cubensis-connect-provider) |
-| Sign with a Ledger hardware wallet | [`@decentralchain/ledger`](https://www.npmjs.com/package/@decentralchain/ledger) |
-| Query the data service (asset search, history, DEX data) | [`@decentralchain/data-service-client-js`](https://www.npmjs.com/package/@decentralchain/data-service-client-js) — being renamed to `data-service-client`; see [Data Service API](06_data-service-api) |
-| Compile or decompile Ride | [`@decentralchain/ride`](https://www.npmjs.com/package/@decentralchain/ride) |
-| Work from Java or the JVM | [`io.decentralchain:java-sdk`](https://central.sonatype.com/artifact/io.decentralchain/java-sdk) |
+| Build, sign and broadcast transactions | `@decentralchain/transactions@5.0.1` |
+| Read chain state from a node (REST) | `@decentralchain/node-api-js@2.0.1` |
+| Read chain data over gRPC / subscribe to blockchain updates | not published yet; see [Node gRPC API](05_node-grpc) |
+| Let browser users sign with their own wallet | `@decentralchain/signer@2.0.1` + `@decentralchain/cubensis-connect-provider@1.0.1` |
+| Sign with a Ledger hardware wallet | `@decentralchain/ledger@5.1.0` |
+| Query the data service (asset search, history, DEX data) | `@decentralchain/data-service-client-js@4.2.0`; see [Data Service API](06_data-service-api) |
+| Compile Ride to a script | the node's `POST /utils/script/compileCode` endpoint (the `@decentralchain/ride` npm package is not installable yet, see below) |
+| Work from Java or the JVM | `io.decentralchain:java-sdk:2.0.1` |
 
 ## TypeScript packages
 
-Versions are each package's `latest` tag on npm, not the monorepo's (ahead-of-release) version — check `npm view @decentralchain/<package> version` before pinning one, this table will drift.
+The **Install** column is the version these docs are tested against. `latest` and `next` are the npm dist-tags as of 2026-10-18; check `npm view @decentralchain/<package> dist-tags` for the current values. Where `latest` is older than **Install**, the `latest` release is the one that fails to import on Node.js 24 or predates the API shown in these docs.
 
-| npm package (install this) | Version | Monorepo name, if renamed | Description |
-|---|---|---|---|
-| `transactions` | 5.0.0 | — | Build and sign (including multi-sign) transactions and broadcast them |
-| `node-api-js` | 2.0.1 (`next` tag; `latest` is still 1.2.5-beta.18 — install `@decentralchain/node-api-js@2.0.1`) | `node-api` | Typed client for the node REST API |
-| `node-api-grpc` | ❌ not published | — | gRPC client: accounts, assets, blockchain, blocks, transactions, blockchain updates |
-| `data-service-client-js` | 4.2.0 | `data-service-client` | Data service client |
-| `signer` | 1.1.0-beta | — | Signing orchestrator that delegates to a provider so keys never reach your app |
-| `cubensis-connect-provider` | 1.0.0 | — | Provider for the Cubensis Connect browser wallet |
-| `cubensis-connect-types` | 1.0.0 | — | Type definitions for the Cubensis Connect extension API |
-| `ledger` | 5.1.0 | — | Ledger Nano S/X integration (WebUSB, Web Bluetooth, Node HID) |
-| `ts-lib-crypto` | 2.0.0 | — | Key generation, signatures, hashing, encoding and encryption primitives |
-| `crypto` | 1.0.1 | — | Async WASM crypto: Ed25519/X25519 keys, signing, AES, seed management |
-| `marshall` | 0.14.0 | — | Convert transactions and orders between JS objects, binary and JSON |
-| `bignumber` | 1.2.0 | — | Arbitrary-precision numbers for amounts and fees |
-| `parse-json-bignumber` | 2.0.0 | — | JSON parser that preserves large-number precision |
-| `ts-types` | 2.0.0 | `types` | Shared TypeScript type definitions |
-| `data-entities` | 3.0.0 | — | Domain classes such as assets and money |
-| `assets-pairs-order` | 4.0.0 | — | Canonical DEX asset-pair ordering |
-| `oracle-data` | 1.0.0 | — | Parse, encode and validate oracle data |
-| `money-like-to-node` | 1.0.0 | — | Convert human-readable money objects to node API format |
-| `signature-adapter` | 6.1.7 | — | Multi-provider transaction signing adapter |
-| `browser-bus` | 1.0.0 | — | Cross-window messaging for dApps and wallets |
-| `protobuf-serialization` | 2.0.0 | `protobuf-schemas` | Protocol Buffers schemas and bindings |
-| `ride` | 2.3.1 | — | JavaScript wrapper around the Ride compiler |
+| npm package | Install | `latest` | `next` | Description |
+|---|---|---|---|---|
+| `transactions` | 5.0.1 | 5.0.0 (fails to import on Node.js 24) | 5.0.1 | Build and sign (including multi-sign) transactions and broadcast them |
+| `node-api-js` | 2.0.1 | 1.2.5-beta.18 | 2.0.1 | Typed client for the node REST API |
+| `node-api-grpc` | not published | — | — | gRPC client: accounts, assets, blockchain, blocks, transactions, blockchain updates |
+| `data-service-client-js` | 4.2.0 | 4.2.0 | 4.2.1 | Data service client |
+| `signer` | 2.0.1 | 1.1.0-beta (fails to import: missing `tslib`) | 2.0.1 | Signing orchestrator that delegates to a provider so keys never reach your app |
+| `cubensis-connect-provider` | 1.0.1 | 1.0.0 | 1.0.1 | Provider for the Cubensis Connect browser wallet |
+| `cubensis-connect-types` | 1.0.1 | 1.0.0 | 1.0.1 | Type definitions for the Cubensis Connect extension API |
+| `ledger` | 5.1.0 | 5.1.0 | 5.1.1 | Ledger Nano S/X integration (WebUSB, Web Bluetooth, Node HID) |
+| `ts-lib-crypto` | 2.0.1 | 2.0.0 | 2.0.1 | Key generation, signatures, hashing, encoding and encryption primitives |
+| `crypto` | 1.0.2 | 1.0.1 | 1.0.2 | Async WASM crypto: Ed25519/X25519 keys, signing, AES, seed management |
+| `marshall` | 1.0.1 | 0.14.0 | 1.0.1 | Convert transactions and orders between JS objects, binary and JSON |
+| `bignumber` | 1.2.1 | 1.2.0 | 1.2.1 | Arbitrary-precision numbers for amounts and fees |
+| `parse-json-bignumber` | 2.0.1 | 2.0.0 | 2.0.1 | JSON parser that preserves large-number precision |
+| `ts-types` | 2.0.1 | 2.0.0 | 2.0.1 | Shared TypeScript type definitions |
+| `data-entities` | 3.0.1 | 3.0.0 | 3.0.1 | Domain classes such as assets and money |
+| `assets-pairs-order` | 5.0.2 | 4.0.0 | 5.0.2 | Canonical DEX asset-pair ordering |
+| `oracle-data` | 1.0.1 | 1.0.0 | 1.0.1 | Parse, encode and validate oracle data |
+| `money-like-to-node` | 1.0.1 | 1.0.0 | 1.0.1 | Convert human-readable money objects to node API format |
+| `signature-adapter` | 7.0.1 | 6.1.7 | 7.0.1 | Multi-provider transaction signing adapter |
+| `browser-bus` | 1.0.1 | 1.0.0 | 1.0.1 | Cross-window messaging for dApps and wallets |
+| `protobuf-serialization` | 3.0.0 | 2.0.0 | 3.0.0 | Protocol Buffers schemas and bindings |
+| `ride` | not installable | 2.3.1 (published with unresolved `workspace:*` dependencies; `npm install` fails with `EUNSUPPORTEDPROTOCOL`) | 2.3.1 | JavaScript wrapper around the Ride compiler |
 
 ## Installing
 
 Install only the layers you need. For a Node.js backend that builds, signs, broadcasts and reads state:
 
 ```bash
-npm install @decentralchain/transactions @decentralchain/node-api-js@2.0.1
+npm install @decentralchain/transactions@5.0.1 @decentralchain/node-api-js@2.0.1
 ```
 
 `transactions`' own `broadcast()` is enough to send a signed transaction to a node without `node-api-js` at all — see [How-To Guides](03_how-to-guides).
@@ -66,13 +66,13 @@ For a browser dApp, see [Wallet Integration](04_wallet-integration).
 
 ## Java SDK
 
-`io.decentralchain:java-sdk` supports node interaction, offline transaction signing, and address and key creation. It requires Java 11 or later (Java 25 recommended, matching the node). Confirmed published at Maven Central (`repo1.maven.org/maven2/io/decentralchain/java-sdk/`), version 2.0.1 as of this check.
+`io.decentralchain:java-sdk` supports node interaction, offline transaction signing, and address and key creation. It requires Java 11 or later (Java 25 recommended, matching the node). The current release on Maven Central is 2.0.1 (`repo1.maven.org/maven2/io/decentralchain/java-sdk/maven-metadata.xml`, checked 2026-10-18).
 
 ```xml
 <dependency>
   <groupId>io.decentralchain</groupId>
   <artifactId>java-sdk</artifactId>
-  <version>LATEST</version> <!-- use the current release from Maven Central -->
+  <version>2.0.1</version>
 </dependency>
 ```
 
@@ -85,4 +85,12 @@ Address address = Address.from(publicKey);
 
 ## Ride tooling
 
-`@decentralchain/ride` compiles, decompiles and inspects Ride scripts from JavaScript, and the monorepo also contains the underlying Scala compiler and REPL under `packages/ride`. See the [Ride language reference](../03_ride-language/index).
+`@decentralchain/ride` 2.3.1, the only published version, cannot be installed from npm: its `package.json` still declares `workspace:*` dependencies. Until a fixed release is published, compile scripts with any node's REST API:
+
+```bash
+curl -s -X POST -H 'Content-Type: text/plain' \
+  --data-binary $'{-# STDLIB_VERSION 6 #-}\n{-# CONTENT_TYPE EXPRESSION #-}\n{-# SCRIPT_TYPE ACCOUNT #-}\ntrue' \
+  https://testnet-node.decentralchain.io/utils/script/compileCode
+```
+
+The response's `script` field is the compiled script in base64. The monorepo also contains the Scala compiler and REPL under `packages/ride`. See the [Ride language reference](../03_ride-language/index).

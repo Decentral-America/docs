@@ -107,27 +107,14 @@ git checkout main
 # Prepare Pages Artifact Dir #
 #############################
 
-pushd "${docroot}"
-
 # add .nojekyll to the root so that github won't 404 on content added to dirs
 # that start with an underscore (_), such as our "_content" dir..
-touch .nojekyll
+touch "${docroot}/.nojekyll"
 
-# add redirect from the docroot to our default docs language/version
-cat > index.html <<EOF
-<!DOCTYPE html>
-<html>
-   <head>
-      <title>DecentralChain Documentation</title>
-      <meta http-equiv = "refresh" content="0; url='/${current_language}/main/'" />
-   </head>
-   <body>
-      <p>Please wait while you're redirected to our <a href="/${current_language}/main/">documentation</a>.</p>
-   </body>
-</html>
-EOF
- 
-popd # return to main repo sandbox root
+# add redirect from the docroot to the default docs language/version (en/main).
+# Never derive it from ${current_language}: that is the build loop's leftover
+# variable and pointed every visitor at the last locale built (/pt/main/).
+docs/scripts/write_root_redirect.sh "${docroot}"
 
 # hand off the finished docroot path to the workflow, which uploads it as a
 # Pages artifact via actions/upload-pages-artifact and publishes it via

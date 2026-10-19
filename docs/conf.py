@@ -48,9 +48,6 @@ extensions = [
     'sphinx.ext.mathjax',
     'sphinx_design',
     'sphinx_copybutton',
-    # For extension examples and demos
-    'ablog',
-    'jupyter_sphinx',
     'matplotlib.sphinxext.plot_directive',
     'myst_nb',
     #'nbsphinx',  # Uncomment and comment-out MyST-NB for local testing purposes.
@@ -399,6 +396,23 @@ html_context['github_version'] = 'main/docs/'
 # linkcheck can never find anchors such as github.com/<org>/<repo>#some-heading even
 # when the heading exists. Still check that the page itself resolves.
 linkcheck_anchors_ignore_for_url = [r"https://github\.com/.*"]
+
+# npmjs.com answers 403 to non-browser clients, so linkcheck can never verify it;
+# package existence and versions are checked by docs/scripts/check_sdk_table.py.
+# Social sites block bots the same way.
+linkcheck_ignore = [
+    r"https://www\.npmjs\.com/.*",
+    r"https://(www\.)?twitter\.com/.*",
+    r"https://(www\.)?linkedin\.com/.*",
+    r"https://(www\.)?instagram\.com/.*",
+    r"https://discord\.gg/.*",
+    r"http://localhost.*",
+    r"http://127\.0\.0\.1.*",
+]
+linkcheck_timeout = 30
+linkcheck_retries = 3
+# GitHub answers bursts with 429; wait it out instead of reporting the link as broken.
+linkcheck_rate_limit_timeout = 300.0
 
 def setup(app):
     # Add the gallery directive

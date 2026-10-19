@@ -16,7 +16,7 @@ The block generator signs the block headers only. The block headers contain the 
 Base Target
 -----------
 
-The base target is the variable in the average block generation time formula that adjusts :ref:`block generation <02_decentralchain/04_block:Block Generation>` time to :math:`60` seconds.
+The base target is the variable in the average block generation time formula that adjusts :ref:`block generation <02_decentralchain/04_block:Block Generation>` time to the network's target: :math:`60` seconds on Mainnet and :math:`30` seconds on the public Testnet (``average-block-delay`` in each network's genesis settings).
 
 Generation Signature
 --------------------

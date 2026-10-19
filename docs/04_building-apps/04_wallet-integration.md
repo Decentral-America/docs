@@ -2,27 +2,31 @@
 
 In a browser dApp, never ask a user for their seed phrase or private key. Instead, let the user sign transactions with their own wallet through [Cubensis Connect](https://github.com/Decentral-America/cubensis-connect), DecentralChain's browser extension wallet. There are two ways to integrate it.
 
+```{note}
+Cubensis Connect is not listed in the Chrome, Firefox or Edge extension stores yet. Until it is, users install it from a release build of the [Cubensis Connect repository](https://github.com/Decentral-America/cubensis-connect).
+```
+
 ## Recommended: Signer + Provider
 
 [`@decentralchain/signer`](https://github.com/Decentral-America/signer) is a transaction-signing orchestrator: your dApp calls Signer, Signer delegates the actual signing to a **Provider**, and the Provider is the only piece that ever touches the user's key material. [`@decentralchain/cubensis-connect-provider`](https://github.com/Decentral-America/cubensis-connect-provider) implements that Provider interface for the Cubensis Connect extension, so your dApp code never sees a seed phrase or private key.
 
 ```bash
-npm install @decentralchain/signer @decentralchain/cubensis-connect-provider
+npm install @decentralchain/signer@2.0.1 @decentralchain/cubensis-connect-provider@1.0.1
 ```
 
 ```typescript
-import Signer from '@decentralchain/signer';
+import { Signer } from '@decentralchain/signer';
 import { ProviderCubensis } from '@decentralchain/cubensis-connect-provider';
 
 const signer = new Signer({ NODE_URL: 'https://testnet-node.decentralchain.io' });
-signer.setProvider(new ProviderCubensis());
+await signer.setProvider(new ProviderCubensis());
 
 // Prompt the user to connect and authenticate via the Cubensis Connect extension
 const user = await signer.login();
 console.log('Logged in as:', user.address);
 
 // Build, sign (via the extension) and broadcast a Transfer
-const [broadcastedTx] = await signer
+const broadcastedTx = await signer
   .transfer({
     recipient: '31LAqgqVTLySNCPuYqgLAYhcgS76wvBaLr9', // Testnet address
     amount: 100_000_000, // 1 DCC

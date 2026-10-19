@@ -1,6 +1,5 @@
 // Illustrates: docs/04_building-apps/03_how-to-guides.md, "Build, Sign, and Broadcast a Transaction"
-// Verified against @decentralchain/transactions' README (2026-08 — see that
-// page's top-of-file note about the nodeInteraction.broadcast rename).
+// Typechecked against the pinned versions in package.json; imported on Node.js 24 by CI.
 import { transfer, broadcast } from '@decentralchain/transactions';
 
 const seed = 'your secret seed phrase here';
