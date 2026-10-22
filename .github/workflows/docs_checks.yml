@@ -5,10 +5,18 @@ name: Docs Independence Check
 # plan (PLAN-docs-expansion.md §7) so the two don't duplicate CI minutes.
 
 on:
+  # Pull requests only. A push to dev used to run the identical jobs a second time for a commit
+  # that had already passed them on its pull request (dev mirrors main). Only content these
+  # jobs read triggers them; a change to README.md or a plan file at the repo root cannot
+  # change any result here. No branch protection requires these checks, so a path filter
+  # cannot leave a required check pending.
   pull_request:
     branches: [main, dev]
-  push:
-    branches: [dev]
+    paths:
+      - 'docs/**'
+      - '.vale.ini'
+      - '.vale/**'
+      - '.github/workflows/docs_checks.yml'
 
 permissions:
   contents: read
