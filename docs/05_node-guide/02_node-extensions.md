@@ -20,6 +20,6 @@ The module listens on two ports:
 | `dcc.blockchain-updates.grpc-port` | `6881` | BlockchainUpdates — a real-time stream of block-level events |
 | `dcc.grpc.host` | `localhost` | Interface the main gRPC service binds to |
 | `dcc.grpc.worker-threads` | `4` | Worker threads for the gRPC service |
-| `dcc.blockchain-updates.min-keep-alive` | `5m` | Minimum time a BlockchainUpdates subscription is kept alive |
+| `dcc.blockchain-updates.min-keep-alive` | `5m` | Shortest interval at which a BlockchainUpdates client may send keep-alive pings |
 
-The `grpc-server` module is not a separate process: it is an in-process node extension. Put its JARs on the node's classpath (the Docker image loads extensions from `lib/plugins/`) and enable it in the node config with `dcc.extensions = [com.decentralchain.api.grpc.GRPCServerExtension]` (commented out in the node's default `application.conf`). Enabling it is a deployment decision for the node operator, not a REST API toggle.
+The `grpc-server` module is not a separate process: it is an in-process node extension. The official Docker image already contains it; for other installs, put its JARs on the node's classpath (the Docker image also loads extra JARs from `lib/plugins/`). The module holds two extensions, each enabled by adding its class to `dcc.extensions`: `com.decentralchain.api.grpc.GRPCServerExtension` for the APIs on port 6870 (commented out in the node's default `application.conf`), and `com.decentralchain.events.BlockchainUpdates` for port 6881 (see [Blockchain Updates](../04_building-apps/11_blockchain-updates)). Enabling them is a deployment decision for the node operator, not a REST API toggle.

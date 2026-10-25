@@ -22,13 +22,16 @@ Seed
   The secret phrase from which an account's private key is derived. Never share it.
 
 dApp
-  A decentralized application: an account with a Ride script whose `@Callable` functions users invoke with invoke script transactions.
+  A decentralized application: an account with a Ride script whose `@Callable` functions users invoke with invoke script transactions. See {ref}`Creating and Launching a dApp <04_building-apps/08_creating-and-launching-a-dapp:Creating and Launching a dApp>`.
 
 Smart account
-  An account with a script that must approve every transaction the account sends.
+  An account with a script that must approve every transaction the account sends. See {ref}`Smart Accounts <04_building-apps/09_smart-accounts:Smart Accounts>`.
 
 Smart asset
-  A token with a script that must approve every transaction involving it.
+  A token with a script that must approve every transaction involving it. See {ref}`Smart Assets <04_building-apps/10_smart-assets:Smart Assets>`.
+
+Blockchain Updates
+  A node extension that streams every block, microblock, state change and rollback over gRPC on port 6881. See {ref}`Blockchain Updates <04_building-apps/11_blockchain-updates:Blockchain Updates>`.
 
 Ride
   The statically typed, functional smart-contract language of DecentralChain. See the {ref}`Ride language <03_ride-language/index:Ride Language>` section.

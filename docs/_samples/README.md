@@ -23,11 +23,19 @@ its page is not sampled here.
    beyond npm, no funded account.
 2. **Drift (weekly, `sdk_drift.yml`):** `check_sdk_table.py --drift`
    fails when an npm publish or dist-tag change makes the SDK table stale.
-3. **Live broadcast (not set up):** broadcasting to the Testnet needs a
+3. **Ride compile (local, not in CI):** `ride/*.ride` holds every Ride
+   script the docs show. `docs/scripts/check_ride_samples.py` compiles
+   each one with a node's `POST /utils/script/compileCode` (the public
+   Testnet node by default, `--node` for another) and fails on any
+   compile error. It needs network access to a node, so the PR checks
+   don't run it; run it after changing a Ride sample.
+4. **Live broadcast (not set up):** broadcasting to the Testnet needs a
    funded Testnet account held as a CI secret. The samples target
    `https://testnet-node.decentralchain.io` with chain ID `!`.
 
 ## Adding a sample
 
 Each file's top comment names the doc page it illustrates. Pin the same
-exact version the page's `npm install` line uses.
+exact version the page's `npm install` line uses. Samples that deploy a
+script read it from `ride/` and compile it with `compileRide` from
+`compile-ride.ts`.
