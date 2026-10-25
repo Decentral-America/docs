@@ -1,0 +1,15 @@
+# Illustrates: docs/04_building-apps/09_smart-accounts.md, "Walkthrough: a 2-of-3 multisig account"
+{-# STDLIB_VERSION 5 #-}
+{-# CONTENT_TYPE EXPRESSION #-}
+{-# SCRIPT_TYPE ACCOUNT #-}
+
+# Example keys. Replace them with your three owners' own public keys.
+# Owner A signs into proof 0, B into proof 1, C into proof 2.
+let ownerA = base58'Ch79CxM7xSWXsQ6o1MughNW7ELHaMwJDqV8FDTZMrosq'
+let ownerB = base58'8DAes8dPJqgRZ8J3YgXh2ppgTxQea9VcccRJfB71GZct'
+let ownerC = base58'7g2vpXFYV75q2QWuQipD5VwbUdkJuqyi92U9nqbumdLV'
+
+func approvals(proofIndex: Int, owner: ByteVector) =
+  if (sigVerify(tx.bodyBytes, tx.proofs[proofIndex], owner)) then 1 else 0
+
+approvals(0, ownerA) + approvals(1, ownerB) + approvals(2, ownerC) >= 2

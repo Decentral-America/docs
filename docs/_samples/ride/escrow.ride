@@ -1,0 +1,33 @@
+# Illustrates: docs/04_building-apps/09_smart-accounts.md, "Walkthrough: an Escrow Account"
+{-# STDLIB_VERSION 5 #-}
+{-# CONTENT_TYPE EXPRESSION #-}
+{-# SCRIPT_TYPE ACCOUNT #-}
+
+# Example keys. Replace them with the buyer's, the seller's and the arbiter's own public keys.
+let buyer = base58'CPT5HpPYQ1rA8Eot2swk8tuXb4PE5XDhRbQ7Gpp3sr4D'
+let seller = base58'Emx5RBMowyZLqqn3hX8gGhg4Lgd2UktvDb7UHvHTDjts'
+let arbiter = base58'FzQmZTezonLeREVNQdbBAx5i9cUHqevug78VUgYWjSMg'
+
+# Written to the escrow account's data storage before this script is set:
+# the escrowed amount, and the height from which the buyer can take it back alone.
+let amount = getIntegerValue(this, "amount")
+let timeoutHeight = getIntegerValue(this, "timeoutHeight")
+
+# 0.001 DCC for the transfer plus 0.004 DCC for this script.
+let payoutFee = 500000
+
+func signedBy(key: ByteVector) = sigVerify(tx.bodyBytes, tx.proofs[0], key)
+
+match tx {
+  case t: TransferTransaction =>
+    let to = addressFromRecipient(t.recipient)
+    # The only valid payout moves exactly the escrowed DCC with the standard fee, so the
+    # funds can leave once, in one piece, and nothing leaks out through fees.
+    let validPayout = !isDefined(t.assetId) && !isDefined(t.feeAssetId) && t.amount == amount && t.fee == payoutFee
+    if (!validPayout) then false
+    else if (to == addressFromPublicKey(seller)) then signedBy(buyer) || signedBy(arbiter)
+    else if (to == addressFromPublicKey(buyer)) then
+      signedBy(seller) || signedBy(arbiter) || (signedBy(buyer) && height >= timeoutHeight)
+    else false
+  case _ => false
+}
