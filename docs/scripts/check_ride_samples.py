@@ -40,8 +40,15 @@ def compile_code(node: str, source: str) -> dict:
         with urllib.request.urlopen(req, timeout=30) as res:
             return json.load(res)
     except urllib.error.HTTPError as err:
-        # The node answers a compile error with HTTP 400 and {"error": ..., "message": ...}
-        return json.load(err)
+        # The node answers a compile error with HTTP 400 and {"error": ..., "message": ...};
+        # anything else (a proxy's HTML error page, say) is reported as is.
+        body = err.read().decode("utf-8", "replace")
+        try:
+            return json.loads(body)
+        except ValueError:
+            return {"message": f"HTTP {err.code}: {' '.join(body[:200].split())}"}
+    except (urllib.error.URLError, TimeoutError, ValueError) as err:
+        return {"message": f"cannot get a compile result from {node}: {err}"}
 
 
 def main() -> int:

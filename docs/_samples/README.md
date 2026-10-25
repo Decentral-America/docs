@@ -39,3 +39,8 @@ Each file's top comment names the doc page it illustrates. Pin the same
 exact version the page's `npm install` line uses. Samples that deploy a
 script read it from `ride/` and compile it with `compileRide` from
 `compile-ride.ts`.
+
+The smart contract pages (`04_building-apps/07_` to `10_`) show their
+samples with `{literalinclude}` (skipping the top comment with `:lines:`),
+so the published code is exactly the code that is typechecked and
+compiled. Prefer that over pasting a copy into a page.

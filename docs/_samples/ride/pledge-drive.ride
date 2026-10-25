@@ -31,6 +31,7 @@ func refund() = {
   else if (amount == 0) then throw("Nothing to refund")
   else [
     DeleteEntry(pledgeKey(i.caller)),
+    IntegerEntry("total", totalPledged() - amount),
     ScriptTransfer(i.caller, amount, unit)
   ]
 }

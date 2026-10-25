@@ -3,7 +3,8 @@
 {-# CONTENT_TYPE EXPRESSION #-}
 {-# SCRIPT_TYPE ACCOUNT #-}
 
-# Public keys of the three owners. Owner A signs into proof 0, B into proof 1, C into proof 2.
+# Example keys. Replace them with your three owners' own public keys.
+# Owner A signs into proof 0, B into proof 1, C into proof 2.
 let ownerA = base58'Ch79CxM7xSWXsQ6o1MughNW7ELHaMwJDqV8FDTZMrosq'
 let ownerB = base58'8DAes8dPJqgRZ8J3YgXh2ppgTxQea9VcccRJfB71GZct'
 let ownerC = base58'7g2vpXFYV75q2QWuQipD5VwbUdkJuqyi92U9nqbumdLV'

@@ -5,7 +5,7 @@ import { compileRide } from './compile-ride.js';
 
 const nodeUrl = 'https://testnet-node.decentralchain.io';
 const campaignSeed = 'campaign account secret seed phrase here';
-const beneficiary = '31ekkhvBGr91ygJf4st72hAEVU9BUBs3Ats'; // receives the DCC if the goal is met
+const beneficiary = '31ekkhvBGr91ygJf4st72hAEVU9BUBs3Ats'; // example address: use the real beneficiary's
 
 // 1. Write the settings while the account still signs normally.
 const deadline = (await nodeInteraction.currentHeight(nodeUrl)) + 2_880; // about one day of 30-second blocks

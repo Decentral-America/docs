@@ -1,13 +1,13 @@
-% The TypeScript example on this page is typechecked as docs/_samples/compile-ride.ts.
-% The Ride samples it refers to live in docs/_samples/ride/ and are compiled by
-% docs/scripts/check_ride_samples.py.
+% The TypeScript example on this page is included verbatim from
+% docs/_samples/compile-ride.ts, which CI typechecks. The Ride samples it refers
+% to live in docs/_samples/ride/ and are compiled by docs/scripts/check_ride_samples.py.
 
 # Smart Contracts Overview
 
 A smart contract on DecentralChain is a {doc}`Ride <../03_ride-language/index>` script attached to an account or to a token. The node runs the script every time a transaction touches the thing it is attached to. The script either decides whether that transaction may happen, or, for a dApp, works out what a call does.
 
 ```{note}
-Verified against node-scala v1.8.0 on 2026-10-24. Limits and fees come from the node source. Every Ride sample in this section was compiled by the public Testnet node (`DecentralChain v1.8.0-dev-e6248f2408`) and the public Mainnet node (`DCC v1.3.5`).
+Verified against node-scala v1.8.0 on 2026-10-25. Limits and fees come from the node source. Every Ride sample in this section was compiled by the public Testnet node (`DecentralChain v1.8.0-dev-e6248f2408`) and the public Mainnet node (`DCC v1.3.5`).
 ```
 
 ## Three Kinds of Script
@@ -34,24 +34,11 @@ An account holds at most one script, so an account is either a dApp or a smart a
 
 ### Compile a Script
 
-The `@decentralchain/ride` npm package cannot be installed yet (see {ref}`Ride tooling <04_building-apps/02_client-libraries-and-sdk:Ride tooling>`), so compile with a node's `POST /utils/script/compileCode` endpoint. It accepts the Ride source as plain text and does not write anything to the chain. The examples in this section use this helper:
+The `@decentralchain/ride` npm package cannot be installed yet (see {ref}`Ride tooling <04_building-apps/02_client-libraries-and-sdk:Ride tooling>`), so compile with a node's `POST /utils/script/compileCode` endpoint. It accepts the Ride source as plain text and does not write anything to the chain. The examples in this section import this helper from `compile-ride.ts`:
 
-```typescript
-// Compiles Ride source with a node's compiler and returns the base64 script that
-// setScript(), setAssetScript() and issue() take.
-export async function compileRide(source: string, nodeUrl: string): Promise<string> {
-  const response = await fetch(`${nodeUrl}/utils/script/compileCode`, {
-    method: 'POST',
-    headers: { 'Content-Type': 'text/plain' },
-    body: source,
-  });
-  const result = await response.json();
-  if (!response.ok) {
-    throw new Error(`Ride compilation failed: ${result.message}`);
-  }
-  console.log(`Compiled: complexity ${result.complexity}, extra fee ${result.extraFee}`);
-  return result.script; // "base64:..."
-}
+```{literalinclude} ../_samples/compile-ride.ts
+:language: typescript
+:lines: 4-
 ```
 
 For the {ref}`2-of-3 multisig script <04_building-apps/09_smart-accounts:Walkthrough: a 2-of-3 Multisig Account>`, the Testnet node answers:
@@ -76,14 +63,14 @@ The `STDLIB_VERSION` directive must name a version the target network has activa
 
 | Network | Node | Highest active feature | Highest usable `STDLIB_VERSION` |
 |---|---|---|---|
-| Testnet | v1.8.0 | 25 | 9 |
+| Testnet | v1.8.0 | 26 | 9 |
 | Mainnet | v1.3.5 | 16 | 5 |
 
 The samples in this section use version 5, so the same scripts deploy on both networks. What each later version adds is listed in {doc}`Standard Library Versions <../03_ride-language/08_stdlib-versions>`.
 
 ## Limits
 
-Values on the Testnet (node v1.8.0, features 1 to 25 active):
+Values on the Testnet (node v1.8.0, features 1 to 26 active):
 
 | Limit | Value |
 |---|---|
@@ -92,6 +79,7 @@ Values on the Testnet (node v1.8.0, features 1 to 25 active):
 | Complexity of an account script or of a dApp's `@Verifier` | 2,000 |
 | Complexity of an asset script | 4,000 |
 | Complexity of a `@Callable` function | 52,000 for `STDLIB_VERSION` 6 and later, 10,000 for version 5 |
+| Total complexity of one invocation, across every callable it reaches through dApp-to-dApp calls and every smart asset script they trigger | 52,000 for `STDLIB_VERSION` 6 and later, 26,000 for version 5 |
 | Verifier complexity that adds no fee | 200 |
 | Payments attached to one invocation | 10 |
 
@@ -101,10 +89,10 @@ Limits on script actions, data weight and nested calls are listed under {ref}`Li
 
 Fees are in DCC. The full table is under {ref}`Minimum Fee <02_decentralchain/03_transaction:Minimum Fee>`; these are the ones that matter for scripts:
 
-* **Set Script:** 0.001 DCC for each started kilobyte of compiled script on the Testnet. A 1,977-byte script costs 0.002 DCC. Mainnet charges a flat 0.01 DCC because feature 17 is not active there. `setScript()` from `@decentralchain/transactions` computes the Testnet value, so pass `fee: 1_000_000` on Mainnet.
+* **Set Script:** 0.001 DCC for each started kilobyte of compiled script on the Testnet. The 2,058-byte pledge-drive dApp costs 0.003 DCC. Mainnet charges a flat 0.01 DCC because feature 17 is not active there. `setScript()` from `@decentralchain/transactions` computes the Testnet value, so pass `fee: 1_000_000` on Mainnet.
 * **Invoke Script:** 0.005 DCC, plus 1 DCC for every token the call issues that is not an NFT.
 * **Issue:** 1 DCC, with or without a script.
-* **Set Asset Script:** 1 DCC.
+* **Set Asset Script:** 1 DCC. This already includes the smart asset surcharge for the token itself, so do not add 0.004 DCC to it.
 * **Smart account surcharge:** 0.004 DCC on every transaction sent by an account whose verifier complexity is above 200. This also applies to a dApp with a costly `@Verifier`.
 * **Smart asset surcharge:** 0.004 DCC for each smart asset a transaction involves, except Invoke Script transactions. A transfer of a smart asset costs 0.001 + 0.004 = 0.005 DCC.
 

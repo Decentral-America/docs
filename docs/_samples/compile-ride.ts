@@ -9,9 +9,15 @@ export async function compileRide(source: string, nodeUrl: string): Promise<stri
     headers: { 'Content-Type': 'text/plain' },
     body: source,
   });
-  const result = await response.json();
-  if (!response.ok) {
-    throw new Error(`Ride compilation failed: ${result.message}`);
+  const text = await response.text();
+  let result;
+  try {
+    result = JSON.parse(text);
+  } catch {
+    throw new Error(`Ride compilation failed: HTTP ${response.status} from ${nodeUrl}: ${text.slice(0, 200)}`);
+  }
+  if (!response.ok || typeof result.script !== 'string') {
+    throw new Error(`Ride compilation failed: ${result.message ?? text}`);
   }
   console.log(`Compiled: complexity ${result.complexity}, extra fee ${result.extraFee}`);
   return result.script; // "base64:..."
