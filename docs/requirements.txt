@@ -10,4 +10,4 @@ linkify-it-py==2.2.0
 matplotlib==3.11.2
 numpydoc==1.11.0
 sphinx-togglebutton==0.4.5
-gitpython==3.2.0
+gitpython==3.2.1
