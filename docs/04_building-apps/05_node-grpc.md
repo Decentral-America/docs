@@ -51,7 +51,7 @@ Request and response types are re-exported from the protobuf schema package (pub
 
 ## Blockchain Updates
 
-The BlockchainUpdates API streams block-level events (appends, rollbacks, microblocks) in real time — useful for indexers and services that need to react to chain state as it happens, without polling. It runs on a **separate port, 6881**, from the rest of the gRPC API.
+The BlockchainUpdates API streams block-level events (appends, rollbacks, microblocks) in real time — useful for indexers and services that need to react to chain state as it happens, without polling. It runs on a **separate port, 6881**, from the rest of the gRPC API. [Blockchain Updates](11_blockchain-updates) explains how to enable it, what each update contains and how to consume the stream reliably.
 
 % snippet-check: skip
 ```typescript
@@ -71,4 +71,4 @@ for await (const event of updatesApi.subscribe({ fromHeight: 1 })) {
 | `getBlockUpdatesRange` | Fetch updates for a height range |
 | `subscribe` | Server-streaming subscription to new updates as they happen |
 
-See [Node Extensions](../05_node-guide/02_node-extensions) for enabling the gRPC server (and hence BlockchainUpdates) on a node you operate.
+See [Node Extensions](../05_node-guide/02_node-extensions) for enabling the gRPC server on a node you operate. BlockchainUpdates is a separate extension in the same module and must be enabled on its own.

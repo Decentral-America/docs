@@ -1,0 +1,53 @@
+# Illustrates: docs/04_building-apps/08_creating-and-launching-a-dapp.md, "Write the script"
+{-# STDLIB_VERSION 5 #-}
+{-# CONTENT_TYPE DAPP #-}
+{-# SCRIPT_TYPE ACCOUNT #-}
+
+# Campaign settings. A Data transaction writes them before this script is set.
+let beneficiary = addressFromStringValue(getStringValue(this, "beneficiary"))
+let goal = getIntegerValue(this, "goal")
+let deadline = getIntegerValue(this, "deadline")
+
+func pledgeKey(backer: Address) = "pledge_" + toString(backer)
+func pledgedBy(backer: Address) = getInteger(this, pledgeKey(backer)).valueOrElse(0)
+func totalPledged() = getInteger(this, "total").valueOrElse(0)
+
+@Callable(i)
+func pledge() = {
+  let payment = if (size(i.payments) == 1) then i.payments[0] else throw("Attach exactly one payment")
+  if (height >= deadline) then throw("The campaign ended at height " + toString(deadline))
+  else if (isDefined(payment.assetId)) then throw("Pledges are accepted in DCC only")
+  else [
+    IntegerEntry(pledgeKey(i.caller), pledgedBy(i.caller) + payment.amount),
+    IntegerEntry("total", totalPledged() + payment.amount)
+  ]
+}
+
+@Callable(i)
+func refund() = {
+  let amount = pledgedBy(i.caller)
+  if (height < deadline) then throw("Refunds open at height " + toString(deadline))
+  else if (totalPledged() >= goal) then throw("The goal was reached, so pledges are not refundable")
+  else if (amount == 0) then throw("Nothing to refund")
+  else [
+    DeleteEntry(pledgeKey(i.caller)),
+    IntegerEntry("total", totalPledged() - amount),
+    ScriptTransfer(i.caller, amount, unit)
+  ]
+}
+
+@Callable(i)
+func payout() = {
+  if (height < deadline) then throw("The payout opens at height " + toString(deadline))
+  else if (totalPledged() < goal) then throw("The goal was not reached")
+  else if (getBoolean(this, "paidOut").valueOrElse(false)) then throw("Already paid out")
+  else [
+    BooleanEntry("paidOut", true),
+    ScriptTransfer(beneficiary, totalPledged(), unit)
+  ]
+}
+
+# Nothing can be sent from the campaign account by its key, including a new script.
+# The pledged DCC can only leave through refund() and payout().
+@Verifier(tx)
+func verify() = false

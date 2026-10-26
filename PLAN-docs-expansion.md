@@ -72,9 +72,9 @@ Priority: **P0** unblocks broken links / core developer path · **P1** completes
 | Extra pages | `08_limitations.md` (complexity, data weight, per-version), `09_previous-versions.md`, `10_libraries-and-imports.md` |
 
 ### WP3 — Building Apps (P1, ~2–3 weeks)
-- **New:** `05_smart-contracts-overview.md`, `06_creating-and-launching-a-dapp.md`, `07_smart-accounts.md` (incl. multisig and escrow walkthroughs, written as text + runnable code, not video), `08_smart-assets.md`.
+- **New:** `07_smart-contracts-overview.md`, `08_creating-and-launching-a-dapp.md`, `09_smart-accounts.md` (incl. multisig and escrow walkthroughs, written as text + runnable code, not video), `10_smart-assets.md`. (Planned as `05_`–`08_`; renumbered because `05_node-grpc.md` and `06_data-service-api.md` landed first.)
 - **New how-tos** appended to `03_how-to-guides.md` (or split into a `how-to/` folder): airdrop, payments, token exchange, simple voting, list-as-argument, creating and broadcasting transactions.
-- **New API pages:** `09_data-service-api.md` (only if DecentralChain operates one; otherwise document the actual alternative), `10_node-grpc.md`, `11_blockchain-updates.md`.
+- **New API pages:** `06_data-service-api.md` (only if DecentralChain operates one; otherwise document the actual alternative), `05_node-grpc.md`, `11_blockchain-updates.md`.
 - **Tooling:** extend `01_developer-tools.md` with editor tooling and a Ride REPL page only for tools that exist under `Decentral-America`.
 - **SDKs:** split `02_client-libraries-and-sdk.md` into one page per published SDK (TypeScript packages first; add others only when an official package exists). Each page: install, minimal transfer, error handling, link to package repo.
 - All code samples live under `docs/_samples/` and are executed in CI against Testnet.

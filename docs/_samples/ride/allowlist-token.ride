@@ -1,0 +1,17 @@
+# Illustrates: docs/04_building-apps/10_smart-assets.md, "Walkthrough: a token only allowlisted accounts can hold"
+{-# STDLIB_VERSION 5 #-}
+{-# CONTENT_TYPE EXPRESSION #-}
+{-# SCRIPT_TYPE ASSET #-}
+
+# The issuer keeps the allowlist in its own account data storage: one Boolean entry
+# "allowed_<address>" per account that may receive the token.
+func isAllowed(recipient: Address) =
+  getBoolean(this.issuer, "allowed_" + toString(recipient)).valueOrElse(false)
+
+match tx {
+  # Covers Transfer transactions and ScriptTransfer actions of dApps.
+  case t: TransferTransaction => isAllowed(addressFromRecipient(t.recipient))
+  case _: ReissueTransaction | BurnTransaction | SetAssetScriptTransaction | UpdateAssetInfoTransaction => true
+  # Mass Transfer, Exchange, payments attached to invocations and everything else.
+  case _ => false
+}

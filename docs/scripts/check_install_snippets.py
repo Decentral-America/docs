@@ -26,7 +26,8 @@ import tempfile
 
 DOCS = pathlib.Path(__file__).resolve().parents[1]
 EXCLUDED_DIRS = {"locales", "_build", "_samples", "node_modules"}
-FENCE_OPEN = re.compile(r"^```\s*(\{[^}]*\}|[A-Za-z]*)\s*$")
+# A directive fence may carry an argument, e.g. ```{literalinclude} ../_samples/x.ts
+FENCE_OPEN = re.compile(r"^```\s*(\{[^}]*\}|[A-Za-z]*)(\s.*)?$")
 SKIP_MARKER = "% snippet-check: skip"
 SHELL_LANGS = {"bash", "sh", "shell", "console"}
 CODE_LANGS = {"ts", "typescript", "js", "javascript"}

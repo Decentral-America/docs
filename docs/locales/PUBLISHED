@@ -1,0 +1,7 @@
+# Translated locales published to docs.decentralchain.io, one per line.
+# English is always built and is not listed here. A catalog dir in this folder
+# that is not listed is neither built nor offered in the language switcher.
+# Add `partial` after a locale whose translation is incomplete: the switcher
+# and a banner on every page of that locale say so.
+# Read by docs/scripts/published_locales.py (buildDocs.sh and conf.py).
+es partial
