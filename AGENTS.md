@@ -4,13 +4,13 @@ Technical orientation for anyone (human or AI agent) contributing to this repo. 
 
 ## What this is
 
-The Sphinx + MyST documentation site for DecentralChain (DCC), a blockchain protocol forked from Waves. Published at `docs.decentralchain.io` via GitHub Pages. Built in **2 branches** (`main`, `dev`) × **11 languages**, so every content change gets multiplied across that matrix.
+The Sphinx + MyST documentation site for DecentralChain (DCC), a blockchain protocol forked from Waves. Published at `docs.decentralchain.io` via GitHub Pages. Built in **2 branches** (`main`, `dev`) × **English + every locale in `docs/locales/PUBLISHED`** (today `es`, so 2 languages), so every content change gets multiplied across that matrix.
 
 ## Stack
 
 - **Sphinx 9** + **MyST** (write `.rst` or `.md`, both are first-class — `source_suffix = ['.rst', '.md']`)
 - **pydata-sphinx-theme** for HTML rendering
-- **sphinx-intl** + gettext `.po` files for translation (11 locales in `docs/locales/`)
+- **sphinx-intl** + gettext `.po` files for translation (11 locale catalogs in `docs/locales/`; only the ones listed in `docs/locales/PUBLISHED` are built and published)
 - Content lives in `docs/`, config in `docs/conf.py`, pinned deps in `docs/requirements.txt`
 
 Do not propose migrating this to Docusaurus/MkDocs/Starlight. It was evaluated in depth (see git log around Sept 2026 for the research) — this content is table-and-cross-reference-dense (300+ `csv-table` directives, 700+ `:ref:` cross-references that Sphinx validates at build time), which Markdown-first tools handle worse, not better. Sphinx is the right tool here.
@@ -28,7 +28,7 @@ To test a specific version/language combo (affects the version-switcher and lang
 
 ```bash
 export current_version=dev      # or "main"
-export current_language=es      # or any dir name under docs/locales/
+export current_language=es      # or any locale in docs/locales/PUBLISHED
 sphinx-build -b html docs/ /tmp/out -D language="${current_language}"
 ```
 
@@ -41,9 +41,9 @@ sphinx-build -b linkcheck docs/ /tmp/linkcheck-out
 ## The build/deploy pipeline
 
 `docs/buildDocs.sh` is the actual build engine. It:
-1. Loops over every remote branch except `HEAD`/`gh-pages` (currently `main`, `dev`)
-2. For each branch, checks it out, then loops over `en` + every dir under `docs/locales/`
-3. Runs `sphinx-build` once per (branch, language) pair → 22 builds total right now
+1. Loops over the versions listed in `docs/_static/switcher.json` (currently `main`, `dev`)
+2. For each branch, checks it out, then loops over `en` + the locales in `docs/locales/PUBLISHED` (read once, on `main`, by `docs/scripts/published_locales.py`)
+3. Runs `sphinx-build` once per (branch, language) pair → 4 builds total right now
 4. `rsync`s every build's output into one shared `docroot`, producing the final `/{language}/{version}/` URL layout
 5. Emits the docroot path as a `GITHUB_OUTPUT` for the workflow to pick up
 
@@ -56,7 +56,7 @@ sphinx-build -b linkcheck docs/ /tmp/linkcheck-out
 ## PR checks
 
 `.github/workflows/pr_check_workflow.yml` runs two jobs on every PR to `main`/`dev`:
-- `build_check`: `sphinx-build -W` — **blocks merge** on any warning (broken `:ref:`, bad directive, etc.)
+- `build_check`: `sphinx-build -W` — **blocks merge** on any warning (broken `:ref:`, bad directive, etc.). It also validates `docs/locales/PUBLISHED` (`test_published_locales.py`) and checks the built language switcher against it (`check_published_languages.py`); the deploy job re-checks every built language, including the partial-translation banner, before it uploads the site.
 - `link_check`: `sphinx-build -b linkcheck` — **does not block merge** (`continue-on-error: true`), because external links go stale independent of any PR and shouldn't hold up unrelated work. Check its output anyway; it catches real rot.
 
 ## Content conventions
@@ -169,13 +169,14 @@ Custom entries in any of these lists (like this repo's `language-selector`) reso
 Both live in the navbar, both are populated from `html_context` built in `conf.py` (around the "SETUP THE RTD LOWER-LEFT" section — the name is stale, it now drives a proper navbar dropdown, not an RTD-style sidebar):
 - **Version switcher**: native pydata-sphinx-theme feature, config'd via `html_theme_options["switcher"]`, data comes from `docs/_static/switcher.json`. Add a branch → add an entry there too, or it won't show up as a switch target (it'll still build fine, just won't be selectable).
 - **Language switcher**: pydata-sphinx-theme has **no native language switcher** (confirmed via their own open issue #2212) — `docs/_templates/language-selector.html` + `docs/_static/language_select.js` are custom, hand-rolled to fill that gap. Don't delete them thinking they're vestigial; they're the only reason the language dropdown exists.
-- Both read from `html_context['versions']` / `html_context['languages']`, which are computed once per build from `git branches` and `os.scandir('locales')`. Do not hardcode `'en'` into that list — it's already picked up from `docs/locales/en/` (a real gettext catalog dir), a duplicate entry bug already happened once from exactly that mistake.
+- Both read from `html_context['versions']` / `html_context['languages']`, which are computed once per build from `git branches` and `docs/scripts/published_locales.py` (English, then `docs/locales/PUBLISHED`). `buildDocs.sh` builds exactly that same language list, so the switcher can't link to a language the site didn't build. Don't list `en` in `PUBLISHED` (the helper rejects it): `docs/locales/en/` is a catalog dir too, and scanning `docs/locales/` is what built `en` twice.
+- A `partial` locale in `PUBLISHED` shows as `<code> (partial)` in the switcher and gets a "Partial translation" banner (`html_theme_options["announcement"]`) on every page.
 
 ## Adding a new language
 
 1. Generate the `.po` catalog via `sphinx-intl` (see `docs/locales/` for existing structure — each language is `LC_MESSAGES/*.po` + compiled `.mo`)
 2. Translate the `.po` files (GitLocalize integration handles this for maintained languages — see `docs/06_contributing.md`)
-3. Nothing else — `buildDocs.sh`'s locale loop and the language-selector template both discover new `docs/locales/*` dirs automatically
+3. Publish it: add a line to `docs/locales/PUBLISHED` (`<code>`, or `<code> partial` while the translation is incomplete). A catalog dir that isn't listed is neither built nor offered in the switcher.
 
 ## Adding a new version/branch
 

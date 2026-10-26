@@ -28,7 +28,7 @@ Every PR runs two automated checks: a strict build (blocks merge on warnings —
 
 - Prefer `:ref:` / MyST cross-reference syntax over hardcoded links when pointing at another page in this site — it gets validated at build time, a raw link doesn't.
 - For tables with links, math, or multi-part explanations inside cells, use a `.. csv-table::` sourcing a `.csv` file (see existing examples under `docs/_static/**/tables/`) rather than a plain Markdown table — Markdown tables can't hold that kind of content cleanly.
-- Keep line-by-line diffs focused; this repo builds in 2 branches × 11 languages, so a change to shared structure (headings, `conf.py`, templates) has a wide blast radius — double-check before renaming a heading that other pages `:ref:` into.
+- Keep line-by-line diffs focused; this repo builds in 2 branches × every published language (English + `docs/locales/PUBLISHED`), so a change to shared structure (headings, `conf.py`, templates) has a wide blast radius — double-check before renaming a heading that other pages `:ref:` into.
 
 ## Translations
 

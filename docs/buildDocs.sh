@@ -47,6 +47,13 @@ make -C docs clean
 # 'docs/expansion-wp0' into 'expansion-wp0', and `git checkout` failed. It also
 # published unreviewed work-in-progress branches.
 versions="$(python3 -c 'import json; print(" ".join(v["version"] for v in json.load(open("docs/_static/switcher.json"))))')"
+
+# Build English plus the locales in docs/locales/PUBLISHED (read once, here on
+# main, like switcher.json above). Building every dir under docs/locales/ built
+# `en` twice (docs/locales/en is a catalog dir too) and published nine 0%
+# translated locales. A bad PUBLISHED file fails the deploy here.
+languages="$(python3 docs/scripts/published_locales.py docs/locales)"
+echo "INFO: Publishing languages: ${languages}"
 for current_version in ${versions}; do
 
    # Sanitize branch name — reject names with shell metacharacters
@@ -68,8 +75,7 @@ for current_version in ${versions}; do
    fi
  
    #python ./docs/scripts/generate_gallery_images.py
-   
-   languages="en $(find docs/locales/ -mindepth 1 -maxdepth 1 -type d -exec basename '{}' \;)"
+
    for current_language in ${languages}; do
  
       # make the current language available to conf.py
