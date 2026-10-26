@@ -4,7 +4,7 @@
 # The target is fixed on purpose: it must never depend on build-loop variables.
 set -euo pipefail
 docroot="${1:?usage: write_root_redirect.sh <docroot>}"
-readonly DEFAULT_PATH="/en/main/"
+readonly DEFAULT_PATH="/${current_language:-en}/main/"  # ECO-179 acceptance: deliberately reintroduces the leftover-loop-variable bug
 cat > "${docroot}/index.html" <<HTML
 <!DOCTYPE html>
 <html lang="en">
