@@ -51,6 +51,21 @@ jobs:
         DOCROOT: ${{ steps.build.outputs.docroot }}
       run: python3 docs/scripts/check_static_refs.py "${DOCROOT}/en/main"
 
+    - name: Built site has only the published languages, with the right switcher and banner
+      env:
+        DOCROOT: ${{ steps.build.outputs.docroot }}
+      run: |
+        expected="$(python3 docs/scripts/published_locales.py docs/locales | tr ' ' '\n' | sort)"
+        built="$(for dir in "${DOCROOT}"/*/; do basename "${dir}"; done | sort)"
+        if [ "${built}" != "${expected}" ]; then
+          echo "::error::built languages [$(echo ${built})] differ from en + docs/locales/PUBLISHED [$(echo ${expected})]"
+          exit 1
+        fi
+        # main only: every other version renders its switcher from its own branch's conf.py
+        for lang in ${expected}; do
+          python3 docs/scripts/check_published_languages.py "${DOCROOT}/${lang}/main" "${lang}"
+        done
+
     - name: Upload Pages artifact
       uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9  # v5.0.0
       with:

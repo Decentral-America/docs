@@ -40,6 +40,12 @@ jobs:
     - name: Site root redirects to /en/main/
       run: bash docs/scripts/test_root_redirect.sh
 
+    - name: Published languages (docs/locales/PUBLISHED) are valid and built once
+      run: python3 docs/scripts/test_published_locales.py
+
+    - name: Language switcher lists only the published languages
+      run: python3 docs/scripts/check_published_languages.py /tmp/docs-pr-build en
+
   link_check:
     runs-on: ubuntu-latest
     timeout-minutes: 20

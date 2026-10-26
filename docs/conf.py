@@ -352,11 +352,23 @@ html_context['current_version'] = current_version
 html_context['version'] = current_version
  
 # POPULATE LINKS TO OTHER LANGUAGES
+# English plus locales/PUBLISHED: the same list buildDocs.sh builds, so the
+# switcher never links to an unpublished (untranslated) catalog under locales/.
+from published_locales import published_locales
 html_context['languages'] = []
 
-languages = [lang.name for lang in os.scandir('locales') if lang.is_dir()]
-for lang in languages:
-   html_context['languages'].append( (lang, '/' +lang+ '/' +current_version+ '/') )
+languages = published_locales('locales')
+for lang, partial in languages:
+   label = lang+ ' (partial)' if partial else lang
+   html_context['languages'].append( (lang, '/' +lang+ '/' +current_version+ '/', label) )
+
+# warn readers of an incomplete translation on every page
+if dict(languages).get(current_language):
+   html_theme_options['announcement'] = (
+      '<span class="partial-translation-notice">Partial translation: this language is '
+      'still being translated, so some pages appear in English. '
+      '<a href="/en/' +current_version+ '/">Read the English documentation</a>.</span>'
+   )
  
 # POPULATE LINKS TO OTHER VERSIONS
 html_context['versions'] = list()
