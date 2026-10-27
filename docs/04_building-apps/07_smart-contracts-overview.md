@@ -34,7 +34,7 @@ An account holds at most one script, so an account is either a dApp or a smart a
 
 ### Compile a Script
 
-The `@decentralchain/ride` npm package cannot be installed yet (see {ref}`Ride tooling <04_building-apps/02_client-libraries-and-sdk:Ride tooling>`), so compile with a node's `POST /utils/script/compileCode` endpoint. It accepts the Ride source as plain text and does not write anything to the chain. The examples in this section import this helper from `compile-ride.ts`:
+The `@decentralchain/ride` npm package cannot be installed yet (see {ref}`ride-js and @decentralchain/ride <04_building-apps/01_developer-tools:ride-js and @decentralchain/ride>`), so compile with a node's `POST /utils/script/compileCode` endpoint. It accepts the Ride source as plain text and does not write anything to the chain. The examples in this section import this helper from `compile-ride.ts`:
 
 ```{literalinclude} ../_samples/compile-ride.ts
 :language: typescript

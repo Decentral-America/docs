@@ -9,6 +9,24 @@ Practical examples for the most common tasks when building on DecentralChain. Th
 
 Both packages are ESM-only and require Node.js 24+.
 
+This page covers the basics: building, signing and broadcasting transactions, issuing a token, chaining transactions, reading chain data and signing with a Ledger. Each of these guides covers one task from start to finish:
+
+* {doc}`Airdrop a Token <how-to/01_airdrop>`: send a token to a list of addresses with Mass Transfer transactions.
+* {doc}`Accept Payments <how-to/02_payments>`: take payments with an invoice reference and check that they arrived.
+* {doc}`Exchange Tokens with a dApp <how-to/03_token-exchange>`: sell a token for DCC at a fixed price, and buy it back.
+* {doc}`Run a Simple Vote <how-to/04_voting>`: one vote per address, with counts nobody can change.
+* {doc}`Pass a List to a dApp <how-to/05_list-as-argument>`: call a dApp with list arguments.
+
+```{toctree}
+:hidden:
+
+how-to/01_airdrop
+how-to/02_payments
+how-to/03_token-exchange
+how-to/04_voting
+how-to/05_list-as-argument
+```
+
 All examples on this page target the public Testnet: node `https://testnet-node.decentralchain.io`, chain ID `!` (passed as `chainId: '!'` to the transaction builders) and Testnet addresses starting with `31`. For Mainnet, use a Mainnet node and `chainId: '?'`.
 
 ## Build, Sign, and Broadcast a Transaction

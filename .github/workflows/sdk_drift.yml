@@ -1,7 +1,7 @@
 name: SDK Version Drift
 
 # Weekly: fail when an npm publish or dist-tag change makes the SDK package
-# table in docs/04_building-apps/02_client-libraries-and-sdk.md stale, so the
+# table in docs/04_building-apps/sdk/01_typescript.md stale, so the
 # docs get updated instead of drifting silently.
 
 on:

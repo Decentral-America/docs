@@ -1,0 +1,18 @@
+# Illustrates: docs/04_building-apps/how-to/05_list-as-argument.md, "Write the Script"
+{-# STDLIB_VERSION 6 #-}
+{-# CONTENT_TYPE DAPP #-}
+{-# SCRIPT_TYPE ACCOUNT #-}
+
+# Records a score for each name in a single call: names[n] gets scores[n].
+# Ride has no unbounded loops, so FOLD<10> caps a call at 10 pairs.
+
+@Callable(i)
+func setScores(names: List[String], scores: List[Int]) = {
+  if (size(names) != size(scores)) then throw("names and scores must be the same length")
+  else if (size(names) > 10) then throw("At most 10 scores per call")
+  else {
+    func addEntry(entries: List[IntegerEntry], name: String) =
+      entries :+ IntegerEntry("score_" + name, scores[size(entries)])
+    FOLD<10>(names, [], addEntry)
+  }
+}

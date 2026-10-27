@@ -77,6 +77,26 @@ jobs:
     - name: Every version in the SDK package table installs and imports on Node.js 24
       run: python3 docs/scripts/check_sdk_table.py
 
+  java_samples_compile:
+    # Compiles docs/_samples/java (the Java SDK page's samples) against the
+    # published io.decentralchain:java-sdk release. The 2.0.x jars are built
+    # for Java 25, so older JDKs cannot compile against them.
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+    - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
+    - uses: actions/setup-java@de7274f081f381c8f8158605e0321c36c376e2e6  # v6.0.1
+      with:
+        distribution: 'temurin'
+        java-version: '25'
+        cache: 'maven'
+        cache-dependency-path: 'docs/_samples/java/pom.xml'
+
+    - name: Compile Java samples
+      working-directory: docs/_samples/java
+      run: mvn -q compile
+
   vale:
     # House-vocabulary lint from docs/_terminology.md, operationalised as
     # .vale/styles/DecentralChain/*.yml. Currently just the two rules the

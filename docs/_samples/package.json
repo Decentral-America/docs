@@ -14,6 +14,8 @@
     "@decentralchain/node-api-js": "2.0.1",
     "@decentralchain/data-service-client-js": "4.2.0",
     "@decentralchain/signer": "2.0.1",
-    "@decentralchain/cubensis-connect-provider": "1.0.1"
+    "@decentralchain/cubensis-connect-provider": "1.0.1",
+    "@decentralchain/ride-repl": "1.6.2",
+    "@decentralchain/ts-lib-crypto": "2.0.1"
   }
 }
