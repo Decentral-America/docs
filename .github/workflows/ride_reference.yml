@@ -1,0 +1,66 @@
+name: Ride Reference Regeneration
+
+# The Ride function reference (03_ride-language/13_function-reference/) and the
+# complexity-changes table (03_ride-language/09_complexity-changes.md) are
+# generated from node-scala's compiled standard library by
+# docs/scripts/generate_ride_reference.py. This job regenerates them from the
+# pinned node-scala commit and fails on any difference, so a hand edit to a
+# generated page, or a generator change committed without its regenerated
+# pages, cannot merge unnoticed.
+
+on:
+  # Only content this job reads triggers it: the generated pages, the
+  # generator, its Scala dumper, and this file.
+  pull_request:
+    branches: [main, dev]
+    paths:
+      - 'docs/03_ride-language/09_complexity-changes.md'
+      - 'docs/03_ride-language/13_function-reference/**'
+      - 'docs/scripts/generate_ride_reference.py'
+      - 'docs/scripts/ride_reference/**'
+      - '.github/workflows/ride_reference.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ride-reference-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  regenerate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+    - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
+
+    - name: Read the pinned node-scala commit
+      id: pin
+      run: echo "commit=$(python3 docs/scripts/generate_ride_reference.py --print-commit)" >> "$GITHUB_OUTPUT"
+
+    - name: Check out node-scala at the pinned commit
+      uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
+      with:
+        repository: Decentral-America/node-scala
+        ref: ${{ steps.pin.outputs.commit }}
+        path: node-scala
+        persist-credentials: false
+
+    # Same JDK as node-scala's own CI at the pinned commit. Only the lang
+    # module is built, and its io.decentralchain dependencies are on Maven
+    # Central, so node-scala's native/mvn-install setup steps aren't needed.
+    - uses: actions/setup-java@de7274f081f381c8f8158605e0321c36c376e2e6  # v6.0.1
+      with:
+        distribution: 'temurin'
+        java-version: '25'
+        cache: 'sbt'
+        cache-dependency-path: |
+          node-scala/build.sbt
+          node-scala/project/*.scala
+          node-scala/project/build.properties
+    - uses: sbt/setup-sbt@af116cce31c00823d3903ce687f9cda3a4f19f1b  # v1.2.1
+
+    - name: Generated Ride pages match a fresh regeneration
+      run: python3 docs/scripts/generate_ride_reference.py --node-scala node-scala --check
