@@ -1,0 +1,36 @@
+# Illustrates: docs/04_building-apps/how-to/03_token-exchange.md, "Write the Script"
+{-# STDLIB_VERSION 6 #-}
+{-# CONTENT_TYPE DAPP #-}
+{-# SCRIPT_TYPE ACCOUNT #-}
+
+# Swaps DCC for one token, and back, at a fixed price. The exchange account
+# writes "assetId" (the token ID in base58) and "price" (Decentralites per
+# smallest unit of the token) with a Data transaction, and holds a stock of
+# both DCC and the token to pay out.
+
+func token() = fromBase58String(getStringValue(this, "assetId"))
+func price() = getIntegerValue(this, "price")
+
+@Callable(i)
+func buy() = {
+  if (size(i.payments) != 1) then throw("Attach exactly one DCC payment")
+  else {
+    let payment = i.payments[0]
+    let units = payment.amount / price()
+    let change = payment.amount % price()
+    if (isDefined(payment.assetId)) then throw("Pay in DCC")
+    else if (units == 0) then throw("The payment is less than the price of one token unit")
+    else if (change == 0) then [ScriptTransfer(i.caller, units, token())]
+    else [ScriptTransfer(i.caller, units, token()), ScriptTransfer(i.caller, change, unit)]
+  }
+}
+
+@Callable(i)
+func sell() = {
+  if (size(i.payments) != 1) then throw("Attach exactly one token payment")
+  else {
+    let payment = i.payments[0]
+    if (payment.assetId != token()) then throw("Pay in the exchange's token")
+    else [ScriptTransfer(i.caller, payment.amount * price(), unit)]
+  }
+}

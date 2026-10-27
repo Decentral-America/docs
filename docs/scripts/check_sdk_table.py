@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Check the TypeScript package table in 04_building-apps/02_client-libraries-and-sdk.md.
+"""Check the TypeScript package table in 04_building-apps/sdk/01_typescript.md.
 
 Default mode: every row whose **Install** cell is a version is installed as
 `@decentralchain/<package>@<version>` in a fresh ESM project and must load with
@@ -20,7 +20,7 @@ import subprocess
 import sys
 import tempfile
 
-PAGE = pathlib.Path(__file__).resolve().parents[1] / "04_building-apps" / "02_client-libraries-and-sdk.md"
+PAGE = pathlib.Path(__file__).resolve().parents[1] / "04_building-apps" / "sdk" / "01_typescript.md"
 VERSION = re.compile(r"^\d+\.\d+\.\d+(?:-[0-9A-Za-z.]+)?")
 ROW = re.compile(r"^\|\s*`(?P<pkg>[a-z0-9-]+)`\s*\|(?P<cells>.*)\|\s*$")
 

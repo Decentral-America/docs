@@ -8,13 +8,13 @@ New to smart contracts on DecentralChain? Start with the {doc}`Smart Contracts O
 :grid-columns: 1 2 2 3
 
 - header: "Developer Tools"
-  content: "RIDE IDE, Surfboard, and starter templates for writing and testing smart contracts."
+  content: "Ride REPL, a node's compiler endpoints and starter templates for writing and testing smart contracts."
 - header: "Client Libraries"
-  content: "Official TypeScript/JavaScript SDK packages for every layer of the stack."
+  content: "TypeScript and Java SDKs: install, connect to the Testnet, sign and broadcast."
 - header: "Wallet Integration"
   content: "Connect dApps to Cubensis Connect and sign transactions on behalf of users."
 - header: "How-To Guides"
-  content: "Copy-paste examples for reading data, building, signing, and broadcasting transactions."
+  content: "Task-by-task recipes: transactions, airdrops, payments, token exchange, voting and list arguments."
 - header: "Smart Contracts"
   content: "dApps, smart accounts and smart assets: how each kind of script works, with Testnet walkthroughs."
 - header: "Blockchain Updates"

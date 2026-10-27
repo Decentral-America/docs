@@ -3,6 +3,12 @@ name: Deploy Documentation
 on:
   push:
     branches: [main]
+    # Redeploy only when something the published site is built from changed. Edits to
+    # README.md, PLAN-docs-expansion.md, AGENTS.md and the like do not change a single
+    # published page. workflow_dispatch below still deploys on demand.
+    paths:
+      - 'docs/**'
+      - '.github/workflows/github_pages_workflow.yml'
   workflow_dispatch:
 
 permissions:
@@ -34,6 +40,8 @@ jobs:
       with:
         python-version: '3.14'
         architecture: 'x64'
+        cache: pip
+        cache-dependency-path: docs/requirements.txt
 
     - name: Execute script to build our documentation
       id: build

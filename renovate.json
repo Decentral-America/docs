@@ -14,6 +14,24 @@
   "platformAutomerge": true,
   "packageRules": [
     {
+      "description": "One weekly PR for all GitHub Actions minor, patch and digest updates",
+      "groupName": "GitHub Actions",
+      "matchManagers": ["github-actions"],
+      "matchUpdateTypes": ["minor", "patch", "digest"]
+    },
+    {
+      "description": "One weekly PR for the Sphinx toolchain (docs/requirements.txt) minor and patch updates",
+      "groupName": "Python docs toolchain",
+      "matchManagers": ["pip_requirements", "pip-compile", "pipenv"],
+      "matchUpdateTypes": ["minor", "patch"]
+    },
+    {
+      "description": "One weekly PR for the docs/_samples npm package minor and patch updates",
+      "groupName": "Docs sample packages",
+      "matchManagers": ["npm"],
+      "matchUpdateTypes": ["minor", "patch"]
+    },
+    {
       "description": "Pin GitHub Actions to full SHA — Renovate keeps them current",
       "matchManagers": ["github-actions"],
       "pinDigests": true
