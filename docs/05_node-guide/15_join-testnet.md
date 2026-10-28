@@ -7,7 +7,7 @@ The public Testnet is a **custom chain** (`dcc.blockchain.type = CUSTOM`). The n
 ```
 
 ```{note}
-Every value on this page was checked against the live Testnet on 2026-10-18. The configuration mirrors the Testnet operators' own node configuration (`node-config/testnet/dcc.conf` in the [infra repository](https://github.com/Decentral-America/infra)). If the two ever disagree, the infra file is authoritative.
+Verified on a clean Docker host (macOS 15.5, Docker Desktop 29.2.1) against node-scala v1.8.1, 2026-10-27: following this page word for word, the node synced from genesis to the tip, height 99,976, in 31 minutes, and the block IDs it reported matched the public node's. The same configuration, run from a tarball built on a clean Ubuntu 24.04, synced to height 100,132 in 22 minutes. Every value on this page was checked against the live Testnet on 2026-10-18. The configuration mirrors the Testnet operators' own node configuration (`node-config/testnet/dcc.conf` in the [infra repository](https://github.com/Decentral-America/infra)). If the two ever disagree, the infra file is authoritative.
 ```
 
 ## Network facts

@@ -1,7 +1,7 @@
 # Installing on macOS
 
 ```{note}
-Verified against node-scala v1.8.0's `README.md`. Not run on a clean machine as part of this documentation pass — if a step doesn't match what you see, please report it.
+Not yet verified on a clean macOS machine. The steps follow node-scala v1.8.1's `README.md`; the build and run steps match the ones verified on a clean Ubuntu 24.04 (see [Linux](12_install-linux)). If a step doesn't match what you see, please report it.
 ```
 
 [Docker](04_install-docker) is the simplest way to run a node; this page is for running it directly on macOS.
@@ -21,7 +21,7 @@ This installs [Eclipse Temurin 25](https://adoptium.net/temurin/releases/?versio
 
 ## Run from the tarball
 
-node-scala releases do not ship a node JAR or package (the v1.7.0 release assets are only `dcc-grpc-server` tarballs), and node-scala doesn't publish a macOS package (`.pkg`/Homebrew formula). The supported way to run a node is the [Docker image](04_install-docker) `ghcr.io/decentral-america/node-scala`. To run it directly on macOS, [build from source](#build-from-source) below, then extract the universal tarball and start the node with its `bin/` launcher:
+node-scala releases do not ship a node JAR or package (the v1.7.0 to v1.8.1 release assets are only `dcc-grpc-server` tarballs), and node-scala doesn't publish a macOS package (`.pkg`/Homebrew formula). The supported way to run a node is the [Docker image](04_install-docker) `ghcr.io/decentral-america/node-scala`. To run it directly on macOS, [build from source](#build-from-source) below, then extract the universal tarball and start the node with its `bin/` launcher:
 
 ```bash
 tar -xzf node/target/universal/decentralchain-<version>.tgz
@@ -39,13 +39,10 @@ brew install --cask temurin@25
 git clone https://github.com/Decentral-America/node-scala.git
 cd node-scala
 
-# Compile and run tests
-sbt checkPR
-
-# Build the node tarball (and DEB packages) for one network
-sbt packageAll                   # Mainnet
-sbt -Dnetwork=testnet packageAll # Testnet
+sbt packageAll   # builds the node tarball (and DEB packages)
 ```
+
+The network comes from the configuration file you start the node with; for the public Testnet, use the one in [Join the Public Testnet](15_join-testnet). To also run the unit tests, run `sbt checkPR` first: it takes over an hour and needs [Node.js](https://nodejs.org/) on the `PATH`.
 
 Building from source additionally requires [SBT](https://www.scala-sbt.org/1.x/docs/Installing-sbt-on-Mac.html). See the [node-scala README](https://github.com/Decentral-America/node-scala#readme) for integration-test setup.
 
