@@ -21,7 +21,7 @@ msgstr ""
 
 #: ../../06_contributing.md:1
 msgid "Contributing"
-msgstr ""
+msgstr "বাতিল করা"
 
 #: ../../06_contributing.md:3
 msgid "DecentralChain is developed in the open across many repositories under the [Decentral-America](https://github.com/Decentral-America) GitHub organization — the node, SDK packages, wallet, and this documentation site are all separate repos, each accepting contributions."
@@ -29,15 +29,15 @@ msgstr ""
 
 #: ../../06_contributing.md:5
 msgid "Node and Protocol"
-msgstr ""
+msgstr "Nod ও প্রোটোকল"
 
 #: ../../06_contributing.md:7
 msgid "The node is developed at [node-scala](https://github.com/Decentral-America/node-scala). Fork the repository, work on a feature branch, and open a pull request. For anything beyond a small fix, open an issue first to discuss the change before investing time in an implementation. See the repo's `CODE_OF_CONDUCT.md` for community guidelines."
-msgstr ""
+msgstr "তার নোডগুলি এখন [নোড-স খোদাName](https://github.com/Decentral-America/node-scala)ে তৈরি করা হয়েছে। রিপোজিটরিতে কাজ করুন । সামান্য কোন কিছু ঠিক না করে, একটি বিষয় প্রথমে আলোচনা করা হবে যে কোন সময় বিনিয়োগ করার আগে এই পরিবর্তন নিয়ে। কমিউনিটি নীতিমালার জন্য পুনঃপো'র `CODE_OF_CONDUCT.md` দেখুন।"
 
 #: ../../06_contributing.md:9
 msgid "SDK and Tooling"
-msgstr ""
+msgstr "SDK এবং টুল"
 
 #: ../../06_contributing.md:11
 msgid "Each SDK package ([`transactions`](https://github.com/Decentral-America/DecentralChain/tree/main/packages/sdk/transactions), [`node-api`](https://github.com/Decentral-America/DecentralChain/tree/main/packages/sdk/node-api), [`signer`](https://github.com/Decentral-America/DecentralChain/tree/main/packages/sdk/signer), [`cubensis-connect`](https://github.com/Decentral-America/cubensis-connect), and the rest listed in [Client Libraries and SDK](04_building-apps/02_client-libraries-and-sdk)) is written in TypeScript under the MIT license:"
@@ -45,19 +45,19 @@ msgstr ""
 
 #: ../../06_contributing.md:13
 msgid "Fork the relevant repository."
-msgstr ""
+msgstr "সংশ্লিষ্ট রিপোজিটরির জন্য।"
 
 #: ../../06_contributing.md:14
 msgid "Create a feature branch (`git checkout -b feature/your-feature-name`)."
-msgstr ""
+msgstr "একটি বৈশিষ্ট্য বিশিষ্ট শাখা তৈরি করুন (`git checkout -b feature/your-feature-name`. 0)"
 
 #: ../../06_contributing.md:15
 msgid "Make your changes, with tests where applicable."
-msgstr ""
+msgstr "আপনার পরিবর্তন করা হবে, যেখানে প্রযোজ্য পরীক্ষা প্রয়োগ করে।"
 
 #: ../../06_contributing.md:16
 msgid "Open a pull request with a clear description of the change."
-msgstr ""
+msgstr "পরিবর্তন সম্পর্কে স্পষ্ট বর্ণনা সহ একটি পুলক অনুরোধ খোলো।"
 
 #: ../../06_contributing.md:18
 msgid "Report bugs or feature requests in the repository the bug actually belongs to, not in this docs repository — include reproduction steps, package version, Node.js version, and network (Mainnet/Testnet) when filing an SDK issue."
@@ -65,11 +65,11 @@ msgstr ""
 
 #: ../../06_contributing.md:20
 msgid "Documentation"
-msgstr ""
+msgstr "নথিপত্র"
 
 #: ../../06_contributing.md:22
 msgid "This documentation site ([Decentral-America/docs](https://github.com/Decentral-America/docs)) accepts pull requests for corrections, missing content, and new articles. If you spot a gap or an inaccuracy, opening an issue first is welcome, especially before a large rewrite."
-msgstr ""
+msgstr "এই নথিপত্রের সাহায্যে ([Decentral-America/docs](https://github.com/Decentral-America/docs)) সংশোধন, অনুপস্থিত বিষয়বস্তু এবং নতুন নিবন্ধের জন্য অনুরোধ গ্রহণ করা হয় । আপনি যদি কোনো ফাঁক বা বিচ্ছিন্নতা খুঁজে পান, তাহলে প্রথমে একটা সমস্যাকে স্বাগত জানানো হবে, বিশেষ করে বড় আকারে পুনরায় নতুন করে লেখার আগে ।"
 
 #: ../../06_contributing.md:24
 msgid "The docs are also translated via [Gitlocalize](https://gitlocalize.com/repo/8397) — translation contributions in any of the supported languages are welcome; see the badges on the [repository README](https://github.com/Decentral-America/docs#readme) for current translation coverage per language."
@@ -77,11 +77,11 @@ msgstr ""
 
 #: ../../06_contributing.md:26
 msgid "Community"
-msgstr ""
+msgstr "সম্প্রদায়"
 
 #: ../../06_contributing.md:28
 msgid "**Questions and proposals:** open an issue in the repository the topic belongs to (node-scala for protocol questions, the relevant SDK package for library questions). None of the Decentral-America repositories has GitHub Discussions enabled at the time of writing."
-msgstr ""
+msgstr "**প্রশ্ন এবং প্রস্তাব:** একটি বিষয় খুঁজে বের করুন এই রিপোজিটরিতে (কোন প্রোটোকল প্রশ্নের জন্য নয়)। ডি-এ-আমেরিকা রিপোজিটরির কোনটাই লেখার সময় GitHub আলোচনা শুরু করতে পারেনি।"
 
 #: ../../06_contributing.md:29
 msgid "**Security issues:** report vulnerabilities privately to security@decentral.exchange rather than in a public issue."
@@ -89,5 +89,5 @@ msgstr ""
 
 #: ../../06_contributing.md:30
 msgid "**Documentation:** this site is built with Sphinx; every page must build without warnings (`sphinx-build -W`) and must not reference third-party projects — CI enforces both."
-msgstr ""
+msgstr "**নথিপত্র:** এই সাইট সেফক্সিক্স দিয়ে তৈরি; প্রতিটি পৃষ্ঠা কোন সতর্কবার্তা ছাড়াই নির্মাণ করতে হবে (`sphinx-build -W` X) এবং অবশ্যই তৃতীয় পক্ষের প্রকল্পগুলোর উল্লেখ না করতে হবে।"
 

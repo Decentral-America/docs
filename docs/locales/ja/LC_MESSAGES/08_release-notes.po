@@ -21,7 +21,7 @@ msgstr ""
 
 #: ../../08_release-notes.md:5
 msgid "Release Notes"
-msgstr ""
+msgstr "リリースノート"
 
 #: ../../08_release-notes.md:7
 msgid "Full release history: [node-scala releases](https://github.com/Decentral-America/node-scala/releases) and the [SDK changelogs](https://github.com/Decentral-America/DecentralChain/tree/main/packages/sdk) (one `CHANGELOG.md` per package)."
@@ -29,109 +29,109 @@ msgstr ""
 
 #: ../../08_release-notes.md:9
 msgid "Which Version Runs Where"
-msgstr ""
+msgstr "どのバージョンがどこに実行するか"
 
 #: ../../08_release-notes.md
 msgid "Network"
-msgstr ""
+msgstr "ネットワーク"
 
 #: ../../08_release-notes.md
 msgid "Node version"
-msgstr ""
+msgstr "Node バージョン"
 
 #: ../../08_release-notes.md
 msgid "Check it with"
-msgstr ""
+msgstr "チェックしてみる"
 
 #: ../../08_release-notes.md
 msgid "Public Testnet"
-msgstr ""
+msgstr "パブリック Testnet"
 
 #: ../../08_release-notes.md
 msgid "node-scala v1.8.1"
-msgstr ""
+msgstr "ノードスケーラブルv1.8.1"
 
 #: ../../08_release-notes.md
 msgid "`GET https://testnet-node.decentralchain.io/node/version`"
-msgstr ""
+msgstr "`GET https://testnet-node.decentralchain.io/node/version`"
 
 #: ../../08_release-notes.md
 msgid "Mainnet"
-msgstr ""
+msgstr "Mainnet"
 
 #: ../../08_release-notes.md
 msgid "An earlier release (the public node reports `DCC v1.3.5`)"
-msgstr ""
+msgstr "以前のリリース(パブリックノードは `DCC v1.3.5` を報告)"
 
 #: ../../08_release-notes.md
 msgid "`GET https://mainnet-node.decentralchain.io/node/version`"
-msgstr ""
+msgstr "`GET https://mainnet-node.decentralchain.io/node/version`"
 
 #: ../../08_release-notes.md:16
 #, python-brace-format
 msgid "Node images are published to `ghcr.io/decentral-america/node-scala` with one tag per release (`1.8.1`, `1.8.0`) and per network (`testnet-latest`, `mainnet-latest`). See {doc}`Install with Docker <05_node-guide/04_install-docker>` and {doc}`Upgrade <05_node-guide/07_upgrade>`."
-msgstr ""
+msgstr "Nodeイメージは、リリースごとに1つのタグ(`1.8.1`、`1.8.0`)とネットワークごとの1つのタグ(`testnet-latest`、`mainnet-latest`)で `ghcr.io/decentral-america/node-scala` に公開されます。{doc}`Docker をインストール <05_node-guide/04_install-docker>` と {doc}`アップグレード <05_node-guide/07_upgrade>` を参照してください。"
 
 #: ../../08_release-notes.md:18
 msgid "Node v1.8.1 (2026-10-24)"
-msgstr ""
+msgstr "ノード v1.8.1 (2026-10-24)"
 
 #: ../../08_release-notes.md:20
 msgid "A maintenance release with no change to consensus, the REST API or Ride. The public Testnet runs it."
-msgstr ""
+msgstr "コンセンサス、REST API または Ride の変更なしのメンテナンスリリース。Testnetは公開しています。"
 
 #: ../../08_release-notes.md:22
 msgid "**Dependencies.** groth16 0.2.1.2 and curve25519 1.0.1, both sha256-pinned."
-msgstr ""
+msgstr "**依存関係。** groth16 0.2.1.2 と base25519 1.0.1、sha256 ピン留めの両方。"
 
 #: ../../08_release-notes.md:23
 msgid "**Licensing.** A third-party notice for the GPL-3.0 dependency."
-msgstr ""
+msgstr "**ライセンス。** GPL-3.0 依存症に対する第三者の通知。"
 
 #: ../../08_release-notes.md:24
 msgid "**Blockchain Updates.** The gRPC bind address of the Blockchain Updates extension is configurable."
-msgstr ""
+msgstr "**ブロックチェーンの更新。** ブロックチェーンアップデート拡張のgRPCバインドアドレスは構成可能です。"
 
 #: ../../08_release-notes.md:25
 msgid "README and comment fixes."
-msgstr ""
+msgstr "READMEとコメント修正。"
 
 #: ../../08_release-notes.md:27
 msgid "Source: the [v1.8.1 release](https://github.com/Decentral-America/node-scala/releases/tag/v1.8.1)."
-msgstr ""
+msgstr "ソース: [v1.8.1 リリース](https://github.com/Decentral-America/node-scala/releases/tag/v1.8.1)."
 
 #: ../../08_release-notes.md:29
 msgid "Node v1.8.0 (2026-10-19)"
-msgstr ""
+msgstr "ノード v1.8.0 (2026-10-19)"
 
 #: ../../08_release-notes.md:31
 msgid "The first release after v1.7.0: consensus and build hardening, plus the work merged since July. Every node on a chain must run it before the chain reaches its `finality-hardening-height`. On the public Testnet that was height 90,000, already passed."
-msgstr ""
+msgstr "v1.7.0以降の最初のリリース:コンセンサスとハードニングの構築、7月以降にマージされた作業。チェーン上のすべてのノードは、チェーンが `finality-hardening-height` に達する前に実行しなければなりません。既に90,000の高さだった公のTestnetでは、渡された。"
 
 #: ../../08_release-notes.md:33
 #, python-brace-format
 msgid "**Block reward.** Feature 26, Adjusted Block Reward Distribution, is votable from this release (activated on the public Testnet). Continuation transaction and Lease expiration are renumbered to 27 and 28; see {doc}`Features and Activation <05_node-guide/10_features-and-activation>`."
-msgstr ""
+msgstr "**報酬をブロックします。** 機能26、調整されたブロック報酬分配は、このリリースからvotableです(公開Testnet)。継続トランザクションとリースの有効期限は27と28に再番号されます。 {doc}`特徴および活発化 <05_node-guide/10_features-and-activation>` を参照してください。"
 
 #: ../../08_release-notes.md:34
 msgid "**Finality.** HotStuff can be made authoritative on a network that opts in (`dcc.hotstuff.authoritative`; the public Testnet does). Equivocating HotStuff voters forfeit their generation deposit from `functionality.hot-stuff-equivocation-penalty-height`. A lagging HotStuff replica re-anchors near the tip (`dcc.hotstuff.max-target-lag-fraction`)."
-msgstr ""
+msgstr "**ファイナリティ。** HotStuff は、(`dcc.hotstuff.authoritative`; 公開 Testnet は) で選択するネットワーク上で権限を付与することができます。HotStuff のオープターが `functionality.hot-stuff-equivocation-penalty-height` から生成された入金を承認する。先端(`dcc.hotstuff.max-target-lag-fraction`)付近のラギンス HotStuff レプリカ再アンカー。"
 
 #: ../../08_release-notes.md:35
 msgid "**Finality hardening** (consensus change, from `finality-hardening-height`). HotStuff quorum weight comes from generating balance, and proven equivocators weigh 0. A voter can't be both a valid endorser and a proven equivocator. Blocks signed with the legacy BLS domain separation tag are no longer accepted."
-msgstr ""
+msgstr "**フィニティ硬化** (consensus は `finality-hardening-height` から変更します)。HotStuff 量子の重量はバランスを発生させ、証明された equivocators の重量が 0 の重量を量ります。有権者と証明されたエクイオボネータは、両方の有効な持久者であり得ることはできません。従来のBLSドメイン分離タグで署名されたブロックは、もはや受け入れられません。"
 
 #: ../../08_release-notes.md:36
 msgid "**HotStuff and P2P hardening** (no consensus change). A proposal gets a vote only after the expected leader's own signed vote for it, proposal views are bounded, and gossip is validated before it is relayed. Endorser indexes are validated when a block is decoded."
-msgstr ""
+msgstr "**HotStuffとP2P硬化** (コンセンサスの変更なし)提案は、予想されるリーダーの署名された投票の後にのみ投票を受けます。提案ビューはバインドされ、それが中継される前にgossipが検証されます。ブロックがデコードされると、エンドワーダーインデックスが検証されます。"
 
 #: ../../08_release-notes.md:37
 msgid "**Generators.** A generating node can commit itself to each generation period (`dcc.miner.self-commit-to-generation`), and recovers from peer-reconnection stalls on its own (`dcc.network.peer-stall-threshold`). A failed initial snapshot is retried instead of forging without a state hash."
-msgstr ""
+msgstr "**発電機。** 生成ノードは、各世代(`dcc.miner.self-commit-to-generation`)に自身をコミットし、独自の(`dcc.network.peer-stall-threshold`)でピアリコネクションの枠から回復できます。ステートハッシュなしで鍛造する代わりに失敗した初期スナップショットが取得されます。"
 
 #: ../../08_release-notes.md:38
 msgid "**Transaction pool.** Transactions that depend on a prioritised parent are kept and re-broadcast across new blocks instead of being dropped, and network-received transactions rejected before their dependency arrived are retried."
-msgstr ""
+msgstr "**トランザクションプール。** 先発性親に依存するトランザクションは、削除される代わりに新しいブロックを経由して保存および再放送され、依存関係が到着する前に拒否されたネットワークによる取引が回収されます。"
 
 #: ../../08_release-notes.md:39
 #, python-brace-format
@@ -140,40 +140,40 @@ msgstr ""
 
 #: ../../08_release-notes.md:40
 msgid "**Settings.** On a chain with history, consensus heights are pinned by the genesis signature. An unknown consensus key stops the node from starting; unknown REST, HotStuff and miner keys log a warning."
-msgstr ""
+msgstr "**設定。** 歴史のあるチェーンでは、コンセンサスの高さはジェネシスのシグネチャによってピン留めされます。未知のコンセンサスキーは、起動からノードを停止します。不明なREST、HotStuff、マイナーキーは警告をログに記録します。"
 
 #: ../../08_release-notes.md:41
 msgid "**Network defaults.** The built-in Testnet profile now uses port 6868 and the public Testnet node as its peer, and the Mainnet profile no longer ships third-party seed addresses. The built-in `testnet` chain type is still not the public Testnet chain."
-msgstr ""
+msgstr "**ネットワークのデフォルト。** 内蔵のTestnetプロファイルは、ポート6868とパブリックTestnetノードをピアとして使用し、Mainnetプロファイルはサードパーティシードアドレスを出荷しません。`testnet` チェーンタイプは、まだ公開されていない Testnet チェーン。"
 
 #: ../../08_release-notes.md:42
 msgid "**Security.** Netty updated for CVE-2026-75595, plus ingress-robustness hardening."
-msgstr ""
+msgstr "CVE-2026-75595、および進入強固な硬化のために更新される **セキュリティ。** 純性。"
 
 #: ../../08_release-notes.md:43
 msgid "**Build.** Native libraries come from Maven Central with pinned checksums. Each release image is smoke-tested and scanned before it is tagged, and carries a build-provenance attestation."
-msgstr ""
+msgstr "**ビルド。** ネイティブライブラリは Maven Central からピン留めされたチェックサムが付属しています。各リリースイメージは、タグ付けされる前にスモークテストとスキャンを行い、ビルドアップの検証を行います。"
 
 #: ../../08_release-notes.md:45
 msgid "The v1.8.0 image reports its version as `DecentralChain v1.8.0-dev-1a1221cdd8`: it was built just before the tag, from a tree that differs only in a CI workflow. The binary is the released one."
-msgstr ""
+msgstr "v1.8.0 イメージは、`DecentralChain v1.8.0-dev-1a1221cdd8` としてバージョンを報告します。これは、CI ワークフローでのみ異なるツリーから、タグの直前に構築されました。バイナリはリリースされた1つです。"
 
 #: ../../08_release-notes.md:47
 msgid "Source: the [v1.8.0 release](https://github.com/Decentral-America/node-scala/releases/tag/v1.8.0)."
-msgstr ""
+msgstr "ソース: [v1.8.0リリース](https://github.com/Decentral-America/node-scala/releases/tag/v1.8.0)."
 
 #: ../../08_release-notes.md:49
 msgid "Node v1.7.0 (2026-07-25)"
-msgstr ""
+msgstr "ノードv1.7.0 (2026-07-25)"
 
 #: ../../08_release-notes.md:51
 msgid "The first official GitHub release of node-scala (`v1.6.3` and earlier were git tags only)."
-msgstr ""
+msgstr "ノードスケーラの最初の公式 GitHub リリース (`v1.6.3` 以前は git タグのみでした)。"
 
 #: ../../08_release-notes.md:53
 #, python-brace-format
 msgid "**Consensus safety fix.** The experimental HotStuff vote pool now checks quorum against every committee snapshot seen while a target's votes accumulate, closing a gap when committee membership changes mid-round. It also evicts stale votes from removed generators, bounds vote-pool memory, and verifies a quorum certificate locally before broadcasting it. HotStuff remains disabled by default (`dcc.hotstuff.enabled = false`); the public Testnet runs it enabled and authoritative. See {doc}`Features and Activation <05_node-guide/10_features-and-activation>`."
-msgstr ""
+msgstr "**コンセンサス安全修正。** 実験的なHotStuff投票プールは、対象となる票が蓄積し、委員会のメンバーシップが中ラウンド変更したときにギャップを閉じながら、すべての委員会のスナップショットに対してquorumをチェックします。また、削除されたジェネレータから投票を盗んだり、投票プールメモリをバインドしたり、放送前に現地で量子証明書を検証したりすることも必然的に検討します。HotStuff はデフォルトで無効になっています(`dcc.hotstuff.enabled = false`)。公開の Testnet は、有効かつ権威のある状態で動作します。{doc}`特徴および活発化 <05_node-guide/10_features-and-activation>` を参照してください。"
 
 #: ../../08_release-notes.md:54
 msgid "**REST API.** `GET /node/status` now includes `generationPeriodLength`, a per-network constant that no endpoint exposed before."
@@ -181,116 +181,116 @@ msgstr ""
 
 #: ../../08_release-notes.md:55
 msgid "**Testing.** Expanded end-to-end testing: deterministic simulation, fault injection with network partitions, property-based fuzzing, and OpenAPI conformance checks in CI. No runtime behaviour change."
-msgstr ""
+msgstr "**テスト。** はエンドツーエンドのテストを拡大しました: 決定的なシミュレーション、ネットワークの仕切り、特性ベースのfuzzingおよびCIのOpenAPIの適合点検が付いている欠陥の注入。ランタイムの挙動は変更しません。"
 
 #: ../../08_release-notes.md:57
 msgid "Source: the [v1.7.0 release page](https://github.com/Decentral-America/node-scala/releases/tag/v1.7.0)."
-msgstr ""
+msgstr "ソース: [v1.7.0 リリースページ](https://github.com/Decentral-America/node-scala/releases/tag/v1.7.0)."
 
 #: ../../08_release-notes.md:59
 msgid "SDK Release of 2026-06-23 (Not on npm Yet)"
-msgstr ""
+msgstr "2026-06-23 の SDK リリース (npm では使用できません)"
 
 #: ../../08_release-notes.md:61
 msgid "A monorepo release commit of 2026-06-23 versions every SDK package for the 2.0 modernization: the packages moved from `packages/ts` to `packages/sdk`, gained a groth16 v2 verifier and a blst 0.3.16 rebuild, and many took a major version. The release tags were pushed on 2026-10-19:"
-msgstr ""
+msgstr "モノレポは、2.0 のモジュナイゼーション用にすべての SDK パッケージを 2026-06-23 版でリリースします。パッケージは `packages/ts` から `packages/sdk` に移行し、 groth16 v2 の検証と blst 0.3.16 を再構築しました。多くのバージョンがメジャーなバージョンとなりました。リリースタグは2026-10-19にプッシュされました。"
 
 #: ../../08_release-notes.md
 msgid "Package"
-msgstr ""
+msgstr "パッケージ"
 
 #: ../../08_release-notes.md
 msgid "Version"
-msgstr ""
+msgstr "バージョン"
 
 #: ../../08_release-notes.md
 msgid "`transactions`"
-msgstr ""
+msgstr "`transactions`"
 
 #: ../../08_release-notes.md
 msgid "6.0.0"
-msgstr ""
+msgstr "6.0.0"
 
 #: ../../08_release-notes.md
 msgid "`signer`"
-msgstr ""
+msgstr "`signer`"
 
 #: ../../08_release-notes.md
 msgid "3.0.0"
-msgstr ""
+msgstr "3.0.0"
 
 #: ../../08_release-notes.md
 msgid "`node-api` (was `node-api-js`)"
-msgstr ""
+msgstr "`node-api` (`node-api-js` を装備)"
 
 #: ../../08_release-notes.md
 msgid "`cubensis-connect-provider`"
-msgstr ""
+msgstr "`cubensis-connect-provider`"
 
 #: ../../08_release-notes.md
 msgid "2.0.0"
-msgstr ""
+msgstr "2.0.0"
 
 #: ../../08_release-notes.md
 msgid "`ts-lib-crypto`"
-msgstr ""
+msgstr "`ts-lib-crypto`"
 
 #: ../../08_release-notes.md
 msgid "`cubensis-connect-types`"
-msgstr ""
+msgstr "`cubensis-connect-types`"
 
 #: ../../08_release-notes.md
 msgid "`types`"
-msgstr ""
+msgstr "`types`"
 
 #: ../../08_release-notes.md
 msgid "`data-service-client`"
-msgstr ""
+msgstr "`data-service-client`"
 
 #: ../../08_release-notes.md
 msgid "5.0.0"
-msgstr ""
+msgstr "5.0.0"
 
 #: ../../08_release-notes.md
 msgid "`marshall`"
-msgstr ""
+msgstr "`marshall`"
 
 #: ../../08_release-notes.md
 msgid "`ledger`"
-msgstr ""
+msgstr "`ledger`"
 
 #: ../../08_release-notes.md
 msgid "`protobuf-schemas`"
-msgstr ""
+msgstr "`protobuf-schemas`"
 
 #: ../../08_release-notes.md
 msgid "3.1.0"
-msgstr ""
+msgstr "3.1.0"
 
 #: ../../08_release-notes.md
 msgid "`oracle-data`"
-msgstr ""
+msgstr "`oracle-data`"
 
 #: ../../08_release-notes.md:72
 #, python-brace-format
 msgid "None of these versions is published to npm: the registry's newest `transactions` is still 5.0.1. These docs keep pinning the published versions listed in the {doc}`TypeScript SDK <04_building-apps/sdk/01_typescript>` page, and will move to the new majors once they are on npm."
-msgstr ""
+msgstr "これらのバージョンのどれもnpmに公開されています。レジストリの最新の `transactions` はまだ5.0.1です。これらのドキュメントは、{doc}`TypeScript SDKの特長 <04_building-apps/sdk/01_typescript>` ページに公開されたバージョンをピン留めし、npm に 1 回新しいメジャーに移動します。"
 
 #: ../../08_release-notes.md:74
 msgid "Ride REPL v1.6.2 (2026-06-06)"
-msgstr ""
+msgstr "Ride REPL v1.6.2 (2026-06-06)"
 
 #: ../../08_release-notes.md:76
 #, python-brace-format
 msgid "`@decentralchain/ride-repl` 1.6.2 is published to npm (tag `ride-v1.6.2`). It fixes the build of the JavaScript Ride compiler it bundles. See {doc}`Ride REPL <04_building-apps/developer-tools/01_ride-repl>`."
-msgstr ""
+msgstr "`@decentralchain/ride-repl` 1.6.2 は npm (タグ `ride-v1.6.2`) に公開されています。バンドルするJavaScript Rideコンパイラのビルドを修正しました。{doc}`Ride REPLの特長 <04_building-apps/developer-tools/01_ride-repl>` を参照してください。"
 
 #: ../../08_release-notes.md:78
 msgid "DecentralScan v2.1.0 (2026-06-13)"
-msgstr ""
+msgstr "DecentralScanのv2.1.0 (2026-06-13)"
 
 #: ../../08_release-notes.md:80
 #, python-brace-format
 msgid "The explorer gained the Testnet faucet: the `/faucet` page and the `POST /api/faucet` endpoint, paid from a dedicated wallet. v1.3.2 (2026-06-15) fixed the peer list, so **All Peers** shows the connected nodes. See {doc}`DecentralScan Guide <09_user-guides/03_decentralscan>`."
-msgstr ""
+msgstr "エクスプローラは、Testnetの蛇口を獲得しました。`/faucet` ページと `POST /api/faucet` エンドポイントは、専用のウォレットから支払われます。v1.3.2(2026-06-15)はピアリストを固定しているため、**すべてのピーラー** は接続されたノードを示しています。{doc}`DecentralScanガイド <09_user-guides/03_decentralscan>` を参照してください。"
 

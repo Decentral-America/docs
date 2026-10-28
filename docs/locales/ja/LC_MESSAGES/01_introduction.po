@@ -21,103 +21,103 @@ msgstr ""
 
 #: ../../01_introduction.md:1
 msgid "Introduction"
-msgstr ""
+msgstr "導入事例"
 
 #: ../../01_introduction.md:3
 msgid "How did money become the basis of trade for such a long time? To have an answer for such question we must understand what money is and the different ways money has been used through the time."
-msgstr ""
+msgstr "お金は、そのような長い間取引の基礎になるにはどうすればよいですか?そのような質問に対する答えを持っているためには、私たちはお金が何であるかを理解しなければならないし、時間を通じてお金が使用されるさまざまな方法を理解する必要があります。"
 
 #: ../../01_introduction.md:5
 msgid "Definition of Money"
-msgstr ""
+msgstr "お金の意味"
 
 #: ../../01_introduction.md:7
 msgid "Money is often defined it by the roles it plays:"
-msgstr ""
+msgstr "お金は、それが再生する役割によってそれを定義されることが多い:"
 
 #: ../../01_introduction.md:9
 msgid "It's a store of value, meaning that money allows you to defer consumption until a later date."
-msgstr ""
+msgstr "値の店です。つまり、そのお金は後日まで消費を延ばすことができます。"
 
 #: ../../01_introduction.md:10
 msgid "It's a unit of account, meaning that it allows you to assign a value to different goods without having to compare them. So instead of saying that a Rolex watch is worth six cows, you can just say it (or the cows) cost $10 000."
-msgstr ""
+msgstr "アカウントの単位です。つまり、それらを比較することなく異なる商品に値を割り当てることを可能にします。代わりに、ロレックスの時計は6つの牛に値すると言っても、あなたはそれ(または牛)コスト$ 10 000と言うことができます。"
 
 #: ../../01_introduction.md:11
 msgid "And it's a medium of exchange, meaning it's an easy and efficient way for different parties to trade goods and services with one another."
-msgstr ""
+msgstr "そして、それは交換の媒体です。つまり、異なる当事者が商品を取引し、互いにサービスに効率的な方法であることを意味しています。"
 
 #: ../../01_introduction.md:13
 msgid "History of Money"
-msgstr ""
+msgstr "お金の歴史"
 
 #: ../../01_introduction.md:15
 msgid "Even though we're able to define what money is, when it comes to its origins, money has been mum about them. For such a central element of our lives, money’s ancient roots and the reasons for its invention are unclear, most of the available knowledge is based on conjectures and logical inferences."
-msgstr ""
+msgstr "お金が何であるかを定義できるのですが、その起源に関してはお金はそれらについてお母さんでした。私たちの人生のそのような中心要素のために、お金の古代の根と発明の理由は不明です、利用可能な知識の大部分は、注射や論理的な影響に基づいています。"
 
 #: ../../01_introduction.md:17
 msgid "Some economists assume that bartering of goods and services inspired money’s invention. On the other hand there are anthropologists and archaeologists contending that early states invented currency as a means of debt payment."
-msgstr ""
+msgstr "一部のエコノミストは、商品やサービスの苦しさがお金の発明を触発したと仮定しています。一方、有農薬学者や考古学者は、初期状態が債務の支払い手段として通貨を発明したことに反対しています。"
 
 #: ../../01_introduction.md:19
 msgid "Several investigations suggest that money independently appeared for different reasons and assumed different tangible forms in many parts of the world, starting thousands of years ago and bartering had nothing to do with it but instead, money grew out of older systems of credit and debt. In small-scale societies, debts concern obligations to others while among hunter-gatherer and farming groups daughters given away in marriage create debts that are partially repaid with goods known as bridewealth where full repayment requires that the recipient of the first bride provide a bride in return. No cash needed."
-msgstr ""
+msgstr "いくつかの調査は、独立して異なる理由のために登場し、世界の多くの地域で異なる有形形態を想定したお金が示唆しています, 数千年前から始まり、バーターリングはそれで行うことは何もなかったが、代わりに, お金は、クレジットと債務の古いシステムから育ちました.小規模な社会では、債務は結婚で亡くなったハンター・ゲイザーラーと農作グループ娘の間で他の人に義務を負う懸念の義務を負います。全額返済が最初の花嫁の受取人がリターンで花嫁を提供する必要があるという証拠として知られている商品と部分的に再払い戻される債務を作成します。現金は必要ありません。"
 
 #: ../../01_introduction.md:21
 msgid "Revisionists argue that a transition to a new form of money-friendly debt started at least 5,500 years ago in the agricultural states of Mesopotamia and Egypt. In Mesopotamia, the silver shekel — a lump of metal, not a coin — was a basic monetary measure. Rulers decreed that one shekel’s weight in silver was equivalent to a bushel of barley. Shekels of silver, gold and other metals were used in other ancient societies. Precise weights of shekels appear to have varied from one to the next one and therefore are difficult to pin down. Farmers were taxed to support royal lifestyles and public works, what the farmers and other commoners couldn’t pay in goods was recorded as debt in shekels. Merchants and tradespeople acquired goods from temple and palace officials on credit."
-msgstr ""
+msgstr "改定者は、Mesopotamiaとエジプトの農作国で5,500年前に、お金に優しい債務の新しい形態への移行が始まったと主張しています。メソポタミアでは、銀のシェケルは、硬貨ではなく金属の塊で、基本的な金銭測定でした。ルーラーズは、銀の1つのシェルの重みがバリーのビュッヘルと等しいと述べた。銀、金、その他の金属の貝殻は、他の古代の社会で使われていました。ヒケの正確な重量は、次のいずれかから変化し、従ってピンダウンすることが困難であるように見えます。農民は、王宮のライフスタイルや公共作品をサポートするために課税され、農家や他の庶民が商品に支払うことができないものは、シェケルの債務として記録された。商人や貿易人、寺院や宮殿の公式からクレジットで商品を手に入れました。"
 
 #: ../../01_introduction.md:23
 msgid "Coins stamped with images of animals or rulers, acting as denominations and guaranteeing the metal’s value, first appeared in the kingdom of Lydia around 2,600 years ago. Located in what is now Turkey, Lydia sat on the cusp between the Mediterranean and the Near East, and commerce with foreign travelers was common which was one of the major promoters for this coin mint to happen. To understand why, imagine doing a trade in the absence of money or in other words through barter. The chief problem with barter is the double coincidence of wants. Say you have a bunch of bananas and would like a pair of shoes, but it's not enough to find someone who has some shoes or someone who wants some bananas. To make the trade, you need to find someone who has shoes they're willing to trade and that wants bananas which is no easy task."
-msgstr ""
+msgstr "動物や定規の画像でスタンプを押印し、金属の価値を保証するコインは、最初に2,600年前にリディア王国に登場しました。今、トルコに位置して、リディアは地中海とニアイーストの間にあるカスプに座っていて、外国の旅行者との商取引は、このコインミントが起こるために主要なプロモーターの一つであったことが一般的でした。理由を理解するために、お金の欠如やバーターを通じて他の言葉で取引をすることを想像してください。バーターのチーフの問題は、欲望の二重偶然です。バナナの束を持っていて、靴のペアをしたいと言いますが、いくつかの靴を持っている人やバナナを望む人を見つけるのは十分ではありません。取引を行うには、彼らが取引したいと思う靴を持っている人を見つける必要があります。そして、それは簡単な作業ではありませんバナナを望むことです。"
 
 #: ../../01_introduction.md:25
 msgid "With a common currency, the task becomes easier: You just sell your bananas to someone in exchange for money, with which you then buy shoes from someone else. And if, as in Lydia, you have foreigners from whom you'd like to buy or to whom you'd like to sell, having a common medium of exchange is obviously valuable. That is, money is especially useful when dealing with people you don't know and may never see again."
-msgstr ""
+msgstr "一般的な通貨で、タスクは簡単です:あなたはちょうどあなたが他の誰かから靴を購入すると、お金のために交換して、あなたのバナナを誰かに売るだけです。そして、もしリディアのように、あなたはあなたが購入したい人や販売したい人から、交換の一般的な媒体を持っている外国人が明らかに価値があります。つまり、知らない人に対処するときに特にお金は便利ですし、もう一度見られないかもしれません。"
 
 #: ../../01_introduction.md:27
 msgid "The Lydian system's breakthrough was the standardized metal coin. Made of a gold-silver alloy called electrum, one coin was exactly like another—unlike, say, cattle. Also unlike cattle, the coins didn't age or die or otherwise change over time. And they were much easier to carry around. Other kingdoms followed Lydia's example, and coins became ubiquitous throughout the Mediterranean, with kingdoms stamping their insignia on the coins they minted. This had a dual effect: it facilitated the flow of trade, and it established the authority of the state."
-msgstr ""
+msgstr "リディアンシステムのブレークスルーは、標準化された金属コインでした。エレクラムと呼ばれる金銀の合金で作られた1つのコインは、まったく異様なものでした。また、牛とは異なり、硬貨は年齢や死になかったり、時間をかけて変更したりしました。持ち運びがとても楽しかった。他の王国はリディアの例に続いており、コインは地中海全体でユビキタスになりました。そして、王国は彼らが採掘したコインに彼らの署名を投げました。これはデュアル効果をもたらした:それは貿易の流れを促進し、州の権威を確立しました。"
 
 #: ../../01_introduction.md:29
 msgid "The spread of money throughout the Mediterranean didn't mean that it was universally used; soon after Lydia, cities and states in Greece, Persia, India and China began to strike their own coins, but even then most people were still subsistence farmers and existed largely outside the money economy. But as money became more common, it encouraged the spread of markets. Once a small part of the economy is taken over by markets and money, they tend to colonize the rest of the economy, gradually forcing out barter, feudalism, and other economic arrangements. This happens mostly because money makes market transactions so much easier and also because using money seems to redefine what people value, pushing them to view things in economic, rather than social, terms."
-msgstr ""
+msgstr "地中海全体のお金の広がりは、それが普遍的に使用されていないという意味ではありませんでした。 ギリシャ、ペルシャ、インド、中国でリディア、都市や州が自分のコインを打つようになりましたが、それでもほとんどの人は依然として自発的な農家であり、主にお金の経済の外に存在していました。しかし、お金がより一般的になったので、市場の広がりを奨励しました。経済の小さな部分が市場やお金によって引き継がれれば、彼らは徐々にバーター、フェダリズム、および他の経済アレンジを強化し、残りの経済を植民地化する傾向があります。これは、お金が市場取引をはるかに簡単にし、またお金を使用しているので、ほとんど起こります 人々が値するものを再定義する, 社会的ではなく、経済で物事を表示するためにそれらをプッシュ, 言葉."
 
 #: ../../01_introduction.md:31
 msgid "Governments were quick to embrace hard currency because it facilitated the collection of taxes and the building of military forces, coins funded armies and wars of conquest. In the process, coins became legal tender for all sorts of transactions. Marketplaces were a result of this system, not its cause, revisionists argue."
-msgstr ""
+msgstr "政府は、税金の収集と軍部隊の建設を容易にするので、ハード通貨を埋め込むために迅速だった, コインは征服兵や戦争に資金を供給しました.プロセスでは、コインはあらゆる種類の取引に対して法的入札になりました。マーケットプレイスは、その原因ではなく、このシステムの結果であった, リビジョンリストが議論."
 
 #: ../../01_introduction.md:33
 msgid "Once the Chinese had started making comparatively inexpensive paper from natural fibers, and discovered block-printing, paper currency came into use in the country. The first known use of paper currency in China is reported from the Tang dynasty and despite the fact that scarce information remains about this early system of paper currency there's evidence that these were certificates issued by the Tang government to pay local merchants in distants parts of the empire. By using certificates, the government could avoid having to transport metal money far away. Each certificate had a certain amount of money stated on it and was redeemable for metal cash on demand in the Chinese capital. Most merchants never went through the trouble of going to the capital to get cash for their certificate, instead the certificates were used as money locally, since they were transfereable. The view of money as commodity began to shift only with the widespread adoption of paper currency."
-msgstr ""
+msgstr "中国が天然繊維から比較的安価に紙をつくり始め、ブロック印刷を発見したと、国の紙幣が使われてきました。中国の紙幣の最初の知られた使用は、タン・ダイナスティから報告されています。また、この早期に紙幣のシステムが残っているという事実にもかかわらず、これらはタン政府によって発行された証明書が帝国の遠い部分で地元の商人を支払うという証拠があります。証明書を使用することで、政府は遠く離れた金属貨を輸送することを避けることができます。各証明書は、その上で述べた一定の金額を持っており、中国資本の要求に応じて金属現金のために償還されました。ほとんどの商人は、その証明書の現金を得るために資本に行くのトラブルを決して行っていません, 彼らは転送可能だったので、証明書は、ローカルにお金として使用されていました.コモディティとしてのお金の見解は、紙幣の普及にのみシフトし始めました。"
 
 #: ../../01_introduction.md:35
 msgid "Compared to traditional money made from precious metals, paper currency was easier to transport, and the use of paper currency also freed up metal that could be put to other use. In 1821, the Bank of England adopted the gold standard, promising to redeem its notes for gold upon request. As other countries followed suit, the gold standard became the general rule for developed economies. The discovery of major new gold fields over the course of the 19th century ensured that the money supply kept growing."
-msgstr ""
+msgstr "貴金属製の伝統的なお金と比較して、紙の通貨は輸送が容易で、紙の通貨の使用も他の用途に置くことができる金属を解放しました。1821年、イングランド銀行は金基準を採用し、要求に応じて金のメモを償還することを約束しました。他国がスーツを追ったように、金規格は開発途上国の一般規則になりました。19世紀の経過とともに、主要な新金地の発見により、お金の供給が成長し続けたことを保証しました。"
 
 #: ../../01_introduction.md:37
 msgid "The gold standard, as it was intended to do, brought stability to prices and was enormously beneficial to property holders and lenders. However, it also brought deflation—that is, prices generally fell—because as countries, populations and economies grew, their governments had no easy way to increase the money supply short of mining more gold, and so money in effect became more scarce. Deflation was hard on farmers and borrowers, who longed for a little inflation to help them with their debts; when money gradually loses some of its value, so, too, do people's debts."
-msgstr ""
+msgstr "金の基準は、それが意図したように、価格に安定性をもたらし、プロパティホルダーや貸し手にとって非常に有益でした。しかし、それはまた、防衛をもたらした - つまり、一般的に価格が落ちました。国や人口、経済が増加するにつれて、政府はより多くの金を採掘するお金の供給の不足を増やす簡単な方法を持っていません、そして効果のお金はより怖くなってしまった。防衛は、農家や借り手に苦労していましたが、借金を援助するために少しのインフレを延ばしました。お金が徐々にその価値の一部を失うとき、そうで、人民の債務をします。"
 
 #: ../../01_introduction.md:39
 msgid "What finally derailed the gold standard was World War I. Since governments needed more money for their militaries than they had in gold, and so they simply began printing it. And though many countries tried to return to the gold standard after the war, the Great Depression consequences made it end for good. Because of this currencies today are “fiat\" currencies, meaning they're backed by the authority of the issuing government, and nothing more."
-msgstr ""
+msgstr "ついに金基準が世界大戦だったのを脱落させたのは、政府は金よりも多くの移民のためにお金を必要としていましたので、彼らは単にそれを印刷し始めました。戦後、多くの国が金基準に戻ろうとしましたが、大きな抑圧結果は良いために終わっていました。この通貨は、今日の「フィアット」通貨であるため、発行政府の権威によって支持されていることを意味し、さらに何もありません。"
 
 #: ../../01_introduction.md:41
 msgid "In the United States, for example, that means the government accepts only dollars as payment for taxes and requires its creditors to accept dollars in payment for debts. But if people were to lose faith in the dollar and stop accepting it in everyday transactions, it would eventually become worthless. The reliance on fiat money, we're told, gives too much power to the government, which can recklessly print as much money as it wants. Yet the truth is that this has always been possible. Even with the gold standard, governments revalued their currencies from time to time, in effect dictating a new price for gold, or they ignored the standard when it proved too limiting, as during the First World War. What's more, the notion that gold is somehow more “real\" than paper is, well, a mirage. Gold is valuable because we've collectively decided that it's valuable and that we'll accept goods and services in exchange for it. And that's no different, ultimately, from our collective decision that colorful rectangles of paper are valuable and that we'll accept goods and services in exchange for them."
-msgstr ""
+msgstr "米国では、例えば、政府は税金の支払いとしてのみドルを受け入れ、債務の支払いでドルを受け入れるように要求することを意味します。しかし、人が信条を失い、日常の取引で受け止めようとしていたならば、それは最終的に価値のないものになるでしょう。フィアットマネーの信頼性, 我々は言われています, あまりにも多くの電力を政府に与えます, それは望むほど多くのお金を印刷することができます.しかし、真実はこれが常に可能であるということです。政府は、金基準であっても、通貨を時間から時間まで評価し、新しい価格を金に予測したり、最初の世界大戦中に制限が過ぎた場合、標準を無視しました。さらに、金が紙よりも「本物の」という概念は、よく、ミラージュです。金は、金を総合的に決定したので価値のある商品やサービスを交換してもらえるということが大切です。そして、それは最終的には、紙のカラフルな長方形が貴重であり、我々はそれらのために交換して商品やサービスを受け入れることになるという私たちの集団的な決定から異なっていません。"
 
 #: ../../01_introduction.md:43
 msgid "Difference Between Money and Currency"
-msgstr ""
+msgstr "お金と通貨の違い"
 
 #: ../../01_introduction.md:45
 msgid "While most of the time, the terms \"money\" and \"currency\" are used interchangeably, there are some suggestions that these terms are not identical terms; these suggest that money is inherently an intangible concept, while currency is the physical or tangible manifestation of the intangible concept of money. By extension, according to this suggestions, money cannot be touched or smelled. Currency is the coin, note, or object that is presented as the physical form of money. The basic form of money is numbers; today some of the basic forms of currency are paper notes, coins, or plastic cards."
-msgstr ""
+msgstr "ほとんどの場合、用語「お金」と「通貨」は交換可能に使用されますが、これらの条件は同じ条件ではないいくつかの提案があります。これらは、お金が本質的に無形コンセプトであることを示唆しています。一方、通貨は、お金の有形概念の物理的または有形的特徴です。延長によって、この提案に従って、お金は触れるか、または臭いがすることができません。通貨は、お金の物理的な形態として提示されているコイン、ノート、またはオブジェクトです。お金の基本的な形態は数字です。今日、通貨の基本形態のいくつかは紙のメモ、コイン、またはプラスチックカードです。"
 
 #: ../../01_introduction.md:47
 msgid "The powerful combination of computers and telecommunications, of smartphones and social media, of cryptography and virtual economies makes it seem like it's a possibility to create a cashless society. What matters most about money is not what it is, but what it does. After all, people will use the currencies that lubricate commerce, allow people to exchange goods and services, and thus encourage people to work and create. Money, whether it's represented by a metal coin, a shell or a piece of paper, doesn't always have value. Its value depends on the importance that people place on it—as a store of value, a unit of account, and a medium of exchange. Money is valuable merely because everyone knows that it will be accepted as a form of payment. However, throughout history, both the usage and the form of money have evolved."
-msgstr ""
+msgstr "暗号化と仮想経済のスマートフォンやソーシャルメディアのコンピュータと通信の強力な組み合わせは、それがキャッシュレス社会を作成する可能性だように思えるようになります。お金のほとんどがそれが何であるかではなく、それは何をするか。結局のところ、人々は商取引を潤滑する通貨を使用し、人々が商品やサービスを交換できるようにし、人々を働き、創造することを奨励します。お金は、金属コイン、シェルまたは紙の部分によって表されるかどうか、常に価値を持っていません。その価値は、価値の店、口座の単位、および為替媒体として、人々がそれを配置する重要性に依存します。誰もが支払いの形態として受け入れられることを知っているので、お金は単なる価値があります。しかし、歴史全体を通して、使用量とお金の形態が変化しています。"
 
 #: ../../01_introduction.md:49
 msgid "Definition of Cryptocurrencies"
@@ -125,283 +125,283 @@ msgstr ""
 
 #: ../../01_introduction.md:51
 msgid "Cryptocurrency is a digital or virtual form of currency; meaning it's a representations of value, that uses cryptography to secure and verify transactions as well as to control the creation of new units."
-msgstr ""
+msgstr "Cryptocurrencyは、デジタルまたは通貨の仮想形式です。つまり、暗号化を使用して取引を保護し、検証し、新しいユニットの作成を制御するために、価値の表現です。"
 
 #: ../../01_introduction.md:53
 msgid "Cryptocurrencies operate on systems that allow for secure online transactions to take place without the need for any central banks or intermediaries. Instead, transactions are recorded on a decentralized and distributed public ledger (DLT) called a blockchain, which is maintained by a network of computers around the world that record all transactions in a secure and transparent manner."
-msgstr ""
+msgstr "暗号通貨は、中央銀行や仲介を必要としないで、安全なオンライン取引を可能にするシステム上で動作します。代わりに、トランザクションは、ブロックチェーンと呼ばれる分散型パブリックレジャー(DLT)に記録され、世界中のコンピュータのネットワークによって維持され、すべての取引を安全かつ透明な方法で記録します。"
 
 #: ../../01_introduction.md:55
 msgid "Definition of Blockchain Technology"
-msgstr ""
+msgstr "ブロックチェーン技術の定義"
 
 #: ../../01_introduction.md:57
 msgid "Blockchain technology is crucial to cryptocurrencies as it allows transactions to be processed and authenticated without any central authority. Instead of relying on a single, centralized authority to manage and store the data, blockchains rely on a network of computers to validate and record transactions, which makes them more secure and resistant to tampering or hacking. A blockchain offers a commonly agreed record of truth to multiple, mutually distrusting participants in an economic system since it keeps track of cryptocurrency transactions which are grouped into blocks. Each block is cryptographically linked to the previous one so as new blocks are added the older blocks become more difficult to modify. New blocks are replicated across all copies of the blockchain within the network, and any conflicts are resolved automatically using established rules."
-msgstr ""
+msgstr "ブロックチェーン技術は、取引があらゆる中央の権限なしで処理され、認証されることを可能にするため、暗号通貨に不可欠です。単一の、集中的な権限に依存してデータを管理し、保存する代わりに、ブロックチェーンはコンピュータのネットワークに依存して、トランザクションを検証および記録します。これにより、改ざんやハッキングにより安全かつ耐性が向上します。ブロックチェーンは、ブロックにグループ化された暗号通貨取引の追跡を維持しているため、経済システムで複数の相互に不信者への真実の一般的に合意された記録を提供しています。各ブロックは、新しいブロックが追加されるため、前のブロックに暗号的にリンクされます。 古いブロックは変更が困難になります。ネットワーク内のすべてのブロックチェーンのコピー全体に新しいブロックが複製され、確立されたルールを使用して自動的に競合が解決されます。"
 
 #: ../../01_introduction.md:59
 msgid "A blockchain is spread across nodes usually in different locations. This is one of the key ideas about blockchain, and gives it its unique decentralized features. Because of this, anyone can submit information to be stored onto a blockchain and therefore it is important that there are processes in place that can ensure everyone agrees on what information to add and what to discard. Different networks use different methods but this procesess together are what's called a consensus protocol and they are essentially the rules by which a network operates."
-msgstr ""
+msgstr "ブロックチェーンは、通常異なる場所にあるノード間でスプレッドされます。これはブロックチェーンに関する重要なアイデアの1つであり、そのユニークな分散型機能を提供します。そのため、誰でもブロックチェーンに保存される情報を提出できるので、誰もが情報を追加し、捨てる情報に同意することを確認することができるプロセスがあることが重要である。異なるネットワークは異なる方法を使用しますが、このプロセスはコンセンサスプロトコルと呼ばれるものであり、ネットワークが動作するルールです。"
 
 #: ../../01_introduction.md:61
 msgid "Definition of Consensus Protocol"
-msgstr ""
+msgstr "コンセンサスプロトコルの定義"
 
 #: ../../01_introduction.md:63
 msgid "Consensus is a pervasive problem in many areas of human endeavor; consensus is the process of agreeing to one of several alternates proposed by a number of agents. Consensus can be defined as an agreement, protocols are rules which describe how an activity should be performed. Simply put, consensus protocols could be viewed as “agreement rules”."
-msgstr ""
+msgstr "コンセンサスは、人間の努力の多くの領域で侵襲的な問題です。コンセンサスは、エージェントの数によって提案されたいくつかの代替品の1つに合意するプロセスです。コンセンサスは、合意として定義することができます。プロトコルは、アクティビティの実行方法を説明するルールです。簡単に言えば、コンセンサスプロトコルは「同意ルール」として表示できます。"
 
 #: ../../01_introduction.md:65
 msgid "A consensus protocol (also known as consensus mechanism or consensus algorithm) is used to achieve the necessary agreement on a single data value or a single state of the distributed ledger at any given time. It provides a method of review and confirmation of what data should be added to a blockchain's record. Because blockchain networks typically don't have a centralized authority dictating who is right or wrong, nodes on a blockchain all must agree on the state of the network, following the predefined rules, or protocol."
-msgstr ""
+msgstr "コンセンサスプロトコル(コンセンサスメカニズムやコンセンサスアルゴリズムとも呼ばれる)は、単一のデータ値または任意の時間に分散レジャーの単一状態に必要な合意を達成するために使用されます。ブロックチェーンの記録にデータを追加すべきデータの見直しと確認の方法を提供します。ブロックチェーンネットワークは通常、誰が正しいか間違っているかを一元化した権限を持たないため、ブロックチェーン上のノードは、あらかじめ定義されたルールやプロトコルに従って、ネットワークの状態にすべて同意しなければなりません。"
 
 #: ../../01_introduction.md:67
 msgid "Current State of Blockchain Technology"
-msgstr ""
+msgstr "ブロックチェーン技術の現状"
 
 #: ../../01_introduction.md:69
 msgid "Bitcoin"
-msgstr ""
+msgstr "ビットコイン"
 
 #: ../../01_introduction.md:71
 msgid "The Bitcoin blockchain was first introduced in 2008 through a white paper by its pseudonymous creator Satoshi Nakamoto as a peer-to-peer electronic cash system that allows users to send payments directly to each other using Bitcoin (BTC), the blockchain's native currency, without the need for intermediaries such as financial institutions. The first Bitcoin transaction took place in January 2009, when Satoshi Nakamoto sent 10 Bitcoins to the first person who downloaded the software. The first commercial transaction using Bitcoin took place in 2010, when a programmer named Laszlo Hanyecz ordered two pizzas by paying 10,000 Bitcoins to an intermediary."
-msgstr ""
+msgstr "ビットコインブロックチェーンは、2008年に、疑わしいクリエイターの中本聡が、ビットコイン(BTC)、金融機関などの仲介業者を必要としないブロックチェーンのネイティブ通貨を使用して、直接決済を他のユーザーに送信できるピアツーピア電子キャッシュシステムとして導入されました。最初のBitcoinトランザクションは、2009年1月に行われた。中本聡が10 Bitcoinsをソフトウェアをダウンロードした最初の人に送信したとき。ビットコインを使用した最初の商業取引は、2010年に行われた。プログラマがLaszlo Hanyeczという名の通り、10,000 Bitcoinを仲介業者に支払うことで2つのピザを注文しました。"
 
 #: ../../01_introduction.md:73
 msgid "Bitcoin uses a proof of work (PoW) consensus protocol, in which miners compete to solve complex mathematical equations using their computing power. The first miner who succeeds in solving the cryptographic puzzle adds the latest block of transactions to the blockchain and receives rewards in the form of newly minted coins and transaction fees. This process is energy-intensive and was designed to be difficult on purpose to \"prove\" that participants have done the \"work\" and are eligible to add a new block to the blockchain."
-msgstr ""
+msgstr "ビットコインは、作業(PoW)コンセンサスプロトコルの証拠を使用しており、マイナーがコンピューティングパワーを使用して複雑な数式を解決するために競争しています。暗号パズルを解くことに成功した最初のマイナーは、ブロックチェーンに取引の最新のブロックを追加し、新しく採掘されたコインと手数料の形で報酬を受け取ります。このプロセスはエネルギー集中力で、参加者が「仕事」をやった「改善」の目的で困難に設計されており、ブロックチェーンに新しいブロックを追加できるという資格があります。"
 
 #: ../../01_introduction.md:75
 msgid "The scripting language used in Bitcoin transactions is called Script. It is used almost exclusively to define how outputs can be spent and is responsible for enforcing the rules that govern Bitcoin transactions. In other words, Script determines who the BTC was sent to, how much was sent, and under what conditions it can be spent."
-msgstr ""
+msgstr "ビットコイン取引で使用されるスクリプト言語はスクリプトと呼ばれます。出力を費やすことができる方法を定義するためにほとんどだけ使われ、Bitcoin取引を支配するルールを強化する責任があります。言い換えると、スクリプトはBTCが送信されたか、どのくらいの送金を決定し、どのような条件で費やすことができるのかを決定します。"
 
 #: ../../01_introduction.md:77
 msgid "Ethereum"
-msgstr ""
+msgstr "イーサリアム"
 
 #: ../../01_introduction.md:79
 msgid "Ethereum is a decentralized blockchain platform that revolutionized the way applications are built and executed. Founded in 2015 by co-founder Vitalik Buterin, who published its white paper in 2013, Ethereum offers a range of features that go beyond those of Bitcoin, including the possibility to create new cryptocurrencies and the ability to execute smart contracts, which are self-executing agreements encoded onto the blockchain, with the terms of the agreement between buyer and seller being directly written into lines of code without the need for intermediaries all while enforcing the negotiation or performance of the contract automatically. By enabling the execution of smart contracts, Ethereum opens up the possibility of creating decentralized applications (DApps), which operate transparently and independently without any central authority."
-msgstr ""
+msgstr "Ethereumは分散型ブロックチェーンプラットフォームで、アプリケーションの構築と実行方法に革命をもたらしました。イーサリアムは、2013年にホワイトペーパーを出版した共同創設者Vitalyk Buterinによって2015年に設立されたEthereumは、新しい暗号通貨を作成する可能性とスマートコントラクトを実行する能力を含むビットコインの人々を超えて行く機能の範囲を提供しています。これは、ブロックチェーンにエンコードされた自己実行契約であり、買い手と売り手の間の合意は、交渉または自動的に契約のパフォーマンスを強化しながら、すべてのインターメディアのための必要性なしで直接コードのラインに書かれているという条件で。スマートコントラクトの実行を有効にすると、Ethereum は、中央権限なしで透明かつ独立して動作する分散型アプリケーション(DApp)を作成する可能性が開きます。"
 
 #: ../../01_introduction.md:81
 msgid "Like Bitcoin, Ethereum initially used a proof-of-work (PoW) consensus protocol, similar to Bitcoin, but it has undergone a major upgrade that moved it to a proof-of-stake (PoS) consensus protocol. Unlike Proof of Work (PoW) consensus models, where miners' ability to validate block transactions is based on their hardware's computing power, PoS models assign the task of validating new blocks based on the size of the node's stake, with larger stakes having a higher likelihood of producing the next block. The PoS system aims to provide a more energy-efficient alternative to PoW while still maintaining the security of the blockchain. This upgrade on the concensus protocol aims to increase efficiency, security, and reduce environmental impact by eliminating the need for the intensive computational power that PoW requires."
-msgstr ""
+msgstr "ビットコインと同様に、Ethereumは当初、Bitcoinと同様のProof-of-work(PoW)コンセンサスプロトコルを使用していましたが、これは、それをプルーフオブステーク(PoS)コンセンサスプロトコルに移動した大きなアップグレードを受けています。作業の証拠(PoW)コンセンサスモデルとは異なり、マイナーのブロックトランザクションを検証する能力はハードウェアのコンピューティングパワーに基づいており、PoSモデルは、ノードのステークのサイズに基づいて新しいブロックを検証するタスクを割り当てます。次のブロックを作成する可能性が高くなります。PoSシステムは、ブロックチェーンのセキュリティを維持しながら、PoWにより多くのエネルギー効率の高い代替手段を提供することを目指しています。このコンセンサスプロトコルのアップグレードは、PoWが必要とする集中的な計算能力の必要性を排除することにより、効率性、セキュリティ、および環境への影響を増加させることを目指しています。"
 
 #: ../../01_introduction.md:83
 msgid "The blockchain's native currency is called Ether or ETH. Ether is used mainly for two purposes—it is traded as a digital currency on exchanges in the same fashion as other cryptocurrencies, and it is used on the Ethereum network to run applications. Therefore all decentralized applications built on Ethereum allow Ether and other crypto assets to be used in a plethora of different ways including as collateral for loans or be lent out to borrowers to earn interest. Collateral refers to assets pledged as security for repayment of a loan."
-msgstr ""
+msgstr "ブロックチェーンのネイティブ通貨は、EtherまたはETHと呼ばれます。Etherは主に2つの目的のために使われています。他の暗号通貨と同じ方法で取引所にデジタル通貨として取引され、Ethereumネットワークでアプリケーションを実行します。そのため、Ethereum上に構築されたすべての分散型アプリケーションは、Etherや他の暗号化資産が融資の担保として使用されるか、借主が利益を得るために貸与するなど、さまざまな方法のplethoraで使用することを可能にします。担保とは、融資の返済のためのセキュリティとして侵害された資産を指します。"
 
 #: ../../01_introduction.md:85
 msgid "Ethereum offers multiple languages for programmers to develop smart contracts. The two most active and maintained languages are:"
-msgstr ""
+msgstr "Ethereumは、プログラマがスマートコントラクトを開発するための複数の言語を提供しています。最も活発で維持された言語は2つあります:"
 
 #: ../../01_introduction.md:87
 msgid "Solidity"
-msgstr ""
+msgstr "ソリッド"
 
 #: ../../01_introduction.md:88
 msgid "Vyper"
-msgstr ""
+msgstr "ワイパー"
 
 #: ../../01_introduction.md:90
 msgid "DecentralChain"
-msgstr ""
+msgstr "DecentralChain"
 
 #: ../../01_introduction.md:92
 msgid "DecentralChain is a cutting-edge, secure and efficient blockchain ecosystem empowering smart contract creation, decentralized application (DApps) development and a thriving decentralized finance (DeFi) community. It utilizes a consensus protocol called Leased Proof of Stake (LPoS) which aims to improve upon traditional Proof of Stake (PoS) by allowing users to lease their stakes to other users, which increases the latter's ability to produce new blocks. In return, the lender receives a percentage of the transaction fees earned by the validator. This leasing mechanism aims to address the possible centralization problem in traditional PoS models where a few large stakeholders control a significant portion of the network, and the decision-making power is concentrated in the hands of a small group of individuals or entities while at the same time allowing all users to earn rewards, extending the ability to participate in the network to not only minority stakeholders but also users who just want to lease their stakes to other users."
-msgstr ""
+msgstr "DecentralChainは、スマートコントラクトの作成、分散型アプリケーション(DApps)開発、および分散型分散型ファイナンス(DeFi)コミュニティを強力に推進する最先端の、安全で効率的なブロックチェーンエコシステムです。従来のStake(PoS)で改善し、他のユーザーに自分のステークをリースできるようにすることで、新しいブロックを生成するための後者の能力が増加するというコンセンサスプロトコルを利用しています。戻りすると、貸し手はバリデータによって獲得された取引手数料の割合を受け取ります。このリースメカニズムは、いくつかの大きな利害関係者がネットワークの重要な部分を制御する従来のPoSモデルで可能な集中問題に対処することを目的としており、意思決定力は、同時にすべてのユーザーが報酬を獲得し、少数利害関係者だけでなく、他のユーザーに自分のステークをリースしたいというユーザーの手に集中しています。"
 
 #: ../../01_introduction.md:94
 msgid "DecentralChain offers a unique approach to decentralized application development by avoiding high gas fees for all transactions. The blockchain's native language, called Ride, is a non-Turing-complete language, which helps keep the system secure and predictable. Ride allows for the creation of smart contracts, which are self-executing agreements written in code that run without a central entity behind them. This provides a platform for decentralized applications (DApps), which are applications that work without a central authority. DecentralChain's use of Ride and LPoS helps to ensure the stability and security of the network, making it an attractive option for decentralized application development."
-msgstr ""
+msgstr "DecentralChainは、すべての取引に対する高いガス手数料を回避することで、分散型アプリケーション開発へのユニークなアプローチを提供しています。Rideと呼ばれるブロックチェーンのネイティブ言語は、システムが安全で予測可能に保つための非Turing-complete言語です。Ride は、スマートコントラクトの作成を可能にします。これは、中央のエンティティティなしで実行するコードで書かれている自己実行契約です。これは、中央の権限なしで動作するアプリケーションである分散型アプリケーション(DApps)用のプラットフォームを提供します。DecentralChain の Ride と LPoS の使用は、ネットワークの安定性とセキュリティを確保するために役立ちます。分散型アプリケーション開発のための魅力的なオプションです。"
 
 #: ../../01_introduction.md:96
 msgid "DecentralChain Ecosystem"
-msgstr ""
+msgstr "DecentralChainエコシステム"
 
 #: ../../01_introduction.md:98
 msgid "The DecentralChain ecosystem enables secure communication and interoperability between different blockchain networks. The ecosystem uses protocols to facilitate the transfer of assets and information between blockchain networks, as well as incentivize sustainability by reducing carbon emissions per transaction and generating carbon credits. Additionally, the ecosystem encourages carbon sequestration, where the sequestered carbon is tokenized and can be traded on a blockchain platform. There is also a decentralized wallet and exchange built on the DecentralChain network that offers various benefits, such as fast execution rates, multi-chain capability, low fees, and interoperability."
-msgstr ""
+msgstr "DecentralChainエコシステムは、異なるブロックチェーンネットワーク間で安全な通信と相互運用性を可能にします。エコシステムは、プロトコルを使用して、ブロックチェーンネットワーク間でのアセットと情報の移動を容易にし、トランザクションごとのカーボン排出量を削減し、炭素クレジットを生成することにより、持続可能性を集中化します。さらに、エコシステムはカーボンの要求を促し、委託された炭素がトークン化され、ブロックチェーンプラットフォーム上で取引することができる。また、DecentralChainネットワーク上に構築された分散型ウォレットと交換があり、高速な実行速度、マルチチェーン機能、低料金、および相互運用性などのさまざまな利点を提供しています。"
 
 #: ../../01_introduction.md:100
 msgid "Here are some of our most visited websites:"
-msgstr ""
+msgstr "以下は、最も訪問されたウェブサイトの一部です。"
 
 #: ../../01_introduction.md:110
 msgid "DecentralChain Website"
-msgstr ""
+msgstr "DecentralChain ウェブサイト"
 
 #: ../../01_introduction.md:121
 msgid "Decentral Exchange"
-msgstr ""
+msgstr "分散型取引所"
 
 #: ../../01_introduction.md:132
 msgid "Decentral Scan"
-msgstr ""
+msgstr "分散スキャン"
 
 #: ../../01_introduction.md:107
 msgid "Wallet and Exchange"
-msgstr ""
+msgstr "ウォレットと交換"
 
 #: ../../01_introduction.md:109
 msgid "[Decentral.Exchange](<https://decentral.exchange/>) is an all-in-one platform that combines the features of a wallet, decentralized exchange, and cryptocurrency management tool into a single, seamless platform. Built on the DecentralChain blockchain, this platform offers numerous benefits to its users, including fast execution rates, multi-chain capability, low fees, and interoperability."
-msgstr ""
+msgstr "[Decentral.Exchange](<https://decentral.exchange/>) は、ウォレット、分散型交換、暗号通貨管理ツールの機能を単一のシームレスなプラットフォームに統合するオールインワンプラットフォームです。DecentralChainブロックチェーン上に構築されたこのプラットフォームは、高速な実行速度、マルチチェーン機能、低料金、相互運用性など、ユーザーに多くの利点を提供します。"
 
 #: ../../01_introduction.md:111
 msgid "One of the most significant advantages of decentralized exchanges is that they are not controlled by any central authority, giving users complete control over their assets. Unlike centralized exchanges, there is no risk of funds being frozen or confiscated by a centralized entity. With Decentral.Exchange, users can also enjoy enhanced security, as their private keys are stored locally on their device, reducing the risk of cybercrime. Decentralized exchanges also provide access to a wider range of assets, thanks to the absence of restrictions on the number of tokens that can be traded. Decentral.Exchange takes this further with its multi-chain capability, allowing users to trade tokens across different blockchains seamlessly. Decentral.Exchange's interoperability enables users to trade tokens across various chains and different decentralized exchanges, making it possible to access a broader range of assets effortlessly."
-msgstr ""
+msgstr "分散型取引所の最も重要な利点の1つは、彼らは任意の中央当局によって制御されていないことであり、ユーザーは自分の資産を完全に制御することである。集中型取引所とは異なり、中央化された企業によって凍結または汚染される資金のリスクはありません。Decentral.Exchangeでは、専用の鍵をデバイスに保存し、サイバー犯罪の危険性を低減することで、セキュリティを強化することもできます。分散型取引所は、取引できるトークンの数に制限がないため、資産の広い範囲へのアクセスも提供します。Decentral.Exchange はマルチチェーン機能により、ユーザーは異なるブロックチェーン間でトークンをシームレスに取引できるようにします。Decentral.Exchangeの相互運用性により、ユーザーはさまざまなチェーンと異なる分散型の取引所でトークンを取引し、より広範な資産にアクセスできるようにします。"
 
 #: ../../01_introduction.md:113
 msgid "One of the key selling points of Decentral.Exchange is its low fees, which sets it apart from traditional centralized exchanges that often charge exorbitant fees. The absence of intermediaries means that users can keep more of their profits, making trading more accessible to everyone. In the DecentralChain ecosystem, having a native decentralized exchange is essential, as it facilitates easy buying and selling of DecentralChain tokens within the ecosystem. Additionally, project participants can create their tokens and trade them on the exchange. Decentral.Exchange also enables users to send and receive coins without the need for a centralized intermediary."
-msgstr ""
+msgstr "Decentral.Exchangeの主要販売ポイントの1つは、多くの場合、絶望的な手数料を充電する従来の集中型取引所とは別に設定するその低料金です。仲介者がいないと、ユーザーは自分の利益の多くを維持し、誰もがよりアクセスしやすい取引ができることを意味します。DecentralChain エコシステムでは、ネイティブ分散型の取引所を持つことは不可欠です。これにより、生態系内の DecentralChain トークンの売買が容易になります。また、プロジェクト参加者はトークンを作成して取引所に取引することができます。Decentral.Exchange は、集中型の仲介を必要としないコインを送受信することも可能です。"
 
 #: ../../01_introduction.md:115
 msgid "Decentral.Exchange is at the forefront of the future of crypto trading, providing users with a wide range of benefits that centralized exchanges cannot match. With its native blockchain, DecentralChain, Decentral.Exchange is ideally positioned to revolutionize the crypto industry and redefine the way we trade cryptocurrencies."
-msgstr ""
+msgstr "Decentral.Exchange は、暗号化取引の将来を先取りし、集中型取引所が一致できない利点の広い範囲をユーザーに提供します。ネイティブブロックチェーンでは、DecentralChain、Decentral.Exchangeは、暗号化業界を革命化し、暗号通貨の取引方法を再定義するために理想的に位置付けられています。"
 
 #: ../../01_introduction.md:117
 msgid "Blockchain Explorer"
-msgstr ""
+msgstr "ブロックチェーンエクスプローラ"
 
 #: ../../01_introduction.md:119
 msgid "[DecentralScan.com](<https://decentralscan.com/>) is the official block explorer of the DecentralChain blockchain. It is a powerful tool that allows users to view, track, and analyze transactions on the DecentralChain blockchain. The block explorer provides a user-friendly interface that simplifies the navigation of the complex data stored on the blockchain."
-msgstr ""
+msgstr "[DecentralScan.com](<https://decentralscan.com/>) は、DecentralChainブロックチェーンの公式ブロックエクスプローラです。DecentralChainブロックチェーン上での取引を閲覧、追跡、分析できる強力なツールです。ブロックエクスプローラは、ブロックチェーンに保存された複雑なデータのナビゲーションを簡素化するユーザーフレンドリーなインターフェイスを提供します。"
 
 #: ../../01_introduction.md:121
 msgid "One of the key benefits of DecentralScan.com is its ability to provide transparency to the DecentralChain ecosystem. It enables users to view all the transactions that have occurred on the blockchain in real-time, including the number of DecentralCoins (DCC) transferred, the addresses involved in the transaction, and the transaction timestamp. This makes it easy to track the movement of DCC and understand how the ecosystem is being used."
-msgstr ""
+msgstr "DecentralScan.comの主な利点の1つは、DecentralChainエコシステムへの透明性を提供する能力です。DecentralCoins(DCC)の転送回数、トランザクションに関与するアドレス、トランザクションタイムスタンプなど、リアルタイムでブロックチェーン上で発生したすべての取引を閲覧することができます。これにより、DCCの動きを追跡しやすくなり、生態系の活用方法が分かりやすくなります。"
 
 #: ../../01_introduction.md:123
 msgid "The block explorer is also valuable in its ability to provide detailed information about the nodes in the network. Users can view the current number of nodes, their geographical distribution, and information about each node, such as its uptime and the number of blocks it has mined. This information is essential for the DecentralChain ecosystem, as it allows users to view the distribution of the network and understand the ecosystem's health."
-msgstr ""
+msgstr "ブロックエクスプローラは、ネットワーク内のノードに関する詳細な情報を提供する機能にも価値があります。ユーザーは、現在のノード数、地理的分布、およびその稼働時間や最小限のブロック数など、各ノードに関する情報を表示できます。この情報は、DecentralChainエコシステムにとって不可欠です。これにより、ユーザーはネットワークの分布を表示し、生態系の健康を理解することができます。"
 
 #: ../../01_introduction.md:125
 msgid "In addition to tracking transactions and nodes, the block explorer also offers users a detailed view of the smart contract deployment on the blockchain. This is particularly useful for developers and businesses building on the DecentralChain blockchain, as it enables them to view and analyze deployed smart contracts, making it easier to identify bugs or potential vulnerabilities in the contract code."
-msgstr ""
+msgstr "トランザクションとノードを追跡するだけでなく、ブロックエクスプローラは、ブロックチェーン上でスマートコントラクトの展開の詳細ビューもユーザーに提供します。これは、DecentralChainブロックチェーン上に構築する開発者や企業にとって特に便利です。これにより、デプロイされたスマートコントラクトの閲覧と分析が可能になり、契約コードでバグや潜在的な脆弱性を特定しやすくなります。"
 
 #: ../../01_introduction.md:127
 msgid "Furthermore, the block explorer plays a vital role in ensuring the security of the DecentralChain ecosystem. By providing detailed information about transactions and nodes, it makes it easier for users to identify suspicious activity or potential security threats. The block explorer can also be used to track the movement of coins that have been stolen or lost, making it easier to recover them."
-msgstr ""
+msgstr "さらに、ブロックエクスプローラはDecentralChainエコシステムのセキュリティを確保するために重要な役割を果たしています。トランザクションとノードに関する詳細情報を提供することで、疑わしい活動や潜在的なセキュリティの脅威を識別するユーザーにとってはより容易になります。ブロックエクスプローラは、盗難や紛失したコインの動きを追跡するためにも使用することができ、それらを回復しやすくなります。"
 
 #: ../../01_introduction.md:129
 msgid "Inter-Chain Gateway Protocol"
-msgstr ""
+msgstr "インターチェーンゲートウェイプロトコル"
 
 #: ../../01_introduction.md:131
 msgid "The DecentralChain Inter-Chain Gateway is a blockchain mechanism designed to enable secure communication and interoperability between different blockchain networks. This is achieved by creating a decentralized network of nodes that utilize smart contract technology to validate and process transactions between different blockchains."
-msgstr ""
+msgstr "DecentralChain インターチェーンゲートウェイは、異なるブロックチェーンネットワーク間で安全な通信と相互運用性を可能にするように設計されたブロックチェーンメカニズムです。これは、スマートコントラクト技術を活用した分散型のネットワークを構築し、異なるブロックチェーン間で取引を検証および処理することによって達成されます。"
 
 #: ../../01_introduction.md:133
 msgid "One major use case of the gateway is the ability to transfer assets between different blockchain networks. For example, if you hold Bitcoin but want to use it on another blockchain network, such as DecentralChain, the gateway can allow you to transfer your Bitcoin to the DecentralChain network, where it is converted into a form that is compatible with the DecentralChain blockchain."
-msgstr ""
+msgstr "ゲートウェイの大きなユースケースは、異なるブロックチェーンネットワーク間でアセットを転送する機能です。例えば、Bitcoin を保有しているが、DecentralChain などの別のブロックチェーンネットワークで使用したい場合は、ゲートウェイは、Bitcoin を DecentralChain ネットワークに転送することができます。これにより、DecentralChain ブロックチェーンと互換性のあるフォームに変換されます。"
 
 #: ../../01_introduction.md:135
 msgid "In addition, the gateway facilitates the sharing of information between different blockchain networks. By creating a decentralized oracle network, smart contracts on different blockchain networks can access and utilize external data, enabling the creation of decentralized applications that use data from multiple sources and blockchain networks."
-msgstr ""
+msgstr "また、ゲートウェイは異なるブロックチェーンネットワーク間での情報共有を容易にします。分散型ネットワークを作成することで、異なるブロックチェーンネットワーク上のスマートコントラクトは外部データにアクセスし、活用することができます。複数のソースとブロックチェーンネットワークからデータを利用する分散型のアプリケーションの作成を可能にします。"
 
 #: ../../01_introduction.md:137
 msgid "To ensure the network's security, the gateway uses smart contract technology with predefined rules and conditions that are automatically executed when specific conditions are met. These conditions include input validation and access controls to ensure that only authorized parties can access and utilize the network's information."
-msgstr ""
+msgstr "ネットワークのセキュリティを確保するために、ゲートウェイは特定の条件が満たされたときに自動的に実行される事前定義されたルールと条件でスマートコントラクト技術を使用しています。これらの条件は、ネットワークの情報をアクセスし、利用することができる権限のある当事者だけを保障するために入力検証とアクセス制御を含みます。"
 
 #: ../../01_introduction.md:139
 msgid "Proof of Incentivized Sustainability Protocol"
-msgstr ""
+msgstr "集中型サステイナビリティプロトコルの証明"
 
 #: ../../01_introduction.md:141
 msgid "As society becomes increasingly aware of the impact of climate change, businesses and individuals are looking for ways to reduce their carbon footprint. In the realm of blockchain technology, the high energy consumption and resulting carbon emissions of Bitcoin transactions are particularly problematic. However, the DecentralChain blockchain presents a solution to this problem through the use of its proof of incentivized sustainability protocol."
-msgstr ""
+msgstr "気候変動の影響を広く認識し、企業や個人がカーボンフットプリントを減らす方法を探しています。ブロックチェーン技術の領域では、高エネルギー消費量とBitcoin取引の炭素排出量は特に問題です。しかしながら、DecentralChain ブロックチェーンは、集中型サステイナビリティプロトコルの証拠を使用することにより、この問題に対する解決策を提示します。"
 
 #: ../../01_introduction.md:143
 msgid "The traditional Bitcoin blockchain consumes a significant amount of energy for each transaction, releasing large amounts of carbon emissions into the atmosphere. In contrast, the DecentralChain blockchain utilizes a proof of stake protocol which is more energy efficient, resulting in significantly lower carbon emissions per transaction."
-msgstr ""
+msgstr "従来のBitcoinブロックチェーンは、各トランザクションに対して重要なエネルギー量を消費し、大量の炭素排出量を大気に放出します。対照的に、DecentralChainブロックチェーンは、よりエネルギー効率の高いStakeプロトコルの証拠を利用し、トランザクションごとに大幅に炭素排出量を削減します。"
 
 #: ../../01_introduction.md:145
 msgid "The DecentralChain blockchain generates carbon credits through the proof of incentivized sustainability protocol. Every Bitcoin transaction on the DecentralChain blockchain creates new carbon credits, which can be sold or used to offset the carbon emissions of other activities. DecentralChain shares a percentage of these carbon credits as incentives to node owners who host their nodes on eco-friendly servers."
-msgstr ""
+msgstr "DecentralChain ブロックチェーンは、集中型サステイナビリティプロトコルの証明を通じてカーボンクレジットを生成します。DecentralChainブロックチェーン上のすべてのBitcoin取引は、他の活動の炭素排出量を相殺するために販売または使用することができる新しいカーボンクレジットを作成します。DecentralChainは、これらのカーボンクレジットの割合を、環境にやさしいサーバー上でノードをホストするノード所有者へのインセンティブとして共有します。"
 
 #: ../../01_introduction.md:147
 msgid "The equation to calculate the carbon emissions of the Bitcoin blockchain is:"
-msgstr ""
+msgstr "Bitcoinブロックチェーンの炭素排出量を計算する式は次のとおりです。"
 
 #: ../../01_introduction.md:149
 msgid "Carbon Emissions = Electricity used (kWh) x Carbon Intensity (gCO2/kWh)"
-msgstr ""
+msgstr "カーボンエミッション=電気使用(kWh)×炭素強度(gCO2/kWh)"
 
 #: ../../01_introduction.md:151
 msgid "Using this equation, the carbon emissions of the Bitcoin blockchain can be compared to a proof of stake blockchain protocol like DecentralChain. The difference in carbon emissions between the two can then be used to generate carbon credits, creating a new market for businesses and individuals to offset their carbon emissions and invest in a sustainable future."
-msgstr ""
+msgstr "この式を使用して、Bitcoinブロックチェーンのカーボン排出量は、DecentralChainのようなstakeブロックチェーンプロトコルの証拠と比較することができます。二酸化炭素排出量の差は、炭素クレジットを生成し、企業や個人がカーボン排出量を相殺し、持続可能な未来に投資する新しい市場を作るために使用できる。"
 
 #: ../../01_introduction.md:153
 msgid "According to a study by the World Bank, carbon credits can yield a return of up to 7.2 percent annually over a 15-year period. This makes them an attractive investment for individuals and companies alike."
-msgstr ""
+msgstr "世界銀行による研究によると、炭素クレジットは1〜15年間で最大7.2パーセントのリターンを得ることができます。これにより、個人や企業にとっても魅力的な投資となります。"
 
 #: ../../01_introduction.md:155
 msgid "The DecentralChain blockchain not only provides a more sustainable alternative to traditional Bitcoin transactions but also creates new opportunities for businesses and individuals to invest in a sustainable future. By incentivizing sustainable practices through the proof of incentivized sustainability protocol and the hosting of nodes on eco-friendly servers, DecentralChain is paving the way for a greener, more sustainable future."
-msgstr ""
+msgstr "DecentralChainブロックチェーンは、従来のBitcoin取引のより持続可能な代替手段を提供するだけでなく、ビジネスや個人が持続可能な未来に投資するための新しい機会を作り出しています。DecentralChain は、集中型サステイナビリティプロトコルの証明と、環境にやさしいサーバー上のノードのホスティングを通じて持続可能な慣行を奨励することで、より持続可能な未来の緑化を実現します。"
 
 #: ../../01_introduction.md:157
 msgid "Carbon Sequestration"
-msgstr ""
+msgstr "カーボン・セグレーション"
 
 #: ../../01_introduction.md:159
 msgid "Carbon sequestration, the process of capturing and storing carbon dioxide (CO2) to reduce its concentration in the atmosphere, is a critical strategy in mitigating the effects of climate change. Through the use of blockchain technology, carbon sequestration can be further incentivized, creating a new market for carbon credits."
-msgstr ""
+msgstr "二酸化炭素(CO2)を捕捉し、大気中の濃度を削減するプロセスは、気候変動の影響を緩和する重要な戦略です。ブロックチェーン技術を利用することで、カーボンのセグレーションがさらに集中化し、カーボンクレジットの新しい市場を創出することができます。"
 
 #: ../../01_introduction.md:161
 msgid "One of the ways to achieve carbon sequestration is by buying property in Costa Rica and tokenizing the sequestered carbon in the form of a digital token that can be traded on a blockchain platform. The Costa Rican government's initiative of National Forest Financing Fund (FONAFIFO) provides a financial incentive for private landowners to reforest and conserve their land, while also allowing them to receive payments for the carbon sequestered on their property in the form of carbon credits. By tokenizing these carbon credits on a blockchain platform, the carbon sequestration process can be further incentivized, creating a new market for carbon credits and a carbon credit-backed crypto-asset."
-msgstr ""
+msgstr "炭素の分離を達成する方法の一つは、コスタリカで不動産を購入し、ブロックチェーンプラットフォーム上で取引できるデジタルトークンの形で委託されたカーボンをトークン化することです。コスタリカ政府の国家森林融資基金(FONAFIFO)の取り組みは、民間の土地所有者が土地を回復し、節約するための金融インセンティブを提供します。また、炭素クレジットの形で財産に委託されたカーボンの支払いを受け取ることを可能にします。ブロックチェーンプラットフォームでこれらのカーボンクレジットをトークン化することにより、カーボンの委託プロセスはさらに激しくなり、カーボンクレジットやカーボンクレジットが返された暗号化資産のための新しい市場を作成することができます。"
 
 #: ../../01_introduction.md:163
 msgid "The tokenization of carbon credits on a blockchain platform not only increases transparency and traceability in the carbon market, but it also provides a new way for people to invest in the conservation of natural areas while obtaining the economic benefit of the carbon credits. This creates a win-win situation, in which the carbon sequestration is incentivized, and the conservation of natural areas is supported."
-msgstr ""
+msgstr "ブロックチェーンプラットフォーム上でカーボンクレジットのトークン化は、炭素市場で透明性とトレーサビリティを高めるだけでなく、炭素クレジットの経済的利益を得る一方で、自然地域の保全に投資するための新しい方法も提供しています。二酸化炭素排出量が激化し、自然地域の保全を支えるウィンウィンウィンの状況を創り出します。"
 
 #: ../../01_introduction.md:165
 msgid "The tokenization of carbon credits on a blockchain platform creates a new market for carbon credits and enables the creation of a carbon credit-backed crypto-asset. This approach can increase transparency and traceability in the carbon market, making it easier to track and verify the carbon credits being traded. Moreover, it provides a new way for people to invest in the conservation of natural areas, while also obtaining the economic benefit of the carbon credits. The Costa Rican government's initiative of National Forest Financing Fund (FONAFIFO) has set the base for this process, and with more involvement of the private sector, decentralized finance, and blockchain technology, this approach can be a step towards a sustainable future where everyone can participate in the conservation and mitigation of climate change."
-msgstr ""
+msgstr "ブロックチェーンプラットフォーム上のカーボンクレジットのトークン化により、カーボンクレジットの新しい市場が作成され、カーボンクレジット返金された暗号化資産の作成が可能になります。このアプローチは、炭素市場で透明性とトレーサビリティを向上させることができ、それが簡単に追跡し、取引されているカーボンクレジットを確認することができます。また、炭素クレジットの経済的利益を得る一方で、自然地域の保全に投資する人々のための新しい方法を提供します。コスタ・リカン政府の国家森林融資基金(FONAFIFO)の取り組みは、このプロセスの基盤を設定し、民間部門、分散型金融、ブロックチェーン技術のさらなる関与により、誰もが気候変動の保全と緩和に参加できる持続可能な未来への一歩を踏み出すことができます。"
 
 #: ../../01_introduction.md:167
 msgid "Native Swap"
-msgstr ""
+msgstr "ネイティブスワップ"
 
 #: ../../01_introduction.md:169
 msgid "DecentralChain is an innovative blockchain platform that offers a wide range of features to its users, one of which is the upcoming DecentralChain native swap. A swap is a way for users to exchange one cryptocurrency for another, without the need for a centralized intermediary. In this essay, we will delve into how the DecentralChain native swap is expected to work, and explain how users will be able to use it to swap their DecentralCoin for other cryptocurrencies."
-msgstr ""
+msgstr "DecentralChainは、DecentralChainのネイティブスワップであるユーザーに幅広い機能を提供する革新的なブロックチェーンプラットフォームです。スワップは、集中的な仲介を必要としないため、ユーザーが別の暗号通貨を交換する方法です。このエッセイでは、DecentralChain ネイティブスワップがどのように機能するかを掘り下げ、ユーザーが他の暗号通貨で DecentralCoin を交換できるようにする方法を説明していきます。"
 
 #: ../../01_introduction.md:171
 msgid "A swap is essentially a smart contract that facilitates the exchange of one cryptocurrency for another. When a user initiates a swap, their cryptocurrency is locked into the smart contract, and they receive the equivalent amount of the other cryptocurrency in return. The smart contract then releases the locked up cryptocurrency to the other user. This process happens on-chain, meaning that the swap is settled on the blockchain, and the transaction is recorded on the blockchain's ledger."
-msgstr ""
+msgstr "スワップは基本的に、別の暗号通貨の交換を容易にするスマートな契約です。ユーザーがスワップを開始すると、その暗号通貨はスマートコントラクトにロックされ、他の仮想通貨の同等量が返されます。スマートコントラクトは、ロックされた仮想通貨を他のユーザーにリリースします。このプロセスは、スワップがブロックチェーン上で決済されることを意味し、トランザクションはブロックチェーンのレジャーに記録されます。"
 
 #: ../../01_introduction.md:173
 msgid "The DecentralChain native swap is expected to be powered by an Automated Market Maker (AMM) algorithm. This algorithm will calculate the price of the coin based on the token supply and the liquidity in the swap. The price will be calculated using the constant product formula."
-msgstr ""
+msgstr "DecentralChain ネイティブスワップは、自動化されたマーケットメーカー(AMM)アルゴリズムにより供給される予定です。このアルゴリズムは、トークン供給とスワップの流動性に基づいてコインの価格を計算します。定数の製品処方で価格を計算します。"
 
 #: ../../01_introduction.md:175
 msgid "A swap platform can be thought of as a liquidity pool where users can deposit their tokens, and then use those tokens to swap for other tokens on the platform. As more users deposit tokens into the pool, the pool's liquidity increases, making it more attractive for users to swap their tokens on the platform."
-msgstr ""
+msgstr "スワッププラットフォームは、ユーザーがトークンを入金できる流動性プールとして考えられ、そのトークンを使用してプラットフォーム上の他のトークンに交換することができます。より多くのユーザーがプールにトークンを入金するにつれて、プールの流動性が増加し、ユーザーはプラットフォーム上でトークンを交換するためにより魅力的になります。"
 
 #: ../../01_introduction.md:177
 msgid "The DecentralChain native swap is expected to offer users a secure, efficient, and decentralized way to swap their cryptocurrencies. By eliminating the need for centralized intermediaries, users will be able to exchange their cryptocurrencies without relying on third parties, which can be slow, expensive, and risky. With the upcoming launch of the DecentralChain native swap, users will be able to experience the future of crypto swapping firsthand."
-msgstr ""
+msgstr "DecentralChain ネイティブスワップは、ユーザーが安全で効率的で分散型な方法で暗号通貨を交換できる見込みです。集中的な仲介の必要性を排除することにより、ユーザーは、遅い、高価でリスクのある第三者に依存することなく、暗号通貨を交換することができます。DecentralChain ネイティブスワップの今後の起動に伴い、ユーザーは最初に交換する暗号通貨の未来を体験することができます。"
 
 #: ../../01_introduction.md:179
 msgid "CR Coin"
-msgstr ""
+msgstr "CRコイン"
 
 #: ../../01_introduction.md:181
 msgid "CR Coin is a social currency proposed for Costa Rica, designed to provide a secure, efficient and environmentally-friendly medium of exchange for its citizens. The currency is built on the DecentralChain blockchain, a specialized platform for social currencies that ensures maximum security and scalability. It also incorporates carbon negative technology, which aims to minimize the environmental impact of blockchain-based transactions."
-msgstr ""
+msgstr "CR Coinは、コスタリカのために提案された社会通貨です。, その市民のための交換の安全で効率的かつ環境に優しい媒体を提供するように設計.通貨は、DecentralChainブロックチェーン上に構築され、最大のセキュリティとスケーラビリティを確保するための社会的通貨のための専門プラットフォームです。また、ブロックチェーンベースの取引の環境への影響を最小限に抑えることを目的として、カーボンネガティブテクノロジーも組み込まれています。"
 
 #: ../../01_introduction.md:183
 msgid "By introducing CR Coin, Costa Rica's economy can enjoy the advantages of blockchain technology, such as transparency, low transaction costs, and secure transactions. Currently, cash, bank transfers and online payment systems are the most commonly used methods for payments in Costa Rica, but these traditional forms of money and payment systems have limitations and vulnerabilities, including fraud and high costs."
-msgstr ""
+msgstr "コスタリカの経済は、透明性、低取引コスト、安全な取引などのブロックチェーン技術の利点を享受することができます。現在、現金、銀行振り込みおよびオンライン決済システムは、コスタリカでの支払いに最も一般的に使用される方法ですが、これらの伝統的な決済システムには、不正や高コストを含む制限と脆弱性があります。"
 
 #: ../../01_introduction.md:185
 msgid "The launch of CR Coin is planned to involve a comprehensive marketing strategy, the establishment of a network of merchants and exchanges that accept CR Coin, and measures to ensure the security, stability and reliability of the currency. It is hoped that the introduction of CR Coin will not only provide a new medium of exchange for citizens but also create new opportunities for businesses, entrepreneurs and investors. CR Coin aims to revolutionize the way payments are made in Costa Rica, promoting sustainable development and environmental conservation with the potential to contribute to the country's goal of becoming a carbon-neutral economy that could have significant benefits for Costa Rica and its citizens."
-msgstr ""
+msgstr "CR Coinの発売は、包括的なマーケティング戦略、CRコインを受け入れる商人や取引所のネットワークの確立、および通貨のセキュリティ、安定性、信頼性を確保するための対策を講じる予定です。CRコインの導入は、市民のための新しい交換媒体を提供するだけでなく、企業、起業家や投資家の新しい機会を作成することを期待しています。CR Coinは、コスタリカで支払い方法に革命をもたらすことを目指しています, 持続可能な開発と環境の保全を推進し、国の目標に貢献します コスタリカとその市民のための重要な利点を持つことができる炭中経済."
 
 #: ../../01_introduction.md:187
 msgid "Moreover, the education and awareness initiatives and partnerships with schools and non-profit organizations planned by CR Coin will help raise awareness about the importance of preserving the environment and promoting sustainable practices. By combining technology, community engagement and education, CR Coin aims to be a driving force for sustainable development and environmental conservation in Costa Rica."
-msgstr ""
+msgstr "また、CRコインが計画する学校や非営利団体との教育・啓発の取り組みやパートナーシップは、環境の保全と持続可能な慣行を促進することの重要性について認識を深めるのに役立ちます。テクノロジー、コミュニティのエンゲージメントと教育を組み合わせることにより、CR Coinはコスタリカで持続可能な開発と環境保全のための運転力を目指しています。"
 
 #~ msgid "card-img-bottom"
 #~ msgstr ""

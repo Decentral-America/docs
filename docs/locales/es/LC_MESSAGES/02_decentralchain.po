@@ -212,7 +212,7 @@ msgstr "La dirección es una matriz de :math:`26` bytes (consulte el :ref:`forma
 
 #: ../../02_decentralchain/01_account.rst:111
 msgid "Because the chain ID is part of the address, Mainnet addresses (chain ID ``?``) start with 3D, and Testnet addresses (chain ID ``!``) start with 31."
-msgstr ""
+msgstr "Debido a que el ID de cadena es parte de la dirección, las direcciones Mainnet ( ID de cadena ``?``) comienzan con 3D y las direcciones Testnet ( ID de cadena ``!``) comienzan con 31."
 
 #: ../../02_decentralchain/01_account.rst:113
 msgid "The address is used to obtain information about the account:"
@@ -336,9 +336,9 @@ msgid "The list of account aliases, as well as other blockchain data, is public 
 msgstr "La lista de alias de cuenta, así como otros datos de la cadena de bloques, es pública y cualquiera puede leerla. Por ejemplo, puede ver los alias en `DecentralChain Explorer <https://decentralscan.com/>`_. Para hacer esto, busque una cuenta por su :ref:`dirección <02_decentralchain/01_account:Address>` y cambie a la pestaña Alias."
 
 #: ../../02_decentralchain/01_account.rst:166
-#, fuzzy, python-brace-format
+#, python-brace-format
 msgid "Using :ref:`Node REST API <05_node-guide/01_node-rest-api:Node REST API>`, you can obtain a list of aliases by address using the GET/alias/by-address/{address} method and an address by alias using the GET /alias/by-alias/{alias} method."
-msgstr "Usando :ref:`Node REST API <documentation:placeholder>`, puedes obtener una lista de alias por dirección usando el método GET/alias/by-address/{address} y una dirección por alias usando el método GET /alias/by-alias/{alias}."
+msgstr "Utilizando :ref:`Node REST API <05_node-guide/01_node-rest-api:Node REST API>`, puedes obtener una lista de alias utilizando el método GET/alias/by-address/{address} y una dirección mediante alias usando el método GET /alias/by-alias/{alias}."
 
 #: ../../02_decentralchain/01_account.rst:169
 #: ../../02_decentralchain/03_transaction.rst:200
@@ -626,9 +626,8 @@ msgid "On the next screen double-check the entered data and if everything is cor
 msgstr "En la siguiente pantalla, vuelva a verificar los datos ingresados y, si todo es correcto, haga clic en Enviar para finalizar la creación o haga clic en Volver para hacer las correcciones."
 
 #: ../../02_decentralchain/02_token(asset).rst:38
-#, fuzzy
 msgid "The transaction fee is :math:`1` DecentralCoin for a regular token or :math:`0.001` DecentralCoins for a :ref:`non-fungible token (NFT) <02_decentralchain/02_token(asset):Non-Fungible Token>`. Moreover, the token can be issued by the :ref:`dApp script <03_ride-language/04_script-types:dApp Script>` as a result of the :ref:`invoke script transaction <02_decentralchain/03_transaction:Invoke Script Transaction>` when the callable function result contains the :ref:`Issue <03_ride-language/05_structures:Issue>` action. The minimum fee for invoke script transaction is increased by :math:`1` DecentralCoin for each non-NFT token issued."
-msgstr "La tarifa de transacción es :math:`1` DecentralCoin para un token normal o :math:`0.001` DecentralCoins para un :ref:`token no fungible (NFT) <02_decentralchain/02_token(asset):Non-Fungible Token>` . Además, el token puede ser emitido por el :ref:`script de dApp <03_ride-language/04_script-types:dApp Script>` como resultado de la :ref:`transacción para invocar scripts <02_decentralchain/03_transaction:Invoke Script Transaction>` cuando el resultado de la función invocable contiene la acción :ref:`Issue <03_ride-language/05_structures:Issue>`. La tarifa mínima para la transacción de script de invocación aumenta en :math:`1` DecentralCoin por cada token que no sea NFT emitido."
+msgstr "La cuota de transacción es :math:`1` DecentralCoin para un token regular o :math:`0.001` DecentralCoins para un :ref:`non-fungible token (NFT) <02_decentralchain/02_token(asset):Non-Fungible Token>`. Además, la ficha puede ser emitida por el :ref:`dApp script <03_ride-language/04_script-types:dApp Script>` como resultado del :ref:`invocar la transacción del script <02_decentralchain/03_transaction:Invoke Script Transaction>` cuando el resultado de función callable contiene la acción :ref:`Cuestión <03_ride-language/05_structures:Issue>`. La cuota mínima para la transacción de script invocada se aumenta por :math:`1` DecentralCoin para cada token no NFT emitido."
 
 #: ../../02_decentralchain/02_token(asset).rst:42
 #: ../../_static/02_decentralchain/tables/080_Mass-Transaction-Binary-Format-V1.csv:1
@@ -647,14 +646,12 @@ msgid "If the token is issued by :ref:`issue transaction <02_decentralchain/03_t
 msgstr "Si el token lo emite una :ref:`transacción para emisión <02_decentralchain/03_transaction:Issue Transaction>`, el ID del token es el mismo que el ID de la transacción."
 
 #: ../../02_decentralchain/02_token(asset).rst:47
-#, fuzzy
 msgid "If the token is issued by :ref:`invoke script transaction <02_decentralchain/03_transaction:Invoke Script Transaction>` when the callable function of :ref:`dApp script <02_decentralchain/01_account:dApp and Smart Account>` performed the :ref:`Issue <03_ride-language/05_structures:Issue>` action, the token ID is calculated as the BLAKE2b-256 hash of the byte array containing transaction ID and the fields of the Issue structure."
-msgstr "Si el token es emitido por la :ref:`transacción para invocar scripts <02_decentralchain/03_transaction:Invoke Script Transaction>` cuando la función invocable del :ref:`script de dApp <02_decentralchain/01_account:dApp and Smart Account>` realizó la acción :ref:`Issue <03_ride-language/05_structures:Issue>`, la identificación del token se calcula como el hash BLAKE2b-256 de la matriz de bytes que contiene la identificación de la transacción y los campos de la estructura de la emisión."
+msgstr "Si el token es emitido por :ref:`invocar la transacción del script <02_decentralchain/03_transaction:Invoke Script Transaction>` cuando la función de llamada de :ref:`dApp script <02_decentralchain/01_account:dApp and Smart Account>` realizó la acción :ref:`Cuestión <03_ride-language/05_structures:Issue>`, el ID token se calcula como el hash BLAKE2b-256 del array byte que contiene ID de transacción y los campos de la estructura de edición."
 
 #: ../../02_decentralchain/02_token(asset).rst:49
-#, fuzzy
 msgid "In the :ref:`Node REST API <05_node-guide/01_node-rest-api:Node REST API>`, the token identifier is encoded in base58. For example:"
-msgstr "En :ref:`Node REST API <documentation:placeholder>`, el identificador del token está codificado en base58. Por ejemplo:"
+msgstr "En el :ref:`Node REST API <05_node-guide/01_node-rest-api:Node REST API>`, el identificador de token está codificado en base58. Por ejemplo:"
 
 #: ../../02_decentralchain/02_token(asset).rst:55
 msgid "The :ref:`DecentralCoin <02_decentralchain/02_token(asset):DecentralCoin>` token has no identifier. The Node REST API uses null for DecentralCoin."
@@ -669,9 +666,8 @@ msgid "Transfer to another account"
 msgstr "Transferir a otra cuenta"
 
 #: ../../02_decentralchain/02_token(asset).rst:62
-#, fuzzy
 msgid "Can be done via a :ref:`transfer transaction <02_decentralchain/03_transaction:Transfer Transaction>` or a :ref:`mass transfer transaction <02_decentralchain/03_transaction:Mass Transfer Transaction>`. A :ref:`dApp script <02_decentralchain/01_account:dApp and Smart Account>` can transfer the token via a :ref:`ScriptTransfer <03_ride-language/05_structures:ScriptTransfer>` script action as a result of an :ref:`invoke script transaction <02_decentralchain/03_transaction:Invoke Script Transaction>`."
-msgstr "Se puede realizar a través de una :ref:`transacción para transferencia <02_decentralchain/03_transaction:Transfer Transaction>` o una :ref:`transacción para transferencia masiva <02_decentralchain/03_transaction:Mass Transfer Transaction>`. Un :ref:`script de dApp <02_decentralchain/01_account:dApp and Smart Account>` puede transferir el token a través de una acción :ref:`ScriptTransfer <03_ride-language/05_structures:ScriptTransfer>` como resultado de una :ref: `transacción para invocar scripts <02_decentralchain/03_transaction:Invoke Script Transaction>`."
+msgstr "Se puede hacer a través de un :ref:`Transacciones <02_decentralchain/03_transaction:Transfer Transaction>` o un :ref:`transacción de transferencia masiva <02_decentralchain/03_transaction:Mass Transfer Transaction>`. Un :ref:`dApp script <02_decentralchain/01_account:dApp and Smart Account>` puede transferir el token a través de una acción del script :ref:`ScriptTransfer <03_ride-language/05_structures:ScriptTransfer>` como resultado de un :ref:`invocar la transacción del script <02_decentralchain/03_transaction:Invoke Script Transaction>`."
 
 #: ../../02_decentralchain/02_token(asset).rst:65
 msgid "Exchange (trade deal)"
@@ -686,9 +682,8 @@ msgid "Burning"
 msgstr "Quemado"
 
 #: ../../02_decentralchain/02_token(asset).rst:71
-#, fuzzy
 msgid "Decreases the amount of token on the account and thereby the total amount of the token on the blockchain. Any token owner can burn it, not only the issuer. It is impossible to burn :ref:`DecentralCoin <02_decentralchain/02_token(asset):DecentralCoin>`. Can be done via a :ref:`burn transaction <02_decentralchain/03_transaction:Burn Transaction>`. A dApp script can burn the token via a :ref:`Burn <03_ride-language/05_structures:Burn>` script action as a result of the Invoke script transaction."
-msgstr "Disminuye la cantidad de token en la cuenta y, por lo tanto, la cantidad total del token en la cadena de bloques. Cualquier propietario del token puede quemarlo, no solo el emisor. Es imposible quemar :ref:`DecentralCoin <02_decentralchain/02_token(asset):DecentralCoin>`. Se puede hacer a través de una :ref:`transacción para quemado <02_decentralchain/03_transaction:Burn Transaction>`. Un script de dApp puede grabar el token a través de una acción de script :ref:`Burn <03_ride-language/05_structures:Burn>` como resultado de la transacción para invocar scripts."
+msgstr "Disminuye la cantidad de token en la cuenta y por lo tanto la cantidad total del token en la cadena de bloques. Cualquier dueño de la ficha puede quemarla, no sólo el emisor. Es imposible quemar :ref:`DecentralCoin <02_decentralchain/02_token(asset):DecentralCoin>`. Se puede hacer a través de un :ref:`transacción de quemados <02_decentralchain/03_transaction:Burn Transaction>`. Un script dApp puede quemar el token a través de una acción del script :ref:`Quema. <03_ride-language/05_structures:Burn>` como resultado de la transacción del script Invoke."
 
 #: ../../02_decentralchain/02_token(asset).rst:74
 msgid "Payment to :ref:`dApp <02_decentralchain/01_account:dApp and Smart Account>`"
@@ -719,9 +714,8 @@ msgid "Reissue"
 msgstr "Reemisión"
 
 #: ../../02_decentralchain/02_token(asset).rst:89
-#, fuzzy
 msgid "Increases the amount of token on the blockchain. The reissuable field of token determines whether the token can be reissued. Can be done via a :ref:`reissue transaction <02_decentralchain/03_transaction:Reissue Transaction>`. A dApp script can reissue the token via a :ref:`Reissue <03_ride-language/05_structures:Reissue>` script action as a result of the invoke script transaction."
-msgstr "Aumenta la cantidad de token en la cadena de bloques. El campo reemisible de token determina si el token se puede volver a emitir. Se puede hacer a través de una :ref:`transacción para reemisión <02_decentralchain/03_transaction:Reissue Transaction>`. Un script de dApp puede volver a emitir el token a través de una acción de script :ref:`Reissue <03_ride-language/05_structures:Reissue>` como resultado de la transacción para invocar scripts."
+msgstr "Aumenta la cantidad de token en la cadena de bloques. El campo reeditable de token determina si el token puede ser reeditado. Se puede hacer a través de un :ref:`reissue transactions <02_decentralchain/03_transaction:Reissue Transaction>`. Un script dApp puede reeditar el token a través de una acción del script :ref:`Reissue <03_ride-language/05_structures:Reissue>` como resultado de la transacción invoca del script."
 
 #: ../../02_decentralchain/02_token(asset).rst:92
 msgid "Replacing the asset script"
@@ -859,9 +853,9 @@ msgid "Token Custom Parameters"
 msgstr "Parámetros Personalizados de Token"
 
 #: ../../02_decentralchain/02_token(asset).rst:164
-#, fuzzy, python-brace-format
+#, python-brace-format
 msgid "Below is an example of JSON representation returned by the GET /assets/details/{assetId} method of :ref:`Node REST API <05_node-guide/01_node-rest-api:Node REST API>`:"
-msgstr "A continuación se muestra un ejemplo de representación JSON devuelta por el método GET /assets/details/{assetId} de :ref:`Node REST API <documentation:placeholder>`:"
+msgstr "A continuación se muestra un ejemplo de representación JSON devuelta por el método GET /assets/details/{assetId} de :ref:`Node REST API <05_node-guide/01_node-rest-api:Node REST API>`:"
 
 #: ../../_static/02_decentralchain/tables/001_Token-Custom-Parameters.csv:1
 #: ../../_static/02_decentralchain/tables/003_JSON-Representation.csv:1
@@ -1136,9 +1130,9 @@ msgid "Atomic Unit"
 msgstr "Unidad Atómica"
 
 #: ../../02_decentralchain/02_token(asset).rst:193
-#, fuzzy, python-brace-format
+#, python-brace-format
 msgid "The amount of token is displayed differently in UIs and in the :ref:`JSON representation <02_decentralchain/03_transaction:JSON Representation>` used by the :ref:`Node REST API <05_node-guide/01_node-rest-api:Node REST API>`. In API requests and responses, amount values are integers indicated in atomic units to avoid precision issues in floating-point calculations. An atomic unit is the minimum fraction (“cent”) of a token, it is equal to :math:`10^{-decimals}`. The amount of token in JSON is the real quantity multiplied by :math:`10^{decimals}`."
-msgstr "La cantidad de token se muestra de manera diferente en las interfaces de usuario y en la :ref:`Representación JSON <02_decentralchain/03_transaction:JSON Representation>` utilizada por :ref:`Node REST API <documentation:placeholder>`. En las solicitudes y respuestas de la API, los valores de cantidad son números enteros indicados en unidades atómicas para evitar problemas de precisión en los cálculos de punto flotante. Una unidad atómica es la fracción mínima (\"centavo\") de una ficha, es igual a :math:`10^{-decimals}`. La cantidad de token en JSON es la cantidad real multiplicada por :math:`10^{decimals}`."
+msgstr "La cantidad de token se muestra diferentemente en UIs y en el :ref:`Representación de JSON <02_decentralchain/03_transaction:JSON Representation>` utilizado por el :ref:`Node REST API <05_node-guide/01_node-rest-api:Node REST API>`. En las solicitudes y respuestas de la API, los valores de cantidad son números enteros indicados en unidades atómicas para evitar problemas de precisión en cálculos de puntos flotantes. Una unidad atómica es la fracción mínima (“centro”) de un token, es igual a :math:`10^{-decimals}`. La cantidad de ficha en JSON es la cantidad real multiplicada por :math:`10^{decimals}`."
 
 #: ../../02_decentralchain/02_token(asset).rst:195
 msgid "For USD-N in the example above:"
@@ -1175,7 +1169,7 @@ msgstr "En `Decentral.Exchange <https://decentral.exchange/>`_ puede crear algun
 
 #: ../../02_decentralchain/03_transaction.rst:12
 msgid "Via :ref:`Node REST API <05_node-guide/01_node-rest-api:Node REST API>`:"
-msgstr ""
+msgstr "Via :ref:`Node REST API <05_node-guide/01_node-rest-api:Node REST API>`:"
 
 #: ../../02_decentralchain/03_transaction.rst:14
 msgid "The POST /transactions/broadcast method sends a signed transaction to a node;"
@@ -1841,14 +1835,12 @@ msgid ":math:`17`"
 msgstr ":math:`17`"
 
 #: ../../_static/02_decentralchain/tables/002_Minimum-Fees.csv:1
-#, fuzzy
 msgid ":ref:`Commit to generation transaction <02_decentralchain/03_transaction:Commit To Generation Transaction>`"
-msgstr ":ref:`Transacción Génesis <02_decentralchain/03_transaction:Genesis Transaction>`"
+msgstr ":ref:`Compromiso a la transacción de generación <02_decentralchain/03_transaction:Commit To Generation Transaction>`"
 
 #: ../../_static/02_decentralchain/tables/002_Minimum-Fees.csv:1
-#, fuzzy
 msgid ":math:`19`"
-msgstr ":math:`9`"
+msgstr ":math:`19`"
 
 #: ../../02_decentralchain/03_transaction.rst:91
 msgid "Fee for Failed Transactions"
@@ -1998,9 +1990,8 @@ msgid "JSON Representation"
 msgstr "Representación JSON"
 
 #: ../../02_decentralchain/03_transaction.rst:170
-#, fuzzy
 msgid "The :ref:`Node REST API <05_node-guide/01_node-rest-api:Node REST API>` of DecentralChain nodes uses the JSON representation of transactions. You can send transactions to a node and read transactions stored on the blockchain via REST API in JSON. Here is an example of JSON representation:"
-msgstr "La :ref:`Node REST API <documentation:placeholder>` de los nodos DecentralChain usa la representación JSON de transacciones. Puede enviar transacciones a un nodo y leer transacciones almacenadas en la cadena de bloques a través de la API REST en JSON. Aquí hay un ejemplo de representación JSON:"
+msgstr "El :ref:`Node REST API <05_node-guide/01_node-rest-api:Node REST API>` de los nodos DecentralChain utiliza la representación JSON de las transacciones. Puede enviar transacciones a un nodo y leer las transacciones almacenadas en la cadena de bloqueo a través de REST API en JSON. He aquí un ejemplo de representación JSON:"
 
 #: ../../_static/02_decentralchain/tables/003_JSON-Representation.csv:1
 #: ../../_static/02_decentralchain/tables/051_Order-Binary-Format-V3.csv:1
@@ -2196,9 +2187,8 @@ msgid "The sender, id, applicationStatus, and height fields do not need to be fi
 msgstr "No es necesario completar los campos de remitente, ID, aplicationStatus y altura al enviar una transacción, y no se almacenan en la cadena de bloques. El nodo calcula estos campos cuando proporciona datos de transacciones a través de la API REST del nodo. Los campos que dependen del tipo de transacción se enumeran en la descripción de cada :ref:`tipo de transacción <02_decentralchain/03_transaction:Transaction Types>`."
 
 #: ../../02_decentralchain/03_transaction.rst:202
-#, fuzzy
 msgid "Transactions are stored on the blockchain in the binary format (byte representation). :ref:`Node extensions <05_node-guide/02_node-extensions:Node Extensions>` such as :ref:`gRPC server <05_node-guide/02_node-extensions:gRPC Server>` can work directly with data in binary format. The transaction signature and ID are also formed on the basis of the binary format. The guideline for generating a signature and ID is given in the :ref:`cryptographic practical details <02_decentralchain/09_protocol:Cryptographic Practical Details>` article. Transaction binary format is described in the :ref:`transaction binary format <02_decentralchain/10_binary-format:Transaction Binary Format>` article."
-msgstr "Las transacciones se almacenan en la cadena de bloques en formato binario (representación de bytes). :ref:`Las extensiones de nodo <documentation:placeholder>` como :ref:`servidor gRPC <documentation:placeholder>` pueden trabajar directamente con datos en formato binario. La firma de la transacción y la identificación también se forman sobre la base del formato binario. La guía para generar una firma y una identificación se proporciona en el artículo :ref:`detalles prácticos criptográficos <02_decentralchain/09_protocol:Cryptographic Practical Details>`. El formato binario de transacción se describe en el artículo :ref:`formato binario de transacción <02_decentralchain/10_binary-format:Transaction Binary Format>`."
+msgstr "Las transacciones se almacenan en la cadena de bloques en el formato binario (representación byte). :ref:`Extensiones de nodos <05_node-guide/02_node-extensions:Node Extensions>` como :ref:`Servidor gRPC <05_node-guide/02_node-extensions:gRPC Server>` puede trabajar directamente con datos en formato binario. La firma de transacción y el ID también se forman sobre la base del formato binario. La directriz para generar firma e identificación se da en el artículo :ref:`criptográficos detalles prácticos <02_decentralchain/09_protocol:Cryptographic Practical Details>`. El formato binario de transacción se describe en el artículo :ref:`transacción formato binario <02_decentralchain/10_binary-format:Transaction Binary Format>`."
 
 #: ../../02_decentralchain/03_transaction.rst:206
 msgid "You can get the transaction by ID, or the list of transactions by certain account address, or the list of all transactions in the block:"
@@ -2209,9 +2199,8 @@ msgid "In `DecentralChain Explorer <https://decentralscan.com/>`_."
 msgstr "En `DecentralChain Explorer <https://decentralscan.com/>`_."
 
 #: ../../02_decentralchain/03_transaction.rst:209
-#, fuzzy
 msgid "Via :ref:`Node REST API <05_node-guide/01_node-rest-api:Node REST API>` using the following methods:"
-msgstr "A través de :ref:`Node REST API <documentation:placeholder>` usando los siguientes métodos:"
+msgstr "Via :ref:`Node REST API <05_node-guide/01_node-rest-api:Node REST API>` utilizando los siguientes métodos:"
 
 #: ../../02_decentralchain/03_transaction.rst:211
 #, python-brace-format
@@ -2332,7 +2321,7 @@ msgstr ":strong:`Representación JSON`"
 #: ../../02_decentralchain/03_transaction.rst:242
 #: ../../02_decentralchain/10_binary-format.rst:470
 msgid "The JSON examples on this page are reference samples and carry ``chainId`` values (84, 87) from their original network. DecentralChain uses ``33`` (``!``) on Testnet, ``63`` (``?``) on Mainnet and ``83`` (``S``) on Stagenet (see the Chain ID table on the Mainnet, Testnet, Stagenet page)."
-msgstr ""
+msgstr "Los ejemplos JSON en esta página son muestras de referencia y llevan valores ``chainId`` (84, 87) desde su red original. DecentralChain utiliza ``33`` (``!``) en Testnet, ``63`` (``?``) sobre Mainnet y ``83`` (``S``) en Stagenet (ver la tabla de identificación de cadenas en el Mainnet, Testnet, página Stagenet)."
 
 #: ../../02_decentralchain/03_transaction.rst:271
 msgid "Issue Transaction JSON Representation"
@@ -2455,9 +2444,8 @@ msgid ":strong:`Ride Structure`"
 msgstr ":strong:`Estructura Ride`"
 
 #: ../../02_decentralchain/03_transaction.rst:285
-#, fuzzy
 msgid "The :ref:`IssueTransaction <03_ride-language/05_structures:IssueTransaction>` structure is used for transaction handling in smart contracts."
-msgstr "La estructura :ref:`ReissueTransaction <03_ride-language/05_structures:ReissueTransaction>` se usa para el manejo de transacciones en contratos inteligentes."
+msgstr "La estructura :ref:`IssueTransaction <03_ride-language/05_structures:IssueTransaction>` se utiliza para el manejo de transacciones en contratos inteligentes."
 
 #: ../../02_decentralchain/03_transaction.rst:288
 msgid "Reissue Transaction"
@@ -2510,9 +2498,8 @@ msgid "See the :ref:`reissue transaction binary format <02_decentralchain/10_bin
 msgstr "Consulte el :ref:`formato binario de transacción para reemisión <02_decentralchain/10_binary-format:Reissue Transaction Binary Format>`."
 
 #: ../../02_decentralchain/03_transaction.rst:335
-#, fuzzy
 msgid "The :ref:`ReissueTransaction <03_ride-language/05_structures:ReissueTransaction>` structure is used for transaction handling in smart contracts."
-msgstr "La estructura :ref:`ReissueTransaction <03_ride-language/05_structures:ReissueTransaction>` se usa para el manejo de transacciones en contratos inteligentes."
+msgstr "La estructura :ref:`ReissueTransaction <03_ride-language/05_structures:ReissueTransaction>` se utiliza para el manejo de transacciones en contratos inteligentes."
 
 #: ../../02_decentralchain/03_transaction.rst:338
 msgid "Burn Transaction"
@@ -2559,7 +2546,6 @@ msgid "See the :ref:`burn transaction binary format <02_decentralchain/10_binary
 msgstr "Consulte el :ref:`formato binario de transacción para quemado <02_decentralchain/10_binary-format:Burn Transaction Binary Format>`."
 
 #: ../../02_decentralchain/03_transaction.rst:384
-#, fuzzy
 msgid "The :ref:`BurnTransaction <03_ride-language/05_structures:BurnTransaction>` structure is used for transaction handling in smart contracts."
 msgstr "La estructura :ref:`BurnTransaction <03_ride-language/05_structures:BurnTransaction>` se utiliza para el manejo de transacciones en contratos inteligentes."
 
@@ -2588,7 +2574,6 @@ msgid "See the :ref:`set asset script transaction binary format <02_decentralcha
 msgstr "Consulte el :ref:`formato binario de transacción para asignar scripts de activos <02_decentralchain/10_binary-format:Set Asset Script Transaction Binary Format>`."
 
 #: ../../02_decentralchain/03_transaction.rst:433
-#, fuzzy
 msgid "The :ref:`SetAssetScriptTransaction <03_ride-language/05_structures:SetAssetScriptTransaction>` structure is used for transaction handling in smart contracts."
 msgstr "La estructura :ref:`SetAssetScriptTransaction <03_ride-language/05_structures:SetAssetScriptTransaction>` se utiliza para el manejo de transacciones en contratos inteligentes."
 
@@ -2617,78 +2602,70 @@ msgid "See the :ref:`update asset info transaction binary format <02_decentralch
 msgstr "Consulte el :ref:`formato binario de transacción para actualizar información de activos <02_decentralchain/10_binary-format:Update Asset Info Transaction Binary Format>`."
 
 #: ../../02_decentralchain/03_transaction.rst:483
-#, fuzzy
 msgid "Commit To Generation Transaction"
-msgstr "Transacción Génesis"
+msgstr "Compromiso para la generación de transacciones"
 
 #: ../../02_decentralchain/03_transaction.rst:485
 msgid "Commit to generation transaction registers a generator for the next generation period under :ref:`Deterministic Finality <02_decentralchain/09_protocol:Finality>` (blockchain feature 25). It binds the sender's address to a BLS public key that the generator later uses to endorse blocks. The transaction has type :math:`19`, version :math:`1`, and is serialized as a Protobuf transaction."
-msgstr ""
+msgstr "El envío a la transacción generacional registra un generador para el período de próxima generación bajo :ref:`Finalidad determinística <02_decentralchain/09_protocol:Finality>` (blockchain característica 25). Se une la dirección del remitente a una clave pública de BLS que el generador utiliza más tarde para respaldar bloques. La transacción tiene tipo :math:`19`, versión :math:`1`, y se serializa como una transacción Protobuf."
 
 #: ../../02_decentralchain/03_transaction.rst:489
-#, fuzzy
 msgid "The :ref:`minimum fee <02_decentralchain/03_transaction:Minimum Fee>` is :math:`0.01` :ref:`DecentralCoins <02_decentralchain/02_token(asset):DecentralCoin>`, paid in DecentralCoins only."
-msgstr "La :ref:`tarifa mínima <02_decentralchain/03_transaction:Minimum Fee>` en una transacción para arrendamiento es :math:`0.001` :ref:`DecentralCoins <02_decentralchain/02_token(asset):DecentralCoin>`."
+msgstr "El :ref:`cuota mínima <02_decentralchain/03_transaction:Minimum Fee>` es :math:`0.01` :ref:`DecentralCoins <02_decentralchain/02_token(asset):DecentralCoin>`, pagado sólo en DecentralCoins."
 
 #: ../../02_decentralchain/03_transaction.rst:491
-#, fuzzy
 msgid ":strong:`Fields`"
-msgstr ":strong:`Tarifa`"
+msgstr ":strong:`Fields`"
 
 #: ../../02_decentralchain/03_transaction.rst:493
 msgid "``endorserPublicKey`` — the generator's BLS public key (Base58)."
-msgstr ""
+msgstr "``endorserPublicKey`` — la clave pública del generador BLS (Base58)."
 
 #: ../../02_decentralchain/03_transaction.rst:494
 msgid "``generationPeriodStart`` — the first height of the period being committed to. It must equal the start height of the *next* generation period."
-msgstr ""
+msgstr "``generationPeriodStart`` — la primera altura del período que se está comprometiendo. Debe igualar la altura de inicio del período de generación *siguiente*."
 
 #: ../../02_decentralchain/03_transaction.rst:495
 msgid "``commitmentSignature`` — a BLS proof-of-possession made with the matching BLS private key. From node v1.8.0 the signed message is ``chainId (1 byte) ‖ senderPublicKey (32 bytes) ‖ endorserPublicKey (48 bytes) ‖ generationPeriodStart (4 bytes, big-endian)``, signed with the ``BLS_SIG_BLS12381G2_XMD:SHA-256_SSWU_RO_POP_`` domain separation tag. Earlier commitments signed only ``endorserPublicKey ‖ generationPeriodStart`` (with the ``..._NUL_`` tag); nodes still accept that legacy layout when verifying existing transactions but never create it."
-msgstr ""
+msgstr "``commitmentSignature`` — una prueba de posesión BLS hecha con la clave privada del BLS. Desde el nodo v1.8.0 el mensaje firmado es ``chainId (1 byte) ‖ senderPublicKey (32 bytes) ‖ endorserPublicKey (48 bytes) ‖ generationPeriodStart (4 bytes, big-endian)``, firmado con la etiqueta de separación del dominio ``BLS_SIG_BLS12381G2_XMD:SHA-256_SSWU_RO_POP_``. Los compromisos anteriores firmaron sólo ``endorserPublicKey ‖ generationPeriodStart`` (con la etiqueta ``..._NUL_``); los nodos todavía aceptan esa disposición heredada al verificar las transacciones existentes pero nunca lo crean."
 
 #: ../../02_decentralchain/03_transaction.rst:497
-#, fuzzy
 msgid ":strong:`Generation Deposit`"
-msgstr ":strong:`Versión 5`"
+msgstr ":strong:`Generation Deposit`"
 
 #: ../../02_decentralchain/03_transaction.rst:499
 msgid "Besides the fee, committing locks a deposit of :math:`100` DecentralCoins per committed period against the sender's spendable balance — it counts toward the account's own balance but not toward funds available to spend or to send in further transactions. The deposit is separate from, and in addition to, the generating balance itself."
-msgstr ""
+msgstr "Además de la cuota, el depósito de :math:`100` DecentralCoins por período comprometido contra el saldo gastable del remitente — cuenta con el propio equilibrio de la cuenta pero no hacia los fondos disponibles para gastar o enviar nuevas transacciones. El depósito está separado de, y además, del equilibrio generador en sí mismo."
 
 #: ../../02_decentralchain/03_transaction.rst:501
-#, fuzzy
 msgid ":strong:`Validation`"
-msgstr ":strong:`Versión 5`"
+msgstr ":strong:`Validation`"
 
 #: ../../02_decentralchain/03_transaction.rst:503
-#, fuzzy
 msgid "The transaction is rejected if:"
-msgstr "Después de Enviar la Transacción"
+msgstr "La transacción es rechazada si:"
 
 #: ../../02_decentralchain/03_transaction.rst:505
 msgid "Deterministic Finality is not yet activated;"
-msgstr ""
+msgstr "La finalidad determinística todavía no está activada;"
 
 #: ../../02_decentralchain/03_transaction.rst:506
 msgid "``generationPeriodStart`` is not the start of the next period;"
-msgstr ""
+msgstr "``generationPeriodStart`` no es el comienzo del próximo período;"
 
 #: ../../02_decentralchain/03_transaction.rst:507
-#, fuzzy
 msgid "the commitment signature is invalid;"
-msgstr "La firma del bloque es válida."
+msgstr "la firma de compromiso es nula;"
 
 #: ../../02_decentralchain/03_transaction.rst:508
 msgid "the sender address, or the BLS key, is already committed for that period;"
-msgstr ""
+msgstr "la dirección del remitente, o la clave BLS, ya está comprometida para ese período;"
 
 #: ../../02_decentralchain/03_transaction.rst:509
 msgid "the sender's generating balance, computed after the fee and the generation deposit are applied, is below the minimum generating balance: :math:`1000` DecentralCoins once feature 1 (Minimum Generating Balance of 1000 DCC) is active, otherwise :math:`10000` DecentralCoins."
-msgstr ""
+msgstr "El balance generador del remitente, calculado después de la cuota y el depósito de generación se aplican, está por debajo del equilibrio mínimo de generación: :math:`1000` DecentralCoins una vez característica 1 (Minimum Generating Balance of 1000 DCC) es activo, de lo contrario :math:`10000` DecentralCoins."
 
 #: ../../02_decentralchain/03_transaction.rst:515
-#, fuzzy
 msgid "The :ref:`UpdateAssetInfoTransaction <03_ride-language/05_structures:UpdateAssetInfoTransaction>` structure is used for transaction handling in smart contracts."
 msgstr "La estructura :ref:`UpdateAssetInfoTransaction <03_ride-language/05_structures:UpdateAssetInfoTransaction>` se utiliza para el manejo de transacciones en contratos inteligentes."
 
@@ -2714,27 +2691,24 @@ msgid "Transfers a token, up to :math:`100` recipients."
 msgstr "Transfiere un token, hasta :math:`100` destinatarios."
 
 #: ../../_static/02_decentralchain/tables/010_Usage.csv:1
-#, fuzzy
 msgid ":ref:`Data transaction <02_decentralchain/03_transaction:Data Transaction>`"
-msgstr ":ref:`Transacción para Datos <02_decentralchain/03_transaction:Data Transaction>`"
+msgstr ":ref:`Transmisión de datos <02_decentralchain/03_transaction:Data Transaction>`"
 
 #: ../../_static/02_decentralchain/tables/010_Usage.csv:1
 msgid "Adds, modifies and deletes data entries in the sender's account data storage."
 msgstr "Agrega, modifica y elimina entradas de datos en el almacenamiento de datos de la cuenta del remitente."
 
 #: ../../_static/02_decentralchain/tables/010_Usage.csv:1
-#, fuzzy
 msgid ":ref:`Set script transaction <02_decentralchain/03_transaction:Set Script Transaction>`"
-msgstr ":ref:`Transacción para Asignar Scripts <02_decentralchain/03_transaction:Set Script Transaction>`"
+msgstr ":ref:`Establecer la transacción de script <02_decentralchain/03_transaction:Set Script Transaction>`"
 
 #: ../../_static/02_decentralchain/tables/010_Usage.csv:1
 msgid "Assigns the dApp script or account script to the sender's account."
 msgstr "Asigna el script de dApp o script de cuenta a la cuenta del remitente."
 
 #: ../../_static/02_decentralchain/tables/010_Usage.csv:1
-#, fuzzy
 msgid ":ref:`Invoke script transaction <02_decentralchain/03_transaction:Invoke Script Transaction>`"
-msgstr ":ref:`Transacción para invocar scripts <02_decentralchain/03_transaction:Invoke Script Transaction>`"
+msgstr ":ref:`Invocar la transacción del script <02_decentralchain/03_transaction:Invoke Script Transaction>`"
 
 #: ../../_static/02_decentralchain/tables/010_Usage.csv:1
 msgid "Invokes a callable function of a dApp."
@@ -2799,7 +2773,6 @@ msgid "See the :ref:`transfer transaction binary format <02_decentralchain/10_bi
 msgstr "Consulte el :ref:`formato binario de transacción para transferencia <02_decentralchain/10_binary-format:Transfer Transaction Binary Format>`."
 
 #: ../../02_decentralchain/03_transaction.rst:576
-#, fuzzy
 msgid "The :ref:`TransferTransaction <03_ride-language/05_structures:TransferTransaction>` structure is used for transaction handling in smart contracts."
 msgstr "La estructura :ref:`TransferTransaction <03_ride-language/05_structures:TransferTransaction>` se utiliza para el manejo de transacciones en contratos inteligentes."
 
@@ -2887,9 +2860,8 @@ msgid "See the :ref:`exchange transaction binary format <02_decentralchain/10_bi
 msgstr "Consulte el :ref:`formato binario de transacción para intercambio <02_decentralchain/10_binary-format:Exchange Transaction Binary Format>`."
 
 #: ../../02_decentralchain/03_transaction.rst:682
-#, fuzzy
 msgid "The :ref:`ExchangeTransaction <03_ride-language/05_structures:ExchangeTransaction>` structure is used for transaction handling in smart contracts."
-msgstr "La estructura :ref:`ExchangeTransaction <03_ride-language/05_structures:ExchangeTransaction>` se usa para el manejo de transacciones en contratos inteligentes."
+msgstr "La estructura :ref:`ExchangeTransaction <03_ride-language/05_structures:ExchangeTransaction>` se utiliza para el manejo de transacciones en contratos inteligentes."
 
 #: ../../02_decentralchain/03_transaction.rst:685
 msgid "Create Alias Transaction"
@@ -2922,7 +2894,6 @@ msgid "See the :ref:`create alias transaction binary format <02_decentralchain/1
 msgstr "Consulte el :ref:`formato binario de transacción para crear alias <02_decentralchain/10_binary-format:Create Alias Transaction Binary Format>`."
 
 #: ../../02_decentralchain/03_transaction.rst:729
-#, fuzzy
 msgid "The :ref:`CreateAliasTransaction <03_ride-language/05_structures:CreateAliasTransaction>` structure is used for transaction handling in smart contracts."
 msgstr "La estructura :ref:`CreateAliasTransaction <03_ride-language/05_structures:CreateAliasTransaction>` se utiliza para el manejo de transacciones en contratos inteligentes."
 
@@ -2981,7 +2952,6 @@ msgid "See the :ref:`mass transfer transaction binary format <02_decentralchain/
 msgstr "Consulte el :ref:`formato binario de transacción para transferencia masiva <02_decentralchain/10_binary-format:Mass Transfer Transaction Binary Format>`."
 
 #: ../../02_decentralchain/03_transaction.rst:796
-#, fuzzy
 msgid "The :ref:`MassTransferTransaction <03_ride-language/05_structures:MassTransferTransaction>` structure is used for transaction handling in smart contracts."
 msgstr "La estructura :ref:`MassTransferTransaction <03_ride-language/05_structures:MassTransferTransaction>` se utiliza para el manejo de transacciones en contratos inteligentes."
 
@@ -3070,9 +3040,8 @@ msgid "See the :ref:`set script transaction binary format <02_decentralchain/10_
 msgstr "Consulte el :ref:`formato binario de transacción para asignar scripts <02_decentralchain/10_binary-format:Set Script Transaction Binary Format>`."
 
 #: ../../02_decentralchain/03_transaction.rst:918
-#, fuzzy
 msgid "The :ref:`SetScriptTransaction <03_ride-language/05_structures:SetScriptTransaction>` structure is used for transaction handling in smart contracts."
-msgstr "La estructura :ref:`SetScriptTransaction <03_ride-language/05_structures:SetScriptTransaction>` se usa para el manejo de transacciones en contratos inteligentes."
+msgstr "La estructura :ref:`SetScriptTransaction <03_ride-language/05_structures:SetScriptTransaction>` se utiliza para el manejo de transacciones en contratos inteligentes."
 
 #: ../../02_decentralchain/03_transaction.rst:921
 msgid "Invoke Script Transaction"
@@ -3184,9 +3153,8 @@ msgid "See the :ref:`invoke script transaction binary format <02_decentralchain/
 msgstr "Consulte el :ref:`formato binario de transacción para invocar scripts <02_decentralchain/10_binary-format:Invoke Script Transaction Binary Format>`."
 
 #: ../../02_decentralchain/03_transaction.rst:1020
-#, fuzzy
 msgid "The :ref:`InvokeScriptTransaction <03_ride-language/05_structures:InvokeScriptTransaction>` structure is used for transaction handling in smart contracts."
-msgstr "La estructura :ref:`InvokeScriptTransaction <03_ride-language/05_structures:InvokeScriptTransaction>` se usa para el manejo de transacciones en contratos inteligentes."
+msgstr "La estructura :ref:`InvokeScriptTransaction <03_ride-language/05_structures:InvokeScriptTransaction>` se utiliza para el manejo de transacciones en contratos inteligentes."
 
 #: ../../02_decentralchain/03_transaction.rst:1023
 #: ../../02_decentralchain/03_transaction.rst:1025
@@ -3250,7 +3218,6 @@ msgid "See the :ref:`lease transaction binary format <02_decentralchain/10_binar
 msgstr "Consulte el :ref:`formato binario de transacción para arrendamiento <02_decentralchain/10_binary-format:Lease Transaction Binary Format>`."
 
 #: ../../02_decentralchain/03_transaction.rst:1083
-#, fuzzy
 msgid "The :ref:`LeaseTransaction <03_ride-language/05_structures:LeaseTransaction>` structure is used for transaction handling in smart contracts."
 msgstr "La estructura :ref:`LeaseTransaction <03_ride-language/05_structures:LeaseTransaction>` se utiliza para el manejo de transacciones en contratos inteligentes."
 
@@ -3295,9 +3262,8 @@ msgid "See the :ref:`lease cancel transaction binary format <02_decentralchain/1
 msgstr "Consulte el :ref:`formato binario de transacción para cancelar arrendamiento <02_decentralchain/10_binary-format:Lease Cancel Transaction Binary Format>`."
 
 #: ../../02_decentralchain/03_transaction.rst:1143
-#, fuzzy
 msgid "The :ref:`LeaseCancelTransaction <03_ride-language/05_structures:LeaseCancelTransaction>` structure is used for transaction handling in smart contracts."
-msgstr "La estructura :ref:`LeaseCancelTransaction <03_ride-language/05_structures:LeaseCancelTransaction>` se usa para el manejo de transacciones en contratos inteligentes."
+msgstr "La estructura :ref:`LeaseCancelTransaction <03_ride-language/05_structures:LeaseCancelTransaction>` se utiliza para el manejo de transacciones en contratos inteligentes."
 
 #: ../../02_decentralchain/03_transaction.rst:1146
 msgid "Sponsor Fee Transaction"
@@ -3328,7 +3294,6 @@ msgid "See the :ref:`sponsor fee transaction binary format <02_decentralchain/10
 msgstr "Consulte el :ref:`formato binario de transacción para patrocinar tarifas <02_decentralchain/10_binary-format:Sponsor Fee Transaction Binary Format>`."
 
 #: ../../02_decentralchain/03_transaction.rst:1193
-#, fuzzy
 msgid "The :ref:`SponsorFeeTransaction <03_ride-language/05_structures:SponsorFeeTransaction>` structure is used for transaction handling in smart contracts."
 msgstr "La estructura :ref:`SponsorFeeTransaction <03_ride-language/05_structures:SponsorFeeTransaction>` se utiliza para el manejo de transacciones en contratos inteligentes."
 
@@ -3366,9 +3331,8 @@ msgid "A DecentralChain node validates each transaction in the following cases:"
 msgstr "Un nodo DecentralChain valida cada transacción en los siguientes casos:"
 
 #: ../../02_decentralchain/03_transaction.rst:1218
-#, fuzzy
 msgid "The node receives the transaction via the broadcast endpoint of :ref:`Node extensions <05_node-guide/02_node-extensions:Node Extensions>` or :ref:`gRPC server <05_node-guide/02_node-extensions:gRPC Server>`."
-msgstr "El nodo recibe la transacción a través del punto final de difusión de :ref:`Node extensions <documentation:placeholder>` o :ref:`gRPC server <documentation:placeholder>`."
+msgstr "El nodo recibe la transacción a través del punto final de emisión de :ref:`Extensiones de nodos <05_node-guide/02_node-extensions:Node Extensions>` o :ref:`Servidor gRPC <05_node-guide/02_node-extensions:gRPC Server>`."
 
 #: ../../02_decentralchain/03_transaction.rst:1219
 msgid "The node receives the transaction from another node of the blockchain network using the binary protocol."
@@ -3494,9 +3458,8 @@ msgid "If one of the checks 1–3 failed, the transaction is discarded."
 msgstr "Si una de las comprobaciones 1 a 3 falla, la transacción se descarta."
 
 #: ../../02_decentralchain/03_transaction.rst:1268
-#, fuzzy
 msgid "If checks 1–3 passed, and the calculation of the result of the dApp callable function (check 4.1) failed with an error or :ref:`throwing an exception <03_ride-language/01_syntax-basics:Exceptions>` before the :ref:`complexity <03_ride-language/07_dapp-to-app-invocation:Script Complexity>` of performed calculations exceeded the :ref:`threshold for saving failed transactions <03_ride-language/07_dapp-to-app-invocation:Limitations>`, the transaction is also discarded."
-msgstr "Si se pasaron las comprobaciones 1 a 3 y el cálculo del resultado de la función invocable de dApp (comprobación 4.1) falló con un error o :ref:`lanzando una excepción <03_ride-language/01_syntax-basics:Exceptions>` antes de la :ref :`complejidad <03_ride-language/07_dapp-to-app-invocation:Script Complexity>` de los cálculos realizados supere el :ref:`umbral para guardar transacciones fallidas <03_ride-language/07_dapp-to-app-invocation:Limitations>` , la transacción también se descarta."
+msgstr "Si los cheques 1–3 pasaron, y el cálculo del resultado de la función de llamada dApp (ver 4.1) falló con un error o :ref:`lanzar una excepción <03_ride-language/01_syntax-basics:Exceptions>` antes de que el :ref:`complejidad <03_ride-language/07_dapp-to-app-invocation:Script Complexity>` de los cálculos realizados excediera el :ref:`umbral para el ahorro de las transacciones fallidas <03_ride-language/07_dapp-to-app-invocation:Limitations>`, la transacción también se descarta."
 
 #: ../../02_decentralchain/03_transaction.rst:1269
 msgid "If checks 1–3 passed but checks 4–5 failed and besides the result of the callable function is calculated successfully or the complexity exceeded the threshold, the transaction is saved on the blockchain but marked as failed: \"applicationStatus\": \"script_execution_failed\". The sender is charged the transaction fee. The transaction doesn't entail any other changes to the state of the blockchain."
@@ -3551,9 +3514,8 @@ msgid "Base Target"
 msgstr "Objetivo Base"
 
 #: ../../02_decentralchain/04_block.rst:19
-#, fuzzy
 msgid "The base target is the variable in the average block generation time formula that adjusts :ref:`block generation <02_decentralchain/04_block:Block Generation>` time to the network's target: :math:`60` seconds on Mainnet and :math:`30` seconds on the public Testnet (``average-block-delay`` in each network's genesis settings)."
-msgstr "El objetivo base es la variable en la fórmula de tiempo promedio de generación de bloques que ajusta el tiempo de :ref:`generación de bloques <02_decentralchain/04_block:Block Generation>` a :math:`60` segundos."
+msgstr "El objetivo base es la variable en la fórmula promedio de tiempo de generación de bloques que ajusta el tiempo :ref:`generación de bloque <02_decentralchain/04_block:Block Generation>` al objetivo de la red: :math:`60` segundos en Mainnet y :math:`30` segundos en el Testnet público (``average-block-delay`` en la configuración génesis de cada red)."
 
 #: ../../02_decentralchain/04_block.rst:22
 msgid "Generation Signature"
@@ -3810,9 +3772,8 @@ msgid "Generating node is a node that generates blocks. Each generating node is 
 msgstr "El nodo generador es un nodo que genera bloques. Cada nodo generador es un :ref:`nodo validador <02_decentralchain/05_node:Validating Node>`. La cuenta generadora es una :ref:`cuenta <02_decentralchain/01_account:Account>` que un nodo usa para :ref:`firmar bloques <02_decentralchain/04_block:Block Signature>` generados. Un nodo puede generar bloques si se cumplen las siguientes condiciones:"
 
 #: ../../02_decentralchain/05_node.rst:16
-#, fuzzy
 msgid "The node's generating balance is at least :math:`10000` :ref:`DecentralCoins <02_decentralchain/02_token(asset):DecentralCoin>` (:math:`1000` once the \"Minimum Generating Balance of 1000 DCC\" feature, feature 1, is active). This means that the account balance in DecentralCoins, taking into account leasing, was not less than :math:`10000` DecentralCoins in each of the last :math:`1000` blocks (more details in the :ref:`account balance <02_decentralchain/01_account:Account Balance>` article). The greater the generating balance, the higher is your chance of being eligible to generate the next block."
-msgstr "El saldo de generación del nodo es al menos :math:`10000` :ref:`DecentralCoins <02_decentralchain/02_token(asset):DecentralCoin>`. Esto significa que el saldo de la cuenta en DecentralCoins, teniendo en cuenta el arrendamiento, no fue inferior a :math:`10000` DecentralCoins en cada uno de los últimos :math:`1000` bloques (más detalles en el artículo sobre :ref:`saldo de cuenta <02_decentralchain/01_account:Account Balance>`). Cuanto mayor sea el saldo de generación, mayor será su probabilidad de ser elegible para generar el siguiente bloque."
+msgstr "El balance de generación del nodo es por lo menos :math:`10000` :ref:`DecentralCoins <02_decentralchain/02_token(asset):DecentralCoin>` (:math:`1000` una vez que la característica \"Minimum Generating Balance of 1000 DCC\", característica 1, está activa). Esto significa que el saldo de la cuenta en DecentralCoins, teniendo en cuenta el arrendamiento, no era inferior a :math:`10000` DecentralCoins en cada uno de los últimos bloques :math:`1000` (más detalles en el artículo :ref:`saldo de las cuentas <02_decentralchain/01_account:Account Balance>`). Cuanto mayor sea el equilibrio de generación, más alto es tu oportunidad de ser elegible para generar el siguiente bloque."
 
 #: ../../02_decentralchain/05_node.rst:17
 msgid "Node's account is not a :ref:`smart account or dApp <02_decentralchain/01_account:dApp and Smart Account>`."
@@ -3894,9 +3855,8 @@ msgid "Current Reward Size"
 msgstr "Tamaño Actual de la Decompensa"
 
 #: ../../02_decentralchain/05_node.rst:61
-#, fuzzy
 msgid "You can view the current reward size by making a request to the :ref:`Node REST API <05_node-guide/01_node-rest-api:Node REST API>`. In response to the request, a JSON file is returned,  the value of the currentReward field of which is the current block reward size in Decentralites."
-msgstr "Puede ver el tamaño de la recompensa actual realizando una solicitud a la :ref:`Node REST API <documentation:placeholder>`. En respuesta a la solicitud, se devuelve un archivo JSON, cuyo valor del campo currentReward es el tamaño actual de la recompensa del bloque en Decentralitos."
+msgstr "Usted puede ver el tamaño actual de la recompensa haciendo una solicitud al :ref:`Node REST API <05_node-guide/01_node-rest-api:Node REST API>`. En respuesta a la solicitud, se devuelve un archivo JSON, cuyo valor es el campo currentReward actual del tamaño de la recompensa bloque en Decentralites."
 
 #: ../../02_decentralchain/05_node.rst:63
 msgid "Example of response:"
@@ -3931,9 +3891,8 @@ msgid "To count the votes, all :math:`10,000` blocks generated during the voting
 msgstr "Para contar los votos, se inspeccionan todos los :math:`10,000` bloques generados durante el período de votación. Si se registra en el bloque :math:`-1` o el valor que es igual al tamaño de la recompensa actual, entonces el generador vota por mantener el tamaño de la recompensa actual. Si el valor registrado en el bloque es mayor que el tamaño de la recompensa actual, entonces el generador vota por el aumento del tamaño de la recompensa actual; si el valor es más pequeño — para la disminución. La recompensa del bloque aumenta/disminuye solo si más de la mitad de los :math:`10,000` votos, es decir, :math:`5,001` votos o más, se otorgaron para aumentar/disminuir. La cantidad de la recompensa actual aumenta/disminuye en :math:`0.5` :ref:`DecentralCoins <02_decentralchain/02_token(asset):DecentralCoin>`."
 
 #: ../../02_decentralchain/05_node.rst:109
-#, fuzzy
 msgid "At the blockchain height of :math:`2,000,000`, the block reward equals :math:`5` DecentralCoins. At the height of :math:`2,090,000`, another voting starts. During the :math:`10,000` blocks of voting :math:`6,000` votes were given for reward increase, :math:`1,000` — for decrease, :math:`3,000` — for keeping the current reward size. From the height of :math:`2`, :math:`100,000` to the height of :math:`2,199,999`, the new reward size will be :math:`5.5` DecentralCoins, because the reward change step is :math:`0.5` DecentralCoins. The next voting will take place from the height of :math:`2,190,000` to :math:`2,199,999`."
-msgstr "A la altura de la cadena de bloques de :math:`2,000,000`, la recompensa del bloque es igual a :math:`5` DecentralCoins. A la altura de :math:`2,090,000`, comienza otra votación. Durante los :math:`10,000` bloques de votación, se otorgaron :math:`6,000` votos para aumentar la recompensa, :math:`1,000` — para disminuir, :math:`3,000` — para mantener el tamaño actual de la recompensa. Desde la altura de :math:`2`, :math:`100,000` hasta la altura de :math:`2,199,999`, el nuevo tamaño de recompensa será :math:`5.5` DecentralCoins, porque el paso de cambio de recompensa es :math :`0.5` Monedas descentralizadas. La próxima votación tendrá lugar desde la altura de :math:`2,190,000` hasta :math:`2,199,999`."
+msgstr "En la altura de bloqueo de :math:`2,000,000`, la recompensa del bloque equivale a :math:`5` DecentralCoins. A la altura de :math:`2,090,000`, comienza otra votación. Durante los bloques :math:`10,000` de votación :math:`6,000` votos fueron dados por aumento de recompensa, :math:`1,000` —por disminución, :math:`3,000`— por mantener el tamaño actual de la recompensa. Desde la altura de :math:`2`, :math:`100,000` hasta la altura de :math:`2,199,999`, el nuevo tamaño de recompensa será :math:`5.5` DecentralCoins, porque el paso del cambio de recompensa es :math:`0.5` DecentralCoins. La próxima votación tendrá lugar desde la altura de :math:`2,190,000` hasta :math:`2,199,999`."
 
 #: ../../02_decentralchain/05_node.rst:116
 msgid "At the blockchain height of :math:`2,100,000`, the block reward equals :math:`5.5` DecentralCoins. At the height of :math:`2,190,000`, another voting starts. During the :math:`10,000` blocks of voting :math:`4,500` votes were given for reward increase, :math:`4,000` — for decrease, :math:`1,500` — for keeping the current reward size. From the height of :math:`2,200,000` to the height of :math:`2,299,999`, the \"new\" reward size will be the same — :math:`5.5` DecentralCoins. Although the highest number of votes were given for the reward increase, it was not enough to change the current reward size. In order for the current reward size to be increased, at least :math:`5,001` votes must be given for the increase. The next voting will take place from the height of :math:`2,290,000` to :math:`2,299,999`."
@@ -4004,21 +3963,20 @@ msgid "You can use `Decentral.Exchange <https://decentral.exchange/>`_ online to
 msgstr "Puedes usar `Decentral.Exchange <https://decentral.exchange/>`_ en línea para crear un arrendamiento"
 
 #: ../../02_decentralchain/05_node.rst:160
-#, fuzzy
 msgid "Make sure you are logged into your account, and open Leasing in the wallet menu."
-msgstr "Asegúrate de haber iniciado sesión en tu cuenta. En la pantalla principal, vaya a Billetera > Arrendamiento."
+msgstr "Asegúrate de que estés conectado a tu cuenta y abre Leasing en el menú de la cartera."
 
 #: ../../02_decentralchain/05_node.rst:161
 msgid "Under Start a lease, enter the node address and the amount you want to lease."
-msgstr ""
+msgstr "Bajo Inicio de un contrato de arrendamiento, introduzca la dirección del nodo y la cantidad que desea alquilar."
 
 #: ../../02_decentralchain/05_node.rst:162
 msgid "Verify the details, including the network fee, and press and hold Hold to start lease to confirm."
-msgstr ""
+msgstr "Verifique los detalles, incluyendo la cuota de red, y presione y mantenga Hold para iniciar el arrendamiento para confirmar."
 
 #: ../../02_decentralchain/05_node.rst:164
 msgid "For leasing from code, and for checking and cancelling leases, see :doc:`Leasing <../09_user-guides/04_leasing>`."
-msgstr ""
+msgstr "Para el arrendamiento con código, y para la comprobación y cancelación de los contratos de alquiler, vea :doc:`Leasing <../09_user-guides/04_leasing>`."
 
 #: ../../02_decentralchain/06_order.rst:3
 msgid "Order"
@@ -4162,7 +4120,7 @@ msgstr "Será adquirido por el remitente si el pedido es de VENTA."
 #: ../../02_decentralchain/06_order.rst:62
 #, python-brace-format
 msgid "Is calculated by the following formula: amount × price × :math:`10^{(priceAssetDecimals - amountAssetDecimals - 8)}`."
-msgstr "Se calcula mediante la siguiente fórmula: amount × price ×:math:`10^{(priceAssetDecimals - amountAssetDecimals - 8)}`."
+msgstr "Se calcula mediante la siguiente fórmula: amount × price × :math:`10^{(priceAssetDecimals - amountAssetDecimals - 8)}`."
 
 #: ../../02_decentralchain/06_order.rst:64
 #, python-brace-format
@@ -4240,9 +4198,8 @@ msgid "Sources of the Outside World"
 msgstr "Fuentes del Mundo Exterior"
 
 #: ../../02_decentralchain/07_oracle.rst:17
-#, fuzzy
 msgid "Software oracles handle data accessible on the web. For example, the temperature, costs of products and merchandise, flight or train delays, etc. The information originates from online sources, e.g. API. The oracle extracts the required data and pushes it into the blockchain."
-msgstr "Los oráculos de software manejan datos accesibles en la web. Por ejemplo, la temperatura, costos de productos y mercancías, retrasos en vuelos o trenes, etc. La información proviene de fuentes en línea, p. API. El profeta del producto extrae los datos necesarios y los inserta en la cadena de bloques."
+msgstr "Los oráculos de software manejan datos accesibles en la web. Por ejemplo, la temperatura, los costos de productos y mercancías, retrasos en vuelo o tren, etc. La información procede de fuentes en línea, por ejemplo. API. El oráculo extrae los datos necesarios y lo empuja a la cadena de bloques."
 
 #: ../../02_decentralchain/07_oracle.rst:19
 msgid "Hardware oracles track real-world objects with devices and sensors. For example, a video camera with an analytics function virtual line crossing tracks vehicles entering a specific zone. If an event is detected, the oracle writes about it on the blockchain. Based on the data of such oracle, some script of decentralized application on the blockchain may be triggered. In this case, for example, a fine and the write-off of tokens from the account of the vehicle owner. But it is not in oracle scope, it is in the scope of the script that is based on the data of such an oracle."
@@ -4265,78 +4222,73 @@ msgid "Here, the solution is quite straightforward: if external data is necessar
 msgstr "Aquí, la solución es bastante sencilla: si se necesitan datos externos para la ejecución de una aplicación descentralizada, estos datos deben almacenarse en la cadena de bloques. Para lograr esto, generalmente se implementan pequeños programas que acceden a los datos necesarios y los escriben en la cadena de bloques. Esos pequeños programas se llaman oráculos."
 
 #: ../../02_decentralchain/07_oracle.rst:31
-#, fuzzy
 msgid "How an Oracle Works on DecentralChain"
-msgstr "Cómo Obtener DecentralCoin"
+msgstr "Cómo funciona un Oráculo en DecentralChain"
 
 #: ../../02_decentralchain/07_oracle.rst:33
 msgid "On DecentralChain an oracle is an ordinary :ref:`account <02_decentralchain/01_account:Account>`. It publishes data by sending :ref:`Data transactions <02_decentralchain/03_transaction:Data Transaction>`, which write key-value entries into its :ref:`account data storage <02_decentralchain/01_account:Account Data Storage>`. A later Data transaction with the same key overwrites the entry, so each key always holds the oracle's latest value."
-msgstr ""
+msgstr "En DecentralChain un oráculo es un :ref:`cuenta <02_decentralchain/01_account:Account>` ordinario. Publica datos enviando :ref:`Transacciones de datos <02_decentralchain/03_transaction:Data Transaction>`, que escribe entradas de valor clave en su :ref:`almacenamiento de datos <02_decentralchain/01_account:Account Data Storage>`. Una transacción posterior de datos con la misma llave sobrescribe la entrada, por lo que cada clave siempre tiene el valor más reciente del oráculo."
 
 #: ../../02_decentralchain/07_oracle.rst:35
 msgid "Anyone can read the entries:"
-msgstr ""
+msgstr "Cualquiera puede leer las entradas:"
 
 #: ../../02_decentralchain/07_oracle.rst:37
 #, python-brace-format
 msgid "**Off-chain**, from any node: ``GET /addresses/data/{oracleAddress}`` returns every entry, ``?key=price_DCC_USD`` one or more entries by key, and ``GET /addresses/data/{oracleAddress}/{key}`` a single entry."
-msgstr ""
+msgstr "**Fuera de la cadena**, desde cualquier nodo: ``GET /addresses/data/{oracleAddress}`` devuelve cada entrada, ``?key=price_DCC_USD`` una o más entradas por llave y ``GET /addresses/data/{oracleAddress}/{key}`` una sola entrada."
 
 #: ../../02_decentralchain/07_oracle.rst:38
 msgid "**On-chain**, from a Ride script: ``getInteger(oracleAddress, key)``, ``getString``, ``getBoolean`` and ``getBinary`` return the value or ``unit`` when there is none, and the ``...Value`` variants (``getIntegerValue`` and so on) fail the script instead."
-msgstr ""
+msgstr "**En cadena.**, desde un script Ride: ``getInteger(oracleAddress, key)``, ``getString``, ``getBoolean`` y ``getBinary`` devuelven el valor o ``unit`` cuando no hay ninguno, y las variantes ``...Value`` (``getIntegerValue`` y así sucesivamente) fallan en el script."
 
 #: ../../02_decentralchain/07_oracle.rst:40
 msgid "A script reads the state as of the block it runs in, so every node that validates the transaction gets the same value and the same result."
-msgstr ""
+msgstr "Un script lee el estado como del bloque en el que se ejecuta, por lo que cada nodo que valida la transacción obtiene el mismo valor y el mismo resultado."
 
 #: ../../02_decentralchain/07_oracle.rst:43
-#, fuzzy
 msgid "Data Format"
-msgstr "Formato Binario"
+msgstr "Formato de datos"
 
 #: ../../02_decentralchain/07_oracle.rst:45
 msgid "Each entry has a key and a typed value: ``integer`` (64-bit signed), ``boolean``, ``string`` (UTF-8) or ``binary`` (base64 in JSON). One Data transaction carries up to :math:`100` entries; a key is at most :math:`400` bytes and a value at most :math:`32,767` bytes. The fee is :math:`0.001` DCC per started kilobyte of data."
-msgstr ""
+msgstr "Cada entrada tiene un valor clave y tipo: ``integer`` (64 bits firmado), ``boolean``, ``string`` (UTF-8) o ``binary`` (base64 en JSON). Una transacción de datos lleva hasta entradas :math:`100`; una clave es en la mayoría de los bytes :math:`400` y un valor a la mayoría de los bytes :math:`32,767`. La tarifa es :math:`0.001` DCC por kilobyte iniciado de datos."
 
 #: ../../02_decentralchain/07_oracle.rst:47
 msgid "Ride has no floating-point numbers, so publish numbers as integers with a fixed scale that every reader knows, for example 8 decimal places: :math:`2.50` becomes ``250000000``. Publish the time of each observation too, so a script can refuse a value that is too old. Choose key names that say what the value is and in which unit, and don't change the meaning of a key once scripts depend on it: publish a new key instead."
-msgstr ""
+msgstr "Ride no tiene números de puntos flotantes, por lo que publicar números como enteros con una escala fija que cada lector sabe, por ejemplo 8 lugares decimales: :math:`2.50` se convierte en ``250000000``. Publique el tiempo de cada observación también, por lo que un script puede rechazar un valor que es demasiado viejo. Elija nombres clave que digan cuál es el valor y en qué unidad, y no cambien el significado de una clave una vez que los scripts dependen de ella: publicar una nueva llave en su lugar."
 
 #: ../../02_decentralchain/07_oracle.rst:50
-#, fuzzy
 msgid "Example: A Price Oracle"
-msgstr "Ejemplo de una frase secreta:"
+msgstr "Ejemplo: Un precio de Oracle"
 
 #: ../../02_decentralchain/07_oracle.rst:52
 msgid "This script publishes a DCC/USD price and the time it was observed. A real oracle would run it on a schedule with a price from an exchange API:"
-msgstr ""
+msgstr "Este script publica un precio DCC/USD y el tiempo que se observó. Un oráculo real lo ejecutaría en un calendario con un precio de una API de intercambio:"
 
 #: ../../02_decentralchain/07_oracle.rst:58
 msgid "The entries it wrote on the Testnet (transaction ``AntBkfvR2TZBfhvoEBXhTi81BSfkhnFzqfUZ5VruUG6v``)::"
-msgstr ""
+msgstr "Las entradas que escribió en el Testnet (transacción ``AntBkfvR2TZBfhvoEBXhTi81BSfkhnFzqfUZ5VruUG6v``):"
 
 #: ../../02_decentralchain/07_oracle.rst:63
 msgid "This dApp sells a 10 USD voucher for DCC at the oracle's price, and refuses a price older than one hour:"
-msgstr ""
+msgstr "Este dApp vende un vale de 10 USD para DCC a precio del oráculo, y rechaza un precio mayor de una hora:"
 
 #: ../../02_decentralchain/07_oracle.rst:69
 msgid "On the Testnet, with a price of 2.50 USD, a ``buyVoucher`` call paying 1 DCC failed with ``Pay at least 400000000 Decentralites`` and a call paying 4 DCC succeeded (transaction ``B7nXy9ohWaHi4NyCjEPTdZWrpT9G6utWGaHgaRfNQmp4``). To deploy the dApp, see :doc:`Creating and Launching a dApp <../04_building-apps/08_creating-and-launching-a-dapp>`."
-msgstr ""
+msgstr "En el Testnet, con un precio de 2,50 USD, una llamada ``buyVoucher`` pagando 1 DCC falló con ``Pay at least 400000000 Decentralites`` y una llamada pagando 4 DCC tuvo éxito (transacción ``B7nXy9ohWaHi4NyCjEPTdZWrpT9G6utWGaHgaRfNQmp4``). Para desplegar el dApp, véase :doc:`Creación y lanzamiento de un dApp <../04_building-apps/08_creating-and-launching-a-dapp>`."
 
 #: ../../02_decentralchain/07_oracle.rst:72
-#, fuzzy
 msgid "Token Verification Oracle"
-msgstr "Longitud de la descripción del token"
+msgstr "Token Verification Oracle"
 
 #: ../../02_decentralchain/07_oracle.rst:74
 msgid "Wallets and explorers use an oracle to show which tokens are verified and to show their ticker, logo and description. The format is the one ``@decentralchain/oracle-data`` parses and writes. The oracle account describes itself with these entries:"
-msgstr ""
+msgstr "Wallets y exploradores utilizan un oráculo para mostrar qué fichas se verifican y para mostrar su ticker, logo y descripción. El formato es el que ``@decentralchain/oracle-data`` analiza y escribe. La cuenta del oráculo se describe con estas entradas:"
 
 #: ../../02_decentralchain/07_oracle.rst:80
-#, fuzzy
 msgid "Key"
-msgstr "key"
+msgstr "Clave"
 
 #: ../../02_decentralchain/07_oracle.rst:81
 #: ../../_static/02_decentralchain/tables/032_Signing-Bytes.csv:1
@@ -4367,60 +4319,57 @@ msgstr "Valor"
 
 #: ../../02_decentralchain/07_oracle.rst:83
 msgid "``data_provider_name``, ``data_provider_link``, ``data_provider_email``"
-msgstr ""
+msgstr "``data_provider_name``, ``data_provider_link``, ``data_provider_email``"
 
 #: ../../02_decentralchain/07_oracle.rst:84
 #: ../../02_decentralchain/07_oracle.rst:90
 #: ../../02_decentralchain/07_oracle.rst:93
-#, fuzzy
 msgid "string"
-msgstr "Cadena"
+msgstr "cuerda"
 
 #: ../../02_decentralchain/07_oracle.rst:85
 msgid "Who runs the oracle"
-msgstr ""
+msgstr "¿Quién dirige el oráculo"
 
 #: ../../02_decentralchain/07_oracle.rst:86
 msgid "``data_provider_version``"
-msgstr ""
+msgstr "``data_provider_version``"
 
 #: ../../02_decentralchain/07_oracle.rst:87
-#, fuzzy
 msgid "integer"
-msgstr "Entero"
+msgstr "entero"
 
 #: ../../02_decentralchain/07_oracle.rst:88
-#, fuzzy
 msgid "Format version, ``0``"
-msgstr "Formato Binario de Orden Versión 4"
+msgstr "Versión de formato, ``0``"
 
 #: ../../02_decentralchain/07_oracle.rst:89
 msgid "``data_provider_lang_list``"
-msgstr ""
+msgstr "``data_provider_lang_list``"
 
 #: ../../02_decentralchain/07_oracle.rst:91
 msgid "Languages of the descriptions, comma-separated, for example ``en,es``"
-msgstr ""
+msgstr "Idiomas de las descripciones, separadas por coma, por ejemplo ``en,es``"
 
 #: ../../02_decentralchain/07_oracle.rst:92
 msgid "``data_provider_description_<en>``"
-msgstr ""
+msgstr "``data_provider_description_<en>``"
 
 #: ../../02_decentralchain/07_oracle.rst:94
 msgid "The oracle's description in each language, with the language code in angle brackets"
-msgstr ""
+msgstr "La descripción del oráculo en cada idioma, con el código de idioma entre corchetes de ángulo"
 
 #: ../../02_decentralchain/07_oracle.rst:96
 msgid "For each token it describes, it writes entries whose key ends in the token ID in angle brackets: ``status_<ASSET_ID>`` and ``version_<ASSET_ID>`` (integers), and ``ticker_``, ``link_``, ``email_``, ``logo_`` (a data URI) and ``description_<LANG>_`` strings. ``status`` is ``2`` verified, ``1`` detailed, ``0`` not verified, ``-1`` suspicious or ``-2`` scam. A verified or detailed token must have every field; the others need only the version and the status."
-msgstr ""
+msgstr "Para cada token describe, escribe entradas cuyos extremos clave en el ID de ficha en los soportes del ángulo: ``status_<ASSET_ID>`` y ``version_<ASSET_ID>`` (integers), y ``ticker_``, ``link_``, ``email_``, ``logo_`` (un URI de datos) y cadenas ``description_<LANG>_``. ``status`` es ``2`` verificado, ``1`` detallado, ``0`` no verificado, ``-1`` sospechoso o ``-2`` estafa. Una ficha verificada o detallada debe tener todos los campos; los demás sólo necesitan la versión y el estado."
 
 #: ../../02_decentralchain/07_oracle.rst:98
 msgid "The Mainnet oracle that Decentral.Exchange uses is ``3DUM611HQFwQcCQDQnA5W92Xs219smEHaaP``. Its entries for CR Coin include::"
-msgstr ""
+msgstr "El oráculo Mainnet que usa Decentral.Exchange es ``3DUM611HQFwQcCQDQnA5W92Xs219smEHaaP``. Sus entradas para CR Coin incluyen:"
 
 #: ../../02_decentralchain/07_oracle.rst:104
 msgid "``getProviderData`` and ``getProviderAssets`` in ``@decentralchain/oracle-data`` turn the entries back into objects, and ``getFields`` builds the entries for a Data transaction."
-msgstr ""
+msgstr "``getProviderData`` y ``getProviderAssets`` en ``@decentralchain/oracle-data`` vuelven las entradas a los objetos, y ``getFields`` construye las entradas para una transacción de datos."
 
 #: ../../02_decentralchain/07_oracle.rst:107
 msgid "Consensus of Oracles"
@@ -4432,11 +4381,11 @@ msgstr "Una fuente puede ser insegura si no tiene la autoridad o una calificaci�
 
 #: ../../02_decentralchain/07_oracle.rst:111
 msgid "A dApp can apply this directly: read the same key from several oracle addresses, ignore the values that are missing or stale, and use the median of the rest. Whoever controls an oracle account controls what it publishes, so a dApp that trusts a single oracle trusts that account's owner."
-msgstr ""
+msgstr "Un dApp puede aplicar esto directamente: leer la misma clave de varias direcciones oráculo, ignorar los valores que faltan o estancados, y utilizar la mediana del resto. Quien controle una cuenta de oráculo controla lo que publica, así que un dApp que confía en un único oráculo confía en el dueño de esa cuenta."
 
 #: ../../02_decentralchain/08_mainnet-testnet-stagenet.rst:3
 msgid "Mainnet, Testnet, Stagenet"
-msgstr "Redes Principal, Prueba, Escenario"
+msgstr "Mainnet, Testnet y Stagenet"
 
 #: ../../02_decentralchain/08_mainnet-testnet-stagenet.rst:6
 msgid "Connecting Node to Blockchain Network"
@@ -4447,19 +4396,16 @@ msgid "You can launch your node in any blockchain network. Select the network in
 msgstr "Puedes lanzar tu nodo en cualquier red blockchain. Selecciona la red en el archivo de configuración del nodo."
 
 #: ../../02_decentralchain/08_mainnet-testnet-stagenet.rst:10
-#, fuzzy
 msgid "For more information about the configuration file, see the :ref:`node configuration <05_node-guide/index:Configuration>` article."
-msgstr "Para obtener más información sobre el archivo de configuración, consulte el artículo sobre la :ref:`configuración de nodo <documentation:placeholder>`."
+msgstr "Para obtener más información sobre el archivo de configuración, consulte el artículo :ref:`configuración de nodos <05_node-guide/index:Configuration>`."
 
 #: ../../02_decentralchain/08_mainnet-testnet-stagenet.rst:11
-#, fuzzy
 msgid "For installing a node, see the :ref:`install DecentralChain node <05_node-guide/index:Getting the Node>` article."
-msgstr "Para instalar un nodo, consulte el artículo :ref:`instalar nodo DecentralChain<documentation:placeholder>`."
+msgstr "Para instalar un nodo, vea el artículo :ref:`instalar DecentralChain node <05_node-guide/index:Getting the Node>`."
 
 #: ../../02_decentralchain/08_mainnet-testnet-stagenet.rst:12
-#, fuzzy
 msgid "For starting your own blockchain network, see the :ref:`custom blockchain <05_node-guide/03_custom-blockchain:Custom Blockchain>` article."
-msgstr "Para iniciar su propia red blockchain, consulte el artículo :ref:`blockchain personalizado <documentation:placeholder>`."
+msgstr "Para iniciar su propia red de blockchain, vea el artículo :ref:`blockchain personalizado <05_node-guide/03_custom-blockchain:Custom Blockchain>`."
 
 #: ../../02_decentralchain/08_mainnet-testnet-stagenet.rst:15
 #: ../../02_decentralchain/08_mainnet-testnet-stagenet.rst:19
@@ -4485,11 +4431,11 @@ msgstr "Red de Cadena de Bloques"
 #: ../../_static/02_decentralchain/tables/029_DecentralChain-Explorer.csv:1
 #: ../../_static/02_decentralchain/tables/030_Faucet-Obtaining-Tokens.csv:1
 msgid "Mainnet"
-msgstr "Red Principal"
+msgstr "Mainnet"
 
 #: ../../_static/02_decentralchain/tables/024_Chain-ID.csv:1
 msgid "? (ASCII code 63)."
-msgstr ""
+msgstr "? (código ASCII 63)."
 
 #: ../../_static/02_decentralchain/tables/024_Chain-ID.csv:1
 #: ../../_static/02_decentralchain/tables/025_API-of-Pool-of-Public-Nodes.csv:1
@@ -4499,11 +4445,11 @@ msgstr ""
 #: ../../_static/02_decentralchain/tables/029_DecentralChain-Explorer.csv:1
 #: ../../_static/02_decentralchain/tables/030_Faucet-Obtaining-Tokens.csv:1
 msgid "Testnet"
-msgstr "Red de Prueba"
+msgstr "Testnet"
 
 #: ../../_static/02_decentralchain/tables/024_Chain-ID.csv:1
 msgid "! (ASCII code 33)."
-msgstr ""
+msgstr "! (código ASCII 33)."
 
 #: ../../_static/02_decentralchain/tables/024_Chain-ID.csv:1
 #: ../../_static/02_decentralchain/tables/025_API-of-Pool-of-Public-Nodes.csv:1
@@ -4513,92 +4459,85 @@ msgstr ""
 #: ../../_static/02_decentralchain/tables/029_DecentralChain-Explorer.csv:1
 #: ../../_static/02_decentralchain/tables/030_Faucet-Obtaining-Tokens.csv:1
 msgid "Stagenet"
-msgstr "Red de Escenario"
+msgstr "Stagenet"
 
 #: ../../_static/02_decentralchain/tables/024_Chain-ID.csv:1
 msgid "S (ASCII code 83); no public network yet."
-msgstr ""
+msgstr "S (ASCII code 83); no hay red pública todavía."
 
 #: ../../02_decentralchain/08_mainnet-testnet-stagenet.rst:26
-#, fuzzy
 msgid "Network Parameters"
-msgstr "Parámetros Personalizados de Token"
+msgstr "Parámetros de red"
 
 #: ../../02_decentralchain/08_mainnet-testnet-stagenet.rst:28
-#, fuzzy
 msgid "Network parameters"
-msgstr "Parámetros Personalizados de Token"
+msgstr "Parámetros de red"
 
 #: ../../02_decentralchain/08_mainnet-testnet-stagenet.rst:32
 msgid "Parameter"
-msgstr ""
+msgstr "Parámetro"
 
 #: ../../02_decentralchain/08_mainnet-testnet-stagenet.rst:34
-#, fuzzy
 msgid "Public Testnet"
-msgstr "Red de Prueba"
+msgstr "Public Testnet"
 
 #: ../../02_decentralchain/08_mainnet-testnet-stagenet.rst:36
 msgid "``?`` (63)"
-msgstr ""
+msgstr "``?`` (63)"
 
 #: ../../02_decentralchain/08_mainnet-testnet-stagenet.rst:37
 msgid "``!`` (33)"
-msgstr ""
+msgstr "``!`` (33)"
 
 #: ../../02_decentralchain/08_mainnet-testnet-stagenet.rst:38
-#, fuzzy
 msgid "Address prefix (Base58)"
-msgstr "Dirección o alias"
+msgstr "Prefijo de dirección (Base58)"
 
 #: ../../02_decentralchain/08_mainnet-testnet-stagenet.rst:39
 msgid "3D"
-msgstr ""
+msgstr "3D"
 
 #: ../../02_decentralchain/08_mainnet-testnet-stagenet.rst:40
-#, fuzzy
 msgid "31"
-msgstr "1"
+msgstr "31"
 
 #: ../../02_decentralchain/08_mainnet-testnet-stagenet.rst:41
-#, fuzzy
 msgid "P2P port"
-msgstr "Par #N puerto"
+msgstr "Puerto P2P"
 
 #: ../../02_decentralchain/08_mainnet-testnet-stagenet.rst:42
 #: ../../02_decentralchain/08_mainnet-testnet-stagenet.rst:43
 msgid "6868"
-msgstr ""
+msgstr "6868"
 
 #: ../../02_decentralchain/08_mainnet-testnet-stagenet.rst:44
 msgid "REST API port"
-msgstr ""
+msgstr "Puerto REST API"
 
 #: ../../02_decentralchain/08_mainnet-testnet-stagenet.rst:45
 #: ../../02_decentralchain/08_mainnet-testnet-stagenet.rst:46
 msgid "6869"
-msgstr ""
+msgstr "6869"
 
 #: ../../02_decentralchain/08_mainnet-testnet-stagenet.rst:47
-#, fuzzy
 msgid "Target block time"
-msgstr "Marca de Tiempo del Bloque"
+msgstr "Plazo de bloqueo objetivo"
 
 #: ../../02_decentralchain/08_mainnet-testnet-stagenet.rst:48
 msgid "60 seconds"
-msgstr ""
+msgstr "60 segundos"
 
 #: ../../02_decentralchain/08_mainnet-testnet-stagenet.rst:49
 msgid "30 seconds"
-msgstr ""
+msgstr "30 segundos"
 
 #: ../../02_decentralchain/08_mainnet-testnet-stagenet.rst:51
 msgid "Stagenet has chain ID ``S`` (83) and a built-in profile in the node (``dcc.defaults.blockchain.type = STAGENET``, P2P port 6862 in ``network-defaults.conf``), but there is no public Stagenet network yet."
-msgstr ""
+msgstr "Stagenet tiene ID de cadena ``S`` (83) y un perfil incorporado en el nodo (``dcc.defaults.blockchain.type = STAGENET``, puerto P2P 6862 en ``network-defaults.conf``), pero todavía no hay red pública Stagenet."
 
 #: ../../02_decentralchain/08_mainnet-testnet-stagenet.rst:55
 msgid "The public DecentralChain Testnet (``testnet-node.decentralchain.io``) is a custom chain (``dcc.blockchain.type = CUSTOM``, chain ID ``!``). The node's built-in ``testnet`` profile (``DCC_NETWORK=testnet`` without a config file) is a different network and will not join it. To run a node on the public Testnet, follow :doc:`Join the Public Testnet <../05_node-guide/15_join-testnet>`, which gives the genesis, the configuration file and the peer to connect to."
-msgstr ""
+msgstr "El público DecentralChain Testnet (``testnet-node.decentralchain.io``) es una cadena personalizada (``dcc.blockchain.type = CUSTOM``, ID de cadena ``!``). El perfil ``testnet`` incorporado del nodo (``DCC_NETWORK=testnet`` sin un archivo de configuración) es una red diferente y no se unirá a él. Para ejecutar un nodo en el Testnet público, siga :doc:`Únete al Testnet Público <../05_node-guide/15_join-testnet>`, que da la génesis, el archivo de configuración y el par para conectarse."
 
 #: ../../02_decentralchain/08_mainnet-testnet-stagenet.rst:61
 #: ../../02_decentralchain/08_mainnet-testnet-stagenet.rst:63
@@ -4632,9 +4571,8 @@ msgid "https://data-service.decentralchain.io"
 msgstr "https://data-service.decentralchain.io"
 
 #: ../../_static/02_decentralchain/tables/026_Data-Service-API.csv:1
-#, fuzzy
 msgid "https://testnet-data-service.decentralchain.io"
-msgstr "https://data-service.decentralchain.io"
+msgstr "https://testnet-data-service.decentralchain.io"
 
 #: ../../02_decentralchain/08_mainnet-testnet-stagenet.rst:79
 #: ../../02_decentralchain/08_mainnet-testnet-stagenet.rst:83
@@ -4650,9 +4588,8 @@ msgid "https://decentral.exchange/"
 msgstr "https://decentral.exchange/"
 
 #: ../../_static/02_decentralchain/tables/027_Decentral.Exchange.csv:1
-#, fuzzy
 msgid "https://testnet.decentral.exchange/"
-msgstr "https://decentral.exchange/"
+msgstr "https://testnet.decentral.exchange/"
 
 #: ../../02_decentralchain/08_mainnet-testnet-stagenet.rst:90
 #: ../../02_decentralchain/08_mainnet-testnet-stagenet.rst:94
@@ -4661,17 +4598,15 @@ msgstr "API del Emparejador Decentral.Exchange"
 
 #: ../../02_decentralchain/08_mainnet-testnet-stagenet.rst:92
 msgid "The addresses for order sending and market data obtaining are as follows. The Testnet matcher's public key is ``BEtB5b2kX8Yge4sb5RRbTUqd5Va8Ah8PhphowcW31z6Y`` and its address is ``31VMNVAvVh67dPZ41nMnYZvhoZFW7wwPrmq``."
-msgstr ""
+msgstr "Las direcciones para el envío de pedidos y la obtención de datos del mercado son las siguientes. La clave pública del matcher Testnet es ``BEtB5b2kX8Yge4sb5RRbTUqd5Va8Ah8PhphowcW31z6Y`` y su dirección es ``31VMNVAvVh67dPZ41nMnYZvhoZFW7wwPrmq``."
 
 #: ../../_static/02_decentralchain/tables/028_API-of-Decentral.Exchange-Matcher.csv:1
-#, fuzzy
 msgid "No public Mainnet matcher yet"
-msgstr "Llave pública del emparejador."
+msgstr "No public Mainnet matcher yet"
 
 #: ../../_static/02_decentralchain/tables/028_API-of-Decentral.Exchange-Matcher.csv:1
-#, fuzzy
 msgid "https://testnet-matcher.decentralchain.io/api-docs/index.html"
-msgstr "https://mainnet-matcher.decentralchain.io/api-docs/index.html"
+msgstr "https://testnet-matcher.decentralchain.io/api-docs/index.html"
 
 #: ../../02_decentralchain/08_mainnet-testnet-stagenet.rst:101
 #: ../../02_decentralchain/08_mainnet-testnet-stagenet.rst:105
@@ -4683,14 +4618,12 @@ msgid "`DecentralChain Explorer <https://decentralscan.com/>`_ is a service for 
 msgstr "`DecentralChain Explorer <https://decentralscan.com/>`_ es un servicio para explorar datos de blockchain."
 
 #: ../../_static/02_decentralchain/tables/029_DecentralChain-Explorer.csv:1
-#, fuzzy
 msgid "https://decentralscan.com/"
-msgstr "https://decentral.exchange/"
+msgstr "https://decentralscan.com/"
 
 #: ../../_static/02_decentralchain/tables/029_DecentralChain-Explorer.csv:1
-#, fuzzy
 msgid "https://testnet.decentralscan.com/"
-msgstr "https://testnet-node.decentralchain.io"
+msgstr "https://testnet.decentralscan.com/"
 
 #: ../../02_decentralchain/08_mainnet-testnet-stagenet.rst:112
 #: ../../02_decentralchain/08_mainnet-testnet-stagenet.rst:114
@@ -4698,9 +4631,8 @@ msgid "Faucet: Obtaining Tokens"
 msgstr "Grifo: Obtención de Activos"
 
 #: ../../_static/02_decentralchain/tables/030_Faucet-Obtaining-Tokens.csv:1
-#, fuzzy
 msgid "https://testnet.decentralscan.com/faucet"
-msgstr "https://testnet-node.decentralchain.io"
+msgstr "https://testnet.decentralscan.com/faucet"
 
 #: ../../02_decentralchain/09_protocol.rst:3
 msgid "Protocol"
@@ -4823,9 +4755,8 @@ msgid "Creating Address from a Public Key"
 msgstr "Creación de una Dirección desde una Llave Privada"
 
 #: ../../02_decentralchain/09_protocol.rst:115
-#, fuzzy
 msgid "Our network address obtained from the public key depends on the byte chainID ('!' (33) for Testnet, '?' (63) for Mainnet, 'S' (83) for Stagenet), so different networks obtained a different address for a single seed (and hence public keys)."
-msgstr "Nuestra dirección de red obtenida de la clave pública depende del byte chainID ('T' para Testnet, 'W' para Mainnet, 'S' para Stagenet), por lo que diferentes redes obtuvieron una dirección diferente para una sola semilla (y, por lo tanto, claves públicas) ."
+msgstr "Nuestra dirección de red obtenida de la clave pública depende del byte chainID ('!' (33) para Testnet, '?' (63) para Mainnet, 'S' (83) para Stagenet), por lo que diferentes redes obtuvieron una dirección diferente para una sola semilla (y por lo tanto las teclas públicas)."
 
 #: ../../02_decentralchain/09_protocol.rst:119
 msgid "For the public key:"
@@ -5162,9 +5093,8 @@ msgid ":math:`33`"
 msgstr ":math:`33`"
 
 #: ../../_static/02_decentralchain/tables/032_Signing-Bytes.csv:1
-#, fuzzy
 msgid "Amount's asset ID (\\*if used)"
-msgstr "ID de activo de la cantidad (*si se usa)"
+msgstr "Identificación de activos de Amount (\\*if utilizado)"
 
 #: ../../_static/02_decentralchain/tables/032_Signing-Bytes.csv:1
 msgid ":math:`34`"
@@ -5183,9 +5113,8 @@ msgid ":math:`34 (66*)`"
 msgstr ":math:`34 (66*)`"
 
 #: ../../_static/02_decentralchain/tables/032_Signing-Bytes.csv:1
-#, fuzzy
 msgid "Fee's asset ID (\\*\\*if used)"
-msgstr "ID de activo de la tarifa (**si se usa)"
+msgstr "Identificación de activos de Fee (\\*\\*si se usa)"
 
 #: ../../_static/02_decentralchain/tables/032_Signing-Bytes.csv:1
 msgid ":math:`35 (67*)`"
@@ -5369,17 +5298,16 @@ msgid "Microblock Structure"
 msgstr "Estructura de Microbloques"
 
 #: ../../02_decentralchain/09_protocol.rst:210
-#, fuzzy
 msgid "totalResBlockSig is the new total signature of a block with all transactions from blockId=prevResBlockSig and transactionData. This means that having a liquid block consisting of 1 keyblock and 3 microblocks:"
-msgstr "totalResBlockSigis la nueva firma total de un bloque con todas las transacciones de blockId=prevResBlockSig y owntransactionData. Esto significa que tener un_bloque_líquido_que consta de 1_keyblock_y 3_microblock_s: KEYBLOCK() <-MICRO1(tx1,tx2) <-MICRO2(tx3,tx4) <-MICRO3(tx5,tx6) Tenemos 4 versiones del último bloque:"
+msgstr "totalResBlockSig es la nueva firma total de un bloque con todas las transacciones desde blockId=prevResBlockSig y transactionData. Esto significa que tener un bloque líquido compuesto por 1 llavero y 3 microblocks:"
 
 #: ../../02_decentralchain/09_protocol.rst:212
 msgid "KEYBLOCK() <-MICRO1(tx1,tx2) <-MICRO2(tx3,tx4) <-MICRO3(tx5,tx6)"
-msgstr ""
+msgstr "KEYBLOCK() <-MICRO1(tx1,tx2) <-MICRO2(tx3,tx4) <-MICRO3(tx5,tx6)"
 
 #: ../../02_decentralchain/09_protocol.rst:214
 msgid "We have 4 versions of last block:"
-msgstr ""
+msgstr "Tenemos 4 versiones del último bloque:"
 
 #: ../../_static/02_decentralchain/tables/033_Microblock-Structure.csv:1
 msgid "ID"
@@ -5486,9 +5414,8 @@ msgid "/peers/blacklistednow expose ban reason, one can clear a node's blacklist
 msgstr "/peers/blacklistednow expone el motivo de la prohibición, uno puede borrar la lista negra de un nodo a través de/peers/clearblacklist"
 
 #: ../../02_decentralchain/09_protocol.rst:251
-#, fuzzy
 msgid "/debug/and/consensus/section are expanded, stateHash doesn't take liquid block into consideration."
-msgstr "/debug/y/consensus/section se expanden, _stateHash _no tiene en cuenta el _bloque líquido."
+msgstr "/debug/y/consensus/sección se expanden, stateHash no toma en consideración el bloque líquido."
 
 #: ../../02_decentralchain/09_protocol.rst:254
 msgid "DecentralChain-M5 Protocol"
@@ -5666,9 +5593,8 @@ msgid "Blockchain Data Types"
 msgstr "Tipos de Datos del Blockchain"
 
 #: ../../02_decentralchain/09_protocol.rst:375
-#, fuzzy
 msgid "The blockchain data types are the data types that are used to describe the :ref:`binary format <02_decentralchain/10_binary-format:Binary Format>` of blockchain entities. Here’s a list of blockchain data types:"
-msgstr "Los tipos de datos de blockchain son los tipos de datos que se utilizan para describir 02_decentralchain de entidades de blockchain. Aquí hay una lista de tipos de datos de blockchain:"
+msgstr "Los tipos de datos de la cadena de bloques son los tipos de datos que se utilizan para describir el :ref:`formato binario <02_decentralchain/10_binary-format:Binary Format>` de las entidades de blockchain. Aquí hay una lista de tipos de datos de blockchain:"
 
 #: ../../_static/02_decentralchain/tables/034_Blockchain-Data-Types.csv:1
 msgid "Keyword"
@@ -5798,9 +5724,8 @@ msgid "Quantity of asset is positive, otherwise NegativeAmount validation result
 msgstr "La cantidad de activos es positiva; de lo contrario, se devuelve el resultado de la validación NegativeAmount."
 
 #: ../../02_decentralchain/09_protocol.rst:413
-#, fuzzy
 msgid "Transaction's fee is more than or equals the minimum fee for its type (one fee unit is :math:`100000` Decentralites = :math:`0.001` DecentralCoin; a transfer costs :math:`1` unit — see :ref:`minimum fee <02_decentralchain/03_transaction:Minimum Fee>`), in other case InsufficientFee validation result is returned."
-msgstr "La tarifa de la transacción es mayor o igual a MinFee(:math:`100000000` Decentralites = :math:`1` DecentralCoin), en otro caso, se devuelve un resultado de validación de tarifa insuficiente."
+msgstr "La tasa de transacción es superior o iguala la cuota mínima para su tipo (una unidad de tarifa es :math:`100000` Decentralites = :math:`0.001` DecentralCoin; una unidad de transferencia cuesta :math:`1` — ver :ref:`cuota mínima <02_decentralchain/03_transaction:Minimum Fee>`), en otro caso el resultado de validación InsufficientFee se devuelve."
 
 #: ../../02_decentralchain/09_protocol.rst:414
 msgid "Size of description is less than or equals MaxDescriptionLength(:math:`1000` bytes), otherwise TooBigArray is returned."
@@ -5867,9 +5792,8 @@ msgid "Block's consensus data is valid then:"
 msgstr "Los datos de consenso del bloque son válidos entonces:"
 
 #: ../../02_decentralchain/09_protocol.rst:444
-#, fuzzy
 msgid "Block creation time is no more than MaxTimeDrift(:math:`100` milliseconds) in future."
-msgstr "El tiempo de creación del bloque no es más que MaxTimeDrift(:math:`15` segundos) en el futuro."
+msgstr "El tiempo de creación de bloques no es más que MaxTimeDrift(:math:`100` milisegundos) en el futuro."
 
 #: ../../02_decentralchain/09_protocol.rst:445
 msgid "Block's transactions are sorted. This rule works only after :math:`1477958400000` on Testnet and :math:`1479168000000` on Mainnet."
@@ -5889,7 +5813,7 @@ msgstr "La firma del generador del bloque es válida."
 
 #: ../../02_decentralchain/09_protocol.rst:449
 msgid "Generator's balance is more than or equals MinimalEffectiveBalanceForGeneration(:math:`1000000000000` Decentralites = :math:`10000` DecentralCoins, or :math:`100000000000` Decentralites = :math:`1000` DecentralCoins once feature 1 is active). This rule applies only to blocks with a timestamp of at least :math:`1530161445559` on Mainnet (:math:`1492560000000` on the built-in Testnet profile)."
-msgstr ""
+msgstr "El equilibrio del generador es más que o iguala MinimalEffectiveBalanceForGeneration(:math:`1000000000000` Decentralites = :math:`10000` DecentralCoins, o :math:`100000000000` Decentralites = :math:`1000` DecentralCoins una vez que la característica 1 es activa). Esta regla se aplica sólo a bloques con un temporizador de al menos :math:`1530161445559` en Mainnet (:math:`1492560000000` sobre el perfil Testnet incorporado)."
 
 #: ../../02_decentralchain/09_protocol.rst:450
 msgid "Block's hit is less than calculated block's target."
@@ -5908,9 +5832,8 @@ msgid "Block's transactions are valid then:"
 msgstr "Las transacciones del bloque son válidas entonces:"
 
 #: ../../02_decentralchain/09_protocol.rst:458
-#, fuzzy
 msgid "Creation time of every transaction in block is less than block's creation time no more than on MaxTxAndBlockDiff(:math:`2` hours, ``max-transaction-time-back-offset``)."
-msgstr "El tiempo de creación de cada transacción en el bloque es menor que el tiempo de creación del bloque no más que en MaxTxAndBlockDiff(:matemáticas:`2` horas)."
+msgstr "El tiempo de creación de cada transacción en bloque es inferior al tiempo de creación de bloques no más que en MaxTxAndBlockDiff (:math:`2` horas, ``max-transaction-time-back-offset``)."
 
 #: ../../02_decentralchain/09_protocol.rst:459
 msgid "All transactions are valid against state."
@@ -5958,9 +5881,8 @@ msgid "If transaction's fee is more than or equals minimum fee that was set by t
 msgstr "Si la tarifa de la transacción es mayor o igual a la tarifa mínima establecida por el propietario de un nodo."
 
 #: ../../02_decentralchain/09_protocol.rst:477
-#, fuzzy
 msgid "There is a space for a new transaction if unconfirmed transactions pool. By default the pool is limited by :math:`100000` transactions, :math:`50` MB in total, and :math:`5000` scripted transactions (``dcc.utx`` settings)."
-msgstr "Hay un espacio para una nueva transacción si hay un grupo de transacciones no confirmadas. De forma predeterminada, el grupo está limitado por :math:`1000` transacciones."
+msgstr "Hay un espacio para una nueva transacción si no se confirma la reserva de transacciones. Por defecto la piscina está limitada por transacciones :math:`100000`, :math:`50` MB en total y transacciones con scripts :math:`5000` (configuración ``dcc.utx``)."
 
 #: ../../02_decentralchain/09_protocol.rst:478
 msgid "unconfirmed transactions pool does not contain transaction with the same ID."
@@ -5980,15 +5902,15 @@ msgstr "La transacción es válida contra el estado."
 
 #: ../../02_decentralchain/09_protocol.rst:484
 msgid "Finality"
-msgstr ""
+msgstr "Finalidad"
 
 #: ../../02_decentralchain/09_protocol.rst:486
 msgid "Besides the probabilistic finality every proof-of-stake chain has, node v1.8.0 implements **Deterministic Finality** (blockchain feature 25). Generators register a BLS key on-chain with a ``CommitToGenerationTransaction`` for each generation period. A block is finalized once generators holding at least :math:`2/3` of the committed stake have endorsed it, and the finalized height is exposed by the node REST API (``/blocks/height/finalized``). Whether finality is active on a given network depends on feature activation — check ``/activation/status``."
-msgstr ""
+msgstr "Además de la finalidad probabilística cada cadena de prueba de toma tiene, nodo v1.8.0 implementa **Finalidad determinística** (blockchain característica 25). Los generadores registran una llave BLS en cadena con un ``CommitToGenerationTransaction`` para cada período de generación. Un bloque se finaliza una vez que los generadores que sostienen al menos :math:`2/3` de la apuesta comprometida lo han respaldado, y la altura final está expuesta por el nodo REST API (``/blocks/height/finalized``). Si la finalidad está activa en una red determinada depende de la activación de funciones — verifique ``/activation/status``."
 
 #: ../../02_decentralchain/09_protocol.rst:488
 msgid "The release also contains an experimental HotStuff BFT fast-finality engine. It is disabled by default (``dcc.hotstuff.enabled = false``), its design is still being reworked, and it is not part of the supported protocol. Finality never halts block production: if voting stalls, the chain keeps growing."
-msgstr ""
+msgstr "La versión también contiene un motor experimental HotStuff BFT de rápida definición. Está deshabilitado por defecto (``dcc.hotstuff.enabled = false``), su diseño todavía está siendo reelaborado, y no es parte del protocolo compatible. La finalidad nunca detiene la producción de bloques: si el voto se retrasa, la cadena sigue creciendo."
 
 #: ../../02_decentralchain/10_binary-format.rst:5
 msgid ":ref:`Address binary format <02_decentralchain/10_binary-format:Address Binary Format>`"
@@ -6252,9 +6174,8 @@ msgstr "El valor debe ser :math:`1`."
 #: ../../_static/02_decentralchain/tables/082_Reissue-Transaction-Binary-Format-V2.csv:1
 #: ../../_static/02_decentralchain/tables/085_Set-Asset-Transaction-Binary-Format-V1.csv:1
 #: ../../_static/02_decentralchain/tables/087_Set-Script-Transaction-Binary-Format-V1.csv:1
-#, fuzzy
 msgid ":math:`63` — for Mainnet. :math:`33` — for Testnet. :math:`83` — for Stagenet (no public network yet)."
-msgstr ":math:`87` — para Mainnet. :math:`84` — para Testnet. :math:`83` — para Stagenet."
+msgstr ":math:`63` - para Mainnet. :math:`33` - para Testnet. :math:`83` — para Stagenet (sin red pública todavía)."
 
 #: ../../_static/02_decentralchain/tables/035_Address-Binary-Format.csv:1
 msgid "Account public key hash"
@@ -6314,9 +6235,8 @@ msgid "Learn more about :ref:`block <02_decentralchain/04_block:Block>`."
 msgstr "Obtenga más información sobre los :ref:`bloques <02_decentralchain/04_block:Block>`."
 
 #: ../../02_decentralchain/10_binary-format.rst:69
-#, fuzzy
 msgid "Blocks are stored on the blockchain in a binary format (byte representation). :ref:`Node extensions <05_node-guide/02_node-extensions:Node Extensions>` such as :ref:`gRPC server <05_node-guide/02_node-extensions:gRPC Server>` can work directly with data in binary format."
-msgstr "Los bloques se almacenan en la cadena de bloques en formato binario (representación de bytes). :ref:`Las extensiones de nodo <documentation:placeholder>` como :ref:`servidor gRPC <documentation:placeholder>` pueden trabajar directamente con datos en formato binario."
+msgstr "Los bloques se almacenan en la cadena de bloqueo en un formato binario (representación Byte). :ref:`Extensiones de nodos <05_node-guide/02_node-extensions:Node Extensions>` como :ref:`Servidor gRPC <05_node-guide/02_node-extensions:gRPC Server>` puede trabajar directamente con datos en formato binario."
 
 #: ../../02_decentralchain/10_binary-format.rst:71
 msgid ":strong:`Version 5`"
@@ -6361,9 +6281,8 @@ msgid "feature_votes"
 msgstr "feature_votes"
 
 #: ../../_static/02_decentralchain/tables/037_Block-Binary-Format-V5.csv:1
-#, fuzzy
 msgid "List of protocol feature IDs for which the block generator votes to activate."
-msgstr "Número de funciones por las que vota el generador de bloques"
+msgstr "Lista de IDs de características del protocolo para los cuales el generador de bloques vota para activar."
 
 #: ../../_static/02_decentralchain/tables/037_Block-Binary-Format-V5.csv:1
 msgid ":ref:`Block timestamp <02_decentralchain/04_block:Block Timestamp>`: Unix time in milliseconds."
@@ -7496,9 +7415,8 @@ msgid "Learn more about :ref:`transaction <02_decentralchain/03_transaction:Tran
 msgstr "Obtenga más información sobre :ref:`transactions <02_decentralchain/03_transaction:Transaction>`."
 
 #: ../../02_decentralchain/10_binary-format.rst:339
-#, fuzzy
 msgid "Transactions are stored on the blockchain in a binary format (byte representation). :ref:`Node extensions <05_node-guide/02_node-extensions:Node Extensions>` such as :ref:`gRPC server <05_node-guide/02_node-extensions:gRPC Server>` can work directly with data in binary format. The transaction signature and ID are also formed on the basis of the binary format, namely the transaction body bytes. The contents of transaction body bytes is given in the description of the binary format of each type and version of the transaction. Normally the transaction body bytes include all transaction fields, with the exception of the following fields:"
-msgstr "Las transacciones se almacenan en la cadena de bloques en formato binario (representación de bytes). :ref:`Las extensiones de nodo <documentation:placeholder>` como :ref:`servidor gRPC <documentation:placeholder>` pueden trabajar directamente con datos en formato binario. La firma y el ID de la transacción también se forman sobre la base del formato binario, es decir, los bytes del cuerpo de la transacción. El contenido de los bytes del cuerpo de la transacción se proporciona en la descripción del formato binario de cada tipo y versión de la transacción. Normalmente, los bytes del cuerpo de la transacción incluyen todos los campos de la transacción, con la excepción de los siguientes campos:"
+msgstr "Las transacciones se almacenan en la cadena de bloques en un formato binario (representación byte). :ref:`Extensiones de nodos <05_node-guide/02_node-extensions:Node Extensions>` como :ref:`Servidor gRPC <05_node-guide/02_node-extensions:gRPC Server>` puede trabajar directamente con datos en formato binario. La firma de transacción y el ID también se forman sobre la base del formato binario, a saber, los bytes del órgano de transacción. El contenido de los bytes del cuerpo de transacción se da en la descripción del formato binario de cada tipo y versión de la transacción. Normalmente, los bytes del órgano de transacción incluyen todos los campos de transacción, con la excepción de los siguientes campos:"
 
 #: ../../02_decentralchain/10_binary-format.rst:342
 msgid "Transaction ID (it is not stored on the blockchain),"
@@ -7541,9 +7459,8 @@ msgid "Addresses should be specified in the shortened binary format (without the
 msgstr "Las direcciones deben especificarse en el formato binario abreviado (sin los primeros dos y los últimos cuatro bytes). Consulte el artículo sobre el :ref:`formato binario de dirección <02_decentralchain/10_binary-format:Address Binary Format>`)."
 
 #: ../../02_decentralchain/10_binary-format.rst:359
-#, fuzzy
 msgid "Serialize the transaction object to get transaction body bytes. Detailed instructions for various programming languages are provided in `protocol buffers tutorials <https://protobuf.dev/getting-started/>`_."
-msgstr "Serialice el objeto de la transacción para obtener los bytes del cuerpo de la transacción. Se proporcionan instrucciones detalladas para varios lenguajes de programación en `tutoriales de búfer de protocolo <https://developers.google.com/protocol-buffers/docs/tutorials>`_."
+msgstr "Serializar el objeto de transacción para obtener bytes del órgano de transacción. En `protocolo buffers tutoriales <https://protobuf.dev/getting-started/>`_ se proporcionan instrucciones detalladas para varios idiomas de programación."
 
 #: ../../02_decentralchain/10_binary-format.rst:360
 msgid "Generate the signature for the transaction body bytes with the Curve25519 function using sender private key bytes."
@@ -7554,14 +7471,12 @@ msgid "The byte representation of a transaction based on the protobuf schema mus
 msgstr "La representación de bytes de una transacción basada en el esquema protobuf no debe contener valores predeterminados. Asegúrese de que su compilador de búferes de protocolo no escriba el valor del campo al serializar si es igual al valor predeterminado para este tipo de datos; de lo contrario, la firma de la transacción no será válida. Envía la transacción firmada a un nodo:"
 
 #: ../../02_decentralchain/10_binary-format.rst:364
-#, fuzzy
 msgid "If you use your own node and :ref:`gRPC server <05_node-guide/02_node-extensions:gRPC Server>`, send the SignedTransaction object."
-msgstr "Si usa su propio nodo y :ref:`gRPC server <documentation:placeholder>`, envíe el objeto SignedTransaction."
+msgstr "Si utiliza su propio nodo y :ref:`Servidor gRPC <05_node-guide/02_node-extensions:gRPC Server>`, envíe el objeto SignedTransaction."
 
 #: ../../02_decentralchain/10_binary-format.rst:365
-#, fuzzy
 msgid "If you use :ref:`Node REST API <05_node-guide/01_node-rest-api:Node REST API>`, compose the JSON representation of the transaction and add the base58-encoded signature to the proof array. Send the transaction to a node using POST /transactions/broadcast method."
-msgstr "Si usa :ref:`Node REST API <documentation:placeholder>`, componga la representación JSON de la transacción y agregue la firma codificada en base58 a la matriz de prueba. Envíe la transacción a un nodo utilizando el método POST /transactions/broadcast."
+msgstr "Si utiliza :ref:`Node REST API <05_node-guide/01_node-rest-api:Node REST API>`, composte la representación JSON de la transacción y agregue la firma con código base58 al array de pruebas. Envíe la transacción a un nodo usando POST /transacciones/ método de transmisión."
 
 #: ../../_static/02_decentralchain/tables/055_Transaction-Binary-Format.csv:1
 msgid "Public key of the transaction sender."
@@ -9554,38 +9469,37 @@ msgid "The maximum number of proofs is :math:`8`."
 msgstr "El número máximo de demostraciones es :math:`8`."
 
 #: ../../02_decentralchain/11_tokenomics.md:1
-#, fuzzy
 msgid "Tokenomics"
-msgstr "Emisión de Tokens"
+msgstr "Tokenomics"
 
 #: ../../02_decentralchain/11_tokenomics.md:3
 msgid "DecentralCoin (DCC) has a fixed supply of 100,000,000, minted in full at genesis on 20 July 2021 and never inflated since. Block reward issuance has never activated, so miners earn transaction fees and nothing else. This chapter is the official record of how that supply is allocated, when it unlocks, and what reduces it."
-msgstr ""
+msgstr "DecentralCoin (DCC) tiene un suministro fijo de 100.000.000, acuñado en génesis el 20 de julio de 2021 y nunca inflado desde entonces. La emisión de la recompensa bloqueada nunca ha activado, por lo que los mineros ganan las tasas de transacción y nada más. Este capítulo es el registro oficial de cómo se asigna esa oferta, cuando se desbloquea y lo que la reduce."
 
 #: ../../02_decentralchain/11_tokenomics.md:9
 #, python-brace-format
 msgid "The full document, including custody mapping and open risks, is available as a PDF: {download}`DecentralChain DCC Tokenomics v1.0 <../_static/02_decentralchain/downloads/DecentralChain-DCC-Tokenomics.pdf>`. Figures were read from mainnet at height 2,322,348 on 30 August 2026."
-msgstr ""
+msgstr "El documento completo, incluyendo el mapeo de custodia y los riesgos abiertos, está disponible como PDF: {download}`DecentralChain DCC Tokenomics v1.0 <../_static/02_decentralchain/downloads/DecentralChain-DCC-Tokenomics.pdf>`. Las figuras fueron leídas desde mainnet a la altura 2.322.348 el 30 de agosto de 2026."
 
 #: ../../02_decentralchain/11_tokenomics.md:14
 msgid "Supply and issuance"
-msgstr ""
+msgstr "Suministro y expedición"
 
 #: ../../02_decentralchain/11_tokenomics.md:16
 msgid "One DCC divides into 100,000,000 dcclets, so every on-chain amount carries eight decimals. Total supply is 100,000,000 DCC, created in block 1 across four genesis transactions. No DCC has been issued since."
-msgstr ""
+msgstr "Un DCC se divide en 100 millones de dcclets, por lo que cada cantidad en cadena lleva ocho decimales. El suministro total es de 100.000 DCC, creado en el bloque 1 a cuatro transacciones de génesis. Desde entonces no se ha emitido ningún DCC."
 
 #: ../../02_decentralchain/11_tokenomics.md:20
 msgid "That follows from feature 14, *Block Reward and Community Driven Monetary Policy*, never having activated. The mainnet node reports its status as `VOTING`, and `GET /blockchain/rewards` returns error 199. Miners earn transaction fees only, split under NG at 40% to the block including a transaction and 60% to the next block's producer."
-msgstr ""
+msgstr "Eso se deriva de la característica 14, *Block Reward and Community Driven Monetary Policy*, nunca habiendo activado. El nodo mainnet informa su estado como `VOTING`, y `GET /blockchain/rewards` devuelve el error 199. Los mineros ganan cuotas de transacción solamente, divididos bajo NG en 40% al bloque incluyendo una transacción y 60% al productor del próximo bloque."
 
 #: ../../02_decentralchain/11_tokenomics.md:25
 msgid "The node carries a complete reward implementation should feature 14 ever activate: 6 DCC per block initially, 100,000-block terms, 0.5 DCC vote increments. DecentralChain removed the DAO and buyback recipients that the upstream design pays a share to, so the entire reward would go to the block producer. At 60-second blocks that is 3,153,600 DCC per year, an initial inflation rate of 3.15%."
-msgstr ""
+msgstr "El nodo lleva una implementación de recompensa completa debe tener 14 activados siempre: 6 DCC por bloque inicialmente, 100.000-block términos, 0,5 aumentos de voto DCC. DecentralChain removió el DAO y los receptores de compra que el diseño de corriente paga una cuota a, por lo que toda la recompensa iría al productor del bloque. A 60 bloques que son 3.153.600 DCC anuales, una tasa de inflación inicial del 3,15%."
 
 #: ../../02_decentralchain/11_tokenomics.md:30
 msgid "**DecentralChain commits to leaving feature 14 deactivated. Total supply stays at 100,000,000 DCC permanently.**"
-msgstr ""
+msgstr "**DecentralChain se compromete a dejar la característica 14 desactivada. Total de estancias de suministro a 100.000 DCC permanentemente.**"
 
 #: ../../02_decentralchain/11_tokenomics.md:33
 #, python-format
@@ -9593,9 +9507,8 @@ msgid "Stated plainly: feature activation requires 18,000 votes inside a 20,000-
 msgstr ""
 
 #: ../../02_decentralchain/11_tokenomics.md:38
-#, fuzzy
 msgid "Current distribution"
-msgstr "Restricciones"
+msgstr "Distribución actual"
 
 #: ../../02_decentralchain/11_tokenomics.md:40
 #, python-format
@@ -9604,108 +9517,105 @@ msgstr ""
 
 #: ../../02_decentralchain/11_tokenomics.md:8
 msgid "DCC"
-msgstr ""
+msgstr "DCC"
 
 #: ../../02_decentralchain/11_tokenomics.md:8
-#, fuzzy
 msgid "Origin"
-msgstr "Firma"
+msgstr "Origen"
 
 #: ../../02_decentralchain/11_tokenomics.md:8
 msgid "`3Dg7jsTxj1gYp359u1hT7dsg8GZEwhii1Kr`"
-msgstr ""
+msgstr "`3Dg7jsTxj1gYp359u1hT7dsg8GZEwhii1Kr`"
 
 #: ../../02_decentralchain/11_tokenomics.md:8
 msgid "30,000,098"
-msgstr ""
+msgstr "30,000,098"
 
 #: ../../02_decentralchain/11_tokenomics.md:8
-#, fuzzy
 msgid "genesis"
-msgstr "Génesis"
+msgstr "génesis"
 
 #: ../../02_decentralchain/11_tokenomics.md:8
 msgid "`3DTpBtthd1uJE2aRq5iqRY7d7vcp94AFeqe`"
-msgstr ""
+msgstr "`3DTpBtthd1uJE2aRq5iqRY7d7vcp94AFeqe`"
 
 #: ../../02_decentralchain/11_tokenomics.md:8
 msgid "30,000,010"
-msgstr ""
+msgstr "30,000,010"
 
 #: ../../02_decentralchain/11_tokenomics.md:8
 msgid "funded from genesis"
-msgstr ""
+msgstr "financiados con cargo a la génesis"
 
 #: ../../02_decentralchain/11_tokenomics.md:8
 msgid "`3DhKtKgynxyh9K2YrEMLgLBM8AMuLkKdkRn`"
-msgstr ""
+msgstr "`3DhKtKgynxyh9K2YrEMLgLBM8AMuLkKdkRn`"
 
 #: ../../02_decentralchain/11_tokenomics.md:8
 msgid "20,039,654"
-msgstr ""
+msgstr "20,039,654"
 
 #: ../../02_decentralchain/11_tokenomics.md:8
 msgid "genesis, sole active block producer"
-msgstr ""
+msgstr "génesis, productor único de bloques activos"
 
 #: ../../02_decentralchain/11_tokenomics.md:8
 msgid "`3DYhnLbQUTrd9jKaCzvJx1PULj4GDnAcbYc`"
-msgstr ""
+msgstr "`3DYhnLbQUTrd9jKaCzvJx1PULj4GDnAcbYc`"
 
 #: ../../02_decentralchain/11_tokenomics.md:8
 msgid "10,000,000"
-msgstr ""
+msgstr "10,000,000"
 
 #: ../../02_decentralchain/11_tokenomics.md:8
 msgid "genesis, untouched since 2021"
-msgstr ""
+msgstr "génesis, sin tocar desde 2021"
 
 #: ../../02_decentralchain/11_tokenomics.md:8
 msgid "`3Dm78oJoNcb1xBtWkjo194u7GgNdV89kvWE`"
-msgstr ""
+msgstr "`3Dm78oJoNcb1xBtWkjo194u7GgNdV89kvWE`"
 
 #: ../../02_decentralchain/11_tokenomics.md:8
 msgid "5,010,001"
-msgstr ""
+msgstr "5,010,001"
 
 #: ../../02_decentralchain/11_tokenomics.md:8
 #: ../../02_decentralchain/12_cr-coin.md:8
 msgid "`3DUM611HQFwQcCQDQnA5W92Xs219smEHaaP`"
-msgstr ""
+msgstr "`3DUM611HQFwQcCQDQnA5W92Xs219smEHaaP`"
 
 #: ../../02_decentralchain/11_tokenomics.md:8
 msgid "3,041,851"
-msgstr ""
+msgstr "3,041,851"
 
 #: ../../02_decentralchain/11_tokenomics.md:8
 msgid "**Controlled**"
-msgstr ""
+msgstr "**Controlled**"
 
 #: ../../02_decentralchain/11_tokenomics.md:8
 msgid "**98,091,614**"
-msgstr ""
+msgstr "**98,091,614**"
 
 #: ../../02_decentralchain/11_tokenomics.md:8
 msgid "**98.09%**"
-msgstr ""
+msgstr "**98.09%**"
 
 #: ../../02_decentralchain/11_tokenomics.md:54
 msgid "Balances and transfer history are read from the mainnet node and can be reproduced by anyone. Custody is a separate claim from balance."
-msgstr ""
+msgstr "Los equilibrios y la historia de transferencia son leídos desde el nodo principal y pueden ser reproducidos por cualquiera. La custodia es una reclamación separada del equilibrio."
 
 #: ../../02_decentralchain/11_tokenomics.md:57
-#, fuzzy
 msgid "Allocation"
-msgstr "call.function"
+msgstr "Asignación"
 
 #: ../../02_decentralchain/11_tokenomics.md:59
 msgid "Percentages are given against total supply of 100,000,000."
-msgstr ""
+msgstr "Los porcentajes se dan en relación con el suministro total de 100.000.000."
 
 #: ../../02_decentralchain/11_tokenomics.md:8
 #: ../../02_decentralchain/12_cr-coin.md:8
 msgid "Bucket"
-msgstr ""
+msgstr "Bucket"
 
 #: ../../02_decentralchain/11_tokenomics.md:8
 #: ../../02_decentralchain/12_cr-coin.md:8
@@ -9715,441 +9625,419 @@ msgstr ""
 
 #: ../../02_decentralchain/11_tokenomics.md:8
 msgid "**Community and ecosystem**"
-msgstr ""
+msgstr "**Comunidad y ecosistemas**"
 
 #: ../../02_decentralchain/11_tokenomics.md:8
 msgid "**53,000,000**"
-msgstr ""
+msgstr "**53,000,000**"
 
 #: ../../02_decentralchain/11_tokenomics.md:8
 msgid "**53.00%**"
-msgstr ""
+msgstr "**53.00%**"
 
 #: ../../02_decentralchain/11_tokenomics.md:8
 msgid "Usage and airdrop program"
-msgstr ""
+msgstr "Programa de uso y emisión aérea"
 
 #: ../../02_decentralchain/11_tokenomics.md:8
 msgid "22,000,000"
-msgstr ""
+msgstr "22,000,000"
 
 #: ../../02_decentralchain/11_tokenomics.md:8
 msgid "22.00%"
-msgstr ""
+msgstr "22.00%"
 
 #: ../../02_decentralchain/11_tokenomics.md:8
 msgid "Validator and staking rewards"
-msgstr ""
+msgstr "Validador y recompensas de la toma"
 
 #: ../../02_decentralchain/11_tokenomics.md:8
 msgid "15,000,000"
-msgstr ""
+msgstr "15,000,000"
 
 #: ../../02_decentralchain/11_tokenomics.md:8
 msgid "15.00%"
-msgstr ""
+msgstr "15.00%"
 
 #: ../../02_decentralchain/11_tokenomics.md:8
 #: ../../02_decentralchain/12_cr-coin.md:8
 msgid "Liquidity"
-msgstr ""
+msgstr "Liquidez"
 
 #: ../../02_decentralchain/11_tokenomics.md:8
 msgid "12,000,000"
-msgstr ""
+msgstr "12,000,000"
 
 #: ../../02_decentralchain/11_tokenomics.md:8
 msgid "12.00%"
-msgstr ""
+msgstr "12.00%"
 
 #: ../../02_decentralchain/11_tokenomics.md:8
 msgid "Grants and integrations"
-msgstr ""
+msgstr "Subvenciones e integraciones"
 
 #: ../../02_decentralchain/11_tokenomics.md:8
 msgid "4,000,000"
-msgstr ""
+msgstr "4,000,000"
 
 #: ../../02_decentralchain/11_tokenomics.md:8
 msgid "4.00%"
-msgstr ""
+msgstr "4.00%"
 
 #: ../../02_decentralchain/11_tokenomics.md:8
 #: ../../02_decentralchain/12_cr-coin.md:8
 msgid "Treasury reserve"
-msgstr ""
+msgstr "Reserva de tesorería"
 
 #: ../../02_decentralchain/11_tokenomics.md:8
 msgid "20,000,000"
-msgstr ""
+msgstr "20,000,000"
 
 #: ../../02_decentralchain/11_tokenomics.md:8
 msgid "20.00%"
-msgstr ""
+msgstr "20.00%"
 
 #: ../../02_decentralchain/11_tokenomics.md:8
 #: ../../02_decentralchain/12_cr-coin.md:8
 msgid "Team and contributors"
-msgstr ""
+msgstr "Equipo y colaboradores"
 
 #: ../../02_decentralchain/11_tokenomics.md:8
-#, fuzzy
 msgid "Foundation and operations"
-msgstr "Operaciones con Tokens"
+msgstr "Fundamentos y operaciones"
 
 #: ../../02_decentralchain/11_tokenomics.md:8
 msgid "10.00%"
-msgstr ""
+msgstr "10.00%"
 
 #: ../../02_decentralchain/11_tokenomics.md:8
-#, fuzzy
 msgid "Operating float"
-msgstr "Nodo Generador"
+msgstr "Flota de funcionamiento"
 
 #: ../../02_decentralchain/11_tokenomics.md:8
 msgid "91,614"
-msgstr ""
+msgstr "91,614"
 
 #: ../../02_decentralchain/11_tokenomics.md:8
 msgid "0.09%"
-msgstr ""
+msgstr "0.09%"
 
 #: ../../02_decentralchain/11_tokenomics.md:73
 msgid "There was never a private round, a seed allocation, or a venture investor, so there is no such line in the table."
-msgstr ""
+msgstr "Nunca hubo una ronda privada, una asignación de semillas o un inversor de empresas, por lo que no hay tal línea en la tabla."
 
 #: ../../02_decentralchain/11_tokenomics.md:76
 msgid "The validator bucket replaces the block reward the chain does not pay. It starts near 2.5M in year one and tapers toward 1M by year five. Years one through four spend 7.2M, and the remaining 7.8M covers through year twelve at the floor, meaning a flat 1M per year with no further taper. Part of it is leased instead of spent: LPoS leasing is non-custodial, so the treasury keeps the coins while giving a new validator the weight to clear the 10,000 DCC generating minimum."
-msgstr ""
+msgstr "El cubo de validador reemplaza la recompensa del bloque que la cadena no paga. Comienza cerca de 2,5M en el año uno y los tapers hacia 1M por año cinco. Años uno a cuatro pasan 7.2M, y el resto de 7.8M cubren por año doce en el suelo, lo que significa un piso 1M por año sin más tapiz. Parte de ella se alquila en lugar de gastado: el arrendamiento LPoS no es privativo, por lo que el tesoro mantiene las monedas mientras da a un nuevo validador el peso para limpiar los 10.000 DCC generando mínimo."
 
 #: ../../02_decentralchain/11_tokenomics.md:82
 msgid "Release schedule"
-msgstr ""
+msgstr "Calendario de lanzamiento"
 
 #: ../../02_decentralchain/11_tokenomics.md:84
 msgid "Circulating supply today is about 2.0M DCC. At that float, price is undefined and any quoted market capitalisation is fiction."
-msgstr ""
+msgstr "El suministro circulante hoy es alrededor de 2.0M DCC. En ese flotador, el precio es indefinido y cualquier capitalización de mercado citada es ficción."
 
 #: ../../02_decentralchain/11_tokenomics.md:8
-#, fuzzy
 msgid "Y1"
-msgstr "1"
+msgstr "Y1"
 
 #: ../../02_decentralchain/11_tokenomics.md:8
 msgid "Y2"
-msgstr ""
+msgstr "Y2"
 
 #: ../../02_decentralchain/11_tokenomics.md:8
 msgid "Y3"
-msgstr ""
+msgstr "Y3"
 
 #: ../../02_decentralchain/11_tokenomics.md:8
 msgid "Y4"
-msgstr ""
+msgstr "Y4"
 
 #: ../../02_decentralchain/11_tokenomics.md:8
-#, fuzzy
 msgid "Beyond"
-msgstr "Palabra clave"
+msgstr "Más allá"
 
 #: ../../02_decentralchain/11_tokenomics.md:8
 msgid "Usage and airdrop"
-msgstr ""
+msgstr "Uso y emisión de aire"
 
 #: ../../02_decentralchain/11_tokenomics.md:8
 msgid "8.0M"
-msgstr ""
+msgstr "8.0M"
 
 #: ../../02_decentralchain/11_tokenomics.md:8
 msgid "4.0M"
-msgstr ""
+msgstr "4.0M"
 
 #: ../../02_decentralchain/11_tokenomics.md:8
 msgid "2.0M"
-msgstr ""
+msgstr "2.0M"
 
 #: ../../02_decentralchain/11_tokenomics.md:8
 msgid "Validator and staking"
-msgstr ""
+msgstr "Validador y toma"
 
 #: ../../02_decentralchain/11_tokenomics.md:8
 msgid "2.5M"
-msgstr ""
+msgstr "2.5M"
 
 #: ../../02_decentralchain/11_tokenomics.md:8
 msgid "1.5M"
-msgstr ""
+msgstr "1.5M"
 
 #: ../../02_decentralchain/11_tokenomics.md:8
 msgid "1.2M"
-msgstr ""
+msgstr "1.2M"
 
 #: ../../02_decentralchain/11_tokenomics.md:8
 msgid "7.8M"
-msgstr ""
+msgstr "7.8M"
 
 #: ../../02_decentralchain/11_tokenomics.md:8
 msgid "6.0M"
-msgstr ""
+msgstr "6.0M"
 
 #: ../../02_decentralchain/11_tokenomics.md:8
 msgid "3.0M"
-msgstr ""
+msgstr "3.0M"
 
 #: ../../02_decentralchain/11_tokenomics.md:8
 msgid "1.0M"
-msgstr ""
+msgstr "1.0M"
 
 #: ../../02_decentralchain/11_tokenomics.md:8
 msgid "Grants"
-msgstr ""
+msgstr "Subvenciones"
 
 #: ../../02_decentralchain/11_tokenomics.md:8
-#, fuzzy
 msgid "Foundation"
-msgstr "función"
+msgstr "Foundation"
 
 #: ../../02_decentralchain/11_tokenomics.md:8
-#, fuzzy
 msgid "Team"
-msgstr "Marca de Tiempo"
+msgstr "Equipo"
 
 #: ../../02_decentralchain/11_tokenomics.md:8
 msgid "0"
-msgstr ""
+msgstr "0"
 
 #: ../../02_decentralchain/11_tokenomics.md:8
 msgid "5.0M"
-msgstr ""
+msgstr "5.0M"
 
 #: ../../02_decentralchain/11_tokenomics.md:8
 msgid "Treasury"
-msgstr ""
+msgstr "Tesorería"
 
 #: ../../02_decentralchain/11_tokenomics.md:8
 msgid "20.0M"
-msgstr ""
+msgstr "20.0M"
 
 #: ../../02_decentralchain/11_tokenomics.md:8
-#, fuzzy
 msgid "**Released**"
-msgstr "leaseId"
+msgstr "**Released**"
 
 #: ../../02_decentralchain/11_tokenomics.md:8
 msgid "**19.5M**"
-msgstr ""
+msgstr "**19.5M**"
 
 #: ../../02_decentralchain/11_tokenomics.md:8
 msgid "**22.0M**"
-msgstr ""
+msgstr "**22.0M**"
 
 #: ../../02_decentralchain/11_tokenomics.md:8
 msgid "**16.5M**"
-msgstr ""
+msgstr "**16.5M**"
 
 #: ../../02_decentralchain/11_tokenomics.md:8
 msgid "**12.2M**"
-msgstr ""
+msgstr "**12.2M**"
 
 #: ../../02_decentralchain/11_tokenomics.md:8
 msgid "**27.8M**"
-msgstr ""
+msgstr "**27.8M**"
 
 #: ../../02_decentralchain/11_tokenomics.md:98
 msgid "Circulating supply reaches 21.5M after year one, 43.5M after year two, 60.0M after year three, and 72.2M after year four. Team unlocks begin in year two, so the 12-month cliff puts insiders behind the airdrop cohort."
-msgstr ""
+msgstr "El suministro de circulación llega a 21.5M después del primer año, 43.5M después del segundo año, 60.0M después del tercer año, y 72.2M después del año cuatro. Los desbloqueos del equipo comienzan en el año dos, por lo que el acantilado de 12 meses pone los inmersos detrás de la cohorte de aire."
 
 #: ../../02_decentralchain/11_tokenomics.md:102
 msgid "Revenue and burn"
-msgstr ""
+msgstr "Ingresos y quemadura"
 
 #: ../../02_decentralchain/11_tokenomics.md:104
 msgid "Supply never rises. It falls when the chain is used, through three sinks, all denominated in DCC."
-msgstr ""
+msgstr "La oferta nunca aumenta. Cae cuando se utiliza la cadena, a través de tres sumideros, todos denominados en DCC."
 
 #: ../../02_decentralchain/11_tokenomics.md:106
 msgid "**AMM protocol fee.** Pools charge 35 basis points per swap. A protocol share, configured at 12%, routes to a burn address instead of accruing entirely to liquidity providers."
-msgstr ""
+msgstr "**Tasa de protocolo AMM.** Las piscinas cobran 35 puntos de base por swap. Una cuota de protocolo, configurada en el 12%, rutas a una dirección de quemadura en lugar de acumular por completo a los proveedores de liquidez."
 
 #: ../../02_decentralchain/11_tokenomics.md:109
 msgid "**Matcher fee.** The DEX charges a flat 0.003 DCC per order in dynamic mode. A share routes to the same burn address."
-msgstr ""
+msgstr "**Tasa de emparejado.** El DEX cobra un 0,003 DCC plano por orden en modo dinámico. Una ruta de participación a la misma dirección de quemados."
 
 #: ../../02_decentralchain/11_tokenomics.md:112
 msgid "**Namespace auctions.** Short aliases and premium asset tickers sell by Dutch auction, paid in DCC, burned in full. This sink prices scarcity of names, not throughput, so it produces burn at low transaction volume."
-msgstr ""
+msgstr "**subastas del espacio de nombres.** Short aliases and premium asset tickers sell by Dutch subasta, paid in DCC, burn in full. Este sumidero precios escasez de nombres, no rendimiento, por lo que produce quemadura a bajo volumen de transacción."
 
 #: ../../02_decentralchain/11_tokenomics.md:117
 msgid "Two of the three sinks are not yet live. The AMM protocol fee is configured on chain but the deployed PoolCore contract never reads `config:protocolFeePct`, so `applySwap` skims nothing. The auction mechanism does not exist yet. Only the matcher fee is live."
-msgstr ""
+msgstr "Dos de los tres lavabos todavía no están vivos. La cuota de protocolo AMM está configurada en cadena, pero el contrato PoolCore implementado nunca lee `config:protocolFeePct`, por lo que `applySwap` no esquiva nada. El mecanismo de subastas aún no existe. Sólo la tarifa de emparejador es en vivo."
 
 #: ../../02_decentralchain/11_tokenomics.md:122
-#, fuzzy
 msgid "Status"
-msgstr "status"
+msgstr "Situación"
 
 #: ../../02_decentralchain/11_tokenomics.md:124
 msgid "Version 1.0, 30 August 2026. The allocation and schedule become binding once the RIDE lock contracts are deployed at published addresses, and after that point the contracts govern, not this page. Changes to total supply would require activating feature 14, which this chapter commits against."
-msgstr ""
+msgstr "Versión 1.0, 30 Agosto 2026. La asignación y el calendario se vuelven vinculantes una vez que los contratos de bloqueo RIDE se implementan en direcciones publicadas, y después de ese punto los contratos gobiernan, no esta página. Los cambios en la oferta total requerirían activar la función 14, que este capítulo se compromete."
 
 #: ../../02_decentralchain/12_cr-coin.md:1
-#, fuzzy
 msgid "CR Coin"
-msgstr "DecentralCoin"
+msgstr "CR Coin"
 
 #: ../../02_decentralchain/12_cr-coin.md:3
 msgid "CR Coin is an asset issued on DecentralChain mainnet by Blockchain Costa Rica. It is not the network's native token; DCC is. CR Coin is included here because it is a sponsored asset, meaning holders can pay DecentralChain network fees with it, and because its supply is capped by the asset itself rather than by policy."
-msgstr ""
+msgstr "CR Coin es un activo emitido en DecentralChain mainnet por Blockchain Costa Rica. No es el token nativo de la red; DCC lo es. CR Coin está incluido aquí porque es un activo patrocinado, lo que significa que los titulares pueden pagar las tarifas de la red DecentralChain con él, y debido a que su oferta está cubierta por el propio activo en lugar de por política."
 
 #: ../../02_decentralchain/12_cr-coin.md:9
 #, python-brace-format
 msgid "Two documents back this chapter: {download}`CR Coin tokenomics <../_static/02_decentralchain/downloads/CRCoin-Tokenomics.pdf>` and {download}`CR Coin holder distribution <../_static/02_decentralchain/downloads/CRCoin-Holder-Distribution.pdf>`, the latter listing the hundred largest holders. Figures were read from mainnet at height 2,322,445 on 30 August 2026."
-msgstr ""
+msgstr "Dos documentos en este capítulo: {download}`CR Coin tokenomics <../_static/02_decentralchain/downloads/CRCoin-Tokenomics.pdf>` y {download}`CR Coin holder distribution <../_static/02_decentralchain/downloads/CRCoin-Holder-Distribution.pdf>`, estos últimos enumeran los cien mayores titulares. Las figuras fueron leídas desde mainnet a la altura 2.322.445 el 30 de agosto de 2026."
 
 #: ../../02_decentralchain/12_cr-coin.md:16
-#, fuzzy
 msgid "The asset"
-msgstr "Token (Activo)"
+msgstr "El activo"
 
 #: ../../02_decentralchain/12_cr-coin.md:8
 msgid "Property"
-msgstr ""
+msgstr "Propiedad"
 
 #: ../../02_decentralchain/12_cr-coin.md:8
-#, fuzzy
 msgid "Asset ID"
-msgstr "ID del Activo"
+msgstr "Identificación de activos"
 
 #: ../../02_decentralchain/12_cr-coin.md:8
 msgid "`G9TVbwiiUZd5WxFxoY7Tb6ZPjGGLfynJK4a3aoC59cMo`"
-msgstr ""
+msgstr "`G9TVbwiiUZd5WxFxoY7Tb6ZPjGGLfynJK4a3aoC59cMo`"
 
 #: ../../02_decentralchain/12_cr-coin.md:8
-#, fuzzy
 msgid "Issued"
-msgstr "issuer"
+msgstr "Publicada"
 
 #: ../../02_decentralchain/12_cr-coin.md:8
 msgid "10 August 2021, height 30,008"
-msgstr ""
+msgstr "10 de agosto de 2021, altura 30,008"
 
 #: ../../02_decentralchain/12_cr-coin.md:8
-#, fuzzy
 msgid "Issuer"
-msgstr "issuer"
+msgstr "Periodista"
 
 #: ../../02_decentralchain/12_cr-coin.md:8
-#, fuzzy
 msgid "Original quantity"
-msgstr "quantity"
+msgstr "Cantidad original"
 
 #: ../../02_decentralchain/12_cr-coin.md:8
 msgid "21,000,000"
-msgstr ""
+msgstr "21,000,000"
 
 #: ../../02_decentralchain/12_cr-coin.md:8
 msgid "Current supply"
-msgstr ""
+msgstr "Suministro actual"
 
 #: ../../02_decentralchain/12_cr-coin.md:8
 msgid "20,999,894.42 (105.58 burned)"
-msgstr ""
+msgstr "20,999,894.42 (105.58 quemados)"
 
 #: ../../02_decentralchain/12_cr-coin.md:8
-#, fuzzy
 msgid "Reissuable"
-msgstr "reissuable"
+msgstr "Reissuable"
 
 #: ../../02_decentralchain/12_cr-coin.md:8
-#, fuzzy
 msgid "No"
-msgstr "Nodo"
+msgstr "No."
 
 #: ../../02_decentralchain/12_cr-coin.md:8
-#, fuzzy
 msgid "Decimals"
-msgstr "decimals"
+msgstr "Decimales"
 
 #: ../../02_decentralchain/12_cr-coin.md:8
 msgid "8"
-msgstr ""
+msgstr "8"
 
 #: ../../02_decentralchain/12_cr-coin.md:8
-#, fuzzy
 msgid "Sponsored fee"
-msgstr "Tarifas Patrocinadas"
+msgstr "Tasa de patrocinio"
 
 #: ../../02_decentralchain/12_cr-coin.md:8
 msgid "0.5 CR"
-msgstr ""
+msgstr "0,5 CR"
 
 #: ../../02_decentralchain/12_cr-coin.md:8
-#, fuzzy
 msgid "Holders"
-msgstr "pedidos"
+msgstr "Holders"
 
 #: ../../02_decentralchain/12_cr-coin.md:8
 msgid "3,844"
-msgstr ""
+msgstr "3,844"
 
 #: ../../02_decentralchain/12_cr-coin.md:30
 msgid "The issue transaction set `reissuable` to false. No transaction mints another CR Coin, and no vote, key, or upgrade creates one. The cap is a property of the asset, not a commitment that a future key holder could reverse."
-msgstr ""
+msgstr "La transacción de emisión puso a `reissuable` en falso. Ninguna transacción miente a otro CR Coin, y ningún voto, clave o actualización crea uno. La tapa es una propiedad del activo, no un compromiso que un futuro poseedor clave podría revertir."
 
 #: ../../02_decentralchain/12_cr-coin.md:34
-#, fuzzy
 msgid "Distribution"
-msgstr "description"
+msgstr "Distribución"
 
 #: ../../02_decentralchain/12_cr-coin.md:8
-#, fuzzy
 msgid "Holding"
-msgstr "Votación"
+msgstr "Sosteniendo"
 
 #: ../../02_decentralchain/12_cr-coin.md:8
 msgid "CR"
-msgstr ""
+msgstr "CR"
 
 #: ../../02_decentralchain/12_cr-coin.md:8
-#, fuzzy
 msgid "Share"
-msgstr "Utilización"
+msgstr "Compartir"
 
 #: ../../02_decentralchain/12_cr-coin.md:8
 msgid "Community, already distributed"
-msgstr ""
+msgstr "Comunidad, ya distribuida"
 
 #: ../../02_decentralchain/12_cr-coin.md:8
 msgid "12,057,231.10"
-msgstr ""
+msgstr "12,057,231.10"
 
 #: ../../02_decentralchain/12_cr-coin.md:8
 msgid "57.42%"
-msgstr ""
+msgstr "57.42%"
 
 #: ../../02_decentralchain/12_cr-coin.md:8
 msgid "Issuing wallet"
-msgstr ""
+msgstr "Cartera expresiva"
 
 #: ../../02_decentralchain/12_cr-coin.md:8
 msgid "8,942,663.32"
-msgstr ""
+msgstr "8,942,663.32"
 
 #: ../../02_decentralchain/12_cr-coin.md:8
 msgid "42.58%"
-msgstr ""
+msgstr "42.58%"
 
 #: ../../02_decentralchain/12_cr-coin.md:8
 msgid "**Total**"
-msgstr ""
+msgstr "**Total**"
 
 #: ../../02_decentralchain/12_cr-coin.md:8
 msgid "**20,999,894.42**"
-msgstr ""
+msgstr "**20,999,894.42**"
 
 #: ../../02_decentralchain/12_cr-coin.md:8
 msgid "**100%**"
-msgstr ""
+msgstr "**100%**"
 
 #: ../../02_decentralchain/12_cr-coin.md:42
 #, python-format
@@ -10158,86 +10046,83 @@ msgstr ""
 
 #: ../../02_decentralchain/12_cr-coin.md:46
 msgid "The issuing wallet divides into four buckets, each moving to its own RIDE lock contract:"
-msgstr ""
+msgstr "La billetera emisora se divide en cuatro cubos, cada uno de los cuales se mueve a su propio contrato de cerradura RIDE:"
 
 #: ../../02_decentralchain/12_cr-coin.md:8
-#, fuzzy
 msgid "Merchant and adoption"
-msgstr "Transacción para Intercambio"
+msgstr "Mercante y adopción"
 
 #: ../../02_decentralchain/12_cr-coin.md:8
 msgid "3,000,000"
-msgstr ""
+msgstr "3,000,000"
 
 #: ../../02_decentralchain/12_cr-coin.md:8
 msgid "14.29%"
-msgstr ""
+msgstr "14.29%"
 
 #: ../../02_decentralchain/12_cr-coin.md:8
 msgid "2,442,663"
-msgstr ""
+msgstr "2,442,663"
 
 #: ../../02_decentralchain/12_cr-coin.md:8
 msgid "11.63%"
-msgstr ""
+msgstr "11.63%"
 
 #: ../../02_decentralchain/12_cr-coin.md:8
 msgid "2,000,000"
-msgstr ""
+msgstr "2,000,000"
 
 #: ../../02_decentralchain/12_cr-coin.md:8
 msgid "9.52%"
-msgstr ""
+msgstr "9.52%"
 
 #: ../../02_decentralchain/12_cr-coin.md:8
 msgid "1,500,000"
-msgstr ""
+msgstr "1,500,000"
 
 #: ../../02_decentralchain/12_cr-coin.md:8
 msgid "7.14%"
-msgstr ""
+msgstr "7.14%"
 
 #: ../../02_decentralchain/12_cr-coin.md:55
 msgid "Team and contributors carries a 12-month cliff and a 36-month linear vest, so it unlocks behind the merchant and liquidity buckets. Circulating supply rises from 57.4% today to 88.4% after four years, with the treasury reserve locked beyond that."
-msgstr ""
+msgstr "El equipo y los colaboradores llevan un acantilado de 12 meses y un chaleco lineal de 36 meses, por lo que se desbloquea detrás de los cubos de mercader y liquidez. El suministro circulante asciende de 57,4% hoy a 88,4% después de cuatro años, con la reserva del tesoro bloqueada más allá de eso."
 
 #: ../../02_decentralchain/12_cr-coin.md:59
-#, fuzzy
 msgid "Fee sponsorship"
-msgstr "Configura el patrocinio."
+msgstr "Patrocinio de honorarios"
 
 #: ../../02_decentralchain/12_cr-coin.md:61
 msgid "CR Coin is a sponsored asset, so a holder can pay a DecentralChain transaction fee in CR Coin rather than DCC. The node settles it inside the transaction: the sender is debited in CR Coin, and the issuer is debited the equivalent in DCC and credited the CR Coin."
-msgstr ""
+msgstr "CR Coin es un activo patrocinado, por lo que un titular puede pagar una cuota de transacción DecentralChain en CR Coin en lugar de DCC. El nodo lo resuelve dentro de la transacción: el remitente está debitado en CR Coin, y el emisor es debitado el equivalente en DCC y acreditado el CR Coin."
 
 #: ../../02_decentralchain/12_cr-coin.md:65
 msgid "Two consequences follow. Sponsorship moves CR Coin into the issuing wallet as the network is used, so left alone it concentrates supply. It is also a redemption path that needs no counterparty, order book, or permission, backed by the DCC balance of the issuing wallet."
-msgstr ""
+msgstr "Dos consecuencias siguen. El patrocinio mueve CR Coin en la billetera emisora mientras se utiliza la red, por lo que queda solo concentra el suministro. También es un camino de redención que no necesita contraparte, libro de pedidos o permiso, respaldado por el saldo DCC de la cartera emisora."
 
 #: ../../02_decentralchain/12_cr-coin.md:69
 msgid "The tokenomics commits every CR Coin received through sponsorship to be burned quarterly by Burn transaction from a published address. Usage then reduces supply, and each burn is paid for in DCC from the reserve. If nobody transacts, nothing burns."
-msgstr ""
+msgstr "La tokenomics compromete cada CR Coin recibido a través del patrocinio para ser quemado trimestralmente por la transacción Burn de una dirección publicada. El uso entonces reduce el suministro, y cada quemadura se paga en DCC de la reserva. Si nadie transacciona, nada quema."
 
 #: ../../02_decentralchain/12_cr-coin.md:74
 msgid "The posted rate of 0.5 CR against a 0.001 DCC network fee values one CR Coin at 0.002 DCC, while the AMM pool prices it near 2.11 DCC. At that rate no holder will choose to pay fees in CR Coin, so sponsorship is live, funded, and unused until `minSponsoredAssetFee` is repriced."
-msgstr ""
+msgstr "La tasa publicada de 0,5 CR contra una cuota de red DCC 0.001 valora un CR en 0,002 DCC, mientras que la piscina AMM lo precios cerca de 2.11 DCC. A ese ritmo, ningún titular elegirá pagar honorarios en CR Coin, por lo que el patrocinio es en vivo, financiado y no utilizado hasta que `minSponsoredAssetFee` sea reeditado."
 
 #: ../../02_decentralchain/12_cr-coin.md:79
-#, fuzzy
 msgid "Open items"
-msgstr "Tipos de Tokens"
+msgstr "Artículos abiertos"
 
 #: ../../02_decentralchain/12_cr-coin.md:81
 msgid "The address `3DdSXx71R8bnm8xqeyfvDtwRuPFnhfBAp4A`, aliased `burnaddress` and `burn`, holds 27,262.69 CR. Those coins are held, not burned, and count toward the total above. Only a Burn transaction would change that."
-msgstr ""
+msgstr "La dirección `3DdSXx71R8bnm8xqeyfvDtwRuPFnhfBAp4A`, alias `burnaddress` y `burn`, tiene 27.262,69 CR. Esas monedas se sostienen, no se queman y cuentan hacia el total anterior. Sólo una transacción de Burn cambiaría eso."
 
 #: ../../02_decentralchain/12_cr-coin.md:85
 msgid "The asset description written on chain in 2021 cites `crcoin.io`, which has no DNS record. `blockchaincostarica.org` resolves over HTTP but has no working HTTPS. The description can be corrected with an UpdateAssetInfo transaction."
-msgstr ""
+msgstr "La descripción del activo escrita en cadena en 2021 cita `crcoin.io`, que no tiene registro DNS. `blockchaincostarica.org` resuelve sobre HTTP pero no tiene HTTPS de trabajo. La descripción se puede corregir con una transacción UpdateAssetInfo."
 
 #: ../../02_decentralchain/12_cr-coin.md:89
 msgid "No lock contract has been deployed. Until one is, the issuing wallet remains fully liquid."
-msgstr ""
+msgstr "No se ha desplegado ningún contrato de bloqueo. Hasta que uno es, la cartera emisora sigue siendo totalmente líquida."
 
 #: ../../02_decentralchain/index.md:1 ../../02_decentralchain/index.md:23
 msgid "DecentralChain"
@@ -10249,54 +10134,51 @@ msgstr "DecentralChain es un protocolo abierto de cadena de bloques y un conjunt
 
 #: ../../02_decentralchain/index.md:19
 msgid "Blazingly Fast"
-msgstr ""
+msgstr "Blazing Fast"
 
 #: ../../02_decentralchain/index.md:23
-#, fuzzy
 msgid "Thousands of transactions a second."
-msgstr "Creación de bloques y firma de transacciones."
+msgstr "Miles de transacciones por segundo."
 
 #: ../../02_decentralchain/index.md:35
 msgid "Eco-Friendly"
-msgstr ""
+msgstr "Eco-Friendly"
 
 #: ../../02_decentralchain/index.md:39
 msgid "Carbon neutral technology."
-msgstr ""
+msgstr "Tecnología neutral de carbono."
 
 #: ../../02_decentralchain/index.md:51
 msgid "Low Fees"
-msgstr ""
+msgstr "Tasas bajas"
 
 #: ../../02_decentralchain/index.md:55
 msgid "Say goodbye to expensive fees."
-msgstr ""
+msgstr "Despídete de costosos honorarios."
 
 #: ../../02_decentralchain/index.md:67
 msgid "Governance Mechanism"
-msgstr ""
+msgstr "Mecanismo de gobernanza"
 
 #: ../../02_decentralchain/index.md:71
 msgid "Community-driven decisions."
-msgstr ""
+msgstr "Decisiones impulsadas por la comunidad."
 
 #: ../../02_decentralchain/index.md:83
 msgid "Cross-Chain Interoperability"
-msgstr ""
+msgstr "Interoperabilidad de la cadena cruzada"
 
 #: ../../02_decentralchain/index.md:87
-#, fuzzy
 msgid "Connect to other blockchains."
-msgstr "Tokens de Otras Blockchain"
+msgstr "Conéctese a otras cadenas de bloqueo."
 
 #: ../../02_decentralchain/index.md:99
-#, fuzzy
 msgid "Decentralized Data Storage"
-msgstr "Almacenamiento de Datos de Cuenta"
+msgstr "Almacenamiento de datos descentralizado"
 
 #: ../../02_decentralchain/index.md:103
 msgid "Permanently secured data."
-msgstr ""
+msgstr "Datos permanentemente asegurados."
 
 #~ msgid "Normally, the address starting with 3P refers to the Mainnet, and the address starting with 3M or 3N refers to Testnet or Stagenet."
 #~ msgstr "Normalmente, la dirección que comienza con 3P se refiere a Mainnet, y la dirección que comienza con 3M o 3N se refiere a Testnet o Stagenet."

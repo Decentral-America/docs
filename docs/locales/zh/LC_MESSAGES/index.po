@@ -21,35 +21,35 @@ msgstr ""
 
 #: ../../index.rst:8
 msgid "DecentralChain Documentation"
-msgstr ""
+msgstr "DecentralChain 文件"
 
 #: ../../index.rst:10
 msgid "Welcome to the Decentralchain documentation, a comprehensive guide to understanding and using the next-generation blockchain technology of DecentralChain. Our protocol is designed to enable businesses and organizations to store and manage data in a secure, transparent, and tamper-proof manner."
-msgstr ""
+msgstr "欢迎收看中链文件,这是了解和使用下一代区块链技术DecentralChain的全面指南.我们的规程旨在使企业和组织能够以安全、透明和防篡改的方式储存和管理数据。"
 
 #: ../../index.rst:12
 msgid "DecentralChain utilizes the Leased Proof of Stake (LPoS) consensus mechanism and sharding to enable faster transaction processing times, lower energy consumption, and increased scalability. Our native token, DecentralCoin (DCC), is used for standard payments such as block rewards, and our on-chain governance system allows us to make changes to the protocol through voting."
-msgstr ""
+msgstr "DecentralChain利用了租赁的Stake(LPoS)共识机制并进行硬化,以使得交易处理时间更快,能耗更低,可扩展性更强.我们的本土代币DecentralCoin (DCC)用于块奖励等标准支付,我们的链上治理系统允许我们通过投票对协议进行修改."
 
 #: ../../index.rst:14
 msgid "Our documentation covers various aspects of the DecentralChain protocol, including its architecture, consensus mechanism, data structures, and APIs. It also provides a comprehensive guide to setting up and running a DecentralChain node, as well as integrating the protocol into existing applications."
-msgstr ""
+msgstr "我们的文件涵盖了DecentralChain协议的各个方面,包括其架构,共识机制,数据结构和API.它还为建立和运行DecentralChain节点,以及将协议纳入到现有的应用中提供了全面的指南."
 
 #: ../../index.rst:16
 msgid "We place a strong emphasis on security, with regular security audits to identify and address potential vulnerabilities. Data is stored and managed using cryptography and distributed storage to ensure data integrity and security."
-msgstr ""
+msgstr "我们着重强调安全,定期进行安全审计,以查明并解决潜在的弱点。数据使用密码学和分布式存储来储存和管理,以确保数据的完整性和安全性."
 
 #: ../../index.rst:18
 msgid "Whether you're a developer or a business owner looking to leverage blockchain technology for data management and security, the DecentralChain documentation is a valuable resource for understanding and using the protocol. We invite you to explore our documentation and get started with DecentralChain today."
-msgstr ""
+msgstr "无论是开发者还是企业所有者都想将块链技术用于数据管理和安全,DecentralChain文档是了解和使用协议的宝贵资源.我们邀请你们来探索我们的文件,今天从DecentralChain开始。"
 
 #: ../../index.rst:25 ../../index.rst:124
 msgid "Introduction"
-msgstr ""
+msgstr "导言"
 
 #: ../../index.rst:28
 msgid "Get ready to jump into the exciting world of cryptocurrency and blockchain with DecentralChain. Start here to learn the basics and find out how this innovative platform is revolutionizing the industry."
-msgstr ""
+msgstr "准备好跳入令人兴奋的世界 密码货币和块链与DecentralChain。从这里开始学习基础知识,找出这个创新的平台是如何使产业革命的."
 
 #: ../../index.rst:32 ../../index.rst:48 ../../index.rst:65 ../../index.rst:82
 #: ../../index.rst:99 ../../index.rst:115
@@ -58,51 +58,51 @@ msgstr ""
 
 #: ../../index.rst:42 ../../index.rst:142
 msgid "DecentralChain"
-msgstr ""
+msgstr "DecentralChain"
 
 #: ../../index.rst:44
 msgid "DecentralChain is a blockchain protocol and development toolkit that empowers users to create decentralized applications (dApps) and Web 3.0 solutions on a secure and scalable platform using tools such as accounts, tokens, transactions, blocks, nodes, orders, and oracles."
-msgstr ""
+msgstr "DecentralChain是一个块链协议和开发工具包,它赋予用户在安全可扩展的平台上创建分散应用程序(dApps)和Web 3.0解决方案的能力,使用诸如账户,令牌,交易,块,节点,订单等工具."
 
 #: ../../index.rst:58 ../../index.rst:151
 msgid "Ride Language"
-msgstr ""
+msgstr "Ride 语言"
 
 #: ../../index.rst:61
 msgid "Ride is a straightforward, developer-friendly functional programming language for smart contracts and decentralized applications (dApps) on the DecentralChain blockchain. Here you will learn about syntax basics, data types, functions, script types, structures, and FOLD<N> iterations."
-msgstr ""
+msgstr "Ride是用于智能合同和DecentralChain区块链上分散化应用(dApps)的直截了当,开发者友好的功能编程语言.在此您将学习语法基础, 数据类型, 函数, 脚本类型, 结构, 以及 FOLD <N> 迭代 。"
 
 #: ../../index.rst:75 ../../index.rst:169
 msgid "Node Guide"
-msgstr ""
+msgstr "节点指南"
 
 #: ../../index.rst:78
 msgid "Learn how to get, build, and configure a DecentralChain node, and what its REST API exposes. For block generation and leasing rewards, see the DecentralChain fundamentals section."
-msgstr ""
+msgstr "学习如何获得,构建,并配置一个DecentralChain节点,以及它的REST API会暴露什么.有关块出产和租赁奖励,参见DecentralChain基数部分."
 
 #: ../../index.rst:92 ../../index.rst:160
 msgid "Smart Contracts and dApps"
-msgstr ""
+msgstr "智能合同和dApps"
 
 #: ../../index.rst:95
 msgid "Lean everything you need to know in order to start creating your own smart contracts and decentralized applications (dApps) with DecentralChain's developer tools, APIs and SDKs."
-msgstr ""
+msgstr "利用DecentralChain的开发者工具,API和SDK开始创建自己的智能合同和分散化的应用程序(dApps)所需要了解的一切."
 
 #: ../../index.rst:109 ../../index.rst:189
 msgid "Contributing"
-msgstr ""
+msgstr "捐款"
 
 #: ../../index.rst:111
 msgid "More information about the community that leads, supports, and develops this documentation, including how you can contribute to it by fixing any typos, adding translations, examples or updating any outdated information. Join the community to help improve this resource for everyone."
-msgstr ""
+msgstr "更多关于领导、支持和开发此文档的社区的信息,包括您如何通过修复任何打字、增加翻译、实例或更新任何过时信息来为它做出贡献。加入社区,帮助改善这一资源,造福所有人。"
 
 #: ../../index.rst:133
 msgid "User Guides"
-msgstr ""
+msgstr "用户指南"
 
 #: ../../index.rst:178
 msgid "Reference"
-msgstr ""
+msgstr "参考文献"
 
 #~ msgid "card-img-top"
 #~ msgstr ""

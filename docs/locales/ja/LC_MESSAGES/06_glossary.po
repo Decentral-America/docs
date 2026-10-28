@@ -21,197 +21,197 @@ msgstr ""
 
 #: ../../06_glossary.md:1
 msgid "Glossary"
-msgstr ""
+msgstr "用語集"
 
 #: ../../06_glossary.md:3
 msgid "Terms as used across this documentation. Each entry links to the page that defines it in full."
-msgstr ""
+msgstr "本ドキュメントで利用する条件各エントリは、それを完全に定義するページへのリンクです。"
 
 #: ../../06_glossary.md
 msgid "DCC"
-msgstr ""
+msgstr "DCC"
 
 #: ../../06_glossary.md:7
 #, python-brace-format
 msgid "DecentralCoin, the native coin of DecentralChain. Amounts are stored in the smallest unit (`10^-8` DCC). See {ref}`Token (Asset) <02_decentralchain/02_token(asset):Token (Asset)>`."
-msgstr ""
+msgstr "DecentralCoin、DecentralChainのネイティブコイン。最小単位(`10^-8` DCC)に格納されます。{ref}`Token (Asset) <02_decentralchain/02_token(asset):Token (Asset)>` を参照してください。"
 
 #: ../../06_glossary.md:3
 msgid "Chain ID"
-msgstr ""
+msgstr "チェーンID"
 
 #: ../../06_glossary.md:10
 #, python-brace-format
 msgid "A single character identifying the network; it is part of every address and transaction. Mainnet is `?` (63) and Testnet is `!` (33). See {ref}`Mainnet, Testnet <02_decentralchain/08_mainnet-testnet-stagenet:Chain ID>`."
-msgstr ""
+msgstr "ネットワークを識別する単一文字。アドレスとトランザクションの部分です。Mainnetは `?` (63)とTestnetは `!` (33)です。{ref}`Mainnet, Testnet <02_decentralchain/08_mainnet-testnet-stagenet:Chain ID>` を参照してください。"
 
 #: ../../06_glossary.md:6
 msgid "Account"
-msgstr ""
+msgstr "会員アカウント"
 
 #: ../../06_glossary.md:13
 #, python-brace-format
 msgid "A key pair plus everything associated with it on chain — balances, data entries, aliases and an optional script. See {ref}`Account <02_decentralchain/01_account:Account>`."
-msgstr ""
+msgstr "キーペアとチェーンに関連付けられているすべて - バランス、データエントリ、エイリアス、オプションスクリプト。{ref}`会員アカウント <02_decentralchain/01_account:Account>` を参照してください。"
 
 #: ../../06_glossary.md:9
 msgid "Address"
-msgstr ""
+msgstr "郵便番号"
 
 #: ../../06_glossary.md:16
 msgid "A Base58 string derived from a public key and the chain ID. Mainnet addresses start with `3D`, Testnet addresses with `31`."
-msgstr ""
+msgstr "パブリックキーとチェーンIDから派生するベース58文字列。Mainnetアドレスは `3D`、Testnetアドレスを `31` で起動します。"
 
 #: ../../06_glossary.md:12
 msgid "Alias"
-msgstr ""
+msgstr "アリアス"
 
 #: ../../06_glossary.md:19
 msgid "A short, human-readable name for an address."
-msgstr ""
+msgstr "アドレスの短縮、人的読めやすい名前。"
 
 #: ../../06_glossary.md:15
 msgid "Seed"
-msgstr ""
+msgstr "シード"
 
 #: ../../06_glossary.md:22
 msgid "The secret phrase from which an account's private key is derived. Never share it."
-msgstr ""
+msgstr "アカウントの秘密鍵が得られる秘密フレーズ。決して共有しません。"
 
 #: ../../06_glossary.md:18
 msgid "dApp"
-msgstr ""
+msgstr "dApp"
 
 #: ../../06_glossary.md:25
 #, python-brace-format
 msgid "A decentralized application: an account with a Ride script whose `@Callable` functions users invoke with invoke script transactions. See {ref}`Creating and Launching a dApp <04_building-apps/08_creating-and-launching-a-dapp:Creating and Launching a dApp>`."
-msgstr ""
+msgstr "分散型アプリケーション: `@Callable` は、Ride スクリプトを持つアカウントで、ユーザーは呼び出されたスクリプトトランザクションと呼び出されます。{ref}`dAppの作成と起動 <04_building-apps/08_creating-and-launching-a-dapp:Creating and Launching a dApp>` を参照してください。"
 
 #: ../../06_glossary.md:21
 msgid "Smart account"
-msgstr ""
+msgstr "スマートアカウント"
 
 #: ../../06_glossary.md:28
 #, python-brace-format
 msgid "An account with a script that must approve every transaction the account sends. See {ref}`Smart Accounts <04_building-apps/09_smart-accounts:Smart Accounts>`."
-msgstr ""
+msgstr "アカウントが送信する全てのトランザクションを承認しなければならないスクリプトを持つアカウント。{ref}`スマートアカウント <04_building-apps/09_smart-accounts:Smart Accounts>` を参照してください。"
 
 #: ../../06_glossary.md:24
 msgid "Smart asset"
-msgstr ""
+msgstr "スマートアセット"
 
 #: ../../06_glossary.md:31
 #, python-brace-format
 msgid "A token with a script that must approve every transaction involving it. See {ref}`Smart Assets <04_building-apps/10_smart-assets:Smart Assets>`."
-msgstr ""
+msgstr "すべてのトランザクションを進化させたいスクリプトを持つトークン。{ref}`スマートアセット <04_building-apps/10_smart-assets:Smart Assets>` を参照してください。"
 
 #: ../../06_glossary.md:27
 msgid "Blockchain Updates"
-msgstr ""
+msgstr "ブロックチェーンアップデート"
 
 #: ../../06_glossary.md:34
 #, python-brace-format
 msgid "A node extension that streams every block, microblock, state change and rollback over gRPC on port 6881. See {ref}`Blockchain Updates <04_building-apps/11_blockchain-updates:Blockchain Updates>`."
-msgstr ""
+msgstr "ポート6881のgRPCを上回るすべてのブロック、microblock、状態の変更およびロールバックを流すノード延長。{ref}`ブロックチェーンアップデート <04_building-apps/11_blockchain-updates:Blockchain Updates>` を参照してください。"
 
 #: ../../06_glossary.md:30
 msgid "Ride"
-msgstr ""
+msgstr "Ride"
 
 #: ../../06_glossary.md:37
 #, python-brace-format
 msgid "The statically typed, functional smart-contract language of DecentralChain. See the {ref}`Ride language <03_ride-language/index:Ride Language>` section."
-msgstr ""
+msgstr "DecentralChainの静的タイプされた、機能的なスマートコントラクト言語。{ref}`Ride言語 <03_ride-language/index:Ride Language>` セクションを参照してください。"
 
 #: ../../06_glossary.md:33
 msgid "LPoS"
-msgstr ""
+msgstr "LPoSの特長"
 
 #: ../../06_glossary.md:40
 #, python-brace-format
 msgid "Leased Proof of Stake: the consensus in which accounts can lease DCC to generating nodes. See {ref}`Node <02_decentralchain/05_node:Leased Proof of Stake>`."
-msgstr ""
+msgstr "Stake の承認された証拠:アカウントが DCC をリースしてノードを生成できるコンセンサス。{ref}`ノード <02_decentralchain/05_node:Leased Proof of Stake>` を参照してください。"
 
 #: ../../06_glossary.md:36
 msgid "NG"
-msgstr ""
+msgstr "NG"
 
 #: ../../06_glossary.md:43
 msgid "The protocol that streams transactions in microblocks between blocks."
-msgstr ""
+msgstr "ブロック間のマイクロブロックでトランザクションをストリームするプロトコル。"
 
 #: ../../06_glossary.md:39
 msgid "Generating balance"
-msgstr ""
+msgstr "バランスの発生"
 
 #: ../../06_glossary.md:46
 msgid "The balance that counts towards the chance of generating the next block, including leased DCC."
-msgstr ""
+msgstr "リースされたDCCを含む、次のブロックを生成する機会にカウントする残高。"
 
 #: ../../06_glossary.md:42
 msgid "Microblock"
-msgstr ""
+msgstr "マイクロブロック"
 
 #: ../../06_glossary.md:49
 msgid "A small batch of transactions appended to the current block before the next key block."
-msgstr ""
+msgstr "次のキーブロックの前に、現在のブロックに付属するトランザクションの小さなバッチ。"
 
 #: ../../06_glossary.md:45
 msgid "Deterministic Finality"
-msgstr ""
+msgstr "決定的フィニティ"
 
 #: ../../06_glossary.md:52
 #, python-brace-format
 msgid "Feature 25: generators endorse blocks with BLS signatures and a block is final once endorsed by two thirds of committed stake. See {ref}`Finality <02_decentralchain/09_protocol:Finality>`."
-msgstr ""
+msgstr "特徴25: BLS署名とブロックを生成し、コミットされたスクワットの2分の3によって承認されるとブロックが最終的なものです。{ref}`ファイナリティ <02_decentralchain/09_protocol:Finality>` を参照してください。"
 
 #: ../../06_glossary.md:48
 msgid "Blockchain feature"
-msgstr ""
+msgstr "ブロックチェーン機能"
 
 #: ../../06_glossary.md:55
 #, python-brace-format
 msgid "A numbered protocol change activated on a network by generator vote or network defaults. See {doc}`Features and Activation <05_node-guide/10_features-and-activation>`."
-msgstr ""
+msgstr "ジェネレータ投票またはネットワークのデフォルトでネットワーク上でアクティブにされる番号付きプロトコルの変更。{doc}`特徴および活発化 <05_node-guide/10_features-and-activation>` を参照してください。"
 
 #: ../../06_glossary.md:51
 msgid "Node"
-msgstr ""
+msgstr "ノード"
 
 #: ../../06_glossary.md:58
 msgid "Software that validates transactions, stores blocks and serves the REST API."
-msgstr ""
+msgstr "トランザクションを検証し、ブロックを保存し、REST API を実行するためのソフトウェア。"
 
 #: ../../06_glossary.md:54
 msgid "Matcher"
-msgstr ""
+msgstr "マッチング"
 
 #: ../../06_glossary.md:61
 msgid "The service that matches orders on the DecentralChain exchange."
-msgstr ""
+msgstr "DecentralChain取引所での注文と一致するサービス。"
 
 #: ../../06_glossary.md:57
 msgid "Cubensis Connect"
-msgstr ""
+msgstr "Cubensis Connect"
 
 #: ../../06_glossary.md:64
 #, python-brace-format
 msgid "DecentralChain's browser-extension wallet. See {doc}`Wallet Integration <04_building-apps/04_wallet-integration>`."
-msgstr ""
+msgstr "DecentralChainのブラウザ拡張ウォレット。{doc}`ウォレットの統合 <04_building-apps/04_wallet-integration>` を参照してください。"
 
 #: ../../06_glossary.md:60
 msgid "DecentralScan"
-msgstr ""
+msgstr "DecentralScan"
 
 #: ../../06_glossary.md:67
 msgid "The DecentralChain block explorer."
-msgstr ""
+msgstr "DecentralChainブロックエクスプローラー"
 
 #: ../../06_glossary.md:63
 msgid "Decentralite"
-msgstr ""
+msgstr "Decentralite"
 
 #: ../../06_glossary.md:70
 msgid "The smallest unit of DCC."
-msgstr ""
+msgstr "DCCの最小単位。"
 

@@ -21,267 +21,267 @@ msgstr ""
 
 #: ../../01_introduction.md:1
 msgid "Introduction"
-msgstr ""
+msgstr "Введение"
 
 #: ../../01_introduction.md:3
 msgid "How did money become the basis of trade for such a long time? To have an answer for such question we must understand what money is and the different ways money has been used through the time."
-msgstr ""
+msgstr "Как деньги стали основой торговли в течение столь длительного времени? Чтобы получить ответ на этот вопрос, мы должны понять, что такое деньги и как они использовались в течение времени."
 
 #: ../../01_introduction.md:5
 msgid "Definition of Money"
-msgstr ""
+msgstr "Определение денег"
 
 #: ../../01_introduction.md:7
 msgid "Money is often defined it by the roles it plays:"
-msgstr ""
+msgstr "Деньги часто определяются по ролям, которые они играют."
 
 #: ../../01_introduction.md:9
 msgid "It's a store of value, meaning that money allows you to defer consumption until a later date."
-msgstr ""
+msgstr "Это хранилище ценности, а это означает, что деньги позволяют отложить потребление до более позднего срока."
 
 #: ../../01_introduction.md:10
 msgid "It's a unit of account, meaning that it allows you to assign a value to different goods without having to compare them. So instead of saying that a Rolex watch is worth six cows, you can just say it (or the cows) cost $10 000."
-msgstr ""
+msgstr "Это единица учета, что означает, что она позволяет назначать стоимость различным товарам без необходимости сравнивать их. Поэтому вместо того, чтобы сказать, что часы Rolex стоят шесть коров, вы можете просто сказать, что они стоят 10 000 долларов."
 
 #: ../../01_introduction.md:11
 msgid "And it's a medium of exchange, meaning it's an easy and efficient way for different parties to trade goods and services with one another."
-msgstr ""
+msgstr "И это средство обмена, то есть простой и эффективный способ для разных сторон торговать товарами и услугами друг с другом."
 
 #: ../../01_introduction.md:13
 msgid "History of Money"
-msgstr ""
+msgstr "История денег"
 
 #: ../../01_introduction.md:15
 msgid "Even though we're able to define what money is, when it comes to its origins, money has been mum about them. For such a central element of our lives, money’s ancient roots and the reasons for its invention are unclear, most of the available knowledge is based on conjectures and logical inferences."
-msgstr ""
+msgstr "Несмотря на то, что мы можем определить, что такое деньги, когда дело доходит до их происхождения, деньги были о них. Для такого центрального элемента нашей жизни неясны древние корни денег и причины их изобретения, большая часть доступных знаний основана на догадках и логических выводах."
 
 #: ../../01_introduction.md:17
 msgid "Some economists assume that bartering of goods and services inspired money’s invention. On the other hand there are anthropologists and archaeologists contending that early states invented currency as a means of debt payment."
-msgstr ""
+msgstr "Некоторые экономисты предполагают, что бартер товаров и услуг вдохновил изобретение денег. С другой стороны, есть антропологи и археологи, которые утверждают, что ранние государства изобрели валюту как средство оплаты долга."
 
 #: ../../01_introduction.md:19
 msgid "Several investigations suggest that money independently appeared for different reasons and assumed different tangible forms in many parts of the world, starting thousands of years ago and bartering had nothing to do with it but instead, money grew out of older systems of credit and debt. In small-scale societies, debts concern obligations to others while among hunter-gatherer and farming groups daughters given away in marriage create debts that are partially repaid with goods known as bridewealth where full repayment requires that the recipient of the first bride provide a bride in return. No cash needed."
-msgstr ""
+msgstr "Несколько исследований показывают, что деньги независимо появлялись по разным причинам и принимали различные осязаемые формы во многих частях мира, начиная с тысяч лет назад, и бартер не имел к этому никакого отношения, но вместо этого деньги выросли из старых систем кредита и долга. В небольших обществах долги касаются обязательств перед другими, в то время как среди охотников-собирателей и фермерских групп дочери, отданные в браке, создают долги, которые частично погашаются товарами, известными как невеста. Наличные не нужны."
 
 #: ../../01_introduction.md:21
 msgid "Revisionists argue that a transition to a new form of money-friendly debt started at least 5,500 years ago in the agricultural states of Mesopotamia and Egypt. In Mesopotamia, the silver shekel — a lump of metal, not a coin — was a basic monetary measure. Rulers decreed that one shekel’s weight in silver was equivalent to a bushel of barley. Shekels of silver, gold and other metals were used in other ancient societies. Precise weights of shekels appear to have varied from one to the next one and therefore are difficult to pin down. Farmers were taxed to support royal lifestyles and public works, what the farmers and other commoners couldn’t pay in goods was recorded as debt in shekels. Merchants and tradespeople acquired goods from temple and palace officials on credit."
-msgstr ""
+msgstr "Ревизионисты утверждают, что переход к новой форме денежного долга начался по крайней мере 5500 лет назад в сельскохозяйственных штатах Месопотамии и Египта. В Месопотамии серебряный шекель — кусок металла, а не монета — был основной денежной мерой. Правители постановили, что вес одного шекеля в серебре эквивалентен бушелю ячменя. Шекели серебра, золота и других металлов использовались в других древних обществах. Точные веса шекелей, по-видимому, варьировались от одного к следующему и поэтому их трудно определить. Фермеры облагались налогом для поддержки королевского образа жизни и общественных работ, то, что фермеры и другие простолюдины не могли заплатить в товарах, было записано как долг в шекелях. Купцы и торговцы приобретали товары у храмовых и дворцовых чиновников в кредит."
 
 #: ../../01_introduction.md:23
 msgid "Coins stamped with images of animals or rulers, acting as denominations and guaranteeing the metal’s value, first appeared in the kingdom of Lydia around 2,600 years ago. Located in what is now Turkey, Lydia sat on the cusp between the Mediterranean and the Near East, and commerce with foreign travelers was common which was one of the major promoters for this coin mint to happen. To understand why, imagine doing a trade in the absence of money or in other words through barter. The chief problem with barter is the double coincidence of wants. Say you have a bunch of bananas and would like a pair of shoes, but it's not enough to find someone who has some shoes or someone who wants some bananas. To make the trade, you need to find someone who has shoes they're willing to trade and that wants bananas which is no easy task."
-msgstr ""
+msgstr "Монеты с изображениями животных или правителей, выступающие в качестве наименований и гарантирующие ценность металла, впервые появились в королевстве Лидия около 2600 лет назад. Расположенная в современной Турции, Лидия находилась на пороге между Средиземным морем и Ближним Востоком, и торговля с иностранными путешественниками была распространена, что было одним из основных факторов развития этого монетного двора. Чтобы понять почему, представьте себе торговлю в отсутствие денег или, другими словами, через бартер. Главная проблема бартера — двойное совпадение желаний. Скажем, у вас есть куча бананов и вы хотите пару ботинок, но недостаточно найти кого-то, у кого есть обувь или кто хочет немного бананов. Чтобы совершить сделку, вам нужно найти кого-то, у кого есть обувь, которую они готовы торговать, и кто хочет бананы."
 
 #: ../../01_introduction.md:25
 msgid "With a common currency, the task becomes easier: You just sell your bananas to someone in exchange for money, with which you then buy shoes from someone else. And if, as in Lydia, you have foreigners from whom you'd like to buy or to whom you'd like to sell, having a common medium of exchange is obviously valuable. That is, money is especially useful when dealing with people you don't know and may never see again."
-msgstr ""
+msgstr "С общей валютой задача становится проще: вы просто продаете кому-то свои бананы в обмен на деньги, с помощью которых затем покупаете обувь у кого-то другого. И если, как в Лидии, у вас есть иностранцы, у которых вы хотели бы купить или кому вы хотели бы продать, наличие общего средства обмена, очевидно, ценно. То есть деньги особенно полезны при общении с людьми, которых вы не знаете и, возможно, никогда больше не увидите."
 
 #: ../../01_introduction.md:27
 msgid "The Lydian system's breakthrough was the standardized metal coin. Made of a gold-silver alloy called electrum, one coin was exactly like another—unlike, say, cattle. Also unlike cattle, the coins didn't age or die or otherwise change over time. And they were much easier to carry around. Other kingdoms followed Lydia's example, and coins became ubiquitous throughout the Mediterranean, with kingdoms stamping their insignia on the coins they minted. This had a dual effect: it facilitated the flow of trade, and it established the authority of the state."
-msgstr ""
+msgstr "Прорывом лидийской системы стала стандартизированная металлическая монета. Изготовленная из золото-серебряного сплава, называемого электрумом, одна монета была точно такой же, как другая, в отличие, скажем, от крупного рогатого скота. Кроме того, в отличие от крупного рогатого скота, монеты не стареют, не умирают и не меняются со временем. И их было гораздо легче носить с собой. Другие королевства последовали примеру Лидии, и монеты стали повсеместными по всему Средиземноморью, а королевства штамповали свои знаки отличия на монетах, которые они чеканили. Это имело двоякий эффект: оно облегчало поток торговли и устанавливало власть государства."
 
 #: ../../01_introduction.md:29
 msgid "The spread of money throughout the Mediterranean didn't mean that it was universally used; soon after Lydia, cities and states in Greece, Persia, India and China began to strike their own coins, but even then most people were still subsistence farmers and existed largely outside the money economy. But as money became more common, it encouraged the spread of markets. Once a small part of the economy is taken over by markets and money, they tend to colonize the rest of the economy, gradually forcing out barter, feudalism, and other economic arrangements. This happens mostly because money makes market transactions so much easier and also because using money seems to redefine what people value, pushing them to view things in economic, rather than social, terms."
-msgstr ""
+msgstr "Распространение денег по всему Средиземноморью не означало, что они повсеместно использовались; вскоре после Лидии города и государства в Греции, Персии, Индии и Китае начали выпускать свои собственные монеты, но даже тогда большинство людей все еще были натуральными фермерами и существовали в основном за пределами денежной экономики. Но по мере того, как деньги становились все более распространенными, они способствовали распространению рынков. Как только небольшая часть экономики захватывается рынками и деньгами, они стремятся колонизировать остальную экономику, постепенно вытесняя бартер, феодализм и другие экономические механизмы. Это происходит главным образом потому, что деньги значительно облегчают рыночные операции, а также потому, что использование денег, кажется, переопределяет то, что люди ценят, подталкивая их рассматривать вещи в экономических, а не социальных терминах."
 
 #: ../../01_introduction.md:31
 msgid "Governments were quick to embrace hard currency because it facilitated the collection of taxes and the building of military forces, coins funded armies and wars of conquest. In the process, coins became legal tender for all sorts of transactions. Marketplaces were a result of this system, not its cause, revisionists argue."
-msgstr ""
+msgstr "Правительства быстро приняли твердую валюту, потому что это облегчило сбор налогов и строительство вооруженных сил, финансируемых монетами армий и завоевательных войн. При этом монеты стали законным платежным средством для всех видов сделок. Рынки были результатом этой системы, а не ее причиной, утверждают ревизионисты."
 
 #: ../../01_introduction.md:33
 msgid "Once the Chinese had started making comparatively inexpensive paper from natural fibers, and discovered block-printing, paper currency came into use in the country. The first known use of paper currency in China is reported from the Tang dynasty and despite the fact that scarce information remains about this early system of paper currency there's evidence that these were certificates issued by the Tang government to pay local merchants in distants parts of the empire. By using certificates, the government could avoid having to transport metal money far away. Each certificate had a certain amount of money stated on it and was redeemable for metal cash on demand in the Chinese capital. Most merchants never went through the trouble of going to the capital to get cash for their certificate, instead the certificates were used as money locally, since they were transfereable. The view of money as commodity began to shift only with the widespread adoption of paper currency."
-msgstr ""
+msgstr "Как только китайцы начали производить сравнительно недорогую бумагу из натуральных волокон и обнаружили блочное печатание, бумажная валюта стала использоваться в стране. Первое известное использование бумажной валюты в Китае сообщается из династии Тан, и несмотря на то, что мало информации об этой ранней системе бумажной валюты, есть свидетельства того, что это были сертификаты, выданные правительством Тана для оплаты местных торговцев в отдаленных частях империи. Используя сертификаты, правительство может избежать необходимости перевозить металлические деньги далеко. На каждом сертификате была указана определенная сумма денег, которую можно было выкупить за металлические деньги по требованию в китайской столице. Большинство торговцев никогда не сталкивались с трудностями при посещении столицы, чтобы получить наличные деньги за свои сертификаты, вместо этого сертификаты использовались в качестве денег на местном уровне. Взгляд на деньги как на товар начал меняться только с широким распространением бумажной валюты."
 
 #: ../../01_introduction.md:35
 msgid "Compared to traditional money made from precious metals, paper currency was easier to transport, and the use of paper currency also freed up metal that could be put to other use. In 1821, the Bank of England adopted the gold standard, promising to redeem its notes for gold upon request. As other countries followed suit, the gold standard became the general rule for developed economies. The discovery of major new gold fields over the course of the 19th century ensured that the money supply kept growing."
-msgstr ""
+msgstr "По сравнению с традиционными деньгами, сделанными из драгоценных металлов, бумажную валюту легче транспортировать, а использование бумажной валюты также освобождает металл, который можно использовать для других целей. В 1821 году Банк Англии принял золотой стандарт, пообещав выкупить свои банкноты за золото по запросу. По мере того, как другие страны следовали этому примеру, золотой стандарт стал общим правилом для развитых стран. Открытие новых крупных месторождений золота в течение 19-го века обеспечило рост денежной массы."
 
 #: ../../01_introduction.md:37
 msgid "The gold standard, as it was intended to do, brought stability to prices and was enormously beneficial to property holders and lenders. However, it also brought deflation—that is, prices generally fell—because as countries, populations and economies grew, their governments had no easy way to increase the money supply short of mining more gold, and so money in effect became more scarce. Deflation was hard on farmers and borrowers, who longed for a little inflation to help them with their debts; when money gradually loses some of its value, so, too, do people's debts."
-msgstr ""
+msgstr "Золотой стандарт, как и предполагалось, привёл к стабильности цен и был чрезвычайно выгоден владельцам недвижимости и кредиторам. Тем не менее, это также привело к дефляции, то есть цены в целом упали, потому что по мере роста стран, населения и экономики их правительства не имели простого способа увеличить денежную массу, не добыв больше золота, и поэтому деньги фактически стали более скудными. Дефляция была трудной для фермеров и заемщиков, которые жаждали небольшой инфляции, чтобы помочь им с их долгами; когда деньги постепенно теряют часть своей стоимости, так же, как и долги людей."
 
 #: ../../01_introduction.md:39
 msgid "What finally derailed the gold standard was World War I. Since governments needed more money for their militaries than they had in gold, and so they simply began printing it. And though many countries tried to return to the gold standard after the war, the Great Depression consequences made it end for good. Because of this currencies today are “fiat\" currencies, meaning they're backed by the authority of the issuing government, and nothing more."
-msgstr ""
+msgstr "Что окончательно разрушило золотой стандарт, так это Первая мировая война. Поскольку правительства нуждались в большем количестве денег для своих вооруженных сил, чем в золоте, они просто начали их печатать. И хотя многие страны пытались вернуться к золотому стандарту после войны, последствия Великой депрессии сделали его навсегда завершенным. Из-за этого валюты сегодня являются «фиатными» валютами, то есть они поддерживаются властью правительства-эмитента."
 
 #: ../../01_introduction.md:41
 msgid "In the United States, for example, that means the government accepts only dollars as payment for taxes and requires its creditors to accept dollars in payment for debts. But if people were to lose faith in the dollar and stop accepting it in everyday transactions, it would eventually become worthless. The reliance on fiat money, we're told, gives too much power to the government, which can recklessly print as much money as it wants. Yet the truth is that this has always been possible. Even with the gold standard, governments revalued their currencies from time to time, in effect dictating a new price for gold, or they ignored the standard when it proved too limiting, as during the First World War. What's more, the notion that gold is somehow more “real\" than paper is, well, a mirage. Gold is valuable because we've collectively decided that it's valuable and that we'll accept goods and services in exchange for it. And that's no different, ultimately, from our collective decision that colorful rectangles of paper are valuable and that we'll accept goods and services in exchange for them."
-msgstr ""
+msgstr "Например, в Соединенных Штатах это означает, что правительство принимает только доллары в качестве оплаты налогов и требует от своих кредиторов принимать доллары в качестве оплаты долгов. Но если люди потеряют веру в доллар и перестанут принимать его в повседневных транзакциях, он в конечном итоге станет бесполезным. Нам говорят, что зависимость от бумажных денег дает слишком много власти правительству, которое может безрассудно печатать столько денег, сколько захочет. Но правда в том, что это всегда было возможно. Даже при золотом стандарте правительства время от времени переоценивали свои валюты, фактически диктуя новую цену на золото, или игнорировали этот стандарт, когда он оказался слишком ограничивающим, как во время Первой мировой войны. Более того, представление о том, что золото каким-то образом более «реально», чем бумага, является миражом. Золото ценно, потому что мы коллективно решили, что оно ценно и что мы будем принимать товары и услуги в обмен на него. И это ничем не отличается от нашего коллективного решения о том, что красочные прямоугольники бумаги ценны и что мы будем принимать товары и услуги в обмен на них."
 
 #: ../../01_introduction.md:43
 msgid "Difference Between Money and Currency"
-msgstr ""
+msgstr "Разница между деньгами и валютой"
 
 #: ../../01_introduction.md:45
 msgid "While most of the time, the terms \"money\" and \"currency\" are used interchangeably, there are some suggestions that these terms are not identical terms; these suggest that money is inherently an intangible concept, while currency is the physical or tangible manifestation of the intangible concept of money. By extension, according to this suggestions, money cannot be touched or smelled. Currency is the coin, note, or object that is presented as the physical form of money. The basic form of money is numbers; today some of the basic forms of currency are paper notes, coins, or plastic cards."
-msgstr ""
+msgstr "Хотя в большинстве случаев термины «деньги» и «валюта» используются взаимозаменяемо, есть некоторые предположения, что эти термины не являются идентичными; они предполагают, что деньги по своей сути являются нематериальным понятием, в то время как валюта является физическим или материальным проявлением нематериального понятия денег. В соответствии с этим предложением, деньги не могут быть затронуты или учуяны. Валюта — это монета, банкнота или предмет, который представлен как физическая форма денег. Основной формой денег являются цифры; сегодня некоторые из основных форм валюты - бумажные банкноты, монеты или пластиковые карты."
 
 #: ../../01_introduction.md:47
 msgid "The powerful combination of computers and telecommunications, of smartphones and social media, of cryptography and virtual economies makes it seem like it's a possibility to create a cashless society. What matters most about money is not what it is, but what it does. After all, people will use the currencies that lubricate commerce, allow people to exchange goods and services, and thus encourage people to work and create. Money, whether it's represented by a metal coin, a shell or a piece of paper, doesn't always have value. Its value depends on the importance that people place on it—as a store of value, a unit of account, and a medium of exchange. Money is valuable merely because everyone knows that it will be accepted as a form of payment. However, throughout history, both the usage and the form of money have evolved."
-msgstr ""
+msgstr "Мощное сочетание компьютеров и телекоммуникаций, смартфонов и социальных сетей, криптографии и виртуальной экономики создает впечатление, что это возможность создать безналичное общество. Самое главное в деньгах не то, что они есть, а то, что они делают. В конце концов, люди будут использовать валюты, которые смазывают торговлю, позволяют людям обмениваться товарами и услугами и тем самым побуждают людей работать и творить. Деньги, будь то металлическая монета, оболочка или лист бумаги, не всегда имеют ценность. Его ценность зависит от того, какое значение люди придают ему — как средству сбережения, расчетной единице и средству обмена. Деньги ценны только потому, что все знают, что они будут приняты в качестве формы оплаты. Однако на протяжении всей истории, как использование, так и форма денег развивались."
 
 #: ../../01_introduction.md:49
 msgid "Definition of Cryptocurrencies"
-msgstr ""
+msgstr "Определение криптовалют"
 
 #: ../../01_introduction.md:51
 msgid "Cryptocurrency is a digital or virtual form of currency; meaning it's a representations of value, that uses cryptography to secure and verify transactions as well as to control the creation of new units."
-msgstr ""
+msgstr "Криптовалюта — это цифровая или виртуальная форма валюты; то есть это представление стоимости, которое использует криптографию для защиты и проверки транзакций, а также для управления созданием новых единиц."
 
 #: ../../01_introduction.md:53
 msgid "Cryptocurrencies operate on systems that allow for secure online transactions to take place without the need for any central banks or intermediaries. Instead, transactions are recorded on a decentralized and distributed public ledger (DLT) called a blockchain, which is maintained by a network of computers around the world that record all transactions in a secure and transparent manner."
-msgstr ""
+msgstr "Криптовалюты работают на системах, которые позволяют проводить безопасные онлайн-транзакции без необходимости в каких-либо центральных банках или посредниках. Вместо этого транзакции регистрируются в децентрализованной и распределенной публичной книге (DLT), называемой блокчейном, которая поддерживается сетью компьютеров по всему миру, которые записывают все транзакции безопасным и прозрачным образом."
 
 #: ../../01_introduction.md:55
 msgid "Definition of Blockchain Technology"
-msgstr ""
+msgstr "Определение технологии Blockchain"
 
 #: ../../01_introduction.md:57
 msgid "Blockchain technology is crucial to cryptocurrencies as it allows transactions to be processed and authenticated without any central authority. Instead of relying on a single, centralized authority to manage and store the data, blockchains rely on a network of computers to validate and record transactions, which makes them more secure and resistant to tampering or hacking. A blockchain offers a commonly agreed record of truth to multiple, mutually distrusting participants in an economic system since it keeps track of cryptocurrency transactions which are grouped into blocks. Each block is cryptographically linked to the previous one so as new blocks are added the older blocks become more difficult to modify. New blocks are replicated across all copies of the blockchain within the network, and any conflicts are resolved automatically using established rules."
-msgstr ""
+msgstr "Технология блокчейн имеет решающее значение для криптовалют, поскольку она позволяет обрабатывать и аутентифицировать транзакции без какого-либо центрального органа. Вместо того, чтобы полагаться на единый централизованный орган для управления и хранения данных, блокчейны полагаются на сеть компьютеров для проверки и записи транзакций, что делает их более безопасными и устойчивыми к взлому или взлому. Блокчейн предлагает общепринятую запись истины нескольким, взаимно недоверчивым участникам экономической системы, поскольку он отслеживает транзакции с криптовалютами, которые группируются в блоки. Каждый блок криптографически связан с предыдущим, поэтому при добавлении новых блоков старые блоки становится все труднее модифицировать. Новые блоки реплицируются на всех копиях блокчейна в сети, и любые конфликты решаются автоматически с помощью установленных правил."
 
 #: ../../01_introduction.md:59
 msgid "A blockchain is spread across nodes usually in different locations. This is one of the key ideas about blockchain, and gives it its unique decentralized features. Because of this, anyone can submit information to be stored onto a blockchain and therefore it is important that there are processes in place that can ensure everyone agrees on what information to add and what to discard. Different networks use different methods but this procesess together are what's called a consensus protocol and they are essentially the rules by which a network operates."
-msgstr ""
+msgstr "Блокчейн распространяется по узлам, как правило, в разных местах. Это одна из ключевых идей блокчейна, которая придает ему уникальные децентрализованные функции. Из-за этого каждый может отправить информацию, которая будет храниться в блокчейне, и поэтому важно, чтобы были процессы, которые могут гарантировать, что все согласны с тем, какую информацию добавить и от чего отказаться. Различные сети используют разные методы, но этот процесс вместе называется протоколом консенсуса, и это, по сути, правила, по которым работает сеть."
 
 #: ../../01_introduction.md:61
 msgid "Definition of Consensus Protocol"
-msgstr ""
+msgstr "Определение Консенсусного протокола"
 
 #: ../../01_introduction.md:63
 msgid "Consensus is a pervasive problem in many areas of human endeavor; consensus is the process of agreeing to one of several alternates proposed by a number of agents. Consensus can be defined as an agreement, protocols are rules which describe how an activity should be performed. Simply put, consensus protocols could be viewed as “agreement rules”."
-msgstr ""
+msgstr "Консенсус является повсеместной проблемой во многих областях человеческой деятельности; консенсус — это процесс согласования с одним из нескольких альтернатив, предложенных рядом агентов. Консенсус можно определить как соглашение, протоколы — это правила, которые описывают, как должна выполняться деятельность. Проще говоря, протоколы консенсуса можно рассматривать как «правила соглашения»."
 
 #: ../../01_introduction.md:65
 msgid "A consensus protocol (also known as consensus mechanism or consensus algorithm) is used to achieve the necessary agreement on a single data value or a single state of the distributed ledger at any given time. It provides a method of review and confirmation of what data should be added to a blockchain's record. Because blockchain networks typically don't have a centralized authority dictating who is right or wrong, nodes on a blockchain all must agree on the state of the network, following the predefined rules, or protocol."
-msgstr ""
+msgstr "Консенсусный протокол (также известный как механизм консенсуса или алгоритм консенсуса) используется для достижения необходимого соглашения о едином значении данных или одном состоянии распределенной книги в любой момент времени. Он предоставляет метод обзора и подтверждения того, какие данные должны быть добавлены в запись блокчейна. Поскольку блокчейн-сети обычно не имеют централизованного органа, который диктует, кто прав или неправ, все узлы в блокчейне должны согласовывать состояние сети, следуя заранее определенным правилам или протоколу."
 
 #: ../../01_introduction.md:67
 msgid "Current State of Blockchain Technology"
-msgstr ""
+msgstr "Текущее состояние технологии блокчейн"
 
 #: ../../01_introduction.md:69
 msgid "Bitcoin"
-msgstr ""
+msgstr "биткойн"
 
 #: ../../01_introduction.md:71
 msgid "The Bitcoin blockchain was first introduced in 2008 through a white paper by its pseudonymous creator Satoshi Nakamoto as a peer-to-peer electronic cash system that allows users to send payments directly to each other using Bitcoin (BTC), the blockchain's native currency, without the need for intermediaries such as financial institutions. The first Bitcoin transaction took place in January 2009, when Satoshi Nakamoto sent 10 Bitcoins to the first person who downloaded the software. The first commercial transaction using Bitcoin took place in 2010, when a programmer named Laszlo Hanyecz ordered two pizzas by paying 10,000 Bitcoins to an intermediary."
-msgstr ""
+msgstr "Блокчейн биткоина был впервые представлен в 2008 году через белую книгу его псевдонимным создателем Сатоши Накамото как одноранговая электронная денежная система, которая позволяет пользователям отправлять платежи непосредственно друг другу с использованием биткойнов (BTC), родной валюты блокчейна, без необходимости посредников, таких как финансовые учреждения. Первая транзакция Bitcoin состоялась в январе 2009 года, когда Сатоши Накамото отправил 10 биткойнов первому человеку, который загрузил программное обеспечение. Первая коммерческая транзакция с использованием биткоина состоялась в 2010 году, когда программист по имени Ласло Ханьец заказал две пиццы, заплатив 10 000 биткойнов посреднику."
 
 #: ../../01_introduction.md:73
 msgid "Bitcoin uses a proof of work (PoW) consensus protocol, in which miners compete to solve complex mathematical equations using their computing power. The first miner who succeeds in solving the cryptographic puzzle adds the latest block of transactions to the blockchain and receives rewards in the form of newly minted coins and transaction fees. This process is energy-intensive and was designed to be difficult on purpose to \"prove\" that participants have done the \"work\" and are eligible to add a new block to the blockchain."
-msgstr ""
+msgstr "Биткойн использует протокол консенсуса Proof of Work (PoW), в котором майнеры конкурируют за решение сложных математических уравнений с использованием своих вычислительных мощностей. Первый майнер, которому удалось решить криптографическую головоломку, добавляет в блокчейн последний блок транзакций и получает вознаграждения в виде вновь отчеканенных монет и комиссий за транзакции. Этот процесс является энергоемким и был разработан специально для того, чтобы «доказать», что участники выполнили «работу» и имеют право добавить новый блок в блокчейн."
 
 #: ../../01_introduction.md:75
 msgid "The scripting language used in Bitcoin transactions is called Script. It is used almost exclusively to define how outputs can be spent and is responsible for enforcing the rules that govern Bitcoin transactions. In other words, Script determines who the BTC was sent to, how much was sent, and under what conditions it can be spent."
-msgstr ""
+msgstr "Язык сценариев, используемый в транзакциях Bitcoin, называется Script. Он используется почти исключительно для определения того, как могут быть потрачены выходные данные, и отвечает за соблюдение правил, регулирующих транзакции биткойнов. Другими словами, Script определяет, кому был отправлен BTC, сколько было отправлено и при каких условиях оно может быть потрачено."
 
 #: ../../01_introduction.md:77
 msgid "Ethereum"
-msgstr ""
+msgstr "Эфир"
 
 #: ../../01_introduction.md:79
 msgid "Ethereum is a decentralized blockchain platform that revolutionized the way applications are built and executed. Founded in 2015 by co-founder Vitalik Buterin, who published its white paper in 2013, Ethereum offers a range of features that go beyond those of Bitcoin, including the possibility to create new cryptocurrencies and the ability to execute smart contracts, which are self-executing agreements encoded onto the blockchain, with the terms of the agreement between buyer and seller being directly written into lines of code without the need for intermediaries all while enforcing the negotiation or performance of the contract automatically. By enabling the execution of smart contracts, Ethereum opens up the possibility of creating decentralized applications (DApps), which operate transparently and independently without any central authority."
-msgstr ""
+msgstr "Ethereum — это децентрализованная блокчейн-платформа, которая произвела революцию в создании и исполнении приложений. Основанная в 2015 году соучредителем Виталиком Бутериным, который опубликовал свою Белую книгу в 2013 году, Ethereum предлагает ряд функций, выходящих за рамки Биткойна, включая возможность создавать новые криптовалюты и возможность выполнять смарт-контракты, которые являются самоисполняющимися соглашениями, закодированными на блокчейне, причем условия соглашения между покупателем и продавцом напрямую записываются в строки кода без необходимости посредников при обеспечении переговоров или выполнения контракта автоматически. Включая выполнение смарт-контрактов, Ethereum открывает возможность создания децентрализованных приложений (DApps), которые работают прозрачно и независимо без какого-либо центрального органа."
 
 #: ../../01_introduction.md:81
 msgid "Like Bitcoin, Ethereum initially used a proof-of-work (PoW) consensus protocol, similar to Bitcoin, but it has undergone a major upgrade that moved it to a proof-of-stake (PoS) consensus protocol. Unlike Proof of Work (PoW) consensus models, where miners' ability to validate block transactions is based on their hardware's computing power, PoS models assign the task of validating new blocks based on the size of the node's stake, with larger stakes having a higher likelihood of producing the next block. The PoS system aims to provide a more energy-efficient alternative to PoW while still maintaining the security of the blockchain. This upgrade on the concensus protocol aims to increase efficiency, security, and reduce environmental impact by eliminating the need for the intensive computational power that PoW requires."
-msgstr ""
+msgstr "Как и Биткойн, Ethereum первоначально использовал протокол консенсуса Proof-of-Work (PoW), похожий на Bitcoin, но он претерпел серьезное обновление, которое переместило его в протокол консенсуса Proof-of-Stake (PoS). В отличие от консенсусных моделей Proof of Work (PoW), где способность майнеров проверять транзакции блоков основана на вычислительной мощности их оборудования, модели PoS поручают задачу проверки новых блоков на основе размера доли узла с более крупными ставками, имеющими более высокую вероятность создания следующего блока. Система PoS призвана обеспечить более энергоэффективную альтернативу PoW, сохраняя при этом безопасность блокчейна. Это обновление протокола Concensus направлено на повышение эффективности, безопасности и снижение воздействия на окружающую среду за счет устранения необходимости в интенсивной вычислительной мощности, которая требуется PoW."
 
 #: ../../01_introduction.md:83
 msgid "The blockchain's native currency is called Ether or ETH. Ether is used mainly for two purposes—it is traded as a digital currency on exchanges in the same fashion as other cryptocurrencies, and it is used on the Ethereum network to run applications. Therefore all decentralized applications built on Ethereum allow Ether and other crypto assets to be used in a plethora of different ways including as collateral for loans or be lent out to borrowers to earn interest. Collateral refers to assets pledged as security for repayment of a loan."
-msgstr ""
+msgstr "Родная валюта блокчейна называется Ether или ETH. Эфир используется в основном для двух целей — он торгуется как цифровая валюта на биржах таким же образом, как и другие криптовалюты, и используется в сети Ethereum для запуска приложений. Таким образом, все децентрализованные приложения, построенные на Ethereum, позволяют использовать эфир и другие криптоактивы множеством различных способов, в том числе в качестве обеспечения для кредитов или ссужаться заемщикам для получения процентов. Залог относится к активам, заложенным в качестве обеспечения для погашения кредита."
 
 #: ../../01_introduction.md:85
 msgid "Ethereum offers multiple languages for programmers to develop smart contracts. The two most active and maintained languages are:"
-msgstr ""
+msgstr "Ethereum предлагает несколько языков для разработки смарт-контрактов. Два наиболее активных и поддерживаемых языка:"
 
 #: ../../01_introduction.md:87
 msgid "Solidity"
-msgstr ""
+msgstr "твердость"
 
 #: ../../01_introduction.md:88
 msgid "Vyper"
-msgstr ""
+msgstr "Выпер"
 
 #: ../../01_introduction.md:90
 msgid "DecentralChain"
-msgstr ""
+msgstr "DecentralChain"
 
 #: ../../01_introduction.md:92
 msgid "DecentralChain is a cutting-edge, secure and efficient blockchain ecosystem empowering smart contract creation, decentralized application (DApps) development and a thriving decentralized finance (DeFi) community. It utilizes a consensus protocol called Leased Proof of Stake (LPoS) which aims to improve upon traditional Proof of Stake (PoS) by allowing users to lease their stakes to other users, which increases the latter's ability to produce new blocks. In return, the lender receives a percentage of the transaction fees earned by the validator. This leasing mechanism aims to address the possible centralization problem in traditional PoS models where a few large stakeholders control a significant portion of the network, and the decision-making power is concentrated in the hands of a small group of individuals or entities while at the same time allowing all users to earn rewards, extending the ability to participate in the network to not only minority stakeholders but also users who just want to lease their stakes to other users."
-msgstr ""
+msgstr "DecentralChain - это передовая, безопасная и эффективная экосистема блокчейна, расширяющая возможности создания смарт-контрактов, разработки децентрализованных приложений (DApps) и процветающего децентрализованного финансового сообщества (DeFi). Он использует консенсусный протокол под названием Leased Proof of Stake (LPoS), который направлен на улучшение традиционного Proof of Stake (PoS), позволяя пользователям сдавать свои доли другим пользователям, что увеличивает способность последних производить новые блоки. Взамен кредитор получает процент от комиссии за транзакцию, полученной валидатором. Этот механизм лизинга направлен на решение возможной проблемы централизации в традиционных моделях PoS, где несколько крупных заинтересованных сторон контролируют значительную часть сети, а полномочия по принятию решений сосредоточены в руках небольшой группы физических или юридических лиц, в то же время позволяя всем пользователям получать вознаграждения, расширяя возможность участия в сети не только для миноритарных заинтересованных сторон, но и для пользователей, которые просто хотят сдавать свои доли другим пользователям."
 
 #: ../../01_introduction.md:94
 msgid "DecentralChain offers a unique approach to decentralized application development by avoiding high gas fees for all transactions. The blockchain's native language, called Ride, is a non-Turing-complete language, which helps keep the system secure and predictable. Ride allows for the creation of smart contracts, which are self-executing agreements written in code that run without a central entity behind them. This provides a platform for decentralized applications (DApps), which are applications that work without a central authority. DecentralChain's use of Ride and LPoS helps to ensure the stability and security of the network, making it an attractive option for decentralized application development."
-msgstr ""
+msgstr "DecentralChain предлагает уникальный подход к разработке децентрализованных приложений, избегая высоких сборов за газ для всех транзакций. Родной язык блокчейна, называемый Ride, является неполным языком Turing, который помогает поддерживать безопасность и предсказуемость системы. Ride позволяет создавать смарт-контракты, которые являются самоисполняющимися соглашениями, написанными в коде, которые работают без центрального субъекта. Это обеспечивает платформу для децентрализованных приложений (DApps), которые работают без центрального органа. Использование DecentralChain в Ride и LPoS помогает обеспечить стабильность и безопасность сети, что делает ее привлекательным вариантом для децентрализованной разработки приложений."
 
 #: ../../01_introduction.md:96
 msgid "DecentralChain Ecosystem"
-msgstr ""
+msgstr "Экосистема DecentralChain"
 
 #: ../../01_introduction.md:98
 msgid "The DecentralChain ecosystem enables secure communication and interoperability between different blockchain networks. The ecosystem uses protocols to facilitate the transfer of assets and information between blockchain networks, as well as incentivize sustainability by reducing carbon emissions per transaction and generating carbon credits. Additionally, the ecosystem encourages carbon sequestration, where the sequestered carbon is tokenized and can be traded on a blockchain platform. There is also a decentralized wallet and exchange built on the DecentralChain network that offers various benefits, such as fast execution rates, multi-chain capability, low fees, and interoperability."
-msgstr ""
+msgstr "Экосистема DecentralChain обеспечивает безопасную связь и взаимодействие между различными блокчейн-сетями. Экосистема использует протоколы для облегчения передачи активов и информации между блокчейн-сетями, а также стимулирования устойчивости за счет сокращения выбросов углерода на транзакцию и получения углеродных кредитов. Кроме того, экосистема поощряет секвестрацию углерода, где секвестрированный углерод токенизируется и может торговаться на блокчейн-платформе. Существует также децентрализованный кошелек и биржа, построенная на сети DecentralChain, которая предлагает различные преимущества, такие как быстрые скорости исполнения, многоцепочечные возможности, низкие комиссии и совместимость."
 
 #: ../../01_introduction.md:100
 msgid "Here are some of our most visited websites:"
-msgstr ""
+msgstr "Вот некоторые из наших самых посещаемых сайтов:"
 
 #: ../../01_introduction.md:110
 msgid "DecentralChain Website"
-msgstr ""
+msgstr "Сайт DecentralChain"
 
 #: ../../01_introduction.md:121
 msgid "Decentral Exchange"
-msgstr ""
+msgstr "Децентральный обмен"
 
 #: ../../01_introduction.md:132
 msgid "Decentral Scan"
-msgstr ""
+msgstr "Децентральное сканирование"
 
 #: ../../01_introduction.md:107
 msgid "Wallet and Exchange"
-msgstr ""
+msgstr "Кошелек и обмен"
 
 #: ../../01_introduction.md:109
 msgid "[Decentral.Exchange](<https://decentral.exchange/>) is an all-in-one platform that combines the features of a wallet, decentralized exchange, and cryptocurrency management tool into a single, seamless platform. Built on the DecentralChain blockchain, this platform offers numerous benefits to its users, including fast execution rates, multi-chain capability, low fees, and interoperability."
-msgstr ""
+msgstr "[Decentral.Exchange](<https://decentral.exchange/>) - это платформа «все в одном», которая объединяет функции кошелька, децентрализованного обмена и инструмента управления криптовалютами в единую бесшовную платформу. Построенная на блокчейне DecentralChain, эта платформа предлагает множество преимуществ для своих пользователей, включая быструю скорость исполнения, многоцепочечную возможность, низкие комиссии и совместимость."
 
 #: ../../01_introduction.md:111
 msgid "One of the most significant advantages of decentralized exchanges is that they are not controlled by any central authority, giving users complete control over their assets. Unlike centralized exchanges, there is no risk of funds being frozen or confiscated by a centralized entity. With Decentral.Exchange, users can also enjoy enhanced security, as their private keys are stored locally on their device, reducing the risk of cybercrime. Decentralized exchanges also provide access to a wider range of assets, thanks to the absence of restrictions on the number of tokens that can be traded. Decentral.Exchange takes this further with its multi-chain capability, allowing users to trade tokens across different blockchains seamlessly. Decentral.Exchange's interoperability enables users to trade tokens across various chains and different decentralized exchanges, making it possible to access a broader range of assets effortlessly."
-msgstr ""
+msgstr "Одним из наиболее значительных преимуществ децентрализованных бирж является то, что они не контролируются каким-либо центральным органом, предоставляя пользователям полный контроль над своими активами. В отличие от централизованных бирж, нет риска замораживания или конфискации средств централизованной организацией. С Decentral.Exchange пользователи также могут пользоваться повышенной безопасностью, поскольку их закрытые ключи хранятся локально на их устройстве, что снижает риск киберпреступлений. Децентрализованные биржи также предоставляют доступ к более широкому спектру активов, благодаря отсутствию ограничений на количество токенов, которыми можно торговать. Decentral.Exchange продвигает это дальше с его многоцепочечной возможностью, позволяя пользователям беспрепятственно торговать токенами в разных блокчейнах. Взаимодействие Decentral.Exchange позволяет пользователям торговать токенами в различных цепочках и на разных децентрализованных биржах, что позволяет легко получить доступ к более широкому спектру активов."
 
 #: ../../01_introduction.md:113
 msgid "One of the key selling points of Decentral.Exchange is its low fees, which sets it apart from traditional centralized exchanges that often charge exorbitant fees. The absence of intermediaries means that users can keep more of their profits, making trading more accessible to everyone. In the DecentralChain ecosystem, having a native decentralized exchange is essential, as it facilitates easy buying and selling of DecentralChain tokens within the ecosystem. Additionally, project participants can create their tokens and trade them on the exchange. Decentral.Exchange also enables users to send and receive coins without the need for a centralized intermediary."
-msgstr ""
+msgstr "Одним из ключевых пунктов продаж Decentral.Exchange является его низкая плата, которая отличает его от традиционных централизованных бирж, которые часто взимают непомерные сборы. Отсутствие посредников означает, что пользователи могут сохранить большую часть своей прибыли, делая торговлю более доступной для всех. В экосистеме DecentralChain необходим собственный децентрализованный обмен, поскольку он облегчает покупку и продажу токенов DecentralChain в экосистеме. Кроме того, участники проекта могут создавать свои токены и торговать ими на бирже. Decentral.Exchange также позволяет пользователям отправлять и получать монеты без необходимости централизованного посредника."
 
 #: ../../01_introduction.md:115
 msgid "Decentral.Exchange is at the forefront of the future of crypto trading, providing users with a wide range of benefits that centralized exchanges cannot match. With its native blockchain, DecentralChain, Decentral.Exchange is ideally positioned to revolutionize the crypto industry and redefine the way we trade cryptocurrencies."
-msgstr ""
+msgstr "Decentral.Exchange находится на переднем крае будущего криптотрейдинга, предоставляя пользователям широкий спектр преимуществ, с которыми не могут сравниться централизованные биржи. С его родным блокчейном DecentralChain, Decentral.Exchange идеально подходит для революции в криптоиндустрии и переопределения того, как мы торгуем криптовалютами."
 
 #: ../../01_introduction.md:117
 msgid "Blockchain Explorer"
-msgstr ""
+msgstr "Blockchain Explorer"
 
 #: ../../01_introduction.md:119
 msgid "[DecentralScan.com](<https://decentralscan.com/>) is the official block explorer of the DecentralChain blockchain. It is a powerful tool that allows users to view, track, and analyze transactions on the DecentralChain blockchain. The block explorer provides a user-friendly interface that simplifies the navigation of the complex data stored on the blockchain."
-msgstr ""
+msgstr "[DecentralScan.com](<https://decentralscan.com/>) является официальным исследователем блоков блокчейна DecentralChain. Это мощный инструмент, который позволяет пользователям просматривать, отслеживать и анализировать транзакции на блокчейне DecentralChain. Блок-исследователь предоставляет удобный интерфейс, который упрощает навигацию по сложным данным, хранящимся в блокчейне."
 
 #: ../../01_introduction.md:121
 msgid "One of the key benefits of DecentralScan.com is its ability to provide transparency to the DecentralChain ecosystem. It enables users to view all the transactions that have occurred on the blockchain in real-time, including the number of DecentralCoins (DCC) transferred, the addresses involved in the transaction, and the transaction timestamp. This makes it easy to track the movement of DCC and understand how the ecosystem is being used."
-msgstr ""
+msgstr "Одним из ключевых преимуществ DecentralScan.com является его способность обеспечивать прозрачность экосистемы DecentralChain. Он позволяет пользователям просматривать все транзакции, которые произошли на блокчейне в режиме реального времени, включая количество переданных DecentralCoins (DCC), адреса, участвующие в транзакции, и временную метку транзакции. Это позволяет легко отслеживать движение DCC и понимать, как используется экосистема."
 
 #: ../../01_introduction.md:123
 msgid "The block explorer is also valuable in its ability to provide detailed information about the nodes in the network. Users can view the current number of nodes, their geographical distribution, and information about each node, such as its uptime and the number of blocks it has mined. This information is essential for the DecentralChain ecosystem, as it allows users to view the distribution of the network and understand the ecosystem's health."
-msgstr ""
+msgstr "Блок-исследователь также ценен своей способностью предоставлять подробную информацию о узлах в сети. Пользователи могут просматривать текущее количество узлов, их географическое распределение и информацию о каждом узле, такую как время безотказной работы и количество блоков, которые он добыл. Эта информация имеет важное значение для экосистемы DecentralChain, поскольку она позволяет пользователям просматривать распределение сети и понимать здоровье экосистемы."
 
 #: ../../01_introduction.md:125
 msgid "In addition to tracking transactions and nodes, the block explorer also offers users a detailed view of the smart contract deployment on the blockchain. This is particularly useful for developers and businesses building on the DecentralChain blockchain, as it enables them to view and analyze deployed smart contracts, making it easier to identify bugs or potential vulnerabilities in the contract code."
-msgstr ""
+msgstr "В дополнение к отслеживанию транзакций и узлов, проводник блоков также предлагает пользователям подробное представление о развертывании смарт-контрактов в блокчейне. Это особенно полезно для разработчиков и компаний, использующих блокчейн DecentralChain, поскольку позволяет просматривать и анализировать развернутые смарт-контракты, что облегчает выявление ошибок или потенциальных уязвимостей в коде контракта."
 
 #: ../../01_introduction.md:127
 msgid "Furthermore, the block explorer plays a vital role in ensuring the security of the DecentralChain ecosystem. By providing detailed information about transactions and nodes, it makes it easier for users to identify suspicious activity or potential security threats. The block explorer can also be used to track the movement of coins that have been stolen or lost, making it easier to recover them."
-msgstr ""
+msgstr "Кроме того, блок-исследователь играет жизненно важную роль в обеспечении безопасности экосистемы DecentralChain. Предоставляя подробную информацию о транзакциях и узлах, пользователи могут легко определить подозрительную активность или потенциальные угрозы безопасности. Блок-исследователь также может быть использован для отслеживания движения монет, которые были украдены или потеряны, что облегчает их восстановление."
 
 #: ../../01_introduction.md:129
 msgid "Inter-Chain Gateway Protocol"
@@ -289,119 +289,119 @@ msgstr ""
 
 #: ../../01_introduction.md:131
 msgid "The DecentralChain Inter-Chain Gateway is a blockchain mechanism designed to enable secure communication and interoperability between different blockchain networks. This is achieved by creating a decentralized network of nodes that utilize smart contract technology to validate and process transactions between different blockchains."
-msgstr ""
+msgstr "DecentralChain Inter-Chain Gateway — это блокчейн-механизм, предназначенный для обеспечения безопасной связи и взаимодействия между различными сетями блокчейна. Это достигается путем создания децентрализованной сети узлов, которые используют технологию смарт-контрактов для проверки и обработки транзакций между различными блокчейнами."
 
 #: ../../01_introduction.md:133
 msgid "One major use case of the gateway is the ability to transfer assets between different blockchain networks. For example, if you hold Bitcoin but want to use it on another blockchain network, such as DecentralChain, the gateway can allow you to transfer your Bitcoin to the DecentralChain network, where it is converted into a form that is compatible with the DecentralChain blockchain."
-msgstr ""
+msgstr "Одним из основных вариантов использования шлюза является возможность передачи активов между различными сетями блокчейна. Например, если вы держите биткойн, но хотите использовать его в другой блокчейн-сети, такой как DecentralChain, шлюз может позволить вам перевести свой биткойн в сеть DecentralChain, где он преобразуется в форму, совместимую с блокчейном DecentralChain."
 
 #: ../../01_introduction.md:135
 msgid "In addition, the gateway facilitates the sharing of information between different blockchain networks. By creating a decentralized oracle network, smart contracts on different blockchain networks can access and utilize external data, enabling the creation of decentralized applications that use data from multiple sources and blockchain networks."
-msgstr ""
+msgstr "Кроме того, шлюз облегчает обмен информацией между различными блокчейн-сетями. Создавая децентрализованную сеть оракулов, смарт-контракты в различных блокчейн-сетях могут получать доступ и использовать внешние данные, что позволяет создавать децентрализованные приложения, использующие данные из нескольких источников и блокчейн-сетей."
 
 #: ../../01_introduction.md:137
 msgid "To ensure the network's security, the gateway uses smart contract technology with predefined rules and conditions that are automatically executed when specific conditions are met. These conditions include input validation and access controls to ensure that only authorized parties can access and utilize the network's information."
-msgstr ""
+msgstr "Для обеспечения безопасности сети шлюз использует технологию смарт-контрактов с заранее определенными правилами и условиями, которые автоматически выполняются при выполнении конкретных условий. Эти условия включают в себя проверку ввода и контроль доступа, чтобы гарантировать, что только уполномоченные стороны могут получить доступ и использовать информацию сети."
 
 #: ../../01_introduction.md:139
 msgid "Proof of Incentivized Sustainability Protocol"
-msgstr ""
+msgstr "Доказательство протокола о стимулируемой устойчивости"
 
 #: ../../01_introduction.md:141
 msgid "As society becomes increasingly aware of the impact of climate change, businesses and individuals are looking for ways to reduce their carbon footprint. In the realm of blockchain technology, the high energy consumption and resulting carbon emissions of Bitcoin transactions are particularly problematic. However, the DecentralChain blockchain presents a solution to this problem through the use of its proof of incentivized sustainability protocol."
-msgstr ""
+msgstr "По мере того, как общество все больше осознает влияние изменения климата, предприятия и частные лица ищут способы уменьшить свой углеродный след. В области технологии блокчейна высокое потребление энергии и связанные с этим выбросы углерода в транзакциях биткойнов особенно проблематичны. Тем не менее, блокчейн DecentralChain предлагает решение этой проблемы с помощью протокола стимулирования устойчивости."
 
 #: ../../01_introduction.md:143
 msgid "The traditional Bitcoin blockchain consumes a significant amount of energy for each transaction, releasing large amounts of carbon emissions into the atmosphere. In contrast, the DecentralChain blockchain utilizes a proof of stake protocol which is more energy efficient, resulting in significantly lower carbon emissions per transaction."
-msgstr ""
+msgstr "Традиционный блокчейн Биткойна потребляет значительное количество энергии для каждой транзакции, выделяя большое количество выбросов углерода в атмосферу. В отличие от этого, блокчейн DecentralChain использует протокол proof of stake, который является более энергоэффективным, что приводит к значительному снижению выбросов углерода в транзакции."
 
 #: ../../01_introduction.md:145
 msgid "The DecentralChain blockchain generates carbon credits through the proof of incentivized sustainability protocol. Every Bitcoin transaction on the DecentralChain blockchain creates new carbon credits, which can be sold or used to offset the carbon emissions of other activities. DecentralChain shares a percentage of these carbon credits as incentives to node owners who host their nodes on eco-friendly servers."
-msgstr ""
+msgstr "Блокчейн DecentralChain генерирует углеродные кредиты с помощью протокола стимулирования устойчивости. Каждая транзакция Bitcoin на блокчейне DecentralChain создает новые углеродные кредиты, которые могут быть проданы или использованы для компенсации выбросов углерода от других видов деятельности. DecentralChain разделяет процент этих углеродных кредитов в качестве стимулов для владельцев узлов, которые размещают свои узлы на экологически чистых серверах."
 
 #: ../../01_introduction.md:147
 msgid "The equation to calculate the carbon emissions of the Bitcoin blockchain is:"
-msgstr ""
+msgstr "Уравнение для расчета выбросов углерода в блокчейне Биткойна:"
 
 #: ../../01_introduction.md:149
 msgid "Carbon Emissions = Electricity used (kWh) x Carbon Intensity (gCO2/kWh)"
-msgstr ""
+msgstr "Углеродные выбросы = использованная энергия (kWh) x Интенсивность углерода (gCO2/kWh)"
 
 #: ../../01_introduction.md:151
 msgid "Using this equation, the carbon emissions of the Bitcoin blockchain can be compared to a proof of stake blockchain protocol like DecentralChain. The difference in carbon emissions between the two can then be used to generate carbon credits, creating a new market for businesses and individuals to offset their carbon emissions and invest in a sustainable future."
-msgstr ""
+msgstr "Используя это уравнение, выбросы углерода в блокчейне Биткойна можно сравнить с протоколом блокчейна, таким как DecentralChain. Разница в выбросах углерода между ними может быть использована для создания углеродных кредитов, создания нового рынка для предприятий и частных лиц, чтобы компенсировать их выбросы углерода и инвестировать в устойчивое будущее."
 
 #: ../../01_introduction.md:153
 msgid "According to a study by the World Bank, carbon credits can yield a return of up to 7.2 percent annually over a 15-year period. This makes them an attractive investment for individuals and companies alike."
-msgstr ""
+msgstr "Согласно исследованию Всемирного банка, углеродные кредиты могут приносить доход до 7,2% в год в течение 15-летнего периода. Это делает их привлекательными инвестициями для частных лиц и компаний."
 
 #: ../../01_introduction.md:155
 msgid "The DecentralChain blockchain not only provides a more sustainable alternative to traditional Bitcoin transactions but also creates new opportunities for businesses and individuals to invest in a sustainable future. By incentivizing sustainable practices through the proof of incentivized sustainability protocol and the hosting of nodes on eco-friendly servers, DecentralChain is paving the way for a greener, more sustainable future."
-msgstr ""
+msgstr "Блокчейн DecentralChain не только обеспечивает более устойчивую альтернативу традиционным транзакциям биткоина, но и создает новые возможности для бизнеса и частных лиц инвестировать в устойчивое будущее. Поощряя устойчивые практики с помощью протокола стимулирования устойчивости и хостинга узлов на экологически чистых серверах, DecentralChain прокладывает путь к более экологичному и устойчивому будущему."
 
 #: ../../01_introduction.md:157
 msgid "Carbon Sequestration"
-msgstr ""
+msgstr "Секвестр углерода"
 
 #: ../../01_introduction.md:159
 msgid "Carbon sequestration, the process of capturing and storing carbon dioxide (CO2) to reduce its concentration in the atmosphere, is a critical strategy in mitigating the effects of climate change. Through the use of blockchain technology, carbon sequestration can be further incentivized, creating a new market for carbon credits."
-msgstr ""
+msgstr "Секвестрация углерода, процесс улавливания и хранения углекислого газа (CO2) для снижения его концентрации в атмосфере, является важной стратегией в смягчении последствий изменения климата. Благодаря использованию технологии блокчейн, секвестрация углерода может быть дополнительно стимулирована, создавая новый рынок для углеродных кредитов."
 
 #: ../../01_introduction.md:161
 msgid "One of the ways to achieve carbon sequestration is by buying property in Costa Rica and tokenizing the sequestered carbon in the form of a digital token that can be traded on a blockchain platform. The Costa Rican government's initiative of National Forest Financing Fund (FONAFIFO) provides a financial incentive for private landowners to reforest and conserve their land, while also allowing them to receive payments for the carbon sequestered on their property in the form of carbon credits. By tokenizing these carbon credits on a blockchain platform, the carbon sequestration process can be further incentivized, creating a new market for carbon credits and a carbon credit-backed crypto-asset."
-msgstr ""
+msgstr "Одним из способов достижения секвестрации углерода является покупка недвижимости в Коста-Рике и токенизация секвестрированного углерода в виде цифрового токена, который может торговаться на блокчейн-платформе. Инициатива правительства Коста-Рики Национального фонда финансирования лесного хозяйства (FONAFIFO) предоставляет частному землевладельцу финансовый стимул для восстановления лесов и сохранения своих земель, а также позволяет ему получать платежи за секвестрированный на его собственности углерод в виде углеродных кредитов. Токенизируя эти углеродные кредиты на блокчейн-платформе, процесс секвестрации углерода может быть дополнительно стимулирован, создавая новый рынок для углеродных кредитов и криптоактива, обеспеченного углеродными кредитами."
 
 #: ../../01_introduction.md:163
 msgid "The tokenization of carbon credits on a blockchain platform not only increases transparency and traceability in the carbon market, but it also provides a new way for people to invest in the conservation of natural areas while obtaining the economic benefit of the carbon credits. This creates a win-win situation, in which the carbon sequestration is incentivized, and the conservation of natural areas is supported."
-msgstr ""
+msgstr "Токенизация углеродных кредитов на блокчейн-платформе не только повышает прозрачность и прослеживаемость на рынке углерода, но также предоставляет новый способ для людей инвестировать в сохранение природных территорий при получении экономической выгоды от углеродных кредитов. Это создает беспроигрышную ситуацию, в которой стимулируется секвестрация углерода и поддерживается сохранение природных территорий."
 
 #: ../../01_introduction.md:165
 msgid "The tokenization of carbon credits on a blockchain platform creates a new market for carbon credits and enables the creation of a carbon credit-backed crypto-asset. This approach can increase transparency and traceability in the carbon market, making it easier to track and verify the carbon credits being traded. Moreover, it provides a new way for people to invest in the conservation of natural areas, while also obtaining the economic benefit of the carbon credits. The Costa Rican government's initiative of National Forest Financing Fund (FONAFIFO) has set the base for this process, and with more involvement of the private sector, decentralized finance, and blockchain technology, this approach can be a step towards a sustainable future where everyone can participate in the conservation and mitigation of climate change."
-msgstr ""
+msgstr "Токенизация углеродных кредитов на блокчейн-платформе создает новый рынок для углеродных кредитов и позволяет создать криптоактив, обеспеченный углеродными кредитами. Такой подход может повысить прозрачность и прослеживаемость на рынке углерода, облегчая отслеживание и проверку углеродных кредитов. Кроме того, это дает людям новый способ инвестировать в сохранение природных территорий, а также получение экономической выгоды от углеродных кредитов. Инициатива правительства Коста-Рики Национального фонда финансирования лесов (FONAFIFO) заложила основу для этого процесса, и с более широким участием частного сектора, децентрализованных финансов и технологии блокчейн этот подход может стать шагом к устойчивому будущему, где каждый может участвовать в сохранении и смягчении последствий изменения климата."
 
 #: ../../01_introduction.md:167
 msgid "Native Swap"
-msgstr ""
+msgstr "Родной своп"
 
 #: ../../01_introduction.md:169
 msgid "DecentralChain is an innovative blockchain platform that offers a wide range of features to its users, one of which is the upcoming DecentralChain native swap. A swap is a way for users to exchange one cryptocurrency for another, without the need for a centralized intermediary. In this essay, we will delve into how the DecentralChain native swap is expected to work, and explain how users will be able to use it to swap their DecentralCoin for other cryptocurrencies."
-msgstr ""
+msgstr "DecentralChain - это инновационная блокчейн-платформа, которая предлагает своим пользователям широкий спектр функций, одной из которых является предстоящий нативный своп DecentralChain. Своп — это способ обмена одной криптовалюты на другую без необходимости централизованного посредника. В этом эссе мы углубимся в то, как будет работать нативный своп DecentralChain, и объясним, как пользователи смогут использовать его для обмена своих DecentralCoin на другие криптовалюты."
 
 #: ../../01_introduction.md:171
 msgid "A swap is essentially a smart contract that facilitates the exchange of one cryptocurrency for another. When a user initiates a swap, their cryptocurrency is locked into the smart contract, and they receive the equivalent amount of the other cryptocurrency in return. The smart contract then releases the locked up cryptocurrency to the other user. This process happens on-chain, meaning that the swap is settled on the blockchain, and the transaction is recorded on the blockchain's ledger."
-msgstr ""
+msgstr "Своп — это, по сути, смарт-контракт, который облегчает обмен одной криптовалюты на другую. Когда пользователь инициирует своп, его криптовалюта блокируется в смарт-контракте, и он получает эквивалентное количество другой криптовалюты взамен. Затем смарт-контракт выпускает заблокированную криптовалюту другому пользователю. Этот процесс происходит в цепочке, что означает, что своп устанавливается на блокчейне, а транзакция записывается в реестре блокчейна."
 
 #: ../../01_introduction.md:173
 msgid "The DecentralChain native swap is expected to be powered by an Automated Market Maker (AMM) algorithm. This algorithm will calculate the price of the coin based on the token supply and the liquidity in the swap. The price will be calculated using the constant product formula."
-msgstr ""
+msgstr "Ожидается, что нативный своп DecentralChain будет работать на алгоритме автоматического маркетмейкера (AMM). Этот алгоритм будет вычислять цену монеты на основе предложения токенов и ликвидности в свопе. Цена рассчитывается с использованием формулы постоянного продукта."
 
 #: ../../01_introduction.md:175
 msgid "A swap platform can be thought of as a liquidity pool where users can deposit their tokens, and then use those tokens to swap for other tokens on the platform. As more users deposit tokens into the pool, the pool's liquidity increases, making it more attractive for users to swap their tokens on the platform."
-msgstr ""
+msgstr "Своп-платформу можно рассматривать как пул ликвидности, где пользователи могут вносить свои токены, а затем использовать эти токены для обмена на другие токены на платформе. По мере того, как все больше пользователей вносят токены в пул, ликвидность пула увеличивается, что делает его более привлекательным для пользователей, чтобы поменять свои токены на платформе."
 
 #: ../../01_introduction.md:177
 msgid "The DecentralChain native swap is expected to offer users a secure, efficient, and decentralized way to swap their cryptocurrencies. By eliminating the need for centralized intermediaries, users will be able to exchange their cryptocurrencies without relying on third parties, which can be slow, expensive, and risky. With the upcoming launch of the DecentralChain native swap, users will be able to experience the future of crypto swapping firsthand."
-msgstr ""
+msgstr "Ожидается, что нативный обмен DecentralChain предложит пользователям безопасный, эффективный и децентрализованный способ обмена криптовалютами. Устраняя необходимость в централизованных посредниках, пользователи смогут обменивать свои криптовалюты, не полагаясь на третьих лиц, что может быть медленным, дорогим и рискованным. С предстоящим запуском нативного свопа DecentralChain пользователи смогут испытать будущее крипто-свопинга из первых рук."
 
 #: ../../01_introduction.md:179
 msgid "CR Coin"
-msgstr ""
+msgstr "CR Coin"
 
 #: ../../01_introduction.md:181
 msgid "CR Coin is a social currency proposed for Costa Rica, designed to provide a secure, efficient and environmentally-friendly medium of exchange for its citizens. The currency is built on the DecentralChain blockchain, a specialized platform for social currencies that ensures maximum security and scalability. It also incorporates carbon negative technology, which aims to minimize the environmental impact of blockchain-based transactions."
-msgstr ""
+msgstr "CR Coin - это социальная валюта, предлагаемая для Коста-Рики, предназначенная для обеспечения безопасного, эффективного и экологически чистого средства обмена для своих граждан. Валюта построена на блокчейне DecentralChain, специализированной платформе для социальных валют, которая обеспечивает максимальную безопасность и масштабируемость. Он также включает в себя углеродно-отрицательную технологию, которая направлена на минимизацию воздействия на окружающую среду транзакций на основе блокчейна."
 
 #: ../../01_introduction.md:183
 msgid "By introducing CR Coin, Costa Rica's economy can enjoy the advantages of blockchain technology, such as transparency, low transaction costs, and secure transactions. Currently, cash, bank transfers and online payment systems are the most commonly used methods for payments in Costa Rica, but these traditional forms of money and payment systems have limitations and vulnerabilities, including fraud and high costs."
-msgstr ""
+msgstr "Внедряя CR Coin, экономика Коста-Рики может воспользоваться преимуществами технологии блокчейна, такими как прозрачность, низкие транзакционные издержки и безопасные транзакции. В настоящее время наличные деньги, банковские переводы и системы онлайн-платежей являются наиболее часто используемыми методами платежей в Коста-Рике, но эти традиционные формы денег и платежные системы имеют ограничения и уязвимости, включая мошенничество и высокие затраты."
 
 #: ../../01_introduction.md:185
 msgid "The launch of CR Coin is planned to involve a comprehensive marketing strategy, the establishment of a network of merchants and exchanges that accept CR Coin, and measures to ensure the security, stability and reliability of the currency. It is hoped that the introduction of CR Coin will not only provide a new medium of exchange for citizens but also create new opportunities for businesses, entrepreneurs and investors. CR Coin aims to revolutionize the way payments are made in Costa Rica, promoting sustainable development and environmental conservation with the potential to contribute to the country's goal of becoming a carbon-neutral economy that could have significant benefits for Costa Rica and its citizens."
-msgstr ""
+msgstr "Запуск CR Coin предполагает комплексную маркетинговую стратегию, создание сети торговцев и бирж, принимающих CR Coin, а также меры по обеспечению безопасности, стабильности и надежности валюты. Ожидается, что внедрение CR Coin не только обеспечит новую среду обмена для граждан, но и создаст новые возможности для бизнеса, предпринимателей и инвесторов. CR Coin стремится революционизировать способ осуществления платежей в Коста-Рике, содействуя устойчивому развитию и сохранению окружающей среды с потенциалом для содействия цели страны стать углеродно-нейтральной экономикой, которая может иметь значительные преимущества для Коста-Рики и ее граждан."
 
 #: ../../01_introduction.md:187
 msgid "Moreover, the education and awareness initiatives and partnerships with schools and non-profit organizations planned by CR Coin will help raise awareness about the importance of preserving the environment and promoting sustainable practices. By combining technology, community engagement and education, CR Coin aims to be a driving force for sustainable development and environmental conservation in Costa Rica."
-msgstr ""
+msgstr "Кроме того, запланированные CR Coin инициативы в области образования и повышения осведомленности, а также партнерские отношения со школами и некоммерческими организациями помогут повысить осведомленность о важности сохранения окружающей среды и поощрения устойчивой практики. Объединив технологии, вовлечение сообщества и образование, CR Coin стремится стать движущей силой устойчивого развития и сохранения окружающей среды в Коста-Рике."
 
 #~ msgid "card-img-bottom"
 #~ msgstr ""

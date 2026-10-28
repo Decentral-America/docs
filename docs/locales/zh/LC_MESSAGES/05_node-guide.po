@@ -25,202 +25,202 @@ msgstr ""
 
 #: ../../05_node-guide/01_node-rest-api.md:3
 msgid "Every DecentralChain node exposes an HTTP REST API, compatible in shape with the Dcc node API it was forked from. It's how wallets, explorers, and SDKs read chain state (balances, blocks, transactions) and broadcast signed transactions, without needing their own indexer."
-msgstr ""
+msgstr "每个DecentralChain节点都暴露出一个HTTP REST API,与它从被加固的Dcc节点API相容的外形.这就是钱包,探险家,和SDK如何读取链条状态(余额,块,交易)并广播签名的交易,而不需要自己的索引器."
 
 #: ../../05_node-guide/01_node-rest-api.md:5
 msgid "You normally don't call this API with raw HTTP requests — use [`@decentralchain/node-api-js`](https://www.npmjs.com/package/@decentralchain/node-api-js), the typed JavaScript/TypeScript client (soon to be renamed `node-api` in the monorepo, but install it under its current published name for now — see [Client Libraries and SDK](../04_building-apps/02_client-libraries-and-sdk)), as shown in [How-To Guides](../04_building-apps/03_how-to-guides). Its namespaces map directly onto the REST API's resource areas:"
-msgstr ""
+msgstr "您通常不会用原始的 HTTP 请求来调用此API —— 如 [如何向导](../04_building-apps/03_how-to-guides) 所示, 使用 [`@decentralchain/node-api-js`](https://www.npmjs.com/package/@decentralchain/node-api-js), 键入的 JavaScript/ TypeScript 客户端( 即将在 monrepo 中更名 `node-api` ) , 但安装在其目前公布的名称下 —— 见 [客户图书馆和SDK](../04_building-apps/02_client-libraries-and-sdk) 。它的命名空间直接映射到 REST API 的资源区域 :"
 
 #: ../../05_node-guide/01_node-rest-api.md
 msgid "Namespace"
-msgstr ""
+msgstr "命名空间"
 
 #: ../../05_node-guide/01_node-rest-api.md
 msgid "Covers"
-msgstr ""
+msgstr "封面"
 
 #: ../../05_node-guide/01_node-rest-api.md
 msgid "`addresses`"
-msgstr ""
+msgstr "`addresses`"
 
 #: ../../05_node-guide/01_node-rest-api.md
 #, python-brace-format
 msgid "Address info, {ref}`balances <02_decentralchain/01_account:Account Balance>`, on-chain data entries"
-msgstr ""
+msgstr "地址信息, {ref}`结余 <02_decentralchain/01_account:Account Balance>`, 链上数据条目"
 
 #: ../../05_node-guide/01_node-rest-api.md
 msgid "`alias`"
-msgstr ""
+msgstr "`alias`"
 
 #: ../../05_node-guide/01_node-rest-api.md
 #, python-brace-format
 msgid "{ref}`Alias <02_decentralchain/01_account:Alias>` lookup by address or name"
-msgstr ""
+msgstr "{ref}`别名 <02_decentralchain/01_account:Alias>` 按地址或名称查找"
 
 #: ../../05_node-guide/01_node-rest-api.md
 msgid "`assets`"
-msgstr ""
+msgstr "`assets`"
 
 #: ../../05_node-guide/01_node-rest-api.md
 #, python-brace-format
 msgid "{ref}`Asset <02_decentralchain/02_token(asset):Token (Asset)>` details, distributions, balances"
-msgstr ""
+msgstr "{ref}`资产 <02_decentralchain/02_token(asset):Token (Asset)>` 细节、分配、余额"
 
 #: ../../05_node-guide/01_node-rest-api.md
 msgid "`blocks`"
-msgstr ""
+msgstr "`blocks`"
 
 #: ../../05_node-guide/01_node-rest-api.md
 #, python-brace-format
 msgid "{ref}`Block <02_decentralchain/04_block:Block>` headers, height, sequences"
-msgstr ""
+msgstr "{ref}`块 <02_decentralchain/04_block:Block>` 标题、 高度、 序列"
 
 #: ../../05_node-guide/01_node-rest-api.md
 msgid "`consensus`"
-msgstr ""
+msgstr "`consensus`"
 
 #: ../../05_node-guide/01_node-rest-api.md
 msgid "Consensus algorithm parameters, generating balance"
-msgstr ""
+msgstr "共识算法参数,生成平衡"
 
 #: ../../05_node-guide/01_node-rest-api.md
 msgid "`leasing`"
-msgstr ""
+msgstr "`leasing`"
 
 #: ../../05_node-guide/01_node-rest-api.md
 #, python-brace-format
 msgid "Active leases, {ref}`lease <02_decentralchain/05_node:Leased Proof of Stake>` info"
-msgstr ""
+msgstr "现行租赁, {ref}`租赁 <02_decentralchain/05_node:Leased Proof of Stake>` 信息"
 
 #: ../../05_node-guide/01_node-rest-api.md
 msgid "`transactions`"
-msgstr ""
+msgstr "`transactions`"
 
 #: ../../05_node-guide/01_node-rest-api.md
 msgid "Broadcast, transaction info, status, unconfirmed pool"
-msgstr ""
+msgstr "广播、交易信息、状态、未经证实的集合"
 
 #: ../../05_node-guide/01_node-rest-api.md
 #: ../../05_node-guide/03_custom-blockchain.md
 msgid "`rewards`"
-msgstr ""
+msgstr "`rewards`"
 
 #: ../../05_node-guide/01_node-rest-api.md
 #, python-brace-format
 msgid "{ref}`Block reward <02_decentralchain/05_node:Block Reward>` — current size and voting state"
-msgstr ""
+msgstr "{ref}`块状奖赏 <02_decentralchain/05_node:Block Reward>` — 当前大小和投票状态"
 
 #: ../../05_node-guide/01_node-rest-api.md
 msgid "`node`"
-msgstr ""
+msgstr "`node`"
 
 #: ../../05_node-guide/01_node-rest-api.md
 msgid "Node status and version"
-msgstr ""
+msgstr "节点状态和版本"
 
 #: ../../05_node-guide/01_node-rest-api.md
 msgid "`peers`"
-msgstr ""
+msgstr "`peers`"
 
 #: ../../05_node-guide/01_node-rest-api.md
 msgid "Connected, known, and blacklisted peers"
-msgstr ""
+msgstr "已连接、已知和列入黑名单的同行"
 
 #: ../../05_node-guide/01_node-rest-api.md
 msgid "`eth`"
-msgstr ""
+msgstr "`eth`"
 
 #: ../../05_node-guide/01_node-rest-api.md
 msgid "Ethereum-compatibility endpoints"
-msgstr ""
+msgstr "相容性终点"
 
 #: ../../05_node-guide/01_node-rest-api.md
 msgid "`activation`"
-msgstr ""
+msgstr "`activation`"
 
 #: ../../05_node-guide/01_node-rest-api.md
 msgid "Feature activation status"
-msgstr ""
+msgstr "特性激活状态"
 
 #: ../../05_node-guide/01_node-rest-api.md
 msgid "`utils`"
-msgstr ""
+msgstr "`utils`"
 
 #: ../../05_node-guide/01_node-rest-api.md
 msgid "Hashing, seed generation, script compilation"
-msgstr ""
+msgstr "Hashing, 种子生成, 脚本汇编"
 
 #: ../../05_node-guide/01_node-rest-api.md:23
 msgid "If you're running your own node, point the client at its own host and port instead of a public endpoint like `https://testnet-node.decentralchain.io` — check your node's configuration file for the REST API port it's bound to."
-msgstr ""
+msgstr "如果您正在运行自己的节点,请将客户端指向自己的主机和端口,而不是像 `https://testnet-node.decentralchain.io` 这样的公共端口——检查您的节点配置文件,用于REST API端口,它必然要完成."
 
 #: ../../05_node-guide/01_node-rest-api.md:25
 msgid "Base URL, port and interactive docs"
-msgstr ""
+msgstr "基础 URL、端口和交互式文件"
 
 #: ../../05_node-guide/01_node-rest-api.md:27
 msgid "A node listens on port `6869` (`dcc.rest-api.port`) and, by default, only on `127.0.0.1`. The node bundles an OpenAPI description (`openapi.yaml`) and Swagger UI; open the node's API root in a browser to explore every endpoint."
-msgstr ""
+msgstr "一个节点在端口 `6869` (`dcc.rest-api.port`)上收听,默认情况下,只收听到 `127.0.0.1`.节点会捆绑一个 OpenAPI 描述 (`openapi.yaml`)和 Swagger UI; 在浏览器中打开节点的 API 根来探索每个端点."
 
 #: ../../05_node-guide/01_node-rest-api.md:30
 msgid "Verified against node-scala v1.8.1, the version the public Testnet runs, on 2026-10-27."
-msgstr ""
+msgstr "校验了针对节点-scala v1.8.1,该版本为公用Testnet运行,于2026-10-27查阅."
 
 #: ../../05_node-guide/01_node-rest-api.md:33
 msgid "Authentication"
-msgstr ""
+msgstr "认证"
 
 #: ../../05_node-guide/01_node-rest-api.md:35
 msgid "Most read-only endpoints are public. Privileged ones — wallet and address management (`GET/POST /addresses`, `GET /wallet/seed`), transaction signing on behalf of the node wallet (`POST /transactions/sign`), `/debug/*`, `GET /addresses/seq/*` and `GET /utils/seed*` (since v1.8.0), all `/peers/*` endpoints (including the read-only `GET /peers/all`, `/peers/connected`, `/peers/blacklisted` and `/peers/suspended`, plus `/peers/connect` and `/peers/clearblacklist`) and `/node/stop` — require an `X-Api-Key` header matching the hash in `dcc.rest-api.api-key-hash`. See [Configuration](05_configuration). Requests with a wrong key get `403`. Fee estimation (`POST /transactions/calculateFee`) does not need a key."
-msgstr ""
+msgstr "大多数只读的终点都是公开的.被私有化的有:钱包和地址管理(`GET/POST /addresses`, `GET /wallet/seed`),代表节点钱包(`POST /transactions/sign`), `/debug/*`, `GET /addresses/seq/*` 和 `GET /utils/seed*` (自v1.8.0)进行交易签名,所有 `/peers/*` 端点(包括只读的 `GET /peers/all`, `/peers/connected`, `/peers/blacklisted` 和 `/peers/suspended`,外加 `/peers/connect` 和 `/peers/clearblacklist`)和 `/node/stop`,都需要一个与 `dcc.rest-api.api-key-hash` 中的散列相匹配的 `X-Api-Key` 头.见 [配置](05_configuration).用错误的密钥请求得到 `403` 。收费估算(`POST /transactions/calculateFee`)不需要密钥."
 
 #: ../../05_node-guide/01_node-rest-api.md:37
 msgid "The public Testnet gateway (`https://testnet-node.decentralchain.io`) deliberately exposes the read-only `GET /peers/*` lists without a key; on your own node they require `X-Api-Key`. The gateway does not route the write endpoints (`POST /peers/connect` returns `404`)."
-msgstr ""
+msgstr "公开的Testnet网关(`https://testnet-node.decentralchain.io`)在不带密钥的情况下,故意将只读的 `GET /peers/*` 列表曝光;在您自己的节点上,它们需要 `X-Api-Key`.网关不通路写入端点(`POST /peers/connect` 返回 `404`)."
 
 #: ../../05_node-guide/01_node-rest-api.md:39
 msgid "Set Up an API Key"
-msgstr ""
+msgstr "设置 API 密钥"
 
 #: ../../05_node-guide/01_node-rest-api.md:41
 msgid "The node stores only a hash of the key, never the key itself:"
-msgstr ""
+msgstr "节点只存储一串密钥,从不存储密钥本身:"
 
 #: ../../05_node-guide/01_node-rest-api.md:43
 msgid "Choose a long random key, for example with `openssl rand -hex 32` or a password manager."
-msgstr ""
+msgstr "选择一个长的随机键, 例如使用 `openssl rand -hex 32` 或密码管理器 。"
 
 #: ../../05_node-guide/01_node-rest-api.md:44
 msgid "Hash it with your own node's `POST /utils/hash/secure`, which needs no key:"
-msgstr ""
+msgstr "用您自己的 `POST /utils/hash/secure` 键来显示它, 它不需要键 :"
 
 #: ../../05_node-guide/01_node-rest-api.md:54
 msgid "Run this against your own node rather than a public one, so the key never leaves your machine."
-msgstr ""
+msgstr "利用你自己的节点而不是公共节点来运行,所以钥匙永远不离开你的机器."
 
 #: ../../05_node-guide/01_node-rest-api.md:55
 msgid "Put the `hash` value in the configuration as `dcc.rest-api.api-key-hash` and restart the node."
-msgstr ""
+msgstr "将 `hash` 值放入配置为 `dcc.rest-api.api-key-hash` 并重新启动节点."
 
 #: ../../05_node-guide/01_node-rest-api.md:56
 msgid "Send the key itself, not the hash, in the `X-Api-Key` header:"
-msgstr ""
+msgstr "在 `X-Api-Key` 标题中发送密钥本身而非散列 :"
 
 #: ../../05_node-guide/01_node-rest-api.md:62
 msgid "The node compares the hash of the header value with `api-key-hash`. While `api-key-hash` is empty (the default), every protected endpoint answers `403` with error `2`, whatever key is sent. The legacy header name `api_key` is still accepted, but use `X-Api-Key`."
-msgstr ""
+msgstr "节点将头值的散列与 `api-key-hash`.虽然 `api-key-hash` 是空的(默认),但每个被保护的端点都会用出错的 `2` 回答 `403`,无论发送什么密钥.遗产头名 `api_key` 仍然被接受,但使用 `X-Api-Key`."
 
 #: ../../05_node-guide/01_node-rest-api.md:64
 msgid "Anyone with the key can sign transactions with the node's wallet and stop the node. Keep the REST API bound to `127.0.0.1`, or put it behind a reverse proxy that blocks the protected paths, before you expose a node to the internet."
-msgstr ""
+msgstr "任何持密钥的人都可以用节点的钱包来签署交易并停止节点.将 REST API 绑入 `127.0.0.1` , 或者放在一个反向代理 屏蔽保护路径, 在您向互联网曝光一个节点之前。"
 
 #: ../../05_node-guide/01_node-rest-api.md:66
 msgid "Commonly used endpoints"
-msgstr ""
+msgstr "常用终点"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Endpoint"
-msgstr ""
+msgstr "终点"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 #: ../../05_node-guide/02_node-extensions.md:11
@@ -228,834 +228,834 @@ msgstr ""
 #: ../../05_node-guide/04_install-docker.md:5
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "Purpose"
-msgstr ""
+msgstr "目的"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`GET /node/status`"
-msgstr ""
+msgstr "`GET /node/status`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Blockchain height, state height, update time and `generationPeriodLength`"
-msgstr ""
+msgstr "屏蔽链高地,状态高地,更新时间和 `generationPeriodLength`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`GET /node/version`"
-msgstr ""
+msgstr "`GET /node/version`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Node version"
-msgstr ""
+msgstr "节点版本"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`GET /blocks/height`, `/blocks/last`"
-msgstr ""
+msgstr "`GET /blocks/height`, `/blocks/last`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Current height and last block"
-msgstr ""
+msgstr "当前高度和最后一个块"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`GET /blocks/height/finalized`, `/blocks/headers/finalized`"
-msgstr ""
+msgstr "`GET /blocks/height/finalized`, `/blocks/headers/finalized`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Finalized height and header"
-msgstr ""
+msgstr "最后确定的高度和页眉"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 #, python-brace-format
 msgid "`GET /addresses/balance/{address}`"
-msgstr ""
+msgstr "`GET /addresses/balance/{address}`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Address balance"
-msgstr ""
+msgstr "地址余额"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`GET /assets/details`"
-msgstr ""
+msgstr "`GET /assets/details`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Asset information"
-msgstr ""
+msgstr "资产信息"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 #, python-brace-format
 msgid "`GET /transactions/info/{id}`, `/transactions/status`"
-msgstr ""
+msgstr "`GET /transactions/info/{id}`, `/transactions/status`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Transaction lookup and confirmation status"
-msgstr ""
+msgstr "交易查询和确认状态"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`POST /transactions/broadcast`"
-msgstr ""
+msgstr "`POST /transactions/broadcast`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Submit a signed transaction"
-msgstr ""
+msgstr "提交已签名的交易"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`POST /transactions/calculateFee`"
-msgstr ""
+msgstr "`POST /transactions/calculateFee`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Fee estimate for an unsigned transaction"
-msgstr ""
+msgstr "未签名交易的收费估计数"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`GET /transactions/unconfirmed`"
-msgstr ""
+msgstr "`GET /transactions/unconfirmed`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Unconfirmed pool"
-msgstr ""
+msgstr "未确认的池"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`GET /blockchain/rewards`"
-msgstr ""
+msgstr "`GET /blockchain/rewards`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Block reward state"
-msgstr ""
+msgstr "块奖励状态"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`GET /activation/status`"
-msgstr ""
+msgstr "`GET /activation/status`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "[Feature activation](10_features-and-activation)"
-msgstr ""
+msgstr "[特性活化](10_features-and-activation)"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`GET /peers/all`, `/peers/connected`"
-msgstr ""
+msgstr "`GET /peers/all`, `/peers/connected`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Peer lists (require `X-Api-Key` on a node)"
-msgstr ""
+msgstr "对等列表( 节点上需要 `X-Api-Key`)"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`POST /utils/script/compileCode`"
-msgstr ""
+msgstr "`POST /utils/script/compileCode`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Compile Ride source"
-msgstr ""
+msgstr "编译 Ride 来源"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`POST /utils/hash/secure`, `/utils/hash/fast`"
-msgstr ""
+msgstr "`POST /utils/hash/secure`, `/utils/hash/fast`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Hashing helpers"
-msgstr ""
+msgstr "寻找帮助者"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`GET /utils/time`"
-msgstr ""
+msgstr "`GET /utils/time`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Node time"
-msgstr ""
+msgstr "节点时间"
 
 #: ../../05_node-guide/01_node-rest-api.md:87
 msgid "Limits"
-msgstr ""
+msgstr "限制"
 
 #: ../../05_node-guide/01_node-rest-api.md:89
 msgid "Several endpoints cap result sizes through settings such as `transactions-by-address-limit` (1000), `blocks-request-limit` (100), `asset-details-limit` (100) and `data-keys-request-limit` (1000). A request above a limit is rejected with error `10`, `Too big sequence requested`; page through the results instead."
-msgstr ""
+msgstr "多个端点的盖通过 `transactions-by-address-limit` (1000), `blocks-request-limit` (100), `asset-details-limit` (100)和 `data-keys-request-limit` (1000)等设置产生大小.超过限制的请求被错误地拒绝 `10`, `Too big sequence requested`; 页面通过结果代替."
 
 #: ../../05_node-guide/01_node-rest-api.md:91
 msgid "Pagination"
-msgstr ""
+msgstr "贴花"
 
 #: ../../05_node-guide/01_node-rest-api.md:93
 msgid "List endpoints page with a cursor rather than a page number: pass the last item you received as `after` to get the next page."
-msgstr ""
+msgstr "列出带有光标而不是页码的端点:通过您作为 `after` 收到的最后一个项目,以获得下一页。"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Page size limit"
-msgstr ""
+msgstr "页数限制"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Cursor"
-msgstr ""
+msgstr "光标"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 #, python-brace-format
 msgid "`GET /transactions/address/{address}/limit/{limit}`"
-msgstr ""
+msgstr "`GET /transactions/address/{address}/limit/{limit}`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`transactions-by-address-limit` (1000)"
-msgstr ""
+msgstr "`transactions-by-address-limit` (1000)"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 #, python-brace-format
 msgid "`?after={transaction ID}`"
-msgstr ""
+msgstr "`?after={transaction ID}`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 #, python-brace-format
 msgid "`GET /assets/nft/{address}/limit/{limit}`"
-msgstr ""
+msgstr "`GET /assets/nft/{address}/limit/{limit}`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 #, python-brace-format
 msgid "`?after={asset ID}`"
-msgstr ""
+msgstr "`?after={asset ID}`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 #, python-brace-format
 msgid "`GET /assets/{assetId}/distribution/{height}/limit/{limit}`"
-msgstr ""
+msgstr "`GET /assets/{assetId}/distribution/{height}/limit/{limit}`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`distribution-address-limit` (1000)"
-msgstr ""
+msgstr "`distribution-address-limit` (1000)"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 #, python-brace-format
 msgid "`?after={address}`"
-msgstr ""
+msgstr "`?after={address}`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 #, python-brace-format
 msgid "`GET /blocks/seq/{from}/{to}`, `/blocks/headers/seq/{from}/{to}`"
-msgstr ""
+msgstr "`GET /blocks/seq/{from}/{to}`, `/blocks/headers/seq/{from}/{to}`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`blocks-request-limit` (100 blocks)"
-msgstr ""
+msgstr "`blocks-request-limit` (100个区块)"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Next height range"
-msgstr ""
+msgstr "下一个高度范围"
 
 #: ../../05_node-guide/01_node-rest-api.md:102
 msgid "`/transactions/address` returns the newest transactions first, wrapped in an outer array: `[[tx, tx, ...]]`. To read an address's full history, request a page, then pass the ID of the last transaction in it as `after`, and stop when a page comes back shorter than `limit`:"
-msgstr ""
+msgstr "`/transactions/address` 首先返回最新交易,包裹在外数组中:`[[tx, tx, ...]]`.要读取地址的完整历史,请写一页,然后通过其中最后一个交易的ID为 `after`,当一个页面回来的时间短于 `limit` 时停止:"
 
 #: ../../05_node-guide/01_node-rest-api.md:109
 #, python-brace-format
 msgid "The distribution endpoint returns `{\"hasNext\": true, \"lastItem\": \"<address>\", \"items\": {\"<address>\": <balance>, ...}}`: pass `lastItem` as `after` while `hasNext` is `true`. `{height}` must be at most the current height minus one; a later height returns error `199`."
-msgstr ""
+msgstr "分布端点返回 `{\"hasNext\": true, \"lastItem\": \"<address>\", \"items\": {\"<address>\": <balance>, ...}}`:通过 `lastItem` 作为 `after`,而 `hasNext` 是 `true`. `{height}` 必须最多为当前高值减去一;后高值返回出错 `199`."
 
 #: ../../05_node-guide/01_node-rest-api.md:111
 #, python-brace-format
 msgid "`GET /addresses/data/{address}` has no pages. It returns every data entry of the address unless you filter with `?key=` (repeatable) or `?matches=<regular expression>` (at most 200 characters)."
-msgstr ""
+msgstr "`GET /addresses/data/{address}` 没有页面.它返回地址的每个数据条目,除非您使用 `?key=` (可重播) 或 `?matches=<regular expression>` (最多200个字符) 过滤."
 
 #: ../../05_node-guide/01_node-rest-api.md:113
 msgid "Error Responses"
-msgstr ""
+msgstr "错误回复"
 
 #: ../../05_node-guide/01_node-rest-api.md:115
 msgid "An error comes back with an HTTP status and a JSON body holding a numeric `error` code and a `message`:"
-msgstr ""
+msgstr "错误会随着HTTP状态而回出,JSON机体持有数字 `error` 代码和 `message`:"
 
 #: ../../05_node-guide/01_node-rest-api.md:121
 msgid "Match on `error` rather than on `message`: messages often include details such as the transaction or the balance."
-msgstr ""
+msgstr "匹配到 `error` 而非 `message`: 消息中经常包含交易或余额等细节."
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`error`"
-msgstr ""
+msgstr "`error`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "HTTP"
-msgstr ""
+msgstr "HTTP"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 #: ../../05_node-guide/04_install-docker.md:5
 #: ../../05_node-guide/06_sync-and-rollback.md:3
 msgid "Meaning"
-msgstr ""
+msgstr "含义"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`0`"
-msgstr ""
+msgstr "`0`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "500"
-msgstr ""
+msgstr "500"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Unknown error"
-msgstr ""
+msgstr "未知错误"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`1`"
-msgstr ""
+msgstr "`1`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "400"
-msgstr ""
+msgstr "400"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "The JSON body is malformed or misses fields; `validationErrors` lists them"
-msgstr ""
+msgstr "JSON 天体形状不当或漏出字段; `validationErrors` 列出它们"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`2`"
-msgstr ""
+msgstr "`2`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "403"
-msgstr ""
+msgstr "403"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 #, python-brace-format
 msgid "API key missing or wrong (see {ref}`Authentication <05_node-guide/01_node-rest-api:Authentication>`)"
-msgstr ""
+msgstr "API 密钥缺失或错误( 见 {ref}`认证 <05_node-guide/01_node-rest-api:Authentication>`)"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`10`"
-msgstr ""
+msgstr "`10`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Too big sequence requested: a limit was exceeded"
-msgstr ""
+msgstr "请求的序列太大: 超过限制"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`101`"
-msgstr ""
+msgstr "`101`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Invalid signature"
-msgstr ""
+msgstr "无效的签名"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`102`"
-msgstr ""
+msgstr "`102`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Invalid address"
-msgstr ""
+msgstr "无效的地址"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`107`"
-msgstr ""
+msgstr "`107`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "The request or transaction is too big"
-msgstr ""
+msgstr "请求或交易太大了"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`108`"
-msgstr ""
+msgstr "`108`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Invalid public key"
-msgstr ""
+msgstr "无效的公钥"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`111`"
-msgstr ""
+msgstr "`111`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Invalid name, or a negative amount"
-msgstr ""
+msgstr "无效名称, 或负数"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`112`"
-msgstr ""
+msgstr "`112`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Insufficient fee, or the transaction failed a state check such as `negative dcc balance`"
-msgstr ""
+msgstr "费用不足, 或交易失败 `negative dcc balance` 等状态检查"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`113`"
-msgstr ""
+msgstr "`113`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Overflow error"
-msgstr ""
+msgstr "流过错"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`114`"
-msgstr ""
+msgstr "`114`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "A transaction to yourself, or a negative fee"
-msgstr ""
+msgstr "对自己的交易,或负收费"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`115`"
-msgstr ""
+msgstr "`115`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "A non-positive amount, or the node wallet has no key for the sender"
-msgstr ""
+msgstr "非正值, 或者节点钱包没有发送者的密钥"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`116`"
-msgstr ""
+msgstr "`116`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "The request contains invalid IDs"
-msgstr ""
+msgstr "请求包含无效的ID"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`117`"
-msgstr ""
+msgstr "`117`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Invalid decimals"
-msgstr ""
+msgstr "无效的小数"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`199`"
-msgstr ""
+msgstr "`199`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Other validation error; the message says what is wrong"
-msgstr ""
+msgstr "其它验证错误; 信件中说出了什么错误 。"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`301`"
-msgstr ""
+msgstr "`301`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "404"
-msgstr ""
+msgstr "404"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Block does not exist"
-msgstr ""
+msgstr "块不存在"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`302`"
-msgstr ""
+msgstr "`302`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Alias does not exist"
-msgstr ""
+msgstr "别名不存在"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`303`"
-msgstr ""
+msgstr "`303`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "The transaction's timestamp is too far from the node's time"
-msgstr ""
+msgstr "交易的时间戳离节点的时间太远了"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`304`"
-msgstr ""
+msgstr "`304`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "No data for this key"
-msgstr ""
+msgstr "此密钥没有数据"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`305`"
-msgstr ""
+msgstr "`305`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Ride compilation error"
-msgstr ""
+msgstr "Ride 编译错误"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`306`"
-msgstr ""
+msgstr "`306`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "A script failed while executing (account script, asset script or dApp)"
-msgstr ""
+msgstr "执行时脚本失败( 账户脚本、 资产脚本或 dApp)"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`307`, `308`"
-msgstr ""
+msgstr "`307`, `308`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "The transaction is not allowed by the account's or the asset's script"
-msgstr ""
+msgstr "账户或资产脚本不允许进行交易"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`311`"
-msgstr ""
+msgstr "`311`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Transaction does not exist"
-msgstr ""
+msgstr "交易不存在"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`312`"
-msgstr ""
+msgstr "`312`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "501"
-msgstr ""
+msgstr "501"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Transaction type not supported"
-msgstr ""
+msgstr "不支持的交易类型"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`400`"
-msgstr ""
+msgstr "`400`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "The transaction is already in the state at the given height"
-msgstr ""
+msgstr "交易已经处于指定高度的状态"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`402`"
-msgstr ""
+msgstr "`402`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Account balance errors"
-msgstr ""
+msgstr "账户余额出错"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`403`"
-msgstr ""
+msgstr "`403`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Order validation error"
-msgstr ""
+msgstr "命令验证错误"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`404`"
-msgstr ""
+msgstr "`404`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Wrong chain ID: the transaction was built for another network"
-msgstr ""
+msgstr "错误的链条 ID: 该交易是为另一个网络构建的"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`405`"
-msgstr ""
+msgstr "`405`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Invalid proofs (too many, or too big)"
-msgstr ""
+msgstr "无效的证明( 太多, 或太大)"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`406`"
-msgstr ""
+msgstr "`406`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Not finalized"
-msgstr ""
+msgstr "未定稿"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`4001`, `4002`, `4007`"
-msgstr ""
+msgstr "`4001`, `4002`, `4007`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Invalid transaction ID, block ID or asset ID"
-msgstr ""
+msgstr "无效的交易ID, 块ID或资产ID"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`4008`, `4009`"
-msgstr ""
+msgstr "`4008`, `4009`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "A required key or asset ID was not given"
-msgstr ""
+msgstr "未提供所需的密钥或资产标识"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`5031`"
-msgstr ""
+msgstr "`5031`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "503"
-msgstr ""
+msgstr "503"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "The node did not respond in time; retry later"
-msgstr ""
+msgstr "节点没有及时回复; 稍后重试"
 
 #: ../../05_node-guide/01_node-rest-api.md:160
 msgid "A successful `200` from `POST /transactions/broadcast` only means the node accepted the transaction into its pool. Check `GET /transactions/status?id=<id>` (or use `waitForTx` in the SDK) to see when it is in a block."
-msgstr ""
+msgstr "`POST /transactions/broadcast` 中一个成功的 `200` 只意味着节点接受交易进入了它的池.请检查date=中的日期值 (帮助) `GET /transactions/status?id=<id>` (或在 SDK 中使用 `waitForTx`) 查看其何时在块中."
 
 #: ../../05_node-guide/01_node-rest-api.md:162
 msgid "CORS"
-msgstr ""
+msgstr "CORS"
 
 #: ../../05_node-guide/01_node-rest-api.md:164
 msgid "`access-control-allow-origin` is empty by default, so browsers on other origins are blocked. Set it to your application's origin rather than echoing every origin."
-msgstr ""
+msgstr "`access-control-allow-origin` 默认是空的,因此其他出处的浏览器被屏蔽.设定为您的申请来源,而不是与每个来源相呼应."
 
 #: ../../05_node-guide/02_node-extensions.md:1
 msgid "Node Extensions"
-msgstr ""
+msgstr "节点扩展"
 
 #: ../../05_node-guide/02_node-extensions.md:3
 #, python-brace-format
 msgid "Extensions are optional modules a node operator can enable alongside the core {ref}`REST API <05_node-guide/01_node-rest-api:Node REST API>` for consumers that need direct access to binary data instead of JSON."
-msgstr ""
+msgstr "扩展是可选模块,一个节点操作员可以让需要直接访问二进制数据而不是JSON的消费者与核心 {ref}`(原始内容存档于2019-09-31) (英语). Rest API <05_node-guide/01_node-rest-api:Node REST API>` 并列."
 
 #: ../../05_node-guide/02_node-extensions.md:5
 msgid "gRPC Server"
-msgstr ""
+msgstr "gRPC 服务器"
 
 #: ../../05_node-guide/02_node-extensions.md:7
 #, python-brace-format
 msgid "The node ships a `grpc-server` module (built alongside the core node in [node-scala](https://github.com/Decentral-America/node-scala/tree/main/grpc-server)) that exposes {ref}`blocks <02_decentralchain/10_binary-format:Block Binary Format>` and {ref}`transactions <02_decentralchain/10_binary-format:Transaction Binary Format>` directly in their protobuf-serialized binary format, rather than the JSON representation the REST API returns. This is the recommended way to consume chain data for a service that needs to process a large volume of blocks or transactions efficiently."
-msgstr ""
+msgstr "节点会携带一个 `grpc-server` 模块(与 [节点-斯卡拉](https://github.com/Decentral-America/node-scala/tree/main/grpc-server) 中的核心节点一起建造),直接以原生的活化二进制格式暴露出 {ref}`块 <02_decentralchain/10_binary-format:Block Binary Format>` 和 {ref}`交易 <02_decentralchain/10_binary-format:Transaction Binary Format>`,而不是由REST API的JSON代表来返回.这是为需要高效处理大量区块或交易的服务而消费链条数据的建议方式."
 
 #: ../../05_node-guide/02_node-extensions.md:9
 msgid "If you use your own node with the gRPC server enabled, you can send it a `SignedTransaction` object directly instead of composing a JSON transaction for the REST API's `POST /transactions/broadcast` method. See [`@decentralchain/protobuf-serialization`](https://www.npmjs.com/package/@decentralchain/protobuf-serialization) (published on npm today; the monorepo is renaming it to `protobuf-schemas`) for building and parsing these binary structures from JavaScript/TypeScript, or [Node gRPC API](../04_building-apps/05_node-grpc) for the typed client."
-msgstr ""
+msgstr "如果您使用启用的 gRPC 服务器使用自己的节点, 您可以直接发送一个 `SignedTransaction` 对象, 而不是为 REST API 的 `POST /transactions/broadcast` 方法编组 JSON 交易 。参见 [`@decentralchain/protobuf-serialization`](https://www.npmjs.com/package/@decentralchain/protobuf-serialization)(今天npm上发布;单列波正将它更名为 `protobuf-schemas`),用于从JavaScript/TypeScript,或为打字客户端提供 [节点 gRPC API](../04_building-apps/05_node-grpc) 来构建并解析这些二进制结构."
 
 #: ../../05_node-guide/02_node-extensions.md:12
 msgid "Verified against node-scala v1.8.0 (`grpc-server/src/main/resources/application.conf`)."
-msgstr ""
+msgstr "对节点-scala v 1.8.0 (`grpc-server/src/main/resources/application.conf`) 进行校验."
 
 #: ../../05_node-guide/02_node-extensions.md:15
 msgid "The module listens on two ports:"
-msgstr ""
+msgstr "模块在两个端口上听:"
 
 #: ../../05_node-guide/02_node-extensions.md:11
 msgid "Setting"
-msgstr ""
+msgstr "设置"
 
 #: ../../05_node-guide/02_node-extensions.md:11
 #: ../../05_node-guide/05_configuration.md:5
 #: ../../05_node-guide/05_configuration.md:34
 msgid "Default"
-msgstr ""
+msgstr "默认"
 
 #: ../../05_node-guide/02_node-extensions.md:11
 msgid "`dcc.grpc.port`"
-msgstr ""
+msgstr "`dcc.grpc.port`"
 
 #: ../../05_node-guide/02_node-extensions.md:11
 msgid "`6870`"
-msgstr ""
+msgstr "`6870`"
 
 #: ../../05_node-guide/02_node-extensions.md:11
 msgid "AccountsApi, AssetsApi, BlockchainApi, BlocksApi, TransactionsApi"
-msgstr ""
+msgstr "AccountsApi, AssetsApi, BlockchainApi, BlocksApi, TransactionsApi"
 
 #: ../../05_node-guide/02_node-extensions.md:11
 msgid "`dcc.blockchain-updates.grpc-port`"
-msgstr ""
+msgstr "`dcc.blockchain-updates.grpc-port`"
 
 #: ../../05_node-guide/02_node-extensions.md:11
 msgid "`6881`"
-msgstr ""
+msgstr "`6881`"
 
 #: ../../05_node-guide/02_node-extensions.md:11
 msgid "BlockchainUpdates — a real-time stream of block-level events"
-msgstr ""
+msgstr "BlockchainUpdates — 区块级活动的实时流"
 
 #: ../../05_node-guide/02_node-extensions.md:11
 msgid "`dcc.grpc.host`"
-msgstr ""
+msgstr "`dcc.grpc.host`"
 
 #: ../../05_node-guide/02_node-extensions.md:11
 msgid "`localhost`"
-msgstr ""
+msgstr "`localhost`"
 
 #: ../../05_node-guide/02_node-extensions.md:11
 msgid "Interface the main gRPC service binds to"
-msgstr ""
+msgstr "接口主 gRPC 服务绑定到"
 
 #: ../../05_node-guide/02_node-extensions.md:11
 msgid "`dcc.grpc.worker-threads`"
-msgstr ""
+msgstr "`dcc.grpc.worker-threads`"
 
 #: ../../05_node-guide/02_node-extensions.md:11
 msgid "`4`"
-msgstr ""
+msgstr "`4`"
 
 #: ../../05_node-guide/02_node-extensions.md:11
 msgid "Worker threads for the gRPC service"
-msgstr ""
+msgstr "gRPC 服务的工人线程"
 
 #: ../../05_node-guide/02_node-extensions.md:11
 msgid "`dcc.blockchain-updates.min-keep-alive`"
-msgstr ""
+msgstr "`dcc.blockchain-updates.min-keep-alive`"
 
 #: ../../05_node-guide/02_node-extensions.md:11
 msgid "`5m`"
-msgstr ""
+msgstr "`5m`"
 
 #: ../../05_node-guide/02_node-extensions.md:11
 msgid "Shortest interval at which a BlockchainUpdates client may send keep-alive pings"
-msgstr ""
+msgstr "BlockchainUpdates 客户端可能发送保存状态的接线间隔最短"
 
 #: ../../05_node-guide/02_node-extensions.md:25
 msgid "The `grpc-server` module is not a separate process: it is an in-process node extension. The official Docker image already contains it; for other installs, put its JARs on the node's classpath (the Docker image also loads extra JARs from `lib/plugins/`). The module holds two extensions, each enabled by adding its class to `dcc.extensions`: `com.decentralchain.api.grpc.GRPCServerExtension` for the APIs on port 6870 (commented out in the node's default `application.conf`), and `com.decentralchain.events.BlockchainUpdates` for port 6881 (see [Blockchain Updates](../04_building-apps/11_blockchain-updates)). Enabling them is a deployment decision for the node operator, not a REST API toggle."
-msgstr ""
+msgstr "`grpc-server` 模块不是一个单独的进程:它是进程内节点扩展.官方多克图像已经包含它;对于其他安装,将其JARs放入节点的类路径上(多克图像也从 `lib/plugins/` 加载额外的JARs).模块持有两个扩展,每个扩展通过将其类加到 `dcc.extensions` 中而启用:为6870端口的API提供 `com.decentralchain.api.grpc.GRPCServerExtension` (在节点默认的 `application.conf` 中评论出),为6881端口提供 `com.decentralchain.events.BlockchainUpdates` (参见 [区链更新](../04_building-apps/11_blockchain-updates)).启用它们是节点操作员的部署决定,而不是一个 REST API 切换."
 
 #: ../../05_node-guide/03_custom-blockchain.md:1
 msgid "Custom Blockchain"
-msgstr ""
+msgstr "自定义块链"
 
 #: ../../05_node-guide/03_custom-blockchain.md:3
 msgid "Besides Mainnet and Testnet, the node software supports running a fully private, custom network — useful for local development or an isolated test environment. This is configured by setting the blockchain type to `CUSTOM` in the node configuration file, as seen in the `devnet` template shipped in [`network-defaults.conf`](https://github.com/Decentral-America/node-scala/blob/main/node/src/main/resources/network-defaults.conf):"
-msgstr ""
+msgstr "除了Mainnet和Testnet,节点软件支持运行一个完全私有的自定义网络——对本地开发或孤立的测试环境有用.这通过在节点配置文件中将区块链类型设置为 `CUSTOM` 来配置,如 `devnet` 模板以 [`network-defaults.conf`](https://github.com/Decentral-America/node-scala/blob/main/node/src/main/resources/network-defaults.conf) 被运出:"
 
 #: ../../05_node-guide/03_custom-blockchain.md:41
 msgid "Key fields:"
-msgstr ""
+msgstr "关键字段 :"
 
 #: ../../05_node-guide/03_custom-blockchain.md
 msgid "Field"
-msgstr ""
+msgstr "外地"
 
 #: ../../05_node-guide/03_custom-blockchain.md
 msgid "`address-scheme-character`"
-msgstr ""
+msgstr "`address-scheme-character`"
 
 #: ../../05_node-guide/03_custom-blockchain.md
 msgid "The network byte that distinguishes your custom network's addresses from Mainnet/Testnet — every address on your network is derived using this character"
-msgstr ""
+msgstr "区分您自定义网络地址和 Mainnet/ Testnet 的网络字节—— 您网络上每个地址都使用此字符来得出"
 
 #: ../../05_node-guide/03_custom-blockchain.md
 msgid "`functionality`"
-msgstr ""
+msgstr "`functionality`"
 
 #: ../../05_node-guide/03_custom-blockchain.md
 msgid "Protocol feature activation thresholds, transaction time offsets, and related consensus parameters"
-msgstr ""
+msgstr "协议特征激活阈值、交易时间抵消和相关共识参数"
 
 #: ../../05_node-guide/03_custom-blockchain.md
 #, python-brace-format
 msgid "Initial {ref}`block reward <02_decentralchain/05_node:Block Reward>` size, minimum increment, and voting interval — same mechanism as Mainnet"
-msgstr ""
+msgstr "初始 {ref}`块奖励 <02_decentralchain/05_node:Block Reward>` 大小,最小递增和投票间隔——与 Mainnet 相同的机制"
 
 #: ../../05_node-guide/03_custom-blockchain.md
 msgid "`genesis`"
-msgstr ""
+msgstr "`genesis`"
 
 #: ../../05_node-guide/03_custom-blockchain.md
 #, python-brace-format
 msgid "The network's {ref}`genesis block <02_decentralchain/04_block:Block>`: initial balances, timestamp, and difficulty"
-msgstr ""
+msgstr "网络的 {ref}`起源块 <02_decentralchain/04_block:Block>`:初始余额,时间戳和难度"
 
 #: ../../05_node-guide/03_custom-blockchain.md
 msgid "`network.known-peers`"
-msgstr ""
+msgstr "`network.known-peers`"
 
 #: ../../05_node-guide/03_custom-blockchain.md
 msgid "Seed peers for nodes on your custom network to discover each other — leave empty for a single-node development network"
-msgstr ""
+msgstr "在自定义网络上为节点提供种子同位素以发现彼此——为单一节点开发网络留空"
 
 #: ../../05_node-guide/03_custom-blockchain.md:51
 msgid "For a full field reference, use `network-defaults.conf`'s `devnet` block as a starting template and adjust the values for your own network, then point your node at a config file that sets `blockchain.type = CUSTOM` with your own `custom` block instead of `blockchain.type = TESTNET` or `MAINNET`."
-msgstr ""
+msgstr "对于完整字段参考,使用 `network-defaults.conf` 的 `devnet` 块作为起始模板并调整您自己的网络的值,然后将您的节点指向配置文件,将 `blockchain.type = CUSTOM` 设置在您自己的 `custom` 块而不是 `blockchain.type = TESTNET` 或 `MAINNET` 上."
 
 #: ../../05_node-guide/04_install-docker.md:1
 msgid "Run a Node with Docker"
-msgstr ""
+msgstr "与 Docker 运行节点"
 
 #: ../../05_node-guide/04_install-docker.md:3
 msgid "Docker is the recommended way to run a DecentralChain node. The image is built from `docker/Dockerfile` in [node-scala](https://github.com/Decentral-America/node-scala) and runs the node as the unprivileged user `dcc`."
-msgstr ""
+msgstr "Docker是运行一个DecentralChain节点的推荐方式.该图像由 [节点-斯卡拉](https://github.com/Decentral-America/node-scala) 中的 `docker/Dockerfile` 来构建,并运行节点作为无特权用户的 `dcc`."
 
 #: ../../05_node-guide/04_install-docker.md:6
 msgid "Verified on a clean Docker host (macOS 15.5, Docker Desktop 29.2.1, no earlier node images or volumes) against node-scala v1.8.1, 2026-10-27: following [Join the Public Testnet](15_join-testnet), the node synced the public Testnet from genesis to the tip, height 99,976, in 31 minutes, and its block IDs matched the public node."
-msgstr ""
+msgstr "在干净的多克主机(macOS 15.5,多克桌面 29.2.1,没有更早的节点图像或卷)上验证出与节点-scala v1.8.1, 2026-10-27:在 [加入公众 Testnet](15_join-testnet) 之后,节点将公共Testnet从起源到尖端同步,高度为99,976分31分钟后,其块ID与公共节点相匹配."
 
 #: ../../05_node-guide/04_install-docker.md:9
 msgid "Which Network You Can Join"
-msgstr ""
+msgstr "您可以加入哪个网络"
 
 #: ../../05_node-guide/04_install-docker.md:5
 #: ../../05_node-guide/05_configuration.md:5
 msgid "Network"
-msgstr ""
+msgstr "网络"
 
 #: ../../05_node-guide/04_install-docker.md:5
 msgid "Status"
-msgstr ""
+msgstr "状态"
 
 #: ../../05_node-guide/04_install-docker.md:5
 #: ../../05_node-guide/05_configuration.md:5
 msgid "Public Testnet"
-msgstr ""
+msgstr "公开 Testnet"
 
 #: ../../05_node-guide/04_install-docker.md:5
 msgid "Supported. Follow [Join the Public Testnet](15_join-testnet): it gives the configuration file the node needs."
-msgstr ""
+msgstr "供养已.跟随 [加入公众 Testnet](15_join-testnet):它给出了配置文件需要的节点."
 
 #: ../../05_node-guide/04_install-docker.md:5
 #: ../../05_node-guide/05_configuration.md:5
 msgid "Mainnet"
-msgstr ""
+msgstr "Mainnet"
 
 #: ../../05_node-guide/04_install-docker.md:5
 msgid "Not with this image yet. The live DCC Mainnet runs an earlier node line (its public node reports `DCC v1.3.5`). node-scala's built-in Mainnet profile ships no peers until the Mainnet migration, and the peers in its packaged `node/decentralchain-mainnet.conf` refused connections when tested on 2026-10-27. A v1.8.1 container started with that file stayed at the genesis block."
-msgstr ""
+msgstr "还没有用这个图像。活生生的DCC Mainnet运行了更早的节点线(其公有节点报告为 `DCC v1.3.5`). node-scala的内置Mainnet剖面船在Mainnet迁移之前没有同级相通,其包装中的同级相通的 `node/decentralchain-mainnet.conf` 在2026-10-27日测试时拒绝连接.一个v1.8.1的容器开始于那个文件 停留在起源区块。"
 
 #: ../../05_node-guide/04_install-docker.md:16
 msgid "Requirements"
-msgstr ""
+msgstr "所需经费"
 
 #: ../../05_node-guide/04_install-docker.md:5
 msgid "Requirement"
-msgstr ""
+msgstr "所需经费"
 
 #: ../../05_node-guide/04_install-docker.md:5
 msgid "Minimum"
-msgstr ""
+msgstr "最低"
 
 #: ../../05_node-guide/04_install-docker.md:5
 msgid "Recommended"
-msgstr ""
+msgstr "建议"
 
 #: ../../05_node-guide/04_install-docker.md:5
 msgid "Docker Engine"
-msgstr ""
+msgstr "嵌入引擎"
 
 #: ../../05_node-guide/04_install-docker.md:5
 msgid "25.x"
-msgstr ""
+msgstr "25.x"
 
 #: ../../05_node-guide/04_install-docker.md:5
 msgid "Latest stable"
-msgstr ""
+msgstr "最新稳定"
 
 #: ../../05_node-guide/04_install-docker.md:5
 msgid "RAM"
-msgstr ""
+msgstr "RAM"
 
 #: ../../05_node-guide/04_install-docker.md:5
 msgid "4 GB"
-msgstr ""
+msgstr "4 GB 语言"
 
 #: ../../05_node-guide/04_install-docker.md:5
 msgid "8 GB"
-msgstr ""
+msgstr "8 GB (英语)."
 
 #: ../../05_node-guide/04_install-docker.md:5
 msgid "CPU"
-msgstr ""
+msgstr "CPU"
 
 #: ../../05_node-guide/04_install-docker.md:5
 msgid "2 cores"
-msgstr ""
+msgstr "2个核心"
 
 #: ../../05_node-guide/04_install-docker.md:5
 msgid "4+ cores"
-msgstr ""
+msgstr "4个+核心"
 
 #: ../../05_node-guide/04_install-docker.md:5
 msgid "Disk (SSD)"
-msgstr ""
+msgstr "磁盘 (SSD)"
 
 #: ../../05_node-guide/04_install-docker.md:5
 msgid "1 GB for the Testnet (its data was 131 MB at height 99,976)"
-msgstr ""
+msgstr "Testnet 1 GB (其数据为131 MB, 高度99,976)"
 
 #: ../../05_node-guide/04_install-docker.md:5
 msgid "10 GB, to leave room for the chain to grow"
-msgstr ""
+msgstr "10GB,为链条的生长留有空间"
 
 #: ../../05_node-guide/04_install-docker.md:5
 msgid "100 Mbit/s"
-msgstr ""
+msgstr "100 Mbit/s (每秒) (千兆位)"
 
 #: ../../05_node-guide/04_install-docker.md:5
 msgid "1 Gbit/s"
@@ -1063,510 +1063,510 @@ msgstr ""
 
 #: ../../05_node-guide/04_install-docker.md:26
 msgid "Image tags"
-msgstr ""
+msgstr "图像标记"
 
 #: ../../05_node-guide/04_install-docker.md:28
 msgid "All images live at `ghcr.io/decentral-america/node-scala`. No image is published on Docker Hub."
-msgstr ""
+msgstr "所有图像都住在 `ghcr.io/decentral-america/node-scala`.在 Docker Hub 上没有发布图像 。"
 
 #: ../../05_node-guide/04_install-docker.md:5
 msgid "Tag"
-msgstr ""
+msgstr "标记"
 
 #: ../../05_node-guide/04_install-docker.md:5
 msgid "`1.8.1`, `1.8.0`, ..."
-msgstr ""
+msgstr "`1.8.1`, `1.8.0`, ..."
 
 #: ../../05_node-guide/04_install-docker.md:5
 msgid "One release. Use a release tag, or a digest, for a node you want to keep stable"
-msgstr ""
+msgstr "一释出.使用释放标记或摘要来表示您想要保持稳定的节点"
 
 #: ../../05_node-guide/04_install-docker.md:5
 msgid "`testnet-latest`, `mainnet-latest`, `latest`"
-msgstr ""
+msgstr "`testnet-latest`, `mainnet-latest`, `latest`"
 
 #: ../../05_node-guide/04_install-docker.md:5
 msgid "The newest build. On 2026-10-27 all three were the same v1.8.1 image (`sha256:3b04d066…`): the network a container joins comes from its configuration, not from the tag"
-msgstr ""
+msgstr "最新建筑.2026-10-27日,所有三个都是同为v1.8.1的图像(`sha256:3b04d066…`):网络一个容器的加入来自其配置,而不是从标记中产生"
 
 #: ../../05_node-guide/04_install-docker.md:5
 msgid "`sha-<commit>`"
-msgstr ""
+msgstr "`sha-<commit>`"
 
 #: ../../05_node-guide/04_install-docker.md:5
 msgid "A build of one git commit"
-msgstr ""
+msgstr "连一个基特承诺"
 
 #: ../../05_node-guide/04_install-docker.md:36
 #: ../../05_node-guide/15_join-testnet.md:156
 msgid "Ports"
-msgstr ""
+msgstr "端口"
 
 #: ../../05_node-guide/04_install-docker.md:5
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "Port"
-msgstr ""
+msgstr "端口"
 
 #: ../../05_node-guide/04_install-docker.md:5
 msgid "Exposure"
-msgstr ""
+msgstr "接触"
 
 #: ../../05_node-guide/04_install-docker.md:5
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "`6868`"
-msgstr ""
+msgstr "`6868`"
 
 #: ../../05_node-guide/04_install-docker.md:5
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "P2P"
-msgstr ""
+msgstr "P2P"
 
 #: ../../05_node-guide/04_install-docker.md:5
 msgid "Open to the internet if other nodes should be able to dial you; outbound only is enough to sync"
-msgstr ""
+msgstr "如果其他节点能够拨打您, 则打开互联网; 仅出局即可同步"
 
 #: ../../05_node-guide/04_install-docker.md:5
 #: ../../05_node-guide/05_configuration.md:34
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "`6869`"
-msgstr ""
+msgstr "`6869`"
 
 #: ../../05_node-guide/04_install-docker.md:5
 #: ../../05_node-guide/15_join-testnet.md:9 ../../05_node-guide/index.md:50
 msgid "REST API"
-msgstr ""
+msgstr "(原始内容存档于2019-09-31) (英语). Rest API"
 
 #: ../../05_node-guide/04_install-docker.md:5
 msgid "Keep private: bind to localhost, or place behind a reverse proxy"
-msgstr ""
+msgstr "保持私密性: 绑定到本地主机上, 或放置在反向代理服务器后"
 
 #: ../../05_node-guide/04_install-docker.md:43
 msgid "The Configuration File Is Required"
-msgstr ""
+msgstr "需要配置文件"
 
 #: ../../05_node-guide/04_install-docker.md:45
 msgid "Mount a configuration file at `/etc/dcc/dcc.conf`. Besides selecting the network, it must set the wallet password (`dcc.wallet.password`, which may be `\"\"`). Without a mounted file the node has no wallet password, can't ask for one, and exits with code 61 (`CANNOT GET CONSOLE TO ASK WALLET PASSWORD` in the log); with `--restart unless-stopped`, Docker then restarts it in a loop. `DCC_WALLET_PASSWORD` doesn't help on its own: the entrypoint applies it only on top of a mounted file. See [Configuration](05_configuration)."
-msgstr ""
+msgstr "在 `/etc/dcc/dcc.conf` 上载配置文件 。除了选择网络外,它还必须设置钱包密码(`dcc.wallet.password`),可能就是 `\"\"`.没有挂载的文件,节点没有钱包密码,不能要求一个,退出时有代码61(日志中为 `CANNOT GET CONSOLE TO ASK WALLET PASSWORD`);有 `--restart unless-stopped`,多克再以回环方式重启. `DCC_WALLET_PASSWORD` 本身无济于事:入站点只在挂载文件上应用.见 [配置](05_configuration)."
 
 #: ../../05_node-guide/04_install-docker.md:47
 msgid "Quick start"
-msgstr ""
+msgstr "快速启动"
 
 #: ../../05_node-guide/04_install-docker.md:49
 msgid "Write `dcc.conf` as shown in [Join the Public Testnet](15_join-testnet), then start the node from the same directory:"
-msgstr ""
+msgstr "将 `dcc.conf` 写入 [加入公众 Testnet](15_join-testnet) 中, 然后从同一目录中开始 :"
 
 #: ../../05_node-guide/04_install-docker.md:66
 msgid "Inside the container the REST API binds to `127.0.0.1` by default (`DCC_REST_API_BIND`). Docker cannot forward a published port to a service listening only on the container's loopback interface, so without `DCC_REST_API_BIND=0.0.0.0` the API is unreachable from the host. The example above then publishes the port only on the host's loopback (`-p 127.0.0.1:6869:6869`), which keeps the API off the public internet."
-msgstr ""
+msgstr "在容器内,REST API默认会与 `127.0.0.1` (`DCC_REST_API_BIND`)相接.Docker不能将已公布的端口转发给只听从容器回回接口的服务,因此没有 `DCC_REST_API_BIND=0.0.0.0`,API无法从主机中获取.上面的例子仅公布于主机回放(`-p 127.0.0.1:6869:6869`)的端口,"
 
 #: ../../05_node-guide/04_install-docker.md:69
 msgid "Data is stored in the `/var/lib/dcc` volume and logs in `/var/log/dcc`. Keep the data volume between restarts and upgrades: losing it forces a full re-sync."
-msgstr ""
+msgstr "数据被存储在 `/var/lib/dcc` 卷和日志中以 `/var/log/dcc` 为单位.在重启和升级之间保持数据量:失去它就迫使完全重新同步."
 
 #: ../../05_node-guide/04_install-docker.md:71
 msgid "Docker Compose"
-msgstr ""
+msgstr "多克编曲"
 
 #: ../../05_node-guide/04_install-docker.md:73
 msgid "The same node with Docker Compose, with `dcc.conf` next to `compose.yaml`:"
-msgstr ""
+msgstr "与多克作曲相同的节点, `dcc.conf` 相邻为 `compose.yaml`:"
 
 #: ../../05_node-guide/04_install-docker.md:102
 msgid "To give the node a wallet seed and password without writing them into `dcc.conf`, add `env_file: .env` with `DCC_WALLET_SEED` and `DCC_WALLET_PASSWORD` (and `chmod 600 .env`). The entrypoint layers them on top of the mounted `dcc.conf`; without the mounted file they are ignored."
-msgstr ""
+msgstr "要给节点一个钱包种子和密码,而不将它们写入 `dcc.conf`,加上 `env_file: .env` 并加上 `DCC_WALLET_SEED` 和 `DCC_WALLET_PASSWORD` (和 `chmod 600 .env`).进入点在挂载的 `dcc.conf` 上层进行;没有挂载的文件,它们会被忽略."
 
 #: ../../05_node-guide/04_install-docker.md:105
 msgid "Verify it is running"
-msgstr ""
+msgstr "校验它正在运行"
 
 #: ../../05_node-guide/04_install-docker.md:113
 msgid "The image's built-in `HEALTHCHECK` polls `/node/status`. On the first start the node replays the chain from genesis; [Join the Public Testnet](15_join-testnet) shows how to check it has reached the tip. See [Configuration](05_configuration) for every environment variable and [Sync and Rollback](06_sync-and-rollback) for what to expect on first start."
-msgstr ""
+msgstr "画面为内置的 `HEALTHCHECK` 民意调查. `/node/status`.在第一个开始时,节点从起源重放链;[加入公众 Testnet](15_join-testnet) 显示如何检查已到达尖端.每个环境变量都参见 [配置](05_configuration),第一次启动时的预期值参见 [同步和回滚](06_sync-and-rollback)."
 
 #: ../../05_node-guide/05_configuration.md:1 ../../05_node-guide/index.md:29
 msgid "Configuration"
-msgstr ""
+msgstr "配置"
 
 #: ../../05_node-guide/05_configuration.md:3
 msgid "A node reads a [HOCON](https://github.com/lightbend/config/blob/master/HOCON.md) configuration file whose settings live under the `dcc` key. Built-in defaults (`application.conf` and `network-defaults.conf`) are merged with your file, so your file only needs the settings you want to change."
-msgstr ""
+msgstr "一个节点读取一个 [HOCON](https://github.com/lightbend/config/blob/master/HOCON.md) 配置文件,其设置活在 `dcc` 密钥下.内建默认值(`application.conf` 和 `network-defaults.conf`)与您的文件合并,因此您的文件只需要您想要更改的设置."
 
 #: ../../05_node-guide/05_configuration.md:6
 msgid "Verified against node-scala v1.8.0. Do not use the shipped `application.conf` as your own config file; it is a defaults file."
-msgstr ""
+msgstr "对节点-斯卡拉v1.8.0.不要使用已运出 `application.conf` 作为自己的配置文件; 它是一个默认文件 。"
 
 #: ../../05_node-guide/05_configuration.md:9
 msgid "Environment variables (Docker)"
-msgstr ""
+msgstr "环境变量( Docker)"
 
 #: ../../05_node-guide/05_configuration.md:11
 msgid "The Docker entrypoint translates these variables into JVM options:"
-msgstr ""
+msgstr "Docker 入口将这些变量翻译为 JVM 选项 :"
 
 #: ../../05_node-guide/05_configuration.md:5
 msgid "Variable"
-msgstr ""
+msgstr "变量"
 
 #: ../../05_node-guide/05_configuration.md:5
 msgid "Effect"
-msgstr ""
+msgstr "效果"
 
 #: ../../05_node-guide/05_configuration.md:5
 msgid "`DCC_NETWORK`"
-msgstr ""
+msgstr "`DCC_NETWORK`"
 
 #: ../../05_node-guide/05_configuration.md:5
 msgid "`mainnet`"
-msgstr ""
+msgstr "`mainnet`"
 
 #: ../../05_node-guide/05_configuration.md:5
 msgid "Sets `dcc.defaults.blockchain.type` — the network the node joins"
-msgstr ""
+msgstr "设置 `dcc.defaults.blockchain.type` — 连接节点的网络"
 
 #: ../../05_node-guide/05_configuration.md:5
 msgid "`DCC_HEAP_SIZE`"
-msgstr ""
+msgstr "`DCC_HEAP_SIZE`"
 
 #: ../../05_node-guide/05_configuration.md:5
 msgid "`2g`"
-msgstr ""
+msgstr "`2g`"
 
 #: ../../05_node-guide/05_configuration.md:5
 msgid "JVM `-Xmx`"
-msgstr ""
+msgstr "JVM `-Xmx` 维基月球在线解说-维基百科中的相关条目: 维基语录链接:名人名言 - 分类"
 
 #: ../../05_node-guide/05_configuration.md:5
 msgid "`DCC_LOG_LEVEL`"
-msgstr ""
+msgstr "`DCC_LOG_LEVEL`"
 
 #: ../../05_node-guide/05_configuration.md:5
 msgid "`INFO`"
-msgstr ""
+msgstr "`INFO`"
 
 #: ../../05_node-guide/05_configuration.md:5
 msgid "Console log level: `OFF`, `ERROR`, `WARN`, `INFO`, `DEBUG`, `TRACE`"
-msgstr ""
+msgstr "控制台日志级别: `OFF`, `ERROR`, `WARN`, `INFO`, `DEBUG`, `TRACE`"
 
 #: ../../05_node-guide/05_configuration.md:5
 msgid "`DCC_REST_API_BIND`"
-msgstr ""
+msgstr "`DCC_REST_API_BIND`"
 
 #: ../../05_node-guide/05_configuration.md:5
 #: ../../05_node-guide/05_configuration.md:34
 msgid "`127.0.0.1`"
-msgstr ""
+msgstr "`127.0.0.1`"
 
 #: ../../05_node-guide/05_configuration.md:5
 msgid "Sets `dcc.rest-api.bind-address`"
-msgstr ""
+msgstr "设置 `dcc.rest-api.bind-address`"
 
 #: ../../05_node-guide/05_configuration.md:5
 msgid "`DCC_WALLET_SEED`"
-msgstr ""
+msgstr "`DCC_WALLET_SEED`"
 
 #: ../../05_node-guide/05_configuration.md:5
 msgid "—"
-msgstr ""
+msgstr "—"
 
 #: ../../05_node-guide/05_configuration.md:5
 msgid "Base58 wallet seed, written to a private temporary config file at start-up and then unset"
-msgstr ""
+msgstr "Base58 钱包种子, 在启动时写入一个私有临时配置文件, 然后取消设置"
 
 #: ../../05_node-guide/05_configuration.md:5
 msgid "`DCC_WALLET_PASSWORD`"
-msgstr ""
+msgstr "`DCC_WALLET_PASSWORD`"
 
 #: ../../05_node-guide/05_configuration.md:5
 msgid "Wallet file password, handled the same way"
-msgstr ""
+msgstr "钱包文件密码,处理方式相同"
 
 #: ../../05_node-guide/05_configuration.md:5
 msgid "`JAVA_OPTS`"
-msgstr ""
+msgstr "`JAVA_OPTS`"
 
 #: ../../05_node-guide/05_configuration.md:5
 msgid "Extra JVM options"
-msgstr ""
+msgstr "额外的 JVM 选项"
 
 #: ../../05_node-guide/05_configuration.md:23
 msgid "To use your own file, mount it at `/etc/dcc/dcc.conf`. The entrypoint loads it automatically and layers wallet secrets on top. `DCC_WALLET_SEED` and `DCC_WALLET_PASSWORD` only take effect when such a file is mounted (and no command arguments are passed to the container); without `/etc/dcc/dcc.conf` they are ignored."
-msgstr ""
+msgstr "要使用自己的文件,请在 `/etc/dcc/dcc.conf` 上载它.入口自动加载,并将钱包的秘密层层于顶上. `DCC_WALLET_SEED` 和 `DCC_WALLET_PASSWORD` 只有在这样的文件被挂载时才会生效(并且没有命令参数传递到容器);没有 `/etc/dcc/dcc.conf`,它们会被忽略."
 
 #: ../../05_node-guide/05_configuration.md:25
 msgid "Ports and network defaults"
-msgstr ""
+msgstr "端口和网络默认"
 
 #: ../../05_node-guide/05_configuration.md:5
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "P2P port"
-msgstr ""
+msgstr "P2P 端口"
 
 #: ../../05_node-guide/05_configuration.md:5
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "Peer to connect to"
-msgstr ""
+msgstr "要连接的对等点"
 
 #: ../../05_node-guide/05_configuration.md:5
 msgid "6868"
-msgstr ""
+msgstr "6868"
 
 #: ../../05_node-guide/05_configuration.md:5
 msgid "not published yet"
-msgstr ""
+msgstr "尚未发布"
 
 #: ../../05_node-guide/05_configuration.md:5
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "`50.116.30.244:6868`"
-msgstr ""
+msgstr "`50.116.30.244:6868`"
 
 #: ../../05_node-guide/05_configuration.md:32
 msgid "The REST API listens on port `6869` on every network."
-msgstr ""
+msgstr "REST API在每个网络上收听端口 `6869`."
 
 #: ../../05_node-guide/05_configuration.md:35
 msgid "The public DecentralChain Testnet (`testnet-node.decentralchain.io`) is a custom chain (`dcc.blockchain.type = CUSTOM`, chain ID `!`). The built-in `testnet` profile (`DCC_NETWORK=testnet` without a config file) is a different network and will not join it. [Join the Public Testnet](15_join-testnet) gives the complete configuration file."
-msgstr ""
+msgstr "公用DecentralChain Testnet (`testnet-node.decentralchain.io`)是一个自定义链(`dcc.blockchain.type = CUSTOM`,链式ID `!`).内置的 `testnet` 配置文件(`DCC_NETWORK=testnet` 没有配置文件)是一个不同的网络,不会加入.[加入公众 Testnet](15_join-testnet) 给出了完整的配置文件."
 
 #: ../../05_node-guide/05_configuration.md:38
 msgid "Commonly changed settings"
-msgstr ""
+msgstr "常见更改的设置"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "Key"
-msgstr ""
+msgstr "密钥"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "Description"
-msgstr ""
+msgstr "说明"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "`dcc.directory`"
-msgstr ""
+msgstr "`dcc.directory`"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "`\"\"`"
-msgstr ""
+msgstr "`\"\"`"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "Base directory for node data"
-msgstr ""
+msgstr "节点数据基础目录"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "`dcc.db.max-rollback-depth`"
-msgstr ""
+msgstr "`dcc.db.max-rollback-depth`"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "`2000`"
-msgstr ""
+msgstr "`2000`"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "Maximum number of blocks a rollback can undo"
-msgstr ""
+msgstr "滚回可以撤消的最大块数"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "`dcc.db.store-transactions-by-address`"
-msgstr ""
+msgstr "`dcc.db.store-transactions-by-address`"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "`true`"
-msgstr ""
+msgstr "`true`"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "Index transactions by address (needed by address history endpoints)"
-msgstr ""
+msgstr "按地址分列的索引交易(按地址历史终点需要)"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "`dcc.wallet.file`"
-msgstr ""
+msgstr "`dcc.wallet.file`"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "`<directory>/wallet/wallet.dat`"
-msgstr ""
+msgstr "`<directory>/wallet/wallet.dat`"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "Wallet file path"
-msgstr ""
+msgstr "钱包文件路径"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "`dcc.wallet.password`"
-msgstr ""
+msgstr "`dcc.wallet.password`"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "unset"
-msgstr ""
+msgstr "未设定"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "Wallet file password"
-msgstr ""
+msgstr "钱包文件密码"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "`dcc.wallet.seed`"
-msgstr ""
+msgstr "`dcc.wallet.seed`"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "Base58 seed; if unset the node generates one"
-msgstr ""
+msgstr "Base58 种子; 如果未设置节点生成一个"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "`dcc.rest-api.enable`"
-msgstr ""
+msgstr "`dcc.rest-api.enable`"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "`yes`"
-msgstr ""
+msgstr "`yes`"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "Turn the REST API on or off"
-msgstr ""
+msgstr "打开或关闭 REST API"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "`dcc.rest-api.bind-address`"
-msgstr ""
+msgstr "`dcc.rest-api.bind-address`"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "Interface the API listens on"
-msgstr ""
+msgstr "界面 API 监听"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "`dcc.rest-api.port`"
-msgstr ""
+msgstr "`dcc.rest-api.port`"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "API port"
-msgstr ""
+msgstr "API 端口"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "`dcc.rest-api.api-key-hash`"
-msgstr ""
+msgstr "`dcc.rest-api.api-key-hash`"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "Hash of the API key that protects privileged endpoints"
-msgstr ""
+msgstr "保护特权端点的 API 密钥的散列"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "`dcc.rest-api.cors-headers.access-control-allow-origin`"
-msgstr ""
+msgstr "`dcc.rest-api.cors-headers.access-control-allow-origin`"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "Set to a specific origin in production"
-msgstr ""
+msgstr "设定为生产中的特定来源"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "`dcc.rest-api.transactions-by-address-limit`"
-msgstr ""
+msgstr "`dcc.rest-api.transactions-by-address-limit`"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "`1000`"
-msgstr ""
+msgstr "`1000`"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "Max results for address transaction history"
-msgstr ""
+msgstr "地址交易历史的最大结果"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "`dcc.rest-api.blocks-request-limit`"
-msgstr ""
+msgstr "`dcc.rest-api.blocks-request-limit`"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "`100`"
-msgstr ""
+msgstr "`100`"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "Max blocks per range request"
-msgstr ""
+msgstr "每个区域请求的最大块数"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "`dcc.utx.max-size`"
-msgstr ""
+msgstr "`dcc.utx.max-size`"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "`100000`"
-msgstr ""
+msgstr "`100000`"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "Max unconfirmed transactions held"
-msgstr ""
+msgstr "持有的最大未确认的交易"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "`dcc.network.max-inbound-connections`"
-msgstr ""
+msgstr "`dcc.network.max-inbound-connections`"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "Inbound peer limit"
-msgstr ""
+msgstr "入境对等限制"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "`dcc.network.max-outbound-connections`"
-msgstr ""
+msgstr "`dcc.network.max-outbound-connections`"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "Outbound peer limit"
-msgstr ""
+msgstr "出局对等限制"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "`dcc.hotstuff.authoritative`"
-msgstr ""
+msgstr "`dcc.hotstuff.authoritative`"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "`false`"
-msgstr ""
+msgstr "`false`"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "Testnet-only: lets a HotStuff commit certificate raise the finalized height. Requires `enabled = true`. Never set it on Mainnet"
-msgstr ""
+msgstr "Testnet-只让:让一个HotStuff承诺证书提高最终完成的高度.需要 `enabled = true` 键入.永远不要放在Mainnet上"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "`dcc.miner.self-commit-to-generation`"
-msgstr ""
+msgstr "`dcc.miner.self-commit-to-generation`"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "`no`"
-msgstr ""
+msgstr "`no`"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "The node's miner submits its own Commit To Generation transaction for each generation period"
-msgstr ""
+msgstr "节点的矿工会提交它自己的 Commission To Generation 交易, 每代交易期"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "`dcc.network.peer-stall-threshold`"
-msgstr ""
+msgstr "`dcc.network.peer-stall-threshold`"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "`900`"
-msgstr ""
+msgstr "`900`"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "Ticks (about 1 s each) of peer-reconnection stall before the node clears suspensions and redials"
-msgstr ""
+msgstr "节点清除暂停和重排前的对等重联站的出错(每个大约1 s)"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "`dcc.hotstuff.enabled`"
-msgstr ""
+msgstr "`dcc.hotstuff.enabled`"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "HotStuff fast-finality engine. Leave it off on Mainnet. The public Testnet's own nodes run it enabled and authoritative (see [Features and Activation](10_features-and-activation))"
-msgstr ""
+msgstr "HotStuff快决赛引擎.离开它Mainnet。公共 Testnet 的自有节点运行它启用并具有权威性(参见 [特征和活性](10_features-and-activation))"
 
 #: ../../05_node-guide/05_configuration.md:63
 msgid "API key"
-msgstr ""
+msgstr "API 密钥"
 
 #: ../../05_node-guide/05_configuration.md:65
 msgid "Privileged endpoints (wallet, rollback, `/debug/*`, `/node/stop`) require an `X-Api-Key` header. The node stores only a hash of the key. Generate the hash with the node itself:"
-msgstr ""
+msgstr "私自取出端点(wallet,回滚, `/debug/*`, `/node/stop`)需要 `X-Api-Key` 头.节点只存储一散钥匙.用节点本身产生散列:"
 
 #: ../../05_node-guide/05_configuration.md:72
 msgid "Put the `hash` value from the JSON response in `dcc.rest-api.api-key-hash`, restart, and send `my-secret-api-key` in `X-Api-Key`."
-msgstr ""
+msgstr "将来自JSON响应的 `hash` 值放入 `dcc.rest-api.api-key-hash`,重新启动,并发送到 `X-Api-Key` 中的 `my-secret-api-key`."
 
 #: ../../05_node-guide/05_configuration.md:74
 msgid "Example: minimal Mainnet file"
-msgstr ""
+msgstr "示例: Mainnet 文件最小值"
 
 #: ../../05_node-guide/06_sync-and-rollback.md:1
 msgid "Sync, Import, Export and Rollback"
-msgstr ""
+msgstr "同步、 导入、 导出和回滚"
 
 #: ../../05_node-guide/06_sync-and-rollback.md:4
 #: ../../05_node-guide/07_upgrade.md:4
@@ -1575,449 +1575,449 @@ msgstr ""
 #: ../../05_node-guide/10_features-and-activation.md:4
 #: ../../05_node-guide/11_troubleshooting.md:4
 msgid "Verified against node-scala v1.8.0."
-msgstr ""
+msgstr "对节点-斯卡拉v1.8.0."
 
 #: ../../05_node-guide/06_sync-and-rollback.md:7
 msgid "Initial sync"
-msgstr ""
+msgstr "初始同步"
 
 #: ../../05_node-guide/06_sync-and-rollback.md:9
 msgid "A new node downloads and validates the whole chain from its peers. This takes hours to days depending on hardware and network. Track progress with:"
-msgstr ""
+msgstr "一个新的节点下载并验证整个链条从同等端.这需要几个小时到几天的时间,这取决于硬件和网络。跟踪进度如下:"
 
 #: ../../05_node-guide/06_sync-and-rollback.md:16
 msgid "The node is fully synced when `stateHeight` equals `blockchainHeight` in `/node/status` and `/blocks/height` is within a few blocks of a public peer's height. If a node stalls after syncing, restart it and check the [logs](09_logging) for fork or invalid-block messages."
-msgstr ""
+msgstr "`stateHeight` 等于 `/node/status` 中 `blockchainHeight`,而 `/blocks/height` 在公共对等方高度的几块内时,节点完全同步.如果一个节点在同步后停顿, 请重新启动并检查 [日志](09_logging) 叉或无效块消息 。"
 
 #: ../../05_node-guide/06_sync-and-rollback.md:18
 msgid "Exporting blocks"
-msgstr ""
+msgstr "导出块"
 
 #: ../../05_node-guide/06_sync-and-rollback.md:20
 msgid "The node ships an exporter that writes the blocks (and optionally state snapshots) of a stopped node to files:"
-msgstr ""
+msgstr "节点会将一个被停止的节点的块(以及可选的状态快照)写入文件的出口国:"
 
 #: ../../05_node-guide/06_sync-and-rollback.md:3
 msgid "Option"
-msgstr ""
+msgstr "选项"
 
 #: ../../05_node-guide/06_sync-and-rollback.md:3
 msgid "`-c`, `--config`"
-msgstr ""
+msgstr "`-c`, `--config`"
 
 #: ../../05_node-guide/06_sync-and-rollback.md:3
 msgid "Node config file"
-msgstr ""
+msgstr "节点配置文件"
 
 #: ../../05_node-guide/06_sync-and-rollback.md:3
 msgid "`-o`, `--output-prefix`"
-msgstr ""
+msgstr "`-o`, `--output-prefix`"
 
 #: ../../05_node-guide/06_sync-and-rollback.md:3
 msgid "Blocks output file name prefix"
-msgstr ""
+msgstr "块输出文件名前缀"
 
 #: ../../05_node-guide/06_sync-and-rollback.md:3
 msgid "`-s`, `--snapshot-output-prefix`"
-msgstr ""
+msgstr "`-s`, `--snapshot-output-prefix`"
 
 #: ../../05_node-guide/06_sync-and-rollback.md:3
 msgid "Snapshots output file name prefix"
-msgstr ""
+msgstr "抓图输出文件名前缀"
 
 #: ../../05_node-guide/06_sync-and-rollback.md:3
 msgid "`-h`, `--height`"
-msgstr ""
+msgstr "`-h`, `--height`"
 
 #: ../../05_node-guide/06_sync-and-rollback.md:3
 msgid "Export up to this height (must be > 0)"
-msgstr ""
+msgstr "导出至此高度( 必须是 > 0)"
 
 #: ../../05_node-guide/06_sync-and-rollback.md:29
 msgid "Importing blocks"
-msgstr ""
+msgstr "导入块"
 
 #: ../../05_node-guide/06_sync-and-rollback.md:31
 msgid "The importer loads blocks from a file (or URL, or stdin with `-`) into an empty or partially synced database, which is much faster than downloading from peers:"
-msgstr ""
+msgstr "进口商将文件(或URL,或用 `-` 的 stdin)的块加载到一个空或部分同步的数据库,比从同位素下载要快得多:"
 
 #: ../../05_node-guide/06_sync-and-rollback.md:3
 msgid "`-i`, `--input-file`"
-msgstr ""
+msgstr "`-i`, `--input-file`"
 
 #: ../../05_node-guide/06_sync-and-rollback.md:3
 msgid "Blockchain data file — **required**"
-msgstr ""
+msgstr "块链数据文件 — **所需数额**"
 
 #: ../../05_node-guide/06_sync-and-rollback.md:3
 msgid "`-s`, `--snapshots-file`"
-msgstr ""
+msgstr "`-s`, `--snapshots-file`"
 
 #: ../../05_node-guide/06_sync-and-rollback.md:3
 msgid "Snapshots data file"
-msgstr ""
+msgstr "抓图数据文件"
 
 #: ../../05_node-guide/06_sync-and-rollback.md:3
 msgid "Import up to this height (must be > 0)"
-msgstr ""
+msgstr "导入到此高度( 必须是 > 0)"
 
 #: ../../05_node-guide/06_sync-and-rollback.md:3
 msgid "`-n`, `--no-verify`"
-msgstr ""
+msgstr "`-n`, `--no-verify`"
 
 #: ../../05_node-guide/06_sync-and-rollback.md:3
 msgid "Skip signature verification — only for files you trust"
-msgstr ""
+msgstr "跳过签名验证—— 只针对您信任的文件"
 
 #: ../../05_node-guide/06_sync-and-rollback.md:3
 msgid "`-q`, `--max-queue-size`"
-msgstr ""
+msgstr "`-q`, `--max-queue-size`"
 
 #: ../../05_node-guide/06_sync-and-rollback.md:3
 msgid "Size of the block queue (must be > 0)"
-msgstr ""
+msgstr "块队列大小( 必须 > 0)"
 
 #: ../../05_node-guide/06_sync-and-rollback.md:42
 msgid "Import stops with an error if a block is not a child of the last stored block, so always import into a node that is stopped and whose database matches the file's starting point."
-msgstr ""
+msgstr "如果一个块不是最后一个存储块的子项,则导入时会出现出错,所以总是会导入一个被停止的节点,并且其数据库与文件的起点相匹配."
 
 #: ../../05_node-guide/06_sync-and-rollback.md:44
 msgid "Rolling back"
-msgstr ""
+msgstr "滚回原地"
 
 #: ../../05_node-guide/06_sync-and-rollback.md:46
 msgid "Rollback removes the most recent blocks. It is limited by `dcc.db.max-rollback-depth` (2000 blocks by default) and requires the API key:"
-msgstr ""
+msgstr "倒转去掉最近的块 。它受 `dcc.db.max-rollback-depth` (默认情况下为2000个块)的限制,需要API密钥:"
 
 #: ../../05_node-guide/06_sync-and-rollback.md:55
 msgid "With `returnTransactionsToUtx` set to `true`, transactions from the removed blocks go back to the unconfirmed pool. A successful call returns the `BlockId` of the new tip."
-msgstr ""
+msgstr "`returnTransactionsToUtx` 设定为 `true`,从被移除的块进行的交易会回到未经证实的池.一个成功的呼叫返回了新提示的 `BlockId` 。"
 
 #: ../../05_node-guide/06_sync-and-rollback.md:57
 msgid "Full re-sync"
-msgstr ""
+msgstr "完全重同步"
 
 #: ../../05_node-guide/06_sync-and-rollback.md:59
 msgid "If the database is corrupted or you need to go deeper than the rollback depth, delete the data volume and let the node re-sync from genesis:"
-msgstr ""
+msgstr "如果数据库被损坏或需要比回滚深度更深,则删除数据卷并让节点从起源中重新同步:"
 
 #: ../../05_node-guide/06_sync-and-rollback.md:62
 msgid "This destroys all local chain state. Never stop a node with `docker kill` or `SIGKILL` — an unclean shutdown can corrupt the database. Use `docker stop --time 60`."
-msgstr ""
+msgstr "这摧毁了所有本地的连锁状态.永不停止带有 `docker kill` 或 `SIGKILL` 的节点——不干净的关闭会腐蚀数据库.使用 `docker stop --time 60`. (中文(简体) )."
 
 #: ../../05_node-guide/07_upgrade.md:1
 msgid "Upgrade a Node"
-msgstr ""
+msgstr "升级节点"
 
 #: ../../05_node-guide/07_upgrade.md:7
 msgid "Upgrading replaces the software, not the data: keep the data volume and configuration."
-msgstr ""
+msgstr "升级取代了软件,而不是数据:保留数据量和配置."
 
 #: ../../05_node-guide/07_upgrade.md:9 ../../05_node-guide/09_logging.md:7
 msgid "Docker"
-msgstr ""
+msgstr "插头"
 
 #: ../../05_node-guide/07_upgrade.md:11
 msgid "Record the current height: `curl -s http://localhost:6869/blocks/height`"
-msgstr ""
+msgstr "记录当前高度: `curl -s http://localhost:6869/blocks/height`"
 
 #: ../../05_node-guide/07_upgrade.md:12
 msgid "Pull the new image, and note its digest so you can pin it:"
-msgstr ""
+msgstr "拉出新图像,注意它的文摘,这样你就可以把它接上:"
 
 #: ../../05_node-guide/07_upgrade.md:19
 msgid "Stop the node gracefully. The image uses `STOPSIGNAL SIGINT` to trigger a clean JVM shutdown; give it time to flush and close the database:"
-msgstr ""
+msgstr "宽宏大量地停止节点。图像使用 `STOPSIGNAL SIGINT` 触发干净的 JVM 关闭; 给它时间冲出并关闭数据库 :"
 
 #: ../../05_node-guide/07_upgrade.md:25
 msgid "Start a new container with the same volume, environment and ports as before (see [Run a Node with Docker](04_install-docker))."
-msgstr ""
+msgstr "启动一个与以前相同的容量、环境和港口的新容器(见 [与 Docker 运行节点](04_install-docker))。"
 
 #: ../../05_node-guide/07_upgrade.md:26
 msgid "Confirm the height continues from where it stopped."
-msgstr ""
+msgstr "确认高度从它停止的地方继续。"
 
 #: ../../05_node-guide/07_upgrade.md:28
 msgid "Reverting an upgrade"
-msgstr ""
+msgstr "恢复升级"
 
 #: ../../05_node-guide/07_upgrade.md:30
 msgid "If the new version fails to start, stop it and start the previous image using its pinned `sha-<commit>` tag against the same volume. Only if the state itself is corrupted should you fall back to a [full re-sync](06_sync-and-rollback)."
-msgstr ""
+msgstr "如果新版本未能启动,请停止,并使用被封住的 `sha-<commit>` 标记来启动上个图像,以对抗同音量.只有当国家本身被破坏时,你才会回到 [完全重同步](06_sync-and-rollback)."
 
 #: ../../05_node-guide/07_upgrade.md:32
 msgid "From a JAR"
-msgstr ""
+msgstr "从一个JAR"
 
 #: ../../05_node-guide/07_upgrade.md:34
 msgid "Stop the process with a normal `SIGINT`/`SIGTERM` (not `kill -9`), replace the JAR with the new release, and start it again with the same configuration file."
-msgstr ""
+msgstr "用普通的 `SIGINT`/`SIGTERM` (不是 `kill -9`)来停止进程,用新的放出来取代JAR,再用相同的配置文件重新开始."
 
 #: ../../05_node-guide/07_upgrade.md:36
 msgid "Network upgrades"
-msgstr ""
+msgstr "网络升级"
 
 #: ../../05_node-guide/07_upgrade.md:38
 msgid "New protocol behaviour is switched on by [feature activation](10_features-and-activation), not by upgrading alone. A node that does not support an activated feature stops following the chain, so upgrade before an announced activation height."
-msgstr ""
+msgstr "新的协议行为由 [特性激活](10_features-and-activation) 开启,而不是单靠升级.不支持被激活特性的节点会停止跟随链条,因此在宣布被激活高度前升级."
 
 #: ../../05_node-guide/08_wallet-and-generating.md:1
 msgid "Node Wallet and Block Generation"
-msgstr ""
+msgstr "节点钱包和块生成"
 
 #: ../../05_node-guide/08_wallet-and-generating.md:7
 msgid "The node wallet"
-msgstr ""
+msgstr "节点钱包"
 
 #: ../../05_node-guide/08_wallet-and-generating.md:9
 msgid "A node keeps an encrypted wallet file at `dcc.wallet.file` (default `<directory>/wallet/wallet.dat`). It holds the accounts the node may sign for — most importantly the account that generates blocks."
-msgstr ""
+msgstr "一个节点在 `dcc.wallet.file` 保存一个加密的钱包文件(默认为 `<directory>/wallet/wallet.dat`).它持有节点可能签名的账户——最重要的是生成块的账户."
 
 #: ../../05_node-guide/08_wallet-and-generating.md:11
 msgid "The wallet stores a **base seed**, from which account keys are derived. It is not an account seed itself. If `dcc.wallet.seed` is not set, the node generates a new one on first start. To use an existing seed, set `dcc.wallet.seed` (Base58) and `dcc.wallet.password`, or pass `DCC_WALLET_SEED` and `DCC_WALLET_PASSWORD` to the Docker image."
-msgstr ""
+msgstr "钱包存储一个 **基础种子**,从中可以得出账户密钥.它本身不是一个账户种子。如果 `dcc.wallet.seed` 未设置, 节点会在第一次启动时生成一个新的节点.要使用已存在的种子,请设置 `dcc.wallet.seed` (Base58)和 `dcc.wallet.password`,或将 `DCC_WALLET_SEED` 和 `DCC_WALLET_PASSWORD` 传递给多克图像."
 
 #: ../../05_node-guide/08_wallet-and-generating.md:14
 msgid "Whoever holds the seed controls the funds. Keep secrets in a `chmod 600` `.env` file or a secrets manager, never in shell history or a committed file."
-msgstr ""
+msgstr "持有种子的人控制着资金.在 `chmod 600` `.env` 文件中保存机密或秘密管理器,在 shell 历史或已承诺的文件中永远不要."
 
 #: ../../05_node-guide/08_wallet-and-generating.md:17
 msgid "Wallet endpoints"
-msgstr ""
+msgstr "钱包端点"
 
 #: ../../05_node-guide/08_wallet-and-generating.md:19
 msgid "These require the [API key](05_configuration):"
-msgstr ""
+msgstr "这需要 [API 密钥](05_configuration) :"
 
 #: ../../05_node-guide/08_wallet-and-generating.md:27
 msgid "Generating blocks"
-msgstr ""
+msgstr "生成块"
 
 #: ../../05_node-guide/08_wallet-and-generating.md:29
 #, python-brace-format
 msgid "A node produces blocks when a wallet account meets the generating-balance requirement under {ref}`Leased Proof of Stake <02_decentralchain/05_node:Leased Proof of Stake>` — its own DCC plus DCC leased to it. To grow a generating balance, other accounts can lease to the node's address."
-msgstr ""
+msgstr "一个节点当钱包账户满足 {ref}`租借证据 <02_decentralchain/05_node:Leased Proof of Stake>` 的生成-平衡要求时产生块——它自己的DCC外加租给它的DCC.为了形成一个生成平衡,其他账户可以租入节点的地址."
 
 #: ../../05_node-guide/08_wallet-and-generating.md:31
 msgid "Check what the miner sees with the privileged `/debug/minerInfo` endpoint, which lists each generating account and its mining balance."
-msgstr ""
+msgstr "检查矿工看到什么 特权 `/debug/minerInfo` 端点, 它列出每个生成账户 及其开采平衡。"
 
 #: ../../05_node-guide/08_wallet-and-generating.md:33
 #, python-brace-format
 msgid "For reward economics and the block-reward vote, see the {ref}`Node <02_decentralchain/05_node:Node>` article."
-msgstr ""
+msgstr "关于奖励经济学和\"块赏\"的投票,参见\"{ref}`节点 <02_decentralchain/05_node:Node>`\"一文."
 
 #: ../../05_node-guide/09_logging.md:1
 msgid "Logging"
-msgstr ""
+msgstr "日志"
 
 #: ../../05_node-guide/09_logging.md:9
 msgid "The image writes two streams:"
-msgstr ""
+msgstr "图片写作有两道溪流:"
 
 #: ../../05_node-guide/09_logging.md:11
 msgid "**Console** — at the level in `DCC_LOG_LEVEL` (default `INFO`). Read it with `docker logs`."
-msgstr ""
+msgstr "**控制台** — 在 `DCC_LOG_LEVEL` 中的关卡(默认为 `INFO`).与 `docker logs` 读取."
 
 #: ../../05_node-guide/09_logging.md:12
 msgid "**Files** — under `/var/log/dcc` (volume), written at `TRACE` level by the entrypoint."
-msgstr ""
+msgstr "**文件**——在 `/var/log/dcc` (音量)下,由出入口以 `TRACE` 级写出."
 
 #: ../../05_node-guide/09_logging.md:19
 msgid "Levels, from quietest to noisiest: `OFF`, `ERROR`, `WARN`, `INFO`, `DEBUG`, `TRACE`. Use `INFO` in production; `DEBUG` helps with sync and peer issues but is very verbose."
-msgstr ""
+msgstr "等分,从最安静到有声:`OFF`, `ERROR`, `WARN`, `INFO`, `DEBUG`, `TRACE`.生产时使用 `INFO`; `DEBUG` 帮助同步和对等问题,但非常动词."
 
 #: ../../05_node-guide/09_logging.md:21
 msgid "Custom logback configuration"
-msgstr ""
+msgstr "自定义日志后置配置"
 
 #: ../../05_node-guide/09_logging.md:23
 msgid "Logging is configured with [Logback](https://logback.qos.ch/). Point the JVM at your own file through `JAVA_OPTS`:"
-msgstr ""
+msgstr "日志配置为 [日志](https://logback.qos.ch/).通过 `JAVA_OPTS` 将 JVM 指向自己的文件 :"
 
 #: ../../05_node-guide/09_logging.md:29
 msgid "For a JAR install, pass the same `-Dlogback.configurationFile=...` system property to `java`."
-msgstr ""
+msgstr "对于JAR安装,将相同的 `-Dlogback.configurationFile=...` 系统属性传递到 `java`."
 
 #: ../../05_node-guide/09_logging.md:31
 msgid "Logs worth watching"
-msgstr ""
+msgstr "值得观看的日志"
 
 #: ../../05_node-guide/09_logging.md:33
 msgid "`Fork` and `InvalidBlock` messages — the node is on a different chain or received a bad block."
-msgstr ""
+msgstr "`Fork` 和 `InvalidBlock` 消息——节点处于不同的链条上或收到坏块."
 
 #: ../../05_node-guide/09_logging.md:34
 msgid "Out-of-memory exits — the entrypoint starts the JVM with `ExitOnOutOfMemoryError`, so raise `DCC_HEAP_SIZE`."
-msgstr ""
+msgstr "出站出站口——入站口以 `ExitOnOutOfMemoryError` 起站口JVM起站口,故起站口为 `DCC_HEAP_SIZE`."
 
 #: ../../05_node-guide/10_features-and-activation.md:1
 msgid "Features and Activation"
-msgstr ""
+msgstr "特征和活性"
 
 #: ../../05_node-guide/10_features-and-activation.md:7
 msgid "Protocol changes ship as numbered **blockchain features**. A feature is not active just because a node supports it: it must be activated on the network, either by a generator vote or because the network defaults pre-activate it."
-msgstr ""
+msgstr "协议更改船号为 **块链特性**.一个特性不活动仅仅是因为一个节点支持它:它必须在网络上被激活,要么通过生成器投票,要么是因为网络默认会预先激活."
 
 #: ../../05_node-guide/10_features-and-activation.md:9
 msgid "How activation works"
-msgstr ""
+msgstr "如何激活工作"
 
 #: ../../05_node-guide/10_features-and-activation.md:11
 msgid "Generators signal support for features they implement in the blocks they produce."
-msgstr ""
+msgstr "发电机信号支持它们在其产生的区块中执行的特性。"
 
 #: ../../05_node-guide/10_features-and-activation.md:12
 msgid "At the end of each voting period, a feature that reached the voting threshold is scheduled for activation."
-msgstr ""
+msgstr "在每个投票期结束时,一个达到投票门槛的功能被安排启动."
 
 #: ../../05_node-guide/10_features-and-activation.md:13
 msgid "After activation, the new rules apply to every node."
-msgstr ""
+msgstr "激活后,新规则适用于每个节点."
 
 #: ../../05_node-guide/10_features-and-activation.md:15
 msgid "Inspect the current state at any time:"
-msgstr ""
+msgstr "随时检查当前状态 :"
 
 #: ../../05_node-guide/10_features-and-activation.md:21
 msgid "The response includes `height`, `votingInterval`, `votingThreshold`, `nextCheck` and a `features` list with each feature's status."
-msgstr ""
+msgstr "反应包括 `height`, `votingInterval`, `votingThreshold`, `nextCheck` 以及一个每个特性状态的 `features` 列表."
 
 #: ../../05_node-guide/10_features-and-activation.md:23
 msgid "Unsupported features"
-msgstr ""
+msgstr "不支持的特性"
 
 #: ../../05_node-guide/10_features-and-activation.md:25
 msgid "By default `dcc.features.auto-shutdown-on-unsupported-feature = yes`: if the network activates a feature your node does not know, the node shuts down rather than follow a chain it cannot validate. The fix is to [upgrade](07_upgrade). Generators can list the features they vote for in `dcc.features.supported`."
-msgstr ""
+msgstr "默认 `dcc.features.auto-shutdown-on-unsupported-feature = yes` : 如果网络激活了一个您节点不知道的特性, 节点会关闭而不是跟随一个链条, 它无法验证 。修道为 [升级](07_upgrade).发电机可以列出他们投票支持的 `dcc.features.supported` 特性."
 
 #: ../../05_node-guide/10_features-and-activation.md:27
 msgid "Feature list in v1.8.0"
-msgstr ""
+msgstr "v1.8.0中的地物列表"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "Feature"
-msgstr ""
+msgstr "特性"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "1"
-msgstr ""
+msgstr "1"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "Minimum generating balance of 1000 DCC"
-msgstr ""
+msgstr "最低生成余额为1000DCC"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "2"
-msgstr ""
+msgstr "2"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "NG protocol"
-msgstr ""
+msgstr "NG 协议"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "3"
-msgstr ""
+msgstr "3"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "Mass Transfer transaction"
-msgstr ""
+msgstr "大规模转让交易"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "4"
-msgstr ""
+msgstr "4"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "Smart accounts"
-msgstr ""
+msgstr "智能账户"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "5"
-msgstr ""
+msgstr "5"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "Data transaction"
-msgstr ""
+msgstr "数据交易"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "6"
-msgstr ""
+msgstr "6"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "Burn any tokens"
-msgstr ""
+msgstr "烧掉任何标志"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "7"
-msgstr ""
+msgstr "7"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "Fee sponsorship"
-msgstr ""
+msgstr "收费赞助"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "8"
-msgstr ""
+msgstr "8"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "Fair PoS"
-msgstr ""
+msgstr "公平 PoS 游戏"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "9"
-msgstr ""
+msgstr "9"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "Smart assets"
-msgstr ""
+msgstr "智能资产"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "10"
-msgstr ""
+msgstr "10"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "Smart account trading"
-msgstr ""
+msgstr "智能账户交易"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "11"
-msgstr ""
+msgstr "11"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "Ride 4 dApps"
-msgstr ""
+msgstr "Ride 4 dApps"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "12"
-msgstr ""
+msgstr "12"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "Order version 3"
-msgstr ""
+msgstr "顺序版本 3"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "13"
-msgstr ""
+msgstr "13"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "Reduced NFT fee"
-msgstr ""
+msgstr "减少的NFT费"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "14"
-msgstr ""
+msgstr "14"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "Block reward and community-driven monetary policy"
-msgstr ""
+msgstr "集体奖励和社区驱动的货币政策"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "15"
-msgstr ""
+msgstr "15"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "Ride V4, VRF, Protobuf, failed transactions"
@@ -2025,273 +2025,273 @@ msgstr ""
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "16"
-msgstr ""
+msgstr "16"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "Ride V5, dApp-to-dApp invocations"
-msgstr ""
+msgstr "Ride V5, dApp 对-dApp 引用"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "17"
-msgstr ""
+msgstr "17"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "Ride V6, MetaMask support"
-msgstr ""
+msgstr "Ride V6, MetaMask 支持"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "18"
-msgstr ""
+msgstr "18"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "Consensus and MetaMask updates"
-msgstr ""
+msgstr "共识和 MetaMask 最新情况"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "19"
-msgstr ""
+msgstr "19"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "Block reward distribution"
-msgstr ""
+msgstr "区块奖励分配"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "20"
-msgstr ""
+msgstr "20"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "Capped buy-back and DAO amounts"
-msgstr ""
+msgstr "已装入回购和DAO金额"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "21"
-msgstr ""
+msgstr "21"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "Cease buy-back"
-msgstr ""
+msgstr "停止回购"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "22"
-msgstr ""
+msgstr "22"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "Light node"
-msgstr ""
+msgstr "轻节点"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "23"
-msgstr ""
+msgstr "23"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "Boost block reward"
-msgstr ""
+msgstr "助推块奖励"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "24"
-msgstr ""
+msgstr "24"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "`ecrecover` fix"
-msgstr ""
+msgstr "`ecrecover` 修补"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "25"
-msgstr ""
+msgstr "25"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "Deterministic finality and Ride V9"
-msgstr ""
+msgstr "决定性终局和 Ride V9"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "26"
-msgstr ""
+msgstr "26"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "Adjusted block reward distribution"
-msgstr ""
+msgstr "经调整的块奖励分配"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "27"
-msgstr ""
+msgstr "27"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "Continuation transaction (not exposed)"
-msgstr ""
+msgstr "继续交易(未曝光)"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "28"
-msgstr ""
+msgstr "28"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "Lease expiration (not exposed)"
-msgstr ""
+msgstr "租赁期满(未曝光)"
 
 #: ../../05_node-guide/10_features-and-activation.md:61
 msgid "Since v1.8.0 the numbering of the last features differs from v1.7.0: **26 = Adjusted Block Reward Distribution**, 27 = Continuation transaction, 28 = Lease expiration, and the Groth16 verifier is no longer a feature. Only feature 26 is votable and reported in `/activation/status`; 27 and 28 are defined in the source but not exposed."
-msgstr ""
+msgstr "由于v1.8.0,最后一个特性的编号与v1.7.0不同:**26=调整后的块奖励分布**,27=继续交易,28=租赁到期,而Groth16验证器已不再是一个特性.只有特征26是可投票的,并以 `/activation/status` 形式报告;27和28在源头中被定义了,但没有被曝光."
 
 #: ../../05_node-guide/10_features-and-activation.md:64
 msgid "Which of these are active on a given network is a runtime fact — read it from `/activation/status` rather than from this table."
-msgstr ""
+msgstr "其中哪些在给定的网络上活动是一个运行时间的事实——从 `/activation/status` 而不是从这个表格读取."
 
 #: ../../05_node-guide/10_features-and-activation.md:66
 msgid "Finality and HotStuff"
-msgstr ""
+msgstr "终局和 HotStuff"
 
 #: ../../05_node-guide/10_features-and-activation.md:68
 msgid "Finality is provided by **Deterministic Finality (feature 25)**. The node also contains a HotStuff BFT fast-finality engine, controlled by `dcc.hotstuff.enabled`. It is **off by default** and gated on an external audit before any Mainnet use. Do not enable it on a Mainnet node. When it is enabled, `/node/status` additionally reports `hotStuffFinalizedHeight`."
-msgstr ""
+msgstr "最终由 **Deterministic Finality (feature 25)** 提供.节点还包含由 `dcc.hotstuff.enabled` 所控制的HotStuff BFT快决赛引擎.它是 **默认关闭**,在使用任何Mainnet之前,先进行外部审计。不要在 Mainnet 节点上启用它 。启用后, `/node/status` 会额外报告 `hotStuffFinalizedHeight`."
 
 #: ../../05_node-guide/10_features-and-activation.md:71
 msgid "**On the public Testnet, HotStuff is enabled and authoritative.** The Testnet's own nodes run `dcc.hotstuff.enabled = true` and `dcc.hotstuff.authoritative = true`, so a HotStuff commit certificate raises the finalized height that `/blocks/height/finalized` reports. That is why Testnet finality runs only a few blocks behind the tip (`hotStuffFinalizedHeight` in `/node/status`). Mainnet does not run HotStuff. Integrators should not expect Testnet finality latency on Mainnet."
-msgstr ""
+msgstr "**在公共版上Testnet,HotStuff是启用并具有权威性的.** Testnet的自有节点运行了 `dcc.hotstuff.enabled = true` 和 `dcc.hotstuff.authoritative = true`,因此一个HotStuff承诺证书提高了 `/blocks/height/finalized` 报告的最终高度.这就是为什么Testnet决赛只跑出几条后端(`hotStuffFinalizedHeight` in `/node/status`).Mainnet不运行HotStuff.集成者不应期望Testnet终极性在Mainnet上存在."
 
 #: ../../05_node-guide/11_troubleshooting.md:1
 msgid "Troubleshooting"
-msgstr ""
+msgstr "解决问题"
 
 #: ../../05_node-guide/11_troubleshooting.md:3
 msgid "Symptom"
-msgstr ""
+msgstr "症状"
 
 #: ../../05_node-guide/11_troubleshooting.md:3
 msgid "Likely cause"
-msgstr ""
+msgstr "可能的原因是"
 
 #: ../../05_node-guide/11_troubleshooting.md:3
 msgid "What to do"
-msgstr ""
+msgstr "怎么办"
 
 #: ../../05_node-guide/11_troubleshooting.md:3
 msgid "`curl localhost:6869` fails from the host while the container is healthy"
-msgstr ""
+msgstr "`curl localhost:6869` 在容器健康时从主机失效"
 
 #: ../../05_node-guide/11_troubleshooting.md:3
 msgid "REST API bound to the container's loopback"
-msgstr ""
+msgstr "REST API 绑定在容器的回路"
 
 #: ../../05_node-guide/11_troubleshooting.md:3
 msgid "Set `DCC_REST_API_BIND=0.0.0.0` and publish `-p 127.0.0.1:6869:6869`"
-msgstr ""
+msgstr "设置 `DCC_REST_API_BIND=0.0.0.0` 并发布 `-p 127.0.0.1:6869:6869`"
 
 #: ../../05_node-guide/11_troubleshooting.md:3
 msgid "Node stays behind after hours"
-msgstr ""
+msgstr "节点数小时后留在后面"
 
 #: ../../05_node-guide/11_troubleshooting.md:3
 msgid "Still in initial sync, or few peers"
-msgstr ""
+msgstr "仍然处于初始同步状态, 或对等者很少"
 
 #: ../../05_node-guide/11_troubleshooting.md:3
 msgid "Check `/node/status` and `/peers/connected`; open inbound port 6868"
-msgstr ""
+msgstr "请检查date=中的日期值 (帮助) `/node/status` 和 `/peers/connected`;开放进港6868"
 
 #: ../../05_node-guide/11_troubleshooting.md:3
 msgid "No peers"
-msgstr ""
+msgstr "无对等者"
 
 #: ../../05_node-guide/11_troubleshooting.md:3
 msgid "Firewall, wrong network"
-msgstr ""
+msgstr "防火墙, 错误的网络"
 
 #: ../../05_node-guide/11_troubleshooting.md:3
 msgid "Confirm `DCC_NETWORK`; add a peer with `POST /peers/connect`"
-msgstr ""
+msgstr "确认 `DCC_NETWORK`; 用 `POST /peers/connect` 添加对等点"
 
 #: ../../05_node-guide/11_troubleshooting.md:3
 msgid "Node exits shortly after start"
-msgstr ""
+msgstr "开始后不久节点退出"
 
 #: ../../05_node-guide/11_troubleshooting.md:3
 msgid "JVM out of memory (`ExitOnOutOfMemoryError`)"
-msgstr ""
+msgstr "JVM 内存出错 (`ExitOnOutOfMemoryError`)"
 
 #: ../../05_node-guide/11_troubleshooting.md:3
 msgid "Raise `DCC_HEAP_SIZE`"
-msgstr ""
+msgstr "提升 `DCC_HEAP_SIZE`"
 
 #: ../../05_node-guide/11_troubleshooting.md:3
 msgid "Node stops after a network activation"
-msgstr ""
+msgstr "网络激活后节点停止"
 
 #: ../../05_node-guide/11_troubleshooting.md:3
 msgid "Unsupported feature, auto-shutdown"
-msgstr ""
+msgstr "不支持的特性, 自动缩放"
 
 #: ../../05_node-guide/11_troubleshooting.md:3
 msgid "[Upgrade](07_upgrade) the node"
-msgstr ""
+msgstr "[升级](07_upgrade) 节点"
 
 #: ../../05_node-guide/11_troubleshooting.md:3
 msgid "`403` from an API call"
-msgstr ""
+msgstr "`403` 来自API 呼叫"
 
 #: ../../05_node-guide/11_troubleshooting.md:3
 msgid "Missing or wrong `X-Api-Key`, or `api-key-hash` unset"
-msgstr ""
+msgstr "缺少或错误的 `X-Api-Key`, 或 `api-key-hash` 未设置"
 
 #: ../../05_node-guide/11_troubleshooting.md:3
 msgid "[Configure the API key](05_configuration)"
-msgstr ""
+msgstr "[配置 API 密钥](05_configuration)"
 
 #: ../../05_node-guide/11_troubleshooting.md:3
 msgid "Database errors after a crash"
-msgstr ""
+msgstr "崩溃后数据库出错"
 
 #: ../../05_node-guide/11_troubleshooting.md:3
 msgid "Unclean shutdown"
-msgstr ""
+msgstr "乌克兰关闭"
 
 #: ../../05_node-guide/11_troubleshooting.md:3
 msgid "Roll back if within depth, otherwise [re-sync](06_sync-and-rollback)"
-msgstr ""
+msgstr "如果在深度内,则退后,否则 [重同步](06_sync-and-rollback)"
 
 #: ../../05_node-guide/11_troubleshooting.md:3
 msgid "Node produces no blocks"
-msgstr ""
+msgstr "节点产生无块"
 
 #: ../../05_node-guide/11_troubleshooting.md:3
 msgid "Generating balance too low, wallet not loaded, or still syncing"
-msgstr ""
+msgstr "生成过低的余额, 未装入钱包, 或仍在同步"
 
 #: ../../05_node-guide/11_troubleshooting.md:3
 msgid "Check `/debug/minerInfo` and [wallet setup](08_wallet-and-generating)"
-msgstr ""
+msgstr "请检查date=中的日期值 (帮助) `/debug/minerInfo` 和 [钱包设置](08_wallet-and-generating)"
 
 #: ../../05_node-guide/11_troubleshooting.md:18
 msgid "Useful checks"
-msgstr ""
+msgstr "有用的检查"
 
 #: ../../05_node-guide/11_troubleshooting.md:27
 msgid "Adding a peer at runtime"
-msgstr ""
+msgstr "运行时添加对等点"
 
 #: ../../05_node-guide/11_troubleshooting.md:35
 msgid "Reporting an issue"
-msgstr ""
+msgstr "报告一个问题"
 
 #: ../../05_node-guide/11_troubleshooting.md:37
 msgid "Include the node version, network, `/node/status` output and the relevant log excerpt when opening an issue at [Decentral-America/node-scala](https://github.com/Decentral-America/node-scala)."
-msgstr ""
+msgstr "在 [Decentral-America/node-scala](https://github.com/Decentral-America/node-scala) 打开一个问题时, 包含节点版本, 网络, `/node/status` 输出和相关日志节选 。"
 
 #: ../../05_node-guide/12_install-linux.md:1
 msgid "Installing on Linux"
-msgstr ""
+msgstr "在 Linux 上安装"
 
 #: ../../05_node-guide/12_install-linux.md:4
 msgid "Verified on a clean Ubuntu 24.04 (the `ubuntu:24.04` image, plus `sudo`, `curl` and `git`) against node-scala v1.8.1, 2026-10-27: Temurin 25.0.5, SBT from its APT repository, `sbt packageAll` in 12 minutes, then the tarball synced the public Testnet from genesis to the tip, height 100,132, in 22 minutes, with block IDs matching the public node. The DEB package did not install (see below)."
-msgstr ""
+msgstr "以纯净的Ubuntu 24.04(`ubuntu:24.04` 图像,外加 `sudo`, `curl` 和 `git`)对节点-scala v1.8.1,2026-10-27:Temurin 25.0.5,SBT从其APT寄存地 `sbt packageAll` 上验证,再由焦球从起源到尖端同步公用Testnet,高度为100,132分,22分钟后,与公用节点匹配块ID.DEB软件包没有安装(见下文)。"
 
 #: ../../05_node-guide/12_install-linux.md:7
 msgid "For most operators, [Docker](04_install-docker) is simpler than a bare-metal install. Use this page if you need to run the node directly on the host, for example to package it for your own init system."
-msgstr ""
+msgstr "对大多数操作员来说,[插头](04_install-docker) 比光金属安装简单.如果您需要直接运行主机上的节点, 请使用此页面, 例如为您自己的init系统进行包装 。"
 
 #: ../../05_node-guide/12_install-linux.md:9
 #: ../../05_node-guide/13_install-macos.md:9
 #: ../../05_node-guide/14_install-windows.md:9
 msgid "Prerequisites"
-msgstr ""
+msgstr "先决条件"
 
 #: ../../05_node-guide/12_install-linux.md:11
 msgid "**Java 25 JDK**: [Eclipse Temurin 25](https://adoptium.net/temurin/releases/?version=25) is the distribution node-scala recommends and tests against."
@@ -2299,15 +2299,15 @@ msgstr ""
 
 #: ../../05_node-guide/12_install-linux.md:12
 msgid "**[SBT](https://www.scala-sbt.org/1.x/docs/Installing-sbt-on-Linux.html)** and **Git**, to build the node: node-scala releases ship no node package (the v1.7.0 to v1.8.1 release assets are only `dcc-grpc-server` tarballs)."
-msgstr ""
+msgstr "**[SBT](https://www.scala-sbt.org/1.x/docs/Installing-sbt-on-Linux.html)** 和 **吉特语Name**,以构建节点:节点-scala放出船接号节点包(v1.7.0到v1.8.1放出资产只是 `dcc-grpc-server` tarballs)."
 
 #: ../../05_node-guide/12_install-linux.md:13
 msgid "**A configuration file** for the network. For the public Testnet, use the one in [Join the Public Testnet](15_join-testnet); the node's built-in `testnet` profile is a different network."
-msgstr ""
+msgstr "**配置文件** 为官网.对于公共的Testnet,使用 [加入公众 Testnet](15_join-testnet) 中的一款;节点所内置的 `testnet` 配置是不同的网络."
 
 #: ../../05_node-guide/12_install-linux.md:14
 msgid "About 4 GB of free memory and 10 GB of disk for the build; the Testnet data itself was 131 MB at height 99,976."
-msgstr ""
+msgstr "大约4GB为自由内存,10GB为磁盘为构建;Testnet数据本身为131MB,高度为99,976."
 
 #: ../../05_node-guide/12_install-linux.md:16
 msgid "Install the JDK (Ubuntu/Debian)"
@@ -2315,11 +2315,11 @@ msgstr ""
 
 #: ../../05_node-guide/12_install-linux.md:26
 msgid "This adds Adoptium's signing key as a keyring file. Older instructions pipe it into `apt-key add`, which Ubuntu 24.04 still accepts but reports as deprecated on every `apt-get update`."
-msgstr ""
+msgstr "这增加了Adoptionium作为密钥环文件的签名密钥.旧指令将其插入到 `apt-key add` 中,Ubuntu 24.04仍然接受,但报告每 `apt-get update` 上都贬值了."
 
 #: ../../05_node-guide/12_install-linux.md:28
 msgid "For a distribution without APT, install Eclipse Temurin 25 through your package manager or from the [Adoptium releases page](https://adoptium.net/temurin/releases/?version=25)."
-msgstr ""
+msgstr "对于没有APT的发行,通过您的软件包管理器或从 [领养发布页](https://adoptium.net/temurin/releases/?version=25) 安装 Eclipse Temurin 25."
 
 #: ../../05_node-guide/12_install-linux.md:30
 msgid "Install SBT (Ubuntu/Debian)"
@@ -2327,79 +2327,79 @@ msgstr ""
 
 #: ../../05_node-guide/12_install-linux.md:32
 msgid "These are the commands from the [SBT installation page](https://www.scala-sbt.org/1.x/docs/Installing-sbt-on-Linux.html):"
-msgstr ""
+msgstr "这些是来自 [SBT 安装页面](https://www.scala-sbt.org/1.x/docs/Installing-sbt-on-Linux.html) 的命令:"
 
 #: ../../05_node-guide/12_install-linux.md:42
 #: ../../05_node-guide/13_install-macos.md:33
 #: ../../05_node-guide/14_install-windows.md:24
 msgid "Build from source"
-msgstr ""
+msgstr "从源头构建"
 
 #: ../../05_node-guide/12_install-linux.md:52
 msgid "`sbt packageAll` produces:"
-msgstr ""
+msgstr "`sbt packageAll` 生产 :"
 
 #: ../../05_node-guide/12_install-linux.md:54
 msgid "the universal tarball `node/target/universal/decentralchain-<version>.tgz` (also copied to `docker/target/dcc.tgz`), and"
-msgstr ""
+msgstr "通用焦油球 `node/target/universal/decentralchain-<version>.tgz` (也复制到 `docker/target/dcc.tgz`),以及"
 
 #: ../../05_node-guide/12_install-linux.md:55
 msgid "DEB packages for `amd64` and `arm64` in `node/target/`. The node package is named `decentralchain` for Mainnet and `decentralchain-<network>` for other networks (for example `decentralchain-testnet`)."
-msgstr ""
+msgstr "`amd64` 和 `arm64` 在 `node/target/` 中的DEB包.节点包被命名为 `decentralchain` 用于Mainnet,而 `decentralchain-<network>` 用于其他网络(例如 `decentralchain-testnet`)."
 
 #: ../../05_node-guide/12_install-linux.md:57
 msgid "`sbt -Dnetwork=testnet packageAll` builds packages whose defaults are the built-in `testnet` profile, not the public Testnet. To join the public Testnet, any build works: the configuration file selects the chain."
-msgstr ""
+msgstr "`sbt -Dnetwork=testnet packageAll` 构建软件包,其默认为内置的 `testnet` 配置,而非公共的Testnet.要加入公共 Testnet,任何构建工程:配置文件选择了链条."
 
 #: ../../05_node-guide/12_install-linux.md:59
 msgid "There is no single \"fat\" JAR; the node runs from its `lib/` directory through the launcher script."
-msgstr ""
+msgstr "没有单一\"脂肪\"JAR;节点通过发射台脚本从它的 `lib/` 目录中流出."
 
 #: ../../05_node-guide/12_install-linux.md:61
 msgid "To also run the unit tests, run `sbt checkPR` before `packageAll`. It took 81 minutes on the same machine and needs [Node.js](https://nodejs.org/) on the `PATH` as well, for the JavaScript build of the Ride compiler. See the [node-scala README](https://github.com/Decentral-America/node-scala#readme) for integration tests and IDE setup."
-msgstr ""
+msgstr "还要进行单位测试,在 `packageAll` 前运行 `sbt checkPR`.同台机用81分钟, `PATH` 也需要 [Node.js](https://nodejs.org/),为Ride编译器的JavaScript所建.集成测试和IDE设置参见 [节点-斯卡拉读取器](https://github.com/Decentral-America/node-scala#readme)."
 
 #: ../../05_node-guide/12_install-linux.md:63
 #: ../../05_node-guide/13_install-macos.md:22
 #: ../../05_node-guide/14_install-windows.md:14
 msgid "Run from the tarball"
-msgstr ""
+msgstr "从柏油球跑开"
 
 #: ../../05_node-guide/12_install-linux.md:65
 msgid "Extract the tarball and start the node with its `bin/node` launcher and your configuration file:"
-msgstr ""
+msgstr "取出沥青球并用它的 `bin/node` 发射器和您的配置文件启动节点 :"
 
 #: ../../05_node-guide/12_install-linux.md:72
 msgid "Unless the configuration sets `dcc.directory`, the node keeps its data under `~/.local/share/dcc-<network>`: `~/.local/share/dcc-custom-21` for the public Testnet. To check that it follows the chain, compare its height and block IDs with the public node, as shown in [Join the Public Testnet](15_join-testnet)."
-msgstr ""
+msgstr "除非配置设置为 `dcc.directory`,节点将其数据保存在 `~/.local/share/dcc-<network>`:为公众Testnet的 `~/.local/share/dcc-custom-21` 下.为了检查它是否跟随链条,将其高度和块ID与公共节点进行比较,如 [加入公众 Testnet](15_join-testnet) 所示."
 
 #: ../../05_node-guide/12_install-linux.md:74
 msgid "Install the DEB package you built"
-msgstr ""
+msgstr "安装您创建的 DEB 软件包"
 
 #: ../../05_node-guide/12_install-linux.md:77
 msgid "The v1.8.1 DEB package doesn't install: its post-install script copies `/usr/share/decentralchain/doc/dcc.conf.sample`, but the package ships `decentralchain.conf.sample`, so `dpkg -i` stops with `post-installation script subprocess returned error exit status 1` before it installs the systemd service. Until the package is fixed, run the node from the tarball as above."
-msgstr ""
+msgstr "v1.8.1 DEB包不安装:它的后安装脚本复制了 `/usr/share/decentralchain/doc/dcc.conf.sample`,但包装了 `decentralchain.conf.sample`,因此 `dpkg -i` 在安装系统化服务前先用 `post-installation script subprocess returned error exit status 1` 停止.在包件固定之前,如上从柏油球上运行节点."
 
 #: ../../05_node-guide/12_install-linux.md:85
 msgid "Once installed, the package runs the node as a systemd service named after the package (`decentralchain`), as the unprivileged user of the same name, and creates its configuration file at `/etc/decentralchain/dcc.conf` from the sample."
-msgstr ""
+msgstr "安装后,包会作为以包名(`decentralchain`)命名的系统服务运行节点,作为同名的不特权用户,并从样本中创建出其在 `/etc/decentralchain/dcc.conf` 的配置文件."
 
 #: ../../05_node-guide/12_install-linux.md:87
 #: ../../05_node-guide/13_install-macos.md:49
 #: ../../05_node-guide/14_install-windows.md:37
 msgid "Next steps"
-msgstr ""
+msgstr "今后的步骤"
 
 #: ../../05_node-guide/12_install-linux.md:89
 #: ../../05_node-guide/13_install-macos.md:51
 #: ../../05_node-guide/14_install-windows.md:39
 msgid "[Configuration](05_configuration) · [Sync and Rollback](06_sync-and-rollback) · [Wallet and Generating](08_wallet-and-generating)"
-msgstr ""
+msgstr "[配置](05_configuration) · [同步和回滚](06_sync-and-rollback) · [钱包和生成](08_wallet-and-generating)"
 
 #: ../../05_node-guide/13_install-macos.md:1
 msgid "Installing on macOS"
-msgstr ""
+msgstr "在 macOS 上安装"
 
 #: ../../05_node-guide/13_install-macos.md:4
 msgid "Not yet verified on a clean macOS machine. The steps follow node-scala v1.8.1's `README.md`; the build and run steps match the ones verified on a clean Ubuntu 24.04 (see [Linux](12_install-linux)). If a step doesn't match what you see, please report it."
@@ -2407,20 +2407,20 @@ msgstr ""
 
 #: ../../05_node-guide/13_install-macos.md:7
 msgid "[Docker](04_install-docker) is the simplest way to run a node; this page is for running it directly on macOS."
-msgstr ""
+msgstr "[插头](04_install-docker) 是最简单的节点运行方式;此页面用于直接运行于macOS上."
 
 #: ../../05_node-guide/13_install-macos.md:11
 msgid "[Homebrew](https://brew.sh/)"
-msgstr ""
+msgstr "[Homebrew](https://brew.sh/)"
 
 #: ../../05_node-guide/13_install-macos.md:12
 #: ../../05_node-guide/14_install-windows.md:12
 msgid "A network configuration file — the repository ships defaults for Mainnet and Testnet in `node/src/main/resources/network-defaults.conf`."
-msgstr ""
+msgstr "一个网络配置文件——寄存器船在 `node/src/main/resources/network-defaults.conf` 中默认为Mainnet和Testnet."
 
 #: ../../05_node-guide/13_install-macos.md:14
 msgid "Install the JDK"
-msgstr ""
+msgstr "安装 JDK"
 
 #: ../../05_node-guide/13_install-macos.md:20
 msgid "This installs [Eclipse Temurin 25](https://adoptium.net/temurin/releases/?version=25), the JDK version node-scala is built and tested against."
@@ -2428,24 +2428,24 @@ msgstr ""
 
 #: ../../05_node-guide/13_install-macos.md:24
 msgid "node-scala releases do not ship a node JAR or package (the v1.7.0 to v1.8.1 release assets are only `dcc-grpc-server` tarballs), and node-scala doesn't publish a macOS package (`.pkg`/Homebrew formula). The supported way to run a node is the [Docker image](04_install-docker) `ghcr.io/decentral-america/node-scala`. To run it directly on macOS, [build from source](#build-from-source) below, then extract the universal tarball and start the node with its `bin/` launcher:"
-msgstr ""
+msgstr "节点-scala放出不会运送节点JAR或包件(v1.7.0至v1.8.1放出资产只是 `dcc-grpc-server` 的柏油球),节点-scala不会发布macOS包件(`.pkg`/Homebrew公式).支持运行节点的方法是 [嵌入图像](04_install-docker) `ghcr.io/decentral-america/node-scala`.直接运行在下面的macOS,[从源创建](#build-from-source) 上,然后取出通用的焦油球并用它的 `bin/` 发射器来启动节点:"
 
 #: ../../05_node-guide/13_install-macos.md:31
 msgid "There is no single \"fat\" JAR; the launcher runs the node from the tarball's `lib/` directory."
-msgstr ""
+msgstr "没有单一的\"脂肪\"JAR;发射机从柏油球的 `lib/` 目录运行节点."
 
 #: ../../05_node-guide/13_install-macos.md:45
 #: ../../05_node-guide/14_install-windows.md:33
 msgid "The network comes from the configuration file you start the node with; for the public Testnet, use the one in [Join the Public Testnet](15_join-testnet). To also run the unit tests, run `sbt checkPR` first: it takes over an hour and needs [Node.js](https://nodejs.org/) on the `PATH`."
-msgstr ""
+msgstr "网络来自您启动节点的配置文件; 对于公共的 Testnet, 使用 [加入公众 Testnet](15_join-testnet) 中的一个.也要进行单位测试,先跑出 `sbt checkPR`:需要1个多小时,需要 [Node.js](https://nodejs.org/) 在 `PATH` 上."
 
 #: ../../05_node-guide/13_install-macos.md:47
 msgid "Building from source additionally requires [SBT](https://www.scala-sbt.org/1.x/docs/Installing-sbt-on-Mac.html). See the [node-scala README](https://github.com/Decentral-America/node-scala#readme) for integration-test setup."
-msgstr ""
+msgstr "从源头建造,还需要 [SBT](https://www.scala-sbt.org/1.x/docs/Installing-sbt-on-Mac.html).集成-测试设置参见 [节点-斯卡拉读取器](https://github.com/Decentral-America/node-scala#readme)."
 
 #: ../../05_node-guide/14_install-windows.md:1
 msgid "Installing on Windows"
-msgstr ""
+msgstr "在窗口上安装"
 
 #: ../../05_node-guide/14_install-windows.md:4
 msgid "Not yet verified on a clean Windows machine. The steps follow node-scala v1.8.1's `README.md`; the build steps match the ones verified on a clean Ubuntu 24.04 (see [Linux](12_install-linux)). If a step doesn't match what you see, please report it."
@@ -2453,7 +2453,7 @@ msgstr ""
 
 #: ../../05_node-guide/14_install-windows.md:7
 msgid "[Docker](04_install-docker) (via Docker Desktop) is the simplest way to run a node on Windows; this page is for running it directly."
-msgstr ""
+msgstr "[插头](04_install-docker)(通过多克桌面)是运行Windows上的节点的最简单方式;此页面用于直接运行."
 
 #: ../../05_node-guide/14_install-windows.md:11
 msgid "**Java 25 JDK** — install [Eclipse Temurin 25](https://adoptium.net/temurin/releases/?version=25) using its Windows installer."
@@ -2461,83 +2461,83 @@ msgstr ""
 
 #: ../../05_node-guide/14_install-windows.md:16
 msgid "node-scala releases do not ship a node JAR or a Windows installer (the v1.7.0 to v1.8.1 release assets are only `dcc-grpc-server` tarballs). The supported way to run a node is Docker Desktop with the [Docker image](04_install-docker) `ghcr.io/decentral-america/node-scala`. To run it directly, [build from source](#build-from-source) below, extract the universal tarball `node/target/universal/decentralchain-<version>.tgz`, and start the node from a terminal (Command Prompt or PowerShell) with the Windows launcher in its `bin\\` directory:"
-msgstr ""
+msgstr "节点-scala放出不运送节点JAR或Windows安装器(v1.7.0到v1.8.1放出资产只是 `dcc-grpc-server` tarball).支持运行节点的方法是多克桌面与 [嵌入图像](04_install-docker) `ghcr.io/decentral-america/node-scala`.要直接运行,下面的 [从源创建](#build-from-source),取出通用的焦油球 `node/target/universal/decentralchain-<version>.tgz`,并在一个终端(Command Point或PowerShell)上以Windows的发射器在其 `bin\\` 目录中启动节点:"
 
 #: ../../05_node-guide/14_install-windows.md:22
 msgid "There is no single \"fat\" JAR; the launcher runs the node from the tarball's `lib\\` directory."
-msgstr ""
+msgstr "没有单一的\"脂肪\"JAR;发射机从柏油球的 `lib\\` 目录运行节点."
 
 #: ../../05_node-guide/14_install-windows.md:35
 msgid "Building from source additionally requires [SBT](https://www.scala-sbt.org/1.x/docs/Installing-sbt-on-Windows.html). See the [node-scala README](https://github.com/Decentral-America/node-scala#readme) for integration-test setup and IntelliJ IDEA configuration."
-msgstr ""
+msgstr "从源头建造,还需要 [SBT](https://www.scala-sbt.org/1.x/docs/Installing-sbt-on-Windows.html).集成-测试设置参见 [节点-斯卡拉读取器](https://github.com/Decentral-America/node-scala#readme) 和IntelliJIDEA配置."
 
 #: ../../05_node-guide/15_join-testnet.md:1
 msgid "Join the Public Testnet"
-msgstr ""
+msgstr "加入公众 Testnet"
 
 #: ../../05_node-guide/15_join-testnet.md:3
 msgid "This page shows how to run your own node on the public DecentralChain Testnet, the network behind `testnet-node.decentralchain.io`. Your node follows the chain and serves its own REST API (and gRPC, if you enable it). It does not forge blocks."
-msgstr ""
+msgstr "本页面显示如何在公众DecentralChain Testnet上运行您自己的节点,该网位位于 `testnet-node.decentralchain.io` 后.您的节点跟随链条, 并服务于自己的 REST API (和 gRPC, 如果您启用的话) 。它不会伪造块块。"
 
 #: ../../05_node-guide/15_join-testnet.md:6
 msgid "The public Testnet is a **custom chain** (`dcc.blockchain.type = CUSTOM`). The node's built-in `testnet` profile (`DCC_NETWORK=testnet` with no config file) is a different network and **will not join it**. Use the configuration file below."
-msgstr ""
+msgstr "公用Testnet是一款 **自定义链** (`dcc.blockchain.type = CUSTOM`).节点内置的 `testnet` 配置文件(`DCC_NETWORK=testnet`,没有配置文件)是一个不同的网络和 **不会加入的**.使用下面的配置文件 。"
 
 #: ../../05_node-guide/15_join-testnet.md:10
 msgid "Verified on a clean Docker host (macOS 15.5, Docker Desktop 29.2.1) against node-scala v1.8.1, 2026-10-27: following this page word for word, the node synced from genesis to the tip, height 99,976, in 31 minutes, and the block IDs it reported matched the public node's. The same configuration, run from a tarball built on a clean Ubuntu 24.04, synced to height 100,132 in 22 minutes. Every value on this page was checked against the live Testnet on 2026-10-18. The configuration mirrors the Testnet operators' own node configuration (`node-config/testnet/dcc.conf` in the [infra repository](https://github.com/Decentral-America/infra)). If the two ever disagree, the infra file is authoritative."
-msgstr ""
+msgstr "验证在一个干净的多克主机上(macOS 15.5,多克桌面 29.2.1)对节点-scala v1.8.1, 2026-10-27:在此页面单词后,节点从起源到尖端同步,高度为99,976分31分钟后,它报告的块ID匹配了公有节点.同样的配置,从一个以纯净的Ubuntu 24.04所建的柏油球跑出,22分钟后同步到100,132高.本页的每个值都与2026-10-18日的活出Testnet进行对比.配置镜像了Testnet操作员自己的节点配置(`node-config/testnet/dcc.conf` in the [下层存储器](https://github.com/Decentral-America/infra)).如果两者有分歧,则下级档案具有权威性."
 
 #: ../../05_node-guide/15_join-testnet.md:13
 msgid "Network facts"
-msgstr ""
+msgstr "网络事实"
 
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "Item"
-msgstr ""
+msgstr "项目"
 
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "Value"
-msgstr ""
+msgstr "数值"
 
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "Chain ID"
-msgstr ""
+msgstr "链式标识"
 
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "`!` (ASCII 33)"
-msgstr ""
+msgstr "`!` (ASCII 33) (中文(简体) )."
 
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "Address prefix"
-msgstr ""
+msgstr "地址前缀"
 
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "`31`"
-msgstr ""
+msgstr "`31`"
 
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "Genesis block ID"
-msgstr ""
+msgstr "创世纪块标识"
 
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "`5be1Fs9oqWGnUt1vVpBDXaJNN583tqic72hFwY9mmMf56n5WevrmwqMzdLSRVdEu7DWGhuQkVL1zhYBn4iuz9DX4`"
-msgstr ""
+msgstr "`5be1Fs9oqWGnUt1vVpBDXaJNN583tqic72hFwY9mmMf56n5WevrmwqMzdLSRVdEu7DWGhuQkVL1zhYBn4iuz9DX4`"
 
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "Genesis timestamp"
-msgstr ""
+msgstr "创世纪时间戳"
 
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "`1788539579643` (2026-09-04)"
-msgstr ""
+msgstr "`1788539579643` (2026-09-04)"
 
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "Target block time"
-msgstr ""
+msgstr "目标块时间"
 
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "30 seconds"
-msgstr ""
+msgstr "30 秒钟"
 
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "Public REST API"
@@ -2545,180 +2545,180 @@ msgstr ""
 
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "`https://testnet-node.decentralchain.io`"
-msgstr ""
+msgstr "`https://testnet-node.decentralchain.io`"
 
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "Node image"
-msgstr ""
+msgstr "节点图像"
 
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "`ghcr.io/decentral-america/node-scala:testnet-latest`"
-msgstr ""
+msgstr "`ghcr.io/decentral-america/node-scala:testnet-latest`"
 
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "Finality"
-msgstr ""
+msgstr "终结性"
 
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "Deterministic Finality (feature 25) plus HotStuff fast finality, enabled and authoritative on the Testnet only"
-msgstr ""
+msgstr "最终决定( 特性 25) 外加 HotStuff 快速终局, 只启用 Testnet 并具有权威性"
 
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "Data service"
-msgstr ""
+msgstr "数据服务"
 
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "`https://testnet-data-service.decentralchain.io/v0`"
-msgstr ""
+msgstr "`https://testnet-data-service.decentralchain.io/v0`"
 
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "WebSocket API"
-msgstr ""
+msgstr "WebSocket API (英语)."
 
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "`wss://testnet-ws.decentralchain.io/ws`"
-msgstr ""
+msgstr "`wss://testnet-ws.decentralchain.io/ws`"
 
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "Matcher API"
-msgstr ""
+msgstr "匹配的 API"
 
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "`https://testnet-matcher.decentralchain.io/matcher`"
-msgstr ""
+msgstr "`https://testnet-matcher.decentralchain.io/matcher`"
 
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "Matcher public key"
-msgstr ""
+msgstr "匹配的公钥"
 
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "`BEtB5b2kX8Yge4sb5RRbTUqd5Va8Ah8PhphowcW31z6Y`"
-msgstr ""
+msgstr "`BEtB5b2kX8Yge4sb5RRbTUqd5Va8Ah8PhphowcW31z6Y`"
 
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "Matcher address"
-msgstr ""
+msgstr "匹配地址"
 
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "`31VMNVAvVh67dPZ41nMnYZvhoZFW7wwPrmq`"
-msgstr ""
+msgstr "`31VMNVAvVh67dPZ41nMnYZvhoZFW7wwPrmq`"
 
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "Explorer"
-msgstr ""
+msgstr "浏览器"
 
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "`https://testnet.decentralscan.com/`"
-msgstr ""
+msgstr "`https://testnet.decentralscan.com/`"
 
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "Faucet"
-msgstr ""
+msgstr "福赛特"
 
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "`https://testnet.decentralscan.com/faucet`"
-msgstr ""
+msgstr "`https://testnet.decentralscan.com/faucet`"
 
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "Wallet and DEX"
-msgstr ""
+msgstr "钱包和DEX"
 
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "`https://testnet.decentral.exchange/`"
-msgstr ""
+msgstr "`https://testnet.decentral.exchange/`"
 
 #: ../../05_node-guide/15_join-testnet.md:36
 msgid "The exact image digest the Testnet runs is recorded in `node-config/testnet/vps-image.env` in the infra repository. Use that digest instead of `testnet-latest` if you want to run byte-for-byte the same build."
-msgstr ""
+msgstr "Testnet运行的精确图像消化被收录于以下存储器中的 `node-config/testnet/vps-image.env`.如果您想要运行同一个字节的字节, 请使用该文摘而不是 `testnet-latest` 。"
 
 #: ../../05_node-guide/15_join-testnet.md:38
 msgid "1. Write the configuration file"
-msgstr ""
+msgstr "1.写入配置文件"
 
 #: ../../05_node-guide/15_join-testnet.md:40
 msgid "Save this as `dcc.conf`. The `blockchain` section must match the Testnet exactly; any difference (a genesis value, a functionality parameter or the reward settings) makes your node reject the chain."
-msgstr ""
+msgstr "将此保存为 `dcc.conf` 。`blockchain` 区段必须精确匹配Testnet;任何差异(一个起源值,一个功能参数或奖励设置)都会使你的节点拒绝链条."
 
 #: ../../05_node-guide/15_join-testnet.md:112
 msgid "2. Start the node"
-msgstr ""
+msgstr "2.启动节点"
 
 #: ../../05_node-guide/15_join-testnet.md:128
 msgid "`DCC_NETWORK=custom` keeps the built-in `testnet` profile's peers and port out of the merged configuration; the `blockchain` section of your file selects the chain."
-msgstr ""
+msgstr "`DCC_NETWORK=custom` 将内置的 `testnet` 配置文件的同位素和端口保留出合并配置;您文件中的 `blockchain` 部分选择了链条."
 
 #: ../../05_node-guide/15_join-testnet.md:130
 msgid "3. Check that it follows the chain"
-msgstr ""
+msgstr "3.检查它跟随链条"
 
 #: ../../05_node-guide/15_join-testnet.md:132
 msgid "Your node replays the chain from genesis, then follows the tip. Compare it with the public node:"
-msgstr ""
+msgstr "你的节点从起源开始重放链条,然后跟着尖端.与公共节点比较:"
 
 #: ../../05_node-guide/15_join-testnet.md:144
 msgid "Once the two heights match, pick a height a few blocks below the tip and compare the block IDs. They must be identical:"
-msgstr ""
+msgstr "一旦两个高地相匹配,在尖端下取出几个街区的高地并比较出块ID.它们必须是相同的:"
 
 #: ../../05_node-guide/15_join-testnet.md:152
 msgid "Getting Testnet DCC"
-msgstr ""
+msgstr "获取 Testnet DCC"
 
 #: ../../05_node-guide/15_join-testnet.md:154
 msgid "Open the [faucet](https://testnet.decentralscan.com/faucet) and enter a Testnet address (it starts with `31`). To create an address, use the [wallet](https://testnet.decentral.exchange/) or `libs.crypto.address(seed, '!')` from `@decentralchain/transactions` (see [How-To Guides](../04_building-apps/03_how-to-guides))."
-msgstr ""
+msgstr "打开 [水龙头](https://testnet.decentralscan.com/faucet) 并输入一个 Testnet 地址( 它从 `31` 开始).要创建地址,请使用来自 `@decentralchain/transactions` 的 [钱包](https://testnet.decentral.exchange/) 或 `libs.crypto.address(seed, '!')` (见 [如何向导](../04_building-apps/03_how-to-guides))."
 
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "Open to the internet?"
-msgstr ""
+msgstr "对互联网开放?"
 
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "Yes, if you set `declared-address`; otherwise outbound only is enough"
-msgstr ""
+msgstr "是的, 如果您设置了 `declared-address`; 否则只出局就足够了"
 
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "No: keep it on localhost or behind a reverse proxy"
-msgstr ""
+msgstr "否: 保留在本地主机上或反向代理后方"
 
 #: ../../05_node-guide/index.md:1 ../../05_node-guide/index.md:33
 msgid "Node Guide"
-msgstr ""
+msgstr "节点指南"
 
 #: ../../05_node-guide/index.md:3
 #, python-brace-format
 msgid "A {ref}`node <02_decentralchain/05_node:Node>` is a host connected to the DecentralChain network that validates transactions, stores blocks, and — if it meets the generating-balance requirement — produces new blocks under {ref}`Leased Proof of Stake <02_decentralchain/05_node:Leased Proof of Stake>`. This section covers running your own node: getting the software, building it, and configuring it. For the economics of block generation (rewards, leasing), see the {ref}`Node <02_decentralchain/05_node:Node>` article in the DecentralChain fundamentals section."
-msgstr ""
+msgstr "{ref}`节点 <02_decentralchain/05_node:Node>` 是一个连接到DecentralChain网络的宿主,它验证交易,存储块,并且——如果它满足生成-平衡的要求——在 {ref}`租借证据 <02_decentralchain/05_node:Leased Proof of Stake>` 下产生出新的块.本节内容涵盖运行自有节点:获取软件,构建并配置.关于区块生成经济学(奖励,租赁),参见DecentralChain基础部分的\"{ref}`节点 <02_decentralchain/05_node:Node>`\"条."
 
 #: ../../05_node-guide/index.md:18
 msgid "Open Source"
-msgstr ""
+msgstr "开源"
 
 #: ../../05_node-guide/index.md:22
 msgid "The node is built and maintained in the open at Decentral-America/node-scala."
-msgstr ""
+msgstr "节点在德克托-美洲/诺德-斯卡拉的露天地段建造并维护."
 
 #: ../../05_node-guide/index.md:34
 msgid "JVM-Based"
-msgstr ""
+msgstr "基于联合核查机制"
 
 #: ../../05_node-guide/index.md:38
 msgid "Written in Scala, packaged as a runnable JAR or DEB."
-msgstr ""
+msgstr "以 Scala 写成, 包装为可运行的 JAR 或 DEB 。"
 
 #: ../../05_node-guide/index.md:54
 msgid "Every node exposes an HTTP API compatible with the Dcc node API shape."
-msgstr ""
+msgstr "每个节点都暴露出一个与Dcc节点API形状相容的HTTP API."
 
 #: ../../05_node-guide/index.md:66
 msgid "Mainnet & Testnet"
-msgstr ""
+msgstr "Mainnet & Testnet"
 
 #: ../../05_node-guide/index.md:70
 msgid "The same codebase builds packages for either network."
-msgstr ""
+msgstr "同一代码库为两个网络建立软件包。"
 
 #: ../../05_node-guide/index.md:18
 msgid "Getting the Node"
-msgstr ""
+msgstr "获取节点"
 
 #: ../../05_node-guide/index.md:20
 msgid "The node implementation lives at [Decentral-America/node-scala](https://github.com/Decentral-America/node-scala), forked from Dcc 1.6.x. [Docker](04_install-docker) is the simplest way to run it; to install directly, see [Linux](12_install-linux), [macOS](13_install-macos) or [Windows](14_install-windows). All are written in Scala, built with SBT, and packaged from the same source for either network:"
@@ -2726,12 +2726,12 @@ msgstr ""
 
 #: ../../05_node-guide/index.md:27
 msgid "To run a node on the public Testnet, use the Docker image with the configuration file in [Join the Public Testnet](15_join-testnet)."
-msgstr ""
+msgstr "要在公共 Testnet 上运行一个节点,请使用 Docker 图像,其配置文件为 [加入公众 Testnet](15_join-testnet) 。"
 
 #: ../../05_node-guide/index.md:31
 #, python-brace-format
 msgid "Network-specific defaults are defined in [`network-defaults.conf`](https://github.com/Decentral-America/node-scala/blob/main/node/src/main/resources/network-defaults.conf) in the node-scala repository. Pass your own config file (based on the mainnet/testnet template) as the argument to the JAR to override generating-node settings such as the {ref}`block reward vote <02_decentralchain/05_node:Voting>` and wallet seed."
-msgstr ""
+msgstr "网络特定默认在节点-scala寄存器中以 [`network-defaults.conf`](https://github.com/Decentral-America/node-scala/blob/main/node/src/main/resources/network-defaults.conf) 来定义.将您自己的配置文件( 基于主网/ testnet 模板) 传递到 JAR , 作为参数来覆盖生成节点设置, 如 {ref}`块状奖励投票 <02_decentralchain/05_node:Voting>` 和钱包种子 。"
 
 #~ msgid "Disk (Mainnet, SSD)"
 #~ msgstr ""

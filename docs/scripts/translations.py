@@ -15,7 +15,10 @@ Usage, from the repository root:
       message keeps its English markup: the same roles (`:math:`, `:ref:`...)
       in the same order, the same :ref:/:doc: targets, no space just inside
       a role's backticks. A translation that breaks markup fails the
-      `sphinx-build -W` deploy build; mark it fuzzy or fix it.
+      `sphinx-build -W` deploy build; mark it fuzzy or fix it. Every
+      translation also passes the independence and terminology rules: no
+      third-party project names (the check_independence.py terms), and the
+      names docs/locales/glossary.csv never translates are kept.
 
   translations.py coverage <locales_dir> [--markdown]
       Print the share of messages translated (not fuzzy, not obsolete) per
@@ -34,6 +37,7 @@ updated against the current English source, so CI runs `coverage` and
 """
 from __future__ import annotations
 
+import csv
 import pathlib
 import re
 import subprocess
@@ -43,6 +47,7 @@ from babel import Locale
 from babel.messages.pofile import read_po, write_po
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+from check_independence import FORBIDDEN  # noqa: E402
 from published_locales import published_locales  # noqa: E402
 
 PUBLISH_THRESHOLD = 80.0
@@ -57,6 +62,9 @@ SPAN = re.compile(
 REF_TARGET = re.compile(r"<([^<>]+)>\s*$")
 LINK_ROLES = {"ref", "doc", "term", "numref"}
 URL = re.compile(r"\]\((\S+?)\)|<(https?://[^>\s]+)>`_")              # [text](url), `text <url>`_
+# Outside code and roles, reST reads these as markup: * (emphasis), | (substitution) and a word
+# ending in _ (a reference). A translation that adds or drops one fails the -W build.
+STRAY = re.compile(r"\*|\||(?<=[^\s`_])__?(?=[\s.,;:!?)]|$)")
 
 
 def spans(text: str) -> tuple[list[tuple[str, str]], list[str]]:
@@ -106,6 +114,28 @@ def markup_problem(msgid: str, msgstr: str) -> str | None:
         return f"link URLs differ from the English: {urls(msgid)} vs {urls(msgstr)}"
     if msgid.count("`") % 2 == 0 and msgstr.count("`") % 2:
         return "unbalanced backticks"
+    if sorted(STRAY.findall(SPAN.sub(" ", msgid))) != sorted(STRAY.findall(SPAN.sub(" ", msgstr))):
+        return "a *, | or reference _ outside code differs from the English (reST reads them as markup)"
+    return None
+
+
+def kept_names(locales_dir: pathlib.Path) -> list[str]:
+    """Glossary terms that are the same in every language: names never translated."""
+    with (locales_dir / "glossary.csv").open(encoding="utf-8") as f:
+        rows = list(csv.DictReader(f))
+    langs = [k for k in rows[0] if k not in ("en", "note")]
+    return [r["en"] for r in rows if all(r[lang] == r["en"] for lang in langs)]
+
+
+def term_problem(msgid: str, msgstr: str, names: list[str]) -> str | None:
+    """The independence and terminology rules, applied to a translation: no third-party
+    project names (check_independence.py), and no glossary name translated away."""
+    hit = FORBIDDEN.search(msgstr)
+    if hit:
+        return f"names a third-party project ('{hit.group(0)}'); see check_independence.py"
+    for name in names:
+        if re.search(rf"(?<![\w.]){re.escape(name)}(?![\w])", msgid) and name not in msgstr:
+            return f"'{name}' is never translated (docs/locales/glossary.csv), but the translation drops it"
     return None
 
 
@@ -156,6 +186,7 @@ def check(locales_dir: pathlib.Path, gettext_dir: pathlib.Path) -> int:
             failures += 1
             print(f"FAIL {locale_dir.name}: no catalog for {', '.join(missing)}; run docs/scripts/update_translations.sh")
     checked = 0
+    names = kept_names(locales_dir)
     for locale_dir in locale_dirs(locales_dir, include_source=True):
         for path in catalogs(locale_dir):
             checked += 1
@@ -169,7 +200,7 @@ def check(locales_dir: pathlib.Path, gettext_dir: pathlib.Path) -> int:
             for message in catalog:
                 if not message.id or not message.string or message.fuzzy or isinstance(message.id, tuple):
                     continue
-                problem = markup_problem(message.id, message.string)
+                problem = markup_problem(message.id, message.string) or term_problem(message.id, message.string, names)
                 if problem:
                     failures += 1
                     where = ", ".join(f"{file}:{line}" for file, line in message.locations[:1])

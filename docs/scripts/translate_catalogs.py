@@ -15,8 +15,11 @@ engine or a person) as JSON lines, and check each translation before it lands.
         - changes the markup (translations.markup_problem: roles, :ref:/{ref}
           targets, code literals, link URLs, backticks);
         - drops a name the glossary says is never translated (DecentralChain,
-          DCC, Ride, Cubensis Connect, ...), when the English has it;
-        - changes the {placeholders} of the message.
+          DCC, Ride, Cubensis Connect, ...), when the English has it, or
+          names a third-party project (translations.term_problem);
+        - changes the {placeholders} of the message;
+        - changes the % directives of a message msgfmt checks as a Python
+          format string (its English has a `%`, as in "100% of blocks").
 
 A translated locale still needs a review by a native or fluent speaker before
 it is listed in docs/locales/PUBLISHED (see AGENTS.md); importing a
@@ -26,30 +29,22 @@ fixed terms in docs/locales/glossary.csv. Afterwards run
 """
 from __future__ import annotations
 
-import csv
 import json
 import pathlib
 import re
 import sys
 
+from babel.messages.catalog import PYTHON_FORMAT
 from babel.messages.pofile import read_po, write_po
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
-from translations import markup_problem  # noqa: E402
+from translations import kept_names, markup_problem, term_problem  # noqa: E402
 
 PLACEHOLDER = re.compile(r"\{[^{}\s]*\}")
 # Messages that must stay in English. The home page's sphinx-design `button-ref` labels carry
 # their reference inside the label, so a translated label drops it and the -W build fails
 # with "inconsistent term references".
 KEEP_ENGLISH = {"Learn More"}
-
-
-def keep_as_is(locales_dir: pathlib.Path) -> list[str]:
-    """Glossary terms that are the same in every language: names never translated."""
-    with (locales_dir / "glossary.csv").open(encoding="utf-8") as f:
-        rows = list(csv.DictReader(f))
-    langs = [k for k in rows[0] if k not in ("en", "note")]
-    return [r["en"] for r in rows if all(r[lang] == r["en"] for lang in langs)]
 
 
 def catalog_paths(locales_dir: pathlib.Path, locale: str) -> dict[str, pathlib.Path]:
@@ -80,19 +75,27 @@ def problem(msgid: str, msgstr: str, names: list[str]) -> str | None:
         return "empty translation"
     if msgid in KEEP_ENGLISH:
         return "this message stays in English (see KEEP_ENGLISH)"
-    found = markup_problem(msgid, msgstr)
+    found = markup_problem(msgid, msgstr) or term_problem(msgid, msgstr, names)
     if found:
         return found
-    for name in names:
-        if re.search(rf"(?<![\w.]){re.escape(name)}(?![\w])", msgid) and name not in msgstr:
-            return f"'{name}' is never translated, but the translation drops it"
     if sorted(PLACEHOLDER.findall(msgid)) != sorted(PLACEHOLDER.findall(msgstr)):
         return f"placeholders differ: {PLACEHOLDER.findall(msgid)} vs {PLACEHOLDER.findall(msgstr)}"
     return None
 
 
+def format_problem(msgid: str, msgstr: str) -> str | None:
+    """A message whose English has a `%` (100% of blocks) is a Python format string to
+    msgfmt: `msgfmt --check` fails unless the translation keeps the same directives."""
+    def directives(text: str) -> list[str]:
+        return sorted(m.group(0) for m in PYTHON_FORMAT.finditer(text.replace("%%", "")))
+
+    if directives(msgid) != directives(msgstr) or msgstr.replace("%%", "").count("%") != len(directives(msgstr)):
+        return f"changes the % directives msgfmt checks: {directives(msgid)} vs {directives(msgstr)}"
+    return None
+
+
 def import_(locales_dir: pathlib.Path, locale: str, source: pathlib.Path) -> int:
-    names = keep_as_is(locales_dir)
+    names = kept_names(locales_dir)
     paths = catalog_paths(locales_dir, locale)
     wanted: dict[str, dict[str, str]] = {}
     rejected = []
@@ -114,7 +117,12 @@ def import_(locales_dir: pathlib.Path, locale: str, source: pathlib.Path) -> int
             catalog = read_po(po)
         for message in catalog:
             if message.id in translations:
-                message.string = translations.pop(message.id)
+                msgstr = translations.pop(message.id)
+                reason = format_problem(message.id, msgstr) if message.python_format else None
+                if reason:
+                    rejected.append({"catalog": name, "id": message.id, "str": msgstr, "reason": reason})
+                    continue
+                message.string = msgstr
                 message.flags.discard("fuzzy")
                 applied += 1
         for msgid, msgstr in translations.items():

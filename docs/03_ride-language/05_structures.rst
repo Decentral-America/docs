@@ -28,7 +28,7 @@ Available script actions depend on the standard library version used.
 BinaryEntry
 -----------
 
-BinaryEntry is a structure that sets key and value of binary entry :ref:`account data storage <02_decentralchain/01_account:Account Data Storage>`. Adding or changing an entry is performed only if the structure is included in the :ref:`callable function result <03_ride-language/03_functions:Callable Functions>`>`.
+BinaryEntry is a structure that sets key and value of binary entry :ref:`account data storage <02_decentralchain/01_account:Account Data Storage>`. Adding or changing an entry is performed only if the structure is included in the :ref:`callable function result <03_ride-language/03_functions:Callable Functions>`.
 
 :strong:`Constructor`
 
@@ -47,7 +47,7 @@ BinaryEntry is a structure that sets key and value of binary entry :ref:`account
 BooleanEntry
 ------------
 
-BooleanEntry is a structure that sets the key and value of the :ref:`account data storage <02_decentralchain/01_account:Account Data Storage>` boolean entry. Adding or changing an entry is performed only if the structure is included in the :ref:`callable function result <03_ride-language/03_functions:Callable Functions>`>`.
+BooleanEntry is a structure that sets the key and value of the :ref:`account data storage <02_decentralchain/01_account:Account Data Storage>` boolean entry. Adding or changing an entry is performed only if the structure is included in the :ref:`callable function result <03_ride-language/03_functions:Callable Functions>`.
 
 :strong:`Constructor`
 
@@ -66,7 +66,7 @@ BooleanEntry is a structure that sets the key and value of the :ref:`account dat
 Burn
 ----
 
-Burn is a structure that sets the parameters of the token burning. The token burning is performed only if the structure is included in the :ref:`callable function result <03_ride-language/03_functions:Callable Functions>`>`.
+Burn is a structure that sets the parameters of the token burning. The token burning is performed only if the structure is included in the :ref:`callable function result <03_ride-language/03_functions:Callable Functions>`.
 If the token is a smart asset, the asset script verifies the Burn action as if it were :ref:`BurnTransaction <03_ride-language/05_structures:BurnTransaction>` with the fee of :math:`0` and the version of :math:`0`. If the asset script denies the action, then the transaction that invoked the dApp script is either denied or saved on the blockchain as failed, see the :ref:`transaction validation <02_decentralchain/03_transaction:Transaction Validation>`.
 
 :strong:`Constructor`
@@ -86,7 +86,7 @@ If the token is a smart asset, the asset script verifies the Burn action as if i
 DeleteEntry
 -----------
 
-DeleteEntry is a structure that sets the parameters of deletion of entry from the :ref:`account data storage <02_decentralchain/01_account:Account Data Storage>`. Deleting an entry is performed only if the structure is included in the :ref:`callable function result <03_ride-language/03_functions:Callable Functions>`>`.
+DeleteEntry is a structure that sets the parameters of deletion of entry from the :ref:`account data storage <02_decentralchain/01_account:Account Data Storage>`. Deleting an entry is performed only if the structure is included in the :ref:`callable function result <03_ride-language/03_functions:Callable Functions>`.
 
 :strong:`Constructor`
 
@@ -122,7 +122,7 @@ DeleteEntry is a structure that sets the parameters of deletion of entry from th
 IntegerEntry
 ------------
 
-IntegerEntry is a structure that sets the key and value of :ref:`account data storage <02_decentralchain/01_account:Account Data Storage>` integer entry. Adding or changing an entry is performed only if the structure is included in the :ref:`callable function result <03_ride-language/03_functions:Callable Functions>`>`.
+IntegerEntry is a structure that sets the key and value of :ref:`account data storage <02_decentralchain/01_account:Account Data Storage>` integer entry. Adding or changing an entry is performed only if the structure is included in the :ref:`callable function result <03_ride-language/03_functions:Callable Functions>`.
 
 :strong:`Constructor`
 
@@ -141,7 +141,7 @@ IntegerEntry is a structure that sets the key and value of :ref:`account data st
 Issue
 -----
 
-Issue is a structure that sets the parameters of the token issue. The token issue is performed only if the structure is included in the :ref:`callable function result <03_ride-language/03_functions:Callable Functions>`>`.
+Issue is a structure that sets the parameters of the token issue. The token issue is performed only if the structure is included in the :ref:`callable function result <03_ride-language/03_functions:Callable Functions>`.
 The minimum fee for an invoke script transaction is increased by :math:`1` DecentralCoin for each issued asset that is not :ref:`NFT <02_decentralchain/02_token(asset):Non-Fungible Token>`.
 You can get the ID of the issued token using the :ref:`calculateAssetId <03_ride-language/03_functions:Blockchain Functions>` function.
 
@@ -212,7 +212,7 @@ The structure sets the following parameters of token:
 Lease
 -----
 
-Lease is a structure that sets the lease parameters. The lease is performed only if the structure is included in the :ref:`callable function result <03_ride-language/03_functions:Callable Functions>`>`. More about :ref:`lease <02_decentralchain/05_node:Leased Proof of Stake>`.
+Lease is a structure that sets the lease parameters. The lease is performed only if the structure is included in the :ref:`callable function result <03_ride-language/03_functions:Callable Functions>`. More about :ref:`lease <02_decentralchain/05_node:Leased Proof of Stake>`.
 You can get the lease ID using the :ref:`calculateLeaseId <03_ride-language/03_functions:Blockchain Functions>` function.
 
 :strong:`Constructor`
@@ -261,7 +261,7 @@ In the second case, nonce = :math:`0` is inserted automatically.
 LeaseCancel
 -----------
 
-LeaseCancel is a structure that sets the lease cancellation parameters. The lease cancellation is performed only if the structure is included in the :ref:`callable function result <03_ride-language/03_functions:Callable Functions>`>`.
+LeaseCancel is a structure that sets the lease cancellation parameters. The lease cancellation is performed only if the structure is included in the :ref:`callable function result <03_ride-language/03_functions:Callable Functions>`.
 
 
 :strong:`Constructor`
@@ -281,7 +281,7 @@ LeaseCancel is a structure that sets the lease cancellation parameters. The leas
 Reissue
 -------
 
-Reissue is a structure that sets the parameters of the token reissue. The token reissue is performed only if the structure is included in the :ref:`callable function result <03_ride-language/03_functions:Callable Functions>`>`.
+Reissue is a structure that sets the parameters of the token reissue. The token reissue is performed only if the structure is included in the :ref:`callable function result <03_ride-language/03_functions:Callable Functions>`.
 The token reissue is only available for an asset that is issued by a dApp account.
 If the token is a smart asset, the asset script verifies the Reissue action as if it were :ref:`ReissueTransaction <03_ride-language/05_structures:ReissueTransaction>` with the fee of 0 and the version of 0. If the asset script denies the action, then the transaction that invoked the dApp script is either denied or saved on the blockchain as failed, see the :ref:`transaction validation <02_decentralchain/03_transaction:Transaction Validation>`.
 
@@ -302,7 +302,7 @@ If the token is a smart asset, the asset script verifies the Reissue action as i
 ScriptTransfer
 --------------
 
-ScriptTransfer is a structure that sets the parameters of the token transfer. The token transfer is performed only if the structure is included in the :ref:`callable function result <03_ride-language/03_functions:Callable Functions>`>`.
+ScriptTransfer is a structure that sets the parameters of the token transfer. The token transfer is performed only if the structure is included in the :ref:`callable function result <03_ride-language/03_functions:Callable Functions>`.
 If the token is a smart asset, the asset script verifies the ScriptTransfer action as if it were :ref:`TransferTransaction <03_ride-language/05_structures:TransferTransaction>` with the fee of :math:`0` and the version of :math:`0`. If the asset script denies the action, then the transaction that invoked the dApp script is either denied or saved on the blockchain as failed, see the :ref:`transaction validation <02_decentralchain/03_transaction:Transaction Validation>`. 
 
 :strong:`Constructor`
@@ -365,7 +365,7 @@ The issueAndSponsor callable function issues an asset and enables sponsorship. T
 StringEntry
 -----------
 
-StringEntry is a structure that sets key and value of :ref:`account data storage <02_decentralchain/01_account:Account Data Storage>` string entry. Adding or changing an entry is performed only if the structure is included in the :ref:`callable function result <03_ride-language/03_functions:Callable Functions>`>`.
+StringEntry is a structure that sets key and value of :ref:`account data storage <02_decentralchain/01_account:Account Data Storage>` string entry. Adding or changing an entry is performed only if the structure is included in the :ref:`callable function result <03_ride-language/03_functions:Callable Functions>`.
 
 :strong:`Constructor`
 

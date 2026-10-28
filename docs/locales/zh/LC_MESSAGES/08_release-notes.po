@@ -21,51 +21,51 @@ msgstr ""
 
 #: ../../08_release-notes.md:5
 msgid "Release Notes"
-msgstr ""
+msgstr "发布注释"
 
 #: ../../08_release-notes.md:7
 msgid "Full release history: [node-scala releases](https://github.com/Decentral-America/node-scala/releases) and the [SDK changelogs](https://github.com/Decentral-America/DecentralChain/tree/main/packages/sdk) (one `CHANGELOG.md` per package)."
-msgstr ""
+msgstr "全放出历史:[节点-斯卡拉释放](https://github.com/Decentral-America/node-scala/releases) 和 [SDK 更改日志](https://github.com/Decentral-America/DecentralChain/tree/main/packages/sdk)(每包1个 `CHANGELOG.md`)."
 
 #: ../../08_release-notes.md:9
 msgid "Which Version Runs Where"
-msgstr ""
+msgstr "哪个版本运行于何处"
 
 #: ../../08_release-notes.md
 msgid "Network"
-msgstr ""
+msgstr "网络"
 
 #: ../../08_release-notes.md
 msgid "Node version"
-msgstr ""
+msgstr "节点版本"
 
 #: ../../08_release-notes.md
 msgid "Check it with"
-msgstr ""
+msgstr "检查一下"
 
 #: ../../08_release-notes.md
 msgid "Public Testnet"
-msgstr ""
+msgstr "公开 Testnet"
 
 #: ../../08_release-notes.md
 msgid "node-scala v1.8.1"
-msgstr ""
+msgstr "节点-斯卡拉 v1.8.1"
 
 #: ../../08_release-notes.md
 msgid "`GET https://testnet-node.decentralchain.io/node/version`"
-msgstr ""
+msgstr "`GET https://testnet-node.decentralchain.io/node/version`"
 
 #: ../../08_release-notes.md
 msgid "Mainnet"
-msgstr ""
+msgstr "Mainnet"
 
 #: ../../08_release-notes.md
 msgid "An earlier release (the public node reports `DCC v1.3.5`)"
-msgstr ""
+msgstr "更早发布(公开节点报告 `DCC v1.3.5`)."
 
 #: ../../08_release-notes.md
 msgid "`GET https://mainnet-node.decentralchain.io/node/version`"
-msgstr ""
+msgstr "`GET https://mainnet-node.decentralchain.io/node/version`"
 
 #: ../../08_release-notes.md:16
 #, python-brace-format
@@ -74,211 +74,211 @@ msgstr ""
 
 #: ../../08_release-notes.md:18
 msgid "Node v1.8.1 (2026-10-24)"
-msgstr ""
+msgstr "节点v1.8.1 (2026-10-24)."
 
 #: ../../08_release-notes.md:20
 msgid "A maintenance release with no change to consensus, the REST API or Ride. The public Testnet runs it."
-msgstr ""
+msgstr "维护发布,不修改共识,REST API或Ride.大众Testnet运营."
 
 #: ../../08_release-notes.md:22
 msgid "**Dependencies.** groth16 0.2.1.2 and curve25519 1.0.1, both sha256-pinned."
-msgstr ""
+msgstr "**依依缘相.** 地道16道0.2.1.2和曲线25519道1.0.1道,均被sha256道钉入."
 
 #: ../../08_release-notes.md:23
 msgid "**Licensing.** A third-party notice for the GPL-3.0 dependency."
-msgstr ""
+msgstr "**许可证发放。** 受GPL-3.0依赖的第三方通知."
 
 #: ../../08_release-notes.md:24
 msgid "**Blockchain Updates.** The gRPC bind address of the Blockchain Updates extension is configurable."
-msgstr ""
+msgstr "**区块链更新.** 区块链更新扩展的gRPC绑定地址可配置."
 
 #: ../../08_release-notes.md:25
 msgid "README and comment fixes."
-msgstr ""
+msgstr "读取和评论修正。"
 
 #: ../../08_release-notes.md:27
 msgid "Source: the [v1.8.1 release](https://github.com/Decentral-America/node-scala/releases/tag/v1.8.1)."
-msgstr ""
+msgstr "资料来源:[v1.8.1 释放](https://github.com/Decentral-America/node-scala/releases/tag/v1.8.1)。"
 
 #: ../../08_release-notes.md:29
 msgid "Node v1.8.0 (2026-10-19)"
-msgstr ""
+msgstr "节点 v 1.8.0 (2026-10-19) (中文(简体) )."
 
 #: ../../08_release-notes.md:31
 msgid "The first release after v1.7.0: consensus and build hardening, plus the work merged since July. Every node on a chain must run it before the chain reaches its `finality-hardening-height`. On the public Testnet that was height 90,000, already passed."
-msgstr ""
+msgstr "v1.7.0后首发:共识并建设硬化,外加作品自7月起被合并.链上每个节点都必须在链子到达其 `finality-hardening-height` 前运行.在公众的Testnet,是9万高地,已经通过。"
 
 #: ../../08_release-notes.md:33
 #, python-brace-format
 msgid "**Block reward.** Feature 26, Adjusted Block Reward Distribution, is votable from this release (activated on the public Testnet). Continuation transaction and Lease expiration are renumbered to 27 and 28; see {doc}`Features and Activation <05_node-guide/10_features-and-activation>`."
-msgstr ""
+msgstr "**挡板奖励。** 地物 26. 调整后块回馈分布,从此发布时可被发售(在公众Testnet上激活).继续交易和租赁期满后重新编号为27和28;见 {doc}`特征和活性 <05_node-guide/10_features-and-activation>`."
 
 #: ../../08_release-notes.md:34
 msgid "**Finality.** HotStuff can be made authoritative on a network that opts in (`dcc.hotstuff.authoritative`; the public Testnet does). Equivocating HotStuff voters forfeit their generation deposit from `functionality.hot-stuff-equivocation-penalty-height`. A lagging HotStuff replica re-anchors near the tip (`dcc.hotstuff.max-target-lag-fraction`)."
-msgstr ""
+msgstr "**终会.** HotStuff可以在一个选择进入(`dcc.hotstuff.authoritative`;公有Testnet做)的网络上成为权威.平分HotStuff选民没收了 `functionality.hot-stuff-equivocation-penalty-height` 的一代存款.一个落后的HotStuff复制机在尖端(`dcc.hotstuff.max-target-lag-fraction`)附近重新锁定."
 
 #: ../../08_release-notes.md:35
 msgid "**Finality hardening** (consensus change, from `finality-hardening-height`). HotStuff quorum weight comes from generating balance, and proven equivocators weigh 0. A voter can't be both a valid endorser and a proven equivocator. Blocks signed with the legacy BLS domain separation tag are no longer accepted."
-msgstr ""
+msgstr "**最终硬化** (共识变化,从 `finality-hardening-height` 起).HotStuff的法定人数重量来自产生平衡,被证明的平分者重量为0.选民不能既是有效的认可人,又是经过证明的平权.与遗留的 BLS 域分拆标签所签的块不再被接受."
 
 #: ../../08_release-notes.md:36
 msgid "**HotStuff and P2P hardening** (no consensus change). A proposal gets a vote only after the expected leader's own signed vote for it, proposal views are bounded, and gossip is validated before it is relayed. Endorser indexes are validated when a block is decoded."
-msgstr ""
+msgstr "**HotStuff和P2P 硬化** (无共识变更).提案只有在预期领导人自己签名投票表决后才能获得表决,提案意见有限制,八卦在转发前才被验证.当块被解码时, 验证批准者索引 。"
 
 #: ../../08_release-notes.md:37
 msgid "**Generators.** A generating node can commit itself to each generation period (`dcc.miner.self-commit-to-generation`), and recovers from peer-reconnection stalls on its own (`dcc.network.peer-stall-threshold`). A failed initial snapshot is retried instead of forging without a state hash."
-msgstr ""
+msgstr "**发电机。** 生成节点可以承诺每个代相相期(`dcc.miner.self-commit-to-generation`),并靠自己从同级重联摊位中恢复(`dcc.network.peer-stall-threshold`).一个失败的初始快照被重试, 而不是在没有状态散列的情况下被伪造 。"
 
 #: ../../08_release-notes.md:38
 msgid "**Transaction pool.** Transactions that depend on a prioritised parent are kept and re-broadcast across new blocks instead of being dropped, and network-received transactions rejected before their dependency arrived are retried."
-msgstr ""
+msgstr "**交易池。** 交易依赖于优先级的父交易,在新块之间保存并重新广播,而不是被丢弃,网络接收交易在依赖到来之前被拒绝进行再审."
 
 #: ../../08_release-notes.md:39
 #, python-brace-format
 msgid "**REST API.** `GET /addresses/seq/*` and `GET /utils/seed*` now require the API key; see {ref}`Authentication <05_node-guide/01_node-rest-api:Authentication>`."
-msgstr ""
+msgstr "**(原始内容存档于2017-09-21). Rest API.** `GET /addresses/seq/*` 和 `GET /utils/seed*` 现在需要API密钥;参见 {ref}`认证 <05_node-guide/01_node-rest-api:Authentication>`."
 
 #: ../../08_release-notes.md:40
 msgid "**Settings.** On a chain with history, consensus heights are pinned by the genesis signature. An unknown consensus key stops the node from starting; unknown REST, HotStuff and miner keys log a warning."
-msgstr ""
+msgstr "**设置。** 在有历史的链条上,共识高度被起源签名所支撑.一个未知的共识密钥停止了节点的启动;未知的REST, HotStuff 和 Miner密钥记录一个警告."
 
 #: ../../08_release-notes.md:41
 msgid "**Network defaults.** The built-in Testnet profile now uses port 6868 and the public Testnet node as its peer, and the Mainnet profile no longer ships third-party seed addresses. The built-in `testnet` chain type is still not the public Testnet chain."
-msgstr ""
+msgstr "**网络默认.** 内置的Testnet剖面图现在使用端口6868和公用Testnet节点作为其对等点,而Mainnet剖面图不再发售第三方种子地址.内置的 `testnet` 链型仍不是公用Testnet链."
 
 #: ../../08_release-notes.md:42
 msgid "**Security.** Netty updated for CVE-2026-75595, plus ingress-robustness hardening."
-msgstr ""
+msgstr "**保安人员** Netty更新为CVE-2026-75595,外加内侵-硬化."
 
 #: ../../08_release-notes.md:43
 msgid "**Build.** Native libraries come from Maven Central with pinned checksums. Each release image is smoke-tested and scanned before it is tagged, and carries a build-provenance attestation."
-msgstr ""
+msgstr "**积相.** 土著图书馆来自马文中央,有被绑的验收和.每个释放图像在被标记之前都要经过烟雾测试和扫描,并附有建筑证明。"
 
 #: ../../08_release-notes.md:45
 msgid "The v1.8.0 image reports its version as `DecentralChain v1.8.0-dev-1a1221cdd8`: it was built just before the tag, from a tree that differs only in a CI workflow. The binary is the released one."
-msgstr ""
+msgstr "v1.8.0图像报告其版本为 `DecentralChain v1.8.0-dev-1a1221cdd8`:它建于标签刚刚之前,来自一个只在CI工作流程中有所区别的树.二进制是发行的."
 
 #: ../../08_release-notes.md:47
 msgid "Source: the [v1.8.0 release](https://github.com/Decentral-America/node-scala/releases/tag/v1.8.0)."
-msgstr ""
+msgstr "资料来源:[v1.8.0 释放](https://github.com/Decentral-America/node-scala/releases/tag/v1.8.0)。"
 
 #: ../../08_release-notes.md:49
 msgid "Node v1.7.0 (2026-07-25)"
-msgstr ""
+msgstr "节点 v 1.7.0 (2026-07-25)."
 
 #: ../../08_release-notes.md:51
 msgid "The first official GitHub release of node-scala (`v1.6.3` and earlier were git tags only)."
-msgstr ""
+msgstr "首个正式的GitHub发布节点-scala(`v1.6.3` 和更早的只是\"git\"标记)."
 
 #: ../../08_release-notes.md:53
 #, python-brace-format
 msgid "**Consensus safety fix.** The experimental HotStuff vote pool now checks quorum against every committee snapshot seen while a target's votes accumulate, closing a gap when committee membership changes mid-round. It also evicts stale votes from removed generators, bounds vote-pool memory, and verifies a quorum certificate locally before broadcasting it. HotStuff remains disabled by default (`dcc.hotstuff.enabled = false`); the public Testnet runs it enabled and authoritative. See {doc}`Features and Activation <05_node-guide/10_features-and-activation>`."
-msgstr ""
+msgstr "**协商一致的安全性。** 实验性的HotStuff投票组合现在对照每个委员会所看到的紧凑点来检查法定人数,同时一个目标的选票会累积,当委员会成员在中途更换时就会缩小差距.它还从被移除的发电机上驱逐了陈旧的选票,将投票集合记忆范围限制在外,并在播放前在当地核实法定人数证书.HotStuff默认仍被禁用(`dcc.hotstuff.enabled = false`);公众Testnet运行它启用并具有权威性.见 {doc}`特征和活性 <05_node-guide/10_features-and-activation>`."
 
 #: ../../08_release-notes.md:54
 msgid "**REST API.** `GET /node/status` now includes `generationPeriodLength`, a per-network constant that no endpoint exposed before."
-msgstr ""
+msgstr "**(原始内容存档于2017-09-21). Rest API.** `GET /node/status` 现在包括了 `generationPeriodLength`,这个每个网络常数之前没有暴露出终点."
 
 #: ../../08_release-notes.md:55
 msgid "**Testing.** Expanded end-to-end testing: deterministic simulation, fault injection with network partitions, property-based fuzzing, and OpenAPI conformance checks in CI. No runtime behaviour change."
-msgstr ""
+msgstr "**测试。** 扩展端到端测试:确定性模拟,用网络分区进行断层注射,基于地产的模糊,以及CI中的OpenAPI相容性检查.运行时间行为没有变化."
 
 #: ../../08_release-notes.md:57
 msgid "Source: the [v1.7.0 release page](https://github.com/Decentral-America/node-scala/releases/tag/v1.7.0)."
-msgstr ""
+msgstr "资料来源:[v1.7.0 发布页](https://github.com/Decentral-America/node-scala/releases/tag/v1.7.0)。"
 
 #: ../../08_release-notes.md:59
 msgid "SDK Release of 2026-06-23 (Not on npm Yet)"
-msgstr ""
+msgstr "SDK发布于2026-06-23(未在npm Yet上)."
 
 #: ../../08_release-notes.md:61
 msgid "A monorepo release commit of 2026-06-23 versions every SDK package for the 2.0 modernization: the packages moved from `packages/ts` to `packages/sdk`, gained a groth16 v2 verifier and a blst 0.3.16 rebuild, and many took a major version. The release tags were pushed on 2026-10-19:"
-msgstr ""
+msgstr "单列放出承诺2026-06-23每个版本的SDK套件为2.0现代化:套件从 `packages/ts` 转移到了 `packages/sdk`,获得了groth16 v2验证器和blst 6.3.16重建,许多都采用了一个主要版本.2026-10-19被推出放行标签:"
 
 #: ../../08_release-notes.md
 msgid "Package"
-msgstr ""
+msgstr "软件包"
 
 #: ../../08_release-notes.md
 msgid "Version"
-msgstr ""
+msgstr "版本"
 
 #: ../../08_release-notes.md
 msgid "`transactions`"
-msgstr ""
+msgstr "`transactions`"
 
 #: ../../08_release-notes.md
 msgid "6.0.0"
-msgstr ""
+msgstr "6.0.0"
 
 #: ../../08_release-notes.md
 msgid "`signer`"
-msgstr ""
+msgstr "`signer`"
 
 #: ../../08_release-notes.md
 msgid "3.0.0"
-msgstr ""
+msgstr "3.0.0"
 
 #: ../../08_release-notes.md
 msgid "`node-api` (was `node-api-js`)"
-msgstr ""
+msgstr "`node-api` ( 是 `node-api-js`) 语句"
 
 #: ../../08_release-notes.md
 msgid "`cubensis-connect-provider`"
-msgstr ""
+msgstr "`cubensis-connect-provider`"
 
 #: ../../08_release-notes.md
 msgid "2.0.0"
-msgstr ""
+msgstr "2.0.0"
 
 #: ../../08_release-notes.md
 msgid "`ts-lib-crypto`"
-msgstr ""
+msgstr "`ts-lib-crypto`"
 
 #: ../../08_release-notes.md
 msgid "`cubensis-connect-types`"
-msgstr ""
+msgstr "`cubensis-connect-types`"
 
 #: ../../08_release-notes.md
 msgid "`types`"
-msgstr ""
+msgstr "`types`"
 
 #: ../../08_release-notes.md
 msgid "`data-service-client`"
-msgstr ""
+msgstr "`data-service-client`"
 
 #: ../../08_release-notes.md
 msgid "5.0.0"
-msgstr ""
+msgstr "5.0.0"
 
 #: ../../08_release-notes.md
 msgid "`marshall`"
-msgstr ""
+msgstr "`marshall`"
 
 #: ../../08_release-notes.md
 msgid "`ledger`"
-msgstr ""
+msgstr "`ledger`"
 
 #: ../../08_release-notes.md
 msgid "`protobuf-schemas`"
-msgstr ""
+msgstr "`protobuf-schemas`"
 
 #: ../../08_release-notes.md
 msgid "3.1.0"
-msgstr ""
+msgstr "3.1.0"
 
 #: ../../08_release-notes.md
 msgid "`oracle-data`"
-msgstr ""
+msgstr "`oracle-data`"
 
 #: ../../08_release-notes.md:72
 #, python-brace-format
 msgid "None of these versions is published to npm: the registry's newest `transactions` is still 5.0.1. These docs keep pinning the published versions listed in the {doc}`TypeScript SDK <04_building-apps/sdk/01_typescript>` page, and will move to the new majors once they are on npm."
-msgstr ""
+msgstr "这些版本都没有发布到npm:登记册最新版的 `transactions` 仍然是5.0.1.这些文件会继续将 {doc}`TypeScript SDK 软件 <04_building-apps/sdk/01_typescript>` 页面上列出的已出版的版本加注, 一旦在 npm 上, 将会移动到新的主机 。"
 
 #: ../../08_release-notes.md:74
 msgid "Ride REPL v1.6.2 (2026-06-06)"
-msgstr ""
+msgstr "Ride REPL v1.6.2 (2026-06-06) (中文(简体) )."
 
 #: ../../08_release-notes.md:76
 #, python-brace-format
@@ -287,10 +287,10 @@ msgstr ""
 
 #: ../../08_release-notes.md:78
 msgid "DecentralScan v2.1.0 (2026-06-13)"
-msgstr ""
+msgstr "DecentralScan v 2.1.0 (2026-06-13) (中文(中国大陆) )."
 
 #: ../../08_release-notes.md:80
 #, python-brace-format
 msgid "The explorer gained the Testnet faucet: the `/faucet` page and the `POST /api/faucet` endpoint, paid from a dedicated wallet. v1.3.2 (2026-06-15) fixed the peer list, so **All Peers** shows the connected nodes. See {doc}`DecentralScan Guide <09_user-guides/03_decentralscan>`."
-msgstr ""
+msgstr "探险家获得了Testnet水龙头:由专用钱包支付的 `/faucet` 页和 `POST /api/faucet` 端点. v1.3.2 (2026-06-15) 固定了对等点列表,因此 **所有对等点** 显示相通的节点.见 {doc}`DecentralScan 指南 <09_user-guides/03_decentralscan>`."
 

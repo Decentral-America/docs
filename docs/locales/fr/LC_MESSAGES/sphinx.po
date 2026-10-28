@@ -21,66 +21,66 @@ msgstr ""
 
 #: ../../../../../.envs/docs/lib/python3.10/site-packages/ablog/templates/archives.html:3
 msgid "Archives"
-msgstr ""
+msgstr "Archives"
 
 #: ../../../../../.envs/docs/lib/python3.10/site-packages/ablog/templates/authors.html:2
 msgid "Authors"
-msgstr ""
+msgstr "Auteurs"
 
 #: ../../../../../.envs/docs/lib/python3.10/site-packages/ablog/templates/categories.html:3
 msgid "Categories"
-msgstr ""
+msgstr "Catégories"
 
 #: ../../../../../.envs/docs/lib/python3.10/site-packages/ablog/templates/collection.html:50
 msgid "Read more ..."
-msgstr ""
+msgstr "Lire la suite ..."
 
 #: ../../../../../.envs/docs/lib/python3.10/site-packages/ablog/templates/languages.html:3
 msgid "Languages"
-msgstr ""
+msgstr "Langues"
 
 #: ../../../../../.envs/docs/lib/python3.10/site-packages/ablog/templates/locations.html:3
 msgid "Locations"
-msgstr ""
+msgstr "Emplacements"
 
 #: ../../../../../.envs/docs/lib/python3.10/site-packages/ablog/templates/postcard2.html:4
 msgid "Update"
-msgstr ""
+msgstr "Mise à jour"
 
 #: ../../../../../.envs/docs/lib/python3.10/site-packages/ablog/templates/postcard2.html:10
 msgid "Author"
-msgstr ""
+msgstr "Auteur"
 
 #: ../../../../../.envs/docs/lib/python3.10/site-packages/ablog/templates/postcard2.html:21
 msgid "Location"
-msgstr ""
+msgstr "Lieu"
 
 #: ../../../../../.envs/docs/lib/python3.10/site-packages/ablog/templates/postcard2.html:31
 msgid "Language"
-msgstr ""
+msgstr "Langue"
 
 #: ../../../../../.envs/docs/lib/python3.10/site-packages/ablog/templates/postcard2.html:41
 msgid "Category"
-msgstr ""
+msgstr "Catégorie"
 
 #: ../../../../../.envs/docs/lib/python3.10/site-packages/ablog/templates/postcard2.html:51
 #: ../../../../../.envs/docs/lib/python3.10/site-packages/ablog/templates/tagcloud.html:2
 msgid "Tags"
-msgstr ""
+msgstr "Étiquettes"
 
 #: ../../../../../.envs/docs/lib/python3.10/site-packages/ablog/templates/postcard2.html:54
 msgid "Tag"
-msgstr ""
+msgstr "Étiquette"
 
 #: ../../../../../.envs/docs/lib/python3.10/site-packages/ablog/templates/postnavy.html:5
 msgid "Previous"
-msgstr ""
+msgstr "Précédent"
 
 #: ../../../../../.envs/docs/lib/python3.10/site-packages/ablog/templates/postnavy.html:15
 msgid "Next"
-msgstr ""
+msgstr "Suivant"
 
 #: ../../../../../.envs/docs/lib/python3.10/site-packages/ablog/templates/recentposts.html:3
 msgid "Recent Posts"
-msgstr ""
+msgstr "Postes récents"
 

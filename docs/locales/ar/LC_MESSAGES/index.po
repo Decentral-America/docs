@@ -21,35 +21,35 @@ msgstr ""
 
 #: ../../index.rst:8
 msgid "DecentralChain Documentation"
-msgstr ""
+msgstr "DecentralChain Documentation"
 
 #: ../../index.rst:10
 msgid "Welcome to the Decentralchain documentation, a comprehensive guide to understanding and using the next-generation blockchain technology of DecentralChain. Our protocol is designed to enable businesses and organizations to store and manage data in a secure, transparent, and tamper-proof manner."
-msgstr ""
+msgstr "مرحباً بكم في وثائق مركز الشاين، وهو دليل شامل لفهم واستخدام الجيل القادم من تكنولوجيا الاختناق في DecentralChain. إن بروتوكولنا مصمم لتمكين الأعمال التجارية والمنظمات من تخزين البيانات وإدارتها بطريقة آمنة وشفافة وقادرة على التلاعب بها."
 
 #: ../../index.rst:12
 msgid "DecentralChain utilizes the Leased Proof of Stake (LPoS) consensus mechanism and sharding to enable faster transaction processing times, lower energy consumption, and increased scalability. Our native token, DecentralCoin (DCC), is used for standard payments such as block rewards, and our on-chain governance system allows us to make changes to the protocol through voting."
-msgstr ""
+msgstr "DecentralChainيستخدم آلية توافق الآراء بشأن البراءة المخففة (LPoS) ويظلّل من أجل إتاحة وقت أسرع لتجهيز المعاملات، وتخفيض استهلاك الطاقة، وزيادة القابلية للتصعيد. ويُستخدم بلدنا الأصلي، DecentralCoin (DCC) في دفعات قياسية مثل المكافآت الأساسية، ونظام الحكم الخاص بنا على سلسلة من السلاسل يسمح لنا بإجراء تغييرات في البروتوكول عن طريق التصويت."
 
 #: ../../index.rst:14
 msgid "Our documentation covers various aspects of the DecentralChain protocol, including its architecture, consensus mechanism, data structures, and APIs. It also provides a comprehensive guide to setting up and running a DecentralChain node, as well as integrating the protocol into existing applications."
-msgstr ""
+msgstr "وتشمل وثائقنا مختلف جوانب البروتوكول DecentralChain، بما في ذلك هيكله وآلية توافق الآراء وهياكل البيانات والملحقات التطبيقية. كما يقدم دليلاً شاملاً لإنشاء وإدارة عقدة DecentralChain، فضلاً عن إدماج البروتوكول في التطبيقات القائمة."
 
 #: ../../index.rst:16
 msgid "We place a strong emphasis on security, with regular security audits to identify and address potential vulnerabilities. Data is stored and managed using cryptography and distributed storage to ensure data integrity and security."
-msgstr ""
+msgstr "ونركز بشدة على الأمن، مع إجراء مراجعات أمنية منتظمة لتحديد ومعالجة أوجه الضعف المحتملة. وتخزن البيانات وتدار باستخدام الترميز والتخزين الموزع لضمان سلامة البيانات وأمنها."
 
 #: ../../index.rst:18
 msgid "Whether you're a developer or a business owner looking to leverage blockchain technology for data management and security, the DecentralChain documentation is a valuable resource for understanding and using the protocol. We invite you to explore our documentation and get started with DecentralChain today."
-msgstr ""
+msgstr "سواء كنت مطوراً أو مالك أعمال يتطلع إلى استخدام تكنولوجيا السلاسل من أجل إدارة البيانات وأمنها، فإن وثائق DecentralChain مورد قيّم لفهم واستخدام البروتوكول. وندعوكم إلى استكشاف وثائقنا والبدء بـ DecentralChain اليوم."
 
 #: ../../index.rst:25 ../../index.rst:124
 msgid "Introduction"
-msgstr ""
+msgstr "أولا - مقدمة"
 
 #: ../../index.rst:28
 msgid "Get ready to jump into the exciting world of cryptocurrency and blockchain with DecentralChain. Start here to learn the basics and find out how this innovative platform is revolutionizing the industry."
-msgstr ""
+msgstr "استعدوا للقفز إلى العالم المُثير من الثرثرة و الاختناق مع DecentralChain ابدأي هنا لتعلم الأساسيات واكتشفي كيف أن هذا البرنامج المبتكر يُحدث ثورة في الصناعة"
 
 #: ../../index.rst:32 ../../index.rst:48 ../../index.rst:65 ../../index.rst:82
 #: ../../index.rst:99 ../../index.rst:115
@@ -58,39 +58,39 @@ msgstr ""
 
 #: ../../index.rst:42 ../../index.rst:142
 msgid "DecentralChain"
-msgstr ""
+msgstr "DecentralChain"
 
 #: ../../index.rst:44
 msgid "DecentralChain is a blockchain protocol and development toolkit that empowers users to create decentralized applications (dApps) and Web 3.0 solutions on a secure and scalable platform using tools such as accounts, tokens, transactions, blocks, nodes, orders, and oracles."
-msgstr ""
+msgstr "DecentralChain هو مجموعة أدوات بروتوكولية وتطويرية من سلسلة السلاسل التي تمكّن المستعملين من استحداث تطبيقات لا مركزية (dApps) والشبكة 3-0 حلول على منصة آمنة وقابلة للتقسيم باستخدام أدوات مثل الحسابات، والرسوم، والمعاملات، والكتل، والعقيدات، والأوامر، والأوعية."
 
 #: ../../index.rst:58 ../../index.rst:151
 msgid "Ride Language"
-msgstr ""
+msgstr "Ride Language"
 
 #: ../../index.rst:61
 msgid "Ride is a straightforward, developer-friendly functional programming language for smart contracts and decentralized applications (dApps) on the DecentralChain blockchain. Here you will learn about syntax basics, data types, functions, script types, structures, and FOLD<N> iterations."
-msgstr ""
+msgstr "Ride هي لغة برمجة وظيفية مباشرة وسهلة المطور للعقود الذكية والتطبيقات اللامركزية (dApps) على سلسلة DecentralChain. وهنا ستتعلمون عن أساسيات النسيج، وأنواع البيانات، والمهام، وأنواع النصوص، والهياكل، ورسومات FOLD <N>."
 
 #: ../../index.rst:75 ../../index.rst:169
 msgid "Node Guide"
-msgstr ""
+msgstr "الدليل العقدي"
 
 #: ../../index.rst:78
 msgid "Learn how to get, build, and configure a DecentralChain node, and what its REST API exposes. For block generation and leasing rewards, see the DecentralChain fundamentals section."
-msgstr ""
+msgstr "تعلم كيفية الحصول على، وبناء، وتشكيل عقدة DecentralChain، وما الذي يكشفه جهاز تسجيل المكالمات. وللاطلاع على جيل الكتل ومكافآت التأجير، انظر قسم DecentralChain الأساسي."
 
 #: ../../index.rst:92 ../../index.rst:160
 msgid "Smart Contracts and dApps"
-msgstr ""
+msgstr "عقود الذكاء وdApps"
 
 #: ../../index.rst:95
 msgid "Lean everything you need to know in order to start creating your own smart contracts and decentralized applications (dApps) with DecentralChain's developer tools, APIs and SDKs."
-msgstr ""
+msgstr "اسحبوا كل ما تحتاجون معرفته من أجل البدء في إنشاء عقودكم الذكية والتطبيقات اللامركزية (dApps) بأدوات مطوري DecentralChain"
 
 #: ../../index.rst:109 ../../index.rst:189
 msgid "Contributing"
-msgstr ""
+msgstr "المساهمة"
 
 #: ../../index.rst:111
 msgid "More information about the community that leads, supports, and develops this documentation, including how you can contribute to it by fixing any typos, adding translations, examples or updating any outdated information. Join the community to help improve this resource for everyone."
@@ -98,11 +98,11 @@ msgstr ""
 
 #: ../../index.rst:133
 msgid "User Guides"
-msgstr ""
+msgstr "دليل المستعمل"
 
 #: ../../index.rst:178
 msgid "Reference"
-msgstr ""
+msgstr "المرجع"
 
 #~ msgid "card-img-top"
 #~ msgstr ""

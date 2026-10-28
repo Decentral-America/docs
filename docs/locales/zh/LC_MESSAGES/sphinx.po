@@ -21,66 +21,66 @@ msgstr ""
 
 #: ../../../../../.envs/docs/lib/python3.10/site-packages/ablog/templates/archives.html:3
 msgid "Archives"
-msgstr ""
+msgstr "档案"
 
 #: ../../../../../.envs/docs/lib/python3.10/site-packages/ablog/templates/authors.html:2
 msgid "Authors"
-msgstr ""
+msgstr "作者数"
 
 #: ../../../../../.envs/docs/lib/python3.10/site-packages/ablog/templates/categories.html:3
 msgid "Categories"
-msgstr ""
+msgstr "类别"
 
 #: ../../../../../.envs/docs/lib/python3.10/site-packages/ablog/templates/collection.html:50
 msgid "Read more ..."
-msgstr ""
+msgstr "读更多..."
 
 #: ../../../../../.envs/docs/lib/python3.10/site-packages/ablog/templates/languages.html:3
 msgid "Languages"
-msgstr ""
+msgstr "语文"
 
 #: ../../../../../.envs/docs/lib/python3.10/site-packages/ablog/templates/locations.html:3
 msgid "Locations"
-msgstr ""
+msgstr "地点"
 
 #: ../../../../../.envs/docs/lib/python3.10/site-packages/ablog/templates/postcard2.html:4
 msgid "Update"
-msgstr ""
+msgstr "更新"
 
 #: ../../../../../.envs/docs/lib/python3.10/site-packages/ablog/templates/postcard2.html:10
 msgid "Author"
-msgstr ""
+msgstr "作者"
 
 #: ../../../../../.envs/docs/lib/python3.10/site-packages/ablog/templates/postcard2.html:21
 msgid "Location"
-msgstr ""
+msgstr "地点"
 
 #: ../../../../../.envs/docs/lib/python3.10/site-packages/ablog/templates/postcard2.html:31
 msgid "Language"
-msgstr ""
+msgstr "语言"
 
 #: ../../../../../.envs/docs/lib/python3.10/site-packages/ablog/templates/postcard2.html:41
 msgid "Category"
-msgstr ""
+msgstr "类别"
 
 #: ../../../../../.envs/docs/lib/python3.10/site-packages/ablog/templates/postcard2.html:51
 #: ../../../../../.envs/docs/lib/python3.10/site-packages/ablog/templates/tagcloud.html:2
 msgid "Tags"
-msgstr ""
+msgstr "标记"
 
 #: ../../../../../.envs/docs/lib/python3.10/site-packages/ablog/templates/postcard2.html:54
 msgid "Tag"
-msgstr ""
+msgstr "标记"
 
 #: ../../../../../.envs/docs/lib/python3.10/site-packages/ablog/templates/postnavy.html:5
 msgid "Previous"
-msgstr ""
+msgstr "上一个"
 
 #: ../../../../../.envs/docs/lib/python3.10/site-packages/ablog/templates/postnavy.html:15
 msgid "Next"
-msgstr ""
+msgstr "ưμ㼯A"
 
 #: ../../../../../.envs/docs/lib/python3.10/site-packages/ablog/templates/recentposts.html:3
 msgid "Recent Posts"
-msgstr ""
+msgstr "近期员额"
 

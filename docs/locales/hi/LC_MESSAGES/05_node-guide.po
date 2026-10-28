@@ -21,206 +21,206 @@ msgstr ""
 
 #: ../../05_node-guide/01_node-rest-api.md:1
 msgid "Node REST API"
-msgstr ""
+msgstr "नोड REST एपीआई"
 
 #: ../../05_node-guide/01_node-rest-api.md:3
 msgid "Every DecentralChain node exposes an HTTP REST API, compatible in shape with the Dcc node API it was forked from. It's how wallets, explorers, and SDKs read chain state (balances, blocks, transactions) and broadcast signed transactions, without needing their own indexer."
-msgstr ""
+msgstr "प्रत्येक DecentralChain नोड एक HTTP REST API को उजागर करता है, जो Dcc नोड एपीआई के साथ आकार में संगत है। यह कैसे वॉलेट, एक्सप्लोरर और एसडीके ने अपने स्वयं के अनुक्रमक की आवश्यकता के बिना चेन स्टेट (संतुलन, ब्लॉक, लेनदेन) और प्रसारण हस्ताक्षर किए हुए लेनदेन को पढ़ा है।"
 
 #: ../../05_node-guide/01_node-rest-api.md:5
 msgid "You normally don't call this API with raw HTTP requests — use [`@decentralchain/node-api-js`](https://www.npmjs.com/package/@decentralchain/node-api-js), the typed JavaScript/TypeScript client (soon to be renamed `node-api` in the monorepo, but install it under its current published name for now — see [Client Libraries and SDK](../04_building-apps/02_client-libraries-and-sdk)), as shown in [How-To Guides](../04_building-apps/03_how-to-guides). Its namespaces map directly onto the REST API's resource areas:"
-msgstr ""
+msgstr "आप आम तौर पर इस एपीआई को कच्चे HTTP अनुरोधों के साथ नहीं कहते - [`@decentralchain/node-api-js`](https://www.npmjs.com/package/@decentralchain/node-api-js) का उपयोग करते हैं, टाइप JavaScript / TypeScript क्लाइंट (सून) को एकाधिकार में `node-api` नाम दिया जाना चाहिए, लेकिन इसे अपने वर्तमान प्रकाशित नाम के तहत अभी स्थापित करें - [ग्राहक पुस्तकालयों और SDK](../04_building-apps/02_client-libraries-and-sdk)) देखें, जैसा कि [कैसे गाइड करने के लिए](../04_building-apps/03_how-to-guides) में दिखाया गया है। इसका नामस्थान सीधे REST API के संसाधन क्षेत्रों पर मानचित्रण करते हैं:"
 
 #: ../../05_node-guide/01_node-rest-api.md
 msgid "Namespace"
-msgstr ""
+msgstr "नेमस्पेस"
 
 #: ../../05_node-guide/01_node-rest-api.md
 msgid "Covers"
-msgstr ""
+msgstr "आवरण"
 
 #: ../../05_node-guide/01_node-rest-api.md
 msgid "`addresses`"
-msgstr ""
+msgstr "`addresses`"
 
 #: ../../05_node-guide/01_node-rest-api.md
 #, python-brace-format
 msgid "Address info, {ref}`balances <02_decentralchain/01_account:Account Balance>`, on-chain data entries"
-msgstr ""
+msgstr "पता जानकारी, {ref}`संतुलन <02_decentralchain/01_account:Account Balance>`, ऑन-चेन डाटा प्रविष्टियों"
 
 #: ../../05_node-guide/01_node-rest-api.md
 msgid "`alias`"
-msgstr ""
+msgstr "`alias`"
 
 #: ../../05_node-guide/01_node-rest-api.md
 #, python-brace-format
 msgid "{ref}`Alias <02_decentralchain/01_account:Alias>` lookup by address or name"
-msgstr ""
+msgstr "पता या नाम से {ref}`उपनाम <02_decentralchain/01_account:Alias>` लुकअप"
 
 #: ../../05_node-guide/01_node-rest-api.md
 msgid "`assets`"
-msgstr ""
+msgstr "`assets`"
 
 #: ../../05_node-guide/01_node-rest-api.md
 #, python-brace-format
 msgid "{ref}`Asset <02_decentralchain/02_token(asset):Token (Asset)>` details, distributions, balances"
-msgstr ""
+msgstr "{ref}`संपत्ति <02_decentralchain/02_token(asset):Token (Asset)>` विवरण, वितरण, शेष राशि"
 
 #: ../../05_node-guide/01_node-rest-api.md
 msgid "`blocks`"
-msgstr ""
+msgstr "`blocks`"
 
 #: ../../05_node-guide/01_node-rest-api.md
 #, python-brace-format
 msgid "{ref}`Block <02_decentralchain/04_block:Block>` headers, height, sequences"
-msgstr ""
+msgstr "{ref}`ब्लॉक <02_decentralchain/04_block:Block>` हेडर, ऊंचाई, अनुक्रम"
 
 #: ../../05_node-guide/01_node-rest-api.md
 msgid "`consensus`"
-msgstr ""
+msgstr "`consensus`"
 
 #: ../../05_node-guide/01_node-rest-api.md
 msgid "Consensus algorithm parameters, generating balance"
-msgstr ""
+msgstr "सर्वसम्मति एल्गोरिथ्म पैरामीटर, संतुलन पैदा करना"
 
 #: ../../05_node-guide/01_node-rest-api.md
 msgid "`leasing`"
-msgstr ""
+msgstr "`leasing`"
 
 #: ../../05_node-guide/01_node-rest-api.md
 #, python-brace-format
 msgid "Active leases, {ref}`lease <02_decentralchain/05_node:Leased Proof of Stake>` info"
-msgstr ""
+msgstr "सक्रिय लीज, {ref}`पट्टा <02_decentralchain/05_node:Leased Proof of Stake>` जानकारी"
 
 #: ../../05_node-guide/01_node-rest-api.md
 msgid "`transactions`"
-msgstr ""
+msgstr "`transactions`"
 
 #: ../../05_node-guide/01_node-rest-api.md
 msgid "Broadcast, transaction info, status, unconfirmed pool"
-msgstr ""
+msgstr "प्रसारण, लेन-देन की जानकारी, स्थिति, पुष्टिरहित पूल"
 
 #: ../../05_node-guide/01_node-rest-api.md
 #: ../../05_node-guide/03_custom-blockchain.md
 msgid "`rewards`"
-msgstr ""
+msgstr "`rewards`"
 
 #: ../../05_node-guide/01_node-rest-api.md
 #, python-brace-format
 msgid "{ref}`Block reward <02_decentralchain/05_node:Block Reward>` — current size and voting state"
-msgstr ""
+msgstr "{ref}`ब्लॉक रिवार्ड <02_decentralchain/05_node:Block Reward>` — वर्तमान आकार और मतदान राज्य"
 
 #: ../../05_node-guide/01_node-rest-api.md
 msgid "`node`"
-msgstr ""
+msgstr "`node`"
 
 #: ../../05_node-guide/01_node-rest-api.md
 msgid "Node status and version"
-msgstr ""
+msgstr "नोड स्थिति और संस्करण"
 
 #: ../../05_node-guide/01_node-rest-api.md
 msgid "`peers`"
-msgstr ""
+msgstr "`peers`"
 
 #: ../../05_node-guide/01_node-rest-api.md
 msgid "Connected, known, and blacklisted peers"
-msgstr ""
+msgstr "कनेक्टेड, ज्ञात और ब्लैकलिस्टेड साथियों"
 
 #: ../../05_node-guide/01_node-rest-api.md
 msgid "`eth`"
-msgstr ""
+msgstr "`eth`"
 
 #: ../../05_node-guide/01_node-rest-api.md
 msgid "Ethereum-compatibility endpoints"
-msgstr ""
+msgstr "एथेरेयम-संगतता समापन बिंदु"
 
 #: ../../05_node-guide/01_node-rest-api.md
 msgid "`activation`"
-msgstr ""
+msgstr "`activation`"
 
 #: ../../05_node-guide/01_node-rest-api.md
 msgid "Feature activation status"
-msgstr ""
+msgstr "सम्पर्क करने का विवरण"
 
 #: ../../05_node-guide/01_node-rest-api.md
 msgid "`utils`"
-msgstr ""
+msgstr "`utils`"
 
 #: ../../05_node-guide/01_node-rest-api.md
 msgid "Hashing, seed generation, script compilation"
-msgstr ""
+msgstr "हशिंग, बीज पीढ़ी, स्क्रिप्ट संकलन"
 
 #: ../../05_node-guide/01_node-rest-api.md:23
 msgid "If you're running your own node, point the client at its own host and port instead of a public endpoint like `https://testnet-node.decentralchain.io` — check your node's configuration file for the REST API port it's bound to."
-msgstr ""
+msgstr "यदि आप अपना खुद का नोड चला रहे हैं, तो ग्राहक को `https://testnet-node.decentralchain.io` जैसे सार्वजनिक समापन बिंदु के बजाय अपने होस्ट और पोर्ट पर इंगित करें - REST API पोर्ट के लिए अपनी नोड्स कॉन्फ़िगरेशन फ़ाइल की जांच करें।"
 
 #: ../../05_node-guide/01_node-rest-api.md:25
 msgid "Base URL, port and interactive docs"
-msgstr ""
+msgstr "बेस यूआरएल, पोर्ट और इंटरैक्टिव डॉक्स"
 
 #: ../../05_node-guide/01_node-rest-api.md:27
 msgid "A node listens on port `6869` (`dcc.rest-api.port`) and, by default, only on `127.0.0.1`. The node bundles an OpenAPI description (`openapi.yaml`) and Swagger UI; open the node's API root in a browser to explore every endpoint."
-msgstr ""
+msgstr "एक नोड पोर्ट `6869` (`dcc.rest-api.port`) को सुनता है और डिफ़ॉल्ट रूप से केवल `127.0.0.1` पर ही चलता है। नोड एक OpenAPI विवरण (`openapi.yaml`) और Swagger UI बंडल करता है; हर समापन बिंदु का पता लगाने के लिए एक ब्राउज़र में नोड की API रूट खोलें।"
 
 #: ../../05_node-guide/01_node-rest-api.md:30
 msgid "Verified against node-scala v1.8.1, the version the public Testnet runs, on 2026-10-27."
-msgstr ""
+msgstr "नोड-स्काला v1.8.1 के खिलाफ सत्यापित, संस्करण सार्वजनिक Testnet रन, 2026-10-27 पर।"
 
 #: ../../05_node-guide/01_node-rest-api.md:33
 msgid "Authentication"
-msgstr ""
+msgstr "प्रमाणीकरण"
 
 #: ../../05_node-guide/01_node-rest-api.md:35
 msgid "Most read-only endpoints are public. Privileged ones — wallet and address management (`GET/POST /addresses`, `GET /wallet/seed`), transaction signing on behalf of the node wallet (`POST /transactions/sign`), `/debug/*`, `GET /addresses/seq/*` and `GET /utils/seed*` (since v1.8.0), all `/peers/*` endpoints (including the read-only `GET /peers/all`, `/peers/connected`, `/peers/blacklisted` and `/peers/suspended`, plus `/peers/connect` and `/peers/clearblacklist`) and `/node/stop` — require an `X-Api-Key` header matching the hash in `dcc.rest-api.api-key-hash`. See [Configuration](05_configuration). Requests with a wrong key get `403`. Fee estimation (`POST /transactions/calculateFee`) does not need a key."
-msgstr ""
+msgstr "अधिकांश पठनीय समापन बिंदु सार्वजनिक हैं। Privileged लोगों — वॉलेट और एड्रेस मैनेजमेंट (`GET/POST /addresses`, `GET /wallet/seed`), नोड वॉलेट (`POST /transactions/sign`), `/debug/*`, `GET /addresses/seq/*` और `GET /utils/seed*` (V1.8.0 से) की ओर से लेनदेन पर हस्ताक्षर किए गए सभी `/peers/*` समापन बिंदुओं (केवल `GET /peers/all`, `/peers/connected`, `/peers/blacklisted` और `/peers/suspended` सहित, प्लस `/peers/connect` और `/peers/clearblacklist`) और `/node/stop` - `X-Api-Key` हेडर को `dcc.rest-api.api-key-hash` में हैश से मेल खाने की आवश्यकता होती है। [विन्यास](05_configuration) देखें एक गलत कुंजी के साथ अनुरोध `403` मिलता है। शुल्क अनुमान (`POST /transactions/calculateFee`) को कुंजी की आवश्यकता नहीं है।"
 
 #: ../../05_node-guide/01_node-rest-api.md:37
 msgid "The public Testnet gateway (`https://testnet-node.decentralchain.io`) deliberately exposes the read-only `GET /peers/*` lists without a key; on your own node they require `X-Api-Key`. The gateway does not route the write endpoints (`POST /peers/connect` returns `404`)."
-msgstr ""
+msgstr "सार्वजनिक Testnet गेटवे (`https://testnet-node.decentralchain.io`) जानबूझकर एक कुंजी के बिना पढ़ने वाले केवल `GET /peers/*` सूचियों को उजागर करता है; अपने खुद के नोड पर उन्हें `X-Api-Key` की आवश्यकता होती है। प्रवेश द्वार लिखित समापन बिंदुओं (`POST /peers/connect` `404`) का मार्ग नहीं है।"
 
 #: ../../05_node-guide/01_node-rest-api.md:39
 msgid "Set Up an API Key"
-msgstr ""
+msgstr "एक एपीआई कुंजी सेट करें"
 
 #: ../../05_node-guide/01_node-rest-api.md:41
 msgid "The node stores only a hash of the key, never the key itself:"
-msgstr ""
+msgstr "नोड केवल कुंजी के एक हैश स्टोर करता है, कभी भी खुद कुंजी नहीं:"
 
 #: ../../05_node-guide/01_node-rest-api.md:43
 msgid "Choose a long random key, for example with `openssl rand -hex 32` or a password manager."
-msgstr ""
+msgstr "एक लंबे यादृच्छिक कुंजी चुनें, उदाहरण के लिए `openssl rand -hex 32` या पासवर्ड मैनेजर के साथ।"
 
 #: ../../05_node-guide/01_node-rest-api.md:44
 msgid "Hash it with your own node's `POST /utils/hash/secure`, which needs no key:"
-msgstr ""
+msgstr "इसे अपने खुद के नोड के `POST /utils/hash/secure` के साथ है, जिसे कोई कुंजी की आवश्यकता नहीं है:"
 
 #: ../../05_node-guide/01_node-rest-api.md:54
 msgid "Run this against your own node rather than a public one, so the key never leaves your machine."
-msgstr ""
+msgstr "इसे सार्वजनिक रूप से अपने खुद के नोड के खिलाफ चलाएं, इसलिए कुंजी कभी भी आपकी मशीन को छोड़ नहीं देती है।"
 
 #: ../../05_node-guide/01_node-rest-api.md:55
 msgid "Put the `hash` value in the configuration as `dcc.rest-api.api-key-hash` and restart the node."
-msgstr ""
+msgstr "`dcc.rest-api.api-key-hash` के रूप में विन्यास में `hash` मान डालें और नोड को पुनः आरंभ करें।"
 
 #: ../../05_node-guide/01_node-rest-api.md:56
 msgid "Send the key itself, not the hash, in the `X-Api-Key` header:"
-msgstr ""
+msgstr "`X-Api-Key` हेडर में कुंजी को खुद ही भेजें, हैश नहीं:"
 
 #: ../../05_node-guide/01_node-rest-api.md:62
 msgid "The node compares the hash of the header value with `api-key-hash`. While `api-key-hash` is empty (the default), every protected endpoint answers `403` with error `2`, whatever key is sent. The legacy header name `api_key` is still accepted, but use `X-Api-Key`."
-msgstr ""
+msgstr "नोड `api-key-hash` के साथ हेडर मान के हैश की तुलना करता है। जबकि `api-key-hash` खाली है (डिफ़ॉल्ट), हर संरक्षित समापन बिंदु `403` को त्रुटि `2` के साथ जवाब देता है, जो कुछ भी कुंजी भेजी जाती है। The legacy header name `api_key` अभी भी स्वीकार किया जाता है, लेकिन `X-Api-Key` का उपयोग करें।"
 
 #: ../../05_node-guide/01_node-rest-api.md:64
 msgid "Anyone with the key can sign transactions with the node's wallet and stop the node. Keep the REST API bound to `127.0.0.1`, or put it behind a reverse proxy that blocks the protected paths, before you expose a node to the internet."
-msgstr ""
+msgstr "किसी भी कुंजी के साथ नोड के वॉलेट के साथ लेनदेन पर हस्ताक्षर कर सकते हैं और नोड को रोक सकते हैं। REST API को `127.0.0.1` से बाध्य रखें, या इसे रिवर्स प्रॉक्सी के पीछे रख दें जो संरक्षित पथों को अवरुद्ध करता है, इससे पहले कि आप इंटरनेट पर एक नोड को उजागर करें।"
 
 #: ../../05_node-guide/01_node-rest-api.md:66
 msgid "Commonly used endpoints"
-msgstr ""
+msgstr "आम तौर पर इस्तेमाल किया समापन बिंदु"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Endpoint"
-msgstr ""
+msgstr "समापन बिंदु"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 #: ../../05_node-guide/02_node-extensions.md:11
@@ -228,85 +228,85 @@ msgstr ""
 #: ../../05_node-guide/04_install-docker.md:5
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "Purpose"
-msgstr ""
+msgstr "उद्देश्य"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`GET /node/status`"
-msgstr ""
+msgstr "`GET /node/status`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Blockchain height, state height, update time and `generationPeriodLength`"
-msgstr ""
+msgstr "ब्लॉकचैन की ऊंचाई, राज्य की ऊंचाई, अद्यतन समय और `generationPeriodLength`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`GET /node/version`"
-msgstr ""
+msgstr "`GET /node/version`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Node version"
-msgstr ""
+msgstr "नोड संस्करण"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`GET /blocks/height`, `/blocks/last`"
-msgstr ""
+msgstr "`GET /blocks/height`, `/blocks/last`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Current height and last block"
-msgstr ""
+msgstr "वर्तमान ऊंचाई और अंतिम ब्लॉक"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`GET /blocks/height/finalized`, `/blocks/headers/finalized`"
-msgstr ""
+msgstr "`GET /blocks/height/finalized`, `/blocks/headers/finalized`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Finalized height and header"
-msgstr ""
+msgstr "अंतिम ऊंचाई और हेडर"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 #, python-brace-format
 msgid "`GET /addresses/balance/{address}`"
-msgstr ""
+msgstr "`GET /addresses/balance/{address}`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Address balance"
-msgstr ""
+msgstr "खाता बैलेंस"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`GET /assets/details`"
-msgstr ""
+msgstr "`GET /assets/details`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Asset information"
-msgstr ""
+msgstr "परिसंपत्ति जानकारी"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 #, python-brace-format
 msgid "`GET /transactions/info/{id}`, `/transactions/status`"
-msgstr ""
+msgstr "`GET /transactions/info/{id}`, `/transactions/status`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Transaction lookup and confirmation status"
-msgstr ""
+msgstr "लेनदेन की तलाश और पुष्टि की स्थिति"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`POST /transactions/broadcast`"
-msgstr ""
+msgstr "`POST /transactions/broadcast`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Submit a signed transaction"
-msgstr ""
+msgstr "एक हस्ताक्षरित लेनदेन जमा करें"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`POST /transactions/calculateFee`"
-msgstr ""
+msgstr "`POST /transactions/calculateFee`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Fee estimate for an unsigned transaction"
-msgstr ""
+msgstr "बिना हस्ताक्षर किए लेनदेन के लिए शुल्क का अनुमान"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`GET /transactions/unconfirmed`"
-msgstr ""
+msgstr "`GET /transactions/unconfirmed`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Unconfirmed pool"
@@ -314,31 +314,31 @@ msgstr ""
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`GET /blockchain/rewards`"
-msgstr ""
+msgstr "`GET /blockchain/rewards`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Block reward state"
-msgstr ""
+msgstr "ब्लॉक रिवॉर्ड स्टेट"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`GET /activation/status`"
-msgstr ""
+msgstr "`GET /activation/status`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "[Feature activation](10_features-and-activation)"
-msgstr ""
+msgstr "[फ़ीचर सक्रियण](10_features-and-activation)"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`GET /peers/all`, `/peers/connected`"
-msgstr ""
+msgstr "`GET /peers/all`, `/peers/connected`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Peer lists (require `X-Api-Key` on a node)"
-msgstr ""
+msgstr "पीयर सूची (एक नोड पर `X-Api-Key` की आवश्यकता)"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`POST /utils/script/compileCode`"
-msgstr ""
+msgstr "`POST /utils/script/compileCode`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Compile Ride source"
@@ -346,191 +346,191 @@ msgstr ""
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`POST /utils/hash/secure`, `/utils/hash/fast`"
-msgstr ""
+msgstr "`POST /utils/hash/secure`, `/utils/hash/fast`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Hashing helpers"
-msgstr ""
+msgstr "हेशिंग सहायक"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`GET /utils/time`"
-msgstr ""
+msgstr "`GET /utils/time`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Node time"
-msgstr ""
+msgstr "नोड समय"
 
 #: ../../05_node-guide/01_node-rest-api.md:87
 msgid "Limits"
-msgstr ""
+msgstr "सीमा"
 
 #: ../../05_node-guide/01_node-rest-api.md:89
 msgid "Several endpoints cap result sizes through settings such as `transactions-by-address-limit` (1000), `blocks-request-limit` (100), `asset-details-limit` (100) and `data-keys-request-limit` (1000). A request above a limit is rejected with error `10`, `Too big sequence requested`; page through the results instead."
-msgstr ""
+msgstr "`transactions-by-address-limit` (1000), `blocks-request-limit` (100), `asset-details-limit` (100) और `data-keys-request-limit` (1000) जैसी सेटिंग्स के माध्यम से कई एंडपॉइंट्स कैप परिणाम आकार। किसी सीमा के ऊपर एक अनुरोध को त्रुटि `10`, `Too big sequence requested` से अस्वीकार कर दिया गया है; इसके बजाय परिणामों के माध्यम से पृष्ठ।"
 
 #: ../../05_node-guide/01_node-rest-api.md:91
 msgid "Pagination"
-msgstr ""
+msgstr "पगिनेशन"
 
 #: ../../05_node-guide/01_node-rest-api.md:93
 msgid "List endpoints page with a cursor rather than a page number: pass the last item you received as `after` to get the next page."
-msgstr ""
+msgstr "एक पृष्ठ संख्या के बजाय एक कर्सर के साथ सूची समापन बिंदु पृष्ठ: अगले पृष्ठ प्राप्त करने के लिए `after` के रूप में प्राप्त अंतिम आइटम को पास करें।"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Page size limit"
-msgstr ""
+msgstr "पृष्ठ आकार सीमा"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Cursor"
-msgstr ""
+msgstr "कर्सर"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 #, python-brace-format
 msgid "`GET /transactions/address/{address}/limit/{limit}`"
-msgstr ""
+msgstr "`GET /transactions/address/{address}/limit/{limit}`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`transactions-by-address-limit` (1000)"
-msgstr ""
+msgstr "`transactions-by-address-limit` (1000)"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 #, python-brace-format
 msgid "`?after={transaction ID}`"
-msgstr ""
+msgstr "`?after={transaction ID}`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 #, python-brace-format
 msgid "`GET /assets/nft/{address}/limit/{limit}`"
-msgstr ""
+msgstr "`GET /assets/nft/{address}/limit/{limit}`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 #, python-brace-format
 msgid "`?after={asset ID}`"
-msgstr ""
+msgstr "`?after={asset ID}`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 #, python-brace-format
 msgid "`GET /assets/{assetId}/distribution/{height}/limit/{limit}`"
-msgstr ""
+msgstr "`GET /assets/{assetId}/distribution/{height}/limit/{limit}`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`distribution-address-limit` (1000)"
-msgstr ""
+msgstr "`distribution-address-limit` (1000)"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 #, python-brace-format
 msgid "`?after={address}`"
-msgstr ""
+msgstr "`?after={address}`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 #, python-brace-format
 msgid "`GET /blocks/seq/{from}/{to}`, `/blocks/headers/seq/{from}/{to}`"
-msgstr ""
+msgstr "`GET /blocks/seq/{from}/{to}`, `/blocks/headers/seq/{from}/{to}`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`blocks-request-limit` (100 blocks)"
-msgstr ""
+msgstr "`blocks-request-limit` (100 ब्लॉक)"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Next height range"
-msgstr ""
+msgstr "अगली ऊंचाई सीमा"
 
 #: ../../05_node-guide/01_node-rest-api.md:102
 msgid "`/transactions/address` returns the newest transactions first, wrapped in an outer array: `[[tx, tx, ...]]`. To read an address's full history, request a page, then pass the ID of the last transaction in it as `after`, and stop when a page comes back shorter than `limit`:"
-msgstr ""
+msgstr "`/transactions/address` पहले सबसे नया लेनदेन वापस करता है, जो एक बाहरी सरणी में लपेटा जाता है: `[[tx, tx, ...]]`। एक पते का पूरा इतिहास पढ़ने के लिए, एक पृष्ठ का अनुरोध करें, फिर अंतिम लेनदेन की आईडी को `after` के रूप में पास करें, और जब कोई पेज `limit` से कम हो जाता है तो रुकें:"
 
 #: ../../05_node-guide/01_node-rest-api.md:109
 #, python-brace-format
 msgid "The distribution endpoint returns `{\"hasNext\": true, \"lastItem\": \"<address>\", \"items\": {\"<address>\": <balance>, ...}}`: pass `lastItem` as `after` while `hasNext` is `true`. `{height}` must be at most the current height minus one; a later height returns error `199`."
-msgstr ""
+msgstr "वितरण समापन बिंदु `{\"hasNext\": true, \"lastItem\": \"<address>\", \"items\": {\"<address>\": <balance>, ...}}` रिटर्न: `lastItem` को `after` के रूप में पास करें जबकि `hasNext` `true` है। `{height}` को सबसे अधिक वर्तमान ऊंचाई माइनस होना चाहिए; बाद में ऊंचाई रिटर्न त्रुटि `199`।"
 
 #: ../../05_node-guide/01_node-rest-api.md:111
 #, python-brace-format
 msgid "`GET /addresses/data/{address}` has no pages. It returns every data entry of the address unless you filter with `?key=` (repeatable) or `?matches=<regular expression>` (at most 200 characters)."
-msgstr ""
+msgstr "`GET /addresses/data/{address}` के पास कोई पृष्ठ नहीं है। जब तक आप `?key=` (repeatable) या `?matches=<regular expression>` (अधिकांश 200 अक्षरों पर) के साथ फ़िल्टर नहीं करते तो यह पते की हर डेटा प्रविष्टि को वापस लौटाता है।"
 
 #: ../../05_node-guide/01_node-rest-api.md:113
 msgid "Error Responses"
-msgstr ""
+msgstr "त्रुटि प्रतिक्रिया"
 
 #: ../../05_node-guide/01_node-rest-api.md:115
 msgid "An error comes back with an HTTP status and a JSON body holding a numeric `error` code and a `message`:"
-msgstr ""
+msgstr "एक त्रुटि HTTP स्थिति के साथ वापस आती है और एक JSON बॉडी में संख्यात्मक `error` कोड और `message` होता है:"
 
 #: ../../05_node-guide/01_node-rest-api.md:121
 msgid "Match on `error` rather than on `message`: messages often include details such as the transaction or the balance."
-msgstr ""
+msgstr "`message` के बजाय `error` पर मैच: संदेशों में अक्सर लेन-देन या शेष राशि जैसे विवरण शामिल होते हैं।"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`error`"
-msgstr ""
+msgstr "`error`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "HTTP"
-msgstr ""
+msgstr "HTTP"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 #: ../../05_node-guide/04_install-docker.md:5
 #: ../../05_node-guide/06_sync-and-rollback.md:3
 msgid "Meaning"
-msgstr ""
+msgstr "अर्थ"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`0`"
-msgstr ""
+msgstr "`0`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "500"
-msgstr ""
+msgstr "500"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Unknown error"
-msgstr ""
+msgstr "अज्ञात त्रुटि"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`1`"
-msgstr ""
+msgstr "`1`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "400"
-msgstr ""
+msgstr "400"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "The JSON body is malformed or misses fields; `validationErrors` lists them"
-msgstr ""
+msgstr "JSON शरीर विकृत है या क्षेत्रों को याद करता है; `validationErrors` उन्हें सूचीबद्ध करता है"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`2`"
-msgstr ""
+msgstr "`2`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "403"
-msgstr ""
+msgstr "403"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 #, python-brace-format
 msgid "API key missing or wrong (see {ref}`Authentication <05_node-guide/01_node-rest-api:Authentication>`)"
-msgstr ""
+msgstr "एपीआई कुंजी लापता या गलत ({ref}`प्रमाणीकरण <05_node-guide/01_node-rest-api:Authentication>` देखें)"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`10`"
-msgstr ""
+msgstr "`10`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Too big sequence requested: a limit was exceeded"
-msgstr ""
+msgstr "बहुत बड़ा अनुक्रम अनुरोध किया: एक सीमा से अधिक हो गई थी"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`101`"
-msgstr ""
+msgstr "`101`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Invalid signature"
-msgstr ""
+msgstr "अमान्य हस्ताक्षर"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`102`"
-msgstr ""
+msgstr "`102`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Invalid address"
@@ -538,264 +538,264 @@ msgstr ""
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`107`"
-msgstr ""
+msgstr "`107`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "The request or transaction is too big"
-msgstr ""
+msgstr "अनुरोध या लेनदेन बहुत बड़ा है"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`108`"
-msgstr ""
+msgstr "`108`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Invalid public key"
-msgstr ""
+msgstr "अवैध सार्वजनिक कुंजी"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`111`"
-msgstr ""
+msgstr "`111`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Invalid name, or a negative amount"
-msgstr ""
+msgstr "अमान्य नाम, या नकारात्मक राशि"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`112`"
-msgstr ""
+msgstr "`112`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Insufficient fee, or the transaction failed a state check such as `negative dcc balance`"
-msgstr ""
+msgstr "अपर्याप्त शुल्क, या लेन-देन ने `negative dcc balance` जैसे स्टेट चेक को विफल कर दिया"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`113`"
-msgstr ""
+msgstr "`113`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Overflow error"
-msgstr ""
+msgstr "ओवरफ्लो त्रुटि"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`114`"
-msgstr ""
+msgstr "`114`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "A transaction to yourself, or a negative fee"
-msgstr ""
+msgstr "अपने आप में एक लेनदेन, या नकारात्मक शुल्क"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`115`"
-msgstr ""
+msgstr "`115`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "A non-positive amount, or the node wallet has no key for the sender"
-msgstr ""
+msgstr "एक गैर-पॉजिटिव राशि, या नोड वॉलेट में प्रेषक के लिए कोई कुंजी नहीं है"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`116`"
-msgstr ""
+msgstr "`116`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "The request contains invalid IDs"
-msgstr ""
+msgstr "अनुरोध में अवैध आईडी शामिल है"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`117`"
-msgstr ""
+msgstr "`117`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Invalid decimals"
-msgstr ""
+msgstr "अमानवीय दशमलव"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`199`"
-msgstr ""
+msgstr "`199`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Other validation error; the message says what is wrong"
-msgstr ""
+msgstr "अन्य सत्यापन त्रुटि; संदेश का कहना है कि गलत क्या है?"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`301`"
-msgstr ""
+msgstr "`301`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "404"
-msgstr ""
+msgstr "404"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Block does not exist"
-msgstr ""
+msgstr "ब्लॉक मौजूद नहीं है"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`302`"
-msgstr ""
+msgstr "`302`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Alias does not exist"
-msgstr ""
+msgstr "उपनाम मौजूद नहीं है"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`303`"
-msgstr ""
+msgstr "`303`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "The transaction's timestamp is too far from the node's time"
-msgstr ""
+msgstr "लेन-देन का टाइमस्टैम्प नोड के समय से बहुत दूर है"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`304`"
-msgstr ""
+msgstr "`304`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "No data for this key"
-msgstr ""
+msgstr "इस कुंजी के लिए कोई डेटा नहीं"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`305`"
-msgstr ""
+msgstr "`305`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Ride compilation error"
-msgstr ""
+msgstr "Ride संकलन त्रुटि"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`306`"
-msgstr ""
+msgstr "`306`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "A script failed while executing (account script, asset script or dApp)"
-msgstr ""
+msgstr "एक स्क्रिप्ट निष्पादन करते समय विफल हो गया (लेखा, परिसंपत्ति लिपि या dApp)"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`307`, `308`"
-msgstr ""
+msgstr "`307`, `308`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "The transaction is not allowed by the account's or the asset's script"
-msgstr ""
+msgstr "लेन-देन को खाते या परिसंपत्ति की स्क्रिप्ट द्वारा अनुमति नहीं दी जाती है"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`311`"
-msgstr ""
+msgstr "`311`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Transaction does not exist"
-msgstr ""
+msgstr "लेनदेन मौजूद नहीं है"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`312`"
-msgstr ""
+msgstr "`312`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "501"
-msgstr ""
+msgstr "501"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Transaction type not supported"
-msgstr ""
+msgstr "लेनदेन का प्रकार समर्थित नहीं है"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`400`"
-msgstr ""
+msgstr "`400`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "The transaction is already in the state at the given height"
-msgstr ""
+msgstr "लेन-देन राज्य में पहले से ही दी गई ऊंचाई पर है"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`402`"
-msgstr ""
+msgstr "`402`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Account balance errors"
-msgstr ""
+msgstr "खाता बैलेंस त्रुटियों"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`403`"
-msgstr ""
+msgstr "`403`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Order validation error"
-msgstr ""
+msgstr "आदेश सत्यापन त्रुटि"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`404`"
-msgstr ""
+msgstr "`404`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Wrong chain ID: the transaction was built for another network"
-msgstr ""
+msgstr "Wrong श्रृंखला ID: लेनदेन किसी अन्य नेटवर्क के लिए बनाया गया था"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`405`"
-msgstr ""
+msgstr "`405`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Invalid proofs (too many, or too big)"
-msgstr ""
+msgstr "अमान्य प्रमाण (बहुत बड़ा, या बहुत बड़ा)"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`406`"
-msgstr ""
+msgstr "`406`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Not finalized"
-msgstr ""
+msgstr "अंतिम रूप देना"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`4001`, `4002`, `4007`"
-msgstr ""
+msgstr "`4001`, `4002`, `4007`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "Invalid transaction ID, block ID or asset ID"
-msgstr ""
+msgstr "अवैध लेनदेन आईडी, ब्लॉक आईडी या परिसंपत्ति आईडी"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`4008`, `4009`"
-msgstr ""
+msgstr "`4008`, `4009`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "A required key or asset ID was not given"
-msgstr ""
+msgstr "एक आवश्यक कुंजी या परिसंपत्ति आईडी नहीं दिया गया था"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`5031`"
-msgstr ""
+msgstr "`5031`"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "503"
-msgstr ""
+msgstr "503"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "The node did not respond in time; retry later"
-msgstr ""
+msgstr "नोड ने समय पर जवाब नहीं दिया; बाद में पुनः प्रयास करें"
 
 #: ../../05_node-guide/01_node-rest-api.md:160
 msgid "A successful `200` from `POST /transactions/broadcast` only means the node accepted the transaction into its pool. Check `GET /transactions/status?id=<id>` (or use `waitForTx` in the SDK) to see when it is in a block."
-msgstr ""
+msgstr "`POST /transactions/broadcast` से एक सफल `200` का मतलब है कि नोड ने लेनदेन को अपने पूल में स्वीकार किया। चेक `GET /transactions/status?id=<id>` (या SDK में `waitForTx` का उपयोग) यह देखने के लिए कि यह एक ब्लॉक में है।"
 
 #: ../../05_node-guide/01_node-rest-api.md:162
 msgid "CORS"
-msgstr ""
+msgstr "CORS"
 
 #: ../../05_node-guide/01_node-rest-api.md:164
 msgid "`access-control-allow-origin` is empty by default, so browsers on other origins are blocked. Set it to your application's origin rather than echoing every origin."
-msgstr ""
+msgstr "`access-control-allow-origin` डिफ़ॉल्ट रूप से खाली है, इसलिए अन्य मूल पर ब्राउज़र अवरुद्ध हैं। इसे अपने आवेदन की उत्पत्ति के लिए सेट करें, बजाय हर मूल का पता लगाने के लिए।"
 
 #: ../../05_node-guide/02_node-extensions.md:1
 msgid "Node Extensions"
-msgstr ""
+msgstr "नोड एक्सटेंशन"
 
 #: ../../05_node-guide/02_node-extensions.md:3
 #, python-brace-format
 msgid "Extensions are optional modules a node operator can enable alongside the core {ref}`REST API <05_node-guide/01_node-rest-api:Node REST API>` for consumers that need direct access to binary data instead of JSON."
-msgstr ""
+msgstr "एक्सटेंशन वैकल्पिक मॉड्यूल हैं, एक नोड ऑपरेटर उपभोक्ताओं के लिए कोर {ref}`REST एपीआई <05_node-guide/01_node-rest-api:Node REST API>` के साथ सक्षम हो सकता है जो JSON के बजाय द्विआधारी डेटा तक सीधी पहुंच की आवश्यकता होती है।"
 
 #: ../../05_node-guide/02_node-extensions.md:5
 msgid "gRPC Server"
-msgstr ""
+msgstr "gRPC सर्वर"
 
 #: ../../05_node-guide/02_node-extensions.md:7
 #, python-brace-format
@@ -804,151 +804,151 @@ msgstr ""
 
 #: ../../05_node-guide/02_node-extensions.md:9
 msgid "If you use your own node with the gRPC server enabled, you can send it a `SignedTransaction` object directly instead of composing a JSON transaction for the REST API's `POST /transactions/broadcast` method. See [`@decentralchain/protobuf-serialization`](https://www.npmjs.com/package/@decentralchain/protobuf-serialization) (published on npm today; the monorepo is renaming it to `protobuf-schemas`) for building and parsing these binary structures from JavaScript/TypeScript, or [Node gRPC API](../04_building-apps/05_node-grpc) for the typed client."
-msgstr ""
+msgstr "यदि आप gRPC सर्वर सक्षम के साथ अपने खुद के नोड का उपयोग करते हैं, तो आप इसे सीधे REST API की `POST /transactions/broadcast` विधि के लिए JSON लेनदेन को जोड़ने के बजाय `SignedTransaction` ऑब्जेक्ट भेज सकते हैं। [`@decentralchain/protobuf-serialization`](https://www.npmjs.com/package/@decentralchain/protobuf-serialization) देखें (आज npm पर प्रकाशित); एकारेपो इसे `protobuf-schemas`) के नाम से जाना जाता है, जो JavaScript/TypeScript या [Node gRPC API](../04_building-apps/05_node-grpc) से टाइप क्लाइंट के लिए इन द्विआधारी संरचनाओं को बनाने और पार करने के लिए है।"
 
 #: ../../05_node-guide/02_node-extensions.md:12
 msgid "Verified against node-scala v1.8.0 (`grpc-server/src/main/resources/application.conf`)."
-msgstr ""
+msgstr "node-scala v1.8.0 (`grpc-server/src/main/resources/application.conf`) के खिलाफ सत्यापित।"
 
 #: ../../05_node-guide/02_node-extensions.md:15
 msgid "The module listens on two ports:"
-msgstr ""
+msgstr "मॉड्यूल दो बंदरगाहों पर सुनता है:"
 
 #: ../../05_node-guide/02_node-extensions.md:11
 msgid "Setting"
-msgstr ""
+msgstr "सेटिंग"
 
 #: ../../05_node-guide/02_node-extensions.md:11
 #: ../../05_node-guide/05_configuration.md:5
 #: ../../05_node-guide/05_configuration.md:34
 msgid "Default"
-msgstr ""
+msgstr "डिफ़ॉल्ट"
 
 #: ../../05_node-guide/02_node-extensions.md:11
 msgid "`dcc.grpc.port`"
-msgstr ""
+msgstr "`dcc.grpc.port`"
 
 #: ../../05_node-guide/02_node-extensions.md:11
 msgid "`6870`"
-msgstr ""
+msgstr "`6870`"
 
 #: ../../05_node-guide/02_node-extensions.md:11
 msgid "AccountsApi, AssetsApi, BlockchainApi, BlocksApi, TransactionsApi"
-msgstr ""
+msgstr "AccountsApi, AssetsApi, BlockchainApi, BlocksApi, TransactionsApi"
 
 #: ../../05_node-guide/02_node-extensions.md:11
 msgid "`dcc.blockchain-updates.grpc-port`"
-msgstr ""
+msgstr "`dcc.blockchain-updates.grpc-port`"
 
 #: ../../05_node-guide/02_node-extensions.md:11
 msgid "`6881`"
-msgstr ""
+msgstr "`6881`"
 
 #: ../../05_node-guide/02_node-extensions.md:11
 msgid "BlockchainUpdates — a real-time stream of block-level events"
-msgstr ""
+msgstr "BlockchainUpdates — ब्लॉक-स्तर की घटनाओं का वास्तविक समय स्ट्रीम"
 
 #: ../../05_node-guide/02_node-extensions.md:11
 msgid "`dcc.grpc.host`"
-msgstr ""
+msgstr "`dcc.grpc.host`"
 
 #: ../../05_node-guide/02_node-extensions.md:11
 msgid "`localhost`"
-msgstr ""
+msgstr "`localhost`"
 
 #: ../../05_node-guide/02_node-extensions.md:11
 msgid "Interface the main gRPC service binds to"
-msgstr ""
+msgstr "इंटरफ़ेस मुख्य gRPC सेवा के लिए बांधता है"
 
 #: ../../05_node-guide/02_node-extensions.md:11
 msgid "`dcc.grpc.worker-threads`"
-msgstr ""
+msgstr "`dcc.grpc.worker-threads`"
 
 #: ../../05_node-guide/02_node-extensions.md:11
 msgid "`4`"
-msgstr ""
+msgstr "`4`"
 
 #: ../../05_node-guide/02_node-extensions.md:11
 msgid "Worker threads for the gRPC service"
-msgstr ""
+msgstr "gRPC सेवा के लिए कार्यकर्ता धागे"
 
 #: ../../05_node-guide/02_node-extensions.md:11
 msgid "`dcc.blockchain-updates.min-keep-alive`"
-msgstr ""
+msgstr "`dcc.blockchain-updates.min-keep-alive`"
 
 #: ../../05_node-guide/02_node-extensions.md:11
 msgid "`5m`"
-msgstr ""
+msgstr "`5m`"
 
 #: ../../05_node-guide/02_node-extensions.md:11
 msgid "Shortest interval at which a BlockchainUpdates client may send keep-alive pings"
-msgstr ""
+msgstr "सबसे छोटा अंतराल जिस पर BlockchainUpdates क्लाइंट को रखने वाले पिंग भेज सकते हैं"
 
 #: ../../05_node-guide/02_node-extensions.md:25
 msgid "The `grpc-server` module is not a separate process: it is an in-process node extension. The official Docker image already contains it; for other installs, put its JARs on the node's classpath (the Docker image also loads extra JARs from `lib/plugins/`). The module holds two extensions, each enabled by adding its class to `dcc.extensions`: `com.decentralchain.api.grpc.GRPCServerExtension` for the APIs on port 6870 (commented out in the node's default `application.conf`), and `com.decentralchain.events.BlockchainUpdates` for port 6881 (see [Blockchain Updates](../04_building-apps/11_blockchain-updates)). Enabling them is a deployment decision for the node operator, not a REST API toggle."
-msgstr ""
+msgstr "`grpc-server` मॉड्यूल एक अलग प्रक्रिया नहीं है: यह एक इन-प्रोसेस नोड एक्सटेंशन है। आधिकारिक डोकर छवि में पहले से ही इसमें शामिल है; अन्य इंस्टॉल के लिए, अपने JARs को नोड्स क्लासपैथ (डॉकर इमेज भी `lib/plugins/` से अतिरिक्त JAR लोड करता है) पर डाल दिया। मॉड्यूल में दो एक्सटेंशन होते हैं, प्रत्येक ने अपने वर्ग को `dcc.extensions`: `com.decentralchain.api.grpc.GRPCServerExtension` को पोर्ट 6870 पर APIs के लिए जोड़कर सक्षम किया है (नोड के डिफ़ॉल्ट `application.conf` में बनाया गया), और `com.decentralchain.events.BlockchainUpdates` पोर्ट 6881 के लिए ([ब्लॉकचैन अपडेट](../04_building-apps/11_blockchain-updates) देखें)। उन्हें सक्षम करना नोड ऑपरेटर के लिए एक तैनाती का निर्णय है, न कि आरईएसटी एपीआई टॉगल।"
 
 #: ../../05_node-guide/03_custom-blockchain.md:1
 msgid "Custom Blockchain"
-msgstr ""
+msgstr "कस्टम ब्लॉकचैन"
 
 #: ../../05_node-guide/03_custom-blockchain.md:3
 msgid "Besides Mainnet and Testnet, the node software supports running a fully private, custom network — useful for local development or an isolated test environment. This is configured by setting the blockchain type to `CUSTOM` in the node configuration file, as seen in the `devnet` template shipped in [`network-defaults.conf`](https://github.com/Decentral-America/node-scala/blob/main/node/src/main/resources/network-defaults.conf):"
-msgstr ""
+msgstr "Mainnet और Testnet के अलावा, नोड सॉफ्टवेयर स्थानीय विकास या एक पृथक परीक्षण वातावरण के लिए उपयोगी पूरी तरह से निजी, कस्टम नेटवर्क चलाने का समर्थन करता है। इसे नोड कॉन्फ़िगरेशन फ़ाइल में `CUSTOM` के लिए ब्लॉकचैन प्रकार की स्थापना करके कॉन्फ़िगर किया गया है, जैसा कि `devnet` टेम्पलेट में [`network-defaults.conf`](https://github.com/Decentral-America/node-scala/blob/main/node/src/main/resources/network-defaults.conf) में भेजा गया था:"
 
 #: ../../05_node-guide/03_custom-blockchain.md:41
 msgid "Key fields:"
-msgstr ""
+msgstr "प्रमुख फ़ील्ड:"
 
 #: ../../05_node-guide/03_custom-blockchain.md
 msgid "Field"
-msgstr ""
+msgstr "फील्ड"
 
 #: ../../05_node-guide/03_custom-blockchain.md
 msgid "`address-scheme-character`"
-msgstr ""
+msgstr "`address-scheme-character`"
 
 #: ../../05_node-guide/03_custom-blockchain.md
 msgid "The network byte that distinguishes your custom network's addresses from Mainnet/Testnet — every address on your network is derived using this character"
-msgstr ""
+msgstr "नेटवर्क बाइट जो Mainnet/Testnet से अपने कस्टम नेटवर्क के पते को अलग करता है - आपके नेटवर्क पर हर पता इस चरित्र का उपयोग करके व्युत्पन्न होता है।"
 
 #: ../../05_node-guide/03_custom-blockchain.md
 msgid "`functionality`"
-msgstr ""
+msgstr "`functionality`"
 
 #: ../../05_node-guide/03_custom-blockchain.md
 msgid "Protocol feature activation thresholds, transaction time offsets, and related consensus parameters"
-msgstr ""
+msgstr "प्रोटोकॉल सुविधा सक्रियण थ्रेसहोल्ड, लेनदेन समय ऑफसेट और संबंधित आम सहमति पैरामीटर"
 
 #: ../../05_node-guide/03_custom-blockchain.md
 #, python-brace-format
 msgid "Initial {ref}`block reward <02_decentralchain/05_node:Block Reward>` size, minimum increment, and voting interval — same mechanism as Mainnet"
-msgstr ""
+msgstr "प्रारंभिक {ref}`ब्लॉक रिवार्ड <02_decentralchain/05_node:Block Reward>` आकार, न्यूनतम वृद्धि और मतदान अंतराल - Mainnet के समान तंत्र"
 
 #: ../../05_node-guide/03_custom-blockchain.md
 msgid "`genesis`"
-msgstr ""
+msgstr "`genesis`"
 
 #: ../../05_node-guide/03_custom-blockchain.md
 #, python-brace-format
 msgid "The network's {ref}`genesis block <02_decentralchain/04_block:Block>`: initial balances, timestamp, and difficulty"
-msgstr ""
+msgstr "नेटवर्क का {ref}`जीनसिस ब्लॉक <02_decentralchain/04_block:Block>`: प्रारंभिक शेष, टाइमस्टैम्प और कठिनाई"
 
 #: ../../05_node-guide/03_custom-blockchain.md
 msgid "`network.known-peers`"
-msgstr ""
+msgstr "`network.known-peers`"
 
 #: ../../05_node-guide/03_custom-blockchain.md
 msgid "Seed peers for nodes on your custom network to discover each other — leave empty for a single-node development network"
-msgstr ""
+msgstr "अपने कस्टम नेटवर्क पर नोड्स के लिए बीज सहकर्मी एक दूसरे की खोज करने के लिए - एक एकल नोड विकास नेटवर्क के लिए खाली छोड़ दें"
 
 #: ../../05_node-guide/03_custom-blockchain.md:51
 msgid "For a full field reference, use `network-defaults.conf`'s `devnet` block as a starting template and adjust the values for your own network, then point your node at a config file that sets `blockchain.type = CUSTOM` with your own `custom` block instead of `blockchain.type = TESTNET` or `MAINNET`."
-msgstr ""
+msgstr "एक पूर्ण क्षेत्र संदर्भ के लिए, `network-defaults.conf` के `devnet` ब्लॉक को शुरुआती टेम्पलेट के रूप में उपयोग करें और अपने नेटवर्क के मूल्यों को समायोजित करें, फिर अपने नोड को एक config फ़ाइल पर इंगित करें जो `blockchain.type = TESTNET` या `MAINNET` के बजाय अपने `custom` ब्लॉक के साथ `blockchain.type = CUSTOM` सेट करता है।"
 
 #: ../../05_node-guide/04_install-docker.md:1
 msgid "Run a Node with Docker"
-msgstr ""
+msgstr "डोकर के साथ एक नोड चलाएं"
 
 #: ../../05_node-guide/04_install-docker.md:3
 msgid "Docker is the recommended way to run a DecentralChain node. The image is built from `docker/Dockerfile` in [node-scala](https://github.com/Decentral-America/node-scala) and runs the node as the unprivileged user `dcc`."
@@ -956,441 +956,441 @@ msgstr ""
 
 #: ../../05_node-guide/04_install-docker.md:6
 msgid "Verified on a clean Docker host (macOS 15.5, Docker Desktop 29.2.1, no earlier node images or volumes) against node-scala v1.8.1, 2026-10-27: following [Join the Public Testnet](15_join-testnet), the node synced the public Testnet from genesis to the tip, height 99,976, in 31 minutes, and its block IDs matched the public node."
-msgstr ""
+msgstr "एक स्वच्छ डोकर होस्ट (macOS 15.5, Docker Desktop 29.2.1, नोड-स्काला v1.8.1, 2026-10-27 के खिलाफ कोई पहले नोड छवि या वॉल्यूम नहीं) पर सत्यापित: [सार्वजनिक Testnet में शामिल हों](15_join-testnet) के बाद, नोड ने 31 मिनट में जीनसिस से टिप, ऊंचाई 99,976 तक सार्वजनिक Testnet को सिंक किया और इसके ब्लॉक आईडी सार्वजनिक नोड से मेल खाते थे।"
 
 #: ../../05_node-guide/04_install-docker.md:9
 msgid "Which Network You Can Join"
-msgstr ""
+msgstr "आप किस नेटवर्क में शामिल हो सकते हैं"
 
 #: ../../05_node-guide/04_install-docker.md:5
 #: ../../05_node-guide/05_configuration.md:5
 msgid "Network"
-msgstr ""
+msgstr "नेटवर्क"
 
 #: ../../05_node-guide/04_install-docker.md:5
 msgid "Status"
-msgstr ""
+msgstr "स्थिति"
 
 #: ../../05_node-guide/04_install-docker.md:5
 #: ../../05_node-guide/05_configuration.md:5
 msgid "Public Testnet"
-msgstr ""
+msgstr "सार्वजनिक Testnet"
 
 #: ../../05_node-guide/04_install-docker.md:5
 msgid "Supported. Follow [Join the Public Testnet](15_join-testnet): it gives the configuration file the node needs."
-msgstr ""
+msgstr "समर्थित। [सार्वजनिक Testnet में शामिल हों](15_join-testnet) को फ़ॉलो करें: यह कॉन्फ़िगरेशन फ़ाइल को नोड की जरूरत देता है।"
 
 #: ../../05_node-guide/04_install-docker.md:5
 #: ../../05_node-guide/05_configuration.md:5
 msgid "Mainnet"
-msgstr ""
+msgstr "Mainnet"
 
 #: ../../05_node-guide/04_install-docker.md:5
 msgid "Not with this image yet. The live DCC Mainnet runs an earlier node line (its public node reports `DCC v1.3.5`). node-scala's built-in Mainnet profile ships no peers until the Mainnet migration, and the peers in its packaged `node/decentralchain-mainnet.conf` refused connections when tested on 2026-10-27. A v1.8.1 container started with that file stayed at the genesis block."
-msgstr ""
+msgstr "अभी तक इस छवि के साथ नहीं। लाइव DCC Mainnet एक पहले नोड लाइन चलाता है (इसके सार्वजनिक नोड `DCC v1.3.5`) रिपोर्ट करता है। नोड-स्काला के निर्मित Mainnet प्रोफाइल जहाज Mainnet माइग्रेशन तक कोई सहकर्मी नहीं हैं, और इसके पैकेज में सहकर्मी `node/decentralchain-mainnet.conf` ने 2026-10-27 पर परीक्षण करते समय कनेक्शन से इनकार कर दिया। एक v1.8.1 कंटेनर उस फ़ाइल के साथ शुरू किया गया था जो जेनेसिस ब्लॉक पर रहा था।"
 
 #: ../../05_node-guide/04_install-docker.md:16
 msgid "Requirements"
-msgstr ""
+msgstr "आवश्यकता"
 
 #: ../../05_node-guide/04_install-docker.md:5
 msgid "Requirement"
-msgstr ""
+msgstr "आवश्यकता"
 
 #: ../../05_node-guide/04_install-docker.md:5
 msgid "Minimum"
-msgstr ""
+msgstr "न्यूनतम"
 
 #: ../../05_node-guide/04_install-docker.md:5
 msgid "Recommended"
-msgstr ""
+msgstr "अनुशंसित"
 
 #: ../../05_node-guide/04_install-docker.md:5
 msgid "Docker Engine"
-msgstr ""
+msgstr "Docker Engine"
 
 #: ../../05_node-guide/04_install-docker.md:5
 msgid "25.x"
-msgstr ""
+msgstr "25.x"
 
 #: ../../05_node-guide/04_install-docker.md:5
 msgid "Latest stable"
-msgstr ""
+msgstr "स्थिर"
 
 #: ../../05_node-guide/04_install-docker.md:5
 msgid "RAM"
-msgstr ""
+msgstr "RAM"
 
 #: ../../05_node-guide/04_install-docker.md:5
 msgid "4 GB"
-msgstr ""
+msgstr "4 जीबी"
 
 #: ../../05_node-guide/04_install-docker.md:5
 msgid "8 GB"
-msgstr ""
+msgstr "8 जीबी"
 
 #: ../../05_node-guide/04_install-docker.md:5
 msgid "CPU"
-msgstr ""
+msgstr "CPU"
 
 #: ../../05_node-guide/04_install-docker.md:5
 msgid "2 cores"
-msgstr ""
+msgstr "2 कोर"
 
 #: ../../05_node-guide/04_install-docker.md:5
 msgid "4+ cores"
-msgstr ""
+msgstr "4+ कोर"
 
 #: ../../05_node-guide/04_install-docker.md:5
 msgid "Disk (SSD)"
-msgstr ""
+msgstr "डिस्क (एसएसडी)"
 
 #: ../../05_node-guide/04_install-docker.md:5
 msgid "1 GB for the Testnet (its data was 131 MB at height 99,976)"
-msgstr ""
+msgstr "Testnet के लिए 1 जीबी (इसका डेटा ऊंचाई 99,976) पर 131 एमबी था"
 
 #: ../../05_node-guide/04_install-docker.md:5
 msgid "10 GB, to leave room for the chain to grow"
-msgstr ""
+msgstr "10 जीबी, चेन के लिए कमरे को बढ़ने के लिए"
 
 #: ../../05_node-guide/04_install-docker.md:5
 msgid "100 Mbit/s"
-msgstr ""
+msgstr "100 Mbit/s"
 
 #: ../../05_node-guide/04_install-docker.md:5
 msgid "1 Gbit/s"
-msgstr ""
+msgstr "1 Gbit/s"
 
 #: ../../05_node-guide/04_install-docker.md:26
 msgid "Image tags"
-msgstr ""
+msgstr "छवि टैग"
 
 #: ../../05_node-guide/04_install-docker.md:28
 msgid "All images live at `ghcr.io/decentral-america/node-scala`. No image is published on Docker Hub."
-msgstr ""
+msgstr "सभी छवियां `ghcr.io/decentral-america/node-scala` पर रहती हैं। डॉकर हब पर कोई छवि प्रकाशित नहीं की गई है।"
 
 #: ../../05_node-guide/04_install-docker.md:5
 msgid "Tag"
-msgstr ""
+msgstr "टैग"
 
 #: ../../05_node-guide/04_install-docker.md:5
 msgid "`1.8.1`, `1.8.0`, ..."
-msgstr ""
+msgstr "`1.8.1`, `1.8.0`, ..."
 
 #: ../../05_node-guide/04_install-docker.md:5
 msgid "One release. Use a release tag, or a digest, for a node you want to keep stable"
-msgstr ""
+msgstr "एक रिलीज। एक रिलीज टैग, या एक पाचन का उपयोग करें, एक नोड के लिए जिसे आप स्थिर रखना चाहते हैं"
 
 #: ../../05_node-guide/04_install-docker.md:5
 msgid "`testnet-latest`, `mainnet-latest`, `latest`"
-msgstr ""
+msgstr "`testnet-latest`, `mainnet-latest`, `latest`"
 
 #: ../../05_node-guide/04_install-docker.md:5
 msgid "The newest build. On 2026-10-27 all three were the same v1.8.1 image (`sha256:3b04d066…`): the network a container joins comes from its configuration, not from the tag"
-msgstr ""
+msgstr "नवीनतम निर्माण। 2026-10-27 पर सभी तीन समान v1.8.1 छवि (`sha256:3b04d066…`) थे: एक कंटेनर में शामिल होने वाला नेटवर्क इसके विन्यास से आता है, न कि टैग से"
 
 #: ../../05_node-guide/04_install-docker.md:5
 msgid "`sha-<commit>`"
-msgstr ""
+msgstr "`sha-<commit>`"
 
 #: ../../05_node-guide/04_install-docker.md:5
 msgid "A build of one git commit"
-msgstr ""
+msgstr "एक गिट प्रतिबद्धता का निर्माण"
 
 #: ../../05_node-guide/04_install-docker.md:36
 #: ../../05_node-guide/15_join-testnet.md:156
 msgid "Ports"
-msgstr ""
+msgstr "पोर्ट"
 
 #: ../../05_node-guide/04_install-docker.md:5
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "Port"
-msgstr ""
+msgstr "पोर्ट"
 
 #: ../../05_node-guide/04_install-docker.md:5
 msgid "Exposure"
-msgstr ""
+msgstr "एक्सपोजर"
 
 #: ../../05_node-guide/04_install-docker.md:5
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "`6868`"
-msgstr ""
+msgstr "`6868`"
 
 #: ../../05_node-guide/04_install-docker.md:5
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "P2P"
-msgstr ""
+msgstr "P2P"
 
 #: ../../05_node-guide/04_install-docker.md:5
 msgid "Open to the internet if other nodes should be able to dial you; outbound only is enough to sync"
-msgstr ""
+msgstr "यदि अन्य नोड्स आपको डायल करने में सक्षम होना चाहिए तो इंटरनेट पर खुल जाएं; आउटबाउंड केवल सिंक करने के लिए पर्याप्त है"
 
 #: ../../05_node-guide/04_install-docker.md:5
 #: ../../05_node-guide/05_configuration.md:34
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "`6869`"
-msgstr ""
+msgstr "`6869`"
 
 #: ../../05_node-guide/04_install-docker.md:5
 #: ../../05_node-guide/15_join-testnet.md:9 ../../05_node-guide/index.md:50
 msgid "REST API"
-msgstr ""
+msgstr "REST एपीआई"
 
 #: ../../05_node-guide/04_install-docker.md:5
 msgid "Keep private: bind to localhost, or place behind a reverse proxy"
-msgstr ""
+msgstr "निजी रखें: स्थानीयहोस्ट से बांधें, या रिवर्स प्रॉक्सी के पीछे जगह"
 
 #: ../../05_node-guide/04_install-docker.md:43
 msgid "The Configuration File Is Required"
-msgstr ""
+msgstr "कॉन्फ़िगरेशन फ़ाइल की आवश्यकता है"
 
 #: ../../05_node-guide/04_install-docker.md:45
 msgid "Mount a configuration file at `/etc/dcc/dcc.conf`. Besides selecting the network, it must set the wallet password (`dcc.wallet.password`, which may be `\"\"`). Without a mounted file the node has no wallet password, can't ask for one, and exits with code 61 (`CANNOT GET CONSOLE TO ASK WALLET PASSWORD` in the log); with `--restart unless-stopped`, Docker then restarts it in a loop. `DCC_WALLET_PASSWORD` doesn't help on its own: the entrypoint applies it only on top of a mounted file. See [Configuration](05_configuration)."
-msgstr ""
+msgstr "`/etc/dcc/dcc.conf` पर एक कॉन्फ़िगरेशन फ़ाइल माउंट करें। नेटवर्क का चयन करने के अलावा, इसे वॉलेट पासवर्ड (`dcc.wallet.password`, जो `\"\"`) हो सकता है सेट करना चाहिए। एक घुड़सवार फ़ाइल के बिना नोड में कोई वॉलेट पासवर्ड नहीं है, एक के लिए नहीं पूछ सकता है, और लॉग में कोड 61 (`CANNOT GET CONSOLE TO ASK WALLET PASSWORD`) के साथ बाहर निकलता है; `--restart unless-stopped` के साथ, Docker फिर इसे लूप में पुनः आरंभ करता है। `DCC_WALLET_PASSWORD` अपने आप में मदद नहीं करता है: प्रवेश बिंदु केवल एक घुड़सवार फ़ाइल के शीर्ष पर लागू होता है। [विन्यास](05_configuration) देखें"
 
 #: ../../05_node-guide/04_install-docker.md:47
 msgid "Quick start"
-msgstr ""
+msgstr "जल्दी शुरू"
 
 #: ../../05_node-guide/04_install-docker.md:49
 msgid "Write `dcc.conf` as shown in [Join the Public Testnet](15_join-testnet), then start the node from the same directory:"
-msgstr ""
+msgstr "`dcc.conf` को [सार्वजनिक Testnet में शामिल हों](15_join-testnet) में दिखाया गया है, फिर उसी डायरेक्टरी से नोड शुरू करें:"
 
 #: ../../05_node-guide/04_install-docker.md:66
 msgid "Inside the container the REST API binds to `127.0.0.1` by default (`DCC_REST_API_BIND`). Docker cannot forward a published port to a service listening only on the container's loopback interface, so without `DCC_REST_API_BIND=0.0.0.0` the API is unreachable from the host. The example above then publishes the port only on the host's loopback (`-p 127.0.0.1:6869:6869`), which keeps the API off the public internet."
-msgstr ""
+msgstr "कंटेनर के अंदर REST API डिफ़ॉल्ट (`DCC_REST_API_BIND`) द्वारा `127.0.0.1` को बांधता है। डोकर केवल कंटेनर के लूपबैक इंटरफ़ेस पर सुनने वाले एक सेवा के लिए एक प्रकाशित बंदरगाह को आगे नहीं ले सकता है, इसलिए बिना `DCC_REST_API_BIND=0.0.0.0` के API मेजबान से पहुंच योग्य है। इसके बाद ऊपर का उदाहरण केवल मेजबान के लूपबैक (`-p 127.0.0.1:6869:6869`) पर पोर्ट प्रकाशित करता है, जो API को सार्वजनिक इंटरनेट से दूर रखता है।"
 
 #: ../../05_node-guide/04_install-docker.md:69
 msgid "Data is stored in the `/var/lib/dcc` volume and logs in `/var/log/dcc`. Keep the data volume between restarts and upgrades: losing it forces a full re-sync."
-msgstr ""
+msgstr "डेटा `/var/lib/dcc` वॉल्यूम में संग्रहीत है और `/var/log/dcc` में लॉग करता है। पुनरारंभ और उन्नयन के बीच डेटा की मात्रा रखें: इसे खोने से एक पूर्ण पुनः सिंक होता है।"
 
 #: ../../05_node-guide/04_install-docker.md:71
 msgid "Docker Compose"
-msgstr ""
+msgstr "Docker Compose"
 
 #: ../../05_node-guide/04_install-docker.md:73
 msgid "The same node with Docker Compose, with `dcc.conf` next to `compose.yaml`:"
-msgstr ""
+msgstr "डोकर कम्पास के साथ समान नोड, `dcc.conf` के बगल में `compose.yaml` के साथ:"
 
 #: ../../05_node-guide/04_install-docker.md:102
 msgid "To give the node a wallet seed and password without writing them into `dcc.conf`, add `env_file: .env` with `DCC_WALLET_SEED` and `DCC_WALLET_PASSWORD` (and `chmod 600 .env`). The entrypoint layers them on top of the mounted `dcc.conf`; without the mounted file they are ignored."
-msgstr ""
+msgstr "नोड को `dcc.conf` में लिखने के बिना एक वॉलेट बीज और पासवर्ड देने के लिए, `DCC_WALLET_SEED` और `DCC_WALLET_PASSWORD` (और `chmod 600 .env`) के साथ `env_file: .env` जोड़ें। प्रवेश बिंदु उन्हें माउंटेड `dcc.conf` के शीर्ष पर लेयर करता है; घुड़सवार फ़ाइल के बिना उन्हें नजरअंदाज कर दिया जाता है।"
 
 #: ../../05_node-guide/04_install-docker.md:105
 msgid "Verify it is running"
-msgstr ""
+msgstr "सत्यापित करें कि यह चल रहा है"
 
 #: ../../05_node-guide/04_install-docker.md:113
 msgid "The image's built-in `HEALTHCHECK` polls `/node/status`. On the first start the node replays the chain from genesis; [Join the Public Testnet](15_join-testnet) shows how to check it has reached the tip. See [Configuration](05_configuration) for every environment variable and [Sync and Rollback](06_sync-and-rollback) for what to expect on first start."
-msgstr ""
+msgstr "छवि का अंतर्निहित `HEALTHCHECK` सर्वेक्षण `/node/status`। पहले शुरू में नोड ने श्रृंखला को जीनसिस से फिर से खेलना शुरू किया; [सार्वजनिक Testnet में शामिल हों](15_join-testnet) दर्शाता है कि यह कैसे जांचने के लिए टिप तक पहुंच गया है। हर वातावरण चर और [सिंक और रोलबैक](06_sync-and-rollback) के लिए [विन्यास](05_configuration) देखें, जो पहले शुरू होने की उम्मीद करता है।"
 
 #: ../../05_node-guide/05_configuration.md:1 ../../05_node-guide/index.md:29
 msgid "Configuration"
-msgstr ""
+msgstr "विन्यास"
 
 #: ../../05_node-guide/05_configuration.md:3
 msgid "A node reads a [HOCON](https://github.com/lightbend/config/blob/master/HOCON.md) configuration file whose settings live under the `dcc` key. Built-in defaults (`application.conf` and `network-defaults.conf`) are merged with your file, so your file only needs the settings you want to change."
-msgstr ""
+msgstr "एक नोड ने [HOCON](https://github.com/lightbend/config/blob/master/HOCON.md) कॉन्फ़िगरेशन फ़ाइल को पढ़ा जिसका सेटिंग्स `dcc` कुंजी के तहत रहते हैं। अंतर्निहित डिफ़ॉल्ट (`application.conf` और `network-defaults.conf`) आपकी फ़ाइल के साथ विलय कर रहे हैं, इसलिए आपकी फाइल को केवल उन सेटिंग्स की आवश्यकता होती है जिन्हें आप बदलना चाहते हैं।"
 
 #: ../../05_node-guide/05_configuration.md:6
 msgid "Verified against node-scala v1.8.0. Do not use the shipped `application.conf` as your own config file; it is a defaults file."
-msgstr ""
+msgstr "node-scala v1.8.0 के खिलाफ सत्यापित किया गया। अपने स्वयं के विन्यास फ़ाइल के रूप में भेजे गए `application.conf` का उपयोग न करें; यह एक डिफ़ॉल्ट फ़ाइल है।"
 
 #: ../../05_node-guide/05_configuration.md:9
 msgid "Environment variables (Docker)"
-msgstr ""
+msgstr "पर्यावरण चर (डॉकर)"
 
 #: ../../05_node-guide/05_configuration.md:11
 msgid "The Docker entrypoint translates these variables into JVM options:"
-msgstr ""
+msgstr "डोकर प्रविष्टि बिंदु इन चरों को JVM विकल्पों में बदल देता है:"
 
 #: ../../05_node-guide/05_configuration.md:5
 msgid "Variable"
-msgstr ""
+msgstr "चर"
 
 #: ../../05_node-guide/05_configuration.md:5
 msgid "Effect"
-msgstr ""
+msgstr "प्रभाव"
 
 #: ../../05_node-guide/05_configuration.md:5
 msgid "`DCC_NETWORK`"
-msgstr ""
+msgstr "`DCC_NETWORK`"
 
 #: ../../05_node-guide/05_configuration.md:5
 msgid "`mainnet`"
-msgstr ""
+msgstr "`mainnet`"
 
 #: ../../05_node-guide/05_configuration.md:5
 msgid "Sets `dcc.defaults.blockchain.type` — the network the node joins"
-msgstr ""
+msgstr "सेट `dcc.defaults.blockchain.type` - नेटवर्क नोड जुड़ जाता है"
 
 #: ../../05_node-guide/05_configuration.md:5
 msgid "`DCC_HEAP_SIZE`"
-msgstr ""
+msgstr "`DCC_HEAP_SIZE`"
 
 #: ../../05_node-guide/05_configuration.md:5
 msgid "`2g`"
-msgstr ""
+msgstr "`2g`"
 
 #: ../../05_node-guide/05_configuration.md:5
 msgid "JVM `-Xmx`"
-msgstr ""
+msgstr "JVM `-Xmx`"
 
 #: ../../05_node-guide/05_configuration.md:5
 msgid "`DCC_LOG_LEVEL`"
-msgstr ""
+msgstr "`DCC_LOG_LEVEL`"
 
 #: ../../05_node-guide/05_configuration.md:5
 msgid "`INFO`"
-msgstr ""
+msgstr "`INFO`"
 
 #: ../../05_node-guide/05_configuration.md:5
 msgid "Console log level: `OFF`, `ERROR`, `WARN`, `INFO`, `DEBUG`, `TRACE`"
-msgstr ""
+msgstr "कंसोल लॉग स्तर: `OFF`, `ERROR`, `WARN`, `INFO`, `DEBUG`, `TRACE`"
 
 #: ../../05_node-guide/05_configuration.md:5
 msgid "`DCC_REST_API_BIND`"
-msgstr ""
+msgstr "`DCC_REST_API_BIND`"
 
 #: ../../05_node-guide/05_configuration.md:5
 #: ../../05_node-guide/05_configuration.md:34
 msgid "`127.0.0.1`"
-msgstr ""
+msgstr "`127.0.0.1`"
 
 #: ../../05_node-guide/05_configuration.md:5
 msgid "Sets `dcc.rest-api.bind-address`"
-msgstr ""
+msgstr "`dcc.rest-api.bind-address` सेट"
 
 #: ../../05_node-guide/05_configuration.md:5
 msgid "`DCC_WALLET_SEED`"
-msgstr ""
+msgstr "`DCC_WALLET_SEED`"
 
 #: ../../05_node-guide/05_configuration.md:5
 msgid "—"
-msgstr ""
+msgstr "—"
 
 #: ../../05_node-guide/05_configuration.md:5
 msgid "Base58 wallet seed, written to a private temporary config file at start-up and then unset"
-msgstr ""
+msgstr "बेस 58 वॉलेट बीज, स्टार्ट-अप पर एक निजी अस्थायी विन्यास फ़ाइल में लिखा गया और फिर unset"
 
 #: ../../05_node-guide/05_configuration.md:5
 msgid "`DCC_WALLET_PASSWORD`"
-msgstr ""
+msgstr "`DCC_WALLET_PASSWORD`"
 
 #: ../../05_node-guide/05_configuration.md:5
 msgid "Wallet file password, handled the same way"
-msgstr ""
+msgstr "वॉलेट फ़ाइल पासवर्ड, उसी तरह से संभाला"
 
 #: ../../05_node-guide/05_configuration.md:5
 msgid "`JAVA_OPTS`"
-msgstr ""
+msgstr "`JAVA_OPTS`"
 
 #: ../../05_node-guide/05_configuration.md:5
 msgid "Extra JVM options"
-msgstr ""
+msgstr "अतिरिक्त JVM विकल्प"
 
 #: ../../05_node-guide/05_configuration.md:23
 msgid "To use your own file, mount it at `/etc/dcc/dcc.conf`. The entrypoint loads it automatically and layers wallet secrets on top. `DCC_WALLET_SEED` and `DCC_WALLET_PASSWORD` only take effect when such a file is mounted (and no command arguments are passed to the container); without `/etc/dcc/dcc.conf` they are ignored."
-msgstr ""
+msgstr "अपनी खुद की फ़ाइल का उपयोग करने के लिए इसे `/etc/dcc/dcc.conf` पर माउंट करें। प्रवेश बिंदु इसे स्वचालित रूप से लोड करता है और शीर्ष पर बटुए के रहस्यों को परतों में रखता है। `DCC_WALLET_SEED` और `DCC_WALLET_PASSWORD` केवल तभी प्रभाव डालते हैं जब ऐसी फ़ाइल को माउंट किया जाता है (और कंटेनर में कोई कमांड तर्क पारित नहीं किया जाता); बिना `/etc/dcc/dcc.conf` के उन्हें अनदेखा कर दिया जाता है।"
 
 #: ../../05_node-guide/05_configuration.md:25
 msgid "Ports and network defaults"
-msgstr ""
+msgstr "पोर्ट्स और नेटवर्क डिफ़ॉल्ट"
 
 #: ../../05_node-guide/05_configuration.md:5
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "P2P port"
-msgstr ""
+msgstr "P2P पोर्ट"
 
 #: ../../05_node-guide/05_configuration.md:5
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "Peer to connect to"
-msgstr ""
+msgstr "सहकर्मी से कनेक्ट करने के लिए"
 
 #: ../../05_node-guide/05_configuration.md:5
 msgid "6868"
-msgstr ""
+msgstr "6868"
 
 #: ../../05_node-guide/05_configuration.md:5
 msgid "not published yet"
-msgstr ""
+msgstr "अभी तक प्रकाशित नहीं"
 
 #: ../../05_node-guide/05_configuration.md:5
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "`50.116.30.244:6868`"
-msgstr ""
+msgstr "`50.116.30.244:6868`"
 
 #: ../../05_node-guide/05_configuration.md:32
 msgid "The REST API listens on port `6869` on every network."
-msgstr ""
+msgstr "REST API हर नेटवर्क पर `6869` पोर्ट को सुनता है।"
 
 #: ../../05_node-guide/05_configuration.md:35
 msgid "The public DecentralChain Testnet (`testnet-node.decentralchain.io`) is a custom chain (`dcc.blockchain.type = CUSTOM`, chain ID `!`). The built-in `testnet` profile (`DCC_NETWORK=testnet` without a config file) is a different network and will not join it. [Join the Public Testnet](15_join-testnet) gives the complete configuration file."
-msgstr ""
+msgstr "सार्वजनिक DecentralChain Testnet (`testnet-node.decentralchain.io`) एक कस्टम श्रृंखला (`dcc.blockchain.type = CUSTOM`, चेन ID `!`) है। अंतर्निहित `testnet` प्रोफाइल (`DCC_NETWORK=testnet` बिना किसी कॉन्फ़िगरेशन फ़ाइल के) एक अलग नेटवर्क है और इसमें शामिल नहीं होगा। [सार्वजनिक Testnet में शामिल हों](15_join-testnet) पूर्ण विन्यास फ़ाइल देता है।"
 
 #: ../../05_node-guide/05_configuration.md:38
 msgid "Commonly changed settings"
-msgstr ""
+msgstr "आम तौर पर बदली हुई सेटिंग्स"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "Key"
-msgstr ""
+msgstr "कुंजी"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "Description"
-msgstr ""
+msgstr "विवरण"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "`dcc.directory`"
-msgstr ""
+msgstr "`dcc.directory`"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "`\"\"`"
-msgstr ""
+msgstr "`\"\"`"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "Base directory for node data"
-msgstr ""
+msgstr "नोड डेटा के लिए आधार निर्देशिका"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "`dcc.db.max-rollback-depth`"
-msgstr ""
+msgstr "`dcc.db.max-rollback-depth`"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "`2000`"
-msgstr ""
+msgstr "`2000`"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "Maximum number of blocks a rollback can undo"
-msgstr ""
+msgstr "ब्लॉकों की अधिकतम संख्या एक रोलबैक नहीं कर सकता है"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "`dcc.db.store-transactions-by-address`"
-msgstr ""
+msgstr "`dcc.db.store-transactions-by-address`"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "`true`"
-msgstr ""
+msgstr "`true`"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "Index transactions by address (needed by address history endpoints)"
-msgstr ""
+msgstr "पते से सूचकांक लेनदेन (निश्चित इतिहास समापन बिंदुओं द्वारा आवश्यक)"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "`dcc.wallet.file`"
-msgstr ""
+msgstr "`dcc.wallet.file`"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "`<directory>/wallet/wallet.dat`"
-msgstr ""
+msgstr "`<directory>/wallet/wallet.dat`"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "Wallet file path"
-msgstr ""
+msgstr "वॉलेट फ़ाइल पथ"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "`dcc.wallet.password`"
-msgstr ""
+msgstr "`dcc.wallet.password`"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "unset"
@@ -1398,175 +1398,175 @@ msgstr ""
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "Wallet file password"
-msgstr ""
+msgstr "वॉलेट फ़ाइल पासवर्ड"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "`dcc.wallet.seed`"
-msgstr ""
+msgstr "`dcc.wallet.seed`"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "Base58 seed; if unset the node generates one"
-msgstr ""
+msgstr "बेस 58 बीज; यदि नोड को बिना सेट किया जाता है तो एक उत्पन्न करता है"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "`dcc.rest-api.enable`"
-msgstr ""
+msgstr "`dcc.rest-api.enable`"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "`yes`"
-msgstr ""
+msgstr "`yes`"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "Turn the REST API on or off"
-msgstr ""
+msgstr "REST API को चालू या बंद करें"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "`dcc.rest-api.bind-address`"
-msgstr ""
+msgstr "`dcc.rest-api.bind-address`"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "Interface the API listens on"
-msgstr ""
+msgstr "इंटरफ़ेस एपीआई को सुनना"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "`dcc.rest-api.port`"
-msgstr ""
+msgstr "`dcc.rest-api.port`"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "API port"
-msgstr ""
+msgstr "एपीआई पोर्ट"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "`dcc.rest-api.api-key-hash`"
-msgstr ""
+msgstr "`dcc.rest-api.api-key-hash`"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "Hash of the API key that protects privileged endpoints"
-msgstr ""
+msgstr "एपीआई कुंजी का हैश जो विशेषाधिकार प्राप्त समापन बिंदुओं की रक्षा करता है"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "`dcc.rest-api.cors-headers.access-control-allow-origin`"
-msgstr ""
+msgstr "`dcc.rest-api.cors-headers.access-control-allow-origin`"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "Set to a specific origin in production"
-msgstr ""
+msgstr "उत्पादन में एक विशिष्ट उत्पत्ति के लिए सेट करें"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "`dcc.rest-api.transactions-by-address-limit`"
-msgstr ""
+msgstr "`dcc.rest-api.transactions-by-address-limit`"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "`1000`"
-msgstr ""
+msgstr "`1000`"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "Max results for address transaction history"
-msgstr ""
+msgstr "पता लेनदेन इतिहास के लिए मैक्स परिणाम"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "`dcc.rest-api.blocks-request-limit`"
-msgstr ""
+msgstr "`dcc.rest-api.blocks-request-limit`"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "`100`"
-msgstr ""
+msgstr "`100`"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "Max blocks per range request"
-msgstr ""
+msgstr "प्रति रेंज अनुरोध अधिकतम ब्लॉक"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "`dcc.utx.max-size`"
-msgstr ""
+msgstr "`dcc.utx.max-size`"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "`100000`"
-msgstr ""
+msgstr "`100000`"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "Max unconfirmed transactions held"
-msgstr ""
+msgstr "मैक्स अनधिकृत लेनदेन आयोजित"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "`dcc.network.max-inbound-connections`"
-msgstr ""
+msgstr "`dcc.network.max-inbound-connections`"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "Inbound peer limit"
-msgstr ""
+msgstr "इनबाउंड सहकर्मी सीमा"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "`dcc.network.max-outbound-connections`"
-msgstr ""
+msgstr "`dcc.network.max-outbound-connections`"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "Outbound peer limit"
-msgstr ""
+msgstr "आउटबाउंड सहकर्मी सीमा"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "`dcc.hotstuff.authoritative`"
-msgstr ""
+msgstr "`dcc.hotstuff.authoritative`"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "`false`"
-msgstr ""
+msgstr "`false`"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "Testnet-only: lets a HotStuff commit certificate raise the finalized height. Requires `enabled = true`. Never set it on Mainnet"
-msgstr ""
+msgstr "Testnet-केवल: एक HotStuff के लिए प्रमाण पत्र अंतिम ऊंचाई बढ़ा देता है। `enabled = true` की आवश्यकता है। इसे कभी भी Mainnet पर सेट नहीं किया"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "`dcc.miner.self-commit-to-generation`"
-msgstr ""
+msgstr "`dcc.miner.self-commit-to-generation`"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "`no`"
-msgstr ""
+msgstr "`no`"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "The node's miner submits its own Commit To Generation transaction for each generation period"
-msgstr ""
+msgstr "नोड का माइनर प्रत्येक पीढ़ी की अवधि के लिए अपने स्वयं के कमिट टू जनरेशन लेनदेन जमा करता है"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "`dcc.network.peer-stall-threshold`"
-msgstr ""
+msgstr "`dcc.network.peer-stall-threshold`"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "`900`"
-msgstr ""
+msgstr "`900`"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "Ticks (about 1 s each) of peer-reconnection stall before the node clears suspensions and redials"
-msgstr ""
+msgstr "टिक्स (प्रत्येक लगभग 1 s) के सहकर्मी-रिकनेक्शन स्टाल से पहले नोड निलंबन और रिडीअल को साफ़ करता है"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "`dcc.hotstuff.enabled`"
-msgstr ""
+msgstr "`dcc.hotstuff.enabled`"
 
 #: ../../05_node-guide/05_configuration.md:34
 msgid "HotStuff fast-finality engine. Leave it off on Mainnet. The public Testnet's own nodes run it enabled and authoritative (see [Features and Activation](10_features-and-activation))"
-msgstr ""
+msgstr "HotStuff फास्ट-फाइनलिटी इंजन। इसे Mainnet पर छोड़ दें। सार्वजनिक Testnet के अपने नोड्स ने इसे सक्षम और आधिकारिक ([सुविधाएँ और सक्रियण](10_features-and-activation)) देखें) चलाया"
 
 #: ../../05_node-guide/05_configuration.md:63
 msgid "API key"
-msgstr ""
+msgstr "एपीआई कुंजी"
 
 #: ../../05_node-guide/05_configuration.md:65
 msgid "Privileged endpoints (wallet, rollback, `/debug/*`, `/node/stop`) require an `X-Api-Key` header. The node stores only a hash of the key. Generate the hash with the node itself:"
-msgstr ""
+msgstr "Privileged endpoints (wallet, रोलबैक, `/debug/*`, `/node/stop`) को `X-Api-Key` हेडर की आवश्यकता होती है। नोड केवल कुंजी के एक हैश स्टोर करता है। खुद को नोड के साथ हैश उत्पन्न करें:"
 
 #: ../../05_node-guide/05_configuration.md:72
 msgid "Put the `hash` value from the JSON response in `dcc.rest-api.api-key-hash`, restart, and send `my-secret-api-key` in `X-Api-Key`."
-msgstr ""
+msgstr "`dcc.rest-api.api-key-hash` में JSON प्रतिक्रिया से `hash` मान डालें, फिर से शुरू करें और `X-Api-Key` में `my-secret-api-key` भेजें।"
 
 #: ../../05_node-guide/05_configuration.md:74
 msgid "Example: minimal Mainnet file"
-msgstr ""
+msgstr "उदाहरण: न्यूनतम Mainnet फ़ाइल"
 
 #: ../../05_node-guide/06_sync-and-rollback.md:1
 msgid "Sync, Import, Export and Rollback"
-msgstr ""
+msgstr "सिंक, आयात, निर्यात और रोलबैक"
 
 #: ../../05_node-guide/06_sync-and-rollback.md:4
 #: ../../05_node-guide/07_upgrade.md:4
@@ -1575,35 +1575,35 @@ msgstr ""
 #: ../../05_node-guide/10_features-and-activation.md:4
 #: ../../05_node-guide/11_troubleshooting.md:4
 msgid "Verified against node-scala v1.8.0."
-msgstr ""
+msgstr "node-scala v1.8.0 के खिलाफ सत्यापित किया गया।"
 
 #: ../../05_node-guide/06_sync-and-rollback.md:7
 msgid "Initial sync"
-msgstr ""
+msgstr "प्रारंभिक सिंक"
 
 #: ../../05_node-guide/06_sync-and-rollback.md:9
 msgid "A new node downloads and validates the whole chain from its peers. This takes hours to days depending on hardware and network. Track progress with:"
-msgstr ""
+msgstr "एक नया नोड डाउनलोड करता है और अपने साथियों से पूरी श्रृंखला को मान्य करता है। यह हार्डवेयर और नेटवर्क के आधार पर दिन-समय पर होता है। साथ में प्रगति ट्रैक:"
 
 #: ../../05_node-guide/06_sync-and-rollback.md:16
 msgid "The node is fully synced when `stateHeight` equals `blockchainHeight` in `/node/status` and `/blocks/height` is within a few blocks of a public peer's height. If a node stalls after syncing, restart it and check the [logs](09_logging) for fork or invalid-block messages."
-msgstr ""
+msgstr "जब `stateHeight` `/node/status` में `blockchainHeight` के बराबर होता है तो नोड पूरी तरह से सिंक हो जाता है और `/blocks/height` एक सार्वजनिक सहकर्मी की ऊंचाई के कुछ ब्लॉकों के भीतर होता है। यदि सिंक करने के बाद एक नोड स्टालों को पुनः आरंभ किया जाता है और इसे फोर्क या अमान्य-ब्लॉक संदेशों के लिए [लॉग](09_logging) की जांच की जाती है।"
 
 #: ../../05_node-guide/06_sync-and-rollback.md:18
 msgid "Exporting blocks"
-msgstr ""
+msgstr "निर्यात ब्लॉक"
 
 #: ../../05_node-guide/06_sync-and-rollback.md:20
 msgid "The node ships an exporter that writes the blocks (and optionally state snapshots) of a stopped node to files:"
-msgstr ""
+msgstr "नोड एक निर्यातक को भेजता है जो फ़ाइलों को बंद नोड के ब्लॉक (और वैकल्पिक रूप से राज्य स्नैपशॉट) लिखते हैं:"
 
 #: ../../05_node-guide/06_sync-and-rollback.md:3
 msgid "Option"
-msgstr ""
+msgstr "विकल्प"
 
 #: ../../05_node-guide/06_sync-and-rollback.md:3
 msgid "`-c`, `--config`"
-msgstr ""
+msgstr "`-c`, `--config`"
 
 #: ../../05_node-guide/06_sync-and-rollback.md:3
 msgid "Node config file"
@@ -1611,139 +1611,139 @@ msgstr ""
 
 #: ../../05_node-guide/06_sync-and-rollback.md:3
 msgid "`-o`, `--output-prefix`"
-msgstr ""
+msgstr "`-o`, `--output-prefix`"
 
 #: ../../05_node-guide/06_sync-and-rollback.md:3
 msgid "Blocks output file name prefix"
-msgstr ""
+msgstr "ब्लॉक आउटपुट फ़ाइल नाम उपसर्ग"
 
 #: ../../05_node-guide/06_sync-and-rollback.md:3
 msgid "`-s`, `--snapshot-output-prefix`"
-msgstr ""
+msgstr "`-s`, `--snapshot-output-prefix`"
 
 #: ../../05_node-guide/06_sync-and-rollback.md:3
 msgid "Snapshots output file name prefix"
-msgstr ""
+msgstr "स्नैपशॉट्स आउटपुट फ़ाइल का नाम उपसर्ग"
 
 #: ../../05_node-guide/06_sync-and-rollback.md:3
 msgid "`-h`, `--height`"
-msgstr ""
+msgstr "`-h`, `--height`"
 
 #: ../../05_node-guide/06_sync-and-rollback.md:3
 msgid "Export up to this height (must be > 0)"
-msgstr ""
+msgstr "इस ऊंचाई तक निर्यात करें (> 0 होना चाहिए)"
 
 #: ../../05_node-guide/06_sync-and-rollback.md:29
 msgid "Importing blocks"
-msgstr ""
+msgstr "आयात ब्लॉक"
 
 #: ../../05_node-guide/06_sync-and-rollback.md:31
 msgid "The importer loads blocks from a file (or URL, or stdin with `-`) into an empty or partially synced database, which is much faster than downloading from peers:"
-msgstr ""
+msgstr "आयातक एक फ़ाइल (या URL, या `-` के साथ stdin) से ब्लॉकों को खाली या आंशिक रूप से सिंक किए गए डेटाबेस में लोड करता है, जो सहकर्मी से डाउनलोड करने की तुलना में बहुत तेज़ होता है:"
 
 #: ../../05_node-guide/06_sync-and-rollback.md:3
 msgid "`-i`, `--input-file`"
-msgstr ""
+msgstr "`-i`, `--input-file`"
 
 #: ../../05_node-guide/06_sync-and-rollback.md:3
 msgid "Blockchain data file — **required**"
-msgstr ""
+msgstr "ब्लॉकचैन डेटा फ़ाइल - **आवश्यक**"
 
 #: ../../05_node-guide/06_sync-and-rollback.md:3
 msgid "`-s`, `--snapshots-file`"
-msgstr ""
+msgstr "`-s`, `--snapshots-file`"
 
 #: ../../05_node-guide/06_sync-and-rollback.md:3
 msgid "Snapshots data file"
-msgstr ""
+msgstr "स्नैपशॉट डेटा फ़ाइल"
 
 #: ../../05_node-guide/06_sync-and-rollback.md:3
 msgid "Import up to this height (must be > 0)"
-msgstr ""
+msgstr "इस ऊंचाई तक आयात करें (> 0 होना चाहिए)"
 
 #: ../../05_node-guide/06_sync-and-rollback.md:3
 msgid "`-n`, `--no-verify`"
-msgstr ""
+msgstr "`-n`, `--no-verify`"
 
 #: ../../05_node-guide/06_sync-and-rollback.md:3
 msgid "Skip signature verification — only for files you trust"
-msgstr ""
+msgstr "केवल उन फ़ाइलों के लिए जो आप भरोसा करते हैं"
 
 #: ../../05_node-guide/06_sync-and-rollback.md:3
 msgid "`-q`, `--max-queue-size`"
-msgstr ""
+msgstr "`-q`, `--max-queue-size`"
 
 #: ../../05_node-guide/06_sync-and-rollback.md:3
 msgid "Size of the block queue (must be > 0)"
-msgstr ""
+msgstr "ब्लॉक कतार का आकार (> 0 होना चाहिए)"
 
 #: ../../05_node-guide/06_sync-and-rollback.md:42
 msgid "Import stops with an error if a block is not a child of the last stored block, so always import into a node that is stopped and whose database matches the file's starting point."
-msgstr ""
+msgstr "आयात एक त्रुटि के साथ रुक जाता है अगर कोई ब्लॉक अंतिम संग्रहीत ब्लॉक का बच्चा नहीं है, तो हमेशा एक नोड में आयात करें जो बंद हो जाता है और जिसका डेटाबेस फ़ाइल के प्रारंभिक बिंदु से मेल खाता है।"
 
 #: ../../05_node-guide/06_sync-and-rollback.md:44
 msgid "Rolling back"
-msgstr ""
+msgstr "वापस रोलिंग"
 
 #: ../../05_node-guide/06_sync-and-rollback.md:46
 msgid "Rollback removes the most recent blocks. It is limited by `dcc.db.max-rollback-depth` (2000 blocks by default) and requires the API key:"
-msgstr ""
+msgstr "रोलबैक हाल के ब्लॉकों को हटा देता है। यह `dcc.db.max-rollback-depth` (डिफ़ॉल्ट द्वारा 2000 ब्लॉक) तक सीमित है और API कुंजी की आवश्यकता है:"
 
 #: ../../05_node-guide/06_sync-and-rollback.md:55
 msgid "With `returnTransactionsToUtx` set to `true`, transactions from the removed blocks go back to the unconfirmed pool. A successful call returns the `BlockId` of the new tip."
-msgstr ""
+msgstr "`returnTransactionsToUtx` के साथ `true` को सेट किया गया, हटाए गए ब्लॉकों से लेनदेन की पुष्टि नहीं की गई पूल में वापस आ गया। एक सफल कॉल नई टिप के `BlockId` को लौटा देता है।"
 
 #: ../../05_node-guide/06_sync-and-rollback.md:57
 msgid "Full re-sync"
-msgstr ""
+msgstr "पूर्ण फिर से सिंक"
 
 #: ../../05_node-guide/06_sync-and-rollback.md:59
 msgid "If the database is corrupted or you need to go deeper than the rollback depth, delete the data volume and let the node re-sync from genesis:"
-msgstr ""
+msgstr "यदि डेटाबेस को भ्रष्ट किया जाता है या आपको रोलबैक की गहराई से गहराई तक जाने की आवश्यकता होती है, तो डेटा वॉल्यूम को हटा दें और नोड को जीनसिस से फिर से सिंक करने दें:"
 
 #: ../../05_node-guide/06_sync-and-rollback.md:62
 msgid "This destroys all local chain state. Never stop a node with `docker kill` or `SIGKILL` — an unclean shutdown can corrupt the database. Use `docker stop --time 60`."
-msgstr ""
+msgstr "यह सभी स्थानीय श्रृंखला राज्य को नष्ट कर देता है। कभी भी `docker kill` या `SIGKILL` के साथ एक नोड बंद नहीं - एक अशुद्ध शटडाउन डेटाबेस को भ्रष्ट कर सकता है। `docker stop --time 60` का प्रयोग करें।"
 
 #: ../../05_node-guide/07_upgrade.md:1
 msgid "Upgrade a Node"
-msgstr ""
+msgstr "Node अपग्रेड"
 
 #: ../../05_node-guide/07_upgrade.md:7
 msgid "Upgrading replaces the software, not the data: keep the data volume and configuration."
-msgstr ""
+msgstr "उन्नयन सॉफ्टवेयर की जगह लेता है, डेटा नहीं: डेटा वॉल्यूम और कॉन्फ़िगरेशन रखता है।"
 
 #: ../../05_node-guide/07_upgrade.md:9 ../../05_node-guide/09_logging.md:7
 msgid "Docker"
-msgstr ""
+msgstr "डोकर"
 
 #: ../../05_node-guide/07_upgrade.md:11
 msgid "Record the current height: `curl -s http://localhost:6869/blocks/height`"
-msgstr ""
+msgstr "वर्तमान ऊंचाई रिकॉर्ड करें: `curl -s http://localhost:6869/blocks/height`"
 
 #: ../../05_node-guide/07_upgrade.md:12
 msgid "Pull the new image, and note its digest so you can pin it:"
-msgstr ""
+msgstr "नई छवि खींचो, और इसके पाचन को ध्यान में रखें ताकि आप इसे पिन कर सकें:"
 
 #: ../../05_node-guide/07_upgrade.md:19
 msgid "Stop the node gracefully. The image uses `STOPSIGNAL SIGINT` to trigger a clean JVM shutdown; give it time to flush and close the database:"
-msgstr ""
+msgstr "नोड को कृपापूर्वक रोकें। छवि एक साफ JVM शटडाउन को ट्रिगर करने के लिए `STOPSIGNAL SIGINT` का उपयोग करती है; डेटाबेस को फ्लश और बंद करने के लिए इसे समय दें:"
 
 #: ../../05_node-guide/07_upgrade.md:25
 msgid "Start a new container with the same volume, environment and ports as before (see [Run a Node with Docker](04_install-docker))."
-msgstr ""
+msgstr "एक ही मात्रा, पर्यावरण और बंदरगाहों के साथ एक नया कंटेनर शुरू करें ([डोकर के साथ एक नोड चलाएं](04_install-docker) देखें)।"
 
 #: ../../05_node-guide/07_upgrade.md:26
 msgid "Confirm the height continues from where it stopped."
-msgstr ""
+msgstr "यह सुनिश्चित करने के लिए कि ऊंचाई कहाँ से रुक गई है।"
 
 #: ../../05_node-guide/07_upgrade.md:28
 msgid "Reverting an upgrade"
-msgstr ""
+msgstr "एक उन्नयन को फिर से बदलना"
 
 #: ../../05_node-guide/07_upgrade.md:30
 msgid "If the new version fails to start, stop it and start the previous image using its pinned `sha-<commit>` tag against the same volume. Only if the state itself is corrupted should you fall back to a [full re-sync](06_sync-and-rollback)."
-msgstr ""
+msgstr "यदि नया संस्करण शुरू करने में विफल हो जाता है, तो इसे बंद करें और उसी वॉल्यूम के खिलाफ अपने पिन किए गए `sha-<commit>` टैग का उपयोग करके पिछली छवि शुरू करें। यदि राज्य में ही भ्रष्ट है तो आपको [पूर्ण फिर से सिंक](06_sync-and-rollback) पर वापस आना चाहिए।"
 
 #: ../../05_node-guide/07_upgrade.md:32
 msgid "From a JAR"
@@ -1751,297 +1751,297 @@ msgstr ""
 
 #: ../../05_node-guide/07_upgrade.md:34
 msgid "Stop the process with a normal `SIGINT`/`SIGTERM` (not `kill -9`), replace the JAR with the new release, and start it again with the same configuration file."
-msgstr ""
+msgstr "प्रक्रिया को सामान्य `SIGINT` / `SIGTERM` (`kill -9`) के साथ बंद करें, JAR को नई रिलीज के साथ बदलें और इसे फिर से उसी कॉन्फ़िगरेशन फ़ाइल के साथ शुरू करें।"
 
 #: ../../05_node-guide/07_upgrade.md:36
 msgid "Network upgrades"
-msgstr ""
+msgstr "नेटवर्क उन्नयन"
 
 #: ../../05_node-guide/07_upgrade.md:38
 msgid "New protocol behaviour is switched on by [feature activation](10_features-and-activation), not by upgrading alone. A node that does not support an activated feature stops following the chain, so upgrade before an announced activation height."
-msgstr ""
+msgstr "नए प्रोटोकॉल व्यवहार को [सुविधा सक्रियण](10_features-and-activation) द्वारा स्विच किया जाता है, न कि अकेले अपग्रेड करके। एक नोड जो चेन के बाद सक्रिय सुविधा का समर्थन नहीं करता है, इसलिए घोषणा की गई सक्रियण ऊंचाई से पहले अपग्रेड करें।"
 
 #: ../../05_node-guide/08_wallet-and-generating.md:1
 msgid "Node Wallet and Block Generation"
-msgstr ""
+msgstr "नोड वॉलेट और ब्लॉक जनरेशन"
 
 #: ../../05_node-guide/08_wallet-and-generating.md:7
 msgid "The node wallet"
-msgstr ""
+msgstr "नोड वॉलेट"
 
 #: ../../05_node-guide/08_wallet-and-generating.md:9
 msgid "A node keeps an encrypted wallet file at `dcc.wallet.file` (default `<directory>/wallet/wallet.dat`). It holds the accounts the node may sign for — most importantly the account that generates blocks."
-msgstr ""
+msgstr "एक नोड `dcc.wallet.file` (डिफ़ॉल्ट `<directory>/wallet/wallet.dat`) में एक एन्क्रिप्टेड वॉलेट फ़ाइल रखता है। यह खातों को रखता है नोड के लिए संकेत कर सकते हैं - सबसे महत्वपूर्ण बात यह है कि ब्लॉक उत्पन्न करता है खाता।"
 
 #: ../../05_node-guide/08_wallet-and-generating.md:11
 msgid "The wallet stores a **base seed**, from which account keys are derived. It is not an account seed itself. If `dcc.wallet.seed` is not set, the node generates a new one on first start. To use an existing seed, set `dcc.wallet.seed` (Base58) and `dcc.wallet.password`, or pass `DCC_WALLET_SEED` and `DCC_WALLET_PASSWORD` to the Docker image."
-msgstr ""
+msgstr "वॉलेट एक **आधार बीज** स्टोर करता है, जिसमें से खाता कुंजी ली गई है। यह एक खाता बीज ही नहीं है। यदि `dcc.wallet.seed` निर्धारित नहीं है, तो नोड पहले शुरू में एक नया उत्पन्न करता है। एक मौजूदा बीज का उपयोग करने के लिए, `dcc.wallet.seed` (Base58) और `dcc.wallet.password` सेट करें, या `DCC_WALLET_SEED` और `DCC_WALLET_PASSWORD` को डोकर छवि में पास करें।"
 
 #: ../../05_node-guide/08_wallet-and-generating.md:14
 msgid "Whoever holds the seed controls the funds. Keep secrets in a `chmod 600` `.env` file or a secrets manager, never in shell history or a committed file."
-msgstr ""
+msgstr "जो भी बीज रखता है वह धन को नियंत्रित करता है। `chmod 600` `.env` फ़ाइल या एक गुप्त प्रबंधक में रहस्य रखें, कभी शेल इतिहास या एक प्रतिबद्ध फ़ाइल में नहीं।"
 
 #: ../../05_node-guide/08_wallet-and-generating.md:17
 msgid "Wallet endpoints"
-msgstr ""
+msgstr "वॉलेट समापन बिंदु"
 
 #: ../../05_node-guide/08_wallet-and-generating.md:19
 msgid "These require the [API key](05_configuration):"
-msgstr ""
+msgstr "इन्हें [एपीआई कुंजी](05_configuration) की आवश्यकता होती है:"
 
 #: ../../05_node-guide/08_wallet-and-generating.md:27
 msgid "Generating blocks"
-msgstr ""
+msgstr "जनरेटिंग ब्लॉक"
 
 #: ../../05_node-guide/08_wallet-and-generating.md:29
 #, python-brace-format
 msgid "A node produces blocks when a wallet account meets the generating-balance requirement under {ref}`Leased Proof of Stake <02_decentralchain/05_node:Leased Proof of Stake>` — its own DCC plus DCC leased to it. To grow a generating balance, other accounts can lease to the node's address."
-msgstr ""
+msgstr "जब एक वॉलेट खाता {ref}`स्टेक का लीज्ड सबूत <02_decentralchain/05_node:Leased Proof of Stake>` के तहत उत्पन्न होने वाली संतुलन की आवश्यकता को पूरा करता है तो नोड ब्लॉक पैदा करता है - इसके अपने DCC प्लस DCC ने इसे ली। एक उत्पन्न संतुलन विकसित करने के लिए, अन्य खाते नोड के पते पर ली जा सकते हैं।"
 
 #: ../../05_node-guide/08_wallet-and-generating.md:31
 msgid "Check what the miner sees with the privileged `/debug/minerInfo` endpoint, which lists each generating account and its mining balance."
-msgstr ""
+msgstr "चेक करें कि माइनर विशेषाधिकार प्राप्त `/debug/minerInfo` एंडपॉइंट के साथ क्या देखता है, जो प्रत्येक जनरेट खाता और उसके खनन संतुलन को सूचीबद्ध करता है।"
 
 #: ../../05_node-guide/08_wallet-and-generating.md:33
 #, python-brace-format
 msgid "For reward economics and the block-reward vote, see the {ref}`Node <02_decentralchain/05_node:Node>` article."
-msgstr ""
+msgstr "इनाम अर्थशास्त्र और ब्लॉक-रिवार्ड वोट के लिए {ref}`नोड <02_decentralchain/05_node:Node>` लेख देखें।"
 
 #: ../../05_node-guide/09_logging.md:1
 msgid "Logging"
-msgstr ""
+msgstr "लॉग इन"
 
 #: ../../05_node-guide/09_logging.md:9
 msgid "The image writes two streams:"
-msgstr ""
+msgstr "छवि दो धाराओं को लिखती है:"
 
 #: ../../05_node-guide/09_logging.md:11
 msgid "**Console** — at the level in `DCC_LOG_LEVEL` (default `INFO`). Read it with `docker logs`."
-msgstr ""
+msgstr "**कंसोल** - `DCC_LOG_LEVEL` (डिफ़ॉल्ट `INFO`) में स्तर पर। इसे `docker logs` के साथ पढ़ें।"
 
 #: ../../05_node-guide/09_logging.md:12
 msgid "**Files** — under `/var/log/dcc` (volume), written at `TRACE` level by the entrypoint."
-msgstr ""
+msgstr "**फ़ाइलें** — `/var/log/dcc` (वोल्यूम) के तहत, प्रवेश बिंदु द्वारा `TRACE` स्तर पर लिखा गया।"
 
 #: ../../05_node-guide/09_logging.md:19
 msgid "Levels, from quietest to noisiest: `OFF`, `ERROR`, `WARN`, `INFO`, `DEBUG`, `TRACE`. Use `INFO` in production; `DEBUG` helps with sync and peer issues but is very verbose."
-msgstr ""
+msgstr "स्तर, चुपचाप से noisiest तक: `OFF`, `ERROR`, `WARN`, `INFO`, `DEBUG`, `TRACE`। उत्पादन में `INFO` का उपयोग करें; `DEBUG` सिंक और सहकर्मी मुद्दों के साथ मदद करता है लेकिन बहुत ही मौखिक है।"
 
 #: ../../05_node-guide/09_logging.md:21
 msgid "Custom logback configuration"
-msgstr ""
+msgstr "कस्टम लॉगबैक विन्यास"
 
 #: ../../05_node-guide/09_logging.md:23
 msgid "Logging is configured with [Logback](https://logback.qos.ch/). Point the JVM at your own file through `JAVA_OPTS`:"
-msgstr ""
+msgstr "लॉगिंग [लॉग-इन](https://logback.qos.ch/) के साथ कॉन्फ़िगर किया गया है। JVM को `JAVA_OPTS` के माध्यम से अपनी खुद की फाइल में पॉइंट करें:"
 
 #: ../../05_node-guide/09_logging.md:29
 msgid "For a JAR install, pass the same `-Dlogback.configurationFile=...` system property to `java`."
-msgstr ""
+msgstr "एक JAR स्थापित करने के लिए, `java` को उसी `-Dlogback.configurationFile=...` सिस्टम प्रॉपर्टी को पास करें।"
 
 #: ../../05_node-guide/09_logging.md:31
 msgid "Logs worth watching"
-msgstr ""
+msgstr "देखने लायक लॉग"
 
 #: ../../05_node-guide/09_logging.md:33
 msgid "`Fork` and `InvalidBlock` messages — the node is on a different chain or received a bad block."
-msgstr ""
+msgstr "`Fork` और `InvalidBlock` संदेश — नोड एक अलग श्रृंखला पर है या एक बुरा ब्लॉक प्राप्त किया है।"
 
 #: ../../05_node-guide/09_logging.md:34
 msgid "Out-of-memory exits — the entrypoint starts the JVM with `ExitOnOutOfMemoryError`, so raise `DCC_HEAP_SIZE`."
-msgstr ""
+msgstr "आउट-ऑफ-मेमोरी निकास - प्रवेश बिंदु `ExitOnOutOfMemoryError` के साथ JVM शुरू होता है, इसलिए `DCC_HEAP_SIZE` को बढ़ा देता है।"
 
 #: ../../05_node-guide/10_features-and-activation.md:1
 msgid "Features and Activation"
-msgstr ""
+msgstr "सुविधाएँ और सक्रियण"
 
 #: ../../05_node-guide/10_features-and-activation.md:7
 msgid "Protocol changes ship as numbered **blockchain features**. A feature is not active just because a node supports it: it must be activated on the network, either by a generator vote or because the network defaults pre-activate it."
-msgstr ""
+msgstr "प्रोटोकॉल ने **ब्लॉकचैन सुविधाएँ** के रूप में जहाज को बदल दिया। एक विशेषता सिर्फ इसलिए सक्रिय नहीं है क्योंकि नोड इसका समर्थन करता है: इसे नेटवर्क पर सक्रिय किया जाना चाहिए, या तो जनरेटर वोट द्वारा या क्योंकि नेटवर्क डिफ़ॉल्ट रूप से इसे निष्क्रिय कर देता है।"
 
 #: ../../05_node-guide/10_features-and-activation.md:9
 msgid "How activation works"
-msgstr ""
+msgstr "सक्रियण कैसे काम करता है"
 
 #: ../../05_node-guide/10_features-and-activation.md:11
 msgid "Generators signal support for features they implement in the blocks they produce."
-msgstr ""
+msgstr "जेनरेटर उन सुविधाओं के लिए संकेत समर्थन करते हैं जो वे उन ब्लॉकों में लागू होते हैं जिन्हें वे उत्पादन करते हैं।"
 
 #: ../../05_node-guide/10_features-and-activation.md:12
 msgid "At the end of each voting period, a feature that reached the voting threshold is scheduled for activation."
-msgstr ""
+msgstr "प्रत्येक मतदान अवधि के अंत में, एक ऐसी विशेषता जो वोटिंग थ्रेसहोल्ड तक पहुंचती है, सक्रियण के लिए निर्धारित होती है।"
 
 #: ../../05_node-guide/10_features-and-activation.md:13
 msgid "After activation, the new rules apply to every node."
-msgstr ""
+msgstr "सक्रियण के बाद, नए नियम हर नोड पर लागू होते हैं।"
 
 #: ../../05_node-guide/10_features-and-activation.md:15
 msgid "Inspect the current state at any time:"
-msgstr ""
+msgstr "किसी भी समय वर्तमान स्थिति का निरीक्षण करें:"
 
 #: ../../05_node-guide/10_features-and-activation.md:21
 msgid "The response includes `height`, `votingInterval`, `votingThreshold`, `nextCheck` and a `features` list with each feature's status."
-msgstr ""
+msgstr "उत्तर में `height`, `votingInterval`, `votingThreshold`, `nextCheck` और प्रत्येक फीचर की स्थिति के साथ एक `features` सूची शामिल है।"
 
 #: ../../05_node-guide/10_features-and-activation.md:23
 msgid "Unsupported features"
-msgstr ""
+msgstr "अनुसमर्थित सुविधाएँ"
 
 #: ../../05_node-guide/10_features-and-activation.md:25
 msgid "By default `dcc.features.auto-shutdown-on-unsupported-feature = yes`: if the network activates a feature your node does not know, the node shuts down rather than follow a chain it cannot validate. The fix is to [upgrade](07_upgrade). Generators can list the features they vote for in `dcc.features.supported`."
-msgstr ""
+msgstr "डिफ़ॉल्ट `dcc.features.auto-shutdown-on-unsupported-feature = yes` द्वारा: यदि नेटवर्क एक सुविधा को सक्रिय करता है तो आपका नोड पता नहीं है, नोड एक श्रृंखला का पालन करने के बजाय बंद हो जाता है। फिक्स [उन्नयन](07_upgrade) के लिए है। जेनरेटर उन विशेषताओं को सूचीबद्ध कर सकते हैं जिन्हें वे `dcc.features.supported` में वोट देते हैं।"
 
 #: ../../05_node-guide/10_features-and-activation.md:27
 msgid "Feature list in v1.8.0"
-msgstr ""
+msgstr "v1.8.0 में फ़ीचर सूची"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "Feature"
-msgstr ""
+msgstr "फ़ीचर"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "1"
-msgstr ""
+msgstr "1"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "Minimum generating balance of 1000 DCC"
-msgstr ""
+msgstr "1000 DCC का न्यूनतम उत्पादन संतुलन"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "2"
-msgstr ""
+msgstr "2"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "NG protocol"
-msgstr ""
+msgstr "एनजी प्रोटोकॉल"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "3"
-msgstr ""
+msgstr "3"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "Mass Transfer transaction"
-msgstr ""
+msgstr "मास ट्रांसफर लेनदेन"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "4"
-msgstr ""
+msgstr "4"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "Smart accounts"
-msgstr ""
+msgstr "स्मार्ट खाता"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "5"
-msgstr ""
+msgstr "5"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "Data transaction"
-msgstr ""
+msgstr "डाटा लेन-देन"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "6"
-msgstr ""
+msgstr "6"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "Burn any tokens"
-msgstr ""
+msgstr "किसी भी टोकन को जलाएं"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "7"
-msgstr ""
+msgstr "7"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "Fee sponsorship"
-msgstr ""
+msgstr "शुल्क प्रायोजन"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "8"
-msgstr ""
+msgstr "8"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "Fair PoS"
-msgstr ""
+msgstr "मेले PoS"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "9"
-msgstr ""
+msgstr "9"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "Smart assets"
-msgstr ""
+msgstr "स्मार्ट परिसंपत्तियां"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "10"
-msgstr ""
+msgstr "10"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "Smart account trading"
-msgstr ""
+msgstr "स्मार्ट खाता ट्रेडिंग"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "11"
-msgstr ""
+msgstr "11"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "Ride 4 dApps"
-msgstr ""
+msgstr "Ride 4 dApps"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "12"
-msgstr ""
+msgstr "12"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "Order version 3"
-msgstr ""
+msgstr "क्रम संस्करण 3"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "13"
-msgstr ""
+msgstr "13"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "Reduced NFT fee"
-msgstr ""
+msgstr "एनएफटी शुल्क को कम करना"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "14"
-msgstr ""
+msgstr "14"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "Block reward and community-driven monetary policy"
-msgstr ""
+msgstr "ब्लॉक रिवॉर्ड और सामुदायिक संचालित मौद्रिक नीति"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "15"
-msgstr ""
+msgstr "15"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "Ride V4, VRF, Protobuf, failed transactions"
-msgstr ""
+msgstr "Ride V4, VRF, Protobuf, असफल लेनदेन"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "16"
-msgstr ""
+msgstr "16"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "Ride V5, dApp-to-dApp invocations"
-msgstr ""
+msgstr "Ride V5, dApp-to-dApp चालान"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "17"
-msgstr ""
+msgstr "17"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "Ride V6, MetaMask support"
-msgstr ""
+msgstr "Ride V6, MetaMask समर्थन"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "18"
-msgstr ""
+msgstr "18"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "Consensus and MetaMask updates"
@@ -2049,23 +2049,23 @@ msgstr ""
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "19"
-msgstr ""
+msgstr "19"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "Block reward distribution"
-msgstr ""
+msgstr "ब्लॉक रिवार्ड वितरण"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "20"
-msgstr ""
+msgstr "20"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "Capped buy-back and DAO amounts"
-msgstr ""
+msgstr "कैप्ड बाय-बैक और डीएओ राशि"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "21"
-msgstr ""
+msgstr "21"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "Cease buy-back"
@@ -2073,147 +2073,147 @@ msgstr ""
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "22"
-msgstr ""
+msgstr "22"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "Light node"
-msgstr ""
+msgstr "लाइट नोड"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "23"
-msgstr ""
+msgstr "23"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "Boost block reward"
-msgstr ""
+msgstr "ब्लॉक रिवॉर्ड"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "24"
-msgstr ""
+msgstr "24"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "`ecrecover` fix"
-msgstr ""
+msgstr "`ecrecover`"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "25"
-msgstr ""
+msgstr "25"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "Deterministic finality and Ride V9"
-msgstr ""
+msgstr "निर्धारित अंतिमता और Ride V9"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "26"
-msgstr ""
+msgstr "26"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "Adjusted block reward distribution"
-msgstr ""
+msgstr "समायोजित ब्लॉक इनाम वितरण"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "27"
-msgstr ""
+msgstr "27"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "Continuation transaction (not exposed)"
-msgstr ""
+msgstr "निरंतरता लेनदेन ( उजागर नहीं)"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "28"
-msgstr ""
+msgstr "28"
 
 #: ../../05_node-guide/10_features-and-activation.md:3
 msgid "Lease expiration (not exposed)"
-msgstr ""
+msgstr "लीज एक्सपायरेशन ( उजागर नहीं)"
 
 #: ../../05_node-guide/10_features-and-activation.md:61
 msgid "Since v1.8.0 the numbering of the last features differs from v1.7.0: **26 = Adjusted Block Reward Distribution**, 27 = Continuation transaction, 28 = Lease expiration, and the Groth16 verifier is no longer a feature. Only feature 26 is votable and reported in `/activation/status`; 27 and 28 are defined in the source but not exposed."
-msgstr ""
+msgstr "V1.8.0 के बाद से अंतिम सुविधाओं की संख्या v1.7.0: **26 = समायोजित ब्लॉक रिवार्ड डिस्ट्रीब्यूशन**, 27 = निरंतरता लेनदेन, 28 = लीज़ एक्सपायरेशन से भिन्न होती है, और ग्रोथ16 वेरिफायर अब एक फीचर नहीं है। केवल फीचर 26 वोटेबल है और `/activation/status` में रिपोर्ट की गई है; 27 और 28 को स्रोत में परिभाषित किया गया है लेकिन उजागर नहीं हुआ।"
 
 #: ../../05_node-guide/10_features-and-activation.md:64
 msgid "Which of these are active on a given network is a runtime fact — read it from `/activation/status` rather than from this table."
-msgstr ""
+msgstr "इनमें से कौन एक दिए गए नेटवर्क पर सक्रिय हैं, एक रनटाइम तथ्य है - इस तालिका के बजाय इसे `/activation/status` से पढ़ें।"
 
 #: ../../05_node-guide/10_features-and-activation.md:66
 msgid "Finality and HotStuff"
-msgstr ""
+msgstr "अंतिमता और HotStuff"
 
 #: ../../05_node-guide/10_features-and-activation.md:68
 msgid "Finality is provided by **Deterministic Finality (feature 25)**. The node also contains a HotStuff BFT fast-finality engine, controlled by `dcc.hotstuff.enabled`. It is **off by default** and gated on an external audit before any Mainnet use. Do not enable it on a Mainnet node. When it is enabled, `/node/status` additionally reports `hotStuffFinalizedHeight`."
-msgstr ""
+msgstr "अंतिमता **Deterministic Finality (feature 25)** द्वारा प्रदान की जाती है। नोड में HotStuff BFT फास्ट-फाइनलिटी इंजन भी शामिल है, जिसे `dcc.hotstuff.enabled` द्वारा नियंत्रित किया जाता है। यह **डिफ़ॉल्ट रूप से बंद** है और किसी भी Mainnet के उपयोग से पहले बाहरी ऑडिट पर पड़ता है। इसे Mainnet नोड पर सक्षम न करें। जब यह सक्षम हो जाता है, तो `/node/status` अतिरिक्त रूप से `hotStuffFinalizedHeight` की रिपोर्ट करता है।"
 
 #: ../../05_node-guide/10_features-and-activation.md:71
 msgid "**On the public Testnet, HotStuff is enabled and authoritative.** The Testnet's own nodes run `dcc.hotstuff.enabled = true` and `dcc.hotstuff.authoritative = true`, so a HotStuff commit certificate raises the finalized height that `/blocks/height/finalized` reports. That is why Testnet finality runs only a few blocks behind the tip (`hotStuffFinalizedHeight` in `/node/status`). Mainnet does not run HotStuff. Integrators should not expect Testnet finality latency on Mainnet."
-msgstr ""
+msgstr "**सार्वजनिक Testnet पर, HotStuff सक्षम और आधिकारिक है।** Testnet के अपने नोड्स `dcc.hotstuff.enabled = true` और `dcc.hotstuff.authoritative = true` चलाते हैं, इसलिए HotStuff के लिए प्रतिबद्ध प्रमाण पत्र अंतिम रूप से `/blocks/height/finalized` रिपोर्टों को बढ़ा देता है। यही कारण है कि Testnet फाइनलिटी टिप के पीछे केवल कुछ ब्लॉक चलाती है (`hotStuffFinalizedHeight` में `/node/status`)। Mainnet HotStuff नहीं चला है। Integrators Mainnet पर Testnet अंतिमता विलंबता की उम्मीद नहीं करनी चाहिए।"
 
 #: ../../05_node-guide/11_troubleshooting.md:1
 msgid "Troubleshooting"
-msgstr ""
+msgstr "समस्या निवारण"
 
 #: ../../05_node-guide/11_troubleshooting.md:3
 msgid "Symptom"
-msgstr ""
+msgstr "लक्षण"
 
 #: ../../05_node-guide/11_troubleshooting.md:3
 msgid "Likely cause"
-msgstr ""
+msgstr "अविभाज्य"
 
 #: ../../05_node-guide/11_troubleshooting.md:3
 msgid "What to do"
-msgstr ""
+msgstr "क्या करना है"
 
 #: ../../05_node-guide/11_troubleshooting.md:3
 msgid "`curl localhost:6869` fails from the host while the container is healthy"
-msgstr ""
+msgstr "`curl localhost:6869` मेजबान से विफल रहता है जबकि कंटेनर स्वस्थ होता है"
 
 #: ../../05_node-guide/11_troubleshooting.md:3
 msgid "REST API bound to the container's loopback"
-msgstr ""
+msgstr "REST एपीआई कंटेनर के लूपबैक पर बाध्य है"
 
 #: ../../05_node-guide/11_troubleshooting.md:3
 msgid "Set `DCC_REST_API_BIND=0.0.0.0` and publish `-p 127.0.0.1:6869:6869`"
-msgstr ""
+msgstr "`DCC_REST_API_BIND=0.0.0.0` सेट करें और `-p 127.0.0.1:6869:6869` प्रकाशित करें"
 
 #: ../../05_node-guide/11_troubleshooting.md:3
 msgid "Node stays behind after hours"
-msgstr ""
+msgstr "कुछ दिनों के बाद रुक जाता है"
 
 #: ../../05_node-guide/11_troubleshooting.md:3
 msgid "Still in initial sync, or few peers"
-msgstr ""
+msgstr "फिर भी प्रारंभिक सिंक में, या कुछ सहकर्मी"
 
 #: ../../05_node-guide/11_troubleshooting.md:3
 msgid "Check `/node/status` and `/peers/connected`; open inbound port 6868"
-msgstr ""
+msgstr "`/node/status` और `/peers/connected` की जाँच करें; ओपन इनबाउंड पोर्ट 6868"
 
 #: ../../05_node-guide/11_troubleshooting.md:3
 msgid "No peers"
-msgstr ""
+msgstr "कोई सहकर्मी नहीं"
 
 #: ../../05_node-guide/11_troubleshooting.md:3
 msgid "Firewall, wrong network"
-msgstr ""
+msgstr "फायरवॉल, गलत नेटवर्क"
 
 #: ../../05_node-guide/11_troubleshooting.md:3
 msgid "Confirm `DCC_NETWORK`; add a peer with `POST /peers/connect`"
-msgstr ""
+msgstr "`DCC_NETWORK` की पुष्टि करें; `POST /peers/connect` के साथ एक सहकर्मी जोड़ें"
 
 #: ../../05_node-guide/11_troubleshooting.md:3
 msgid "Node exits shortly after start"
-msgstr ""
+msgstr "शुरू होने के तुरंत बाद Node निकास"
 
 #: ../../05_node-guide/11_troubleshooting.md:3
 msgid "JVM out of memory (`ExitOnOutOfMemoryError`)"
-msgstr ""
+msgstr "JVM स्मृति से बाहर (`ExitOnOutOfMemoryError`)"
 
 #: ../../05_node-guide/11_troubleshooting.md:3
 msgid "Raise `DCC_HEAP_SIZE`"
-msgstr ""
+msgstr "Raise `DCC_HEAP_SIZE`"
 
 #: ../../05_node-guide/11_troubleshooting.md:3
 msgid "Node stops after a network activation"
-msgstr ""
+msgstr "नेटवर्क सक्रियण के बाद नोड स्टॉप"
 
 #: ../../05_node-guide/11_troubleshooting.md:3
 msgid "Unsupported feature, auto-shutdown"
@@ -2221,93 +2221,93 @@ msgstr ""
 
 #: ../../05_node-guide/11_troubleshooting.md:3
 msgid "[Upgrade](07_upgrade) the node"
-msgstr ""
+msgstr "[अपग्रेड](07_upgrade) नोड"
 
 #: ../../05_node-guide/11_troubleshooting.md:3
 msgid "`403` from an API call"
-msgstr ""
+msgstr "एक API कॉल से `403`"
 
 #: ../../05_node-guide/11_troubleshooting.md:3
 msgid "Missing or wrong `X-Api-Key`, or `api-key-hash` unset"
-msgstr ""
+msgstr "मिसिंग या गलत `X-Api-Key`, या `api-key-hash` unset"
 
 #: ../../05_node-guide/11_troubleshooting.md:3
 msgid "[Configure the API key](05_configuration)"
-msgstr ""
+msgstr "[एपीआई कुंजी को कॉन्फ़िगर करें](05_configuration)"
 
 #: ../../05_node-guide/11_troubleshooting.md:3
 msgid "Database errors after a crash"
-msgstr ""
+msgstr "दुर्घटना के बाद डेटाबेस त्रुटियां"
 
 #: ../../05_node-guide/11_troubleshooting.md:3
 msgid "Unclean shutdown"
-msgstr ""
+msgstr "चाचा बंद"
 
 #: ../../05_node-guide/11_troubleshooting.md:3
 msgid "Roll back if within depth, otherwise [re-sync](06_sync-and-rollback)"
-msgstr ""
+msgstr "अगर गहराई के भीतर वापस रोल करें, अन्यथा [फिर से सिंक](06_sync-and-rollback)"
 
 #: ../../05_node-guide/11_troubleshooting.md:3
 msgid "Node produces no blocks"
-msgstr ""
+msgstr "नोड कोई ब्लॉक नहीं पैदा करता है"
 
 #: ../../05_node-guide/11_troubleshooting.md:3
 msgid "Generating balance too low, wallet not loaded, or still syncing"
-msgstr ""
+msgstr "संतुलन भी कम उत्पन्न करना, वॉलेट लोड नहीं हुआ है, या फिर भी सिंकिंग"
 
 #: ../../05_node-guide/11_troubleshooting.md:3
 msgid "Check `/debug/minerInfo` and [wallet setup](08_wallet-and-generating)"
-msgstr ""
+msgstr "`/debug/minerInfo` और [वॉलेट सेटअप](08_wallet-and-generating) की जाँच करें"
 
 #: ../../05_node-guide/11_troubleshooting.md:18
 msgid "Useful checks"
-msgstr ""
+msgstr "उपयोगी जांच"
 
 #: ../../05_node-guide/11_troubleshooting.md:27
 msgid "Adding a peer at runtime"
-msgstr ""
+msgstr "रनटाइम में एक सहकर्मी जोड़ना"
 
 #: ../../05_node-guide/11_troubleshooting.md:35
 msgid "Reporting an issue"
-msgstr ""
+msgstr "एक मुद्दे की रिपोर्ट"
 
 #: ../../05_node-guide/11_troubleshooting.md:37
 msgid "Include the node version, network, `/node/status` output and the relevant log excerpt when opening an issue at [Decentral-America/node-scala](https://github.com/Decentral-America/node-scala)."
-msgstr ""
+msgstr "[Decentral-America/node-scala](https://github.com/Decentral-America/node-scala) में एक मुद्दा खोलने के दौरान नोड संस्करण, नेटवर्क, `/node/status` आउटपुट और प्रासंगिक लॉग एक्सर्ट शामिल करें।"
 
 #: ../../05_node-guide/12_install-linux.md:1
 msgid "Installing on Linux"
-msgstr ""
+msgstr "लिनक्स पर स्थापित करना"
 
 #: ../../05_node-guide/12_install-linux.md:4
 msgid "Verified on a clean Ubuntu 24.04 (the `ubuntu:24.04` image, plus `sudo`, `curl` and `git`) against node-scala v1.8.1, 2026-10-27: Temurin 25.0.5, SBT from its APT repository, `sbt packageAll` in 12 minutes, then the tarball synced the public Testnet from genesis to the tip, height 100,132, in 22 minutes, with block IDs matching the public node. The DEB package did not install (see below)."
-msgstr ""
+msgstr "एक साफ उबंटू 24.04 (`ubuntu:24.04` छवि, प्लस `sudo`, `curl` और `git`) पर नोड-स्काला v1.8.1, 2026-10-27 के खिलाफ सत्यापित: Temurin 25.0.5, अपने APT भंडार से SBT, `sbt packageAll` 12 मिनट में, फिर टारबॉल ने जीनसिस से टिप तक सार्वजनिक Testnet को सिंक किया, ऊंचाई 100,132, 22 मिनट में, ब्लॉक आईडी जनता नोड से मेल खाती थी। डीईबी पैकेज स्थापित नहीं किया गया (नीचे देखें)।"
 
 #: ../../05_node-guide/12_install-linux.md:7
 msgid "For most operators, [Docker](04_install-docker) is simpler than a bare-metal install. Use this page if you need to run the node directly on the host, for example to package it for your own init system."
-msgstr ""
+msgstr "अधिकांश ऑपरेटरों के लिए, [डोकर](04_install-docker) एक नंगे धातु स्थापित की तुलना में सरल है। यदि आपको सीधे मेजबान पर नोड चलाने की आवश्यकता है, तो इस पृष्ठ का उपयोग करें, उदाहरण के लिए इसे अपने स्वयं के इनिट सिस्टम के लिए पैकेज करने के लिए।"
 
 #: ../../05_node-guide/12_install-linux.md:9
 #: ../../05_node-guide/13_install-macos.md:9
 #: ../../05_node-guide/14_install-windows.md:9
 msgid "Prerequisites"
-msgstr ""
+msgstr "पूर्वापेक्षा"
 
 #: ../../05_node-guide/12_install-linux.md:11
 msgid "**Java 25 JDK**: [Eclipse Temurin 25](https://adoptium.net/temurin/releases/?version=25) is the distribution node-scala recommends and tests against."
-msgstr ""
+msgstr "**जावा 25 JDK**: [ग्रहण टेमुरिन 25](https://adoptium.net/temurin/releases/?version=25) वितरण नोड-सला के खिलाफ सिफारिशों और परीक्षणों की सिफारिश है।"
 
 #: ../../05_node-guide/12_install-linux.md:12
 msgid "**[SBT](https://www.scala-sbt.org/1.x/docs/Installing-sbt-on-Linux.html)** and **Git**, to build the node: node-scala releases ship no node package (the v1.7.0 to v1.8.1 release assets are only `dcc-grpc-server` tarballs)."
-msgstr ""
+msgstr "**[SBT](https://www.scala-sbt.org/1.x/docs/Installing-sbt-on-Linux.html)** और **गिट**, नोड बनाने के लिए: नोड-स्काला जहाज नो नोड पैकेज (v1.7.0 to v1.8.1 रिलीज एसेट केवल `dcc-grpc-server` टारबॉल हैं) जारी करता है।"
 
 #: ../../05_node-guide/12_install-linux.md:13
 msgid "**A configuration file** for the network. For the public Testnet, use the one in [Join the Public Testnet](15_join-testnet); the node's built-in `testnet` profile is a different network."
-msgstr ""
+msgstr "नेटवर्क के लिए **एक विन्यास फ़ाइल**। सार्वजनिक Testnet के लिए, [सार्वजनिक Testnet में शामिल हों](15_join-testnet) में से एक का उपयोग करें; नोड का अंतर्निहित `testnet` प्रोफाइल एक अलग नेटवर्क है।"
 
 #: ../../05_node-guide/12_install-linux.md:14
 msgid "About 4 GB of free memory and 10 GB of disk for the build; the Testnet data itself was 131 MB at height 99,976."
-msgstr ""
+msgstr "लगभग 4 जीबी मुफ्त मेमोरी और बिल्ड के लिए 10 जीबी डिस्क; Testnet डेटा खुद ही ऊंचाई 99,976 पर 131 एमबी था।"
 
 #: ../../05_node-guide/12_install-linux.md:16
 msgid "Install the JDK (Ubuntu/Debian)"
@@ -2315,11 +2315,11 @@ msgstr ""
 
 #: ../../05_node-guide/12_install-linux.md:26
 msgid "This adds Adoptium's signing key as a keyring file. Older instructions pipe it into `apt-key add`, which Ubuntu 24.04 still accepts but reports as deprecated on every `apt-get update`."
-msgstr ""
+msgstr "यह एक कीरिंग फ़ाइल के रूप में एडिपियम की साइनिंग कुंजी जोड़ता है। पुराने निर्देश इसे `apt-key add` में पाइप करते हैं, जो उबंटू 24.04 अभी भी स्वीकार करता है लेकिन रिपोर्ट हर `apt-get update` पर डिप्रीक्ट के रूप में।"
 
 #: ../../05_node-guide/12_install-linux.md:28
 msgid "For a distribution without APT, install Eclipse Temurin 25 through your package manager or from the [Adoptium releases page](https://adoptium.net/temurin/releases/?version=25)."
-msgstr ""
+msgstr "APT के बिना वितरण के लिए, अपने पैकेज मैनेजर या [एडॉप्टियम रिलीज पेज](https://adoptium.net/temurin/releases/?version=25) से Eclipse Temurin 25 स्थापित करें।"
 
 #: ../../05_node-guide/12_install-linux.md:30
 msgid "Install SBT (Ubuntu/Debian)"
@@ -2327,201 +2327,201 @@ msgstr ""
 
 #: ../../05_node-guide/12_install-linux.md:32
 msgid "These are the commands from the [SBT installation page](https://www.scala-sbt.org/1.x/docs/Installing-sbt-on-Linux.html):"
-msgstr ""
+msgstr "ये [एसबीटी स्थापना पृष्ठ](https://www.scala-sbt.org/1.x/docs/Installing-sbt-on-Linux.html) के कमांड हैं:"
 
 #: ../../05_node-guide/12_install-linux.md:42
 #: ../../05_node-guide/13_install-macos.md:33
 #: ../../05_node-guide/14_install-windows.md:24
 msgid "Build from source"
-msgstr ""
+msgstr "स्रोत से निर्माण"
 
 #: ../../05_node-guide/12_install-linux.md:52
 msgid "`sbt packageAll` produces:"
-msgstr ""
+msgstr "`sbt packageAll` का उत्पादन:"
 
 #: ../../05_node-guide/12_install-linux.md:54
 msgid "the universal tarball `node/target/universal/decentralchain-<version>.tgz` (also copied to `docker/target/dcc.tgz`), and"
-msgstr ""
+msgstr "यूनिवर्सल टारबॉल `node/target/universal/decentralchain-<version>.tgz` (`docker/target/dcc.tgz`) को भी कॉपी किया गया, और"
 
 #: ../../05_node-guide/12_install-linux.md:55
 msgid "DEB packages for `amd64` and `arm64` in `node/target/`. The node package is named `decentralchain` for Mainnet and `decentralchain-<network>` for other networks (for example `decentralchain-testnet`)."
-msgstr ""
+msgstr "`amd64` के लिए DEB संकुल और `arm64` `node/target/` में। नोड पैकेज को Mainnet और `decentralchain-<network>` के लिए अन्य नेटवर्कों (उदाहरण के लिए `decentralchain-testnet`) के लिए `decentralchain` नाम दिया गया है।"
 
 #: ../../05_node-guide/12_install-linux.md:57
 msgid "`sbt -Dnetwork=testnet packageAll` builds packages whose defaults are the built-in `testnet` profile, not the public Testnet. To join the public Testnet, any build works: the configuration file selects the chain."
-msgstr ""
+msgstr "`sbt -Dnetwork=testnet packageAll` उन पैकेजों का निर्माण करता है जिनके डिफ़ॉल्ट अंतर्निहित `testnet` प्रोफाइल हैं, सार्वजनिक Testnet नहीं। सार्वजनिक Testnet में शामिल होने के लिए, कोई निर्माण कार्य: कॉन्फ़िगरेशन फ़ाइल श्रृंखला का चयन करती है।"
 
 #: ../../05_node-guide/12_install-linux.md:59
 msgid "There is no single \"fat\" JAR; the node runs from its `lib/` directory through the launcher script."
-msgstr ""
+msgstr "वहाँ कोई भी \"वसा\" JAR है; नोड लॉन्चर स्क्रिप्ट के माध्यम से अपनी `lib/` निर्देशिका से चलाता है।"
 
 #: ../../05_node-guide/12_install-linux.md:61
 msgid "To also run the unit tests, run `sbt checkPR` before `packageAll`. It took 81 minutes on the same machine and needs [Node.js](https://nodejs.org/) on the `PATH` as well, for the JavaScript build of the Ride compiler. See the [node-scala README](https://github.com/Decentral-America/node-scala#readme) for integration tests and IDE setup."
-msgstr ""
+msgstr "यूनिट परीक्षण भी चलाने के लिए, `packageAll` से पहले `sbt checkPR` चलाएं। यह एक ही मशीन पर 81 मिनट का समय लगा और `PATH` पर [Node.js](https://nodejs.org/) की जरूरत है, JavaScript के निर्माण के लिए Ride कम्पाइलर। एकीकरण परीक्षण और आईडीई सेटअप के लिए [नोड-स्लारा README](https://github.com/Decentral-America/node-scala#readme) देखें।"
 
 #: ../../05_node-guide/12_install-linux.md:63
 #: ../../05_node-guide/13_install-macos.md:22
 #: ../../05_node-guide/14_install-windows.md:14
 msgid "Run from the tarball"
-msgstr ""
+msgstr "टारबॉल से भागो"
 
 #: ../../05_node-guide/12_install-linux.md:65
 msgid "Extract the tarball and start the node with its `bin/node` launcher and your configuration file:"
-msgstr ""
+msgstr "टारबॉल निकालें और अपने `bin/node` लॉन्चर और अपनी कॉन्फ़िगरेशन फ़ाइल के साथ नोड शुरू करें:"
 
 #: ../../05_node-guide/12_install-linux.md:72
 msgid "Unless the configuration sets `dcc.directory`, the node keeps its data under `~/.local/share/dcc-<network>`: `~/.local/share/dcc-custom-21` for the public Testnet. To check that it follows the chain, compare its height and block IDs with the public node, as shown in [Join the Public Testnet](15_join-testnet)."
-msgstr ""
+msgstr "जब तक विन्यास `dcc.directory` सेट नहीं करता है, नोड अपने डेटा को `~/.local/share/dcc-<network>`: `~/.local/share/dcc-custom-21` के तहत सार्वजनिक Testnet के लिए रखता है। यह जांचने के लिए कि यह श्रृंखला का अनुसरण करता है, इसकी ऊंचाई और ब्लॉक आईडी को सार्वजनिक नोड के साथ तुलना करता है, जैसा कि [सार्वजनिक Testnet में शामिल हों](15_join-testnet) में दिखाया गया है।"
 
 #: ../../05_node-guide/12_install-linux.md:74
 msgid "Install the DEB package you built"
-msgstr ""
+msgstr "DEB पैकेज को स्थापित करें जिसे आपने बनाया है"
 
 #: ../../05_node-guide/12_install-linux.md:77
 msgid "The v1.8.1 DEB package doesn't install: its post-install script copies `/usr/share/decentralchain/doc/dcc.conf.sample`, but the package ships `decentralchain.conf.sample`, so `dpkg -i` stops with `post-installation script subprocess returned error exit status 1` before it installs the systemd service. Until the package is fixed, run the node from the tarball as above."
-msgstr ""
+msgstr "v1.8.1 DEB पैकेज स्थापित नहीं है: इसकी पोस्ट-इंस्टॉल स्क्रिप्ट `/usr/share/decentralchain/doc/dcc.conf.sample` की प्रतिलिपियां करती हैं, लेकिन पैकेज `decentralchain.conf.sample` जहाज़ करता है, इसलिए `dpkg -i` `post-installation script subprocess returned error exit status 1` के साथ बंद हो जाता है इससे पहले कि यह व्यवस्थित सेवा स्थापित कर सके। जब तक पैकेज तय नहीं हो जाता है, तब तक tarball से नोड को ऊपर की ओर चलाते हैं।"
 
 #: ../../05_node-guide/12_install-linux.md:85
 msgid "Once installed, the package runs the node as a systemd service named after the package (`decentralchain`), as the unprivileged user of the same name, and creates its configuration file at `/etc/decentralchain/dcc.conf` from the sample."
-msgstr ""
+msgstr "एक बार स्थापित होने के बाद, पैकेज एक प्रणालीबद्ध सेवा के रूप में नोड को चलाता है जिसका नाम पैकेज (`decentralchain`) के नाम पर रखा गया है, जैसा कि उसी नाम का अनियोजित उपयोगकर्ता है और नमूना से `/etc/decentralchain/dcc.conf` पर अपनी कॉन्फ़िगरेशन फ़ाइल बनाता है।"
 
 #: ../../05_node-guide/12_install-linux.md:87
 #: ../../05_node-guide/13_install-macos.md:49
 #: ../../05_node-guide/14_install-windows.md:37
 msgid "Next steps"
-msgstr ""
+msgstr "अगला कदम"
 
 #: ../../05_node-guide/12_install-linux.md:89
 #: ../../05_node-guide/13_install-macos.md:51
 #: ../../05_node-guide/14_install-windows.md:39
 msgid "[Configuration](05_configuration) · [Sync and Rollback](06_sync-and-rollback) · [Wallet and Generating](08_wallet-and-generating)"
-msgstr ""
+msgstr "[विन्यास](05_configuration) · [सिंक और रोलबैक](06_sync-and-rollback) · [वॉलेट और जनरेट करना](08_wallet-and-generating)"
 
 #: ../../05_node-guide/13_install-macos.md:1
 msgid "Installing on macOS"
-msgstr ""
+msgstr "macOS पर स्थापित करना"
 
 #: ../../05_node-guide/13_install-macos.md:4
 msgid "Not yet verified on a clean macOS machine. The steps follow node-scala v1.8.1's `README.md`; the build and run steps match the ones verified on a clean Ubuntu 24.04 (see [Linux](12_install-linux)). If a step doesn't match what you see, please report it."
-msgstr ""
+msgstr "अभी तक एक साफ macOS मशीन पर सत्यापित नहीं है। चरणों का पालन करें नोड-स्काला v1.8.1's `README.md`; निर्माण और रन चरण उन लोगों से मेल खाते हैं जो एक स्वच्छ उबंटू 24.04 ([लिनक्स](12_install-linux)) देखें। यदि कोई कदम आपको नहीं देखता है, तो कृपया उसे रिपोर्ट करें।"
 
 #: ../../05_node-guide/13_install-macos.md:7
 msgid "[Docker](04_install-docker) is the simplest way to run a node; this page is for running it directly on macOS."
-msgstr ""
+msgstr "[डोकर](04_install-docker) एक नोड चलाने का सबसे सरल तरीका है; यह पृष्ठ सीधे macOS पर चल रहा है।"
 
 #: ../../05_node-guide/13_install-macos.md:11
 msgid "[Homebrew](https://brew.sh/)"
-msgstr ""
+msgstr "[Homebrew](https://brew.sh/)"
 
 #: ../../05_node-guide/13_install-macos.md:12
 #: ../../05_node-guide/14_install-windows.md:12
 msgid "A network configuration file — the repository ships defaults for Mainnet and Testnet in `node/src/main/resources/network-defaults.conf`."
-msgstr ""
+msgstr "एक नेटवर्क कॉन्फ़िगरेशन फ़ाइल - Mainnet और Testnet के लिए `node/src/main/resources/network-defaults.conf` में रिपोज़िटरी जहाज डिफ़ॉल्ट है।"
 
 #: ../../05_node-guide/13_install-macos.md:14
 msgid "Install the JDK"
-msgstr ""
+msgstr "JDK स्थापित करें"
 
 #: ../../05_node-guide/13_install-macos.md:20
 msgid "This installs [Eclipse Temurin 25](https://adoptium.net/temurin/releases/?version=25), the JDK version node-scala is built and tested against."
-msgstr ""
+msgstr "यह [ग्रहण टेमुरिन 25](https://adoptium.net/temurin/releases/?version=25) स्थापित करता है, JDK संस्करण नोड-स्काला बनाया गया है और परीक्षण किया जाता है।"
 
 #: ../../05_node-guide/13_install-macos.md:24
 msgid "node-scala releases do not ship a node JAR or package (the v1.7.0 to v1.8.1 release assets are only `dcc-grpc-server` tarballs), and node-scala doesn't publish a macOS package (`.pkg`/Homebrew formula). The supported way to run a node is the [Docker image](04_install-docker) `ghcr.io/decentral-america/node-scala`. To run it directly on macOS, [build from source](#build-from-source) below, then extract the universal tarball and start the node with its `bin/` launcher:"
-msgstr ""
+msgstr "नोड-स्काला रिलीज़ एक नोड JAR या पैकेज (v1.7.0 to v1.8.1 रिलीज एसेट केवल `dcc-grpc-server` टारबॉल हैं) को जहाज नहीं करते हैं, और नोड-स्काला एक macOS पैकेज (`.pkg` / होमब्रू सूत्र) प्रकाशित नहीं करता है। नोड चलाने का समर्थन तरीका [डॉकर छवि](04_install-docker) `ghcr.io/decentral-america/node-scala` है। इसे सीधे macOS पर चलाने के लिए, [स्रोत से निर्माण](#build-from-source) नीचे, फिर सार्वभौमिक टारबॉल को निकालने और अपने `bin/` लॉन्चर के साथ नोड शुरू करने के लिए:"
 
 #: ../../05_node-guide/13_install-macos.md:31
 msgid "There is no single \"fat\" JAR; the launcher runs the node from the tarball's `lib/` directory."
-msgstr ""
+msgstr "वहाँ कोई भी \"वसा\" JAR है; लांचर tarball के `lib/` निर्देशिका से नोड चलाता है।"
 
 #: ../../05_node-guide/13_install-macos.md:45
 #: ../../05_node-guide/14_install-windows.md:33
 msgid "The network comes from the configuration file you start the node with; for the public Testnet, use the one in [Join the Public Testnet](15_join-testnet). To also run the unit tests, run `sbt checkPR` first: it takes over an hour and needs [Node.js](https://nodejs.org/) on the `PATH`."
-msgstr ""
+msgstr "नेटवर्क कॉन्फ़िगरेशन फ़ाइल से आता है जिसके साथ आप नोड शुरू करते हैं; सार्वजनिक Testnet के लिए, [सार्वजनिक Testnet में शामिल हों](15_join-testnet) में एक का उपयोग करें। इकाई परीक्षण भी चलाने के लिए, पहले `sbt checkPR` चलाएं: यह एक घंटे से अधिक लेता है और `PATH` पर [Node.js](https://nodejs.org/) की आवश्यकता होती है।"
 
 #: ../../05_node-guide/13_install-macos.md:47
 msgid "Building from source additionally requires [SBT](https://www.scala-sbt.org/1.x/docs/Installing-sbt-on-Mac.html). See the [node-scala README](https://github.com/Decentral-America/node-scala#readme) for integration-test setup."
-msgstr ""
+msgstr "इसके अलावा स्रोत से निर्माण के लिए [SBT](https://www.scala-sbt.org/1.x/docs/Installing-sbt-on-Mac.html) की आवश्यकता होती है। एकीकरण-परीक्षण सेटअप के लिए [नोड-स्लारा README](https://github.com/Decentral-America/node-scala#readme) देखें।"
 
 #: ../../05_node-guide/14_install-windows.md:1
 msgid "Installing on Windows"
-msgstr ""
+msgstr "Windows पर स्थापित करना"
 
 #: ../../05_node-guide/14_install-windows.md:4
 msgid "Not yet verified on a clean Windows machine. The steps follow node-scala v1.8.1's `README.md`; the build steps match the ones verified on a clean Ubuntu 24.04 (see [Linux](12_install-linux)). If a step doesn't match what you see, please report it."
-msgstr ""
+msgstr "अभी तक एक साफ विंडोज मशीन पर सत्यापित नहीं है। चरणों का पालन करें नोड-स्काला v1.8.1's `README.md`; बिल्ड स्टेप्स उन लोगों से मेल खाते हैं जो एक स्वच्छ उबंटू 24.04 ([लिनक्स](12_install-linux)) पर सत्यापित होते हैं। यदि कोई कदम आपको नहीं देखता है, तो कृपया उसे रिपोर्ट करें।"
 
 #: ../../05_node-guide/14_install-windows.md:7
 msgid "[Docker](04_install-docker) (via Docker Desktop) is the simplest way to run a node on Windows; this page is for running it directly."
-msgstr ""
+msgstr "[डोकर](04_install-docker) (Docker Desktop के माध्यम से) Windows पर एक नोड चलाने का सबसे सरल तरीका है; यह पृष्ठ सीधे इसे चलाने के लिए है।"
 
 #: ../../05_node-guide/14_install-windows.md:11
 msgid "**Java 25 JDK** — install [Eclipse Temurin 25](https://adoptium.net/temurin/releases/?version=25) using its Windows installer."
-msgstr ""
+msgstr "**जावा 25 JDK** — अपने Windows installer का उपयोग कर [ग्रहण टेमुरिन 25](https://adoptium.net/temurin/releases/?version=25) स्थापित करें।"
 
 #: ../../05_node-guide/14_install-windows.md:16
 msgid "node-scala releases do not ship a node JAR or a Windows installer (the v1.7.0 to v1.8.1 release assets are only `dcc-grpc-server` tarballs). The supported way to run a node is Docker Desktop with the [Docker image](04_install-docker) `ghcr.io/decentral-america/node-scala`. To run it directly, [build from source](#build-from-source) below, extract the universal tarball `node/target/universal/decentralchain-<version>.tgz`, and start the node from a terminal (Command Prompt or PowerShell) with the Windows launcher in its `bin\\` directory:"
-msgstr ""
+msgstr "नोड-स्काला रिलीज़ एक नोड JAR या Windows इंस्टॉलर (v1.7.0 to v1.8.1 रिलीज एसेट केवल `dcc-grpc-server` टारबॉल हैं) जहाज नहीं करते हैं। नोड चलाने का समर्थन तरीका [डॉकर छवि](04_install-docker) `ghcr.io/decentral-america/node-scala` के साथ Docker Desktop है। इसे सीधे चलाने के लिए, नीचे [स्रोत से निर्माण](#build-from-source), सार्वभौमिक टारबॉल `node/target/universal/decentralchain-<version>.tgz` को निकालने और अपने `bin\\` निर्देशिका में विंडोज लॉन्चर के साथ एक टर्मिनल (Command Prompt or PowerShell) से नोड शुरू करने के लिए:"
 
 #: ../../05_node-guide/14_install-windows.md:22
 msgid "There is no single \"fat\" JAR; the launcher runs the node from the tarball's `lib\\` directory."
-msgstr ""
+msgstr "वहाँ कोई भी \"वसा\" JAR है; लांचर tarball के `lib\\` निर्देशिका से नोड चलाता है।"
 
 #: ../../05_node-guide/14_install-windows.md:35
 msgid "Building from source additionally requires [SBT](https://www.scala-sbt.org/1.x/docs/Installing-sbt-on-Windows.html). See the [node-scala README](https://github.com/Decentral-America/node-scala#readme) for integration-test setup and IntelliJ IDEA configuration."
-msgstr ""
+msgstr "इसके अलावा स्रोत से निर्माण के लिए [SBT](https://www.scala-sbt.org/1.x/docs/Installing-sbt-on-Windows.html) की आवश्यकता होती है। एकीकरण-परीक्षण सेटअप और IntelliJ IDEA विन्यास के लिए [नोड-स्लारा README](https://github.com/Decentral-America/node-scala#readme) देखें।"
 
 #: ../../05_node-guide/15_join-testnet.md:1
 msgid "Join the Public Testnet"
-msgstr ""
+msgstr "सार्वजनिक Testnet में शामिल हों"
 
 #: ../../05_node-guide/15_join-testnet.md:3
 msgid "This page shows how to run your own node on the public DecentralChain Testnet, the network behind `testnet-node.decentralchain.io`. Your node follows the chain and serves its own REST API (and gRPC, if you enable it). It does not forge blocks."
-msgstr ""
+msgstr "यह पृष्ठ दिखाता है कि `testnet-node.decentralchain.io` के पीछे नेटवर्क, सार्वजनिक DecentralChain Testnet पर अपना खुद का नोड कैसे चला जाए। आपका नोड श्रृंखला का अनुसरण करता है और अपने स्वयं के REST API (और gRPC, यदि आप इसे सक्षम करते हैं) कार्य करता है। यह ब्लॉक फोर्ज नहीं करता है।"
 
 #: ../../05_node-guide/15_join-testnet.md:6
 msgid "The public Testnet is a **custom chain** (`dcc.blockchain.type = CUSTOM`). The node's built-in `testnet` profile (`DCC_NETWORK=testnet` with no config file) is a different network and **will not join it**. Use the configuration file below."
-msgstr ""
+msgstr "सार्वजनिक Testnet एक **कस्टम चेन** (`dcc.blockchain.type = CUSTOM`) है। नोड का अंतर्निहित `testnet` प्रोफाइल (`DCC_NETWORK=testnet` बिना किसी विन्यास फ़ाइल के) एक अलग नेटवर्क और **इसमें शामिल नहीं होगा** है। नीचे कॉन्फ़िगरेशन फ़ाइल का उपयोग करें।"
 
 #: ../../05_node-guide/15_join-testnet.md:10
 msgid "Verified on a clean Docker host (macOS 15.5, Docker Desktop 29.2.1) against node-scala v1.8.1, 2026-10-27: following this page word for word, the node synced from genesis to the tip, height 99,976, in 31 minutes, and the block IDs it reported matched the public node's. The same configuration, run from a tarball built on a clean Ubuntu 24.04, synced to height 100,132 in 22 minutes. Every value on this page was checked against the live Testnet on 2026-10-18. The configuration mirrors the Testnet operators' own node configuration (`node-config/testnet/dcc.conf` in the [infra repository](https://github.com/Decentral-America/infra)). If the two ever disagree, the infra file is authoritative."
-msgstr ""
+msgstr "नोड-स्काला v1.8.1, 2026-10-27 के खिलाफ एक स्वच्छ डोकर होस्ट (macOS 15.5, Docker Desktop 29.2.1) पर सत्यापित: इस पृष्ठ शब्द का अनुसरण करते हुए, नोड ने 31 मिनट में जीनसिस से टिप तक सिंक किया, ऊंचाई 99,976, और ब्लॉक आईडी ने सार्वजनिक नोड्स से मिलान करने की सूचना दी। उसी विन्यास, एक टारबॉल से चलाएं जो एक स्वच्छ उबंटू 24.04 पर बनाया गया था, जिसे 22 मिनट में 100,132 की ऊंचाई तक बढ़ाया गया। इस पृष्ठ पर प्रत्येक मूल्य को 2026-10-18 पर लाइव Testnet के खिलाफ चेक किया गया था। विन्यास Testnet ऑपरेटरों के अपने नोड विन्यास (`node-config/testnet/dcc.conf` [इन्फ्रा भंडार](https://github.com/Decentral-America/infra)) को प्रतिबिंबित करता है। यदि दो असहमत हैं, तो इंफ्रा फ़ाइल आधिकारिक है।"
 
 #: ../../05_node-guide/15_join-testnet.md:13
 msgid "Network facts"
-msgstr ""
+msgstr "नेटवर्क तथ्यों"
 
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "Item"
-msgstr ""
+msgstr "आइटम"
 
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "Value"
-msgstr ""
+msgstr "मूल्य"
 
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "Chain ID"
-msgstr ""
+msgstr "चेन आईडी"
 
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "`!` (ASCII 33)"
-msgstr ""
+msgstr "`!` (ASCII 33)"
 
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "Address prefix"
-msgstr ""
+msgstr "पता उपसर्ग"
 
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "`31`"
-msgstr ""
+msgstr "`31`"
 
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "Genesis block ID"
-msgstr ""
+msgstr "उत्पत्ति ब्लॉक आईडी"
 
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "`5be1Fs9oqWGnUt1vVpBDXaJNN583tqic72hFwY9mmMf56n5WevrmwqMzdLSRVdEu7DWGhuQkVL1zhYBn4iuz9DX4`"
-msgstr ""
+msgstr "`5be1Fs9oqWGnUt1vVpBDXaJNN583tqic72hFwY9mmMf56n5WevrmwqMzdLSRVdEu7DWGhuQkVL1zhYBn4iuz9DX4`"
 
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "Genesis timestamp"
@@ -2529,209 +2529,209 @@ msgstr ""
 
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "`1788539579643` (2026-09-04)"
-msgstr ""
+msgstr "`1788539579643` (2026-09-04)"
 
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "Target block time"
-msgstr ""
+msgstr "लक्ष्य ब्लॉक समय"
 
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "30 seconds"
-msgstr ""
+msgstr "30 सेकंड"
 
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "Public REST API"
-msgstr ""
+msgstr "सार्वजनिक REST एपीआई"
 
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "`https://testnet-node.decentralchain.io`"
-msgstr ""
+msgstr "`https://testnet-node.decentralchain.io`"
 
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "Node image"
-msgstr ""
+msgstr "नोड इमेज"
 
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "`ghcr.io/decentral-america/node-scala:testnet-latest`"
-msgstr ""
+msgstr "`ghcr.io/decentral-america/node-scala:testnet-latest`"
 
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "Finality"
-msgstr ""
+msgstr "फाइनल"
 
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "Deterministic Finality (feature 25) plus HotStuff fast finality, enabled and authoritative on the Testnet only"
-msgstr ""
+msgstr "निश्चित फाइनलिटी (फीचर 25) प्लस HotStuff फास्ट फाइनलिटी, केवल Testnet पर सक्षम और आधिकारिक"
 
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "Data service"
-msgstr ""
+msgstr "डेटा सेवा"
 
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "`https://testnet-data-service.decentralchain.io/v0`"
-msgstr ""
+msgstr "`https://testnet-data-service.decentralchain.io/v0`"
 
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "WebSocket API"
-msgstr ""
+msgstr "WebSocket API"
 
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "`wss://testnet-ws.decentralchain.io/ws`"
-msgstr ""
+msgstr "`wss://testnet-ws.decentralchain.io/ws`"
 
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "Matcher API"
-msgstr ""
+msgstr "मैचर एपीआई"
 
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "`https://testnet-matcher.decentralchain.io/matcher`"
-msgstr ""
+msgstr "`https://testnet-matcher.decentralchain.io/matcher`"
 
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "Matcher public key"
-msgstr ""
+msgstr "मैचर सार्वजनिक कुंजी"
 
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "`BEtB5b2kX8Yge4sb5RRbTUqd5Va8Ah8PhphowcW31z6Y`"
-msgstr ""
+msgstr "`BEtB5b2kX8Yge4sb5RRbTUqd5Va8Ah8PhphowcW31z6Y`"
 
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "Matcher address"
-msgstr ""
+msgstr "मैचर एड्रेस"
 
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "`31VMNVAvVh67dPZ41nMnYZvhoZFW7wwPrmq`"
-msgstr ""
+msgstr "`31VMNVAvVh67dPZ41nMnYZvhoZFW7wwPrmq`"
 
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "Explorer"
-msgstr ""
+msgstr "एक्सप्लोरर"
 
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "`https://testnet.decentralscan.com/`"
-msgstr ""
+msgstr "`https://testnet.decentralscan.com/`"
 
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "Faucet"
-msgstr ""
+msgstr "नल"
 
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "`https://testnet.decentralscan.com/faucet`"
-msgstr ""
+msgstr "`https://testnet.decentralscan.com/faucet`"
 
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "Wallet and DEX"
-msgstr ""
+msgstr "वॉलेट और DEX"
 
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "`https://testnet.decentral.exchange/`"
-msgstr ""
+msgstr "`https://testnet.decentral.exchange/`"
 
 #: ../../05_node-guide/15_join-testnet.md:36
 msgid "The exact image digest the Testnet runs is recorded in `node-config/testnet/vps-image.env` in the infra repository. Use that digest instead of `testnet-latest` if you want to run byte-for-byte the same build."
-msgstr ""
+msgstr "सटीक छवि Testnet रनों को पचाती है, जिसे `node-config/testnet/vps-image.env` में इन्फ़रा रिपोसिटरी में दर्ज किया गया है। यदि आप एक ही निर्माण के लिए बाइट-for-byte चलाने के लिए चाहते हैं तो `testnet-latest` के बजाय उस पाचन का उपयोग करें।"
 
 #: ../../05_node-guide/15_join-testnet.md:38
 msgid "1. Write the configuration file"
-msgstr ""
+msgstr "1. कॉन्फ़िगरेशन फ़ाइल लिखें"
 
 #: ../../05_node-guide/15_join-testnet.md:40
 msgid "Save this as `dcc.conf`. The `blockchain` section must match the Testnet exactly; any difference (a genesis value, a functionality parameter or the reward settings) makes your node reject the chain."
-msgstr ""
+msgstr "इसे `dcc.conf` के रूप में सहेजें। `blockchain` अनुभाग को Testnet बिल्कुल मिलान करना चाहिए; किसी भी अंतर (एक जीनसिस मान, कार्यक्षमता पैरामीटर या इनाम सेटिंग्स) आपकी नोड श्रृंखला को अस्वीकार कर देता है।"
 
 #: ../../05_node-guide/15_join-testnet.md:112
 msgid "2. Start the node"
-msgstr ""
+msgstr "2. नोड प्रारंभ करें"
 
 #: ../../05_node-guide/15_join-testnet.md:128
 msgid "`DCC_NETWORK=custom` keeps the built-in `testnet` profile's peers and port out of the merged configuration; the `blockchain` section of your file selects the chain."
-msgstr ""
+msgstr "`DCC_NETWORK=custom` निर्मित `testnet` प्रोफ़ाइल के साथियों को रखता है और विलय विन्यास से बाहर पोर्ट करता है; आपकी फ़ाइल का `blockchain` खंड श्रृंखला का चयन करता है।"
 
 #: ../../05_node-guide/15_join-testnet.md:130
 msgid "3. Check that it follows the chain"
-msgstr ""
+msgstr "3. जांचें कि यह श्रृंखला का अनुसरण करता है"
 
 #: ../../05_node-guide/15_join-testnet.md:132
 msgid "Your node replays the chain from genesis, then follows the tip. Compare it with the public node:"
-msgstr ""
+msgstr "आपका नोड श्रृंखला को जीनसिस से फिर से चला जाता है, फिर टिप का अनुसरण करता है। इसे सार्वजनिक नोड के साथ तुलना करें:"
 
 #: ../../05_node-guide/15_join-testnet.md:144
 msgid "Once the two heights match, pick a height a few blocks below the tip and compare the block IDs. They must be identical:"
-msgstr ""
+msgstr "एक बार दो ऊंचाई मैच के बाद, टिप के नीचे कुछ ब्लॉकों को चुनें और ब्लॉक आईडी की तुलना करें। उन्हें समान होना चाहिए:"
 
 #: ../../05_node-guide/15_join-testnet.md:152
 msgid "Getting Testnet DCC"
-msgstr ""
+msgstr "Testnet DCC"
 
 #: ../../05_node-guide/15_join-testnet.md:154
 msgid "Open the [faucet](https://testnet.decentralscan.com/faucet) and enter a Testnet address (it starts with `31`). To create an address, use the [wallet](https://testnet.decentral.exchange/) or `libs.crypto.address(seed, '!')` from `@decentralchain/transactions` (see [How-To Guides](../04_building-apps/03_how-to-guides))."
-msgstr ""
+msgstr "[नल](https://testnet.decentralscan.com/faucet) खोलें और Testnet पता दर्ज करें (यह `31`) के साथ शुरू होता है। एक पता बनाने के लिए, `@decentralchain/transactions` से [वॉलेट](https://testnet.decentral.exchange/) या `libs.crypto.address(seed, '!')` का उपयोग करें ([कैसे गाइड करने के लिए](../04_building-apps/03_how-to-guides)) देखें।"
 
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "Open to the internet?"
-msgstr ""
+msgstr "इंटरनेट पर खुलने के लिए?"
 
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "Yes, if you set `declared-address`; otherwise outbound only is enough"
-msgstr ""
+msgstr "हाँ, यदि आप `declared-address` सेट करते हैं; अन्यथा आउटबाउंड केवल पर्याप्त है"
 
 #: ../../05_node-guide/15_join-testnet.md:9
 msgid "No: keep it on localhost or behind a reverse proxy"
-msgstr ""
+msgstr "नहीं: इसे स्थानीय होस्ट पर या रिवर्स प्रॉक्सी के पीछे रखें"
 
 #: ../../05_node-guide/index.md:1 ../../05_node-guide/index.md:33
 msgid "Node Guide"
-msgstr ""
+msgstr "नोड गाइड"
 
 #: ../../05_node-guide/index.md:3
 #, python-brace-format
 msgid "A {ref}`node <02_decentralchain/05_node:Node>` is a host connected to the DecentralChain network that validates transactions, stores blocks, and — if it meets the generating-balance requirement — produces new blocks under {ref}`Leased Proof of Stake <02_decentralchain/05_node:Leased Proof of Stake>`. This section covers running your own node: getting the software, building it, and configuring it. For the economics of block generation (rewards, leasing), see the {ref}`Node <02_decentralchain/05_node:Node>` article in the DecentralChain fundamentals section."
-msgstr ""
+msgstr "A {ref}`नोड <02_decentralchain/05_node:Node>` एक मेजबान DecentralChain नेटवर्क से जुड़ा हुआ है जो लेनदेन, स्टोर ब्लॉकों को मान्य करता है और - अगर यह जनरेट-संतुलन की आवश्यकता को पूरा करता है - तो {ref}`स्टेक का लीज्ड सबूत <02_decentralchain/05_node:Leased Proof of Stake>` के तहत नए ब्लॉक का उत्पादन करता है। यह खंड आपके खुद के नोड को चलाने के लिए कवर करता है: सॉफ्टवेयर प्राप्त करना, इसे बनाना और उसे कॉन्फ़िगर करना। ब्लॉक जनरेशन (रिवार्ड, लीजिंग) की अर्थशास्त्र के लिए {ref}`नोड <02_decentralchain/05_node:Node>` लेख को DecentralChain मूल खंड में देखें।"
 
 #: ../../05_node-guide/index.md:18
 msgid "Open Source"
-msgstr ""
+msgstr "खुला स्रोत"
 
 #: ../../05_node-guide/index.md:22
 msgid "The node is built and maintained in the open at Decentral-America/node-scala."
-msgstr ""
+msgstr "नोड बनाया गया है और विकेन्द्र-अमेरिका/node-scala पर खुला में बनाए रखा है।"
 
 #: ../../05_node-guide/index.md:34
 msgid "JVM-Based"
-msgstr ""
+msgstr "JVM आधारित"
 
 #: ../../05_node-guide/index.md:38
 msgid "Written in Scala, packaged as a runnable JAR or DEB."
-msgstr ""
+msgstr "स्कैला में लिखित, एक रनेबल JAR या DEB के रूप में पैक किया गया।"
 
 #: ../../05_node-guide/index.md:54
 msgid "Every node exposes an HTTP API compatible with the Dcc node API shape."
-msgstr ""
+msgstr "प्रत्येक नोड एक HTTP API को Dcc नोड API आकार के साथ संगत उजागर करता है।"
 
 #: ../../05_node-guide/index.md:66
 msgid "Mainnet & Testnet"
-msgstr ""
+msgstr "Mainnet & Testnet"
 
 #: ../../05_node-guide/index.md:70
 msgid "The same codebase builds packages for either network."
-msgstr ""
+msgstr "समान कोडबेस किसी भी नेटवर्क के लिए पैकेज बनाता है।"
 
 #: ../../05_node-guide/index.md:18
 msgid "Getting the Node"
-msgstr ""
+msgstr "नोड हो रही है"
 
 #: ../../05_node-guide/index.md:20
 msgid "The node implementation lives at [Decentral-America/node-scala](https://github.com/Decentral-America/node-scala), forked from Dcc 1.6.x. [Docker](04_install-docker) is the simplest way to run it; to install directly, see [Linux](12_install-linux), [macOS](13_install-macos) or [Windows](14_install-windows). All are written in Scala, built with SBT, and packaged from the same source for either network:"
-msgstr ""
+msgstr "नोड कार्यान्वयन [Decentral-America/node-scala](https://github.com/Decentral-America/node-scala) में रहता है, जो Dcc 1.6.x से जुड़ा हुआ है। [डोकर](04_install-docker) इसे चलाने का सबसे सरल तरीका है; सीधे स्थापित करने के लिए, [लिनक्स](12_install-linux), [macOS](13_install-macos) या [विंडोज](14_install-windows) देखें। सभी को स्कैला में लिखा जाता है, जिसे एसबीटी के साथ बनाया गया है और उसी स्रोत से नेटवर्क के लिए पैक किया गया है:"
 
 #: ../../05_node-guide/index.md:27
 msgid "To run a node on the public Testnet, use the Docker image with the configuration file in [Join the Public Testnet](15_join-testnet)."
-msgstr ""
+msgstr "सार्वजनिक Testnet पर एक नोड चलाने के लिए, [सार्वजनिक Testnet में शामिल हों](15_join-testnet) में कॉन्फ़िगरेशन फ़ाइल के साथ डोकर छवि का उपयोग करें।"
 
 #: ../../05_node-guide/index.md:31
 #, python-brace-format
 msgid "Network-specific defaults are defined in [`network-defaults.conf`](https://github.com/Decentral-America/node-scala/blob/main/node/src/main/resources/network-defaults.conf) in the node-scala repository. Pass your own config file (based on the mainnet/testnet template) as the argument to the JAR to override generating-node settings such as the {ref}`block reward vote <02_decentralchain/05_node:Voting>` and wallet seed."
-msgstr ""
+msgstr "नेटवर्क-विशिष्ट डिफ़ॉल्ट को नोड-स्लारा भंडार में [`network-defaults.conf`](https://github.com/Decentral-America/node-scala/blob/main/node/src/main/resources/network-defaults.conf) में परिभाषित किया गया है। अपने config फ़ाइल (मुख्यनेट/टेस्टनेट टेम्पलेट पर आधारित) को JAR के लिए {ref}`ब्लॉक रिवॉर्ड वोट <02_decentralchain/05_node:Voting>` और वॉलेट बीज जैसे उत्पन्न करने वाली नोड सेटिंग्स को ओवरराइड करने के लिए तर्क के रूप में पास करें।"
 
 #~ msgid "Disk (Mainnet, SSD)"
 #~ msgstr ""

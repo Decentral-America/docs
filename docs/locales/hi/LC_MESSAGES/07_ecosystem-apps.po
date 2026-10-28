@@ -21,245 +21,245 @@ msgstr ""
 
 #: ../../07_ecosystem-apps.md:4
 msgid "Ecosystem Apps"
-msgstr ""
+msgstr "इकोसिस्टम ऐप्स"
 
 #: ../../07_ecosystem-apps.md:6
 msgid "Tools and services built around DecentralChain. Each one runs separately per network: Mainnet holds real DCC, the public Testnet holds free test DCC with no value, and an address or transaction on one network doesn't exist on the other."
-msgstr ""
+msgstr "उपकरण और सेवाओं DecentralChain के आसपास बनाया। प्रत्येक एक अलग से नेटवर्क प्रति चलाता है: Mainnet वास्तविक DCC रखता है, जनता Testnet में मुफ्त परीक्षण DCC नहीं है और एक नेटवर्क पर एक पता या लेनदेन दूसरे पर मौजूद नहीं है।"
 
 #: ../../07_ecosystem-apps.md
 msgid "App"
-msgstr ""
+msgstr "ऐप"
 
 #: ../../07_ecosystem-apps.md
 msgid "Mainnet"
-msgstr ""
+msgstr "Mainnet"
 
 #: ../../07_ecosystem-apps.md
 msgid "Testnet"
-msgstr ""
+msgstr "Testnet"
 
 #: ../../07_ecosystem-apps.md ../../07_ecosystem-apps.md:20
 msgid "Decentral.Exchange"
-msgstr ""
+msgstr "Decentral.Exchange"
 
 #: ../../07_ecosystem-apps.md
 msgid "[decentral.exchange](https://decentral.exchange/)"
-msgstr ""
+msgstr "[decentral.exchange](https://decentral.exchange/)"
 
 #: ../../07_ecosystem-apps.md
 msgid "[testnet.decentral.exchange](https://testnet.decentral.exchange/)"
-msgstr ""
+msgstr "[testnet.decentral.exchange](https://testnet.decentral.exchange/)"
 
 #: ../../07_ecosystem-apps.md ../../07_ecosystem-apps.md:28
 msgid "DecentralScan"
-msgstr ""
+msgstr "DecentralScan"
 
 #: ../../07_ecosystem-apps.md
 msgid "[decentralscan.com](https://decentralscan.com/)"
-msgstr ""
+msgstr "[decentralscan.com](https://decentralscan.com/)"
 
 #: ../../07_ecosystem-apps.md
 msgid "[testnet.decentralscan.com](https://testnet.decentralscan.com/)"
-msgstr ""
+msgstr "[testnet.decentralscan.com](https://testnet.decentralscan.com/)"
 
 #: ../../07_ecosystem-apps.md
 msgid "Faucet"
-msgstr ""
+msgstr "नल"
 
 #: ../../07_ecosystem-apps.md
 msgid "None"
-msgstr ""
+msgstr "कोई नहीं"
 
 #: ../../07_ecosystem-apps.md
 msgid "[testnet.decentralscan.com/faucet](https://testnet.decentralscan.com/faucet)"
-msgstr ""
+msgstr "[testnet.decentralscan.com/faucet](https://testnet.decentralscan.com/faucet)"
 
 #: ../../07_ecosystem-apps.md ../../07_ecosystem-apps.md:46
 msgid "Cubensis Connect"
-msgstr ""
+msgstr "Cubensis Connect"
 
 #: ../../07_ecosystem-apps.md
 msgid "Browser extension, both networks"
-msgstr ""
+msgstr "ब्राउज़र एक्सटेंशन, दोनों नेटवर्क"
 
 #: ../../07_ecosystem-apps.md ../../07_ecosystem-apps.md:53
 msgid "Matcher"
-msgstr ""
+msgstr "मैचर"
 
 #: ../../07_ecosystem-apps.md
 msgid "Not available yet"
-msgstr ""
+msgstr "अभी तक उपलब्ध नहीं है"
 
 #: ../../07_ecosystem-apps.md
 msgid "`https://testnet-matcher.decentralchain.io`"
-msgstr ""
+msgstr "`https://testnet-matcher.decentralchain.io`"
 
 #: ../../07_ecosystem-apps.md ../../07_ecosystem-apps.md:61
 msgid "Data Service"
-msgstr ""
+msgstr "डेटा सेवा"
 
 #: ../../07_ecosystem-apps.md
 msgid "`https://data-service.decentralchain.io`"
-msgstr ""
+msgstr "`https://data-service.decentralchain.io`"
 
 #: ../../07_ecosystem-apps.md
 msgid "`https://testnet-data-service.decentralchain.io`"
-msgstr ""
+msgstr "`https://testnet-data-service.decentralchain.io`"
 
 #: ../../07_ecosystem-apps.md
 msgid "Public node"
-msgstr ""
+msgstr "सार्वजनिक नोड"
 
 #: ../../07_ecosystem-apps.md
 msgid "`https://mainnet-node.decentralchain.io`"
-msgstr ""
+msgstr "`https://mainnet-node.decentralchain.io`"
 
 #: ../../07_ecosystem-apps.md
 msgid "`https://testnet-node.decentralchain.io`"
-msgstr ""
+msgstr "`https://testnet-node.decentralchain.io`"
 
 #: ../../07_ecosystem-apps.md:18
 #, python-brace-format
 msgid "New here? The {doc}`Quick Start <09_user-guides/01_quick-start>` uses the faucet, a public node and DecentralScan to send a first Testnet transaction."
-msgstr ""
+msgstr "यहाँ नया? {doc}`क्विक स्टार्ट <09_user-guides/01_quick-start>` पहले Testnet लेनदेन भेजने के लिए नल, एक सार्वजनिक नोड और DecentralScan का उपयोग करता है।"
 
 #: ../../07_ecosystem-apps.md:22
 msgid "The web wallet and decentralized exchange. In a browser you can create or import an account, see your balances, send and receive DCC and tokens, lease DCC to a node, create aliases and trade token pairs. Your keys stay in your browser, and trades settle on the chain, so the exchange never holds your funds."
-msgstr ""
+msgstr "वेब वॉलेट और विकेन्द्रीकृत विनिमय। एक ब्राउज़र में आप खाता बना सकते हैं या आयात कर सकते हैं, अपनी शेष राशि देख सकते हैं, DCC और टोकन प्राप्त कर सकते हैं, DCC को नोड पर ले जाया करते हैं, उपनाम बना सकते हैं और व्यापार टोकन जोड़े बन सकते हैं। आपकी कुंजी आपके ब्राउज़र में रहती है, और व्यापार श्रृंखला पर बसते हैं, इसलिए विनिमय कभी भी आपका धन नहीं रखता है।"
 
 #: ../../07_ecosystem-apps.md:24
 msgid "**Mainnet:** [decentral.exchange](https://decentral.exchange/)"
-msgstr ""
+msgstr "**Mainnet:** [decentral.exchange](https://decentral.exchange/)"
 
 #: ../../07_ecosystem-apps.md:25
 msgid "**Testnet:** [testnet.decentral.exchange](https://testnet.decentral.exchange/)"
-msgstr ""
+msgstr "**Testnet:** [testnet.decentral.exchange](https://testnet.decentral.exchange/)"
 
 #: ../../07_ecosystem-apps.md:26
 #, python-brace-format
 msgid "**Guides:** {doc}`Leasing <09_user-guides/04_leasing>` shows the wallet's leasing screen. Trading needs a matcher, and the public matcher runs on the Testnet only for now."
-msgstr ""
+msgstr "**गाइड:** {doc}`लीजिंग <09_user-guides/04_leasing>` वॉलेट की लीजिंग स्क्रीन को दर्शाता है। ट्रेडिंग को एक मैचर की जरूरत होती है, और सार्वजनिक मैचर केवल Testnet पर चलता है।"
 
 #: ../../07_ecosystem-apps.md:30
 msgid "The block explorer. It shows every block, transaction, address and token, the trading pairs on the matcher, and the state of the network and its peers. You don't need an account to use it."
-msgstr ""
+msgstr "ब्लॉक एक्सप्लोरर। यह प्रत्येक ब्लॉक, लेनदेन, पता और टोकन को दर्शाता है, व्यापारी पर व्यापारिक जोड़े, और नेटवर्क और उसके साथियों की स्थिति। आपको इसका उपयोग करने के लिए किसी खाता की आवश्यकता नहीं है।"
 
 #: ../../07_ecosystem-apps.md:32
 msgid "**Mainnet:** [decentralscan.com](https://decentralscan.com/)"
-msgstr ""
+msgstr "**Mainnet:** [decentralscan.com](https://decentralscan.com/)"
 
 #: ../../07_ecosystem-apps.md:33
 msgid "**Testnet:** [testnet.decentralscan.com](https://testnet.decentralscan.com/)"
-msgstr ""
+msgstr "**Testnet:** [testnet.decentralscan.com](https://testnet.decentralscan.com/)"
 
 #: ../../07_ecosystem-apps.md:34
 #, python-brace-format
 msgid "**Guide:** {doc}`DecentralScan Guide <09_user-guides/03_decentralscan>`: search, each page, and direct links to transactions and addresses."
-msgstr ""
+msgstr "**गाइड:** {doc}`DecentralScan गाइड <09_user-guides/03_decentralscan>`: खोज, प्रत्येक पृष्ठ और लेनदेन और पते के लिए सीधा लिंक।"
 
 #: ../../07_ecosystem-apps.md:36
 msgid "Testnet Faucet"
-msgstr ""
+msgstr "Testnet नल"
 
 #: ../../07_ecosystem-apps.md:38
 #, python-brace-format
 msgid "Free Testnet DCC for development and testing: 10 DCC per address, once every 24 hours. Use it with a Testnet address (chain ID `!`, addresses starting with `31`), as described in {ref}`Mainnet, Testnet <02_decentralchain/08_mainnet-testnet-stagenet:Network Parameters>`."
-msgstr ""
+msgstr "विकास और परीक्षण के लिए नि: शुल्क Testnet DCC: प्रति पता 10 DCC, हर 24 घंटे में एक बार। इसे Testnet पते (चेन ID `!`, `31`) से शुरू होने वाले पते के साथ प्रयोग करें, जैसा कि {ref}`Mainnet, Testnet <02_decentralchain/08_mainnet-testnet-stagenet:Network Parameters>` में वर्णित है।"
 
 #: ../../07_ecosystem-apps.md:40
 msgid "**Web page:** [testnet.decentralscan.com/faucet](https://testnet.decentralscan.com/faucet)"
-msgstr ""
+msgstr "**वेब पेज:** [testnet.decentralscan.com/faucet](https://testnet.decentralscan.com/faucet)"
 
 #: ../../07_ecosystem-apps.md:41
 #, python-brace-format
 msgid "**API:** `POST https://testnet.decentralscan.com/api/faucet` with `{\"address\": \"<Testnet address>\"}`. It returns the transfer's `txId`, `429` if the address already received DCC in the last 24 hours, and `400` for an address of another network."
-msgstr ""
+msgstr "`{\"address\": \"<Testnet address>\"}` के साथ **एपीआई:** `POST https://testnet.decentralscan.com/api/faucet`। यह हस्तांतरण के `txId`, `429` लौटाता है यदि पिछले 24 घंटों में पहले से ही पता DCC प्राप्त हुआ और `400` को किसी अन्य नेटवर्क के पते के लिए।"
 
 #: ../../07_ecosystem-apps.md:42
 #, python-brace-format
 msgid "**Guide:** {ref}`Quick Start, Step 3 <09_user-guides/01_quick-start:Step 3: Get Testnet DCC>`."
-msgstr ""
+msgstr "**गाइड:** {ref}`क्विक स्टार्ट, स्टेप 3 <09_user-guides/01_quick-start:Step 3: Get Testnet DCC>`."
 
 #: ../../07_ecosystem-apps.md:44
 msgid "There is no Mainnet faucet."
-msgstr ""
+msgstr "कोई Mainnet नल नहीं है।"
 
 #: ../../07_ecosystem-apps.md:48
 msgid "The browser-extension wallet. It keeps your keys encrypted in the extension and lets dApps ask for signatures without ever seeing a seed phrase. It works on Mainnet, Testnet and a custom network you choose. It is not in the browser extension stores yet, so you build it from the [DecentralChain repository](https://github.com/Decentral-America/DecentralChain/tree/main/apps/cubensis-connect)."
-msgstr ""
+msgstr "ब्राउज़र एक्सटेंशन वॉलेट। यह एक्सटेंशन में एन्क्रिप्टेड आपकी कुंजी रखता है और dApps को बीज वाक्यांश देखने के बिना हस्ताक्षरों के लिए पूछता है। यह Mainnet, Testnet और आपके द्वारा चुनी गई एक कस्टम नेटवर्क पर काम करता है। यह अभी तक ब्राउज़र एक्सटेंशन स्टोर में नहीं है, इसलिए आप इसे [DecentralChain भंडार](https://github.com/Decentral-America/DecentralChain/tree/main/apps/cubensis-connect) से बना सकते हैं।"
 
 #: ../../07_ecosystem-apps.md:50
 #, python-brace-format
 msgid "**Guide for users:** {doc}`Cubensis Connect User Guide <09_user-guides/02_cubensis-connect>`: install, create an account, switch networks and approve requests."
-msgstr ""
+msgstr "**उपयोगकर्ताओं के लिए गाइड:** {doc}`Cubensis Connect उपयोगकर्ता गाइड <09_user-guides/02_cubensis-connect>`: स्थापित करें, एक खाता बनाएं, नेटवर्क स्विच करें और अनुरोधों को मंजूरी दें।"
 
 #: ../../07_ecosystem-apps.md:51
 #, python-brace-format
 msgid "**Guide for developers:** {doc}`Wallet Integration <04_building-apps/04_wallet-integration>`: connect a dApp to it."
-msgstr ""
+msgstr "**डेवलपर्स के लिए गाइड:** {doc}`वॉलेट एकीकरण <04_building-apps/04_wallet-integration>`: इसे dApp कनेक्ट करें।"
 
 #: ../../07_ecosystem-apps.md:55
 msgid "The order-matching service behind Decentral.Exchange. It takes signed buy and sell orders, matches them and settles each trade on the chain as an Exchange transaction."
-msgstr ""
+msgstr "Decentral.Exchange के पीछे ऑर्डर-मैचिंग सेवा। यह हस्ताक्षरित खरीद और बेचने के आदेश लेता है, उन्हें मैच करता है और एक एक्सचेंज लेनदेन के रूप में श्रृंखला पर प्रत्येक व्यापार को व्यवस्थित करता है।"
 
 #: ../../07_ecosystem-apps.md:57
 msgid "**Mainnet:** not available yet."
-msgstr ""
+msgstr "**Mainnet:** अभी तक उपलब्ध नहीं है।"
 
 #: ../../07_ecosystem-apps.md:58
 msgid "**Testnet:** `https://testnet-matcher.decentralchain.io`, with an OpenAPI reference at [`/api-docs/index.html`](https://testnet-matcher.decentralchain.io/api-docs/index.html)."
-msgstr ""
+msgstr "**Testnet:** `https://testnet-matcher.decentralchain.io`, [`/api-docs/index.html`](https://testnet-matcher.decentralchain.io/api-docs/index.html) पर OpenAPI संदर्भ के साथ।"
 
 #: ../../07_ecosystem-apps.md:59
 #, python-brace-format
 msgid "**Guide:** {doc}`Matcher API <04_building-apps/12_matcher-api>`: markets, placing and cancelling orders, and order history."
-msgstr ""
+msgstr "**गाइड:** {doc}`मैचर एपीआई <04_building-apps/12_matcher-api>`: बाजारों, ऑर्डर देने और रद्द करने का आदेश, और ऑर्डर इतिहास।"
 
 #: ../../07_ecosystem-apps.md:63
 msgid "An indexed API over the chain's history: asset search, transaction history by type and DEX candles and trades, which a node's REST API doesn't index."
-msgstr ""
+msgstr "श्रृंखला के इतिहास में एक अनुक्रमित एपीआई: परिसंपत्ति खोज, प्रकार और DEX मोमबत्तियों और ट्रेडों द्वारा लेनदेन का इतिहास, जो एक नोड का REST API सूचकांक नहीं करता है।"
 
 #: ../../07_ecosystem-apps.md:65
 msgid "**Mainnet:** `https://data-service.decentralchain.io`"
-msgstr ""
+msgstr "**Mainnet:** `https://data-service.decentralchain.io`"
 
 #: ../../07_ecosystem-apps.md:66
 msgid "**Testnet:** `https://testnet-data-service.decentralchain.io`"
-msgstr ""
+msgstr "**Testnet:** `https://testnet-data-service.decentralchain.io`"
 
 #: ../../07_ecosystem-apps.md:67
 #, python-brace-format
 msgid "**Guide:** {doc}`Data Service API <04_building-apps/06_data-service-api>`."
-msgstr ""
+msgstr "**गाइड:** {doc}`डेटा सेवा एपीआई <04_building-apps/06_data-service-api>`."
 
 #: ../../07_ecosystem-apps.md:69
 msgid "Public Nodes"
-msgstr ""
+msgstr "सार्वजनिक नोड"
 
 #: ../../07_ecosystem-apps.md:71
 msgid "Nodes run for anyone to read chain state and broadcast signed transactions. Use them for development and light use; run your own node for production traffic."
-msgstr ""
+msgstr "नोड्स किसी के लिए चेन स्टेट और प्रसारण हस्ताक्षरित लेनदेन पढ़ने के लिए चलाते हैं। उन्हें विकास और प्रकाश उपयोग के लिए प्रयोग करें; उत्पादन यातायात के लिए अपना खुद का नोड चलाएं।"
 
 #: ../../07_ecosystem-apps.md:73
 msgid "**Mainnet:** `https://mainnet-node.decentralchain.io`"
-msgstr ""
+msgstr "**Mainnet:** `https://mainnet-node.decentralchain.io`"
 
 #: ../../07_ecosystem-apps.md:74
 msgid "**Testnet:** `https://testnet-node.decentralchain.io`"
-msgstr ""
+msgstr "**Testnet:** `https://testnet-node.decentralchain.io`"
 
 #: ../../07_ecosystem-apps.md:75
 #, python-brace-format
 msgid "**Guides:** {doc}`Node REST API <05_node-guide/01_node-rest-api>`, and the {doc}`Node Guide <05_node-guide/index>` to run your own."
-msgstr ""
+msgstr "**गाइड:** {doc}`नोड REST एपीआई <05_node-guide/01_node-rest-api>`, और {doc}`नोड गाइड <05_node-guide/index>` अपने आप को चलाने के लिए।"
 
 #: ../../07_ecosystem-apps.md:77
 msgid "Ride Tooling"
-msgstr ""
+msgstr "Ride टूलींग"
 
 #: ../../07_ecosystem-apps.md:79
 #, python-brace-format
 msgid "No browser IDE for Ride is hosted at the moment. To write and test Ride, use the {doc}`Ride REPL <04_building-apps/developer-tools/01_ride-repl>` and a node's compiler endpoints; see {doc}`Developer Tools <04_building-apps/01_developer-tools>`."
-msgstr ""
+msgstr "Ride के लिए कोई ब्राउजर आईडीई नहीं है। Ride को लिखने और परीक्षण करने के लिए, {doc}`Ride REPL <04_building-apps/developer-tools/01_ride-repl>` और नोड्स की कम्पाइलर समापन बिंदुओं का उपयोग करें; {doc}`डेवलपर उपकरण <04_building-apps/01_developer-tools>` देखें।"
 

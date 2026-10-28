@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: DecentralChain docs VERSION\n"
 "Report-Msgid-Bugs-To: https://github.com/Decentral-America/docs/issues\n"
-"POT-Creation-Date: 2026-10-28 01:36-0600\n"
+"POT-Creation-Date: 2026-10-28 03:11-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -7273,7 +7273,7 @@ msgid "BinaryEntry"
 msgstr ""
 
 #: ../../03_ride-language/05_structures.rst:31
-msgid "BinaryEntry is a structure that sets key and value of binary entry :ref:`account data storage <02_decentralchain/01_account:Account Data Storage>`. Adding or changing an entry is performed only if the structure is included in the :ref:`callable function result <03_ride-language/03_functions:Callable Functions>`>`."
+msgid "BinaryEntry is a structure that sets key and value of binary entry :ref:`account data storage <02_decentralchain/01_account:Account Data Storage>`. Adding or changing an entry is performed only if the structure is included in the :ref:`callable function result <03_ride-language/03_functions:Callable Functions>`."
 msgstr ""
 
 #: ../../03_ride-language/05_structures.rst:33
@@ -7439,7 +7439,7 @@ msgid "BooleanEntry"
 msgstr ""
 
 #: ../../03_ride-language/05_structures.rst:50
-msgid "BooleanEntry is a structure that sets the key and value of the :ref:`account data storage <02_decentralchain/01_account:Account Data Storage>` boolean entry. Adding or changing an entry is performed only if the structure is included in the :ref:`callable function result <03_ride-language/03_functions:Callable Functions>`>`."
+msgid "BooleanEntry is a structure that sets the key and value of the :ref:`account data storage <02_decentralchain/01_account:Account Data Storage>` boolean entry. Adding or changing an entry is performed only if the structure is included in the :ref:`callable function result <03_ride-language/03_functions:Callable Functions>`."
 msgstr ""
 
 #: ../../03_ride-language/05_structures.rst:60
@@ -7456,7 +7456,7 @@ msgid "Burn"
 msgstr ""
 
 #: ../../03_ride-language/05_structures.rst:69
-msgid "Burn is a structure that sets the parameters of the token burning. The token burning is performed only if the structure is included in the :ref:`callable function result <03_ride-language/03_functions:Callable Functions>`>`. If the token is a smart asset, the asset script verifies the Burn action as if it were :ref:`BurnTransaction <03_ride-language/05_structures:BurnTransaction>` with the fee of :math:`0` and the version of :math:`0`. If the asset script denies the action, then the transaction that invoked the dApp script is either denied or saved on the blockchain as failed, see the :ref:`transaction validation <02_decentralchain/03_transaction:Transaction Validation>`."
+msgid "Burn is a structure that sets the parameters of the token burning. The token burning is performed only if the structure is included in the :ref:`callable function result <03_ride-language/03_functions:Callable Functions>`. If the token is a smart asset, the asset script verifies the Burn action as if it were :ref:`BurnTransaction <03_ride-language/05_structures:BurnTransaction>` with the fee of :math:`0` and the version of :math:`0`. If the asset script denies the action, then the transaction that invoked the dApp script is either denied or saved on the blockchain as failed, see the :ref:`transaction validation <02_decentralchain/03_transaction:Transaction Validation>`."
 msgstr ""
 
 #: ../../03_ride-language/05_structures.rst:80
@@ -7501,7 +7501,7 @@ msgid "DeleteEntry"
 msgstr ""
 
 #: ../../03_ride-language/05_structures.rst:89
-msgid "DeleteEntry is a structure that sets the parameters of deletion of entry from the :ref:`account data storage <02_decentralchain/01_account:Account Data Storage>`. Deleting an entry is performed only if the structure is included in the :ref:`callable function result <03_ride-language/03_functions:Callable Functions>`>`."
+msgid "DeleteEntry is a structure that sets the parameters of deletion of entry from the :ref:`account data storage <02_decentralchain/01_account:Account Data Storage>`. Deleting an entry is performed only if the structure is included in the :ref:`callable function result <03_ride-language/03_functions:Callable Functions>`."
 msgstr ""
 
 #: ../../03_ride-language/05_structures.rst:99
@@ -7513,7 +7513,7 @@ msgid "IntegerEntry"
 msgstr ""
 
 #: ../../03_ride-language/05_structures.rst:125
-msgid "IntegerEntry is a structure that sets the key and value of :ref:`account data storage <02_decentralchain/01_account:Account Data Storage>` integer entry. Adding or changing an entry is performed only if the structure is included in the :ref:`callable function result <03_ride-language/03_functions:Callable Functions>`>`."
+msgid "IntegerEntry is a structure that sets the key and value of :ref:`account data storage <02_decentralchain/01_account:Account Data Storage>` integer entry. Adding or changing an entry is performed only if the structure is included in the :ref:`callable function result <03_ride-language/03_functions:Callable Functions>`."
 msgstr ""
 
 #: ../../03_ride-language/05_structures.rst:135
@@ -7525,7 +7525,7 @@ msgid "Issue"
 msgstr ""
 
 #: ../../03_ride-language/05_structures.rst:144
-msgid "Issue is a structure that sets the parameters of the token issue. The token issue is performed only if the structure is included in the :ref:`callable function result <03_ride-language/03_functions:Callable Functions>`>`. The minimum fee for an invoke script transaction is increased by :math:`1` DecentralCoin for each issued asset that is not :ref:`NFT <02_decentralchain/02_token(asset):Non-Fungible Token>`. You can get the ID of the issued token using the :ref:`calculateAssetId <03_ride-language/03_functions:Blockchain Functions>` function."
+msgid "Issue is a structure that sets the parameters of the token issue. The token issue is performed only if the structure is included in the :ref:`callable function result <03_ride-language/03_functions:Callable Functions>`. The minimum fee for an invoke script transaction is increased by :math:`1` DecentralCoin for each issued asset that is not :ref:`NFT <02_decentralchain/02_token(asset):Non-Fungible Token>`. You can get the ID of the issued token using the :ref:`calculateAssetId <03_ride-language/03_functions:Blockchain Functions>` function."
 msgstr ""
 
 #: ../../03_ride-language/05_structures.rst:154
@@ -7666,7 +7666,7 @@ msgid "Reissue ability: no"
 msgstr ""
 
 #: ../../03_ride-language/05_structures.rst:215
-msgid "Lease is a structure that sets the lease parameters. The lease is performed only if the structure is included in the :ref:`callable function result <03_ride-language/03_functions:Callable Functions>`>`. More about :ref:`lease <02_decentralchain/05_node:Leased Proof of Stake>`. You can get the lease ID using the :ref:`calculateLeaseId <03_ride-language/03_functions:Blockchain Functions>` function."
+msgid "Lease is a structure that sets the lease parameters. The lease is performed only if the structure is included in the :ref:`callable function result <03_ride-language/03_functions:Callable Functions>`. More about :ref:`lease <02_decentralchain/05_node:Leased Proof of Stake>`. You can get the lease ID using the :ref:`calculateLeaseId <03_ride-language/03_functions:Blockchain Functions>` function."
 msgstr ""
 
 #: ../../03_ride-language/05_structures.rst:230
@@ -7726,7 +7726,7 @@ msgid "LeaseCancel"
 msgstr ""
 
 #: ../../03_ride-language/05_structures.rst:264
-msgid "LeaseCancel is a structure that sets the lease cancellation parameters. The lease cancellation is performed only if the structure is included in the :ref:`callable function result <03_ride-language/03_functions:Callable Functions>`>`."
+msgid "LeaseCancel is a structure that sets the lease cancellation parameters. The lease cancellation is performed only if the structure is included in the :ref:`callable function result <03_ride-language/03_functions:Callable Functions>`."
 msgstr ""
 
 #: ../../03_ride-language/05_structures.rst:275
@@ -7747,7 +7747,7 @@ msgid "Reissue"
 msgstr ""
 
 #: ../../03_ride-language/05_structures.rst:284
-msgid "Reissue is a structure that sets the parameters of the token reissue. The token reissue is performed only if the structure is included in the :ref:`callable function result <03_ride-language/03_functions:Callable Functions>`>`. The token reissue is only available for an asset that is issued by a dApp account. If the token is a smart asset, the asset script verifies the Reissue action as if it were :ref:`ReissueTransaction <03_ride-language/05_structures:ReissueTransaction>` with the fee of 0 and the version of 0. If the asset script denies the action, then the transaction that invoked the dApp script is either denied or saved on the blockchain as failed, see the :ref:`transaction validation <02_decentralchain/03_transaction:Transaction Validation>`."
+msgid "Reissue is a structure that sets the parameters of the token reissue. The token reissue is performed only if the structure is included in the :ref:`callable function result <03_ride-language/03_functions:Callable Functions>`. The token reissue is only available for an asset that is issued by a dApp account. If the token is a smart asset, the asset script verifies the Reissue action as if it were :ref:`ReissueTransaction <03_ride-language/05_structures:ReissueTransaction>` with the fee of 0 and the version of 0. If the asset script denies the action, then the transaction that invoked the dApp script is either denied or saved on the blockchain as failed, see the :ref:`transaction validation <02_decentralchain/03_transaction:Transaction Validation>`."
 msgstr ""
 
 #: ../../03_ride-language/05_structures.rst:296
@@ -7768,7 +7768,7 @@ msgid "ScriptTransfer"
 msgstr ""
 
 #: ../../03_ride-language/05_structures.rst:305
-msgid "ScriptTransfer is a structure that sets the parameters of the token transfer. The token transfer is performed only if the structure is included in the :ref:`callable function result <03_ride-language/03_functions:Callable Functions>`>`. If the token is a smart asset, the asset script verifies the ScriptTransfer action as if it were :ref:`TransferTransaction <03_ride-language/05_structures:TransferTransaction>` with the fee of :math:`0` and the version of :math:`0`. If the asset script denies the action, then the transaction that invoked the dApp script is either denied or saved on the blockchain as failed, see the :ref:`transaction validation <02_decentralchain/03_transaction:Transaction Validation>`."
+msgid "ScriptTransfer is a structure that sets the parameters of the token transfer. The token transfer is performed only if the structure is included in the :ref:`callable function result <03_ride-language/03_functions:Callable Functions>`. If the token is a smart asset, the asset script verifies the ScriptTransfer action as if it were :ref:`TransferTransaction <03_ride-language/05_structures:TransferTransaction>` with the fee of :math:`0` and the version of :math:`0`. If the asset script denies the action, then the transaction that invoked the dApp script is either denied or saved on the blockchain as failed, see the :ref:`transaction validation <02_decentralchain/03_transaction:Transaction Validation>`."
 msgstr ""
 
 #: ../../03_ride-language/05_structures.rst:316
@@ -7844,7 +7844,7 @@ msgid "StringEntry"
 msgstr ""
 
 #: ../../03_ride-language/05_structures.rst:368
-msgid "StringEntry is a structure that sets key and value of :ref:`account data storage <02_decentralchain/01_account:Account Data Storage>` string entry. Adding or changing an entry is performed only if the structure is included in the :ref:`callable function result <03_ride-language/03_functions:Callable Functions>`>`."
+msgid "StringEntry is a structure that sets key and value of :ref:`account data storage <02_decentralchain/01_account:Account Data Storage>` string entry. Adding or changing an entry is performed only if the structure is included in the :ref:`callable function result <03_ride-language/03_functions:Callable Functions>`."
 msgstr ""
 
 #: ../../03_ride-language/05_structures.rst:378
@@ -15034,5 +15034,38 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "This table only includes functions whose cost is set directly with a string literal name — `NativeFunction(\"name\", Map(...), ...)`. Some costs are set through a helper (for example the BigInt arithmetic operators `+`, `*`, `/`, `%`, all `V5 -> 8L`/`V5 -> 64L`, stepping to `1L` at V8, defined via a shared `bigIntArithmeticOp` helper) and aren't captured here, since attributing them correctly would mean guessing at the helper's argument order rather than reading it off a literal. Treat this page as a documented lower bound on what changed, not an exhaustive list — the {doc}`Standard Library Versions <08_stdlib-versions>` page covers every genuinely *new* function and structure field, which this page does not repeat."
+#~ msgstr ""
+
+#~ msgid "BinaryEntry is a structure that sets key and value of binary entry :ref:`account data storage <02_decentralchain/01_account:Account Data Storage>`. Adding or changing an entry is performed only if the structure is included in the :ref:`callable function result <03_ride-language/03_functions:Callable Functions>`>`."
+#~ msgstr ""
+
+#~ msgid "BooleanEntry is a structure that sets the key and value of the :ref:`account data storage <02_decentralchain/01_account:Account Data Storage>` boolean entry. Adding or changing an entry is performed only if the structure is included in the :ref:`callable function result <03_ride-language/03_functions:Callable Functions>`>`."
+#~ msgstr ""
+
+#~ msgid "Burn is a structure that sets the parameters of the token burning. The token burning is performed only if the structure is included in the :ref:`callable function result <03_ride-language/03_functions:Callable Functions>`>`. If the token is a smart asset, the asset script verifies the Burn action as if it were :ref:`BurnTransaction <03_ride-language/05_structures:BurnTransaction>` with the fee of :math:`0` and the version of :math:`0`. If the asset script denies the action, then the transaction that invoked the dApp script is either denied or saved on the blockchain as failed, see the :ref:`transaction validation <02_decentralchain/03_transaction:Transaction Validation>`."
+#~ msgstr ""
+
+#~ msgid "DeleteEntry is a structure that sets the parameters of deletion of entry from the :ref:`account data storage <02_decentralchain/01_account:Account Data Storage>`. Deleting an entry is performed only if the structure is included in the :ref:`callable function result <03_ride-language/03_functions:Callable Functions>`>`."
+#~ msgstr ""
+
+#~ msgid "IntegerEntry is a structure that sets the key and value of :ref:`account data storage <02_decentralchain/01_account:Account Data Storage>` integer entry. Adding or changing an entry is performed only if the structure is included in the :ref:`callable function result <03_ride-language/03_functions:Callable Functions>`>`."
+#~ msgstr ""
+
+#~ msgid "Issue is a structure that sets the parameters of the token issue. The token issue is performed only if the structure is included in the :ref:`callable function result <03_ride-language/03_functions:Callable Functions>`>`. The minimum fee for an invoke script transaction is increased by :math:`1` DecentralCoin for each issued asset that is not :ref:`NFT <02_decentralchain/02_token(asset):Non-Fungible Token>`. You can get the ID of the issued token using the :ref:`calculateAssetId <03_ride-language/03_functions:Blockchain Functions>` function."
+#~ msgstr ""
+
+#~ msgid "Lease is a structure that sets the lease parameters. The lease is performed only if the structure is included in the :ref:`callable function result <03_ride-language/03_functions:Callable Functions>`>`. More about :ref:`lease <02_decentralchain/05_node:Leased Proof of Stake>`. You can get the lease ID using the :ref:`calculateLeaseId <03_ride-language/03_functions:Blockchain Functions>` function."
+#~ msgstr ""
+
+#~ msgid "LeaseCancel is a structure that sets the lease cancellation parameters. The lease cancellation is performed only if the structure is included in the :ref:`callable function result <03_ride-language/03_functions:Callable Functions>`>`."
+#~ msgstr ""
+
+#~ msgid "Reissue is a structure that sets the parameters of the token reissue. The token reissue is performed only if the structure is included in the :ref:`callable function result <03_ride-language/03_functions:Callable Functions>`>`. The token reissue is only available for an asset that is issued by a dApp account. If the token is a smart asset, the asset script verifies the Reissue action as if it were :ref:`ReissueTransaction <03_ride-language/05_structures:ReissueTransaction>` with the fee of 0 and the version of 0. If the asset script denies the action, then the transaction that invoked the dApp script is either denied or saved on the blockchain as failed, see the :ref:`transaction validation <02_decentralchain/03_transaction:Transaction Validation>`."
+#~ msgstr ""
+
+#~ msgid "ScriptTransfer is a structure that sets the parameters of the token transfer. The token transfer is performed only if the structure is included in the :ref:`callable function result <03_ride-language/03_functions:Callable Functions>`>`. If the token is a smart asset, the asset script verifies the ScriptTransfer action as if it were :ref:`TransferTransaction <03_ride-language/05_structures:TransferTransaction>` with the fee of :math:`0` and the version of :math:`0`. If the asset script denies the action, then the transaction that invoked the dApp script is either denied or saved on the blockchain as failed, see the :ref:`transaction validation <02_decentralchain/03_transaction:Transaction Validation>`."
+#~ msgstr ""
+
+#~ msgid "StringEntry is a structure that sets key and value of :ref:`account data storage <02_decentralchain/01_account:Account Data Storage>` string entry. Adding or changing an entry is performed only if the structure is included in the :ref:`callable function result <03_ride-language/03_functions:Callable Functions>`>`."
 #~ msgstr ""
 

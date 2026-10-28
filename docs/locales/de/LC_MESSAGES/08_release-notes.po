@@ -21,276 +21,276 @@ msgstr ""
 
 #: ../../08_release-notes.md:5
 msgid "Release Notes"
-msgstr ""
+msgstr "Release Notes"
 
 #: ../../08_release-notes.md:7
 msgid "Full release history: [node-scala releases](https://github.com/Decentral-America/node-scala/releases) and the [SDK changelogs](https://github.com/Decentral-America/DecentralChain/tree/main/packages/sdk) (one `CHANGELOG.md` per package)."
-msgstr ""
+msgstr "Vollständige Release-Historie: [node-scala Releases](https://github.com/Decentral-America/node-scala/releases) und das [SDK Changelogs](https://github.com/Decentral-America/DecentralChain/tree/main/packages/sdk) (ein `CHANGELOG.md` pro Paket)."
 
 #: ../../08_release-notes.md:9
 msgid "Which Version Runs Where"
-msgstr ""
+msgstr "Welche Version läuft wo"
 
 #: ../../08_release-notes.md
 msgid "Network"
-msgstr ""
+msgstr "Netz"
 
 #: ../../08_release-notes.md
 msgid "Node version"
-msgstr ""
+msgstr "Node Version"
 
 #: ../../08_release-notes.md
 msgid "Check it with"
-msgstr ""
+msgstr "Überprüfen Sie es mit"
 
 #: ../../08_release-notes.md
 msgid "Public Testnet"
-msgstr ""
+msgstr "Öffentliches Testnet"
 
 #: ../../08_release-notes.md
 msgid "node-scala v1.8.1"
-msgstr ""
+msgstr "node-scala v1.8.1"
 
 #: ../../08_release-notes.md
 msgid "`GET https://testnet-node.decentralchain.io/node/version`"
-msgstr ""
+msgstr "`GET https://testnet-node.decentralchain.io/node/version`"
 
 #: ../../08_release-notes.md
 msgid "Mainnet"
-msgstr ""
+msgstr "Mainnet"
 
 #: ../../08_release-notes.md
 msgid "An earlier release (the public node reports `DCC v1.3.5`)"
-msgstr ""
+msgstr "Ein früheres Release (der öffentliche Knoten meldet `DCC v1.3.5`)"
 
 #: ../../08_release-notes.md
 msgid "`GET https://mainnet-node.decentralchain.io/node/version`"
-msgstr ""
+msgstr "`GET https://mainnet-node.decentralchain.io/node/version`"
 
 #: ../../08_release-notes.md:16
 #, python-brace-format
 msgid "Node images are published to `ghcr.io/decentral-america/node-scala` with one tag per release (`1.8.1`, `1.8.0`) and per network (`testnet-latest`, `mainnet-latest`). See {doc}`Install with Docker <05_node-guide/04_install-docker>` and {doc}`Upgrade <05_node-guide/07_upgrade>`."
-msgstr ""
+msgstr "Knotenbilder werden mit einem Tag pro Release (`1.8.1`, `1.8.0`) und pro Netzwerk (`testnet-latest`, `mainnet-latest`) in `ghcr.io/decentral-america/node-scala` veröffentlicht. Siehe {doc}`Installieren mit Docker <05_node-guide/04_install-docker>` und {doc}`Upgrade <05_node-guide/07_upgrade>`."
 
 #: ../../08_release-notes.md:18
 msgid "Node v1.8.1 (2026-10-24)"
-msgstr ""
+msgstr "Node v1.8.1 (2026-10-24)"
 
 #: ../../08_release-notes.md:20
 msgid "A maintenance release with no change to consensus, the REST API or Ride. The public Testnet runs it."
-msgstr ""
+msgstr "Eine Wartungsversion ohne Änderung des Konsenses, der REST API oder Ride. Das öffentliche Testnet betreibt es."
 
 #: ../../08_release-notes.md:22
 msgid "**Dependencies.** groth16 0.2.1.2 and curve25519 1.0.1, both sha256-pinned."
-msgstr ""
+msgstr "**Abhängigkeiten.** groth16 0.2.1.2 und curve25519 1.0.1, beide sha256-pinned."
 
 #: ../../08_release-notes.md:23
 msgid "**Licensing.** A third-party notice for the GPL-3.0 dependency."
-msgstr ""
+msgstr "**Lizenzierung.** Ein Hinweis Dritter für die GPL-3.0 Abhängigkeit."
 
 #: ../../08_release-notes.md:24
 msgid "**Blockchain Updates.** The gRPC bind address of the Blockchain Updates extension is configurable."
-msgstr ""
+msgstr "**Blockchain Updates.** Die gRPC-Bind-Adresse der Blockchain Updates-Erweiterung ist konfigurierbar."
 
 #: ../../08_release-notes.md:25
 msgid "README and comment fixes."
-msgstr ""
+msgstr "README und Kommentarfixes."
 
 #: ../../08_release-notes.md:27
 msgid "Source: the [v1.8.1 release](https://github.com/Decentral-America/node-scala/releases/tag/v1.8.1)."
-msgstr ""
+msgstr "Quelle: [v1.8.1 Freigabe](https://github.com/Decentral-America/node-scala/releases/tag/v1.8.1)."
 
 #: ../../08_release-notes.md:29
 msgid "Node v1.8.0 (2026-10-19)"
-msgstr ""
+msgstr "Node v1.8.0 (2026-10-19)"
 
 #: ../../08_release-notes.md:31
 msgid "The first release after v1.7.0: consensus and build hardening, plus the work merged since July. Every node on a chain must run it before the chain reaches its `finality-hardening-height`. On the public Testnet that was height 90,000, already passed."
-msgstr ""
+msgstr "Die erste Veröffentlichung nach v1.7.0: Konsensus und Build-Härtung, plus die Arbeit seit Juli zusammengeführt. Jeder Knoten einer Kette muss ihn ausführen, bevor die Kette ihren `finality-hardening-height` erreicht. Auf der öffentlichen Testnet, die Höhe 90.000 war, bereits übergeben."
 
 #: ../../08_release-notes.md:33
 #, python-brace-format
 msgid "**Block reward.** Feature 26, Adjusted Block Reward Distribution, is votable from this release (activated on the public Testnet). Continuation transaction and Lease expiration are renumbered to 27 and 28; see {doc}`Features and Activation <05_node-guide/10_features-and-activation>`."
-msgstr ""
+msgstr "**Blockbelohnung.** Feature 26, Adjusted Block Reward Distribution, ist ab diesem Release votable (aktiviert auf dem öffentlichen Testnet). Fortsetzungstransaktion und Leasingverfall werden zu 27 und 28 umnummeriert; siehe {doc}`Features und Aktivierung <05_node-guide/10_features-and-activation>`."
 
 #: ../../08_release-notes.md:34
 msgid "**Finality.** HotStuff can be made authoritative on a network that opts in (`dcc.hotstuff.authoritative`; the public Testnet does). Equivocating HotStuff voters forfeit their generation deposit from `functionality.hot-stuff-equivocation-penalty-height`. A lagging HotStuff replica re-anchors near the tip (`dcc.hotstuff.max-target-lag-fraction`)."
-msgstr ""
+msgstr "**Endgültigkeit.** HotStuff kann in einem Netzwerk, das sich dafür entscheidet, autoritativ gemacht werden (`dcc.hotstuff.authoritative`; das öffentliche Testnet tut es). HotStuff-Wähler verlieren ihre Generationeneinlage von `functionality.hot-stuff-equivocation-penalty-height`. Eine nacheilende HotStuff-Replik wird in der Nähe der Spitze (`dcc.hotstuff.max-target-lag-fraction`) neu verankert."
 
 #: ../../08_release-notes.md:35
 msgid "**Finality hardening** (consensus change, from `finality-hardening-height`). HotStuff quorum weight comes from generating balance, and proven equivocators weigh 0. A voter can't be both a valid endorser and a proven equivocator. Blocks signed with the legacy BLS domain separation tag are no longer accepted."
-msgstr ""
+msgstr "**Endgültigkeitshärtung** (Konsensänderung, von `finality-hardening-height`). Das HotStuff-Quorumgewicht kommt von der Erzeugung des Gleichgewichts, und bewährte Äquivokatoren wiegen 0. Ein Wähler kann nicht sowohl ein gültiger Endorser als auch ein bewährter Äquivokator sein. Blöcke, die mit dem Legacy BLS Domain Separation Tag signiert sind, werden nicht mehr akzeptiert."
 
 #: ../../08_release-notes.md:36
 msgid "**HotStuff and P2P hardening** (no consensus change). A proposal gets a vote only after the expected leader's own signed vote for it, proposal views are bounded, and gossip is validated before it is relayed. Endorser indexes are validated when a block is decoded."
-msgstr ""
+msgstr "**HotStuff und P2P-Härtung** (keine Konsensänderung). Ein Vorschlag erhält eine Abstimmung erst, nachdem der erwartete Führer seine eigene unterzeichnete Stimme dafür abgegeben hat, die Ansichten des Vorschlags sind begrenzt und Klatsch wird validiert, bevor er weitergeleitet wird. Endorser-Indizes werden validiert, wenn ein Block decodiert wird."
 
 #: ../../08_release-notes.md:37
 msgid "**Generators.** A generating node can commit itself to each generation period (`dcc.miner.self-commit-to-generation`), and recovers from peer-reconnection stalls on its own (`dcc.network.peer-stall-threshold`). A failed initial snapshot is retried instead of forging without a state hash."
-msgstr ""
+msgstr "**Generatoren.** Ein erzeugender Knoten kann sich für jede Generationsperiode (`dcc.miner.self-commit-to-generation`) festlegen und erholt sich von Peer-Reconnection-Ständen selbstständig (`dcc.network.peer-stall-threshold`). Ein fehlgeschlagener erster Snapshot wird wiederholt, anstatt ohne einen State Hash zu fälschen."
 
 #: ../../08_release-notes.md:38
 msgid "**Transaction pool.** Transactions that depend on a prioritised parent are kept and re-broadcast across new blocks instead of being dropped, and network-received transactions rejected before their dependency arrived are retried."
-msgstr ""
+msgstr "**Transaktionspool.** Transaktionen, die von einem priorisierten Elternteil abhängen, werden gespeichert und erneut über neue Blöcke übertragen, anstatt gelöscht zu werden, und vom Netzwerk empfangene Transaktionen, die vor dem Eintreffen ihrer Abhängigkeit abgelehnt wurden, werden erneut getestet."
 
 #: ../../08_release-notes.md:39
 #, python-brace-format
 msgid "**REST API.** `GET /addresses/seq/*` and `GET /utils/seed*` now require the API key; see {ref}`Authentication <05_node-guide/01_node-rest-api:Authentication>`."
-msgstr ""
+msgstr "**REST API.** `GET /addresses/seq/*` und `GET /utils/seed*` erfordern nun den API-Schlüssel; siehe {ref}`Authentifizierung <05_node-guide/01_node-rest-api:Authentication>`."
 
 #: ../../08_release-notes.md:40
 msgid "**Settings.** On a chain with history, consensus heights are pinned by the genesis signature. An unknown consensus key stops the node from starting; unknown REST, HotStuff and miner keys log a warning."
-msgstr ""
+msgstr "**Einstellungen.** Auf einer Kette mit Geschichte werden Konsenshöhen durch die Genesis-Signatur festgelegt. Ein unbekannter Konsensschlüssel stoppt das Starten des Knotens; unbekannte REST-, HotStuff- und Miner-Schlüssel protokollieren eine Warnung."
 
 #: ../../08_release-notes.md:41
 msgid "**Network defaults.** The built-in Testnet profile now uses port 6868 and the public Testnet node as its peer, and the Mainnet profile no longer ships third-party seed addresses. The built-in `testnet` chain type is still not the public Testnet chain."
-msgstr ""
+msgstr "**Netzwerkausfälle.** Das integrierte Testnet-Profil verwendet nun Port 6868 und den öffentlichen Testnet-Knoten als Peer, und das Mainnet-Profil liefert keine Seed-Adressen von Drittanbietern mehr. Der eingebaute `testnet`-Kettentyp ist immer noch nicht die öffentliche Testnet-Kette."
 
 #: ../../08_release-notes.md:42
 msgid "**Security.** Netty updated for CVE-2026-75595, plus ingress-robustness hardening."
-msgstr ""
+msgstr "**Sicherheit.** Netty aktualisiert für CVE-2026-75595, plus Ingress-Robustheit Härten."
 
 #: ../../08_release-notes.md:43
 msgid "**Build.** Native libraries come from Maven Central with pinned checksums. Each release image is smoke-tested and scanned before it is tagged, and carries a build-provenance attestation."
-msgstr ""
+msgstr "**Bauen.** Native Libraries kommen aus Maven Central mit angehefteten Prüfsummen. Jedes Release-Bild wird vor dem Taggen rauchgetestet und gescannt und trägt eine Build-Provenienz-Bestätigung."
 
 #: ../../08_release-notes.md:45
 msgid "The v1.8.0 image reports its version as `DecentralChain v1.8.0-dev-1a1221cdd8`: it was built just before the tag, from a tree that differs only in a CI workflow. The binary is the released one."
-msgstr ""
+msgstr "Das Bild v1.8.0 meldet seine Version als `DecentralChain v1.8.0-dev-1a1221cdd8`: Es wurde kurz vor dem Tag erstellt, von einem Baum, der sich nur in einem CI-Workflow unterscheidet. Die Binärdatei ist die freigegebene."
 
 #: ../../08_release-notes.md:47
 msgid "Source: the [v1.8.0 release](https://github.com/Decentral-America/node-scala/releases/tag/v1.8.0)."
-msgstr ""
+msgstr "Quelle: [v1.8.0 Release](https://github.com/Decentral-America/node-scala/releases/tag/v1.8.0)."
 
 #: ../../08_release-notes.md:49
 msgid "Node v1.7.0 (2026-07-25)"
-msgstr ""
+msgstr "Node v1.7.0 (2026-07-25)"
 
 #: ../../08_release-notes.md:51
 msgid "The first official GitHub release of node-scala (`v1.6.3` and earlier were git tags only)."
-msgstr ""
+msgstr "Die erste offizielle GitHub-Version von node-scala (`v1.6.3` und früher waren nur Git-Tags)."
 
 #: ../../08_release-notes.md:53
 #, python-brace-format
 msgid "**Consensus safety fix.** The experimental HotStuff vote pool now checks quorum against every committee snapshot seen while a target's votes accumulate, closing a gap when committee membership changes mid-round. It also evicts stale votes from removed generators, bounds vote-pool memory, and verifies a quorum certificate locally before broadcasting it. HotStuff remains disabled by default (`dcc.hotstuff.enabled = false`); the public Testnet runs it enabled and authoritative. See {doc}`Features and Activation <05_node-guide/10_features-and-activation>`."
-msgstr ""
+msgstr "**Konsensus-Sicherheitskorrektur.** Der experimentelle HotStuff-Votumspool prüft nun das Quorum mit jedem Ausschuss-Schnappschuss, der während der Stimmenansammlung eines Ziels gesehen wird, und schließt eine Lücke, wenn sich die Mitgliedschaft im Ausschuss in der Mitte der Runde ändert. Es vertreibt auch veraltete Stimmen aus entfernten Generatoren, begrenzt den Votingpool-Speicher und überprüft lokal ein Quorum-Zertifikat, bevor es ausgestrahlt wird. HotStuff bleibt standardmäßig deaktiviert (`dcc.hotstuff.enabled = false`); das öffentliche Testnet führt es aktiviert und autoritativ aus. Siehe {doc}`Features und Aktivierung <05_node-guide/10_features-and-activation>`."
 
 #: ../../08_release-notes.md:54
 msgid "**REST API.** `GET /node/status` now includes `generationPeriodLength`, a per-network constant that no endpoint exposed before."
-msgstr ""
+msgstr "**REST API.** `GET /node/status` enthält jetzt `generationPeriodLength`, eine Konstante pro Netzwerk, die zuvor kein Endpunkt ausgesetzt war."
 
 #: ../../08_release-notes.md:55
 msgid "**Testing.** Expanded end-to-end testing: deterministic simulation, fault injection with network partitions, property-based fuzzing, and OpenAPI conformance checks in CI. No runtime behaviour change."
-msgstr ""
+msgstr "**Prüfung.** Erweitertes End-to-End-Testing: deterministische Simulation, Fehlerinjektion mit Netzwerkpartitionen, Eigenschaftsbasiertes Fuzzing und OpenAPI-Konformitätsprüfungen in CI. Keine Änderung des Laufzeitverhaltens."
 
 #: ../../08_release-notes.md:57
 msgid "Source: the [v1.7.0 release page](https://github.com/Decentral-America/node-scala/releases/tag/v1.7.0)."
-msgstr ""
+msgstr "Quelle: [v1.7.0 Veröffentlichungsseite](https://github.com/Decentral-America/node-scala/releases/tag/v1.7.0)."
 
 #: ../../08_release-notes.md:59
 msgid "SDK Release of 2026-06-23 (Not on npm Yet)"
-msgstr ""
+msgstr "SDK Release von 2026-06-23 (Noch nicht auf npm)"
 
 #: ../../08_release-notes.md:61
 msgid "A monorepo release commit of 2026-06-23 versions every SDK package for the 2.0 modernization: the packages moved from `packages/ts` to `packages/sdk`, gained a groth16 v2 verifier and a blst 0.3.16 rebuild, and many took a major version. The release tags were pushed on 2026-10-19:"
-msgstr ""
+msgstr "Ein Monorepo-Release-Commit von 2026-06-23-Versionen jedes SDK-Paket für die 2.0-Modernisierung: Die Pakete, die von `packages/ts` nach `packages/sdk` verschoben wurden, erhielten einen groth16 v2-Verifier und einen ersten 0,3.16-Umbau, und viele nahmen eine Hauptversion. Die Release-Tags wurden auf 2026-10-19 geschoben:"
 
 #: ../../08_release-notes.md
 msgid "Package"
-msgstr ""
+msgstr "Paket"
 
 #: ../../08_release-notes.md
 msgid "Version"
-msgstr ""
+msgstr "Fassung"
 
 #: ../../08_release-notes.md
 msgid "`transactions`"
-msgstr ""
+msgstr "`transactions`"
 
 #: ../../08_release-notes.md
 msgid "6.0.0"
-msgstr ""
+msgstr "6.0.0"
 
 #: ../../08_release-notes.md
 msgid "`signer`"
-msgstr ""
+msgstr "`signer`"
 
 #: ../../08_release-notes.md
 msgid "3.0.0"
-msgstr ""
+msgstr "3.0.0"
 
 #: ../../08_release-notes.md
 msgid "`node-api` (was `node-api-js`)"
-msgstr ""
+msgstr "`node-api` (war `node-api-js`)"
 
 #: ../../08_release-notes.md
 msgid "`cubensis-connect-provider`"
-msgstr ""
+msgstr "`cubensis-connect-provider`"
 
 #: ../../08_release-notes.md
 msgid "2.0.0"
-msgstr ""
+msgstr "2.0.0"
 
 #: ../../08_release-notes.md
 msgid "`ts-lib-crypto`"
-msgstr ""
+msgstr "`ts-lib-crypto`"
 
 #: ../../08_release-notes.md
 msgid "`cubensis-connect-types`"
-msgstr ""
+msgstr "`cubensis-connect-types`"
 
 #: ../../08_release-notes.md
 msgid "`types`"
-msgstr ""
+msgstr "`types`"
 
 #: ../../08_release-notes.md
 msgid "`data-service-client`"
-msgstr ""
+msgstr "`data-service-client`"
 
 #: ../../08_release-notes.md
 msgid "5.0.0"
-msgstr ""
+msgstr "5.0.0"
 
 #: ../../08_release-notes.md
 msgid "`marshall`"
-msgstr ""
+msgstr "`marshall`"
 
 #: ../../08_release-notes.md
 msgid "`ledger`"
-msgstr ""
+msgstr "`ledger`"
 
 #: ../../08_release-notes.md
 msgid "`protobuf-schemas`"
-msgstr ""
+msgstr "`protobuf-schemas`"
 
 #: ../../08_release-notes.md
 msgid "3.1.0"
-msgstr ""
+msgstr "3.1.0"
 
 #: ../../08_release-notes.md
 msgid "`oracle-data`"
-msgstr ""
+msgstr "`oracle-data`"
 
 #: ../../08_release-notes.md:72
 #, python-brace-format
 msgid "None of these versions is published to npm: the registry's newest `transactions` is still 5.0.1. These docs keep pinning the published versions listed in the {doc}`TypeScript SDK <04_building-apps/sdk/01_typescript>` page, and will move to the new majors once they are on npm."
-msgstr ""
+msgstr "Keine dieser Versionen wird für npm veröffentlicht: Das neueste `transactions` der Registry ist immer noch 5.0.1. Diese Dokumente halten die veröffentlichten Versionen in der {doc}`TypeScript SDK <04_building-apps/sdk/01_typescript>`-Seite aufgeführt, und wird zu den neuen Majors bewegen, sobald sie auf npm sind."
 
 #: ../../08_release-notes.md:74
 msgid "Ride REPL v1.6.2 (2026-06-06)"
-msgstr ""
+msgstr "Ride REPL v1.6.2 (2026-06-06)"
 
 #: ../../08_release-notes.md:76
 #, python-brace-format
 msgid "`@decentralchain/ride-repl` 1.6.2 is published to npm (tag `ride-v1.6.2`). It fixes the build of the JavaScript Ride compiler it bundles. See {doc}`Ride REPL <04_building-apps/developer-tools/01_ride-repl>`."
-msgstr ""
+msgstr "`@decentralchain/ride-repl` 1.6.2 wird bis npm veröffentlicht (Tag `ride-v1.6.2`). Es behebt den Build des JavaScript Ride-Compilers, den es bündelt. Siehe {doc}`Ride REPLAR <04_building-apps/developer-tools/01_ride-repl>`."
 
 #: ../../08_release-notes.md:78
 msgid "DecentralScan v2.1.0 (2026-06-13)"
-msgstr ""
+msgstr "DecentralScan v2.1.0 (2026-06-13)"
 
 #: ../../08_release-notes.md:80
 #, python-brace-format
 msgid "The explorer gained the Testnet faucet: the `/faucet` page and the `POST /api/faucet` endpoint, paid from a dedicated wallet. v1.3.2 (2026-06-15) fixed the peer list, so **All Peers** shows the connected nodes. See {doc}`DecentralScan Guide <09_user-guides/03_decentralscan>`."
-msgstr ""
+msgstr "Der Entdecker erhielt den Testnet-Wasserhahn: die `/faucet`-Seite und den `POST /api/faucet`-Endpunkt, bezahlt von einer dedizierten Brieftasche. v1.3.2 (2026-06-15) fixierte die Peer-Liste, so dass **Alle Peers** die verbundenen Knoten zeigt. Siehe {doc}`DecentralScan Guide <09_user-guides/03_decentralscan>`."
 

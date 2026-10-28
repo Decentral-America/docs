@@ -21,173 +21,173 @@ msgstr ""
 
 #: ../../09_user-guides/01_quick-start.md:5
 msgid "Quick Start: Your First Transfer"
-msgstr ""
+msgstr "快速启动: 您的第一次传输"
 
 #: ../../09_user-guides/01_quick-start.md:7
 msgid "This guide takes you from nothing to a confirmed transaction on the public Testnet in about ten minutes. You create an account, get free Testnet DCC from the faucet, send 1 DCC to another address and look the transaction up in the explorer."
-msgstr ""
+msgstr "这个指南在十分钟内 将你从一无所有 到公众Testnet的确认交易您创建一个账户, 从水龙头中获取 Testnet DCC 自由, 发送 1 DCC 到另一个地址, 并在 探索器中查找交易 。"
 
 #: ../../09_user-guides/01_quick-start.md:9
 #, python-brace-format
 msgid "Testnet DCC have no value, so nothing you do here can cost you money. Everything works the same way on Mainnet once you switch the node URL and chain ID (see {ref}`Moving to Mainnet <09_user-guides/01_quick-start:Moving to Mainnet>` at the end)."
-msgstr ""
+msgstr "Testnet DCC没有价值,所以你在这里所做的任何工作都不能花费你的钱.一旦切换出节点URL和链式ID(见结尾的 {ref}`移动到 Mainnet <09_user-guides/01_quick-start:Moving to Mainnet>`),每件事物在Mainnet上都以同样的方式工作."
 
 #: ../../09_user-guides/01_quick-start.md:12
 msgid "Followed end to end on the public Testnet on 2026-10-27: the faucet paid 10 DCC in transaction `26UPUF6Psun5KyPQ2UiZinzo9qDuny8Nu9TziwaoLPVy`, and the transfer in step 4 is transaction `BVVmaKri16PUJJqHbLmDRnzcyc4SdYbr6GQZgDhhFPxx` (height 99,864)."
-msgstr ""
+msgstr "追尾到2026-10-27年公用Testnet上结束:水龙头在交易 `26UPUF6Psun5KyPQ2UiZinzo9qDuny8Nu9TziwaoLPVy` 中支付了10个DCC,而第4步中的转会是交易 `BVVmaKri16PUJJqHbLmDRnzcyc4SdYbr6GQZgDhhFPxx` (高通99,864)."
 
 #: ../../09_user-guides/01_quick-start.md:15
 msgid "Step 1: Set Up a Project"
-msgstr ""
+msgstr "步骤1:设立项目"
 
 #: ../../09_user-guides/01_quick-start.md:17
 msgid "You need [Node.js](https://nodejs.org/) 24 or later. Create a folder for the project, mark it as an ES module and install the transactions package:"
-msgstr ""
+msgstr "你需要 [Node.js](https://nodejs.org/) 24或以后。为项目创建文件夹, 标记为 ES 模块并安装交易包 :"
 
 #: ../../09_user-guides/01_quick-start.md:26
 msgid "Node.js 24 runs TypeScript files directly, so you can save the scripts below as `.ts` files and run them with `node <file>.ts`. To use plain JavaScript instead, save them as `.js` files; the code is the same."
-msgstr ""
+msgstr "Node.js 24直接运行了TypeScript文件,因此可以将下面的脚本保存为 `.ts` 文件并用 `node <file>.ts` 运行.要用平原 JavaScript 代替, 把它们保存为 `.js` 文件; 代码是相同的 。"
 
 #: ../../09_user-guides/01_quick-start.md:28
 msgid "Step 2: Create a Testnet Account"
-msgstr ""
+msgstr "第2步:创建 Testnet 账户"
 
 #: ../../09_user-guides/01_quick-start.md:30
 msgid "An account is a key pair derived from a seed phrase: 15 random words. Save this script as `create-account.ts` and run it with `node create-account.ts`:"
-msgstr ""
+msgstr "一个帐是从一个种子短语中衍生出来的一对密钥:15个随机单词.此脚本另存为 `create-account.ts` 并用 `node create-account.ts` 运行 :"
 
 #: ../../09_user-guides/01_quick-start.md:37
 #, python-brace-format
 msgid "It prints the seed phrase and the account's Testnet address, which starts with `31`. Write the seed phrase down and keep it private: anyone who has it controls the account, and it cannot be recovered if you lose it. For what the seed, keys and address are, see {ref}`Account <02_decentralchain/01_account:Account>`."
-msgstr ""
+msgstr "它会打印出种子短语和账户的Testnet地址,从 `31` 开始.将种子词句写下,并保守秘密:任何人拥有它控制账户,如果失去它,它就无法被收回.种子、密钥和地址,见 {ref}`账户 <02_decentralchain/01_account:Account>`。"
 
 #: ../../09_user-guides/01_quick-start.md:39
 #, python-brace-format
 msgid "To manage the same account in a browser wallet, import the seed phrase into Cubensis Connect; see {doc}`Cubensis Connect User Guide <02_cubensis-connect>`."
-msgstr ""
+msgstr "要在浏览器钱包中管理同一账户,请将种子短语导入到 Cubensis Connect;参见 {doc}`Cubensis Connect 用户指南 <02_cubensis-connect>`."
 
 #: ../../09_user-guides/01_quick-start.md:41
 msgid "Step 3: Get Testnet DCC"
-msgstr ""
+msgstr "步骤3:获取 Testnet DCC"
 
 #: ../../09_user-guides/01_quick-start.md:43
 msgid "The Testnet faucet sends 10 DCC to an address, once every 24 hours per address. Either open [testnet.decentralscan.com/faucet](https://testnet.decentralscan.com/faucet) and paste your address, or call the faucet's API:"
-msgstr ""
+msgstr "Testnet水龙头向一个地址发送了10个DCC,每个地址每24小时发送一次.要么打开 [testnet.decentralscan.com/faucet](https://testnet.decentralscan.com/faucet) 并粘贴你的地址,要么拨打水龙头的API:"
 
 #: ../../09_user-guides/01_quick-start.md:51
 msgid "A successful request returns the transfer's ID:"
-msgstr ""
+msgstr "成功的请求返回传输的ID :"
 
 #: ../../09_user-guides/01_quick-start.md:57
 msgid "The faucet answers `429` if the address already received DCC in the last 24 hours, and `400` for an address that is not a Testnet address."
-msgstr ""
+msgstr "如果地址在过去24小时中已经收到DCC,水龙头会回答 `429`,而 `400` 的地址不是Testnet地址."
 
 #: ../../09_user-guides/01_quick-start.md:59
 msgid "Check that the DCC arrived. Balances are in Decentralites, the smallest unit: 1 DCC is 100,000,000 Decentralites."
-msgstr ""
+msgstr "检查DCC到达。平衡地在下层,最小的单位:1个DCC为10万个下层."
 
 #: ../../09_user-guides/01_quick-start.md:69
 msgid "Step 4: Send Your First Transfer"
-msgstr ""
+msgstr "第4步: 发送您的第一次传输"
 
 #: ../../09_user-guides/01_quick-start.md:71
 msgid "Save this script as `send.ts`, put your seed phrase in `seed`, and run `node send.ts`. It sends 1 DCC to the address in `recipient`, which can be any Testnet address or alias:"
-msgstr ""
+msgstr "此脚本另存为 `send.ts`, 将您的种子短语放入 `seed` 并运行 `node send.ts`.它向 `recipient` 中的地址发送了1个DCC,该地址可以是任何Testnet地址或别名:"
 
 #: ../../09_user-guides/01_quick-start.md:78
 msgid "The output looks like this:"
-msgstr ""
+msgstr "输出是这样的:"
 
 #: ../../09_user-guides/01_quick-start.md:86
 msgid "The builder sets the minimum fee, 0.001 DCC, so the sender's balance drops by 1.001 DCC. Testnet blocks come about every 30 seconds, so `waitForTx` usually returns within a minute."
-msgstr ""
+msgstr "建造者设定了最低收费001DCC,所以发送方的余额下降了1.001DCC.Testnet区块大约每30秒就会出现一次,因此 `waitForTx` 通常会在一分钟内返回."
 
 #: ../../09_user-guides/01_quick-start.md:88
 #, python-brace-format
 msgid "If the node rejects the transaction, `broadcast` throws with the node's error. The common ones are `negative dcc balance` (the faucet transfer is not in a block yet, or the balance is too low) and `Wrong chain-id` (the transaction was built for another network). See {ref}`Error Responses <05_node-guide/01_node-rest-api:Error Responses>` for the full list."
-msgstr ""
+msgstr "如果节点拒绝交易, `broadcast` 会随节点出错而抛出.常见的有:`negative dcc balance` (水龙头传输尚未入区块中,或余额过低)和 `Wrong chain-id` (交易是为另一个网络所建).完整列表见 {ref}`错误回复 <05_node-guide/01_node-rest-api:Error Responses>`."
 
 #: ../../09_user-guides/01_quick-start.md:90
 msgid "Step 5: Look It Up in the Explorer"
-msgstr ""
+msgstr "第5步:在探索器中向上看"
 
 #: ../../09_user-guides/01_quick-start.md:92
 #, python-brace-format
 msgid "Open the link the script printed. DecentralScan shows the transaction's type, sender, recipient, amount, fee and the block it is in. Search for your address to see its balance and every transaction it took part in. {doc}`DecentralScan Guide <03_decentralscan>` explains each page."
-msgstr ""
+msgstr "打开已打印的脚本链接 。DecentralScan显示交易的类型,发送者,接收者,金额,收费以及它所在的块.寻找您的地址,看看它的余额和它参与的每笔交易。{doc}`DecentralScan 指南 <03_decentralscan>` 解释每页."
 
 #: ../../09_user-guides/01_quick-start.md:94
 msgid "Moving to Mainnet"
-msgstr ""
+msgstr "移动到 Mainnet"
 
 #: ../../09_user-guides/01_quick-start.md:96
 msgid "The same scripts work on Mainnet with three changes:"
-msgstr ""
+msgstr "同样的脚本在Mainnet上工作,有3个修改:"
 
 #: ../../09_user-guides/01_quick-start.md:98
 msgid "Use the Mainnet node, `https://mainnet-node.decentralchain.io`."
-msgstr ""
+msgstr "使用 Mainnet 节点, `https://mainnet-node.decentralchain.io`."
 
 #: ../../09_user-guides/01_quick-start.md:99
 msgid "Pass `chainId: '?'`, and derive addresses with `libs.crypto.address(seed, '?')`. Mainnet addresses start with `3D`."
-msgstr ""
+msgstr "通过 `chainId: '?'`,并以 `libs.crypto.address(seed, '?')` 获得地址.Mainnet地址以 `3D` 开头."
 
 #: ../../09_user-guides/01_quick-start.md:100
 msgid "Fund the account with real DCC, for example from [Decentral.Exchange](https://decentral.exchange/). There is no Mainnet faucet."
-msgstr ""
+msgstr "以实际的DCC为账户供资,例如从 [Decentral.Exchange](https://decentral.exchange/) 中供资。没有Mainnet水龙头"
 
 #: ../../09_user-guides/01_quick-start.md:102
 msgid "A seed phrase is not tied to a network: the same 15 words give a Testnet address and a different Mainnet address. Use a fresh seed for Mainnet rather than one you used in scripts or tests."
-msgstr ""
+msgstr "一个种子短语不绑定在网络上:同样的15个字给出了Testnet地址和不同的Mainnet地址.使用Mainnet的新鲜种子,而不是用于脚本或测试的种子."
 
 #: ../../09_user-guides/01_quick-start.md:104
 msgid "Next Steps"
-msgstr ""
+msgstr "下一个步骤"
 
 #: ../../09_user-guides/01_quick-start.md:106
 #, python-brace-format
 msgid "{doc}`Leasing <04_leasing>`: lease DCC to a generating node and share its rewards."
-msgstr ""
+msgstr "{doc}`租赁 <04_leasing>`:将DCC租给生成节点并分享其奖励."
 
 #: ../../09_user-guides/01_quick-start.md:107
 #, python-brace-format
 msgid "{doc}`Sponsorship <05_sponsorship>`: let users pay fees in your token."
-msgstr ""
+msgstr "{doc}`赞助 <05_sponsorship>`:让用户在您代币中支付费用."
 
 #: ../../09_user-guides/01_quick-start.md:108
 #, python-brace-format
 msgid "{doc}`How-To Guides <../04_building-apps/03_how-to-guides>`: issue tokens, chain transactions and read chain data."
-msgstr ""
+msgstr "{doc}`如何向导 <../04_building-apps/03_how-to-guides>`:发行令牌,连锁交易并读取连锁数据."
 
 #: ../../09_user-guides/01_quick-start.md:109
 #, python-brace-format
 msgid "{doc}`Wallet Integration <../04_building-apps/04_wallet-integration>`: let users sign in their own wallet instead of handling seed phrases in your code."
-msgstr ""
+msgstr "{doc}`钱包整合 <../04_building-apps/04_wallet-integration>`:让用户在自己的钱包中签名,而不是处理您代码中的种子短语."
 
 #: ../../09_user-guides/02_cubensis-connect.md:6
 msgid "Cubensis Connect User Guide"
-msgstr ""
+msgstr "Cubensis Connect 用户指南"
 
 #: ../../09_user-guides/02_cubensis-connect.md:8
 msgid "Cubensis Connect is the DecentralChain browser wallet. It keeps your seed phrases and private keys encrypted inside the extension and signs transactions for websites without ever showing them your keys. A dApp asks; you see exactly what it wants to sign and approve or reject it."
-msgstr ""
+msgstr "Cubensis Connect是DecentralChain浏览器钱包.它保留了种子短语和私人密钥加密 在扩展和标志交易 为网站,从来没有向他们展示你的密钥。一个dApp问;你可以看到它到底想要签什么,批准什么,或者拒绝什么."
 
 #: ../../09_user-guides/02_cubensis-connect.md:10
 #, python-brace-format
 msgid "This page is for people using the wallet. If you are building a dApp that talks to it, see {doc}`Wallet Integration <../04_building-apps/04_wallet-integration>`."
-msgstr ""
+msgstr "此页面为使用钱包的人使用.如果你正在建造一个dApp, 和它说话, 请见 {doc}`钱包整合 <../04_building-apps/04_wallet-integration>`."
 
 #: ../../09_user-guides/02_cubensis-connect.md:12
 msgid "Install the Extension"
-msgstr ""
+msgstr "安装扩展"
 
 #: ../../09_user-guides/02_cubensis-connect.md:14
 msgid "Cubensis Connect is not listed in the Chrome, Firefox, Edge or Opera extension stores yet, and it has no published release package. Until it does, build it from source. You need Git and Node.js 24.17 or later."
-msgstr ""
+msgstr "Cubensis Connect尚未在Chrome,Firefox,Edge或Opera扩展商店中列出,它也没有发布发行套件.直至取出,从源而起.你需要吉特和Node.js 24.17 或以后。"
 
 #: ../../09_user-guides/02_cubensis-connect.md:25
 msgid "The build writes one folder per browser under `apps/cubensis-connect/dist/`: `chrome`, `edge`, `firefox` and `opera`. Then load it:"
-msgstr ""
+msgstr "构建在 `apps/cubensis-connect/dist/` 下每个浏览器写出一个文件夹: `chrome`, `edge`, `firefox` 和 `opera`.然后装入:"
 
 #: ../../09_user-guides/02_cubensis-connect.md:27
 msgid "**Chrome, Edge, Brave and other Chromium browsers.** Open `chrome://extensions` (`edge://extensions` in Edge), turn on **Developer mode**, click **Load unpacked** and select the `dist/chrome` folder (`dist/edge` for Edge)."
@@ -195,308 +195,308 @@ msgstr ""
 
 #: ../../09_user-guides/02_cubensis-connect.md:28
 msgid "**Firefox.** Open `about:debugging#/runtime/this-firefox`, click **Load Temporary Add-on** and select `dist/firefox/manifest.json`. Firefox removes a temporary add-on when it restarts."
-msgstr ""
+msgstr "**火狐(原变种).** Open `about:debugging#/runtime/this-firefox`,点击 **装入临时加载** 并选择 `dist/firefox/manifest.json`.Firefox 重新启动时删除一个临时添加."
 
 #: ../../09_user-guides/02_cubensis-connect.md:31
 msgid "These build steps follow the extension's release runbook (`apps/cubensis-connect/docs/RELEASE-RUNBOOK.md`). They were not run for this page."
-msgstr ""
+msgstr "这些构建步骤遵循了扩展的发布运行本(`apps/cubensis-connect/docs/RELEASE-RUNBOOK.md`).他们没有运行到这个页面。"
 
 #: ../../09_user-guides/02_cubensis-connect.md:34
 msgid "Pin the extension to the toolbar so you can see when a website asks for a signature."
-msgstr ""
+msgstr "将扩展名插入工具栏, 这样您就可以看到当一个网站请求签名时 。"
 
 #: ../../09_user-guides/02_cubensis-connect.md:36
 msgid "Create an Account"
-msgstr ""
+msgstr "创建账户"
 
 #: ../../09_user-guides/02_cubensis-connect.md:38
 msgid "Click the Cubensis Connect icon and then **Get Started**."
-msgstr ""
+msgstr "点击 Cubensis Connect 图标后再点击 **开始**."
 
 #: ../../09_user-guides/02_cubensis-connect.md:39
 msgid "On **Protect Your Account**, create a password and confirm it, accept the terms and click **Continue**. The password encrypts your accounts on this device only. It is not a recovery method."
-msgstr ""
+msgstr "在 **保护您的账户** 上,创建密码并证实,接受条件并点击 **继续**.密码只加密此设备上的账户 。这不是一种恢复方法。"
 
 #: ../../09_user-guides/02_cubensis-connect.md:40
 msgid "Click **Create a new account** and pick one of the offered addresses by its avatar. Each avatar belongs to a different new address, so it helps you recognise the account later. You can't change it afterwards."
-msgstr ""
+msgstr "点击 **创建新账户** 并按其avatar 选择一个地址 。每个阿凡达都属于不同的新地址,所以它有助于你以后识别账户.之后不能改变"
 
 #: ../../09_user-guides/02_cubensis-connect.md:41
 msgid "Write down the 15-word backup phrase shown on the next screen, then confirm it by tapping the words in the right order. If you lose the phrase, nobody can restore the account."
-msgstr ""
+msgstr "将下个屏幕上显示的15个词的后置短语写出来,然后通过按正确的顺序来调取词来确认.如果你输了这句话, 没有人可以恢复账户。"
 
 #: ../../09_user-guides/02_cubensis-connect.md:42
 msgid "Give the account a name. The name is stored only in your extension."
-msgstr ""
+msgstr "给户口取个名.此名称只保存在您的扩展名中 。"
 
 #: ../../09_user-guides/02_cubensis-connect.md:44
 msgid "Import an Existing Account"
-msgstr ""
+msgstr "导入一个已存在的账户"
 
 #: ../../09_user-guides/02_cubensis-connect.md:46
 msgid "Click **Add account** and choose **Or import via**:"
-msgstr ""
+msgstr "点击 **添加账户** 并选择 **或导入通过**:"
 
 #: ../../09_user-guides/02_cubensis-connect.md:30
 msgid "Option"
-msgstr ""
+msgstr "选项"
 
 #: ../../09_user-guides/02_cubensis-connect.md:30
 msgid "Use it for"
-msgstr ""
+msgstr "用它来"
 
 #: ../../09_user-guides/02_cubensis-connect.md:30
 msgid "**Seed Phrase or Private Key**"
-msgstr ""
+msgstr "**种子词组或私人密钥**"
 
 #: ../../09_user-guides/02_cubensis-connect.md:30
 msgid "The 15 words of an account, a base58-encoded seed (**Encoded seed** tab) or a raw private key (**Private key** tab)"
-msgstr ""
+msgstr "一个账户的15个单词,一个基数58-编码种子(**已编码种子** tab)或一个原始的私有密钥(**私钥** tab)"
 
 #: ../../09_user-guides/02_cubensis-connect.md:30
 msgid "**Keystore File**"
-msgstr ""
+msgstr "**键存储文件**"
 
 #: ../../09_user-guides/02_cubensis-connect.md:30
 msgid "A file exported from Cubensis Connect with **Export accounts**"
-msgstr ""
+msgstr "从 Cubensis Connect 导出的文件与 **导出账户**"
 
 #: ../../09_user-guides/02_cubensis-connect.md:30
 msgid "**Ledger**"
-msgstr ""
+msgstr "**Ledger**"
 
 #: ../../09_user-guides/02_cubensis-connect.md:30
 msgid "A Ledger device with the DCC app open; the keys stay on the device"
-msgstr ""
+msgstr "DCC 应用程序打开的编目设备; 设备上的密钥"
 
 #: ../../09_user-guides/02_cubensis-connect.md:54
 #, python-brace-format
 msgid "An account created with the SDK, for example in the {doc}`Quick Start <01_quick-start>`, imports with its seed phrase."
-msgstr ""
+msgstr "一个用 SDK 创建的账户, 例如在 {doc}`快速启动 <01_quick-start>` 中, 导入它种子短语 。"
 
 #: ../../09_user-guides/02_cubensis-connect.md:56
 msgid "Switch Networks"
-msgstr ""
+msgstr "切换网络"
 
 #: ../../09_user-guides/02_cubensis-connect.md:58
 msgid "The network menu at the bottom of the popup switches between **Mainnet**, **Testnet**, **Stagenet** and **Custom**. Each network has its own list of accounts, because the same seed phrase gives a different address on each network."
-msgstr ""
+msgstr "**Mainnet**, **Testnet**, **舞台网** 和 **自定义** 之间的弹出开关下方的网络菜单.每个网络都有自己的账户列表,因为同一个种子短语给出了每个网络上不同的地址."
 
 #: ../../09_user-guides/02_cubensis-connect.md:30
 #: ../../09_user-guides/03_decentralscan.md
 msgid "Network"
-msgstr ""
+msgstr "网络"
 
 #: ../../09_user-guides/02_cubensis-connect.md:30
 msgid "Chain ID"
-msgstr ""
+msgstr "链式标识"
 
 #: ../../09_user-guides/02_cubensis-connect.md:30
 msgid "Node"
-msgstr ""
+msgstr "节点"
 
 #: ../../09_user-guides/02_cubensis-connect.md:30
 #: ../../09_user-guides/03_decentralscan.md
 msgid "Mainnet"
-msgstr ""
+msgstr "Mainnet"
 
 #: ../../09_user-guides/02_cubensis-connect.md:30
 msgid "`?`"
-msgstr ""
+msgstr "`?`"
 
 #: ../../09_user-guides/02_cubensis-connect.md:30
 msgid "`https://mainnet-node.decentralchain.io`"
-msgstr ""
+msgstr "`https://mainnet-node.decentralchain.io`"
 
 #: ../../09_user-guides/02_cubensis-connect.md:30
 #: ../../09_user-guides/03_decentralscan.md
 msgid "Testnet"
-msgstr ""
+msgstr "Testnet"
 
 #: ../../09_user-guides/02_cubensis-connect.md:30
 msgid "`!`"
-msgstr ""
+msgstr "`!`"
 
 #: ../../09_user-guides/02_cubensis-connect.md:30
 msgid "`https://testnet-node.decentralchain.io`"
-msgstr ""
+msgstr "`https://testnet-node.decentralchain.io`"
 
 #: ../../09_user-guides/02_cubensis-connect.md:30
 msgid "Stagenet"
-msgstr ""
+msgstr "舞台网"
 
 #: ../../09_user-guides/02_cubensis-connect.md:30
 msgid "`S`"
-msgstr ""
+msgstr "`S`"
 
 #: ../../09_user-guides/02_cubensis-connect.md:30
 msgid "No public Stagenet yet"
-msgstr ""
+msgstr "还没有公开的舞台网"
 
 #: ../../09_user-guides/02_cubensis-connect.md:30
 msgid "Custom"
-msgstr ""
+msgstr "自定义"
 
 #: ../../09_user-guides/02_cubensis-connect.md:30
 msgid "Any"
-msgstr ""
+msgstr "Any"
 
 #: ../../09_user-guides/02_cubensis-connect.md:30
 #, python-brace-format
 msgid "A node you run, for example on a {doc}`custom blockchain <../05_node-guide/03_custom-blockchain>`"
-msgstr ""
+msgstr "您运行的节点, 例如在 {doc}`自定义块链 <../05_node-guide/03_custom-blockchain>` 上"
 
 #: ../../09_user-guides/02_cubensis-connect.md:67
 msgid "**Edit** next to the network opens its **Node address** and **Matcher address**, so you can point the wallet at your own node."
-msgstr ""
+msgstr "网络旁边的 **编辑** 打开了它的 **节点地址** 和 **匹配地址**,这样就可以将钱包指向自己的节点."
 
 #: ../../09_user-guides/02_cubensis-connect.md:69
 msgid "To try things out without real money, switch to **Testnet**, copy your address and get free DCC from the [Testnet faucet](https://testnet.decentralscan.com/faucet)."
-msgstr ""
+msgstr "尝试没有真钱的事情,切换到 **Testnet**,复制你的地址,从 [Testnet 水龙头](https://testnet.decentralscan.com/faucet) 中免费获得DCC."
 
 #: ../../09_user-guides/02_cubensis-connect.md:71
 msgid "Send Tokens"
-msgstr ""
+msgstr "发送托肯斯"
 
 #: ../../09_user-guides/02_cubensis-connect.md:73
 msgid "Open an asset in the wallet and click **Send**. Fill in the **Recipient** (an address or alias on the same network), the **Amount** and an optional **Attachment** of up to 140 bytes that the recipient sees. Review the confirmation screen, including the fee, and approve it."
-msgstr ""
+msgstr "在钱包中打开一个资产并点击 **发送**.填入 **收件人** (同一网络上的地址或别名), **数额** 和一个可选的 **附录**,最多可被接收者所看到的140字节.审查确认屏,包括收费,并批准."
 
 #: ../../09_user-guides/02_cubensis-connect.md:75
 msgid "Use a dApp"
-msgstr ""
+msgstr "使用 dApp 键"
 
 #: ../../09_user-guides/02_cubensis-connect.md:77
 msgid "The first time a website calls Cubensis Connect, the extension asks whether to **Allow access**. Allowing it shares your address and public key with the site, never your seed or private key. If you reject it, the site is blocked and gets the error `Api rejected by user` for every later request, until you allow it in **Permissions control**."
-msgstr ""
+msgstr "一个网站第一次拨打Cubensis Connect,扩展时询问是否拨打到 **允许访问**.允许它与网站共享您的地址和公用钥匙, 绝不是您的种子或私人钥匙.如果您拒绝, 网站会被封住, 并获得错误 `Api rejected by user` , 直到您在 **权限控制** 中允许它 。"
 
 #: ../../09_user-guides/02_cubensis-connect.md:79
 msgid "After that, every transaction the site wants opens a confirmation window with the transaction type, amounts, recipient, fee and, for a dApp call, the function and its arguments. Click **Approve** to sign it or **Reject** to refuse. Check the details every time: an approved transaction cannot be undone."
-msgstr ""
+msgstr "之后,站点想要的每笔交易都会打开一个确认窗口,其中包含交易类型,金额,接收者,收费,对于dApp呼叫,功能及其参数.点击 **核准** 签名,或 **拒绝** 拒绝.每次检查细节: 核准的交易无法被撤销 。"
 
 #: ../../09_user-guides/02_cubensis-connect.md:81
 msgid "For a site you trust and use often, **Permission details** can allow automatic signing for 15, 30 or 60 minutes up to a **Spending limit**. Leave it at **Don't automatically sign** unless you need it."
-msgstr ""
+msgstr "对于一个您经常信任和使用的网站, **权限细节** 可以允许自动签名15,30或60分钟至 **支出限额**.放在 **不要自动签名** 除非你需要它。"
 
 #: ../../09_user-guides/02_cubensis-connect.md:83
 msgid "Settings and Safety"
-msgstr ""
+msgstr "设置和安全"
 
 #: ../../09_user-guides/02_cubensis-connect.md:85
 msgid "**Settings** holds:"
-msgstr ""
+msgstr "**设置** 持有:"
 
 #: ../../09_user-guides/02_cubensis-connect.md:87
 msgid "**Permissions control**: the sites you approved or rejected. Revoke a site here at any time."
-msgstr ""
+msgstr "**权限控制**:你批准或拒绝的网站.随时撤掉这里的站点"
 
 #: ../../09_user-guides/02_cubensis-connect.md:88
 msgid "**Network**: the node and matcher addresses of each network."
-msgstr ""
+msgstr "**网络**:每个网络的节点和匹配地址."
 
 #: ../../09_user-guides/02_cubensis-connect.md:89
 msgid "**Export and import**: save your accounts and address book to an encrypted keystore file, or load one."
-msgstr ""
+msgstr "**进出口**: 将您的账户和地址簿保存到加密的密钥tore文件, 或者加载一个 。"
 
 #: ../../09_user-guides/02_cubensis-connect.md:90
 msgid "**Session timeout**: how long the extension stays unlocked after you stop using it."
-msgstr ""
+msgstr "**会话超时**:在停止使用后,扩展会保持多久的解锁."
 
 #: ../../09_user-guides/02_cubensis-connect.md:91
 msgid "**Auto-click protection** and **Suspicious assets protection**: defences against scripted clicks and scam tokens."
-msgstr ""
+msgstr "**自动单击保护** 和 **可疑资产保护**:针对被脚本点击和骗取符的抗辩."
 
 #: ../../09_user-guides/02_cubensis-connect.md:92
 msgid "**Change password**, **Change language** and **Delete accounts**."
-msgstr ""
+msgstr "**更改密码**, **更改语言** 和 **删除账户** 双相机."
 
 #: ../../09_user-guides/02_cubensis-connect.md:94
 msgid "If you forget the password, click **I forgot password** on the login screen. Cubensis Connect cannot decrypt your accounts without it, so the only way back is to delete every account (you type `DELETE ALL ACCOUNTS` to confirm), set a new password and import each account again from its seed phrase."
-msgstr ""
+msgstr "如果您忘了密码, 请点击登录屏幕上的 **我忘了密码** 。Cubensis Connect没有它就无法解密你的账户,所以唯一的回路是去掉每个账户(您输入了 `DELETE ALL ACCOUNTS` 来确认),设置新的密码并再次从它的种子短语中导入每个账户."
 
 #: ../../09_user-guides/02_cubensis-connect.md:96
 msgid "Never type your seed phrase into a website. A dApp that works with Cubensis Connect never needs it."
-msgstr ""
+msgstr "永远不要将种子短语输入网站。与Cubensis Connect合作的dApp从不需要."
 
 #: ../../09_user-guides/03_decentralscan.md:6
 msgid "DecentralScan Guide"
-msgstr ""
+msgstr "DecentralScan 指南"
 
 #: ../../09_user-guides/03_decentralscan.md:8
 msgid "DecentralScan is the DecentralChain block explorer. It shows every block, transaction, account and token on the chain, read straight from the network's nodes. You don't need an account or a wallet to use it."
-msgstr ""
+msgstr "DecentralScan是DecentralChain区块探险家.它显示链条上每个块,交易,账户和信使,直接从网络的节点读取.你不需要账户或钱包来使用它."
 
 #: ../../09_user-guides/03_decentralscan.md:10
 msgid "Each network has its own explorer. A transaction or address from one network can't be found on the other's explorer."
-msgstr ""
+msgstr "每个网络都有自己的探险家.一个网络的交易或地址无法在另一个网络的探索者身上找到."
 
 #: ../../09_user-guides/03_decentralscan.md
 msgid "Explorer"
-msgstr ""
+msgstr "浏览器"
 
 #: ../../09_user-guides/03_decentralscan.md
 msgid "[decentralscan.com](https://decentralscan.com/)"
-msgstr ""
+msgstr "[decentralscan.com](https://decentralscan.com/)"
 
 #: ../../09_user-guides/03_decentralscan.md
 msgid "[testnet.decentralscan.com](https://testnet.decentralscan.com/), with the [Testnet faucet](https://testnet.decentralscan.com/faucet)"
-msgstr ""
+msgstr "[testnet.decentralscan.com](https://testnet.decentralscan.com/),带 [Testnet 水龙头](https://testnet.decentralscan.com/faucet)"
 
 #: ../../09_user-guides/03_decentralscan.md:17
 msgid "Search"
-msgstr ""
+msgstr "搜索"
 
 #: ../../09_user-guides/03_decentralscan.md:19
 msgid "The search bar at the top of every page takes a block height, a block ID, a transaction ID, an asset ID or an address:"
-msgstr ""
+msgstr "每个页面上方的搜索栏需要块高,块ID,交易ID,资产ID或地址:"
 
 #: ../../09_user-guides/03_decentralscan.md
 msgid "You type"
-msgstr ""
+msgstr "您输入"
 
 #: ../../09_user-guides/03_decentralscan.md
 msgid "DecentralScan opens"
-msgstr ""
+msgstr "DecentralScan 打开"
 
 #: ../../09_user-guides/03_decentralscan.md
 msgid "Digits only, for example `99864`"
-msgstr ""
+msgstr "仅位数, 例如 `99864`"
 
 #: ../../09_user-guides/03_decentralscan.md
 msgid "The block at that height"
-msgstr ""
+msgstr "那个高地的地块"
 
 #: ../../09_user-guides/03_decentralscan.md
 msgid "A 40- to 79-character ID"
-msgstr ""
+msgstr "40到79个特征的身份证"
 
 #: ../../09_user-guides/03_decentralscan.md
 msgid "The block with that ID; if there is none, the transaction; if there is none, the asset"
-msgstr ""
+msgstr "带有该标识的块; 如果没有,则进行交易; 没有,则进行资产"
 
 #: ../../09_user-guides/03_decentralscan.md
 msgid "Anything shorter"
-msgstr ""
+msgstr "任何更短的东西"
 
 #: ../../09_user-guides/03_decentralscan.md
 msgid "The address page for it"
-msgstr ""
+msgstr "它的地址页"
 
 #: ../../09_user-guides/03_decentralscan.md:27
 msgid "Search doesn't resolve aliases. To find the address behind an alias, ask a node: `https://testnet-node.decentralchain.io/alias/by-alias/<alias>` returns it. A block signature (86 to 88 characters) is not an ID: use the **Block ID** shown on the block's page."
-msgstr ""
+msgstr "搜索不能解决化名.要找到别名背后的地址,请问一个节点: `https://testnet-node.decentralchain.io/alias/by-alias/<alias>` 返回.块签名(86到88个字符)不是ID:使用块页面上显示的 **块标识**."
 
 #: ../../09_user-guides/03_decentralscan.md:29
 msgid "Pages"
-msgstr ""
+msgstr "页 次"
 
 #: ../../09_user-guides/03_decentralscan.md:31
 msgid "**Dashboard** gives a network overview: the current height, the latest block, the node version and the most recent blocks. It is the start page."
-msgstr ""
+msgstr "**盘子** 给出了网络概览:当前高度,最新块,节点版本和最新块.这是开始的一页。"
 
 #: ../../09_user-guides/03_decentralscan.md:33
 msgid "**Blocks** lists the latest blocks. A block's page shows its height, ID, parent block, generator, timestamp, size, reward, the transactions in it and the raw block data."
-msgstr ""
+msgstr "**块** 列出了最新的块.块的页面显示它的高度,ID,母块,生成器,时间戳,大小,奖励,其中的交易和原始块数据."
 
 #: ../../09_user-guides/03_decentralscan.md:35
 msgid "**Transactions** has two tabs. **Lookup** finds a transaction by ID and shows its type, status, sender, recipient, amounts, fee, block height and every field of the transaction. **Mempool** lists the unconfirmed transactions waiting for a block."
@@ -504,103 +504,103 @@ msgstr ""
 
 #: ../../09_user-guides/03_decentralscan.md:37
 msgid "**Address** shows an account. The **Balances** tab has its DCC and token balances, **Transactions** its history (filter by type, or search by sender or recipient), **NFTs** its non-fungible tokens and **Leases** its active leases."
-msgstr ""
+msgstr "**地址** 显示一个账户. **余额** 标签有其DCC和符表余额, **交易** 的历史(按类型过滤,或由发件人或收件人搜索), **NFTs** 其不可倒转的符表和 **租赁** 其活地租赁."
 
 #: ../../09_user-guides/03_decentralscan.md:39
 msgid "**Assets** shows a token: name, ID, issuer, decimals, total quantity, whether it is reissuable, its activity, and the raw asset data the node returns. The distribution tool lists the token's holders."
-msgstr ""
+msgstr "**资产** 显示一个符号:名称,ID,发行者,十进制,总数量,是否可再发行,活动,以及节点的原始资产数据返回.发行工具列出指使符的持有者."
 
 #: ../../09_user-guides/03_decentralscan.md:41
 msgid "**DEX Pairs** lists the trading pairs on the network's matcher."
-msgstr ""
+msgstr "**DEX 对等** 列出了网络对接者上的交易对等."
 
 #: ../../09_user-guides/03_decentralscan.md:43
 msgid "**Network** shows the network itself: an **Overview**, the **Peers** of the public node (connected, all, suspended and blacklisted) and the **Node** it reads from."
-msgstr ""
+msgstr "**网络** 显示了网络本身:一个 **概览**,公共节点的 **端点** (连接,全部,被中止和被黑上市),以及它所读取的 **节点**."
 
 #: ../../09_user-guides/03_decentralscan.md:45
 msgid "**Stress** is a read-only monitor of chain activity on the Testnet: blocks, mass transfers, transactions per second and block times."
-msgstr ""
+msgstr "**压力** 是Testnet上的链活性只读显示器:块,质量转移,交易每秒和块时间."
 
 #: ../../09_user-guides/03_decentralscan.md:47
 msgid "Direct Links"
-msgstr ""
+msgstr "直接链接"
 
 #: ../../09_user-guides/03_decentralscan.md:49
 msgid "Every page has a stable URL, so you can link straight to it from an app, a support answer or a bug report:"
-msgstr ""
+msgstr "每个页面都有稳定的URL,因此可以从应用程序,支持答案或错误报告直接链接到:"
 
 #: ../../09_user-guides/03_decentralscan.md
 msgid "Page"
-msgstr ""
+msgstr "页次"
 
 #: ../../09_user-guides/03_decentralscan.md
 msgid "URL"
-msgstr ""
+msgstr "URL"
 
 #: ../../09_user-guides/03_decentralscan.md
 msgid "Transaction"
-msgstr ""
+msgstr "交易"
 
 #: ../../09_user-guides/03_decentralscan.md
 msgid "`https://testnet.decentralscan.com/transaction?id=<transaction ID>`"
-msgstr ""
+msgstr "`https://testnet.decentralscan.com/transaction?id=<transaction ID>`"
 
 #: ../../09_user-guides/03_decentralscan.md
 msgid "Address"
-msgstr ""
+msgstr "地址"
 
 #: ../../09_user-guides/03_decentralscan.md
 msgid "`https://testnet.decentralscan.com/address?addr=<address>`"
-msgstr ""
+msgstr "`https://testnet.decentralscan.com/address?addr=<address>`"
 
 #: ../../09_user-guides/03_decentralscan.md
 msgid "Block by height"
-msgstr ""
+msgstr "按高度排列"
 
 #: ../../09_user-guides/03_decentralscan.md
 msgid "`https://testnet.decentralscan.com/blockdetail?height=<height>`"
-msgstr ""
+msgstr "`https://testnet.decentralscan.com/blockdetail?height=<height>`"
 
 #: ../../09_user-guides/03_decentralscan.md
 msgid "Block by ID"
-msgstr ""
+msgstr "以ID来挡住"
 
 #: ../../09_user-guides/03_decentralscan.md
 msgid "`https://testnet.decentralscan.com/blockdetail?id=<block ID>`"
-msgstr ""
+msgstr "`https://testnet.decentralscan.com/blockdetail?id=<block ID>`"
 
 #: ../../09_user-guides/03_decentralscan.md
 msgid "Asset"
-msgstr ""
+msgstr "资产"
 
 #: ../../09_user-guides/03_decentralscan.md
 msgid "`https://testnet.decentralscan.com/asset?id=<asset ID>`"
-msgstr ""
+msgstr "`https://testnet.decentralscan.com/asset?id=<asset ID>`"
 
 #: ../../09_user-guides/03_decentralscan.md
 msgid "Unconfirmed transactions"
-msgstr ""
+msgstr "未经确认的交易"
 
 #: ../../09_user-guides/03_decentralscan.md
 msgid "`https://testnet.decentralscan.com/transaction?tab=mempool`"
-msgstr ""
+msgstr "`https://testnet.decentralscan.com/transaction?tab=mempool`"
 
 #: ../../09_user-guides/03_decentralscan.md:60
 msgid "For Mainnet, use `https://decentralscan.com` in place of `https://testnet.decentralscan.com`."
-msgstr ""
+msgstr "对于Mainnet,用 `https://decentralscan.com` 来代替 `https://testnet.decentralscan.com`."
 
 #: ../../09_user-guides/03_decentralscan.md:62
 msgid "Check a Transaction"
-msgstr ""
+msgstr "检查交易"
 
 #: ../../09_user-guides/03_decentralscan.md:64
 msgid "To check whether a payment arrived, open its transaction page:"
-msgstr ""
+msgstr "要检查是否到达付款, 请打开交易页 :"
 
 #: ../../09_user-guides/03_decentralscan.md:66
 msgid "**Not found** means the node doesn't know the transaction. It was not broadcast, was rejected, or was broadcast to the other network."
-msgstr ""
+msgstr "**未找到** 表示节点不知道交易内容.它没有被广播,被拒绝,或者被广播到另一个网络."
 
 #: ../../09_user-guides/03_decentralscan.md:67
 msgid "**In the Mempool tab** means the node accepted it but it is not in a block yet. On the Testnet a block comes about every 30 seconds; on Mainnet about every 60."
@@ -608,29 +608,29 @@ msgstr ""
 
 #: ../../09_user-guides/03_decentralscan.md:68
 msgid "**A block height** means it is on the chain. The status shows whether it succeeded. A dApp call can be in a block and still have failed: the fee is charged, but none of its actions happen."
-msgstr ""
+msgstr "**块高** 表示在链上.状态显示是否成功 。一个dApp的呼叫可能在一个街区内,但仍然失败:收费,但是它的行动都没有发生."
 
 #: ../../09_user-guides/03_decentralscan.md:70
 #, python-brace-format
 msgid "Leased DCC are not spent: they still show in the account's balance, and the lease appears under **Leases** until it is cancelled. See {doc}`Leasing <04_leasing>`."
-msgstr ""
+msgstr "租借的DCC没有用完:它们仍然显示在账户的余额中,租借在 **租赁** 下出现直到取消.见 {doc}`租赁 <04_leasing>`."
 
 #: ../../09_user-guides/03_decentralscan.md:72
 msgid "Get Testnet DCC"
-msgstr ""
+msgstr "获取 Testnet DCC"
 
 #: ../../09_user-guides/03_decentralscan.md:74
 #, python-brace-format
 msgid "The [Testnet faucet](https://testnet.decentralscan.com/faucet) sends 10 DCC to a Testnet address, once every 24 hours per address. Paste the address and submit. The {doc}`Quick Start <01_quick-start>` shows the same request from the command line."
-msgstr ""
+msgstr "[Testnet 水龙头](https://testnet.decentralscan.com/faucet) 发送了10个DCC到一个Testnet地址,每个地址每24小时发送一次.粘贴地址并提交 。{doc}`快速启动 <01_quick-start>` 显示命令行的相同请求."
 
 #: ../../09_user-guides/03_decentralscan.md:76
 msgid "Everything Is Public"
-msgstr ""
+msgstr "一切皆为公开"
 
 #: ../../09_user-guides/03_decentralscan.md:78
 msgid "An explorer shows only what is on the chain, and everything on the chain is public: every balance, every transaction and every data entry of every account. Don't put anything private in an attachment or a data entry."
-msgstr ""
+msgstr "一个探险家只显示链上的内容,链上的一切都是公开的:每个账户的每一个余额,每个交易和每个数据输入.不要在附件或数据条目中放任何私事."
 
 #: ../../09_user-guides/03_decentralscan.md:80
 #, python-brace-format
@@ -639,347 +639,347 @@ msgstr ""
 
 #: ../../09_user-guides/04_leasing.md:7 ../../09_user-guides/index.md:66
 msgid "Leasing"
-msgstr ""
+msgstr "租赁"
 
 #: ../../09_user-guides/04_leasing.md:9
 #, python-brace-format
 msgid "Leasing lets you put your DCC behind a generating node without sending them to it. The node counts your DCC in its generating balance, which raises its chance to produce blocks, and many node operators share their block rewards with the accounts that lease to them. For how leasing fits into consensus, see {ref}`Leased Proof of Stake <02_decentralchain/05_node:Leased Proof of Stake>`."
-msgstr ""
+msgstr "租借让你把你的DCC放在生成节点后面而不把它们送到它.节点将你的DCC计算在生成平衡中,这增加了它生产块的机会,许多节点运营商与租赁给他们的账户分享它们的块奖励.关于租赁如何融入共识,见 {ref}`租借证据 <02_decentralchain/05_node:Leased Proof of Stake>`。"
 
 #: ../../09_user-guides/04_leasing.md:11
 msgid "How a Lease Works"
-msgstr ""
+msgstr "租房怎么行得通的"
 
 #: ../../09_user-guides/04_leasing.md:13
 msgid "**Your DCC stay in your account.** A lease does not move them. It locks the leased amount so you can't spend it, and you can end the lease at any time with a Lease Cancel transaction."
-msgstr ""
+msgstr "**你的DCC留在你的账户。** A租赁不移动它们.它锁住租入的金额,让你无法花掉,并且可以随时以租赁取消交易来结束租赁."
 
 #: ../../09_user-guides/04_leasing.md:14
 msgid "**The node gets no control over them.** It can't spend, transfer or lease them on."
-msgstr ""
+msgstr "**节点无法控制它们.** 它不能花, 转移或租借它们。"
 
 #: ../../09_user-guides/04_leasing.md:15
 msgid "**It takes time to count.** A node's generating balance is the lowest effective balance it had over the last 1,000 blocks, so leased DCC raise it only after they have been leased for 1,000 blocks: about 8 hours on the Testnet and 17 hours on Mainnet. Cancelling removes them at once."
-msgstr ""
+msgstr "**计数需要时间。** 一个节点的生成平衡是它在过去1000个地块上的最低有效平衡,所以租来的DCC只有在被租出1000个地块后才加高:大约8小时在Testnet上,17小时在Mainnet上.取消会马上删除它们。"
 
 #: ../../09_user-guides/04_leasing.md:16
 msgid "**Rewards are up to the operator.** The protocol pays block rewards and fees to the generating node, not to the accounts that lease to it. Any payout to lessors is the node operator's own arrangement: check how and how often an operator pays before you lease."
-msgstr ""
+msgstr "**奖励由操作员决定.** 协议向生成的节点支付整块奖励和收费,而不是租给它的账户.向出租人支付的任何费用都是节点运营商自己的安排:检查运营商在租赁前如何支付以及支付多少次."
 
 #: ../../09_user-guides/04_leasing.md:17
 msgid "**Only DCC can be leased.** Tokens can't."
-msgstr ""
+msgstr "**只有DCC可以被租借.** 托肯斯无法."
 
 #: ../../09_user-guides/04_leasing.md:19
 msgid "Each Lease and Lease Cancel transaction costs 0.001 DCC (0.005 DCC from an account with a script)."
-msgstr ""
+msgstr "每一次租赁和租赁取消交易费用为0.001 DCC (0.005 DCC从一个有脚本的账户出)."
 
 #: ../../09_user-guides/04_leasing.md
 msgid "Balance"
-msgstr ""
+msgstr "余额"
 
 #: ../../09_user-guides/04_leasing.md
 msgid "Meaning"
-msgstr ""
+msgstr "含义"
 
 #: ../../09_user-guides/04_leasing.md
 msgid "Regular"
-msgstr ""
+msgstr "经常"
 
 #: ../../09_user-guides/04_leasing.md
 msgid "All the DCC the account holds"
-msgstr ""
+msgstr "账户中所有 DCC"
 
 #: ../../09_user-guides/04_leasing.md
 msgid "Available"
-msgstr ""
+msgstr "可用"
 
 #: ../../09_user-guides/04_leasing.md
 msgid "Regular minus what the account leased out: what it can spend"
-msgstr ""
+msgstr "经常减去账户出租的金额:它能花多少"
 
 #: ../../09_user-guides/04_leasing.md
 msgid "Effective"
-msgstr ""
+msgstr "有效"
 
 #: ../../09_user-guides/04_leasing.md
 msgid "Available plus what others leased to it"
-msgstr ""
+msgstr "可用加上其他租给它的东西"
 
 #: ../../09_user-guides/04_leasing.md
 msgid "Generating"
-msgstr ""
+msgstr "正在生成"
 
 #: ../../09_user-guides/04_leasing.md
 msgid "The lowest effective balance over the last 1,000 blocks"
-msgstr ""
+msgstr "过去1 000个区块中最低的实际余额"
 
 #: ../../09_user-guides/04_leasing.md:28
 msgid "Choose a Node"
-msgstr ""
+msgstr "选择节点"
 
 #: ../../09_user-guides/04_leasing.md:30
 msgid "Lease only to an address that runs a generating node. The node's account needs a generating balance of at least 1,000 DCC to produce blocks once feature 1 is active (10,000 DCC before that). The block pages on [DecentralScan](https://decentralscan.com/) show which addresses generate blocks."
-msgstr ""
+msgstr "只租给运行生成节点的地址.节点的账户需要至少1000个DCC的生成平衡,在特性1活动后产生块(在此之前为10,000个DCC).[DecentralScan](https://decentralscan.com/) 显示上的块页面, 它的地址是生成块 。"
 
 #: ../../09_user-guides/04_leasing.md:32
 msgid "A lease to an address that doesn't run a node is valid, but it earns nothing. You can't lease to yourself."
-msgstr ""
+msgstr "租给一个不运行节点的地址是有效的,但它一无所获.岂能自租."
 
 #: ../../09_user-guides/04_leasing.md:34
 msgid "Lease with the SDK"
-msgstr ""
+msgstr "与SDK租赁"
 
 #: ../../09_user-guides/04_leasing.md:36
 #, python-brace-format
 msgid "This script leases 5 DCC to a node, checks the lease and then cancels it. Run it as in the {doc}`Quick Start <01_quick-start>`, with your seed phrase in `seed` and the node's address in `generator`:"
-msgstr ""
+msgstr "这个脚本将5DCC租给一个节点,检查租借,然后取消.按 {doc}`快速启动 <01_quick-start>` 运行,以 `seed` 为种子短语,以 `generator` 为节点地址 :"
 
 #: ../../09_user-guides/04_leasing.md:47
 msgid "On the Testnet the output looks like this. The account held 8.998 DCC, so 5 DCC are leased out and 3.998 DCC stay available (the lease fee is already taken):"
-msgstr ""
+msgstr "在Testnet上,输出是这样的.该账户持有8.998 DCC,因此5个DCC被出租出,3.998 DCC可留置(租赁费已经支付):"
 
 #: ../../09_user-guides/04_leasing.md:56
 msgid "To keep the lease, stop the script before the cancel. To cancel later, you only need the lease ID, which is the ID of the Lease transaction."
-msgstr ""
+msgstr "为了保留租约,在取消前停止剧本.以后要取消,您只需要租赁身份证明,即租赁交易的身份证明。"
 
 #: ../../09_user-guides/04_leasing.md:58
 msgid "Lease in a Wallet"
-msgstr ""
+msgstr "钱包的租赁"
 
 #: ../../09_user-guides/04_leasing.md:60
 msgid "In [Decentral.Exchange](https://decentral.exchange/), log in and open **Leasing** in the wallet menu. Under **Start a lease**, enter the **Node address** and the **Amount to lease**, check the network fee, and press and hold **Hold to start lease** until it signs. Your leases are listed on the same screen; each active one has a **Cancel** button."
-msgstr ""
+msgstr "在 [Decentral.Exchange](https://decentral.exchange/) 中,登录并打开钱包菜单中的 **租赁**. **开始租房** 下方入出 **节点地址** 和 **租赁金额**,检查网络费,并按下并按住 **持有开始租赁** 直到签出.您的租赁在同一个屏幕上列出; 每个活动屏幕有一个 **取消( E)** 按钮 。"
 
 #: ../../09_user-guides/04_leasing.md:62
 msgid "A dApp can also ask Cubensis Connect to sign a Lease or Lease Cancel transaction. The confirmation window shows the node and the amount before you approve it."
-msgstr ""
+msgstr "dApp也可以要求Cubensis Connect签署租赁或租赁取消交易.确认窗口显示您批准前的节点和金额 。"
 
 #: ../../09_user-guides/04_leasing.md:64
 msgid "Check Your Leases"
-msgstr ""
+msgstr "检查您的租赁"
 
 #: ../../09_user-guides/04_leasing.md:42
 msgid "What"
-msgstr ""
+msgstr "或"
 
 #: ../../09_user-guides/04_leasing.md:42
 msgid "Where"
-msgstr ""
+msgstr "在哪里"
 
 #: ../../09_user-guides/04_leasing.md:42
 msgid "Your active leases"
-msgstr ""
+msgstr "你的租赁合同"
 
 #: ../../09_user-guides/04_leasing.md:42
 #, python-brace-format
 msgid "`GET /leasing/active/{address}` on any node, or the **Leases** tab of your address on DecentralScan"
-msgstr ""
+msgstr "`GET /leasing/active/{address}` 在任何节点上,或者DecentralScan上地址的 **租赁** 标签"
 
 #: ../../09_user-guides/04_leasing.md:42
 msgid "One lease, active or cancelled"
-msgstr ""
+msgstr "1个租约,现行或被取消"
 
 #: ../../09_user-guides/04_leasing.md:42
 #, python-brace-format
 msgid "`GET /leasing/info/{leaseId}`"
-msgstr ""
+msgstr "`GET /leasing/info/{leaseId}`"
 
 #: ../../09_user-guides/04_leasing.md:42
 msgid "Your regular, available, effective and generating balance"
-msgstr ""
+msgstr "正常的,可用的,有效的和产生平衡"
 
 #: ../../09_user-guides/04_leasing.md:42
 #, python-brace-format
 msgid "`GET /addresses/balance/details/{address}`"
-msgstr ""
+msgstr "`GET /addresses/balance/details/{address}`"
 
 #: ../../09_user-guides/04_leasing.md:76
 msgid "The response has the lease's `sender`, `recipient`, `amount`, the `height` it started at and a `status` of `active` or `canceled`, with the cancel transaction's ID and height once it is cancelled."
-msgstr ""
+msgstr "回应有租借地的 `sender`, `recipient`, `amount`,它从 `height` 起步,以及 `active` 或 `canceled` 的一个 `status`,取消交易一旦被取消,其ID和高."
 
 #: ../../09_user-guides/04_leasing.md:78
 msgid "Running a Node That Accepts Leases"
-msgstr ""
+msgstr "运行一个接受租赁的节点"
 
 #: ../../09_user-guides/04_leasing.md:80
 #, python-brace-format
 msgid "A node operator needs nothing special to accept leases: every lease to the node's address counts toward its generating balance. To pay lessors, operators read the active leases to their address (`GET /leasing/active/{nodeAddress}`) and the blocks the node generated, then send payouts, usually with a {ref}`Mass Transfer <02_decentralchain/03_transaction:Mass Transfer Transaction>`. See the {doc}`Node Guide <../05_node-guide/index>` to run a node."
-msgstr ""
+msgstr "节点运营商接受租赁不需要什么特殊之处:节点地址的每一项租赁都计入其生成平衡.为了向出租人付款,运营商将活动租赁读到地址(`GET /leasing/active/{nodeAddress}`)和生成的结点块后,再发送付款,通常使用 {ref}`大规模转让 <02_decentralchain/03_transaction:Mass Transfer Transaction>`.参见 {doc}`节点指南 <../05_node-guide/index>` 运行一个节点."
 
 #: ../../09_user-guides/05_sponsorship.md:7 ../../09_user-guides/index.md:82
 msgid "Sponsorship"
-msgstr ""
+msgstr "赞助"
 
 #: ../../09_user-guides/05_sponsorship.md:9
 msgid "Every transaction needs a fee, and fees are normally paid in DCC. That is a hurdle for someone who just received your token: before they can send it on, they first have to get DCC. Sponsorship removes it. When you sponsor your token, its holders can pay transaction fees in the token itself, and you pay the DCC fee to the network for them."
-msgstr ""
+msgstr "每一笔交易都需要收费,收费通常以DCC支付.这对刚刚收到你信物的人来说是一个障碍:在他们能够寄出信物之前,他们首先必须拿到DCC.赞助会取消它。当您赞助您的代币时,其持有者可以在代币本身中支付交易费,而您为代币支付DCC的代币."
 
 #: ../../09_user-guides/05_sponsorship.md:11
 msgid "How It Works"
-msgstr ""
+msgstr "如何运作"
 
 #: ../../09_user-guides/05_sponsorship.md:13
 #, python-brace-format
 msgid "The token's issuer sends a {ref}`Sponsor Fee transaction <02_decentralchain/03_transaction:Sponsor Fee Transaction>` that sets `minSponsoredAssetFee`: the amount of the token that stands in for 0.001 DCC, one fee unit."
-msgstr ""
+msgstr "指使牌的发牌人发送了 {ref}`赞助费交易 <02_decentralchain/03_transaction:Sponsor Fee Transaction>`,设置了 `minSponsoredAssetFee`:代表了001 DCC的出牌金额,一个收费单位."
 
 #: ../../09_user-guides/05_sponsorship.md:14
 msgid "A holder sends a Transfer or Invoke Script transaction with `feeAssetId` set to the token and a fee in the token."
-msgstr ""
+msgstr "持卡人会将 `feeAssetId` 设定的传输或Invoke脚本交易发送到符上,并在符上收取费用."
 
 #: ../../09_user-guides/05_sponsorship.md:15
 msgid "The fee in the token goes to the issuer. The issuer's account pays the block generator the DCC equivalent: `fee in token × 0.001 / minSponsoredAssetFee` DCC."
-msgstr ""
+msgstr "代币的收费由发行人支付.发行商的账户向块生成器支付DCC等同的:`fee in token × 0.001 / minSponsoredAssetFee` DCC."
 
 #: ../../09_user-guides/05_sponsorship.md
 msgid "Rule"
-msgstr ""
+msgstr "第 11 条"
 
 #: ../../09_user-guides/05_sponsorship.md
 msgid "Detail"
-msgstr ""
+msgstr "细节"
 
 #: ../../09_user-guides/05_sponsorship.md
 msgid "Who can sponsor"
-msgstr ""
+msgstr "谁可以赞助"
 
 #: ../../09_user-guides/05_sponsorship.md
 msgid "Only the token's issuer"
-msgstr ""
+msgstr "只有信使的发行人"
 
 #: ../../09_user-guides/05_sponsorship.md
 msgid "Which tokens"
-msgstr ""
+msgstr "哪些符号"
 
 #: ../../09_user-guides/05_sponsorship.md
 #, python-brace-format
 msgid "Any token without an asset script; a {ref}`smart asset <02_decentralchain/02_token(asset):Smart Asset>` can't be sponsored"
-msgstr ""
+msgstr "没有资产脚本的任何符号; {ref}`智能资产 <02_decentralchain/02_token(asset):Smart Asset>` 无法被赞助"
 
 #: ../../09_user-guides/05_sponsorship.md
 msgid "Which transactions can pay in the token"
-msgstr ""
+msgstr "哪些交易可以以代号支付"
 
 #: ../../09_user-guides/05_sponsorship.md
 msgid "Transfer and Invoke Script"
-msgstr ""
+msgstr "传输和输入脚本"
 
 #: ../../09_user-guides/05_sponsorship.md
 msgid "Minimum fee in the token"
-msgstr ""
+msgstr "代号中的最低费用"
 
 #: ../../09_user-guides/05_sponsorship.md
 msgid "Fee units × `minSponsoredAssetFee`: 1 unit for a Transfer, 5 for an Invoke Script"
-msgstr ""
+msgstr "收费单位× `minSponsoredAssetFee`:1个转账单位,5个Invoke脚本"
 
 #: ../../09_user-guides/05_sponsorship.md
 msgid "Cost of the Sponsor Fee transaction"
-msgstr ""
+msgstr "赞助费交易费用"
 
 #: ../../09_user-guides/05_sponsorship.md
 msgid "0.001 DCC"
-msgstr ""
+msgstr "0.001 DCC"
 
 #: ../../09_user-guides/05_sponsorship.md
 msgid "Turning it off"
-msgstr ""
+msgstr "关掉"
 
 #: ../../09_user-guides/05_sponsorship.md
 msgid "Send another Sponsor Fee transaction with `minSponsoredAssetFee` of 0"
-msgstr ""
+msgstr "用 0 的 `minSponsoredAssetFee` 发送另一个赞助费交易"
 
 #: ../../09_user-guides/05_sponsorship.md:26
 msgid "The issuer needs enough DCC to cover the fees it pays. If its DCC balance runs out, transactions that pay their fee in the token are rejected until it is topped up. Watch the issuer's balance, or let users fall back to paying in DCC."
-msgstr ""
+msgstr "发行商需要足够的DCC来支付所支付的费用.如果其DCC余额用完,以代币支付费用的交易将被拒收,直至达到顶峰.注意发行商的平衡,或让用户回落到以DCC支付."
 
 #: ../../09_user-guides/05_sponsorship.md:28
 msgid "Choose minSponsoredAssetFee"
-msgstr ""
+msgstr "选择 minSponsoredAssetFee"
 
 #: ../../09_user-guides/05_sponsorship.md:30
 msgid "`minSponsoredAssetFee` is in the token's smallest unit. It sets the exchange rate you accept: with 2 decimals, `10` means 0.10 of your token buys 0.001 DCC of fee. Set it too low and users pay almost nothing while you pay full DCC fees; set it too high and fees feel expensive."
-msgstr ""
+msgstr "`minSponsoredAssetFee` 在符号最小的单位.它设定了您所接受的汇率:用2个小数, `10` 表示您信使的0.10 购买了0.001 DCC 的收费.设置太低,用户在支付全部DCC费用的同时几乎不支付任何费用;设置太高,收费感觉很昂贵."
 
 #: ../../09_user-guides/05_sponsorship.md:32
 msgid "A user may pay more than the minimum. You then receive more of the token and pay more DCC, at the same rate."
-msgstr ""
+msgstr "用户支付的费用可能超过最低数额。然后,你得到更多的代币 并支付更多的DCC, 以相同的费率。"
 
 #: ../../09_user-guides/05_sponsorship.md:34
 msgid "Sponsor a Token with the SDK"
-msgstr ""
+msgstr "与SDK合作赞助一个Token"
 
 #: ../../09_user-guides/05_sponsorship.md:36
 #, python-brace-format
 msgid "This script issues a token, sponsors it, gives a user 10 tokens and has the user send 1 token while paying the fee in the token. Run it as in the {doc}`Quick Start <01_quick-start>`, with an issuer account that holds at least 1.003 DCC and any second account as the user:"
-msgstr ""
+msgstr "这个脚本发行了一个指使,赞助,给一个用户10个指使,并让用户在支付指使费的同时发送1个指使.如 {doc}`快速启动 <01_quick-start>` 一样运行,并有一个至少拥有1.003 DCC的发行账户,以及任何作为用户的第二个账户:"
 
 #: ../../09_user-guides/05_sponsorship.md:47
 msgid "On the Testnet, the issuer's DCC balance went from 8.997 to 7.994: 1 DCC to issue the token, 0.001 DCC each for the Sponsor Fee and the transfer to the user, and 0.001 DCC paid for the user's fee. The user's DCC balance did not change. The issuer's token balance is 999,010: the 1,000,000 issued, minus the 1,000 sent to the user, plus the 10 the user paid as the fee."
-msgstr ""
+msgstr "在Testnet上,发行商的DCC余额从8.997到7.994:1个DCC发行了代币,赞助费和转会给用户的分别是0.001个DCC,而0.001个DCC则支付用户的收费.用户的DCC余额没有改变.发行商的代币余额为999,010:发行的1,000,000,减去发给用户的1000,加上用户作为收费支付的10."
 
 #: ../../09_user-guides/05_sponsorship.md:49
 msgid "To sponsor a token you already issued, skip step 1 and set `assetId` to the token's ID."
-msgstr ""
+msgstr "要赞助您已经发行的代号, 请跳过第1步, 将 `assetId` 设定为代号 。"
 
 #: ../../09_user-guides/05_sponsorship.md:51
 msgid "Check a Token's Sponsorship"
-msgstr ""
+msgstr "检查一个托肯的赞助"
 
 #: ../../09_user-guides/05_sponsorship.md:53
 #, python-brace-format
 msgid "`GET /assets/details/{assetId}` on any node returns `minSponsoredAssetFee`: the current amount, or `null` when the token isn't sponsored."
-msgstr ""
+msgstr "任意节点上的 `GET /assets/details/{assetId}` 返回 `minSponsoredAssetFee`: 当前金额,或者当符号没有担保时的 `null` ."
 
 #: ../../09_user-guides/05_sponsorship.md:63
 msgid "Pay a Fee in a Sponsored Token"
-msgstr ""
+msgstr "在赞助的托肯支付费用"
 
 #: ../../09_user-guides/05_sponsorship.md:65
 msgid "As a holder, you need nothing from the issuer: set `feeAssetId` to the token and `fee` to at least the minimum, as in step 4 of the script. Wallets do the same when you choose the token as the fee currency."
-msgstr ""
+msgstr "作为持有者,你不需要从发行者那里得到什么:将 `feeAssetId` 设定为符号,并将 `fee` 至少设定为最小值,如同脚本的第4步.钱包在选择代币为收费货币时也会这样做."
 
 #: ../../09_user-guides/05_sponsorship.md:67
 msgid "A node rejects the transaction if the token is not sponsored (`Asset ... is not sponsored, cannot be used to pay fees`), if the fee is below the minimum, or if the issuer can't pay the DCC fee."
-msgstr ""
+msgstr "节点拒绝交易,如果该令牌没有担保(`Asset ... is not sponsored, cannot be used to pay fees`),如果收费低于最低,或者如果发行人无法支付DCC的手续费."
 
 #: ../../09_user-guides/index.md:1 ../../09_user-guides/index.md:20
 msgid "User Guides"
-msgstr ""
+msgstr "用户指南"
 
 #: ../../09_user-guides/index.md:3
 msgid "Step-by-step guides for using DecentralChain: getting your first Testnet DCC, using the wallet and the explorer, leasing DCC to a node and letting people pay fees in your token."
-msgstr ""
+msgstr "使用DecentralChain的分步向导:利用钱包和探险家获取您的第一个Testnet DCC,将DCC租入节点,让人们在您所持的符文中支付费用."
 
 #: ../../09_user-guides/index.md:18
 msgid "Quick Start"
-msgstr ""
+msgstr "快速启动"
 
 #: ../../09_user-guides/index.md:22
 msgid "From nothing to a confirmed Testnet transfer in about ten minutes."
-msgstr ""
+msgstr "从无到确认的Testnet转会 大约十分钟内。"
 
 #: ../../09_user-guides/index.md:34
 msgid "Cubensis Connect"
-msgstr ""
+msgstr "Cubensis Connect"
 
 #: ../../09_user-guides/index.md:38
 msgid "Install the browser wallet, create an account and approve dApp requests safely."
-msgstr ""
+msgstr "安装浏览器钱包,创建账户并安全批准dApp请求."
 
 #: ../../09_user-guides/index.md:50
 msgid "DecentralScan"
-msgstr ""
+msgstr "DecentralScan"
 
 #: ../../09_user-guides/index.md:54
 msgid "Find any block, transaction, address or token, and check whether a payment arrived."
-msgstr ""
+msgstr "查找任何块、交易、地址或信使,并检查是否收到付款。"
 
 #: ../../09_user-guides/index.md:70
 msgid "Put your DCC behind a generating node without giving them away."
-msgstr ""
+msgstr "把你的DCC放在生成节点后面,而不把它们送走."
 
 #: ../../09_user-guides/index.md:86
 msgid "Let holders of your token pay transaction fees in the token itself."
-msgstr ""
+msgstr "让您的代币持有人在代币上支付交易费。"
 
