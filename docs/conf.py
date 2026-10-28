@@ -409,16 +409,16 @@ html_context['github_version'] = 'main/docs/'
 # when the heading exists. Still check that the page itself resolves.
 linkcheck_anchors_ignore_for_url = [r"https://github\.com/.*"]
 
-# npmjs.com answers 403 to non-browser clients, so linkcheck can never verify it;
-# package existence and versions are checked by docs/scripts/check_sdk_table.py.
-# Social sites block bots the same way.
+# URLs linkcheck can never verify. Keep this list short: every entry hides real rot
+# too, so each one needs a reason, and an entry the docs no longer link to goes.
 linkcheck_ignore = [
+    # npmjs.com answers 403 to every non-browser client (checked 2026-10-27), so each
+    # package link would fail. docs/scripts/check_sdk_table.py and
+    # check_install_snippets.py install every documented package and version instead.
     r"https://www\.npmjs\.com/.*",
-    r"https://(www\.)?twitter\.com/.*",
-    r"https://(www\.)?linkedin\.com/.*",
-    r"https://(www\.)?instagram\.com/.*",
-    r"https://discord\.gg/.*",
+    # Example URLs of a reader's own node (http://localhost:6869/...), not reachable from CI.
     r"http://localhost.*",
+    # The same, written as an address.
     r"http://127\.0\.0\.1.*",
 ]
 linkcheck_timeout = 30

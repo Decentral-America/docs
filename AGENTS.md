@@ -32,7 +32,7 @@ export current_language=es      # or any locale in docs/locales/PUBLISHED
 sphinx-build -b html docs/ /tmp/out -D language="${current_language}"
 ```
 
-Also run the link checker before opening a PR — it won't block CI (see below) but tells you if you just broke something external:
+Also run the link checker before opening a PR — CI fails on any broken link (see below):
 
 ```bash
 sphinx-build -b linkcheck docs/ /tmp/linkcheck-out
@@ -57,8 +57,9 @@ sphinx-build -b linkcheck docs/ /tmp/linkcheck-out
 
 `.github/workflows/pr_check_workflow.yml` runs two jobs on every PR to `main`/`dev`:
 - `build_check`: `sphinx-build -W` — **blocks merge** on any warning (broken `:ref:`, bad directive, etc.). It also validates `docs/locales/PUBLISHED` (`test_published_locales.py`) and checks the built language switcher against it (`check_published_languages.py`); the deploy job re-checks every built language, including the partial-translation banner, before it uploads the site.
-- `link_check`: `sphinx-build -b linkcheck` — **does not block merge** (`continue-on-error: true`), because external links go stale independent of any PR and shouldn't hold up unrelated work. Check its output anyway; it catches real rot.
+- `link_check`: `sphinx-build -b linkcheck` — **fails on any broken link** (no `continue-on-error`). A link that breaks fails the next PR that touches `docs/**`, whatever that PR changes: fix the link, or, only for a host that can never be checked from CI, add it to `linkcheck_ignore` in `conf.py` with a comment saying why.
 - `translations` (`docs/scripts/check_translations.sh`): every locale has a catalog for every section, every catalog passes `msgfmt --check`, no translated message changes the English markup (role names, `:ref:`/`:doc:` targets, backticks), and the publish rule holds (a locale in `docs/locales/PUBLISHED` is at least 80% translated, or marked `partial`). It writes the coverage per locale to the job summary, and builds every published language with `-W`. The deploy workflow runs the same script, and `buildDocs.sh` builds every language and version with `-W`.
+- `independence_check` (`docs_checks.yml`, `docs/scripts/check_independence.py`): no page, table, sample, script or static asset under `docs/` (translations excluded) names a third-party project, decoded `base64:` literals included. The forbidden terms are in `docs/_terminology.md`. A mention the docs can't avoid goes in `docs/scripts/independence_allowlist.txt` as `<path>: <exact line>  # <reason>`. The same job fails on a stub page (`check_page_length.py`), and the other `docs_checks.yml` jobs typecheck and compile the samples and run Vale.
 
 ## Content conventions
 
