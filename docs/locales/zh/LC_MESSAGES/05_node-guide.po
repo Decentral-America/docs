@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: DecentralChain docs dev\n"
 "Report-Msgid-Bugs-To: https://github.com/Decentral-America/docs/issues\n"
-"POT-Creation-Date: 2026-10-27 21:54-0600\n"
+"POT-Creation-Date: 2026-10-28 01:36-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh\n"
@@ -955,16 +955,41 @@ msgid "Docker is the recommended way to run a DecentralChain node. The image is 
 msgstr ""
 
 #: ../../05_node-guide/04_install-docker.md:6
-#: ../../05_node-guide/06_sync-and-rollback.md:4
-#: ../../05_node-guide/07_upgrade.md:4
-#: ../../05_node-guide/08_wallet-and-generating.md:4
-#: ../../05_node-guide/09_logging.md:4
-#: ../../05_node-guide/10_features-and-activation.md:4
-#: ../../05_node-guide/11_troubleshooting.md:4
-msgid "Verified against node-scala v1.8.0."
+msgid "Verified on a clean Docker host (macOS 15.5, Docker Desktop 29.2.1, no earlier node images or volumes) against node-scala v1.8.1, 2026-10-27: following [Join the Public Testnet](15_join-testnet), the node synced the public Testnet from genesis to the tip, height 99,976, in 31 minutes, and its block IDs matched the public node."
 msgstr ""
 
 #: ../../05_node-guide/04_install-docker.md:9
+msgid "Which Network You Can Join"
+msgstr ""
+
+#: ../../05_node-guide/04_install-docker.md:5
+#: ../../05_node-guide/05_configuration.md:5
+msgid "Network"
+msgstr ""
+
+#: ../../05_node-guide/04_install-docker.md:5
+msgid "Status"
+msgstr ""
+
+#: ../../05_node-guide/04_install-docker.md:5
+#: ../../05_node-guide/05_configuration.md:5
+msgid "Public Testnet"
+msgstr ""
+
+#: ../../05_node-guide/04_install-docker.md:5
+msgid "Supported. Follow [Join the Public Testnet](15_join-testnet): it gives the configuration file the node needs."
+msgstr ""
+
+#: ../../05_node-guide/04_install-docker.md:5
+#: ../../05_node-guide/05_configuration.md:5
+msgid "Mainnet"
+msgstr ""
+
+#: ../../05_node-guide/04_install-docker.md:5
+msgid "Not with this image yet. The live DCC Mainnet runs an earlier node line (its public node reports `DCC v1.3.5`). node-scala's built-in Mainnet profile ships no peers until the Mainnet migration, and the peers in its packaged `node/decentralchain-mainnet.conf` refused connections when tested on 2026-10-27. A v1.8.1 container started with that file stayed at the genesis block."
+msgstr ""
+
+#: ../../05_node-guide/04_install-docker.md:16
 msgid "Requirements"
 msgstr ""
 
@@ -1017,20 +1042,15 @@ msgid "4+ cores"
 msgstr ""
 
 #: ../../05_node-guide/04_install-docker.md:5
-msgid "Disk (Mainnet, SSD)"
+msgid "Disk (SSD)"
 msgstr ""
 
 #: ../../05_node-guide/04_install-docker.md:5
-msgid "200 GB"
+msgid "1 GB for the Testnet (its data was 131 MB at height 99,976)"
 msgstr ""
 
 #: ../../05_node-guide/04_install-docker.md:5
-msgid "500 GB"
-msgstr ""
-
-#: ../../05_node-guide/04_install-docker.md:5
-#: ../../05_node-guide/05_configuration.md:5
-msgid "Network"
+msgid "10 GB, to leave room for the chain to grow"
 msgstr ""
 
 #: ../../05_node-guide/04_install-docker.md:5
@@ -1041,8 +1061,12 @@ msgstr ""
 msgid "1 Gbit/s"
 msgstr ""
 
-#: ../../05_node-guide/04_install-docker.md:19
+#: ../../05_node-guide/04_install-docker.md:26
 msgid "Image tags"
+msgstr ""
+
+#: ../../05_node-guide/04_install-docker.md:28
+msgid "All images live at `ghcr.io/decentral-america/node-scala`. No image is published on Docker Hub."
 msgstr ""
 
 #: ../../05_node-guide/04_install-docker.md:5
@@ -1050,19 +1074,19 @@ msgid "Tag"
 msgstr ""
 
 #: ../../05_node-guide/04_install-docker.md:5
-msgid "`mainnet-latest`"
+msgid "`1.8.1`, `1.8.0`, ..."
 msgstr ""
 
 #: ../../05_node-guide/04_install-docker.md:5
-msgid "Latest build for Mainnet"
+msgid "One release. Use a release tag, or a digest, for a node you want to keep stable"
 msgstr ""
 
 #: ../../05_node-guide/04_install-docker.md:5
-msgid "`testnet-latest`"
+msgid "`testnet-latest`, `mainnet-latest`, `latest`"
 msgstr ""
 
 #: ../../05_node-guide/04_install-docker.md:5
-msgid "Latest build for Testnet"
+msgid "The newest build. On 2026-10-27 all three were the same v1.8.1 image (`sha256:3b04d066…`): the network a container joins comes from its configuration, not from the tag"
 msgstr ""
 
 #: ../../05_node-guide/04_install-docker.md:5
@@ -1070,14 +1094,10 @@ msgid "`sha-<commit>`"
 msgstr ""
 
 #: ../../05_node-guide/04_install-docker.md:5
-msgid "A build pinned to one git commit — use this for reproducible deployments and rollbacks"
+msgid "A build of one git commit"
 msgstr ""
 
-#: ../../05_node-guide/04_install-docker.md:27
-msgid "All images live at `ghcr.io/decentral-america/node-scala`. Confirmed live: `ghcr.io/v2/decentral-america/node-scala/tags/list` returns `mainnet-latest`, `testnet-latest`, `stagenet-latest`, `1.7.0` and per-commit `sha-*` tags. No image is published under any Docker Hub name tried (`decentral-america/node-scala`, `decentralamerica/*`, `decentralchain/*`)."
-msgstr ""
-
-#: ../../05_node-guide/04_install-docker.md:29
+#: ../../05_node-guide/04_install-docker.md:36
 #: ../../05_node-guide/15_join-testnet.md:156
 msgid "Ports"
 msgstr ""
@@ -1097,11 +1117,12 @@ msgid "`6868`"
 msgstr ""
 
 #: ../../05_node-guide/04_install-docker.md:5
-msgid "P2P (Mainnet and the public Testnet)"
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "P2P"
 msgstr ""
 
 #: ../../05_node-guide/04_install-docker.md:5
-msgid "Open to the internet so peers can reach you"
+msgid "Open to the internet if other nodes should be able to dial you; outbound only is enough to sync"
 msgstr ""
 
 #: ../../05_node-guide/04_install-docker.md:5
@@ -1119,36 +1140,48 @@ msgstr ""
 msgid "Keep private: bind to localhost, or place behind a reverse proxy"
 msgstr ""
 
-#: ../../05_node-guide/04_install-docker.md:36
+#: ../../05_node-guide/04_install-docker.md:43
+msgid "The Configuration File Is Required"
+msgstr ""
+
+#: ../../05_node-guide/04_install-docker.md:45
+msgid "Mount a configuration file at `/etc/dcc/dcc.conf`. Besides selecting the network, it must set the wallet password (`dcc.wallet.password`, which may be `\"\"`). Without a mounted file the node has no wallet password, can't ask for one, and exits with code 61 (`CANNOT GET CONSOLE TO ASK WALLET PASSWORD` in the log); with `--restart unless-stopped`, Docker then restarts it in a loop. `DCC_WALLET_PASSWORD` doesn't help on its own: the entrypoint applies it only on top of a mounted file. See [Configuration](05_configuration)."
+msgstr ""
+
+#: ../../05_node-guide/04_install-docker.md:47
 msgid "Quick start"
 msgstr ""
 
-#: ../../05_node-guide/04_install-docker.md:38
-msgid "The examples below run a Mainnet node. To run a node on the public Testnet, follow [Join the Public Testnet](15_join-testnet) instead: it needs a configuration file, not just `DCC_NETWORK=testnet`."
+#: ../../05_node-guide/04_install-docker.md:49
+msgid "Write `dcc.conf` as shown in [Join the Public Testnet](15_join-testnet), then start the node from the same directory:"
 msgstr ""
 
-#: ../../05_node-guide/04_install-docker.md:54
+#: ../../05_node-guide/04_install-docker.md:66
 msgid "Inside the container the REST API binds to `127.0.0.1` by default (`DCC_REST_API_BIND`). Docker cannot forward a published port to a service listening only on the container's loopback interface, so without `DCC_REST_API_BIND=0.0.0.0` the API is unreachable from the host. The example above then publishes the port only on the host's loopback (`-p 127.0.0.1:6869:6869`), which keeps the API off the public internet."
 msgstr ""
 
-#: ../../05_node-guide/04_install-docker.md:57
-msgid "Data is stored in the `/var/lib/dcc` volume and logs in `/var/log/dcc`. Keep the data volume between restarts and upgrades — losing it forces a full re-sync."
+#: ../../05_node-guide/04_install-docker.md:69
+msgid "Data is stored in the `/var/lib/dcc` volume and logs in `/var/log/dcc`. Keep the data volume between restarts and upgrades: losing it forces a full re-sync."
 msgstr ""
 
-#: ../../05_node-guide/04_install-docker.md:59
+#: ../../05_node-guide/04_install-docker.md:71
 msgid "Docker Compose"
 msgstr ""
 
-#: ../../05_node-guide/04_install-docker.md:88
-msgid "`DCC_WALLET_SEED` and `DCC_WALLET_PASSWORD` only take effect when a config file is mounted at `/etc/dcc/dcc.conf` (and no command arguments are passed to the container): the entrypoint layers the wallet secrets on top of that file. Without a mounted config they are silently ignored. See [Configuration](05_configuration)."
+#: ../../05_node-guide/04_install-docker.md:73
+msgid "The same node with Docker Compose, with `dcc.conf` next to `compose.yaml`:"
 msgstr ""
 
-#: ../../05_node-guide/04_install-docker.md:91
+#: ../../05_node-guide/04_install-docker.md:102
+msgid "To give the node a wallet seed and password without writing them into `dcc.conf`, add `env_file: .env` with `DCC_WALLET_SEED` and `DCC_WALLET_PASSWORD` (and `chmod 600 .env`). The entrypoint layers them on top of the mounted `dcc.conf`; without the mounted file they are ignored."
+msgstr ""
+
+#: ../../05_node-guide/04_install-docker.md:105
 msgid "Verify it is running"
 msgstr ""
 
-#: ../../05_node-guide/04_install-docker.md:98
-msgid "The image's built-in `HEALTHCHECK` polls `/node/status`. See [Configuration](05_configuration) for every environment variable and [Sync and Rollback](06_sync-and-rollback) for what to expect on first start."
+#: ../../05_node-guide/04_install-docker.md:113
+msgid "The image's built-in `HEALTHCHECK` polls `/node/status`. On the first start the node replays the chain from genesis; [Join the Public Testnet](15_join-testnet) shows how to check it has reached the tip. See [Configuration](05_configuration) for every environment variable and [Sync and Rollback](06_sync-and-rollback) for what to expect on first start."
 msgstr ""
 
 #: ../../05_node-guide/05_configuration.md:1 ../../05_node-guide/index.md:29
@@ -1275,19 +1308,11 @@ msgid "Peer to connect to"
 msgstr ""
 
 #: ../../05_node-guide/05_configuration.md:5
-msgid "Mainnet"
-msgstr ""
-
-#: ../../05_node-guide/05_configuration.md:5
 msgid "6868"
 msgstr ""
 
 #: ../../05_node-guide/05_configuration.md:5
 msgid "not published yet"
-msgstr ""
-
-#: ../../05_node-guide/05_configuration.md:5
-msgid "Public Testnet"
 msgstr ""
 
 #: ../../05_node-guide/05_configuration.md:5
@@ -1541,6 +1566,15 @@ msgstr ""
 
 #: ../../05_node-guide/06_sync-and-rollback.md:1
 msgid "Sync, Import, Export and Rollback"
+msgstr ""
+
+#: ../../05_node-guide/06_sync-and-rollback.md:4
+#: ../../05_node-guide/07_upgrade.md:4
+#: ../../05_node-guide/08_wallet-and-generating.md:4
+#: ../../05_node-guide/09_logging.md:4
+#: ../../05_node-guide/10_features-and-activation.md:4
+#: ../../05_node-guide/11_troubleshooting.md:4
+msgid "Verified against node-scala v1.8.0."
 msgstr ""
 
 #: ../../05_node-guide/06_sync-and-rollback.md:7
@@ -2246,7 +2280,7 @@ msgid "Installing on Linux"
 msgstr ""
 
 #: ../../05_node-guide/12_install-linux.md:4
-msgid "Verified against node-scala v1.8.0's `README.md` and `build.sbt`. Not run on a clean machine as part of this documentation pass — if a step doesn't match what you see, please report it."
+msgid "Verified on a clean Ubuntu 24.04 (the `ubuntu:24.04` image, plus `sudo`, `curl` and `git`) against node-scala v1.8.1, 2026-10-27: Temurin 25.0.5, SBT from its APT repository, `sbt packageAll` in 12 minutes, then the tarball synced the public Testnet from genesis to the tip, height 100,132, in 22 minutes, with block IDs matching the public node. The DEB package did not install (see below)."
 msgstr ""
 
 #: ../../05_node-guide/12_install-linux.md:7
@@ -2260,83 +2294,105 @@ msgid "Prerequisites"
 msgstr ""
 
 #: ../../05_node-guide/12_install-linux.md:11
-msgid "**Java 25 JDK** — [Eclipse Temurin 25](https://adoptium.net/temurin/releases/?version=25) is the distribution node-scala recommends and tests against."
+msgid "**Java 25 JDK**: [Eclipse Temurin 25](https://adoptium.net/temurin/releases/?version=25) is the distribution node-scala recommends and tests against."
 msgstr ""
 
 #: ../../05_node-guide/12_install-linux.md:12
-#: ../../05_node-guide/13_install-macos.md:12
-#: ../../05_node-guide/14_install-windows.md:12
-msgid "A network configuration file — the repository ships defaults for Mainnet and Testnet in `node/src/main/resources/network-defaults.conf`."
+msgid "**[SBT](https://www.scala-sbt.org/1.x/docs/Installing-sbt-on-Linux.html)** and **Git**, to build the node: node-scala releases ship no node package (the v1.7.0 to v1.8.1 release assets are only `dcc-grpc-server` tarballs)."
+msgstr ""
+
+#: ../../05_node-guide/12_install-linux.md:13
+msgid "**A configuration file** for the network. For the public Testnet, use the one in [Join the Public Testnet](15_join-testnet); the node's built-in `testnet` profile is a different network."
 msgstr ""
 
 #: ../../05_node-guide/12_install-linux.md:14
+msgid "About 4 GB of free memory and 10 GB of disk for the build; the Testnet data itself was 131 MB at height 99,976."
+msgstr ""
+
+#: ../../05_node-guide/12_install-linux.md:16
 msgid "Install the JDK (Ubuntu/Debian)"
 msgstr ""
 
-#: ../../05_node-guide/12_install-linux.md:22
-msgid "For a distribution without APT, install Eclipse Temurin 25 through your package manager or from the [Adoptium releases page](https://adoptium.net/temurin/releases/?version=25)."
-msgstr ""
-
-#: ../../05_node-guide/12_install-linux.md:24
-msgid "Supported path: Docker"
-msgstr ""
-
 #: ../../05_node-guide/12_install-linux.md:26
-msgid "node-scala releases do not ship a node DEB package or JAR — the v1.7.0 release assets are only `dcc-grpc-server` tarballs. The supported way to run a node is the [Docker image](04_install-docker) `ghcr.io/decentral-america/node-scala`. To run the node directly on the host, build it from source as below."
+msgid "This adds Adoptium's signing key as a keyring file. Older instructions pipe it into `apt-key add`, which Ubuntu 24.04 still accepts but reports as deprecated on every `apt-get update`."
 msgstr ""
 
 #: ../../05_node-guide/12_install-linux.md:28
+msgid "For a distribution without APT, install Eclipse Temurin 25 through your package manager or from the [Adoptium releases page](https://adoptium.net/temurin/releases/?version=25)."
+msgstr ""
+
+#: ../../05_node-guide/12_install-linux.md:30
+msgid "Install SBT (Ubuntu/Debian)"
+msgstr ""
+
+#: ../../05_node-guide/12_install-linux.md:32
+msgid "These are the commands from the [SBT installation page](https://www.scala-sbt.org/1.x/docs/Installing-sbt-on-Linux.html):"
+msgstr ""
+
+#: ../../05_node-guide/12_install-linux.md:42
 #: ../../05_node-guide/13_install-macos.md:33
 #: ../../05_node-guide/14_install-windows.md:24
 msgid "Build from source"
 msgstr ""
 
-#: ../../05_node-guide/12_install-linux.md:42
+#: ../../05_node-guide/12_install-linux.md:52
 msgid "`sbt packageAll` produces:"
 msgstr ""
 
-#: ../../05_node-guide/12_install-linux.md:44
+#: ../../05_node-guide/12_install-linux.md:54
 msgid "the universal tarball `node/target/universal/decentralchain-<version>.tgz` (also copied to `docker/target/dcc.tgz`), and"
 msgstr ""
 
-#: ../../05_node-guide/12_install-linux.md:45
+#: ../../05_node-guide/12_install-linux.md:55
 msgid "DEB packages for `amd64` and `arm64` in `node/target/`. The node package is named `decentralchain` for Mainnet and `decentralchain-<network>` for other networks (for example `decentralchain-testnet`)."
 msgstr ""
 
-#: ../../05_node-guide/12_install-linux.md:47
+#: ../../05_node-guide/12_install-linux.md:57
+msgid "`sbt -Dnetwork=testnet packageAll` builds packages whose defaults are the built-in `testnet` profile, not the public Testnet. To join the public Testnet, any build works: the configuration file selects the chain."
+msgstr ""
+
+#: ../../05_node-guide/12_install-linux.md:59
 msgid "There is no single \"fat\" JAR; the node runs from its `lib/` directory through the launcher script."
 msgstr ""
 
-#: ../../05_node-guide/12_install-linux.md:49
-msgid "Building from source additionally requires [SBT](https://www.scala-sbt.org/1.x/docs/Installing-sbt-on-Linux.html). See the [node-scala README](https://github.com/Decentral-America/node-scala#readme) for integration-test setup and IDE configuration."
+#: ../../05_node-guide/12_install-linux.md:61
+msgid "To also run the unit tests, run `sbt checkPR` before `packageAll`. It took 81 minutes on the same machine and needs [Node.js](https://nodejs.org/) on the `PATH` as well, for the JavaScript build of the Ride compiler. See the [node-scala README](https://github.com/Decentral-America/node-scala#readme) for integration tests and IDE setup."
 msgstr ""
 
-#: ../../05_node-guide/12_install-linux.md:51
-msgid "Install the DEB package you built"
-msgstr ""
-
-#: ../../05_node-guide/12_install-linux.md:58
-msgid "Installing the package sets up the node as a system service named after the package; see its post-install scripts for the exact paths on your distribution."
-msgstr ""
-
-#: ../../05_node-guide/12_install-linux.md:60
+#: ../../05_node-guide/12_install-linux.md:63
 #: ../../05_node-guide/13_install-macos.md:22
 #: ../../05_node-guide/14_install-windows.md:14
 msgid "Run from the tarball"
 msgstr ""
 
-#: ../../05_node-guide/12_install-linux.md:62
-msgid "If you'd rather not install a package, extract the tarball and start the node with its `bin/` launcher:"
+#: ../../05_node-guide/12_install-linux.md:65
+msgid "Extract the tarball and start the node with its `bin/node` launcher and your configuration file:"
 msgstr ""
 
-#: ../../05_node-guide/12_install-linux.md:69
-#: ../../05_node-guide/13_install-macos.md:52
+#: ../../05_node-guide/12_install-linux.md:72
+msgid "Unless the configuration sets `dcc.directory`, the node keeps its data under `~/.local/share/dcc-<network>`: `~/.local/share/dcc-custom-21` for the public Testnet. To check that it follows the chain, compare its height and block IDs with the public node, as shown in [Join the Public Testnet](15_join-testnet)."
+msgstr ""
+
+#: ../../05_node-guide/12_install-linux.md:74
+msgid "Install the DEB package you built"
+msgstr ""
+
+#: ../../05_node-guide/12_install-linux.md:77
+msgid "The v1.8.1 DEB package doesn't install: its post-install script copies `/usr/share/decentralchain/doc/dcc.conf.sample`, but the package ships `decentralchain.conf.sample`, so `dpkg -i` stops with `post-installation script subprocess returned error exit status 1` before it installs the systemd service. Until the package is fixed, run the node from the tarball as above."
+msgstr ""
+
+#: ../../05_node-guide/12_install-linux.md:85
+msgid "Once installed, the package runs the node as a systemd service named after the package (`decentralchain`), as the unprivileged user of the same name, and creates its configuration file at `/etc/decentralchain/dcc.conf` from the sample."
+msgstr ""
+
+#: ../../05_node-guide/12_install-linux.md:87
+#: ../../05_node-guide/13_install-macos.md:49
 #: ../../05_node-guide/14_install-windows.md:37
 msgid "Next steps"
 msgstr ""
 
-#: ../../05_node-guide/12_install-linux.md:71
-#: ../../05_node-guide/13_install-macos.md:54
+#: ../../05_node-guide/12_install-linux.md:89
+#: ../../05_node-guide/13_install-macos.md:51
 #: ../../05_node-guide/14_install-windows.md:39
 msgid "[Configuration](05_configuration) · [Sync and Rollback](06_sync-and-rollback) · [Wallet and Generating](08_wallet-and-generating)"
 msgstr ""
@@ -2346,8 +2402,7 @@ msgid "Installing on macOS"
 msgstr ""
 
 #: ../../05_node-guide/13_install-macos.md:4
-#: ../../05_node-guide/14_install-windows.md:4
-msgid "Verified against node-scala v1.8.0's `README.md`. Not run on a clean machine as part of this documentation pass — if a step doesn't match what you see, please report it."
+msgid "Not yet verified on a clean macOS machine. The steps follow node-scala v1.8.1's `README.md`; the build and run steps match the ones verified on a clean Ubuntu 24.04 (see [Linux](12_install-linux)). If a step doesn't match what you see, please report it."
 msgstr ""
 
 #: ../../05_node-guide/13_install-macos.md:7
@@ -2356,6 +2411,11 @@ msgstr ""
 
 #: ../../05_node-guide/13_install-macos.md:11
 msgid "[Homebrew](https://brew.sh/)"
+msgstr ""
+
+#: ../../05_node-guide/13_install-macos.md:12
+#: ../../05_node-guide/14_install-windows.md:12
+msgid "A network configuration file — the repository ships defaults for Mainnet and Testnet in `node/src/main/resources/network-defaults.conf`."
 msgstr ""
 
 #: ../../05_node-guide/13_install-macos.md:14
@@ -2367,19 +2427,28 @@ msgid "This installs [Eclipse Temurin 25](https://adoptium.net/temurin/releases/
 msgstr ""
 
 #: ../../05_node-guide/13_install-macos.md:24
-msgid "node-scala releases do not ship a node JAR or package (the v1.7.0 release assets are only `dcc-grpc-server` tarballs), and node-scala doesn't publish a macOS package (`.pkg`/Homebrew formula). The supported way to run a node is the [Docker image](04_install-docker) `ghcr.io/decentral-america/node-scala`. To run it directly on macOS, [build from source](#build-from-source) below, then extract the universal tarball and start the node with its `bin/` launcher:"
+msgid "node-scala releases do not ship a node JAR or package (the v1.7.0 to v1.8.1 release assets are only `dcc-grpc-server` tarballs), and node-scala doesn't publish a macOS package (`.pkg`/Homebrew formula). The supported way to run a node is the [Docker image](04_install-docker) `ghcr.io/decentral-america/node-scala`. To run it directly on macOS, [build from source](#build-from-source) below, then extract the universal tarball and start the node with its `bin/` launcher:"
 msgstr ""
 
 #: ../../05_node-guide/13_install-macos.md:31
 msgid "There is no single \"fat\" JAR; the launcher runs the node from the tarball's `lib/` directory."
 msgstr ""
 
-#: ../../05_node-guide/13_install-macos.md:50
+#: ../../05_node-guide/13_install-macos.md:45
+#: ../../05_node-guide/14_install-windows.md:33
+msgid "The network comes from the configuration file you start the node with; for the public Testnet, use the one in [Join the Public Testnet](15_join-testnet). To also run the unit tests, run `sbt checkPR` first: it takes over an hour and needs [Node.js](https://nodejs.org/) on the `PATH`."
+msgstr ""
+
+#: ../../05_node-guide/13_install-macos.md:47
 msgid "Building from source additionally requires [SBT](https://www.scala-sbt.org/1.x/docs/Installing-sbt-on-Mac.html). See the [node-scala README](https://github.com/Decentral-America/node-scala#readme) for integration-test setup."
 msgstr ""
 
 #: ../../05_node-guide/14_install-windows.md:1
 msgid "Installing on Windows"
+msgstr ""
+
+#: ../../05_node-guide/14_install-windows.md:4
+msgid "Not yet verified on a clean Windows machine. The steps follow node-scala v1.8.1's `README.md`; the build steps match the ones verified on a clean Ubuntu 24.04 (see [Linux](12_install-linux)). If a step doesn't match what you see, please report it."
 msgstr ""
 
 #: ../../05_node-guide/14_install-windows.md:7
@@ -2391,7 +2460,7 @@ msgid "**Java 25 JDK** — install [Eclipse Temurin 25](https://adoptium.net/tem
 msgstr ""
 
 #: ../../05_node-guide/14_install-windows.md:16
-msgid "node-scala releases do not ship a node JAR or a Windows installer (the v1.7.0 release assets are only `dcc-grpc-server` tarballs). The supported way to run a node is Docker Desktop with the [Docker image](04_install-docker) `ghcr.io/decentral-america/node-scala`. To run it directly, [build from source](#build-from-source) below, extract the universal tarball `node/target/universal/decentralchain-<version>.tgz`, and start the node from a terminal (Command Prompt or PowerShell) with the Windows launcher in its `bin\\` directory:"
+msgid "node-scala releases do not ship a node JAR or a Windows installer (the v1.7.0 to v1.8.1 release assets are only `dcc-grpc-server` tarballs). The supported way to run a node is Docker Desktop with the [Docker image](04_install-docker) `ghcr.io/decentral-america/node-scala`. To run it directly, [build from source](#build-from-source) below, extract the universal tarball `node/target/universal/decentralchain-<version>.tgz`, and start the node from a terminal (Command Prompt or PowerShell) with the Windows launcher in its `bin\\` directory:"
 msgstr ""
 
 #: ../../05_node-guide/14_install-windows.md:22
@@ -2415,7 +2484,7 @@ msgid "The public Testnet is a **custom chain** (`dcc.blockchain.type = CUSTOM`)
 msgstr ""
 
 #: ../../05_node-guide/15_join-testnet.md:10
-msgid "Every value on this page was checked against the live Testnet on 2026-10-18. The configuration mirrors the Testnet operators' own node configuration (`node-config/testnet/dcc.conf` in the [infra repository](https://github.com/Decentral-America/infra)). If the two ever disagree, the infra file is authoritative."
+msgid "Verified on a clean Docker host (macOS 15.5, Docker Desktop 29.2.1) against node-scala v1.8.1, 2026-10-27: following this page word for word, the node synced from genesis to the tip, height 99,976, in 31 minutes, and the block IDs it reported matched the public node's. The same configuration, run from a tarball built on a clean Ubuntu 24.04, synced to height 100,132 in 22 minutes. Every value on this page was checked against the live Testnet on 2026-10-18. The configuration mirrors the Testnet operators' own node configuration (`node-config/testnet/dcc.conf` in the [infra repository](https://github.com/Decentral-America/infra)). If the two ever disagree, the infra file is authoritative."
 msgstr ""
 
 #: ../../05_node-guide/15_join-testnet.md:13
@@ -2603,10 +2672,6 @@ msgid "Open to the internet?"
 msgstr ""
 
 #: ../../05_node-guide/15_join-testnet.md:9
-msgid "P2P"
-msgstr ""
-
-#: ../../05_node-guide/15_join-testnet.md:9
 msgid "Yes, if you set `declared-address`; otherwise outbound only is enough"
 msgstr ""
 
@@ -2667,4 +2732,82 @@ msgstr ""
 #, python-brace-format
 msgid "Network-specific defaults are defined in [`network-defaults.conf`](https://github.com/Decentral-America/node-scala/blob/main/node/src/main/resources/network-defaults.conf) in the node-scala repository. Pass your own config file (based on the mainnet/testnet template) as the argument to the JAR to override generating-node settings such as the {ref}`block reward vote <02_decentralchain/05_node:Voting>` and wallet seed."
 msgstr ""
+
+#~ msgid "Disk (Mainnet, SSD)"
+#~ msgstr ""
+
+#~ msgid "200 GB"
+#~ msgstr ""
+
+#~ msgid "500 GB"
+#~ msgstr ""
+
+#~ msgid "`mainnet-latest`"
+#~ msgstr ""
+
+#~ msgid "Latest build for Mainnet"
+#~ msgstr ""
+
+#~ msgid "`testnet-latest`"
+#~ msgstr ""
+
+#~ msgid "Latest build for Testnet"
+#~ msgstr ""
+
+#~ msgid "A build pinned to one git commit — use this for reproducible deployments and rollbacks"
+#~ msgstr ""
+
+#~ msgid "All images live at `ghcr.io/decentral-america/node-scala`. Confirmed live: `ghcr.io/v2/decentral-america/node-scala/tags/list` returns `mainnet-latest`, `testnet-latest`, `stagenet-latest`, `1.7.0` and per-commit `sha-*` tags. No image is published under any Docker Hub name tried (`decentral-america/node-scala`, `decentralamerica/*`, `decentralchain/*`)."
+#~ msgstr ""
+
+#~ msgid "P2P (Mainnet and the public Testnet)"
+#~ msgstr ""
+
+#~ msgid "Open to the internet so peers can reach you"
+#~ msgstr ""
+
+#~ msgid "The examples below run a Mainnet node. To run a node on the public Testnet, follow [Join the Public Testnet](15_join-testnet) instead: it needs a configuration file, not just `DCC_NETWORK=testnet`."
+#~ msgstr ""
+
+#~ msgid "Data is stored in the `/var/lib/dcc` volume and logs in `/var/log/dcc`. Keep the data volume between restarts and upgrades — losing it forces a full re-sync."
+#~ msgstr ""
+
+#~ msgid "`DCC_WALLET_SEED` and `DCC_WALLET_PASSWORD` only take effect when a config file is mounted at `/etc/dcc/dcc.conf` (and no command arguments are passed to the container): the entrypoint layers the wallet secrets on top of that file. Without a mounted config they are silently ignored. See [Configuration](05_configuration)."
+#~ msgstr ""
+
+#~ msgid "The image's built-in `HEALTHCHECK` polls `/node/status`. See [Configuration](05_configuration) for every environment variable and [Sync and Rollback](06_sync-and-rollback) for what to expect on first start."
+#~ msgstr ""
+
+#~ msgid "Verified against node-scala v1.8.0's `README.md` and `build.sbt`. Not run on a clean machine as part of this documentation pass — if a step doesn't match what you see, please report it."
+#~ msgstr ""
+
+#~ msgid "**Java 25 JDK** — [Eclipse Temurin 25](https://adoptium.net/temurin/releases/?version=25) is the distribution node-scala recommends and tests against."
+#~ msgstr ""
+
+#~ msgid "Supported path: Docker"
+#~ msgstr ""
+
+#~ msgid "node-scala releases do not ship a node DEB package or JAR — the v1.7.0 release assets are only `dcc-grpc-server` tarballs. The supported way to run a node is the [Docker image](04_install-docker) `ghcr.io/decentral-america/node-scala`. To run the node directly on the host, build it from source as below."
+#~ msgstr ""
+
+#~ msgid "Building from source additionally requires [SBT](https://www.scala-sbt.org/1.x/docs/Installing-sbt-on-Linux.html). See the [node-scala README](https://github.com/Decentral-America/node-scala#readme) for integration-test setup and IDE configuration."
+#~ msgstr ""
+
+#~ msgid "Installing the package sets up the node as a system service named after the package; see its post-install scripts for the exact paths on your distribution."
+#~ msgstr ""
+
+#~ msgid "If you'd rather not install a package, extract the tarball and start the node with its `bin/` launcher:"
+#~ msgstr ""
+
+#~ msgid "Verified against node-scala v1.8.0's `README.md`. Not run on a clean machine as part of this documentation pass — if a step doesn't match what you see, please report it."
+#~ msgstr ""
+
+#~ msgid "node-scala releases do not ship a node JAR or package (the v1.7.0 release assets are only `dcc-grpc-server` tarballs), and node-scala doesn't publish a macOS package (`.pkg`/Homebrew formula). The supported way to run a node is the [Docker image](04_install-docker) `ghcr.io/decentral-america/node-scala`. To run it directly on macOS, [build from source](#build-from-source) below, then extract the universal tarball and start the node with its `bin/` launcher:"
+#~ msgstr ""
+
+#~ msgid "node-scala releases do not ship a node JAR or a Windows installer (the v1.7.0 release assets are only `dcc-grpc-server` tarballs). The supported way to run a node is Docker Desktop with the [Docker image](04_install-docker) `ghcr.io/decentral-america/node-scala`. To run it directly, [build from source](#build-from-source) below, extract the universal tarball `node/target/universal/decentralchain-<version>.tgz`, and start the node from a terminal (Command Prompt or PowerShell) with the Windows launcher in its `bin\\` directory:"
+#~ msgstr ""
+
+#~ msgid "Every value on this page was checked against the live Testnet on 2026-10-18. The configuration mirrors the Testnet operators' own node configuration (`node-config/testnet/dcc.conf` in the [infra repository](https://github.com/Decentral-America/infra)). If the two ever disagree, the infra file is authoritative."
+#~ msgstr ""
 
