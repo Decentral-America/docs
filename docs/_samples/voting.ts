@@ -33,8 +33,9 @@ const vote = invokeScript(
 await broadcast(vote, nodeUrl);
 await wait(vote.id);
 
-// 4. Count the votes: the script keeps a running count per option
+// 4. Count the votes: the script keeps a running count per option. An option nobody
+// voted for has no entry yet, so read all the counts at once and treat a missing one as 0.
+const counts = await nodeInteraction.accountData({ address: poll, match: 'count_.*' }, nodeUrl);
 for (const option of ['yes', 'no', 'abstain']) {
-  const entry = await nodeInteraction.accountDataByKey(`count_${option}`, poll, nodeUrl);
-  console.log(`${option}: ${entry?.value ?? 0}`);
+  console.log(`${option}: ${counts[`count_${option}`]?.value ?? 0}`);
 }
