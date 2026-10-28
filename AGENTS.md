@@ -181,6 +181,18 @@ Both live in the navbar, both are populated from `html_context` built in `conf.p
 3. Check it: `python3 docs/scripts/translations.py coverage docs/locales` prints the share translated per locale.
 4. Publish it: add a line to `docs/locales/PUBLISHED` (`<code>`, or `<code> partial` while the translation is incomplete). A listed locale without `partial` must be at least 80% translated, or the PR checks and the deploy fail. A catalog dir that isn't listed is neither built nor offered in the switcher.
 
+## Translating with a machine translation engine or a translator
+
+`docs/scripts/translate_catalogs.py` moves messages between the catalogs and whoever translates them, as JSON lines, and checks every translation before it lands:
+
+```bash
+python3 docs/scripts/translate_catalogs.py export docs/locales fr /tmp/fr.jsonl 09_user-guides   # {"catalog", "id"} per untranslated message
+# translate: add a "str" to each line (an engine, a translator, or both)
+python3 docs/scripts/translate_catalogs.py import docs/locales fr /tmp/fr-done.jsonl             # rejects go to /tmp/fr-done.rejected.jsonl
+```
+
+`import` rejects a translation that changes the markup, drops a name the glossary keeps (DecentralChain, DCC, Ride, Cubensis Connect, DecentralScan...) or changes a `{placeholder}`. Use the fixed terms in `docs/locales/glossary.csv`, one column per locale. The home page's "Learn More" button labels stay in English: they carry a reference, and translating them fails the `-W` build. A machine-translated locale counts towards coverage straight away, but goes into `PUBLISHED` only after a native or fluent speaker has reviewed it (at least Getting Started, the Node Guide and Building Apps). Record the reviewer and date in the comment on its `PUBLISHED` line, for example `fr  # reviewed by <name>, 2026-11-02`.
+
 ## Adding a new version/branch
 
 1. Create the branch normally
@@ -194,4 +206,4 @@ Both live in the navbar, both are populated from `html_context` built in `conf.p
 
 ## Spanish translation
 
-About 30% of the current English is translated (the `translations` job summary has the exact figure), and Spanish is published as `partial`. Its catalogs had broken markup: translated role names (`:matemáticas:` for `:math:`), translated `:ref:` targets (`02_token(activo)` for `02_token(asset)`) and stray spaces inside backticks, 87 build warnings in all. ECO-204 put the English role names and targets back from each msgid, keeping the translated text, and marked the two messages it couldn't repair that way fuzzy, so they show in English. The wording itself was not reviewed: that is the translation ticket's job (ECO-400). Don't "fix" Spanish content by guessing; the `translations` check now catches markup mistakes.
+About 37% of the current English is translated (the `translations` job summary has the exact figure), and Spanish is published as `partial`. ECO-400 added machine translations, not yet reviewed by a native speaker, of the User Guides, Ecosystem Apps, Release Notes, Glossary, Contributing and the home page. Its catalogs had broken markup: translated role names (`:matemáticas:` for `:math:`), translated `:ref:` targets (`02_token(activo)` for `02_token(asset)`) and stray spaces inside backticks, 87 build warnings in all. ECO-204 put the English role names and targets back from each msgid, keeping the translated text, and marked the two messages it couldn't repair that way fuzzy, so they show in English. The wording itself was not reviewed: that is the translation ticket's job (ECO-400). Don't "fix" Spanish content by guessing; the `translations` check now catches markup mistakes.

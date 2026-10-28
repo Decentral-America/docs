@@ -1,0 +1,46 @@
+en,ar,bn,de,es,fr,hi,ja,pt,ru,zh,note
+DecentralChain,DecentralChain,DecentralChain,DecentralChain,DecentralChain,DecentralChain,DecentralChain,DecentralChain,DecentralChain,DecentralChain,DecentralChain,Product name: never translated or transliterated
+DCC,DCC,DCC,DCC,DCC,DCC,DCC,DCC,DCC,DCC,DCC,Coin ticker: never translated
+DecentralCoin,DecentralCoin,DecentralCoin,DecentralCoin,DecentralCoin,DecentralCoin,DecentralCoin,DecentralCoin,DecentralCoin,DecentralCoin,DecentralCoin,Coin name: never translated
+Decentralite,Decentralite,Decentralite,Decentralite,Decentralite,Decentralite,Decentralite,Decentralite,Decentralite,Decentralite,Decentralite,Smallest unit (10^-8 DCC): never translated
+Ride,Ride,Ride,Ride,Ride,Ride,Ride,Ride,Ride,Ride,Ride,Language name: never translated
+Cubensis Connect,Cubensis Connect,Cubensis Connect,Cubensis Connect,Cubensis Connect,Cubensis Connect,Cubensis Connect,Cubensis Connect,Cubensis Connect,Cubensis Connect,Cubensis Connect,Wallet name: never translated
+DecentralScan,DecentralScan,DecentralScan,DecentralScan,DecentralScan,DecentralScan,DecentralScan,DecentralScan,DecentralScan,DecentralScan,DecentralScan,Explorer name: never translated
+Decentral.Exchange,Decentral.Exchange,Decentral.Exchange,Decentral.Exchange,Decentral.Exchange,Decentral.Exchange,Decentral.Exchange,Decentral.Exchange,Decentral.Exchange,Decentral.Exchange,Decentral.Exchange,Exchange name: never translated
+Mainnet,Mainnet,Mainnet,Mainnet,Mainnet,Mainnet,Mainnet,Mainnet,Mainnet,Mainnet,Mainnet,Network name: kept in English
+Testnet,Testnet,Testnet,Testnet,Testnet,Testnet,Testnet,Testnet,Testnet,Testnet,Testnet,Network name: kept in English
+dApp,dApp,dApp,dApp,dApp,dApp,dApp,dApp,dApp,dApp,dApp,Kept in English
+account,حساب,অ্যাকাউন্ট,Konto,cuenta,compte,खाता,アカウント,conta,аккаунт,账户,
+address,عنوان,ঠিকানা,Adresse,dirección,adresse,पता,アドレス,endereço,адрес,地址,Blockchain address
+alias,اسم مستعار,উপনাম,Alias,alias,alias,उपनाम,エイリアス,alias,псевдоним,别名,
+asset,أصل,অ্যাসেট,Asset,activo,actif,एसेट,アセット,ativo,актив,资产,As in token (asset)
+balance,رصيد,ব্যালেন্স,Guthaben,saldo,solde,शेष राशि,残高,saldo,баланс,余额,
+block,كتلة,ব্লক,Block,bloque,bloc,ब्लॉक,ブロック,bloco,блок,区块,
+block reward,مكافأة الكتلة,ব্লক পুরস্কার,Blockbelohnung,recompensa de bloque,récompense de bloc,ब्लॉक पुरस्कार,ブロック報酬,recompensa de bloco,награда за блок,区块奖励,
+blockchain,سلسلة الكتل,ব্লকচেইন,Blockchain,blockchain,blockchain,ब्लॉकचेन,ブロックチェーン,blockchain,блокчейн,区块链,
+callable function,دالة قابلة للاستدعاء,কলযোগ্য ফাংশন,aufrufbare Funktion,función invocable,fonction appelable,कॉल करने योग्य फ़ंक्शन,呼び出し可能関数,função chamável,вызываемая функция,可调用函数,Ride @Callable
+chain ID,معرّف السلسلة,চেইন আইডি,Chain-ID,ID de cadena,identifiant de chaîne,चेन आईडी,チェーン ID,ID da cadeia,идентификатор цепи,链 ID,
+complexity,التعقيد,জটিলতা,Komplexität,complejidad,complexité,जटिलता,複雑度,complexidade,сложность,复杂度,Ride script complexity
+data entry,إدخال بيانات,ডেটা এন্ট্রি,Dateneintrag,entrada de datos,entrée de données,डेटा प्रविष्टि,データエントリ,entrada de dados,запись данных,数据条目,Key-value entry in account data storage
+faucet,صنبور العملات,ফসেট,Faucet,faucet,faucet,फ़ॉसेट,フォーセット,faucet,кран,水龙头,Testnet faucet
+fee,رسوم,ফি,Gebühr,tarifa,frais,शुल्क,手数料,taxa,комиссия,手续费,Transaction fee
+generating balance,رصيد التوليد,জেনারেটিং ব্যালেন্স,Generierungsguthaben,saldo generador,solde de génération,जनरेटिंग बैलेंस,生成残高,saldo de geração,генерирующий баланс,出块余额,
+generating node,عقدة مولِّدة,জেনারেটিং নোড,generierender Knoten,nodo generador,nœud générateur,जनरेटिंग नोड,生成ノード,nó gerador,генерирующий узел,出块节点,
+lease,تأجير,লিজ,Leasing,arrendamiento,leasing,लीज़,リース,leasing,лизинг,租赁,Also: leasing
+mass transfer,تحويل جماعي,গণ স্থানান্তর,Massenüberweisung,transferencia masiva,transfert groupé,सामूहिक स्थानांतरण,一括送金,transferência em massa,массовый перевод,批量转账,
+matcher,أداة المطابقة,ম্যাচার,Matcher,emparejador,matcher,मैचर,マッチャー,matcher,матчер,撮合器,The DEX order-matching service
+node,عقدة,নোড,Knoten,nodo,nœud,नोड,ノード,nó,узел,节点,
+order,أمر,অর্ডার,Order,orden,ordre,ऑर्डर,注文,ordem,ордер,订单,Exchange order
+private key,مفتاح خاص,প্রাইভেট কী,privater Schlüssel,clave privada,clé privée,निजी कुंजी,秘密鍵,chave privada,закрытый ключ,私钥,
+public key,مفتاح عام,পাবলিক কী,öffentlicher Schlüssel,clave pública,clé publique,सार्वजनिक कुंजी,公開鍵,chave pública,открытый ключ,公钥,
+script,سكربت,স্ক্রিপ্ট,Skript,script,script,स्क्रिप्ट,スクリプト,script,скрипт,脚本,
+seed phrase,العبارة السرية,সিড ফ্রেজ,Seed-Phrase,frase semilla,phrase secrète,सीड फ्रेज़,シードフレーズ,frase-semente,сид-фраза,助记词,Also: recovery phrase
+smart account,حساب ذكي,স্মার্ট অ্যাকাউন্ট,Smart Account,cuenta inteligente,compte intelligent,स्मार्ट खाता,スマートアカウント,conta inteligente,смарт-аккаунт,智能账户,
+smart asset,أصل ذكي,স্মার্ট অ্যাসেট,Smart Asset,activo inteligente,actif intelligent,स्मार्ट एसेट,スマートアセット,ativo inteligente,смарт-ассет,智能资产,
+smart contract,عقد ذكي,স্মার্ট কন্ট্রাক্ট,Smart Contract,contrato inteligente,contrat intelligent,स्मार्ट कॉन्ट्रैक्ट,スマートコントラクト,contrato inteligente,смарт-контракт,智能合约,
+sponsorship,رعاية,স্পনসরশিপ,Sponsoring,patrocinio,parrainage,प्रायोजन,スポンサーシップ,patrocínio,спонсирование,赞助,Paying fees in a sponsored token
+token,رمز مميز,টোকেন,Token,token,jeton,टोकन,トークン,token,токен,代币,
+transaction,معاملة,লেনদেন,Transaktion,transacción,transaction,लेनदेन,トランザクション,transação,транзакция,交易,
+transfer,تحويل,স্থানান্তর,Überweisung,transferencia,transfert,स्थानांतरण,送金,transferência,перевод,转账,
+verifier,المُتحقِّق,যাচাইকারী,Verifizierer,verificador,vérificateur,सत्यापनकर्ता,ベリファイア,verificador,верификатор,验证器,Ride @Verifier
+wallet,محفظة,ওয়ালেট,Wallet,billetera,portefeuille,वॉलेट,ウォレット,carteira,кошелёк,钱包,

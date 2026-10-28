@@ -229,31 +229,27 @@ msgstr "El ecosistema DecentralChain permite la comunicación segura y la intero
 
 #: ../../01_introduction.md:100
 msgid "Here are some of our most visited websites:"
-msgstr ""
+msgstr "Estos son algunos de nuestros sitios web más visitados:"
 
 #: ../../01_introduction.md:110
-#, fuzzy
 msgid "DecentralChain Website"
-msgstr "Ecosistema DecentralChain"
+msgstr "Sitio web de DecentralChain"
 
 #: ../../01_introduction.md:121
-#, fuzzy
 msgid "Decentral Exchange"
-msgstr "DecentralChain"
+msgstr "Decentral Exchange"
 
 #: ../../01_introduction.md:132
-#, fuzzy
 msgid "Decentral Scan"
-msgstr "DecentralChain"
+msgstr "Decentral Scan"
 
 #: ../../01_introduction.md:107
 msgid "Wallet and Exchange"
 msgstr "Billetera e Intercambio"
 
 #: ../../01_introduction.md:109
-#, fuzzy
 msgid "[Decentral.Exchange](<https://decentral.exchange/>) is an all-in-one platform that combines the features of a wallet, decentralized exchange, and cryptocurrency management tool into a single, seamless platform. Built on the DecentralChain blockchain, this platform offers numerous benefits to its users, including fast execution rates, multi-chain capability, low fees, and interoperability."
-msgstr "`Decentral.Exchange <https://decentral.exchange/>`_ es una plataforma todo en uno que combina las características de una billetera, un intercambio descentralizado y una herramienta de administración de criptomonedas en una sola plataforma sin problemas. Construida sobre la cadena de bloques DecentralChain, esta plataforma ofrece numerosos beneficios a sus usuarios, que incluyen tasas de ejecución rápidas, capacidad de cadena múltiple, tarifas bajas e interoperabilidad."
+msgstr "[Decentral.Exchange](<https://decentral.exchange/>) es una plataforma todo en uno que reúne las funciones de una billetera, un exchange descentralizado y una herramienta de gestión de criptomonedas en una sola plataforma integrada. Construida sobre la blockchain de DecentralChain, ofrece numerosas ventajas a sus usuarios, como una ejecución rápida, capacidad multicadena, tarifas bajas e interoperabilidad."
 
 #: ../../01_introduction.md:111
 msgid "One of the most significant advantages of decentralized exchanges is that they are not controlled by any central authority, giving users complete control over their assets. Unlike centralized exchanges, there is no risk of funds being frozen or confiscated by a centralized entity. With Decentral.Exchange, users can also enjoy enhanced security, as their private keys are stored locally on their device, reducing the risk of cybercrime. Decentralized exchanges also provide access to a wider range of assets, thanks to the absence of restrictions on the number of tokens that can be traded. Decentral.Exchange takes this further with its multi-chain capability, allowing users to trade tokens across different blockchains seamlessly. Decentral.Exchange's interoperability enables users to trade tokens across various chains and different decentralized exchanges, making it possible to access a broader range of assets effortlessly."
@@ -272,9 +268,8 @@ msgid "Blockchain Explorer"
 msgstr "Explorador Blockchain"
 
 #: ../../01_introduction.md:119
-#, fuzzy
 msgid "[DecentralScan.com](<https://decentralscan.com/>) is the official block explorer of the DecentralChain blockchain. It is a powerful tool that allows users to view, track, and analyze transactions on the DecentralChain blockchain. The block explorer provides a user-friendly interface that simplifies the navigation of the complex data stored on the blockchain."
-msgstr "`DecentralScan.com <https://decentralscan.com/>`_ es el explorador de bloques oficial de la cadena de bloques DecentralChain. Es una herramienta poderosa que permite a los usuarios ver, rastrear y analizar transacciones en la cadena de bloques DecentralChain. El explorador de bloques proporciona una interfaz fácil de usar que simplifica la navegación de los datos complejos almacenados en la cadena de bloques."
+msgstr "[DecentralScan.com](<https://decentralscan.com/>) es el explorador de bloques oficial de la blockchain de DecentralChain. Es una herramienta potente que permite ver, seguir y analizar las transacciones de la blockchain de DecentralChain. El explorador ofrece una interfaz sencilla que facilita navegar por los datos complejos almacenados en la blockchain."
 
 #: ../../01_introduction.md:121
 msgid "One of the key benefits of DecentralScan.com is its ability to provide transparency to the DecentralChain ecosystem. It enables users to view all the transactions that have occurred on the blockchain in real-time, including the number of DecentralCoins (DCC) transferred, the addresses involved in the transaction, and the transaction timestamp. This makes it easy to track the movement of DCC and understand how the ecosystem is being used."
