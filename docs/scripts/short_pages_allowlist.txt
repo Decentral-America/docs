@@ -4,7 +4,6 @@
 # that are no longer needed. Do not add new pages here to get past the check.
 
 03_ride-language/08_stdlib-versions.md  # A per-version summary table; the full V6-V9 reference is generated (ECO-191)
-03_ride-language/09_complexity-changes.md  # Generated table; ECO-191 regenerates it to 74 rows
 04_building-apps/02_client-libraries-and-sdk.md  # Landing page that routes to the per-language SDK pages
 04_building-apps/how-to/01_airdrop.md  # Complete task guide; the code is included from _samples/airdrop.ts
 04_building-apps/how-to/02_payments.md  # Complete task guide; the code is included from _samples/payments.ts
