@@ -11,7 +11,7 @@ Verified on a clean Docker host (macOS 15.5, Docker Desktop 29.2.1, no earlier n
 | Network | Status |
 |---|---|
 | Public Testnet | Supported. Follow [Join the Public Testnet](15_join-testnet): it gives the configuration file the node needs. |
-| Mainnet | Not with this image yet. The live DCC Mainnet runs an earlier node line (its public node reports `DCC v1.3.5`), and node-scala's built-in Mainnet profile ships no peers until the Mainnet migration. A `mainnet-latest` container starts, but never finds a peer and stays at the genesis block. |
+| Mainnet | Not with this image yet. The live DCC Mainnet runs an earlier node line (its public node reports `DCC v1.3.5`). node-scala's built-in Mainnet profile ships no peers until the Mainnet migration, and the peers in its packaged `node/decentralchain-mainnet.conf` refused connections when tested on 2026-10-27. A v1.8.1 container started with that file stayed at the genesis block. |
 
 ## Requirements
 
