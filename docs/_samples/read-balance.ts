@@ -1,5 +1,4 @@
 // Illustrates: docs/04_building-apps/03_how-to-guides.md, "Reading Blockchain Data"
-// Ported from a Waves example (deliberate independence-check failure, removed in the next commit)
 import { create } from '@decentralchain/node-api-js';
 
 const api = create('https://testnet-node.decentralchain.io');

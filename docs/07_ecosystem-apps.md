@@ -77,5 +77,3 @@ Nodes run for anyone to read chain state and broadcast signed transactions. Use 
 ## Ride Tooling
 
 No browser IDE for Ride is hosted at the moment. To write and test Ride, use the {doc}`Ride REPL <04_building-apps/developer-tools/01_ride-repl>` and a node's compiler endpoints; see {doc}`Developer Tools <04_building-apps/01_developer-tools>`.
-
-Test link (removed in the next commit): [dead](https://eco-205-dead-link.decentralchain.io/).
