@@ -58,6 +58,7 @@ sphinx-build -b linkcheck docs/ /tmp/linkcheck-out
 `.github/workflows/pr_check_workflow.yml` runs two jobs on every PR to `main`/`dev`:
 - `build_check`: `sphinx-build -W` — **blocks merge** on any warning (broken `:ref:`, bad directive, etc.). It also validates `docs/locales/PUBLISHED` (`test_published_locales.py`) and checks the built language switcher against it (`check_published_languages.py`); the deploy job re-checks every built language, including the partial-translation banner, before it uploads the site.
 - `link_check`: `sphinx-build -b linkcheck` — **does not block merge** (`continue-on-error: true`), because external links go stale independent of any PR and shouldn't hold up unrelated work. Check its output anyway; it catches real rot.
+- `translations` (`docs/scripts/check_translations.sh`): every locale has a catalog for every section, every catalog passes `msgfmt --check`, no translated message changes the English markup (role names, `:ref:`/`:doc:` targets, backticks), and the publish rule holds (a locale in `docs/locales/PUBLISHED` is at least 80% translated, or marked `partial`). It writes the coverage per locale to the job summary, and builds every published language with `-W`. The deploy workflow runs the same script, and `buildDocs.sh` builds every language and version with `-W`.
 
 ## Content conventions
 
@@ -174,9 +175,10 @@ Both live in the navbar, both are populated from `html_context` built in `conf.p
 
 ## Adding a new language
 
-1. Generate the `.po` catalog via `sphinx-intl` (see `docs/locales/` for existing structure — each language is `LC_MESSAGES/*.po` + compiled `.mo`)
-2. Translate the `.po` files (GitLocalize integration handles this for maintained languages — see `docs/06_contributing.md`)
-3. Publish it: add a line to `docs/locales/PUBLISHED` (`<code>`, or `<code> partial` while the translation is incomplete). A catalog dir that isn't listed is neither built nor offered in the switcher.
+1. Create its catalogs: `mkdir -p docs/locales/<code>/LC_MESSAGES`, then run `docs/scripts/update_translations.sh` from a checkout whose path has no spaces. The script regenerates every locale's catalogs (one `.po` per section) and normalises their headers. Run it after adding a top-level page or section too: the `translations` check fails when a locale has no catalog for a section.
+2. Translate the `.po` files (GitLocalize integration handles this for maintained languages — see `docs/06_contributing.md`). Keep the markup exactly as in the English: role names (`:math:`, `:strong:`), `:ref:` and `:doc:` targets, and no space just inside a role's backticks. Translate a link's text, never its `<target>`.
+3. Check it: `python3 docs/scripts/translations.py coverage docs/locales` prints the share translated per locale.
+4. Publish it: add a line to `docs/locales/PUBLISHED` (`<code>`, or `<code> partial` while the translation is incomplete). A listed locale without `partial` must be at least 80% translated, or the PR checks and the deploy fail. A catalog dir that isn't listed is neither built nor offered in the switcher.
 
 ## Adding a new version/branch
 
@@ -191,4 +193,4 @@ Both live in the navbar, both are populated from `html_context` built in `conf.p
 
 ## Spanish translation
 
-Currently ~49% complete and has real content-accuracy issues (some translated `:ref:` targets drifted from the actual English section names, e.g. a translated target reading `02_token(activo)` when the real doc is `02_token(asset)`). This is a known, accepted state — not a build blocker, not something to silently "fix" by guessing corrections. If you're doing translation work, coordinate on this specifically.
+About 30% of the current English is translated (the `translations` job summary has the exact figure), and Spanish is published as `partial`. Its catalogs had broken markup: translated role names (`:matemáticas:` for `:math:`), translated `:ref:` targets (`02_token(activo)` for `02_token(asset)`) and stray spaces inside backticks, 87 build warnings in all. ECO-204 put the English role names and targets back from each msgid, keeping the translated text, and marked the two messages it couldn't repair that way fuzzy, so they show in English. The wording itself was not reviewed: that is the translation ticket's job (ECO-400). Don't "fix" Spanish content by guessing; the `translations` check now catches markup mistakes.

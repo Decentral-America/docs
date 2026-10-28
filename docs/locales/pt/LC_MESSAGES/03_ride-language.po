@@ -1,3 +1,23 @@
+# Portuguese translations for DecentralChain docs.
+# Copyright (C) 2026 ORGANIZATION
+# This file is distributed under the same license as the DecentralChain docs project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: DecentralChain docs VERSION\n"
+"Report-Msgid-Bugs-To: https://github.com/Decentral-America/docs/issues\n"
+"POT-Creation-Date: 2026-10-27 21:54-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: pt\n"
+"Language-Team: Portuguese <https://github.com/Decentral-America/docs>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
 
 #: ../../03_ride-language/01_syntax-basics.rst:3
 msgid "Syntax Basics"
@@ -62,14 +82,17 @@ msgid "There are three types of directives, with different possible values."
 msgstr ""
 
 #: ../../03_ride-language/01_syntax-basics.rst:36
-msgid "{-# STDLIB_VERSION 5 #-} sets the version of the standard library. The latest version currently in production is 5."
+#, python-brace-format
+msgid "{-# STDLIB_VERSION 5 #-} sets the version of the standard library. The compiler in node v1.8.0 supports versions 1 to 9; see :ref:`standard library versions <03_ride-language/08_stdlib-versions:Standard Library Versions>` for which version a network accepts. The examples on this page use version 5."
 msgstr ""
 
 #: ../../03_ride-language/01_syntax-basics.rst:38
+#, python-brace-format
 msgid "{-# CONTENT_TYPE DAPP #-} sets the type of the file you're working on. There are different content types, DAPP and EXPRESSION. The DAPP type allows you to define functions and finish execution with certain actions which result in account balances, asset properties, and entries in the dApp account data storage. The EXPRESSION type should always return a boolean value, since it’s used as a predicate for transaction validation."
 msgstr ""
 
 #: ../../03_ride-language/01_syntax-basics.rst:40
+#, python-brace-format
 msgid "{-# SCRIPT_TYPE ACCOUNT #-} sets the entity type we want to add to the script to change its default behavior. Ride scripts can be attached to either an ACCOUNT or ASSET."
 msgstr ""
 
@@ -865,6 +888,7 @@ msgstr ""
 #: ../../_static/03_ride-language/tables/151_bn256groth16Verify.csv:1
 #: ../../_static/03_ride-language/tables/155_groth16Verify.csv:1
 #: ../../_static/03_ride-language/tables/179_Asset-Fields.csv:1
+#: ../../_static/03_ride-language/tables/183_BlockInfo-Fields.csv:1
 #: ../../_static/03_ride-language/tables/184_Invocation-Fields-1.csv:1
 #: ../../_static/03_ride-language/tables/185_Invocation-Fields-2.csv:1
 #: ../../_static/03_ride-language/tables/186_Order-Fields.csv:1
@@ -1251,17 +1275,17 @@ msgid "In this example we are using version 2 of Ride standard library, STDLIB_V
 msgstr ""
 
 #: ../../03_ride-language/01_syntax-basics.rst:352
-#: ../../03_ride-language/05_structures.rst:855
+#: ../../03_ride-language/05_structures.rst:859
 msgid "TransferTransaction"
 msgstr ""
 
 #: ../../03_ride-language/01_syntax-basics.rst:353
-#: ../../03_ride-language/05_structures.rst:874
+#: ../../03_ride-language/05_structures.rst:878
 msgid "ExchangeTransaction"
 msgstr ""
 
 #: ../../03_ride-language/01_syntax-basics.rst:354
-#: ../../03_ride-language/05_structures.rst:912
+#: ../../03_ride-language/05_structures.rst:916
 msgid "MassTransferTransaction"
 msgstr ""
 
@@ -1731,6 +1755,10 @@ msgstr ""
 msgid "Adding the element to the beginning of the list (the element is on the left, the list is on the right)"
 msgstr ""
 
+#: ../../_static/03_ride-language/tables/002_List-Operations.csv:1
+msgid "``::``"
+msgstr ""
+
 #: ../../03_ride-language/02_data-types.rst:186
 #: ../../03_ride-language/02_data-types.rst:194
 #: ../../03_ride-language/02_data-types.rst:202
@@ -1896,6 +1924,7 @@ msgid "A function with the @Verifier annotation sets the rules for outgoing tran
 msgstr ""
 
 #: ../../03_ride-language/03_functions.rst:101
+#, python-brace-format
 msgid "Expression scripts (with directive {-# CONTENT_TYPE EXPRESSION  #-} along with functions annotated by @Verifier should always return a boolean value. Depending on that value the transaction will be accepted (in case of true) or rejected (in case of false) by the blockchain."
 msgstr ""
 
@@ -2732,8 +2761,8 @@ msgstr ""
 #: ../../03_ride-language/05_structures.rst:483
 #: ../../03_ride-language/05_structures.rst:509
 #: ../../03_ride-language/05_structures.rst:538
-#: ../../03_ride-language/05_structures.rst:642
-#: ../../03_ride-language/05_structures.rst:692
+#: ../../03_ride-language/05_structures.rst:644
+#: ../../03_ride-language/05_structures.rst:696
 msgid ":strong:`Example`"
 msgstr ""
 
@@ -4959,6 +4988,7 @@ msgid "Calculates :math:`\\log_b a`."
 msgstr ""
 
 #: ../../03_ride-language/03_functions.rst:2468
+#, python-brace-format
 msgid "In Ride, there is no :ref:`data type <03_ride-language/02_data-types:Data Types>` with the floating point. That is why, for example, when you need to calculate :math:`\\log_{2.7} 16.25` then the number value :math:`= 1625`, vp :math:`= 2` and the base :math:`= 27`, bp :math:`= 1`."
 msgstr ""
 
@@ -5033,6 +5063,7 @@ msgid "One of the rounding variables."
 msgstr ""
 
 #: ../../03_ride-language/03_functions.rst:2482
+#, python-brace-format
 msgid ":math:`\\log_{2.7} 16.25 = 2.807035421...`"
 msgstr ""
 
@@ -5095,6 +5126,7 @@ msgid "pow(Int, Int, Int, Int, Int, Union): Int"
 msgstr ""
 
 #: ../../03_ride-language/03_functions.rst:2552
+#, python-brace-format
 msgid "Calculates :math:`a^{b}`."
 msgstr ""
 
@@ -5113,6 +5145,7 @@ msgid "ep: :ref:`Int <03_ride-language/02_data-types:Int>`"
 msgstr ""
 
 #: ../../03_ride-language/03_functions.rst:2568
+#, python-brace-format
 msgid ":math:`16.25^{2.7} = 1859,1057168...`"
 msgstr ""
 
@@ -5121,6 +5154,7 @@ msgid "pow(BigInt, Int, BigInt, Int, Int, Union): BigInt"
 msgstr ""
 
 #: ../../03_ride-language/03_functions.rst:2578
+#, python-brace-format
 msgid "Calculates :math:`a^{b}` with high accuracy."
 msgstr ""
 
@@ -6360,14 +6394,17 @@ msgid "Asset script"
 msgstr ""
 
 #: ../../_static/03_ride-language/tables/161_Script-Types.csv:1
+#, python-brace-format
 msgid "{-# CONTENT_TYPE DAPP #-} {-# SCRIPT_TYPE ACCOUNT #-}"
 msgstr ""
 
 #: ../../_static/03_ride-language/tables/161_Script-Types.csv:1
+#, python-brace-format
 msgid "{-# CONTENT_TYPE EXPRESSION #-} {-# SCRIPT_TYPE ACCOUNT #-}"
 msgstr ""
 
 #: ../../_static/03_ride-language/tables/161_Script-Types.csv:1
+#, python-brace-format
 msgid "{-# CONTENT_TYPE EXPRESSION #-} {-# SCRIPT_TYPE ASSET #-}"
 msgstr ""
 
@@ -7165,25 +7202,25 @@ msgstr ""
 #: ../../03_ride-language/05_structures.rst:557
 #: ../../03_ride-language/05_structures.rst:576
 #: ../../03_ride-language/05_structures.rst:597
-#: ../../03_ride-language/05_structures.rst:616
-#: ../../03_ride-language/05_structures.rst:678
-#: ../../03_ride-language/05_structures.rst:724
-#: ../../03_ride-language/05_structures.rst:755
-#: ../../03_ride-language/05_structures.rst:774
-#: ../../03_ride-language/05_structures.rst:793
-#: ../../03_ride-language/05_structures.rst:812
-#: ../../03_ride-language/05_structures.rst:831
-#: ../../03_ride-language/05_structures.rst:859
-#: ../../03_ride-language/05_structures.rst:878
-#: ../../03_ride-language/05_structures.rst:897
-#: ../../03_ride-language/05_structures.rst:916
-#: ../../03_ride-language/05_structures.rst:935
-#: ../../03_ride-language/05_structures.rst:954
-#: ../../03_ride-language/05_structures.rst:973
-#: ../../03_ride-language/05_structures.rst:1001
-#: ../../03_ride-language/05_structures.rst:1020
-#: ../../03_ride-language/05_structures.rst:1039
-#: ../../03_ride-language/05_structures.rst:1067
+#: ../../03_ride-language/05_structures.rst:618
+#: ../../03_ride-language/05_structures.rst:680
+#: ../../03_ride-language/05_structures.rst:728
+#: ../../03_ride-language/05_structures.rst:759
+#: ../../03_ride-language/05_structures.rst:778
+#: ../../03_ride-language/05_structures.rst:797
+#: ../../03_ride-language/05_structures.rst:816
+#: ../../03_ride-language/05_structures.rst:835
+#: ../../03_ride-language/05_structures.rst:863
+#: ../../03_ride-language/05_structures.rst:882
+#: ../../03_ride-language/05_structures.rst:901
+#: ../../03_ride-language/05_structures.rst:920
+#: ../../03_ride-language/05_structures.rst:939
+#: ../../03_ride-language/05_structures.rst:958
+#: ../../03_ride-language/05_structures.rst:977
+#: ../../03_ride-language/05_structures.rst:1005
+#: ../../03_ride-language/05_structures.rst:1024
+#: ../../03_ride-language/05_structures.rst:1043
+#: ../../03_ride-language/05_structures.rst:1071
 msgid ":strong:`Constructor`"
 msgstr ""
 
@@ -7205,26 +7242,26 @@ msgstr ""
 #: ../../03_ride-language/05_structures.rst:530
 #: ../../03_ride-language/05_structures.rst:563
 #: ../../03_ride-language/05_structures.rst:582
-#: ../../03_ride-language/05_structures.rst:603
-#: ../../03_ride-language/05_structures.rst:622
-#: ../../03_ride-language/05_structures.rst:684
-#: ../../03_ride-language/05_structures.rst:730
-#: ../../03_ride-language/05_structures.rst:761
-#: ../../03_ride-language/05_structures.rst:780
-#: ../../03_ride-language/05_structures.rst:799
-#: ../../03_ride-language/05_structures.rst:818
-#: ../../03_ride-language/05_structures.rst:837
-#: ../../03_ride-language/05_structures.rst:865
-#: ../../03_ride-language/05_structures.rst:884
-#: ../../03_ride-language/05_structures.rst:903
-#: ../../03_ride-language/05_structures.rst:922
-#: ../../03_ride-language/05_structures.rst:941
-#: ../../03_ride-language/05_structures.rst:960
-#: ../../03_ride-language/05_structures.rst:979
-#: ../../03_ride-language/05_structures.rst:1007
-#: ../../03_ride-language/05_structures.rst:1026
-#: ../../03_ride-language/05_structures.rst:1045
-#: ../../03_ride-language/05_structures.rst:1073
+#: ../../03_ride-language/05_structures.rst:605
+#: ../../03_ride-language/05_structures.rst:624
+#: ../../03_ride-language/05_structures.rst:688
+#: ../../03_ride-language/05_structures.rst:734
+#: ../../03_ride-language/05_structures.rst:765
+#: ../../03_ride-language/05_structures.rst:784
+#: ../../03_ride-language/05_structures.rst:803
+#: ../../03_ride-language/05_structures.rst:822
+#: ../../03_ride-language/05_structures.rst:841
+#: ../../03_ride-language/05_structures.rst:869
+#: ../../03_ride-language/05_structures.rst:888
+#: ../../03_ride-language/05_structures.rst:907
+#: ../../03_ride-language/05_structures.rst:926
+#: ../../03_ride-language/05_structures.rst:945
+#: ../../03_ride-language/05_structures.rst:964
+#: ../../03_ride-language/05_structures.rst:983
+#: ../../03_ride-language/05_structures.rst:1011
+#: ../../03_ride-language/05_structures.rst:1030
+#: ../../03_ride-language/05_structures.rst:1049
+#: ../../03_ride-language/05_structures.rst:1077
 msgid ":strong:`Fields`"
 msgstr ""
 
@@ -7583,6 +7620,7 @@ msgid "amount"
 msgstr ""
 
 #: ../../_static/03_ride-language/tables/170_Lease-Fields.csv:1
+#, python-brace-format
 msgid "Amount of :ref:`DecentralCoins <02_decentralchain/02_token(asset):DecentralCoin>` to lease (that is, amount of Decentralites multiplied by :math:`10^{8}`)."
 msgstr ""
 
@@ -7815,7 +7853,7 @@ msgstr ""
 msgid ":ref:`Order <03_ride-language/05_structures:Order>`"
 msgstr ""
 
-#: ../../03_ride-language/05_structures.rst:671
+#: ../../03_ride-language/05_structures.rst:673
 #: ../../_static/03_ride-language/tables/176_Common-Structures.csv:1
 #: ../../_static/03_ride-language/tables/196_ExchangeTransaction-Fields.csv:1
 msgid "Order"
@@ -7937,6 +7975,7 @@ msgid ":ref:`token ID <02_decentralchain/02_token(asset):Token ID>`."
 msgstr ""
 
 #: ../../_static/03_ride-language/tables/179_Asset-Fields.csv:1
+#, python-brace-format
 msgid "Amount of issued token, multiplied by :math:`10^{decimals}`. Up to :math:`9 223 372 036 854 775 806`."
 msgstr ""
 
@@ -7975,7 +8014,7 @@ msgid "scripted"
 msgstr ""
 
 #: ../../_static/03_ride-language/tables/179_Asset-Fields.csv:1
-msgid "true — :ref:`smart asset <documentation:placeholder>`, false — regular token."
+msgid "true — :ref:`smart asset <02_decentralchain/02_token(asset):Smart Asset>`, false — regular token."
 msgstr ""
 
 #: ../../_static/03_ride-language/tables/179_Asset-Fields.csv:1
@@ -8119,7 +8158,11 @@ msgstr ""
 msgid "Structure containing block headers. The structure is returned by the blockInfoByHeight built-in function."
 msgstr ""
 
-#: ../../03_ride-language/05_structures.rst:605
+#: ../../03_ride-language/05_structures.rst:603
+msgid "The constructor above is for standard library version 5. Standard library version 7 and above adds a further ``rewards: List[(Address, Int)]`` field; see :doc:`Standard Library Versions </03_ride-language/08_stdlib-versions>`."
+msgstr ""
+
+#: ../../03_ride-language/05_structures.rst:607
 msgid "BlockInfo Fields"
 msgstr ""
 
@@ -8192,19 +8235,31 @@ msgstr ""
 msgid "VRF for block version 5, unit otherwise."
 msgstr ""
 
-#: ../../03_ride-language/05_structures.rst:612
-msgid "Invocation"
+#: ../../_static/03_ride-language/tables/183_BlockInfo-Fields.csv:1
+msgid "rewards"
+msgstr ""
+
+#: ../../_static/03_ride-language/tables/183_BlockInfo-Fields.csv:1
+msgid "List[(:ref:`Address <03_ride-language/05_structures:Address>`, :ref:`Int <03_ride-language/02_data-types:Int>`)]"
+msgstr ""
+
+#: ../../_static/03_ride-language/tables/183_BlockInfo-Fields.csv:1
+msgid "Block reward distribution for this block. Standard library version 7 and above only — see :doc:`Standard Library Versions </03_ride-language/08_stdlib-versions>`."
 msgstr ""
 
 #: ../../03_ride-language/05_structures.rst:614
+msgid "Invocation"
+msgstr ""
+
+#: ../../03_ride-language/05_structures.rst:616
 msgid "Structure that contains the fields of the script invocation that the :ref:`callable function <03_ride-language/03_functions:Callable Functions>` can use."
 msgstr ""
 
-#: ../../03_ride-language/05_structures.rst:624
+#: ../../03_ride-language/05_structures.rst:626
 msgid "The field values depend on how the callable function is invoked. If the callable function is invoked by an :ref:`invoke script transaction <02_decentralchain/03_transaction:Invoke Script Transaction>`:"
 msgstr ""
 
-#: ../../03_ride-language/05_structures.rst:626
+#: ../../03_ride-language/05_structures.rst:628
 msgid "Invocation Fields 1"
 msgstr ""
 
@@ -8337,11 +8392,11 @@ msgstr ""
 msgid "ID of the fee token."
 msgstr ""
 
-#: ../../03_ride-language/05_structures.rst:632
+#: ../../03_ride-language/05_structures.rst:634
 msgid "If the callable function is invoked by the invoke or reentrantInvoke function (see the :ref:`dApp-to-dApp invocation <03_ride-language/07_dapp-to-app-invocation:dApp-to-App Invocation>` article):"
 msgstr ""
 
-#: ../../03_ride-language/05_structures.rst:634
+#: ../../03_ride-language/05_structures.rst:636
 msgid "Invocation Fields 2"
 msgstr ""
 
@@ -8372,27 +8427,31 @@ msgstr ""
 msgid "ID of the Invoke Script transaction."
 msgstr ""
 
-#: ../../03_ride-language/05_structures.rst:640
+#: ../../03_ride-language/05_structures.rst:642
 msgid "The originCaller, originCallerPublicKey, transactionId, fee, and feeAssetId values are the same for all dApp-to-dApp invocations within a single Invoke Script transaction."
 msgstr ""
 
-#: ../../03_ride-language/05_structures.rst:644
+#: ../../03_ride-language/05_structures.rst:646
 msgid "The following function checks that the first payment in the Invoke Script transaction is at least 1 DecentralCoin or 5 in the specified asset."
 msgstr ""
 
-#: ../../03_ride-language/05_structures.rst:673
+#: ../../03_ride-language/05_structures.rst:675
 msgid "Structure of an order :ref:`dApp-to-dApp invocation <03_ride-language/07_dapp-to-app-invocation:dApp-to-App Invocation>`. The structure is used:"
 msgstr ""
 
-#: ../../03_ride-language/05_structures.rst:675
+#: ../../03_ride-language/05_structures.rst:677
 msgid "When checking an outgoing order by the :ref:`account script <03_ride-language/04_script-types:Account Script>` or the verifier function of the :ref:`dApp script <03_ride-language/04_script-types:dApp Script>`."
 msgstr ""
 
-#: ../../03_ride-language/05_structures.rst:676
+#: ../../03_ride-language/05_structures.rst:678
 msgid "In the :ref:`InvokeScriptTransaction <03_ride-language/05_structures:InvokeScriptTransaction>` structure."
 msgstr ""
 
 #: ../../03_ride-language/05_structures.rst:686
+msgid "The constructor above is for standard library version 5. Standard library version 8 and above adds a further ``attachment: ByteVector|Unit`` field; see :doc:`Standard Library Versions </03_ride-language/08_stdlib-versions>`."
+msgstr ""
+
+#: ../../03_ride-language/05_structures.rst:690
 msgid "Order Fields"
 msgstr ""
 
@@ -8585,31 +8644,31 @@ msgstr ""
 msgid "Array of proofs."
 msgstr ""
 
-#: ../../03_ride-language/05_structures.rst:694
+#: ../../03_ride-language/05_structures.rst:698
 msgid "The script below enables buying from a sender's account:"
 msgstr ""
 
-#: ../../03_ride-language/05_structures.rst:696
+#: ../../03_ride-language/05_structures.rst:700
 msgid "Only the specified asset."
 msgstr ""
 
-#: ../../03_ride-language/05_structures.rst:697
+#: ../../03_ride-language/05_structures.rst:701
 msgid "Only at a given price."
 msgstr ""
 
-#: ../../03_ride-language/05_structures.rst:698
+#: ../../03_ride-language/05_structures.rst:702
 msgid "Only for DecentralCoins."
 msgstr ""
 
-#: ../../03_ride-language/05_structures.rst:720
+#: ../../03_ride-language/05_structures.rst:724
 msgid "Transfer"
 msgstr ""
 
-#: ../../03_ride-language/05_structures.rst:722
+#: ../../03_ride-language/05_structures.rst:726
 msgid "Structure of a single transfer within the :ref:`MassTransferTransaction <03_ride-language/05_structures:MassTransferTransaction>` structure."
 msgstr ""
 
-#: ../../03_ride-language/05_structures.rst:732
+#: ../../03_ride-language/05_structures.rst:736
 msgid "Transfer Fields"
 msgstr ""
 
@@ -8617,12 +8676,12 @@ msgstr ""
 msgid ":ref:`address <02_decentralchain/01_account:Address>` of a recipient of tokens."
 msgstr ""
 
-#: ../../03_ride-language/05_structures.rst:739
+#: ../../03_ride-language/05_structures.rst:743
 msgid "Transaction Structures"
 msgstr ""
 
-#: ../../03_ride-language/05_structures.rst:742
-#: ../../03_ride-language/05_structures.rst:744
+#: ../../03_ride-language/05_structures.rst:746
+#: ../../03_ride-language/05_structures.rst:748
 msgid "Tokenization"
 msgstr ""
 
@@ -8673,15 +8732,15 @@ msgstr ""
 msgid "Structure of :ref:`update asset info transaction <02_decentralchain/03_transaction:Update Asset Info Transaction>`."
 msgstr ""
 
-#: ../../03_ride-language/05_structures.rst:751
+#: ../../03_ride-language/05_structures.rst:755
 msgid "IssueTransaction"
 msgstr ""
 
-#: ../../03_ride-language/05_structures.rst:753
+#: ../../03_ride-language/05_structures.rst:757
 msgid "Structure of an :ref:`issue transaction <02_decentralchain/03_transaction:Issue Transaction>`."
 msgstr ""
 
-#: ../../03_ride-language/05_structures.rst:763
+#: ../../03_ride-language/05_structures.rst:767
 msgid "IssueTransaction Fields"
 msgstr ""
 
@@ -8821,15 +8880,15 @@ msgstr ""
 msgid "Transaction body bytes."
 msgstr ""
 
-#: ../../03_ride-language/05_structures.rst:770
+#: ../../03_ride-language/05_structures.rst:774
 msgid "ReissueTransaction"
 msgstr ""
 
-#: ../../03_ride-language/05_structures.rst:772
+#: ../../03_ride-language/05_structures.rst:776
 msgid "Structure of a :ref:`reissue transaction <02_decentralchain/03_transaction:Reissue Transaction>`."
 msgstr ""
 
-#: ../../03_ride-language/05_structures.rst:782
+#: ../../03_ride-language/05_structures.rst:786
 msgid "ReissueTransaction Fields"
 msgstr ""
 
@@ -8857,15 +8916,15 @@ msgstr ""
 msgid "Proofs."
 msgstr ""
 
-#: ../../03_ride-language/05_structures.rst:789
+#: ../../03_ride-language/05_structures.rst:793
 msgid "BurnTransaction"
 msgstr ""
 
-#: ../../03_ride-language/05_structures.rst:791
+#: ../../03_ride-language/05_structures.rst:795
 msgid "Structure of an :ref:`burn transaction <02_decentralchain/03_transaction:Burn Transaction>`."
 msgstr ""
 
-#: ../../03_ride-language/05_structures.rst:801
+#: ../../03_ride-language/05_structures.rst:805
 msgid "BurnTransaction Fields"
 msgstr ""
 
@@ -8877,15 +8936,15 @@ msgstr ""
 msgid "ID of the token to burn."
 msgstr ""
 
-#: ../../03_ride-language/05_structures.rst:808
+#: ../../03_ride-language/05_structures.rst:812
 msgid "SetAssetScriptTransaction"
 msgstr ""
 
-#: ../../03_ride-language/05_structures.rst:810
+#: ../../03_ride-language/05_structures.rst:814
 msgid "Structure of an :ref:`set asset script transaction <02_decentralchain/03_transaction:Set Asset Script Transaction>`."
 msgstr ""
 
-#: ../../03_ride-language/05_structures.rst:820
+#: ../../03_ride-language/05_structures.rst:824
 msgid "SetAssetScriptTransaction Fields"
 msgstr ""
 
@@ -8893,15 +8952,15 @@ msgstr ""
 msgid ":ref:`Asset script <03_ride-language/04_script-types:Asset Script>`."
 msgstr ""
 
-#: ../../03_ride-language/05_structures.rst:827
+#: ../../03_ride-language/05_structures.rst:831
 msgid "UpdateAssetInfoTransaction"
 msgstr ""
 
-#: ../../03_ride-language/05_structures.rst:829
+#: ../../03_ride-language/05_structures.rst:833
 msgid "Structure of an :ref:`update asset info transaction <02_decentralchain/03_transaction:Update Asset Info Transaction>`."
 msgstr ""
 
-#: ../../03_ride-language/05_structures.rst:839
+#: ../../03_ride-language/05_structures.rst:843
 msgid "UpdateAssetInfoTransaction Fields"
 msgstr ""
 
@@ -8925,8 +8984,8 @@ msgstr ""
 msgid "Account public key of a sender."
 msgstr ""
 
-#: ../../03_ride-language/05_structures.rst:846
-#: ../../03_ride-language/05_structures.rst:848
+#: ../../03_ride-language/05_structures.rst:850
+#: ../../03_ride-language/05_structures.rst:852
 msgid "Usage"
 msgstr ""
 
@@ -8986,11 +9045,11 @@ msgstr ""
 msgid "Structure of :ref:`invoke script transaction <02_decentralchain/03_transaction:Invoke Script Transaction>`."
 msgstr ""
 
-#: ../../03_ride-language/05_structures.rst:857
+#: ../../03_ride-language/05_structures.rst:861
 msgid "Structure of an :ref:`transfer transaction <02_decentralchain/03_transaction:Transfer Transaction>`."
 msgstr ""
 
-#: ../../03_ride-language/05_structures.rst:867
+#: ../../03_ride-language/05_structures.rst:871
 msgid "TransferTransaction Fields"
 msgstr ""
 
@@ -9026,11 +9085,11 @@ msgstr ""
 msgid ":ref:`address <02_decentralchain/01_account:Address>` of a transaction sender."
 msgstr ""
 
-#: ../../03_ride-language/05_structures.rst:876
+#: ../../03_ride-language/05_structures.rst:880
 msgid "Structure of an :ref:`exchange transaction <02_decentralchain/03_transaction:Exchange Transaction>`."
 msgstr ""
 
-#: ../../03_ride-language/05_structures.rst:886
+#: ../../03_ride-language/05_structures.rst:890
 msgid "ExchangeTransaction Fields"
 msgstr ""
 
@@ -9074,23 +9133,23 @@ msgstr ""
 msgid "Matcher's sell fee."
 msgstr ""
 
-#: ../../03_ride-language/05_structures.rst:893
+#: ../../03_ride-language/05_structures.rst:897
 msgid "CreateAliasTransaction"
 msgstr ""
 
-#: ../../03_ride-language/05_structures.rst:895
+#: ../../03_ride-language/05_structures.rst:899
 msgid "Structure of a :ref:`create alias transaction <02_decentralchain/03_transaction:Create Alias Transaction>`."
 msgstr ""
 
-#: ../../03_ride-language/05_structures.rst:905
+#: ../../03_ride-language/05_structures.rst:909
 msgid "CreateAliasTransaction Fields"
 msgstr ""
 
-#: ../../03_ride-language/05_structures.rst:914
+#: ../../03_ride-language/05_structures.rst:918
 msgid "Structure of a :ref:`mass transfer transaction <02_decentralchain/03_transaction:Mass Transfer Transaction>`."
 msgstr ""
 
-#: ../../03_ride-language/05_structures.rst:924
+#: ../../03_ride-language/05_structures.rst:928
 msgid "MassTransferTransaction Fields"
 msgstr ""
 
@@ -9126,15 +9185,15 @@ msgstr ""
 msgid "Optional data attached to the transaction. This field is often used to attach a comment to the transaction. The maximum data size is :math:`140` bytes."
 msgstr ""
 
-#: ../../03_ride-language/05_structures.rst:931
+#: ../../03_ride-language/05_structures.rst:935
 msgid "DataTransaction"
 msgstr ""
 
-#: ../../03_ride-language/05_structures.rst:933
+#: ../../03_ride-language/05_structures.rst:937
 msgid "Structure of a :ref:`data transaction <02_decentralchain/03_transaction:Data Transaction>`."
 msgstr ""
 
-#: ../../03_ride-language/05_structures.rst:943
+#: ../../03_ride-language/05_structures.rst:947
 msgid "DataTransaction Fields"
 msgstr ""
 
@@ -9150,15 +9209,15 @@ msgstr ""
 msgid "Transaction's data array."
 msgstr ""
 
-#: ../../03_ride-language/05_structures.rst:950
+#: ../../03_ride-language/05_structures.rst:954
 msgid "SetScriptTransaction"
 msgstr ""
 
-#: ../../03_ride-language/05_structures.rst:952
+#: ../../03_ride-language/05_structures.rst:956
 msgid "Structure of a :ref:`set script transaction <02_decentralchain/03_transaction:Set Script Transaction>`."
 msgstr ""
 
-#: ../../03_ride-language/05_structures.rst:962
+#: ../../03_ride-language/05_structures.rst:966
 msgid "SetScriptTransaction Fields"
 msgstr ""
 
@@ -9166,15 +9225,15 @@ msgstr ""
 msgid ":ref:`Account script <03_ride-language/04_script-types:Account Script>` or :ref:`dApp script <03_ride-language/04_script-types:dApp Script>`."
 msgstr ""
 
-#: ../../03_ride-language/05_structures.rst:969
+#: ../../03_ride-language/05_structures.rst:973
 msgid "InvokeScriptTransaction"
 msgstr ""
 
-#: ../../03_ride-language/05_structures.rst:971
+#: ../../03_ride-language/05_structures.rst:975
 msgid "Structure of an :ref:`invoke script transaction <02_decentralchain/03_transaction:Invoke Script Transaction>`."
 msgstr ""
 
-#: ../../03_ride-language/05_structures.rst:981
+#: ../../03_ride-language/05_structures.rst:985
 msgid "InvokeScriptTransaction Fields"
 msgstr ""
 
@@ -9214,8 +9273,8 @@ msgstr ""
 msgid "Parameters of the callable function."
 msgstr ""
 
-#: ../../03_ride-language/05_structures.rst:988
-#: ../../03_ride-language/05_structures.rst:990
+#: ../../03_ride-language/05_structures.rst:992
+#: ../../03_ride-language/05_structures.rst:994
 msgid "Network"
 msgstr ""
 
@@ -9243,15 +9302,15 @@ msgstr ""
 msgid "Structure of :ref:`sponsor fee transaction <02_decentralchain/03_transaction:Sponsor Fee Transaction>`."
 msgstr ""
 
-#: ../../03_ride-language/05_structures.rst:997
+#: ../../03_ride-language/05_structures.rst:1001
 msgid "LeaseTransaction"
 msgstr ""
 
-#: ../../03_ride-language/05_structures.rst:999
+#: ../../03_ride-language/05_structures.rst:1003
 msgid "Structure of a :ref:`lease transaction <02_decentralchain/03_transaction:Lease Transaction>`."
 msgstr ""
 
-#: ../../03_ride-language/05_structures.rst:1009
+#: ../../03_ride-language/05_structures.rst:1013
 msgid "LeaseTransaction Fields"
 msgstr ""
 
@@ -9263,15 +9322,15 @@ msgstr ""
 msgid ":ref:`address <02_decentralchain/01_account:Address>` or :ref:`alias <02_decentralchain/01_account:Alias>` of the leasing recipient."
 msgstr ""
 
-#: ../../03_ride-language/05_structures.rst:1016
+#: ../../03_ride-language/05_structures.rst:1020
 msgid "LeaseCancelTransaction"
 msgstr ""
 
-#: ../../03_ride-language/05_structures.rst:1018
+#: ../../03_ride-language/05_structures.rst:1022
 msgid "Structure of a :ref:`lease cancel transaction <02_decentralchain/03_transaction:Lease Cancel Transaction>`."
 msgstr ""
 
-#: ../../03_ride-language/05_structures.rst:1028
+#: ../../03_ride-language/05_structures.rst:1032
 msgid "LeaseCancelTransaction Fields"
 msgstr ""
 
@@ -9279,15 +9338,15 @@ msgstr ""
 msgid "Leasing ID."
 msgstr ""
 
-#: ../../03_ride-language/05_structures.rst:1035
+#: ../../03_ride-language/05_structures.rst:1039
 msgid "SponsorFeeTransaction"
 msgstr ""
 
-#: ../../03_ride-language/05_structures.rst:1037
+#: ../../03_ride-language/05_structures.rst:1041
 msgid "Structure of a :ref:`sponsor fee transaction <02_decentralchain/03_transaction:Sponsor Fee Transaction>`."
 msgstr ""
 
-#: ../../03_ride-language/05_structures.rst:1047
+#: ../../03_ride-language/05_structures.rst:1051
 msgid "SponsorFeeTransaction Fields"
 msgstr ""
 
@@ -9299,8 +9358,8 @@ msgstr ""
 msgid "Amount of asset that is equivalent to 0.001 :ref:`DecentralCoins <02_decentralchain/02_token(asset):DecentralCoin>` (100,000 Decentralites): an integer value specified in atomic units. unit – disable sponsorship."
 msgstr ""
 
-#: ../../03_ride-language/05_structures.rst:1054
-#: ../../03_ride-language/05_structures.rst:1056
+#: ../../03_ride-language/05_structures.rst:1058
+#: ../../03_ride-language/05_structures.rst:1060
 msgid "Genesis"
 msgstr ""
 
@@ -9312,15 +9371,15 @@ msgstr ""
 msgid "Structure of :ref:`genesis transaction <02_decentralchain/03_transaction:Genesis Transaction>`."
 msgstr ""
 
-#: ../../03_ride-language/05_structures.rst:1063
+#: ../../03_ride-language/05_structures.rst:1067
 msgid "GenesisTransaction"
 msgstr ""
 
-#: ../../03_ride-language/05_structures.rst:1065
+#: ../../03_ride-language/05_structures.rst:1069
 msgid "Structure of a :ref:`genesis transaction <02_decentralchain/03_transaction:Genesis Transaction>`."
 msgstr ""
 
-#: ../../03_ride-language/05_structures.rst:1075
+#: ../../03_ride-language/05_structures.rst:1079
 msgid "GenesisTransaction Fields"
 msgstr ""
 
@@ -9840,6 +9899,7 @@ msgid "The weight of the list is calculated as follows:"
 msgstr ""
 
 #: ../../03_ride-language/07_dapp-to-app-invocation.rst:151
+#, python-brace-format
 msgid ":math:`W_{list} = 20 + 20 × Q + W_{elems}`"
 msgstr ""
 
@@ -9853,6 +9913,7 @@ msgid ":math:`Q` is a number of elements."
 msgstr ""
 
 #: ../../03_ride-language/07_dapp-to-app-invocation.rst:156
+#, python-brace-format
 msgid ":math:`W_{elems}` is a total weight of elements."
 msgstr ""
 
@@ -9865,6 +9926,7 @@ msgid "The weight of the tuple or structure is calculated as follows:"
 msgstr ""
 
 #: ../../03_ride-language/07_dapp-to-app-invocation.rst:163
+#, python-brace-format
 msgid ":math:`W_{struct} = 40 + 30 × Q + W_{fields}`"
 msgstr ""
 
@@ -9873,6 +9935,7 @@ msgid ":math:`Q` is a number of fields."
 msgstr ""
 
 #: ../../03_ride-language/07_dapp-to-app-invocation.rst:168
+#, python-brace-format
 msgid ":math:`W_{fields}` is a total weight of fields."
 msgstr ""
 
@@ -9901,6 +9964,7 @@ msgid "An asset ID is a ByteVector of :math:`32` bytes, its weight is :math:`32`
 msgstr ""
 
 #: ../../03_ride-language/07_dapp-to-app-invocation.rst:186
+#, python-brace-format
 msgid ":math:`W_{AssetPair} = 40 + 30 × 2 + (32 + 32) = 164`"
 msgstr ""
 
@@ -9909,7 +9973,394 @@ msgid "If one of the assets is DecentralCoin, then the corresponding field is of
 msgstr ""
 
 #: ../../03_ride-language/07_dapp-to-app-invocation.rst:190
+#, python-brace-format
 msgid ":math:`W_{AssetPair} = 40 + 30 × 2 + (32 + 40) = 172`"
+msgstr ""
+
+#: ../../03_ride-language/08_stdlib-versions.md:1
+msgid "Standard Library Versions"
+msgstr ""
+
+#: ../../03_ride-language/08_stdlib-versions.md:4
+msgid "Verified against node-scala v1.8.0 (`StdLibVersion.scala` and `RideVersionProvider.scala`)."
+msgstr ""
+
+#: ../../03_ride-language/08_stdlib-versions.md:7
+#, python-brace-format
+msgid "The `{-# STDLIB_VERSION n #-}` directive selects the version of the Ride standard library a script is compiled against. The compiler in node v1.8.0 supports versions 1 to 9; the default when the directive is omitted is 3."
+msgstr ""
+
+#: ../../03_ride-language/08_stdlib-versions.md:9
+#, python-brace-format
+msgid "A script can only use a version once the network has activated the matching {doc}`blockchain feature <../05_node-guide/10_features-and-activation>`:"
+msgstr ""
+
+#: ../../03_ride-language/08_stdlib-versions.md:3
+msgid "Stdlib version"
+msgstr ""
+
+#: ../../03_ride-language/08_stdlib-versions.md:3
+msgid "Enabled by feature"
+msgstr ""
+
+#: ../../03_ride-language/08_stdlib-versions.md:3
+msgid "3"
+msgstr ""
+
+#: ../../03_ride-language/08_stdlib-versions.md:3
+msgid "11 — Ride 4 dApps"
+msgstr ""
+
+#: ../../03_ride-language/08_stdlib-versions.md:3
+msgid "4"
+msgstr ""
+
+#: ../../03_ride-language/08_stdlib-versions.md:3
+msgid "15 — Ride V4, VRF, Protobuf, failed transactions"
+msgstr ""
+
+#: ../../03_ride-language/08_stdlib-versions.md:3
+msgid "5"
+msgstr ""
+
+#: ../../03_ride-language/08_stdlib-versions.md:3
+msgid "16 — Ride V5, dApp-to-dApp invocations"
+msgstr ""
+
+#: ../../03_ride-language/08_stdlib-versions.md:3
+msgid "6"
+msgstr ""
+
+#: ../../03_ride-language/08_stdlib-versions.md:3
+msgid "17 — Ride V6, MetaMask support"
+msgstr ""
+
+#: ../../03_ride-language/08_stdlib-versions.md:3
+msgid "7"
+msgstr ""
+
+#: ../../03_ride-language/08_stdlib-versions.md:3
+msgid "19 — Block reward distribution"
+msgstr ""
+
+#: ../../03_ride-language/08_stdlib-versions.md:3
+msgid "8"
+msgstr ""
+
+#: ../../03_ride-language/08_stdlib-versions.md:3
+msgid "22 — Light node"
+msgstr ""
+
+#: ../../03_ride-language/08_stdlib-versions.md:3
+msgid "9"
+msgstr ""
+
+#: ../../03_ride-language/08_stdlib-versions.md:3
+msgid "25 — Deterministic finality and Ride V9"
+msgstr ""
+
+#: ../../03_ride-language/08_stdlib-versions.md:21
+msgid "The node treats the highest version whose feature is active as the network's current Ride version."
+msgstr ""
+
+#: ../../03_ride-language/08_stdlib-versions.md:23
+msgid "Check which features are active on a network with the node's `/activation/status` endpoint before compiling for a new version."
+msgstr ""
+
+#: ../../03_ride-language/08_stdlib-versions.md:26
+msgid "The function tables and examples elsewhere in this reference were written for standard library version 5. This page lists everything versions 6 to 9 add on top of that — traced directly through the blockchain-functions, crypto, types and bindings context modules of the node-scala `lang` module, not carried over from any other documentation."
+msgstr ""
+
+#: ../../03_ride-language/08_stdlib-versions.md:29
+msgid "What changed in each version"
+msgstr ""
+
+#: ../../03_ride-language/08_stdlib-versions.md:31
+msgid "Version 6"
+msgstr ""
+
+#: ../../03_ride-language/08_stdlib-versions.md:33
+msgid "**`addressFromPublicKey`** gets a native (compiler-builtin) implementation, replacing the library-defined one used in V1–V5. The signature and behaviour are unchanged; only the evaluation cost differs."
+msgstr ""
+
+#: ../../03_ride-language/08_stdlib-versions.md:34
+msgid "**`take`, `drop`, `takeRight`, `dropRight`** on `ByteVector` and `String`, and **`makeString`**, switch from unchecked to complexity-checked variants — very large inputs that previously ran unmetered now count properly against a script's complexity budget. Existing scripts that stayed within reasonable sizes are unaffected."
+msgstr ""
+
+#: ../../03_ride-language/08_stdlib-versions.md:35
+msgid "**`InvokeExpressionTransaction`** — a new transaction type becomes visible to Ride (fields `expression: ByteVector`, `feeAssetId: ByteVector|Unit`, plus the common transaction fields)."
+msgstr ""
+
+#: ../../03_ride-language/08_stdlib-versions.md:36
+msgid "From V6 onward, **every active transaction type's Ride constructor is hidden** (`hideConstructor = true`) — a script can pattern-match on `TransferTransaction`, `InvokeScriptTransaction` and so on, but can no longer construct new values of these types directly. This was not the case in V1–V5."
+msgstr ""
+
+#: ../../03_ride-language/08_stdlib-versions.md:38
+msgid "Version 7"
+msgstr ""
+
+#: ../../03_ride-language/08_stdlib-versions.md:40
+msgid "**`BlockInfo`** gains a `rewards: List[(Address, Int)]` field — the block reward distribution (miner, XTN buy-back, DAO address, etc., depending on network configuration) for that block, matching blockchain feature 19 (Block Reward Distribution). No new functions."
+msgstr ""
+
+#: ../../03_ride-language/08_stdlib-versions.md:42
+msgid "Version 8"
+msgstr ""
+
+#: ../../03_ride-language/08_stdlib-versions.md:44
+msgid "**`calculateDelay(generator: Address, balance: Int): Int`** — computes the FairPoS block-generation delay for a hypothetical generator and generating balance, without needing to read full chain state. Complexity cost 1. Added to support Light Node use (feature 22): a light client can estimate block timing from a header alone."
+msgstr ""
+
+#: ../../03_ride-language/08_stdlib-versions.md:45
+msgid "**`Order`** gains an `attachment: ByteVector|Unit` field."
+msgstr ""
+
+#: ../../03_ride-language/08_stdlib-versions.md:47
+msgid "Version 9"
+msgstr ""
+
+#: ../../03_ride-language/08_stdlib-versions.md:49
+msgid "**`p256Verify(message: ByteVector, signature: ByteVector, publicKey: ByteVector): Boolean`** — verifies a signature made with the NIST P-256 (secp256r1) curve. Complexity cost 43."
+msgstr ""
+
+#: ../../03_ride-language/08_stdlib-versions.md:50
+msgid "**`validateCertificateChain(certificateChain: List[ByteVector], crls: List[ByteVector], timestamp: Int): ByteVector`** — validates an X.509 certificate chain (up to 5 certificates) against certificate revocation lists as of `timestamp`. Complexity cost 43."
+msgstr ""
+
+#: ../../03_ride-language/08_stdlib-versions.md:51
+msgid "**Fixed-cost (1-complexity) encode/decode variants**: `toBase64String_1C`, `fromBase64String_1C`, `toBase16String_1C`, `fromBase16String_1C` — capped-input versions of the existing Base64/Base16 functions for scripts that need a predictable, minimal complexity cost regardless of the general-purpose function's usual cost curve."
+msgstr ""
+
+#: ../../03_ride-language/08_stdlib-versions.md:52
+#, python-brace-format
+msgid "**`CommitToGenerationTransaction`** becomes visible to Ride for the first time — fields `endorserPublicKey: ByteVector`, `generationPeriodStart: Int`, `commitmentSignature: ByteVector`, plus the common transaction fields — matching {ref}`Deterministic Finality <02_decentralchain/09_protocol:Finality>` (feature 25). Like every transaction type since V6, its constructor is hidden; a script can pattern-match on it but not build one."
+msgstr ""
+
+#: ../../03_ride-language/08_stdlib-versions.md:54
+#, python-brace-format
+msgid "Everything else available in V5 — data types, control flow, `FOLD<N>`, `invoke`/`reentrantInvoke`, script and structure definitions — carries forward into V6 through V9 unless noted above. A number of existing functions also get **cheaper** (rarely, more expensive) at a later version without changing behaviour at all — see {doc}`Complexity Changes by Version <09_complexity-changes>`."
+msgstr ""
+
+#: ../../03_ride-language/09_complexity-changes.md:1
+msgid "Complexity Changes by Version"
+msgstr ""
+
+#: ../../03_ride-language/09_complexity-changes.md:3
+msgid "Every built-in function has a **complexity** cost, charged against a script's per-transaction complexity limit. Several built-ins get cheaper (rarely, more expensive) at a later standard library version, independent of any change to their arguments or return type — a script recompiled at a higher `STDLIB_VERSION` can pass where it previously failed the complexity limit, with no code change."
+msgstr ""
+
+#: ../../03_ride-language/09_complexity-changes.md:6
+msgid "Verified against node-scala v1.8.0. Generated by `docs/scripts/extract_ride_complexity.py` in this repository, run against a checkout of node-scala's `lang` module — see that script's docstring for exactly what it does and does not capture. Re-run it after every node-scala release to catch drift; a diff means this table needs updating."
+msgstr ""
+
+#: ../../03_ride-language/09_complexity-changes.md:9
+#, python-brace-format
+msgid "Where a function has more than one row, each row is a distinct overload (different argument types) with its own cost curve — the extraction can't attach argument types to a row, only the version-to-cost map, so use the {doc}`function reference <03_functions>` to tell overloads apart by signature."
+msgstr ""
+
+#: ../../03_ride-language/09_complexity-changes.md:5
+msgid "Function"
+msgstr ""
+
+#: ../../03_ride-language/09_complexity-changes.md:5
+msgid "Complexity by version"
+msgstr ""
+
+#: ../../03_ride-language/09_complexity-changes.md:5
+msgid "`-` (BigInt unary minus)"
+msgstr ""
+
+#: ../../03_ride-language/09_complexity-changes.md:5
+msgid "V5=8, V6=8, V7=8, V8=1"
+msgstr ""
+
+#: ../../03_ride-language/09_complexity-changes.md:5
+msgid "`createMerkleRoot`"
+msgstr ""
+
+#: ../../03_ride-language/09_complexity-changes.md:5
+msgid "V4=30, V9=3"
+msgstr ""
+
+#: ../../03_ride-language/09_complexity-changes.md:5
+msgid "`drop`"
+msgstr ""
+
+#: ../../03_ride-language/09_complexity-changes.md:5
+msgid "V1=1, V4=6, V9=2"
+msgstr ""
+
+#: ../../03_ride-language/09_complexity-changes.md:5
+msgid "V1=1, V4=20, V9=2"
+msgstr ""
+
+#: ../../03_ride-language/09_complexity-changes.md:5
+msgid "`dropRight`"
+msgstr ""
+
+#: ../../03_ride-language/09_complexity-changes.md:5
+msgid "V6=6, V9=2"
+msgstr ""
+
+#: ../../03_ride-language/09_complexity-changes.md:5
+msgid "V6=20, V9=2"
+msgstr ""
+
+#: ../../03_ride-language/09_complexity-changes.md:5
+msgid "`fill`"
+msgstr ""
+
+#: ../../03_ride-language/09_complexity-changes.md:5
+msgid "V9=2"
+msgstr ""
+
+#: ../../03_ride-language/09_complexity-changes.md:5
+msgid "`fraction`"
+msgstr ""
+
+#: ../../03_ride-language/09_complexity-changes.md:5
+msgid "V1=1, V5=14, V6=1"
+msgstr ""
+
+#: ../../03_ride-language/09_complexity-changes.md:5
+msgid "V5=128, V6=1"
+msgstr ""
+
+#: ../../03_ride-language/09_complexity-changes.md:5
+msgid "`getElement`"
+msgstr ""
+
+#: ../../03_ride-language/09_complexity-changes.md:5
+msgid "V1=2, V9=1"
+msgstr ""
+
+#: ../../03_ride-language/09_complexity-changes.md:5
+msgid "`max` (list)"
+msgstr ""
+
+#: ../../03_ride-language/09_complexity-changes.md:5
+msgid "V5=192, V8=6"
+msgstr ""
+
+#: ../../03_ride-language/09_complexity-changes.md:5
+msgid "`median` (BigInt list)"
+msgstr ""
+
+#: ../../03_ride-language/09_complexity-changes.md:5
+msgid "V5=160, V6=160, V7=160, V8=35"
+msgstr ""
+
+#: ../../03_ride-language/09_complexity-changes.md:5
+msgid "`min` (list)"
+msgstr ""
+
+#: ../../03_ride-language/09_complexity-changes.md:5
+msgid "V5=192, V6=192, V7=192, V8=6"
+msgstr ""
+
+#: ../../03_ride-language/09_complexity-changes.md:5
+msgid "`parseBigInt`"
+msgstr ""
+
+#: ../../03_ride-language/09_complexity-changes.md:5
+msgid "V5=65, V8=1"
+msgstr ""
+
+#: ../../03_ride-language/09_complexity-changes.md:5
+msgid "`parseBigIntValue`"
+msgstr ""
+
+#: ../../03_ride-language/09_complexity-changes.md:5
+msgid "`pow`"
+msgstr ""
+
+#: ../../03_ride-language/09_complexity-changes.md:5
+msgid "V3=100, V6=28"
+msgstr ""
+
+#: ../../03_ride-language/09_complexity-changes.md:5
+msgid "V5=200, V6=270"
+msgstr ""
+
+#: ../../03_ride-language/09_complexity-changes.md:5
+msgid "`removeByIndex`"
+msgstr ""
+
+#: ../../03_ride-language/09_complexity-changes.md:5
+msgid "V4=7, V8=4, V9=1"
+msgstr ""
+
+#: ../../03_ride-language/09_complexity-changes.md:5
+msgid "`replaceAll`"
+msgstr ""
+
+#: ../../03_ride-language/09_complexity-changes.md:5
+msgid "`replaceByIndex`"
+msgstr ""
+
+#: ../../03_ride-language/09_complexity-changes.md:5
+msgid "V8=4, V9=1"
+msgstr ""
+
+#: ../../03_ride-language/09_complexity-changes.md:5
+msgid "`replaceFirst`"
+msgstr ""
+
+#: ../../03_ride-language/09_complexity-changes.md:5
+msgid "`size`"
+msgstr ""
+
+#: ../../03_ride-language/09_complexity-changes.md:5
+msgid "`split`"
+msgstr ""
+
+#: ../../03_ride-language/09_complexity-changes.md:5
+msgid "V3=100, V4=75, V6=51"
+msgstr ""
+
+#: ../../03_ride-language/09_complexity-changes.md:5
+msgid "`take`"
+msgstr ""
+
+#: ../../03_ride-language/09_complexity-changes.md:5
+msgid "`takeRight`"
+msgstr ""
+
+#: ../../03_ride-language/09_complexity-changes.md:5
+msgid "`toBigInt`"
+msgstr ""
+
+#: ../../03_ride-language/09_complexity-changes.md:5
+msgid "`toBytes`"
+msgstr ""
+
+#: ../../03_ride-language/09_complexity-changes.md:5
+msgid "`toString` (BigInt)"
+msgstr ""
+
+#: ../../03_ride-language/09_complexity-changes.md:5
+msgid "V5=65, V6=1"
+msgstr ""
+
+#: ../../03_ride-language/09_complexity-changes.md:5
+msgid "`toString` (Int/Boolean)"
+msgstr ""
+
+#: ../../03_ride-language/09_complexity-changes.md:5
+msgid "V3=10, V4=10, V5=10, V6=1"
+msgstr ""
+
+#: ../../03_ride-language/09_complexity-changes.md:45
+msgid "A missing version in a row means the cost from the previous listed version carries forward unchanged — e.g. `removeByIndex` stays at `4` for V8 until it drops to `1` at V9. `median` exists before V8: the `List[Int]` overload costs a flat `20` from V4 onward (so it has no row here), and the `List[BigInt]` overload costs `160` for V5–V7 and `35` from V8."
+msgstr ""
+
+#: ../../03_ride-language/09_complexity-changes.md:47
+msgid "Coverage"
+msgstr ""
+
+#: ../../03_ride-language/09_complexity-changes.md:49
+#, python-brace-format
+msgid "This table only includes functions whose cost is set directly with a string literal name — `NativeFunction(\"name\", Map(...), ...)`. Some costs are set through a helper (for example the BigInt arithmetic operators `+`, `*`, `/`, `%`, all `V5 -> 8L`/`V5 -> 64L`, stepping to `1L` at V8, defined via a shared `bigIntArithmeticOp` helper) and aren't captured here, since attributing them correctly would mean guessing at the helper's argument order rather than reading it off a literal. Treat this page as a documented lower bound on what changed, not an exhaustive list — the {doc}`Standard Library Versions <08_stdlib-versions>` page covers every genuinely *new* function and structure field, which this page does not repeat."
 msgstr ""
 
 #: ../../03_ride-language/index.md:1 ../../03_ride-language/index.md:22
@@ -9967,3 +10418,10 @@ msgstr ""
 #: ../../03_ride-language/index.md:102
 msgid "Limitations by design help ensure execution is secure and straightforward."
 msgstr ""
+
+#~ msgid "{-# STDLIB_VERSION 5 #-} sets the version of the standard library. The latest version currently in production is 5."
+#~ msgstr ""
+
+#~ msgid "true — :ref:`smart asset <documentation:placeholder>`, false — regular token."
+#~ msgstr ""
+
