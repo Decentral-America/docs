@@ -44,14 +44,19 @@ its page is not sampled here.
    only through environment variables; they are never written to disk,
    and the runner removes them from the output.
 
-   A full run takes about 5 minutes and uses about 6.2 DCC: the 1 DCC fees for issuing tokens and
-   setting an asset script, the 1 DCC pledged to a dApp that locks its
-   own account, and transaction fees. When the CI account holds less than
-   the largest sample needs, the runner claims 10 DCC from the Testnet
-   faucet, which allows one claim per address every 24 hours. If that
-   isn't enough, it fails with a "top up" error. The account is
-   disposable: if the seed is lost, create a new account, fund it from
-   the faucet, and replace the secret.
+   A full run takes about 5 minutes and uses about 6.2 DCC: the 1 DCC
+   fees for issuing tokens and setting an asset script, the 1 DCC pledged
+   to a dApp that locks its own account, and transaction fees. Before it
+   starts, the runner wants that much plus the largest amount one sample
+   needs at once, about 13 DCC in all (`RUN_COST_DCC` in
+   `runner/manifest.mjs`), and it checks again before funding each
+   sample. When the CI account holds less, the runner claims 10 DCC from
+   the Testnet faucet, which allows one claim per address every 24 hours.
+   If that isn't enough, it fails with a "top up" error that names the
+   account and the amount. A weekly run is covered by the faucet; several
+   runs on one day need a manual top-up. The account is disposable: if
+   the seed is lost, create a new account, fund it from the faucet, and
+   replace the secret.
 
    Run it locally with your own funded Testnet account:
 

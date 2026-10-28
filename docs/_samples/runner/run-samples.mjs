@@ -19,7 +19,7 @@ import { cp, mkdir, readFile, readdir, rm, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { broadcast, libs, massTransfer, transfer, waitForTx } from '@decentralchain/transactions';
-import { DEFAULT_FUND_DCC, EXAMPLE_RECIPIENT, javaSamples, samples } from './manifest.mjs';
+import { DEFAULT_FUND_DCC, EXAMPLE_RECIPIENT, RUN_COST_DCC, javaSamples, samples } from './manifest.mjs';
 
 const NODE_URL = 'https://testnet-node.decentralchain.io';
 const FAUCET_URL = 'https://testnet.decentralscan.com/api/faucet';
@@ -200,11 +200,15 @@ const fundingOf = (entry) => {
   return [...roles.keys()].map((role) => ({ role: roles.get(role), amount: Math.round((entry.config.fund?.[role] ?? DEFAULT_FUND_DCC) * DCC) }));
 };
 const runnable = entries.filter((e) => !e.config.skip && !e.config.helper && !(readOnlyRun && !e.config.readOnly));
-if (!readOnlyRun) {
-  const need = Math.max(0, ...runnable.map((e) => fundingOf(e).reduce((sum, f) => sum + f.amount, 0))) + DCC / 2;
+const topUpMessage = (balance, need) =>
+  `The CI account ${ciAddress} holds ${dcc(balance)} DCC and needs at least ${dcc(need)}. Top it up from the faucet (https://testnet.decentralscan.com/faucet, 10 DCC per address per 24 hours) and run the job again.`;
+
+// Makes sure the CI account holds `need`, claiming from the faucet once per run if it doesn't.
+let faucetTried = false;
+async function ensureBalance(need) {
   let balance = await balanceOf(ciAddress);
-  console.log(`CI account ${ciAddress}: ${dcc(balance)} DCC; the largest sample needs ${dcc(need)} DCC at once.`);
-  if (balance < need) {
+  if (balance < need && !faucetTried) {
+    faucetTried = true;
     const claim = await getJson(FAUCET_URL, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ address: ciAddress }) });
     console.log(`Balance too low; faucet claim: HTTP ${claim.status} ${JSON.stringify(claim.body)}`);
     if (claim.body?.txId) {
@@ -212,8 +216,17 @@ if (!readOnlyRun) {
       balance = await balanceOf(ciAddress);
     }
   }
+  return balance;
+}
+
+if (!readOnlyRun) {
+  // What a full run spends, plus the largest amount one sample needs at once.
+  const largest = Math.max(0, ...runnable.map((e) => fundingOf(e).reduce((sum, f) => sum + f.amount, 0)));
+  const need = largest + DCC / 2 + (only ? 0 : Math.round(RUN_COST_DCC * DCC));
+  console.log(`CI account ${ciAddress}: ${dcc(await balanceOf(ciAddress))} DCC; this run needs about ${dcc(need)} DCC.`);
+  const balance = await ensureBalance(need);
   if (balance < need) {
-    console.error(`::error::The CI account ${ciAddress} holds ${dcc(balance)} DCC and needs at least ${dcc(need)}. Top it up from the faucet (https://testnet.decentralscan.com/faucet, 10 DCC per 24 hours) and run the job again.`);
+    console.error(`::error::${topUpMessage(balance, need)}`);
     process.exit(1);
   }
 }
@@ -249,6 +262,9 @@ for (const entry of entries) {
 
     const transfers = funding.filter((f) => f.amount > 0).map((f) => ({ recipient: roleAddress(f.role), amount: f.amount }));
     if (transfers.length) {
+      const need = transfers.reduce((sum, t) => sum + t.amount, 0) + DCC / 100;
+      const balance = await ensureBalance(need);
+      if (balance < need) throw new Error(topUpMessage(balance, need));
       const tx = massTransfer({ transfers, chainId: CHAIN_ID }, mainSeed);
       await broadcast(tx, NODE_URL);
       await waitForTx(tx.id, { apiBase: NODE_URL, timeout: 180_000 });

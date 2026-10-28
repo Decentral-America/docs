@@ -29,6 +29,12 @@
 
 export const DEFAULT_FUND_DCC = 1.5;
 
+// DCC a full run spends and doesn't get back (token issue and asset script
+// fees, a pledge locked in a dApp, transaction fees): 6.18 to 6.19 DCC in the
+// runs of 2026-10-27. The runner wants this much plus the largest sample's
+// funding before it starts.
+export const RUN_COST_DCC = 6.5;
+
 // The example recipient most samples send to. The runner sends to the CI
 // account instead, so the DCC come back.
 export const EXAMPLE_RECIPIENT = "'31LAqgqVTLySNCPuYqgLAYhcgS76wvBaLr9'";
