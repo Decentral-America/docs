@@ -48,6 +48,11 @@ jobs:
       run: "docs/buildDocs.sh"
       shell: bash
 
+    - name: "Translations: catalogs, msgfmt, markup, coverage and the publish rule"
+      run: |
+        sudo apt-get update -qq && sudo apt-get install -y -qq gettext
+        bash docs/scripts/check_translations.sh /tmp/translations
+
     - name: Built site root redirects to /en/main/
       env:
         DOCROOT: ${{ steps.build.outputs.docroot }}

@@ -1,0 +1,93 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Blockchain Costa Rica
+# This file is distributed under the same license as the DecentralChain package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: DecentralChain docs dev\n"
+"Report-Msgid-Bugs-To: https://github.com/Decentral-America/docs/issues\n"
+"POT-Creation-Date: 2026-10-27 21:54-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ar\n"
+"Language-Team: Arabic <https://github.com/Decentral-America/docs>\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=0 && n%100<=2 ? 4 : 5);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../06_contributing.md:1
+msgid "Contributing"
+msgstr ""
+
+#: ../../06_contributing.md:3
+msgid "DecentralChain is developed in the open across many repositories under the [Decentral-America](https://github.com/Decentral-America) GitHub organization — the node, SDK packages, wallet, and this documentation site are all separate repos, each accepting contributions."
+msgstr ""
+
+#: ../../06_contributing.md:5
+msgid "Node and Protocol"
+msgstr ""
+
+#: ../../06_contributing.md:7
+msgid "The node is developed at [node-scala](https://github.com/Decentral-America/node-scala). Fork the repository, work on a feature branch, and open a pull request. For anything beyond a small fix, open an issue first to discuss the change before investing time in an implementation. See the repo's `CODE_OF_CONDUCT.md` for community guidelines."
+msgstr ""
+
+#: ../../06_contributing.md:9
+msgid "SDK and Tooling"
+msgstr ""
+
+#: ../../06_contributing.md:11
+msgid "Each SDK package ([`transactions`](https://github.com/Decentral-America/DecentralChain/tree/main/packages/sdk/transactions), [`node-api`](https://github.com/Decentral-America/DecentralChain/tree/main/packages/sdk/node-api), [`signer`](https://github.com/Decentral-America/DecentralChain/tree/main/packages/sdk/signer), [`cubensis-connect`](https://github.com/Decentral-America/cubensis-connect), and the rest listed in [Client Libraries and SDK](04_building-apps/02_client-libraries-and-sdk)) is written in TypeScript under the MIT license:"
+msgstr ""
+
+#: ../../06_contributing.md:13
+msgid "Fork the relevant repository."
+msgstr ""
+
+#: ../../06_contributing.md:14
+msgid "Create a feature branch (`git checkout -b feature/your-feature-name`)."
+msgstr ""
+
+#: ../../06_contributing.md:15
+msgid "Make your changes, with tests where applicable."
+msgstr ""
+
+#: ../../06_contributing.md:16
+msgid "Open a pull request with a clear description of the change."
+msgstr ""
+
+#: ../../06_contributing.md:18
+msgid "Report bugs or feature requests in the repository the bug actually belongs to, not in this docs repository — include reproduction steps, package version, Node.js version, and network (Mainnet/Testnet) when filing an SDK issue."
+msgstr ""
+
+#: ../../06_contributing.md:20
+msgid "Documentation"
+msgstr ""
+
+#: ../../06_contributing.md:22
+msgid "This documentation site ([Decentral-America/docs](https://github.com/Decentral-America/docs)) accepts pull requests for corrections, missing content, and new articles. If you spot a gap or an inaccuracy, opening an issue first is welcome, especially before a large rewrite."
+msgstr ""
+
+#: ../../06_contributing.md:24
+msgid "The docs are also translated via [Gitlocalize](https://gitlocalize.com/repo/8397) — translation contributions in any of the supported languages are welcome; see the badges on the [repository README](https://github.com/Decentral-America/docs#readme) for current translation coverage per language."
+msgstr ""
+
+#: ../../06_contributing.md:26
+msgid "Community"
+msgstr ""
+
+#: ../../06_contributing.md:28
+msgid "**Questions and proposals:** open an issue in the repository the topic belongs to (node-scala for protocol questions, the relevant SDK package for library questions). None of the Decentral-America repositories has GitHub Discussions enabled at the time of writing."
+msgstr ""
+
+#: ../../06_contributing.md:29
+msgid "**Security issues:** report vulnerabilities privately to security@decentral.exchange rather than in a public issue."
+msgstr ""
+
+#: ../../06_contributing.md:30
+msgid "**Documentation:** this site is built with Sphinx; every page must build without warnings (`sphinx-build -W`) and must not reference third-party projects — CI enforces both."
+msgstr ""
+

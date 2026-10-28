@@ -1,4 +1,7 @@
-![github_pages_workflow](https://github.com/Decentral-America/docs/actions/workflows/github_pages_workflow.yml/badge.svg)
+[![Deploy](https://github.com/Decentral-America/docs/actions/workflows/github_pages_workflow.yml/badge.svg)](https://github.com/Decentral-America/docs/actions/workflows/github_pages_workflow.yml)
+[![Docs Build Check](https://github.com/Decentral-America/docs/actions/workflows/pr_check_workflow.yml/badge.svg)](https://github.com/Decentral-America/docs/actions/workflows/pr_check_workflow.yml)
+[![Docs Samples on Testnet](https://github.com/Decentral-America/docs/actions/workflows/samples_testnet.yml/badge.svg)](https://github.com/Decentral-America/docs/actions/workflows/samples_testnet.yml)
+[![Docs release](https://img.shields.io/github/v/tag/Decentral-America/docs?filter=docs-v*&label=docs%20release)](https://github.com/Decentral-America/docs/tags)
 <a href="https://gitlocalize.com/repo/8397/whole_project?utm_source=badge"> <img src="https://gitlocalize.com/repo/8397/whole_project/badge.svg" /> </a>
 <a href="https://gitlocalize.com/repo/8397/ar?utm_source=badge"> <img src="https://gitlocalize.com/repo/8397/ar/badge.svg" /> </a>
 <a href="https://gitlocalize.com/repo/8397/bn?utm_source=badge"> <img src="https://gitlocalize.com/repo/8397/bn/badge.svg" /> </a>
@@ -18,6 +21,14 @@
 The GitHub-Pages-hosted documentation of this repository can be viewed here:
 
  * http://docs.decentralchain.io/
+
+Each release of `dev` to `main` is tagged `docs-vYYYY.MM` (a second release in the same month gets `docs-vYYYY.MM.1`, and so on). Tag the `main` commit once its deploy has passed:
+
+```bash
+git tag -a docs-v2026.10 -m "Docs release 2026-10" origin/main && git push origin docs-v2026.10
+```
+
+Translations: the badges above show each language's progress on GitLocalize. The `translations` job of the Docs Build Check writes the coverage of every language, measured against the current English, to its job summary. A language is published when it is listed in [`docs/locales/PUBLISHED`](docs/locales/PUBLISHED) and is at least 80% translated, or is marked `partial` there.
 
 ---
 

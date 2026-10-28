@@ -1,4 +1,23 @@
-
+# Bangla translations for DecentralChain docs.
+# Copyright (C) 2026 ORGANIZATION
+# This file is distributed under the same license as the DecentralChain docs project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: DecentralChain docs VERSION\n"
+"Report-Msgid-Bugs-To: https://github.com/Decentral-America/docs/issues\n"
+"POT-Creation-Date: 2026-10-27 21:55-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: bn\n"
+"Language-Team: Bangla <https://github.com/Decentral-America/docs>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
 
 #: ../../../../../.envs/docs/lib/python3.10/site-packages/ablog/templates/archives.html:3
 msgid "Archives"
@@ -64,3 +83,4 @@ msgstr ""
 #: ../../../../../.envs/docs/lib/python3.10/site-packages/ablog/templates/recentposts.html:3
 msgid "Recent Posts"
 msgstr ""
+

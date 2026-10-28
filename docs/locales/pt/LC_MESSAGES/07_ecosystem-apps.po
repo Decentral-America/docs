@@ -1,0 +1,265 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Blockchain Costa Rica
+# This file is distributed under the same license as the DecentralChain package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: DecentralChain docs dev\n"
+"Report-Msgid-Bugs-To: https://github.com/Decentral-America/docs/issues\n"
+"POT-Creation-Date: 2026-10-27 21:54-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: pt\n"
+"Language-Team: Portuguese <https://github.com/Decentral-America/docs>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../07_ecosystem-apps.md:4
+msgid "Ecosystem Apps"
+msgstr ""
+
+#: ../../07_ecosystem-apps.md:6
+msgid "Tools and services built around DecentralChain. Each one runs separately per network: Mainnet holds real DCC, the public Testnet holds free test DCC with no value, and an address or transaction on one network doesn't exist on the other."
+msgstr ""
+
+#: ../../07_ecosystem-apps.md
+msgid "App"
+msgstr ""
+
+#: ../../07_ecosystem-apps.md
+msgid "Mainnet"
+msgstr ""
+
+#: ../../07_ecosystem-apps.md
+msgid "Testnet"
+msgstr ""
+
+#: ../../07_ecosystem-apps.md ../../07_ecosystem-apps.md:20
+msgid "Decentral.Exchange"
+msgstr ""
+
+#: ../../07_ecosystem-apps.md
+msgid "[decentral.exchange](https://decentral.exchange/)"
+msgstr ""
+
+#: ../../07_ecosystem-apps.md
+msgid "[testnet.decentral.exchange](https://testnet.decentral.exchange/)"
+msgstr ""
+
+#: ../../07_ecosystem-apps.md ../../07_ecosystem-apps.md:28
+msgid "DecentralScan"
+msgstr ""
+
+#: ../../07_ecosystem-apps.md
+msgid "[decentralscan.com](https://decentralscan.com/)"
+msgstr ""
+
+#: ../../07_ecosystem-apps.md
+msgid "[testnet.decentralscan.com](https://testnet.decentralscan.com/)"
+msgstr ""
+
+#: ../../07_ecosystem-apps.md
+msgid "Faucet"
+msgstr ""
+
+#: ../../07_ecosystem-apps.md
+msgid "None"
+msgstr ""
+
+#: ../../07_ecosystem-apps.md
+msgid "[testnet.decentralscan.com/faucet](https://testnet.decentralscan.com/faucet)"
+msgstr ""
+
+#: ../../07_ecosystem-apps.md ../../07_ecosystem-apps.md:46
+msgid "Cubensis Connect"
+msgstr ""
+
+#: ../../07_ecosystem-apps.md
+msgid "Browser extension, both networks"
+msgstr ""
+
+#: ../../07_ecosystem-apps.md ../../07_ecosystem-apps.md:53
+msgid "Matcher"
+msgstr ""
+
+#: ../../07_ecosystem-apps.md
+msgid "Not available yet"
+msgstr ""
+
+#: ../../07_ecosystem-apps.md
+msgid "`https://testnet-matcher.decentralchain.io`"
+msgstr ""
+
+#: ../../07_ecosystem-apps.md ../../07_ecosystem-apps.md:61
+msgid "Data Service"
+msgstr ""
+
+#: ../../07_ecosystem-apps.md
+msgid "`https://data-service.decentralchain.io`"
+msgstr ""
+
+#: ../../07_ecosystem-apps.md
+msgid "`https://testnet-data-service.decentralchain.io`"
+msgstr ""
+
+#: ../../07_ecosystem-apps.md
+msgid "Public node"
+msgstr ""
+
+#: ../../07_ecosystem-apps.md
+msgid "`https://mainnet-node.decentralchain.io`"
+msgstr ""
+
+#: ../../07_ecosystem-apps.md
+msgid "`https://testnet-node.decentralchain.io`"
+msgstr ""
+
+#: ../../07_ecosystem-apps.md:18
+#, python-brace-format
+msgid "New here? The {doc}`Quick Start <09_user-guides/01_quick-start>` uses the faucet, a public node and DecentralScan to send a first Testnet transaction."
+msgstr ""
+
+#: ../../07_ecosystem-apps.md:22
+msgid "The web wallet and decentralized exchange. In a browser you can create or import an account, see your balances, send and receive DCC and tokens, lease DCC to a node, create aliases and trade token pairs. Your keys stay in your browser, and trades settle on the chain, so the exchange never holds your funds."
+msgstr ""
+
+#: ../../07_ecosystem-apps.md:24
+msgid "**Mainnet:** [decentral.exchange](https://decentral.exchange/)"
+msgstr ""
+
+#: ../../07_ecosystem-apps.md:25
+msgid "**Testnet:** [testnet.decentral.exchange](https://testnet.decentral.exchange/)"
+msgstr ""
+
+#: ../../07_ecosystem-apps.md:26
+#, python-brace-format
+msgid "**Guides:** {doc}`Leasing <09_user-guides/04_leasing>` shows the wallet's leasing screen. Trading needs a matcher, and the public matcher runs on the Testnet only for now."
+msgstr ""
+
+#: ../../07_ecosystem-apps.md:30
+msgid "The block explorer. It shows every block, transaction, address and token, the trading pairs on the matcher, and the state of the network and its peers. You don't need an account to use it."
+msgstr ""
+
+#: ../../07_ecosystem-apps.md:32
+msgid "**Mainnet:** [decentralscan.com](https://decentralscan.com/)"
+msgstr ""
+
+#: ../../07_ecosystem-apps.md:33
+msgid "**Testnet:** [testnet.decentralscan.com](https://testnet.decentralscan.com/)"
+msgstr ""
+
+#: ../../07_ecosystem-apps.md:34
+#, python-brace-format
+msgid "**Guide:** {doc}`DecentralScan Guide <09_user-guides/03_decentralscan>`: search, each page, and direct links to transactions and addresses."
+msgstr ""
+
+#: ../../07_ecosystem-apps.md:36
+msgid "Testnet Faucet"
+msgstr ""
+
+#: ../../07_ecosystem-apps.md:38
+#, python-brace-format
+msgid "Free Testnet DCC for development and testing: 10 DCC per address, once every 24 hours. Use it with a Testnet address (chain ID `!`, addresses starting with `31`), as described in {ref}`Mainnet, Testnet <02_decentralchain/08_mainnet-testnet-stagenet:Network Parameters>`."
+msgstr ""
+
+#: ../../07_ecosystem-apps.md:40
+msgid "**Web page:** [testnet.decentralscan.com/faucet](https://testnet.decentralscan.com/faucet)"
+msgstr ""
+
+#: ../../07_ecosystem-apps.md:41
+#, python-brace-format
+msgid "**API:** `POST https://testnet.decentralscan.com/api/faucet` with `{\"address\": \"<Testnet address>\"}`. It returns the transfer's `txId`, `429` if the address already received DCC in the last 24 hours, and `400` for an address of another network."
+msgstr ""
+
+#: ../../07_ecosystem-apps.md:42
+#, python-brace-format
+msgid "**Guide:** {ref}`Quick Start, Step 3 <09_user-guides/01_quick-start:Step 3: Get Testnet DCC>`."
+msgstr ""
+
+#: ../../07_ecosystem-apps.md:44
+msgid "There is no Mainnet faucet."
+msgstr ""
+
+#: ../../07_ecosystem-apps.md:48
+msgid "The browser-extension wallet. It keeps your keys encrypted in the extension and lets dApps ask for signatures without ever seeing a seed phrase. It works on Mainnet, Testnet and a custom network you choose. It is not in the browser extension stores yet, so you build it from the [DecentralChain repository](https://github.com/Decentral-America/DecentralChain/tree/main/apps/cubensis-connect)."
+msgstr ""
+
+#: ../../07_ecosystem-apps.md:50
+#, python-brace-format
+msgid "**Guide for users:** {doc}`Cubensis Connect User Guide <09_user-guides/02_cubensis-connect>`: install, create an account, switch networks and approve requests."
+msgstr ""
+
+#: ../../07_ecosystem-apps.md:51
+#, python-brace-format
+msgid "**Guide for developers:** {doc}`Wallet Integration <04_building-apps/04_wallet-integration>`: connect a dApp to it."
+msgstr ""
+
+#: ../../07_ecosystem-apps.md:55
+msgid "The order-matching service behind Decentral.Exchange. It takes signed buy and sell orders, matches them and settles each trade on the chain as an Exchange transaction."
+msgstr ""
+
+#: ../../07_ecosystem-apps.md:57
+msgid "**Mainnet:** not available yet."
+msgstr ""
+
+#: ../../07_ecosystem-apps.md:58
+msgid "**Testnet:** `https://testnet-matcher.decentralchain.io`, with an OpenAPI reference at [`/api-docs/index.html`](https://testnet-matcher.decentralchain.io/api-docs/index.html)."
+msgstr ""
+
+#: ../../07_ecosystem-apps.md:59
+#, python-brace-format
+msgid "**Guide:** {doc}`Matcher API <04_building-apps/12_matcher-api>`: markets, placing and cancelling orders, and order history."
+msgstr ""
+
+#: ../../07_ecosystem-apps.md:63
+msgid "An indexed API over the chain's history: asset search, transaction history by type and DEX candles and trades, which a node's REST API doesn't index."
+msgstr ""
+
+#: ../../07_ecosystem-apps.md:65
+msgid "**Mainnet:** `https://data-service.decentralchain.io`"
+msgstr ""
+
+#: ../../07_ecosystem-apps.md:66
+msgid "**Testnet:** `https://testnet-data-service.decentralchain.io`"
+msgstr ""
+
+#: ../../07_ecosystem-apps.md:67
+#, python-brace-format
+msgid "**Guide:** {doc}`Data Service API <04_building-apps/06_data-service-api>`."
+msgstr ""
+
+#: ../../07_ecosystem-apps.md:69
+msgid "Public Nodes"
+msgstr ""
+
+#: ../../07_ecosystem-apps.md:71
+msgid "Nodes run for anyone to read chain state and broadcast signed transactions. Use them for development and light use; run your own node for production traffic."
+msgstr ""
+
+#: ../../07_ecosystem-apps.md:73
+msgid "**Mainnet:** `https://mainnet-node.decentralchain.io`"
+msgstr ""
+
+#: ../../07_ecosystem-apps.md:74
+msgid "**Testnet:** `https://testnet-node.decentralchain.io`"
+msgstr ""
+
+#: ../../07_ecosystem-apps.md:75
+#, python-brace-format
+msgid "**Guides:** {doc}`Node REST API <05_node-guide/01_node-rest-api>`, and the {doc}`Node Guide <05_node-guide/index>` to run your own."
+msgstr ""
+
+#: ../../07_ecosystem-apps.md:77
+msgid "Ride Tooling"
+msgstr ""
+
+#: ../../07_ecosystem-apps.md:79
+#, python-brace-format
+msgid "No browser IDE for Ride is hosted at the moment. To write and test Ride, use the {doc}`Ride REPL <04_building-apps/developer-tools/01_ride-repl>` and a node's compiler endpoints; see {doc}`Developer Tools <04_building-apps/01_developer-tools>`."
+msgstr ""
+

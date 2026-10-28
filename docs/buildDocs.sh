@@ -86,8 +86,8 @@ for current_version in ${versions}; do
       ##########
       echo "INFO: Building for ${current_language}"
  
-      # HTML #
-      sphinx-build -b html docs/ "docs/_build/html/${current_language}/${current_version}" -D language="${current_language}"
+      # HTML # (-W: a warning in any language or version fails the deploy, as on PRs)
+      sphinx-build -W -b html docs/ "docs/_build/html/${current_language}/${current_version}" -D language="${current_language}"
  
       # PDF #
       #sphinx-build -b rinoh docs/ docs/_build/rinoh -D language="${current_language}"

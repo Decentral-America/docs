@@ -1,7 +1,25 @@
+# Russian translations for DecentralChain docs.
+# Copyright (C) 2026 ORGANIZATION
+# This file is distributed under the same license as the DecentralChain docs project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: DecentralChain docs VERSION\n"
+"Report-Msgid-Bugs-To: https://github.com/Decentral-America/docs/issues\n"
+"POT-Creation-Date: 2026-10-27 21:54-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ru\n"
+"Language-Team: Russian <https://github.com/Decentral-America/docs>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
 
-
-#: ../../01_introduction.md:1 ../../01_introduction/index.md:1
-#: ../../01_introduction/index.md:3
+#: ../../01_introduction.md:1
 msgid "Introduction"
 msgstr ""
 
@@ -209,9 +227,16 @@ msgstr ""
 msgid "Here are some of our most visited websites:"
 msgstr ""
 
-#: ../../01_introduction.md:110 ../../01_introduction.md:121
+#: ../../01_introduction.md:110
+msgid "DecentralChain Website"
+msgstr ""
+
+#: ../../01_introduction.md:121
+msgid "Decentral Exchange"
+msgstr ""
+
 #: ../../01_introduction.md:132
-msgid "card-img-bottom"
+msgid "Decentral Scan"
 msgstr ""
 
 #: ../../01_introduction.md:107
@@ -377,3 +402,7 @@ msgstr ""
 #: ../../01_introduction.md:187
 msgid "Moreover, the education and awareness initiatives and partnerships with schools and non-profit organizations planned by CR Coin will help raise awareness about the importance of preserving the environment and promoting sustainable practices. By combining technology, community engagement and education, CR Coin aims to be a driving force for sustainable development and environmental conservation in Costa Rica."
 msgstr ""
+
+#~ msgid "card-img-bottom"
+#~ msgstr ""
+

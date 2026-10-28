@@ -10,15 +10,22 @@
 # This only touches the .pot/.po catalogs — it never edits committed
 # English content, and it never overwrites an existing translated
 # msgstr; sphinx-intl update only adds new msgids and marks removed
-# ones obsolete. Review the diff (it will touch every language under
+# ones obsolete. Every locale dir is updated, `en` included: it holds the
+# empty source catalogs. Lines are left unwrapped (-w -1), as GitLocalize
+# writes them, so a regeneration doesn't rewrap every catalog. Then
+# translations.py gives every catalog a complete header, so `msgfmt --check`
+# passes. Review the diff (it will touch every language under
 # docs/locales/) before committing, and let Gitlocalize's own sync
 # reconcile with in-flight translator work rather than force-pushing
-# over it.
+# over it. CI (pr_check_workflow.yml, `translations`) fails when a locale
+# has no catalog for a section, so run this after adding a top-level page
+# or section.
 set -euo pipefail
 cd "$(dirname "$0")/.."   # docs/
 
 python3 -m sphinx -b gettext . _build/gettext
-python3 -m sphinx_intl update -p _build/gettext -d locales \
-  $(find locales -mindepth 1 -maxdepth 1 -type d ! -name en -exec basename {} \; | sed 's/^/-l /')
+python3 -m sphinx_intl update -p _build/gettext -d locales -w -1 \
+  $(find locales -mindepth 1 -maxdepth 1 -type d -exec basename {} \; | sed 's/^/-l /')
+python3 scripts/translations.py headers locales
 
 echo "Done. Review with: git status docs/locales && git diff docs/locales"
