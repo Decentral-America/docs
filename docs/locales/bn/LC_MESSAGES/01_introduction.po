@@ -21,103 +21,103 @@ msgstr ""
 
 #: ../../01_introduction.md:1
 msgid "Introduction"
-msgstr ""
+msgstr "ভূমিকা"
 
 #: ../../01_introduction.md:3
 msgid "How did money become the basis of trade for such a long time? To have an answer for such question we must understand what money is and the different ways money has been used through the time."
-msgstr ""
+msgstr "কীভাবে টাকাপয়সা এত দীর্ঘ সময় ধরে বাণিজ্যের ভিত্তি হয়ে উঠেছিল? এই প্রশ্নের উত্তর পাওয়ার জন্য আমাদের অবশ্যই বুঝতে হবে যে, টাকাপয়সা আসলে কী এবং সময়ের সঙ্গে বিভিন্ন উপায় ব্যবহার করা হয়েছে ।"
 
 #: ../../01_introduction.md:5
 msgid "Definition of Money"
-msgstr ""
+msgstr "টাকার সংজ্ঞা"
 
 #: ../../01_introduction.md:7
 msgid "Money is often defined it by the roles it plays:"
-msgstr ""
+msgstr "অর্থ প্রায়শ:ই এই ভূমিকার দ্বারা সংজ্ঞায়িত হয়:"
 
 #: ../../01_introduction.md:9
 msgid "It's a store of value, meaning that money allows you to defer consumption until a later date."
-msgstr ""
+msgstr "এটা একটা দামের সংরক্ষণ মূল্য, যার অর্থ হচ্ছে, আপনাকে কিছু দিন পর খাবার গ্রহণ করতে দেওয়া।"
 
 #: ../../01_introduction.md:10
 msgid "It's a unit of account, meaning that it allows you to assign a value to different goods without having to compare them. So instead of saying that a Rolex watch is worth six cows, you can just say it (or the cows) cost $10 000."
-msgstr ""
+msgstr "এটা একাউন্টের এক একক ইউনিট, যার মানে হচ্ছে এর সাথে তুলনা না করে অন্য ভালোদের মূল্য দিতে হবে। তো এই কথা বলার বদলে, একটি রোলেক্স ঘড়ি ছয়টি গরু মূল্য দেয়। আপনি শুধু বলতে পারেন (অথবা গরু) ১০,০০০ ডলার।"
 
 #: ../../01_introduction.md:11
 msgid "And it's a medium of exchange, meaning it's an easy and efficient way for different parties to trade goods and services with one another."
-msgstr ""
+msgstr "আর এটা বিনিময়ের মাধ্যম, এর মানে ভিন্ন দলের পণ্য ও সেবাকে একে অপরের সাথে ব্যবসা এবং সেবা প্রদান করা একটি সহজ উপায়।"
 
 #: ../../01_introduction.md:13
 msgid "History of Money"
-msgstr ""
+msgstr "টাকার ইতিহাস"
 
 #: ../../01_introduction.md:15
 msgid "Even though we're able to define what money is, when it comes to its origins, money has been mum about them. For such a central element of our lives, money’s ancient roots and the reasons for its invention are unclear, most of the available knowledge is based on conjectures and logical inferences."
-msgstr ""
+msgstr "যদিও আমরা বুঝতে পারছি টাকা আসলে কি, যখন এর উৎপত্তি হয়, টাকা তাদের জন্য। আমাদের জীবনের মূল উপাদান, টাকাপয়সাের শিকড় এবং এর আবিষ্কারের কারণ সম্বন্ধে বেশিরভাগ জ্ঞানই অনুমান করা হয় না ।"
 
 #: ../../01_introduction.md:17
 msgid "Some economists assume that bartering of goods and services inspired money’s invention. On the other hand there are anthropologists and archaeologists contending that early states invented currency as a means of debt payment."
-msgstr ""
+msgstr "কিন্তু, কিছু কিছু কিছু ব্যক্তি মনে করে যে, পণ্য ও সেবার বিনিময়ে অর্থ দান করা টাকাপয়সাকে অনুপ্রাণিত করেছিল । অন্যদিকে, নৃতত্ত্ববিদ ও প্রত্নতত্ত্ববিদরা পরস্পরের সঙ্গে একমত হয়ে বলেন যে, আগে থেকেই ঋণ পরিশোধ করার এক উপায় হিসেবে মুদ্রা আবিষ্কার করা হতো ।"
 
 #: ../../01_introduction.md:19
 msgid "Several investigations suggest that money independently appeared for different reasons and assumed different tangible forms in many parts of the world, starting thousands of years ago and bartering had nothing to do with it but instead, money grew out of older systems of credit and debt. In small-scale societies, debts concern obligations to others while among hunter-gatherer and farming groups daughters given away in marriage create debts that are partially repaid with goods known as bridewealth where full repayment requires that the recipient of the first bride provide a bride in return. No cash needed."
-msgstr ""
+msgstr "বেশ কিছু তদন্ত ধারণা করে যে স্বাধীনভাবে অর্থ পাওয়া যায় বিভিন্ন কারনে এবং তা বিশ্বের অনেক জায়গায় ভিন্ন ভিন্ন ভিন্ন ধরনের রূপ ধারণ করা হয়, যা হাজার বছর আগে শুরু হয়েছিল এবং এর সাথে কোন বিনিময় ছিল না কিন্তু তার বদলে ক্রেডিট এবং ঋণের মাধ্যমে টাকা বেড়ে গিয়েছিল। ছোট-বড় সমাজে, শিকারী-গায়ের আর কৃষি দলের মেয়েদের বিয়ের জন্য ঋণ দেয়া হয় যাদের মধ্যে বিয়ে থেকে ঋণ আছে। কোনো নগদ প্রয়োজন নেই।"
 
 #: ../../01_introduction.md:21
 msgid "Revisionists argue that a transition to a new form of money-friendly debt started at least 5,500 years ago in the agricultural states of Mesopotamia and Egypt. In Mesopotamia, the silver shekel — a lump of metal, not a coin — was a basic monetary measure. Rulers decreed that one shekel’s weight in silver was equivalent to a bushel of barley. Shekels of silver, gold and other metals were used in other ancient societies. Precise weights of shekels appear to have varied from one to the next one and therefore are difficult to pin down. Farmers were taxed to support royal lifestyles and public works, what the farmers and other commoners couldn’t pay in goods was recorded as debt in shekels. Merchants and tradespeople acquired goods from temple and palace officials on credit."
-msgstr ""
+msgstr "রিফর্মিস্টরা যুক্তি প্রদান করেছে যে, এই ঋণের ফলে অন্তত ৫,৫০০ বছর আগে মেসোপটেমিয়া এবং মিশরের কৃষি অঞ্চলে পাওয়া যায়। মেসোপটেমিয়াতে, রুপো — এক বিশাল ধাতু, কোনো মুদ্রা নয় — ছিল একটা মৌলিক আর্থিক পরিমাপ । রাজারা আদেশ দিয়েছিল যে, রুপোর ওজনের একটা যবের সঙ্গে তুলনা করা যায় । প্রাচীন সমাজে স্বর্ণ, সোনা এবং অন্যান্য ধাতু ব্যবহৃত হতো । কিন্তু, বিয়ারের ওজনের চেয়ে আরও বেশি । রাজকীয় জীবনযাপন এবং জনগণের কাজের প্রতি সমর্থন প্রদর্শনের জন্য কৃষকদের কর প্রদান করা হয়, যা কৃষক ও অন্যান্য সাধারণ লোকেরা পণ্যের দাম দিতে পারেনি, তা সেকেলের ঋণ হিসেবে রেকর্ড করা হয়েছে। ( মথি ২৪: ১৪) বণিক এবং ব্যাবসাকারীরা মন্দির ও প্রাসাদের কর্মকর্তাদের কাছ থেকে উপকার লাভ করেছিল ।"
 
 #: ../../01_introduction.md:23
 msgid "Coins stamped with images of animals or rulers, acting as denominations and guaranteeing the metal’s value, first appeared in the kingdom of Lydia around 2,600 years ago. Located in what is now Turkey, Lydia sat on the cusp between the Mediterranean and the Near East, and commerce with foreign travelers was common which was one of the major promoters for this coin mint to happen. To understand why, imagine doing a trade in the absence of money or in other words through barter. The chief problem with barter is the double coincidence of wants. Say you have a bunch of bananas and would like a pair of shoes, but it's not enough to find someone who has some shoes or someone who wants some bananas. To make the trade, you need to find someone who has shoes they're willing to trade and that wants bananas which is no easy task."
-msgstr ""
+msgstr "কিন্তু, সেই সময়ে লুদিয়ার স্ত্রী ও তিন জন স্ত্রী ছিল । এখন তুরস্কের অবস্থান হচ্ছে, লুদিয়া ভূমধ্যসাগর ও পূর্ব অঞ্চলের সাথে বাণিজ্য এবং বিদেশী ভ্রমণকারীদের সাথে ব্যাবসার বিষয়টি সাধারণ ব্যাপার। ( মথি ৬: ৩৩) কিন্তু, এই ধরনের বিষয়গুলো নিয়ে চিন্তা করুন । মুদ্রার সাথে প্রধান সমস্যা হচ্ছে, এই দুই ধরনের কাকতালীয় ব্যাপার। মনে করো তোমার কাছে কলা আছে আর একজোড়া জুতার মত লাগবে, কিন্তু এমন কাউকে খুঁজে বের করার জন্য যথেষ্ট নয় যে কোন জুতা বা কোনো কলা চায়। ব্যবসা করতে হলে এমন কাউকে খুঁজে বের করতে হবে যার জুতা আছে... ...আর কলা চায় যেটা খুব সহজ কাজ নয়."
 
 #: ../../01_introduction.md:25
 msgid "With a common currency, the task becomes easier: You just sell your bananas to someone in exchange for money, with which you then buy shoes from someone else. And if, as in Lydia, you have foreigners from whom you'd like to buy or to whom you'd like to sell, having a common medium of exchange is obviously valuable. That is, money is especially useful when dealing with people you don't know and may never see again."
-msgstr ""
+msgstr "একটা সাধারণ মুদ্রা সহ এই কাজ সহজ হয়ে যায়: আপনি শুধু আপনার কলা কারো কাছে টাকার বিনিময়ে বিক্রি করেন, যার মাধ্যমে আপনি অন্য কারো কাছ থেকে জুতা কিনতে পারবেন। আর যদি, তুমি লাইডিয়ার মত বিদেশি থেকে কিনতে চাও... ...তাহলে তুমি কার কাছ থেকে কিনতে চাও অথবা কাকে বিক্রি করতে চাও, যার কাছে বিনিময়ের সাধারণ মাধ্যম আছে অবশ্যই মূল্যবান। এটা হচ্ছে বিশেষ করে যাদের সাথে কাজ করা যায় না এমন লোকের সাথে যখন আপনি জানেন না আর হয়তো আর কখনো দেখতে পাবেন না।"
 
 #: ../../01_introduction.md:27
 msgid "The Lydian system's breakthrough was the standardized metal coin. Made of a gold-silver alloy called electrum, one coin was exactly like another—unlike, say, cattle. Also unlike cattle, the coins didn't age or die or otherwise change over time. And they were much easier to carry around. Other kingdoms followed Lydia's example, and coins became ubiquitous throughout the Mediterranean, with kingdoms stamping their insignia on the coins they minted. This had a dual effect: it facilitated the flow of trade, and it established the authority of the state."
-msgstr ""
+msgstr "লাইডিয়ান সিস্টেমের সাফল্যের হার ছিল একটা আদর্শ ধাতু পয়সা। একটা মুদ্রা ছিল অনেকটা অন্য রকম, বলতে গেলে গবাদি পশু। এমনকি গবাদি পশুর মতো, মুদ্রাও বৃদ্ধ হয় নি কিংবা সময়ের সাথে পরিবর্তন হয় নি। আর তাদের চারপাশে থাকা অনেক সহজ ছিল। অন্যান্য রাজ্য লুদিয়ার উদাহরণ অনুসরণ করেছে, আর মুদ্রা তেল সারা ভূমধ্যসাগর জুড়ে ছড়িয়ে দেয়া হয়েছে। এতে দ্বৈত প্রভাব ছিল: এটা বাণিজ্যের প্রবাহকে সহজ করেছে এবং এটি রাষ্ট্রের কর্তৃত্ব প্রতিষ্ঠা করেছে।"
 
 #: ../../01_introduction.md:29
 msgid "The spread of money throughout the Mediterranean didn't mean that it was universally used; soon after Lydia, cities and states in Greece, Persia, India and China began to strike their own coins, but even then most people were still subsistence farmers and existed largely outside the money economy. But as money became more common, it encouraged the spread of markets. Once a small part of the economy is taken over by markets and money, they tend to colonize the rest of the economy, gradually forcing out barter, feudalism, and other economic arrangements. This happens mostly because money makes market transactions so much easier and also because using money seems to redefine what people value, pushing them to view things in economic, rather than social, terms."
-msgstr ""
+msgstr "সারা ভূমধ্যসাগর জুড়ে এই অর্থ ছড়িয়ে পড়ার মানে ছিল না যে এটি সার্বজনীন ভাবে ব্যবহার করা হয়েছে। গ্রীস, পারস্য, ভারত এবং চীনের রাষ্ট্রগুলো তাদের নিজেদের মুদ্রার উপর আঘাত করতে শুরু করেছে, কিন্তু তারপরেও বেশীর ভাগ লোক এখনো কৃষকদের লাভ করছে এবং তারা অর্থনীতির বাইরে বাস করে। কিন্তু, টাকাপয়সা আরও সাধারণ হয়ে উঠেছিল, এটা বাজারের বিস্তারকে উৎসাহিত করেছিল । একবার বাজার ও অর্থ দিয়ে অর্থনীতির সামান্য অংশ দখল করে নেয়, তারা অর্থনীতিকে বাকিদের বসতি স্থাপন করে, ধীরে ধীরে তারা বিনিময়, সামন্ততা এবং অন্যান্য অর্থনৈতিক ব্যবস্থা থেকে সরে যায়। এর বেশিরভাগই কারণ হল, বাজারে লেনদেন অনেক সহজ করে দেয়। কারণ টাকা ব্যবহার করে টাকা দিয়ে মানুষ যা মান ঠিক করে, সামাজিক শর্তের চেয়ে তাদের অর্থনৈতিক অবস্থার প্রতি দৃষ্টি দিতে বাধ্য করে।"
 
 #: ../../01_introduction.md:31
 msgid "Governments were quick to embrace hard currency because it facilitated the collection of taxes and the building of military forces, coins funded armies and wars of conquest. In the process, coins became legal tender for all sorts of transactions. Marketplaces were a result of this system, not its cause, revisionists argue."
-msgstr ""
+msgstr "সরকার খুব দ্রুত মুদ্রা গ্রহণ করে, কারণ তারা কর সংগ্রহ এবং সামরিক বাহিনীর নির্মাণ কাজে সহায়তা করে, মুদ্রার অর্থ প্রদান করে সৈন্য ও জয়ের যুদ্ধ। এই প্রক্রিয়ার মধ্যে, মুদ্রা সব ধরনের লেনদেনের জন্য বৈধ কোমল হয়ে উঠেছিল । বাজারের স্থানগুলো এই ব্যবস্থার একটা ফল ছিল না, রিভাস্টরা যুক্তি দেখিয়ে বলে ।"
 
 #: ../../01_introduction.md:33
 msgid "Once the Chinese had started making comparatively inexpensive paper from natural fibers, and discovered block-printing, paper currency came into use in the country. The first known use of paper currency in China is reported from the Tang dynasty and despite the fact that scarce information remains about this early system of paper currency there's evidence that these were certificates issued by the Tang government to pay local merchants in distants parts of the empire. By using certificates, the government could avoid having to transport metal money far away. Each certificate had a certain amount of money stated on it and was redeemable for metal cash on demand in the Chinese capital. Most merchants never went through the trouble of going to the capital to get cash for their certificate, instead the certificates were used as money locally, since they were transfereable. The view of money as commodity began to shift only with the widespread adoption of paper currency."
-msgstr ""
+msgstr "যখন চীন প্রাকৃতিক ফাইবার থেকে সস্তা কাগজ তৈরি করতে শুরু করে এবং আবিষ্কার করে যে, কাগজের মুদ্রা দেশটির ব্যবহার করা হচ্ছে। চীনে প্রথম পরিচিত কাগজের মুদ্রার ব্যবহার, তাং রাজবংশ থেকে রিপোর্ট করা হয়েছে এবং যদিও এই সময়ের শুরুর দিকে কাগজের এই ব্যবস্থা সম্পর্কে কোন তথ্য নেই, তবে তা প্রমাণ করে যে টাং সরকার এই সাম্রাজ্যের দূরবর্তী অংশে স্থানীয় ব্যবসায়ীদের অর্থ প্রদান করার জন্য এই সার্টিফিকেট দিয়েছে। সার্টিফিকেট ব্যবহার করে সরকার অনেক দূরে ধাতুর টাকা পরিবহন করা এড়িয়ে যেতে পারে। প্রত্যেক সার্টিফিকেটের মধ্যে বেশ কিছু টাকা ছিল যা এর উপর বলা হয়েছে এবং চীনা রাজধানীর চাহিদা অনুসারে ধাতু নগদ অর্থ প্রদানের যোগ্য। বেশিরভাগ বণিকরা কখনো রাজধানীর কাছে তাদের সার্টিফিকেটের জন্য টাকা নিয়ে যেতে পারেনি, তার বদলে স্থানীয়ভাবে এই সার্টিফিকেট ব্যবহার করা হয়েছিল, যেহেতু তারা টাকা বহন করতে সক্ষম ছিল। অর্থ পণ্য হিসেবে ব্যবহার করা শুরু হয়, যার ফলে কাগজের ব্যাপক দত্তক গ্রহণের ঘটনা ঘটে।"
 
 #: ../../01_introduction.md:35
 msgid "Compared to traditional money made from precious metals, paper currency was easier to transport, and the use of paper currency also freed up metal that could be put to other use. In 1821, the Bank of England adopted the gold standard, promising to redeem its notes for gold upon request. As other countries followed suit, the gold standard became the general rule for developed economies. The discovery of major new gold fields over the course of the 19th century ensured that the money supply kept growing."
-msgstr ""
+msgstr "এই মুদ্রার মধ্যে দিয়ে যে পরিমাণ টাকা পাওয়া যায়, তা সেই মুদ্রার চেয়ে মূল্যবান ধাতু দিয়ে তৈরি করা হতো । ১৮২১ সালে ব্যাংক অফ ইংল্যান্ড স্বর্ণের মানকে গ্রহণ করে, যার ফলে সোনার কাগজের জন্য অনুরোধ করা হয় তার নোট মুক্ত করার প্রতিশ্রুতি প্রদান করে। অন্যান্য দেশ যেমন পোশাক পরে, সোনার মান উন্নত অর্থনীতির জন্য সাধারণ শাসনে পরিণত হয়েছিল । উনিশ শতকের শুরুর দিকে প্রধান প্রধান সোনার মাঠ আবিষ্কারের বিষয়টা নিশ্চিত করেছিল যে, টাকাপয়সা উৎপাদন বেড়েই চলেছিল ।"
 
 #: ../../01_introduction.md:37
 msgid "The gold standard, as it was intended to do, brought stability to prices and was enormously beneficial to property holders and lenders. However, it also brought deflation—that is, prices generally fell—because as countries, populations and economies grew, their governments had no easy way to increase the money supply short of mining more gold, and so money in effect became more scarce. Deflation was hard on farmers and borrowers, who longed for a little inflation to help them with their debts; when money gradually loses some of its value, so, too, do people's debts."
-msgstr ""
+msgstr "সোনার আদর্শ, যা কিনা তা করার কথা ছিল, তা মূল্য বৃদ্ধির ক্ষেত্রে স্থায়ীত্ব নিয়ে এসেছিল এবং সম্পত্তি সংগ্রহকারী এবং ঋণদাতাদের জন্য প্রচুর উপকারী ছিল। তবে, এটা বন্ধ হয়ে যাওয়ার মত ঘটনা-যা সাধারণত: মূল্য কমে গেছে- কারণ দেশ, জনসংখ্যা এবং অর্থনীতি বেড়ে গেছে। তাদের সরকারের কাছে খনির স্বল্পতা বৃদ্ধি করার মতো অর্থ সরবরাহের কোন সহজ উপায় ছিল না, আর তাই টাকা আরো কমে যায়। কৃষকদের সাথে প্রতারণা করা কঠিন ছিল, যারা তাদের ঋণের ব্যাপারে সাহায্য করার জন্য সামান্য মূল্য দিয়ে থাকে; যখন অর্থ ধীরে ধীরে এর কিছু মূল্য হারায়, তখন মানুষের ঋণ হয়।"
 
 #: ../../01_introduction.md:39
 msgid "What finally derailed the gold standard was World War I. Since governments needed more money for their militaries than they had in gold, and so they simply began printing it. And though many countries tried to return to the gold standard after the war, the Great Depression consequences made it end for good. Because of this currencies today are “fiat\" currencies, meaning they're backed by the authority of the issuing government, and nothing more."
-msgstr ""
+msgstr "শেষ পর্যন্ত স্বর্ণের আদর্শ ছিল প্রথম বিশ্বযুদ্ধ । যেহেতু সরকার তাদের সামরিক বাহিনীর চেয়ে সোনার চেয়েও আরও বেশি অর্থ চেয়েছিল, তাই তারা কেবল তা মুদ্রণ করতে শুরু করেছিল । আর যুদ্ধের পর অনেক দেশ স্বর্ণের আদর্শে ফিরে যাওয়ার চেষ্টা করে কিন্তু বিরাট হতাশা দেখা দেয় যে, এর পরিণতি ভাল হয়েছে । এই মুদ্রার কারণে আজ “ফিট” মুদ্রা প্রদান করা হয়েছে, যার মানে হচ্ছে তারা সরকারের ক্ষমতা থেকে ফিরে এসেছে এবং আর কিছুই নয়।"
 
 #: ../../01_introduction.md:41
 msgid "In the United States, for example, that means the government accepts only dollars as payment for taxes and requires its creditors to accept dollars in payment for debts. But if people were to lose faith in the dollar and stop accepting it in everyday transactions, it would eventually become worthless. The reliance on fiat money, we're told, gives too much power to the government, which can recklessly print as much money as it wants. Yet the truth is that this has always been possible. Even with the gold standard, governments revalued their currencies from time to time, in effect dictating a new price for gold, or they ignored the standard when it proved too limiting, as during the First World War. What's more, the notion that gold is somehow more “real\" than paper is, well, a mirage. Gold is valuable because we've collectively decided that it's valuable and that we'll accept goods and services in exchange for it. And that's no different, ultimately, from our collective decision that colorful rectangles of paper are valuable and that we'll accept goods and services in exchange for them."
-msgstr ""
+msgstr "উদাহরণ হিসেবে বলা যায়, যুক্তরাষ্ট্রে সরকার কর প্রদান করার জন্য কেবল অর্থ গ্রহণ করে থাকে এবং ঋণের বিনিময়ে কর পরিশোধ করার জন্য কৃতিত্ব দাতার প্রয়োজন । কিন্তু যদি লোকজন ডলারের মধ্যে বিশ্বাস হারিয়ে ফেলে এবং প্রতিদিন লেনদেনে এটা গ্রহণ করা বন্ধ করে দেয়, তাহলে তা অর্থহীন হয়ে যাবে। আমাদের বলা হয়েছে যে ফাইতের উপর নির্ভর করে সরকার অনেক বেশী ক্ষমতা প্রদান করতে পারে, যা কিনা যতটা চায় বেশী টাকা আয় করতে পারে। কিন্তু সত্য বিষয়টা হল যে, এটা সবসময় সম্ভব । কিন্তু, সোনাকে যখন মূল্য দেওয়া হয়, তখন তা নতুন মূল্য প্রদান করে থাকে । এর চেয়েও বড় কথা, এই ধারণাটি কাগজের চেয়ে সোনার চেয়েও বেশি বাস্তব। সোনা মূল্যবান কারণ আমরা একসাথে সিদ্ধান্ত নিয়েছি যে এটা খুবই মূল্যবান আর এর বিনিময়ে আমরা ভালো আর সেবা গ্রহণ করবো। আর এটা কোন ব্যতিক্রম নয়, আমাদের যৌথ সিদ্ধান্তের মধ্যে দিয়ে... ...যে রংধনুগুলো মূল্যবান এবং আমরা তাদের বিনিময়ে পণ্য ও সেবা গ্রহণ করব।"
 
 #: ../../01_introduction.md:43
 msgid "Difference Between Money and Currency"
-msgstr ""
+msgstr "মুদ্রা ও মুদ্রার মধ্যে পার্থক্য"
 
 #: ../../01_introduction.md:45
 msgid "While most of the time, the terms \"money\" and \"currency\" are used interchangeably, there are some suggestions that these terms are not identical terms; these suggest that money is inherently an intangible concept, while currency is the physical or tangible manifestation of the intangible concept of money. By extension, according to this suggestions, money cannot be touched or smelled. Currency is the coin, note, or object that is presented as the physical form of money. The basic form of money is numbers; today some of the basic forms of currency are paper notes, coins, or plastic cards."
-msgstr ""
+msgstr "বেশীরভাগ সময়, অর্থ এবং “সুযোগ” শব্দ ব্যবহার করা হয়, কিছু পরামর্শ রয়েছে যে এই শব্দগুলো আসলে কোন মিল নয়; এই সমস্ত ক্ষেত্রে অর্থ আসলে এক বাস্তব ধারণা, যদিও মুদ্রা হচ্ছে অর্থের প্রকৃত বা বাস্তব ধারণা। কিন্তু, টাকাপয়সা সম্বন্ধে কী বলা যায়? মুদ্রার অর্থ হল মুদ্রা, নোট বা বস্তুকে দৈহিকভাবে উপস্থাপন করা । কিন্তু, টাকাপয়সা সম্বন্ধে কী বলা যায়?"
 
 #: ../../01_introduction.md:47
 msgid "The powerful combination of computers and telecommunications, of smartphones and social media, of cryptography and virtual economies makes it seem like it's a possibility to create a cashless society. What matters most about money is not what it is, but what it does. After all, people will use the currencies that lubricate commerce, allow people to exchange goods and services, and thus encourage people to work and create. Money, whether it's represented by a metal coin, a shell or a piece of paper, doesn't always have value. Its value depends on the importance that people place on it—as a store of value, a unit of account, and a medium of exchange. Money is valuable merely because everyone knows that it will be accepted as a form of payment. However, throughout history, both the usage and the form of money have evolved."
-msgstr ""
+msgstr "ফোন আর টেলিযোগাযোগের শক্তিশালী সমন্বয়, ফোন আর সামাজিক মিডিয়ার, ক্রিপ্টোগ্রাফি আর ভার্চুয়াল অর্থনীতির কারনে এটা একটি নগদহীন সমাজ তৈরি করার সম্ভাবনা। টাকাপয়সার ব্যাপারে সবচেয়ে বড় কথা হল, এটা কি জিনিস, কিন্তু তাতে কি আসে যায়। সর্বোপরি, মানুষ এই মুদ্রার ব্যবহার করবে যা অর্থনৈতিক বাণিজ্যের জন্য ব্যবহার করবে, মানুষকে পণ্য আর সেবা বিনিময় করতে দেবে, আর এভাবে মানুষকে কাজ করতে এবং নতুন করে সৃষ্টি করতে উৎসাহিত করবে। মানি, এটা কোন ধাতু মুদ্রা, শেল অথবা কাগজ দ্বারা প্রতিনিধিত্ব করে কিনা, তার কোন মূল্যই নেই। এর মূল্য নির্ভর করে যে মানুষ এটার উপর নির্ভর করে- মূল্য, হিসাবর একটি অংশ এবং বিনিময়ের মাধ্যম হিসাবে। টাকাপয়সা কেবল মূল্যবান কারণ সকলেই জানে যে, এটাকে এক ধরনের অর্থ হিসেবে গ্রহণ করা হবে । কিন্তু, ইতিহাস জুড়ে টাকাপয়সা ব্যবহার ও ধরন উভয়ই সমৃদ্ধ হয়েছে ।"
 
 #: ../../01_introduction.md:49
 msgid "Definition of Cryptocurrencies"
@@ -125,47 +125,47 @@ msgstr ""
 
 #: ../../01_introduction.md:51
 msgid "Cryptocurrency is a digital or virtual form of currency; meaning it's a representations of value, that uses cryptography to secure and verify transactions as well as to control the creation of new units."
-msgstr ""
+msgstr "ক্রিপ্টোনেন্সি হচ্ছে একটি ডিজিটাল বা ভার্চুয়াল ফর্ম; এর মানে হলো এটি মূল্যকে প্রতিনিধিত্ব করে, যা ক্রিপ্টোগ্রাফি ব্যবহার করে নিরাপদ এবং যাচাই করা এবং একই সাথে নতুন ইউনিটের নিয়ন্ত্রণ করতে।"
 
 #: ../../01_introduction.md:53
 msgid "Cryptocurrencies operate on systems that allow for secure online transactions to take place without the need for any central banks or intermediaries. Instead, transactions are recorded on a decentralized and distributed public ledger (DLT) called a blockchain, which is maintained by a network of computers around the world that record all transactions in a secure and transparent manner."
-msgstr ""
+msgstr "কোন কেন্দ্রীয় ব্যাংক বা ইন্টারমিডিয়ার প্রয়োজন ছাড়া নিরাপদ অনলাইন লেনদেনের মাধ্যমে কার্যক্রম পরিচালনা করা হয়। বরং, লেনদেনকে একটি বিকেন্দ্রীভূত করা এবং বিতরণ করা হয়েছে জনসাধারনের (ডিএলটি) নামের একটি ব্লকচান নামে। এটি সারা বিশ্বের কম্পিউটারের নেটওয়ার্ক যা একটি নিরাপদ ও স্বচ্ছ উপায়ে সকল লেনদেন রেকর্ড করে থাকে।"
 
 #: ../../01_introduction.md:55
 msgid "Definition of Blockchain Technology"
-msgstr ""
+msgstr "ব্লকচাইন টেকনোলজির সংজ্ঞা"
 
 #: ../../01_introduction.md:57
 msgid "Blockchain technology is crucial to cryptocurrencies as it allows transactions to be processed and authenticated without any central authority. Instead of relying on a single, centralized authority to manage and store the data, blockchains rely on a network of computers to validate and record transactions, which makes them more secure and resistant to tampering or hacking. A blockchain offers a commonly agreed record of truth to multiple, mutually distrusting participants in an economic system since it keeps track of cryptocurrency transactions which are grouped into blocks. Each block is cryptographically linked to the previous one so as new blocks are added the older blocks become more difficult to modify. New blocks are replicated across all copies of the blockchain within the network, and any conflicts are resolved automatically using established rules."
-msgstr ""
+msgstr "কোন কেন্দ্রীয় কর্তৃত্ব ছাড়া লেনদেনের মাধ্যমে বাণিজ্যিক এবং অনুমোদিত হওয়ার জন্য অস্ত্র স্থাপন করা অত্যন্ত গুরুত্বপূর্ণ। একটি একক, কেন্দ্রীয় কর্তৃপক্ষ, তথ্য সংরক্ষণ এবং সংরক্ষণ করার ক্ষেত্রে কেন্দ্রীয় কর্তৃত্বের উপর নির্ভর করার পরিবর্তে ব্লকচান কম্পিউটারের একটি নেটওয়ার্কের উপর নির্ভর করে। একটি ব্লকচান বেশ কিছু সত্যের সাথে একমত, পরস্পরের সাথে এক অর্থনৈতিক ব্যবস্থায় অংশগ্রহণকারীদের অবিশ্বাসের কথা বলে, যেহেতু এটা রাক্ষম লেনদেনের ট্র্যাক রাখে যা ব্লক করে রাখা হয়। প্রতিটি ব্লক ক্রিপ্টনকে এর আগের সাথে যুক্ত করা হয়েছে যাতে পুরনো ব্লকগুলো পরিবর্তনের জন্য আরো কঠিন হয়ে ওঠে। নতুন ব্লকগুলো নেটওয়ার্কের মধ্যে বন্ধ হয়ে যাওয়ার সমস্ত কপিকে নকল করা হয় এবং প্রতিষ্ঠিত নিয়ম ব্যবহার করে যেকোনো দ্বন্দ্ব স্বয়ংক্রিয়ভাবে সমাধান করা হয় ।"
 
 #: ../../01_introduction.md:59
 msgid "A blockchain is spread across nodes usually in different locations. This is one of the key ideas about blockchain, and gives it its unique decentralized features. Because of this, anyone can submit information to be stored onto a blockchain and therefore it is important that there are processes in place that can ensure everyone agrees on what information to add and what to discard. Different networks use different methods but this procesess together are what's called a consensus protocol and they are essentially the rules by which a network operates."
-msgstr ""
+msgstr "সাধারণত বিভিন্ন জায়গায় ব্লকচান ছড়িয়ে থাকে। এটা ব্লকচান সম্পর্কে একটি মূল ধারণা এবং এটি এর অনন্য বিকেন্দ্রিত বৈশিষ্ট্য প্রদান করে। এর কারণ, যে কেউ তথ্য একটি ব্লকচাইনে জমা দিতে পারে আর তাই এটা গুরুত্বপূর্ণ যে সেখানে সবাই কি তথ্য যোগ করতে এবং যা বাতিল করতে হবে তা নিশ্চিত করতে পারবে। বিভিন্ন নেটওয়ার্ক ভিন্ন পদ্ধতি ব্যবহার করে কিন্তু এই প্রোভাইডাররা একসাথে একটি ঐক্যমত চুক্তি বলে এবং তারা মূলত একটি নেটওয়ার্ক পরিচালনার নিয়ম।"
 
 #: ../../01_introduction.md:61
 msgid "Definition of Consensus Protocol"
-msgstr ""
+msgstr "কনসেনস প্রোটোকলের সংজ্ঞা"
 
 #: ../../01_introduction.md:63
 msgid "Consensus is a pervasive problem in many areas of human endeavor; consensus is the process of agreeing to one of several alternates proposed by a number of agents. Consensus can be defined as an agreement, protocols are rules which describe how an activity should be performed. Simply put, consensus protocols could be viewed as “agreement rules”."
-msgstr ""
+msgstr "কিন্তু, কিছু ব্যক্তি এই বিষয়ে একমত নয় যে, তাদের মধ্যে কেউ কেউ হয়তো একমত হবে যে, তারা আসলে কী করতে পারে । কনসেনসকে একটি চুক্তি হিসেবে সংজ্ঞায়িত করা যেতে পারে, প্রোটোকল এমন যা কিভাবে কাজ করা উচিত সে সম্পর্কে ব্যাখ্যা করে। সাধারণভাবে বলা যায়, ঐক্যমতের প্রোটোকলকে “গ্নিমূলক আইন” হিসেবে দেখা যেতে পারে।"
 
 #: ../../01_introduction.md:65
 msgid "A consensus protocol (also known as consensus mechanism or consensus algorithm) is used to achieve the necessary agreement on a single data value or a single state of the distributed ledger at any given time. It provides a method of review and confirmation of what data should be added to a blockchain's record. Because blockchain networks typically don't have a centralized authority dictating who is right or wrong, nodes on a blockchain all must agree on the state of the network, following the predefined rules, or protocol."
-msgstr ""
+msgstr "একটি নির্দিষ্ট প্রোটোকল (যে কোন নির্দিষ্ট সময়ে তথ্য পাঠ করা হয় তা একটি নির্দিষ্ট ক্ষেত্রে প্রযোজ্য) অথবা একটি নির্দিষ্ট সময় মধ্যে বিতরণকৃত লিখিত অংশ অর্জনের জন্য জরুরী চুক্তিটি কার্যকর করতে একটি মান নির্ধারণ করুন। এটি একটি ব্লকচানের রেকর্ডে কি তথ্য যোগ করা উচিত তা পর্যালোচনা এবং নিশ্চিত করার একটি পদ্ধতি সরবরাহ করে। কারণ ব্লকচাইন নেটওয়ার্ক সাধারণত: যেসব সঠিক বা ভুল, তার কোন কেন্দ্রীয় কর্তৃপক্ষ নেই, তার নোডগুলো অবশ্যই একটি ব্লকচাইনে রাজি হতে হবে, যাতে তারা নেটওয়ার্ক, নিয়ম বা প্রোটোকল অনুসরণ করে।"
 
 #: ../../01_introduction.md:67
 msgid "Current State of Blockchain Technology"
-msgstr ""
+msgstr "ব্লকচাইন টেকনোলজির বর্তমান অবস্থা"
 
 #: ../../01_introduction.md:69
 msgid "Bitcoin"
-msgstr ""
+msgstr "বিটকয়েন"
 
 #: ../../01_introduction.md:71
 msgid "The Bitcoin blockchain was first introduced in 2008 through a white paper by its pseudonymous creator Satoshi Nakamoto as a peer-to-peer electronic cash system that allows users to send payments directly to each other using Bitcoin (BTC), the blockchain's native currency, without the need for intermediaries such as financial institutions. The first Bitcoin transaction took place in January 2009, when Satoshi Nakamoto sent 10 Bitcoins to the first person who downloaded the software. The first commercial transaction using Bitcoin took place in 2010, when a programmer named Laszlo Hanyecz ordered two pizzas by paying 10,000 Bitcoins to an intermediary."
-msgstr ""
+msgstr "২০০৮ সালে বিটকয়েন ব্লকচাইনকে তার ছদ্মনামে প্রতিষ্ঠিত সাদা কাগজের মাধ্যমে পরিচয় করিয়ে দেয়া হয়। তিনি সাকটোশি নোকামোতোর সাথে যৌন সম্পর্ক স্থাপনের ব্যবস্থা হিসেবে যার ফলে ব্যবহারকারীরা সরাসরি বিটকোইন (বিটিসি) ব্যবহার করে একে অন্যের কাছে সরাসরি টাকা পাঠাতে পারে, বন্ধ করে দেওয়ার জন্য স্থানীয় মুদ্রার প্রয়োজন নেই। ২০০৯ সালের জানুয়ারি মাসে প্রথম বিটকয়েন লেনদেন হয় যখন সাতোশি নাকামোতোর ১০টি বিটকয়েন্স পাঠানো হয় যারা এই সফ্টওয়্যার ডাউনলোড করে। বিটকয়েন ব্যবহার করে ২০১০ সালে প্রথম বাণিজ্যিক লেনদেন হয়, যখন লাসযলো হানিয়েস্কজ নামে একজন প্রোগ্রামার ১০,০০০ বিটকয়েন প্রদান করেন।"
 
 #: ../../01_introduction.md:73
 msgid "Bitcoin uses a proof of work (PoW) consensus protocol, in which miners compete to solve complex mathematical equations using their computing power. The first miner who succeeds in solving the cryptographic puzzle adds the latest block of transactions to the blockchain and receives rewards in the form of newly minted coins and transaction fees. This process is energy-intensive and was designed to be difficult on purpose to \"prove\" that participants have done the \"work\" and are eligible to add a new block to the blockchain."
@@ -173,15 +173,15 @@ msgstr ""
 
 #: ../../01_introduction.md:75
 msgid "The scripting language used in Bitcoin transactions is called Script. It is used almost exclusively to define how outputs can be spent and is responsible for enforcing the rules that govern Bitcoin transactions. In other words, Script determines who the BTC was sent to, how much was sent, and under what conditions it can be spent."
-msgstr ""
+msgstr "বিটকয়েন ট্রানসাকশন-এ ব্যবহৃত স্ক্রিপ্টের ভাষাকে স্ক্রিপ্ট বলা হয় । এটা কেবলমাত্র নির্ধারণ করা যায় কিভাবে আউটপুট ব্যয় করা যায় আর বিটকয়েন লেনদেনের নিয়ম প্রয়োগের দায়িত্ব দেয়া হয়। অন্য কথায়, স্ক্রিপ্টগুলো নির্ধারণ করে যে, বিটিসিকে পাঠানো হয়েছে, কতটা পাঠানো হয়েছে এবং কোন শর্তের অধীনে তা ব্যয় করা যেতে পারে ।"
 
 #: ../../01_introduction.md:77
 msgid "Ethereum"
-msgstr ""
+msgstr "ওমিং"
 
 #: ../../01_introduction.md:79
 msgid "Ethereum is a decentralized blockchain platform that revolutionized the way applications are built and executed. Founded in 2015 by co-founder Vitalik Buterin, who published its white paper in 2013, Ethereum offers a range of features that go beyond those of Bitcoin, including the possibility to create new cryptocurrencies and the ability to execute smart contracts, which are self-executing agreements encoded onto the blockchain, with the terms of the agreement between buyer and seller being directly written into lines of code without the need for intermediaries all while enforcing the negotiation or performance of the contract automatically. By enabling the execution of smart contracts, Ethereum opens up the possibility of creating decentralized applications (DApps), which operate transparently and independently without any central authority."
-msgstr ""
+msgstr "এ ছাড়া, এটি একটি বিকেন্দ্রিত ব্লকচাইন প্লাটফর্ম যা প্রয়োগ করে গড়ে তোলা হয়েছে এবং কার্যকর করা হয়েছে। ২০১৫ সালে সহ- প্রতিষ্ঠাতা ভিটাকা বুরসিনের দ্বারা সংগৃহীত, যিনি ২০১৩ সালে তার সাদা কাগজ প্রকাশ করেছেন। তিনি বিটকয়েনের বাইরে কয়েকটি বৈশিষ্ট্য তুলে ধরেছেন। স্মার্ট চুক্তিদের মৃত্যুদণ্ড কার্যকর করার মাধ্যমে, এঅম উন্মুক্ত করা অ্যাপ্লিকেশন (এপিপি) তৈরি করার সম্ভাবনার কথা যা কোন কেন্দ্রীয় কর্তৃপক্ষ ছাড়াই স্বচ্ছ এবং স্বাধীনভাবে কাজ করে।"
 
 #: ../../01_introduction.md:81
 msgid "Like Bitcoin, Ethereum initially used a proof-of-work (PoW) consensus protocol, similar to Bitcoin, but it has undergone a major upgrade that moved it to a proof-of-stake (PoS) consensus protocol. Unlike Proof of Work (PoW) consensus models, where miners' ability to validate block transactions is based on their hardware's computing power, PoS models assign the task of validating new blocks based on the size of the node's stake, with larger stakes having a higher likelihood of producing the next block. The PoS system aims to provide a more energy-efficient alternative to PoW while still maintaining the security of the blockchain. This upgrade on the concensus protocol aims to increase efficiency, security, and reduce environmental impact by eliminating the need for the intensive computational power that PoW requires."
@@ -189,23 +189,23 @@ msgstr ""
 
 #: ../../01_introduction.md:83
 msgid "The blockchain's native currency is called Ether or ETH. Ether is used mainly for two purposes—it is traded as a digital currency on exchanges in the same fashion as other cryptocurrencies, and it is used on the Ethereum network to run applications. Therefore all decentralized applications built on Ethereum allow Ether and other crypto assets to be used in a plethora of different ways including as collateral for loans or be lent out to borrowers to earn interest. Collateral refers to assets pledged as security for repayment of a loan."
-msgstr ""
+msgstr "বন্ধনেইন এর স্থানীয় মুদ্রাকে ইথার বা ইথের বলা হয়। ইথার মূলত দুটি উদ্দেশ্যে ব্যবহার করা হয়- এটি অন্য সব ক্রিপ্টোমিটারের মতো একই ফ্যাশনের বিনিময়ে ডিজিটাল মুদ্রা বিনিময়ের জন্য একটি ডিজিটাল মুদ্রা হিসাবে, আর এটি ব্যবহার করা হয় এথেম নেটওয়ার্ক চালানোর জন্য। তাই সব বিকেন্দ্রিত অ্যাপ্লিকেশন ইথেয়ার এবং অন্যান্য ক্রিপ্টো সম্পদ দিয়ে তৈরি করা সম্ভব হয় বিভিন্ন উপায়ে যার মধ্যে ঋণের সমার্থকতা রয়েছে অথবা ঋণকারীদের জন্য ঋণ আদায়ের জন্য ধার দেওয়া হবে। একটি ঋণ শোধ করার জন্য নিরাপত্তা প্রতিশ্রুতির একটি সমন্বায়ক অঙ্গীকার।"
 
 #: ../../01_introduction.md:85
 msgid "Ethereum offers multiple languages for programmers to develop smart contracts. The two most active and maintained languages are:"
-msgstr ""
+msgstr "ইওম আরো অনেক ভাষা যোগ করেছেন প্রোগ্রামারদের জন্য যারা স্মার্ট চুক্তির উন্নয়নের জন্য বেশ কিছু ভাষা দিয়েছেন। যে দুটি সক্রিয় এবং সংরক্ষিত ভাষা রয়েছে, সেগুলো হচ্ছে:"
 
 #: ../../01_introduction.md:87
 msgid "Solidity"
-msgstr ""
+msgstr "সূক্ষ্মতা"
 
 #: ../../01_introduction.md:88
 msgid "Vyper"
-msgstr ""
+msgstr "Vyper"
 
 #: ../../01_introduction.md:90
 msgid "DecentralChain"
-msgstr ""
+msgstr "DecentralChain"
 
 #: ../../01_introduction.md:92
 msgid "DecentralChain is a cutting-edge, secure and efficient blockchain ecosystem empowering smart contract creation, decentralized application (DApps) development and a thriving decentralized finance (DeFi) community. It utilizes a consensus protocol called Leased Proof of Stake (LPoS) which aims to improve upon traditional Proof of Stake (PoS) by allowing users to lease their stakes to other users, which increases the latter's ability to produce new blocks. In return, the lender receives a percentage of the transaction fees earned by the validator. This leasing mechanism aims to address the possible centralization problem in traditional PoS models where a few large stakeholders control a significant portion of the network, and the decision-making power is concentrated in the hands of a small group of individuals or entities while at the same time allowing all users to earn rewards, extending the ability to participate in the network to not only minority stakeholders but also users who just want to lease their stakes to other users."
@@ -213,11 +213,11 @@ msgstr ""
 
 #: ../../01_introduction.md:94
 msgid "DecentralChain offers a unique approach to decentralized application development by avoiding high gas fees for all transactions. The blockchain's native language, called Ride, is a non-Turing-complete language, which helps keep the system secure and predictable. Ride allows for the creation of smart contracts, which are self-executing agreements written in code that run without a central entity behind them. This provides a platform for decentralized applications (DApps), which are applications that work without a central authority. DecentralChain's use of Ride and LPoS helps to ensure the stability and security of the network, making it an attractive option for decentralized application development."
-msgstr ""
+msgstr "DecentralChain সব লেনদেনের জন্য উচ্চ মূল্যের গ্যাস ফি এড়িয়ে একটি বিশেষ পদ্ধতি চালু করতে যাচ্ছে। এই ব্লকচানের স্থানীয় ভাষা, যার নাম Ride, এটি একটি অ-নর্জিত ভাষা, যা সিস্টেমকে সুরক্ষিত রাখতে সাহায্য করে এবং তা নির্ধারণ করতে পারে। Ride স্মার্ট চুক্তিগুলোর সৃষ্টি করতে অনুমতি দেয়, যা নিজে নিজে লিখিত চুক্তির মাধ্যমে লিখিত চুক্তি, যাতে তাদের পেছনে কেন্দ্রীয় সত্তা না থাকে। এটি বিকেন্দ্রিত অ্যাপ্লিকেশনের (এডিপিপি) জন্য একটি প্ল্যাটফর্ম সরবরাহ করে, যা কেন্দ্রীয় কর্তৃত্ব ছাড়া কাজ করতে পারে। DecentralChain এর ব্যবহার Ride এবং LOPS নেটওয়ার্কটির স্থায়ীত্ব ও নিরাপত্তা নিশ্চিত করতে সাহায্য করে। এটি একটি আকর্ষণীয় অ্যাপ্লিকেশনের উন্নয়নের জন্য একটি আকর্ষণীয় বিকল্প।"
 
 #: ../../01_introduction.md:96
 msgid "DecentralChain Ecosystem"
-msgstr ""
+msgstr "DecentralChain Eco সিস্টেম"
 
 #: ../../01_introduction.md:98
 msgid "The DecentralChain ecosystem enables secure communication and interoperability between different blockchain networks. The ecosystem uses protocols to facilitate the transfer of assets and information between blockchain networks, as well as incentivize sustainability by reducing carbon emissions per transaction and generating carbon credits. Additionally, the ecosystem encourages carbon sequestration, where the sequestered carbon is tokenized and can be traded on a blockchain platform. There is also a decentralized wallet and exchange built on the DecentralChain network that offers various benefits, such as fast execution rates, multi-chain capability, low fees, and interoperability."
@@ -225,27 +225,27 @@ msgstr ""
 
 #: ../../01_introduction.md:100
 msgid "Here are some of our most visited websites:"
-msgstr ""
+msgstr "এখানে আমাদের সবচেয়ে পরিদর্শন করা ওয়েবসাইটের কয়েকটি তুলে ধরা হল:"
 
 #: ../../01_introduction.md:110
 msgid "DecentralChain Website"
-msgstr ""
+msgstr "DecentralChain ওয়েবসাইট"
 
 #: ../../01_introduction.md:121
 msgid "Decentral Exchange"
-msgstr ""
+msgstr "ডি. এন. এল. এক্সচেঞ্জ :% 1"
 
 #: ../../01_introduction.md:132
 msgid "Decentral Scan"
-msgstr ""
+msgstr "ডি- এ- পি স্ক্যান"
 
 #: ../../01_introduction.md:107
 msgid "Wallet and Exchange"
-msgstr ""
+msgstr "ওয়ালেট এবং Exchange"
 
 #: ../../01_introduction.md:109
 msgid "[Decentral.Exchange](<https://decentral.exchange/>) is an all-in-one platform that combines the features of a wallet, decentralized exchange, and cryptocurrency management tool into a single, seamless platform. Built on the DecentralChain blockchain, this platform offers numerous benefits to its users, including fast execution rates, multi-chain capability, low fees, and interoperability."
-msgstr ""
+msgstr "[Decentral.Exchange](<https://decentral.exchange/>) একটি সম্পূর্ণ প্ল্যাটফর্ম যা একটি মানিব্যাগের বৈশিষ্ট্যকে একত্রিত করে বিনিময়, এবং ক্রিপ্টো ব্যবস্থাপনার ব্যবস্থাপনা যন্ত্রকে একটি একক, সামুদ্রিকহীন প্লাটফর্মে পরিণত করে। DecentralChain ব্লকচাইনে তৈরি করা এই প্ল্যাটফর্মটি ব্যবহারকারীদের জন্য অনেক সুবিধা প্রদান করে, যার মধ্যে রয়েছে দ্রুত মৃত্যুদণ্ডের হার, মাল্টি-চান ক্ষমতা, নিম্ন ফি এবং আন্তজার্তিতা।"
 
 #: ../../01_introduction.md:111
 msgid "One of the most significant advantages of decentralized exchanges is that they are not controlled by any central authority, giving users complete control over their assets. Unlike centralized exchanges, there is no risk of funds being frozen or confiscated by a centralized entity. With Decentral.Exchange, users can also enjoy enhanced security, as their private keys are stored locally on their device, reducing the risk of cybercrime. Decentralized exchanges also provide access to a wider range of assets, thanks to the absence of restrictions on the number of tokens that can be traded. Decentral.Exchange takes this further with its multi-chain capability, allowing users to trade tokens across different blockchains seamlessly. Decentral.Exchange's interoperability enables users to trade tokens across various chains and different decentralized exchanges, making it possible to access a broader range of assets effortlessly."
@@ -253,7 +253,7 @@ msgstr ""
 
 #: ../../01_introduction.md:113
 msgid "One of the key selling points of Decentral.Exchange is its low fees, which sets it apart from traditional centralized exchanges that often charge exorbitant fees. The absence of intermediaries means that users can keep more of their profits, making trading more accessible to everyone. In the DecentralChain ecosystem, having a native decentralized exchange is essential, as it facilitates easy buying and selling of DecentralChain tokens within the ecosystem. Additionally, project participants can create their tokens and trade them on the exchange. Decentral.Exchange also enables users to send and receive coins without the need for a centralized intermediary."
-msgstr ""
+msgstr "Decentral.Exchange-এর একটি প্রধান অংশ হচ্ছে এর নিম্ন খরচ, যা কিনা ঐতিহ্যবাহী বিনিময়ের বদলে তা ব্যবহার করা হয়। ইন্টারমিডিয়ার অনুপস্থিতি মানে হলো যে ব্যবহারকারীরা তাদের লাভের পরিমাণ আরো বেশি রাখতে পারে, আর তারা সবার সাথে ব্যবসা করতে পারবে। DecentralChain এর বাস্তুসংস্থানে, একটি স্থানীয় বিকেন্দ্রিত বিনিময় বিনিময় করা অপরিহার্য, যেহেতু এই বাসগুলোর মধ্যে DecentralChain টোকেন বিক্রি এবং বিক্রি সহজ। এর সাথে, প্রকল্প অংশগ্রহণকারী তাদের টোকেন তৈরি করতে এবং বিনিময়ের ক্ষেত্রে ব্যবসা করতে পারেন। Decentral.Exchangeও ব্যবহারকারীদের একটি কেন্দ্রীয় ইন্টারমিডিয়ার প্রয়োজনীয়তা ছাড়া পাঠানোর এবং মুদ্রা পাওয়ার সুযোগ করে দেয়।"
 
 #: ../../01_introduction.md:115
 msgid "Decentral.Exchange is at the forefront of the future of crypto trading, providing users with a wide range of benefits that centralized exchanges cannot match. With its native blockchain, DecentralChain, Decentral.Exchange is ideally positioned to revolutionize the crypto industry and redefine the way we trade cryptocurrencies."
@@ -261,11 +261,11 @@ msgstr ""
 
 #: ../../01_introduction.md:117
 msgid "Blockchain Explorer"
-msgstr ""
+msgstr "ডিচেইন এক্সপ্লোরার"
 
 #: ../../01_introduction.md:119
 msgid "[DecentralScan.com](<https://decentralscan.com/>) is the official block explorer of the DecentralChain blockchain. It is a powerful tool that allows users to view, track, and analyze transactions on the DecentralChain blockchain. The block explorer provides a user-friendly interface that simplifies the navigation of the complex data stored on the blockchain."
-msgstr ""
+msgstr "[DecentralScan.com](<https://decentralscan.com/>) হচ্ছে DecentralChain ব্লকচাইন-এর অফিসিয়াল ব্লকিং। এটি একটি শক্তিশালী টুল যা ব্যবহারকারীদেরকে DecentralChain ব্লকচান দেখতে, ট্র্যাক এবং বিশ্লেষণ করতে দেয়। এই ব্লকের অনুসন্ধানকারী একটি ব্যবহারকারী বন্ধুসুলভ ইন্টারফেস সরবরাহ করেছেন যা ব্লকচাইনে সংরক্ষিত জটিল ডাটার পথকে সহজ করে দেয়।"
 
 #: ../../01_introduction.md:121
 msgid "One of the key benefits of DecentralScan.com is its ability to provide transparency to the DecentralChain ecosystem. It enables users to view all the transactions that have occurred on the blockchain in real-time, including the number of DecentralCoins (DCC) transferred, the addresses involved in the transaction, and the transaction timestamp. This makes it easy to track the movement of DCC and understand how the ecosystem is being used."
@@ -273,7 +273,7 @@ msgstr ""
 
 #: ../../01_introduction.md:123
 msgid "The block explorer is also valuable in its ability to provide detailed information about the nodes in the network. Users can view the current number of nodes, their geographical distribution, and information about each node, such as its uptime and the number of blocks it has mined. This information is essential for the DecentralChain ecosystem, as it allows users to view the distribution of the network and understand the ecosystem's health."
-msgstr ""
+msgstr "এদের মধ্যে অধিকাংশেরই প্রধান অপরাধী রয়েছে । ব্যবহারকারীরা বর্তমান নোড, তাদের ভৌগলিক বিতরণ এবং প্রতিটি নোড সম্বন্ধে তথ্য দেখতে পারেন, যেমন এর সময় ও ব্লকের সংখ্যা আমারd। DecentralChain বাস্তুতন্ত্রের জন্য এই তথ্য অপরিহার্য, যেহেতু এর ব্যবহারকারীরা নেটওয়ার্ক বিতরণ এবং বাস্তুসংস্থানের স্বাস্থ্য বুঝতে পারবেন।"
 
 #: ../../01_introduction.md:125
 msgid "In addition to tracking transactions and nodes, the block explorer also offers users a detailed view of the smart contract deployment on the blockchain. This is particularly useful for developers and businesses building on the DecentralChain blockchain, as it enables them to view and analyze deployed smart contracts, making it easier to identify bugs or potential vulnerabilities in the contract code."
@@ -281,15 +281,15 @@ msgstr ""
 
 #: ../../01_introduction.md:127
 msgid "Furthermore, the block explorer plays a vital role in ensuring the security of the DecentralChain ecosystem. By providing detailed information about transactions and nodes, it makes it easier for users to identify suspicious activity or potential security threats. The block explorer can also be used to track the movement of coins that have been stolen or lost, making it easier to recover them."
-msgstr ""
+msgstr "এছাড়াও, এই ব্লক আবিষ্কারকটি DecentralChain বাস্তুসংস্থানের নিরাপত্তা নিশ্চিত করার ক্ষেত্রে এক গুরুত্বপূর্ণ ভূমিকা পালন করে। লেনদেন এবং নোড সম্পর্কে বিস্তারিত তথ্য সরবরাহ করে ব্যবহারকারীদের সন্দেহজনক কার্যকলাপ বা সম্ভাব্য নিরাপত্তা হুমকি চিহ্নিত করা সহজ করে তোলে। এই সমস্ত মুদ্রার মধ্যে দিয়ে যে - মুদ্রাগুলো চুরি হয়েছে বা হারিয়ে গেছে, সেগুলো খুঁজে বের করার জন্য ব্লক করা যেতে পারে, যাতে সেগুলো পুনরুদ্ধার করা সহজ হয় ।"
 
 #: ../../01_introduction.md:129
 msgid "Inter-Chain Gateway Protocol"
-msgstr ""
+msgstr "ইন্টারচেইন গেটওয়ে প্রোটোকল"
 
 #: ../../01_introduction.md:131
 msgid "The DecentralChain Inter-Chain Gateway is a blockchain mechanism designed to enable secure communication and interoperability between different blockchain networks. This is achieved by creating a decentralized network of nodes that utilize smart contract technology to validate and process transactions between different blockchains."
-msgstr ""
+msgstr "DecentralChain ইন্টারচাইন গেটওয়েটি বিভিন্ন ব্লকিং নেটওয়ার্কের মধ্যে নিরাপদ যোগাযোগ এবং আন্তঃযোগীতা সক্রিয় করার জন্য তৈরি করা হয়েছে। এটা অর্জন করা যায় এমন একদল নোডের একটি বিকেন্দ্রিত নেটওয়ার্ক তৈরি যা কিনা স্মার্ট চুক্তির প্রযুক্তি ব্যবহার করে বিভিন্ন ব্লকচান এর মধ্যে লেনদেনের জন্য।"
 
 #: ../../01_introduction.md:133
 msgid "One major use case of the gateway is the ability to transfer assets between different blockchain networks. For example, if you hold Bitcoin but want to use it on another blockchain network, such as DecentralChain, the gateway can allow you to transfer your Bitcoin to the DecentralChain network, where it is converted into a form that is compatible with the DecentralChain blockchain."
@@ -297,31 +297,31 @@ msgstr ""
 
 #: ../../01_introduction.md:135
 msgid "In addition, the gateway facilitates the sharing of information between different blockchain networks. By creating a decentralized oracle network, smart contracts on different blockchain networks can access and utilize external data, enabling the creation of decentralized applications that use data from multiple sources and blockchain networks."
-msgstr ""
+msgstr "এছাড়াও, এই গেটওয়ে বিভিন্ন ব্লকচান নেটওয়ার্কের মধ্যে তথ্য শেয়ারের সুযোগ করে দেয়। একটি বিকেন্দ্রীভূত নেটওয়ার্ক তৈরি করার মাধ্যমে বিভিন্ন ব্লকচাইন নেটওয়ার্কের উপর স্মার্ট চুক্তিগুলো প্রবেশ এবং বাইরের ডাটা ব্যবহার করতে পারে, যার মাধ্যমে একাধিক উৎস থেকে তথ্য এবং ব্লকচাইন নেটওয়ার্ক ব্যবহার করা যায়।"
 
 #: ../../01_introduction.md:137
 msgid "To ensure the network's security, the gateway uses smart contract technology with predefined rules and conditions that are automatically executed when specific conditions are met. These conditions include input validation and access controls to ensure that only authorized parties can access and utilize the network's information."
-msgstr ""
+msgstr "নেটওয়ার্ক নিরাপত্তার বিষয়টি নিশ্চিত করার জন্য, গেটওয়েটি স্মার্ট চুক্তিভিত্তিক প্রযুক্তি ব্যবহার করে। সুনির্দিষ্ট শর্ত এবং শর্তগুলো স্বয়ংক্রিয়ভাবে কার্যকর হলে স্বয়ংক্রিয় ভাবে কার্যকর হবে। এই শর্তগুলোর মধ্যে আছে যে শুধুমাত্র অনুমোদিত দলগুলো এই নেটওয়ার্ক সম্পর্কে তথ্য ব্যবহার ও ব্যবহার নিশ্চিত করতে পারবে।"
 
 #: ../../01_introduction.md:139
 msgid "Proof of Incentivized Sustainability Protocol"
-msgstr ""
+msgstr "অপূর্ণভাবে সক্ষম প্রোটোকলের প্রমাণ"
 
 #: ../../01_introduction.md:141
 msgid "As society becomes increasingly aware of the impact of climate change, businesses and individuals are looking for ways to reduce their carbon footprint. In the realm of blockchain technology, the high energy consumption and resulting carbon emissions of Bitcoin transactions are particularly problematic. However, the DecentralChain blockchain presents a solution to this problem through the use of its proof of incentivized sustainability protocol."
-msgstr ""
+msgstr "যখন সমাজ জলবায়ু পরিবর্তনের প্রভাব সম্বন্ধে সচেতন হয়ে উঠছে, তখন ব্যবসা প্রতিষ্ঠান এবং ব্যক্তিসমূহ তাদের কার্বন ফুটপ্রিন্ট কমানোর উপায় খুঁজছে। ব্লকচান প্রযুক্তির রাজ্যে বিটকয়েন লেনদেনের কার্বন ডাইঅক্সাইড বিশেষ করে সমস্যা। তবে, DecentralChain ব্লকচাইন এই সমস্যার একটি সমাধান তুলে ধরেছে, যার মাধ্যমে তা স্থায়ীভাবে টিকে থাকা প্রোটোকলের প্রমাণ বহন করে।"
 
 #: ../../01_introduction.md:143
 msgid "The traditional Bitcoin blockchain consumes a significant amount of energy for each transaction, releasing large amounts of carbon emissions into the atmosphere. In contrast, the DecentralChain blockchain utilizes a proof of stake protocol which is more energy efficient, resulting in significantly lower carbon emissions per transaction."
-msgstr ""
+msgstr "ঐতিহ্যবাহী বিটকয়েন ব্লকচাইন প্রতিটি লেনদেনের জন্য বিশেষ পরিমাণ শক্তি গ্রহণ করে, ফলে কার্বন ডাইঅক্সাইডের পরিমাণকে বায়ুমণ্ডলে ছড়িয়ে পড়ে। এর বিপরীতে, DecentralChain ব্লকচাইন একটি ডিটেনশন ব্যবহার করে যা আরো বেশী শক্তি প্রয়োগ করে, যার ফলে বিশেষ করে কার্বন ডাইঅক্সাইডে কার্বন নিঃসরণের পরিমাণ কম।"
 
 #: ../../01_introduction.md:145
 msgid "The DecentralChain blockchain generates carbon credits through the proof of incentivized sustainability protocol. Every Bitcoin transaction on the DecentralChain blockchain creates new carbon credits, which can be sold or used to offset the carbon emissions of other activities. DecentralChain shares a percentage of these carbon credits as incentives to node owners who host their nodes on eco-friendly servers."
-msgstr ""
+msgstr "DecentralChain ব্লকচাইন আনবিকভাবে সক্ষম প্রোটোকলের মাধ্যমে কার্বন ডাইঅক্সাইড স্বীকৃতি প্রদান করে। DecentralChain ব্লকচাইনের প্রতিটি বিটকয়েন নতুন কার্বন ক্রেডিট তৈরি করে, যা বিক্রি করা বা অন্য কাজ থেকে কার্বন নিঃসরণ করতে ব্যবহার করা যায়। DecentralChain এই কার্বন ক্রেডিটের একটি অংশ প্রদর্শন করেছে, যা নোড মালিকদের উৎসাহ প্রদান করে, যারা ইকো- কন্ট্রেড সার্ভার থেকে তাদের নোড সরিয়ে দেয়।"
 
 #: ../../01_introduction.md:147
 msgid "The equation to calculate the carbon emissions of the Bitcoin blockchain is:"
-msgstr ""
+msgstr "বিটকয়েন ব্লকচাইনের কার্বন ডাইঅক্সাইড বের করার সমীকরণ হচ্ছে:"
 
 #: ../../01_introduction.md:149
 msgid "Carbon Emissions = Electricity used (kWh) x Carbon Intensity (gCO2/kWh)"
@@ -329,39 +329,39 @@ msgstr ""
 
 #: ../../01_introduction.md:151
 msgid "Using this equation, the carbon emissions of the Bitcoin blockchain can be compared to a proof of stake blockchain protocol like DecentralChain. The difference in carbon emissions between the two can then be used to generate carbon credits, creating a new market for businesses and individuals to offset their carbon emissions and invest in a sustainable future."
-msgstr ""
+msgstr "এই সমীকরণ ব্যবহার করে বিটকয়েন ব্লকচাইনের কার্বন নিঃসরণকে DecentralChain এর মত ঝুঁকির সাথে তুলনা করা যাবে। কার্বন নিঃসরণের পার্থক্য তখন কার্বন ডাইঅক্সাইডের মধ্যে কার্বন ডাইঅক্সাইড তৈরি, ব্যবসা এবং ব্যক্তির কার্বন কার্বন কার্বন নিঃসরণ এবং একটি টেকসই ভবিষ্যতের বিনিয়োগ করার জন্য নতুন বাজার তৈরী করা যায়।"
 
 #: ../../01_introduction.md:153
 msgid "According to a study by the World Bank, carbon credits can yield a return of up to 7.2 percent annually over a 15-year period. This makes them an attractive investment for individuals and companies alike."
-msgstr ""
+msgstr "বিশ্বব্যাংকের একটি গবেষণায় দেখা যাচ্ছে, কার্বন ক্রেডিট বছরে ১৫ বছরেরও বেশি সময় ধরে ফিরে আসতে পারে। এর ফলে তারা একই সাথে ব্যক্তি এবং কোম্পানীর জন্য এক আকর্ষণীয় বিনিয়োগ তৈরি করে।"
 
 #: ../../01_introduction.md:155
 msgid "The DecentralChain blockchain not only provides a more sustainable alternative to traditional Bitcoin transactions but also creates new opportunities for businesses and individuals to invest in a sustainable future. By incentivizing sustainable practices through the proof of incentivized sustainability protocol and the hosting of nodes on eco-friendly servers, DecentralChain is paving the way for a greener, more sustainable future."
-msgstr ""
+msgstr "DecentralChain ব্লকচাইন শুধুমাত্র ঐতিহ্যবাহী বিটকয়েন লেনদেনের ক্ষেত্রে আরো গ্রহণযোগ্য বিকল্প হিসেবে কাজ করে না, একই সাথে ব্যবসা এবং ব্যক্তি বিশেষদের জন্য এক গ্রহণযোগ্য ভবিষ্যতের বিনিয়োগ করার সুযোগ তৈরি করেছে। প্রতিরোধমূলক প্রোটোকলের প্রমাণ দিয়ে টেকসই ব্যবস্থা গ্রহণের মাধ্যমে এবং ইকো-সহনীয় সার্ভার ব্যবহারের মাধ্যমে, DecentralChain একটি সবুজ ভবিষ্যতের পথ সংরক্ষণ করছে।"
 
 #: ../../01_introduction.md:157
 msgid "Carbon Sequestration"
-msgstr ""
+msgstr "কার্বন সেভেশন"
 
 #: ../../01_introduction.md:159
 msgid "Carbon sequestration, the process of capturing and storing carbon dioxide (CO2) to reduce its concentration in the atmosphere, is a critical strategy in mitigating the effects of climate change. Through the use of blockchain technology, carbon sequestration can be further incentivized, creating a new market for carbon credits."
-msgstr ""
+msgstr "কার্বন ডাইভারেশন, কার্বন ডাইঅক্সাইড (সিওবি২) এর প্রক্রিয়াকে পরিবেশ পরিবর্তনের প্রভাবকে কমিয়ে আনার জন্য (কোওবি২) পরিবেশ পরিবর্তন থেকে বাঁচাতে। কার্বন ডাইঅক্সাইডের ব্যবহারের মাধ্যমে কার্বন ডাইঅক্সাইডের ব্যবহার আরও বেড়ে যেতে পারে, কার্বন ক্রেডিটের জন্য নতুন বাজার তৈরি করতে পারে।"
 
 #: ../../01_introduction.md:161
 msgid "One of the ways to achieve carbon sequestration is by buying property in Costa Rica and tokenizing the sequestered carbon in the form of a digital token that can be traded on a blockchain platform. The Costa Rican government's initiative of National Forest Financing Fund (FONAFIFO) provides a financial incentive for private landowners to reforest and conserve their land, while also allowing them to receive payments for the carbon sequestered on their property in the form of carbon credits. By tokenizing these carbon credits on a blockchain platform, the carbon sequestration process can be further incentivized, creating a new market for carbon credits and a carbon credit-backed crypto-asset."
-msgstr ""
+msgstr "কোস্টা রিকায় কার্বনের জমি ক্রয় এবং ডিজিটাল টোকেনের মাধ্যমে কার্বন ডাইঅক্সাইডজাত করার একটি উপায় হচ্ছে কার্বনের ব্যবহার। কোস্টা রিকান সরকারের জাতীয় বন অনুসন্ধান ফান্ড (এফএএফআইও) তাদের জমি পুনরায় সংরক্ষণ এবং সংরক্ষণের জন্য একটি আর্থিক সহায়তা প্রদান করে, আর একই সাথে কার্বন ডাইঅক্সাইডের মাধ্যমে কার্বন বিক্রির ক্ষেত্রে তারা যে পরিমাণ অর্থ লাভ করে সে বিষয়ে তারা টাকা পেতে পারে। কার্বন ডাইঅক্সাইড প্ল্যাটফর্মে এই কার্বন ডাইঅক্সাইডের মাধ্যমে কার্বন ডাইঅক্সাইড প্রক্রিয়া আরও বেড়ে যেতে পারে, কার্বনমেইল ক্রেডিট এবং কার্বন ডাইঅক্সাইডের জন্য নতুন বাজার তৈরি করতে হবে।"
 
 #: ../../01_introduction.md:163
 msgid "The tokenization of carbon credits on a blockchain platform not only increases transparency and traceability in the carbon market, but it also provides a new way for people to invest in the conservation of natural areas while obtaining the economic benefit of the carbon credits. This creates a win-win situation, in which the carbon sequestration is incentivized, and the conservation of natural areas is supported."
-msgstr ""
+msgstr "কার্বন ক্রেডিট প্ল্যাটফর্মের একটি ব্লকচাইন প্লাটফর্মে কার্বন বাজারে কার্বনের স্বচ্ছতা আর নিরোধতা বৃদ্ধি করে না, বরং এটি প্রাকৃতিক পরিবেশ সংরক্ষণ ক্ষেত্রে বিনিয়োগ করার নতুন উপায়ও সরবরাহ করে। এটা একটা জয়-উইন পরিস্থিতি তৈরি করে, যেখানে কার্বন ডাইঅক্সাইডের পরিমাণ কমে যাচ্ছে এবং প্রাকৃতিক এলাকার সংরক্ষণ সমর্থিত।"
 
 #: ../../01_introduction.md:165
 msgid "The tokenization of carbon credits on a blockchain platform creates a new market for carbon credits and enables the creation of a carbon credit-backed crypto-asset. This approach can increase transparency and traceability in the carbon market, making it easier to track and verify the carbon credits being traded. Moreover, it provides a new way for people to invest in the conservation of natural areas, while also obtaining the economic benefit of the carbon credits. The Costa Rican government's initiative of National Forest Financing Fund (FONAFIFO) has set the base for this process, and with more involvement of the private sector, decentralized finance, and blockchain technology, this approach can be a step towards a sustainable future where everyone can participate in the conservation and mitigation of climate change."
-msgstr ""
+msgstr "কার্বনমেইলের পরিচিতি সরবরাহের ফলে কার্বন ডাইঅক্সাইডের জন্য একটি নতুন বাজার তৈরি করা হয়। এই পদ্ধতি কার্বন বাজারে স্বচ্ছতা এবং যোগ্যতা বৃদ্ধি করতে পারে, যার ফলে কার্বন ডাইঅক্সাইডের পরিমাণ বের করা সহজ হয়ে যায়। এছাড়াও এটি প্রাকৃতিক পরিবেশ সংরক্ষণ ক্ষেত্রে নাগরিকদের বিনিয়োগের একটি নতুন উপায় সরবরাহ করে, একই সাথে কার্বন ক্রেডিটের অর্থনৈতিক সুবিধা লাভ করে। কোস্টা রিকান সরকারের জাতীয় বন অনুসন্ধান তহবিল (এফএআইও) এই প্রক্রিয়ার ভিত্তি স্থাপন করেছে, এবং বেসরকারি খাতের আরো যুক্ত থাকার সাথে যুক্ত থাকা, অর্থ বন্টনের জন্য এবং ব্লকচাইন প্রযুক্তিতে এই পদ্ধতি এক গ্রহণযোগ্য ভবিষ্যতের দিকে এগিয়ে যেতে পারে, যেখানে সকলে পরিবেশ সংরক্ষণ ও জলবায়ু পরিবর্তনের ক্ষেত্রে অংশগ্রহণ করতে পারে।"
 
 #: ../../01_introduction.md:167
 msgid "Native Swap"
-msgstr ""
+msgstr "নেটিভ Swap"
 
 #: ../../01_introduction.md:169
 msgid "DecentralChain is an innovative blockchain platform that offers a wide range of features to its users, one of which is the upcoming DecentralChain native swap. A swap is a way for users to exchange one cryptocurrency for another, without the need for a centralized intermediary. In this essay, we will delve into how the DecentralChain native swap is expected to work, and explain how users will be able to use it to swap their DecentralCoin for other cryptocurrencies."
@@ -369,19 +369,19 @@ msgstr ""
 
 #: ../../01_introduction.md:171
 msgid "A swap is essentially a smart contract that facilitates the exchange of one cryptocurrency for another. When a user initiates a swap, their cryptocurrency is locked into the smart contract, and they receive the equivalent amount of the other cryptocurrency in return. The smart contract then releases the locked up cryptocurrency to the other user. This process happens on-chain, meaning that the swap is settled on the blockchain, and the transaction is recorded on the blockchain's ledger."
-msgstr ""
+msgstr "একটি ভালো চুক্তি যা অন্য একটি ক্রিপ্টো কোঅর্ডিনেটর বিনিময়ের সুবিধা প্রদান করে। যখন কোন ব্যবহারকারী নিয়োগের প্রক্রিয়া শুরু করে, তখন তাদের ক্রিপ্টো কোঅর্ডিনেটরকে স্মার্ট চুক্তির মধ্যে আবদ্ধ করা হয় এবং ফিরে আসা অন্যান্য ট্রান্সকুভারের সমতুল্য পরিমাণ পাওয়া যায়। স্মার্ট চুক্তিপত্র পরে অন্যান্য ব্যবহারকারীর জন্য ক্রিপ্টোকুয়েরেন্সি মুক্ত করে দেয়। এই প্রক্রিয়া শুরু হয় ইন-চাইন এর উপর নির্ভর করে। এর মানে হলো, এই যন্ত্রটি ব্লক করা বন্ধ হয়ে যাবার যন্ত্রে রেকর্ড করা হয়েছে।"
 
 #: ../../01_introduction.md:173
 msgid "The DecentralChain native swap is expected to be powered by an Automated Market Maker (AMM) algorithm. This algorithm will calculate the price of the coin based on the token supply and the liquidity in the swap. The price will be calculated using the constant product formula."
-msgstr ""
+msgstr "DecentralChainাক্ষর আশা করা হচ্ছে যে, একটি automable বাজার নির্মাতা (AMMerty) দ্বারা চালিত হবে। এই অ্যালগরিদমটি টোকেন সরবরাহের উপর ভিত্তি করে মুদ্রার মূল্য গণনা করা হবে এবং সুইচের তরলতা অনুসারে। এই নতুন পণ্যের ফরম ব্যবহার করে মূল্য গণনা করা হবে।"
 
 #: ../../01_introduction.md:175
 msgid "A swap platform can be thought of as a liquidity pool where users can deposit their tokens, and then use those tokens to swap for other tokens on the platform. As more users deposit tokens into the pool, the pool's liquidity increases, making it more attractive for users to swap their tokens on the platform."
-msgstr ""
+msgstr "একটি swap প্লাটফর্মকে একটি তরল পদার্থের পুল হিসেবে বিবেচনা করা যেতে পারে, যেখানে ব্যবহারকারীরা তাদের টোকেন জমা দিতে পারেন এবং এর পরে প্ল্যাটফর্মে অন্যান্য টোকেন ব্যবহার করতে পারেন। পুলে যত বেশী ব্যবহারকারী জমা পড়েছে, পুলের তরলতা তত বেশি বেড়ে যাচ্ছে, যার ফলে ব্যবহারকারীদের এই প্লাটফর্মে তাদের টোকেন প্রতিস্থাপন করা আরো আকর্ষণীয় হবে।"
 
 #: ../../01_introduction.md:177
 msgid "The DecentralChain native swap is expected to offer users a secure, efficient, and decentralized way to swap their cryptocurrencies. By eliminating the need for centralized intermediaries, users will be able to exchange their cryptocurrencies without relying on third parties, which can be slow, expensive, and risky. With the upcoming launch of the DecentralChain native swap, users will be able to experience the future of crypto swapping firsthand."
-msgstr ""
+msgstr "DecentralChain স্থানীয় সারভাইজাররা আশা করছে যে ব্যবহারকারীদের একটি নিরাপদ, কার্যকর, এবং বিকেন্দ্রীভূত করার উপায় তাদের ক্রিপ্টোরের মাধ্যমে ব্যবহার করা হবে। কেন্দ্রীয় প্রচার মাধ্যমের প্রয়োজন দূর করে দিয়ে ব্যবহারকারীরা তৃতীয় পক্ষের উপর নির্ভর না করেই তাদের ক্রিপ্টোর লাইন বিনিময় করতে পারবে, যা ধীর, ব্যয়বহুল এবং ঝুঁকিপূর্ণ। DecentralChain-এর স্থানীয় সারভাইজার চালু হওয়ার পর ব্যবহারকারীরা সরাসরি ক্রিপ্টো বিনিময়ের ভবিষ্যৎ দেখতে পাবেন।"
 
 #: ../../01_introduction.md:179
 msgid "CR Coin"
@@ -393,15 +393,15 @@ msgstr ""
 
 #: ../../01_introduction.md:183
 msgid "By introducing CR Coin, Costa Rica's economy can enjoy the advantages of blockchain technology, such as transparency, low transaction costs, and secure transactions. Currently, cash, bank transfers and online payment systems are the most commonly used methods for payments in Costa Rica, but these traditional forms of money and payment systems have limitations and vulnerabilities, including fraud and high costs."
-msgstr ""
+msgstr "সিআর কোয়েনকে পরিচয় করিয়ে দিয়ে কোস্টা রিকার অর্থনীতি ব্লকচাইন প্রযুক্তি, স্বচ্ছতা, কম লেনদেনের খরচ এবং নিরাপদ লেনদেনের সুবিধা ভোগ করতে পারে। বর্তমানে, নগদ অর্থ স্থানান্তর এবং অনলাইন অর্থ আদান প্রদান পদ্ধতি কোস্টা রিকায় প্রদান করার ক্ষেত্রে সাধারণত ব্যবহৃত হয়ে থাকে। কিন্তু এই ঐতিহ্যগত ভাবে অর্থ ও অর্থ প্রদানের ব্যবস্থা সীমাবদ্ধতা রয়েছে, যার মধ্যে প্রতারণা এবং উচ্চ মূল্য রয়েছে।"
 
 #: ../../01_introduction.md:185
 msgid "The launch of CR Coin is planned to involve a comprehensive marketing strategy, the establishment of a network of merchants and exchanges that accept CR Coin, and measures to ensure the security, stability and reliability of the currency. It is hoped that the introduction of CR Coin will not only provide a new medium of exchange for citizens but also create new opportunities for businesses, entrepreneurs and investors. CR Coin aims to revolutionize the way payments are made in Costa Rica, promoting sustainable development and environmental conservation with the potential to contribute to the country's goal of becoming a carbon-neutral economy that could have significant benefits for Costa Rica and its citizens."
-msgstr ""
+msgstr "সিআর কোয়েনের যাত্রা পরিকল্পনা করা হয়েছে একটি সমন্বিত মার্কেটিং কৌশল, যা ব্যবসায়ীদের নেটওয়ার্ক স্থাপন এবং বিনিময়ের জন্য যা সিআর কলিনকে গ্রহণ করে এবং মুদ্রার নিরাপত্তা, স্থায়ীত্ব ও স্থায়ীতা নিশ্চিত করার জন্য পদক্ষেপ গ্রহণ করে। আশা করা হচ্ছে যে সিআর কলিনের পরিচিতি কেবল নাগরিকদের জন্য এক নতুন মাধ্যম প্রদান করবে না, একই সাথে ব্যবসা, উদ্যোক্তা এবং বিনিয়োগকারীদের জন্য নতুন সুযোগ তৈরি করবে। সিআর কলিনের লক্ষ্য হচ্ছে কোস্টা রিকায় কি ভাবে অর্থ প্রদান করা হচ্ছে, তা বিপ্লব করা, গ্রহণযোগ্য উন্নয়ন এবং পরিবেশ সংরক্ষণকে এগিয়ে নেওয়া, দেশটির কার্বন-প্রিডেন্ট অর্থনীতির লক্ষ্যে অবদান রাখা, যা কোস্টা রিকা ও তার নাগরিকদের জন্য উল্লেখযোগ্য সুবিধা বয়ে আনতে পারে।"
 
 #: ../../01_introduction.md:187
 msgid "Moreover, the education and awareness initiatives and partnerships with schools and non-profit organizations planned by CR Coin will help raise awareness about the importance of preserving the environment and promoting sustainable practices. By combining technology, community engagement and education, CR Coin aims to be a driving force for sustainable development and environmental conservation in Costa Rica."
-msgstr ""
+msgstr "এছাড়াও সিআর কলিনের পরিকল্পনা অনুযায়ী স্কুল এবং অলাভজনক প্রতিষ্ঠানের সাথে শিক্ষা ও সচেতনতামূলক উদ্যোগ পরিবেশ সংরক্ষণ এবং টেকসই চর্চার গুরুত্ব সম্পর্কে সচেতনতা বাড়াতে সাহায্য করবে। প্রযুক্তি, কমিউনিটি বাগদান আর শিক্ষার সাথে মিলে সিআর কলিন কোস্টা রিকায় টেকসই উন্নয়ন আর পরিবেশ সংরক্ষণর জন্য গাড়ি চালানোর একটি শক্তি।"
 
 #~ msgid "card-img-bottom"
 #~ msgstr ""

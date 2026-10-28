@@ -21,35 +21,35 @@ msgstr ""
 
 #: ../../index.rst:8
 msgid "DecentralChain Documentation"
-msgstr ""
+msgstr "DecentralChain ドキュメント"
 
 #: ../../index.rst:10
 msgid "Welcome to the Decentralchain documentation, a comprehensive guide to understanding and using the next-generation blockchain technology of DecentralChain. Our protocol is designed to enable businesses and organizations to store and manage data in a secure, transparent, and tamper-proof manner."
-msgstr ""
+msgstr "DecentralChainの次世代ブロックチェーン技術の理解と使用に関する包括的なガイドであるDecentralchainドキュメンテーションへようこそ。当社のプロトコルは、企業や組織がデータを安全・透明・改ざん防止の方法で保存・管理できるように設計されています。"
 
 #: ../../index.rst:12
 msgid "DecentralChain utilizes the Leased Proof of Stake (LPoS) consensus mechanism and sharding to enable faster transaction processing times, lower energy consumption, and increased scalability. Our native token, DecentralCoin (DCC), is used for standard payments such as block rewards, and our on-chain governance system allows us to make changes to the protocol through voting."
-msgstr ""
+msgstr "DecentralChain は、Stake (LPoS) コンセンサス機構とシャードのLeased Proof of Stake (LPoS)を利用し、トランザクション処理時間を短縮し、エネルギー消費量を削減し、スケーラビリティを高めます。当社のネイティブトークンであるDecentralCoin(DCC)は、ブロック報酬などの標準的な支払いに使用され、当社のオンチェーン・ガバナンス・システムは、投票を通じてプロトコルの変更を行うことができます。"
 
 #: ../../index.rst:14
 msgid "Our documentation covers various aspects of the DecentralChain protocol, including its architecture, consensus mechanism, data structures, and APIs. It also provides a comprehensive guide to setting up and running a DecentralChain node, as well as integrating the protocol into existing applications."
-msgstr ""
+msgstr "当社の文書は、そのアーキテクチャ、コンセンサスメカニズム、データ構造、API を含む DecentralChain プロトコルのさまざまな側面をカバーしています。また、DecentralChain ノードの設定と実行の包括的なガイドも提供し、プロトコルを既存のアプリケーションに統合します。"
 
 #: ../../index.rst:16
 msgid "We place a strong emphasis on security, with regular security audits to identify and address potential vulnerabilities. Data is stored and managed using cryptography and distributed storage to ensure data integrity and security."
-msgstr ""
+msgstr "セキュリティに重点を置き、定期的なセキュリティ監査を行い、潜在的な脆弱性を特定し対処します。データは暗号化と分散ストレージを使用して保存および管理され、データの完全性とセキュリティを確保します。"
 
 #: ../../index.rst:18
 msgid "Whether you're a developer or a business owner looking to leverage blockchain technology for data management and security, the DecentralChain documentation is a valuable resource for understanding and using the protocol. We invite you to explore our documentation and get started with DecentralChain today."
-msgstr ""
+msgstr "開発者やビジネスオーナーが、データ管理とセキュリティのためにブロックチェーン技術を活用しようとしている場合でも、DecentralChainドキュメントはプロトコルを理解して使用するための貴重なリソースです。ドキュメントを探索し、今日のDecentralChainから始めましょう。"
 
 #: ../../index.rst:25 ../../index.rst:124
 msgid "Introduction"
-msgstr ""
+msgstr "導入事例"
 
 #: ../../index.rst:28
 msgid "Get ready to jump into the exciting world of cryptocurrency and blockchain with DecentralChain. Start here to learn the basics and find out how this innovative platform is revolutionizing the industry."
-msgstr ""
+msgstr "DecentralChainで仮想通貨とブロックチェーンのエキサイティングな世界に飛び込む準備ができたら。この革新的なプラットフォームが業界に革命をもたらしているかを、ここで学びましょう。"
 
 #: ../../index.rst:32 ../../index.rst:48 ../../index.rst:65 ../../index.rst:82
 #: ../../index.rst:99 ../../index.rst:115
@@ -58,51 +58,51 @@ msgstr ""
 
 #: ../../index.rst:42 ../../index.rst:142
 msgid "DecentralChain"
-msgstr ""
+msgstr "DecentralChain"
 
 #: ../../index.rst:44
 msgid "DecentralChain is a blockchain protocol and development toolkit that empowers users to create decentralized applications (dApps) and Web 3.0 solutions on a secure and scalable platform using tools such as accounts, tokens, transactions, blocks, nodes, orders, and oracles."
-msgstr ""
+msgstr "DecentralChain は、ユーザーを分散型アプリケーション(dApps)および Web 3.0 ソリューションを、アカウント、トークン、トランザクション、ブロック、ノード、注文、またはOracleなどのツールを使用して、安全でスケーラブルなプラットフォームで作成できるブロックチェーンプロトコルと開発ツールキットです。"
 
 #: ../../index.rst:58 ../../index.rst:151
 msgid "Ride Language"
-msgstr ""
+msgstr "Ride 日本語"
 
 #: ../../index.rst:61
 msgid "Ride is a straightforward, developer-friendly functional programming language for smart contracts and decentralized applications (dApps) on the DecentralChain blockchain. Here you will learn about syntax basics, data types, functions, script types, structures, and FOLD<N> iterations."
-msgstr ""
+msgstr "Rideは、DecentralChainブロックチェーン上でスマートコントラクトと分散型アプリケーション(dApps)用のシンプルで使いやすい機能的なプログラミング言語です。ここでは、構文の基本、データ型、関数、スクリプトタイプ、構造体、FOLD <N> の反復について学習します。"
 
 #: ../../index.rst:75 ../../index.rst:169
 msgid "Node Guide"
-msgstr ""
+msgstr "ノードガイド"
 
 #: ../../index.rst:78
 msgid "Learn how to get, build, and configure a DecentralChain node, and what its REST API exposes. For block generation and leasing rewards, see the DecentralChain fundamentals section."
-msgstr ""
+msgstr "DecentralChain ノードの取得、ビルド、および構成方法と、REST API がどのようなものなのかを学びます。ブロック生成とリース報酬については、DecentralChainの基本セクションを参照してください。"
 
 #: ../../index.rst:92 ../../index.rst:160
 msgid "Smart Contracts and dApps"
-msgstr ""
+msgstr "スマートコントラクトとdApps"
 
 #: ../../index.rst:95
 msgid "Lean everything you need to know in order to start creating your own smart contracts and decentralized applications (dApps) with DecentralChain's developer tools, APIs and SDKs."
-msgstr ""
+msgstr "DecentralChainの開発者ツール、API、SDKで独自のスマートコントラクトと分散型アプリケーション(dApps)を作成するために知っておく必要があるすべて。"
 
 #: ../../index.rst:109 ../../index.rst:189
 msgid "Contributing"
-msgstr ""
+msgstr "貢献する"
 
 #: ../../index.rst:111
 msgid "More information about the community that leads, supports, and develops this documentation, including how you can contribute to it by fixing any typos, adding translations, examples or updating any outdated information. Join the community to help improve this resource for everyone."
-msgstr ""
+msgstr "このドキュメントをリード、サポート、および開発するコミュニティに関する詳細情報。これらにどのように貢献できるのか、どんなタイポを修正し、翻訳を追加したり、例を追加したり、古い情報を更新したりすることで、この文書を開発することができます。コミュニティに参加して、このリソースを全員に改善します。"
 
 #: ../../index.rst:133
 msgid "User Guides"
-msgstr ""
+msgstr "ユーザーガイド"
 
 #: ../../index.rst:178
 msgid "Reference"
-msgstr ""
+msgstr "参考文献"
 
 #~ msgid "card-img-top"
 #~ msgstr ""

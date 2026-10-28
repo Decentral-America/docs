@@ -1,0 +1,11 @@
+{%- extends "!layout.html" %}
+{#- Right-to-left languages. pydata-sphinx-theme writes <html lang="ar"> but no `dir`, so an
+    Arabic page would still lay out left to right. Setting it on <body> needs no JavaScript;
+    custom.css keeps code left to right. #}
+{%- block body_tag %}
+  {%- if language in ("ar", "fa", "he", "ur") %}
+  <body data-default-mode="{{ default_mode }}" dir="rtl">
+  {%- else %}
+  {{ super() }}
+  {%- endif %}
+{%- endblock %}

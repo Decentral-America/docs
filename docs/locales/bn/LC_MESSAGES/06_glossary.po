@@ -21,15 +21,15 @@ msgstr ""
 
 #: ../../06_glossary.md:1
 msgid "Glossary"
-msgstr ""
+msgstr "শব্দপঞ্জি"
 
 #: ../../06_glossary.md:3
 msgid "Terms as used across this documentation. Each entry links to the page that defines it in full."
-msgstr ""
+msgstr "এই ডকুমেন্টগুলি ব্যবহার করে। প্রত্যেক এন্ট্রির লিঙ্ককে যে পৃষ্ঠাকে পূর্ণ ভাবে সংজ্ঞায়িত করা হয় সেটি সংজ্ঞায়িত করে ।"
 
 #: ../../06_glossary.md
 msgid "DCC"
-msgstr ""
+msgstr "DCC"
 
 #: ../../06_glossary.md:7
 #, python-brace-format
@@ -38,7 +38,7 @@ msgstr ""
 
 #: ../../06_glossary.md:3
 msgid "Chain ID"
-msgstr ""
+msgstr "চেইন আই. ডি."
 
 #: ../../06_glossary.md:10
 #, python-brace-format
@@ -47,16 +47,16 @@ msgstr ""
 
 #: ../../06_glossary.md:6
 msgid "Account"
-msgstr ""
+msgstr "অ্যাকাউন্ট"
 
 #: ../../06_glossary.md:13
 #, python-brace-format
 msgid "A key pair plus everything associated with it on chain — balances, data entries, aliases and an optional script. See {ref}`Account <02_decentralchain/01_account:Account>`."
-msgstr ""
+msgstr "এক জোড়া জোড়া জুটি এবং এর সঙ্গে চেইনের সাথে জড়িত সবকিছু — ভারসাম্য, তথ্য এন্ট্রি, ছদ্মনাম এবং ঐচ্ছিক একটি স্ক্রিপ্ট সহ — জড়িত । {ref}`অ্যাকাউন্ট <02_decentralchain/01_account:Account>` দেখুন।"
 
 #: ../../06_glossary.md:9
 msgid "Address"
-msgstr ""
+msgstr "ঠিকানা"
 
 #: ../../06_glossary.md:16
 msgid "A Base58 string derived from a public key and the chain ID. Mainnet addresses start with `3D`, Testnet addresses with `31`."
@@ -64,50 +64,50 @@ msgstr ""
 
 #: ../../06_glossary.md:12
 msgid "Alias"
-msgstr ""
+msgstr "উপনাম:"
 
 #: ../../06_glossary.md:19
 msgid "A short, human-readable name for an address."
-msgstr ""
+msgstr "একটি সংক্ষিপ্ত, মানুষ-ত্তের জন্য একটি নাম।"
 
 #: ../../06_glossary.md:15
 msgid "Seed"
-msgstr ""
+msgstr "সা."
 
 #: ../../06_glossary.md:22
 msgid "The secret phrase from which an account's private key is derived. Never share it."
-msgstr ""
+msgstr "একটি একাউন্টের ব্যক্তিগত চাবি যা থেকে পাওয়া যায় তার রহস্যটি। কখনো এটা শেয়ার করবেন না।"
 
 #: ../../06_glossary.md:18
 msgid "dApp"
-msgstr ""
+msgstr "dApp"
 
 #: ../../06_glossary.md:25
 #, python-brace-format
 msgid "A decentralized application: an account with a Ride script whose `@Callable` functions users invoke with invoke script transactions. See {ref}`Creating and Launching a dApp <04_building-apps/08_creating-and-launching-a-dapp:Creating and Launching a dApp>`."
-msgstr ""
+msgstr "ADIBed অ্যাপ্লিকেশন: Ride স্ক্রিপ্টের একটি অ্যাকাউন্ট, যার মাধ্যমে `@Callable` ফাংশান ব্যবহারকারীদের কল করতে বলা হয় । {ref}`dApp চালু এবং আরম্ভ করে <04_building-apps/08_creating-and-launching-a-dapp:Creating and Launching a dApp>` দেখুন।"
 
 #: ../../06_glossary.md:21
 msgid "Smart account"
-msgstr ""
+msgstr "স্মার্ট অ্যাকাউন্ট"
 
 #: ../../06_glossary.md:28
 #, python-brace-format
 msgid "An account with a script that must approve every transaction the account sends. See {ref}`Smart Accounts <04_building-apps/09_smart-accounts:Smart Accounts>`."
-msgstr ""
+msgstr "একটি স্ক্রিপ্টের মাধ্যমে অ্যাকাউন্টের প্রতিটি লেনদেনের অনুমোদন দিতে হবে। {ref}`স্মার্ট অ্যাকাউন্ট <04_building-apps/09_smart-accounts:Smart Accounts>` দেখুন।"
 
 #: ../../06_glossary.md:24
 msgid "Smart asset"
-msgstr ""
+msgstr "স্মার্ট-কার্ড"
 
 #: ../../06_glossary.md:31
 #, python-brace-format
 msgid "A token with a script that must approve every transaction involving it. See {ref}`Smart Assets <04_building-apps/10_smart-assets:Smart Assets>`."
-msgstr ""
+msgstr "এমন একটা স্ক্রিপ্ট যা এর সাথে জড়িত সব লেনদেনের অনুমতি দেবে। {ref}`বুদ্ধিমতী <04_building-apps/10_smart-assets:Smart Assets>` দেখুন।"
 
 #: ../../06_glossary.md:27
 msgid "Blockchain Updates"
-msgstr ""
+msgstr "ডিচেইন আপডেট"
 
 #: ../../06_glossary.md:34
 #, python-brace-format
@@ -116,33 +116,33 @@ msgstr ""
 
 #: ../../06_glossary.md:30
 msgid "Ride"
-msgstr ""
+msgstr "Ride"
 
 #: ../../06_glossary.md:37
 #, python-brace-format
 msgid "The statically typed, functional smart-contract language of DecentralChain. See the {ref}`Ride language <03_ride-language/index:Ride Language>` section."
-msgstr ""
+msgstr "যে পরিমাণ সময় টাইপ করা হচ্ছে, DecentralChain- র কার্যকরী একটি stack- unsigned ভাষা । {ref}`Ride ভাষা <03_ride-language/index:Ride Language>` বিভাগে দেখুন।"
 
 #: ../../06_glossary.md:33
 msgid "LPoS"
-msgstr ""
+msgstr "এনকোডিং পরিবর্তন করো"
 
 #: ../../06_glossary.md:40
 #, python-brace-format
 msgid "Leased Proof of Stake: the consensus in which accounts can lease DCC to generating nodes. See {ref}`Node <02_decentralchain/05_node:Leased Proof of Stake>`."
-msgstr ""
+msgstr "লিসটাগ এর প্রমাণ: একমত হওয়ার যে কোন একাউন্ট থেকে DCC টাকা ধার দিতে পারবে নোড তৈরি করার জন্য। {ref}`নোড <02_decentralchain/05_node:Leased Proof of Stake>` দেখুন।"
 
 #: ../../06_glossary.md:36
 msgid "NG"
-msgstr ""
+msgstr "NG"
 
 #: ../../06_glossary.md:43
 msgid "The protocol that streams transactions in microblocks between blocks."
-msgstr ""
+msgstr "ব্লকের মধ্যে অবস্থিত বিভিন্ন ব্লকের মাঝে প্রবাহিত পার্জt।"
 
 #: ../../06_glossary.md:39
 msgid "Generating balance"
-msgstr ""
+msgstr "ভারসাম্য নির্মাণ করুন"
 
 #: ../../06_glossary.md:46
 msgid "The balance that counts towards the chance of generating the next block, including leased DCC."
@@ -150,68 +150,68 @@ msgstr ""
 
 #: ../../06_glossary.md:42
 msgid "Microblock"
-msgstr ""
+msgstr "মাইক্রো- ব্লক"
 
 #: ../../06_glossary.md:49
 msgid "A small batch of transactions appended to the current block before the next key block."
-msgstr ""
+msgstr "পরবর্তী ব্লকের পূর্বে একটি সম্প্রচারকারীর সাথে একটি ছোট ব্যাচ যোগ করা হয়েছে।"
 
 #: ../../06_glossary.md:45
 msgid "Deterministic Finality"
-msgstr ""
+msgstr "বিনোদনমূলক শেষ"
 
 #: ../../06_glossary.md:52
 #, python-brace-format
 msgid "Feature 25: generators endorse blocks with BLS signatures and a block is final once endorsed by two thirds of committed stake. See {ref}`Finality <02_decentralchain/09_protocol:Finality>`."
-msgstr ""
+msgstr "বৈশিষ্ট্য ২৫: বিএলএস স্বাক্ষরসহ ব্লকগুলো আর একটি ব্লক শেষ হয় দুই তৃতীয়াংশের মধ্যে। {ref}`চুড়ান্ত <02_decentralchain/09_protocol:Finality>` দেখুন।"
 
 #: ../../06_glossary.md:48
 msgid "Blockchain feature"
-msgstr ""
+msgstr "ব্লকিং বৈশিষ্ট্য"
 
 #: ../../06_glossary.md:55
 #, python-brace-format
 msgid "A numbered protocol change activated on a network by generator vote or network defaults. See {doc}`Features and Activation <05_node-guide/10_features-and-activation>`."
-msgstr ""
+msgstr "জেনারেটর ভোট অথবা নেটওয়ার্ক দ্বারা একটি নেটওয়ার্ক সংযোগ ব্যবস্থা সক্রিয় করা হয় । {doc}`পৃষ্ঠার বৈশিষ্ট্য ও বৈশিষ্ট্য নির্ধারণ করুন <05_node-guide/10_features-and-activation>` দেখুন।"
 
 #: ../../06_glossary.md:51
 msgid "Node"
-msgstr ""
+msgstr "নোড"
 
 #: ../../06_glossary.md:58
 msgid "Software that validates transactions, stores blocks and serves the REST API."
-msgstr ""
+msgstr "বৈধ লেনদেন, স্টোর ব্লক এবং REST API কাজ করে।"
 
 #: ../../06_glossary.md:54
 msgid "Matcher"
-msgstr ""
+msgstr "মেলান"
 
 #: ../../06_glossary.md:61
 msgid "The service that matches orders on the DecentralChain exchange."
-msgstr ""
+msgstr "যে সার্ভিসটি DecentralChain এক্সচেঞ্জের সাথে মিল ছিল."
 
 #: ../../06_glossary.md:57
 msgid "Cubensis Connect"
-msgstr ""
+msgstr "Cubensis Connect"
 
 #: ../../06_glossary.md:64
 #, python-brace-format
 msgid "DecentralChain's browser-extension wallet. See {doc}`Wallet Integration <04_building-apps/04_wallet-integration>`."
-msgstr ""
+msgstr "DecentralChain এর ব্রাউজার-বর্জন ওয়ালেট। {doc}`ওয়ালেট <04_building-apps/04_wallet-integration>` দেখুন।"
 
 #: ../../06_glossary.md:60
 msgid "DecentralScan"
-msgstr ""
+msgstr "DecentralScan"
 
 #: ../../06_glossary.md:67
 msgid "The DecentralChain block explorer."
-msgstr ""
+msgstr "DecentralChain ব্লককারী।"
 
 #: ../../06_glossary.md:63
 msgid "Decentralite"
-msgstr ""
+msgstr "Decentralite"
 
 #: ../../06_glossary.md:70
 msgid "The smallest unit of DCC."
-msgstr ""
+msgstr "DCC এর ছোট ইউনিট."
 

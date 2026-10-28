@@ -21,73 +21,73 @@ msgstr ""
 
 #: ../../06_contributing.md:1
 msgid "Contributing"
-msgstr ""
+msgstr "Beitrag"
 
 #: ../../06_contributing.md:3
 msgid "DecentralChain is developed in the open across many repositories under the [Decentral-America](https://github.com/Decentral-America) GitHub organization — the node, SDK packages, wallet, and this documentation site are all separate repos, each accepting contributions."
-msgstr ""
+msgstr "DecentralChain wird in vielen Repositories unter der [Dezentrales Amerika](https://github.com/Decentral-America) GitHub-Organisation im Freien entwickelt - Knoten, SDK-Pakete, Wallet und diese Dokumentationsseite sind alle getrennte Repos, die jeweils Beiträge annehmen."
 
 #: ../../06_contributing.md:5
 msgid "Node and Protocol"
-msgstr ""
+msgstr "Node und Protokoll"
 
 #: ../../06_contributing.md:7
 msgid "The node is developed at [node-scala](https://github.com/Decentral-America/node-scala). Fork the repository, work on a feature branch, and open a pull request. For anything beyond a small fix, open an issue first to discuss the change before investing time in an implementation. See the repo's `CODE_OF_CONDUCT.md` for community guidelines."
-msgstr ""
+msgstr "Der Knoten wird bei [Node-Scala](https://github.com/Decentral-America/node-scala) entwickelt. Gabeln Sie das Repository, arbeiten Sie an einem Feature-Branch und öffnen Sie eine Pull-Request. Für alles, was über einen kleinen Fix hinausgeht, öffnen Sie zuerst ein Problem, um die Änderung zu besprechen, bevor Sie Zeit in eine Implementierung investieren. Siehe `CODE_OF_CONDUCT.md` des Repo für Community-Richtlinien."
 
 #: ../../06_contributing.md:9
 msgid "SDK and Tooling"
-msgstr ""
+msgstr "SDK und Tooling"
 
 #: ../../06_contributing.md:11
 msgid "Each SDK package ([`transactions`](https://github.com/Decentral-America/DecentralChain/tree/main/packages/sdk/transactions), [`node-api`](https://github.com/Decentral-America/DecentralChain/tree/main/packages/sdk/node-api), [`signer`](https://github.com/Decentral-America/DecentralChain/tree/main/packages/sdk/signer), [`cubensis-connect`](https://github.com/Decentral-America/cubensis-connect), and the rest listed in [Client Libraries and SDK](04_building-apps/02_client-libraries-and-sdk)) is written in TypeScript under the MIT license:"
-msgstr ""
+msgstr "Jedes SDK-Paket ([`transactions`](https://github.com/Decentral-America/DecentralChain/tree/main/packages/sdk/transactions), [`node-api`](https://github.com/Decentral-America/DecentralChain/tree/main/packages/sdk/node-api), [`signer`](https://github.com/Decentral-America/DecentralChain/tree/main/packages/sdk/signer), [`cubensis-connect`](https://github.com/Decentral-America/cubensis-connect) und der Rest in [Client Libraries und SDK](04_building-apps/02_client-libraries-and-sdk)) wird in TypeScript unter der MIT-Lizenz geschrieben:"
 
 #: ../../06_contributing.md:13
 msgid "Fork the relevant repository."
-msgstr ""
+msgstr "Gabeln Sie das entsprechende Repository."
 
 #: ../../06_contributing.md:14
 msgid "Create a feature branch (`git checkout -b feature/your-feature-name`)."
-msgstr ""
+msgstr "Erstellen Sie einen Feature Branch (`git checkout -b feature/your-feature-name`)."
 
 #: ../../06_contributing.md:15
 msgid "Make your changes, with tests where applicable."
-msgstr ""
+msgstr "Nehmen Sie Ihre Änderungen vor, gegebenenfalls mit Tests."
 
 #: ../../06_contributing.md:16
 msgid "Open a pull request with a clear description of the change."
-msgstr ""
+msgstr "Öffnen Sie eine Pull Request mit einer klaren Beschreibung der Änderung."
 
 #: ../../06_contributing.md:18
 msgid "Report bugs or feature requests in the repository the bug actually belongs to, not in this docs repository — include reproduction steps, package version, Node.js version, and network (Mainnet/Testnet) when filing an SDK issue."
-msgstr ""
+msgstr "Bugs oder Feature Requests im Repository melden, zu dem der Fehler eigentlich gehört, nicht in diesem docs-Repository – umfassen Reproduktionsschritte, Paketversion, Node.js-Version und Netzwerk (Mainnet/Testnet) beim Einreichen eines SDK-Problems."
 
 #: ../../06_contributing.md:20
 msgid "Documentation"
-msgstr ""
+msgstr "Dokumentation"
 
 #: ../../06_contributing.md:22
 msgid "This documentation site ([Decentral-America/docs](https://github.com/Decentral-America/docs)) accepts pull requests for corrections, missing content, and new articles. If you spot a gap or an inaccuracy, opening an issue first is welcome, especially before a large rewrite."
-msgstr ""
+msgstr "Diese Dokumentationsseite ([Decentral-America/docs](https://github.com/Decentral-America/docs)) akzeptiert Pull-Anfragen für Korrekturen, fehlende Inhalte und neue Artikel. Wenn Sie eine Lücke oder Ungenauigkeit erkennen, ist das Öffnen eines Problems zuerst willkommen, insbesondere vor einem großen Umschreiben."
 
 #: ../../06_contributing.md:24
 msgid "The docs are also translated via [Gitlocalize](https://gitlocalize.com/repo/8397) — translation contributions in any of the supported languages are welcome; see the badges on the [repository README](https://github.com/Decentral-America/docs#readme) for current translation coverage per language."
-msgstr ""
+msgstr "Die Dokumente werden auch über [Gitlocalisieren](https://gitlocalize.com/repo/8397) übersetzt — Übersetzungsbeiträge in einer der unterstützten Sprachen sind willkommen; siehe die Abzeichen auf dem [Repository README](https://github.com/Decentral-America/docs#readme) für aktuelle Übersetzung Abdeckung pro Sprache."
 
 #: ../../06_contributing.md:26
 msgid "Community"
-msgstr ""
+msgstr "Gemeinschaft"
 
 #: ../../06_contributing.md:28
 msgid "**Questions and proposals:** open an issue in the repository the topic belongs to (node-scala for protocol questions, the relevant SDK package for library questions). None of the Decentral-America repositories has GitHub Discussions enabled at the time of writing."
-msgstr ""
+msgstr "**Fragen und Vorschläge:** öffnet ein Problem im Repository, zu dem das Thema gehört (Node-Scala für Protokollfragen, das entsprechende SDK-Paket für Bibliotheksfragen). Keines der Decentral-America-Repositories hat GitHub Discussions zum Zeitpunkt des Schreibens aktiviert."
 
 #: ../../06_contributing.md:29
 msgid "**Security issues:** report vulnerabilities privately to security@decentral.exchange rather than in a public issue."
-msgstr ""
+msgstr "**Sicherheitsfragen:** meldet Sicherheitslücken privat an security@decentral.exchange und nicht in einem öffentlichen Problem."
 
 #: ../../06_contributing.md:30
 msgid "**Documentation:** this site is built with Sphinx; every page must build without warnings (`sphinx-build -W`) and must not reference third-party projects — CI enforces both."
-msgstr ""
+msgstr "**Dokumentation:** Diese Website ist mit Sphinx erstellt; jede Seite muss ohne Warnungen (`sphinx-build -W`) erstellen und darf nicht auf Drittprojekte verweisen - CI erzwingt beides."
 

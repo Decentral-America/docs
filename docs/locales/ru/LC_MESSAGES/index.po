@@ -21,35 +21,35 @@ msgstr ""
 
 #: ../../index.rst:8
 msgid "DecentralChain Documentation"
-msgstr ""
+msgstr "DecentralChain Документация"
 
 #: ../../index.rst:10
 msgid "Welcome to the Decentralchain documentation, a comprehensive guide to understanding and using the next-generation blockchain technology of DecentralChain. Our protocol is designed to enable businesses and organizations to store and manage data in a secure, transparent, and tamper-proof manner."
-msgstr ""
+msgstr "Добро пожаловать в документацию Decentralchain, всеобъемлющее руководство по пониманию и использованию технологии блокчейна следующего поколения DecentralChain. Наш протокол предназначен для того, чтобы предприятия и организации могли хранить и управлять данными безопасным, прозрачным и защищенным от несанкционированного доступа способом."
 
 #: ../../index.rst:12
 msgid "DecentralChain utilizes the Leased Proof of Stake (LPoS) consensus mechanism and sharding to enable faster transaction processing times, lower energy consumption, and increased scalability. Our native token, DecentralCoin (DCC), is used for standard payments such as block rewards, and our on-chain governance system allows us to make changes to the protocol through voting."
-msgstr ""
+msgstr "DecentralChain использует механизм консенсуса Leased Proof of Stake (LPoS) для ускорения обработки транзакций, снижения энергопотребления и увеличения масштабируемости. Наш собственный токен DecentralCoin (DCC) используется для стандартных платежей, таких как вознаграждение за блоки, а наша система управления цепочками позволяет нам вносить изменения в протокол посредством голосования."
 
 #: ../../index.rst:14
 msgid "Our documentation covers various aspects of the DecentralChain protocol, including its architecture, consensus mechanism, data structures, and APIs. It also provides a comprehensive guide to setting up and running a DecentralChain node, as well as integrating the protocol into existing applications."
-msgstr ""
+msgstr "Наша документация охватывает различные аспекты протокола DecentralChain, включая его архитектуру, механизм консенсуса, структуры данных и API. Он также предоставляет исчерпывающее руководство по настройке и запуску узла DecentralChain, а также интеграции протокола в существующие приложения."
 
 #: ../../index.rst:16
 msgid "We place a strong emphasis on security, with regular security audits to identify and address potential vulnerabilities. Data is stored and managed using cryptography and distributed storage to ensure data integrity and security."
-msgstr ""
+msgstr "Мы уделяем большое внимание безопасности, регулярно проверяя безопасность для выявления и устранения потенциальных уязвимостей. Данные хранятся и управляются с использованием криптографии и распределенного хранилища для обеспечения целостности и безопасности данных."
 
 #: ../../index.rst:18
 msgid "Whether you're a developer or a business owner looking to leverage blockchain technology for data management and security, the DecentralChain documentation is a valuable resource for understanding and using the protocol. We invite you to explore our documentation and get started with DecentralChain today."
-msgstr ""
+msgstr "Независимо от того, являетесь ли вы разработчиком или владельцем бизнеса, стремящимся использовать технологию блокчейн для управления данными и безопасности, документация DecentralChain является ценным ресурсом для понимания и использования протокола. Мы приглашаем вас ознакомиться с нашей документацией и начать работу с DecentralChain сегодня."
 
 #: ../../index.rst:25 ../../index.rst:124
 msgid "Introduction"
-msgstr ""
+msgstr "Введение"
 
 #: ../../index.rst:28
 msgid "Get ready to jump into the exciting world of cryptocurrency and blockchain with DecentralChain. Start here to learn the basics and find out how this innovative platform is revolutionizing the industry."
-msgstr ""
+msgstr "Приготовьтесь погрузиться в захватывающий мир криптовалют и блокчейна с помощью DecentralChain. Начните с изучения основ и выясните, как эта инновационная платформа революционизирует отрасль."
 
 #: ../../index.rst:32 ../../index.rst:48 ../../index.rst:65 ../../index.rst:82
 #: ../../index.rst:99 ../../index.rst:115
@@ -58,51 +58,51 @@ msgstr ""
 
 #: ../../index.rst:42 ../../index.rst:142
 msgid "DecentralChain"
-msgstr ""
+msgstr "DecentralChain"
 
 #: ../../index.rst:44
 msgid "DecentralChain is a blockchain protocol and development toolkit that empowers users to create decentralized applications (dApps) and Web 3.0 solutions on a secure and scalable platform using tools such as accounts, tokens, transactions, blocks, nodes, orders, and oracles."
-msgstr ""
+msgstr "DecentralChain - это инструментарий для блокчейна и разработки, который позволяет пользователям создавать децентрализованные приложения (dApps) и решения Web 3.0 на безопасной и масштабируемой платформе с использованием таких инструментов, как учетные записи, токены, транзакции, блоки, узлы, заказы и оракулы."
 
 #: ../../index.rst:58 ../../index.rst:151
 msgid "Ride Language"
-msgstr ""
+msgstr "Язык Ride"
 
 #: ../../index.rst:61
 msgid "Ride is a straightforward, developer-friendly functional programming language for smart contracts and decentralized applications (dApps) on the DecentralChain blockchain. Here you will learn about syntax basics, data types, functions, script types, structures, and FOLD<N> iterations."
-msgstr ""
+msgstr "Ride - это простой, удобный для разработчиков функциональный язык программирования для смарт-контрактов и децентрализованных приложений (dApps) на блокчейне DecentralChain. Здесь вы узнаете об основах синтаксиса, типах данных, функциях, типах сценариев, структурах и итерациях FOLD <N>."
 
 #: ../../index.rst:75 ../../index.rst:169
 msgid "Node Guide"
-msgstr ""
+msgstr "Руководитель узла"
 
 #: ../../index.rst:78
 msgid "Learn how to get, build, and configure a DecentralChain node, and what its REST API exposes. For block generation and leasing rewards, see the DecentralChain fundamentals section."
-msgstr ""
+msgstr "Узнайте, как получить, построить и настроить узел DecentralChain, а также что представляет его API REST. Для получения блоков и вознаграждений за аренду см. раздел Основы DecentralChain."
 
 #: ../../index.rst:92 ../../index.rst:160
 msgid "Smart Contracts and dApps"
-msgstr ""
+msgstr "Умные контракты и dApps"
 
 #: ../../index.rst:95
 msgid "Lean everything you need to know in order to start creating your own smart contracts and decentralized applications (dApps) with DecentralChain's developer tools, APIs and SDKs."
-msgstr ""
+msgstr "Выберите все, что вам нужно знать, чтобы начать создавать свои собственные смарт-контракты и децентрализованные приложения (dApps) с помощью инструментов разработчика DecentralChain, API и SDK."
 
 #: ../../index.rst:109 ../../index.rst:189
 msgid "Contributing"
-msgstr ""
+msgstr "вносить вклад"
 
 #: ../../index.rst:111
 msgid "More information about the community that leads, supports, and develops this documentation, including how you can contribute to it by fixing any typos, adding translations, examples or updating any outdated information. Join the community to help improve this resource for everyone."
-msgstr ""
+msgstr "Более подробная информация о сообществе, которое ведет, поддерживает и разрабатывает эту документацию, в том числе о том, как вы можете внести свой вклад в нее, исправляя любые опечатки, добавляя переводы, примеры или обновляя любую устаревшую информацию. Присоединяйтесь к сообществу, чтобы помочь улучшить этот ресурс для всех."
 
 #: ../../index.rst:133
 msgid "User Guides"
-msgstr ""
+msgstr "Руководство пользователя"
 
 #: ../../index.rst:178
 msgid "Reference"
-msgstr ""
+msgstr "Ссылка"
 
 #~ msgid "card-img-top"
 #~ msgstr ""

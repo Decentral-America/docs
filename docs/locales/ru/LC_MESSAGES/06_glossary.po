@@ -21,107 +21,107 @@ msgstr ""
 
 #: ../../06_glossary.md:1
 msgid "Glossary"
-msgstr ""
+msgstr "Глоссарий"
 
 #: ../../06_glossary.md:3
 msgid "Terms as used across this documentation. Each entry links to the page that defines it in full."
-msgstr ""
+msgstr "Термины, используемые в этой документации. Каждая запись ссылается на страницу, которая определяет ее в полном объеме."
 
 #: ../../06_glossary.md
 msgid "DCC"
-msgstr ""
+msgstr "DCC"
 
 #: ../../06_glossary.md:7
 #, python-brace-format
 msgid "DecentralCoin, the native coin of DecentralChain. Amounts are stored in the smallest unit (`10^-8` DCC). See {ref}`Token (Asset) <02_decentralchain/02_token(asset):Token (Asset)>`."
-msgstr ""
+msgstr "DecentralCoin, родная монета DecentralChain. Суммы хранятся в самой маленькой единице (`10^-8` DCC). Смотри {ref}`Token (Asset) <02_decentralchain/02_token(asset):Token (Asset)>`."
 
 #: ../../06_glossary.md:3
 msgid "Chain ID"
-msgstr ""
+msgstr "Идентификатор цепочки"
 
 #: ../../06_glossary.md:10
 #, python-brace-format
 msgid "A single character identifying the network; it is part of every address and transaction. Mainnet is `?` (63) and Testnet is `!` (33). See {ref}`Mainnet, Testnet <02_decentralchain/08_mainnet-testnet-stagenet:Chain ID>`."
-msgstr ""
+msgstr "Один символ, идентифицирующий сеть; это часть каждого адреса и транзакции. Mainnet — это `?` (63), а Testnet — это `!` (33). Смотри {ref}`Mainnet, Testnet <02_decentralchain/08_mainnet-testnet-stagenet:Chain ID>`."
 
 #: ../../06_glossary.md:6
 msgid "Account"
-msgstr ""
+msgstr "Счет"
 
 #: ../../06_glossary.md:13
 #, python-brace-format
 msgid "A key pair plus everything associated with it on chain — balances, data entries, aliases and an optional script. See {ref}`Account <02_decentralchain/01_account:Account>`."
-msgstr ""
+msgstr "Пара ключей плюс все, что с ней связано в цепочке — балансы, записи данных, псевдонимы и дополнительный скрипт. Смотри {ref}`Счет <02_decentralchain/01_account:Account>`."
 
 #: ../../06_glossary.md:9
 msgid "Address"
-msgstr ""
+msgstr "Адрес"
 
 #: ../../06_glossary.md:16
 msgid "A Base58 string derived from a public key and the chain ID. Mainnet addresses start with `3D`, Testnet addresses with `31`."
-msgstr ""
+msgstr "Строка Base58, полученная из открытого ключа и идентификатора цепи. Адреса Mainnet начинаются с адресов `3D`, Testnet — с `31`."
 
 #: ../../06_glossary.md:12
 msgid "Alias"
-msgstr ""
+msgstr "Алиса"
 
 #: ../../06_glossary.md:19
 msgid "A short, human-readable name for an address."
-msgstr ""
+msgstr "Короткое, читаемое человеком имя для адреса."
 
 #: ../../06_glossary.md:15
 msgid "Seed"
-msgstr ""
+msgstr "семя"
 
 #: ../../06_glossary.md:22
 msgid "The secret phrase from which an account's private key is derived. Never share it."
-msgstr ""
+msgstr "Секретная фраза, из которой происходит приватный ключ учетной записи. Никогда не делитесь."
 
 #: ../../06_glossary.md:18
 msgid "dApp"
-msgstr ""
+msgstr "dApp"
 
 #: ../../06_glossary.md:25
 #, python-brace-format
 msgid "A decentralized application: an account with a Ride script whose `@Callable` functions users invoke with invoke script transactions. See {ref}`Creating and Launching a dApp <04_building-apps/08_creating-and-launching-a-dapp:Creating and Launching a dApp>`."
-msgstr ""
+msgstr "Децентрализованное приложение: учетная запись со сценарием Ride, функция `@Callable` которой используется пользователями для вызова транзакций скриптов. Смотри {ref}`Создание и запуск dApp <04_building-apps/08_creating-and-launching-a-dapp:Creating and Launching a dApp>`."
 
 #: ../../06_glossary.md:21
 msgid "Smart account"
-msgstr ""
+msgstr "Умный аккаунт"
 
 #: ../../06_glossary.md:28
 #, python-brace-format
 msgid "An account with a script that must approve every transaction the account sends. See {ref}`Smart Accounts <04_building-apps/09_smart-accounts:Smart Accounts>`."
-msgstr ""
+msgstr "Учетная запись со сценарием, который должен одобрить каждую транзакцию, отправляемую учетной записью. Смотри {ref}`Умные счета <04_building-apps/09_smart-accounts:Smart Accounts>`."
 
 #: ../../06_glossary.md:24
 msgid "Smart asset"
-msgstr ""
+msgstr "Умный актив"
 
 #: ../../06_glossary.md:31
 #, python-brace-format
 msgid "A token with a script that must approve every transaction involving it. See {ref}`Smart Assets <04_building-apps/10_smart-assets:Smart Assets>`."
-msgstr ""
+msgstr "Токен со сценарием, который должен одобрить каждую транзакцию с его участием. Смотри {ref}`Умные активы <04_building-apps/10_smart-assets:Smart Assets>`."
 
 #: ../../06_glossary.md:27
 msgid "Blockchain Updates"
-msgstr ""
+msgstr "Обновления Blockchain"
 
 #: ../../06_glossary.md:34
 #, python-brace-format
 msgid "A node extension that streams every block, microblock, state change and rollback over gRPC on port 6881. See {ref}`Blockchain Updates <04_building-apps/11_blockchain-updates:Blockchain Updates>`."
-msgstr ""
+msgstr "Расширение узла, которое передает каждый блок, микроблок, изменение состояния и откат по gRPC на порту 6881. Смотри {ref}`Обновления Blockchain <04_building-apps/11_blockchain-updates:Blockchain Updates>`."
 
 #: ../../06_glossary.md:30
 msgid "Ride"
-msgstr ""
+msgstr "Ride"
 
 #: ../../06_glossary.md:37
 #, python-brace-format
 msgid "The statically typed, functional smart-contract language of DecentralChain. See the {ref}`Ride language <03_ride-language/index:Ride Language>` section."
-msgstr ""
+msgstr "Статически типизированный функциональный язык смарт-контрактов DecentralChain. Смотрите раздел {ref}`Язык Ride <03_ride-language/index:Ride Language>`."
 
 #: ../../06_glossary.md:33
 msgid "LPoS"
@@ -130,88 +130,88 @@ msgstr ""
 #: ../../06_glossary.md:40
 #, python-brace-format
 msgid "Leased Proof of Stake: the consensus in which accounts can lease DCC to generating nodes. See {ref}`Node <02_decentralchain/05_node:Leased Proof of Stake>`."
-msgstr ""
+msgstr "Leased Proof of Stake: консенсус, при котором счета могут сдавать DCC в аренду генерирующим узлам. Смотри {ref}`Узел <02_decentralchain/05_node:Leased Proof of Stake>`."
 
 #: ../../06_glossary.md:36
 msgid "NG"
-msgstr ""
+msgstr "NG"
 
 #: ../../06_glossary.md:43
 msgid "The protocol that streams transactions in microblocks between blocks."
-msgstr ""
+msgstr "Протокол, который передает транзакции в микроблоках между блоками."
 
 #: ../../06_glossary.md:39
 msgid "Generating balance"
-msgstr ""
+msgstr "Генерирующий баланс"
 
 #: ../../06_glossary.md:46
 msgid "The balance that counts towards the chance of generating the next block, including leased DCC."
-msgstr ""
+msgstr "Баланс, который учитывает возможность создания следующего блока, включая арендованный DCC."
 
 #: ../../06_glossary.md:42
 msgid "Microblock"
-msgstr ""
+msgstr "Микроблок"
 
 #: ../../06_glossary.md:49
 msgid "A small batch of transactions appended to the current block before the next key block."
-msgstr ""
+msgstr "Небольшая партия транзакций прилагается к текущему блоку перед следующим ключевым блоком."
 
 #: ../../06_glossary.md:45
 msgid "Deterministic Finality"
-msgstr ""
+msgstr "Детерминированная финаличность"
 
 #: ../../06_glossary.md:52
 #, python-brace-format
 msgid "Feature 25: generators endorse blocks with BLS signatures and a block is final once endorsed by two thirds of committed stake. See {ref}`Finality <02_decentralchain/09_protocol:Finality>`."
-msgstr ""
+msgstr "Функция 25: генераторы поддерживают блоки с подписями BLS, и блок является окончательным после одобрения двумя третями доли. Смотри {ref}`Окончание <02_decentralchain/09_protocol:Finality>`."
 
 #: ../../06_glossary.md:48
 msgid "Blockchain feature"
-msgstr ""
+msgstr "Функция Blockchain"
 
 #: ../../06_glossary.md:55
 #, python-brace-format
 msgid "A numbered protocol change activated on a network by generator vote or network defaults. See {doc}`Features and Activation <05_node-guide/10_features-and-activation>`."
-msgstr ""
+msgstr "Пронумерованное изменение протокола, активируемое в сети путем голосования генератора или по умолчанию. Смотри {doc}`Особенности и активация <05_node-guide/10_features-and-activation>`."
 
 #: ../../06_glossary.md:51
 msgid "Node"
-msgstr ""
+msgstr "Узел"
 
 #: ../../06_glossary.md:58
 msgid "Software that validates transactions, stores blocks and serves the REST API."
-msgstr ""
+msgstr "Программное обеспечение, которое проверяет транзакции, хранит блоки и обслуживает REST API."
 
 #: ../../06_glossary.md:54
 msgid "Matcher"
-msgstr ""
+msgstr "Мэтчер"
 
 #: ../../06_glossary.md:61
 msgid "The service that matches orders on the DecentralChain exchange."
-msgstr ""
+msgstr "Сервис, который соответствует заказам на бирже DecentralChain."
 
 #: ../../06_glossary.md:57
 msgid "Cubensis Connect"
-msgstr ""
+msgstr "Cubensis Connect"
 
 #: ../../06_glossary.md:64
 #, python-brace-format
 msgid "DecentralChain's browser-extension wallet. See {doc}`Wallet Integration <04_building-apps/04_wallet-integration>`."
-msgstr ""
+msgstr "Кошелек расширения браузера DecentralChain. Смотри {doc}`Интеграция кошельков <04_building-apps/04_wallet-integration>`."
 
 #: ../../06_glossary.md:60
 msgid "DecentralScan"
-msgstr ""
+msgstr "DecentralScan"
 
 #: ../../06_glossary.md:67
 msgid "The DecentralChain block explorer."
-msgstr ""
+msgstr "DecentralChain Блок-исследователь."
 
 #: ../../06_glossary.md:63
 msgid "Decentralite"
-msgstr ""
+msgstr "Decentralite"
 
 #: ../../06_glossary.md:70
 msgid "The smallest unit of DCC."
-msgstr ""
+msgstr "Наименьшая единица DCC."
 

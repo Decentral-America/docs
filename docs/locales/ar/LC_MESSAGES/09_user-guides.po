@@ -21,82 +21,82 @@ msgstr ""
 
 #: ../../09_user-guides/01_quick-start.md:5
 msgid "Quick Start: Your First Transfer"
-msgstr ""
+msgstr "البداية السريعة: نقلك الأول"
 
 #: ../../09_user-guides/01_quick-start.md:7
 msgid "This guide takes you from nothing to a confirmed transaction on the public Testnet in about ten minutes. You create an account, get free Testnet DCC from the faucet, send 1 DCC to another address and look the transaction up in the explorer."
-msgstr ""
+msgstr "هذا الدليل يأخذك من لا شيء إلى صفقة مؤكدة على الجمهور Testnet في حوالي 10 دقائق. تُنشئ حساباً، وتحصل على حرّة Testnet DCC مِنْ الصالةِ، أرسلْ 1 DCC إلى عنوان آخر ويَنْظرُ الصفقةَ فوق في المستكشفِ."
 
 #: ../../09_user-guides/01_quick-start.md:9
 #, python-brace-format
 msgid "Testnet DCC have no value, so nothing you do here can cost you money. Everything works the same way on Mainnet once you switch the node URL and chain ID (see {ref}`Moving to Mainnet <09_user-guides/01_quick-start:Moving to Mainnet>` at the end)."
-msgstr ""
+msgstr "Testnet DCC لَيْسَ لهُ قيمة، لذا لا شيء تَعمَلُ هنا يُمْكِنُ أَنْ يُكلّفَك مال. كل شيء يعمل بنفس الطريقة في Mainnet بمجرد أن تبدلي العقدة والهوية المتسلسلة (انظر {ref}`الانتقال إلى Mainnet <09_user-guides/01_quick-start:Moving to Mainnet>` في النهاية)."
 
 #: ../../09_user-guides/01_quick-start.md:12
 msgid "Followed end to end on the public Testnet on 2026-10-27: the faucet paid 10 DCC in transaction `26UPUF6Psun5KyPQ2UiZinzo9qDuny8Nu9TziwaoLPVy`, and the transfer in step 4 is transaction `BVVmaKri16PUJJqHbLmDRnzcyc4SdYbr6GQZgDhhFPxx` (height 99,864)."
-msgstr ""
+msgstr "(أ) بعد انتهاء الـ Testnet في عام 2026-10-27: دفعت الشركة 10 DCC في معاملة `26UPUF6Psun5KyPQ2UiZinzo9qDuny8Nu9TziwaoLPVy`، والتحويل في الخطوة 4 هو المعاملة `BVVmaKri16PUJJqHbLmDRnzcyc4SdYbr6GQZgDhhFPxx` (الحاسوب 99,864)."
 
 #: ../../09_user-guides/01_quick-start.md:15
 msgid "Step 1: Set Up a Project"
-msgstr ""
+msgstr "الخطوة 1: وضع مشروع"
 
 #: ../../09_user-guides/01_quick-start.md:17
 msgid "You need [Node.js](https://nodejs.org/) 24 or later. Create a folder for the project, mark it as an ES module and install the transactions package:"
-msgstr ""
+msgstr "أنت بحاجة إلى [Node.js](https://nodejs.org/) 24 أو بعد ذلك. إنشاء ملف للمشروع، ووضعه كوحدة ES وتركيب مجموعة الصفقات:"
 
 #: ../../09_user-guides/01_quick-start.md:26
 msgid "Node.js 24 runs TypeScript files directly, so you can save the scripts below as `.ts` files and run them with `node <file>.ts`. To use plain JavaScript instead, save them as `.js` files; the code is the same."
-msgstr ""
+msgstr "Node.js 24 تشغيل TypeScript الملفات مباشرة، حتى تتمكن من حفظ النصوص أسفل كما `.ts` ملفات و إدارتها مع `node <file>.ts`. (أ) استخدام الملفات بشكل واضح JavaScript بدلاً من ذلك، حفظها على أنها `.js` ملف؛ الرمز هو نفسه."
 
 #: ../../09_user-guides/01_quick-start.md:28
 msgid "Step 2: Create a Testnet Account"
-msgstr ""
+msgstr "الخطوة 2: إنشاء حساب Testnet"
 
 #: ../../09_user-guides/01_quick-start.md:30
 msgid "An account is a key pair derived from a seed phrase: 15 random words. Save this script as `create-account.ts` and run it with `node create-account.ts`:"
-msgstr ""
+msgstr "الحساب هو زوج مفاتيح مستمد من عبارة بذور: 15 كلمة عشوائية. وفّر هذا النص على أنه `create-account.ts` واديره مع `node create-account.ts`:"
 
 #: ../../09_user-guides/01_quick-start.md:37
 #, python-brace-format
 msgid "It prints the seed phrase and the account's Testnet address, which starts with `31`. Write the seed phrase down and keep it private: anyone who has it controls the account, and it cannot be recovered if you lose it. For what the seed, keys and address are, see {ref}`Account <02_decentralchain/01_account:Account>`."
-msgstr ""
+msgstr "يطبع عبارة البذور و عنوان الحساب Testnet الذي يبدأ مع `31`. اكتبي عبارة البذور وابقيها سرية أي شخص يتحكم بالحساب ولا يمكن استردادها إذا خسرتيها ما هي البذور، المفاتيح والعنوان، انظر {ref}`الحساب <02_decentralchain/01_account:Account>`."
 
 #: ../../09_user-guides/01_quick-start.md:39
 #, python-brace-format
 msgid "To manage the same account in a browser wallet, import the seed phrase into Cubensis Connect; see {doc}`Cubensis Connect User Guide <02_cubensis-connect>`."
-msgstr ""
+msgstr "ولتدبير نفس الحساب في محفظة بروزر، تستورد العبارة البذور إلى Cubensis Connect؛ انظر {doc}`Cubensis Connect User Guide <02_cubensis-connect>`."
 
 #: ../../09_user-guides/01_quick-start.md:41
 msgid "Step 3: Get Testnet DCC"
-msgstr ""
+msgstr "الخطوة 3: الحصول على Testnet DCC"
 
 #: ../../09_user-guides/01_quick-start.md:43
 msgid "The Testnet faucet sends 10 DCC to an address, once every 24 hours per address. Either open [testnet.decentralscan.com/faucet](https://testnet.decentralscan.com/faucet) and paste your address, or call the faucet's API:"
-msgstr ""
+msgstr "ويرسل فيوسيت Testnet 10 DCC إلى عنوان، مرة كل 24 ساعة لكل عنوان. إما أن تفتحي [testnet.decentralscan.com/faucet](https://testnet.decentralscan.com/faucet) وتعطين عنوانكِ أو تسمية \"المدير العام\""
 
 #: ../../09_user-guides/01_quick-start.md:51
 msgid "A successful request returns the transfer's ID:"
-msgstr ""
+msgstr "طلب ناجح يعيد هوية النقل"
 
 #: ../../09_user-guides/01_quick-start.md:57
 msgid "The faucet answers `429` if the address already received DCC in the last 24 hours, and `400` for an address that is not a Testnet address."
-msgstr ""
+msgstr "ويجيب الشقة على `429` إذا كان العنوان قد تلقى بالفعل DCC في الساعات الـ 24 الماضية، و `400` على عنوان ليس عنواناً من طراز Testnet."
 
 #: ../../09_user-guides/01_quick-start.md:59
 msgid "Check that the DCC arrived. Balances are in Decentralites, the smallest unit: 1 DCC is 100,000,000 Decentralites."
-msgstr ""
+msgstr "تحقق من أن الـ DCC قد وصل وتوجد الأرصدة في الوسطيات، وهي أصغر وحدة: 1 DCC هي 000 100 مركزي."
 
 #: ../../09_user-guides/01_quick-start.md:69
 msgid "Step 4: Send Your First Transfer"
-msgstr ""
+msgstr "الخطوة 4: إرسال أول نقل لك"
 
 #: ../../09_user-guides/01_quick-start.md:71
 msgid "Save this script as `send.ts`, put your seed phrase in `seed`, and run `node send.ts`. It sends 1 DCC to the address in `recipient`, which can be any Testnet address or alias:"
-msgstr ""
+msgstr "احفظ هذا النص على أنه `send.ts`، ضع عبارة بذورك في `seed`، واركض `node send.ts`. ويرسل العنوان 1 DCC إلى العنوان الوارد في `recipient`، الذي يمكن أن يكون أي عنوان Testnet أو اسم مستعار:"
 
 #: ../../09_user-guides/01_quick-start.md:78
 msgid "The output looks like this:"
-msgstr ""
+msgstr "الناتج يبدو هكذا:"
 
 #: ../../09_user-guides/01_quick-start.md:86
 msgid "The builder sets the minimum fee, 0.001 DCC, so the sender's balance drops by 1.001 DCC. Testnet blocks come about every 30 seconds, so `waitForTx` usually returns within a minute."
@@ -105,32 +105,32 @@ msgstr ""
 #: ../../09_user-guides/01_quick-start.md:88
 #, python-brace-format
 msgid "If the node rejects the transaction, `broadcast` throws with the node's error. The common ones are `negative dcc balance` (the faucet transfer is not in a block yet, or the balance is too low) and `Wrong chain-id` (the transaction was built for another network). See {ref}`Error Responses <05_node-guide/01_node-rest-api:Error Responses>` for the full list."
-msgstr ""
+msgstr "إذا رفض العقد الصفقة، `broadcast` رمي مع خطأ العقد. والوحدات المشتركة هي `negative dcc balance` (لا يدخل نقل الأوساخ في كتلة بعد، أو أن الرصيد منخفض جداً) و `Wrong chain-id` (أُنشئت الصفقة لشبكة أخرى). انظر {ref}`الردود الخاطئة <05_node-guide/01_node-rest-api:Error Responses>` للقائمة الكاملة."
 
 #: ../../09_user-guides/01_quick-start.md:90
 msgid "Step 5: Look It Up in the Explorer"
-msgstr ""
+msgstr "الخطوة 5: أنظروا إلى المستكشف"
 
 #: ../../09_user-guides/01_quick-start.md:92
 #, python-brace-format
 msgid "Open the link the script printed. DecentralScan shows the transaction's type, sender, recipient, amount, fee and the block it is in. Search for your address to see its balance and every transaction it took part in. {doc}`DecentralScan Guide <03_decentralscan>` explains each page."
-msgstr ""
+msgstr "افتحي الرابط الذي طبعه السيناريو DecentralScan يُظهرُ نوعَ الصفقةِ، مرسل، متلقي، كمية، رسوم وa كتلة هو في. ابحث عن عنوانك ليرى توازنه وكل صفقة شارك فيها {doc}`DecentralScan Guide <03_decentralscan>` يُوضّحُ كُل صفحة."
 
 #: ../../09_user-guides/01_quick-start.md:94
 msgid "Moving to Mainnet"
-msgstr ""
+msgstr "الانتقال إلى Mainnet"
 
 #: ../../09_user-guides/01_quick-start.md:96
 msgid "The same scripts work on Mainnet with three changes:"
-msgstr ""
+msgstr "وتعمل نفس النصوص على Mainnet مع ثلاثة تغييرات:"
 
 #: ../../09_user-guides/01_quick-start.md:98
 msgid "Use the Mainnet node, `https://mainnet-node.decentralchain.io`."
-msgstr ""
+msgstr "(أ) استخدام العقد Mainnet، `https://mainnet-node.decentralchain.io`."
 
 #: ../../09_user-guides/01_quick-start.md:99
 msgid "Pass `chainId: '?'`, and derive addresses with `libs.crypto.address(seed, '?')`. Mainnet addresses start with `3D`."
-msgstr ""
+msgstr "تخطى `chainId: '?'`، وتحصل على عناوين مع `libs.crypto.address(seed, '?')`. Mainnet عناوين تبدأ ب `3D`."
 
 #: ../../09_user-guides/01_quick-start.md:100
 msgid "Fund the account with real DCC, for example from [Decentral.Exchange](https://decentral.exchange/). There is no Mainnet faucet."
@@ -138,48 +138,48 @@ msgstr ""
 
 #: ../../09_user-guides/01_quick-start.md:102
 msgid "A seed phrase is not tied to a network: the same 15 words give a Testnet address and a different Mainnet address. Use a fresh seed for Mainnet rather than one you used in scripts or tests."
-msgstr ""
+msgstr "ولا ترتبط عبارة البذور بشبكة: فالكلمات الـ 15 ذاتها تعطي عنواناً Testnet وعنوان مختلف Mainnet. استخدم بذور جديدة لـ Mainnet بدلاً من واحدة استخدمتها في النصوص أو الاختبارات."
 
 #: ../../09_user-guides/01_quick-start.md:104
 msgid "Next Steps"
-msgstr ""
+msgstr "الخطوات التالية"
 
 #: ../../09_user-guides/01_quick-start.md:106
 #, python-brace-format
 msgid "{doc}`Leasing <04_leasing>`: lease DCC to a generating node and share its rewards."
-msgstr ""
+msgstr "{doc}`الإجازات <04_leasing>`: الإيجار DCC إلى عقد توليد وتقاسم مكافآته."
 
 #: ../../09_user-guides/01_quick-start.md:107
 #, python-brace-format
 msgid "{doc}`Sponsorship <05_sponsorship>`: let users pay fees in your token."
-msgstr ""
+msgstr "{doc}`الرعاية <05_sponsorship>`: السماح للمستعملين بدفع الرسوم في مركبك."
 
 #: ../../09_user-guides/01_quick-start.md:108
 #, python-brace-format
 msgid "{doc}`How-To Guides <../04_building-apps/03_how-to-guides>`: issue tokens, chain transactions and read chain data."
-msgstr ""
+msgstr "{doc}`How-To Guides <../04_building-apps/03_how-to-guides>`: رموز القضايا والمعاملات المتسلسلة والبيانات السلاسل."
 
 #: ../../09_user-guides/01_quick-start.md:109
 #, python-brace-format
 msgid "{doc}`Wallet Integration <../04_building-apps/04_wallet-integration>`: let users sign in their own wallet instead of handling seed phrases in your code."
-msgstr ""
+msgstr "{doc}`ألف - التكامل الجداري <../04_building-apps/04_wallet-integration>`: السماح للمستعملين التوقيع في محفظتهم الخاصة بدلا من التعامل مع العبارات البذور في رمزك."
 
 #: ../../09_user-guides/02_cubensis-connect.md:6
 msgid "Cubensis Connect User Guide"
-msgstr ""
+msgstr "Cubensis Connect User Guide"
 
 #: ../../09_user-guides/02_cubensis-connect.md:8
 msgid "Cubensis Connect is the DecentralChain browser wallet. It keeps your seed phrases and private keys encrypted inside the extension and signs transactions for websites without ever showing them your keys. A dApp asks; you see exactly what it wants to sign and approve or reject it."
-msgstr ""
+msgstr "Cubensis Connect هو DecentralChain محفظة بروزر. إنها تبقي عباراتك البذور والمفاتيح الخاصة مشفرة داخل التوسيع وتوقع المعاملات للمواقع دون أن تظهر لهم مفاتيحك سؤال dApp.ترى بالضبط ما يريد أن يوقع عليه ويوافق عليه أو يرفضه"
 
 #: ../../09_user-guides/02_cubensis-connect.md:10
 #, python-brace-format
 msgid "This page is for people using the wallet. If you are building a dApp that talks to it, see {doc}`Wallet Integration <../04_building-apps/04_wallet-integration>`."
-msgstr ""
+msgstr "هذه الصفحة للناس الذين يستخدمون المحفظة إذا كنت تبنّي dApp الذي يتكلّم معه، انظر {doc}`ألف - التكامل الجداري <../04_building-apps/04_wallet-integration>`."
 
 #: ../../09_user-guides/02_cubensis-connect.md:12
 msgid "Install the Extension"
-msgstr ""
+msgstr "تثبيت التمديد"
 
 #: ../../09_user-guides/02_cubensis-connect.md:14
 msgid "Cubensis Connect is not listed in the Chrome, Firefox, Edge or Opera extension stores yet, and it has no published release package. Until it does, build it from source. You need Git and Node.js 24.17 or later."
@@ -187,27 +187,27 @@ msgstr ""
 
 #: ../../09_user-guides/02_cubensis-connect.md:25
 msgid "The build writes one folder per browser under `apps/cubensis-connect/dist/`: `chrome`, `edge`, `firefox` and `opera`. Then load it:"
-msgstr ""
+msgstr "ويكتب المبنى ملفا واحدا لكل مصفوف تحت `apps/cubensis-connect/dist/`: `chrome` و `edge` و `firefox` و `opera`. ثم تحميله:"
 
 #: ../../09_user-guides/02_cubensis-connect.md:27
 msgid "**Chrome, Edge, Brave and other Chromium browsers.** Open `chrome://extensions` (`edge://extensions` in Edge), turn on **Developer mode**, click **Load unpacked** and select the `dist/chrome` folder (`dist/edge` for Edge)."
-msgstr ""
+msgstr "**الكروم، إدج، براف، ومروجات كروميوم أخرى.** افتح `chrome://extensions` (`edge://extensions` في (إدج)، شغل **أسلوب المطور**، انقر **محملة غير معبأة** واختيار الملف `dist/chrome` (`dist/edge` لإيدج)."
 
 #: ../../09_user-guides/02_cubensis-connect.md:28
 msgid "**Firefox.** Open `about:debugging#/runtime/this-firefox`, click **Load Temporary Add-on** and select `dist/firefox/manifest.json`. Firefox removes a temporary add-on when it restarts."
-msgstr ""
+msgstr "**(فايفوكس)** افتح `about:debugging#/runtime/this-firefox`، انقر **الإضافة المؤقتة** واختيار `dist/firefox/manifest.json` (فايفوكس) يزيل إضافات مؤقتة عندما يعيد تشغيلها"
 
 #: ../../09_user-guides/02_cubensis-connect.md:31
 msgid "These build steps follow the extension's release runbook (`apps/cubensis-connect/docs/RELEASE-RUNBOOK.md`). They were not run for this page."
-msgstr ""
+msgstr "هذه الخطوات البناءة تتبع دفتر الإطلاق (`apps/cubensis-connect/docs/RELEASE-RUNBOOK.md`). لم يترشحوا لهذه الصفحة"
 
 #: ../../09_user-guides/02_cubensis-connect.md:34
 msgid "Pin the extension to the toolbar so you can see when a website asks for a signature."
-msgstr ""
+msgstr "اضغطي على مُدَوّل الـ (أوتوبار) لترى متى سيطلب الموقع توقيعاً"
 
 #: ../../09_user-guides/02_cubensis-connect.md:36
 msgid "Create an Account"
-msgstr ""
+msgstr "إنشاء حساب"
 
 #: ../../09_user-guides/02_cubensis-connect.md:38
 msgid "Click the Cubensis Connect icon and then **Get Started**."
@@ -215,19 +215,19 @@ msgstr ""
 
 #: ../../09_user-guides/02_cubensis-connect.md:39
 msgid "On **Protect Your Account**, create a password and confirm it, accept the terms and click **Continue**. The password encrypts your accounts on this device only. It is not a recovery method."
-msgstr ""
+msgstr "في **احمي حسابك**، إنشاء كلمة سر وتأكيدها، وقبول المصطلحات ونقر **استمر**. كلمة السر تُشفّر حساباتك على هذا الجهاز فقط إنها ليست طريقة للتعافي"
 
 #: ../../09_user-guides/02_cubensis-connect.md:40
 msgid "Click **Create a new account** and pick one of the offered addresses by its avatar. Each avatar belongs to a different new address, so it helps you recognise the account later. You can't change it afterwards."
-msgstr ""
+msgstr "إضغط **إنشاء حساب جديد** وإختار أحد العناوين التي عرضها أفاتارها كلّ أفاتار ينتمي إلى عنوان جديد مختلف لذا يساعدك على التعرف على الحساب لاحقاً لا يمكنك تغييره بعد ذلك"
 
 #: ../../09_user-guides/02_cubensis-connect.md:41
 msgid "Write down the 15-word backup phrase shown on the next screen, then confirm it by tapping the words in the right order. If you lose the phrase, nobody can restore the account."
-msgstr ""
+msgstr "اكتبي العبارة الـ15 كلمة الإحتياطية التي تظهر على الشاشة التالية، ثم تأكدي من ذلك بتدوين الكلمات في الترتيب الصحيح. إذا خسرت العبارة، لا أحد يستطيع إعادة الحساب."
 
 #: ../../09_user-guides/02_cubensis-connect.md:42
 msgid "Give the account a name. The name is stored only in your extension."
-msgstr ""
+msgstr "أعطِ الحسابَ a اسم. الاسم مخزن فقط في تمديدك."
 
 #: ../../09_user-guides/02_cubensis-connect.md:44
 msgid "Import an Existing Account"
@@ -235,19 +235,19 @@ msgstr ""
 
 #: ../../09_user-guides/02_cubensis-connect.md:46
 msgid "Click **Add account** and choose **Or import via**:"
-msgstr ""
+msgstr "إضغط **حساب مضاف** و إختر **أو الاستيراد عبر**"
 
 #: ../../09_user-guides/02_cubensis-connect.md:30
 msgid "Option"
-msgstr ""
+msgstr "الخيار"
 
 #: ../../09_user-guides/02_cubensis-connect.md:30
 msgid "Use it for"
-msgstr ""
+msgstr "استخدمه"
 
 #: ../../09_user-guides/02_cubensis-connect.md:30
 msgid "**Seed Phrase or Private Key**"
-msgstr ""
+msgstr "**مفتاح البذور أو المفتاح الخاص**"
 
 #: ../../09_user-guides/02_cubensis-connect.md:30
 msgid "The 15 words of an account, a base58-encoded seed (**Encoded seed** tab) or a raw private key (**Private key** tab)"
@@ -255,7 +255,7 @@ msgstr ""
 
 #: ../../09_user-guides/02_cubensis-connect.md:30
 msgid "**Keystore File**"
-msgstr ""
+msgstr "**مفتاح File**"
 
 #: ../../09_user-guides/02_cubensis-connect.md:30
 msgid "A file exported from Cubensis Connect with **Export accounts**"
@@ -263,11 +263,11 @@ msgstr ""
 
 #: ../../09_user-guides/02_cubensis-connect.md:30
 msgid "**Ledger**"
-msgstr ""
+msgstr "**Ledger**"
 
 #: ../../09_user-guides/02_cubensis-connect.md:30
 msgid "A Ledger device with the DCC app open; the keys stay on the device"
-msgstr ""
+msgstr "جهاز ليدجر مع DCC التطبيق مفتوح؛ المفاتيح تبقى على الجهاز"
 
 #: ../../09_user-guides/02_cubensis-connect.md:54
 #, python-brace-format
@@ -276,75 +276,75 @@ msgstr ""
 
 #: ../../09_user-guides/02_cubensis-connect.md:56
 msgid "Switch Networks"
-msgstr ""
+msgstr "شبكات التبديل"
 
 #: ../../09_user-guides/02_cubensis-connect.md:58
 msgid "The network menu at the bottom of the popup switches between **Mainnet**, **Testnet**, **Stagenet** and **Custom**. Each network has its own list of accounts, because the same seed phrase gives a different address on each network."
-msgstr ""
+msgstr "قائمة الشبكة في قاع تبديل البوب بين **Mainnet** و **Testnet** و **Stagenet** و **العرف**. ولكل شبكة قائمة خاصة بها للحسابات، لأن نفس العبارة البذور تعطي عنوانا مختلفا على كل شبكة."
 
 #: ../../09_user-guides/02_cubensis-connect.md:30
 #: ../../09_user-guides/03_decentralscan.md
 msgid "Network"
-msgstr ""
+msgstr "الشبكة"
 
 #: ../../09_user-guides/02_cubensis-connect.md:30
 msgid "Chain ID"
-msgstr ""
+msgstr "هويّة شاين"
 
 #: ../../09_user-guides/02_cubensis-connect.md:30
 msgid "Node"
-msgstr ""
+msgstr "Node"
 
 #: ../../09_user-guides/02_cubensis-connect.md:30
 #: ../../09_user-guides/03_decentralscan.md
 msgid "Mainnet"
-msgstr ""
+msgstr "Mainnet"
 
 #: ../../09_user-guides/02_cubensis-connect.md:30
 msgid "`?`"
-msgstr ""
+msgstr "`?`"
 
 #: ../../09_user-guides/02_cubensis-connect.md:30
 msgid "`https://mainnet-node.decentralchain.io`"
-msgstr ""
+msgstr "`https://mainnet-node.decentralchain.io`"
 
 #: ../../09_user-guides/02_cubensis-connect.md:30
 #: ../../09_user-guides/03_decentralscan.md
 msgid "Testnet"
-msgstr ""
+msgstr "Testnet"
 
 #: ../../09_user-guides/02_cubensis-connect.md:30
 msgid "`!`"
-msgstr ""
+msgstr "`!`"
 
 #: ../../09_user-guides/02_cubensis-connect.md:30
 msgid "`https://testnet-node.decentralchain.io`"
-msgstr ""
+msgstr "`https://testnet-node.decentralchain.io`"
 
 #: ../../09_user-guides/02_cubensis-connect.md:30
 msgid "Stagenet"
-msgstr ""
+msgstr "Stagenet"
 
 #: ../../09_user-guides/02_cubensis-connect.md:30
 msgid "`S`"
-msgstr ""
+msgstr "`S`"
 
 #: ../../09_user-guides/02_cubensis-connect.md:30
 msgid "No public Stagenet yet"
-msgstr ""
+msgstr "لا يوجد مسرحية عامة بعد"
 
 #: ../../09_user-guides/02_cubensis-connect.md:30
 msgid "Custom"
-msgstr ""
+msgstr "العرف"
 
 #: ../../09_user-guides/02_cubensis-connect.md:30
 msgid "Any"
-msgstr ""
+msgstr "Any"
 
 #: ../../09_user-guides/02_cubensis-connect.md:30
 #, python-brace-format
 msgid "A node you run, for example on a {doc}`custom blockchain <../05_node-guide/03_custom-blockchain>`"
-msgstr ""
+msgstr "على سبيل المثال على {doc}`حجب العرف <../05_node-guide/03_custom-blockchain>`"
 
 #: ../../09_user-guides/02_cubensis-connect.md:67
 msgid "**Edit** next to the network opens its **Node address** and **Matcher address**, so you can point the wallet at your own node."
@@ -352,23 +352,23 @@ msgstr ""
 
 #: ../../09_user-guides/02_cubensis-connect.md:69
 msgid "To try things out without real money, switch to **Testnet**, copy your address and get free DCC from the [Testnet faucet](https://testnet.decentralscan.com/faucet)."
-msgstr ""
+msgstr "لتجربة الأمور بدون مال حقيقي، التحول إلى **Testnet**، نسخ عنوانك والحصول على مجانا DCC من [Testnetالفاصلة](https://testnet.decentralscan.com/faucet)."
 
 #: ../../09_user-guides/02_cubensis-connect.md:71
 msgid "Send Tokens"
-msgstr ""
+msgstr "أرسل (توكينز)"
 
 #: ../../09_user-guides/02_cubensis-connect.md:73
 msgid "Open an asset in the wallet and click **Send**. Fill in the **Recipient** (an address or alias on the same network), the **Amount** and an optional **Attachment** of up to 140 bytes that the recipient sees. Review the confirmation screen, including the fee, and approve it."
-msgstr ""
+msgstr "افتحي محفظة و اضغطي **أرسل** ملء **المتلقي** (عنوان أو اسم مستعار على نفس الشبكة)، و **المبلغ** وخيار **الملحق** يصل إلى 140 بوصة يرى المتلقيها. راجعي شاشه التثبيت، بما في ذلك الرسوم و وافقي عليها"
 
 #: ../../09_user-guides/02_cubensis-connect.md:75
 msgid "Use a dApp"
-msgstr ""
+msgstr "استخدام dApp"
 
 #: ../../09_user-guides/02_cubensis-connect.md:77
 msgid "The first time a website calls Cubensis Connect, the extension asks whether to **Allow access**. Allowing it shares your address and public key with the site, never your seed or private key. If you reject it, the site is blocked and gets the error `Api rejected by user` for every later request, until you allow it in **Permissions control**."
-msgstr ""
+msgstr "وفي المرة الأولى التي يتصل فيها الموقع الشبكي Cubensis Connect، يطلب التمديد ما إذا كان ينبغي **السماح بالدخول**. السماح له بمشاركة عنوانك والمفتاح العام مع الموقع، لا البذور أو مفتاح الخاص. إذا رفضته، الموقع مغلق ويحصل على الخطأ `Api rejected by user` لكل طلب لاحق، حتى تسمح به في **مراقبة الانبعاثات**."
 
 #: ../../09_user-guides/02_cubensis-connect.md:79
 msgid "After that, every transaction the site wants opens a confirmation window with the transaction type, amounts, recipient, fee and, for a dApp call, the function and its arguments. Click **Approve** to sign it or **Reject** to refuse. Check the details every time: an approved transaction cannot be undone."
@@ -376,27 +376,27 @@ msgstr ""
 
 #: ../../09_user-guides/02_cubensis-connect.md:81
 msgid "For a site you trust and use often, **Permission details** can allow automatic signing for 15, 30 or 60 minutes up to a **Spending limit**. Leave it at **Don't automatically sign** unless you need it."
-msgstr ""
+msgstr "بالنسبة لموقع تثق فيه وتستعمله في كثير من الأحيان، **تفاصيل الإذن** يمكن أن يسمح بالتوقيع التلقائي لمدة 15 أو 30 أو 60 دقيقة حتى **الحد الأقصى للنفقات**. دعه في **لا توقع تلقائياً** إلا إذا كنت بحاجة إليه."
 
 #: ../../09_user-guides/02_cubensis-connect.md:83
 msgid "Settings and Safety"
-msgstr ""
+msgstr "الترتيبات والسلامة"
 
 #: ../../09_user-guides/02_cubensis-connect.md:85
 msgid "**Settings** holds:"
-msgstr ""
+msgstr "**الترتيبات** يَحْملُ:"
 
 #: ../../09_user-guides/02_cubensis-connect.md:87
 msgid "**Permissions control**: the sites you approved or rejected. Revoke a site here at any time."
-msgstr ""
+msgstr "**مراقبة الانبعاثات**: المواقع التي وافقت أو رفضت. قم بفحص موقع هنا في أي وقت"
 
 #: ../../09_user-guides/02_cubensis-connect.md:88
 msgid "**Network**: the node and matcher addresses of each network."
-msgstr ""
+msgstr "**الشبكة**: العناوين المعينة والمطابقة لكل شبكة."
 
 #: ../../09_user-guides/02_cubensis-connect.md:89
 msgid "**Export and import**: save your accounts and address book to an encrypted keystore file, or load one."
-msgstr ""
+msgstr "**الصادرات والواردات**: حفظ حساباتك وكتاب عنوان إلى ملف مفاتيح مشفرة، أو تحميل واحد."
 
 #: ../../09_user-guides/02_cubensis-connect.md:90
 msgid "**Session timeout**: how long the extension stays unlocked after you stop using it."
@@ -404,199 +404,199 @@ msgstr ""
 
 #: ../../09_user-guides/02_cubensis-connect.md:91
 msgid "**Auto-click protection** and **Suspicious assets protection**: defences against scripted clicks and scam tokens."
-msgstr ""
+msgstr "**حماية البقعة الآلية** و **حماية الأصول المشبوهة**: دفاعات ضد النقر المصوّبة و الشيكات"
 
 #: ../../09_user-guides/02_cubensis-connect.md:92
 msgid "**Change password**, **Change language** and **Delete accounts**."
-msgstr ""
+msgstr "**تغيير كلمة السر**، **تغيير اللغة** و **تحذف الحسابات**"
 
 #: ../../09_user-guides/02_cubensis-connect.md:94
 msgid "If you forget the password, click **I forgot password** on the login screen. Cubensis Connect cannot decrypt your accounts without it, so the only way back is to delete every account (you type `DELETE ALL ACCOUNTS` to confirm), set a new password and import each account again from its seed phrase."
-msgstr ""
+msgstr "إذا نسيت كلمة السر، نقر **نسيت كلمة السر** على الشاشة. Cubensis Connectلا يمكن أن يفكك حساباتك بدونه، لذا الطريقة الوحيدة للعوده هي حذف كل حساب (تطبع `DELETE ALL ACCOUNTS`) لتؤكد)، وتضع كلمة سر جديدة وتستورد كل حساب مرة أخرى من عبارة البذور."
 
 #: ../../09_user-guides/02_cubensis-connect.md:96
 msgid "Never type your seed phrase into a website. A dApp that works with Cubensis Connect never needs it."
-msgstr ""
+msgstr "لا تطبع أبداً عبادتك البذرية إلى موقع إلكتروني dApp الذي يعمل مع Cubensis Connect لا يحتاجه أبداً"
 
 #: ../../09_user-guides/03_decentralscan.md:6
 msgid "DecentralScan Guide"
-msgstr ""
+msgstr "DecentralScan Guide"
 
 #: ../../09_user-guides/03_decentralscan.md:8
 msgid "DecentralScan is the DecentralChain block explorer. It shows every block, transaction, account and token on the chain, read straight from the network's nodes. You don't need an account or a wallet to use it."
-msgstr ""
+msgstr "DecentralScan هو المستكشف الـ DecentralChain إنه يظهر كلّ كتلة، صفقة، حساب وخروط على السلسلة، يُقرأ مباشرةً من عقد الشبكة. لا تحتاج إلى حساب أو محفظة لتستخدمه"
 
 #: ../../09_user-guides/03_decentralscan.md:10
 msgid "Each network has its own explorer. A transaction or address from one network can't be found on the other's explorer."
-msgstr ""
+msgstr "كل شبكة لها مستكشف خاص بها. صفقة أو عنوان من شبكة واحدة لا يمكن العثور على مستكشف آخر."
 
 #: ../../09_user-guides/03_decentralscan.md
 msgid "Explorer"
-msgstr ""
+msgstr "Explorer"
 
 #: ../../09_user-guides/03_decentralscan.md
 msgid "[decentralscan.com](https://decentralscan.com/)"
-msgstr ""
+msgstr "[decentralscan.com](https://decentralscan.com/)"
 
 #: ../../09_user-guides/03_decentralscan.md
 msgid "[testnet.decentralscan.com](https://testnet.decentralscan.com/), with the [Testnet faucet](https://testnet.decentralscan.com/faucet)"
-msgstr ""
+msgstr "[testnet.decentralscan.com](https://testnet.decentralscan.com/) مع [Testnetالفاصلة](https://testnet.decentralscan.com/faucet)"
 
 #: ../../09_user-guides/03_decentralscan.md:17
 msgid "Search"
-msgstr ""
+msgstr "البحث"
 
 #: ../../09_user-guides/03_decentralscan.md:19
 msgid "The search bar at the top of every page takes a block height, a block ID, a transaction ID, an asset ID or an address:"
-msgstr ""
+msgstr "شريط البحث في أعلى كل صفحة يأخذ طولاً مربعاً، هوية كتلة، هوية معاملة، هوية أصلية أو عنوان:"
 
 #: ../../09_user-guides/03_decentralscan.md
 msgid "You type"
-msgstr ""
+msgstr "أنت من النوع"
 
 #: ../../09_user-guides/03_decentralscan.md
 msgid "DecentralScan opens"
-msgstr ""
+msgstr "DecentralScanمفتوح"
 
 #: ../../09_user-guides/03_decentralscan.md
 msgid "Digits only, for example `99864`"
-msgstr ""
+msgstr "النبذات فقط، على سبيل المثال `99864`"
 
 #: ../../09_user-guides/03_decentralscan.md
 msgid "The block at that height"
-msgstr ""
+msgstr "المبنى في ذلك الطول"
 
 #: ../../09_user-guides/03_decentralscan.md
 msgid "A 40- to 79-character ID"
-msgstr ""
+msgstr "هوية من 40 إلى 79 سمة"
 
 #: ../../09_user-guides/03_decentralscan.md
 msgid "The block with that ID; if there is none, the transaction; if there is none, the asset"
-msgstr ""
+msgstr "اللبنة التي بها بطاقة الهوية تلك؛ وإذا لم يكن هناك أي منها، الصفقة؛ وإذا لم يكن هناك أي منها، فإن الأصول"
 
 #: ../../09_user-guides/03_decentralscan.md
 msgid "Anything shorter"
-msgstr ""
+msgstr "أي شيء أقصر"
 
 #: ../../09_user-guides/03_decentralscan.md
 msgid "The address page for it"
-msgstr ""
+msgstr "صفحة العنوان لها"
 
 #: ../../09_user-guides/03_decentralscan.md:27
 msgid "Search doesn't resolve aliases. To find the address behind an alias, ask a node: `https://testnet-node.decentralchain.io/alias/by-alias/<alias>` returns it. A block signature (86 to 88 characters) is not an ID: use the **Block ID** shown on the block's page."
-msgstr ""
+msgstr "البحث لا يحل الأسماء المستعارة للعثور على العنوان وراء اسم مستعار، نطلب عقدة: `https://testnet-node.decentralchain.io/alias/by-alias/<alias>` يعيدها. التوقيع على الكتل (86 إلى 88 شخص) ليس هويّة: استخدم **هوية القفل** على صفحة المبنى."
 
 #: ../../09_user-guides/03_decentralscan.md:29
 msgid "Pages"
-msgstr ""
+msgstr "الصفحة"
 
 #: ../../09_user-guides/03_decentralscan.md:31
 msgid "**Dashboard** gives a network overview: the current height, the latest block, the node version and the most recent blocks. It is the start page."
-msgstr ""
+msgstr "**لوحة كاميرا** يعطي لمحة عامة عن الشبكة: الطول الحالي، والمبنى الأخير، ونسخة العقد وأحدث المباني. إنها الصفحة الأولى"
 
 #: ../../09_user-guides/03_decentralscan.md:33
 msgid "**Blocks** lists the latest blocks. A block's page shows its height, ID, parent block, generator, timestamp, size, reward, the transactions in it and the raw block data."
-msgstr ""
+msgstr "**حواجز** يُسجّلُ آخر كتل. صفحة الحي تظهر ارتفاعها، هويتها، كتلة الوالدين، مولدات، مصباح، حجم، مكافأة، الصفقات في داخله، وبيانات الكتلة الخام."
 
 #: ../../09_user-guides/03_decentralscan.md:35
 msgid "**Transactions** has two tabs. **Lookup** finds a transaction by ID and shows its type, status, sender, recipient, amounts, fee, block height and every field of the transaction. **Mempool** lists the unconfirmed transactions waiting for a block."
-msgstr ""
+msgstr "**المعاملات** عِنْدَهُ دفتران. **انظر** يجد معاملة من جانب الهوية ويبيّن نوعها، ومركزها، ومرسلها، ومتلقيها، ومقداراتها، ورسومها، وطولها كتلة، وكل ميدان من ميادين المعاملة. **ممبول** يُدرجُ الصفقاتَ غير المُؤكَّدَة في انتظارِ a كتلة."
 
 #: ../../09_user-guides/03_decentralscan.md:37
 msgid "**Address** shows an account. The **Balances** tab has its DCC and token balances, **Transactions** its history (filter by type, or search by sender or recipient), **NFTs** its non-fungible tokens and **Leases** its active leases."
-msgstr ""
+msgstr "**العنوان** يُظهرُ حساباً. (أ) يكون للرقم **الأرصدة** DCC والأرصدة المكسورة، **المعاملات** تاريخه (تصفيف حسب النوع أو البحث بواسطة مرسل أو متلقي)، **NFTs** مشارفها غير الجائرة و **الإيجارات** عقود إيجارها الفعلية."
 
 #: ../../09_user-guides/03_decentralscan.md:39
 msgid "**Assets** shows a token: name, ID, issuer, decimals, total quantity, whether it is reissuable, its activity, and the raw asset data the node returns. The distribution tool lists the token's holders."
-msgstr ""
+msgstr "**الأصول** يُظهر رمزاً: الاسم، الهوية، المصدر، العشرات، الكمية الإجمالية، ما إذا كان يمكن إعادة إصداره، نشاطه، وبيانات الأصول الخام التي تعود إليها العقدة. أداة التوزيع تُدرج حاملي البطن."
 
 #: ../../09_user-guides/03_decentralscan.md:41
 msgid "**DEX Pairs** lists the trading pairs on the network's matcher."
-msgstr ""
+msgstr "**DEX Pairs** يُسجّلُ الأزواجَ التجاريةَ على مطابقِ الشبكةِ."
 
 #: ../../09_user-guides/03_decentralscan.md:43
 msgid "**Network** shows the network itself: an **Overview**, the **Peers** of the public node (connected, all, suspended and blacklisted) and the **Node** it reads from."
-msgstr ""
+msgstr "**الشبكة** يُظهر الشبكة نفسها: **لمحة عامة**، **Peers** من العقد العام (مترابط، كلّ، معلّق ومزدحم) و **Node**."
 
 #: ../../09_user-guides/03_decentralscan.md:45
 msgid "**Stress** is a read-only monitor of chain activity on the Testnet: blocks, mass transfers, transactions per second and block times."
-msgstr ""
+msgstr "**الإجهاد** هو رصد فقط للنشاط التسلسلي على Testnet: كتل، عمليات نقل جماعية، معاملات في المرتين الثانية والسبعة."
 
 #: ../../09_user-guides/03_decentralscan.md:47
 msgid "Direct Links"
-msgstr ""
+msgstr "الروابط المباشرة"
 
 #: ../../09_user-guides/03_decentralscan.md:49
 msgid "Every page has a stable URL, so you can link straight to it from an app, a support answer or a bug report:"
-msgstr ""
+msgstr "كل صفحة لها URL مستقرة، حتى تتمكن من ربط مباشرة بها من التطبيق، جواب الدعم أو تقرير البق:"
 
 #: ../../09_user-guides/03_decentralscan.md
 msgid "Page"
-msgstr ""
+msgstr "الصفحة"
 
 #: ../../09_user-guides/03_decentralscan.md
 msgid "URL"
-msgstr ""
+msgstr "URL"
 
 #: ../../09_user-guides/03_decentralscan.md
 msgid "Transaction"
-msgstr ""
+msgstr "المعاملات"
 
 #: ../../09_user-guides/03_decentralscan.md
 msgid "`https://testnet.decentralscan.com/transaction?id=<transaction ID>`"
-msgstr ""
+msgstr "`https://testnet.decentralscan.com/transaction?id=<transaction ID>`"
 
 #: ../../09_user-guides/03_decentralscan.md
 msgid "Address"
-msgstr ""
+msgstr "العنوان"
 
 #: ../../09_user-guides/03_decentralscan.md
 msgid "`https://testnet.decentralscan.com/address?addr=<address>`"
-msgstr ""
+msgstr "`https://testnet.decentralscan.com/address?addr=<address>`"
 
 #: ../../09_user-guides/03_decentralscan.md
 msgid "Block by height"
-msgstr ""
+msgstr "القفل بالطول"
 
 #: ../../09_user-guides/03_decentralscan.md
 msgid "`https://testnet.decentralscan.com/blockdetail?height=<height>`"
-msgstr ""
+msgstr "`https://testnet.decentralscan.com/blockdetail?height=<height>`"
 
 #: ../../09_user-guides/03_decentralscan.md
 msgid "Block by ID"
-msgstr ""
+msgstr "قفل من قبل الهوية"
 
 #: ../../09_user-guides/03_decentralscan.md
 msgid "`https://testnet.decentralscan.com/blockdetail?id=<block ID>`"
-msgstr ""
+msgstr "`https://testnet.decentralscan.com/blockdetail?id=<block ID>`"
 
 #: ../../09_user-guides/03_decentralscan.md
 msgid "Asset"
-msgstr ""
+msgstr "الأصول"
 
 #: ../../09_user-guides/03_decentralscan.md
 msgid "`https://testnet.decentralscan.com/asset?id=<asset ID>`"
-msgstr ""
+msgstr "`https://testnet.decentralscan.com/asset?id=<asset ID>`"
 
 #: ../../09_user-guides/03_decentralscan.md
 msgid "Unconfirmed transactions"
-msgstr ""
+msgstr "المعاملات غير المؤكدة"
 
 #: ../../09_user-guides/03_decentralscan.md
 msgid "`https://testnet.decentralscan.com/transaction?tab=mempool`"
-msgstr ""
+msgstr "`https://testnet.decentralscan.com/transaction?tab=mempool`"
 
 #: ../../09_user-guides/03_decentralscan.md:60
 msgid "For Mainnet, use `https://decentralscan.com` in place of `https://testnet.decentralscan.com`."
-msgstr ""
+msgstr "بالنسبة Mainnet، استخدام `https://decentralscan.com` بدلاً من `https://testnet.decentralscan.com`."
 
 #: ../../09_user-guides/03_decentralscan.md:62
 msgid "Check a Transaction"
-msgstr ""
+msgstr "تحقق من المعاملات"
 
 #: ../../09_user-guides/03_decentralscan.md:64
 msgid "To check whether a payment arrived, open its transaction page:"
-msgstr ""
+msgstr "وللتحقق مما إذا كان الدفع قد وصل، يفتح صفحة صفحته الخاصة بالمعاملات:"
 
 #: ../../09_user-guides/03_decentralscan.md:66
 msgid "**Not found** means the node doesn't know the transaction. It was not broadcast, was rejected, or was broadcast to the other network."
@@ -604,11 +604,11 @@ msgstr ""
 
 #: ../../09_user-guides/03_decentralscan.md:67
 msgid "**In the Mempool tab** means the node accepted it but it is not in a block yet. On the Testnet a block comes about every 30 seconds; on Mainnet about every 60."
-msgstr ""
+msgstr "**في كتاب (ممبول)** يعني أن العقد قبله لكنه ليس في مربع بعد. على Testnet a كتلة تَجيءُ حول كُلّ 30 ثانيةً؛ على Mainnet حول كُلّ 60."
 
 #: ../../09_user-guides/03_decentralscan.md:68
 msgid "**A block height** means it is on the chain. The status shows whether it succeeded. A dApp call can be in a block and still have failed: the fee is charged, but none of its actions happen."
-msgstr ""
+msgstr "**طول الحي** يَعْني هو على السلسلةِ. ويبين الوضع ما إذا كان قد نجح. ويمكن أن تكون مكالمة dApp في كتلة ولا تزال فشلت: فالرسوم محملة، ولكن لا يحدث أي من أفعالها."
 
 #: ../../09_user-guides/03_decentralscan.md:70
 #, python-brace-format
@@ -617,38 +617,38 @@ msgstr ""
 
 #: ../../09_user-guides/03_decentralscan.md:72
 msgid "Get Testnet DCC"
-msgstr ""
+msgstr "الحصول على Testnet DCC"
 
 #: ../../09_user-guides/03_decentralscan.md:74
 #, python-brace-format
 msgid "The [Testnet faucet](https://testnet.decentralscan.com/faucet) sends 10 DCC to a Testnet address, once every 24 hours per address. Paste the address and submit. The {doc}`Quick Start <01_quick-start>` shows the same request from the command line."
-msgstr ""
+msgstr "يرسل [Testnetالفاصلة](https://testnet.decentralscan.com/faucet) 10DCC إلى عنوان Testnet، مرة كل 24 ساعة لكل عنوان. استلم العنوان واقدمه ويظهر {doc}`البداية السريعة <01_quick-start>` نفس الطلب من خط القيادة."
 
 #: ../../09_user-guides/03_decentralscan.md:76
 msgid "Everything Is Public"
-msgstr ""
+msgstr "كل شيء عام"
 
 #: ../../09_user-guides/03_decentralscan.md:78
 msgid "An explorer shows only what is on the chain, and everything on the chain is public: every balance, every transaction and every data entry of every account. Don't put anything private in an attachment or a data entry."
-msgstr ""
+msgstr "المستكشف يُظهر فقط ما هو على السلسلة وكل شيء في السلسلة عام: كل توازن، كل معاملة وكل بيانات لكل حساب. لا تضع أي شيء خاص في ملحق أو دخول البيانات"
 
 #: ../../09_user-guides/03_decentralscan.md:80
 #, python-brace-format
 msgid "For the same data from code, use the node's REST API (see {doc}`Node REST API <../05_node-guide/01_node-rest-api>`) or the {doc}`Data Service API <../04_building-apps/06_data-service-api>`."
-msgstr ""
+msgstr "لنفس البيانات من الشفرة، استخدمي جهاز تسجيل الصوت (انظر {doc}`Node REST API <../05_node-guide/01_node-rest-api>`) أو {doc}`دائرة البيانات <../04_building-apps/06_data-service-api>`."
 
 #: ../../09_user-guides/04_leasing.md:7 ../../09_user-guides/index.md:66
 msgid "Leasing"
-msgstr ""
+msgstr "الإجازات"
 
 #: ../../09_user-guides/04_leasing.md:9
 #, python-brace-format
 msgid "Leasing lets you put your DCC behind a generating node without sending them to it. The node counts your DCC in its generating balance, which raises its chance to produce blocks, and many node operators share their block rewards with the accounts that lease to them. For how leasing fits into consensus, see {ref}`Leased Proof of Stake <02_decentralchain/05_node:Leased Proof of Stake>`."
-msgstr ""
+msgstr "التسريح يجعلك تضعين DCC خلف عقدة توليد بدون إرسالهم إليها ويحسب العقد الخاص بك DCC في ميزانه المولد، الذي يزيد من فرصته لإنتاج كتل، والعديد من مشغلي الشمود يتقاسمون مكافآتهم الأساسية مع الحسابات التي تستأجرها. وللاطلاع على مدى تناسب التأجير مع توافق الآراء، انظر {ref}`دليل المأخوذة <02_decentralchain/05_node:Leased Proof of Stake>`."
 
 #: ../../09_user-guides/04_leasing.md:11
 msgid "How a Lease Works"
-msgstr ""
+msgstr "كيف يعمل (لايس)"
 
 #: ../../09_user-guides/04_leasing.md:13
 msgid "**Your DCC stay in your account.** A lease does not move them. It locks the leased amount so you can't spend it, and you can end the lease at any time with a Lease Cancel transaction."
@@ -656,7 +656,7 @@ msgstr ""
 
 #: ../../09_user-guides/04_leasing.md:14
 msgid "**The node gets no control over them.** It can't spend, transfer or lease them on."
-msgstr ""
+msgstr "**العقيد لا يتحكم بهم** لا يمكن أن تنفق أو تنقل أو تستأجرهم"
 
 #: ../../09_user-guides/04_leasing.md:15
 msgid "**It takes time to count.** A node's generating balance is the lowest effective balance it had over the last 1,000 blocks, so leased DCC raise it only after they have been leased for 1,000 blocks: about 8 hours on the Testnet and 17 hours on Mainnet. Cancelling removes them at once."
@@ -664,7 +664,7 @@ msgstr ""
 
 #: ../../09_user-guides/04_leasing.md:16
 msgid "**Rewards are up to the operator.** The protocol pays block rewards and fees to the generating node, not to the accounts that lease to it. Any payout to lessors is the node operator's own arrangement: check how and how often an operator pays before you lease."
-msgstr ""
+msgstr "**العودة إلى المشغل.** البروتوكول يدفع مكافآت ورسوماً لقطعة التوليد، ليس للحسابات التي تستأجرها. أي دفع للمؤجرين هو ترتيب مشغل العقد الخاص: التحقق من كيفية وكم من الأحيان يدفع المشغل قبل عقد الإيجار."
 
 #: ../../09_user-guides/04_leasing.md:17
 msgid "**Only DCC can be leased.** Tokens can't."
@@ -672,194 +672,194 @@ msgstr ""
 
 #: ../../09_user-guides/04_leasing.md:19
 msgid "Each Lease and Lease Cancel transaction costs 0.001 DCC (0.005 DCC from an account with a script)."
-msgstr ""
+msgstr "وتكلف كل عملية من معاملات الإيجار والبيع 0.001 DCC (0.005 DCC من حساب مع نص)."
 
 #: ../../09_user-guides/04_leasing.md
 msgid "Balance"
-msgstr ""
+msgstr "الرصيد"
 
 #: ../../09_user-guides/04_leasing.md
 msgid "Meaning"
-msgstr ""
+msgstr "معنى"
 
 #: ../../09_user-guides/04_leasing.md
 msgid "Regular"
-msgstr ""
+msgstr "عادية"
 
 #: ../../09_user-guides/04_leasing.md
 msgid "All the DCC the account holds"
-msgstr ""
+msgstr "جميع DCCالحساب يمسك"
 
 #: ../../09_user-guides/04_leasing.md
 msgid "Available"
-msgstr ""
+msgstr "Available"
 
 #: ../../09_user-guides/04_leasing.md
 msgid "Regular minus what the account leased out: what it can spend"
-msgstr ""
+msgstr "مطروحاً منه ما يستأجره الحساب: ما يمكن أن ينفق"
 
 #: ../../09_user-guides/04_leasing.md
 msgid "Effective"
-msgstr ""
+msgstr "فعال"
 
 #: ../../09_user-guides/04_leasing.md
 msgid "Available plus what others leased to it"
-msgstr ""
+msgstr "متاحة بالإضافة إلى ما يستأجره الآخرون"
 
 #: ../../09_user-guides/04_leasing.md
 msgid "Generating"
-msgstr ""
+msgstr "التوليد"
 
 #: ../../09_user-guides/04_leasing.md
 msgid "The lowest effective balance over the last 1,000 blocks"
-msgstr ""
+msgstr "أدنى توازن فعال على الـ 000 1 مربع"
 
 #: ../../09_user-guides/04_leasing.md:28
 msgid "Choose a Node"
-msgstr ""
+msgstr "اختر النويدة"
 
 #: ../../09_user-guides/04_leasing.md:30
 msgid "Lease only to an address that runs a generating node. The node's account needs a generating balance of at least 1,000 DCC to produce blocks once feature 1 is active (10,000 DCC before that). The block pages on [DecentralScan](https://decentralscan.com/) show which addresses generate blocks."
-msgstr ""
+msgstr "احياناً فقط إلى عنوان يُدير عقدة مُولّدة حساب العقد يحتاج إلى رصيد مُولّد على الأقل 1000 DCC لإنتاج اللبنات بمجرد أن تكون الميزة الأولى نشطة (10،000 DCC قبل ذلك. صفحات الكتل في برنامج [DecentralScan](https://decentralscan.com/) التي تُنتج كتل."
 
 #: ../../09_user-guides/04_leasing.md:32
 msgid "A lease to an address that doesn't run a node is valid, but it earns nothing. You can't lease to yourself."
-msgstr ""
+msgstr "عقد إيجار لعنوان لا يُدير العقدة صحيح، لكنه لا يكسب شيئاً. لا يمكنك أن تستأجر نفسك"
 
 #: ../../09_user-guides/04_leasing.md:34
 msgid "Lease with the SDK"
-msgstr ""
+msgstr "الرجاء مع SDK"
 
 #: ../../09_user-guides/04_leasing.md:36
 #, python-brace-format
 msgid "This script leases 5 DCC to a node, checks the lease and then cancels it. Run it as in the {doc}`Quick Start <01_quick-start>`, with your seed phrase in `seed` and the node's address in `generator`:"
-msgstr ""
+msgstr "هذا النص يستأجر 5 DCC إلى عقد، التحقق من الإيجار ثم يلغيه. إجريها كما في {doc}`البداية السريعة <01_quick-start>` مع عبارة بذورك في `seed` و عنوان العقد في `generator`:"
 
 #: ../../09_user-guides/04_leasing.md:47
 msgid "On the Testnet the output looks like this. The account held 8.998 DCC, so 5 DCC are leased out and 3.998 DCC stay available (the lease fee is already taken):"
-msgstr ""
+msgstr "على Testnet الناتج يبدو هكذا ويؤجر الحساب المحتفظ به 8.998 DCC، وبالتالي 5 DCC، ويبقى 3.998 DCC متاحا (تُخذ رسوم الإيجار بالفعل):"
 
 #: ../../09_user-guides/04_leasing.md:56
 msgid "To keep the lease, stop the script before the cancel. To cancel later, you only need the lease ID, which is the ID of the Lease transaction."
-msgstr ""
+msgstr "للإبقاء على الإيجار، وقف السيناريو قبل الغاء. لكي تلغيه لاحقاً، تحتاج فقط إلى بطاقة تعريف الإيجار التي هي هوية صفقة الإيجار."
 
 #: ../../09_user-guides/04_leasing.md:58
 msgid "Lease in a Wallet"
-msgstr ""
+msgstr "\"الرجاء في \"والت"
 
 #: ../../09_user-guides/04_leasing.md:60
 msgid "In [Decentral.Exchange](https://decentral.exchange/), log in and open **Leasing** in the wallet menu. Under **Start a lease**, enter the **Node address** and the **Amount to lease**, check the network fee, and press and hold **Hold to start lease** until it signs. Your leases are listed on the same screen; each active one has a **Cancel** button."
-msgstr ""
+msgstr "في [Decentral.Exchange](https://decentral.exchange/)، تسجيل الدخول وفتح **الإجازات** في قائمة المحفظة. تحت **بدء عقد الإيجار**، يدخل **عنوان العقد** و **المبلغ المستأجر**، يفحص رسوم الشبكة ويضغط ويمسك **عقد الإيجار** إلى أن يوقع. عقود الإيجار الخاصة بك مدرجة على نفس الشاشة كل واحد نشط لديه زر **الغاء**"
 
 #: ../../09_user-guides/04_leasing.md:62
 msgid "A dApp can also ask Cubensis Connect to sign a Lease or Lease Cancel transaction. The confirmation window shows the node and the amount before you approve it."
-msgstr ""
+msgstr "ويمكن أن يطلب dApp أيضاً Cubensis Connect التوقيع على صفقة الإيجار أو عقد الإيجار. نافذة التثبيت تظهر العقد والمبلغ قبل أن توافق عليه"
 
 #: ../../09_user-guides/04_leasing.md:64
 msgid "Check Your Leases"
-msgstr ""
+msgstr "تحقق من عقدك"
 
 #: ../../09_user-guides/04_leasing.md:42
 msgid "What"
-msgstr ""
+msgstr "ماذا؟"
 
 #: ../../09_user-guides/04_leasing.md:42
 msgid "Where"
-msgstr ""
+msgstr "أين"
 
 #: ../../09_user-guides/04_leasing.md:42
 msgid "Your active leases"
-msgstr ""
+msgstr "عقد إيجارك النشط"
 
 #: ../../09_user-guides/04_leasing.md:42
 #, python-brace-format
 msgid "`GET /leasing/active/{address}` on any node, or the **Leases** tab of your address on DecentralScan"
-msgstr ""
+msgstr "`GET /leasing/active/{address}` على أيّ عقدة، أَو **الإيجارات** تابوت عنوانِكَ على DecentralScan"
 
 #: ../../09_user-guides/04_leasing.md:42
 msgid "One lease, active or cancelled"
-msgstr ""
+msgstr "عقد إيجار واحد، فعال أو ملغى"
 
 #: ../../09_user-guides/04_leasing.md:42
 #, python-brace-format
 msgid "`GET /leasing/info/{leaseId}`"
-msgstr ""
+msgstr "`GET /leasing/info/{leaseId}`"
 
 #: ../../09_user-guides/04_leasing.md:42
 msgid "Your regular, available, effective and generating balance"
-msgstr ""
+msgstr "توازنك المنتظم والمتاح والفعال والمولد"
 
 #: ../../09_user-guides/04_leasing.md:42
 #, python-brace-format
 msgid "`GET /addresses/balance/details/{address}`"
-msgstr ""
+msgstr "`GET /addresses/balance/details/{address}`"
 
 #: ../../09_user-guides/04_leasing.md:76
 msgid "The response has the lease's `sender`, `recipient`, `amount`, the `height` it started at and a `status` of `active` or `canceled`, with the cancel transaction's ID and height once it is cancelled."
-msgstr ""
+msgstr "الرد عليه هو عقد الإيجار `sender`، `recipient`، `amount`، `height` بدأ في و `status` من `active` أو `canceled`، مع هوية الإلغاء وطول الصفقة بمجرد إلغائها."
 
 #: ../../09_user-guides/04_leasing.md:78
 msgid "Running a Node That Accepts Leases"
-msgstr ""
+msgstr "\"أديري \"نود\" الذي يقبل \"لايس"
 
 #: ../../09_user-guides/04_leasing.md:80
 #, python-brace-format
 msgid "A node operator needs nothing special to accept leases: every lease to the node's address counts toward its generating balance. To pay lessors, operators read the active leases to their address (`GET /leasing/active/{nodeAddress}`) and the blocks the node generated, then send payouts, usually with a {ref}`Mass Transfer <02_decentralchain/03_transaction:Mass Transfer Transaction>`. See the {doc}`Node Guide <../05_node-guide/index>` to run a node."
-msgstr ""
+msgstr "مشغّل العقد لا يحتاج شيئاً خاصاً لقبول عقود الإيجار كل عقد إيجار لعناوين العقد يحسب نحو توازنه المولّد ولدفع المستأجرين، يقرأ المشغلون عقود الإيجار الفعلية لعنوانهم (`GET /leasing/active/{nodeAddress}`) والقطع التي تولدها العقد، ثم يرسلون مكافآت، عادة مع {ref}`النقل الجماعي <02_decentralchain/03_transaction:Mass Transfer Transaction>`. شاهدْ الـ {doc}`الدليل العقدي <../05_node-guide/index>` لَرْك a عقد."
 
 #: ../../09_user-guides/05_sponsorship.md:7 ../../09_user-guides/index.md:82
 msgid "Sponsorship"
-msgstr ""
+msgstr "الرعاية"
 
 #: ../../09_user-guides/05_sponsorship.md:9
 msgid "Every transaction needs a fee, and fees are normally paid in DCC. That is a hurdle for someone who just received your token: before they can send it on, they first have to get DCC. Sponsorship removes it. When you sponsor your token, its holders can pay transaction fees in the token itself, and you pay the DCC fee to the network for them."
-msgstr ""
+msgstr "وتحتاج كل معاملة إلى رسم، وتدفع الرسوم عادة في DCC. هذا هو العقبة بالنسبة لشخص ما الذي استلم توًّا موكبك: قبل أن يتمكنوا من إرساله، يجب عليهم أولاً الحصول على DCC. الرعايه تزيله عندما ترعى موكبكم، أصحابها يمكنهم دفع رسوم المعاملات في الضريح نفسه، وأنت تدفعون لـ DCC رسم للشبكة من أجلهم"
 
 #: ../../09_user-guides/05_sponsorship.md:11
 msgid "How It Works"
-msgstr ""
+msgstr "كيف يعمل"
 
 #: ../../09_user-guides/05_sponsorship.md:13
 #, python-brace-format
 msgid "The token's issuer sends a {ref}`Sponsor Fee transaction <02_decentralchain/03_transaction:Sponsor Fee Transaction>` that sets `minSponsoredAssetFee`: the amount of the token that stands in for 0.001 DCC, one fee unit."
-msgstr ""
+msgstr "مُصدر (توكن) يُرسل {ref}`معاملة الرعاة <02_decentralchain/03_transaction:Sponsor Fee Transaction>` الذي يُحدّدُ `minSponsoredAssetFee`: كمية المُلكة التي تُمثّل في 0.001 DCC، وحدة رسومِ واحدة."
 
 #: ../../09_user-guides/05_sponsorship.md:14
 msgid "A holder sends a Transfer or Invoke Script transaction with `feeAssetId` set to the token and a fee in the token."
-msgstr ""
+msgstr "ويرسل صاحبها عملية نقل أو تحريك مع `feeAssetId` مجموعة إلى الضريح ورسوماً في الضواحي."
 
 #: ../../09_user-guides/05_sponsorship.md:15
 msgid "The fee in the token goes to the issuer. The issuer's account pays the block generator the DCC equivalent: `fee in token × 0.001 / minSponsoredAssetFee` DCC."
-msgstr ""
+msgstr "الرسوم في السيارة تذهب إلى المصدر. حساب المُصدِر يَدْفعُ المولدَ الكهربائيَ اللبنةِ DCC ما يعادل: `fee in token × 0.001 / minSponsoredAssetFee` DCC."
 
 #: ../../09_user-guides/05_sponsorship.md
 msgid "Rule"
-msgstr ""
+msgstr "المادة"
 
 #: ../../09_user-guides/05_sponsorship.md
 msgid "Detail"
-msgstr ""
+msgstr "Detail"
 
 #: ../../09_user-guides/05_sponsorship.md
 msgid "Who can sponsor"
-msgstr ""
+msgstr "من يستطيع أن يرعى"
 
 #: ../../09_user-guides/05_sponsorship.md
 msgid "Only the token's issuer"
-msgstr ""
+msgstr "فقط مُصدر (توكن)"
 
 #: ../../09_user-guides/05_sponsorship.md
 msgid "Which tokens"
-msgstr ""
+msgstr "التي تُحدّد"
 
 #: ../../09_user-guides/05_sponsorship.md
 #, python-brace-format
 msgid "Any token without an asset script; a {ref}`smart asset <02_decentralchain/02_token(asset):Smart Asset>` can't be sponsored"
-msgstr ""
+msgstr "أيّ مركب بدون نصّ موجودات، لا يمكن رعاية {ref}`الأصول الذكية <02_decentralchain/02_token(asset):Smart Asset>`"
 
 #: ../../09_user-guides/05_sponsorship.md
 msgid "Which transactions can pay in the token"
-msgstr ""
+msgstr "أي صفقات يمكن أن تدفع في الضريح"
 
 #: ../../09_user-guides/05_sponsorship.md
 msgid "Transfer and Invoke Script"
@@ -867,27 +867,27 @@ msgstr ""
 
 #: ../../09_user-guides/05_sponsorship.md
 msgid "Minimum fee in the token"
-msgstr ""
+msgstr "الحد الأدنى للرسوم في الضريح"
 
 #: ../../09_user-guides/05_sponsorship.md
 msgid "Fee units × `minSponsoredAssetFee`: 1 unit for a Transfer, 5 for an Invoke Script"
-msgstr ""
+msgstr "وحدات الأطعمة × `minSponsoredAssetFee`: وحدة واحدة للنقل، 5 لجهاز إنفوك"
 
 #: ../../09_user-guides/05_sponsorship.md
 msgid "Cost of the Sponsor Fee transaction"
-msgstr ""
+msgstr "تكلفة معاملة الرعاة"
 
 #: ../../09_user-guides/05_sponsorship.md
 msgid "0.001 DCC"
-msgstr ""
+msgstr "0.001 DCC"
 
 #: ../../09_user-guides/05_sponsorship.md
 msgid "Turning it off"
-msgstr ""
+msgstr "أطفأه"
 
 #: ../../09_user-guides/05_sponsorship.md
 msgid "Send another Sponsor Fee transaction with `minSponsoredAssetFee` of 0"
-msgstr ""
+msgstr "إرسال معاملة أخرى لرسوم الرعاة مع `minSponsoredAssetFee` من صفر"
 
 #: ../../09_user-guides/05_sponsorship.md:26
 msgid "The issuer needs enough DCC to cover the fees it pays. If its DCC balance runs out, transactions that pay their fee in the token are rejected until it is topped up. Watch the issuer's balance, or let users fall back to paying in DCC."
@@ -895,7 +895,7 @@ msgstr ""
 
 #: ../../09_user-guides/05_sponsorship.md:28
 msgid "Choose minSponsoredAssetFee"
-msgstr ""
+msgstr "اختر minSponsoredAssetFee"
 
 #: ../../09_user-guides/05_sponsorship.md:30
 msgid "`minSponsoredAssetFee` is in the token's smallest unit. It sets the exchange rate you accept: with 2 decimals, `10` means 0.10 of your token buys 0.001 DCC of fee. Set it too low and users pay almost nothing while you pay full DCC fees; set it too high and fees feel expensive."
@@ -903,16 +903,16 @@ msgstr ""
 
 #: ../../09_user-guides/05_sponsorship.md:32
 msgid "A user may pay more than the minimum. You then receive more of the token and pay more DCC, at the same rate."
-msgstr ""
+msgstr "قد يدفع المستخدم أكثر من الحد الأدنى. بعد ذلك تحصل على المزيد من الضباب وتدفع أكثر DCC، بنفس المعدل."
 
 #: ../../09_user-guides/05_sponsorship.md:34
 msgid "Sponsor a Token with the SDK"
-msgstr ""
+msgstr "\"أحمق مع الـ \"س.د.ك"
 
 #: ../../09_user-guides/05_sponsorship.md:36
 #, python-brace-format
 msgid "This script issues a token, sponsors it, gives a user 10 tokens and has the user send 1 token while paying the fee in the token. Run it as in the {doc}`Quick Start <01_quick-start>`, with an issuer account that holds at least 1.003 DCC and any second account as the user:"
-msgstr ""
+msgstr "هذا النص يُصدر رمزاً، ويراعيه، ويعطي مستعملاً 10 زوايا، ويرسل المستعمل رسالة واحدة بينما يدفع الرسوم في الضريحة. تشغيله كما هو الحال في {doc}`البداية السريعة <01_quick-start>`، مع حساب مُصَدِّر يحتوي على ما لا يقل عن 1003 DCC وأي حساب ثانٍ كمستخدم:"
 
 #: ../../09_user-guides/05_sponsorship.md:47
 msgid "On the Testnet, the issuer's DCC balance went from 8.997 to 7.994: 1 DCC to issue the token, 0.001 DCC each for the Sponsor Fee and the transfer to the user, and 0.001 DCC paid for the user's fee. The user's DCC balance did not change. The issuer's token balance is 999,010: the 1,000,000 issued, minus the 1,000 sent to the user, plus the 10 the user paid as the fee."
@@ -924,62 +924,62 @@ msgstr ""
 
 #: ../../09_user-guides/05_sponsorship.md:51
 msgid "Check a Token's Sponsorship"
-msgstr ""
+msgstr "تحقق من رعاية (توكين)"
 
 #: ../../09_user-guides/05_sponsorship.md:53
 #, python-brace-format
 msgid "`GET /assets/details/{assetId}` on any node returns `minSponsoredAssetFee`: the current amount, or `null` when the token isn't sponsored."
-msgstr ""
+msgstr "`GET /assets/details/{assetId}` على أيّ عودة عارية `minSponsoredAssetFee`: المبلغ الحالي، أو `null` عندما لا يُرعَى الضباب."
 
 #: ../../09_user-guides/05_sponsorship.md:63
 msgid "Pay a Fee in a Sponsored Token"
-msgstr ""
+msgstr "دفع رسوم في موكب رعاية"
 
 #: ../../09_user-guides/05_sponsorship.md:65
 msgid "As a holder, you need nothing from the issuer: set `feeAssetId` to the token and `fee` to at least the minimum, as in step 4 of the script. Wallets do the same when you choose the token as the fee currency."
-msgstr ""
+msgstr "كحامل، لا تحتاج إلى شيء من المُصدر: أُعدّ `feeAssetId` إلى الحد الأدنى و `fee` على الأقل، كما في الخطوة 4 من النص. الوابل تفعل نفس الشيء عندما تختار المُحدّد كعملة الرسوم"
 
 #: ../../09_user-guides/05_sponsorship.md:67
 msgid "A node rejects the transaction if the token is not sponsored (`Asset ... is not sponsored, cannot be used to pay fees`), if the fee is below the minimum, or if the issuer can't pay the DCC fee."
-msgstr ""
+msgstr "الشعار يرفض الصفقة إذا لم يتم رعاية الضريح (`Asset ... is not sponsored, cannot be used to pay fees`)، إذا كانت الرسوم أقل من الحد الأدنى، أو إذا كان المُصدر لا يستطيع دفع رسوم DCC."
 
 #: ../../09_user-guides/index.md:1 ../../09_user-guides/index.md:20
 msgid "User Guides"
-msgstr ""
+msgstr "دليل المستعمل"
 
 #: ../../09_user-guides/index.md:3
 msgid "Step-by-step guides for using DecentralChain: getting your first Testnet DCC, using the wallet and the explorer, leasing DCC to a node and letting people pay fees in your token."
-msgstr ""
+msgstr "دليل خطي لاستخدام DecentralChain: الحصول على أول Testnet DCC، باستخدام المحفظة والمستكشف، تأجير DCC إلى عقدة، والسماح للناس بدفع رسوم في موكبكم."
 
 #: ../../09_user-guides/index.md:18
 msgid "Quick Start"
-msgstr ""
+msgstr "البداية السريعة"
 
 #: ../../09_user-guides/index.md:22
 msgid "From nothing to a confirmed Testnet transfer in about ten minutes."
-msgstr ""
+msgstr "من لا شيء إلى Testnetالنقل المؤكد في حوالي 10 دقائق"
 
 #: ../../09_user-guides/index.md:34
 msgid "Cubensis Connect"
-msgstr ""
+msgstr "Cubensis Connect"
 
 #: ../../09_user-guides/index.md:38
 msgid "Install the browser wallet, create an account and approve dApp requests safely."
-msgstr ""
+msgstr "ضعي محفظة المصفوفين، واصنعي حساباً وتوافقي على dApp الطلبات بأمان."
 
 #: ../../09_user-guides/index.md:50
 msgid "DecentralScan"
-msgstr ""
+msgstr "DecentralScan"
 
 #: ../../09_user-guides/index.md:54
 msgid "Find any block, transaction, address or token, and check whether a payment arrived."
-msgstr ""
+msgstr "ابحثوا عن أي حجب أو معاملة أو عنوان أو رمز، وتحققوا مما إذا كان الدفع قد وصل."
 
 #: ../../09_user-guides/index.md:70
 msgid "Put your DCC behind a generating node without giving them away."
-msgstr ""
+msgstr "ضع DCC خلف عقدة توليد بدون أن تتخلى عنهم"
 
 #: ../../09_user-guides/index.md:86
 msgid "Let holders of your token pay transaction fees in the token itself."
-msgstr ""
+msgstr "دع أصحاب صفقاتكِ المُتخفية يدفعون رسوماً في الضريح نفسه."
 
