@@ -7,7 +7,7 @@ const seed = 'your secret seed phrase here';
 // Build and sign a Transfer transaction
 const signedTx = transfer(
   {
-    recipient: '31LAqgqVTLySNCPuYqgLAYhcgS76wvBaLr8', // recipient address or alias (Testnet)
+    recipient: '31LAqgqVTLySNCPuYqgLAYhcgS76wvBaLr9', // recipient address or alias (Testnet)
     amount: 100_000_000,                               // 1 DCC (8 decimals, i.e. 10^8 Decentralites)
     chainId: '!',                                      // Testnet chain ID
   },
