@@ -1,7 +1,27 @@
+# Bangla translations for DecentralChain docs.
+# Copyright (C) 2026 ORGANIZATION
+# This file is distributed under the same license as the DecentralChain docs project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: DecentralChain docs VERSION\n"
+"Report-Msgid-Bugs-To: https://github.com/Decentral-America/docs/issues\n"
+"POT-Creation-Date: 2026-10-27 21:54-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: bn\n"
+"Language-Team: Bangla <https://github.com/Decentral-America/docs>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
 
 #: ../../index.rst:8
 msgid "DecentralChain Documentation"
-msgstr ""
+msgstr "DecentralChain নথিবদ্ধকরণ"
 
 #: ../../index.rst:10
 msgid "Welcome to the Decentralchain documentation, a comprehensive guide to understanding and using the next-generation blockchain technology of DecentralChain. Our protocol is designed to enable businesses and organizations to store and manage data in a secure, transparent, and tamper-proof manner."
@@ -13,73 +33,83 @@ msgstr ""
 
 #: ../../index.rst:14
 msgid "Our documentation covers various aspects of the DecentralChain protocol, including its architecture, consensus mechanism, data structures, and APIs. It also provides a comprehensive guide to setting up and running a DecentralChain node, as well as integrating the protocol into existing applications."
-msgstr ""
+msgstr "আমাদের ডকুমেন্টস-এ DecentralChain প্রোটোকলের বিভিন্ন দিক তুলে ধরা হয়েছে, যার মধ্যে রয়েছে স্থাপত্য, ঐক্যমতী পদ্ধতি, তথ্য কাঠামো এবং API। এ ছাড়াও এটি DecentralChain নোড স্থাপন এবং চলমান কাজের জন্য একটি ব্যাপক নির্দেশনা প্রদান করে, আর একই সাথে বিদ্যমান অ্যাপ্লিকেশনের ক্ষেত্রে প্রোটোকলকে যুক্ত করে।"
 
 #: ../../index.rst:16
 msgid "We place a strong emphasis on security, with regular security audits to identify and address potential vulnerabilities. Data is stored and managed using cryptography and distributed storage to ensure data integrity and security."
-msgstr ""
+msgstr "আমরা নিরাপত্তার উপর জোর দিচ্ছি, যেখানে নিরাপত্তা ব্যবস্থা সম্ভাব্য সম্ভাবনাকে চিহ্নিত করতে এবং তাকে চিহ্নিত করতে নিয়মিত নিরাপত্তা অডিট ব্যবস্থা রয়েছে। তথ্য সংরক্ষণ করা হয়েছে এবং ক্রিপ্টোগ্রাফি ব্যবহার করে সংরক্ষণ করা হয়েছে এবং তথ্য ও নিরাপত্তা নিশ্চিত করতে বিতরণ করা হয়েছে।"
 
 #: ../../index.rst:18
 msgid "Whether you're a developer or a business owner looking to leverage blockchain technology for data management and security, the DecentralChain documentation is a valuable resource for understanding and using the protocol. We invite you to explore our documentation and get started with DecentralChain today."
-msgstr ""
-
-#: ../../index.rst:22 ../../index.rst:39 ../../index.rst:55 ../../index.rst:72
-#: ../../index.rst:89 ../../index.rst:106
-msgid "card-img-top"
-msgstr ""
+msgstr "আপনি একজন ডেভেলপার অথবা ব্যবসায়ী, তথ্য ব্যবস্থাপনা এবং নিরাপত্তা ক্ষেত্রে আপনি যে প্রযুক্তি ব্যবহার করছেন কিনা, তা নিয়ন্ত্রণ করার জন্য আপনার পরিচিত ব্যক্তি কি না। DecentralChain সহায়িকাটি বিবেচনা এবং প্রোটোকল ব্যবহার করে এর জন্য প্রয়োজনীয় তথ্য সংগ্রহ করা যেতে পারে। আমরা আমাদের ডকুমেন্টস খুঁজে বের করার জন্য আপনাদের আমন্ত্রণ জানাচ্ছি এবং আজ DecentralChain থেকে শুরু করে শুরু করেছি।"
 
 #: ../../index.rst:25 ../../index.rst:124
 msgid "Introduction"
-msgstr ""
+msgstr "ভূমিকা"
 
 #: ../../index.rst:28
 msgid "Get ready to jump into the exciting world of cryptocurrency and blockchain with DecentralChain. Start here to learn the basics and find out how this innovative platform is revolutionizing the industry."
-msgstr ""
+msgstr "ক্রিপ্টোকুইন আর DecentralChain এর সাথে ব্লকচান দিয়ে লাফ দিতে প্রস্তুত হও। এখানে শুরু করা যাক মৌলিক শিক্ষা জানতে আর আবিষ্কার করতে যে কিভাবে এই উদ্ভাবনী প্লাটফর্ম শিল্পকে বিপ্লবে পরিণত করছে।"
 
-#: ../../index.rst:32 ../../index.rst:48 ../../index.rst:65
+#: ../../index.rst:32 ../../index.rst:48 ../../index.rst:65 ../../index.rst:82
+#: ../../index.rst:99 ../../index.rst:115
 msgid "Learn More"
 msgstr ""
 
-#: ../../index.rst:42 ../../index.rst:133
+#: ../../index.rst:42 ../../index.rst:142
 msgid "DecentralChain"
-msgstr ""
+msgstr "DecentralChain"
 
 #: ../../index.rst:44
 msgid "DecentralChain is a blockchain protocol and development toolkit that empowers users to create decentralized applications (dApps) and Web 3.0 solutions on a secure and scalable platform using tools such as accounts, tokens, transactions, blocks, nodes, orders, and oracles."
 msgstr ""
 
-#: ../../index.rst:58 ../../index.rst:142
+#: ../../index.rst:58 ../../index.rst:151
 msgid "Ride Language"
-msgstr ""
+msgstr "Ride ভাষা"
 
 #: ../../index.rst:61
 msgid "Ride is a straightforward, developer-friendly functional programming language for smart contracts and decentralized applications (dApps) on the DecentralChain blockchain. Here you will learn about syntax basics, data types, functions, script types, structures, and FOLD<N> iterations."
 msgstr ""
 
-#: ../../index.rst:75
+#: ../../index.rst:75 ../../index.rst:169
 msgid "Node Guide"
 msgstr ""
 
 #: ../../index.rst:78
-msgid "Learn about topics such as generating blocks, generation rewards, upgrading the node, configuring logging and node settings, using the node wallet, creating a custom blockchain, and utilizing the Node Go tool."
-msgstr ""
+msgid "Learn how to get, build, and configure a DecentralChain node, and what its REST API exposes. For block generation and leasing rewards, see the DecentralChain fundamentals section."
+msgstr "লক্ষ্য করুন কিভাবে নির্মাণ, নির্মাণ, এবং DecentralChain নোড কনফিগার করতে হবে এবং কি ভাবে তা প্রদর্শন করা যাবে। প্রজন্ম এবং ঋণের জন্য পুরস্কারের জন্যে, DecentralChain মৌলিক বিভাগ দেখুন।"
 
-#: ../../index.rst:82 ../../index.rst:99 ../../index.rst:115
-msgid "Coming Soon"
-msgstr ""
-
-#: ../../index.rst:92
+#: ../../index.rst:92 ../../index.rst:160
 msgid "Smart Contracts and dApps"
-msgstr ""
+msgstr "বুদ্ধিমান এবং dApps"
 
 #: ../../index.rst:95
 msgid "Lean everything you need to know in order to start creating your own smart contracts and decentralized applications (dApps) with DecentralChain's developer tools, APIs and SDKs."
 msgstr ""
 
-#: ../../index.rst:109
+#: ../../index.rst:109 ../../index.rst:189
 msgid "Contributing"
-msgstr ""
+msgstr "বাতিল করা"
 
 #: ../../index.rst:111
 msgid "More information about the community that leads, supports, and develops this documentation, including how you can contribute to it by fixing any typos, adding translations, examples or updating any outdated information. Join the community to help improve this resource for everyone."
-msgstr ""
+msgstr "এই ডকুমেন্টটি যে সমস্ত সম্প্রদায়কে নেতৃত্ব দেয়, সমর্থন করে এবং এই নথি তৈরি করে, এর মধ্যে রয়েছে কি ভাবে আপনি সেই সমস্ত উপাদানের মাধ্যমে তা অর্জন করতে পারেন, যার মধ্যে রয়েছে যে কোন ধরনের বায়ুদূষন সংশোধন, অনুবাদ যোগ করা, উদাহরণ অথবা অন্য যে কোন পুরোনো তথ্য প্রদান করা। এই সম্প্রদায়ের সাথে যোগ দিন সবার জন্য এই সম্পদটি উন্নত করতে সাহায্য করুন।"
+
+#: ../../index.rst:133
+msgid "User Guides"
+msgstr "অন্যান্য ব্যবহারকারীর পথ"
+
+#: ../../index.rst:178
+msgid "Reference"
+msgstr "রেফারেন্স"
+
+#~ msgid "card-img-top"
+#~ msgstr ""
+
+#~ msgid "Learn about topics such as generating blocks, generation rewards, upgrading the node, configuring logging and node settings, using the node wallet, creating a custom blockchain, and utilizing the Node Go tool."
+#~ msgstr ""
+
+#~ msgid "Coming Soon"
+#~ msgstr ""
+

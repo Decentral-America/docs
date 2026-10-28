@@ -1,86 +1,115 @@
-
+# French translations for DecentralChain docs.
+# Copyright (C) 2026 ORGANIZATION
+# This file is distributed under the same license as the DecentralChain docs project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: DecentralChain docs VERSION\n"
+"Report-Msgid-Bugs-To: https://github.com/Decentral-America/docs/issues\n"
+"POT-Creation-Date: 2026-10-27 21:54-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: fr\n"
+"Language-Team: French <https://github.com/Decentral-America/docs>\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
 
 #: ../../index.rst:8
 msgid "DecentralChain Documentation"
-msgstr ""
+msgstr "DecentralChain Documentation"
 
 #: ../../index.rst:10
 msgid "Welcome to the Decentralchain documentation, a comprehensive guide to understanding and using the next-generation blockchain technology of DecentralChain. Our protocol is designed to enable businesses and organizations to store and manage data in a secure, transparent, and tamper-proof manner."
-msgstr ""
+msgstr "Bienvenue à la documentation de Decentralchain, un guide complet pour comprendre et utiliser la nouvelle génération de la technologie de blockchain de DecentralChain. Notre protocole est conçu pour permettre aux entreprises et aux organisations de stocker et de gérer les données d'une manière sûre, transparente et inviolable."
 
 #: ../../index.rst:12
 msgid "DecentralChain utilizes the Leased Proof of Stake (LPoS) consensus mechanism and sharding to enable faster transaction processing times, lower energy consumption, and increased scalability. Our native token, DecentralCoin (DCC), is used for standard payments such as block rewards, and our on-chain governance system allows us to make changes to the protocol through voting."
-msgstr ""
+msgstr "DecentralChain utilise le mécanisme de consensus sur la preuve de l'utilisation de l'énergie louée (LPoS) et le rodage pour accélérer les délais de traitement des transactions, réduire la consommation d'énergie et accroître l'évolutivité. Notre jeton natif, DecentralCoin (DCC), est utilisé pour les paiements standard tels que les primes de bloc, et notre système de gouvernance en chaîne nous permet d'apporter des modifications au protocole par le vote."
 
 #: ../../index.rst:14
 msgid "Our documentation covers various aspects of the DecentralChain protocol, including its architecture, consensus mechanism, data structures, and APIs. It also provides a comprehensive guide to setting up and running a DecentralChain node, as well as integrating the protocol into existing applications."
-msgstr ""
+msgstr "Notre documentation couvre différents aspects du protocole DecentralChain, dont son architecture, son mécanisme de consensus, ses structures de données et ses API. Il fournit également un guide complet pour la mise en place et le fonctionnement d'un nœud DecentralChain, ainsi que l'intégration du protocole dans les applications existantes."
 
 #: ../../index.rst:16
 msgid "We place a strong emphasis on security, with regular security audits to identify and address potential vulnerabilities. Data is stored and managed using cryptography and distributed storage to ensure data integrity and security."
-msgstr ""
+msgstr "Nous mettons fortement l'accent sur la sécurité, avec des vérifications de sécurité régulières pour identifier et traiter les vulnérabilités potentielles. Les données sont stockées et gérées à l'aide de la cryptographie et du stockage distribué pour assurer l'intégrité et la sécurité des données."
 
 #: ../../index.rst:18
 msgid "Whether you're a developer or a business owner looking to leverage blockchain technology for data management and security, the DecentralChain documentation is a valuable resource for understanding and using the protocol. We invite you to explore our documentation and get started with DecentralChain today."
-msgstr ""
-
-#: ../../index.rst:22 ../../index.rst:39 ../../index.rst:55 ../../index.rst:72
-#: ../../index.rst:89 ../../index.rst:106
-msgid "card-img-top"
-msgstr ""
+msgstr "Que vous soyez un développeur ou un propriétaire d'entreprise cherchant à tirer parti de la technologie blockchain pour la gestion et la sécurité des données, la documentation DecentralChain est une ressource précieuse pour comprendre et utiliser le protocole. Nous vous invitons à explorer notre documentation et à commencer avec DecentralChain aujourd'hui."
 
 #: ../../index.rst:25 ../../index.rst:124
 msgid "Introduction"
-msgstr ""
+msgstr "Présentation"
 
 #: ../../index.rst:28
 msgid "Get ready to jump into the exciting world of cryptocurrency and blockchain with DecentralChain. Start here to learn the basics and find out how this innovative platform is revolutionizing the industry."
-msgstr ""
+msgstr "Préparez-vous à sauter dans le monde passionnant de cryptomonnaie et blockchain avec DecentralChain. Commencez ici pour apprendre les bases et découvrir comment cette plateforme innovante révolutionne l'industrie."
 
-#: ../../index.rst:32 ../../index.rst:48 ../../index.rst:65
+#: ../../index.rst:32 ../../index.rst:48 ../../index.rst:65 ../../index.rst:82
+#: ../../index.rst:99 ../../index.rst:115
 msgid "Learn More"
 msgstr ""
 
-#: ../../index.rst:42 ../../index.rst:133
+#: ../../index.rst:42 ../../index.rst:142
 msgid "DecentralChain"
-msgstr ""
+msgstr "DecentralChain"
 
 #: ../../index.rst:44
 msgid "DecentralChain is a blockchain protocol and development toolkit that empowers users to create decentralized applications (dApps) and Web 3.0 solutions on a secure and scalable platform using tools such as accounts, tokens, transactions, blocks, nodes, orders, and oracles."
-msgstr ""
+msgstr "DecentralChain est une boîte à outils de protocole et de développement de blockchain qui permet aux utilisateurs de créer des applications décentralisées (dApps) et des solutions Web 3.0 sur une plate-forme sécurisée et évolutive en utilisant des outils tels que comptes, jetons, transactions, blocs, nœuds, commandes et oracles."
 
-#: ../../index.rst:58 ../../index.rst:142
+#: ../../index.rst:58 ../../index.rst:151
 msgid "Ride Language"
-msgstr ""
+msgstr "Langue Ride"
 
 #: ../../index.rst:61
 msgid "Ride is a straightforward, developer-friendly functional programming language for smart contracts and decentralized applications (dApps) on the DecentralChain blockchain. Here you will learn about syntax basics, data types, functions, script types, structures, and FOLD<N> iterations."
-msgstr ""
+msgstr "Ride est un langage de programmation fonctionnel simple et convivial pour les contrats intelligents et les applications décentralisées (dApps) sur la chaîne de blocs DecentralChain. Ici, vous apprendrez sur les bases de syntaxe, les types de données, les fonctions, les types de script, les structures et les itérations FOLD <N>."
 
-#: ../../index.rst:75
+#: ../../index.rst:75 ../../index.rst:169
 msgid "Node Guide"
-msgstr ""
+msgstr "Guide du nœud"
 
 #: ../../index.rst:78
-msgid "Learn about topics such as generating blocks, generation rewards, upgrading the node, configuring logging and node settings, using the node wallet, creating a custom blockchain, and utilizing the Node Go tool."
-msgstr ""
+msgid "Learn how to get, build, and configure a DecentralChain node, and what its REST API exposes. For block generation and leasing rewards, see the DecentralChain fundamentals section."
+msgstr "Apprenez comment obtenir, construire et configurer un noeud DecentralChain, et ce que son API REST expose. Pour les primes de génération de blocs et de location, voir la section des fondamentaux DecentralChain."
 
-#: ../../index.rst:82 ../../index.rst:99 ../../index.rst:115
-msgid "Coming Soon"
-msgstr ""
-
-#: ../../index.rst:92
+#: ../../index.rst:92 ../../index.rst:160
 msgid "Smart Contracts and dApps"
-msgstr ""
+msgstr "Contrats intelligents et dApps"
 
 #: ../../index.rst:95
 msgid "Lean everything you need to know in order to start creating your own smart contracts and decentralized applications (dApps) with DecentralChain's developer tools, APIs and SDKs."
-msgstr ""
+msgstr "Laissez tout ce que vous devez savoir pour commencer à créer vos propres contrats intelligents et applications décentralisées (dApps) avec les outils de développement, API et SDK de DecentralChain."
 
-#: ../../index.rst:109
+#: ../../index.rst:109 ../../index.rst:189
 msgid "Contributing"
-msgstr ""
+msgstr "Contribution"
 
 #: ../../index.rst:111
 msgid "More information about the community that leads, supports, and develops this documentation, including how you can contribute to it by fixing any typos, adding translations, examples or updating any outdated information. Join the community to help improve this resource for everyone."
-msgstr ""
+msgstr "Plus d'information sur la communauté qui dirige, soutient et développe cette documentation, y compris comment vous pouvez y contribuer en fixant n'importe quelle typographie, en ajoutant des traductions, des exemples ou en mettant à jour toute information périmée. Rejoindre la communauté pour aider à améliorer cette ressource pour tout le monde."
+
+#: ../../index.rst:133
+msgid "User Guides"
+msgstr "Guides d'utilisation"
+
+#: ../../index.rst:178
+msgid "Reference"
+msgstr "Référence"
+
+#~ msgid "card-img-top"
+#~ msgstr ""
+
+#~ msgid "Learn about topics such as generating blocks, generation rewards, upgrading the node, configuring logging and node settings, using the node wallet, creating a custom blockchain, and utilizing the Node Go tool."
+#~ msgstr ""
+
+#~ msgid "Coming Soon"
+#~ msgstr ""
+

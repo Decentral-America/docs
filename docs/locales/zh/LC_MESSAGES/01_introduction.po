@@ -1,362 +1,387 @@
-
-
-#: ../../01_introduction.md:1 ../../01_introduction/index.md:1
-#: ../../01_introduction/index.md:3
-msgid "Introduction"
+# Chinese translations for DecentralChain docs.
+# Copyright (C) 2026 ORGANIZATION
+# This file is distributed under the same license as the DecentralChain docs project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
 msgstr ""
+"Project-Id-Version: DecentralChain docs VERSION\n"
+"Report-Msgid-Bugs-To: https://github.com/Decentral-America/docs/issues\n"
+"POT-Creation-Date: 2026-10-27 21:54-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh\n"
+"Language-Team: Chinese <https://github.com/Decentral-America/docs>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../01_introduction.md:1
+msgid "Introduction"
+msgstr "导言"
 
 #: ../../01_introduction.md:3
 msgid "How did money become the basis of trade for such a long time? To have an answer for such question we must understand what money is and the different ways money has been used through the time."
-msgstr ""
+msgstr "如此之久,钱是如何成为贸易基础的?为了回答这个问题,我们必须了解什么是资金,以及金钱在这段时间里使用的不同方式。"
 
 #: ../../01_introduction.md:5
 msgid "Definition of Money"
-msgstr ""
+msgstr "货币的定义"
 
 #: ../../01_introduction.md:7
 msgid "Money is often defined it by the roles it plays:"
-msgstr ""
+msgstr "金钱往往被定义为它扮演的角色:"
 
 #: ../../01_introduction.md:9
 msgid "It's a store of value, meaning that money allows you to defer consumption until a later date."
-msgstr ""
+msgstr "这是一个价值的商店, 意味着金钱允许你推迟消费 到以后的日期。"
 
 #: ../../01_introduction.md:10
 msgid "It's a unit of account, meaning that it allows you to assign a value to different goods without having to compare them. So instead of saying that a Rolex watch is worth six cows, you can just say it (or the cows) cost $10 000."
-msgstr ""
+msgstr "这是一个记账单位,意思是它允许您为不同的商品分配一个值而无需比较它们.因此,与其说劳力士表值六头牛,不如说它(或牛)要花一万美元。"
 
 #: ../../01_introduction.md:11
 msgid "And it's a medium of exchange, meaning it's an easy and efficient way for different parties to trade goods and services with one another."
-msgstr ""
+msgstr "并且是一种交流的媒介,意思是它是一个方便而高效的方式,让不同方互相进行商品和服务贸易."
 
 #: ../../01_introduction.md:13
 msgid "History of Money"
-msgstr ""
+msgstr "钱财史."
 
 #: ../../01_introduction.md:15
 msgid "Even though we're able to define what money is, when it comes to its origins, money has been mum about them. For such a central element of our lives, money’s ancient roots and the reasons for its invention are unclear, most of the available knowledge is based on conjectures and logical inferences."
-msgstr ""
+msgstr "虽然我们能够定义钱是什么,但当涉及到钱的起源时,钱一直是关于钱的妈妈.对于我们生活中如此核心的元素,钱的古来根源及其发明的原因尚不清楚,现有的知识大多是基于猜想和逻辑推论."
 
 #: ../../01_introduction.md:17
 msgid "Some economists assume that bartering of goods and services inspired money’s invention. On the other hand there are anthropologists and archaeologists contending that early states invented currency as a means of debt payment."
-msgstr ""
+msgstr "一些经济学家认为,以商品与服务作交换是钱的发明的灵感所在。另一方面,有人类学家和考古学家认为,早期国家发明了货币作为还债手段。"
 
 #: ../../01_introduction.md:19
 msgid "Several investigations suggest that money independently appeared for different reasons and assumed different tangible forms in many parts of the world, starting thousands of years ago and bartering had nothing to do with it but instead, money grew out of older systems of credit and debt. In small-scale societies, debts concern obligations to others while among hunter-gatherer and farming groups daughters given away in marriage create debts that are partially repaid with goods known as bridewealth where full repayment requires that the recipient of the first bride provide a bride in return. No cash needed."
-msgstr ""
+msgstr "一些调查表明,货币独立出现的原因不同,在世界许多地方表现的有形形式也不同,从几千年前开始,而以物交换与货币无关,相反,钱来自旧的信贷和债务制度。在小规模社会中,债务涉及对他人的义务,而婚后赠与的猎人-采集者和农活群体中,女儿们产生的债务部分用被称为 \" 新娘 \" 的商品偿还,如果全额还款要求第一新娘的接受者提供新娘作为回报。不需要现金。"
 
 #: ../../01_introduction.md:21
 msgid "Revisionists argue that a transition to a new form of money-friendly debt started at least 5,500 years ago in the agricultural states of Mesopotamia and Egypt. In Mesopotamia, the silver shekel — a lump of metal, not a coin — was a basic monetary measure. Rulers decreed that one shekel’s weight in silver was equivalent to a bushel of barley. Shekels of silver, gold and other metals were used in other ancient societies. Precise weights of shekels appear to have varied from one to the next one and therefore are difficult to pin down. Farmers were taxed to support royal lifestyles and public works, what the farmers and other commoners couldn’t pay in goods was recorded as debt in shekels. Merchants and tradespeople acquired goods from temple and palace officials on credit."
-msgstr ""
+msgstr "修正主义者认为,至少在5500年前,美索不达米亚和埃及的农业州开始向新形式的货币友好型债务过渡.在美索不达米亚,银色的谢克尔——一整块金属,不是硬币——是一种基本的货币计量.统治者们下令,一个雪克尔的银子重量相当于一束大麦.银,金等金属的谢克尔被其他古代社会所使用.谢克尔的精确重量似乎因一个而异,因此很难定下来。农民被征税支持皇家生活方式和公共工程, 农民和其他普通人无法支付的货物被记录为舍克尔斯的债务。商人和商人通过信用方式从寺庙和宫廷官员那里得到商品."
 
 #: ../../01_introduction.md:23
 msgid "Coins stamped with images of animals or rulers, acting as denominations and guaranteeing the metal’s value, first appeared in the kingdom of Lydia around 2,600 years ago. Located in what is now Turkey, Lydia sat on the cusp between the Mediterranean and the Near East, and commerce with foreign travelers was common which was one of the major promoters for this coin mint to happen. To understand why, imagine doing a trade in the absence of money or in other words through barter. The chief problem with barter is the double coincidence of wants. Say you have a bunch of bananas and would like a pair of shoes, but it's not enough to find someone who has some shoes or someone who wants some bananas. To make the trade, you need to find someone who has shoes they're willing to trade and that wants bananas which is no easy task."
-msgstr ""
+msgstr "科因斯用动物或统治者的形象作印记,作为教派和保证金属的价值,最早出现于约2600年前的莉迪亚王国.莉迪亚坐落于现在的土耳其, 坐在地中海和近东之间的十字架上, 与外国旅行者的商业是常见的,要了解原因,想象一下在没有钱的情况下或换句话说通过易货进行交易.易货的首要问题是欲望的双重巧合.说你有一堆香蕉,想要一双鞋,但不足以找到一个有鞋子的人或者一个想要一些香蕉的人.为了交易,你需要找到一个有鞋的人 他们愿意交易, 想要香蕉,这是不容易的任务。"
 
 #: ../../01_introduction.md:25
 msgid "With a common currency, the task becomes easier: You just sell your bananas to someone in exchange for money, with which you then buy shoes from someone else. And if, as in Lydia, you have foreigners from whom you'd like to buy or to whom you'd like to sell, having a common medium of exchange is obviously valuable. That is, money is especially useful when dealing with people you don't know and may never see again."
-msgstr ""
+msgstr "有了普通货币,任务就变得容易了:你只要把香蕉卖给别人换钱,然后用钱从别人那里买鞋.如果,像在莉迪亚,你有外国人 你愿意从谁买 或你想卖给谁, 有共同的交换媒介 显然有价值。也就是说,当与你不认识的人打交道时,金钱特别有用,而且可能再也见不到人了."
 
 #: ../../01_introduction.md:27
 msgid "The Lydian system's breakthrough was the standardized metal coin. Made of a gold-silver alloy called electrum, one coin was exactly like another—unlike, say, cattle. Also unlike cattle, the coins didn't age or die or otherwise change over time. And they were much easier to carry around. Other kingdoms followed Lydia's example, and coins became ubiquitous throughout the Mediterranean, with kingdoms stamping their insignia on the coins they minted. This had a dual effect: it facilitated the flow of trade, and it established the authority of the state."
-msgstr ""
+msgstr "利迪安系统的突破是标准化的金属硬币.一种金银合金铸成,叫做\"电\",一种硬币和另一种硬币完全一样,例如牛。与牛不同的是,硬币没有老化,也没有死活,或是随着时间的变化而变化.并且它们更容易携带。其他王国效仿了莉迪亚,硬币在地中海各地变得无所不在,由王国在所铸造的硬币上盖上其徽章.这有双重效果:它促进了贸易的流通,并确立了国家的权威."
 
 #: ../../01_introduction.md:29
 msgid "The spread of money throughout the Mediterranean didn't mean that it was universally used; soon after Lydia, cities and states in Greece, Persia, India and China began to strike their own coins, but even then most people were still subsistence farmers and existed largely outside the money economy. But as money became more common, it encouraged the spread of markets. Once a small part of the economy is taken over by markets and money, they tend to colonize the rest of the economy, gradually forcing out barter, feudalism, and other economic arrangements. This happens mostly because money makes market transactions so much easier and also because using money seems to redefine what people value, pushing them to view things in economic, rather than social, terms."
-msgstr ""
+msgstr "金钱在整个地中海的普及并不意味着钱币被普遍使用;不久后,希腊,波斯,印度和中国等地的城市和州开始打击自己的硬币,但即使那时,大多数人仍然是自给农并基本存在于钱币经济之外.但随着金钱的日益普遍,它鼓励了市场的扩张.一旦经济的一小部分被市场和金钱所占据,他们就倾向于将经济的其余部分殖民化,并逐渐地将易货,封建主义等经济安排逼出.这主要是因为货币使市场交易变得如此容易,而且因为使用货币似乎重新定义了人们的价值,迫使他们从经济而不是社会角度看待事物。"
 
 #: ../../01_introduction.md:31
 msgid "Governments were quick to embrace hard currency because it facilitated the collection of taxes and the building of military forces, coins funded armies and wars of conquest. In the process, coins became legal tender for all sorts of transactions. Marketplaces were a result of this system, not its cause, revisionists argue."
-msgstr ""
+msgstr "各国政府迅速接受硬通货,因为它促进了收税和建立军队、为军队提供资金的硬币和征服战争。在此过程中,硬币成为了各类交易的合法出价.市场是这一制度的结果,不是它的起因,修正主义者争论。"
 
 #: ../../01_introduction.md:33
 msgid "Once the Chinese had started making comparatively inexpensive paper from natural fibers, and discovered block-printing, paper currency came into use in the country. The first known use of paper currency in China is reported from the Tang dynasty and despite the fact that scarce information remains about this early system of paper currency there's evidence that these were certificates issued by the Tang government to pay local merchants in distants parts of the empire. By using certificates, the government could avoid having to transport metal money far away. Each certificate had a certain amount of money stated on it and was redeemable for metal cash on demand in the Chinese capital. Most merchants never went through the trouble of going to the capital to get cash for their certificate, instead the certificates were used as money locally, since they were transfereable. The view of money as commodity began to shift only with the widespread adoption of paper currency."
-msgstr ""
+msgstr "一旦中国人开始用天然纤维做出相对便宜的纸张,并发现块状印刷,纸币便被国内所使用.中国最早已知使用纸币的情况是从唐朝传来,尽管关于这种早期纸币制度的信息仍然稀少,但有证据表明这些是唐政府签发的在帝国遥远地区向当地商人支付报酬的证书.通过使用证书,政府可以避免将金属钱运出远方.每份证书上都写有一定数额的钞票,可以赎回中国首都需要的金属现金.大多数商人从未经历去首都取取出现金的麻烦,而是将这些证书在当地作钱用,因为这些证书是可转让的.货币作为商品的观点只有在广泛采用纸币后才开始转变."
 
 #: ../../01_introduction.md:35
 msgid "Compared to traditional money made from precious metals, paper currency was easier to transport, and the use of paper currency also freed up metal that could be put to other use. In 1821, the Bank of England adopted the gold standard, promising to redeem its notes for gold upon request. As other countries followed suit, the gold standard became the general rule for developed economies. The discovery of major new gold fields over the course of the 19th century ensured that the money supply kept growing."
-msgstr ""
+msgstr "相较于由贵金属所制出的传统货币,纸币更容易被运输,而使用纸币也释放出可以用于其他用途的金属.1821年,英格兰银行采用\"金本位\",承诺应请求赎回其纸币取出黄金.其他国家也效仿,金本位制成为了发达经济体的通则.在19世纪期间发现了重要的新金矿地,确保了货币供应持续增长."
 
 #: ../../01_introduction.md:37
 msgid "The gold standard, as it was intended to do, brought stability to prices and was enormously beneficial to property holders and lenders. However, it also brought deflation—that is, prices generally fell—because as countries, populations and economies grew, their governments had no easy way to increase the money supply short of mining more gold, and so money in effect became more scarce. Deflation was hard on farmers and borrowers, who longed for a little inflation to help them with their debts; when money gradually loses some of its value, so, too, do people's debts."
-msgstr ""
+msgstr "金本位标准,正如它所要做的,为价格带来了稳定,对财产持有者和出贷人极为有利。然而,它也带来了通货紧缩,即价格普遍下降,因为随着国家、人口和经济的增长,它们的政府没有容易的办法来增加货币供应,而不能开采更多的黄金,因此实际上资金更加匮乏。亏损对农民和借款人来说是很难的,他们渴望一点通货膨胀来帮助他们解决债务;当金钱逐渐失去一些价值时,人们的债务也是这样."
 
 #: ../../01_introduction.md:39
 msgid "What finally derailed the gold standard was World War I. Since governments needed more money for their militaries than they had in gold, and so they simply began printing it. And though many countries tried to return to the gold standard after the war, the Great Depression consequences made it end for good. Because of this currencies today are “fiat\" currencies, meaning they're backed by the authority of the issuing government, and nothing more."
-msgstr ""
+msgstr "最终使金本位脱轨的是一战.由于政府需要更多的钱 用于他们的军队 比他们拥有的黄金, 所以他们只是开始印刷它。虽然许多国家在战后试图恢复到金本位,但大萧条的后果使它永远结束.因为今天的这些货币是\"虚构\"的货币,这意味着它们得到了发行政府的权威的支持,仅此而已."
 
 #: ../../01_introduction.md:41
 msgid "In the United States, for example, that means the government accepts only dollars as payment for taxes and requires its creditors to accept dollars in payment for debts. But if people were to lose faith in the dollar and stop accepting it in everyday transactions, it would eventually become worthless. The reliance on fiat money, we're told, gives too much power to the government, which can recklessly print as much money as it wants. Yet the truth is that this has always been possible. Even with the gold standard, governments revalued their currencies from time to time, in effect dictating a new price for gold, or they ignored the standard when it proved too limiting, as during the First World War. What's more, the notion that gold is somehow more “real\" than paper is, well, a mirage. Gold is valuable because we've collectively decided that it's valuable and that we'll accept goods and services in exchange for it. And that's no different, ultimately, from our collective decision that colorful rectangles of paper are valuable and that we'll accept goods and services in exchange for them."
-msgstr ""
+msgstr "例如,在美国,这意味着政府只接受美元作为纳税的支付,并要求其债权人接受美元作为债务的支付.但是如果人们对美元失去信心,不再在日常交易中接受美元,最终会变得毫无价值.我们被告知,依赖无赖金钱给政府太多权力,政府可以随意印制所希望的金钱.但事实是,这始终是可能的。即使采用金本位,政府也时常重新估价其货币,实际上为黄金定出新的价格,或者在标准被证明过于限制时,如第一次世界大战期间,政府忽略了标准.更何况,金子比纸张更“真实”的概念 是一个幻影。黄金之所以有价值,是因为我们集体决定了它的价值,并且会接受货物和服务来换取它.这与我们的集体决定是无所区别的, 即有色长方形的纸张是有价值的, 我们将接受货物和服务来换取它们。"
 
 #: ../../01_introduction.md:43
 msgid "Difference Between Money and Currency"
-msgstr ""
+msgstr "货币和货币之间的差额"
 
 #: ../../01_introduction.md:45
 msgid "While most of the time, the terms \"money\" and \"currency\" are used interchangeably, there are some suggestions that these terms are not identical terms; these suggest that money is inherently an intangible concept, while currency is the physical or tangible manifestation of the intangible concept of money. By extension, according to this suggestions, money cannot be touched or smelled. Currency is the coin, note, or object that is presented as the physical form of money. The basic form of money is numbers; today some of the basic forms of currency are paper notes, coins, or plastic cards."
-msgstr ""
+msgstr "虽然\"钱\"和\"货币\"这两个名词在大部分时间里是互换使用的,但有一些建议认为这些名词不是同一种名词;这些都表明钱本身就是一个无形的概念,而货币则是货币无形概念的有形或有形的表现.由此推论,根据这个建议,钱是不能被碰或被闻到的.货币是作为货币的实物形式呈现的硬币,纸币或物品.货币的基本形式是数字;今天,一些基本形式的货币是纸币,硬币,或塑料卡."
 
 #: ../../01_introduction.md:47
 msgid "The powerful combination of computers and telecommunications, of smartphones and social media, of cryptography and virtual economies makes it seem like it's a possibility to create a cashless society. What matters most about money is not what it is, but what it does. After all, people will use the currencies that lubricate commerce, allow people to exchange goods and services, and thus encourage people to work and create. Money, whether it's represented by a metal coin, a shell or a piece of paper, doesn't always have value. Its value depends on the importance that people place on it—as a store of value, a unit of account, and a medium of exchange. Money is valuable merely because everyone knows that it will be accepted as a form of payment. However, throughout history, both the usage and the form of money have evolved."
-msgstr ""
+msgstr "计算机和电信,智能手机和社交媒体,密码学和虚拟经济的强大结合,使得它似乎有可能创造一个无收相的社会.钱最重要的不是它是什么 而是它做了什么毕竟,人们会使用通畅通通商的货币,允许人们交换货物和服务,从而鼓励人们工作和创造.金钱,无论是由金属硬币,外壳或纸币所代表,并不总是有价值.其价值取决于人们对其的重视程度——作为价值的储存地、记账单位和交换媒介。钱之所以有价值,只是因为大家都知道它将被接受为一种支付形式。然而,在整个历史中,金钱的使用和形式都有所演变."
 
 #: ../../01_introduction.md:49
 msgid "Definition of Cryptocurrencies"
-msgstr ""
+msgstr "加密的定义"
 
 #: ../../01_introduction.md:51
 msgid "Cryptocurrency is a digital or virtual form of currency; meaning it's a representations of value, that uses cryptography to secure and verify transactions as well as to control the creation of new units."
-msgstr ""
+msgstr "加密货币是货币的一种数字或虚拟形式;指它是价值的表示,它使用加密法来保证和核实交易,以及控制新单位的产生."
 
 #: ../../01_introduction.md:53
 msgid "Cryptocurrencies operate on systems that allow for secure online transactions to take place without the need for any central banks or intermediaries. Instead, transactions are recorded on a decentralized and distributed public ledger (DLT) called a blockchain, which is maintained by a network of computers around the world that record all transactions in a secure and transparent manner."
-msgstr ""
+msgstr "加密是在允许安全在线交易进行而无需任何中央银行或中间人的系统中运作的。相反,交易记录在一个分散和分布式公共分类账上,称为区块链(DLT),它由世界各地以安全和透明的方式记录所有交易的计算机网络维护."
 
 #: ../../01_introduction.md:55
 msgid "Definition of Blockchain Technology"
-msgstr ""
+msgstr "区块链技术的定义"
 
 #: ../../01_introduction.md:57
 msgid "Blockchain technology is crucial to cryptocurrencies as it allows transactions to be processed and authenticated without any central authority. Instead of relying on a single, centralized authority to manage and store the data, blockchains rely on a network of computers to validate and record transactions, which makes them more secure and resistant to tampering or hacking. A blockchain offers a commonly agreed record of truth to multiple, mutually distrusting participants in an economic system since it keeps track of cryptocurrency transactions which are grouped into blocks. Each block is cryptographically linked to the previous one so as new blocks are added the older blocks become more difficult to modify. New blocks are replicated across all copies of the blockchain within the network, and any conflicts are resolved automatically using established rules."
-msgstr ""
+msgstr "区块链技术对加密至关重要,因为它允许在没有任何中央当局的情况下处理和认证交易。区块链不依靠单一的集中权威来管理和存储数据,而是依靠计算机网络来验证和记录交易,这使得交易更加安全,更能抵御篡改或黑客.区块链为经济体系中多个相互不信任的参与者提供了共同商定的真相记录,因为它跟踪了被归类为区块的密码货币交易。每个区块在加密上与上一个区块相连,因此随着新的区块被添加,更老的区块变得更难被修改.新的块被复制到网络内所有区块链的副本中,任何冲突都使用既定规则自动解决."
 
 #: ../../01_introduction.md:59
 msgid "A blockchain is spread across nodes usually in different locations. This is one of the key ideas about blockchain, and gives it its unique decentralized features. Because of this, anyone can submit information to be stored onto a blockchain and therefore it is important that there are processes in place that can ensure everyone agrees on what information to add and what to discard. Different networks use different methods but this procesess together are what's called a consensus protocol and they are essentially the rules by which a network operates."
-msgstr ""
+msgstr "一个区块链通常分布在不同的地段.这是关于区块链的关键想法之一,并赋予它独特的分散特征.因此,任何人都可以提交存储在区块链上的信息,因此重要的是,必须制定程序,确保人人都能就哪些信息可以添加,哪些信息可以丢弃达成一致。不同的网络使用不同的方法,但这种相机合在一起,就是所谓的共识协议,它们本质上是网络运作的规则."
 
 #: ../../01_introduction.md:61
 msgid "Definition of Consensus Protocol"
-msgstr ""
+msgstr "协商一致议定书的定义"
 
 #: ../../01_introduction.md:63
 msgid "Consensus is a pervasive problem in many areas of human endeavor; consensus is the process of agreeing to one of several alternates proposed by a number of agents. Consensus can be defined as an agreement, protocols are rules which describe how an activity should be performed. Simply put, consensus protocols could be viewed as “agreement rules”."
-msgstr ""
+msgstr "共识是人类努力许多领域普遍存在的问题;共识是同意若干代理人提出的若干替代人选之一的过程。协商一致可被定义为一种协议,协议是描述如何开展某项活动的规则。简而言之,协商一致的议定书可被视为“协议规则”。"
 
 #: ../../01_introduction.md:65
 msgid "A consensus protocol (also known as consensus mechanism or consensus algorithm) is used to achieve the necessary agreement on a single data value or a single state of the distributed ledger at any given time. It provides a method of review and confirmation of what data should be added to a blockchain's record. Because blockchain networks typically don't have a centralized authority dictating who is right or wrong, nodes on a blockchain all must agree on the state of the network, following the predefined rules, or protocol."
-msgstr ""
+msgstr "共识协议(又称共识机制或共识算法)用于在任何特定时间就分布式分类账的单一数据值或单一状态达成必要的协议.它提供了一种审查和确认在区块链记录中应增加哪些数据的方法。因为区块链网络一般没有集中权威来形容谁对谁错,所以区块链上的节点都必须按照预先定义的规则,或协议约定网络的状态."
 
 #: ../../01_introduction.md:67
 msgid "Current State of Blockchain Technology"
-msgstr ""
+msgstr "区块链技术现状"
 
 #: ../../01_introduction.md:69
 msgid "Bitcoin"
-msgstr ""
+msgstr "比特币"
 
 #: ../../01_introduction.md:71
 msgid "The Bitcoin blockchain was first introduced in 2008 through a white paper by its pseudonymous creator Satoshi Nakamoto as a peer-to-peer electronic cash system that allows users to send payments directly to each other using Bitcoin (BTC), the blockchain's native currency, without the need for intermediaries such as financial institutions. The first Bitcoin transaction took place in January 2009, when Satoshi Nakamoto sent 10 Bitcoins to the first person who downloaded the software. The first commercial transaction using Bitcoin took place in 2010, when a programmer named Laszlo Hanyecz ordered two pizzas by paying 10,000 Bitcoins to an intermediary."
-msgstr ""
+msgstr "比特币区块链最早于2008年由它的假名创作者中本相治(Satushi Nakamoto)通过白皮书被引入为对等电子现金系统,允许用户使用比特币(BTC),即区块链的本土货币直接向对方发送付款,而不需要金融机构等中介机构.第一次比特币交易发生在2009年1月,由中本佐治将10个比特币发送给了下载该软件的第一人.使用比特币的第一次商业交易发生在2010年,当时一位叫Laszlo Hanyecz的程序员通过向中介支付一万个比特币来订购了两个比特币."
 
 #: ../../01_introduction.md:73
 msgid "Bitcoin uses a proof of work (PoW) consensus protocol, in which miners compete to solve complex mathematical equations using their computing power. The first miner who succeeds in solving the cryptographic puzzle adds the latest block of transactions to the blockchain and receives rewards in the form of newly minted coins and transaction fees. This process is energy-intensive and was designed to be difficult on purpose to \"prove\" that participants have done the \"work\" and are eligible to add a new block to the blockchain."
-msgstr ""
+msgstr "比特币使用工作证明(PoW)共识协议,其中矿工竞争利用他们的计算力解决复杂的数学方程.第一个成功解开密码谜题的矿工将最新的交易块添加到块链上,并以新铸币和交易费的形式得到奖励.这个过程是高能耗的,设计时故意难以\"证明\"参与者已经完成了\"工作\",并有资格在区块链上添加一个新的块."
 
 #: ../../01_introduction.md:75
 msgid "The scripting language used in Bitcoin transactions is called Script. It is used almost exclusively to define how outputs can be spent and is responsible for enforcing the rules that govern Bitcoin transactions. In other words, Script determines who the BTC was sent to, how much was sent, and under what conditions it can be spent."
-msgstr ""
+msgstr "比特币交易中使用的脚本语言称为\"脚本\".它几乎专门用来界定如何使用产出,并负责执行关于比特币交易的规则。也就是说,脚本决定了BTC是寄给谁的,发送了多少,在什么条件下可以使用."
 
 #: ../../01_introduction.md:77
 msgid "Ethereum"
-msgstr ""
+msgstr "以利亚"
 
 #: ../../01_introduction.md:79
 msgid "Ethereum is a decentralized blockchain platform that revolutionized the way applications are built and executed. Founded in 2015 by co-founder Vitalik Buterin, who published its white paper in 2013, Ethereum offers a range of features that go beyond those of Bitcoin, including the possibility to create new cryptocurrencies and the ability to execute smart contracts, which are self-executing agreements encoded onto the blockchain, with the terms of the agreement between buyer and seller being directly written into lines of code without the need for intermediaries all while enforcing the negotiation or performance of the contract automatically. By enabling the execution of smart contracts, Ethereum opens up the possibility of creating decentralized applications (DApps), which operate transparently and independently without any central authority."
-msgstr ""
+msgstr "Ethereum是一个分散式的块链平台,它使应用程序的构建和执行方式发生了革命性的变化.2015年由共同创始人维塔利克·布特林创立,他在2013年发表白皮书,埃特鲁姆提供了一系列超越比特币的特征,包括有可能创造出新的密码并有能力执行智能合同,这些合同是自动执行协议,编码在区块链上,买卖双方的协议条款直接被写入代码线而无需所有中介,同时自动强制执行合同的谈判或履行.通过允许执行智能合同,Ethereum开辟了创建分散应用程序(DApps)的可能性,这些应用程序在没有任何中央权威的情况下透明独立地运作."
 
 #: ../../01_introduction.md:81
 msgid "Like Bitcoin, Ethereum initially used a proof-of-work (PoW) consensus protocol, similar to Bitcoin, but it has undergone a major upgrade that moved it to a proof-of-stake (PoS) consensus protocol. Unlike Proof of Work (PoW) consensus models, where miners' ability to validate block transactions is based on their hardware's computing power, PoS models assign the task of validating new blocks based on the size of the node's stake, with larger stakes having a higher likelihood of producing the next block. The PoS system aims to provide a more energy-efficient alternative to PoW while still maintaining the security of the blockchain. This upgrade on the concensus protocol aims to increase efficiency, security, and reduce environmental impact by eliminating the need for the intensive computational power that PoW requires."
-msgstr ""
+msgstr "和比特币一样,埃特鲁姆最初也采用了与比特币相似的\"工作证明(PoW)\"共识协议,但经过了一次重大升级,将其移动到\"购买证明(PoS)共识协议\".与工作证明(PoW)共识模型不同,矿工验证块交易的能力是基于他们的硬件的计算力,PoS模型指派的任务是根据节点的分量大小验证出新的块,较大的分量产生下个块的可能性更高.PoS系统旨在为PoW提供更节能的替代品,同时仍能维持区块链的安全.在Census协议上进行这项升级,旨在通过消除PoW所需的密集计算功率的需要来提高效率,安全性并减少环境影响."
 
 #: ../../01_introduction.md:83
 msgid "The blockchain's native currency is called Ether or ETH. Ether is used mainly for two purposes—it is traded as a digital currency on exchanges in the same fashion as other cryptocurrencies, and it is used on the Ethereum network to run applications. Therefore all decentralized applications built on Ethereum allow Ether and other crypto assets to be used in a plethora of different ways including as collateral for loans or be lent out to borrowers to earn interest. Collateral refers to assets pledged as security for repayment of a loan."
-msgstr ""
+msgstr "区块链的原生货币被称作以太或ETH.以太主要用于两种目的——它作为数字货币在交易所上以与其他密码相同的方式进行交易,它在以太网络上用于运行应用程序.因此,所有基于Ethereum的分散化应用程序允许以太和其他加密资产以多种不同方式使用,包括作为贷款的抵押或借出给借款人以赚取利息。抵押担保是指作为偿还贷款的担保而作保的资产。"
 
 #: ../../01_introduction.md:85
 msgid "Ethereum offers multiple languages for programmers to develop smart contracts. The two most active and maintained languages are:"
-msgstr ""
+msgstr "Ethereum为程序员提供多种语言来开发智能合同.两种最活跃和维护的语言是:"
 
 #: ../../01_introduction.md:87
 msgid "Solidity"
-msgstr ""
+msgstr "团结"
 
 #: ../../01_introduction.md:88
 msgid "Vyper"
-msgstr ""
+msgstr "阴道"
 
 #: ../../01_introduction.md:90
 msgid "DecentralChain"
-msgstr ""
+msgstr "DecentralChain"
 
 #: ../../01_introduction.md:92
 msgid "DecentralChain is a cutting-edge, secure and efficient blockchain ecosystem empowering smart contract creation, decentralized application (DApps) development and a thriving decentralized finance (DeFi) community. It utilizes a consensus protocol called Leased Proof of Stake (LPoS) which aims to improve upon traditional Proof of Stake (PoS) by allowing users to lease their stakes to other users, which increases the latter's ability to produce new blocks. In return, the lender receives a percentage of the transaction fees earned by the validator. This leasing mechanism aims to address the possible centralization problem in traditional PoS models where a few large stakeholders control a significant portion of the network, and the decision-making power is concentrated in the hands of a small group of individuals or entities while at the same time allowing all users to earn rewards, extending the ability to participate in the network to not only minority stakeholders but also users who just want to lease their stakes to other users."
-msgstr ""
+msgstr "DecentralChain是一个尖端、安全而高效的区块链生态系统,可增强智能合同的创造、分散应用(DApps)的开发以及繁荣的分散金融(DeFi)社区。它使用一个共识协议,叫作\"租取地取证\"(LPoS),目的是通过允许用户将自己的股份租给其他用户来改进传统的\"取取地取证\"(PoS),这提高了后者生产出新块的能力.作为回报,出贷人收到一定比例的交易费,由验证人支付.这种租赁机制旨在解决传统PoS模式中可能出现的集中化问题,其中少数大型利益攸关方控制了网络的一大部分,决策权集中在少数个人或实体手中,同时允许所有用户得到回报,将参与网络的能力不仅扩大到少数群体利益攸关方,而且扩展到那些只是想将自己的股份租给其他用户的用户."
 
 #: ../../01_introduction.md:94
 msgid "DecentralChain offers a unique approach to decentralized application development by avoiding high gas fees for all transactions. The blockchain's native language, called Ride, is a non-Turing-complete language, which helps keep the system secure and predictable. Ride allows for the creation of smart contracts, which are self-executing agreements written in code that run without a central entity behind them. This provides a platform for decentralized applications (DApps), which are applications that work without a central authority. DecentralChain's use of Ride and LPoS helps to ensure the stability and security of the network, making it an attractive option for decentralized application development."
-msgstr ""
+msgstr "DecentralChain通过避免对所有交易收取高额的天然气费,为分散化的应用开发提供了独特的方法.区块链的本土语言被称作\"Ride\",是一种非图灵-完整的语言,有助于保持系统的安全性和可预见性.Ride允许创建智能合约,这些合约是用代码书写的自动执行协议,运行时没有背后的中央实体.这为分散化的应用程序(DApps)提供了一个平台,这些应用程序是在没有中央权威的情况下运作的.DecentralChain使用Ride和LPoS有助于确保网络的稳定性和安全性,使其成为分散应用开发的有吸引力的选择."
 
 #: ../../01_introduction.md:96
 msgid "DecentralChain Ecosystem"
-msgstr ""
+msgstr "DecentralChain 生态系统"
 
 #: ../../01_introduction.md:98
 msgid "The DecentralChain ecosystem enables secure communication and interoperability between different blockchain networks. The ecosystem uses protocols to facilitate the transfer of assets and information between blockchain networks, as well as incentivize sustainability by reducing carbon emissions per transaction and generating carbon credits. Additionally, the ecosystem encourages carbon sequestration, where the sequestered carbon is tokenized and can be traded on a blockchain platform. There is also a decentralized wallet and exchange built on the DecentralChain network that offers various benefits, such as fast execution rates, multi-chain capability, low fees, and interoperability."
-msgstr ""
+msgstr "DecentralChain生态系统使不同区块链网络之间能够安全地沟通和互操作。生态系统利用协议促进区块链网络之间资产和信息的转让,并通过减少每次交易的碳排放量并产生碳入计量来激励可持续性。此外,生态系统鼓励碳固存,因为固存的碳是象征性的,可在区块链平台上进行交易。还有一个基于DecentralChain网络的分散式钱包和交换机,提供各种好处,如快执行率,多链能力,低收费,以及互操作性."
 
 #: ../../01_introduction.md:100
 msgid "Here are some of our most visited websites:"
-msgstr ""
+msgstr "以下是我们访问次数最多的网站:"
 
-#: ../../01_introduction.md:110 ../../01_introduction.md:121
+#: ../../01_introduction.md:110
+msgid "DecentralChain Website"
+msgstr "DecentralChain 网站"
+
+#: ../../01_introduction.md:121
+msgid "Decentral Exchange"
+msgstr "分散交流"
+
 #: ../../01_introduction.md:132
-msgid "card-img-bottom"
-msgstr ""
+msgid "Decentral Scan"
+msgstr "分散扫描"
 
 #: ../../01_introduction.md:107
 msgid "Wallet and Exchange"
-msgstr ""
+msgstr "钱包和交换"
 
 #: ../../01_introduction.md:109
 msgid "[Decentral.Exchange](<https://decentral.exchange/>) is an all-in-one platform that combines the features of a wallet, decentralized exchange, and cryptocurrency management tool into a single, seamless platform. Built on the DecentralChain blockchain, this platform offers numerous benefits to its users, including fast execution rates, multi-chain capability, low fees, and interoperability."
-msgstr ""
+msgstr "[Decentral.Exchange](<https://decentral.exchange/>) 是一个将钱包,分散交换,加密货币管理工具等功能结合到一个单一的无缝平台的全能平台.这个平台建于DecentralChain区块链上,为其用户提供了许多好处,包括快速执行率,多链能力,低收费,以及互操作性."
 
 #: ../../01_introduction.md:111
 msgid "One of the most significant advantages of decentralized exchanges is that they are not controlled by any central authority, giving users complete control over their assets. Unlike centralized exchanges, there is no risk of funds being frozen or confiscated by a centralized entity. With Decentral.Exchange, users can also enjoy enhanced security, as their private keys are stored locally on their device, reducing the risk of cybercrime. Decentralized exchanges also provide access to a wider range of assets, thanks to the absence of restrictions on the number of tokens that can be traded. Decentral.Exchange takes this further with its multi-chain capability, allowing users to trade tokens across different blockchains seamlessly. Decentral.Exchange's interoperability enables users to trade tokens across various chains and different decentralized exchanges, making it possible to access a broader range of assets effortlessly."
-msgstr ""
+msgstr "分散式交换的一个最显著的优点是它们不受任何中央当局的控制,使用户能够完全控制其资产.与集中交换不同,中央实体不会冻结或没收资金。有了Decentral.Exchange,用户也可以享受强化的安全,因为其私人钥匙被储存在当地的设备上,降低了网络犯罪的风险.由于对可交易的代币数量没有限制,分散化的交易所也提供了获得更广泛范围资产的机会。Decentral.Exchange凭借其多链的能力将这一点进一步推向前进,使用户能够无缝地在不同的区块链之间交换令牌.Decentral.Exchange的互通性使用户能够跨越各种链条和不同的分散交换方式来交换信使,从而有可能不费力地进入更广泛的资产范围."
 
 #: ../../01_introduction.md:113
 msgid "One of the key selling points of Decentral.Exchange is its low fees, which sets it apart from traditional centralized exchanges that often charge exorbitant fees. The absence of intermediaries means that users can keep more of their profits, making trading more accessible to everyone. In the DecentralChain ecosystem, having a native decentralized exchange is essential, as it facilitates easy buying and selling of DecentralChain tokens within the ecosystem. Additionally, project participants can create their tokens and trade them on the exchange. Decentral.Exchange also enables users to send and receive coins without the need for a centralized intermediary."
-msgstr ""
+msgstr "Decentral.Exchange的关键销售点之一是它的低收费,这使它有别于传统的集中交换,这种交换经常收取高额费用.缺乏中介意味着用户可以多保留利润,使交易更容易为所有人所利用.在DecentralChain生态系统中,拥有本地分散的交换至关重要,因为它有助于在生态系统内方便地买卖DecentralChain的代币.此外,项目参与方可制作其代币并进行交换。Decentral.Exchange也使用户无需中央中介即可发和收受硬币."
 
 #: ../../01_introduction.md:115
 msgid "Decentral.Exchange is at the forefront of the future of crypto trading, providing users with a wide range of benefits that centralized exchanges cannot match. With its native blockchain, DecentralChain, Decentral.Exchange is ideally positioned to revolutionize the crypto industry and redefine the way we trade cryptocurrencies."
-msgstr ""
+msgstr "Decentral.Exchange站在了未来密码交易的前列,为用户提供了集中交换无法匹配的广泛利益.DecentralChain,Decentral.Exchange的原产地区块链 最理想的地位是 革命化密码行业 并重新定义我们交易密码的方式"
 
 #: ../../01_introduction.md:117
 msgid "Blockchain Explorer"
-msgstr ""
+msgstr "块链探索器"
 
 #: ../../01_introduction.md:119
 msgid "[DecentralScan.com](<https://decentralscan.com/>) is the official block explorer of the DecentralChain blockchain. It is a powerful tool that allows users to view, track, and analyze transactions on the DecentralChain blockchain. The block explorer provides a user-friendly interface that simplifies the navigation of the complex data stored on the blockchain."
-msgstr ""
+msgstr "[DecentralScan.com](<https://decentralscan.com/>) 是DecentralChain区块链的官方区块探索者.它是一个强大的工具,可以让用户查看,跟踪,分析DecentralChain区块链上的交易.块探险器提供了一个方便用户的界面,简化了存储在块链上复杂数据的导航."
 
 #: ../../01_introduction.md:121
 msgid "One of the key benefits of DecentralScan.com is its ability to provide transparency to the DecentralChain ecosystem. It enables users to view all the transactions that have occurred on the blockchain in real-time, including the number of DecentralCoins (DCC) transferred, the addresses involved in the transaction, and the transaction timestamp. This makes it easy to track the movement of DCC and understand how the ecosystem is being used."
-msgstr ""
+msgstr "DecentralScan.com的主要好处之一是它有能力为DecentralChain生态系统提供透明性.它使用户能够实时查看在区块链上发生的所有交易,包括传输的DecentralCoins(DCC)数量,交易所涉及的地址,以及交易时间戳等.这使得DCC的移动易于跟踪,并理解生态系统是如何被利用的."
 
 #: ../../01_introduction.md:123
 msgid "The block explorer is also valuable in its ability to provide detailed information about the nodes in the network. Users can view the current number of nodes, their geographical distribution, and information about each node, such as its uptime and the number of blocks it has mined. This information is essential for the DecentralChain ecosystem, as it allows users to view the distribution of the network and understand the ecosystem's health."
-msgstr ""
+msgstr "区块探险家在提供网络中节点的详细信息的能力方面也颇有价值.用户可以查看当前节点的数量,其地理分布,以及每个节点的信息,例如它的上升时间和它所开采的块的数量.这些信息对DecentralChain生态系统至关重要,因为它使用户能够查看网络的分布并了解生态系统的健康."
 
 #: ../../01_introduction.md:125
 msgid "In addition to tracking transactions and nodes, the block explorer also offers users a detailed view of the smart contract deployment on the blockchain. This is particularly useful for developers and businesses building on the DecentralChain blockchain, as it enables them to view and analyze deployed smart contracts, making it easier to identify bugs or potential vulnerabilities in the contract code."
-msgstr ""
+msgstr "除了跟踪交易和节点,块探险家还给用户提供了对块链上智能合同部署的详细视图.这对DecentralChain区块链上的开发商和企业特别有用,因为它能够让他们查看和分析部署的智能合同,从而更容易地识别合同代码中的缺陷或潜在弱点."
 
 #: ../../01_introduction.md:127
 msgid "Furthermore, the block explorer plays a vital role in ensuring the security of the DecentralChain ecosystem. By providing detailed information about transactions and nodes, it makes it easier for users to identify suspicious activity or potential security threats. The block explorer can also be used to track the movement of coins that have been stolen or lost, making it easier to recover them."
-msgstr ""
+msgstr "此外,区块探险家在确保DecentralChain生态系统安全方面发挥着至关重要的作用.通过提供有关交易和节点的详细资料,用户更容易发现可疑活动或潜在的安全威胁。块状探险者也可以用来追踪被偷或丢失的硬币的移动情况,这样就更容易取回."
 
 #: ../../01_introduction.md:129
 msgid "Inter-Chain Gateway Protocol"
-msgstr ""
+msgstr "海峡间网关协议"
 
 #: ../../01_introduction.md:131
 msgid "The DecentralChain Inter-Chain Gateway is a blockchain mechanism designed to enable secure communication and interoperability between different blockchain networks. This is achieved by creating a decentralized network of nodes that utilize smart contract technology to validate and process transactions between different blockchains."
-msgstr ""
+msgstr "DecentralChain 跨Chan网关是一种区块链机制,旨在在不同区块链网络之间实现安全通信和互通.其方法是建立一个分散的节点网络,利用智能合同技术验证和处理不同区块链之间的交易。"
 
 #: ../../01_introduction.md:133
 msgid "One major use case of the gateway is the ability to transfer assets between different blockchain networks. For example, if you hold Bitcoin but want to use it on another blockchain network, such as DecentralChain, the gateway can allow you to transfer your Bitcoin to the DecentralChain network, where it is converted into a form that is compatible with the DecentralChain blockchain."
-msgstr ""
+msgstr "网关的一个主要用途是在不同区块链网络之间转移资产的能力。例如,如果持有比特币但想在另一个区块链网络上使用,如DecentralChain,网关可以允许您将比特币转移到DecentralChain网络,在那里它被转换成一个能与DecentralChain区块链兼容的形式."
 
 #: ../../01_introduction.md:135
 msgid "In addition, the gateway facilitates the sharing of information between different blockchain networks. By creating a decentralized oracle network, smart contracts on different blockchain networks can access and utilize external data, enabling the creation of decentralized applications that use data from multiple sources and blockchain networks."
-msgstr ""
+msgstr "此外,该网关还促进不同区块链网络之间的信息共享。通过建立分散的甲骨文网络,不同区块链网络的智能合同可以访问和利用外部数据,从而能够创建使用多来源和区块链网络数据的分权应用程序."
 
 #: ../../01_introduction.md:137
 msgid "To ensure the network's security, the gateway uses smart contract technology with predefined rules and conditions that are automatically executed when specific conditions are met. These conditions include input validation and access controls to ensure that only authorized parties can access and utilize the network's information."
-msgstr ""
+msgstr "为确保网络安全,网关使用具有预先设定的规则和条件的智能合同技术,在满足特定条件后自动执行.这些条件包括输入验证和访问控制,以确保只有被授权方才能访问和利用网络的信息."
 
 #: ../../01_introduction.md:139
 msgid "Proof of Incentivized Sustainability Protocol"
-msgstr ""
+msgstr "激励性可持续性议定书的证据"
 
 #: ../../01_introduction.md:141
 msgid "As society becomes increasingly aware of the impact of climate change, businesses and individuals are looking for ways to reduce their carbon footprint. In the realm of blockchain technology, the high energy consumption and resulting carbon emissions of Bitcoin transactions are particularly problematic. However, the DecentralChain blockchain presents a solution to this problem through the use of its proof of incentivized sustainability protocol."
-msgstr ""
+msgstr "随着社会日益意识到气候变化的影响,企业和个人正在寻找减少碳足迹的途径。在区块链技术领域,比特币交易的高能耗和由此产生的碳排放尤其成问题.然而,DecentralChain区块链通过使用其激励性可持续性协议的证明来解决这个问题。"
 
 #: ../../01_introduction.md:143
 msgid "The traditional Bitcoin blockchain consumes a significant amount of energy for each transaction, releasing large amounts of carbon emissions into the atmosphere. In contrast, the DecentralChain blockchain utilizes a proof of stake protocol which is more energy efficient, resulting in significantly lower carbon emissions per transaction."
-msgstr ""
+msgstr "传统的比特币区块链每次交易消耗大量能量,将大量碳排放释放入大气.与此相反,DecentralChain区块链利用了一种更能节能的利害关系协议证明,导致每笔交易的碳排放量显著降低。"
 
 #: ../../01_introduction.md:145
 msgid "The DecentralChain blockchain generates carbon credits through the proof of incentivized sustainability protocol. Every Bitcoin transaction on the DecentralChain blockchain creates new carbon credits, which can be sold or used to offset the carbon emissions of other activities. DecentralChain shares a percentage of these carbon credits as incentives to node owners who host their nodes on eco-friendly servers."
-msgstr ""
+msgstr "DecentralChain区块链通过激励可持续性协议的证明产生碳入计量.DecentralChain区块链上的每一比特币交易都会产生新的碳入计量,这些入计量可以被出售或用于抵消其他活动的碳排放.DecentralChain分享了这些碳信用额的一定比例,作为对在生态友好型服务器上托管其节点的节点拥有者的奖励."
 
 #: ../../01_introduction.md:147
 msgid "The equation to calculate the carbon emissions of the Bitcoin blockchain is:"
-msgstr ""
+msgstr "计算比特币区块链碳排放量的方程式是:"
 
 #: ../../01_introduction.md:149
 msgid "Carbon Emissions = Electricity used (kWh) x Carbon Intensity (gCO2/kWh)"
-msgstr ""
+msgstr "碳排放量=用电量(kWh)×碳密度(gCO2/kWh)"
 
 #: ../../01_introduction.md:151
 msgid "Using this equation, the carbon emissions of the Bitcoin blockchain can be compared to a proof of stake blockchain protocol like DecentralChain. The difference in carbon emissions between the two can then be used to generate carbon credits, creating a new market for businesses and individuals to offset their carbon emissions and invest in a sustainable future."
-msgstr ""
+msgstr "利用这个等式,比特币区块链的碳排放可以被比作DecentralChain等股份区块链协议的证明.两者的碳排放差异可以用来产生碳入计量,为企业和个人创造新的市场来抵消碳排放并投资于可持续的未来."
 
 #: ../../01_introduction.md:153
 msgid "According to a study by the World Bank, carbon credits can yield a return of up to 7.2 percent annually over a 15-year period. This makes them an attractive investment for individuals and companies alike."
-msgstr ""
+msgstr "根据世界银行的一项研究,碳入计量在15年期间每年可产生高达7.2%的回报。这使得它们成为个人和公司都有吸引力的投资。"
 
 #: ../../01_introduction.md:155
 msgid "The DecentralChain blockchain not only provides a more sustainable alternative to traditional Bitcoin transactions but also creates new opportunities for businesses and individuals to invest in a sustainable future. By incentivizing sustainable practices through the proof of incentivized sustainability protocol and the hosting of nodes on eco-friendly servers, DecentralChain is paving the way for a greener, more sustainable future."
-msgstr ""
+msgstr "DecentralChain区块链不仅为传统的比特币交易提供了更可持续的替代品,而且还为企业和个人为可持续的未来投资创造了新的机会.DecentralChain通过证明激励可持续性协议和在生态友好型服务器上托管节点来激励可持续做法,正在为更加绿色、更可持续的未来铺平道路。"
 
 #: ../../01_introduction.md:157
 msgid "Carbon Sequestration"
-msgstr ""
+msgstr "碳固存"
 
 #: ../../01_introduction.md:159
 msgid "Carbon sequestration, the process of capturing and storing carbon dioxide (CO2) to reduce its concentration in the atmosphere, is a critical strategy in mitigating the effects of climate change. Through the use of blockchain technology, carbon sequestration can be further incentivized, creating a new market for carbon credits."
-msgstr ""
+msgstr "碳固存是捕获和储存二氧化碳以减少其在大气中的浓度的过程,是减轻气候变化影响的一项关键战略。通过使用区块链技术,可以进一步激励碳固存,为碳入计量创造出一个新的市场."
 
 #: ../../01_introduction.md:161
 msgid "One of the ways to achieve carbon sequestration is by buying property in Costa Rica and tokenizing the sequestered carbon in the form of a digital token that can be traded on a blockchain platform. The Costa Rican government's initiative of National Forest Financing Fund (FONAFIFO) provides a financial incentive for private landowners to reforest and conserve their land, while also allowing them to receive payments for the carbon sequestered on their property in the form of carbon credits. By tokenizing these carbon credits on a blockchain platform, the carbon sequestration process can be further incentivized, creating a new market for carbon credits and a carbon credit-backed crypto-asset."
-msgstr ""
+msgstr "实现碳固存的方法之一是购买哥斯达黎加的财产,并以数字符号形式表示可于区块链平台上进行交易的被固存的碳。哥斯达黎加政府的国家森林筹资基金倡议为私人土地所有者重新造林和养护土地提供了财政奖励,同时允许他们获得以碳入计量形式对其财产所封存的碳的付款。通过在区块链平台上标出这些碳信用额,可以进一步激励碳固存进程,为碳信用额创造出一个新的市场并建立一个碳信用额支持的加密资产。"
 
 #: ../../01_introduction.md:163
 msgid "The tokenization of carbon credits on a blockchain platform not only increases transparency and traceability in the carbon market, but it also provides a new way for people to invest in the conservation of natural areas while obtaining the economic benefit of the carbon credits. This creates a win-win situation, in which the carbon sequestration is incentivized, and the conservation of natural areas is supported."
-msgstr ""
+msgstr "区块链平台上的碳信用额的象征性化不仅提高了碳市场的透明度和可追溯性,而且还为人们在获得碳信用额的经济效益的同时对自然区的保护进行投资提供了一种新的途径.这造成了双赢的局面,在这种局面下,碳固存得到激励,自然地区的保护也得到了支持."
 
 #: ../../01_introduction.md:165
 msgid "The tokenization of carbon credits on a blockchain platform creates a new market for carbon credits and enables the creation of a carbon credit-backed crypto-asset. This approach can increase transparency and traceability in the carbon market, making it easier to track and verify the carbon credits being traded. Moreover, it provides a new way for people to invest in the conservation of natural areas, while also obtaining the economic benefit of the carbon credits. The Costa Rican government's initiative of National Forest Financing Fund (FONAFIFO) has set the base for this process, and with more involvement of the private sector, decentralized finance, and blockchain technology, this approach can be a step towards a sustainable future where everyone can participate in the conservation and mitigation of climate change."
-msgstr ""
+msgstr "区块链平台上碳信用额的象征性化为碳信用额创造了一个新的市场,并使得能够创建碳信用额支持的加密资产。这种方法可以提高碳市场的透明度和可追踪性,从而更容易跟踪和核实交易中的碳入计量。此外,它为人们提供了投资于自然区保护的新方法,同时也从碳入计量中获得经济利益。哥斯达黎加政府提出的国家森林筹资基金倡议为这一进程奠定了基础,在私营部门、分散的金融和块链技术的更多参与下,这种办法可以成为走向可持续未来的一步,让每个人都可以参与保护和减缓气候变化。"
 
 #: ../../01_introduction.md:167
 msgid "Native Swap"
-msgstr ""
+msgstr "原生交换"
 
 #: ../../01_introduction.md:169
 msgid "DecentralChain is an innovative blockchain platform that offers a wide range of features to its users, one of which is the upcoming DecentralChain native swap. A swap is a way for users to exchange one cryptocurrency for another, without the need for a centralized intermediary. In this essay, we will delve into how the DecentralChain native swap is expected to work, and explain how users will be able to use it to swap their DecentralCoin for other cryptocurrencies."
-msgstr ""
+msgstr "DecentralChain是一个创新的区块链平台,为用户提供广泛的功能,其中一个是即将到来的DecentralChain本土互换.互换是用户将一种密码货币换成另一种货币的一种方式,不需要集中的中介.在本文中,我们将深入探讨DecentralChain本土互换预期如何运作,并解释用户将如何能够使用它来将他们的DecentralCoin互换到其他密码."
 
 #: ../../01_introduction.md:171
 msgid "A swap is essentially a smart contract that facilitates the exchange of one cryptocurrency for another. When a user initiates a swap, their cryptocurrency is locked into the smart contract, and they receive the equivalent amount of the other cryptocurrency in return. The smart contract then releases the locked up cryptocurrency to the other user. This process happens on-chain, meaning that the swap is settled on the blockchain, and the transaction is recorded on the blockchain's ledger."
-msgstr ""
+msgstr "互换基本上是一种智能合同,它有利于一种加密货币与另一种加密货币的交换。当一个用户发起互换时,他们的加密货币被锁定在智能合同中,他们得到的回报是相当于其他加密货币的金额.智能合同随后将被锁入的密码货币发布给其他用户.这个过程发生在链上,指交换在块链上结算,交易被记录在块链的分类账上."
 
 #: ../../01_introduction.md:173
 msgid "The DecentralChain native swap is expected to be powered by an Automated Market Maker (AMM) algorithm. This algorithm will calculate the price of the coin based on the token supply and the liquidity in the swap. The price will be calculated using the constant product formula."
-msgstr ""
+msgstr "DecentralChain本土互换预计将由自动市场制造器(AMM)算法提供动力.这个算法会根据相交换中象征性的供给和流动性来计算硬币的价格.价格将使用常数产品公式来计算。"
 
 #: ../../01_introduction.md:175
 msgid "A swap platform can be thought of as a liquidity pool where users can deposit their tokens, and then use those tokens to swap for other tokens on the platform. As more users deposit tokens into the pool, the pool's liquidity increases, making it more attractive for users to swap their tokens on the platform."
-msgstr ""
+msgstr "互换平台可以被视作一个流动性池,用户可以在此存放其代币,再用这些代币来交换平台上的其他代币.随着更多用户将信使存入公所,公所的流动性会增加,使得用户在平台上互换信使更具吸引力."
 
 #: ../../01_introduction.md:177
 msgid "The DecentralChain native swap is expected to offer users a secure, efficient, and decentralized way to swap their cryptocurrencies. By eliminating the need for centralized intermediaries, users will be able to exchange their cryptocurrencies without relying on third parties, which can be slow, expensive, and risky. With the upcoming launch of the DecentralChain native swap, users will be able to experience the future of crypto swapping firsthand."
-msgstr ""
+msgstr "DecentralChain本土互换预计将为用户提供一个安全,高效,分散的方式来互换密码.通过消除对集中中介的需要,用户将能够交换其密码而不依赖第三方,而第三方可能缓慢、昂贵和有风险。随着DecentralChain本土互换的即将推出,用户将能够体验到密码互换的一手未来."
 
 #: ../../01_introduction.md:179
 msgid "CR Coin"
@@ -364,16 +389,20 @@ msgstr ""
 
 #: ../../01_introduction.md:181
 msgid "CR Coin is a social currency proposed for Costa Rica, designed to provide a secure, efficient and environmentally-friendly medium of exchange for its citizens. The currency is built on the DecentralChain blockchain, a specialized platform for social currencies that ensures maximum security and scalability. It also incorporates carbon negative technology, which aims to minimize the environmental impact of blockchain-based transactions."
-msgstr ""
+msgstr "CR Coin是哥斯达黎加的一种社会货币,旨在为公民提供安全、高效和环保的交流媒介。货币以DecentralChain区块链为主,是社会货币的专用平台,能确保最大程度的安全和可伸缩性.它还包括了碳负技术,其目的是将基于区块链的交易对环境的影响降到最低。"
 
 #: ../../01_introduction.md:183
 msgid "By introducing CR Coin, Costa Rica's economy can enjoy the advantages of blockchain technology, such as transparency, low transaction costs, and secure transactions. Currently, cash, bank transfers and online payment systems are the most commonly used methods for payments in Costa Rica, but these traditional forms of money and payment systems have limitations and vulnerabilities, including fraud and high costs."
-msgstr ""
+msgstr "通过引入CR Coin,哥斯达黎加的经济可以享受区块链技术的优势,如透明度,低交易成本,安全交易等.目前,现金、银行转账和在线支付系统是哥斯达黎加最常用的支付方法,但这些传统的货币和支付系统形式有局限性和弱点,包括欺诈和高成本。"
 
 #: ../../01_introduction.md:185
 msgid "The launch of CR Coin is planned to involve a comprehensive marketing strategy, the establishment of a network of merchants and exchanges that accept CR Coin, and measures to ensure the security, stability and reliability of the currency. It is hoped that the introduction of CR Coin will not only provide a new medium of exchange for citizens but also create new opportunities for businesses, entrepreneurs and investors. CR Coin aims to revolutionize the way payments are made in Costa Rica, promoting sustainable development and environmental conservation with the potential to contribute to the country's goal of becoming a carbon-neutral economy that could have significant benefits for Costa Rica and its citizens."
-msgstr ""
+msgstr "CR Coin的推出计划涉及一个全面的营销战略,建立一个接受CR Coin的商家和交易所网络,以及确保货币安全,稳定和可靠性的措施.希望CR Coin的引入不仅能为公民提供新的交流媒介,而且能为企业,企业家和投资者创造出新的机会.CR Coin旨在革命哥斯达黎加的付款方式,促进可持续发展和环境保护,并有可能为该国成为碳中和经济体的目标作出贡献,这将给哥斯达黎加及其公民带来重大利益。"
 
 #: ../../01_introduction.md:187
 msgid "Moreover, the education and awareness initiatives and partnerships with schools and non-profit organizations planned by CR Coin will help raise awareness about the importance of preserving the environment and promoting sustainable practices. By combining technology, community engagement and education, CR Coin aims to be a driving force for sustainable development and environmental conservation in Costa Rica."
-msgstr ""
+msgstr "此外,CR Coin计划开展的教育和提高认识举措以及与学校和非营利组织的伙伴关系将有助于提高人们对保护环境和促进可持续做法重要性的认识。通过将技术、社区参与和教育结合起来,CR Coin旨在成为哥斯达黎加可持续发展和环境保护的推动力。"
+
+#~ msgid "card-img-bottom"
+#~ msgstr ""
+

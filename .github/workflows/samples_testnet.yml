@@ -1,0 +1,56 @@
+name: Docs Samples on Testnet
+
+# Runs every sample in docs/_samples against the public Testnet, signing with
+# the disposable docs CI account (repo secret DOCS_TESTNET_SEED), and fails if
+# any sample fails. docs_checks.yml only typechecks and imports the samples;
+# this job broadcasts them. See docs/_samples/README.md and
+# docs/_samples/runner/run-samples.mjs.
+
+on:
+  # Only pull requests that change a sample or the runner, to keep Actions
+  # minutes and the CI account's DCC for the runs that need them.
+  pull_request:
+    branches: [main, dev]
+    paths:
+      - 'docs/_samples/**'
+      - '.github/workflows/samples_testnet.yml'
+  # Weekly, to catch a node, SDK or network change that breaks a sample nobody touched.
+  schedule:
+    - cron: '41 6 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  # One run at a time: every run spends DCC from the same CI account.
+  group: docs-samples-testnet
+  cancel-in-progress: false
+
+jobs:
+  run_samples:
+    # Pull requests from forks get no secrets, so they can't sign anything.
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+
+    steps:
+    - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
+    - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020  # v7.0.0
+      with:
+        node-version: '24'
+    - uses: actions/setup-java@de7274f081f381c8f8158605e0321c36c376e2e6  # v6.0.1
+      with:
+        distribution: 'temurin'
+        java-version: '25'
+        cache: 'maven'
+        cache-dependency-path: 'docs/_samples/java/pom.xml'
+
+    - name: Install sample dependencies
+      working-directory: docs/_samples
+      run: npm install
+
+    - name: Run every sample against the Testnet
+      env:
+        DOCS_TESTNET_SEED: ${{ secrets.DOCS_TESTNET_SEED }}
+      run: node docs/_samples/runner/run-samples.mjs

@@ -1,0 +1,217 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Blockchain Costa Rica
+# This file is distributed under the same license as the DecentralChain package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: DecentralChain docs dev\n"
+"Report-Msgid-Bugs-To: https://github.com/Decentral-America/docs/issues\n"
+"POT-Creation-Date: 2026-10-27 21:54-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: es\n"
+"Language-Team: Spanish <https://github.com/Decentral-America/docs>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../06_glossary.md:1
+msgid "Glossary"
+msgstr "Glosario"
+
+#: ../../06_glossary.md:3
+msgid "Terms as used across this documentation. Each entry links to the page that defines it in full."
+msgstr "Los términos tal como se usan en esta documentación. Cada entrada enlaza con la página que lo define por completo."
+
+#: ../../06_glossary.md
+msgid "DCC"
+msgstr "DCC"
+
+#: ../../06_glossary.md:7
+#, python-brace-format
+msgid "DecentralCoin, the native coin of DecentralChain. Amounts are stored in the smallest unit (`10^-8` DCC). See {ref}`Token (Asset) <02_decentralchain/02_token(asset):Token (Asset)>`."
+msgstr "DecentralCoin, la moneda nativa de DecentralChain. Los importes se guardan en la unidad más pequeña (`10^-8` DCC). Consulta {ref}`Token (activo) <02_decentralchain/02_token(asset):Token (Asset)>`."
+
+#: ../../06_glossary.md:3
+msgid "Chain ID"
+msgstr "ID de cadena"
+
+#: ../../06_glossary.md:10
+#, python-brace-format
+msgid "A single character identifying the network; it is part of every address and transaction. Mainnet is `?` (63) and Testnet is `!` (33). See {ref}`Mainnet, Testnet <02_decentralchain/08_mainnet-testnet-stagenet:Chain ID>`."
+msgstr "Un único carácter que identifica la red; forma parte de cada dirección y de cada transacción. Mainnet es `?` (63) y Testnet es `!` (33). Consulta {ref}`Mainnet, Testnet <02_decentralchain/08_mainnet-testnet-stagenet:Chain ID>`."
+
+#: ../../06_glossary.md:6
+msgid "Account"
+msgstr "Cuenta"
+
+#: ../../06_glossary.md:13
+#, python-brace-format
+msgid "A key pair plus everything associated with it on chain — balances, data entries, aliases and an optional script. See {ref}`Account <02_decentralchain/01_account:Account>`."
+msgstr "Un par de claves y todo lo que tiene asociado en la cadena: saldos, entradas de datos, alias y un script opcional. Consulta {ref}`Cuenta <02_decentralchain/01_account:Account>`."
+
+#: ../../06_glossary.md:9
+msgid "Address"
+msgstr "Dirección"
+
+#: ../../06_glossary.md:16
+msgid "A Base58 string derived from a public key and the chain ID. Mainnet addresses start with `3D`, Testnet addresses with `31`."
+msgstr "Una cadena Base58 derivada de una clave pública y del ID de cadena. Las direcciones de Mainnet empiezan por `3D` y las de Testnet por `31`."
+
+#: ../../06_glossary.md:12
+msgid "Alias"
+msgstr "Alias"
+
+#: ../../06_glossary.md:19
+msgid "A short, human-readable name for an address."
+msgstr "Un nombre corto y fácil de leer para una dirección."
+
+#: ../../06_glossary.md:15
+msgid "Seed"
+msgstr "Semilla"
+
+#: ../../06_glossary.md:22
+msgid "The secret phrase from which an account's private key is derived. Never share it."
+msgstr "La frase secreta de la que se deriva la clave privada de una cuenta. No la compartas nunca."
+
+#: ../../06_glossary.md:18
+msgid "dApp"
+msgstr "dApp"
+
+#: ../../06_glossary.md:25
+#, python-brace-format
+msgid "A decentralized application: an account with a Ride script whose `@Callable` functions users invoke with invoke script transactions. See {ref}`Creating and Launching a dApp <04_building-apps/08_creating-and-launching-a-dapp:Creating and Launching a dApp>`."
+msgstr "Una aplicación descentralizada: una cuenta con un script de Ride cuyas funciones `@Callable` los usuarios invocan con transacciones de invocación de script. Consulta {ref}`Crear y lanzar una dApp <04_building-apps/08_creating-and-launching-a-dapp:Creating and Launching a dApp>`."
+
+#: ../../06_glossary.md:21
+msgid "Smart account"
+msgstr "Cuenta inteligente"
+
+#: ../../06_glossary.md:28
+#, python-brace-format
+msgid "An account with a script that must approve every transaction the account sends. See {ref}`Smart Accounts <04_building-apps/09_smart-accounts:Smart Accounts>`."
+msgstr "Una cuenta con un script que debe aprobar cada transacción que envía la cuenta. Consulta {ref}`Cuentas inteligentes <04_building-apps/09_smart-accounts:Smart Accounts>`."
+
+#: ../../06_glossary.md:24
+msgid "Smart asset"
+msgstr "Activo inteligente"
+
+#: ../../06_glossary.md:31
+#, python-brace-format
+msgid "A token with a script that must approve every transaction involving it. See {ref}`Smart Assets <04_building-apps/10_smart-assets:Smart Assets>`."
+msgstr "Un token con un script que debe aprobar cada transacción en la que interviene. Consulta {ref}`Activos inteligentes <04_building-apps/10_smart-assets:Smart Assets>`."
+
+#: ../../06_glossary.md:27
+msgid "Blockchain Updates"
+msgstr "Blockchain Updates"
+
+#: ../../06_glossary.md:34
+#, python-brace-format
+msgid "A node extension that streams every block, microblock, state change and rollback over gRPC on port 6881. See {ref}`Blockchain Updates <04_building-apps/11_blockchain-updates:Blockchain Updates>`."
+msgstr "Una extensión del nodo que transmite por gRPC, en el puerto 6881, cada bloque, microbloque, cambio de estado y reversión. Consulta {ref}`Blockchain Updates <04_building-apps/11_blockchain-updates:Blockchain Updates>`."
+
+#: ../../06_glossary.md:30
+msgid "Ride"
+msgstr "Ride"
+
+#: ../../06_glossary.md:37
+#, python-brace-format
+msgid "The statically typed, functional smart-contract language of DecentralChain. See the {ref}`Ride language <03_ride-language/index:Ride Language>` section."
+msgstr "El lenguaje de contratos inteligentes funcional y de tipado estático de DecentralChain. Consulta la sección {ref}`Lenguaje Ride <03_ride-language/index:Ride Language>`."
+
+#: ../../06_glossary.md:33
+msgid "LPoS"
+msgstr "LPoS"
+
+#: ../../06_glossary.md:40
+#, python-brace-format
+msgid "Leased Proof of Stake: the consensus in which accounts can lease DCC to generating nodes. See {ref}`Node <02_decentralchain/05_node:Leased Proof of Stake>`."
+msgstr "Leased Proof of Stake (prueba de participación arrendada): el consenso en el que las cuentas pueden arrendar DCC a nodos generadores. Consulta {ref}`Nodo <02_decentralchain/05_node:Leased Proof of Stake>`."
+
+#: ../../06_glossary.md:36
+msgid "NG"
+msgstr "NG"
+
+#: ../../06_glossary.md:43
+msgid "The protocol that streams transactions in microblocks between blocks."
+msgstr "El protocolo que transmite las transacciones en microbloques entre un bloque y el siguiente."
+
+#: ../../06_glossary.md:39
+msgid "Generating balance"
+msgstr "Saldo generador"
+
+#: ../../06_glossary.md:46
+msgid "The balance that counts towards the chance of generating the next block, including leased DCC."
+msgstr "El saldo que cuenta para la probabilidad de generar el siguiente bloque, incluidos los DCC arrendados."
+
+#: ../../06_glossary.md:42
+msgid "Microblock"
+msgstr "Microbloque"
+
+#: ../../06_glossary.md:49
+msgid "A small batch of transactions appended to the current block before the next key block."
+msgstr "Un pequeño lote de transacciones que se añade al bloque actual antes del siguiente bloque clave."
+
+#: ../../06_glossary.md:45
+msgid "Deterministic Finality"
+msgstr "Finalidad determinista"
+
+#: ../../06_glossary.md:52
+#, python-brace-format
+msgid "Feature 25: generators endorse blocks with BLS signatures and a block is final once endorsed by two thirds of committed stake. See {ref}`Finality <02_decentralchain/09_protocol:Finality>`."
+msgstr "Función 25: los generadores respaldan los bloques con firmas BLS, y un bloque es final cuando lo respaldan dos tercios de la participación comprometida. Consulta {ref}`Finalidad <02_decentralchain/09_protocol:Finality>`."
+
+#: ../../06_glossary.md:48
+msgid "Blockchain feature"
+msgstr "Función de la blockchain"
+
+#: ../../06_glossary.md:55
+#, python-brace-format
+msgid "A numbered protocol change activated on a network by generator vote or network defaults. See {doc}`Features and Activation <05_node-guide/10_features-and-activation>`."
+msgstr "Un cambio de protocolo numerado que se activa en una red por votación de los generadores o por la configuración predeterminada de la red. Consulta {doc}`Funciones y activación <05_node-guide/10_features-and-activation>`."
+
+#: ../../06_glossary.md:51
+msgid "Node"
+msgstr "Nodo"
+
+#: ../../06_glossary.md:58
+msgid "Software that validates transactions, stores blocks and serves the REST API."
+msgstr "El software que valida las transacciones, guarda los bloques y sirve la API REST."
+
+#: ../../06_glossary.md:54
+msgid "Matcher"
+msgstr "Emparejador"
+
+#: ../../06_glossary.md:61
+msgid "The service that matches orders on the DecentralChain exchange."
+msgstr "El servicio que empareja las órdenes en el exchange de DecentralChain."
+
+#: ../../06_glossary.md:57
+msgid "Cubensis Connect"
+msgstr "Cubensis Connect"
+
+#: ../../06_glossary.md:64
+#, python-brace-format
+msgid "DecentralChain's browser-extension wallet. See {doc}`Wallet Integration <04_building-apps/04_wallet-integration>`."
+msgstr "La billetera de DecentralChain como extensión del navegador. Consulta {doc}`Integración de billeteras <04_building-apps/04_wallet-integration>`."
+
+#: ../../06_glossary.md:60
+msgid "DecentralScan"
+msgstr "DecentralScan"
+
+#: ../../06_glossary.md:67
+msgid "The DecentralChain block explorer."
+msgstr "El explorador de bloques de DecentralChain."
+
+#: ../../06_glossary.md:63
+msgid "Decentralite"
+msgstr "Decentralite"
+
+#: ../../06_glossary.md:70
+msgid "The smallest unit of DCC."
+msgstr "La unidad más pequeña de DCC."
+

@@ -1,0 +1,3507 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Blockchain Costa Rica
+# This file is distributed under the same license as the DecentralChain package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: DecentralChain docs dev\n"
+"Report-Msgid-Bugs-To: https://github.com/Decentral-America/docs/issues\n"
+"POT-Creation-Date: 2026-10-27 21:54-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh\n"
+"Language-Team: Chinese <https://github.com/Decentral-America/docs>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../04_building-apps/01_developer-tools.md:1
+#: ../../04_building-apps/index.md:20
+msgid "Developer Tools"
+msgstr "开发者工具"
+
+#: ../../04_building-apps/01_developer-tools.md:3
+#, python-brace-format
+msgid "Tools for writing, testing and deploying Ride scripts on DecentralChain. All of them are developed under the [Decentral-America](https://github.com/Decentral-America) GitHub organization. To call the chain from your own code, see {doc}`Client Libraries and SDK <02_client-libraries-and-sdk>`."
+msgstr "在DecentralChain上编写,测试和部署Ride脚本的工具.全部由 [美国中部](https://github.com/Decentral-America) GitHub组织开发.要从你自己的代码中调用链条,请参见 {doc}`客户图书馆和SDK <02_client-libraries-and-sdk>`."
+
+#: ../../04_building-apps/01_developer-tools.md:5
+msgid "At a Glance"
+msgstr "在一幅胶片上"
+
+#: ../../04_building-apps/01_developer-tools.md
+msgid "Tool"
+msgstr "工具"
+
+#: ../../04_building-apps/01_developer-tools.md
+msgid "What it's for"
+msgstr "用来做什么的?"
+
+#: ../../04_building-apps/01_developer-tools.md
+msgid "State (2026-10-25)"
+msgstr "国家(2026-10-25)"
+
+#: ../../04_building-apps/01_developer-tools.md
+#, python-brace-format
+msgid "{ref}`A node's compiler endpoints <04_building-apps/01_developer-tools:Compile with a Node>`"
+msgstr "{ref}`节点的编译器端点 <04_building-apps/01_developer-tools:Compile with a Node>`"
+
+#: ../../04_building-apps/01_developer-tools.md
+msgid "Compile, estimate and decompile scripts"
+msgstr "编译、估计和分解脚本"
+
+#: ../../04_building-apps/01_developer-tools.md
+msgid "On every node, including the public Testnet node. The method these docs use"
+msgstr "在每个节点上,包括公共的Testnet节点.这些文件所用的方法"
+
+#: ../../04_building-apps/01_developer-tools.md
+#, python-brace-format
+msgid "{doc}`Ride REPL <developer-tools/01_ride-repl>`"
+msgstr "{doc}`Ride 回复 <developer-tools/01_ride-repl>`"
+
+#: ../../04_building-apps/01_developer-tools.md
+msgid "Try expressions and read chain state interactively"
+msgstr "交互式尝试表达式和读取链条状态"
+
+#: ../../04_building-apps/01_developer-tools.md
+msgid "`@decentralchain/ride-repl@1.6.2` on npm, tested on Node.js 24"
+msgstr "Npm上的 `@decentralchain/ride-repl@1.6.2`, Node.js 24测试"
+
+#: ../../04_building-apps/01_developer-tools.md
+#, python-brace-format
+msgid "{ref}`dcc-ride-templates <04_building-apps/01_developer-tools:Starter Templates>`"
+msgstr "{ref}`dcc-ride-templates (英语).com.com. [永久失效連結] 互联网档案馆的存檔,存档日期2013-12-02. <04_building-apps/01_developer-tools:Starter Templates>`"
+
+#: ../../04_building-apps/01_developer-tools.md
+msgid "Starting points for new contracts"
+msgstr "新合同的起点"
+
+#: ../../04_building-apps/01_developer-tools.md
+msgid "Source repository"
+msgstr "源寄存器"
+
+#: ../../04_building-apps/01_developer-tools.md
+#, python-brace-format
+msgid "{ref}`surfboard <04_building-apps/01_developer-tools:Surfboard>`"
+msgstr "{ref}`冲浪板 <04_building-apps/01_developer-tools:Surfboard>`"
+
+#: ../../04_building-apps/01_developer-tools.md
+msgid "Command-line compiling and testing"
+msgstr "命令行编译和测试"
+
+#: ../../04_building-apps/01_developer-tools.md
+msgid "`2.2.6` on npm. Last updated 2022"
+msgstr "`2.2.6` on npm. (原始内容存档于2019-09-29).上次更新的2022年"
+
+#: ../../04_building-apps/01_developer-tools.md
+#, python-brace-format
+msgid "{ref}`ride-js <04_building-apps/01_developer-tools:ride-js and @decentralchain/ride>`"
+msgstr ""
+
+#: ../../04_building-apps/01_developer-tools.md
+msgid "Compile Ride from JavaScript"
+msgstr "从 JavaScript 编译 Ride"
+
+#: ../../04_building-apps/01_developer-tools.md
+msgid "Not usable from npm yet"
+msgstr "尚未从 npm 可用"
+
+#: ../../04_building-apps/01_developer-tools.md
+#: ../../04_building-apps/01_developer-tools.md:66
+msgid "DecentralChain IDE"
+msgstr "DecentralChain 独立开发点"
+
+#: ../../04_building-apps/01_developer-tools.md
+msgid "Browser IDE for Ride"
+msgstr "Ride 浏览器 IDE"
+
+#: ../../04_building-apps/01_developer-tools.md
+msgid "No public instance hosted"
+msgstr "没有主办公共案件"
+
+#: ../../04_building-apps/01_developer-tools.md:16
+msgid "Compile with a Node"
+msgstr "以节点编译"
+
+#: ../../04_building-apps/01_developer-tools.md:18
+msgid "Every node compiles Ride for you: `POST /utils/script/compileCode` takes the source as plain text and returns the compiled script, its complexity and any extra fee. It writes nothing to the chain."
+msgstr "每个节点为您编译了 Ride: `POST /utils/script/compileCode` 将源作为纯文本,并返回所编译的脚本,其复杂性和任何额外费用.它没有写到链子上。"
+
+#: ../../04_building-apps/01_developer-tools.md:30
+#, python-brace-format
+msgid "The `script` value goes into a Set Script, Set Asset Script or Issue transaction. For a dApp, `callableComplexities` gives the complexity of each callable function. In TypeScript, the `compileRide` helper in {ref}`Compile a Script <04_building-apps/07_smart-contracts-overview:Compile a Script>` wraps this call."
+msgstr "`script` 值会进入一个Set脚本,设置资产脚本或发行交易.对于一个dApp, `callableComplexities` 给出了每个可调用函数的复杂性.在TypeScript中, {ref}`编译脚本 <04_building-apps/07_smart-contracts-overview:Compile a Script>` 中的 `compileRide` 帮助者包起这个呼叫."
+
+#: ../../04_building-apps/01_developer-tools.md:32
+msgid "Two more endpoints take a compiled script, the `base64:...` string, as the plain-text body:"
+msgstr "另外两个终点取一个编译的脚本\"`base64:...` 弦\",作为平正文字正文:"
+
+#: ../../04_building-apps/01_developer-tools.md:34
+msgid "`POST /utils/script/estimate` returns the same complexity figures for an already compiled script."
+msgstr "`POST /utils/script/estimate` 返回一个已经编译的脚本的相同复杂数字 。"
+
+#: ../../04_building-apps/01_developer-tools.md:35
+msgid "`POST /utils/script/decompile` turns a compiled script back into Ride source, for example to read the script on an account you didn't write. Comments and formatting are lost."
+msgstr "`POST /utils/script/decompile` 将已编译的脚本回转为Ride源,例如用你没有写的账户来读取脚本.评论和格式化都丢失了。"
+
+#: ../../04_building-apps/01_developer-tools.md:37
+#: ../../04_building-apps/developer-tools/01_ride-repl.md:5
+msgid "Ride REPL"
+msgstr "Ride 回复"
+
+#: ../../04_building-apps/01_developer-tools.md:39
+#, python-brace-format
+msgid "The {doc}`Ride REPL <developer-tools/01_ride-repl>` evaluates Ride line by line, offline or against a node's live state, from a Node.js script or a web page."
+msgstr "{doc}`Ride 回复 <developer-tools/01_ride-repl>` 通过Node.js脚本或网页,逐行,离线或针对一个节点的活状态评价Ride行."
+
+#: ../../04_building-apps/01_developer-tools.md:47
+msgid "Starter Templates"
+msgstr "启动模板"
+
+#: ../../04_building-apps/01_developer-tools.md:49
+msgid "[`dcc-ride-templates`](https://github.com/Decentral-America/dcc-ride-templates) is a collection of Ride contract templates, shared modules and composition examples to start a new project from. Compile a template with a node before you deploy it, and read the script: a template is a starting point, not an audited contract for your use case."
+msgstr "[`dcc-ride-templates`](https://github.com/Decentral-America/dcc-ride-templates) 是Ride合同模板,共享模块和组成实例的集合来启动从来的新项目.在部署前,用节点来编译模板,并读取脚本:模板是一个起点,而不是用于您使用的已审计合同."
+
+#: ../../04_building-apps/01_developer-tools.md:51
+#, python-brace-format
+msgid "The runnable examples in these docs are smaller, self-contained contracts with a Testnet walkthrough each: the {doc}`pledge drive <08_creating-and-launching-a-dapp>`, the {doc}`multisig and escrow accounts <09_smart-accounts>`, the {doc}`smart assets <10_smart-assets>`, and the {doc}`token exchange, poll and list-argument dApps <03_how-to-guides>`."
+msgstr "这些文献中可循环的例子有: 小而自成一体的合同,每个合同都有Testnet穿行:{doc}`质押驱动器 <08_creating-and-launching-a-dapp>`, {doc}`多西格和代管账户 <09_smart-accounts>`, {doc}`智能资产 <10_smart-assets>` 和 {doc}`指数交换、民调和列表参数dApps <03_how-to-guides>`."
+
+#: ../../04_building-apps/01_developer-tools.md:53
+msgid "Surfboard"
+msgstr "冲浪板"
+
+#: ../../04_building-apps/01_developer-tools.md:55
+#, python-brace-format
+msgid "[`surfboard`](https://github.com/Decentral-America/surfboard) (`@decentralchain/surfboard` on npm) is a command-line tool to compile scripts, run Mocha tests against a node, and script deployments. The repository has not been updated since 2022. Release 2.2.6 still pulls its compiler and transaction library from packages outside the DecentralChain organization, and declares support for Node.js 8, so it is not covered by these docs' checks. For new projects, compile with a node and test with the TypeScript SDK, as the {doc}`How-To Guides <03_how-to-guides>` do."
+msgstr "[`surfboard`](https://github.com/Decentral-America/surfboard)(`@decentralchain/surfboard` on npm)是一个命令行工具,用于编译脚本,运行Mocha测试对一个节点,以及脚本部署.该寄存器自2022年起一直没有更新.发布 2.2.6 仍然从 DecentralChain 组织外的软件包中拉出其编译器和交易库,并声明支持 Node.js 8,因此不在这些docs的检查范围.对于新项目,如 {doc}`如何向导 <03_how-to-guides>` 那样,用节点编译并用TypeScript SDK进行测试."
+
+#: ../../04_building-apps/01_developer-tools.md:57
+msgid "ride-js and @decentralchain/ride"
+msgstr ""
+
+#: ../../04_building-apps/01_developer-tools.md:59
+msgid "[`ride-js`](https://github.com/Decentral-America/ride-js) wraps the Ride compiler for JavaScript. On npm:"
+msgstr "[`ride-js`](https://github.com/Decentral-America/ride-js) 为JavaScript将Ride编译器包入.时间npm:"
+
+#: ../../04_building-apps/01_developer-tools.md:61
+msgid "`@decentralchain/ride-js` 2.3.0 depends on compiler packages outside the DecentralChain organization."
+msgstr "`@decentralchain/ride-js` 2.3.0取决于DecentralChain组织外的编译器包."
+
+#: ../../04_building-apps/01_developer-tools.md:62
+msgid "`@decentralchain/ride` 2.3.1, its successor in the monorepo's [`packages/ride/ts`](https://github.com/Decentral-America/DecentralChain/tree/main/packages/ride/ts), can't be installed: its `package.json` still declares `workspace:*` dependencies, and `npm install` fails with `EUNSUPPORTEDPROTOCOL`."
+msgstr "`@decentralchain/ride` 2.3.1,其继承者在单列波的 [`packages/ride/ts`](https://github.com/Decentral-America/DecentralChain/tree/main/packages/ride/ts) 中无法被安装:它的 `package.json` 仍然宣布 `workspace:*` 依赖,而 `npm install` 则与 `EUNSUPPORTEDPROTOCOL` 相通失败."
+
+#: ../../04_building-apps/01_developer-tools.md:64
+msgid "Until a fixed `@decentralchain/ride` release is published, compile with a node."
+msgstr "在固定的 `@decentralchain/ride` 发布发布之前,用节点来编译."
+
+#: ../../04_building-apps/01_developer-tools.md:68
+msgid "The DecentralChain IDE is a browser IDE for Ride, with syntax highlighting, type and complexity checking, and deployment of account, dApp and asset scripts. No public instance is currently hosted. Use the REPL and a node's compiler instead."
+msgstr "DecentralChain IDE是Ride的浏览器IDE,其语法突出,类型和复杂度检查,以及账户,dApp和资产脚本的部署.目前没有举办任何公共活动。取而代之的是REPL和一个节点的编译器."
+
+#: ../../04_building-apps/01_developer-tools.md:70
+msgid "Explorer and Faucet"
+msgstr "探索者和福塞特"
+
+#: ../../04_building-apps/01_developer-tools.md:72
+msgid "[DecentralScan](https://decentralscan.com/) shows blocks, transactions, accounts, tokens and the data entries of dApps, so you can check the result of every call. The Testnet explorer is at [testnet.decentralscan.com](https://testnet.decentralscan.com/)."
+msgstr "[DecentralScan](https://decentralscan.com/) 显示块,交易,账户,令牌以及dApps的数据条目,这样可以检查每次呼叫的结果.Testnet探险家位于 [testnet.decentralscan.com](https://testnet.decentralscan.com/)."
+
+#: ../../04_building-apps/01_developer-tools.md:73
+msgid "The [Testnet faucet](https://testnet.decentralscan.com/faucet) sends free Testnet DCC to an address starting with `31`."
+msgstr "[Testnet 水龙头](https://testnet.decentralscan.com/faucet) 发送免费的Testnet DCC到一个从 `31` 开始的地址."
+
+#: ../../04_building-apps/01_developer-tools.md:75
+#, python-brace-format
+msgid "For the language itself, see the {doc}`Ride Language <../03_ride-language/index>` section."
+msgstr "关于语言本身,见 {doc}`Ride 语言 <../03_ride-language/index>` 部分."
+
+#: ../../04_building-apps/02_client-libraries-and-sdk.md:1
+msgid "Client Libraries and SDK"
+msgstr "客户图书馆和SDK"
+
+#: ../../04_building-apps/02_client-libraries-and-sdk.md:3
+msgid "DecentralChain's SDK is developed in one open-source monorepo, [Decentral-America/DecentralChain](https://github.com/Decentral-America/DecentralChain), released under the MIT license. The TypeScript packages are published to npm under the `@decentralchain` scope; the Java SDK is published to Maven Central."
+msgstr ""
+
+#: ../../04_building-apps/02_client-libraries-and-sdk.md:6
+msgid "Every `npm install` line in these docs pins an exact version that CI installs and imports on Node.js 24 on every pull request (`docs/scripts/check_install_snippets.py`). Several packages have a newer working release on the npm `next` tag than on `latest`; until those are promoted, **install the exact versions shown here**, not a bare package name. All packages are ESM-only and require Node.js 24 or later."
+msgstr "这些道克中的每条 `npm install` 行会标出一个精确的版本,CI在每次拉取请求(`docs/scripts/check_install_snippets.py`)时都会在Node.js 24上安装并导入.有好几种软件包在npm `next` 标签上有较 `latest` 更新的工作发布;在被推广之前, **安装此处显示的精确版本**,不是赤裸的软件包名称.所有软件包只采用无害环境管理,需要Node.js 24或更晚。"
+
+#: ../../04_building-apps/02_client-libraries-and-sdk.md:10
+msgid "`@decentralchain/node-api-grpc` has **no published npm release** yet. See [Node gRPC API](05_node-grpc)."
+msgstr "`@decentralchain/node-api-grpc` 拥有 **没有发布 npm 发布**,但还没有.见 [节点 gRPC API](05_node-grpc)."
+
+#: ../../04_building-apps/02_client-libraries-and-sdk.md:13
+msgid "Which package do I need?"
+msgstr "我需要哪个包裹?"
+
+#: ../../04_building-apps/02_client-libraries-and-sdk.md:9
+msgid "I want to…"
+msgstr "我想... 说说吧 I want to..."
+
+#: ../../04_building-apps/02_client-libraries-and-sdk.md:9
+#: ../../04_building-apps/developer-tools/01_ride-repl.md:15
+#: ../../04_building-apps/sdk/01_typescript.md:15
+#: ../../04_building-apps/sdk/01_typescript.md:43
+#: ../../04_building-apps/sdk/02_java.md:18
+msgid "Install"
+msgstr "安装"
+
+#: ../../04_building-apps/02_client-libraries-and-sdk.md:9
+msgid "Build, sign and broadcast transactions"
+msgstr "构建、签署和广播交易"
+
+#: ../../04_building-apps/02_client-libraries-and-sdk.md:9
+msgid "`@decentralchain/transactions@5.0.1`"
+msgstr "`@decentralchain/transactions@5.0.1`"
+
+#: ../../04_building-apps/02_client-libraries-and-sdk.md:9
+msgid "Read chain state from a node (REST)"
+msgstr "从节点读取链态( REST)"
+
+#: ../../04_building-apps/02_client-libraries-and-sdk.md:9
+msgid "`@decentralchain/node-api-js@2.0.1`"
+msgstr "`@decentralchain/node-api-js@2.0.1`"
+
+#: ../../04_building-apps/02_client-libraries-and-sdk.md:9
+msgid "Read chain data over gRPC / subscribe to blockchain updates"
+msgstr "通过 gRPC / 订阅读取链条数据以更新块链"
+
+#: ../../04_building-apps/02_client-libraries-and-sdk.md:9
+msgid "not published yet; see [Node gRPC API](05_node-grpc)"
+msgstr "尚未发布;见 [节点 gRPC API](05_node-grpc)"
+
+#: ../../04_building-apps/02_client-libraries-and-sdk.md:9
+msgid "Let browser users sign with their own wallet"
+msgstr "让浏览器用户用自己的钱包签名"
+
+#: ../../04_building-apps/02_client-libraries-and-sdk.md:9
+msgid "`@decentralchain/signer@2.0.1` + `@decentralchain/cubensis-connect-provider@1.0.1`"
+msgstr "`@decentralchain/signer@2.0.1` + `@decentralchain/cubensis-connect-provider@1.0.1`"
+
+#: ../../04_building-apps/02_client-libraries-and-sdk.md:9
+msgid "Sign with a Ledger hardware wallet"
+msgstr "使用 Ledger 硬件钱包签名"
+
+#: ../../04_building-apps/02_client-libraries-and-sdk.md:9
+msgid "`@decentralchain/ledger@5.1.0`"
+msgstr "`@decentralchain/ledger@5.1.0`"
+
+#: ../../04_building-apps/02_client-libraries-and-sdk.md:9
+msgid "Query the data service (asset search, history, DEX data)"
+msgstr "查询数据服务( 资产搜索、 历史、 DEX 数据)"
+
+#: ../../04_building-apps/02_client-libraries-and-sdk.md:9
+msgid "`@decentralchain/data-service-client-js@4.2.0`; see [Data Service API](06_data-service-api)"
+msgstr "`@decentralchain/data-service-client-js@4.2.0`; 见 [数据服务 API](06_data-service-api)"
+
+#: ../../04_building-apps/02_client-libraries-and-sdk.md:9
+msgid "Compile Ride to a script"
+msgstr "将 Ride 编译为脚本"
+
+#: ../../04_building-apps/02_client-libraries-and-sdk.md:9
+#, python-brace-format
+msgid "the node's `POST /utils/script/compileCode` endpoint; see {ref}`Compile with a Node <04_building-apps/01_developer-tools:Compile with a Node>`"
+msgstr "节点的 `POST /utils/script/compileCode` 端点; 见 {ref}`以节点编译 <04_building-apps/01_developer-tools:Compile with a Node>`"
+
+#: ../../04_building-apps/02_client-libraries-and-sdk.md:9
+msgid "Try Ride expressions interactively"
+msgstr "交互式尝试 Ride 表达式"
+
+#: ../../04_building-apps/02_client-libraries-and-sdk.md:9
+#, python-brace-format
+msgid "`@decentralchain/ride-repl@1.6.2`; see {doc}`Ride REPL <developer-tools/01_ride-repl>`"
+msgstr "`@decentralchain/ride-repl@1.6.2`; 见 {doc}`Ride 回复 <developer-tools/01_ride-repl>`"
+
+#: ../../04_building-apps/02_client-libraries-and-sdk.md:9
+msgid "Work from Java or the JVM"
+msgstr ""
+
+#: ../../04_building-apps/02_client-libraries-and-sdk.md:9
+msgid "`io.decentralchain:java-sdk:2.0.2`"
+msgstr "`io.decentralchain:java-sdk:2.0.2`"
+
+#: ../../04_building-apps/02_client-libraries-and-sdk.md:27
+msgid "SDKs by Language"
+msgstr "按语言划分的 SDKs"
+
+#: ../../04_building-apps/02_client-libraries-and-sdk.md:29
+msgid "Each page covers installing the SDK, connecting to the Testnet, and signing and broadcasting a transaction."
+msgstr "每个页面覆盖安装SDK,连接到Testnet,并签名和广播交易."
+
+#: ../../04_building-apps/02_client-libraries-and-sdk.md:31
+#, python-brace-format
+msgid "{doc}`TypeScript <sdk/01_typescript>`: the `@decentralchain/*` npm packages, for Node.js backends, scripts and browser dApps. The page lists every package with its tested version."
+msgstr "{doc}`TypeScript <sdk/01_typescript>`:`@decentralchain/*` npm包,用于Node.js后端,脚本和浏览器dApps.该页面列出了每个包及其已测试的版本."
+
+#: ../../04_building-apps/02_client-libraries-and-sdk.md:32
+#, python-brace-format
+msgid "{doc}`Java <sdk/02_java>`: `io.decentralchain:java-sdk` on Maven Central, for Java and other JVM languages."
+msgstr "{doc}`爪哇语 <sdk/02_java>`:位于马文中央的 `io.decentralchain:java-sdk`,用于Java等JVM语言."
+
+#: ../../04_building-apps/03_how-to-guides.md:6
+#: ../../04_building-apps/index.md:68
+msgid "How-To Guides"
+msgstr "如何向导"
+
+#: ../../04_building-apps/03_how-to-guides.md:8
+msgid "Practical examples for the most common tasks when building on DecentralChain. These use the [`transactions`](https://www.npmjs.com/package/@decentralchain/transactions) and [`node-api-js`](https://www.npmjs.com/package/@decentralchain/node-api-js) packages — see [Client Libraries and SDK](02_client-libraries-and-sdk) for the full package list and the exact version of each to install."
+msgstr "在 DecentralChain 上建立最常见任务的实际例子 。这些使用 [`transactions`](https://www.npmjs.com/package/@decentralchain/transactions) 和 [`node-api-js`](https://www.npmjs.com/package/@decentralchain/node-api-js) 软件包——见 [客户图书馆和SDK](02_client-libraries-and-sdk) 完整软件包列表和每个要安装的确切版本."
+
+#: ../../04_building-apps/03_how-to-guides.md:10
+msgid "Both packages are ESM-only and require Node.js 24+."
+msgstr "这两种软件包都只采用无害环境管理,需要Node.js 24+。"
+
+#: ../../04_building-apps/03_how-to-guides.md:12
+msgid "This page covers the basics: building, signing and broadcasting transactions, issuing a token, chaining transactions, reading chain data and signing with a Ledger. Each of these guides covers one task from start to finish:"
+msgstr "本页面涵盖基本内容:构建,签名和广播交易,发行一个活字,链式交易,读取链式数据并用一个Ledger签名.这些指南中的每一份都涵盖一项从开始到完成的任务:"
+
+#: ../../04_building-apps/03_how-to-guides.md:14
+#, python-brace-format
+msgid "{doc}`Airdrop a Token <how-to/01_airdrop>`: send a token to a list of addresses with Mass Transfer transactions."
+msgstr "{doc}`空投一个托肯 <how-to/01_airdrop>`:向有Mass Transfer交易的地址列表发送一个令牌."
+
+#: ../../04_building-apps/03_how-to-guides.md:15
+#, python-brace-format
+msgid "{doc}`Accept Payments <how-to/02_payments>`: take payments with an invoice reference and check that they arrived."
+msgstr "{doc}`接受付款 <how-to/02_payments>`:用发票的参考文献收取付款,并检查它们是否到达。"
+
+#: ../../04_building-apps/03_how-to-guides.md:16
+#, python-brace-format
+msgid "{doc}`Exchange Tokens with a dApp <how-to/03_token-exchange>`: sell a token for DCC at a fixed price, and buy it back."
+msgstr "{doc}`用 dApp 交换托肯 <how-to/03_token-exchange>`:以固定价格为DCC卖出一款代币,再回购."
+
+#: ../../04_building-apps/03_how-to-guides.md:17
+#, python-brace-format
+msgid "{doc}`Run a Simple Vote <how-to/04_voting>`: one vote per address, with counts nobody can change."
+msgstr "{doc}`运行简单投票 <how-to/04_voting>`:每个地址一票,计数无人能改变."
+
+#: ../../04_building-apps/03_how-to-guides.md:18
+#, python-brace-format
+msgid "{doc}`Pass a List to a dApp <how-to/05_list-as-argument>`: call a dApp with list arguments."
+msgstr "{doc}`将列表传递到 dApp <how-to/05_list-as-argument>`:调用带有列表参数的dApp."
+
+#: ../../04_building-apps/03_how-to-guides.md:30
+msgid "All examples on this page target the public Testnet: node `https://testnet-node.decentralchain.io`, chain ID `!` (passed as `chainId: '!'` to the transaction builders) and Testnet addresses starting with `31`. For Mainnet, use a Mainnet node and `chainId: '?'`."
+msgstr "本页面上的所有示例都针对公众Testnet:节点 `https://testnet-node.decentralchain.io`,链式ID `!` (通过为 `chainId: '!'` 到交易构建者)和从 `31` 开始的Testnet地址.对于Mainnet,使用Mainnet节点和 `chainId: '?'`."
+
+#: ../../04_building-apps/03_how-to-guides.md:32
+msgid "Build, Sign, and Broadcast a Transaction"
+msgstr "构建、签署和广播交易"
+
+#: ../../04_building-apps/03_how-to-guides.md:34
+#, python-brace-format
+msgid "This example builds a {ref}`Transfer transaction <02_decentralchain/03_transaction:Transfer Transaction>`, signs it with a seed phrase, and broadcasts it. `broadcast()` is exported by `@decentralchain/transactions` itself — you don't need `node-api` just to send a transaction."
+msgstr "这个例子构建了 {ref}`转账交易 <02_decentralchain/03_transaction:Transfer Transaction>`,用种子短语来签名,并广播. `broadcast()` 是由 `@decentralchain/transactions` 本身导出——你不需要 `node-api` 来发送交易."
+
+#: ../../04_building-apps/03_how-to-guides.md:60
+msgid "A raw seed phrase should only ever be used server-side, or in scripts/tests you control. Never ask a user for their seed phrase in a dApp — see [Wallet Integration](04_wallet-integration) for the browser-safe flow."
+msgstr "原始种子短语只应该使用服务器侧,或者在您控制的脚本/测试中使用.永远不要在 dApp 中询问用户的种子短语——请参见 [钱包整合](04_wallet-integration) 浏览器安全流."
+
+#: ../../04_building-apps/03_how-to-guides.md:62
+#, python-brace-format
+msgid "Every other {ref}`transaction type <02_decentralchain/03_transaction:Transaction>` has a matching builder exported from `@decentralchain/transactions`: `issue()`, `reissue()`, `burn()`, `lease()`, `cancelLease()`, `massTransfer()`, `data()`, `setScript()`, `setAssetScript()`, `invokeScript()`, `exchange()`."
+msgstr "其它 {ref}`交易类型 <02_decentralchain/03_transaction:Transaction>` 都有从 `@decentralchain/transactions` 出口的匹配建设器:`issue()`, `reissue()`, `burn()`, `lease()`, `cancelLease()`, `massTransfer()`, `data()`, `setScript()`, `setAssetScript()`, `invokeScript()`, `exchange()`."
+
+#: ../../04_building-apps/03_how-to-guides.md:64
+msgid "Issuing a Token"
+msgstr "发布一个托肯"
+
+#: ../../04_building-apps/03_how-to-guides.md:66
+#, python-brace-format
+msgid "To issue a new {ref}`token <02_decentralchain/02_token(asset):Token (Asset)>`, use `issue()` the same way:"
+msgstr "以同样的方式使用 `issue()` 来发行新的 {ref}`符号 <02_decentralchain/02_token(asset):Token (Asset)>` :"
+
+#: ../../04_building-apps/03_how-to-guides.md:88
+#, python-brace-format
+msgid "See {doc}`Token (Asset) <../02_decentralchain/02_token(asset)>` for the full meaning of each issue parameter."
+msgstr "每个问题参数的全部含义见 {doc}`Token (Asset) <../02_decentralchain/02_token(asset)>`."
+
+#: ../../04_building-apps/03_how-to-guides.md:90
+msgid "Sending a Transaction That Depends on Another"
+msgstr "发送取决于其他交易的交易"
+
+#: ../../04_building-apps/03_how-to-guides.md:92
+msgid "A node checks each new transaction against the state of the chain's blocks (including the current microblock), **not** against other transactions still waiting in its unconfirmed pool. If transaction B spends funds that transaction A delivers, broadcast B only after A is in a block. Broadcasting B while A is still unconfirmed fails with HTTP 400 and a `negative dcc balance` (or `negative asset balance`) error. A `200` response to A's broadcast only means the node accepted A into its pool. It does not mean A is in a block yet."
+msgstr "一个节点对照链块状态(包括目前的微块)检查每起新交易, **没有** 对照仍在其未经证实的池中等待的其他交易.如果交易B花费了交易A交付的资金,则仅在A在块后播出B.A时的广播 B 仍然未经证实,与 HTTP 400 和一个 `negative dcc balance` (或 `negative asset balance`) 错误相悖。`200` 对A广播的回应仅指收录了A的节点进入了它的池中.这并不意味着A还在一个街区。"
+
+#: ../../04_building-apps/03_how-to-guides.md:94
+msgid "`waitForTx` from `@decentralchain/transactions` polls the node until the transaction is in a block (on the Testnet this usually takes 1 to 4 seconds):"
+msgstr "`waitForTx` 来自 `@decentralchain/transactions` 的民意调查, 直至交易成块为止(在Testnet上, 这通常需要一到四秒):"
+
+#: ../../04_building-apps/03_how-to-guides.md:122
+msgid "Reading Blockchain Data"
+msgstr "读取块链数据"
+
+#: ../../04_building-apps/03_how-to-guides.md:124
+#, python-brace-format
+msgid "Use `node-api-js` to query {ref}`account <02_decentralchain/01_account:Account>` balances and other node state without running your own indexer. `create(nodeUrl)` returns a client namespaced by API area (`addresses`, `assets`, `blocks`, `transactions`, `leasing`, and more):"
+msgstr "使用 `node-api-js` 来查询 {ref}`账户 <02_decentralchain/01_account:Account>` 余额和其他节点状态,而不运行自己的索引器. `create(nodeUrl)` 返回一个客户端名称空间,由API区域(`addresses`, `assets`, `blocks`, `transactions`, `leasing` 等)来表示:"
+
+#: ../../04_building-apps/03_how-to-guides.md:143
+msgid "The monorepo is renaming this package to `@decentralchain/node-api`, but that name isn't published yet — install `node-api-js` (above) until it is."
+msgstr "单列波正将这个软件包更名为 `@decentralchain/node-api`,但该名称尚未被发布——在 `node-api-js` (以上)之前安装."
+
+#: ../../04_building-apps/03_how-to-guides.md:146
+msgid "For richer historical queries (asset search, DEX order history, aggregated transaction data) use [`data-service-client-js`](https://www.npmjs.com/package/@decentralchain/data-service-client-js) against the data service API instead of querying a node directly — see [Data Service API](06_data-service-api)."
+msgstr "对于更丰富的历史查询(资产搜索,DEX订单历史,汇总交易数据),使用 [`data-service-client-js`](https://www.npmjs.com/package/@decentralchain/data-service-client-js) 对数据服务API而不是直接查询一个节点——参见 [数据服务 API](06_data-service-api)."
+
+#: ../../04_building-apps/03_how-to-guides.md:148
+msgid "Signing with a Ledger Hardware Wallet"
+msgstr "以列德格硬件钱包签名"
+
+#: ../../04_building-apps/03_how-to-guides.md:150
+msgid "[`@decentralchain/ledger`](https://github.com/Decentral-America/DecentralChain/tree/main/packages/sdk/ledger) talks to a Ledger Nano S or X running the DCC application. It derives public keys and signs on the device, so the private key never leaves the hardware. It supports WebUSB, Web Bluetooth and Node HID transports, and you install a Ledger transport package alongside it:"
+msgstr ""
+
+#: ../../04_building-apps/03_how-to-guides.md:156
+msgid "The package README documents the current `DCCLedger` API for connecting, reading the user's address and signing a transaction; start from its Quick Start."
+msgstr "软件包 README 文档当前 `DCCLedger` API 用于连接,读取用户地址并签署交易;从它的快起步."
+
+#: ../../04_building-apps/04_wallet-integration.md:1
+#: ../../04_building-apps/index.md:52
+msgid "Wallet Integration"
+msgstr "钱包整合"
+
+#: ../../04_building-apps/04_wallet-integration.md:3
+msgid "In a browser dApp, never ask a user for their seed phrase or private key. Instead, let the user sign transactions with their own wallet through [Cubensis Connect](https://github.com/Decentral-America/cubensis-connect), DecentralChain's browser extension wallet. There are two ways to integrate it."
+msgstr "在浏览器dApp中,永远不要向用户询问他们的种子短语或私钥.相反,让用户通过 [Cubensis Connect](https://github.com/Decentral-America/cubensis-connect),DecentralChain的浏览器扩展钱包用自己的钱包签名交易.有两种方法可以整合它."
+
+#: ../../04_building-apps/04_wallet-integration.md:6
+#, python-brace-format
+msgid "Cubensis Connect is not listed in the Chrome, Firefox or Edge extension stores yet, and has no published release package. Until it does, users build it from the [DecentralChain repository](https://github.com/Decentral-America/DecentralChain/tree/main/apps/cubensis-connect); see the {doc}`Cubensis Connect User Guide <../09_user-guides/02_cubensis-connect>`, which also covers what users see when your dApp asks for a signature."
+msgstr "Cubensis Connect尚未在Chrome,Firefox或Edge扩展商店中被列出,也没有发布出放包.在此之前,用户从 [DecentralChain 存储器](https://github.com/Decentral-America/DecentralChain/tree/main/apps/cubensis-connect) 中构建;参见 {doc}`Cubensis Connect 用户指南 <../09_user-guides/02_cubensis-connect>`,它也覆盖了用户在您dApp要求签名时所看到的."
+
+#: ../../04_building-apps/04_wallet-integration.md:9
+msgid "Recommended: Signer + Provider"
+msgstr "建议:签名人+提供人"
+
+#: ../../04_building-apps/04_wallet-integration.md:11
+msgid "[`@decentralchain/signer`](https://github.com/Decentral-America/signer) is a transaction-signing orchestrator: your dApp calls Signer, Signer delegates the actual signing to a **Provider**, and the Provider is the only piece that ever touches the user's key material. [`@decentralchain/cubensis-connect-provider`](https://github.com/Decentral-America/cubensis-connect-provider) implements that Provider interface for the Cubensis Connect extension, so your dApp code never sees a seed phrase or private key."
+msgstr "[`@decentralchain/signer`](https://github.com/Decentral-America/signer) 是一个交易签名的管弦乐器:你的dApp呼叫Signer,Signer将实际的签名委托给一个 **提供方**,而提供商是曾经触碰过用户关键材料的唯一一款.[`@decentralchain/cubensis-connect-provider`](https://github.com/Decentral-America/cubensis-connect-provider) 执行Cubensis Connect扩展名的提供方接口,因此你的dApp代码从不看到种子短语或私钥."
+
+#: ../../04_building-apps/04_wallet-integration.md:39
+msgid "Because Signer only talks to the `Provider` interface, swapping `ProviderCubensis` for a different provider (e.g. a Ledger provider) later requires no changes to the rest of your dApp code. Signer supports every transaction type except Update Asset Info."
+msgstr "因为Signer只和 `Provider` 接口交谈,所以将 `ProviderCubensis` 换成另一个提供者(例如Ledger提供者),以后不需要修改你的dApp代码的其余部分.签名者支持除更新资产信息以外的每一个交易类型."
+
+#: ../../04_building-apps/04_wallet-integration.md:41
+msgid "Direct: the `CubensisConnect` browser API"
+msgstr "直接: `CubensisConnect` 浏览器 API"
+
+#: ../../04_building-apps/04_wallet-integration.md:43
+msgid "On any page served over `http`/`https` with the extension installed, a global `CubensisConnect` object is injected into the page. This is what Signer's provider uses internally — you can also call it directly if you don't need Signer's abstraction:"
+msgstr "在 `http`/`https` 上服务过的任何页面上,安装了扩展后,一个全局的 `CubensisConnect` 对象被注入页面.这是Signer的提供者在内部使用的——如果你不需要Signer的抽象,也可以直接调用:"
+
+#: ../../04_building-apps/04_wallet-integration.md:5
+#: ../../04_building-apps/05_node-grpc.md:9
+#: ../../04_building-apps/06_data-service-api.md:5
+#: ../../04_building-apps/11_blockchain-updates.md:50
+msgid "Method"
+msgstr "方法"
+
+#: ../../04_building-apps/04_wallet-integration.md:5
+#: ../../04_building-apps/sdk/01_typescript.md:43
+msgid "Description"
+msgstr "说明"
+
+#: ../../04_building-apps/04_wallet-integration.md:5
+msgid "`publicState()`"
+msgstr "`publicState()`"
+
+#: ../../04_building-apps/04_wallet-integration.md:5
+msgid "Current account, network, and balance info, if the site is trusted"
+msgstr "如果网站可信,则经常账户、网络和余额信息"
+
+#: ../../04_building-apps/04_wallet-integration.md:5
+msgid "`auth(data)`"
+msgstr "`auth(data)`"
+
+#: ../../04_building-apps/04_wallet-integration.md:5
+msgid "Authenticate the user, returning a signed proof of account ownership"
+msgstr "认证用户, 返回账户所有权的签名证明"
+
+#: ../../04_building-apps/04_wallet-integration.md:5
+msgid "`signTransaction(tx)`"
+msgstr "`signTransaction(tx)`"
+
+#: ../../04_building-apps/04_wallet-integration.md:5
+msgid "Sign a transaction without broadcasting"
+msgstr "不广播而签名交易"
+
+#: ../../04_building-apps/04_wallet-integration.md:5
+msgid "`signAndPublishTransaction(tx)`"
+msgstr "`signAndPublishTransaction(tx)`"
+
+#: ../../04_building-apps/04_wallet-integration.md:5
+msgid "Sign and broadcast a transaction"
+msgstr "签名并广播交易"
+
+#: ../../04_building-apps/04_wallet-integration.md:5
+msgid "`signOrder(order)` / `signAndPublishOrder(order)`"
+msgstr "`signOrder(order)` / `signAndPublishOrder(order)`"
+
+#: ../../04_building-apps/04_wallet-integration.md:5
+msgid "Sign (and optionally broadcast) a DEX order"
+msgstr "签署( 并可选地播放) DEX 命令"
+
+#: ../../04_building-apps/04_wallet-integration.md:5
+msgid "`signCancelOrder(order)` / `signAndPublishCancelOrder(order)`"
+msgstr "`signCancelOrder(order)` / `signAndPublishCancelOrder(order)`"
+
+#: ../../04_building-apps/04_wallet-integration.md:5
+msgid "Sign (and optionally broadcast) an order cancellation"
+msgstr "签署(和可选广播)取消订单"
+
+#: ../../04_building-apps/04_wallet-integration.md:5
+msgid "`encryptMessage(msg, publicKey)` / `decryptMessage(msg, publicKey)`"
+msgstr "`encryptMessage(msg, publicKey)` / `decryptMessage(msg, publicKey)`"
+
+#: ../../04_building-apps/04_wallet-integration.md:5
+msgid "Encrypt/decrypt a message for a given public key"
+msgstr "为给定的公钥加密/解密消息"
+
+#: ../../04_building-apps/04_wallet-integration.md:5
+msgid "`on(event, callback)`"
+msgstr "`on(event, callback)`"
+
+#: ../../04_building-apps/04_wallet-integration.md:5
+msgid "Subscribe to wallet events (account/network changes)"
+msgstr "订阅钱包事件( 账户/ 网络更改)"
+
+#: ../../04_building-apps/04_wallet-integration.md:56
+#, python-brace-format
+msgid "The extension asks the user to explicitly trust a new site the first time it calls any method other than `on`. Until trusted, all other calls reject with `{message: \"Api rejected by user\", code: 12}`. See the [Cubensis Connect repository](https://github.com/Decentral-America/cubensis-connect#cubensis-connect-api) for the complete method list and response shapes, and [`cubensis-connect-types`](https://github.com/Decentral-America/cubensis-connect-types) for TypeScript definitions."
+msgstr "扩展名要求用户在首次调用 `on` 以外的任何方法时明确信任新站点.在信任之前,所有其他的电话都用 `{message: \"Api rejected by user\", code: 12}` 拒绝.完整的方法列表和响应形状参见 [Cubensis Connect 存储器](https://github.com/Decentral-America/cubensis-connect#cubensis-connect-api),而 [`cubensis-connect-types`](https://github.com/Decentral-America/cubensis-connect-types) 的定义参见TypeScript."
+
+#: ../../04_building-apps/05_node-grpc.md:1
+msgid "Node gRPC API"
+msgstr "节点 gRPC API"
+
+#: ../../04_building-apps/05_node-grpc.md:3
+msgid "For services that need to process a large volume of blocks or transactions, the node's gRPC API is faster to consume than the REST API: it returns Protobuf-serialized binary messages instead of JSON, and supports server-streaming for large result sets."
+msgstr "对于需要处理大量块或交易的服务,节点的gRPC API比REST API更快地消耗:它返回了Protobuf-serial化的二进制消息而不是JSON,并且支持服务器对大结果集进行流."
+
+#: ../../04_building-apps/05_node-grpc.md:6
+msgid "**There is no public gRPC endpoint.** The public nodes `mainnet-node.decentralchain.io` and `testnet-node.decentralchain.io` expose only the REST API over HTTPS; the gRPC ports (`6870`, `6877`) and the BlockchainUpdates port (`6881`) are not reachable from the internet (checked 2026-10-18). To use gRPC, run your own node with the gRPC extension enabled (see [Node Extensions](../05_node-guide/02_node-extensions)) and connect to it. For the Testnet, see [Join the Public Testnet](../05_node-guide/15_join-testnet)."
+msgstr "**没有公共gRPC端点.** 公共节点 `mainnet-node.decentralchain.io` 和 `testnet-node.decentralchain.io` 仅将REST API曝光于HTTPS之上;gRPC端口(`6870`, `6877`)和BlockchainUpdates端口(`6881`)无法从互联网上到达(2026-10-18检查).要使用 gRPC , 请使用 gRPC 扩展启用( 见 [节点扩展](../05_node-guide/02_node-extensions)) 运行自己的节点并连接到它 。Testnet,见 [加入公众 Testnet](../05_node-guide/15_join-testnet)."
+
+#: ../../04_building-apps/05_node-grpc.md:10
+msgid "The TypeScript client `@decentralchain/node-api-grpc` is **not published to npm** yet (`npm view @decentralchain/node-api-grpc` returns `E404`, checked 2026-10-18). This page describes the API in its source (monorepo `packages/sdk/node-api-grpc`, v2.0.0) so you can see what it will offer. The examples below do not run until it is published."
+msgstr "TypeScript客户端的 `@decentralchain/node-api-grpc` 是 **未发布到 npm**,然而(`npm view @decentralchain/node-api-grpc` 返回 `E404`,检查了2026-10-18).本页面描述API的来源(monorepo `packages/sdk/node-api-grpc`, v2. 0.0),这样你就可以看到它会提供什么.以下例子在发布前不会运行."
+
+#: ../../04_building-apps/05_node-grpc.md:13
+msgid "Installing (once published)"
+msgstr "安装(一旦发布)"
+
+#: ../../04_building-apps/05_node-grpc.md:20
+msgid "Requires **Node.js >= 24** and an ESM environment (`\"type\": \"module\"`)."
+msgstr "需要 **Node.js >= 24** 和无害环境管理环境(`\"type\": \"module\"`)。"
+
+#: ../../04_building-apps/05_node-grpc.md:22
+#: ../../04_building-apps/06_data-service-api.md:30
+msgid "Connecting"
+msgstr "连接中"
+
+#: ../../04_building-apps/05_node-grpc.md:24
+msgid "Point the client at a node you run yourself. `localhost` below is that node."
+msgstr "把客户点在你自己运行的节点上.下面的 `localhost` 是那个节点."
+
+#: ../../04_building-apps/05_node-grpc.md:38
+msgid "`mkDefaultChannel(host, options?)` accepts a bare hostname (defaults to port `6870`), a `host:port` pair, or a full `http(s)://` or `grpc(s)://` URL. Pass Connect transport options (TLS, interceptors, timeouts) as the second argument. If your node's `dcc.grpc.port` is not `6870` (the public Testnet's own nodes use `6877`), pass `host:port`."
+msgstr "`mkDefaultChannel(host, options?)` 接受一个赤色主机名(默认为端口 `6870`),一个 `host:port` 对,或者一个完整的 `http(s)://` 或 `grpc(s)://` URL.通过连接传输选项(TLS,截取器,超时)作为第二个参数.如果您的节点的 `dcc.grpc.port` 不是 `6870` (公共Testnet自己的节点使用 `6877`),则通过 `host:port`."
+
+#: ../../04_building-apps/05_node-grpc.md:40
+msgid "APIs"
+msgstr "APIs"
+
+#: ../../04_building-apps/05_node-grpc.md:9
+msgid "Client factory"
+msgstr "客户工厂"
+
+#: ../../04_building-apps/05_node-grpc.md:9
+msgid "Service"
+msgstr "服务"
+
+#: ../../04_building-apps/05_node-grpc.md:9
+#: ../../04_building-apps/06_data-service-api.md:47
+msgid "Methods"
+msgstr "方法"
+
+#: ../../04_building-apps/05_node-grpc.md:9
+msgid "`mkAccountsApi(channel)`"
+msgstr "`mkAccountsApi(channel)`"
+
+#: ../../04_building-apps/05_node-grpc.md:9
+msgid "AccountsApi"
+msgstr "AccountsApi"
+
+#: ../../04_building-apps/05_node-grpc.md:9
+msgid "`getBalances`, `getScript`, `getActiveLeases`, `getDataEntries`, `resolveAlias`"
+msgstr "`getBalances`, `getScript`, `getActiveLeases`, `getDataEntries`, `resolveAlias`"
+
+#: ../../04_building-apps/05_node-grpc.md:9
+msgid "`mkAssetsApi(channel)`"
+msgstr "`mkAssetsApi(channel)`"
+
+#: ../../04_building-apps/05_node-grpc.md:9
+msgid "AssetsApi"
+msgstr "AssetsApi"
+
+#: ../../04_building-apps/05_node-grpc.md:9
+msgid "`getInfo`, `getNFTList`"
+msgstr "`getInfo`, `getNFTList`"
+
+#: ../../04_building-apps/05_node-grpc.md:9
+msgid "`mkBlockchainApi(channel)`"
+msgstr "`mkBlockchainApi(channel)`"
+
+#: ../../04_building-apps/05_node-grpc.md:9
+msgid "BlockchainApi"
+msgstr "BlockchainApi"
+
+#: ../../04_building-apps/05_node-grpc.md:9
+msgid "`getActivationStatus`, `getBaseTarget`, `getCumulativeScore`"
+msgstr "`getActivationStatus`, `getBaseTarget`, `getCumulativeScore`"
+
+#: ../../04_building-apps/05_node-grpc.md:9
+msgid "`mkBlocksApi(channel)`"
+msgstr "`mkBlocksApi(channel)`"
+
+#: ../../04_building-apps/05_node-grpc.md:9
+msgid "BlocksApi"
+msgstr "BlocksApi"
+
+#: ../../04_building-apps/05_node-grpc.md:9
+msgid "`getBlock`, `getBlockRange`"
+msgstr "`getBlock`, `getBlockRange`"
+
+#: ../../04_building-apps/05_node-grpc.md:9
+msgid "`mkTransactionsApi(channel)`"
+msgstr "`mkTransactionsApi(channel)`"
+
+#: ../../04_building-apps/05_node-grpc.md:9
+msgid "TransactionsApi"
+msgstr "TransactionsApi"
+
+#: ../../04_building-apps/05_node-grpc.md:9
+msgid "`getTransactions`, `getTransactionSnapshots`, `getStateChanges`, `getStatuses`, `getUnconfirmed`, `sign`, `broadcast`"
+msgstr "`getTransactions`, `getTransactionSnapshots`, `getStateChanges`, `getStatuses`, `getUnconfirmed`, `sign`, `broadcast`"
+
+#: ../../04_building-apps/05_node-grpc.md:50
+msgid "Request and response types are re-exported from the protobuf schema package (published today as `@decentralchain/protobuf-serialization`; the monorepo is renaming it to `protobuf-schemas`), so importing `@decentralchain/node-api-grpc` alone is enough."
+msgstr "请求和响应类型从原生地取出schema包再出口(今天公布为 `@decentralchain/protobuf-serialization`;单列波正将其更名为 `protobuf-schemas`),因此仅导入 `@decentralchain/node-api-grpc` 就足够了."
+
+#: ../../04_building-apps/05_node-grpc.md:52
+#: ../../04_building-apps/11_blockchain-updates.md:1
+#: ../../04_building-apps/11_blockchain-updates.md:5
+#: ../../04_building-apps/index.md:100
+msgid "Blockchain Updates"
+msgstr "区链更新"
+
+#: ../../04_building-apps/05_node-grpc.md:54
+msgid "The BlockchainUpdates API streams block-level events (appends, rollbacks, microblocks) in real time — useful for indexers and services that need to react to chain state as it happens, without polling. It runs on a **separate port, 6881**, from the rest of the gRPC API. [Blockchain Updates](11_blockchain-updates) explains how to enable it, what each update contains and how to consume the stream reliably."
+msgstr "BlockchainUpdates API流块级事件(附加,回滚,微块)实时——对于索引器和服务来说非常有用,它们需要随其发生而对链态作出反应,而无需投票.它运行在 **6881号,独立港口** 上,来自gRPCAPI的其余部分.[区链更新](11_blockchain-updates) 解释了如何启用它,每次更新包含什么,以及如何可靠地消耗流."
+
+#: ../../04_building-apps/05_node-grpc.md:9
+#: ../../04_building-apps/06_data-service-api.md:5
+msgid "Purpose"
+msgstr "目的"
+
+#: ../../04_building-apps/05_node-grpc.md:9
+msgid "`getBlockUpdate`"
+msgstr "`getBlockUpdate`"
+
+#: ../../04_building-apps/05_node-grpc.md:9
+msgid "Fetch the update for a single height"
+msgstr "获取一个高处的更新"
+
+#: ../../04_building-apps/05_node-grpc.md:9
+msgid "`getBlockUpdatesRange`"
+msgstr "`getBlockUpdatesRange`"
+
+#: ../../04_building-apps/05_node-grpc.md:9
+msgid "Fetch updates for a height range"
+msgstr "获取高度范围的更新"
+
+#: ../../04_building-apps/05_node-grpc.md:9
+msgid "`subscribe`"
+msgstr "`subscribe`"
+
+#: ../../04_building-apps/05_node-grpc.md:9
+msgid "Server-streaming subscription to new updates as they happen"
+msgstr "服务器流订阅新更新"
+
+#: ../../04_building-apps/05_node-grpc.md:74
+msgid "See [Node Extensions](../05_node-guide/02_node-extensions) for enabling the gRPC server on a node you operate. BlockchainUpdates is a separate extension in the same module and must be enabled on its own."
+msgstr "在您操作的节点上启用 gRPC 服务器, 请参见 [节点扩展](../05_node-guide/02_node-extensions) 。BlockchainUpdates是同一模块中单独的扩展,必须自行启用."
+
+#: ../../04_building-apps/06_data-service-api.md:1
+msgid "Data Service API"
+msgstr "数据服务 API"
+
+#: ../../04_building-apps/06_data-service-api.md:3
+msgid "For historical or aggregated queries — asset search, DEX exchange history, paginated transaction lists — a data service is faster than replaying a node's transaction history yourself. [`@decentralchain/data-service-client-js`](https://www.npmjs.com/package/@decentralchain/data-service-client-js) is the official TypeScript client for it."
+msgstr "对于历史或汇总的查询——资产搜索,DEX交换历史,相接交易列表——一个数据服务比自己重放节点的交易历史要快.[`@decentralchain/data-service-client-js`](https://www.npmjs.com/package/@decentralchain/data-service-client-js) 是它的官方TypeScript客户端."
+
+#: ../../04_building-apps/06_data-service-api.md:6
+msgid "Verified against `@decentralchain/data-service-client-js` 4.2.0 on npm (installed and imported on Node.js 24 by the docs CI). The monorepo is renaming the package to `data-service-client`; that name is not published yet."
+msgstr "以npm的 `@decentralchain/data-service-client-js` 4.2.0(由文件CI在Node.js 24上安装和进口)进行验证.monrepo将软件包更名为 `data-service-client`;该名称尚未发布."
+
+#: ../../04_building-apps/06_data-service-api.md:9
+msgid "Public endpoints"
+msgstr "公共终点"
+
+#: ../../04_building-apps/06_data-service-api.md:11
+msgid "The package has no built-in URL: pass `rootUrl` for the network you use. For DEX queries, pass the address of that network's matcher."
+msgstr "软件包没有内置的 URL: 为您使用的网络通过 `rootUrl` 。对于DEX的查询,通过网络的匹配者的地址."
+
+#: ../../04_building-apps/06_data-service-api.md:5
+#: ../../04_building-apps/07_smart-contracts-overview.md:39
+#: ../../04_building-apps/12_matcher-api.md
+#: ../../04_building-apps/sdk/01_typescript.md:11
+msgid "Testnet"
+msgstr "Testnet"
+
+#: ../../04_building-apps/06_data-service-api.md:5
+#: ../../04_building-apps/07_smart-contracts-overview.md:39
+#: ../../04_building-apps/12_matcher-api.md
+#: ../../04_building-apps/sdk/01_typescript.md:11
+msgid "Mainnet"
+msgstr "Mainnet"
+
+#: ../../04_building-apps/06_data-service-api.md:5
+msgid "Data service `rootUrl`"
+msgstr "数据服务 `rootUrl`"
+
+#: ../../04_building-apps/06_data-service-api.md:5
+msgid "`https://testnet-data-service.decentralchain.io/v0`"
+msgstr "`https://testnet-data-service.decentralchain.io/v0`"
+
+#: ../../04_building-apps/06_data-service-api.md:5
+msgid "`https://data-service.decentralchain.io/v0`"
+msgstr "`https://data-service.decentralchain.io/v0`"
+
+#: ../../04_building-apps/06_data-service-api.md:5
+#: ../../04_building-apps/12_matcher-api.md:7
+msgid "Matcher API"
+msgstr "匹配的 API"
+
+#: ../../04_building-apps/06_data-service-api.md:5
+msgid "`https://testnet-matcher.decentralchain.io/matcher`"
+msgstr "`https://testnet-matcher.decentralchain.io/matcher`"
+
+#: ../../04_building-apps/06_data-service-api.md:5
+msgid "no public Mainnet matcher yet"
+msgstr "还没有公开的 Mainnet 匹配器"
+
+#: ../../04_building-apps/06_data-service-api.md:5
+msgid "Matcher public key"
+msgstr "匹配的公钥"
+
+#: ../../04_building-apps/06_data-service-api.md:5
+#: ../../04_building-apps/12_matcher-api.md
+msgid "`BEtB5b2kX8Yge4sb5RRbTUqd5Va8Ah8PhphowcW31z6Y`"
+msgstr "`BEtB5b2kX8Yge4sb5RRbTUqd5Va8Ah8PhphowcW31z6Y`"
+
+#: ../../04_building-apps/06_data-service-api.md:5
+#: ../../04_building-apps/sdk/01_typescript.md:43
+msgid "—"
+msgstr "—"
+
+#: ../../04_building-apps/06_data-service-api.md:5
+#: ../../04_building-apps/06_data-service-api.md:73
+msgid "Matcher address"
+msgstr "匹配地址"
+
+#: ../../04_building-apps/06_data-service-api.md:5
+msgid "`31VMNVAvVh67dPZ41nMnYZvhoZFW7wwPrmq`"
+msgstr "`31VMNVAvVh67dPZ41nMnYZvhoZFW7wwPrmq`"
+
+#: ../../04_building-apps/06_data-service-api.md:20
+msgid "You can confirm the Testnet matcher's key at any time: `curl -s https://testnet-matcher.decentralchain.io/matcher` returns it as a JSON string."
+msgstr "您可以随时确认 Testnet 匹配器的密钥: `curl -s https://testnet-matcher.decentralchain.io/matcher` 以 JSON 字符串的形式返回."
+
+#: ../../04_building-apps/06_data-service-api.md:22
+msgid "Installing"
+msgstr "安装"
+
+#: ../../04_building-apps/06_data-service-api.md:28
+#, python-brace-format
+msgid "Requires **Node.js >= 24** and an ESM environment (`\"type\": \"module\"`). Note the **default export** — this package doesn't use a named `{ DataServiceClient }` import."
+msgstr "需要 **Node.js >= 24** 和无害环境管理环境(`\"type\": \"module\"`)。注意 **默认导出** – 此包不使用命名为 `{ DataServiceClient }` 的导入."
+
+#: ../../04_building-apps/06_data-service-api.md:5
+msgid "Option"
+msgstr "选项"
+
+#: ../../04_building-apps/06_data-service-api.md:5
+msgid "Required"
+msgstr "所需数"
+
+#: ../../04_building-apps/06_data-service-api.md:5
+msgid "`rootUrl`"
+msgstr "`rootUrl`"
+
+#: ../../04_building-apps/06_data-service-api.md:5
+msgid "Yes"
+msgstr "对"
+
+#: ../../04_building-apps/06_data-service-api.md:5
+msgid "Base URL of the data service API"
+msgstr "数据服务 API 的基础 URL"
+
+#: ../../04_building-apps/06_data-service-api.md:5
+msgid "`fetch`"
+msgstr "`fetch`"
+
+#: ../../04_building-apps/06_data-service-api.md:5
+msgid "No"
+msgstr "没有"
+
+#: ../../04_building-apps/06_data-service-api.md:5
+msgid "Custom `fetch` implementation"
+msgstr "自定义 `fetch` 执行"
+
+#: ../../04_building-apps/06_data-service-api.md:5
+msgid "`parse`"
+msgstr "`parse`"
+
+#: ../../04_building-apps/06_data-service-api.md:5
+msgid "Custom JSON parser"
+msgstr "自定义 JSON 解析器"
+
+#: ../../04_building-apps/06_data-service-api.md:5
+msgid "`transform`"
+msgstr "`transform`"
+
+#: ../../04_building-apps/06_data-service-api.md:5
+msgid "Custom response transformer"
+msgstr "自定义响应变压器"
+
+#: ../../04_building-apps/06_data-service-api.md:5
+msgid "`getAssets(...ids)`"
+msgstr "`getAssets(...ids)`"
+
+#: ../../04_building-apps/06_data-service-api.md:5
+msgid "Fetch one or more assets by ID"
+msgstr "以身份获取一个或多个资产"
+
+#: ../../04_building-apps/06_data-service-api.md:5
+msgid "`getAssetsByTicker(ticker)`"
+msgstr "`getAssetsByTicker(ticker)`"
+
+#: ../../04_building-apps/06_data-service-api.md:5
+msgid "Fetch assets by ticker symbol (`'*'` for all)"
+msgstr "通过勾选符符号获取资产( `'*'` for all)"
+
+#: ../../04_building-apps/06_data-service-api.md:5
+msgid "`getCandles(amountAsset, priceAsset, opts)`"
+msgstr "`getCandles(amountAsset, priceAsset, opts)`"
+
+#: ../../04_building-apps/06_data-service-api.md:5
+msgid "OHLCV candles for a trading pair"
+msgstr "OHLCV一对交易的蜡烛"
+
+#: ../../04_building-apps/06_data-service-api.md:5
+msgid "`getPairs(matcherAddress)`"
+msgstr "`getPairs(matcherAddress)`"
+
+#: ../../04_building-apps/06_data-service-api.md:5
+msgid "Returns a function to fetch pair data for a given matcher"
+msgstr "返回一个函数来获取给定匹配器的配对数据"
+
+#: ../../04_building-apps/06_data-service-api.md:5
+msgid "`getExchangeTxs(opts?)`"
+msgstr "`getExchangeTxs(opts?)`"
+
+#: ../../04_building-apps/06_data-service-api.md:5
+msgid "Exchange (DEX trade) transactions, by ID or filtered/paginated"
+msgstr "交易所(DEX贸易)交易,按身份识别或过滤/贴出"
+
+#: ../../04_building-apps/06_data-service-api.md:5
+msgid "`getTransferTxs(opts?)`"
+msgstr "`getTransferTxs(opts?)`"
+
+#: ../../04_building-apps/06_data-service-api.md:5
+msgid "Transfer transactions"
+msgstr "转账交易"
+
+#: ../../04_building-apps/06_data-service-api.md:5
+msgid "`getMassTransferTxs(opts?)`"
+msgstr "`getMassTransferTxs(opts?)`"
+
+#: ../../04_building-apps/06_data-service-api.md:5
+msgid "Mass transfer transactions"
+msgstr "大规模转让交易"
+
+#: ../../04_building-apps/06_data-service-api.md:5
+msgid "`aliases.getById(id)` / `getByIdList(ids)` / `getByAddress(address, opts?)`"
+msgstr "`aliases.getById(id)` / `getByIdList(ids)` / `getByAddress(address, opts?)`"
+
+#: ../../04_building-apps/06_data-service-api.md:5
+msgid "Alias lookups"
+msgstr "别的外观"
+
+#: ../../04_building-apps/06_data-service-api.md:60
+#, python-brace-format
+msgid "All methods return `Promise<{ data: T; fetchMore?: (count: number) => Promise }>` — call `fetchMore` to page through a result set without re-specifying filters."
+msgstr "所有方法返回 `Promise<{ data: T; fetchMore?: (count: number) => Promise }>` – 通过一个结果集调用 `fetchMore` 页面,而不重新指定过滤器."
+
+#: ../../04_building-apps/06_data-service-api.md:62
+msgid "Example: exchange history for a pair"
+msgstr "示例: 交换一对历史"
+
+#: ../../04_building-apps/06_data-service-api.md:70
+#, python-brace-format
+msgid "`getCandles()` in `data-service-client-js` 4.2.0, the published release, throws `Invalid maxHeight: null` when any interval in the range has no trades: the data service returns those intervals with `null` prices and volumes, and the client rejects them. The example reads the candles endpoint (`GET /candles/{amountAsset}/{priceAsset}`) directly instead. The fix, which returns empty intervals as `null`, is in the monorepo but not yet published to npm."
+msgstr "`getCandles()` in `data-service-client-js` 4.2.0,已发布发行,当范围中的任何间隔没有交易时会抛出 `Invalid maxHeight: null`:数据服务返回那些有 `null` 价格和量的间隔,客户端拒绝.例子直接读取蜡烛终点(`GET /candles/{amountAsset}/{priceAsset}`).定点符,它以 `null` 返回空间隔, 它位于单列波中, 但尚未发布到 npm 。"
+
+#: ../../04_building-apps/06_data-service-api.md:75
+msgid "Several methods (`getPairs`, `getCandles`) take a matcher address as a parameter rather than assuming a single network-wide matcher. Use the Testnet matcher address `31VMNVAvVh67dPZ41nMnYZvhoZFW7wwPrmq` from [Public endpoints](#public-endpoints)."
+msgstr "几种方法(`getPairs`, `getCandles`)将匹配者地址作为参数,而不是假设一个单一的网络宽匹配者.使用 Testnet 匹配器地址 `31VMNVAvVh67dPZ41nMnYZvhoZFW7wwPrmq` from [公共终点](#public-endpoints)."
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:5
+msgid "Smart Contracts Overview"
+msgstr "智能合同概览"
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:7
+#, python-brace-format
+msgid "A smart contract on DecentralChain is a {doc}`Ride <../03_ride-language/index>` script attached to an account or to a token. The node runs the script every time a transaction touches the thing it is attached to. The script either decides whether that transaction may happen, or, for a dApp, works out what a call does."
+msgstr "DecentralChain上的智能合同是附在账户或信使上的一个 {doc}`Ride <../03_ride-language/index>` 脚本.节点每次交易触及它所附带的东西时都会运行脚本.脚本要么决定交易是否可能发生,要么对于一个dApp来说,会解决一个呼叫的作用."
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:10
+msgid "Verified against node-scala v1.8.0 on 2026-10-25. Limits and fees come from the node source. Every Ride sample in this section was compiled by the public Testnet node (`DecentralChain v1.8.0-dev-e6248f2408`) and the public Mainnet node (`DCC v1.3.5`)."
+msgstr "2026-10-25年对节点-scala v 1.8.0进行验证.限制和收费来自节点来源。本节中每个Ride样本都是由公共Testnet节点(`DecentralChain v1.8.0-dev-e6248f2408`)和公开Mainnet节点(`DCC v1.3.5`)所汇编."
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:13
+msgid "Three Kinds of Script"
+msgstr "三样脚本"
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:9
+msgid "dApp script"
+msgstr "dApp 脚本"
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:9
+msgid "Account script"
+msgstr "账户脚本"
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:9
+msgid "Asset script"
+msgstr "资产脚本"
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:9
+msgid "Attached to"
+msgstr "附 录"
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:9
+msgid "An account, which becomes a dApp"
+msgstr "一个账户, 变成 dApp"
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:9
+msgid "An account, which becomes a smart account"
+msgstr "一个账户,它成为了一个聪明的账户"
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:9
+msgid "A token, which becomes a smart asset"
+msgstr "一种象征,它成为了智慧的资产"
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:9
+msgid "Runs when"
+msgstr "运行时间"
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:9
+msgid "Someone invokes one of its `@Callable` functions"
+msgstr "有人引用了它的 `@Callable` 函数之一"
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:9
+msgid "The account sends a transaction or an order"
+msgstr "账户发送交易或命令"
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:9
+msgid "A transaction or a dApp action involves the token"
+msgstr "交易或 dApp 动作涉及符号"
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:9
+msgid "Produces"
+msgstr "生产"
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:9
+msgid "Script actions: data entries, transfers, issues, leases"
+msgstr "脚本行动:数据录入、转让、发行、租赁"
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:9
+msgid "Allow (`true`) or reject (`false` or an error)"
+msgstr "允许 (`true`) 或拒绝 (`false` 或错误)"
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:9
+msgid "Installed by"
+msgstr "安装于"
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:9
+msgid "Set Script"
+msgstr "设置脚本"
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:9
+msgid "Issue, then Set Asset Script to replace it"
+msgstr "发行, 然后设置资产脚本以替换它"
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:9
+msgid "Directives"
+msgstr "指令"
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:9
+msgid "`CONTENT_TYPE DAPP`, `SCRIPT_TYPE ACCOUNT`"
+msgstr "`CONTENT_TYPE DAPP`, `SCRIPT_TYPE ACCOUNT`"
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:9
+msgid "`CONTENT_TYPE EXPRESSION`, `SCRIPT_TYPE ACCOUNT`"
+msgstr "`CONTENT_TYPE EXPRESSION`, `SCRIPT_TYPE ACCOUNT`"
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:9
+msgid "`CONTENT_TYPE EXPRESSION`, `SCRIPT_TYPE ASSET`"
+msgstr "`CONTENT_TYPE EXPRESSION`, `SCRIPT_TYPE ASSET`"
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:9
+msgid "Guide"
+msgstr "指南"
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:9
+msgid "[Creating and Launching a dApp](08_creating-and-launching-a-dapp)"
+msgstr "[创建和启动 dApp](08_creating-and-launching-a-dapp)"
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:9
+msgid "[Smart Accounts](09_smart-accounts)"
+msgstr "[智能账户](09_smart-accounts)"
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:9
+msgid "[Smart Assets](10_smart-assets)"
+msgstr "[智能资产](10_smart-assets)"
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:24
+msgid "A dApp script can also contain one `@Verifier` function. It does the same job as an account script for the dApp's own account: it approves or rejects every transaction the dApp account sends. Without one, the node only checks that the dApp account's key signed the transaction."
+msgstr "一个dApp脚本也可以包含一个 `@Verifier` 函数.它的工作与dApp自己账户的账户脚本相同:它批准或拒绝dApp账户发送的每一笔交易.如果没有一个,节点只检查dApp账户的密钥在交易上签字."
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:26
+#, python-brace-format
+msgid "An account holds at most one script, so an account is either a dApp or a smart account, not both. The full language reference for each kind is in {doc}`Script Types <../03_ride-language/04_script-types>`."
+msgstr "一个账户最多持有一个脚本,所以一个账户要么是一个dApp,要么是一个智能账户,而不是两者兼有.每一种语言的完整参考文献为 {doc}`脚本类型 <../03_ride-language/04_script-types>`."
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:28
+msgid "From Source to Chain"
+msgstr "从源到链"
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:30
+msgid "**Write** the script. Every script starts with three directives: `STDLIB_VERSION`, `CONTENT_TYPE` and `SCRIPT_TYPE`."
+msgstr "**写入** 剧本.每个脚本都从三个指令开始:`STDLIB_VERSION`, `CONTENT_TYPE` 和 `SCRIPT_TYPE`."
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:31
+msgid "**Compile** it to bytes with a node. The result is a base64 string plus the script's complexity."
+msgstr "**编译** 带节点的字节.结果是一个基础64字符串加上脚本的复杂性."
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:32
+#, python-brace-format
+msgid "**Deploy** the bytes with a transaction: {ref}`Set Script <02_decentralchain/03_transaction:Set Script Transaction>` for a dApp or account script, {ref}`Issue <02_decentralchain/03_transaction:Issue Transaction>` for a new smart asset, {ref}`Set Asset Script <02_decentralchain/03_transaction:Set Asset Script Transaction>` to replace an asset's script."
+msgstr "**部署** 有交易的字节:{ref}`设置脚本 <02_decentralchain/03_transaction:Set Script Transaction>` 用于一个dApp或账户脚本, {ref}`问题 <02_decentralchain/03_transaction:Issue Transaction>` 用于一个新的智能资产, {ref}`设置资产脚本 <02_decentralchain/03_transaction:Set Asset Script Transaction>` 用于替换一个资产脚本."
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:33
+#, python-brace-format
+msgid "**Use** it. Users call a dApp with an {ref}`Invoke Script <02_decentralchain/03_transaction:Invoke Script Transaction>` transaction. Account and asset scripts run on their own whenever a transaction they cover reaches the node."
+msgstr "**使用** 号.用户使用 {ref}`输入脚本 <02_decentralchain/03_transaction:Invoke Script Transaction>` 交易调用一个dApp.账户和资产脚本在它们覆盖的交易到达节点时自行运行."
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:35
+msgid "Compile a Script"
+msgstr "编译脚本"
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:37
+#, python-brace-format
+msgid "The `@decentralchain/ride` npm package cannot be installed yet (see {ref}`ride-js and @decentralchain/ride <04_building-apps/01_developer-tools:ride-js and @decentralchain/ride>`), so compile with a node's `POST /utils/script/compileCode` endpoint. It accepts the Ride source as plain text and does not write anything to the chain. The examples in this section import this helper from `compile-ride.ts`:"
+msgstr ""
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:44
+#, python-brace-format
+msgid "For the {ref}`2-of-3 multisig script <04_building-apps/09_smart-accounts:Walkthrough: a 2-of-3 Multisig Account>`, the Testnet node answers:"
+msgstr "对于 {ref}`2–3多西格脚本 <04_building-apps/09_smart-accounts:Walkthrough: a 2-of-3 Multisig Account>`,Testnet节点回答:"
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:56
+msgid "`callableComplexities` lists each `@Callable` function of a dApp. `extraFee` is the surcharge, in Decentralites, that every transaction sent from an account with this script must add to its fee (see [Fees](#fees))."
+msgstr "`callableComplexities` 列出一个dApp的每个 `@Callable` 函数. `extraFee` 是德克塞提斯语的附加费,每从一个带有此脚本的账户发送的交易,都必须增加其收费(见 [收费](#fees))."
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:58
+msgid "Compile on the network you deploy to. Complexity is estimated by the network's own rules, and the two public networks differ: the same multisig script estimates at 609 on the Testnet and 643 on Mainnet."
+msgstr "在您部署的网络上编译 。复杂程度由网络自身的规则估算出,两个公共网络不同:同一个多西格脚本估计在Testnet上609个,而Mainnet上643个."
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:60
+msgid "Choose a Standard Library Version"
+msgstr "选择标准库版本"
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:62
+msgid "The `STDLIB_VERSION` directive must name a version the target network has activated:"
+msgstr "`STDLIB_VERSION` 指令必须指定目标网络已激活的版本:"
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:39
+#: ../../04_building-apps/12_matcher-api.md
+#: ../../04_building-apps/sdk/01_typescript.md:11
+msgid "Network"
+msgstr "网络"
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:39
+#: ../../04_building-apps/sdk/01_typescript.md:11
+msgid "Node"
+msgstr "节点"
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:39
+msgid "Highest active feature"
+msgstr "最高活动特性"
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:39
+msgid "Highest usable `STDLIB_VERSION`"
+msgstr "可用量最高的 `STDLIB_VERSION`"
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:39
+msgid "v1.8.0"
+msgstr "v1.8.0"
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:39
+msgid "26"
+msgstr "26"
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:39
+msgid "9"
+msgstr "9"
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:39
+msgid "v1.3.5"
+msgstr "v1.3.5"
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:39
+msgid "16"
+msgstr "16"
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:39
+msgid "5"
+msgstr "5"
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:69
+#, python-brace-format
+msgid "The samples in this section use version 5, so the same scripts deploy on both networks. What each later version adds is listed in {doc}`Standard Library Versions <../03_ride-language/08_stdlib-versions>`."
+msgstr "本节中的样本使用版本5,所以在两个网络上都部署同样的脚本.后各版本所增加的内容以 {doc}`标准库版本 <../03_ride-language/08_stdlib-versions>` 列出."
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:71
+#: ../../04_building-apps/developer-tools/01_ride-repl.md:70
+msgid "Limits"
+msgstr "限制"
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:73
+msgid "Values on the Testnet (node v1.8.0, features 1 to 26 active):"
+msgstr "Testnet(节点为 1.8.0,特征1至26活动)上的值:"
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:39
+msgid "Limit"
+msgstr "限制"
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:39
+msgid "Value"
+msgstr "数值"
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:39
+msgid "Account script or asset script size"
+msgstr "账户脚本或资产脚本大小"
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:39
+msgid "8 KB (8,192 bytes)"
+msgstr "8 KB (8,192字节)"
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:39
+msgid "dApp script size"
+msgstr "dApp 脚本大小"
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:39
+msgid "160 KB (32 KB on Mainnet, where feature 17 is not active)"
+msgstr "160 KB(32 KB on Mainnet,特性17不活动)"
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:39
+msgid "Complexity of an account script or of a dApp's `@Verifier`"
+msgstr "账户脚本或 dApp 的 `@Verifier` 复杂度"
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:39
+msgid "2,000"
+msgstr "2,000"
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:39
+msgid "Complexity of an asset script"
+msgstr "资产脚本的复杂性"
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:39
+msgid "4,000"
+msgstr "4,000"
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:39
+msgid "Complexity of a `@Callable` function"
+msgstr "`@Callable` 函数的复杂性"
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:39
+msgid "52,000 for `STDLIB_VERSION` 6 and later, 10,000 for version 5"
+msgstr "`STDLIB_VERSION` 6 及以后的52 000美元, 第5版10 000美元"
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:39
+msgid "Total complexity of one invocation, across every callable it reaches through dApp-to-dApp calls and every smart asset script they trigger"
+msgstr "一个引用的完全复杂,通过dApp到dApp的呼叫和触发的每一个智能资产脚本, 在所有可调用中都达到"
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:39
+msgid "52,000 for `STDLIB_VERSION` 6 and later, 26,000 for version 5"
+msgstr "52 000 给 `STDLIB_VERSION` 6 及以后,26 000 给 第5版"
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:39
+msgid "Verifier complexity that adds no fee"
+msgstr "不收费的验证程序复杂程度"
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:39
+msgid "200"
+msgstr "200"
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:39
+msgid "Payments attached to one invocation"
+msgstr "一项援引所附付款"
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:39
+msgid "10"
+msgstr "10"
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:86
+#, python-brace-format
+msgid "Limits on script actions, data weight and nested calls are listed under {ref}`Limitations <03_ride-language/07_dapp-to-app-invocation:Limitations>`."
+msgstr "对脚本动作的限制,数据重量和被巢接的呼叫在 {ref}`限制 <03_ride-language/07_dapp-to-app-invocation:Limitations>` 下列出."
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:88
+msgid "Fees"
+msgstr "收费"
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:90
+#, python-brace-format
+msgid "Fees are in DCC. The full table is under {ref}`Minimum Fee <02_decentralchain/03_transaction:Minimum Fee>`; these are the ones that matter for scripts:"
+msgstr "收费单位为DCC.完整的表格在 {ref}`最低收费 <02_decentralchain/03_transaction:Minimum Fee>` 之下;这些表格对脚本很重要:"
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:92
+msgid "**Set Script:** 0.001 DCC for each started kilobyte of compiled script on the Testnet. The 2,058-byte pledge-drive dApp costs 0.003 DCC. Mainnet charges a flat 0.01 DCC because feature 17 is not active there. `setScript()` from `@decentralchain/transactions` computes the Testnet value, so pass `fee: 1_000_000` on Mainnet."
+msgstr "**设置脚本 :** 001 DCC 开始在 Testnet上编译的脚本的千字节.2,058字节的认捐驱动dApp花费了0.003个DCC.Mainnet充电为平方0.01 DCC,因为特性17在那里不活动. `setScript()` 来自 `@decentralchain/transactions` 计算出Testnet值,因此通过 `fee: 1_000_000` 在Mainnet上."
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:93
+msgid "**Invoke Script:** 0.005 DCC, plus 1 DCC for every token the call issues that is not an NFT."
+msgstr "**输入脚本 :**·0.005 DCC,每个符号外加1个DCC,非NFT的调用问题."
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:94
+msgid "**Issue:** 1 DCC, with or without a script."
+msgstr "**问题:** 1 DCC,有或没有剧本."
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:95
+msgid "**Set Asset Script:** 1 DCC. This already includes the smart asset surcharge for the token itself, so do not add 0.004 DCC to it."
+msgstr "**设置资产脚本 :** 1 DCC.这已经包括了对符本身的智能资产附加费,所以不要在它上再加0.004DCC."
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:96
+msgid "**Smart account surcharge:** 0.004 DCC on every transaction sent by an account whose verifier complexity is above 200. This also applies to a dApp with a costly `@Verifier`."
+msgstr "由核查者复杂度超过200的账户发送的每笔交易的 **智能账户附加费 :** .004 DCC.这一点也适用于费用高昂的dApp。 `@Verifier`"
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:97
+msgid "**Smart asset surcharge:** 0.004 DCC for each smart asset a transaction involves, except Invoke Script transactions. A transfer of a smart asset costs 0.001 + 0.004 = 0.005 DCC."
+msgstr "除Invoke脚本交易外,每笔交易涉及的智能资产为 **智能资产附加费 :** .004 DCC.智能资产转让成本为0.001+0.004=0.005DCC."
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:99
+msgid "The transaction builders do not add either surcharge on their own. Pass `additionalFee: 400_000` for each one that applies."
+msgstr "交易建立者不自行加收任何附加费.每一个应用都通过 `additionalFee: 400_000` 。"
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:101
+msgid "Failed Transactions"
+msgstr "交易失败"
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:103
+#, python-brace-format
+msgid "When a callable function throws, or a smart asset rejects one of its actions, the outcome depends on how much computation already ran. Before a complexity of 1,000, the node rejects the transaction outright and the sender pays nothing. After that point, the transaction is still written to a block, marked `\"applicationStatus\": \"script_execution_failed\"`, and the sender pays the fee. None of its other changes are applied. See {ref}`Fee for Failed Transactions <02_decentralchain/03_transaction:Fee for Failed Transactions>`."
+msgstr "当一个可调用函数抛出,或者一个智能资产拒绝其其中一项动作时,结果取决于已经运行了多少计算.在复杂到1000之前,节点直接拒绝交易,发送者不支付任何费用。事后,交易仍被写入块中,标出 `\"applicationStatus\": \"script_execution_failed\"`,由发件人支付手续费.其其他任何改动均不予适用。见 {ref}`交易失败收费 <02_decentralchain/03_transaction:Fee for Failed Transactions>`."
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:105
+msgid "Common Mistakes"
+msgstr "常见错误"
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:107
+msgid "**Leaving out `chainId`.** `transfer()` and `massTransfer()` take the chain ID from the recipient's address. Every other builder in `@decentralchain/transactions` falls back to chain ID 76 (`'L'`), which no DecentralChain network uses, so the node rejects the transaction. Always pass `chainId: '!'` for the Testnet or `chainId: '?'` for Mainnet."
+msgstr "**离开 `chainId`。** `transfer()` 和 `massTransfer()` 从接收者的地址取出链式ID. `@decentralchain/transactions` 中的其他每个构建者都会回落到没有DecentralChain网络使用的链式ID 76(`'L'`),因此节点拒绝交易.总是通过 `chainId: '!'`,用于Testnet或 `chainId: '?'`,用于Mainnet."
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:108
+msgid "**Locking an account by accident.** A script also checks the transaction that would replace it. If it can never approve a Set Script (or a Set Asset Script for a token), it is permanent. If it rejects everything, the account's funds can never move again. Try every script on the Testnet first."
+msgstr "**意外地锁了个账户** A脚本也检查了将替换它的交易.如果它永远不能批准一个 Set 脚本(或一个 Set 资产脚本作为一个令牌),则它是永久的.如果拒绝一切,账户的资金就再也动不了了.先试试Testnet上的每个脚本."
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:109
+msgid "**Forgetting the signature check.** An account script replaces the node's signature check entirely. A script that returns `true` without calling `sigVerify` lets anyone spend from the account."
+msgstr "**忘记签名检查 。** 一个账户脚本完全取代了节点的签名检查.一个不拨打 `sigVerify` 就返回了 `true` 的脚本让任何人从账户中支出."
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:110
+#, python-brace-format
+msgid "**Trusting a dApp's deployer by default.** A dApp with no `@Verifier` can be rewritten, or emptied with a plain transfer, by whoever holds the dApp account's seed. Before you send funds to a dApp, fetch its script with `GET /addresses/scriptInfo/{address}` and turn the `script` field back into Ride source with `POST /utils/script/decompile`."
+msgstr "**默认情况下信任dApp的部署者.** A dApp没有 `@Verifier` 的可以被谁持有dApp账户的种子来重写,或用平移来取空.在向一个dApp发出资金之前,先用 `GET /addresses/scriptInfo/{address}` 取取其脚本,再用 `POST /utils/script/decompile` 将 `script` 字段回转为Ride源."
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:112
+msgid "Next Steps"
+msgstr "下一个步骤"
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:114
+msgid "[Creating and Launching a dApp](08_creating-and-launching-a-dapp): write, deploy and call a dApp on the Testnet."
+msgstr "[创建和启动 dApp](08_creating-and-launching-a-dapp):写出,部署并呼叫dApp在Testnet上."
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:115
+msgid "[Smart Accounts](09_smart-accounts): a multisig account and an escrow account."
+msgstr "[智能账户](09_smart-accounts):多西格账户和代管账户."
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:116
+msgid "[Smart Assets](10_smart-assets): a token with transfer rules."
+msgstr "[智能资产](10_smart-assets):有转会规则的符."
+
+#: ../../04_building-apps/07_smart-contracts-overview.md:117
+msgid "[Blockchain Updates](11_blockchain-updates): follow every state change on the chain from your own node."
+msgstr "[区链更新](11_blockchain-updates):从自家节点跟随链条上的每一州变化."
+
+#: ../../04_building-apps/08_creating-and-launching-a-dapp.md:6
+msgid "Creating and Launching a dApp"
+msgstr "创建和启动 dApp"
+
+#: ../../04_building-apps/08_creating-and-launching-a-dapp.md:8
+msgid "This walkthrough builds a small dApp on the Testnet, from the Ride source to a live call. The dApp runs a **pledge drive**. Backers pledge DCC before a deadline. If the pledges reach the goal by then, anyone can trigger the payout to a beneficiary. If they fall short, every backer can take their own pledge back. Nobody, the deployer included, can move the pledged DCC in any other way."
+msgstr "这种走行道在从Ride源头到直播的Testnet上构建出一个小的dApp.dApp运行一款 **质押驱动器**.后援在截止日期前承诺DCC.如果届时认捐达到目标,任何人都可以启动向受益人的付款。如果不足,每个支持者都可以收回自己的保证。包括部署人员在内的任何人,都不能以任何其他方式转移认捐的DCC。"
+
+#: ../../04_building-apps/08_creating-and-launching-a-dapp.md:11
+msgid "Verified against node-scala v1.8.0 on 2026-10-25. The script compiles on the public Testnet node (`DecentralChain v1.8.0-dev-e6248f2408`) and the Mainnet node (`DCC v1.3.5`), and the fees below were confirmed with the Testnet node's `POST /transactions/calculateFee`. The TypeScript is typechecked against the published SDK; it has not been broadcast as part of this documentation pass."
+msgstr "2026-10-25年对节点-scala v 1.8.0进行验证.剧本在公用Testnet节点(`DecentralChain v1.8.0-dev-e6248f2408`)和Mainnet节点(`DCC v1.3.5`)上编译出,以下收费被Testnet节点的\"`POST /transactions/calculateFee`\"确认.TypeScript是对照已公布的SDK进行打字检查;它没有作为本文档通行证的一部分被播出."
+
+#: ../../04_building-apps/08_creating-and-launching-a-dapp.md:14
+#: ../../04_building-apps/how-to/01_airdrop.md:12
+#: ../../04_building-apps/how-to/02_payments.md:12
+#: ../../04_building-apps/how-to/03_token-exchange.md:15
+#: ../../04_building-apps/how-to/04_voting.md:12
+#: ../../04_building-apps/how-to/05_list-as-argument.md:13
+msgid "Before You Start"
+msgstr "在你开始前"
+
+#: ../../04_building-apps/08_creating-and-launching-a-dapp.md:16
+#: ../../04_building-apps/how-to/01_airdrop.md:14
+#: ../../04_building-apps/how-to/03_token-exchange.md:17
+msgid "You need:"
+msgstr "你需要: 来点什么?"
+
+#: ../../04_building-apps/08_creating-and-launching-a-dapp.md:18
+msgid "Node.js 24 or later, with the scripts saved as ES modules (`\"type\": \"module\"` in `package.json`)."
+msgstr "Node.js 24或后期,将脚本保存为ES模块(`\"type\": \"module\"` in `package.json`)."
+
+#: ../../04_building-apps/08_creating-and-launching-a-dapp.md:19
+msgid "Two Testnet accounts with DCC from the [faucet](https://testnet.decentralscan.com/faucet). The **campaign account** becomes the dApp and needs 0.004 DCC for its two setup transactions. The **backer account** needs the pledge plus 0.005 DCC for each call."
+msgstr "两个Testnet账户,DCC来自 [水龙头](https://testnet.decentralscan.com/faucet). **运动账户** 成为了dApp,需要0.004DCC进行其两个设置交易. **备份账户** 需要每通电话的认捐额外加0.005DCC."
+
+#: ../../04_building-apps/08_creating-and-launching-a-dapp.md:20
+#, python-brace-format
+msgid "The SDK and the `compileRide` helper from {ref}`Compile a Script <04_building-apps/07_smart-contracts-overview:Compile a Script>`, saved as `compile-ride.ts` next to your scripts:"
+msgstr "{ref}`编译脚本 <04_building-apps/07_smart-contracts-overview:Compile a Script>` 的 SDK 和 `compileRide` 帮助器保存在您的脚本旁边的 `compile-ride.ts` :"
+
+#: ../../04_building-apps/08_creating-and-launching-a-dapp.md:26
+msgid "Use a fresh account for the dApp. Once its script is set, this account can never send a transaction again. The addresses in the examples belong to throwaway example accounts; replace them with your own."
+msgstr "使用 dApp 的新账户 。一旦其脚本被设定,这个账户就再也无法发送交易了.示例中的地址属于丢弃的示例账户;取而代之的是您自己的账户。"
+
+#: ../../04_building-apps/08_creating-and-launching-a-dapp.md:28
+#: ../../04_building-apps/how-to/03_token-exchange.md:27
+#: ../../04_building-apps/how-to/04_voting.md:20
+#: ../../04_building-apps/how-to/05_list-as-argument.md:21
+msgid "Write the Script"
+msgstr "写入脚本"
+
+#: ../../04_building-apps/08_creating-and-launching-a-dapp.md:30
+msgid "Save this as `ride/pledge-drive.ride`, in a `ride` folder next to your scripts:"
+msgstr "在您的脚本旁边的 `ride` 文件夹中将此保存为 `ride/pledge-drive.ride` :"
+
+#: ../../04_building-apps/08_creating-and-launching-a-dapp.md:37
+msgid "How it fits together:"
+msgstr "如何合而为一:"
+
+#: ../../04_building-apps/08_creating-and-launching-a-dapp.md:39
+#, python-brace-format
+msgid "**State lives in the dApp's {ref}`account data storage <02_decentralchain/01_account:Account Data Storage>`.** `this` is the dApp's own address. The script reads its settings from there, and the callables record each backer's pledge under `pledge_<address>` and the amount the dApp currently holds in pledges under `total`."
+msgstr "**州住dApp的 {ref}`账户数据存储 <02_decentralchain/01_account:Account Data Storage>`.** `this` 是dApp自己的地址.脚本从那里读取其设置,可调用符记录每个后台在 `pledge_<address>` 下的认捐以及目前dApp在 `total` 下认捐所持有的金额."
+
+#: ../../04_building-apps/08_creating-and-launching-a-dapp.md:40
+#, python-brace-format
+msgid "**Each `@Callable` function is an entry point.** `i` is the {ref}`Invocation <03_ride-language/05_structures:Invocation>`: `i.caller` is the address that sent the call and `i.payments` are the tokens attached to it. Attached payments reach the dApp's balance before the function runs, so `pledge()` only has to record them."
+msgstr "**每个 `@Callable` 函数都是切入点.** `i` 是 {ref}`召集 <03_ride-language/05_structures:Invocation>`:`i.caller` 是发送该呼叫的地址,而 `i.payments` 是它所附带的标志.附加付款在函数运行前已到达了dApp的余额,因此 `pledge()` 只需记录."
+
+#: ../../04_building-apps/08_creating-and-launching-a-dapp.md:41
+#, python-brace-format
+msgid "**A function's result is a list of {ref}`script actions <03_ride-language/05_structures:Script Actions>`.** The node applies them after the function returns: `IntegerEntry`, `BooleanEntry` and `DeleteEntry` change data, and `ScriptTransfer` pays DCC out of the dApp's balance."
+msgstr "**一个函数的结果是一个 {ref}`脚本动作 <03_ride-language/05_structures:Script Actions>` 列表.** 在函数返回后节点应用它们:`IntegerEntry`, `BooleanEntry` 和 `DeleteEntry` 变化数据,而 `ScriptTransfer` 从dApp的余额中支付DCC."
+
+#: ../../04_building-apps/08_creating-and-launching-a-dapp.md:42
+msgid "**`throw()` aborts the call.** None of the actions apply and the attached payment stays with the caller."
+msgstr "**`throw()` 中止调用.** 任何行动都不适用,所附付款仍由打电话者支付。"
+
+#: ../../04_building-apps/08_creating-and-launching-a-dapp.md:43
+msgid "**`height`** is the current block height. On the Testnet a block arrives about every 30 seconds."
+msgstr "**`height`** 是当前块高.在Testnet上,一个街区大约每30秒到达一次."
+
+#: ../../04_building-apps/08_creating-and-launching-a-dapp.md:44
+msgid "**The verifier returns `false`,** so the campaign account can sign nothing at all: no transfers, no data changes, no new script. That is what makes the pledge drive trustworthy, and also why the settings must be written before the script."
+msgstr "**校验者返回 `false`,** 这样竞选账户就完全不能签任何字:没有转账,没有数据变化,没有新的脚本.这就是保证驱动器值得信赖的原因,也是为什么必须在脚本之前写出设置的原因."
+
+#: ../../04_building-apps/08_creating-and-launching-a-dapp.md:46
+msgid "Check the Complexity"
+msgstr "检查复杂度"
+
+#: ../../04_building-apps/08_creating-and-launching-a-dapp.md:48
+#, python-brace-format
+msgid "Compiling with `compileRide` prints the complexity. The Testnet node reports `pledge` 109, `refund` 129, `payout` 76 and a verifier complexity of 1. All three functions stay far below the 1,000 at which a failure starts to cost the caller a fee (see {ref}`Failed Transactions <04_building-apps/07_smart-contracts-overview:Failed Transactions>`). Every `throw()` in this dApp therefore rejects the call outright, and the backer pays nothing."
+msgstr "与 `compileRide` 相编译打印复杂度 。Testnet节点报告为 `pledge` 109, `refund` 129, `payout` 76,并具有1.所有这三种功能都远远低于1 000项,因为如果出现故障,拨打者开始收费(见 {ref}`交易失败 <04_building-apps/07_smart-contracts-overview:Failed Transactions>`)。因此,这个dApp中每个 `throw()` 都直接拒绝这个呼叫,而后援者则不付任何报酬."
+
+#: ../../04_building-apps/08_creating-and-launching-a-dapp.md:50
+msgid "Configure and Deploy"
+msgstr "配置和部署"
+
+#: ../../04_building-apps/08_creating-and-launching-a-dapp.md:52
+msgid "Deployment takes two transactions from the campaign account. The order matters: once the script is set, its verifier rejects everything the account sends, including Data transactions."
+msgstr "部署需要从竞选账户中进行两次交易。命令很重要:一旦设定了脚本,其核查者就拒绝账户发送的包括\"数据\"交易在内的一切."
+
+#: ../../04_building-apps/08_creating-and-launching-a-dapp.md:59
+#, python-brace-format
+msgid "`waitForTx` waits until each transaction is in a block. The Set Script transaction must not reach the node before the settings are on chain, for the reason explained in {ref}`Sending a Transaction That Depends on Another <04_building-apps/03_how-to-guides:Sending a Transaction That Depends on Another>`."
+msgstr "`waitForTx` 等待每次交易在一个块中.设置脚本交易在设置上连锁之前不得到达节点,原因在 {ref}`发送取决于其他交易的交易 <04_building-apps/03_how-to-guides:Sending a Transaction That Depends on Another>` 中解释."
+
+#: ../../04_building-apps/08_creating-and-launching-a-dapp.md:61
+#, python-brace-format
+msgid "The two transactions cost 0.001 DCC for the data and 0.003 DCC for the script (2,058 bytes, so three started kilobytes). Once the Set Script transaction is in a block, the account is a dApp. `GET /addresses/scriptInfo/{address}/meta` on any node lists its callable functions and their arguments."
+msgstr "两次交易花费了0.001 DCC的数据和0.003 DCC的脚本(2,058字节,因此有3个起动了千字节).一旦Set脚本交易在一个块中,账户为一dApp. `GET /addresses/scriptInfo/{address}/meta` 在任意节点上列出其可调用函数及其参数."
+
+#: ../../04_building-apps/08_creating-and-launching-a-dapp.md:63
+msgid "Call the dApp"
+msgstr "给 dApp 打电话"
+
+#: ../../04_building-apps/08_creating-and-launching-a-dapp.md:65
+msgid "A backer pledges 1 DCC by sending an Invoke Script transaction that names the function and attaches the payment:"
+msgstr "支持者通过发送Invoke脚本交易以命名函数并附上支付, 来保证 1 DCC :"
+
+#: ../../04_building-apps/08_creating-and-launching-a-dapp.md:72
+#, python-brace-format
+msgid "The backer pays the 0.005 DCC fee; the dApp pays nothing for its own actions. Pass function arguments in `args` as typed values, for example `{ type: 'integer', value: 5 }` or `{ type: 'string', value: 'abc' }`."
+msgstr "后方支付0.005DCC费;而dApp则不为自己的行动支付任何费用. `args` 中作为打出值的传出函数参数,例如 `{ type: 'integer', value: 5 }` 或 `{ type: 'string', value: 'abc' }`."
+
+#: ../../04_building-apps/08_creating-and-launching-a-dapp.md:74
+msgid "If the function throws, `broadcast()` rejects with the node's error, whose message starts with `Error while executing dApp:` and ends with the text passed to `throw()`."
+msgstr "如果函数抛出, `broadcast()` 会用节点的错误拒绝,其消息以 `Error while executing dApp:` 开头并用传递到 `throw()` 的文本来结束."
+
+#: ../../04_building-apps/08_creating-and-launching-a-dapp.md:76
+msgid "Read the dApp's State"
+msgstr "读取 dApp 状态"
+
+#: ../../04_building-apps/08_creating-and-launching-a-dapp.md:78
+msgid "Everything the dApp records is public. Any node returns it:"
+msgstr "所有dApp记录都是公开的.任何节点返回它 :"
+
+#: ../../04_building-apps/08_creating-and-launching-a-dapp.md:80
+#, python-brace-format
+msgid "`GET /addresses/data/{dApp address}` lists every entry. Add `?matches=pledge_.*` to filter keys with a regular expression."
+msgstr "`GET /addresses/data/{dApp address}` 列出每个条目.将 `?matches=pledge_.*` 添加到带有正则表达式的过滤密钥中."
+
+#: ../../04_building-apps/08_creating-and-launching-a-dapp.md:81
+#, python-brace-format
+msgid "`GET /addresses/data/{dApp address}/total` returns one entry."
+msgstr "`GET /addresses/data/{dApp address}/total` 返回一个条目."
+
+#: ../../04_building-apps/08_creating-and-launching-a-dapp.md:82
+#, python-brace-format
+msgid "`GET /transactions/info/{transaction ID}` returns an Invoke Script transaction with its `applicationStatus`, its `spentComplexity` and a `stateChanges` object listing every action the call produced."
+msgstr "`GET /transactions/info/{transaction ID}` 返回一个 Invoke 脚本交易与其 `applicationStatus`,其 `spentComplexity` 和一个 `stateChanges` 对象,列出所生成的每个动作."
+
+#: ../../04_building-apps/08_creating-and-launching-a-dapp.md:84
+msgid "Finish the Campaign"
+msgstr "结束这场运动"
+
+#: ../../04_building-apps/08_creating-and-launching-a-dapp.md:86
+msgid "After the deadline height, exactly one of the two exits opens:"
+msgstr "在最后期限高度后,两个出入口中确切的一个打开了:"
+
+#: ../../04_building-apps/08_creating-and-launching-a-dapp.md:88
+#, python-brace-format
+msgid "If `total` reached `goal`, anyone sends `call: { function: 'payout', args: [] }` with no payment, and the dApp transfers the total to the beneficiary once."
+msgstr "若 `total` 达到 `goal`,则任何人会发送 `call: { function: 'payout', args: [] }` 而无需支付,而dApp将总额转移给受益人一次."
+
+#: ../../04_building-apps/08_creating-and-launching-a-dapp.md:89
+#, python-brace-format
+msgid "Otherwise each backer sends `call: { function: 'refund', args: [] }`, gets their own pledge back, and `total` goes down by that amount."
+msgstr "否则每个后卫都会送出 `call: { function: 'refund', args: [] }`,得到他们自己的保证回,而 `total` 会减少这个金额."
+
+#: ../../04_building-apps/08_creating-and-launching-a-dapp.md:91
+msgid "Both calls are ordinary Invoke Script transactions and cost the sender 0.005 DCC."
+msgstr "两通电话都是普通的Invoke Script交易并花费了发送者0.005 DCC."
+
+#: ../../04_building-apps/08_creating-and-launching-a-dapp.md:93
+msgid "Changing a dApp Later"
+msgstr "稍后更改 dApp"
+
+#: ../../04_building-apps/08_creating-and-launching-a-dapp.md:95
+msgid "This dApp can never change, by design. If your dApp needs upgrades, write a `@Verifier` that approves Set Script transactions signed by a key you control, and only those. Your users then have to trust that key, because a new script can do anything with the funds the dApp holds. Tell them so. Use [Smart Accounts](09_smart-accounts) to require several signatures for an upgrade."
+msgstr "这个dApp从设计上来说是永远无法改变的.如果您的 dApp 需要升级, 请写一个 `@Verifier` , 它批准 Set Script 交易, 由您控制的密钥签名, 只有这些 。您的用户然后必须信任这把钥匙, 因为一个新的脚本可以做任何事情 用dApp持有的资金。告诉他们吧使用 [智能账户](09_smart-accounts) 需要多个签名才能升级."
+
+#: ../../04_building-apps/08_creating-and-launching-a-dapp.md:97
+msgid "Moving to Mainnet"
+msgstr "移动到 Mainnet"
+
+#: ../../04_building-apps/08_creating-and-launching-a-dapp.md:99
+msgid "The script already uses `STDLIB_VERSION 5`, the highest version Mainnet supports. Use a Mainnet node URL and `chainId: '?'`. Pass `fee: 1_000_000` to `setScript()`, because Mainnet charges a flat 0.01 DCC for Set Script and the SDK's default is the Testnet's per-kilobyte fee."
+msgstr "脚本已经使用 `STDLIB_VERSION 5`,是Mainnet支持的最高版本.使用 Mainnet 节点 URL 和 `chainId: '?'`.将 `fee: 1_000_000` 传递至 `setScript()`,因为 Mainnet 为 Set Script 收取了平方0.01 DCC ,而 SDK 的默认是 Testnet 的每千比特费."
+
+#: ../../04_building-apps/09_smart-accounts.md:6
+msgid "Smart Accounts"
+msgstr "智能账户"
+
+#: ../../04_building-apps/09_smart-accounts.md:8
+msgid "A smart account is an account with an account script. Normally a node accepts a transaction from an account when proof 0 is a valid signature by the account's key. Once the account has a script, the node runs the script instead, and the script alone decides. That turns an account into a set of rules: several people must agree, money may only go to certain addresses, or funds unlock at a given height."
+msgstr "智能账户是一个有账户脚本的账户.通常一个节点接受账户中的交易,当证明 0 是账户密钥的有效签名时.一旦账户有脚本,由节点运行脚本取而代之,由脚本独自决定.这把一个账户变成了一套规则:一些人必须同意,钱可能只流向某些地址,或者资金在一定高度上解锁。"
+
+#: ../../04_building-apps/09_smart-accounts.md:11
+msgid "Verified against node-scala v1.8.0 on 2026-10-25. Both scripts compile on the public Testnet node (`DecentralChain v1.8.0-dev-e6248f2408`) and the Mainnet node (`DCC v1.3.5`), and the fees were confirmed with the Testnet node's `POST /transactions/calculateFee`. The TypeScript is typechecked against the published SDK; it has not been broadcast as part of this documentation pass."
+msgstr "2026-10-25年对节点-scala v 1.8.0进行验证.两种脚本在公用Testnet节点(`DecentralChain v1.8.0-dev-e6248f2408`)和Mainnet节点(`DCC v1.3.5`)上进行编译,费用被Testnet节点的 `POST /transactions/calculateFee` 确认.TypeScript是对照已公布的SDK进行打字检查;它没有作为本文档通行证的一部分被播出."
+
+#: ../../04_building-apps/09_smart-accounts.md:14
+msgid "How Verification Works"
+msgstr "核查工作如何进行"
+
+#: ../../04_building-apps/09_smart-accounts.md:16
+msgid "**The script replaces the signature check; it does not add to it.** The node no longer checks any proof by itself. If the rule needs a signature, the script must call `sigVerify` itself. A script that just returns `true` lets anyone spend from the account."
+msgstr "**脚本取代了签名检查;它不添加到其中.** 节点不再单独检查任何证据.如果该规则需要签名,脚本必须叫作 `sigVerify` 本身.一个仅仅返回 `true` 的脚本让任何人从账户中花费."
+
+#: ../../04_building-apps/09_smart-accounts.md:17
+msgid "**It runs for everything the account sends.** That means every transaction, including the Set Script that would change or remove the script, and every order placed on the DEX. It does not run when the account receives something."
+msgstr "**帐号寄来的所有东西都用它**,是指每笔交易,包括将更改或删除脚本的Set脚本,以及DEX上所放的每一个顺序.账户收到信息后, 它不会运行 。"
+
+#: ../../04_building-apps/09_smart-accounts.md:18
+msgid "**It sees the whole transaction.** The built-in `tx` holds the transaction being checked, with all its fields, `bodyBytes` (the signed bytes) and `proofs`. The script can also read chain state: `height`, balances, and data entries of any account. `this` is the account's own address."
+msgstr "**它看到整个交易。** 内置的 `tx` 持有交易被检查,其所有字段为 `bodyBytes` (已签名的字节)和 `proofs`.脚本还可以读取链条状态:`height`,余额,以及任何账户的数据分录. `this` 是账户自己的地址."
+
+#: ../../04_building-apps/09_smart-accounts.md:19
+msgid "**There are up to 8 proofs.** In Ride, `tx.proofs` always has 8 elements. Proofs the sender left out are empty, and `sigVerify` returns `false` for an empty proof, so a script can test any position without failing."
+msgstr "**出有八证相.** 在Ride中, `tx.proofs` 总有8个元素.发送者被留下的证明是空的,而 `sigVerify` 返回 `false` 作为空的证明,因此脚本可以测试任何位置而不失败."
+
+#: ../../04_building-apps/09_smart-accounts.md:20
+msgid "**A complex script costs a fee.** If the script's complexity is above 200, every transaction from the account costs 0.004 DCC more. Both scripts on this page are above that line (the multisig is 609, the escrow 768), so their transactions pay 0.001 + 0.004 = 0.005 DCC."
+msgstr "**复杂的脚本要付费.** 如果剧本的复杂度超过200,则账户的每笔交易都要多花费0.004DCC.本页上的两个脚本都在该行上方(多相格为609,代管768),因此其交易支付0.001+0.004=0.005 DCC."
+
+#: ../../04_building-apps/09_smart-accounts.md:21
+msgid "**Removing the script is a transaction like any other.** Send Set Script with `script: null`. The current script must approve it."
+msgstr "**删除脚本与其它交易一样 。** 用 `script: null` 发送集脚本.目前的脚本必须批准."
+
+#: ../../04_building-apps/09_smart-accounts.md:23
+#, python-brace-format
+msgid "The language side is in {ref}`Account Script <03_ride-language/04_script-types:Account Script>`."
+msgstr "语言方面在 {ref}`账户脚本 <03_ride-language/04_script-types:Account Script>`."
+
+#: ../../04_building-apps/09_smart-accounts.md:29
+#, python-brace-format
+msgid "The examples import `compileRide` from {ref}`Compile a Script <04_building-apps/07_smart-contracts-overview:Compile a Script>` and read their scripts from a `ride` folder next to them. The public keys and addresses in the examples belong to throwaway example accounts. Deployed unchanged, a script would hand control to whoever holds those accounts' seeds, so always replace them with your own."
+msgstr "示例从 {ref}`编译脚本 <04_building-apps/07_smart-contracts-overview:Compile a Script>` 导入 `compileRide` 从旁边的 `ride` 文件夹读取脚本 。例子中的公用钥匙和地址属于丢弃的示例账户.没有改变,剧本会把控制权交给 持有这些账户的种子的人, 所以总是用自己的种子取而代之。"
+
+#: ../../04_building-apps/09_smart-accounts.md:31
+msgid "Walkthrough: a 2-of-3 Multisig Account"
+msgstr "走过:3个多西格账户中的2个"
+
+#: ../../04_building-apps/09_smart-accounts.md:33
+msgid "Three owners share one account. Any two of them together can send a transaction from it; one alone cannot."
+msgstr "三家业主共用一户.任何两人在一起,都可以从中发送交易;单独一人不能。"
+
+#: ../../04_building-apps/09_smart-accounts.md:35
+msgid "Save as `ride/multisig-2-of-3.ride`, with your owners' public keys in place of the example ones:"
+msgstr "另存为 `ride/multisig-2-of-3.ride`, 以您的主人公的公钥代替示例 :"
+
+#: ../../04_building-apps/09_smart-accounts.md:42
+msgid "Each owner has a fixed proof position. Fixed positions keep the script cheap, and they stop one owner from counting twice by putting the same signature in two slots."
+msgstr "每个业主都有固定的证明位置.固定位置使脚本价格低廉,他们通过将同名签名放入两个槽来阻止一个所有者计算出两次."
+
+#: ../../04_building-apps/09_smart-accounts.md:44
+msgid "The script has no `match`, so it applies to every kind of transaction. Changing the owners later is itself a Set Script transaction, so it also needs two approvals."
+msgstr "脚本没有 `match`,所以适用于每一种交易.后期更改所有者本身是Set Script交易,因此还需要两个批准."
+
+#: ../../04_building-apps/09_smart-accounts.md:51
+msgid "Points worth knowing:"
+msgstr "值得了解的点:"
+
+#: ../../04_building-apps/09_smart-accounts.md:53
+msgid "**`senderPublicKey` names the shared account.** That account sends the transaction and pays its fee. The seeds passed as the second argument only add proofs."
+msgstr "**`senderPublicKey` 命名共享账户 。**,该账户发送交易并支付其费用。种子传来作为第二个论点,只是增加了证据."
+
+#: ../../04_building-apps/09_smart-accounts.md:54
+msgid "**A seed array maps to proof positions.** `[ownerASeed]` fills proof 0, and `[null, null, ownerCSeed]` fills proof 2 without touching the others. Passing an already signed transaction back to the builder keeps its existing proofs, timestamp and fee."
+msgstr "**种子阵列映射以证明位置 。** `[ownerASeed]` 填入了证明 0,而 `[null, null, ownerCSeed]` 填入了证明 2而不触碰其他的.将已经签好的交易传递回建设者,保留其现有的证明,时间戳和收费."
+
+#: ../../04_building-apps/09_smart-accounts.md:55
+msgid "**Owners sign the same bytes.** The transaction's ID depends only on its body, not on its proofs. Every owner can check that they are approving the same transaction by comparing IDs before signing."
+msgstr "**拥有者在同一个字节上签名.** 交易的ID只取决于其身体,而不是其证明.每个所有者可以通过在签名前比较身份证来检查他们是否批准同一交易."
+
+#: ../../04_building-apps/09_smart-accounts.md:56
+msgid "**There is a time limit.** A node rejects a transaction whose timestamp is more than 120 minutes older than the last block, so collect the signatures within about two hours of creating the transaction."
+msgstr "**是有时间限制的。** A节点拒绝时间戳比上个块长出120分以上的交易,因此在创建交易后约两小时内收集签名."
+
+#: ../../04_building-apps/09_smart-accounts.md:57
+msgid "**The fee here is 0.005 DCC:** 0.001 for the transfer and 0.004 for the script."
+msgstr "**这里的收费是0.005 DCC:**.001为转会,0.004为剧本."
+
+#: ../../04_building-apps/09_smart-accounts.md:59
+msgid "Walkthrough: an Escrow Account"
+msgstr "走过: 代行账户"
+
+#: ../../04_building-apps/09_smart-accounts.md:61
+msgid "A buyer pays for goods in advance, but the seller should only get the money once the goods arrive. The buyer moves the payment into a fresh escrow account and locks that account with this script. From then on, the funds can leave exactly once, in one piece, and only with the right signature:"
+msgstr "买方提前支付货物,但卖方只应在货物到货后获得这笔钱。买方将付款转入一个新的代管账户,并用这个脚本锁定账户。从那时起,资金可以完全离开一次,一个整体地,只有用正确的签名:"
+
+#: ../../04_building-apps/09_smart-accounts.md:46
+msgid "Funds go to"
+msgstr "资金流向"
+
+#: ../../04_building-apps/09_smart-accounts.md:46
+msgid "Allowed if signed by"
+msgstr "如果由您签名, 则允许"
+
+#: ../../04_building-apps/09_smart-accounts.md:46
+msgid "Seller"
+msgstr "销售者"
+
+#: ../../04_building-apps/09_smart-accounts.md:46
+msgid "the buyer (goods received) or the arbiter"
+msgstr "买方(收到的货物)或仲裁人"
+
+#: ../../04_building-apps/09_smart-accounts.md:46
+msgid "Buyer"
+msgstr "买家"
+
+#: ../../04_building-apps/09_smart-accounts.md:46
+msgid "the seller (refund) or the arbiter, or the buyer alone once `timeoutHeight` has passed"
+msgstr "卖方(退款)或仲裁人,或 `timeoutHeight` 一经通过,仅买方一人"
+
+#: ../../04_building-apps/09_smart-accounts.md:46
+msgid "Anywhere else, or any other transaction"
+msgstr "其他任何地方,或其他任何交易"
+
+#: ../../04_building-apps/09_smart-accounts.md:46
+msgid "never"
+msgstr "永远"
+
+#: ../../04_building-apps/09_smart-accounts.md:69
+msgid "Save as `ride/escrow.ride`, with the real parties' public keys in place of the example ones:"
+msgstr "另存为 `ride/escrow.ride`, 以真实的政党的公共密钥取代实例 :"
+
+#: ../../04_building-apps/09_smart-accounts.md:76
+msgid "This script inspects the transaction, not only its signatures:"
+msgstr "此脚本检查交易, 不仅仅是其签名 :"
+
+#: ../../04_building-apps/09_smart-accounts.md:78
+msgid "`match tx` picks out Transfer transactions. Every other transaction type falls into `case _ => false`, so the escrow account can never get a new script, lease its balance or write data."
+msgstr "`match tx` 挑出\"转移\"交易.每个其它的交易类型都属于 `case _ => false`,因此代管账户永远无法获得新的脚本,租赁其余额或写入数据."
+
+#: ../../04_building-apps/09_smart-accounts.md:79
+msgid "`addressFromRecipient` resolves the recipient, which may be an alias, to an address."
+msgstr "`addressFromRecipient` 将接收者(可能是化名)解为地址."
+
+#: ../../04_building-apps/09_smart-accounts.md:80
+msgid "`validPayout` only accepts a transfer of exactly the escrowed `amount` in DCC, with exactly the 0.005 DCC fee paid in DCC. Without it, a party allowed to sign a payout could send the funds away as a huge fee, or in many small pieces that each burn a fee. The escrow holds only enough for one payout, so the first valid one empties it."
+msgstr "`validPayout` 只接受DCC中确切的代管 `amount` 的转出,而准确的转出DCC中支付的\"0.005\"DCC费用.没有它,允许签署付款协议的一方可以将资金作为巨额费用送走,或者在很多小块中,每块都烧了一笔费用.代管人只持有一个付款,所以第一个有效的一个空了它。"
+
+#: ../../04_building-apps/09_smart-accounts.md:81
+msgid "`amount` and `timeoutHeight` come from the account's own data storage. They are written before the script is set, so they can be computed at that moment, and nobody can change them afterwards."
+msgstr "`amount` 和 `timeoutHeight` 来自该账户自己的数据存储.它们都是在剧本设定之前写成的,因此可以在此时进行计算,之后没有人可以修改."
+
+#: ../../04_building-apps/09_smart-accounts.md:83
+msgid "The buyer sets up the escrow, and later releases the funds once the goods arrive:"
+msgstr "买方设立了代管机构,一旦货物运抵,就释放资金:"
+
+#: ../../04_building-apps/09_smart-accounts.md:90
+msgid "Things to settle before locking the account:"
+msgstr "锁账前要解决的事:"
+
+#: ../../04_building-apps/09_smart-accounts.md:92
+msgid "**The escrow account pays the fees.** Fund it with the amount plus 0.008 DCC: 0.001 for the settings, 0.002 for the Set Script (the script is 1,043 bytes) and 0.005 for the payout. If it holds less, no payout can succeed until someone sends it the difference."
+msgstr "**代管账户支付费用。** 以 0.008 DCC: 0.001 的金额作为基金,用于设置, 0. 002 的 Set 脚本为 1 043 字节) 和 0.005 的支付.如果持之以恒,除非有人发出不同的意见,否则任何报酬都不可能成功。"
+
+#: ../../04_building-apps/09_smart-accounts.md:93
+msgid "**Pick a timeout that suits the deal.** The sample sets `timeoutHeight` about a week (20,160 blocks of 30 seconds) after the current height."
+msgstr "**选择一个适合交易的暂停时间.** 样本在目前高度后约一周(20,160个区块为30秒)后设置了 `timeoutHeight`."
+
+#: ../../04_building-apps/09_smart-accounts.md:94
+#, python-brace-format
+msgid "**Everyone must agree on the script before the funds move.** The seller and the arbiter should decompile the deployed script (`GET /addresses/scriptInfo/{address}`, then `POST /utils/script/decompile`) and read its data (`GET /addresses/data/{address}`) before shipping anything."
+msgstr "**在资金转移前,每个人都必须就剧本达成一致.** 卖方和仲裁人应在装运任何物品之前将部署的脚本(`GET /addresses/scriptInfo/{address}`,再作 `POST /utils/script/decompile`)分解并读取其数据(`GET /addresses/data/{address}`)。"
+
+#: ../../04_building-apps/09_smart-accounts.md:95
+msgid "**Use a fresh account.** Throw away its seed after the Set Script transaction. The seed has no power once the script is set, but keeping it around invites confusion."
+msgstr "**使用新账.** 在Set脚本交易后丢弃种子.种子在剧本设定后就没有了力量,但保留在周围会招来混乱."
+
+#: ../../04_building-apps/09_smart-accounts.md:97
+msgid "Inspecting a Smart Account"
+msgstr "检查智能账户"
+
+#: ../../04_building-apps/09_smart-accounts.md:99
+#, python-brace-format
+msgid "`GET /addresses/scriptInfo/{address}` returns the account's compiled `script`, its `complexity`, its `verifierComplexity` and the `extraFee` its transactions must add. If the account has no script, `script` is `null`."
+msgstr "`GET /addresses/scriptInfo/{address}` 返回账户所编译的 `script`,其 `complexity`,其 `verifierComplexity` 和 `extraFee` 的交易必须添加.如果账户没有脚本,则 `script` 为 `null`."
+
+#: ../../04_building-apps/09_smart-accounts.md:101
+msgid "When a transaction is rejected, `broadcast()` rejects with the node's message. It reads `Transaction is not allowed by account-script` when the script returned `false`, and it includes the script's error when the script failed."
+msgstr "当交易被拒绝时, `broadcast()` 会用节点的消息拒绝.它在脚本返回 `false` 时会读取 `Transaction is not allowed by account-script`,其中包含了脚本失败时的脚本错误."
+
+#: ../../04_building-apps/10_smart-assets.md:6
+msgid "Smart Assets"
+msgstr "智能资产"
+
+#: ../../04_building-apps/10_smart-assets.md:8
+#, python-brace-format
+msgid "A smart asset is a {ref}`token <02_decentralchain/02_token(asset):Token (Asset)>` with an asset script. The node runs the script for every transaction that involves the token and rejects the transaction if the script does not return `true`. Holders cannot opt out, because the rule belongs to the token itself. Typical uses are a token that only approved accounts may hold, a token that cannot move before a given height, or one that can only be traded against a particular asset."
+msgstr "智能资产是带有资产脚本的 {ref}`符号 <02_decentralchain/02_token(asset):Token (Asset)>`.节点运行每个涉及符号的交易的脚本,如果脚本不返回 `true`,则拒绝交易.持有者不能选择退出,因为规则属于象征本身.典型的使用是只有经批准的账户才能持有的代号,是不能在给定高度之前移动的代号,或者是只能以特定资产进行交易的代号."
+
+#: ../../04_building-apps/10_smart-assets.md:11
+msgid "Verified against node-scala v1.8.0 on 2026-10-25. The script compiles on the public Testnet node (`DecentralChain v1.8.0-dev-e6248f2408`) and the Mainnet node (`DCC v1.3.5`), and the Issue fee was confirmed with both nodes' `POST /transactions/calculateFee`. The TypeScript is typechecked against the published SDK; it has not been broadcast as part of this documentation pass."
+msgstr "2026-10-25年对节点-scala v 1.8.0进行验证.剧本在公共Testnet节点(`DecentralChain v1.8.0-dev-e6248f2408`)和Mainnet节点(`DCC v1.3.5`)上编译,发行费被两个节点的\"`POST /transactions/calculateFee`\"确认.TypeScript是对照已公布的SDK进行打字检查;它没有作为本文档通行证的一部分被播出."
+
+#: ../../04_building-apps/10_smart-assets.md:14
+msgid "Rules"
+msgstr "规则"
+
+#: ../../04_building-apps/10_smart-assets.md:16
+msgid "**The script must be there from the start.** Pass it in the Issue transaction. A token issued without a script can never get one; the node answers `Cannot set script on an asset issued without a script`."
+msgstr "**剧本必须从一开始就在那里.** 在\"发行\"交易中通过.没有脚本就发行的符号永远不能得到;节点回答 `Cannot set script on an asset issued without a script`."
+
+#: ../../04_building-apps/10_smart-assets.md:17
+msgid "**Only the issuer can replace it,** with a Set Asset Script transaction that costs 1 DCC, surcharge included. The current script must approve that transaction too. A script that never allows Set Asset Script can never be changed."
+msgstr "**只有发行商能取代它,** 带有一个Set资产脚本交易,成本包含1DCC,附加费.目前的脚本也必须批准这项交易。绝不允许设置资产脚本的脚本永远不能被更改."
+
+#: ../../04_building-apps/10_smart-assets.md:18
+msgid "**It cannot be removed.** A Set Asset Script transaction must carry a script (`Cannot set empty script`), so a smart asset stays smart."
+msgstr "**无法取出。** A Set资产脚本交易必须携带脚本(`Cannot set empty script`),因此智能资产保持智能."
+
+#: ../../04_building-apps/10_smart-assets.md:19
+msgid "**It must be an expression.** `CONTENT_TYPE EXPRESSION` with `SCRIPT_TYPE ASSET`, up to 8 KB and a complexity of 4,000."
+msgstr "**这一定是个表达。** `CONTENT_TYPE EXPRESSION` 配有 `SCRIPT_TYPE ASSET`,可高达8KB并复杂到4000."
+
+#: ../../04_building-apps/10_smart-assets.md:20
+msgid "**It cannot be sponsored.** Sponsor Fee is refused for a smart asset (`Sponsorship smart assets is disabled.`), so its holders always pay fees in DCC."
+msgstr "**它不能被赞助。** 赞助费因智能资产被拒(`Sponsorship smart assets is disabled.`),因此其持有者总是以DCC支付费用."
+
+#: ../../04_building-apps/10_smart-assets.md:21
+msgid "**Every transaction involving it costs 0.004 DCC more,** whatever the script's complexity, for each smart asset involved. Invoke Script transactions are the exception. A transfer of a smart asset costs 0.005 DCC."
+msgstr "**每一笔交易都要多花费0.004DCC** 不管剧本复杂与否,为每个涉及的智能资产.Invoke脚本交易是例外.智能资产转让费用为0.005DCC."
+
+#: ../../04_building-apps/10_smart-assets.md:23
+msgid "What the Script Checks"
+msgstr "脚本检查内容"
+
+#: ../../04_building-apps/10_smart-assets.md:25
+msgid "The script runs for each of these, with `tx` set to the transaction:"
+msgstr "脚本运行其中每个, `tx` 设定为交易 :"
+
+#: ../../04_building-apps/10_smart-assets.md:10
+msgid "Transaction or action"
+msgstr "交易或行动"
+
+#: ../../04_building-apps/10_smart-assets.md:10
+msgid "Ride type `tx` matches"
+msgstr "Ride 类型 `tx` 匹配"
+
+#: ../../04_building-apps/10_smart-assets.md:10
+msgid "Transfer of the token"
+msgstr "证书的转让"
+
+#: ../../04_building-apps/10_smart-assets.md:10
+msgid "`TransferTransaction`"
+msgstr "`TransferTransaction`"
+
+#: ../../04_building-apps/10_smart-assets.md:10
+msgid "Mass Transfer of the token"
+msgstr "代号的大规模传输"
+
+#: ../../04_building-apps/10_smart-assets.md:10
+msgid "`MassTransferTransaction`"
+msgstr "`MassTransferTransaction`"
+
+#: ../../04_building-apps/10_smart-assets.md:10
+msgid "Reissue, Burn"
+msgstr "重发, 燃烧"
+
+#: ../../04_building-apps/10_smart-assets.md:10
+msgid "`ReissueTransaction`, `BurnTransaction`"
+msgstr "`ReissueTransaction`, `BurnTransaction`"
+
+#: ../../04_building-apps/10_smart-assets.md:10
+msgid "Exchange where the token is either asset of the pair"
+msgstr "交换令牌为对子资产"
+
+#: ../../04_building-apps/10_smart-assets.md:10
+msgid "`ExchangeTransaction`"
+msgstr "`ExchangeTransaction`"
+
+#: ../../04_building-apps/10_smart-assets.md:10
+msgid "Set Asset Script, Update Asset Info for the token"
+msgstr "设置资产脚本, 更新给符号的资产信息"
+
+#: ../../04_building-apps/10_smart-assets.md:10
+msgid "`SetAssetScriptTransaction`, `UpdateAssetInfoTransaction`"
+msgstr "`SetAssetScriptTransaction`, `UpdateAssetInfoTransaction`"
+
+#: ../../04_building-apps/10_smart-assets.md:10
+msgid "Invoke Script with the token attached as a payment"
+msgstr "随信附上的符号作为付款输入脚本"
+
+#: ../../04_building-apps/10_smart-assets.md:10
+msgid "`InvokeScriptTransaction`"
+msgstr "`InvokeScriptTransaction`"
+
+#: ../../04_building-apps/10_smart-assets.md:10
+msgid "A dApp's `ScriptTransfer`, `Reissue` or `Burn` action on the token"
+msgstr "dApp 的 `ScriptTransfer`, `Reissue` 或 `Burn` 在符上动作"
+
+#: ../../04_building-apps/10_smart-assets.md:10
+msgid "`TransferTransaction`, `ReissueTransaction` or `BurnTransaction`, with `fee` 0 and the dApp as sender"
+msgstr "`TransferTransaction`, `ReissueTransaction` 或 `BurnTransaction`,以 `fee` 0和dApp为发件人."
+
+#: ../../04_building-apps/10_smart-assets.md:10
+msgid "A dApp's `invoke()` with the token attached as a payment"
+msgstr "dApp的 `invoke()`,随附符号作为付款"
+
+#: ../../04_building-apps/10_smart-assets.md:38
+#, python-brace-format
+msgid "The script does not run for the Issue transaction that creates the token. It cannot see proofs, so it cannot check signatures; that is the sender's account script's job. It can read the transaction's other fields and chain state. `this` is the token itself, an {ref}`Asset <03_ride-language/05_structures:Asset>` structure with fields such as `issuer`, `quantity` and `decimals`."
+msgstr "脚本不运行创建符号的\"问题\"交易.它不能看到证据,所以它不能检查签名;这就是发送者的账户脚本的工作.它可以读取交易的其他字段和链态. `this` 是象征本身,是一种 {ref}`资产 <03_ride-language/05_structures:Asset>` 结构,有 `issuer`, `quantity` 和 `decimals` 等字段."
+
+#: ../../04_building-apps/10_smart-assets.md:40
+msgid "Because dApp actions arrive as ordinary transaction types, one rule for `TransferTransaction` covers both a user's transfer and a dApp paying the token out."
+msgstr "因为dApp动作作为普通交易类型运来,所以 `TransferTransaction` 的一个规则既涵盖用户的传输,也涵盖支付令牌的dApp."
+
+#: ../../04_building-apps/10_smart-assets.md:42
+#, python-brace-format
+msgid "The language side is in {ref}`Asset Script <03_ride-language/04_script-types:Asset Script>`."
+msgstr "语言方面在 {ref}`资产脚本 <03_ride-language/04_script-types:Asset Script>`."
+
+#: ../../04_building-apps/10_smart-assets.md:44
+msgid "Walkthrough: a Token Only Allowlisted Accounts Can Hold"
+msgstr "走过: 仅允许挂起的账户可控"
+
+#: ../../04_building-apps/10_smart-assets.md:46
+#, python-brace-format
+msgid "The issuer keeps an allowlist in its own {ref}`account data storage <02_decentralchain/01_account:Account Data Storage>`: a Boolean entry `allowed_<address>` for each account that may receive the token. Transfers to anyone else fail."
+msgstr "发行方在自己的 {ref}`账户数据存储 <02_decentralchain/01_account:Account Data Storage>` 中保留一个许可列表:一个布尔条目 `allowed_<address>`,用于每个可能收到该令牌的账户.转帐给任何人都失败了"
+
+#: ../../04_building-apps/10_smart-assets.md:48
+msgid "Save as `ride/allowlist-token.ride`, in a `ride` folder next to your scripts:"
+msgstr "在您脚本旁边的 `ride` 文件夹中另存为 `ride/allowlist-token.ride` :"
+
+#: ../../04_building-apps/10_smart-assets.md:55
+msgid "The script reads the allowlist each time it runs, so adding or removing an entry takes effect with the next transaction and the script never has to change. Reissue, Update Asset Info and Set Asset Script are allowed because the node already restricts them to the issuer. Burn is allowed so a holder can always destroy their tokens. Mass Transfer, trading on the DEX and attaching the token to a dApp call are rejected outright. Rejecting them is simpler than checking each recipient they might reach."
+msgstr "脚本每次运行都会读出许可列表,所以添加或去除一个条目会随着下个交易而生效,脚本也永远不会被更改.允许重新发布,更新资产信息并设置资产脚本,因为节点已经将其限制在发行方.烧是允许的 这样持枪者可以永远摧毁他们的活物大规模转移、在DEX上交易和将信使附在dApp电话上,都遭到彻底拒绝。拒绝它们比检查每个可能接触到的接收者简单。"
+
+#: ../../04_building-apps/10_smart-assets.md:61
+#, python-brace-format
+msgid "The example imports `compileRide` from {ref}`Compile a Script <04_building-apps/07_smart-contracts-overview:Compile a Script>`. The member address belongs to a throwaway example account; use real ones."
+msgstr "该示例从 {ref}`编译脚本 <04_building-apps/07_smart-contracts-overview:Compile a Script>` 导入 `compileRide` 。成员地址属于一个丢弃的示例账户;使用真实的."
+
+#: ../../04_building-apps/10_smart-assets.md:68
+msgid "The issuer pays 1 DCC for the Issue, 0.001 DCC for the Data transaction and 0.005 DCC for the transfer. The token's ID is the ID of its Issue transaction."
+msgstr "发行商为\"发行\"支付1 DCC,为\"数据\"交易支付0.001 DCC,为\"转移\"支付0.005 DCC.代币的ID是其\"发行\"交易的ID."
+
+#: ../../04_building-apps/10_smart-assets.md:70
+msgid "A transfer to an account that is not on the list fails at broadcast with the node's message `Transaction is not allowed by token-script`. If the script throws instead of returning `false`, the message starts with `Error while executing token-script:`. The issuer is not on its own list, so tokens cannot be sent back to it unless it adds `allowed_<issuer address>` as well."
+msgstr "向列表中未列出的账户的转账在播出时以节点消息 `Transaction is not allowed by token-script` 失败.如果脚本投出而不是返回 `false`,则消息以 `Error while executing token-script:` 开头.发行商不在自己的列表上,因此除非也添加了 `allowed_<issuer address>`,否则无法将符号发回."
+
+#: ../../04_building-apps/10_smart-assets.md:72
+msgid "Replacing the Script"
+msgstr "替换脚本"
+
+#: ../../04_building-apps/10_smart-assets.md:74
+msgid "To change the rules, for example to also allow Mass Transfer, edit `ride/allowlist-token.ride` and send the new version as long as the current script allows Set Asset Script:"
+msgstr "要修改规则, 例如也允许批量传输, 编辑 `ride/allowlist-token.ride` 并发送新版本, 只要当前脚本允许 Set 资产脚本 :"
+
+#: ../../04_building-apps/10_smart-assets.md:81
+msgid "If the issuer is a smart account with a verifier complexity above 200, add `additionalFee: 400_000` to both the Issue and the Set Asset Script transaction."
+msgstr "如果发行方是一个智能账户,其验证码复杂度高于200,则在\"发行\"和\"设定资产脚本\"交易中都加入 `additionalFee: 400_000`."
+
+#: ../../04_building-apps/10_smart-assets.md:83
+msgid "Inspecting a Smart Asset"
+msgstr "检查智能资产"
+
+#: ../../04_building-apps/10_smart-assets.md:85
+#, python-brace-format
+msgid "`GET /assets/details/{asset ID}` returns the token's parameters. For a smart asset it also returns `scripted: true` and a `scriptDetails` object with the compiled `script` and its `scriptComplexity`. `POST /utils/script/decompile` turns that script back into Ride source."
+msgstr "`GET /assets/details/{asset ID}` 返回符号的参数.对于一个智能资产,它也以所编译的 `script` 及其所编译的 `scriptComplexity` 返回了 `scripted: true` 和一个 `scriptDetails` 对象. `POST /utils/script/decompile` 将脚本回转为Ride源."
+
+#: ../../04_building-apps/11_blockchain-updates.md:3
+msgid "Blockchain Updates is a node extension that streams every change the chain goes through. Each block and microblock arrives with the balances, data entries, tokens, leases, scripts and aliases it changed, both before and after. When the node switches to another fork, a rollback event says exactly what to undo. An indexer, an explorer back end or a service that reacts to payments can follow the chain from one subscription, without polling the REST API."
+msgstr "Blockchain Updates是一个节点扩展,每个链子经过的改变都会流出.每个区块和微观区块都随余额,数据分录,信使,租赁,脚本和别名而来,前后都有所变化.当节点切换到另一个分叉时,一个回滚事件会说出完全应该撤销的.索引器,探险后端或对支付反应的服务可以从一个订阅中跟随链条,而不投票 REST API."
+
+#: ../../04_building-apps/11_blockchain-updates.md:6
+msgid "Verified against node-scala v1.8.0 on 2026-10-24: the extension's source (`grpc-server/src/main/scala/com/decentralchain/events/`) and its schema, `dcc/events/grpc/blockchain_updates.proto` and `dcc/events/events.proto` in `io.decentralchain:protobuf-schemas` 1.6.6, the version node v1.8.0 builds against. The commands below were not run against a live node as part of this documentation pass."
+msgstr "2026-10-24年对节点-scala v 1.8.0进行校验:扩展源(`grpc-server/src/main/scala/com/decentralchain/events/`)及其子计划, `io.decentralchain:protobuf-schemas` 1.6.6中的 `dcc/events/grpc/blockchain_updates.proto` 和 `dcc/events/events.proto`,版本节点v1.8.0相建相.以下命令不是作为此文档通行证的一部分对一个活节点运行的."
+
+#: ../../04_building-apps/11_blockchain-updates.md:9
+msgid "When to Use It"
+msgstr "何时使用"
+
+#: ../../04_building-apps/11_blockchain-updates.md:5
+msgid "You need"
+msgstr "需要吗?"
+
+#: ../../04_building-apps/11_blockchain-updates.md:5
+msgid "Use"
+msgstr "使用"
+
+#: ../../04_building-apps/11_blockchain-updates.md:5
+msgid "Current state: one balance, one data entry, one transaction"
+msgstr "当前状态: 一个余额, 一个数据输入, 一个交易"
+
+#: ../../04_building-apps/11_blockchain-updates.md:5
+#, python-brace-format
+msgid "The {ref}`node REST API <05_node-guide/01_node-rest-api:Node REST API>`"
+msgstr ""
+
+#: ../../04_building-apps/11_blockchain-updates.md:5
+msgid "History and search: asset lists, past trades, paginated transactions"
+msgstr "历史和搜索:资产清单、以往交易、分期交易"
+
+#: ../../04_building-apps/11_blockchain-updates.md:5
+msgid "The [Data Service API](06_data-service-api)"
+msgstr "[数据服务 API](06_data-service-api) 号"
+
+#: ../../04_building-apps/11_blockchain-updates.md:5
+msgid "Every state change, in order, as it happens, including rollbacks"
+msgstr "每一个州,按照顺序,随着它发生,包括回滚"
+
+#: ../../04_building-apps/11_blockchain-updates.md:17
+msgid "Run It on Your Own Node"
+msgstr "在自己的节点上运行"
+
+#: ../../04_building-apps/11_blockchain-updates.md:20
+msgid "There is no public Blockchain Updates endpoint. The public nodes do not expose port `6881` (see [Node gRPC API](05_node-grpc)). Run your own node, for example by following [Join the Public Testnet](../05_node-guide/15_join-testnet), and enable the extension there."
+msgstr "没有公开的\"区块链更新\"终点.公用节点不会暴露出端口 `6881` (见 [节点 gRPC API](05_node-grpc)).运行您自己的节点, 例如跟踪 [加入公众 Testnet](../05_node-guide/15_join-testnet) 并启用扩展 。"
+
+#: ../../04_building-apps/11_blockchain-updates.md:23
+#, python-brace-format
+msgid "The extension is part of the node's `grpc-server` module, which the official Docker image already contains. For other installs, see {ref}`Node Extensions <05_node-guide/02_node-extensions:gRPC Server>`. Enable it by adding its class to `dcc.extensions` in the node's configuration file, inside the `dcc { }` block:"
+msgstr "扩展是节点 `grpc-server` 模块的一部分,官方多克图像已经包含.其他安装则参见 {ref}`节点扩展 <05_node-guide/02_node-extensions:gRPC Server>`.在节点的配置文件中,在 `dcc { }` 块内,通过将其类添加到 `dcc.extensions` 来启用 :"
+
+#: ../../04_building-apps/11_blockchain-updates.md:36
+msgid "With Docker, publish the port on the host's loopback interface only, next to the other ports in the `docker run` command:"
+msgstr "与 Docker 在主机回回路界面上仅公布端口, 在 `docker run` 命令中的其他端口旁边 :"
+
+#: ../../04_building-apps/11_blockchain-updates.md:42
+msgid "Settings, under `dcc.blockchain-updates`:"
+msgstr "设置, `dcc.blockchain-updates` 下:"
+
+#: ../../04_building-apps/11_blockchain-updates.md:19
+msgid "Setting"
+msgstr "设置"
+
+#: ../../04_building-apps/11_blockchain-updates.md:19
+msgid "Default"
+msgstr "默认"
+
+#: ../../04_building-apps/11_blockchain-updates.md:19
+#: ../../04_building-apps/12_matcher-api.md:51
+msgid "Meaning"
+msgstr "含义"
+
+#: ../../04_building-apps/11_blockchain-updates.md:19
+msgid "`grpc-port`"
+msgstr "`grpc-port`"
+
+#: ../../04_building-apps/11_blockchain-updates.md:19
+msgid "`6881`"
+msgstr "`6881`"
+
+#: ../../04_building-apps/11_blockchain-updates.md:19
+msgid "Port the API listens on"
+msgstr "端口 API 监听"
+
+#: ../../04_building-apps/11_blockchain-updates.md:19
+msgid "`min-keep-alive`"
+msgstr "`min-keep-alive`"
+
+#: ../../04_building-apps/11_blockchain-updates.md:19
+msgid "`5m`"
+msgstr "`5m`"
+
+#: ../../04_building-apps/11_blockchain-updates.md:19
+msgid "Shortest interval at which a client may send keep-alive pings. A client that pings more often is disconnected"
+msgstr "客户端可能发送恒活键的间隔最短.一个更经常拨打的客户端被断开"
+
+#: ../../04_building-apps/11_blockchain-updates.md:19
+msgid "`worker-threads`"
+msgstr "`worker-threads`"
+
+#: ../../04_building-apps/11_blockchain-updates.md:19
+msgid "`4`"
+msgstr "`4`"
+
+#: ../../04_building-apps/11_blockchain-updates.md:19
+msgid "Threads that serve subscriptions"
+msgstr "服务订阅的线程"
+
+#: ../../04_building-apps/11_blockchain-updates.md:51
+msgid "The extension listens on **all network interfaces** (`0.0.0.0`). Unlike the other gRPC APIs, it does not follow `dcc.grpc.host`, and it has no authentication. Keep port 6881 behind a firewall, or publish it only on `127.0.0.1` as above."
+msgstr "扩展收听于 **所有网络接口** (`0.0.0.0`).与其他的gRPC API不同,它没有跟随 `dcc.grpc.host`,也没有认证.将端口6881保留在防火墙后,或仅公布于 `127.0.0.1` 上如上."
+
+#: ../../04_building-apps/11_blockchain-updates.md:54
+msgid "History Starts When You Enable It"
+msgstr "历史开始于您启用时"
+
+#: ../../04_building-apps/11_blockchain-updates.md:56
+msgid "The extension keeps its own store in the `blockchain-updates` directory inside the node's data directory, and it records only blocks the node processes while the extension is running. Plan for this:"
+msgstr "扩展在节点的数据目录中保留了自己在 `blockchain-updates` 目录中的存储,它只记录了扩展运行时的节点进程.这方面的计划:"
+
+#: ../../04_building-apps/11_blockchain-updates.md:58
+msgid "**Enable it before the node's first sync** if you need history from genesis. The extension starts before the genesis block is applied, so it records every block from height 1."
+msgstr "**在节点第一次同步前启用它**,如果你需要历史起源。扩展从起源块被应用之前开始,因此它记录了从高度一起的每个块."
+
+#: ../../04_building-apps/11_blockchain-updates.md:59
+msgid "**If you enable it on a node that has already synced,** the extension logs a warning and starts recording from the next block. Earlier heights are not available from this node."
+msgstr "**如果你在已经同步的节点上启用它** 扩展日志为警告并开始从下一个块录入.更早的高度不能从这个节点得到."
+
+#: ../../04_building-apps/11_blockchain-updates.md:60
+msgid "**The same applies if the store falls behind the chain,** for example after an unclean shutdown. The extension resets and resumes from the next block. A consumer then sees a gap and must fill it from another source."
+msgstr "**如果商店掉到链子后,同样适用。**,比如在不干净的关机后.扩展重排并恢复到下一个区块 。消费者然后看到一个空白,必须从另一个来源填补。"
+
+#: ../../04_building-apps/11_blockchain-updates.md:61
+msgid "If the store is ahead of the chain, the extension rolls it back to the node's height at startup. If the two disagree about the last block, the node refuses to start with `Last update ID ... does not match last block ID`. Deleting the `blockchain-updates` directory clears that error, and recording then resumes from the next block."
+msgstr "如果店铺在链条前行,扩展后在起步时将店铺卷回节点高地.如果两人对最后一个块有分歧,节点拒绝从 `Last update ID ... does not match last block ID` 开始.删除 `blockchain-updates` 目录清除了该错误,然后从下一个块恢复录制."
+
+#: ../../04_building-apps/11_blockchain-updates.md:63
+msgid "The API"
+msgstr "API (英语)"
+
+#: ../../04_building-apps/11_blockchain-updates.md:65
+msgid "The service is `dcc.events.grpc.BlockchainUpdatesApi`. It has three methods:"
+msgstr "服务范围为 `dcc.events.grpc.BlockchainUpdatesApi`.它有三种方法:"
+
+#: ../../04_building-apps/11_blockchain-updates.md:50
+msgid "Request"
+msgstr "请求"
+
+#: ../../04_building-apps/11_blockchain-updates.md:50
+#: ../../04_building-apps/12_matcher-api.md
+#: ../../04_building-apps/12_matcher-api.md:51
+msgid "Returns"
+msgstr "回返"
+
+#: ../../04_building-apps/11_blockchain-updates.md:50
+msgid "`GetBlockUpdate`"
+msgstr "`GetBlockUpdate`"
+
+#: ../../04_building-apps/11_blockchain-updates.md:50
+msgid "`height`"
+msgstr "`height`"
+
+#: ../../04_building-apps/11_blockchain-updates.md:50
+msgid "The update for one height"
+msgstr "一个高度的更新"
+
+#: ../../04_building-apps/11_blockchain-updates.md:50
+msgid "`GetBlockUpdatesRange`"
+msgstr "`GetBlockUpdatesRange`"
+
+#: ../../04_building-apps/11_blockchain-updates.md:50
+msgid "`from_height`, `to_height` (both required, both inclusive)"
+msgstr "`from_height`, `to_height` (两者都需要,均包括)"
+
+#: ../../04_building-apps/11_blockchain-updates.md:50
+msgid "All updates in the range, in one response"
+msgstr "在一个答复中,所有更新范围"
+
+#: ../../04_building-apps/11_blockchain-updates.md:50
+msgid "`Subscribe`"
+msgstr "`Subscribe`"
+
+#: ../../04_building-apps/11_blockchain-updates.md:50
+msgid "`from_height`, optional `to_height`"
+msgstr "`from_height`,可选的 `to_height`"
+
+#: ../../04_building-apps/11_blockchain-updates.md:50
+msgid "A stream: the stored updates from `from_height`, then new ones as they happen"
+msgstr "A 流: `from_height` 存储的更新, 然后当新更新发生时"
+
+#: ../../04_building-apps/11_blockchain-updates.md:73
+msgid "Rules the node enforces:"
+msgstr "节点执行规则:"
+
+#: ../../04_building-apps/11_blockchain-updates.md:75
+msgid "`from_height` must be at least 1. The schema's comment calls it optional, but the default of 0 is rejected (`fromHeight must be > 0`)."
+msgstr "`from_height` 必须至少是 1.schema的评论称它是可选的,但0的默认被否决了(`fromHeight must be > 0`)."
+
+#: ../../04_building-apps/11_blockchain-updates.md:76
+msgid "`from_height` cannot be above the node's current height."
+msgstr "`from_height` 不能高于节点当前高度."
+
+#: ../../04_building-apps/11_blockchain-updates.md:77
+msgid "`to_height` of 0, or no `to_height`, makes `Subscribe` run indefinitely. Otherwise the stream ends after that height."
+msgstr "0的 `to_height`,或者没有 `to_height`,使得 `Subscribe` 无限期地运行.否则水流会在那高地后结束"
+
+#: ../../04_building-apps/11_blockchain-updates.md:78
+msgid "`GetBlockUpdate` for the current height returns the block as it stands so far, with its microblocks merged in. A height above the current one is an error."
+msgstr "目前高度的 `GetBlockUpdate` 返回到目前为止的块,其微块被合并入.高于当前高度是一个错误 。"
+
+#: ../../04_building-apps/11_blockchain-updates.md:79
+msgid "`GetBlockUpdatesRange` returns the whole range in one message, so keep ranges short. Use `Subscribe` for long stretches."
+msgstr "`GetBlockUpdatesRange` 在一个消息中返回整个范围,所以保持范围短.用 `Subscribe` 来作长拉."
+
+#: ../../04_building-apps/11_blockchain-updates.md:81
+msgid "Try It with grpcurl"
+msgstr "用克普克勒来试试"
+
+#: ../../04_building-apps/11_blockchain-updates.md:83
+msgid "The server supports gRPC reflection, so [grpcurl](https://github.com/fullstorydev/grpcurl) v1.8.8 or later can call it with no `.proto` files. The connection is plaintext:"
+msgstr ""
+
+#: ../../04_building-apps/11_blockchain-updates.md:102
+msgid "grpcurl prints byte fields (block and transaction IDs, addresses, public keys) as base64. The REST API shows the same values in Base58, so decode and re-encode them to compare."
+msgstr "grpcurl 字节字段(块和交易ID,地址,公用密钥)作为基数64.REST API在 Base58 中显示相同的值,因此解码并重新编码以进行比较."
+
+#: ../../04_building-apps/11_blockchain-updates.md:104
+msgid "From Code"
+msgstr "从代码"
+
+#: ../../04_building-apps/11_blockchain-updates.md:106
+#, python-brace-format
+msgid "Generate a client from the node's own schema, `dcc/events/grpc/blockchain_updates.proto` and the files it imports. Its Maven Central artifact is `io.decentralchain:protobuf-schemas:1.6.6` (classifier `protobuf-src`), and the same files are in the SDK monorepo under `packages/sdk/protobuf-schemas`. The TypeScript client `@decentralchain/node-api-grpc` wraps this API as `mkBlockchainUpdatesApi`, but it is not published yet; see {ref}`Node gRPC API <04_building-apps/05_node-grpc:Blockchain Updates>`."
+msgstr "从节点自己的计划, `dcc/events/grpc/blockchain_updates.proto` 及其导入的文件中生成一个客户端.其马文中央文物为 `io.decentralchain:protobuf-schemas:1.6.6` (分类器为 `protobuf-src`),同为SDK单列出品于 `packages/sdk/protobuf-schemas` 下.TypeScript客户端的 `@decentralchain/node-api-grpc` 将这个API包裹为 `mkBlockchainUpdatesApi`,但还没有发布;参见 {ref}`节点 gRPC API <04_building-apps/05_node-grpc:Blockchain Updates>`."
+
+#: ../../04_building-apps/11_blockchain-updates.md:109
+msgid "Do not generate a client from the `.proto` files in the published `@decentralchain/protobuf-serialization` 3.0.0 package. They still use the previous protobuf package names, so the client would request a service that a v1.8.0 node does not serve."
+msgstr "不要在已公布的 `@decentralchain/protobuf-serialization` 3.0.0 包中从 `.proto` 文件生成客户端.他们仍然使用之前的Protobuf软件包名,因此客户端会请求一个v1.8.0节点不服务."
+
+#: ../../04_building-apps/11_blockchain-updates.md:112
+msgid "What an Update Contains"
+msgstr "更新包含什么"
+
+#: ../../04_building-apps/11_blockchain-updates.md:114
+msgid "Each message is a `BlockchainUpdated` with the block `id` and `height` and one of two bodies."
+msgstr "每条消息为 `BlockchainUpdated`,并有块 `id` 和 `height` 以及两个机构之一."
+
+#: ../../04_building-apps/11_blockchain-updates.md:116
+msgid "**`append`**, a block or a microblock was added:"
+msgstr "**`append`**, 添加了块或微块 :"
+
+#: ../../04_building-apps/11_blockchain-updates.md:108
+msgid "Field"
+msgstr "外地"
+
+#: ../../04_building-apps/11_blockchain-updates.md:108
+msgid "Content"
+msgstr "内容"
+
+#: ../../04_building-apps/11_blockchain-updates.md:108
+msgid "`block` or `micro_block`"
+msgstr "`block` 或 `micro_block` 键"
+
+#: ../../04_building-apps/11_blockchain-updates.md:108
+msgid "The block (with `updated_dcc_amount`, the total DCC supply after the block, `activated_features` and `reward_shares`) or the signed microblock"
+msgstr "块(有 `updated_dcc_amount`, 块后的总的 DCC 供给, `activated_features` 和 `reward_shares`) 或已签名的微块"
+
+#: ../../04_building-apps/11_blockchain-updates.md:108
+msgid "`transaction_ids`"
+msgstr "`transaction_ids`"
+
+#: ../../04_building-apps/11_blockchain-updates.md:108
+msgid "The IDs of the transactions it contains, in order"
+msgstr "其包含的交易的ID, 顺序"
+
+#: ../../04_building-apps/11_blockchain-updates.md:108
+msgid "`transactions_metadata`"
+msgstr "`transactions_metadata`"
+
+#: ../../04_building-apps/11_blockchain-updates.md:108
+msgid "Per transaction: the sender's address and, by type, resolved recipients, order details, or an invocation's function, arguments, payments and result"
+msgstr "每笔交易:发件人的地址和按类型分列的已解决的收件人,命令细节,或引用的函数、论据、付款和结果"
+
+#: ../../04_building-apps/11_blockchain-updates.md:108
+msgid "`state_update`"
+msgstr "`state_update`"
+
+#: ../../04_building-apps/11_blockchain-updates.md:108
+msgid "Changes made by the block itself, such as the block reward"
+msgstr "区块本身所作的改变,例如区块奖励"
+
+#: ../../04_building-apps/11_blockchain-updates.md:108
+msgid "`transaction_state_updates`"
+msgstr "`transaction_state_updates`"
+
+#: ../../04_building-apps/11_blockchain-updates.md:108
+msgid "One state update per transaction, in the same order as `transaction_ids`"
+msgstr "每笔交易更新一个状态, 顺序与 `transaction_ids` 相同"
+
+#: ../../04_building-apps/11_blockchain-updates.md:126
+msgid "**`rollback`**, blocks or microblocks were removed:"
+msgstr "**`rollback`**, 块或微块被移除 :"
+
+#: ../../04_building-apps/11_blockchain-updates.md:108
+msgid "`type`"
+msgstr "`type`"
+
+#: ../../04_building-apps/11_blockchain-updates.md:108
+msgid "`BLOCK` or `MICROBLOCK`"
+msgstr "`BLOCK` 或 `MICROBLOCK` 键"
+
+#: ../../04_building-apps/11_blockchain-updates.md:108
+msgid "`removed_transaction_ids`"
+msgstr "`removed_transaction_ids`"
+
+#: ../../04_building-apps/11_blockchain-updates.md:108
+msgid "Transactions that are no longer on the chain"
+msgstr "不再连锁交易"
+
+#: ../../04_building-apps/11_blockchain-updates.md:108
+msgid "`removed_blocks`"
+msgstr "`removed_blocks`"
+
+#: ../../04_building-apps/11_blockchain-updates.md:108
+msgid "The removed blocks"
+msgstr "被移除的块"
+
+#: ../../04_building-apps/11_blockchain-updates.md:108
+msgid "`rollback_state_update`"
+msgstr "`rollback_state_update`"
+
+#: ../../04_building-apps/11_blockchain-updates.md:108
+msgid "The state to restore"
+msgstr "恢复状态"
+
+#: ../../04_building-apps/11_blockchain-updates.md:108
+msgid "`deactivated_features`"
+msgstr "`deactivated_features`"
+
+#: ../../04_building-apps/11_blockchain-updates.md:108
+msgid "Features whose activation was undone"
+msgstr "激活被取消的特征"
+
+#: ../../04_building-apps/11_blockchain-updates.md:136
+msgid "A state update lists changed `balances`, `leasing_for_address`, `data_entries`, `assets`, `individual_leases`, `scripts` and `deleted_aliases`. Balances, leasing totals, data entries, token details and scripts carry their value **before and after** the change, so a consumer can apply or reverse them without looking anything up. A lease update carries only the lease's new status, and a deleted alias only its name. `referenced_assets` on the outer message gives the name and decimals of every token the update mentions."
+msgstr "状态更新列表更改了 `balances`, `leasing_for_address`, `data_entries`, `assets`, `individual_leases`, `scripts` 和 `deleted_aliases`.余额,租赁总额,数据条目,令牌细节和脚本都携带了他们的值 **前后** 的更改,因此消费者可以在不查询任何内容的情况下应用或倒置.租借更新只包含租借的新状态,被删除的别名只包含其名称. `referenced_assets` 在外文中给出了每个符号的名称和十进制的更新提及."
+
+#: ../../04_building-apps/11_blockchain-updates.md:138
+msgid "Writing a Reliable Consumer"
+msgstr "写一个可靠的消费者"
+
+#: ../../04_building-apps/11_blockchain-updates.md:140
+msgid "**Store your position.** After applying an update, save its `height` and `id`. To resume, subscribe from that height; the stream starts with that height again. If the first update's `id` equals the stored one, skip it. If it differs, that height changed while you were away (it gained microblocks or was replaced on a fork), so revert what you applied for it before applying the new update."
+msgstr "**储存你的位置。** 在应用了更新后,保存其 `height` 和 `id`.要恢复,请从那个高度订阅;溪流又从那个高度开始。如果第一次更新的 `id` 等于所存储的,请跳过.如果它不同,那么在您离开时,高度会发生变化( 它得到了微块或被替换在叉上), 因此在应用新的更新之前, 返回您申请的高度 。"
+
+#: ../../04_building-apps/11_blockchain-updates.md:141
+msgid "**Treat microblocks as provisional.** The block at the top of the chain grows microblock by microblock, and a `MICROBLOCK` rollback can remove the most recent ones. Apply them, but be ready to undo them."
+msgstr "**将微块当作临时.** 链上方的块会由微块来生长出微块,而一个 `MICROBLOCK` 回滚可以去除最新的.应用它们,但要准备解除它们。"
+
+#: ../../04_building-apps/11_blockchain-updates.md:142
+#, python-brace-format
+msgid "**Handle a rollback at any height.** A fork switch rolls back recent blocks. An operator-forced rollback (`POST /debug/rollback`, see {doc}`Sync and Rollback <../05_node-guide/06_sync-and-rollback>`) can reach further back, even below the {ref}`finalized height <02_decentralchain/09_protocol:Finality>`. Undo using `rollback_state_update` and continue with the next append."
+msgstr "**在任何高地处理回滚。** A分叉开关回滚出近代街区.一个操作员强制回滚(`POST /debug/rollback`,参见 {doc}`同步和回滚 <../05_node-guide/06_sync-and-rollback>`)可以更远地回落,甚至可以回落到 {ref}`最终高度 <02_decentralchain/09_protocol:Finality>` 下方.使用 `rollback_state_update` 撤消, 继续下一个附件 。"
+
+#: ../../04_building-apps/11_blockchain-updates.md:143
+msgid "**Keep up.** The node buffers at most 250 updates for each subscriber. If a client falls that far behind, the node ends its stream, and the client must reconnect from its stored height."
+msgstr "**继续** 节点缓冲器最多为每个订阅者250个更新.如果客户端掉到那么远的地方,节点会结束其流出,客户端必须从所存储的高度重新连接."
+
+#: ../../04_building-apps/11_blockchain-updates.md:144
+msgid "**Ping no more often than `min-keep-alive`.** Set the client's keep-alive interval to 5 minutes or more, or the node disconnects it."
+msgstr "**平平不常出自 `min-keep-alive`(英语:X0.** 将客户端的保持-活性间隔设定为5分或更长时间,或节点将其断开."
+
+#: ../../04_building-apps/12_matcher-api.md:9
+#, python-brace-format
+msgid "The matcher is the order-matching service behind Decentral.Exchange. You send it signed orders; it keeps the order books, matches a buy against a sell, and settles each match on the chain as an {ref}`Exchange transaction <02_decentralchain/03_transaction:Exchange Transaction>`. It never holds your funds: they stay in your account until a trade settles, and the matcher only reserves the amount your open orders need. For the structure of an order, see {ref}`Order <02_decentralchain/06_order:Order>`."
+msgstr "相配器是Decentral.Exchange后方的订单相配服务.你发送它签署订单; 它保存订单簿,匹配买入与卖出, 并解决链上每个匹配作为一个 {ref}`交换交易 <02_decentralchain/03_transaction:Exchange Transaction>`。它从不持有你的资金:他们留在你的账户里直到交易结束,而匹配者只保留你开出订单所需的金额.命令的结构见 {ref}`顺序 <02_decentralchain/06_order:Order>`."
+
+#: ../../04_building-apps/12_matcher-api.md
+msgid "Matcher"
+msgstr "匹配者"
+
+#: ../../04_building-apps/12_matcher-api.md
+msgid "Public key"
+msgstr "公用钥匙"
+
+#: ../../04_building-apps/12_matcher-api.md
+msgid "`https://testnet-matcher.decentralchain.io`"
+msgstr "`https://testnet-matcher.decentralchain.io`"
+
+#: ../../04_building-apps/12_matcher-api.md
+msgid "No public matcher yet"
+msgstr "还没有公开匹配者"
+
+#: ../../04_building-apps/12_matcher-api.md:16
+msgid "The matcher serves its own OpenAPI reference at [`/api-docs/index.html`](https://testnet-matcher.decentralchain.io/api-docs/index.html). This page covers the endpoints a trading app or bot needs."
+msgstr "配对者在 [`/api-docs/index.html`](https://testnet-matcher.decentralchain.io/api-docs/index.html) 为自己的OpenAPI参考服务.本页面覆盖交易应用或机器人需要的端点."
+
+#: ../../04_building-apps/12_matcher-api.md:18
+msgid "Matcher Settings"
+msgstr "匹配器设置"
+
+#: ../../04_building-apps/12_matcher-api.md
+#: ../../04_building-apps/12_matcher-api.md:51
+msgid "Endpoint"
+msgstr "终点"
+
+#: ../../04_building-apps/12_matcher-api.md
+msgid "`GET /matcher`"
+msgstr "`GET /matcher`"
+
+#: ../../04_building-apps/12_matcher-api.md
+msgid "The matcher's public key, as a JSON string. Every order names it."
+msgstr "火柴公用钥匙,作JSON弦.每令取名为相."
+
+#: ../../04_building-apps/12_matcher-api.md
+msgid "`GET /matcher/settings`"
+msgstr "`GET /matcher/settings`"
+
+#: ../../04_building-apps/12_matcher-api.md
+msgid "`matcherPublicKey`, `networkByte`, accepted `orderVersions`, `orderFee` and the fee `rates`"
+msgstr "`matcherPublicKey`, `networkByte`,接受 `orderVersions`, `orderFee` 和收费 `rates`"
+
+#: ../../04_building-apps/12_matcher-api.md
+msgid "`GET /matcher/settings/rates`"
+msgstr "`GET /matcher/settings/rates`"
+
+#: ../../04_building-apps/12_matcher-api.md
+#, python-brace-format
+msgid "How much of each asset pays a fee worth 1 DCC, for example `{\"DCC\": 1}`"
+msgstr "每件资产中,每件价值1DCC的多少支付费用,例如 `{\"DCC\": 1}`"
+
+#: ../../04_building-apps/12_matcher-api.md:26
+#, python-brace-format
+msgid "The Testnet matcher accepts order versions 1, 2 and 3 and charges a fee of 0.003 DCC per order (`\"orderFee\": {\"dynamic\": {\"baseFee\": 300000}}`). The fee is taken in proportion to how much of the order fills."
+msgstr "Testnet配对机接受订单版本1,2和3,每订单收费0.003DCC (`\"orderFee\": {\"dynamic\": {\"baseFee\": 300000}}`).收费按订单中充值多少的比例进行."
+
+#: ../../04_building-apps/12_matcher-api.md:28
+msgid "Markets and Order Books"
+msgstr "市场和订单书"
+
+#: ../../04_building-apps/12_matcher-api.md
+msgid "`GET /matcher/orderbook`"
+msgstr "`GET /matcher/orderbook`"
+
+#: ../../04_building-apps/12_matcher-api.md
+msgid "Every market: amount and price asset, their names and decimals, and the `tickSize`"
+msgstr "每个市场:金额和价格资产、名称和小数,以及 `tickSize`"
+
+#: ../../04_building-apps/12_matcher-api.md
+#, python-brace-format
+msgid "`GET /matcher/orderbook/{amountAsset}/{priceAsset}`"
+msgstr "`GET /matcher/orderbook/{amountAsset}/{priceAsset}`"
+
+#: ../../04_building-apps/12_matcher-api.md
+msgid "The order book: `bids` and `asks` as `amount`/`price` levels. `?depth=N` limits the levels."
+msgstr "订单书:`bids` 和 `asks` 为 `amount`/`price` 等. `?depth=N` 限制水平."
+
+#: ../../04_building-apps/12_matcher-api.md
+#, python-brace-format
+msgid "`GET /matcher/orderbook/{amountAsset}/{priceAsset}/status`"
+msgstr "`GET /matcher/orderbook/{amountAsset}/{priceAsset}/status`"
+
+#: ../../04_building-apps/12_matcher-api.md
+msgid "The last trade's price, amount and side"
+msgstr "最后一个交易的价格,金额和侧面"
+
+#: ../../04_building-apps/12_matcher-api.md
+#, python-brace-format
+msgid "`GET /matcher/orderbook/{amountAsset}/{priceAsset}/info`"
+msgstr "`GET /matcher/orderbook/{amountAsset}/{priceAsset}/info`"
+
+#: ../../04_building-apps/12_matcher-api.md
+msgid "The pair's matching rules (`tickSize`)"
+msgstr "配对规则( `tickSize`)"
+
+#: ../../04_building-apps/12_matcher-api.md:37
+msgid "Assets are given by ID, with `DCC` for DCC. A pair has a fixed order: on the Testnet, `DCCCANARY/DCC` is `Hs5y6vFumpwVp6my7rVEmJEQQD3wiQ29qJhnixNqPit5/DCC`. The reversed pair is not a market."
+msgstr "资产由ID提供, `DCC` 为DCC.一对有固定的订单: 在Testnet上, `DCCCANARY/DCC` 是 `Hs5y6vFumpwVp6my7rVEmJEQQD3wiQ29qJhnixNqPit5/DCC`.倒置的一对不是市场。"
+
+#: ../../04_building-apps/12_matcher-api.md:39
+msgid "Prices and Amounts"
+msgstr "价格和数额"
+
+#: ../../04_building-apps/12_matcher-api.md:41
+msgid "`amount` is always in the amount asset's smallest unit. `price` is how much of the price asset one whole amount-asset unit costs, and for order versions 1 to 3 it is scaled by 10^(8 + price asset decimals − amount asset decimals). For DCCCANARY/DCC, both with 8 decimals, the factor is 10^8: a price of 0.001 DCC is `100000`. For a token with 2 decimals priced in DCC, the factor is 10^14."
+msgstr "`amount` 总是在金额资产最小的单位. `price` 是价格资产中一个整数-资产单位成本的多少,对于订单版本1到3,它被缩放为10^(8+价格资产小数-金额资产小数).对于DCCCANARY/DCC,两者均有8个小数,因子为10^8:价为0.001 DCC是 `100000`.对于一个以DCC计价的2个小数的代号,因子为10^14."
+
+#: ../../04_building-apps/12_matcher-api.md:43
+msgid "Place and Cancel an Order"
+msgstr "设置并取消顺序"
+
+#: ../../04_building-apps/12_matcher-api.md:45
+msgid "`POST /matcher/orderbook` takes a signed limit order; `POST /matcher/orderbook/market` takes a market order. `@decentralchain/transactions` builds and signs orders with `order()`, sends them with `submitOrder()`, and cancels them with `cancelOrder()` and `cancelSubmittedOrder()`:"
+msgstr "`POST /matcher/orderbook` 采用已签限制令; `POST /matcher/orderbook/market` 采用市场令. `@decentralchain/transactions` 与 `order()` 一起构建并签名订单, 与 `submitOrder()` 一起发送订单, 并用 `cancelOrder()` 和 `cancelSubmittedOrder()` 注销订单 :"
+
+#: ../../04_building-apps/12_matcher-api.md:56
+msgid "Run on the Testnet, the matcher answered `OrderAccepted`, the status was `Accepted`, and the cancel answered `OrderCanceled`. An order's `expiration` can be at most 30 days after its `timestamp`; `order()` sets 29 days by default."
+msgstr "在Testnet上跑出,匹配者回答 `OrderAccepted`,状态为 `Accepted`,取消则回答 `OrderCanceled`.订单的 `expiration` 最多可以在其 `timestamp` 后30天;而 `order()` 默认设置了29天."
+
+#: ../../04_building-apps/12_matcher-api.md:58
+msgid "The matcher checks an order before it accepts it: the signature, the matcher public key, the pair, the version, the fee, the price against the tick size, and that the account's tradable balance covers the order and the fee."
+msgstr "配对者在接受前先检查订单:签名,配对公用钥匙,对等,版本,收费,价格与勾算大小相比,账户可交易余额可涵盖订单和收费."
+
+#: ../../04_building-apps/12_matcher-api.md:60
+msgid "Order Status"
+msgstr "顺序状态"
+
+#: ../../04_building-apps/12_matcher-api.md:62
+#, python-brace-format
+msgid "`GET /matcher/orderbook/{amountAsset}/{priceAsset}/{orderId}` is public:"
+msgstr "`GET /matcher/orderbook/{amountAsset}/{priceAsset}/{orderId}` 公开 :"
+
+#: ../../04_building-apps/12_matcher-api.md:51
+msgid "Status"
+msgstr "状态"
+
+#: ../../04_building-apps/12_matcher-api.md:51
+msgid "`Accepted`"
+msgstr "`Accepted`"
+
+#: ../../04_building-apps/12_matcher-api.md:51
+msgid "In the order book, nothing filled yet"
+msgstr "订书时,还没有填满"
+
+#: ../../04_building-apps/12_matcher-api.md:51
+msgid "`PartiallyFilled`"
+msgstr "`PartiallyFilled`"
+
+#: ../../04_building-apps/12_matcher-api.md:51
+msgid "Part of it has traded; the rest is still in the book"
+msgstr "一部分已经交易了,其余的还在书上"
+
+#: ../../04_building-apps/12_matcher-api.md:51
+msgid "`Filled`"
+msgstr "`Filled`"
+
+#: ../../04_building-apps/12_matcher-api.md:51
+msgid "Fully traded"
+msgstr "已全部交易"
+
+#: ../../04_building-apps/12_matcher-api.md:51
+msgid "`Cancelled`"
+msgstr "`Cancelled`"
+
+#: ../../04_building-apps/12_matcher-api.md:51
+msgid "Cancelled by its owner, or by the matcher (expired, or the balance no longer covers it)"
+msgstr "被其所有者,或被火柴所取消(已过期,或余额已不包含)."
+
+#: ../../04_building-apps/12_matcher-api.md:51
+msgid "`NotFound`"
+msgstr "`NotFound`"
+
+#: ../../04_building-apps/12_matcher-api.md:51
+msgid "The matcher doesn't know the order"
+msgstr "选手不知道顺序"
+
+#: ../../04_building-apps/12_matcher-api.md:76
+#, python-brace-format
+msgid "`GET /matcher/transactions/{orderId}` lists the Exchange transactions that filled an order."
+msgstr "`GET /matcher/transactions/{orderId}` 列出了填报订单的交易所交易."
+
+#: ../../04_building-apps/12_matcher-api.md:78
+msgid "Requests Signed with Your Key"
+msgstr "请求与您的密钥一起签名"
+
+#: ../../04_building-apps/12_matcher-api.md:80
+msgid "Your order history and reserved balance are private. These endpoints need two headers: `Timestamp`, the current time in milliseconds, and `Signature`, the base58 signature of your public key's bytes followed by the timestamp as an 8-byte big-endian number."
+msgstr "您的订单历史和预留的余额是私人的。这些端点需要两个头:`Timestamp`,以毫秒计的当前时间;和 `Signature`,你的公钥字节的基数58签名后再以8字节大后端数字为时标."
+
+#: ../../04_building-apps/12_matcher-api.md:51
+#, python-brace-format
+msgid "`GET /matcher/orderbook/{publicKey}`"
+msgstr "`GET /matcher/orderbook/{publicKey}`"
+
+#: ../../04_building-apps/12_matcher-api.md:51
+msgid "Your orders in every pair. `?activeOnly=true` or `?closedOnly=true` filters them."
+msgstr "每对都听命于你 `?activeOnly=true` 或 `?closedOnly=true` 过滤它们."
+
+#: ../../04_building-apps/12_matcher-api.md:51
+#, python-brace-format
+msgid "`GET /matcher/orderbook/{amountAsset}/{priceAsset}/publicKey/{publicKey}`"
+msgstr "`GET /matcher/orderbook/{amountAsset}/{priceAsset}/publicKey/{publicKey}`"
+
+#: ../../04_building-apps/12_matcher-api.md:51
+msgid "Your orders in one pair"
+msgstr "你一对一的订单"
+
+#: ../../04_building-apps/12_matcher-api.md:51
+#, python-brace-format
+msgid "`GET /matcher/balance/reserved/{publicKey}`"
+msgstr "`GET /matcher/balance/reserved/{publicKey}`"
+
+#: ../../04_building-apps/12_matcher-api.md:51
+msgid "What your open orders reserve, per asset"
+msgstr "你每笔资产开户的储备多少?"
+
+#: ../../04_building-apps/12_matcher-api.md:93
+msgid "A wrong signature returns `400` with `\"status\": \"InvalidSignature\"`."
+msgstr "错误的签名返回 `400` 与 `\"status\": \"InvalidSignature\"`."
+
+#: ../../04_building-apps/12_matcher-api.md:95
+#, python-brace-format
+msgid "To cancel every open order at once, `POST /matcher/orderbook/cancel` takes `{\"sender\": <public key>, \"timestamp\": <ms>, \"signature\": <signature of the public key bytes and the big-endian timestamp>}`."
+msgstr "要立即取消每次开放的订单, `POST /matcher/orderbook/cancel` 取 `{\"sender\": <public key>, \"timestamp\": <ms>, \"signature\": <signature of the public key bytes and the big-endian timestamp>}`."
+
+#: ../../04_building-apps/12_matcher-api.md:97
+#, python-brace-format
+msgid "`GET /matcher/orderbook/{amountAsset}/{priceAsset}/tradableBalance/{address}` is public: it returns how much of each asset of the pair the address can still put into new orders."
+msgstr "`GET /matcher/orderbook/{amountAsset}/{priceAsset}/tradableBalance/{address}` 是公开的:它返回了每对地址中每个资产有多少仍能放入新订单."
+
+#: ../../04_building-apps/12_matcher-api.md:99
+msgid "Errors"
+msgstr "错误"
+
+#: ../../04_building-apps/12_matcher-api.md:101
+msgid "A rejected request returns a JSON object with `\"success\": false`, a `status`, a numeric `error` code and a `message`, for example:"
+msgstr "一个被拒绝的请求返回一个带有 `\"success\": false` 的 JSON 对象, 一个 `status` , 一个数字 `error` 代码和一个 `message`, 例如:"
+
+#: ../../04_building-apps/12_matcher-api.md:107
+#, python-brace-format
+msgid "Endpoints under `/matcher/debug`, `GET /matcher/orders/{address}`, the fee-rate updates and order book deletion are for the matcher's operator: they need the operator's `X-Api-Key`."
+msgstr "`/matcher/debug`, `GET /matcher/orders/{address}` 下的收尾点,收费率更新和订单簿删除都是针对匹配者的操作员的:它们需要操作员的 `X-Api-Key`."
+
+#: ../../04_building-apps/developer-tools/01_ride-repl.md:7
+msgid "The Ride REPL evaluates Ride one line at a time, so you can try out an expression, a function or a built-in without writing and deploying a whole script. Connected to a node, it also reads live chain state: heights, balances, account data and transactions."
+msgstr "Ride REPL一次评价Ride一行,这样就可以尝试一个表达式,一个函数或内置的不写和部署整个脚本.连接到一个节点后,它也会读取活链状态:高度,余额,账户数据和交易."
+
+#: ../../04_building-apps/developer-tools/01_ride-repl.md:9
+msgid "The REPL is published as [`@decentralchain/ride-repl`](https://www.npmjs.com/package/@decentralchain/ride-repl), a JavaScript build of the Scala REPL in [`packages/ride/repl`](https://github.com/Decentral-America/DecentralChain/tree/main/packages/ride/repl) of the DecentralChain monorepo. It has no command-line front end: you call it from a script, as below, or embed it in a web page."
+msgstr "REPL被发布为 [`@decentralchain/ride-repl`](https://www.npmjs.com/package/@decentralchain/ride-repl),是DecentralChain单列波中 [`packages/ride/repl`](https://github.com/Decentral-America/DecentralChain/tree/main/packages/ride/repl) 中Scala RPL所建的一款JavaScript.它没有命令行前端:您从脚本中调用它,如下文,或者将其嵌入网页."
+
+#: ../../04_building-apps/developer-tools/01_ride-repl.md:12
+msgid "Verified on 2026-10-25 with `@decentralchain/ride-repl@1.6.2` on Node.js 24 and later, against the public Testnet node. The package ships no TypeScript declarations; the sample adds its own in `ride-repl-types.d.ts`."
+msgstr "2026-10-25年与 `@decentralchain/ride-repl@1.6.2` 在Node.js 24上并随后被验证,对阵公众Testnet节点.货包船没有TypeScript申报;样品在 `ride-repl-types.d.ts` 中加入了自有."
+
+#: ../../04_building-apps/developer-tools/01_ride-repl.md:21
+msgid "`ts-lib-crypto` provides the hash functions the REPL needs (see below)."
+msgstr "`ts-lib-crypto` 提供REPL需要的散列函数(见下文)."
+
+#: ../../04_building-apps/developer-tools/01_ride-repl.md:23
+msgid "Run the REPL"
+msgstr ""
+
+#: ../../04_building-apps/developer-tools/01_ride-repl.md:30
+msgid "Output on the Testnet:"
+msgstr "Testnet 上的输出 :"
+
+#: ../../04_building-apps/developer-tools/01_ride-repl.md:47
+msgid "How It Works"
+msgstr "如何运作"
+
+#: ../../04_building-apps/developer-tools/01_ride-repl.md:49
+msgid "**Host functions.** The REPL doesn't hash or fetch anything itself. It calls functions that the host page or script defines as globals:"
+msgstr "**主机功能.** REPL本身不散去取任何东西.它调用主机页面或脚本所定义的全局函数 :"
+
+#: ../../04_building-apps/developer-tools/01_ride-repl.md:25
+msgid "Global"
+msgstr "全球"
+
+#: ../../04_building-apps/developer-tools/01_ride-repl.md:25
+msgid "Needed for"
+msgstr "需要钱"
+
+#: ../../04_building-apps/developer-tools/01_ride-repl.md:25
+#, python-brace-format
+msgid "`httpGet({ url })`, resolving to `{ status, body }`"
+msgstr "`httpGet({ url })`, 解为 `{ status, body }`"
+
+#: ../../04_building-apps/developer-tools/01_ride-repl.md:25
+msgid "Anything that reads the chain: `height`, `dccBalance`, `getString`, `transactionHeightById`…"
+msgstr "任何读取链条的: `height`, `dccBalance`, `getString`, `transactionHeightById`..."
+
+#: ../../04_building-apps/developer-tools/01_ride-repl.md:25
+msgid "`blake2b256`, `keccak256`, `sha256`, each `(ArrayBuffer) => ArrayBuffer`"
+msgstr "`blake2b256`, `keccak256`, `sha256`,每架 `(ArrayBuffer) => ArrayBuffer`"
+
+#: ../../04_building-apps/developer-tools/01_ride-repl.md:25
+msgid "The matching Ride hash functions"
+msgstr "匹配的 Ride 散列函数"
+
+#: ../../04_building-apps/developer-tools/01_ride-repl.md:25
+msgid "`curve25519verify`, `rsaVerify`, `merkleVerify`"
+msgstr "`curve25519verify`, `rsaVerify`, `merkleVerify`"
+
+#: ../../04_building-apps/developer-tools/01_ride-repl.md:25
+msgid "`sigVerify`, `rsaVerify` and `checkMerkleProof`. The sample doesn't define them, so those calls fail with `ReferenceError`"
+msgstr "`sigVerify`, `rsaVerify` 和 `checkMerkleProof` 双相机.样本没有定义它们,所以这些电话会用 `ReferenceError` 失效"
+
+#: ../../04_building-apps/developer-tools/01_ride-repl.md:57
+msgid "Pure expressions such as arithmetic, strings, lists and your own functions need none of them."
+msgstr "纯粹的表达式,如算术,字符串,列表和您自己的函数都不需要这些表达式."
+
+#: ../../04_building-apps/developer-tools/01_ride-repl.md:59
+msgid "**Sessions.** `repl(settings)` starts a session. Its methods are:"
+msgstr "**会话.** `repl(settings)` 开始会话.其方法如下:"
+
+#: ../../04_building-apps/developer-tools/01_ride-repl.md:61
+#, python-brace-format
+msgid "`evaluate(line)`, which resolves to `{ result }` or `{ error }`. A `let` or `func` stays defined for later lines."
+msgstr "`evaluate(line)`,它解决为 `{ result }` 或 `{ error }`. `let` 或 `func` 保留为后行所定义."
+
+#: ../../04_building-apps/developer-tools/01_ride-repl.md:62
+msgid "`info(name)` prints the declaration of a name you defined, and `totalInfo()` lists everything in scope."
+msgstr "`info(name)` 打印了您定义的名称的宣告,而 `totalInfo()` 列出了所有范围."
+
+#: ../../04_building-apps/developer-tools/01_ride-repl.md:63
+msgid "`clear()` forgets your definitions."
+msgstr "`clear()` 忘记了您的定义."
+
+#: ../../04_building-apps/developer-tools/01_ride-repl.md:64
+msgid "`reconfigure(settings)` returns a session connected to another node or account."
+msgstr "`reconfigure(settings)` 返回连接到另一个节点或账户的会话 。"
+
+#: ../../04_building-apps/developer-tools/01_ride-repl.md:66
+msgid "**Connection settings.** `new NodeConnectionSettings(url, chainId, address)` takes the node URL, the chain ID as a number (`'!'.charCodeAt(0)`, 33, for the Testnet; `'?'`, 63, for Mainnet) and the address that `this` refers to. Call `repl()` without settings to work offline."
+msgstr "**连接设置 。** `new NodeConnectionSettings(url, chainId, address)` 取了节点URL,链式ID为数字(`'!'.charCodeAt(0)`,33为Testnet; `'?'`,63为Mainnet)和 `this` 所指的地址.拨打 `repl()` 不设置下线工作 。"
+
+#: ../../04_building-apps/developer-tools/01_ride-repl.md:68
+#, python-brace-format
+msgid "**Standard library.** The REPL compiles each line against the latest standard library version it supports. A script you deploy declares its own with `{-# STDLIB_VERSION ... #-}`. A built-in that works in the REPL can therefore be missing from an older script version."
+msgstr "**标准文库.** REPL根据它支持的最新标准库版本来编译每行.您所部署的脚本以 `{-# STDLIB_VERSION ... #-}` 声明它自己的脚本 。因此,一个在REPL中工作的内置版本可能会从更古老的脚本版本中缺失."
+
+#: ../../04_building-apps/developer-tools/01_ride-repl.md:72
+#, python-brace-format
+msgid "Each line is one expression or one declaration. To try a whole dApp, or a function with `@Callable`, compile it with a node instead; see {ref}`Compile with a Node <04_building-apps/01_developer-tools:Compile with a Node>`."
+msgstr "每行为一表达式或一声明.要尝试一个完整的 dApp 或一个带有 `@Callable` 的函数, 要用节点来编译它; 见 {ref}`以节点编译 <04_building-apps/01_developer-tools:Compile with a Node>`."
+
+#: ../../04_building-apps/developer-tools/01_ride-repl.md:73
+msgid "`FOLD<N>` is a compile-time macro, and the REPL can't parse it."
+msgstr "`FOLD<N>` 是一个编译时间宏,REPL无法解析."
+
+#: ../../04_building-apps/developer-tools/01_ride-repl.md:74
+msgid "The REPL only reads the chain. It never signs or broadcasts anything."
+msgstr "反弹只读链.它从不签署或广播任何东西。"
+
+#: ../../04_building-apps/how-to/01_airdrop.md:4
+msgid "Airdrop a Token"
+msgstr "空投一个托肯"
+
+#: ../../04_building-apps/how-to/01_airdrop.md:6
+#, python-brace-format
+msgid "An airdrop sends a token to a list of addresses. On DecentralChain you send it with {ref}`Mass Transfer transactions <02_decentralchain/03_transaction:Mass Transfer Transaction>`: one transaction pays up to 100 recipients and costs far less than 100 separate transfers."
+msgstr "空投会给地址列表发送一个令牌.在 DecentralChain 上, 您会随 {ref}`大规模转让交易 <02_decentralchain/03_transaction:Mass Transfer Transaction>`: 一次交易支付最多100个收款人, 费用远远低于 100 个单独的转账 。"
+
+#: ../../04_building-apps/how-to/01_airdrop.md:9
+msgid "The sample is typechecked against `@decentralchain/transactions@5.0.1`. It has not been broadcast as part of this documentation pass."
+msgstr "样本以 `@decentralchain/transactions@5.0.1` 为对照进行打字检查.该文件没有作为文件通行证的一部分播出。"
+
+#: ../../04_building-apps/how-to/01_airdrop.md:16
+msgid "Node.js 24 or later, with the script saved as an ES module (`\"type\": \"module\"` in `package.json`)."
+msgstr "Node.js 24或后期,将脚本保存为ES模块(`\"type\": \"module\"` in `package.json`)."
+
+#: ../../04_building-apps/how-to/01_airdrop.md:17
+#, python-brace-format
+msgid "A Testnet account that holds the token, and enough DCC for the fees. To issue a token first, see {ref}`Issuing a Token <04_building-apps/03_how-to-guides:Issuing a Token>`; its ID is the ID of the Issue transaction."
+msgstr "一个持有符号的Testnet账户,足够DCC的收费.要先发行一个令牌,请参见 {ref}`发布一个托肯 <04_building-apps/03_how-to-guides:Issuing a Token>`;其ID为\"问题\"交易的ID."
+
+#: ../../04_building-apps/how-to/01_airdrop.md:18
+msgid "The list of recipients, as addresses or aliases."
+msgstr "收件人列表,作为地址或别名."
+
+#: ../../04_building-apps/how-to/01_airdrop.md:24
+msgid "Send the Airdrop"
+msgstr "发送空投"
+
+#: ../../04_building-apps/how-to/01_airdrop.md:26
+msgid "The script splits the recipient list into batches of 100 and sends one Mass Transfer transaction per batch:"
+msgstr "剧本将接收者列表分出为分批100个,每批发送1个大规模传输交易:"
+
+#: ../../04_building-apps/how-to/01_airdrop.md:33
+msgid "**`amount`** is in the token's smallest unit. For a token with 2 decimals, `1_000` is 10.00 tokens. Each transfer in the list can have its own amount."
+msgstr "**`amount`** 在符号最小的单位.对于带有2个小数的活字, `1_000` 为10.00个活字.列表中的每一笔转账都可以有自己的金额."
+
+#: ../../04_building-apps/how-to/01_airdrop.md:34
+msgid "**`assetId: null`** airdrops DCC instead of a token."
+msgstr "**`assetId: null`** 空投DCC而不是一个活字."
+
+#: ../../04_building-apps/how-to/01_airdrop.md:35
+msgid "**`attachment`** is optional: up to 140 bytes, base58-encoded, that every recipient sees on the transaction."
+msgstr "**`attachment`** 是可选的:最多140个字节,基数58-被编码,每个收件人都会看到交易."
+
+#: ../../04_building-apps/how-to/01_airdrop.md:36
+#, python-brace-format
+msgid "**The fee** is set by the builder: 0.001 DCC plus 0.0005 DCC per transfer, rounded up to the next 0.001 DCC. A full batch of 100 costs 0.051 DCC. For a {ref}`smart asset <02_decentralchain/02_token(asset):Smart Asset>`, or a sender with an account script, add 0.004 DCC by passing `fee` yourself."
+msgstr "**收费** 由建设者设定:001DCC+0.0005DCC每次转会,四舍五入至下001DCC.整批100元成本0.051DCC.对于 {ref}`智能资产 <02_decentralchain/02_token(asset):Smart Asset>` 或带有账户脚本的发件人,通过亲自传递 `fee` 来加入0.04 DCC."
+
+#: ../../04_building-apps/how-to/01_airdrop.md:38
+msgid "Check the Results"
+msgstr "检查结果"
+
+#: ../../04_building-apps/how-to/01_airdrop.md:40
+msgid "Each batch is one transaction, so it either reaches every recipient in it or none of them. The script waits for each batch to be in a block before it sends the next, so if it stops part-way, every batch it logged is done and you can restart from the next one."
+msgstr "每批交易都是一笔交易,所以它要么到达其中的每个接收者,要么没有.脚本等待每批在块中再发送下一批,所以如果它停止了分道扬镳,每批记录完成,就可以从下一批重新开始."
+
+#: ../../04_building-apps/how-to/01_airdrop.md:42
+#, python-brace-format
+msgid "To check a recipient, read their balance of the token with `node-api-js`, as in {ref}`Reading Blockchain Data <04_building-apps/03_how-to-guides:Reading Blockchain Data>` (`api.assets.fetchBalanceAddressAssetId(address, assetId)`)."
+msgstr "要检查接收者,请按 {ref}`读取块链数据 <04_building-apps/03_how-to-guides:Reading Blockchain Data>` (`api.assets.fetchBalanceAddressAssetId(address, assetId)`) 读取它们与 `node-api-js` 的符号余额 。"
+
+#: ../../04_building-apps/how-to/02_payments.md:4
+msgid "Accept Payments"
+msgstr "接受付款"
+
+#: ../../04_building-apps/how-to/02_payments.md:6
+#, python-brace-format
+msgid "To accept a payment in DCC or a token, a shop gives the customer an amount and a payment reference, the customer sends a {ref}`Transfer transaction <02_decentralchain/03_transaction:Transfer Transaction>` with that reference in its attachment, and the shop watches its own address for a matching transfer. No smart contract is involved."
+msgstr "要接受以DCC或代币的支付,商店会给客户一个金额和支付参考,顾客会发送带有该参考的 {ref}`转账交易 <02_decentralchain/03_transaction:Transfer Transaction>` 在附件中,商店会查看自己的地址进行匹配的转账.没有涉及智能合同。"
+
+#: ../../04_building-apps/how-to/02_payments.md:9
+msgid "The sample is typechecked against `@decentralchain/transactions@5.0.1` and `@decentralchain/node-api-js@2.0.1`. It has not been broadcast as part of this documentation pass."
+msgstr "样本以 `@decentralchain/transactions@5.0.1` 和 `@decentralchain/node-api-js@2.0.1` 进行打字检查.该文件没有作为文件通行证的一部分播出。"
+
+#: ../../04_building-apps/how-to/02_payments.md:14
+msgid "You need Node.js 24 or later, a Testnet address for the shop and a funded Testnet account for the customer (see the [faucet](https://testnet.decentralscan.com/faucet))."
+msgstr "您需要 Node.js 24 或 以后, 商店的 Testnet 地址和客户的 资助 Testnet 账户 (参见 [水龙头](https://testnet.decentralscan.com/faucet))."
+
+#: ../../04_building-apps/how-to/02_payments.md:20
+msgid "Pay an Invoice"
+msgstr "付发票"
+
+#: ../../04_building-apps/how-to/02_payments.md:22
+#, python-brace-format
+msgid "In a real shop the customer signs in their own wallet, for example with {doc}`Cubensis Connect <../04_wallet-integration>`, and your page only fills in the recipient, the amount and the attachment. The sample signs with a seed phrase so that both sides fit in one script:"
+msgstr "在真正的商店中,客户在自己的钱包里签名,例如用 {doc}`Cubensis Connect <../04_wallet-integration>` 签名,而你的页面只填入收件人,金额和附件.样本上标有种子短语,使双方合用一个脚本:"
+
+#: ../../04_building-apps/how-to/02_payments.md:29
+msgid "The attachment carries the invoice ID as base58-encoded UTF-8 bytes, up to 140 bytes. It is public, like the rest of the transaction, so put a reference in it, never personal data."
+msgstr "附录将发票ID作为基础58-encoded UTF-8字节,最高可达140字节.它和交易的其余部分一样是公开的,所以在其中加上一个参考,从不提供个人数据."
+
+#: ../../04_building-apps/how-to/02_payments.md:31
+msgid "Check for Payment"
+msgstr "检查付款情况"
+
+#: ../../04_building-apps/how-to/02_payments.md:33
+msgid "The shop reads its latest transactions and looks for a transfer that matches the invoice:"
+msgstr "该店阅读最新交易,并寻找符合发票的转账:"
+
+#: ../../04_building-apps/how-to/02_payments.md:40
+msgid "What to check:"
+msgstr "要检查什么 :"
+
+#: ../../04_building-apps/how-to/02_payments.md:42
+msgid "**The type, recipient and token.** `type === 4` is a Transfer transaction. `assetId === null` means DCC; for a token payment, compare it with the token's ID."
+msgstr "**类型,收受者与信物.** `type === 4` 是转让交易. `assetId === null` 表示DCC;对于象征性的支付,要与该标志的ID进行比较."
+
+#: ../../04_building-apps/how-to/02_payments.md:43
+msgid "**The amount.** Amounts are integers in the smallest unit: 1 DCC is 100,000,000 Decentralites."
+msgstr "**额.** 量是最小单位的整数: 1 DCC为10万德克塞特人."
+
+#: ../../04_building-apps/how-to/02_payments.md:44
+msgid "**The attachment.** `fetchTransactions` returns it base58-encoded, so decode it before you compare."
+msgstr "**依附所缘.** `fetchTransactions` 返回它基数58-编码,所以在比较前解码."
+
+#: ../../04_building-apps/how-to/02_payments.md:46
+msgid "`fetchTransactions(address, limit)` returns only transactions that are already in a block, newest first. A shop with more traffic pages back with its `after` argument (the ID of the last transaction already read), or keeps its own record of the transactions it has seen. To know a payment is in a block before you ship, rather than just accepted into a node's pool, wait for it with `waitForTx`, or with `waitForTxWithNConfirmations` to also wait for a number of blocks on top."
+msgstr "`fetchTransactions(address, limit)` 返回的只是已经位于块中, 最新的交易 。拥有更多流量页的店铺,其 `after` 参数(上个交易的ID已经读取),或保留自己所看到的交易记录.要知道一个付款是在你飞船之前的街区中,而不是仅仅接受到一个节点的游泳池中,而是用 `waitForTx` 等待它,或者用 `waitForTxWithNConfirmations` 等待上面的一些街区."
+
+#: ../../04_building-apps/how-to/03_token-exchange.md:5
+msgid "Exchange Tokens with a dApp"
+msgstr "用 dApp 交换托肯"
+
+#: ../../04_building-apps/how-to/03_token-exchange.md:7
+msgid "This guide builds a small exchange: a dApp that sells a token for DCC at a fixed price, and buys it back at the same price. A buyer calls the dApp with a DCC payment and receives the token in the same transaction. Nobody has to be online to fill the order."
+msgstr "本指南构建了小型交易所:以固定价格为DCC销售一款代币的dApp,并按同价回购.买方用DCC付款给dApp,并在同一笔交易中收到该令牌。没有人必须在网上填写订单。"
+
+#: ../../04_building-apps/how-to/03_token-exchange.md:9
+#, python-brace-format
+msgid "For trading at market prices between any two tokens, use the DEX instead: its matcher pairs {doc}`orders <../../02_decentralchain/06_order>` and settles them with Exchange transactions."
+msgstr "对于任何两种符物之间的以市场价格进行交易,取而代之的是DEX:其配对为 {doc}`命令 <../../02_decentralchain/06_order>` 并用交易所的交易结算."
+
+#: ../../04_building-apps/how-to/03_token-exchange.md:12
+msgid "The script compiles on the public Testnet node (2026-10-25) with complexity 49 (`buy`) and 32 (`sell`). The TypeScript is typechecked against `@decentralchain/transactions@5.0.1`. It has not been broadcast as part of this documentation pass."
+msgstr "剧本在公共的Testnet节点上编译(2026-10-25),其复杂度为49 (`buy`)和32 (`sell`).TypeScript对照 `@decentralchain/transactions@5.0.1` 进行打字检查.该文件没有作为文件通行证的一部分播出。"
+
+#: ../../04_building-apps/how-to/03_token-exchange.md:19
+msgid "Node.js 24 or later, with the scripts saved as ES modules."
+msgstr "Node.js 24或后期,将脚本保存为ES模块."
+
+#: ../../04_building-apps/how-to/03_token-exchange.md:20
+msgid "Two Testnet accounts with DCC from the [faucet](https://testnet.decentralscan.com/faucet). The **exchange account** becomes the dApp and needs a little over 1 DCC: issuing the token costs 1 DCC. The **trader account** needs the purchase price plus 0.005 DCC for each call."
+msgstr "两个Testnet账户,DCC来自 [水龙头](https://testnet.decentralscan.com/faucet). **汇兑账户** 成为了dApp型并需要略高于1个DCC:发行代币成本为1个DCC. **贸易帐户** 需要购买价外加每通电话0.005DCC."
+
+#: ../../04_building-apps/how-to/03_token-exchange.md:21
+#, python-brace-format
+msgid "The `compileRide` helper from {ref}`Compile a Script <04_building-apps/07_smart-contracts-overview:Compile a Script>`, saved as `compile-ride.ts`."
+msgstr "{ref}`编译脚本 <04_building-apps/07_smart-contracts-overview:Compile a Script>` 的 `compileRide` 帮助器被保存为 `compile-ride.ts`."
+
+#: ../../04_building-apps/how-to/03_token-exchange.md:29
+msgid "Save this as `ride/token-exchange.ride`:"
+msgstr "保存为 `ride/token-exchange.ride` :"
+
+#: ../../04_building-apps/how-to/03_token-exchange.md:36
+msgid "**`price`** is in Decentralites per smallest unit of the token. For a token with 2 decimals, a price of `1_000_000` makes one whole token cost 1 DCC."
+msgstr "**`price`** 在代币每最小单位中为德克萨斯.对于一个有2个小数的代币,以 `1_000_000` 为价格使一整个代币成本为1 DCC."
+
+#: ../../04_building-apps/how-to/03_token-exchange.md:37
+msgid "**`buy()`** takes one DCC payment, sends back as many token units as it pays for, and returns the change."
+msgstr "**`buy()`** 取出一发DCC的付款,送回所付的等多的代币单位,并还原所变换."
+
+#: ../../04_building-apps/how-to/03_token-exchange.md:38
+msgid "**`sell()`** takes one payment in the token and pays out DCC at the same price."
+msgstr "**`sell()`** 在代币中取出一分还款,以同价还出DCC."
+
+#: ../../04_building-apps/how-to/03_token-exchange.md:39
+msgid "**Payments reach the dApp before the function runs,** so `sell()` pays out from DCC that buyers brought in. If the dApp runs out of either asset, the call fails and the caller keeps their payment."
+msgstr "**在功能运行前, 支付额会达到 dApp,** 所以 `sell()` 从买家带来的DCC中支付.如果dApp用完其中任一资产,则呼叫失败而呼叫者继续支付."
+
+#: ../../04_building-apps/how-to/03_token-exchange.md:41
+#, python-brace-format
+msgid "The exchange account keeps its normal signature check, so its owner can still restock, withdraw, or change the price with a Data transaction. Traders have to trust the owner on this. To make the price permanent, add a verifier that returns `false`, as the {doc}`pledge drive <../08_creating-and-launching-a-dapp>` does."
+msgstr "交换账户保持其正常的签名检查,因此其所有者仍然可以重新存储,取出,或者用\"数据\"交易来改变价格.交易商必须相信业主要让价格永久化,请添加一个返回 `false` 的验证器,就像 {doc}`质押驱动器 <../08_creating-and-launching-a-dapp>` 所做的那样."
+
+#: ../../04_building-apps/how-to/03_token-exchange.md:43
+msgid "Deploy the Exchange"
+msgstr "部署交易所"
+
+#: ../../04_building-apps/how-to/03_token-exchange.md:50
+#, python-brace-format
+msgid "The exchange account issues the token itself, so it holds the whole supply to sell. Each step waits for the previous one to be in a block, for the reason explained in {ref}`Sending a Transaction That Depends on Another <04_building-apps/03_how-to-guides:Sending a Transaction That Depends on Another>`."
+msgstr "交易所的账户发行了代币本身,因此它持有整个供货出售.每一步都等上一分块入出,原因在 {ref}`发送取决于其他交易的交易 <04_building-apps/03_how-to-guides:Sending a Transaction That Depends on Another>` 中解释."
+
+#: ../../04_building-apps/how-to/03_token-exchange.md:52
+msgid "Trade"
+msgstr "贸易"
+
+#: ../../04_building-apps/how-to/03_token-exchange.md:59
+msgid "The trader pays 5 DCC and gets 500 units, which is 5.00 tokens, then sells 200 units back for 2 DCC. `applicationStatus` is `succeeded` when the call went through. A call that fails one of the script's checks is rejected and costs the trader nothing."
+msgstr "交易商支付5DCC并获得500个单位,即5.00个令牌,再以2DCC回售200个单位. `applicationStatus` 是 `succeeded`,当呼叫通过时.一个没有完成剧本检查的电话被拒绝 交易员一无所获"
+
+#: ../../04_building-apps/how-to/04_voting.md:4
+msgid "Run a Simple Vote"
+msgstr "运行简单投票"
+
+#: ../../04_building-apps/how-to/04_voting.md:6
+#, python-brace-format
+msgid "This guide builds a poll as a dApp. Each address can vote once, for one of a fixed set of options, until a deadline. Votes and counts are stored in the dApp's {ref}`account data storage <02_decentralchain/01_account:Account Data Storage>`, so anyone can count them. Once deployed, nobody can change them, not even the account that created the poll."
+msgstr "本指南构建民意调查为\"dApp\".每个地址可以投票一次,为一组固定选项之一,直到最后期限.选票和计数被存储在dApp的 {ref}`账户数据存储 <02_decentralchain/01_account:Account Data Storage>` 中,这样任何人都可以数出.一旦部署,没有人可以改变他们,甚至不能改变导致民意调查的账户."
+
+#: ../../04_building-apps/how-to/04_voting.md:9
+msgid "The script compiles on the public Testnet node (2026-10-25) with complexity 54 for `vote` and 1 for the verifier. The TypeScript is typechecked against `@decentralchain/transactions@5.0.1`. It has not been broadcast as part of this documentation pass."
+msgstr "剧本在公用Testnet节点上编译(2026-10-25),为 `vote` 配音,为1配音.TypeScript对照 `@decentralchain/transactions@5.0.1` 进行打字检查.该文件没有作为文件通行证的一部分播出。"
+
+#: ../../04_building-apps/how-to/04_voting.md:14
+#, python-brace-format
+msgid "You need Node.js 24 or later, the `compileRide` helper from {ref}`Compile a Script <04_building-apps/07_smart-contracts-overview:Compile a Script>`, and two Testnet accounts with DCC from the [faucet](https://testnet.decentralscan.com/faucet). Use a fresh **poll account**: once its script is set, it can never send a transaction again. The **voter account** needs 0.005 DCC for each vote."
+msgstr "您需要 Node.js 24 或 后期, {ref}`编译脚本 <04_building-apps/07_smart-contracts-overview:Compile a Script>` 的 `compileRide` 帮助器和 [水龙头](https://testnet.decentralscan.com/faucet) 的两个 Testnet 账户与 DCC 的账户.使用新鲜的 **民意调查账户**:一旦其脚本被设定,它就再也无法再发送交易. **选民账户** 每张选票需要0.005DCC."
+
+#: ../../04_building-apps/how-to/04_voting.md:22
+msgid "Save this as `ride/voting.ride`:"
+msgstr "保存为 `ride/voting.ride` :"
+
+#: ../../04_building-apps/how-to/04_voting.md:29
+msgid "**`i.caller`** is the address that sent the call, so `vote_<address>` records one vote per address. A second call from the same address is rejected."
+msgstr "**`i.caller`** 是发送电话的地址,因此 `vote_<address>` 记录了每个地址的一票.同一地址的第二通电话被拒绝。"
+
+#: ../../04_building-apps/how-to/04_voting.md:30
+msgid "**`count_<option>`** keeps a running total, so reading the result takes one lookup per option."
+msgstr "**`count_<option>`** 保持运行总计,因此读取结果需要每个选项一个查询."
+
+#: ../../04_building-apps/how-to/04_voting.md:31
+msgid "**The verifier returns `false`.** The poll account can't sign anything after the script is set, so it can't rewrite the data either. That is also why the deadline has to be written before the script."
+msgstr "**核查者返回 `false`.** 民意调查账号在剧本设定后无法签署任何内容,因此也无法重写数据.这也是为什么最后期限必须在剧本前写出的原因."
+
+#: ../../04_building-apps/how-to/04_voting.md:33
+msgid "One address is one vote. If a voter can create addresses freely, so can a cheater. To weight votes by stake instead, make `vote` require a payment in a token, or read the voter's token balance with `assetBalance(i.caller, assetId)`."
+msgstr "一个地址是一票。如果选民可以自由创建地址,那么作弊者也可以.将选票按计分,制作 `vote` 需要象征性付款,或者用 `assetBalance(i.caller, assetId)` 读取选民的象征性余额."
+
+#: ../../04_building-apps/how-to/04_voting.md:35
+msgid "Deploy the Poll"
+msgstr "投弹"
+
+#: ../../04_building-apps/how-to/04_voting.md:42
+msgid "Vote"
+msgstr "票数"
+
+#: ../../04_building-apps/how-to/04_voting.md:49
+msgid "Each argument of a call is an object with a `type` (`string`, `integer`, `boolean`, `binary` or `list`) and a `value`. The types must match the parameters of the callable function."
+msgstr "呼叫的每个参数都是一个具有 `type` (`string`, `integer`, `boolean`, `binary` 或 `list`)和 `value` 的天体.类型必须匹配可调用函数的参数."
+
+#: ../../04_building-apps/how-to/04_voting.md:51
+msgid "Count the Votes"
+msgstr "计票"
+
+#: ../../04_building-apps/how-to/04_voting.md:58
+msgid "Anyone can read the counts without a transaction, from any node. To list every vote, read the dApp's data entries whose keys start with `vote_`."
+msgstr "任何人都可以在没有交易的情况下从任何节点读取计数.要列出每一票,请读取dApp的数据条目,其键以 `vote_` 开头."
+
+#: ../../04_building-apps/how-to/05_list-as-argument.md:5
+msgid "Pass a List to a dApp"
+msgstr "将列表传递到 dApp"
+
+#: ../../04_building-apps/how-to/05_list-as-argument.md:7
+#, python-brace-format
+msgid "A callable function can take a {ref}`list <03_ride-language/02_data-types:List as Function Argument>` as an argument, which lets one call handle many items: a batch of scores, a set of recipients, a basket of orders. This guide passes two lists, names and scores, and stores each pair."
+msgstr "一个可调用函数可以取出一个 {ref}`列表 <03_ride-language/02_data-types:List as Function Argument>` 作为参数,它允许一个调用处理许多项目:一批分数,一组收受者,一篮订单.本指南通过两个列表,名称和分数,并存储每对."
+
+#: ../../04_building-apps/how-to/05_list-as-argument.md:10
+msgid "The script compiles on the public Testnet node (2026-10-25) with complexity 122. The TypeScript is typechecked against `@decentralchain/transactions@5.0.1`. It has not been broadcast as part of this documentation pass."
+msgstr "剧本在公共Testnet节点上编译(2026-10-25),复杂122.TypeScript对照 `@decentralchain/transactions@5.0.1` 进行打字检查.该文件没有作为文件通行证的一部分播出。"
+
+#: ../../04_building-apps/how-to/05_list-as-argument.md:15
+#, python-brace-format
+msgid "You need Node.js 24 or later, the `compileRide` helper from {ref}`Compile a Script <04_building-apps/07_smart-contracts-overview:Compile a Script>`, and two Testnet accounts with DCC from the [faucet](https://testnet.decentralscan.com/faucet): one for the dApp, one to call it."
+msgstr "您需要 Node.js 24 或 后期, {ref}`编译脚本 <04_building-apps/07_smart-contracts-overview:Compile a Script>` 的 `compileRide` 帮助器和 [水龙头](https://testnet.decentralscan.com/faucet) 的两个 Testnet 账户与 DCC : 一个为 dApp , 一个为取名."
+
+#: ../../04_building-apps/how-to/05_list-as-argument.md:23
+msgid "Save this as `ride/list-argument.ride`:"
+msgstr "保存为 `ride/list-argument.ride` :"
+
+#: ../../04_building-apps/how-to/05_list-as-argument.md:30
+msgid "**List parameters** are declared as `List[String]`, `List[Int]`, `List[Boolean]` or `List[ByteVector]`. A list argument can't hold another list."
+msgstr "**列表参数** 被宣布为 `List[String]`, `List[Int]`, `List[Boolean]` 或 `List[ByteVector]`.列表参数不能持有另一个列表 。"
+
+#: ../../04_building-apps/how-to/05_list-as-argument.md:31
+#, python-brace-format
+msgid "**Ride has no open-ended loops.** `FOLD<N>` (see {doc}`Iterations with FOLD <../../03_ride-language/06_iterations-with-fold>`) walks a list of at most `N` items, so the script rejects longer lists before it folds. A larger `N` allows more items per call but raises the complexity."
+msgstr "**Ride没有可开放的回路.** `FOLD<N>` (参见 {doc}`带有 FOLD 的迭代 <../../03_ride-language/06_iterations-with-fold>`) 最多行走一个 `N` 项的列表,因此脚本在折叠前拒绝更长的列表.一个更大的 `N` 允许每次呼叫时增加项目,但提高了复杂性."
+
+#: ../../04_building-apps/how-to/05_list-as-argument.md:32
+msgid "**`size(entries)`** is the index of the current name, which is how `addEntry` finds the matching score."
+msgstr "**`size(entries)`** 是当前名称的索引,这就是 `addEntry` 如何找到相配分."
+
+#: ../../04_building-apps/how-to/05_list-as-argument.md:34
+msgid "Deploy the Script"
+msgstr "部署脚本"
+
+#: ../../04_building-apps/how-to/05_list-as-argument.md:41
+msgid "Pass Lists"
+msgstr "传球列表"
+
+#: ../../04_building-apps/how-to/05_list-as-argument.md:43
+#, python-brace-format
+msgid "A list argument is `{ type: 'list', value: [...] }`, and every item in it is typed in turn:"
+msgstr "列表参数为 `{ type: 'list', value: [...] }`,其中的每个项目依次打出:"
+
+#: ../../04_building-apps/how-to/05_list-as-argument.md:50
+msgid "After the call, the dApp holds `score_alice`, `score_bob` and `score_carol`. If the lists have different lengths, or more than 10 items, the script throws and the call is rejected."
+msgstr "呼叫后,dApp持有 `score_alice`, `score_bob` 和 `score_carol`.如果列表有不同的长度,或超过10个项,则会投出脚本并拒绝调用."
+
+#: ../../04_building-apps/index.md:1 ../../04_building-apps/index.md:28
+msgid "Smart Contracts and dApps"
+msgstr "智能合同和dApps"
+
+#: ../../04_building-apps/index.md:3
+msgid "Everything you need to start building decentralized applications, smart contracts, and integrations on top of DecentralChain: developer tools, client libraries, wallet integration, step-by-step how-to guides, and the concepts behind dApps, smart accounts, smart assets and Blockchain Updates."
+msgstr "所有您需要开始在 DecentralChain 之上构建分散化的应用程序,智能合同,以及集成:开发者工具,客户端库,钱包集成,分步引导,以及 dApps ,智能账户,智能资产和块链更新背后的概念."
+
+#: ../../04_building-apps/index.md:5
+#, python-brace-format
+msgid "New to smart contracts on DecentralChain? Start with the {doc}`Smart Contracts Overview <07_smart-contracts-overview>`, then build and launch one in {doc}`Creating and Launching a dApp <08_creating-and-launching-a-dapp>`."
+msgstr "DecentralChain的新到智能合约?从 {doc}`智能合同概览 <07_smart-contracts-overview>` 开始,再在 {doc}`创建和启动 dApp <08_creating-and-launching-a-dapp>` 中建造并发射一款."
+
+#: ../../04_building-apps/index.md:24
+msgid "Ride REPL, a node's compiler endpoints and starter templates for writing and testing smart contracts."
+msgstr "Ride REPL,一个节点的编译器端点和启动模板,用于写作和测试智能合同."
+
+#: ../../04_building-apps/index.md:36
+msgid "Client Libraries"
+msgstr "客户端图书馆"
+
+#: ../../04_building-apps/index.md:40
+msgid "TypeScript and Java SDKs: install, connect to the Testnet, sign and broadcast."
+msgstr "TypeScript和Java SDKs:安装,连接到Testnet,签名并播出."
+
+#: ../../04_building-apps/index.md:56
+msgid "Connect dApps to Cubensis Connect and sign transactions on behalf of users."
+msgstr "将dApps连接到Cubensis Connect,并代表用户签署交易."
+
+#: ../../04_building-apps/index.md:72
+msgid "Task-by-task recipes: transactions, airdrops, payments, token exchange, voting and list arguments."
+msgstr "任务逐个任务配方:交易,空投,支付,令牌交换,投票和列表参数."
+
+#: ../../04_building-apps/index.md:84
+msgid "Smart Contracts"
+msgstr "智能合同"
+
+#: ../../04_building-apps/index.md:88
+msgid "dApps, smart accounts and smart assets: how each kind of script works, with Testnet walkthroughs."
+msgstr "dApps,智能账户和智能资产:每种剧本是如何工作的,都有Testnet的走行部."
+
+#: ../../04_building-apps/index.md:104
+msgid "Stream every block, state change and rollback from your own node."
+msgstr "将每个街区,状态变化和从自己的节点回滚。"
+
+#: ../../04_building-apps/index.md:116
+msgid "Open Source"
+msgstr "开源"
+
+#: ../../04_building-apps/index.md:120
+msgid "All SDK packages are published under the Decentral-America GitHub organization."
+msgstr "所有SDK软件包都由中美GitHub组织发布."
+
+#: ../../04_building-apps/index.md:132
+msgid "MIT Licensed"
+msgstr "麻省理工学院获得执照"
+
+#: ../../04_building-apps/index.md:136
+msgid "Every official SDK package is released under the MIT license."
+msgstr "每个SDK官方包都以麻省理工学院的许可证发布."
+
+#: ../../04_building-apps/sdk/01_typescript.md:7
+msgid "TypeScript SDK"
+msgstr "TypeScript SDK 软件"
+
+#: ../../04_building-apps/sdk/01_typescript.md:9
+msgid "The TypeScript SDK is a set of `@decentralchain/*` npm packages, developed in [`packages/sdk`](https://github.com/Decentral-America/DecentralChain/tree/main/packages/sdk) of the DecentralChain monorepo under the MIT license. Each package covers one layer, so you install only the ones you use. They all run in Node.js and in the browser."
+msgstr "TypeScript SDK是一套 `@decentralchain/*` npm包,由麻省理工学院许可下的DecentralChain单列波的 [`packages/sdk`](https://github.com/Decentral-America/DecentralChain/tree/main/packages/sdk) 所开发.每个软件包都覆盖一层,所以只安装所使用.它们都以Node.js和浏览器运行."
+
+#: ../../04_building-apps/sdk/01_typescript.md:12
+msgid "All packages are ESM-only and require Node.js 24 or later. Install the **exact versions** shown on this page: CI installs and imports each of them on every pull request. Several packages have a working release on the npm `next` tag that is newer than `latest`."
+msgstr "所有软件包只采用无害环境管理,需要Node.js 24或更晚。安装此页面显示的 **准确的版本** : CI 在每个拉取请求中安装并导入其中的每个 。多个软件包在npm `next` 标签上有一个工作发布,比 `latest` 更新."
+
+#: ../../04_building-apps/sdk/01_typescript.md:17
+msgid "For a backend or script that builds, signs and broadcasts transactions and reads chain state:"
+msgstr "对于构建、签名和广播交易并读取链态的后端或脚本:"
+
+#: ../../04_building-apps/sdk/01_typescript.md:23
+#, python-brace-format
+msgid "`transactions` builds and signs every transaction type and can broadcast on its own. `node-api-js` is a typed client for the node's REST API. For a browser dApp, where the user signs in their own wallet, install `signer` and `cubensis-connect-provider` instead of handling seed phrases; see {doc}`Wallet Integration <../04_wallet-integration>`."
+msgstr "`transactions` 构建并签名每个交易类型,并可自行播出. `node-api-js` 是节点的REST API的打入客户端.对于一个浏览器dApp,用户在自己的钱包中签名,安装了 `signer` 和 `cubensis-connect-provider` 而不是处理种子短语;参见 {doc}`钱包整合 <../04_wallet-integration>`."
+
+#: ../../04_building-apps/sdk/01_typescript.md:25
+#: ../../04_building-apps/sdk/02_java.md:47
+msgid "Connect to the Testnet"
+msgstr "连接到 Testnet"
+
+#: ../../04_building-apps/sdk/01_typescript.md:27
+msgid "There is no connection to open: every call is an HTTPS request to a node. Point the client at a node URL, and pass the network's chain ID to the transaction builders:"
+msgstr "无法打开连接:每通电话都是一个节点的HTTPS请求.将客户端指向节点URL,并将网络的链式ID传递给交易构建者:"
+
+#: ../../04_building-apps/sdk/01_typescript.md:11
+msgid "Chain ID"
+msgstr "链式标识"
+
+#: ../../04_building-apps/sdk/01_typescript.md:11
+msgid "Addresses start with"
+msgstr "地址从"
+
+#: ../../04_building-apps/sdk/01_typescript.md:11
+msgid "`https://mainnet-node.decentralchain.io`"
+msgstr "`https://mainnet-node.decentralchain.io`"
+
+#: ../../04_building-apps/sdk/01_typescript.md:11
+msgid "`'?'`"
+msgstr "`'?'`"
+
+#: ../../04_building-apps/sdk/01_typescript.md:11
+msgid "`3D`"
+msgstr "`3D`"
+
+#: ../../04_building-apps/sdk/01_typescript.md:11
+msgid "`https://testnet-node.decentralchain.io`"
+msgstr "`https://testnet-node.decentralchain.io`"
+
+#: ../../04_building-apps/sdk/01_typescript.md:11
+msgid "`'!'`"
+msgstr "`'!'`"
+
+#: ../../04_building-apps/sdk/01_typescript.md:11
+msgid "`31`"
+msgstr "`31`"
+
+#: ../../04_building-apps/sdk/01_typescript.md:39
+#, python-brace-format
+msgid "`create(nodeUrl)` returns a client grouped by API area: `addresses`, `assets`, `blocks`, `transactions`, `leasing`, `utils` and more. For the full list of node endpoints, see {doc}`Node REST API <../../05_node-guide/01_node-rest-api>`."
+msgstr ""
+
+#: ../../04_building-apps/sdk/01_typescript.md:41
+msgid "Sign and Broadcast"
+msgstr "签名和广播"
+
+#: ../../04_building-apps/sdk/01_typescript.md:48
+msgid "**Builders sign locally.** `transfer()`, `issue()`, `invokeScript()` and the other builders return a signed transaction with its `id`, without contacting a node. The fee defaults to the minimum for a plain account; pass `fee` for a smart account or smart asset."
+msgstr "**建设者在当地签名.** `transfer()`, `issue()`, `invokeScript()` 等建设者在未与节点联系的情况下将签定的交易与其 `id` 还原.收费违约为平分账户的最低值;智能账户或智能资产通过 `fee`."
+
+#: ../../04_building-apps/sdk/01_typescript.md:49
+msgid "**`broadcast()` sends it.** A `200` response only means the node accepted the transaction into its pool. `waitForTx` waits until it is in a block."
+msgstr "**`broadcast()` 发送.** A `200` 响应仅指节点接受交易进入其池. `waitForTx` 等待到一个街区。"
+
+#: ../../04_building-apps/sdk/01_typescript.md:50
+msgid "**A rejected transaction throws.** The node returns HTTP 400, and the thrown `Error` carries the node's response in `data`: an error code and a message. Error 112, for example, is a failed state check such as an insufficient balance."
+msgstr "**拒绝的交易抛出。** 节点返回了 HTTP 400,所抛出的 `Error` 带有了 `data` 中节点的响应:一个出错代码和一个消息.例如,错误112是状态检查失败,如余额不足等."
+
+#: ../../04_building-apps/sdk/01_typescript.md:52
+#, python-brace-format
+msgid "For more complete examples, such as issuing a token, chaining transactions, airdrops and calling dApps, see the {doc}`How-To Guides <../03_how-to-guides>`."
+msgstr "更完整的示例,如发行一个令牌,连锁交易,空投和拨打dApps,参见\"{doc}`如何向导 <../03_how-to-guides>`\"."
+
+#: ../../04_building-apps/sdk/01_typescript.md:54
+msgid "Packages"
+msgstr "软件包"
+
+#: ../../04_building-apps/sdk/01_typescript.md:56
+msgid "The **Install** column is the version these docs are tested against. `latest` and `next` are the npm dist-tags as of 2026-10-18; check `npm view @decentralchain/<package> dist-tags` for the current values. Where `latest` is older than **Install**, the `latest` release is the one that fails to import on Node.js 24 or predates the API shown in these docs."
+msgstr "**安装** 列是这些文档被测试的版本. `latest` 和 `next` 是截至2026-10-18年的npm dist-tag;检查当前值的 `npm view @decentralchain/<package> dist-tags`. `latest` 比 **安装** 大的地方, `latest` 放出是未能在Node.js 24上导入的,或者在这些docs中显示的API之前."
+
+#: ../../04_building-apps/sdk/01_typescript.md:43
+msgid "npm package"
+msgstr "npm 软件包"
+
+#: ../../04_building-apps/sdk/01_typescript.md:43
+msgid "`latest`"
+msgstr "`latest`"
+
+#: ../../04_building-apps/sdk/01_typescript.md:43
+msgid "`next`"
+msgstr "`next`"
+
+#: ../../04_building-apps/sdk/01_typescript.md:43
+msgid "`transactions`"
+msgstr "`transactions`"
+
+#: ../../04_building-apps/sdk/01_typescript.md:43
+msgid "5.0.1"
+msgstr "5.0.1"
+
+#: ../../04_building-apps/sdk/01_typescript.md:43
+msgid "5.0.0 (fails to import on Node.js 24)"
+msgstr "5.0.0 (未从 Node.js 24 导入)"
+
+#: ../../04_building-apps/sdk/01_typescript.md:43
+msgid "Build and sign (including multi-sign) transactions and broadcast them"
+msgstr "构建和签名(包括多签名)交易并进行广播"
+
+#: ../../04_building-apps/sdk/01_typescript.md:43
+msgid "`node-api-js`"
+msgstr "`node-api-js`"
+
+#: ../../04_building-apps/sdk/01_typescript.md:43
+msgid "2.0.1"
+msgstr "2.0.1"
+
+#: ../../04_building-apps/sdk/01_typescript.md:43
+msgid "1.2.5-beta.18"
+msgstr "1.2.5-beta.18"
+
+#: ../../04_building-apps/sdk/01_typescript.md:43
+msgid "Typed client for the node REST API"
+msgstr "为节点 REST API 输入客户端"
+
+#: ../../04_building-apps/sdk/01_typescript.md:43
+msgid "`node-api-grpc`"
+msgstr "`node-api-grpc`"
+
+#: ../../04_building-apps/sdk/01_typescript.md:43
+msgid "not published"
+msgstr "未发表"
+
+#: ../../04_building-apps/sdk/01_typescript.md:43
+msgid "gRPC client: accounts, assets, blockchain, blocks, transactions, blockchain updates"
+msgstr "gRPC 客户端:账户,资产,块链,块,交易,块链更新"
+
+#: ../../04_building-apps/sdk/01_typescript.md:43
+msgid "`data-service-client-js`"
+msgstr "`data-service-client-js`"
+
+#: ../../04_building-apps/sdk/01_typescript.md:43
+msgid "4.2.0"
+msgstr "4.2.0"
+
+#: ../../04_building-apps/sdk/01_typescript.md:43
+msgid "4.2.1"
+msgstr "4.2.1"
+
+#: ../../04_building-apps/sdk/01_typescript.md:43
+msgid "Data service client"
+msgstr "数据服务客户端"
+
+#: ../../04_building-apps/sdk/01_typescript.md:43
+msgid "`signer`"
+msgstr "`signer`"
+
+#: ../../04_building-apps/sdk/01_typescript.md:43
+msgid "1.1.0-beta (fails to import: missing `tslib`)"
+msgstr "1.1.0-β (未导入: 缺少 `tslib`)"
+
+#: ../../04_building-apps/sdk/01_typescript.md:43
+msgid "Signing orchestrator that delegates to a provider so keys never reach your app"
+msgstr "签名协管员,代表给提供商 所以钥匙永远不能到达您的应用程序"
+
+#: ../../04_building-apps/sdk/01_typescript.md:43
+msgid "`cubensis-connect-provider`"
+msgstr "`cubensis-connect-provider`"
+
+#: ../../04_building-apps/sdk/01_typescript.md:43
+msgid "1.0.1"
+msgstr "1.0.1"
+
+#: ../../04_building-apps/sdk/01_typescript.md:43
+msgid "1.0.0"
+msgstr "1.0.0"
+
+#: ../../04_building-apps/sdk/01_typescript.md:43
+msgid "Provider for the Cubensis Connect browser wallet"
+msgstr "Cubensis Connect 浏览器钱包的提供者"
+
+#: ../../04_building-apps/sdk/01_typescript.md:43
+msgid "`cubensis-connect-types`"
+msgstr "`cubensis-connect-types`"
+
+#: ../../04_building-apps/sdk/01_typescript.md:43
+msgid "Type definitions for the Cubensis Connect extension API"
+msgstr "Cubensis Connect 扩展 API 类型定义"
+
+#: ../../04_building-apps/sdk/01_typescript.md:43
+msgid "`ledger`"
+msgstr "`ledger`"
+
+#: ../../04_building-apps/sdk/01_typescript.md:43
+msgid "5.1.0"
+msgstr "5.1.0"
+
+#: ../../04_building-apps/sdk/01_typescript.md:43
+msgid "5.1.1"
+msgstr "5.1.1"
+
+#: ../../04_building-apps/sdk/01_typescript.md:43
+msgid "Ledger Nano S/X integration (WebUSB, Web Bluetooth, Node HID)"
+msgstr "Ledger Nano S/X集成 (WebUSB, Web Bluetooth, 节点HID) 相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相相接相相相相接相接相接相接相接相相相相相接相接相接相接相接相接相接相接相相接相相接相接相接相相相相相相相相相相"
+
+#: ../../04_building-apps/sdk/01_typescript.md:43
+msgid "`ts-lib-crypto`"
+msgstr "`ts-lib-crypto`"
+
+#: ../../04_building-apps/sdk/01_typescript.md:43
+msgid "2.0.0"
+msgstr "2.0.0"
+
+#: ../../04_building-apps/sdk/01_typescript.md:43
+msgid "Key generation, signatures, hashing, encoding and encryption primitives"
+msgstr "密钥生成、签名、散列、编码和加密原始"
+
+#: ../../04_building-apps/sdk/01_typescript.md:43
+msgid "`crypto`"
+msgstr "`crypto`"
+
+#: ../../04_building-apps/sdk/01_typescript.md:43
+msgid "1.0.2"
+msgstr "1.0.2"
+
+#: ../../04_building-apps/sdk/01_typescript.md:43
+msgid "Async WASM crypto: Ed25519/X25519 keys, signing, AES, seed management"
+msgstr "Async WASM 加密: Ed25519/X25519 密钥,签名,AES,种子管理"
+
+#: ../../04_building-apps/sdk/01_typescript.md:43
+msgid "`marshall`"
+msgstr "`marshall`"
+
+#: ../../04_building-apps/sdk/01_typescript.md:43
+msgid "0.14.0"
+msgstr "0.14.0"
+
+#: ../../04_building-apps/sdk/01_typescript.md:43
+msgid "Convert transactions and orders between JS objects, binary and JSON"
+msgstr "转换 JS 对象、 二进制和 JSON 之间的交易和订单"
+
+#: ../../04_building-apps/sdk/01_typescript.md:43
+msgid "`bignumber`"
+msgstr "`bignumber`"
+
+#: ../../04_building-apps/sdk/01_typescript.md:43
+msgid "1.2.1"
+msgstr "1.2.1"
+
+#: ../../04_building-apps/sdk/01_typescript.md:43
+msgid "1.2.0"
+msgstr "1.2.0"
+
+#: ../../04_building-apps/sdk/01_typescript.md:43
+msgid "Arbitrary-precision numbers for amounts and fees"
+msgstr "数额和收费的任意精确数字"
+
+#: ../../04_building-apps/sdk/01_typescript.md:43
+msgid "`parse-json-bignumber`"
+msgstr "`parse-json-bignumber`"
+
+#: ../../04_building-apps/sdk/01_typescript.md:43
+msgid "JSON parser that preserves large-number precision"
+msgstr "JSON 解析器, 保留大数精度"
+
+#: ../../04_building-apps/sdk/01_typescript.md:43
+msgid "`ts-types`"
+msgstr "`ts-types`"
+
+#: ../../04_building-apps/sdk/01_typescript.md:43
+msgid "Shared TypeScript type definitions"
+msgstr "共享的 TypeScript 类型定义"
+
+#: ../../04_building-apps/sdk/01_typescript.md:43
+msgid "`data-entities`"
+msgstr "`data-entities`"
+
+#: ../../04_building-apps/sdk/01_typescript.md:43
+msgid "3.0.1"
+msgstr "3.0.1"
+
+#: ../../04_building-apps/sdk/01_typescript.md:43
+msgid "3.0.0"
+msgstr "3.0.0"
+
+#: ../../04_building-apps/sdk/01_typescript.md:43
+msgid "Domain classes such as assets and money"
+msgstr "资产和金钱等领域类别"
+
+#: ../../04_building-apps/sdk/01_typescript.md:43
+msgid "`assets-pairs-order`"
+msgstr "`assets-pairs-order`"
+
+#: ../../04_building-apps/sdk/01_typescript.md:43
+msgid "5.0.2"
+msgstr "5.0.2"
+
+#: ../../04_building-apps/sdk/01_typescript.md:43
+msgid "4.0.0"
+msgstr "4.0.0"
+
+#: ../../04_building-apps/sdk/01_typescript.md:43
+msgid "Canonical DEX asset-pair ordering"
+msgstr "中央DEX资产-贴吧订购"
+
+#: ../../04_building-apps/sdk/01_typescript.md:43
+msgid "`oracle-data`"
+msgstr "`oracle-data`"
+
+#: ../../04_building-apps/sdk/01_typescript.md:43
+msgid "Parse, encode and validate oracle data"
+msgstr "解析、编码和验证甲骨文数据"
+
+#: ../../04_building-apps/sdk/01_typescript.md:43
+msgid "`money-like-to-node`"
+msgstr "`money-like-to-node`"
+
+#: ../../04_building-apps/sdk/01_typescript.md:43
+msgid "Convert human-readable money objects to node API format"
+msgstr "将人可读货币对象转换为节点API格式"
+
+#: ../../04_building-apps/sdk/01_typescript.md:43
+msgid "`signature-adapter`"
+msgstr "`signature-adapter`"
+
+#: ../../04_building-apps/sdk/01_typescript.md:43
+msgid "7.0.1"
+msgstr "7.0.1"
+
+#: ../../04_building-apps/sdk/01_typescript.md:43
+msgid "6.1.7"
+msgstr "6.1.7"
+
+#: ../../04_building-apps/sdk/01_typescript.md:43
+msgid "Multi-provider transaction signing adapter"
+msgstr "多提供者交易签名适配器"
+
+#: ../../04_building-apps/sdk/01_typescript.md:43
+msgid "`browser-bus`"
+msgstr "`browser-bus`"
+
+#: ../../04_building-apps/sdk/01_typescript.md:43
+msgid "Cross-window messaging for dApps and wallets"
+msgstr "dApps 和钱包的跨窗口消息"
+
+#: ../../04_building-apps/sdk/01_typescript.md:43
+msgid "`protobuf-serialization`"
+msgstr "`protobuf-serialization`"
+
+#: ../../04_building-apps/sdk/01_typescript.md:43
+msgid "Protocol Buffers schemas and bindings"
+msgstr "协议缓冲图和约束"
+
+#: ../../04_building-apps/sdk/01_typescript.md:43
+msgid "`ride`"
+msgstr "`ride`"
+
+#: ../../04_building-apps/sdk/01_typescript.md:43
+msgid "not installable"
+msgstr "无法安装"
+
+#: ../../04_building-apps/sdk/01_typescript.md:43
+msgid "2.3.1 (published with unresolved `workspace:*` dependencies; `npm install` fails with `EUNSUPPORTEDPROTOCOL`)"
+msgstr "2.3.1 (发布时未解决的 `workspace:*` 依赖关系; `npm install` 与 `EUNSUPPORTEDPROTOCOL` 失败)"
+
+#: ../../04_building-apps/sdk/01_typescript.md:43
+msgid "2.3.1"
+msgstr "2.3.1"
+
+#: ../../04_building-apps/sdk/01_typescript.md:43
+msgid "JavaScript wrapper around the Ride compiler"
+msgstr "JavaScript 环绕 Ride 编译器"
+
+#: ../../04_building-apps/sdk/01_typescript.md:83
+msgid "Source"
+msgstr "来源"
+
+#: ../../04_building-apps/sdk/01_typescript.md:85
+msgid "Each package's README in [`packages/sdk`](https://github.com/Decentral-America/DecentralChain/tree/main/packages/sdk) documents its full API. Report bugs in the [monorepo's issue tracker](https://github.com/Decentral-America/DecentralChain/issues)."
+msgstr "每个软件包的README在 [`packages/sdk`](https://github.com/Decentral-America/DecentralChain/tree/main/packages/sdk) 中记录了它的完整API.[monorepo 的发行跟踪器](https://github.com/Decentral-America/DecentralChain/issues) 中报告错误."
+
+#: ../../04_building-apps/sdk/02_java.md:4
+msgid "Java SDK"
+msgstr ""
+
+#: ../../04_building-apps/sdk/02_java.md:6
+msgid "`io.decentralchain:java-sdk` is the SDK for Java and other JVM languages. It connects to a node's REST API, creates keys and addresses, and builds and signs every transaction type offline. It is developed in [`packages/jvm/java-sdk`](https://github.com/Decentral-America/DecentralChain/tree/main/packages/jvm/java-sdk) of the DecentralChain monorepo under the MIT license, and published to Maven Central."
+msgstr "`io.decentralchain:java-sdk` 是Java和其他JVM语言的SDK.它连接到一个节点的REST API,创建了密钥和地址,并构建和签名出线的每一个交易类型.它由麻省理工学院许可下以DecentralChain单列波的 [`packages/jvm/java-sdk`](https://github.com/Decentral-America/DecentralChain/tree/main/packages/jvm/java-sdk) 开发出,并被发布给马文中央."
+
+#: ../../04_building-apps/sdk/02_java.md:9
+msgid "Verified on 2026-10-25 against release 2.0.2, the latest on Maven Central (`repo1.maven.org/maven2/io/decentralchain/java-sdk/maven-metadata.xml`). The samples compile with JDK 25, and the account and Testnet samples ran against the public Testnet node. The transfer sample has not been broadcast as part of this documentation pass."
+msgstr "于2026-10-25年对2.0.2版进行验证,最新版本为\"马文中央\"(`repo1.maven.org/maven2/io/decentralchain/java-sdk/maven-metadata.xml`).样本与JDK 25相编译,账户和Testnet样本运行于公共的Testnet节点.移交样本尚未作为本文件通行证的一部分播出。"
+
+#: ../../04_building-apps/sdk/02_java.md:12
+msgid "Requirements"
+msgstr "所需经费"
+
+#: ../../04_building-apps/sdk/02_java.md:14
+msgid "The SDK requires **Java 25** or later. The 2.0.x jars are compiled for Java 25 (class file version 69), so an older JVM fails with `UnsupportedClassVersionError`. The package README still says Java 11; that applies to older releases only."
+msgstr "SDK需要 **爪哇语 25** 或更晚.2.0.x罐被编译为Java 25(类文件版本69),因此更古老的JVM会与 `UnsupportedClassVersionError`.软件包README仍然说Java 11;这仅适用于更古老的释放."
+
+#: ../../04_building-apps/sdk/02_java.md:16
+msgid "`java-sdk` depends on `io.decentralchain:curve25519`, which is licensed GPL-3.0-only. A program that includes it is subject to the GPL-3.0."
+msgstr "`java-sdk` 依赖于 `io.decentralchain:curve25519`,它只被许可使用GPL-3.0-.包含它的程序受GPL-3.0."
+
+#: ../../04_building-apps/sdk/02_java.md:20
+msgid "Maven:"
+msgstr "马文:"
+
+#: ../../04_building-apps/sdk/02_java.md:30
+msgid "Gradle:"
+msgstr "格莱德:"
+
+#: ../../04_building-apps/sdk/02_java.md:36
+msgid "The samples below are a minimal Maven project, kept in `docs/_samples/java` of this documentation's [repository](https://github.com/Decentral-America/docs)."
+msgstr "下面的样本是一个最低限度的马文项目,保存在本文的 `docs/_samples/java` [仓库](https://github.com/Decentral-America/docs)."
+
+#: ../../04_building-apps/sdk/02_java.md:38
+msgid "Create an Account"
+msgstr "创建账户"
+
+#: ../../04_building-apps/sdk/02_java.md:45
+msgid "An address encodes the network's chain ID: `ChainId.TESTNET` (`'!'`) gives an address starting with `31`, `ChainId.MAINNET` (`'?'`) one starting with `3D`. `PrivateKey.fromSeed` derives the same key from the same seed phrase as every other DecentralChain wallet and SDK."
+msgstr "一个地址编码了网络的链路ID:`ChainId.TESTNET` (`'!'`)给出了一个地址,从 `31`, `ChainId.MAINNET` (`'?'`)开始一个地址,从 `3D` 开始. `PrivateKey.fromSeed` 与其它DecentralChain钱包和SDK的同名种子短语得到相同的密钥."
+
+#: ../../04_building-apps/sdk/02_java.md:54
+msgid "`new Node(...)` takes a `Profile` (`MAINNET`, `TESTNET`, `STAGENET` or `LOCAL` for `http://127.0.0.1:6869`) or a node URL. The constructor makes one request, to read the chain ID from the last block, so it throws if the node can't be reached. Every `Node` method is a REST call that returns typed results: `getHeight()`, `getBalance(address)`, `getAssetBalance(address, assetId)`, `getData(address, key)`, `getTransactionInfo(id)` and more."
+msgstr "`new Node(...)` 取出一个 `Profile` (`MAINNET`, `TESTNET`, `STAGENET` 或 `LOCAL` 为 `http://127.0.0.1:6869`)或节点URL.构造者提出一个请求,从最后一个块读取链式ID,所以如果节点无法被接通,它就会抛出.每个 `Node` 方法都是返回打出的结果的 REST 调用: `getHeight()`, `getBalance(address)`, `getAssetBalance(address, assetId)`, `getData(address, key)`, `getTransactionInfo(id)` 等."
+
+#: ../../04_building-apps/sdk/02_java.md:56
+msgid "Sign and Broadcast a Transfer"
+msgstr "签名和广播传输"
+
+#: ../../04_building-apps/sdk/02_java.md:63
+msgid "**Set the chain ID on Testnet.** Transaction builders use `DccConfig.chainId()`, which defaults to Mainnet. Call `.chainId(ChainId.TESTNET)` on each builder, or set `DccConfig.chainId(ChainId.TESTNET)` once at startup. The node rejects a transaction built for another network."
+msgstr "**设定Testnet上的链式ID.** 交易构建器使用 `DccConfig.chainId()`,默认为 Mainnet.在每个构建器上呼叫 `.chainId(ChainId.TESTNET)`,或在启动时设置一次 `DccConfig.chainId(ChainId.TESTNET)`.节点拒绝为另一个网络构建的交易 。"
+
+#: ../../04_building-apps/sdk/02_java.md:64
+msgid "**`getSignedWith(privateKey)` signs offline** and sets the sender. The fee defaults to the transaction type's minimum; use `.fee(...)` or `.extraFee(...)` for a smart account or smart asset."
+msgstr "**`getSignedWith(privateKey)` 标志下线** 并设置发件人.费用默认为交易类型的最小;对智能账户或智能资产使用 `.fee(...)` 或 `.extraFee(...)`."
+
+#: ../../04_building-apps/sdk/02_java.md:65
+msgid "**`broadcast` returns once the node accepts the transaction into its pool.** `waitForTransaction(id)` waits until it is in a block, and throws if it doesn't arrive in time."
+msgstr "**`broadcast` 一旦节点接受交易进入其池后返回.** `waitForTransaction(id)` 等待到被挡住时,如不能及时到达会投出."
+
+#: ../../04_building-apps/sdk/02_java.md:66
+msgid "**A rejection throws `NodeException`.** `getErrorCode()` is the node's error code and `getMessage()` its explanation, for example error 112 for a failed state check such as an insufficient balance."
+msgstr "**拒绝会扔出 `NodeException`.** `getErrorCode()` 是节点错误代码和 `getMessage()` 的解释,例如错误112,一个失败的状态检查如余额不足."
+
+#: ../../04_building-apps/sdk/02_java.md:68
+msgid "Every transaction type has a class with a `builder(...)`: `IssueTransaction`, `MassTransferTransaction`, `DataTransaction`, `SetScriptTransaction`, `InvokeScriptTransaction` and the rest, in the `io.decentralchain.transactions` package."
+msgstr "每个交易类型都有一个带有 `builder(...)` 的类: `IssueTransaction`, `MassTransferTransaction`, `DataTransaction`, `SetScriptTransaction`, `InvokeScriptTransaction` 和其余,在 `io.decentralchain.transactions` 包中."
+

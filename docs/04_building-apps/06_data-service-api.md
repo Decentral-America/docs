@@ -61,23 +61,13 @@ All methods return `Promise<{ data: T; fetchMore?: (count: number) => Promise }>
 
 ## Example: exchange history for a pair
 
-```typescript
-const amountAssetId = 'DCC';
-const priceAssetId = '<price asset ID>'; // any asset traded on the matcher
-const matcherAddress = '31VMNVAvVh67dPZ41nMnYZvhoZFW7wwPrmq'; // Testnet matcher
+```{literalinclude} ../_samples/data-service-candles.ts
+:language: typescript
+:lines: 2-
+```
 
-const { data: candles } = await client.getCandles(amountAssetId, priceAssetId, {
-  timeStart: '2026-01-01',
-  timeEnd: '2026-12-31',
-  interval: '1d',
-  matcher: matcherAddress,
-});
-
-const result = await client.getExchangeTxs({ limit: 10, sort: 'desc' });
-console.log(result.data);
-if (result.fetchMore) {
-  const next = await result.fetchMore(10);
-}
+```{warning}
+`getCandles()` in `data-service-client-js` 4.2.0, the published release, throws `Invalid maxHeight: null` when any interval in the range has no trades: the data service returns those intervals with `null` prices and volumes, and the client rejects them. The example reads the candles endpoint (`GET /candles/{amountAsset}/{priceAsset}`) directly instead. The fix, which returns empty intervals as `null`, is in the monorepo but not yet published to npm.
 ```
 
 ## Matcher address

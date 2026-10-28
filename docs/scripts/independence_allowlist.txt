@@ -1,0 +1,12 @@
+# Lines under docs/ allowed to name a third-party project; read by
+# check_independence.py. One entry per line:
+#
+#   <path relative to docs/>: <the exact line, trimmed>  # <why it must stay>
+#
+# Only for mentions the docs can't avoid, such as an attribution a license
+# requires. Rewrite anything else. An entry that no longer matches a line
+# fails the check, so remove it when its line changes.
+#
+# The only entry is the check's own pattern; no page, sample, table or
+# asset needs one today.
+scripts/check_independence.py: FORBIDDEN = re.compile(r"waves|wavelet|@waves/|keeper wallet|wavesplatform", re.IGNORECASE)  # the check's own list of the terms it forbids

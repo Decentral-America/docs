@@ -32,6 +32,8 @@ The function tables and examples elsewhere in this reference were written for st
 
 * **`addressFromPublicKey`** gets a native (compiler-builtin) implementation, replacing the library-defined one used in V1–V5. The signature and behaviour are unchanged; only the evaluation cost differs.
 * **`take`, `drop`, `takeRight`, `dropRight`** on `ByteVector` and `String`, and **`makeString`**, switch from unchecked to complexity-checked variants — very large inputs that previously ran unmetered now count properly against a script's complexity budget. Existing scripts that stayed within reasonable sizes are unaffected.
+* **New functions**: `sqrt` for `Int` and `BigInt`; fixed-cost `makeString_2C` (up to 100 strings, 6,000-byte result) and `makeString_11C` (up to 1,000 strings, 32,767-byte result); fixed-cost `split_4C` (6,000-byte input, up to 100 items) and `split_51C` (32,767-byte input, up to 1,000 items); and `size` on a tuple.
+* **Union types are no longer allowed as `@Callable` arguments** — `func f(x: Int|String)` fails to compile with `Union type is not allowed for callable function arguments`.
 * **`InvokeExpressionTransaction`** — a new transaction type becomes visible to Ride (fields `expression: ByteVector`, `feeAssetId: ByteVector|Unit`, plus the common transaction fields).
 * From V6 onward, **every active transaction type's Ride constructor is hidden** (`hideConstructor = true`) — a script can pattern-match on `TransferTransaction`, `InvokeScriptTransaction` and so on, but can no longer construct new values of these types directly. This was not the case in V1–V5.
 
@@ -43,12 +45,15 @@ The function tables and examples elsewhere in this reference were written for st
 
 * **`calculateDelay(generator: Address, balance: Int): Int`** — computes the FairPoS block-generation delay for a hypothetical generator and generating balance, without needing to read full chain state. Complexity cost 1. Added to support Light Node use (feature 22): a light client can estimate block timing from a header alone.
 * **`Order`** gains an `attachment: ByteVector|Unit` field.
+* **`replaceByIndex(list: List[T], index: Int, element: T): List[T]`** — returns the list with one element replaced.
+* **`FOLD` and `base16` become reserved keywords**, so they can no longer name a variable or function. In a `match`, an object pattern needs at least one field (`case AttachedPayment() =>` no longer parses) and a field pattern must be a constant (`case AttachedPayment(amount = 2 + 3) =>` fails with `Only constant value could be matched with object field`).
 
 ### Version 9
 
 * **`p256Verify(message: ByteVector, signature: ByteVector, publicKey: ByteVector): Boolean`** — verifies a signature made with the NIST P-256 (secp256r1) curve. Complexity cost 43.
 * **`validateCertificateChain(certificateChain: List[ByteVector], crls: List[ByteVector], timestamp: Int): ByteVector`** — validates an X.509 certificate chain (up to 5 certificates) against certificate revocation lists as of `timestamp`. Complexity cost 43.
 * **Fixed-cost (1-complexity) encode/decode variants**: `toBase64String_1C`, `fromBase64String_1C`, `toBase16String_1C`, `fromBase16String_1C` — capped-input versions of the existing Base64/Base16 functions for scripts that need a predictable, minimal complexity cost regardless of the general-purpose function's usual cost curve.
+* **`fill(length: Int, element: T): List[T]`**, **`replaceFirst`** and **`replaceAll`** — build a list of repeated elements, and replace the first or every occurrence of a substring.
 * **`CommitToGenerationTransaction`** becomes visible to Ride for the first time — fields `endorserPublicKey: ByteVector`, `generationPeriodStart: Int`, `commitmentSignature: ByteVector`, plus the common transaction fields — matching {ref}`Deterministic Finality <02_decentralchain/09_protocol:Finality>` (feature 25). Like every transaction type since V6, its constructor is hidden; a script can pattern-match on it but not build one.
 
-Everything else available in V5 — data types, control flow, `FOLD<N>`, `invoke`/`reentrantInvoke`, script and structure definitions — carries forward into V6 through V9 unless noted above. A number of existing functions also get **cheaper** (rarely, more expensive) at a later version without changing behaviour at all — see {doc}`Complexity Changes by Version <09_complexity-changes>`.
+Everything else available in V5 — data types, control flow, `FOLD<N>`, `invoke`/`reentrantInvoke`, script and structure definitions — carries forward into V6 through V9 unless noted above. A number of existing functions also get **cheaper** (rarely, more expensive) at a later version without changing behaviour at all — see {doc}`Complexity Changes by Version <09_complexity-changes>`. The {doc}`function reference <13_function-reference/index>` lists every function of each version with its signature and cost.

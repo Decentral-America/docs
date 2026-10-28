@@ -157,6 +157,8 @@ Create a Lease
 
 You can use `Decentral.Exchange <https://decentral.exchange/>`_ online to create a lease. 
 
-* Make sure you are logged into your account. On the main screen navigate to Wallet > Leasing. 
-* On the next screen click Start Lease and then select the recipient between the list of nodes and indicate the amount you want to lease.
-* Verify all the information and click Start Lease again to confirm.
+* Make sure you are logged into your account, and open Leasing in the wallet menu.
+* Under Start a lease, enter the node address and the amount you want to lease.
+* Verify the details, including the network fee, and press and hold Hold to start lease to confirm.
+
+For leasing from code, and for checking and cancelling leases, see :doc:`Leasing <../09_user-guides/04_leasing>`.

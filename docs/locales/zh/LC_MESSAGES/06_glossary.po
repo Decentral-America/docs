@@ -1,0 +1,217 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Blockchain Costa Rica
+# This file is distributed under the same license as the DecentralChain package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: DecentralChain docs dev\n"
+"Report-Msgid-Bugs-To: https://github.com/Decentral-America/docs/issues\n"
+"POT-Creation-Date: 2026-10-27 21:54-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh\n"
+"Language-Team: Chinese <https://github.com/Decentral-America/docs>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../06_glossary.md:1
+msgid "Glossary"
+msgstr "词汇表"
+
+#: ../../06_glossary.md:3
+msgid "Terms as used across this documentation. Each entry links to the page that defines it in full."
+msgstr "本文件所用术语。每个条目链接到定义其完整内容的页面."
+
+#: ../../06_glossary.md
+msgid "DCC"
+msgstr "DCC"
+
+#: ../../06_glossary.md:7
+#, python-brace-format
+msgid "DecentralCoin, the native coin of DecentralChain. Amounts are stored in the smallest unit (`10^-8` DCC). See {ref}`Token (Asset) <02_decentralchain/02_token(asset):Token (Asset)>`."
+msgstr "DecentralCoin,是DecentralChain的本土硬币.量被存储在最小的单位(`10^-8` DCC)中.见 {ref}`Token (Asset) <02_decentralchain/02_token(asset):Token (Asset)>`."
+
+#: ../../06_glossary.md:3
+msgid "Chain ID"
+msgstr "链式标识"
+
+#: ../../06_glossary.md:10
+#, python-brace-format
+msgid "A single character identifying the network; it is part of every address and transaction. Mainnet is `?` (63) and Testnet is `!` (33). See {ref}`Mainnet, Testnet <02_decentralchain/08_mainnet-testnet-stagenet:Chain ID>`."
+msgstr "单一字符识别网络;它是每个地址和交易的一部分。Mainnet为 `?` (63),而Testnet为 `!` (33).见 {ref}`Mainnet, Testnet <02_decentralchain/08_mainnet-testnet-stagenet:Chain ID>`."
+
+#: ../../06_glossary.md:6
+msgid "Account"
+msgstr "账户"
+
+#: ../../06_glossary.md:13
+#, python-brace-format
+msgid "A key pair plus everything associated with it on chain — balances, data entries, aliases and an optional script. See {ref}`Account <02_decentralchain/01_account:Account>`."
+msgstr "一个键对加上链上与之相关的一切——平衡,数据条目,别名和一个可选脚本.见 {ref}`账户 <02_decentralchain/01_account:Account>`."
+
+#: ../../06_glossary.md:9
+msgid "Address"
+msgstr "地址"
+
+#: ../../06_glossary.md:16
+msgid "A Base58 string derived from a public key and the chain ID. Mainnet addresses start with `3D`, Testnet addresses with `31`."
+msgstr "一个从公钥和链式ID中衍生出来的 Base58 字符串.Mainnet地址以 `3D` 开头,Testnet地址以 `31`."
+
+#: ../../06_glossary.md:12
+msgid "Alias"
+msgstr "别名"
+
+#: ../../06_glossary.md:19
+msgid "A short, human-readable name for an address."
+msgstr "一个简短的,人能读取的名字 地址。"
+
+#: ../../06_glossary.md:15
+msgid "Seed"
+msgstr "种子"
+
+#: ../../06_glossary.md:22
+msgid "The secret phrase from which an account's private key is derived. Never share it."
+msgstr "账户私钥的出自密语.永远不要分享它。"
+
+#: ../../06_glossary.md:18
+msgid "dApp"
+msgstr "dApp"
+
+#: ../../06_glossary.md:25
+#, python-brace-format
+msgid "A decentralized application: an account with a Ride script whose `@Callable` functions users invoke with invoke script transactions. See {ref}`Creating and Launching a dApp <04_building-apps/08_creating-and-launching-a-dapp:Creating and Launching a dApp>`."
+msgstr "一个分散的应用程序:一个有Ride脚本的账户,其 `@Callable` 功能用户以引用脚本交易来引用.见 {ref}`创建和启动 dApp <04_building-apps/08_creating-and-launching-a-dapp:Creating and Launching a dApp>`."
+
+#: ../../06_glossary.md:21
+msgid "Smart account"
+msgstr "智能账户"
+
+#: ../../06_glossary.md:28
+#, python-brace-format
+msgid "An account with a script that must approve every transaction the account sends. See {ref}`Smart Accounts <04_building-apps/09_smart-accounts:Smart Accounts>`."
+msgstr "账户必须核准账户发送的每笔交易的脚本。见 {ref}`智能账户 <04_building-apps/09_smart-accounts:Smart Accounts>`."
+
+#: ../../06_glossary.md:24
+msgid "Smart asset"
+msgstr "智能资产"
+
+#: ../../06_glossary.md:31
+#, python-brace-format
+msgid "A token with a script that must approve every transaction involving it. See {ref}`Smart Assets <04_building-apps/10_smart-assets:Smart Assets>`."
+msgstr "写着必须批准每笔交易的脚本的标志见 {ref}`智能资产 <04_building-apps/10_smart-assets:Smart Assets>`."
+
+#: ../../06_glossary.md:27
+msgid "Blockchain Updates"
+msgstr "区链更新"
+
+#: ../../06_glossary.md:34
+#, python-brace-format
+msgid "A node extension that streams every block, microblock, state change and rollback over gRPC on port 6881. See {ref}`Blockchain Updates <04_building-apps/11_blockchain-updates:Blockchain Updates>`."
+msgstr "一个节点扩展,每个块,微块,状态变化和回滚在端口6881的gRPC上流出.见 {ref}`区链更新 <04_building-apps/11_blockchain-updates:Blockchain Updates>`."
+
+#: ../../06_glossary.md:30
+msgid "Ride"
+msgstr "Ride"
+
+#: ../../06_glossary.md:37
+#, python-brace-format
+msgid "The statically typed, functional smart-contract language of DecentralChain. See the {ref}`Ride language <03_ride-language/index:Ride Language>` section."
+msgstr "DecentralChain. 静态打字,功能智能订约语言.参见\"{ref}`Ride 语言 <03_ride-language/index:Ride Language>`\"部分."
+
+#: ../../06_glossary.md:33
+msgid "LPoS"
+msgstr ""
+
+#: ../../06_glossary.md:40
+#, python-brace-format
+msgid "Leased Proof of Stake: the consensus in which accounts can lease DCC to generating nodes. See {ref}`Node <02_decentralchain/05_node:Leased Proof of Stake>`."
+msgstr "被租借的\"Stake\"证明:账户可以租赁DCC生成节点的共识.见 {ref}`节点 <02_decentralchain/05_node:Leased Proof of Stake>`."
+
+#: ../../06_glossary.md:36
+msgid "NG"
+msgstr "NG"
+
+#: ../../06_glossary.md:43
+msgid "The protocol that streams transactions in microblocks between blocks."
+msgstr "以小块进行区块间交易的协议 。"
+
+#: ../../06_glossary.md:39
+msgid "Generating balance"
+msgstr "生成余额"
+
+#: ../../06_glossary.md:46
+msgid "The balance that counts towards the chance of generating the next block, including leased DCC."
+msgstr "平衡意味着产生下个区块的机会,包括租赁的DCC."
+
+#: ../../06_glossary.md:42
+msgid "Microblock"
+msgstr "微块"
+
+#: ../../06_glossary.md:49
+msgid "A small batch of transactions appended to the current block before the next key block."
+msgstr "在下个密钥块之前,有一小批交易附在了当前块后."
+
+#: ../../06_glossary.md:45
+msgid "Deterministic Finality"
+msgstr "决定性的终结性"
+
+#: ../../06_glossary.md:52
+#, python-brace-format
+msgid "Feature 25: generators endorse blocks with BLS signatures and a block is final once endorsed by two thirds of committed stake. See {ref}`Finality <02_decentralchain/09_protocol:Finality>`."
+msgstr "特性25:发电机认可有BLS签名的区块,一个区块一旦获得三分之二承诺的股份认可即为最后。见 {ref}`终结性 <02_decentralchain/09_protocol:Finality>`."
+
+#: ../../06_glossary.md:48
+msgid "Blockchain feature"
+msgstr "块链特性"
+
+#: ../../06_glossary.md:55
+#, python-brace-format
+msgid "A numbered protocol change activated on a network by generator vote or network defaults. See {doc}`Features and Activation <05_node-guide/10_features-and-activation>`."
+msgstr "通过生成器投票或网络默认在网络上激活编号协议更改.见 {doc}`特征和活性 <05_node-guide/10_features-and-activation>`."
+
+#: ../../06_glossary.md:51
+msgid "Node"
+msgstr "节点"
+
+#: ../../06_glossary.md:58
+msgid "Software that validates transactions, stores blocks and serves the REST API."
+msgstr "用于验证交易,存储块并服务REST API的软件."
+
+#: ../../06_glossary.md:54
+msgid "Matcher"
+msgstr "匹配者"
+
+#: ../../06_glossary.md:61
+msgid "The service that matches orders on the DecentralChain exchange."
+msgstr "匹配DecentralChain交换机订单的服务."
+
+#: ../../06_glossary.md:57
+msgid "Cubensis Connect"
+msgstr "Cubensis Connect"
+
+#: ../../06_glossary.md:64
+#, python-brace-format
+msgid "DecentralChain's browser-extension wallet. See {doc}`Wallet Integration <04_building-apps/04_wallet-integration>`."
+msgstr "DecentralChain的浏览器扩展钱包.见 {doc}`钱包整合 <04_building-apps/04_wallet-integration>`."
+
+#: ../../06_glossary.md:60
+msgid "DecentralScan"
+msgstr "DecentralScan"
+
+#: ../../06_glossary.md:67
+msgid "The DecentralChain block explorer."
+msgstr "DecentralChain区块探险家."
+
+#: ../../06_glossary.md:63
+msgid "Decentralite"
+msgstr "Decentralite"
+
+#: ../../06_glossary.md:70
+msgid "The smallest unit of DCC."
+msgstr "DCC最小的单位."
+

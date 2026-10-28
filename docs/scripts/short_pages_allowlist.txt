@@ -1,0 +1,21 @@
+# Published pages allowed to stay under 60 lines (check_page_length.py).
+# One path per line, relative to docs/, with the reason after "#".
+# Remove an entry as soon as its page is expanded; the check reports entries
+# that are no longer needed. Do not add new pages here to get past the check.
+
+03_ride-language/08_stdlib-versions.md  # A per-version summary table; the full V6-V9 reference is generated (ECO-191)
+04_building-apps/02_client-libraries-and-sdk.md  # Landing page that routes to the per-language SDK pages
+04_building-apps/how-to/01_airdrop.md  # Complete task guide; the code is included from _samples/airdrop.ts
+04_building-apps/how-to/02_payments.md  # Complete task guide; the code is included from _samples/payments.ts
+04_building-apps/how-to/03_token-exchange.md  # Complete task guide; the code is included from _samples
+04_building-apps/how-to/04_voting.md  # Complete task guide; the code is included from _samples
+04_building-apps/how-to/05_list-as-argument.md  # Complete task guide; the code is included from _samples
+05_node-guide/02_node-extensions.md  # Stub: needs per-extension configuration (not expanded yet)
+05_node-guide/03_custom-blockchain.md  # Stub: needs a worked custom-chain example (not expanded yet)
+05_node-guide/07_upgrade.md  # Stub: needs per-version upgrade notes (not expanded yet)
+05_node-guide/08_wallet-and-generating.md  # Stub: needs a generator setup walkthrough (not expanded yet)
+05_node-guide/09_logging.md  # Stub: needs logger configuration examples (not expanded yet)
+05_node-guide/11_troubleshooting.md  # Stub: needs more symptoms and fixes (not expanded yet)
+05_node-guide/13_install-macos.md  # Install steps are complete but short; verification tracked in ECO-199
+05_node-guide/14_install-windows.md  # Install steps are complete but short; verification tracked in ECO-199
+06_contributing.md  # Stub: needs the translation and review workflow (not expanded yet)

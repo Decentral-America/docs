@@ -32,7 +32,7 @@ export current_language=es      # or any locale in docs/locales/PUBLISHED
 sphinx-build -b html docs/ /tmp/out -D language="${current_language}"
 ```
 
-Also run the link checker before opening a PR — it won't block CI (see below) but tells you if you just broke something external:
+Also run the link checker before opening a PR — CI fails on any broken link (see below):
 
 ```bash
 sphinx-build -b linkcheck docs/ /tmp/linkcheck-out
@@ -57,7 +57,9 @@ sphinx-build -b linkcheck docs/ /tmp/linkcheck-out
 
 `.github/workflows/pr_check_workflow.yml` runs two jobs on every PR to `main`/`dev`:
 - `build_check`: `sphinx-build -W` — **blocks merge** on any warning (broken `:ref:`, bad directive, etc.). It also validates `docs/locales/PUBLISHED` (`test_published_locales.py`) and checks the built language switcher against it (`check_published_languages.py`); the deploy job re-checks every built language, including the partial-translation banner, before it uploads the site.
-- `link_check`: `sphinx-build -b linkcheck` — **does not block merge** (`continue-on-error: true`), because external links go stale independent of any PR and shouldn't hold up unrelated work. Check its output anyway; it catches real rot.
+- `link_check`: `sphinx-build -b linkcheck` — **fails on any broken link** (no `continue-on-error`). A link that breaks fails the next PR that touches `docs/**`, whatever that PR changes: fix the link, or, only for a host that can never be checked from CI, add it to `linkcheck_ignore` in `conf.py` with a comment saying why.
+- `translations` (`docs/scripts/check_translations.sh`): every locale has a catalog for every section, every catalog passes `msgfmt --check`, no translated message changes the English markup (role names, `:ref:`/`:doc:` targets, backticks), drops a name `docs/locales/glossary.csv` never translates or names a third-party project (the independence terms), and the publish rule holds (a locale in `docs/locales/PUBLISHED` is at least 80% translated, or marked `partial`). It writes the coverage per locale to the job summary, and builds every published language with `-W`. The deploy workflow runs the same script, and `buildDocs.sh` builds every language and version with `-W`.
+- `independence_check` (`docs_checks.yml`, `docs/scripts/check_independence.py`): no page, table, sample, script or static asset under `docs/` names a third-party project (the `translations` job applies the same terms to every translated message), decoded `base64:` literals included. The forbidden terms are in `docs/_terminology.md`. A mention the docs can't avoid goes in `docs/scripts/independence_allowlist.txt` as `<path>: <exact line>  # <reason>`. The same job fails on a stub page (`check_page_length.py`), and the other `docs_checks.yml` jobs typecheck and compile the samples and run Vale.
 
 ## Content conventions
 
@@ -174,9 +176,29 @@ Both live in the navbar, both are populated from `html_context` built in `conf.p
 
 ## Adding a new language
 
-1. Generate the `.po` catalog via `sphinx-intl` (see `docs/locales/` for existing structure — each language is `LC_MESSAGES/*.po` + compiled `.mo`)
-2. Translate the `.po` files (GitLocalize integration handles this for maintained languages — see `docs/06_contributing.md`)
-3. Publish it: add a line to `docs/locales/PUBLISHED` (`<code>`, or `<code> partial` while the translation is incomplete). A catalog dir that isn't listed is neither built nor offered in the switcher.
+1. Create its catalogs: `mkdir -p docs/locales/<code>/LC_MESSAGES`, then run `docs/scripts/update_translations.sh` from a checkout whose path has no spaces. The script regenerates every locale's catalogs (one `.po` per section) and normalises their headers. Run it after adding a top-level page or section too: the `translations` check fails when a locale has no catalog for a section.
+2. Translate the `.po` files (GitLocalize integration handles this for maintained languages — see `docs/06_contributing.md`). Keep the markup exactly as in the English: role names (`:math:`, `:strong:`), `:ref:` and `:doc:` targets, and no space just inside a role's backticks. Translate a link's text, never its `<target>`.
+3. Check it: `python3 docs/scripts/translations.py coverage docs/locales` prints the share translated per locale.
+4. Publish it: add a line to `docs/locales/PUBLISHED` (`<code>`, or `<code> partial` while the translation is incomplete). A listed locale without `partial` must be at least 80% translated, or the PR checks and the deploy fail. A catalog dir that isn't listed is neither built nor offered in the switcher.
+
+## Translating with a machine translation engine or a translator
+
+`docs/scripts/translate_catalogs.py` moves messages between the catalogs and whoever translates them, as JSON lines, and checks every translation before it lands:
+
+```bash
+python3 docs/scripts/translate_catalogs.py export docs/locales fr /tmp/fr.jsonl 09_user-guides   # {"catalog", "id"} per untranslated message
+# translate: add a "str" to each line (an engine, a translator, or both)
+python3 docs/scripts/translate_catalogs.py import docs/locales fr /tmp/fr-done.jsonl             # rejects go to /tmp/fr-done.rejected.jsonl
+```
+
+`docs/scripts/machine_translate.py` is the engine step: it machine-translates an export offline with an [Argos Translate](https://github.com/argosopentech/argospm-index) model (OPUS-MT, run by CTranslate2; no API key), swapping code, roles, URLs and the glossary's fixed names for placeholders first so the engine can't touch them, and copying code-only messages (Ride signatures, type names, hashes) unchanged. Its docstring has the setup:
+
+```bash
+pip install ctranslate2 sentencepiece babel                                  # Python 3.12 on Intel Macs
+python3 docs/scripts/machine_translate.py /path/to/en_fr fr /tmp/fr.jsonl /tmp/fr-done.jsonl   # an unpacked Argos en→fr package
+```
+
+`import` rejects a translation that changes the markup, drops a name the glossary keeps (DecentralChain, DCC, Ride, Cubensis Connect, DecentralScan...), names a third-party project or changes a `{placeholder}`. Use the fixed terms in `docs/locales/glossary.csv`, one column per locale. The home page's "Learn More" button labels stay in English: they carry a reference, and translating them fails the `-W` build. A machine-translated locale counts towards coverage straight away, but goes into `PUBLISHED` only after a native or fluent speaker has reviewed it (at least Getting Started, the Node Guide and Building Apps). Record the reviewer and date in the comment on its `PUBLISHED` line, for example `fr  # reviewed by <name>, 2026-11-02`.
 
 ## Adding a new version/branch
 
@@ -189,6 +211,10 @@ Both live in the navbar, both are populated from `html_context` built in `conf.p
 - GitHub anchor links like `...#readme` or `...#some-heading` sometimes get flagged broken by `linkcheck` — GitHub renders those anchors client-side via JS, which a static-HTML link checker can't see. Verify manually (`curl -sI <url>` plus check the target heading exists) before "fixing" a false positive.
 - Redirects (`master` → `main`, `developers.google.com/protocol-buffers` → `protobuf.dev`) show as `redirect` not `broken` in linkcheck output — worth fixing for cleanliness but not urgent; they still resolve.
 
-## Spanish translation
+## Translation status
 
-Currently ~49% complete and has real content-accuracy issues (some translated `:ref:` targets drifted from the actual English section names, e.g. a translated target reading `02_token(activo)` when the real doc is `02_token(asset)`). This is a known, accepted state — not a build blocker, not something to silently "fix" by guessing corrections. If you're doing translation work, coordinate on this specifically.
+All 10 locales are machine-translated (ECO-400, 2026-10-28, `machine_translate.py` with the Argos models): 89% (bn) to 99.8% (es, de, fr, pt) of the messages, every locale building with `-W`. The `translations` job summary has the current figures. None of it has been reviewed by a native speaker yet. Spanish is published as `partial`, so its machine translation is live; the other nine stay unpublished until a reviewer signs each off in `docs/locales/PUBLISHED`.
+
+What stays in English: messages the engine couldn't translate without breaking their markup (left out by `machine_translate.py`, or rejected by `import`), and messages put back to English because they broke the `-W` build. A `*`, `|` or `\*` the engine moved next to a space reads as reST markup: the `translations` check compares the number of `*`, `|` and reference `_` outside code with the English, and the `-W` build of a published locale catches the rest.
+
+Earlier Spanish catalogs had broken markup: translated role names (`:matemáticas:` for `:math:`), translated `:ref:` targets (`02_token(activo)` for `02_token(asset)`) and stray spaces inside backticks, 87 build warnings in all. ECO-204 put the English role names and targets back from each msgid. Don't "fix" translated content by guessing; the `translations` check catches markup mistakes, and the wording is the reviewers' job.

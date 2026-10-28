@@ -36,7 +36,7 @@ In the user interface, the amount and price are usually presented as values with
 Amount
 ------
 
-Consider buying :math:`2.13` TDX at the price of :math:`0.35016774` DecentralCoins for one TDX. Here the asset pair is TDX / DecentralCoins. The amount in the order is the number of units sold or bought in conventional "pennies". This value in the current case is :math:`213`, since :math:`2.13` TDX :math:`= 2.13 × 10^{2}` = 213` "pennies" of TDX. So, to bring the amount to the normalized form, it is multiplied by :math:`10^{amountAssetDecimals}`.
+Consider buying :math:`2.13` TDX at the price of :math:`0.35016774` DecentralCoins for one TDX. Here the asset pair is TDX / DecentralCoins. The amount in the order is the number of units sold or bought in conventional "pennies". This value in the current case is :math:`213`, since :math:`2.13` TDX :math:`2.13 × 10^{2} = 213` "pennies" of TDX. So, to bring the amount to the normalized form, it is multiplied by :math:`10^{amountAssetDecimals}`.
 
 Price
 -----

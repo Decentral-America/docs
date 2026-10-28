@@ -79,3 +79,38 @@ jobs:
     - name: Show broken links
       if: failure()
       run: grep -E '\[broken\]' /tmp/docs-pr-linkcheck/output.txt || true
+
+  translations:
+    # The translation pipeline (ECO-204): every locale has a catalog for every
+    # section, every catalog passes `msgfmt --check` and keeps the English
+    # markup, the coverage per locale goes to the job summary, and the publish
+    # rule holds (docs/locales/PUBLISHED: at least 80% translated, or `partial`).
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+    - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
+
+    - name: Set up Python
+      uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97  # v7.0.0
+      with:
+        python-version: '3.14'
+        architecture: 'x64'
+        cache: pip
+        cache-dependency-path: docs/requirements.txt
+
+    - name: Install dependencies
+      run: |
+        python3 -m pip install --upgrade pip
+        python3 -m pip install -r docs/requirements.txt
+        sudo apt-get update -qq && sudo apt-get install -y -qq gettext
+
+    - name: Catalogs, msgfmt, markup, coverage and the publish rule
+      run: bash docs/scripts/check_translations.sh /tmp/translations
+
+    - name: Every published language builds with warnings as errors
+      run: |
+        for lang in $(python3 docs/scripts/published_locales.py docs/locales); do
+          [ "${lang}" = en ] && continue
+          current_language="${lang}" sphinx-build -W -q -b html docs/ "/tmp/docs-${lang}" -D language="${lang}"
+        done

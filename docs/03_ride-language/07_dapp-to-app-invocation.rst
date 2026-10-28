@@ -170,7 +170,7 @@ where:
 Weight Limitations
 ^^^^^^^^^^^^^^^^^^
 
-* The maximum weight of the value is :math:`307200`.
+* The maximum weight of the value is :math:`344764`.
 * A comparison of values is not allowed if the weight of each value exceeds :math:`13000`.
 
 If the limitations are exceeded, the script fails.

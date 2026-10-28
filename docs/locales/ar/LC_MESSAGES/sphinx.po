@@ -1,66 +1,86 @@
-
+# Arabic translations for DecentralChain docs.
+# Copyright (C) 2026 ORGANIZATION
+# This file is distributed under the same license as the DecentralChain docs project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: DecentralChain docs VERSION\n"
+"Report-Msgid-Bugs-To: https://github.com/Decentral-America/docs/issues\n"
+"POT-Creation-Date: 2026-10-27 21:55-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ar\n"
+"Language-Team: Arabic <https://github.com/Decentral-America/docs>\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=0 && n%100<=2 ? 4 : 5);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
 
 #: ../../../../../.envs/docs/lib/python3.10/site-packages/ablog/templates/archives.html:3
 msgid "Archives"
-msgstr ""
+msgstr "المحفوظات"
 
 #: ../../../../../.envs/docs/lib/python3.10/site-packages/ablog/templates/authors.html:2
 msgid "Authors"
-msgstr ""
+msgstr "المؤلفون"
 
 #: ../../../../../.envs/docs/lib/python3.10/site-packages/ablog/templates/categories.html:3
 msgid "Categories"
-msgstr ""
+msgstr "فئات الأطفال"
 
 #: ../../../../../.envs/docs/lib/python3.10/site-packages/ablog/templates/collection.html:50
 msgid "Read more ..."
-msgstr ""
+msgstr "اقرأ أكثر..."
 
 #: ../../../../../.envs/docs/lib/python3.10/site-packages/ablog/templates/languages.html:3
 msgid "Languages"
-msgstr ""
+msgstr "اللغات"
 
 #: ../../../../../.envs/docs/lib/python3.10/site-packages/ablog/templates/locations.html:3
 msgid "Locations"
-msgstr ""
+msgstr "الموقع"
 
 #: ../../../../../.envs/docs/lib/python3.10/site-packages/ablog/templates/postcard2.html:4
 msgid "Update"
-msgstr ""
+msgstr "آخر"
 
 #: ../../../../../.envs/docs/lib/python3.10/site-packages/ablog/templates/postcard2.html:10
 msgid "Author"
-msgstr ""
+msgstr "صاحب البلاغ"
 
 #: ../../../../../.envs/docs/lib/python3.10/site-packages/ablog/templates/postcard2.html:21
 msgid "Location"
-msgstr ""
+msgstr "الموقع"
 
 #: ../../../../../.envs/docs/lib/python3.10/site-packages/ablog/templates/postcard2.html:31
 msgid "Language"
-msgstr ""
+msgstr "اللغة"
 
 #: ../../../../../.envs/docs/lib/python3.10/site-packages/ablog/templates/postcard2.html:41
 msgid "Category"
-msgstr ""
+msgstr "الفئة"
 
 #: ../../../../../.envs/docs/lib/python3.10/site-packages/ablog/templates/postcard2.html:51
 #: ../../../../../.envs/docs/lib/python3.10/site-packages/ablog/templates/tagcloud.html:2
 msgid "Tags"
-msgstr ""
+msgstr "الخنازير"
 
 #: ../../../../../.envs/docs/lib/python3.10/site-packages/ablog/templates/postcard2.html:54
 msgid "Tag"
-msgstr ""
+msgstr "Tag"
 
 #: ../../../../../.envs/docs/lib/python3.10/site-packages/ablog/templates/postnavy.html:5
 msgid "Previous"
-msgstr ""
+msgstr "ما قبل"
 
 #: ../../../../../.envs/docs/lib/python3.10/site-packages/ablog/templates/postnavy.html:15
 msgid "Next"
-msgstr ""
+msgstr "التالي"
 
 #: ../../../../../.envs/docs/lib/python3.10/site-packages/ablog/templates/recentposts.html:3
 msgid "Recent Posts"
-msgstr ""
+msgstr "الوظائف الأخيرة"
+

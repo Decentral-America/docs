@@ -1,0 +1,2813 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Blockchain Costa Rica
+# This file is distributed under the same license as the DecentralChain package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: DecentralChain docs dev\n"
+"Report-Msgid-Bugs-To: https://github.com/Decentral-America/docs/issues\n"
+"POT-Creation-Date: 2026-10-28 01:36-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: es\n"
+"Language-Team: Spanish <https://github.com/Decentral-America/docs>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../05_node-guide/01_node-rest-api.md:1
+msgid "Node REST API"
+msgstr "Node REST API"
+
+#: ../../05_node-guide/01_node-rest-api.md:3
+msgid "Every DecentralChain node exposes an HTTP REST API, compatible in shape with the Dcc node API it was forked from. It's how wallets, explorers, and SDKs read chain state (balances, blocks, transactions) and broadcast signed transactions, without needing their own indexer."
+msgstr "Cada nodo DecentralChain expone una API de REST HTTP, compatible con la API de nodos Dcc que fue borrada. Es como billeteras, exploradores y SDKs leen estado de cadena (balances, bloques, transacciones) y transmiten transacciones firmadas, sin necesidad de su propio indexador."
+
+#: ../../05_node-guide/01_node-rest-api.md:5
+msgid "You normally don't call this API with raw HTTP requests — use [`@decentralchain/node-api-js`](https://www.npmjs.com/package/@decentralchain/node-api-js), the typed JavaScript/TypeScript client (soon to be renamed `node-api` in the monorepo, but install it under its current published name for now — see [Client Libraries and SDK](../04_building-apps/02_client-libraries-and-sdk)), as shown in [How-To Guides](../04_building-apps/03_how-to-guides). Its namespaces map directly onto the REST API's resource areas:"
+msgstr "Normalmente no llama a esta API con solicitudes de HTTP crudas — use [`@decentralchain/node-api-js`](https://www.npmjs.com/package/@decentralchain/node-api-js), el cliente JavaScript/TypeScript tipo (sólo para ser renombrado `node-api` en el monorepo, pero lo instale bajo su nombre publicado actual por ahora— vea [Bibliotecas de clientes y SDK](../04_building-apps/02_client-libraries-and-sdk)), como se muestra en [Cómo-A Guías](../04_building-apps/03_how-to-guides). Sus espacios de nombres se ubican directamente en las áreas de recursos de la API REST:"
+
+#: ../../05_node-guide/01_node-rest-api.md
+msgid "Namespace"
+msgstr "Namespace"
+
+#: ../../05_node-guide/01_node-rest-api.md
+msgid "Covers"
+msgstr "Fundas"
+
+#: ../../05_node-guide/01_node-rest-api.md
+msgid "`addresses`"
+msgstr "`addresses`"
+
+#: ../../05_node-guide/01_node-rest-api.md
+#, python-brace-format
+msgid "Address info, {ref}`balances <02_decentralchain/01_account:Account Balance>`, on-chain data entries"
+msgstr "Información de la dirección, {ref}`saldos <02_decentralchain/01_account:Account Balance>`, entradas de datos en cadena"
+
+#: ../../05_node-guide/01_node-rest-api.md
+msgid "`alias`"
+msgstr "`alias`"
+
+#: ../../05_node-guide/01_node-rest-api.md
+#, python-brace-format
+msgid "{ref}`Alias <02_decentralchain/01_account:Alias>` lookup by address or name"
+msgstr "{ref}`Alias <02_decentralchain/01_account:Alias>` buscar por dirección o nombre"
+
+#: ../../05_node-guide/01_node-rest-api.md
+msgid "`assets`"
+msgstr "`assets`"
+
+#: ../../05_node-guide/01_node-rest-api.md
+#, python-brace-format
+msgid "{ref}`Asset <02_decentralchain/02_token(asset):Token (Asset)>` details, distributions, balances"
+msgstr "{ref}`Activo <02_decentralchain/02_token(asset):Token (Asset)>` detalles, distribuciones, saldos"
+
+#: ../../05_node-guide/01_node-rest-api.md
+msgid "`blocks`"
+msgstr "`blocks`"
+
+#: ../../05_node-guide/01_node-rest-api.md
+#, python-brace-format
+msgid "{ref}`Block <02_decentralchain/04_block:Block>` headers, height, sequences"
+msgstr "Cabeceras {ref}`Bloque <02_decentralchain/04_block:Block>`, altura, secuencias"
+
+#: ../../05_node-guide/01_node-rest-api.md
+msgid "`consensus`"
+msgstr "`consensus`"
+
+#: ../../05_node-guide/01_node-rest-api.md
+msgid "Consensus algorithm parameters, generating balance"
+msgstr "Parámetros de algoritmo de consenso, generando equilibrio"
+
+#: ../../05_node-guide/01_node-rest-api.md
+msgid "`leasing`"
+msgstr "`leasing`"
+
+#: ../../05_node-guide/01_node-rest-api.md
+#, python-brace-format
+msgid "Active leases, {ref}`lease <02_decentralchain/05_node:Leased Proof of Stake>` info"
+msgstr "Alquileres activos, información {ref}`arrendamiento <02_decentralchain/05_node:Leased Proof of Stake>`"
+
+#: ../../05_node-guide/01_node-rest-api.md
+msgid "`transactions`"
+msgstr "`transactions`"
+
+#: ../../05_node-guide/01_node-rest-api.md
+msgid "Broadcast, transaction info, status, unconfirmed pool"
+msgstr "Transmisión, información de transacción, estado, piscina no confirmada"
+
+#: ../../05_node-guide/01_node-rest-api.md
+#: ../../05_node-guide/03_custom-blockchain.md
+msgid "`rewards`"
+msgstr "`rewards`"
+
+#: ../../05_node-guide/01_node-rest-api.md
+#, python-brace-format
+msgid "{ref}`Block reward <02_decentralchain/05_node:Block Reward>` — current size and voting state"
+msgstr "{ref}`Recompensa del bloque <02_decentralchain/05_node:Block Reward>` — actual tamaño y estado de votación"
+
+#: ../../05_node-guide/01_node-rest-api.md
+msgid "`node`"
+msgstr "`node`"
+
+#: ../../05_node-guide/01_node-rest-api.md
+msgid "Node status and version"
+msgstr "Nodo de estado y versión"
+
+#: ../../05_node-guide/01_node-rest-api.md
+msgid "`peers`"
+msgstr "`peers`"
+
+#: ../../05_node-guide/01_node-rest-api.md
+msgid "Connected, known, and blacklisted peers"
+msgstr "Pares conectados, conocidos y en lista negra"
+
+#: ../../05_node-guide/01_node-rest-api.md
+msgid "`eth`"
+msgstr "`eth`"
+
+#: ../../05_node-guide/01_node-rest-api.md
+msgid "Ethereum-compatibility endpoints"
+msgstr "Ethereum-compatibility endpoints"
+
+#: ../../05_node-guide/01_node-rest-api.md
+msgid "`activation`"
+msgstr "`activation`"
+
+#: ../../05_node-guide/01_node-rest-api.md
+msgid "Feature activation status"
+msgstr "Estado de activación de la función"
+
+#: ../../05_node-guide/01_node-rest-api.md
+msgid "`utils`"
+msgstr "`utils`"
+
+#: ../../05_node-guide/01_node-rest-api.md
+msgid "Hashing, seed generation, script compilation"
+msgstr "Hashing, generación de semillas, compilación de scripts"
+
+#: ../../05_node-guide/01_node-rest-api.md:23
+msgid "If you're running your own node, point the client at its own host and port instead of a public endpoint like `https://testnet-node.decentralchain.io` — check your node's configuration file for the REST API port it's bound to."
+msgstr "Si está ejecutando su propio nodo, indique al cliente en su propio host y puerto en lugar de un punto final público como `https://testnet-node.decentralchain.io` — compruebe el archivo de configuración de su nodo para el puerto REST API que está obligado a."
+
+#: ../../05_node-guide/01_node-rest-api.md:25
+msgid "Base URL, port and interactive docs"
+msgstr "Base URL, puerto y documentos interactivos"
+
+#: ../../05_node-guide/01_node-rest-api.md:27
+msgid "A node listens on port `6869` (`dcc.rest-api.port`) and, by default, only on `127.0.0.1`. The node bundles an OpenAPI description (`openapi.yaml`) and Swagger UI; open the node's API root in a browser to explore every endpoint."
+msgstr "Un nodo escucha en el puerto `6869` (`dcc.rest-api.port`) y, por defecto, sólo en `127.0.0.1`. El nodo incluye una descripción OpenAPI (`openapi.yaml`) y Swagger UI; abre la raíz de API del nodo en un navegador para explorar cada punto final."
+
+#: ../../05_node-guide/01_node-rest-api.md:30
+msgid "Verified against node-scala v1.8.1, the version the public Testnet runs, on 2026-10-27."
+msgstr "Verificado contra node-scala v1.8.1, la versión que el público Testnet corre, en 2026-10-27."
+
+#: ../../05_node-guide/01_node-rest-api.md:33
+msgid "Authentication"
+msgstr "Autenticación"
+
+#: ../../05_node-guide/01_node-rest-api.md:35
+msgid "Most read-only endpoints are public. Privileged ones — wallet and address management (`GET/POST /addresses`, `GET /wallet/seed`), transaction signing on behalf of the node wallet (`POST /transactions/sign`), `/debug/*`, `GET /addresses/seq/*` and `GET /utils/seed*` (since v1.8.0), all `/peers/*` endpoints (including the read-only `GET /peers/all`, `/peers/connected`, `/peers/blacklisted` and `/peers/suspended`, plus `/peers/connect` and `/peers/clearblacklist`) and `/node/stop` — require an `X-Api-Key` header matching the hash in `dcc.rest-api.api-key-hash`. See [Configuration](05_configuration). Requests with a wrong key get `403`. Fee estimation (`POST /transactions/calculateFee`) does not need a key."
+msgstr ""
+
+#: ../../05_node-guide/01_node-rest-api.md:37
+msgid "The public Testnet gateway (`https://testnet-node.decentralchain.io`) deliberately exposes the read-only `GET /peers/*` lists without a key; on your own node they require `X-Api-Key`. The gateway does not route the write endpoints (`POST /peers/connect` returns `404`)."
+msgstr "La puerta de entrada pública Testnet (`https://testnet-node.decentralchain.io`) expone deliberadamente las listas de sólo lectura `GET /peers/*` sin una llave; en su propio nodo requieren `X-Api-Key`. La puerta de entrada no recorre los puntos finales de escritura (`POST /peers/connect` vuelve `404`)."
+
+#: ../../05_node-guide/01_node-rest-api.md:39
+msgid "Set Up an API Key"
+msgstr "Configurar una clave de API"
+
+#: ../../05_node-guide/01_node-rest-api.md:41
+msgid "The node stores only a hash of the key, never the key itself:"
+msgstr "El nodo almacena sólo un hash de la llave, nunca la clave en sí:"
+
+#: ../../05_node-guide/01_node-rest-api.md:43
+msgid "Choose a long random key, for example with `openssl rand -hex 32` or a password manager."
+msgstr "Elija una tecla aleatoria larga, por ejemplo con `openssl rand -hex 32` o un administrador de contraseñas."
+
+#: ../../05_node-guide/01_node-rest-api.md:44
+msgid "Hash it with your own node's `POST /utils/hash/secure`, which needs no key:"
+msgstr "Cógelo con el `POST /utils/hash/secure` de tu propio nodo, que no necesita ninguna llave:"
+
+#: ../../05_node-guide/01_node-rest-api.md:54
+msgid "Run this against your own node rather than a public one, so the key never leaves your machine."
+msgstr "Ejecute esto contra su propio nodo en lugar de un público, así que la llave nunca deja su máquina."
+
+#: ../../05_node-guide/01_node-rest-api.md:55
+msgid "Put the `hash` value in the configuration as `dcc.rest-api.api-key-hash` and restart the node."
+msgstr "Ponga el valor `hash` en la configuración como `dcc.rest-api.api-key-hash` y reinicie el nodo."
+
+#: ../../05_node-guide/01_node-rest-api.md:56
+msgid "Send the key itself, not the hash, in the `X-Api-Key` header:"
+msgstr "Envíe la llave misma, no el hash, en el encabezado `X-Api-Key`:"
+
+#: ../../05_node-guide/01_node-rest-api.md:62
+msgid "The node compares the hash of the header value with `api-key-hash`. While `api-key-hash` is empty (the default), every protected endpoint answers `403` with error `2`, whatever key is sent. The legacy header name `api_key` is still accepted, but use `X-Api-Key`."
+msgstr "El nodo compara el hash del valor de cabecera con `api-key-hash`. Si bien `api-key-hash` está vacío (por defecto), cada punto final protegido responde `403` con error `2`, cualquiera que sea la clave es enviada. El nombre de cabecera legado `api_key` sigue siendo aceptado, pero use `X-Api-Key`."
+
+#: ../../05_node-guide/01_node-rest-api.md:64
+msgid "Anyone with the key can sign transactions with the node's wallet and stop the node. Keep the REST API bound to `127.0.0.1`, or put it behind a reverse proxy that blocks the protected paths, before you expose a node to the internet."
+msgstr "Cualquier persona con la llave puede firmar transacciones con la cartera del nodo y detener el nodo. Mantenga la API REST atada a `127.0.0.1`, o ponerla detrás de un proxy reverso que bloquea los caminos protegidos, antes de exponer un nodo a Internet."
+
+#: ../../05_node-guide/01_node-rest-api.md:66
+msgid "Commonly used endpoints"
+msgstr "Puntos finales usados comúnmente"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Endpoint"
+msgstr "Endpoint"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+#: ../../05_node-guide/02_node-extensions.md:11
+#: ../../05_node-guide/03_custom-blockchain.md
+#: ../../05_node-guide/04_install-docker.md:5
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "Purpose"
+msgstr "Propósito"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`GET /node/status`"
+msgstr "`GET /node/status`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Blockchain height, state height, update time and `generationPeriodLength`"
+msgstr "Altura de bloque, altura del estado, tiempo de actualización y `generationPeriodLength`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`GET /node/version`"
+msgstr "`GET /node/version`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Node version"
+msgstr "Versión de nodos"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`GET /blocks/height`, `/blocks/last`"
+msgstr "`GET /blocks/height`, `/blocks/last`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Current height and last block"
+msgstr "Altura actual y última cuadra"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`GET /blocks/height/finalized`, `/blocks/headers/finalized`"
+msgstr "`GET /blocks/height/finalized`, `/blocks/headers/finalized`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Finalized height and header"
+msgstr "Altura finalizada y cabecera"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+#, python-brace-format
+msgid "`GET /addresses/balance/{address}`"
+msgstr "`GET /addresses/balance/{address}`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Address balance"
+msgstr "Saldo de dirección"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`GET /assets/details`"
+msgstr "`GET /assets/details`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Asset information"
+msgstr "Información sobre el activo"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+#, python-brace-format
+msgid "`GET /transactions/info/{id}`, `/transactions/status`"
+msgstr "`GET /transactions/info/{id}`, `/transactions/status`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Transaction lookup and confirmation status"
+msgstr "Consulta de transacciones y estado de confirmación"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`POST /transactions/broadcast`"
+msgstr "`POST /transactions/broadcast`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Submit a signed transaction"
+msgstr "Presentar una transacción firmada"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`POST /transactions/calculateFee`"
+msgstr "`POST /transactions/calculateFee`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Fee estimate for an unsigned transaction"
+msgstr "Estimaciones de tarifas para una transacción no firmada"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`GET /transactions/unconfirmed`"
+msgstr "`GET /transactions/unconfirmed`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Unconfirmed pool"
+msgstr "Piscina no confirmada"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`GET /blockchain/rewards`"
+msgstr "`GET /blockchain/rewards`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Block reward state"
+msgstr "Estado de recompensa bloque"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`GET /activation/status`"
+msgstr "`GET /activation/status`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "[Feature activation](10_features-and-activation)"
+msgstr "[Activación de la función](10_features-and-activation)"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`GET /peers/all`, `/peers/connected`"
+msgstr "`GET /peers/all`, `/peers/connected`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Peer lists (require `X-Api-Key` on a node)"
+msgstr "Listas de pares (requiere `X-Api-Key` en un nodo)"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`POST /utils/script/compileCode`"
+msgstr "`POST /utils/script/compileCode`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Compile Ride source"
+msgstr "Fuente Ride Compile"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`POST /utils/hash/secure`, `/utils/hash/fast`"
+msgstr "`POST /utils/hash/secure`, `/utils/hash/fast`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Hashing helpers"
+msgstr "Hashing helpers"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`GET /utils/time`"
+msgstr "`GET /utils/time`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Node time"
+msgstr "Tiempo de nodo"
+
+#: ../../05_node-guide/01_node-rest-api.md:87
+msgid "Limits"
+msgstr "Límites"
+
+#: ../../05_node-guide/01_node-rest-api.md:89
+msgid "Several endpoints cap result sizes through settings such as `transactions-by-address-limit` (1000), `blocks-request-limit` (100), `asset-details-limit` (100) and `data-keys-request-limit` (1000). A request above a limit is rejected with error `10`, `Too big sequence requested`; page through the results instead."
+msgstr "Varios tamaños de los resultados de la gorra de endpoints a través de configuraciones como `transactions-by-address-limit` (1000), `blocks-request-limit` (100), `asset-details-limit` (100) y `data-keys-request-limit` (1000). Una solicitud por encima de un límite es rechazada con error `10`, `Too big sequence requested`; página a través de los resultados en su lugar."
+
+#: ../../05_node-guide/01_node-rest-api.md:91
+msgid "Pagination"
+msgstr "Pagination"
+
+#: ../../05_node-guide/01_node-rest-api.md:93
+msgid "List endpoints page with a cursor rather than a page number: pass the last item you received as `after` to get the next page."
+msgstr "Lista de endpoints página con un cursor en lugar de número de página: pasar el último artículo que recibió como `after` para obtener la siguiente página."
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Page size limit"
+msgstr "Índice de página"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Cursor"
+msgstr "Cursor"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+#, python-brace-format
+msgid "`GET /transactions/address/{address}/limit/{limit}`"
+msgstr "`GET /transactions/address/{address}/limit/{limit}`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`transactions-by-address-limit` (1000)"
+msgstr "`transactions-by-address-limit` (1000)"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+#, python-brace-format
+msgid "`?after={transaction ID}`"
+msgstr "`?after={transaction ID}`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+#, python-brace-format
+msgid "`GET /assets/nft/{address}/limit/{limit}`"
+msgstr "`GET /assets/nft/{address}/limit/{limit}`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+#, python-brace-format
+msgid "`?after={asset ID}`"
+msgstr "`?after={asset ID}`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+#, python-brace-format
+msgid "`GET /assets/{assetId}/distribution/{height}/limit/{limit}`"
+msgstr "`GET /assets/{assetId}/distribution/{height}/limit/{limit}`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`distribution-address-limit` (1000)"
+msgstr "`distribution-address-limit` (1000)"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+#, python-brace-format
+msgid "`?after={address}`"
+msgstr "`?after={address}`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+#, python-brace-format
+msgid "`GET /blocks/seq/{from}/{to}`, `/blocks/headers/seq/{from}/{to}`"
+msgstr "`GET /blocks/seq/{from}/{to}`, `/blocks/headers/seq/{from}/{to}`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`blocks-request-limit` (100 blocks)"
+msgstr "`blocks-request-limit` (100 bloques)"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Next height range"
+msgstr "Siguiente rango de altura"
+
+#: ../../05_node-guide/01_node-rest-api.md:102
+msgid "`/transactions/address` returns the newest transactions first, wrapped in an outer array: `[[tx, tx, ...]]`. To read an address's full history, request a page, then pass the ID of the last transaction in it as `after`, and stop when a page comes back shorter than `limit`:"
+msgstr "`/transactions/address` devuelve primero las transacciones más recientes, envueltas en un array externo: `[[tx, tx, ...]]`. Para leer la historia completa de una dirección, solicite una página, luego pase el ID de la última transacción en ella como `after`, y pare cuando una página vuelva más corta que `limit`:"
+
+#: ../../05_node-guide/01_node-rest-api.md:109
+#, python-brace-format
+msgid "The distribution endpoint returns `{\"hasNext\": true, \"lastItem\": \"<address>\", \"items\": {\"<address>\": <balance>, ...}}`: pass `lastItem` as `after` while `hasNext` is `true`. `{height}` must be at most the current height minus one; a later height returns error `199`."
+msgstr "El punto final de distribución devuelve `{\"hasNext\": true, \"lastItem\": \"<address>\", \"items\": {\"<address>\": <balance>, ...}}`: pasar `lastItem` como `after` mientras que `hasNext` es `true`. `{height}` debe estar en la mayoría de la altura actual menos uno; una altura posterior devuelve el error `199`."
+
+#: ../../05_node-guide/01_node-rest-api.md:111
+#, python-brace-format
+msgid "`GET /addresses/data/{address}` has no pages. It returns every data entry of the address unless you filter with `?key=` (repeatable) or `?matches=<regular expression>` (at most 200 characters)."
+msgstr "`GET /addresses/data/{address}` no tiene páginas. Devuelve cada entrada de datos de la dirección a menos que se filtra con `?key=` (repetible) o `?matches=<regular expression>` (en la mayoría de 200 caracteres)."
+
+#: ../../05_node-guide/01_node-rest-api.md:113
+msgid "Error Responses"
+msgstr "Respuestas de error"
+
+#: ../../05_node-guide/01_node-rest-api.md:115
+msgid "An error comes back with an HTTP status and a JSON body holding a numeric `error` code and a `message`:"
+msgstr "Un error vuelve con un estado HTTP y un cuerpo JSON que contiene un código `error` numérico y un `message`:"
+
+#: ../../05_node-guide/01_node-rest-api.md:121
+msgid "Match on `error` rather than on `message`: messages often include details such as the transaction or the balance."
+msgstr "Coincide en `error` más que en `message`: los mensajes suelen incluir detalles tales como la transacción o el equilibrio."
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`error`"
+msgstr "`error`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "HTTP"
+msgstr "HTTP"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+#: ../../05_node-guide/04_install-docker.md:5
+#: ../../05_node-guide/06_sync-and-rollback.md:3
+msgid "Meaning"
+msgstr "Significado"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`0`"
+msgstr "`0`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "500"
+msgstr "500"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Unknown error"
+msgstr "Error desconocido"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`1`"
+msgstr "`1`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "400"
+msgstr "400"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "The JSON body is malformed or misses fields; `validationErrors` lists them"
+msgstr "El cuerpo JSON es malformado o falta campos; `validationErrors` los enumera"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`2`"
+msgstr "`2`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "403"
+msgstr "403"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+#, python-brace-format
+msgid "API key missing or wrong (see {ref}`Authentication <05_node-guide/01_node-rest-api:Authentication>`)"
+msgstr "Clave de API falta o mal (ver {ref}`Autenticación <05_node-guide/01_node-rest-api:Authentication>`)"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`10`"
+msgstr "`10`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Too big sequence requested: a limit was exceeded"
+msgstr "Se requiere una secuencia demasiado grande: se excedió un límite"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`101`"
+msgstr "`101`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Invalid signature"
+msgstr "Firma inválida"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`102`"
+msgstr "`102`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Invalid address"
+msgstr "Dirección inválida"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`107`"
+msgstr "`107`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "The request or transaction is too big"
+msgstr "La solicitud o transacción es demasiado grande"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`108`"
+msgstr "`108`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Invalid public key"
+msgstr "Inválido clave pública"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`111`"
+msgstr "`111`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Invalid name, or a negative amount"
+msgstr "Nombre inválido o cantidad negativa"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`112`"
+msgstr "`112`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Insufficient fee, or the transaction failed a state check such as `negative dcc balance`"
+msgstr "Insuficiente cuota, o la transacción falló un cheque estatal como `negative dcc balance`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`113`"
+msgstr "`113`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Overflow error"
+msgstr "Error de desbordamiento"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`114`"
+msgstr "`114`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "A transaction to yourself, or a negative fee"
+msgstr "Una transacción para ti mismo, o una tarifa negativa"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`115`"
+msgstr "`115`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "A non-positive amount, or the node wallet has no key for the sender"
+msgstr "Una cantidad no positiva, o la billetera del nodo no tiene llave para el remitente"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`116`"
+msgstr "`116`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "The request contains invalid IDs"
+msgstr "La solicitud contiene documentos inválidos"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`117`"
+msgstr "`117`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Invalid decimals"
+msgstr "Decimales inválidos"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`199`"
+msgstr "`199`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Other validation error; the message says what is wrong"
+msgstr "Otro error de validación; el mensaje dice lo que está mal"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`301`"
+msgstr "`301`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "404"
+msgstr "404"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Block does not exist"
+msgstr "El bloque no existe"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`302`"
+msgstr "`302`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Alias does not exist"
+msgstr "Alias no existe"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`303`"
+msgstr "`303`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "The transaction's timestamp is too far from the node's time"
+msgstr "El timetamp de la transacción está muy lejos del tiempo del nodo"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`304`"
+msgstr "`304`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "No data for this key"
+msgstr "No hay datos para esta clave"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`305`"
+msgstr "`305`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Ride compilation error"
+msgstr "Error de compilación Ride"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`306`"
+msgstr "`306`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "A script failed while executing (account script, asset script or dApp)"
+msgstr "Un script falló mientras ejecutó ( script de contabilidad, script de activos o dApp)"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`307`, `308`"
+msgstr "`307`, `308`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "The transaction is not allowed by the account's or the asset's script"
+msgstr "La transacción no está permitida por el script de la cuenta o del activo"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`311`"
+msgstr "`311`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Transaction does not exist"
+msgstr "La transacción no existe"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`312`"
+msgstr "`312`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "501"
+msgstr "501"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Transaction type not supported"
+msgstr "Tipo de transacción no compatible"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`400`"
+msgstr "`400`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "The transaction is already in the state at the given height"
+msgstr "La transacción ya está en el estado a la altura dada"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`402`"
+msgstr "`402`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Account balance errors"
+msgstr "Errores de saldo de la cuenta"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`403`"
+msgstr "`403`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Order validation error"
+msgstr "Error de validación del orden"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`404`"
+msgstr "`404`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Wrong chain ID: the transaction was built for another network"
+msgstr "ID de cadena incorrecta: la transacción fue construida para otra red"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`405`"
+msgstr "`405`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Invalid proofs (too many, or too big)"
+msgstr "Pruebas inválidas (demasiados o demasiado grandes)"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`406`"
+msgstr "`406`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Not finalized"
+msgstr "No se ha finalizado"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`4001`, `4002`, `4007`"
+msgstr "`4001`, `4002`, `4007`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Invalid transaction ID, block ID or asset ID"
+msgstr "ID de transacción inválida, ID de bloqueo o identificación de activos"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`4008`, `4009`"
+msgstr "`4008`, `4009`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "A required key or asset ID was not given"
+msgstr "No se dio una clave necesaria ni un documento de identificación de activos"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`5031`"
+msgstr "`5031`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "503"
+msgstr "503"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "The node did not respond in time; retry later"
+msgstr "El nodo no respondió en el tiempo; volver a entrar más tarde"
+
+#: ../../05_node-guide/01_node-rest-api.md:160
+msgid "A successful `200` from `POST /transactions/broadcast` only means the node accepted the transaction into its pool. Check `GET /transactions/status?id=<id>` (or use `waitForTx` in the SDK) to see when it is in a block."
+msgstr "Un `200` exitoso de `POST /transactions/broadcast` solo significa que el nodo aceptó la transacción en su piscina. Chequee `GET /transactions/status?id=<id>` (o use `waitForTx` en el SDK) para ver cuándo está en un bloque."
+
+#: ../../05_node-guide/01_node-rest-api.md:162
+msgid "CORS"
+msgstr "CORS"
+
+#: ../../05_node-guide/01_node-rest-api.md:164
+msgid "`access-control-allow-origin` is empty by default, so browsers on other origins are blocked. Set it to your application's origin rather than echoing every origin."
+msgstr "`access-control-allow-origin` está vacío por defecto, por lo que los navegadores en otros orígenes están bloqueados. Establecelo al origen de su aplicación en lugar de hacer eco a cada origen."
+
+#: ../../05_node-guide/02_node-extensions.md:1
+msgid "Node Extensions"
+msgstr "Node Extensions"
+
+#: ../../05_node-guide/02_node-extensions.md:3
+#, python-brace-format
+msgid "Extensions are optional modules a node operator can enable alongside the core {ref}`REST API <05_node-guide/01_node-rest-api:Node REST API>` for consumers that need direct access to binary data instead of JSON."
+msgstr "Las extensiones son módulos opcionales que un operador de nodos puede permitir junto con el núcleo {ref}`REST API <05_node-guide/01_node-rest-api:Node REST API>` para consumidores que necesitan acceso directo a datos binarios en lugar de JSON."
+
+#: ../../05_node-guide/02_node-extensions.md:5
+msgid "gRPC Server"
+msgstr "gRPC Server"
+
+#: ../../05_node-guide/02_node-extensions.md:7
+#, python-brace-format
+msgid "The node ships a `grpc-server` module (built alongside the core node in [node-scala](https://github.com/Decentral-America/node-scala/tree/main/grpc-server)) that exposes {ref}`blocks <02_decentralchain/10_binary-format:Block Binary Format>` and {ref}`transactions <02_decentralchain/10_binary-format:Transaction Binary Format>` directly in their protobuf-serialized binary format, rather than the JSON representation the REST API returns. This is the recommended way to consume chain data for a service that needs to process a large volume of blocks or transactions efficiently."
+msgstr "El nodo envía un módulo `grpc-server` (construido junto al nodo central en [node-scala](https://github.com/Decentral-America/node-scala/tree/main/grpc-server)) que expone {ref}`bloques <02_decentralchain/10_binary-format:Block Binary Format>` y {ref}`transacciones <02_decentralchain/10_binary-format:Transaction Binary Format>` directamente en su formato binario protobuf-serializado, en lugar de la representación JSON el REST API devuelve. Esta es la forma recomendada de consumir datos de cadena para un servicio que necesita procesar un gran volumen de bloques o transacciones eficientemente."
+
+#: ../../05_node-guide/02_node-extensions.md:9
+msgid "If you use your own node with the gRPC server enabled, you can send it a `SignedTransaction` object directly instead of composing a JSON transaction for the REST API's `POST /transactions/broadcast` method. See [`@decentralchain/protobuf-serialization`](https://www.npmjs.com/package/@decentralchain/protobuf-serialization) (published on npm today; the monorepo is renaming it to `protobuf-schemas`) for building and parsing these binary structures from JavaScript/TypeScript, or [Node gRPC API](../04_building-apps/05_node-grpc) for the typed client."
+msgstr "Si utiliza su propio nodo con el servidor gRPC habilitado, puede enviarlo un objeto `SignedTransaction` directamente en lugar de componer una transacción JSON para el método `POST /transactions/broadcast` de REST API. Ver [`@decentralchain/protobuf-serialization`](https://www.npmjs.com/package/@decentralchain/protobuf-serialization) (publicado hoy en npm; el monorepo se renombra a `protobuf-schemas`) para construir y analizar estas estructuras binarias de JavaScript/TypeScript, o [Node gRPC API](../04_building-apps/05_node-grpc) para el cliente tipo."
+
+#: ../../05_node-guide/02_node-extensions.md:12
+msgid "Verified against node-scala v1.8.0 (`grpc-server/src/main/resources/application.conf`)."
+msgstr "Verificado contra nodo-scala v1.8.0 (`grpc-server/src/main/resources/application.conf`)."
+
+#: ../../05_node-guide/02_node-extensions.md:15
+msgid "The module listens on two ports:"
+msgstr "El módulo escucha en dos puertos:"
+
+#: ../../05_node-guide/02_node-extensions.md:11
+msgid "Setting"
+msgstr "Configuración"
+
+#: ../../05_node-guide/02_node-extensions.md:11
+#: ../../05_node-guide/05_configuration.md:5
+#: ../../05_node-guide/05_configuration.md:34
+msgid "Default"
+msgstr "Default"
+
+#: ../../05_node-guide/02_node-extensions.md:11
+msgid "`dcc.grpc.port`"
+msgstr "`dcc.grpc.port`"
+
+#: ../../05_node-guide/02_node-extensions.md:11
+msgid "`6870`"
+msgstr "`6870`"
+
+#: ../../05_node-guide/02_node-extensions.md:11
+msgid "AccountsApi, AssetsApi, BlockchainApi, BlocksApi, TransactionsApi"
+msgstr "AccountsApi, AssetsApi, BlockchainApi, BlocksApi, TransactionsApi"
+
+#: ../../05_node-guide/02_node-extensions.md:11
+msgid "`dcc.blockchain-updates.grpc-port`"
+msgstr "`dcc.blockchain-updates.grpc-port`"
+
+#: ../../05_node-guide/02_node-extensions.md:11
+msgid "`6881`"
+msgstr "`6881`"
+
+#: ../../05_node-guide/02_node-extensions.md:11
+msgid "BlockchainUpdates — a real-time stream of block-level events"
+msgstr "BlockchainUpdates — una corriente en tiempo real de eventos a nivel de bloques"
+
+#: ../../05_node-guide/02_node-extensions.md:11
+msgid "`dcc.grpc.host`"
+msgstr "`dcc.grpc.host`"
+
+#: ../../05_node-guide/02_node-extensions.md:11
+msgid "`localhost`"
+msgstr "`localhost`"
+
+#: ../../05_node-guide/02_node-extensions.md:11
+msgid "Interface the main gRPC service binds to"
+msgstr "Interfacer el servicio gRPC principal se une a"
+
+#: ../../05_node-guide/02_node-extensions.md:11
+msgid "`dcc.grpc.worker-threads`"
+msgstr "`dcc.grpc.worker-threads`"
+
+#: ../../05_node-guide/02_node-extensions.md:11
+msgid "`4`"
+msgstr "`4`"
+
+#: ../../05_node-guide/02_node-extensions.md:11
+msgid "Worker threads for the gRPC service"
+msgstr "Hilos para el servicio gRPC"
+
+#: ../../05_node-guide/02_node-extensions.md:11
+msgid "`dcc.blockchain-updates.min-keep-alive`"
+msgstr "`dcc.blockchain-updates.min-keep-alive`"
+
+#: ../../05_node-guide/02_node-extensions.md:11
+msgid "`5m`"
+msgstr "`5m`"
+
+#: ../../05_node-guide/02_node-extensions.md:11
+msgid "Shortest interval at which a BlockchainUpdates client may send keep-alive pings"
+msgstr "intervalo más corto en el que un cliente BlockchainUpdates puede enviar pings de mantenimiento"
+
+#: ../../05_node-guide/02_node-extensions.md:25
+msgid "The `grpc-server` module is not a separate process: it is an in-process node extension. The official Docker image already contains it; for other installs, put its JARs on the node's classpath (the Docker image also loads extra JARs from `lib/plugins/`). The module holds two extensions, each enabled by adding its class to `dcc.extensions`: `com.decentralchain.api.grpc.GRPCServerExtension` for the APIs on port 6870 (commented out in the node's default `application.conf`), and `com.decentralchain.events.BlockchainUpdates` for port 6881 (see [Blockchain Updates](../04_building-apps/11_blockchain-updates)). Enabling them is a deployment decision for the node operator, not a REST API toggle."
+msgstr "El módulo `grpc-server` no es un proceso separado: es una extensión de nodo en proceso. La imagen oficial de Docker ya la contiene; para otras instalaciones, ponga sus JARs en el cómputo del nodo (la imagen de Docker también carga JARs extra de `lib/plugins/`). El módulo contiene dos extensiones, cada una habilitada mediante la adición de su clase a `dcc.extensions`: `com.decentralchain.api.grpc.GRPCServerExtension` para las API en el puerto 6870 (commenteado en el `application.conf`) predeterminado del nodo, y `com.decentralchain.events.BlockchainUpdates` para el puerto 6881 (ver [Actualizaciones de la cadena de bloques](../04_building-apps/11_blockchain-updates)). Habilitarlos es una decisión de implementación para el operador de nodos, no un REST API rebobinado."
+
+#: ../../05_node-guide/03_custom-blockchain.md:1
+msgid "Custom Blockchain"
+msgstr "Bloqueo personalizado"
+
+#: ../../05_node-guide/03_custom-blockchain.md:3
+msgid "Besides Mainnet and Testnet, the node software supports running a fully private, custom network — useful for local development or an isolated test environment. This is configured by setting the blockchain type to `CUSTOM` in the node configuration file, as seen in the `devnet` template shipped in [`network-defaults.conf`](https://github.com/Decentral-America/node-scala/blob/main/node/src/main/resources/network-defaults.conf):"
+msgstr "Además de Mainnet y Testnet, el software del nodo soporta ejecutar una red totalmente privada y personalizada, útil para el desarrollo local o un entorno de prueba aislado. Esto se configura mediante la configuración del tipo de blockchain a `CUSTOM` en el archivo de configuración de nodos, como se ve en la plantilla `devnet` enviada en [`network-defaults.conf`](https://github.com/Decentral-America/node-scala/blob/main/node/src/main/resources/network-defaults.conf):"
+
+#: ../../05_node-guide/03_custom-blockchain.md:41
+msgid "Key fields:"
+msgstr "Campos clave:"
+
+#: ../../05_node-guide/03_custom-blockchain.md
+msgid "Field"
+msgstr "Campo"
+
+#: ../../05_node-guide/03_custom-blockchain.md
+msgid "`address-scheme-character`"
+msgstr "`address-scheme-character`"
+
+#: ../../05_node-guide/03_custom-blockchain.md
+msgid "The network byte that distinguishes your custom network's addresses from Mainnet/Testnet — every address on your network is derived using this character"
+msgstr "El byte de red que distingue las direcciones de su red personalizada desde Mainnet/Testnet — cada dirección en su red se deriva usando este personaje"
+
+#: ../../05_node-guide/03_custom-blockchain.md
+msgid "`functionality`"
+msgstr "`functionality`"
+
+#: ../../05_node-guide/03_custom-blockchain.md
+msgid "Protocol feature activation thresholds, transaction time offsets, and related consensus parameters"
+msgstr "Los umbrales de activación del protocolo, los plazos de transacción y los parámetros de consenso conexos"
+
+#: ../../05_node-guide/03_custom-blockchain.md
+#, python-brace-format
+msgid "Initial {ref}`block reward <02_decentralchain/05_node:Block Reward>` size, minimum increment, and voting interval — same mechanism as Mainnet"
+msgstr "Tamaño inicial del {ref}`Bloque la recompensa <02_decentralchain/05_node:Block Reward>`, incremento mínimo y intervalo de votación - el mismo mecanismo que el Mainnet"
+
+#: ../../05_node-guide/03_custom-blockchain.md
+msgid "`genesis`"
+msgstr "`genesis`"
+
+#: ../../05_node-guide/03_custom-blockchain.md
+#, python-brace-format
+msgid "The network's {ref}`genesis block <02_decentralchain/04_block:Block>`: initial balances, timestamp, and difficulty"
+msgstr "{ref}`génesis bloque <02_decentralchain/04_block:Block>` de la red: saldos iniciales, tiempos y dificultad"
+
+#: ../../05_node-guide/03_custom-blockchain.md
+msgid "`network.known-peers`"
+msgstr "`network.known-peers`"
+
+#: ../../05_node-guide/03_custom-blockchain.md
+msgid "Seed peers for nodes on your custom network to discover each other — leave empty for a single-node development network"
+msgstr "Parejas de semillas para nodos en su red personalizada para descubrirse: dejar vacío para una red de desarrollo de un solo ganglio"
+
+#: ../../05_node-guide/03_custom-blockchain.md:51
+msgid "For a full field reference, use `network-defaults.conf`'s `devnet` block as a starting template and adjust the values for your own network, then point your node at a config file that sets `blockchain.type = CUSTOM` with your own `custom` block instead of `blockchain.type = TESTNET` or `MAINNET`."
+msgstr "Para una referencia de campo completa, utilice el bloque `devnet` de `network-defaults.conf` como plantilla inicial y ajuste los valores para su propia red, a continuación, señale su nodo en un archivo de configuración que establece `blockchain.type = CUSTOM` con su propio bloque `custom` en lugar de `blockchain.type = TESTNET` o `MAINNET`."
+
+#: ../../05_node-guide/04_install-docker.md:1
+msgid "Run a Node with Docker"
+msgstr "Corre un Nodo con Docker"
+
+#: ../../05_node-guide/04_install-docker.md:3
+msgid "Docker is the recommended way to run a DecentralChain node. The image is built from `docker/Dockerfile` in [node-scala](https://github.com/Decentral-America/node-scala) and runs the node as the unprivileged user `dcc`."
+msgstr "Docker es la forma recomendada para ejecutar un nodo DecentralChain. La imagen se construye desde `docker/Dockerfile` en [node-scala](https://github.com/Decentral-America/node-scala) y funciona el nodo como el usuario no privilegiado `dcc`."
+
+#: ../../05_node-guide/04_install-docker.md:6
+msgid "Verified on a clean Docker host (macOS 15.5, Docker Desktop 29.2.1, no earlier node images or volumes) against node-scala v1.8.1, 2026-10-27: following [Join the Public Testnet](15_join-testnet), the node synced the public Testnet from genesis to the tip, height 99,976, in 31 minutes, and its block IDs matched the public node."
+msgstr "Verificado en un host Docker limpio (macOS 15.5, Docker Desktop 29.2.1, sin imágenes de nodo anteriores o volúmenes) contra node-scala v1.8.1, 2026-10-27: después [Únete al Testnet Público](15_join-testnet), el nodo sincronizaba el Testnet público de la génesis a la punta, altura 99.976 en 31 minutos, y sus IDs de bloque coincidían con el nodo público."
+
+#: ../../05_node-guide/04_install-docker.md:9
+msgid "Which Network You Can Join"
+msgstr "Que red se puede unir"
+
+#: ../../05_node-guide/04_install-docker.md:5
+#: ../../05_node-guide/05_configuration.md:5
+msgid "Network"
+msgstr "Red"
+
+#: ../../05_node-guide/04_install-docker.md:5
+msgid "Status"
+msgstr "Situación"
+
+#: ../../05_node-guide/04_install-docker.md:5
+#: ../../05_node-guide/05_configuration.md:5
+msgid "Public Testnet"
+msgstr "Public Testnet"
+
+#: ../../05_node-guide/04_install-docker.md:5
+msgid "Supported. Follow [Join the Public Testnet](15_join-testnet): it gives the configuration file the node needs."
+msgstr "Apoyado. Siga [Únete al Testnet Público](15_join-testnet): le da al fichero de configuración las necesidades del nodo."
+
+#: ../../05_node-guide/04_install-docker.md:5
+#: ../../05_node-guide/05_configuration.md:5
+msgid "Mainnet"
+msgstr "Mainnet"
+
+#: ../../05_node-guide/04_install-docker.md:5
+msgid "Not with this image yet. The live DCC Mainnet runs an earlier node line (its public node reports `DCC v1.3.5`). node-scala's built-in Mainnet profile ships no peers until the Mainnet migration, and the peers in its packaged `node/decentralchain-mainnet.conf` refused connections when tested on 2026-10-27. A v1.8.1 container started with that file stayed at the genesis block."
+msgstr "Aún no con esta imagen. El DCC Mainnet en vivo funciona con una línea de nodos anteriores (sus informes de nodo público `DCC v1.3.5`). el perfil Mainnet integrado del nodo-scala no envía pares hasta la migración Mainnet, y los compañeros en su paquete `node/decentralchain-mainnet.conf` rechazaron las conexiones cuando se probó en 2026-10-27. Un contenedor v1.8.1 comenzó con ese archivo se quedó en el bloque génesis."
+
+#: ../../05_node-guide/04_install-docker.md:16
+msgid "Requirements"
+msgstr "Necesidades"
+
+#: ../../05_node-guide/04_install-docker.md:5
+msgid "Requirement"
+msgstr "Requisitos"
+
+#: ../../05_node-guide/04_install-docker.md:5
+msgid "Minimum"
+msgstr "Mínimo"
+
+#: ../../05_node-guide/04_install-docker.md:5
+msgid "Recommended"
+msgstr "Recomendado"
+
+#: ../../05_node-guide/04_install-docker.md:5
+msgid "Docker Engine"
+msgstr "Docker Engine"
+
+#: ../../05_node-guide/04_install-docker.md:5
+msgid "25.x"
+msgstr "25.x"
+
+#: ../../05_node-guide/04_install-docker.md:5
+msgid "Latest stable"
+msgstr "Última estabilidad"
+
+#: ../../05_node-guide/04_install-docker.md:5
+msgid "RAM"
+msgstr "RAM"
+
+#: ../../05_node-guide/04_install-docker.md:5
+msgid "4 GB"
+msgstr "4 GB"
+
+#: ../../05_node-guide/04_install-docker.md:5
+msgid "8 GB"
+msgstr "8 GB"
+
+#: ../../05_node-guide/04_install-docker.md:5
+msgid "CPU"
+msgstr "CPU"
+
+#: ../../05_node-guide/04_install-docker.md:5
+msgid "2 cores"
+msgstr "2 núcleos"
+
+#: ../../05_node-guide/04_install-docker.md:5
+msgid "4+ cores"
+msgstr "4+ núcleos"
+
+#: ../../05_node-guide/04_install-docker.md:5
+msgid "Disk (SSD)"
+msgstr "Disk (SSD)"
+
+#: ../../05_node-guide/04_install-docker.md:5
+msgid "1 GB for the Testnet (its data was 131 MB at height 99,976)"
+msgstr "1 GB para el Testnet (sus datos fueron 131 MB en altura 99,976)"
+
+#: ../../05_node-guide/04_install-docker.md:5
+msgid "10 GB, to leave room for the chain to grow"
+msgstr "10 GB, para dejar espacio para que la cadena crezca"
+
+#: ../../05_node-guide/04_install-docker.md:5
+msgid "100 Mbit/s"
+msgstr "100 Mbit/s"
+
+#: ../../05_node-guide/04_install-docker.md:5
+msgid "1 Gbit/s"
+msgstr "1 Gbit/s"
+
+#: ../../05_node-guide/04_install-docker.md:26
+msgid "Image tags"
+msgstr "Etiquetas de la imagen"
+
+#: ../../05_node-guide/04_install-docker.md:28
+msgid "All images live at `ghcr.io/decentral-america/node-scala`. No image is published on Docker Hub."
+msgstr "Todas las imágenes viven en `ghcr.io/decentral-america/node-scala`. No hay imagen publicada en Docker Hub."
+
+#: ../../05_node-guide/04_install-docker.md:5
+msgid "Tag"
+msgstr "Tag"
+
+#: ../../05_node-guide/04_install-docker.md:5
+msgid "`1.8.1`, `1.8.0`, ..."
+msgstr "`1.8.1`, `1.8.0`, ..."
+
+#: ../../05_node-guide/04_install-docker.md:5
+msgid "One release. Use a release tag, or a digest, for a node you want to keep stable"
+msgstr "Una liberación. Use una etiqueta de liberación, o un digesto, para un nodo que desea mantener estable"
+
+#: ../../05_node-guide/04_install-docker.md:5
+msgid "`testnet-latest`, `mainnet-latest`, `latest`"
+msgstr "`testnet-latest`, `mainnet-latest`, `latest`"
+
+#: ../../05_node-guide/04_install-docker.md:5
+msgid "The newest build. On 2026-10-27 all three were the same v1.8.1 image (`sha256:3b04d066…`): the network a container joins comes from its configuration, not from the tag"
+msgstr "La nueva construcción. En 2026-10-27 los tres fueron la misma imagen v1.8.1 (`sha256:3b04d066…`): la red un contenedor se une de su configuración, no de la etiqueta"
+
+#: ../../05_node-guide/04_install-docker.md:5
+msgid "`sha-<commit>`"
+msgstr "`sha-<commit>`"
+
+#: ../../05_node-guide/04_install-docker.md:5
+msgid "A build of one git commit"
+msgstr "Una construcción de un git commit"
+
+#: ../../05_node-guide/04_install-docker.md:36
+#: ../../05_node-guide/15_join-testnet.md:156
+msgid "Ports"
+msgstr "Puertos"
+
+#: ../../05_node-guide/04_install-docker.md:5
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "Port"
+msgstr "Puerto"
+
+#: ../../05_node-guide/04_install-docker.md:5
+msgid "Exposure"
+msgstr "Exposición"
+
+#: ../../05_node-guide/04_install-docker.md:5
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "`6868`"
+msgstr "`6868`"
+
+#: ../../05_node-guide/04_install-docker.md:5
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "P2P"
+msgstr "P2P"
+
+#: ../../05_node-guide/04_install-docker.md:5
+msgid "Open to the internet if other nodes should be able to dial you; outbound only is enough to sync"
+msgstr "Abierto a Internet si otros nodos deben ser capaces de marcarte; outbound sólo es suficiente para sincronizar"
+
+#: ../../05_node-guide/04_install-docker.md:5
+#: ../../05_node-guide/05_configuration.md:34
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "`6869`"
+msgstr "`6869`"
+
+#: ../../05_node-guide/04_install-docker.md:5
+#: ../../05_node-guide/15_join-testnet.md:9 ../../05_node-guide/index.md:50
+msgid "REST API"
+msgstr "REST API"
+
+#: ../../05_node-guide/04_install-docker.md:5
+msgid "Keep private: bind to localhost, or place behind a reverse proxy"
+msgstr "Mantener privado: atar al localhost, o colocar detrás de un proxy inverso"
+
+#: ../../05_node-guide/04_install-docker.md:43
+msgid "The Configuration File Is Required"
+msgstr "El archivo de configuración es necesario"
+
+#: ../../05_node-guide/04_install-docker.md:45
+msgid "Mount a configuration file at `/etc/dcc/dcc.conf`. Besides selecting the network, it must set the wallet password (`dcc.wallet.password`, which may be `\"\"`). Without a mounted file the node has no wallet password, can't ask for one, and exits with code 61 (`CANNOT GET CONSOLE TO ASK WALLET PASSWORD` in the log); with `--restart unless-stopped`, Docker then restarts it in a loop. `DCC_WALLET_PASSWORD` doesn't help on its own: the entrypoint applies it only on top of a mounted file. See [Configuration](05_configuration)."
+msgstr "Montar un archivo de configuración en `/etc/dcc/dcc.conf`. Además de seleccionar la red, debe establecer la contraseña de la cartera (`dcc.wallet.password`, que puede ser `\"\"`). Sin un archivo montado el nodo no tiene contraseña de billetera, no puede pedir uno, y salidas con código 61 (`CANNOT GET CONSOLE TO ASK WALLET PASSWORD` en el registro); con `--restart unless-stopped`, Docker entonces lo reinicia en un bucle. `DCC_WALLET_PASSWORD` no ayuda por sí solo: el punto de entrada lo aplica sólo en la parte superior de un archivo montado. Ver [Configuración](05_configuration)."
+
+#: ../../05_node-guide/04_install-docker.md:47
+msgid "Quick start"
+msgstr "Inicio rápido"
+
+#: ../../05_node-guide/04_install-docker.md:49
+msgid "Write `dcc.conf` as shown in [Join the Public Testnet](15_join-testnet), then start the node from the same directory:"
+msgstr "Escribe `dcc.conf` como se muestra en [Únete al Testnet Público](15_join-testnet), y luego comienza el nodo desde el mismo directorio:"
+
+#: ../../05_node-guide/04_install-docker.md:66
+msgid "Inside the container the REST API binds to `127.0.0.1` by default (`DCC_REST_API_BIND`). Docker cannot forward a published port to a service listening only on the container's loopback interface, so without `DCC_REST_API_BIND=0.0.0.0` the API is unreachable from the host. The example above then publishes the port only on the host's loopback (`-p 127.0.0.1:6869:6869`), which keeps the API off the public internet."
+msgstr "Dentro del contenedor, el REST API se une a `127.0.0.1` por defecto (`DCC_REST_API_BIND`). Docker no puede reenviar un puerto publicado a un servicio escuchando sólo en la interfaz de vuelta del contenedor, así que sin `DCC_REST_API_BIND=0.0.0.0` la API es inalcanzable desde el host. El ejemplo anterior entonces publica el puerto sólo en el bucleback del host (`-p 127.0.0.1:6869:6869`), que mantiene la API fuera de Internet público."
+
+#: ../../05_node-guide/04_install-docker.md:69
+msgid "Data is stored in the `/var/lib/dcc` volume and logs in `/var/log/dcc`. Keep the data volume between restarts and upgrades: losing it forces a full re-sync."
+msgstr "Los datos se almacenan en el volumen `/var/lib/dcc` y los registros en `/var/log/dcc`. Mantenga el volumen de datos entre reinicios y actualizaciones: perderlo obliga a una re-sinc."
+
+#: ../../05_node-guide/04_install-docker.md:71
+msgid "Docker Compose"
+msgstr "Docker Compose"
+
+#: ../../05_node-guide/04_install-docker.md:73
+msgid "The same node with Docker Compose, with `dcc.conf` next to `compose.yaml`:"
+msgstr "El mismo nodo con Docker Compose, con `dcc.conf` al lado de `compose.yaml`:"
+
+#: ../../05_node-guide/04_install-docker.md:102
+msgid "To give the node a wallet seed and password without writing them into `dcc.conf`, add `env_file: .env` with `DCC_WALLET_SEED` and `DCC_WALLET_PASSWORD` (and `chmod 600 .env`). The entrypoint layers them on top of the mounted `dcc.conf`; without the mounted file they are ignored."
+msgstr "Para darle al nodo una semilla de cartera y contraseña sin escribirlas en `dcc.conf`, agregue `env_file: .env` con `DCC_WALLET_SEED` y `DCC_WALLET_PASSWORD` (y `chmod 600 .env`). El punto de entrada las capas en la parte superior del `dcc.conf` montado; sin el archivo montado son ignorados."
+
+#: ../../05_node-guide/04_install-docker.md:105
+msgid "Verify it is running"
+msgstr "Verifica que está funcionando"
+
+#: ../../05_node-guide/04_install-docker.md:113
+msgid "The image's built-in `HEALTHCHECK` polls `/node/status`. On the first start the node replays the chain from genesis; [Join the Public Testnet](15_join-testnet) shows how to check it has reached the tip. See [Configuration](05_configuration) for every environment variable and [Sync and Rollback](06_sync-and-rollback) for what to expect on first start."
+msgstr "Las encuestas `HEALTHCHECK` incorporadas de la imagen son `/node/status`. En el primer comienzo el nodo vuelve a reproducir la cadena de génesis; [Únete al Testnet Público](15_join-testnet) muestra cómo comprobar que ha alcanzado la punta. Vea [Configuración](05_configuration) para cada variable de entorno y [Sync and Rollback](06_sync-and-rollback) para lo que esperar en el primer comienzo."
+
+#: ../../05_node-guide/05_configuration.md:1 ../../05_node-guide/index.md:29
+msgid "Configuration"
+msgstr "Configuración"
+
+#: ../../05_node-guide/05_configuration.md:3
+msgid "A node reads a [HOCON](https://github.com/lightbend/config/blob/master/HOCON.md) configuration file whose settings live under the `dcc` key. Built-in defaults (`application.conf` and `network-defaults.conf`) are merged with your file, so your file only needs the settings you want to change."
+msgstr "Un nodo lee un archivo de configuración [HOCON](https://github.com/lightbend/config/blob/master/HOCON.md) cuyos ajustes viven bajo la tecla `dcc`. Por defectos incorporados (`application.conf` y `network-defaults.conf`) se fusionan con su archivo, por lo que su archivo sólo necesita la configuración que desea cambiar."
+
+#: ../../05_node-guide/05_configuration.md:6
+msgid "Verified against node-scala v1.8.0. Do not use the shipped `application.conf` as your own config file; it is a defaults file."
+msgstr "Verificado contra nodo-scala v1.8.0. No utilice el `application.conf` enviado como su propio archivo de configuración; es un archivo predeterminado."
+
+#: ../../05_node-guide/05_configuration.md:9
+msgid "Environment variables (Docker)"
+msgstr "Variables ambientales (Docker)"
+
+#: ../../05_node-guide/05_configuration.md:11
+msgid "The Docker entrypoint translates these variables into JVM options:"
+msgstr "El punto de entrada Docker traduce estas variables en opciones JVM:"
+
+#: ../../05_node-guide/05_configuration.md:5
+msgid "Variable"
+msgstr "Variable"
+
+#: ../../05_node-guide/05_configuration.md:5
+msgid "Effect"
+msgstr "Efecto"
+
+#: ../../05_node-guide/05_configuration.md:5
+msgid "`DCC_NETWORK`"
+msgstr "`DCC_NETWORK`"
+
+#: ../../05_node-guide/05_configuration.md:5
+msgid "`mainnet`"
+msgstr "`mainnet`"
+
+#: ../../05_node-guide/05_configuration.md:5
+msgid "Sets `dcc.defaults.blockchain.type` — the network the node joins"
+msgstr "`dcc.defaults.blockchain.type` — la red que el nodo se une"
+
+#: ../../05_node-guide/05_configuration.md:5
+msgid "`DCC_HEAP_SIZE`"
+msgstr "`DCC_HEAP_SIZE`"
+
+#: ../../05_node-guide/05_configuration.md:5
+msgid "`2g`"
+msgstr "`2g`"
+
+#: ../../05_node-guide/05_configuration.md:5
+msgid "JVM `-Xmx`"
+msgstr "JVM `-Xmx`"
+
+#: ../../05_node-guide/05_configuration.md:5
+msgid "`DCC_LOG_LEVEL`"
+msgstr "`DCC_LOG_LEVEL`"
+
+#: ../../05_node-guide/05_configuration.md:5
+msgid "`INFO`"
+msgstr "`INFO`"
+
+#: ../../05_node-guide/05_configuration.md:5
+msgid "Console log level: `OFF`, `ERROR`, `WARN`, `INFO`, `DEBUG`, `TRACE`"
+msgstr "Nivel de registro de consolas: `OFF`, `ERROR`, `WARN`, `INFO`, `DEBUG`, `TRACE`"
+
+#: ../../05_node-guide/05_configuration.md:5
+msgid "`DCC_REST_API_BIND`"
+msgstr "`DCC_REST_API_BIND`"
+
+#: ../../05_node-guide/05_configuration.md:5
+#: ../../05_node-guide/05_configuration.md:34
+msgid "`127.0.0.1`"
+msgstr "`127.0.0.1`"
+
+#: ../../05_node-guide/05_configuration.md:5
+msgid "Sets `dcc.rest-api.bind-address`"
+msgstr "Sets `dcc.rest-api.bind-address`"
+
+#: ../../05_node-guide/05_configuration.md:5
+msgid "`DCC_WALLET_SEED`"
+msgstr "`DCC_WALLET_SEED`"
+
+#: ../../05_node-guide/05_configuration.md:5
+msgid "—"
+msgstr "—"
+
+#: ../../05_node-guide/05_configuration.md:5
+msgid "Base58 wallet seed, written to a private temporary config file at start-up and then unset"
+msgstr "Base58 semillas de cartera, escritas a un archivo de configuración temporal privado al inicio y luego sin par"
+
+#: ../../05_node-guide/05_configuration.md:5
+msgid "`DCC_WALLET_PASSWORD`"
+msgstr "`DCC_WALLET_PASSWORD`"
+
+#: ../../05_node-guide/05_configuration.md:5
+msgid "Wallet file password, handled the same way"
+msgstr "contraseña de archivo Wallet, manejado de la misma manera"
+
+#: ../../05_node-guide/05_configuration.md:5
+msgid "`JAVA_OPTS`"
+msgstr "`JAVA_OPTS`"
+
+#: ../../05_node-guide/05_configuration.md:5
+msgid "Extra JVM options"
+msgstr "Opciones JVM adicionales"
+
+#: ../../05_node-guide/05_configuration.md:23
+msgid "To use your own file, mount it at `/etc/dcc/dcc.conf`. The entrypoint loads it automatically and layers wallet secrets on top. `DCC_WALLET_SEED` and `DCC_WALLET_PASSWORD` only take effect when such a file is mounted (and no command arguments are passed to the container); without `/etc/dcc/dcc.conf` they are ignored."
+msgstr "Para utilizar su propio archivo, montarlo en `/etc/dcc/dcc.conf`. El punto de entrada lo carga automáticamente y capas secretos de cartera en la parte superior. `DCC_WALLET_SEED` y `DCC_WALLET_PASSWORD` sólo tienen efecto cuando se monta tal archivo (y no se transmiten argumentos de comando al contenedor); sin `/etc/dcc/dcc.conf` son ignorados."
+
+#: ../../05_node-guide/05_configuration.md:25
+msgid "Ports and network defaults"
+msgstr "Puertos y predeterminados de red"
+
+#: ../../05_node-guide/05_configuration.md:5
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "P2P port"
+msgstr "Puerto P2P"
+
+#: ../../05_node-guide/05_configuration.md:5
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "Peer to connect to"
+msgstr "Peer para conectarse"
+
+#: ../../05_node-guide/05_configuration.md:5
+msgid "6868"
+msgstr "6868"
+
+#: ../../05_node-guide/05_configuration.md:5
+msgid "not published yet"
+msgstr "no publicado aún"
+
+#: ../../05_node-guide/05_configuration.md:5
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "`50.116.30.244:6868`"
+msgstr "`50.116.30.244:6868`"
+
+#: ../../05_node-guide/05_configuration.md:32
+msgid "The REST API listens on port `6869` on every network."
+msgstr "La API REST escucha en el puerto `6869` en cada red."
+
+#: ../../05_node-guide/05_configuration.md:35
+msgid "The public DecentralChain Testnet (`testnet-node.decentralchain.io`) is a custom chain (`dcc.blockchain.type = CUSTOM`, chain ID `!`). The built-in `testnet` profile (`DCC_NETWORK=testnet` without a config file) is a different network and will not join it. [Join the Public Testnet](15_join-testnet) gives the complete configuration file."
+msgstr "El público DecentralChain Testnet (`testnet-node.decentralchain.io`) es una cadena personalizada (`dcc.blockchain.type = CUSTOM`, ID de cadena `!`). El perfil `testnet` incorporado (`DCC_NETWORK=testnet` sin un archivo de configuración) es una red diferente y no se unirá a él. [Únete al Testnet Público](15_join-testnet) da el archivo de configuración completo."
+
+#: ../../05_node-guide/05_configuration.md:38
+msgid "Commonly changed settings"
+msgstr "Ajustes modificados comúnmente"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "Key"
+msgstr "Clave"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "Description"
+msgstr "Descripción"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "`dcc.directory`"
+msgstr "`dcc.directory`"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "`\"\"`"
+msgstr "`\"\"`"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "Base directory for node data"
+msgstr "directorio base para datos de nodos"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "`dcc.db.max-rollback-depth`"
+msgstr "`dcc.db.max-rollback-depth`"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "`2000`"
+msgstr "`2000`"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "Maximum number of blocks a rollback can undo"
+msgstr "El número máximo de bloques puede deshacerse"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "`dcc.db.store-transactions-by-address`"
+msgstr "`dcc.db.store-transactions-by-address`"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "`true`"
+msgstr "`true`"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "Index transactions by address (needed by address history endpoints)"
+msgstr "Transacciones de índices por dirección (necesitadas por puntos finales del historial de direcciones)"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "`dcc.wallet.file`"
+msgstr "`dcc.wallet.file`"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "`<directory>/wallet/wallet.dat`"
+msgstr "`<directory>/wallet/wallet.dat`"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "Wallet file path"
+msgstr "Wallet ruta del archivo"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "`dcc.wallet.password`"
+msgstr "`dcc.wallet.password`"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "unset"
+msgstr "unset"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "Wallet file password"
+msgstr "contraseña de archivo Wallet"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "`dcc.wallet.seed`"
+msgstr "`dcc.wallet.seed`"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "Base58 seed; if unset the node generates one"
+msgstr "Semilla Base58; si el nodo se desencadene, genera una"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "`dcc.rest-api.enable`"
+msgstr "`dcc.rest-api.enable`"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "`yes`"
+msgstr "`yes`"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "Turn the REST API on or off"
+msgstr "Apague la API REST en o apagado"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "`dcc.rest-api.bind-address`"
+msgstr "`dcc.rest-api.bind-address`"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "Interface the API listens on"
+msgstr "Interface la API escucha en"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "`dcc.rest-api.port`"
+msgstr "`dcc.rest-api.port`"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "API port"
+msgstr "Puerto de API"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "`dcc.rest-api.api-key-hash`"
+msgstr "`dcc.rest-api.api-key-hash`"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "Hash of the API key that protects privileged endpoints"
+msgstr "Hash de la clave API que protege puntos finales privilegiados"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "`dcc.rest-api.cors-headers.access-control-allow-origin`"
+msgstr "`dcc.rest-api.cors-headers.access-control-allow-origin`"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "Set to a specific origin in production"
+msgstr "Conjunto a un origen específico de la producción"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "`dcc.rest-api.transactions-by-address-limit`"
+msgstr "`dcc.rest-api.transactions-by-address-limit`"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "`1000`"
+msgstr "`1000`"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "Max results for address transaction history"
+msgstr "Resultados máximos para el historial de transacciones de direcciones"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "`dcc.rest-api.blocks-request-limit`"
+msgstr "`dcc.rest-api.blocks-request-limit`"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "`100`"
+msgstr "`100`"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "Max blocks per range request"
+msgstr "Principales bloques por solicitud de rango"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "`dcc.utx.max-size`"
+msgstr "`dcc.utx.max-size`"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "`100000`"
+msgstr "`100000`"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "Max unconfirmed transactions held"
+msgstr "Principales transacciones no confirmadas realizadas"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "`dcc.network.max-inbound-connections`"
+msgstr "`dcc.network.max-inbound-connections`"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "Inbound peer limit"
+msgstr "Limite de pares"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "`dcc.network.max-outbound-connections`"
+msgstr "`dcc.network.max-outbound-connections`"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "Outbound peer limit"
+msgstr "Límite de pares"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "`dcc.hotstuff.authoritative`"
+msgstr "`dcc.hotstuff.authoritative`"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "`false`"
+msgstr "`false`"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "Testnet-only: lets a HotStuff commit certificate raise the finalized height. Requires `enabled = true`. Never set it on Mainnet"
+msgstr "Solo Testnet: permite que un certificado de compromiso HotStuff aumente la altura final. Requiere `enabled = true`. Nunca lo puse en Mainnet"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "`dcc.miner.self-commit-to-generation`"
+msgstr "`dcc.miner.self-commit-to-generation`"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "`no`"
+msgstr "`no`"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "The node's miner submits its own Commit To Generation transaction for each generation period"
+msgstr "El minero del nodo presenta su propia transacción Commit To Generation para cada período de generación"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "`dcc.network.peer-stall-threshold`"
+msgstr "`dcc.network.peer-stall-threshold`"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "`900`"
+msgstr "`900`"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "Ticks (about 1 s each) of peer-reconnection stall before the node clears suspensions and redials"
+msgstr "Tetas (aproximadamente 1 s cada uno) de par-reconexión puestos antes del nodo aclara las suspensiones y rediales"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "`dcc.hotstuff.enabled`"
+msgstr "`dcc.hotstuff.enabled`"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "HotStuff fast-finality engine. Leave it off on Mainnet. The public Testnet's own nodes run it enabled and authoritative (see [Features and Activation](10_features-and-activation))"
+msgstr "Motor HotStuff de rápida definición. Déjalo en Mainnet. Los propios nodos del Testnet publican lo habilitan y lo autorizan (ver [Características y Activación](10_features-and-activation))"
+
+#: ../../05_node-guide/05_configuration.md:63
+msgid "API key"
+msgstr "Clave de API"
+
+#: ../../05_node-guide/05_configuration.md:65
+msgid "Privileged endpoints (wallet, rollback, `/debug/*`, `/node/stop`) require an `X-Api-Key` header. The node stores only a hash of the key. Generate the hash with the node itself:"
+msgstr "Los extremos prerrogados (wallet, rollback, `/debug/*`, `/node/stop`) requieren un encabezado `X-Api-Key`. El nodo almacena sólo un hash de la llave. Genera el hachón con el propio nodo:"
+
+#: ../../05_node-guide/05_configuration.md:72
+msgid "Put the `hash` value from the JSON response in `dcc.rest-api.api-key-hash`, restart, and send `my-secret-api-key` in `X-Api-Key`."
+msgstr "Ponga el valor `hash` de la respuesta JSON en `dcc.rest-api.api-key-hash`, reinicie y envíe `my-secret-api-key` en `X-Api-Key`."
+
+#: ../../05_node-guide/05_configuration.md:74
+msgid "Example: minimal Mainnet file"
+msgstr "Ejemplo: archivo Mainnet mínimo"
+
+#: ../../05_node-guide/06_sync-and-rollback.md:1
+msgid "Sync, Import, Export and Rollback"
+msgstr "Sincronización, importación, exportación y retroceso"
+
+#: ../../05_node-guide/06_sync-and-rollback.md:4
+#: ../../05_node-guide/07_upgrade.md:4
+#: ../../05_node-guide/08_wallet-and-generating.md:4
+#: ../../05_node-guide/09_logging.md:4
+#: ../../05_node-guide/10_features-and-activation.md:4
+#: ../../05_node-guide/11_troubleshooting.md:4
+msgid "Verified against node-scala v1.8.0."
+msgstr "Verificado contra nodo-scala v1.8.0."
+
+#: ../../05_node-guide/06_sync-and-rollback.md:7
+msgid "Initial sync"
+msgstr "Sincronización inicial"
+
+#: ../../05_node-guide/06_sync-and-rollback.md:9
+msgid "A new node downloads and validates the whole chain from its peers. This takes hours to days depending on hardware and network. Track progress with:"
+msgstr "Un nuevo nodo descarga y valida toda la cadena de sus pares. Esto lleva horas a días dependiendo del hardware y la red. Seguimiento de los progresos con:"
+
+#: ../../05_node-guide/06_sync-and-rollback.md:16
+msgid "The node is fully synced when `stateHeight` equals `blockchainHeight` in `/node/status` and `/blocks/height` is within a few blocks of a public peer's height. If a node stalls after syncing, restart it and check the [logs](09_logging) for fork or invalid-block messages."
+msgstr "El nodo es totalmente sincronizado cuando `stateHeight` iguala a `blockchainHeight` en `/node/status` y `/blocks/height` está dentro de unas pocas cuadras de la altura de un par público. Si un nodo se fija después de la sincronización, reinicie y compruebe el [troncos](09_logging) para mensajes de tenedor o de bloqueo inválido."
+
+#: ../../05_node-guide/06_sync-and-rollback.md:18
+msgid "Exporting blocks"
+msgstr "Bloques de exportación"
+
+#: ../../05_node-guide/06_sync-and-rollback.md:20
+msgid "The node ships an exporter that writes the blocks (and optionally state snapshots) of a stopped node to files:"
+msgstr "El nodo envía un exportador que escribe los bloques (y opcionalmente emite instantáneas) de un nodo detenido a archivos:"
+
+#: ../../05_node-guide/06_sync-and-rollback.md:3
+msgid "Option"
+msgstr "Opción"
+
+#: ../../05_node-guide/06_sync-and-rollback.md:3
+msgid "`-c`, `--config`"
+msgstr "`-c`, `--config`"
+
+#: ../../05_node-guide/06_sync-and-rollback.md:3
+msgid "Node config file"
+msgstr "Node config file"
+
+#: ../../05_node-guide/06_sync-and-rollback.md:3
+msgid "`-o`, `--output-prefix`"
+msgstr "`-o`, `--output-prefix`"
+
+#: ../../05_node-guide/06_sync-and-rollback.md:3
+msgid "Blocks output file name prefix"
+msgstr "Prefijo de nombre del archivo de salida bloques"
+
+#: ../../05_node-guide/06_sync-and-rollback.md:3
+msgid "`-s`, `--snapshot-output-prefix`"
+msgstr "`-s`, `--snapshot-output-prefix`"
+
+#: ../../05_node-guide/06_sync-and-rollback.md:3
+msgid "Snapshots output file name prefix"
+msgstr "Snapshots nombre del archivo de salida prefix"
+
+#: ../../05_node-guide/06_sync-and-rollback.md:3
+msgid "`-h`, `--height`"
+msgstr "`-h`, `--height`"
+
+#: ../../05_node-guide/06_sync-and-rollback.md:3
+msgid "Export up to this height (must be > 0)"
+msgstr "Exportar hasta esta altura (debe ser <unk> 0)"
+
+#: ../../05_node-guide/06_sync-and-rollback.md:29
+msgid "Importing blocks"
+msgstr "Importación de bloques"
+
+#: ../../05_node-guide/06_sync-and-rollback.md:31
+msgid "The importer loads blocks from a file (or URL, or stdin with `-`) into an empty or partially synced database, which is much faster than downloading from peers:"
+msgstr "El importador carga bloques de un archivo (o URL, o stdin con `-`) en una base de datos vacía o parcialmente sincronizada, que es mucho más rápido que la descarga de pares:"
+
+#: ../../05_node-guide/06_sync-and-rollback.md:3
+msgid "`-i`, `--input-file`"
+msgstr "`-i`, `--input-file`"
+
+#: ../../05_node-guide/06_sync-and-rollback.md:3
+msgid "Blockchain data file — **required**"
+msgstr "Archivo de datos de la cadena de bloques — **necesarios**"
+
+#: ../../05_node-guide/06_sync-and-rollback.md:3
+msgid "`-s`, `--snapshots-file`"
+msgstr "`-s`, `--snapshots-file`"
+
+#: ../../05_node-guide/06_sync-and-rollback.md:3
+msgid "Snapshots data file"
+msgstr "Archivo de datos Snapshots"
+
+#: ../../05_node-guide/06_sync-and-rollback.md:3
+msgid "Import up to this height (must be > 0)"
+msgstr "Importar hasta esta altura (debe ser <unk> 0)"
+
+#: ../../05_node-guide/06_sync-and-rollback.md:3
+msgid "`-n`, `--no-verify`"
+msgstr "`-n`, `--no-verify`"
+
+#: ../../05_node-guide/06_sync-and-rollback.md:3
+msgid "Skip signature verification — only for files you trust"
+msgstr "Saltar la verificación de firmas — sólo para archivos en los que confía"
+
+#: ../../05_node-guide/06_sync-and-rollback.md:3
+msgid "`-q`, `--max-queue-size`"
+msgstr "`-q`, `--max-queue-size`"
+
+#: ../../05_node-guide/06_sync-and-rollback.md:3
+msgid "Size of the block queue (must be > 0)"
+msgstr "Tamaño de la cola del bloque (debe ser <unk> 0)"
+
+#: ../../05_node-guide/06_sync-and-rollback.md:42
+msgid "Import stops with an error if a block is not a child of the last stored block, so always import into a node that is stopped and whose database matches the file's starting point."
+msgstr "La importación se detiene con un error si un bloque no es un niño del último bloque almacenado, por lo que siempre importa en un nodo que se detiene y cuya base de datos coincide con el punto de partida del archivo."
+
+#: ../../05_node-guide/06_sync-and-rollback.md:44
+msgid "Rolling back"
+msgstr "Volviendo."
+
+#: ../../05_node-guide/06_sync-and-rollback.md:46
+msgid "Rollback removes the most recent blocks. It is limited by `dcc.db.max-rollback-depth` (2000 blocks by default) and requires the API key:"
+msgstr "Rollback elimina los bloques más recientes. Se limita por `dcc.db.max-rollback-depth` (2000 bloques por defecto) y requiere la clave de API:"
+
+#: ../../05_node-guide/06_sync-and-rollback.md:55
+msgid "With `returnTransactionsToUtx` set to `true`, transactions from the removed blocks go back to the unconfirmed pool. A successful call returns the `BlockId` of the new tip."
+msgstr "Con `returnTransactionsToUtx` fijado en `true`, las transacciones de los bloques eliminados vuelven a la piscina no confirmada. Una llamada exitosa devuelve el `BlockId` del nuevo consejo."
+
+#: ../../05_node-guide/06_sync-and-rollback.md:57
+msgid "Full re-sync"
+msgstr "Re-sincronización completa"
+
+#: ../../05_node-guide/06_sync-and-rollback.md:59
+msgid "If the database is corrupted or you need to go deeper than the rollback depth, delete the data volume and let the node re-sync from genesis:"
+msgstr "Si la base de datos está corrompida o necesita ir más profundo que la profundidad de revolver, eliminar el volumen de datos y dejar que el nodo vuelva a sincronizarse de génesis:"
+
+#: ../../05_node-guide/06_sync-and-rollback.md:62
+msgid "This destroys all local chain state. Never stop a node with `docker kill` or `SIGKILL` — an unclean shutdown can corrupt the database. Use `docker stop --time 60`."
+msgstr "Esto destruye todo el estado de cadena local. Nunca detenga un nodo con `docker kill` o `SIGKILL` — una apagada impuro puede corromper la base de datos. Usa `docker stop --time 60`."
+
+#: ../../05_node-guide/07_upgrade.md:1
+msgid "Upgrade a Node"
+msgstr "Actualizar un nodo"
+
+#: ../../05_node-guide/07_upgrade.md:7
+msgid "Upgrading replaces the software, not the data: keep the data volume and configuration."
+msgstr "La actualización reemplaza el software, no los datos: mantener el volumen de datos y la configuración."
+
+#: ../../05_node-guide/07_upgrade.md:9 ../../05_node-guide/09_logging.md:7
+msgid "Docker"
+msgstr "Docker"
+
+#: ../../05_node-guide/07_upgrade.md:11
+msgid "Record the current height: `curl -s http://localhost:6869/blocks/height`"
+msgstr "Grabar la altura actual: `curl -s http://localhost:6869/blocks/height`"
+
+#: ../../05_node-guide/07_upgrade.md:12
+msgid "Pull the new image, and note its digest so you can pin it:"
+msgstr "Saque la nueva imagen, y observe su digestión para que pueda marcarla:"
+
+#: ../../05_node-guide/07_upgrade.md:19
+msgid "Stop the node gracefully. The image uses `STOPSIGNAL SIGINT` to trigger a clean JVM shutdown; give it time to flush and close the database:"
+msgstr "Detén el nodo con gracia. La imagen utiliza `STOPSIGNAL SIGINT` para activar un apagado JVM limpio; dale tiempo para desactivar y cerrar la base de datos:"
+
+#: ../../05_node-guide/07_upgrade.md:25
+msgid "Start a new container with the same volume, environment and ports as before (see [Run a Node with Docker](04_install-docker))."
+msgstr "Comience un nuevo contenedor con el mismo volumen, entorno y puertos que antes (ver [Corre un Nodo con Docker](04_install-docker))."
+
+#: ../../05_node-guide/07_upgrade.md:26
+msgid "Confirm the height continues from where it stopped."
+msgstr "Confirma la altura que continúa desde donde se detuvo."
+
+#: ../../05_node-guide/07_upgrade.md:28
+msgid "Reverting an upgrade"
+msgstr "Revertir una actualización"
+
+#: ../../05_node-guide/07_upgrade.md:30
+msgid "If the new version fails to start, stop it and start the previous image using its pinned `sha-<commit>` tag against the same volume. Only if the state itself is corrupted should you fall back to a [full re-sync](06_sync-and-rollback)."
+msgstr "Si la nueva versión no comienza, deténgala y comience la imagen anterior usando su etiqueta `sha-<commit>` con el mismo volumen. Sólo si el estado mismo está corrupto si usted cae de vuelta a un [re-sinc](06_sync-and-rollback)."
+
+#: ../../05_node-guide/07_upgrade.md:32
+msgid "From a JAR"
+msgstr "De un JAR"
+
+#: ../../05_node-guide/07_upgrade.md:34
+msgid "Stop the process with a normal `SIGINT`/`SIGTERM` (not `kill -9`), replace the JAR with the new release, and start it again with the same configuration file."
+msgstr "Detén el proceso con un `SIGINT`/`SIGTERM` normal (no `kill -9`), reemplaza al JAR con la nueva versión y vuelve a empezar con el mismo archivo de configuración."
+
+#: ../../05_node-guide/07_upgrade.md:36
+msgid "Network upgrades"
+msgstr "Mejoras de la red"
+
+#: ../../05_node-guide/07_upgrade.md:38
+msgid "New protocol behaviour is switched on by [feature activation](10_features-and-activation), not by upgrading alone. A node that does not support an activated feature stops following the chain, so upgrade before an announced activation height."
+msgstr "El nuevo comportamiento de protocolo es activado por [activación de la función](10_features-and-activation), no mejorando solo. Un nodo que no soporta una función activada se detiene después de la cadena, por lo que actualizar antes de una altura anunciada de activación."
+
+#: ../../05_node-guide/08_wallet-and-generating.md:1
+msgid "Node Wallet and Block Generation"
+msgstr "Node Wallet y Block Generation"
+
+#: ../../05_node-guide/08_wallet-and-generating.md:7
+msgid "The node wallet"
+msgstr "La billetera del nodo"
+
+#: ../../05_node-guide/08_wallet-and-generating.md:9
+msgid "A node keeps an encrypted wallet file at `dcc.wallet.file` (default `<directory>/wallet/wallet.dat`). It holds the accounts the node may sign for — most importantly the account that generates blocks."
+msgstr "Un nodo mantiene un archivo de cartera encriptado en `dcc.wallet.file` (predeterminado `<directory>/wallet/wallet.dat`). Sostiene las cuentas que el nodo puede firmar — lo más importante es la cuenta que genera bloques."
+
+#: ../../05_node-guide/08_wallet-and-generating.md:11
+msgid "The wallet stores a **base seed**, from which account keys are derived. It is not an account seed itself. If `dcc.wallet.seed` is not set, the node generates a new one on first start. To use an existing seed, set `dcc.wallet.seed` (Base58) and `dcc.wallet.password`, or pass `DCC_WALLET_SEED` and `DCC_WALLET_PASSWORD` to the Docker image."
+msgstr "La billetera almacena un **base de semillas**, de la que se derivan las claves de cuenta. No es una semilla de cuenta en sí. Si `dcc.wallet.seed` no está establecido, el nodo genera uno nuevo en el primer comienzo. Para usar una semilla existente, establece `dcc.wallet.seed` (Base58) y `dcc.wallet.password`, o pasar `DCC_WALLET_SEED` y `DCC_WALLET_PASSWORD` a la imagen Docker."
+
+#: ../../05_node-guide/08_wallet-and-generating.md:14
+msgid "Whoever holds the seed controls the funds. Keep secrets in a `chmod 600` `.env` file or a secrets manager, never in shell history or a committed file."
+msgstr "Quien tenga la semilla controla los fondos. Mantenga secretos en un archivo `chmod 600` `.env` o en un gestor de secretos, nunca en la historia de la concha ni en un archivo comprometido."
+
+#: ../../05_node-guide/08_wallet-and-generating.md:17
+msgid "Wallet endpoints"
+msgstr "Puntos finales de Wallet"
+
+#: ../../05_node-guide/08_wallet-and-generating.md:19
+msgid "These require the [API key](05_configuration):"
+msgstr "Estos requieren el [Clave de API](05_configuration):"
+
+#: ../../05_node-guide/08_wallet-and-generating.md:27
+msgid "Generating blocks"
+msgstr "Generando bloques"
+
+#: ../../05_node-guide/08_wallet-and-generating.md:29
+#, python-brace-format
+msgid "A node produces blocks when a wallet account meets the generating-balance requirement under {ref}`Leased Proof of Stake <02_decentralchain/05_node:Leased Proof of Stake>` — its own DCC plus DCC leased to it. To grow a generating balance, other accounts can lease to the node's address."
+msgstr "Un nodo produce bloques cuando una cuenta de billetera cumple con el requisito de equilibrio de generación bajo {ref}`Prueba de la toma liderada <02_decentralchain/05_node:Leased Proof of Stake>` — su propio DCC más DCC alquilado a él. Para aumentar el equilibrio de generación, otras cuentas pueden arrendar a la dirección del nodo."
+
+#: ../../05_node-guide/08_wallet-and-generating.md:31
+msgid "Check what the miner sees with the privileged `/debug/minerInfo` endpoint, which lists each generating account and its mining balance."
+msgstr "Revise lo que el minero ve con el privilegiado punto final `/debug/minerInfo`, que enumera cada cuenta generadora y su equilibrio minero."
+
+#: ../../05_node-guide/08_wallet-and-generating.md:33
+#, python-brace-format
+msgid "For reward economics and the block-reward vote, see the {ref}`Node <02_decentralchain/05_node:Node>` article."
+msgstr "Para la economía de recompensa y el voto de reverencia del bloque, vea el artículo {ref}`Node <02_decentralchain/05_node:Node>`."
+
+#: ../../05_node-guide/09_logging.md:1
+msgid "Logging"
+msgstr "Logging"
+
+#: ../../05_node-guide/09_logging.md:9
+msgid "The image writes two streams:"
+msgstr "La imagen escribe dos secuencias:"
+
+#: ../../05_node-guide/09_logging.md:11
+msgid "**Console** — at the level in `DCC_LOG_LEVEL` (default `INFO`). Read it with `docker logs`."
+msgstr "**Consola** — a nivel de `DCC_LOG_LEVEL` (predeterminado `INFO`). Léalo con `docker logs`."
+
+#: ../../05_node-guide/09_logging.md:12
+msgid "**Files** — under `/var/log/dcc` (volume), written at `TRACE` level by the entrypoint."
+msgstr "**Archivos** — bajo `/var/log/dcc` (volumen), escrito a nivel `TRACE` por el punto de entrada."
+
+#: ../../05_node-guide/09_logging.md:19
+msgid "Levels, from quietest to noisiest: `OFF`, `ERROR`, `WARN`, `INFO`, `DEBUG`, `TRACE`. Use `INFO` in production; `DEBUG` helps with sync and peer issues but is very verbose."
+msgstr "Niveles, desde el más tranquilo hasta el más ruidoso: `OFF`, `ERROR`, `WARN`, `INFO`, `DEBUG`, `TRACE`. Use `INFO` en producción; `DEBUG` ayuda con problemas de sincronización y pares, pero es muy verbosa."
+
+#: ../../05_node-guide/09_logging.md:21
+msgid "Custom logback configuration"
+msgstr "Configuración de logback personalizada"
+
+#: ../../05_node-guide/09_logging.md:23
+msgid "Logging is configured with [Logback](https://logback.qos.ch/). Point the JVM at your own file through `JAVA_OPTS`:"
+msgstr "El registro está configurado con [Retroceso](https://logback.qos.ch/). Apunte el JVM en su propio archivo a través de `JAVA_OPTS`:"
+
+#: ../../05_node-guide/09_logging.md:29
+msgid "For a JAR install, pass the same `-Dlogback.configurationFile=...` system property to `java`."
+msgstr "Para una instalación JAR, pasar la misma propiedad del sistema `-Dlogback.configurationFile=...` a `java`."
+
+#: ../../05_node-guide/09_logging.md:31
+msgid "Logs worth watching"
+msgstr "Logros que vale la pena ver"
+
+#: ../../05_node-guide/09_logging.md:33
+msgid "`Fork` and `InvalidBlock` messages — the node is on a different chain or received a bad block."
+msgstr "Mensajes `Fork` y `InvalidBlock` — el nodo está en una cadena diferente o recibió un bloque malo."
+
+#: ../../05_node-guide/09_logging.md:34
+msgid "Out-of-memory exits — the entrypoint starts the JVM with `ExitOnOutOfMemoryError`, so raise `DCC_HEAP_SIZE`."
+msgstr "Salidas fuera de la memoria: el punto de entrada comienza el JVM con `ExitOnOutOfMemoryError`, por lo que aumentar `DCC_HEAP_SIZE`."
+
+#: ../../05_node-guide/10_features-and-activation.md:1
+msgid "Features and Activation"
+msgstr "Características y Activación"
+
+#: ../../05_node-guide/10_features-and-activation.md:7
+msgid "Protocol changes ship as numbered **blockchain features**. A feature is not active just because a node supports it: it must be activated on the network, either by a generator vote or because the network defaults pre-activate it."
+msgstr "Protocolo cambia el barco como número **características de la cadena de bloques**. Una característica no es activa sólo porque un nodo lo soporta: debe ser activada en la red, ya sea por un voto generador o porque el predeterminado de la red pre-activar."
+
+#: ../../05_node-guide/10_features-and-activation.md:9
+msgid "How activation works"
+msgstr "Cómo funciona la activación"
+
+#: ../../05_node-guide/10_features-and-activation.md:11
+msgid "Generators signal support for features they implement in the blocks they produce."
+msgstr "Generadores de señalización de soporte para las características que implementan en los bloques que producen."
+
+#: ../../05_node-guide/10_features-and-activation.md:12
+msgid "At the end of each voting period, a feature that reached the voting threshold is scheduled for activation."
+msgstr "Al final de cada período de votación, se ha programado la activación de una característica que alcanzó el umbral de votación."
+
+#: ../../05_node-guide/10_features-and-activation.md:13
+msgid "After activation, the new rules apply to every node."
+msgstr "Después de la activación, las nuevas reglas se aplican a cada nodo."
+
+#: ../../05_node-guide/10_features-and-activation.md:15
+msgid "Inspect the current state at any time:"
+msgstr "Inspeccione el estado actual en cualquier momento:"
+
+#: ../../05_node-guide/10_features-and-activation.md:21
+msgid "The response includes `height`, `votingInterval`, `votingThreshold`, `nextCheck` and a `features` list with each feature's status."
+msgstr "La respuesta incluye `height`, `votingInterval`, `votingThreshold`, `nextCheck` y una lista `features` con el estado de cada característica."
+
+#: ../../05_node-guide/10_features-and-activation.md:23
+msgid "Unsupported features"
+msgstr "Características no compatibles"
+
+#: ../../05_node-guide/10_features-and-activation.md:25
+msgid "By default `dcc.features.auto-shutdown-on-unsupported-feature = yes`: if the network activates a feature your node does not know, the node shuts down rather than follow a chain it cannot validate. The fix is to [upgrade](07_upgrade). Generators can list the features they vote for in `dcc.features.supported`."
+msgstr "Por defecto `dcc.features.auto-shutdown-on-unsupported-feature = yes`: si la red activa una característica que su nodo no sabe, el nodo se cierra en lugar de seguir una cadena que no puede validar. La solución es a [actualización](07_upgrade). Los generadores pueden enumerar las características que votan en `dcc.features.supported`."
+
+#: ../../05_node-guide/10_features-and-activation.md:27
+msgid "Feature list in v1.8.0"
+msgstr "Lista de valores en v1.8.0"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "ID"
+msgstr "ID"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "Feature"
+msgstr "Característica"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "1"
+msgstr "1"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "Minimum generating balance of 1000 DCC"
+msgstr "Equilibrio mínimo de generación de 1000 DCC"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "2"
+msgstr "2"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "NG protocol"
+msgstr "Protocolo NG"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "3"
+msgstr "3"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "Mass Transfer transaction"
+msgstr "Transmisión masiva de transferencias"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "4"
+msgstr "4"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "Smart accounts"
+msgstr "Cuentas inteligentes"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "5"
+msgstr "5"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "Data transaction"
+msgstr "Transmisión de datos"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "6"
+msgstr "6"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "Burn any tokens"
+msgstr "Quema cualquier ficha"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "7"
+msgstr "7"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "Fee sponsorship"
+msgstr "Patrocinio de honorarios"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "8"
+msgstr "8"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "Fair PoS"
+msgstr "Fair PoS"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "9"
+msgstr "9"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "Smart assets"
+msgstr "Activos inteligentes"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "10"
+msgstr "10"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "Smart account trading"
+msgstr "Comercio de cuenta inteligente"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "11"
+msgstr "11"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "Ride 4 dApps"
+msgstr "Ride 4 dApps"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "12"
+msgstr "12"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "Order version 3"
+msgstr "Versión 3"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "13"
+msgstr "13"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "Reduced NFT fee"
+msgstr "Reducir la tasa NFT"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "14"
+msgstr "14"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "Block reward and community-driven monetary policy"
+msgstr "Bloqueo de recompensa y política monetaria impulsada por la comunidad"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "15"
+msgstr "15"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "Ride V4, VRF, Protobuf, failed transactions"
+msgstr "Ride V4, VRF, Protobuf, transacciones fallidas"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "16"
+msgstr "16"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "Ride V5, dApp-to-dApp invocations"
+msgstr "Invocaciones Ride V5, dApp-to-dApp"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "17"
+msgstr "17"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "Ride V6, MetaMask support"
+msgstr "Ride V6, soporte MetaMask"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "18"
+msgstr "18"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "Consensus and MetaMask updates"
+msgstr "Actualizaciones de consenso y MetaMask"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "19"
+msgstr "19"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "Block reward distribution"
+msgstr "Distribución de la recompensa del bloque"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "20"
+msgstr "20"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "Capped buy-back and DAO amounts"
+msgstr "Contrato de compra y cantidades DAO"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "21"
+msgstr "21"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "Cease buy-back"
+msgstr "Cesar compra-back"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "22"
+msgstr "22"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "Light node"
+msgstr "Nodo de luz"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "23"
+msgstr "23"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "Boost block reward"
+msgstr "Boost block reward"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "24"
+msgstr "24"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "`ecrecover` fix"
+msgstr "`ecrecover` fijado"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "25"
+msgstr "25"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "Deterministic finality and Ride V9"
+msgstr "Finalidad determinista y Ride V9"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "26"
+msgstr "26"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "Adjusted block reward distribution"
+msgstr "Distribución de recompensa ajustada del bloque"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "27"
+msgstr "27"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "Continuation transaction (not exposed)"
+msgstr "Transacciones de continuación (no expuestas)"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "28"
+msgstr "28"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "Lease expiration (not exposed)"
+msgstr "Caducidad de plomo (no expuesta)"
+
+#: ../../05_node-guide/10_features-and-activation.md:61
+msgid "Since v1.8.0 the numbering of the last features differs from v1.7.0: **26 = Adjusted Block Reward Distribution**, 27 = Continuation transaction, 28 = Lease expiration, and the Groth16 verifier is no longer a feature. Only feature 26 is votable and reported in `/activation/status`; 27 and 28 are defined in the source but not exposed."
+msgstr "Desde v1.8.0 la numeración de las últimas características difiere de v1.7.0: **26 = Distribución ajustada de la recompensa del bloque**, 27 = transacción de continuación, 28 = Caducidad de plomo, y el verificador Groth16 ya no es una característica. Sólo la característica 26 es votable y reportada en `/activation/status`; 27 y 28 se definen en la fuente pero no expuestos."
+
+#: ../../05_node-guide/10_features-and-activation.md:64
+msgid "Which of these are active on a given network is a runtime fact — read it from `/activation/status` rather than from this table."
+msgstr "El cual de ellos están activos en una red dada es un hecho de tiempo de ejecución — leerlo desde `/activation/status` en lugar de desde esta tabla."
+
+#: ../../05_node-guide/10_features-and-activation.md:66
+msgid "Finality and HotStuff"
+msgstr "Finalidad y HotStuff"
+
+#: ../../05_node-guide/10_features-and-activation.md:68
+msgid "Finality is provided by **Deterministic Finality (feature 25)**. The node also contains a HotStuff BFT fast-finality engine, controlled by `dcc.hotstuff.enabled`. It is **off by default** and gated on an external audit before any Mainnet use. Do not enable it on a Mainnet node. When it is enabled, `/node/status` additionally reports `hotStuffFinalizedHeight`."
+msgstr "La finalidad es proporcionada por **Deterministic Finality (feature 25)**. El nodo también contiene un motor HotStuff BFT de rápida-finalidad, controlado por `dcc.hotstuff.enabled`. Es **por defecto** y se cierra en una auditoría externa antes de cualquier uso de Mainnet. No lo actives en un nodo Mainnet. Cuando está habilitado, `/node/status` también informa `hotStuffFinalizedHeight`."
+
+#: ../../05_node-guide/10_features-and-activation.md:71
+msgid "**On the public Testnet, HotStuff is enabled and authoritative.** The Testnet's own nodes run `dcc.hotstuff.enabled = true` and `dcc.hotstuff.authoritative = true`, so a HotStuff commit certificate raises the finalized height that `/blocks/height/finalized` reports. That is why Testnet finality runs only a few blocks behind the tip (`hotStuffFinalizedHeight` in `/node/status`). Mainnet does not run HotStuff. Integrators should not expect Testnet finality latency on Mainnet."
+msgstr "**En el público Testnet, HotStuff está habilitado y autorizado.** Los propios nodos de Testnet funcionan `dcc.hotstuff.enabled = true` y `dcc.hotstuff.authoritative = true`, por lo que un certificado de compromiso HotStuff eleva la altura final que informa `/blocks/height/finalized`. Es por eso que la finalidad Testnet corre sólo unas pocas cuadras detrás de la punta (`hotStuffFinalizedHeight` en `/node/status`). Mainnet no funciona HotStuff. Los integradores no deben esperar latencia de finalidad Testnet en Mainnet."
+
+#: ../../05_node-guide/11_troubleshooting.md:1
+msgid "Troubleshooting"
+msgstr "Solución de problemas"
+
+#: ../../05_node-guide/11_troubleshooting.md:3
+msgid "Symptom"
+msgstr "Síntoma"
+
+#: ../../05_node-guide/11_troubleshooting.md:3
+msgid "Likely cause"
+msgstr "Causa probable"
+
+#: ../../05_node-guide/11_troubleshooting.md:3
+msgid "What to do"
+msgstr "Qué hacer"
+
+#: ../../05_node-guide/11_troubleshooting.md:3
+msgid "`curl localhost:6869` fails from the host while the container is healthy"
+msgstr "`curl localhost:6869` falla del host mientras que el contenedor es saludable"
+
+#: ../../05_node-guide/11_troubleshooting.md:3
+msgid "REST API bound to the container's loopback"
+msgstr "REST API vinculada al bucleback del contenedor"
+
+#: ../../05_node-guide/11_troubleshooting.md:3
+msgid "Set `DCC_REST_API_BIND=0.0.0.0` and publish `-p 127.0.0.1:6869:6869`"
+msgstr "Establecer `DCC_REST_API_BIND=0.0.0.0` y publicar `-p 127.0.0.1:6869:6869`"
+
+#: ../../05_node-guide/11_troubleshooting.md:3
+msgid "Node stays behind after hours"
+msgstr "El nodo se queda atrás después de horas"
+
+#: ../../05_node-guide/11_troubleshooting.md:3
+msgid "Still in initial sync, or few peers"
+msgstr "Todavía en la sincronización inicial, o pocos pares"
+
+#: ../../05_node-guide/11_troubleshooting.md:3
+msgid "Check `/node/status` and `/peers/connected`; open inbound port 6868"
+msgstr "Compruebe `/node/status` y `/peers/connected`; puerto abierto 6868"
+
+#: ../../05_node-guide/11_troubleshooting.md:3
+msgid "No peers"
+msgstr "Sin pares"
+
+#: ../../05_node-guide/11_troubleshooting.md:3
+msgid "Firewall, wrong network"
+msgstr "Firewall, red equivocada"
+
+#: ../../05_node-guide/11_troubleshooting.md:3
+msgid "Confirm `DCC_NETWORK`; add a peer with `POST /peers/connect`"
+msgstr "Confirme `DCC_NETWORK`; agregue un par con `POST /peers/connect`"
+
+#: ../../05_node-guide/11_troubleshooting.md:3
+msgid "Node exits shortly after start"
+msgstr "Salidas de nodo poco después del inicio"
+
+#: ../../05_node-guide/11_troubleshooting.md:3
+msgid "JVM out of memory (`ExitOnOutOfMemoryError`)"
+msgstr "JVM fuera de memoria (`ExitOnOutOfMemoryError`)"
+
+#: ../../05_node-guide/11_troubleshooting.md:3
+msgid "Raise `DCC_HEAP_SIZE`"
+msgstr "Raise `DCC_HEAP_SIZE`"
+
+#: ../../05_node-guide/11_troubleshooting.md:3
+msgid "Node stops after a network activation"
+msgstr "El nodo se detiene después de la activación de una red"
+
+#: ../../05_node-guide/11_troubleshooting.md:3
+msgid "Unsupported feature, auto-shutdown"
+msgstr "Función sin soporte, auto-desactivación"
+
+#: ../../05_node-guide/11_troubleshooting.md:3
+msgid "[Upgrade](07_upgrade) the node"
+msgstr "[Actualización](07_upgrade) el nodo"
+
+#: ../../05_node-guide/11_troubleshooting.md:3
+msgid "`403` from an API call"
+msgstr "`403` de una llamada API"
+
+#: ../../05_node-guide/11_troubleshooting.md:3
+msgid "Missing or wrong `X-Api-Key`, or `api-key-hash` unset"
+msgstr "Desaparecido o incorrecto `X-Api-Key`, o `api-key-hash` unset"
+
+#: ../../05_node-guide/11_troubleshooting.md:3
+msgid "[Configure the API key](05_configuration)"
+msgstr "[Configurar la clave de API](05_configuration)"
+
+#: ../../05_node-guide/11_troubleshooting.md:3
+msgid "Database errors after a crash"
+msgstr "Errores de base de datos después de un accidente"
+
+#: ../../05_node-guide/11_troubleshooting.md:3
+msgid "Unclean shutdown"
+msgstr "Cierre sucio"
+
+#: ../../05_node-guide/11_troubleshooting.md:3
+msgid "Roll back if within depth, otherwise [re-sync](06_sync-and-rollback)"
+msgstr "Regrese si está dentro de la profundidad, de lo contrario [re-sync](06_sync-and-rollback)"
+
+#: ../../05_node-guide/11_troubleshooting.md:3
+msgid "Node produces no blocks"
+msgstr "Nodo no produce bloques"
+
+#: ../../05_node-guide/11_troubleshooting.md:3
+msgid "Generating balance too low, wallet not loaded, or still syncing"
+msgstr "Generando el equilibrio demasiado bajo, billetera no cargada o aún sincronizando"
+
+#: ../../05_node-guide/11_troubleshooting.md:3
+msgid "Check `/debug/minerInfo` and [wallet setup](08_wallet-and-generating)"
+msgstr "Compruebe `/debug/minerInfo` y [configuración de cartera](08_wallet-and-generating)"
+
+#: ../../05_node-guide/11_troubleshooting.md:18
+msgid "Useful checks"
+msgstr "Comprobaciones útiles"
+
+#: ../../05_node-guide/11_troubleshooting.md:27
+msgid "Adding a peer at runtime"
+msgstr "Añadiendo a un par en tiempo de ejecución"
+
+#: ../../05_node-guide/11_troubleshooting.md:35
+msgid "Reporting an issue"
+msgstr "Presentación de informes sobre una cuestión"
+
+#: ../../05_node-guide/11_troubleshooting.md:37
+msgid "Include the node version, network, `/node/status` output and the relevant log excerpt when opening an issue at [Decentral-America/node-scala](https://github.com/Decentral-America/node-scala)."
+msgstr "Incluya la versión de nodo, la red, la salida `/node/status` y el extracto de registro pertinente al abrir un número en [Decentral-America/node-scala](https://github.com/Decentral-America/node-scala)."
+
+#: ../../05_node-guide/12_install-linux.md:1
+msgid "Installing on Linux"
+msgstr "Instalación en Linux"
+
+#: ../../05_node-guide/12_install-linux.md:4
+msgid "Verified on a clean Ubuntu 24.04 (the `ubuntu:24.04` image, plus `sudo`, `curl` and `git`) against node-scala v1.8.1, 2026-10-27: Temurin 25.0.5, SBT from its APT repository, `sbt packageAll` in 12 minutes, then the tarball synced the public Testnet from genesis to the tip, height 100,132, in 22 minutes, with block IDs matching the public node. The DEB package did not install (see below)."
+msgstr "Verificado en un Ubuntu 24.04 limpio (la imagen `ubuntu:24.04`, más `sudo`, `curl` y `git`) contra node-scala v1.8.1, 2026-10-27: Temurin 25.0.5, SBT de su repositorio APT, `sbt packageAll` en 12 minutos, luego el tarball sincronizado el público Testnet de la génesis a la punta, altura 100,132, en 22 minutos, con bloqueo sin ID El paquete DEB no se instaló (ver abajo)."
+
+#: ../../05_node-guide/12_install-linux.md:7
+msgid "For most operators, [Docker](04_install-docker) is simpler than a bare-metal install. Use this page if you need to run the node directly on the host, for example to package it for your own init system."
+msgstr "Para la mayoría de los operadores, [Docker](04_install-docker) es más simple que un instalación de metal. Utilice esta página si necesita ejecutar el nodo directamente en el host, por ejemplo para empaquetarlo para su propio sistema de entrada."
+
+#: ../../05_node-guide/12_install-linux.md:9
+#: ../../05_node-guide/13_install-macos.md:9
+#: ../../05_node-guide/14_install-windows.md:9
+msgid "Prerequisites"
+msgstr "Prerrequisitos"
+
+#: ../../05_node-guide/12_install-linux.md:11
+msgid "**Java 25 JDK**: [Eclipse Temurin 25](https://adoptium.net/temurin/releases/?version=25) is the distribution node-scala recommends and tests against."
+msgstr "**Java 25 JDK**: [Eclipse Temurin 25](https://adoptium.net/temurin/releases/?version=25) es la distribución node-scala recomienda y prueba contra."
+
+#: ../../05_node-guide/12_install-linux.md:12
+msgid "**[SBT](https://www.scala-sbt.org/1.x/docs/Installing-sbt-on-Linux.html)** and **Git**, to build the node: node-scala releases ship no node package (the v1.7.0 to v1.8.1 release assets are only `dcc-grpc-server` tarballs)."
+msgstr "**[SBT](https://www.scala-sbt.org/1.x/docs/Installing-sbt-on-Linux.html)** y **Git.**, para construir el nodo: node-scala libera paquete de nodos del barco (el v1.7.0 a v1.8.1 activos de liberación son sólo tarballs `dcc-grpc-server`)."
+
+#: ../../05_node-guide/12_install-linux.md:13
+msgid "**A configuration file** for the network. For the public Testnet, use the one in [Join the Public Testnet](15_join-testnet); the node's built-in `testnet` profile is a different network."
+msgstr "**Un archivo de configuración** para la red. Para el público Testnet, utilice el de [Únete al Testnet Público](15_join-testnet); el perfil `testnet` incorporado del nodo es una red diferente."
+
+#: ../../05_node-guide/12_install-linux.md:14
+msgid "About 4 GB of free memory and 10 GB of disk for the build; the Testnet data itself was 131 MB at height 99,976."
+msgstr "Aproximadamente 4 GB de memoria gratuita y 10 GB de disco para la construcción; los datos Testnet fueron 131 MB en altura 99,976."
+
+#: ../../05_node-guide/12_install-linux.md:16
+msgid "Install the JDK (Ubuntu/Debian)"
+msgstr "Instala el JDK (Ubuntu/Debian)"
+
+#: ../../05_node-guide/12_install-linux.md:26
+msgid "This adds Adoptium's signing key as a keyring file. Older instructions pipe it into `apt-key add`, which Ubuntu 24.04 still accepts but reports as deprecated on every `apt-get update`."
+msgstr "Esto añade la clave de firma de Adoptium como archivo de llave. Las instrucciones más viejas lo llevan a `apt-key add`, que Ubuntu 24.04 todavía acepta pero reporta como deprecatado en cada `apt-get update`."
+
+#: ../../05_node-guide/12_install-linux.md:28
+msgid "For a distribution without APT, install Eclipse Temurin 25 through your package manager or from the [Adoptium releases page](https://adoptium.net/temurin/releases/?version=25)."
+msgstr "Para una distribución sin APT, instale Eclipse Temurin 25 a través de su gestor de paquetes o desde el [Página de lanzamientos de adoptium](https://adoptium.net/temurin/releases/?version=25)."
+
+#: ../../05_node-guide/12_install-linux.md:30
+msgid "Install SBT (Ubuntu/Debian)"
+msgstr "Instala SBT (Ubuntu/Debian)"
+
+#: ../../05_node-guide/12_install-linux.md:32
+msgid "These are the commands from the [SBT installation page](https://www.scala-sbt.org/1.x/docs/Installing-sbt-on-Linux.html):"
+msgstr "Estos son los comandos del [Página de instalación de SBT](https://www.scala-sbt.org/1.x/docs/Installing-sbt-on-Linux.html):"
+
+#: ../../05_node-guide/12_install-linux.md:42
+#: ../../05_node-guide/13_install-macos.md:33
+#: ../../05_node-guide/14_install-windows.md:24
+msgid "Build from source"
+msgstr "Construido de la fuente"
+
+#: ../../05_node-guide/12_install-linux.md:52
+msgid "`sbt packageAll` produces:"
+msgstr "`sbt packageAll` produce:"
+
+#: ../../05_node-guide/12_install-linux.md:54
+msgid "the universal tarball `node/target/universal/decentralchain-<version>.tgz` (also copied to `docker/target/dcc.tgz`), and"
+msgstr "el tarball universal `node/target/universal/decentralchain-<version>.tgz` (también copiado a `docker/target/dcc.tgz`), y"
+
+#: ../../05_node-guide/12_install-linux.md:55
+msgid "DEB packages for `amd64` and `arm64` in `node/target/`. The node package is named `decentralchain` for Mainnet and `decentralchain-<network>` for other networks (for example `decentralchain-testnet`)."
+msgstr "Paquetes DEB para `amd64` y `arm64` en `node/target/`. El paquete de nodos se llama `decentralchain` para Mainnet y `decentralchain-<network>` para otras redes (por ejemplo, `decentralchain-testnet`)."
+
+#: ../../05_node-guide/12_install-linux.md:57
+msgid "`sbt -Dnetwork=testnet packageAll` builds packages whose defaults are the built-in `testnet` profile, not the public Testnet. To join the public Testnet, any build works: the configuration file selects the chain."
+msgstr "`sbt -Dnetwork=testnet packageAll` construye paquetes cuyos defectos son el perfil `testnet` incorporado, no el Testnet público. Para unirse al Testnet público, cualquier obra de construcción: el archivo de configuración selecciona la cadena."
+
+#: ../../05_node-guide/12_install-linux.md:59
+msgid "There is no single \"fat\" JAR; the node runs from its `lib/` directory through the launcher script."
+msgstr "No hay un solo JAR \"graso\"; el nodo se ejecuta desde su directorio `lib/` a través del script de lanzamiento."
+
+#: ../../05_node-guide/12_install-linux.md:61
+msgid "To also run the unit tests, run `sbt checkPR` before `packageAll`. It took 81 minutes on the same machine and needs [Node.js](https://nodejs.org/) on the `PATH` as well, for the JavaScript build of the Ride compiler. See the [node-scala README](https://github.com/Decentral-America/node-scala#readme) for integration tests and IDE setup."
+msgstr "Para realizar también las pruebas de unidad, ejecute `sbt checkPR` antes de `packageAll`. Tomó 81 minutos en la misma máquina y necesita [Node.js](https://nodejs.org/) en el `PATH` también, para la construcción JavaScript del compilador Ride. Vea el [node-scala README](https://github.com/Decentral-America/node-scala#readme) para pruebas de integración y configuración IDE."
+
+#: ../../05_node-guide/12_install-linux.md:63
+#: ../../05_node-guide/13_install-macos.md:22
+#: ../../05_node-guide/14_install-windows.md:14
+msgid "Run from the tarball"
+msgstr "Corre desde el tarball"
+
+#: ../../05_node-guide/12_install-linux.md:65
+msgid "Extract the tarball and start the node with its `bin/node` launcher and your configuration file:"
+msgstr "Extraiga el tarball y comience el nodo con su lanzador `bin/node` y su archivo de configuración:"
+
+#: ../../05_node-guide/12_install-linux.md:72
+msgid "Unless the configuration sets `dcc.directory`, the node keeps its data under `~/.local/share/dcc-<network>`: `~/.local/share/dcc-custom-21` for the public Testnet. To check that it follows the chain, compare its height and block IDs with the public node, as shown in [Join the Public Testnet](15_join-testnet)."
+msgstr "A menos que la configuración establezca `dcc.directory`, el nodo mantiene sus datos bajo `~/.local/share/dcc-<network>`: `~/.local/share/dcc-custom-21` para el público Testnet. Para comprobar que sigue la cadena, compare sus IDs de altura y bloquee con el nodo público, como se muestra en [Únete al Testnet Público](15_join-testnet)."
+
+#: ../../05_node-guide/12_install-linux.md:74
+msgid "Install the DEB package you built"
+msgstr "Instalar el paquete DEB que construyó"
+
+#: ../../05_node-guide/12_install-linux.md:77
+msgid "The v1.8.1 DEB package doesn't install: its post-install script copies `/usr/share/decentralchain/doc/dcc.conf.sample`, but the package ships `decentralchain.conf.sample`, so `dpkg -i` stops with `post-installation script subprocess returned error exit status 1` before it installs the systemd service. Until the package is fixed, run the node from the tarball as above."
+msgstr "El paquete v1.8.1 DEB no se instala: su script posterior a la instalación copia `/usr/share/decentralchain/doc/dcc.conf.sample`, pero el paquete envía `decentralchain.conf.sample`, por lo que `dpkg -i` para con `post-installation script subprocess returned error exit status 1` antes de instalar el servicio sistemad. Hasta que el paquete esté fijo, ejecute el nodo del tarball como arriba."
+
+#: ../../05_node-guide/12_install-linux.md:85
+msgid "Once installed, the package runs the node as a systemd service named after the package (`decentralchain`), as the unprivileged user of the same name, and creates its configuration file at `/etc/decentralchain/dcc.conf` from the sample."
+msgstr "Una vez instalado, el paquete ejecuta el nodo como un servicio sistematizado llamado después del paquete (`decentralchain`), como el usuario no privilegiado del mismo nombre, y crea su archivo de configuración en `/etc/decentralchain/dcc.conf` de la muestra."
+
+#: ../../05_node-guide/12_install-linux.md:87
+#: ../../05_node-guide/13_install-macos.md:49
+#: ../../05_node-guide/14_install-windows.md:37
+msgid "Next steps"
+msgstr "Siguientes pasos"
+
+#: ../../05_node-guide/12_install-linux.md:89
+#: ../../05_node-guide/13_install-macos.md:51
+#: ../../05_node-guide/14_install-windows.md:39
+msgid "[Configuration](05_configuration) · [Sync and Rollback](06_sync-and-rollback) · [Wallet and Generating](08_wallet-and-generating)"
+msgstr "[Configuración](05_configuration) · [Sync and Rollback](06_sync-and-rollback) · [Wallet y Generating](08_wallet-and-generating)"
+
+#: ../../05_node-guide/13_install-macos.md:1
+msgid "Installing on macOS"
+msgstr "Instalación en macOS"
+
+#: ../../05_node-guide/13_install-macos.md:4
+msgid "Not yet verified on a clean macOS machine. The steps follow node-scala v1.8.1's `README.md`; the build and run steps match the ones verified on a clean Ubuntu 24.04 (see [Linux](12_install-linux)). If a step doesn't match what you see, please report it."
+msgstr "Aún no se ha verificado en una máquina macOS limpia. Los pasos siguen el `README.md` del nodo-scala v1.8.1; los pasos de construcción y ejecución coinciden con los verificados en un Ubuntu 24.04 limpio (ver [Linux](12_install-linux)). Si un paso no coincide con lo que ve, por favor reporte."
+
+#: ../../05_node-guide/13_install-macos.md:7
+msgid "[Docker](04_install-docker) is the simplest way to run a node; this page is for running it directly on macOS."
+msgstr "[Docker](04_install-docker) es la forma más simple de ejecutar un nodo; esta página es para ejecutarlo directamente en macOS."
+
+#: ../../05_node-guide/13_install-macos.md:11
+msgid "[Homebrew](https://brew.sh/)"
+msgstr "[Homebrew](https://brew.sh/)"
+
+#: ../../05_node-guide/13_install-macos.md:12
+#: ../../05_node-guide/14_install-windows.md:12
+msgid "A network configuration file — the repository ships defaults for Mainnet and Testnet in `node/src/main/resources/network-defaults.conf`."
+msgstr "Un archivo de configuración de red — los barcos de repositorio predeterminados para Mainnet y Testnet en `node/src/main/resources/network-defaults.conf`."
+
+#: ../../05_node-guide/13_install-macos.md:14
+msgid "Install the JDK"
+msgstr "Instalar el JDK"
+
+#: ../../05_node-guide/13_install-macos.md:20
+msgid "This installs [Eclipse Temurin 25](https://adoptium.net/temurin/releases/?version=25), the JDK version node-scala is built and tested against."
+msgstr "Esto instala [Eclipse Temurin 25](https://adoptium.net/temurin/releases/?version=25), la versión node-scala de JDK se construye y prueba en contra."
+
+#: ../../05_node-guide/13_install-macos.md:24
+msgid "node-scala releases do not ship a node JAR or package (the v1.7.0 to v1.8.1 release assets are only `dcc-grpc-server` tarballs), and node-scala doesn't publish a macOS package (`.pkg`/Homebrew formula). The supported way to run a node is the [Docker image](04_install-docker) `ghcr.io/decentral-america/node-scala`. To run it directly on macOS, [build from source](#build-from-source) below, then extract the universal tarball and start the node with its `bin/` launcher:"
+msgstr "node-scala liberaciones no envían un nodo JAR o paquete (los activos de liberación v1.7.0 a v1.8.1 son sólo tarballs `dcc-grpc-server`), y node-scala no publica un paquete macOS (fórmula `.pkg`/Homebrew). La forma soportada de correr un nodo es el [Imagen de Docker](04_install-docker) `ghcr.io/decentral-america/node-scala`. Para ejecutarlo directamente en macOS, [a partir de la fuente](#build-from-source) a continuación, extraiga el alquitrán universal y comience el nodo con su lanzador `bin/`:"
+
+#: ../../05_node-guide/13_install-macos.md:31
+msgid "There is no single \"fat\" JAR; the launcher runs the node from the tarball's `lib/` directory."
+msgstr "No hay un solo JAR \"graso\"; el lanzador dirige el nodo del directorio `lib/` de tarball."
+
+#: ../../05_node-guide/13_install-macos.md:45
+#: ../../05_node-guide/14_install-windows.md:33
+msgid "The network comes from the configuration file you start the node with; for the public Testnet, use the one in [Join the Public Testnet](15_join-testnet). To also run the unit tests, run `sbt checkPR` first: it takes over an hour and needs [Node.js](https://nodejs.org/) on the `PATH`."
+msgstr "La red viene del archivo de configuración con el que inicias el nodo; para el público Testnet, utiliza el de [Únete al Testnet Público](15_join-testnet). Para realizar también las pruebas de unidad, ejecute el `sbt checkPR` primero: toma más de una hora y necesita [Node.js](https://nodejs.org/) en el `PATH`."
+
+#: ../../05_node-guide/13_install-macos.md:47
+msgid "Building from source additionally requires [SBT](https://www.scala-sbt.org/1.x/docs/Installing-sbt-on-Mac.html). See the [node-scala README](https://github.com/Decentral-America/node-scala#readme) for integration-test setup."
+msgstr "Además, el uso de la fuente requiere [SBT](https://www.scala-sbt.org/1.x/docs/Installing-sbt-on-Mac.html). Vea el [node-scala README](https://github.com/Decentral-America/node-scala#readme) para la configuración de pruebas de integración."
+
+#: ../../05_node-guide/14_install-windows.md:1
+msgid "Installing on Windows"
+msgstr "Instalación en Windows"
+
+#: ../../05_node-guide/14_install-windows.md:4
+msgid "Not yet verified on a clean Windows machine. The steps follow node-scala v1.8.1's `README.md`; the build steps match the ones verified on a clean Ubuntu 24.04 (see [Linux](12_install-linux)). If a step doesn't match what you see, please report it."
+msgstr "Aún no se ha verificado en una máquina de Windows limpia. Los pasos siguen el `README.md` del nodo-scala v1.8.1; los pasos de construcción coinciden con los verificados en un Ubuntu 24.04 limpio (ver [Linux](12_install-linux)). Si un paso no coincide con lo que ve, por favor reporte."
+
+#: ../../05_node-guide/14_install-windows.md:7
+msgid "[Docker](04_install-docker) (via Docker Desktop) is the simplest way to run a node on Windows; this page is for running it directly."
+msgstr "[Docker](04_install-docker) (via Docker Desktop) es la forma más simple de ejecutar un nodo en Windows; esta página es para ejecutarlo directamente."
+
+#: ../../05_node-guide/14_install-windows.md:11
+msgid "**Java 25 JDK** — install [Eclipse Temurin 25](https://adoptium.net/temurin/releases/?version=25) using its Windows installer."
+msgstr "**Java 25 JDK** — instalar [Eclipse Temurin 25](https://adoptium.net/temurin/releases/?version=25) utilizando su instalador de Windows."
+
+#: ../../05_node-guide/14_install-windows.md:16
+msgid "node-scala releases do not ship a node JAR or a Windows installer (the v1.7.0 to v1.8.1 release assets are only `dcc-grpc-server` tarballs). The supported way to run a node is Docker Desktop with the [Docker image](04_install-docker) `ghcr.io/decentral-america/node-scala`. To run it directly, [build from source](#build-from-source) below, extract the universal tarball `node/target/universal/decentralchain-<version>.tgz`, and start the node from a terminal (Command Prompt or PowerShell) with the Windows launcher in its `bin\\` directory:"
+msgstr "node-scala liberaciones no envían un nodo JAR o un instalador de Windows (el v1.7.0 a v1.8.1 activos de liberación son sólo tarballs `dcc-grpc-server`). La forma soportada de ejecutar un nodo es Docker Desktop con el [Imagen de Docker](04_install-docker) `ghcr.io/decentral-america/node-scala`. Para ejecutarlo directamente, [a partir de la fuente](#build-from-source) a continuación, extrae el tarball universal `node/target/universal/decentralchain-<version>.tgz`, y comience el nodo de un terminal (Command Prompt o PowerShell) con el lanzador Windows en su directorio `bin\\`:"
+
+#: ../../05_node-guide/14_install-windows.md:22
+msgid "There is no single \"fat\" JAR; the launcher runs the node from the tarball's `lib\\` directory."
+msgstr "No hay un solo JAR \"graso\"; el lanzador dirige el nodo del directorio `lib\\` de tarball."
+
+#: ../../05_node-guide/14_install-windows.md:35
+msgid "Building from source additionally requires [SBT](https://www.scala-sbt.org/1.x/docs/Installing-sbt-on-Windows.html). See the [node-scala README](https://github.com/Decentral-America/node-scala#readme) for integration-test setup and IntelliJ IDEA configuration."
+msgstr "Además, el uso de la fuente requiere [SBT](https://www.scala-sbt.org/1.x/docs/Installing-sbt-on-Windows.html). Vea el [node-scala README](https://github.com/Decentral-America/node-scala#readme) para configuración de pruebas de integración y configuración de IDEA IntelliJ."
+
+#: ../../05_node-guide/15_join-testnet.md:1
+msgid "Join the Public Testnet"
+msgstr "Únete al Testnet Público"
+
+#: ../../05_node-guide/15_join-testnet.md:3
+msgid "This page shows how to run your own node on the public DecentralChain Testnet, the network behind `testnet-node.decentralchain.io`. Your node follows the chain and serves its own REST API (and gRPC, if you enable it). It does not forge blocks."
+msgstr "Esta página muestra cómo ejecutar su propio nodo en el público DecentralChain Testnet, la red detrás de `testnet-node.decentralchain.io`. Su nodo sigue la cadena y sirve su propia API REST (y gRPC, si lo habilita). No forja bloques."
+
+#: ../../05_node-guide/15_join-testnet.md:6
+msgid "The public Testnet is a **custom chain** (`dcc.blockchain.type = CUSTOM`). The node's built-in `testnet` profile (`DCC_NETWORK=testnet` with no config file) is a different network and **will not join it**. Use the configuration file below."
+msgstr "El Testnet público es un **cadena personalizada** (`dcc.blockchain.type = CUSTOM`). El perfil `testnet` incorporado del nodo (`DCC_NETWORK=testnet` sin archivo de configuración) es una red diferente y **no se unirá a él**. Utilice el archivo de configuración a continuación."
+
+#: ../../05_node-guide/15_join-testnet.md:10
+msgid "Verified on a clean Docker host (macOS 15.5, Docker Desktop 29.2.1) against node-scala v1.8.1, 2026-10-27: following this page word for word, the node synced from genesis to the tip, height 99,976, in 31 minutes, and the block IDs it reported matched the public node's. The same configuration, run from a tarball built on a clean Ubuntu 24.04, synced to height 100,132 in 22 minutes. Every value on this page was checked against the live Testnet on 2026-10-18. The configuration mirrors the Testnet operators' own node configuration (`node-config/testnet/dcc.conf` in the [infra repository](https://github.com/Decentral-America/infra)). If the two ever disagree, the infra file is authoritative."
+msgstr "Verificado en un host Docker limpio (macOS 15.5, Docker Desktop 29.2.1) contra node-scala v1.8.1, 2026-10-27: siguiendo esta palabra de página, el nodo se sincroniza desde la génesis a la punta, altura 99.976 en 31 minutos, y los IDs de bloque que reportó coinciden con el nodo público. La misma configuración, se ejecuta desde un tarball construido en un Ubuntu 24.04 limpio, sincronizado a la altura 100,132 en 22 minutos. Cada valor en esta página fue revisado contra el Testnet vivo en 2026-10-18. La configuración refleja la propia configuración de los operadores Testnet (`node-config/testnet/dcc.conf` en el [repositorio infra](https://github.com/Decentral-America/infra)). Si los dos alguna vez discrepan, el archivo infra es autorizado."
+
+#: ../../05_node-guide/15_join-testnet.md:13
+msgid "Network facts"
+msgstr "Datos de la red"
+
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "Item"
+msgstr "Tema"
+
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "Value"
+msgstr "Valor"
+
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "Chain ID"
+msgstr "Identificación de la cadena"
+
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "`!` (ASCII 33)"
+msgstr "`!` (ASCII 33)"
+
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "Address prefix"
+msgstr "Dirección prefijo"
+
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "`31`"
+msgstr "`31`"
+
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "Genesis block ID"
+msgstr "Génesis bloque ID"
+
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "`5be1Fs9oqWGnUt1vVpBDXaJNN583tqic72hFwY9mmMf56n5WevrmwqMzdLSRVdEu7DWGhuQkVL1zhYBn4iuz9DX4`"
+msgstr "`5be1Fs9oqWGnUt1vVpBDXaJNN583tqic72hFwY9mmMf56n5WevrmwqMzdLSRVdEu7DWGhuQkVL1zhYBn4iuz9DX4`"
+
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "Genesis timestamp"
+msgstr "Génesis timetamp"
+
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "`1788539579643` (2026-09-04)"
+msgstr "`1788539579643` (2026-09-04)"
+
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "Target block time"
+msgstr "Plazo de bloqueo objetivo"
+
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "30 seconds"
+msgstr "30 segundos"
+
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "Public REST API"
+msgstr "Public REST API"
+
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "`https://testnet-node.decentralchain.io`"
+msgstr "`https://testnet-node.decentralchain.io`"
+
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "Node image"
+msgstr "Imagen de nodo"
+
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "`ghcr.io/decentral-america/node-scala:testnet-latest`"
+msgstr "`ghcr.io/decentral-america/node-scala:testnet-latest`"
+
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "Finality"
+msgstr "Finalidad"
+
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "Deterministic Finality (feature 25) plus HotStuff fast finality, enabled and authoritative on the Testnet only"
+msgstr "Finalidad determinista (fotografía 25) más finalidad rápida HotStuff, habilitada y autorizada en el Testnet"
+
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "Data service"
+msgstr "Servicio de datos"
+
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "`https://testnet-data-service.decentralchain.io/v0`"
+msgstr "`https://testnet-data-service.decentralchain.io/v0`"
+
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "WebSocket API"
+msgstr "WebSocket API"
+
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "`wss://testnet-ws.decentralchain.io/ws`"
+msgstr "`wss://testnet-ws.decentralchain.io/ws`"
+
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "Matcher API"
+msgstr "Matcher API"
+
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "`https://testnet-matcher.decentralchain.io/matcher`"
+msgstr "`https://testnet-matcher.decentralchain.io/matcher`"
+
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "Matcher public key"
+msgstr "La clave pública de Matcher"
+
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "`BEtB5b2kX8Yge4sb5RRbTUqd5Va8Ah8PhphowcW31z6Y`"
+msgstr "`BEtB5b2kX8Yge4sb5RRbTUqd5Va8Ah8PhphowcW31z6Y`"
+
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "Matcher address"
+msgstr "Dirección de coincidencia"
+
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "`31VMNVAvVh67dPZ41nMnYZvhoZFW7wwPrmq`"
+msgstr "`31VMNVAvVh67dPZ41nMnYZvhoZFW7wwPrmq`"
+
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "Explorer"
+msgstr "Explorador"
+
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "`https://testnet.decentralscan.com/`"
+msgstr "`https://testnet.decentralscan.com/`"
+
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "Faucet"
+msgstr "Grifo"
+
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "`https://testnet.decentralscan.com/faucet`"
+msgstr "`https://testnet.decentralscan.com/faucet`"
+
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "Wallet and DEX"
+msgstr "Wallet y DEX"
+
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "`https://testnet.decentral.exchange/`"
+msgstr "`https://testnet.decentral.exchange/`"
+
+#: ../../05_node-guide/15_join-testnet.md:36
+msgid "The exact image digest the Testnet runs is recorded in `node-config/testnet/vps-image.env` in the infra repository. Use that digest instead of `testnet-latest` if you want to run byte-for-byte the same build."
+msgstr "La imagen exacta digerir las carreras Testnet se registra en `node-config/testnet/vps-image.env` en el repositorio infra. Utilice ese digest en lugar de `testnet-latest` si desea ejecutar byte-for-byte la misma construcción."
+
+#: ../../05_node-guide/15_join-testnet.md:38
+msgid "1. Write the configuration file"
+msgstr "1. Escriba el archivo de configuración"
+
+#: ../../05_node-guide/15_join-testnet.md:40
+msgid "Save this as `dcc.conf`. The `blockchain` section must match the Testnet exactly; any difference (a genesis value, a functionality parameter or the reward settings) makes your node reject the chain."
+msgstr "Guarda esto como `dcc.conf`. La sección `blockchain` debe coincidir con el Testnet exactamente; cualquier diferencia (valor de génesis, parámetro de funcionalidad o configuración de recompensa) hace que su nodo rechace la cadena."
+
+#: ../../05_node-guide/15_join-testnet.md:112
+msgid "2. Start the node"
+msgstr "2. Empieza el nodo."
+
+#: ../../05_node-guide/15_join-testnet.md:128
+msgid "`DCC_NETWORK=custom` keeps the built-in `testnet` profile's peers and port out of the merged configuration; the `blockchain` section of your file selects the chain."
+msgstr "`DCC_NETWORK=custom` mantiene los pares y el puerto integrados del perfil `testnet` fuera de la configuración fusionada; la sección `blockchain` de su archivo selecciona la cadena."
+
+#: ../../05_node-guide/15_join-testnet.md:130
+msgid "3. Check that it follows the chain"
+msgstr "3. Comprueba que sigue la cadena"
+
+#: ../../05_node-guide/15_join-testnet.md:132
+msgid "Your node replays the chain from genesis, then follows the tip. Compare it with the public node:"
+msgstr "Su nodo replaya la cadena de génesis, luego sigue la punta. Compare con el nodo público:"
+
+#: ../../05_node-guide/15_join-testnet.md:144
+msgid "Once the two heights match, pick a height a few blocks below the tip and compare the block IDs. They must be identical:"
+msgstr "Una vez que las dos alturas coincidan, elija una altura a pocas cuadras debajo de la punta y compare los IDs del bloque. Deben ser idénticos:"
+
+#: ../../05_node-guide/15_join-testnet.md:152
+msgid "Getting Testnet DCC"
+msgstr "Conseguir Testnet DCC"
+
+#: ../../05_node-guide/15_join-testnet.md:154
+msgid "Open the [faucet](https://testnet.decentralscan.com/faucet) and enter a Testnet address (it starts with `31`). To create an address, use the [wallet](https://testnet.decentral.exchange/) or `libs.crypto.address(seed, '!')` from `@decentralchain/transactions` (see [How-To Guides](../04_building-apps/03_how-to-guides))."
+msgstr "Abra el [grifo](https://testnet.decentralscan.com/faucet) e ingrese una dirección Testnet (comienza con `31`). Para crear una dirección, utilice el [billetera](https://testnet.decentral.exchange/) o `libs.crypto.address(seed, '!')` desde `@decentralchain/transactions` (ver [Cómo-A Guías](../04_building-apps/03_how-to-guides))."
+
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "Open to the internet?"
+msgstr "¿Abierto a internet?"
+
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "Yes, if you set `declared-address`; otherwise outbound only is enough"
+msgstr "Sí, si fijas `declared-address`; de lo contrario sólo es suficiente"
+
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "No: keep it on localhost or behind a reverse proxy"
+msgstr "No: mantenerlo en el hospedaje local o detrás de un proxy inverso"
+
+#: ../../05_node-guide/index.md:1 ../../05_node-guide/index.md:33
+msgid "Node Guide"
+msgstr "Node Guide"
+
+#: ../../05_node-guide/index.md:3
+#, python-brace-format
+msgid "A {ref}`node <02_decentralchain/05_node:Node>` is a host connected to the DecentralChain network that validates transactions, stores blocks, and — if it meets the generating-balance requirement — produces new blocks under {ref}`Leased Proof of Stake <02_decentralchain/05_node:Leased Proof of Stake>`. This section covers running your own node: getting the software, building it, and configuring it. For the economics of block generation (rewards, leasing), see the {ref}`Node <02_decentralchain/05_node:Node>` article in the DecentralChain fundamentals section."
+msgstr "Un {ref}`nodos <02_decentralchain/05_node:Node>` es un host conectado a la red DecentralChain que valida las transacciones, almacena bloques y —si cumple con el requisito del equilibrio generativo— produce nuevos bloques bajo {ref}`Prueba de la toma liderada <02_decentralchain/05_node:Leased Proof of Stake>`. Esta sección cubre el funcionamiento de su propio nodo: conseguir el software, construirlo y configurarlo. Para la economía de la generación de bloques (en adelante, arrendamiento), vea el artículo {ref}`Node <02_decentralchain/05_node:Node>` en la sección fundamental DecentralChain."
+
+#: ../../05_node-guide/index.md:18
+msgid "Open Source"
+msgstr "Fuente abierta"
+
+#: ../../05_node-guide/index.md:22
+msgid "The node is built and maintained in the open at Decentral-America/node-scala."
+msgstr "El nodo se construye y mantiene abierto en Decentral-America/node-scala."
+
+#: ../../05_node-guide/index.md:34
+msgid "JVM-Based"
+msgstr "JVM-Based"
+
+#: ../../05_node-guide/index.md:38
+msgid "Written in Scala, packaged as a runnable JAR or DEB."
+msgstr "Escrito en Scala, empaquetado como JAR o DEB."
+
+#: ../../05_node-guide/index.md:54
+msgid "Every node exposes an HTTP API compatible with the Dcc node API shape."
+msgstr "Cada nodo expone una API HTTP compatible con la forma de API Dcc node."
+
+#: ../../05_node-guide/index.md:66
+msgid "Mainnet & Testnet"
+msgstr "Mainnet & Testnet"
+
+#: ../../05_node-guide/index.md:70
+msgid "The same codebase builds packages for either network."
+msgstr "La misma base de código construye paquetes para cualquiera de las redes."
+
+#: ../../05_node-guide/index.md:18
+msgid "Getting the Node"
+msgstr "Consiguiendo el Nodo"
+
+#: ../../05_node-guide/index.md:20
+msgid "The node implementation lives at [Decentral-America/node-scala](https://github.com/Decentral-America/node-scala), forked from Dcc 1.6.x. [Docker](04_install-docker) is the simplest way to run it; to install directly, see [Linux](12_install-linux), [macOS](13_install-macos) or [Windows](14_install-windows). All are written in Scala, built with SBT, and packaged from the same source for either network:"
+msgstr "La implementación del nodo vive en [Decentral-America/node-scala](https://github.com/Decentral-America/node-scala), predicha desde Dcc 1.6.x. [Docker](04_install-docker) es la forma más simple de ejecutarlo; para instalar directamente, vea [Linux](12_install-linux), [macOS](13_install-macos) o [Windows](14_install-windows). Todos están escritos en Scala, construidos con SBT, y empaquetados de la misma fuente para cualquiera de las redes:"
+
+#: ../../05_node-guide/index.md:27
+msgid "To run a node on the public Testnet, use the Docker image with the configuration file in [Join the Public Testnet](15_join-testnet)."
+msgstr "Para ejecutar un nodo en el Testnet público, utilice la imagen Docker con el archivo de configuración en [Únete al Testnet Público](15_join-testnet)."
+
+#: ../../05_node-guide/index.md:31
+#, python-brace-format
+msgid "Network-specific defaults are defined in [`network-defaults.conf`](https://github.com/Decentral-America/node-scala/blob/main/node/src/main/resources/network-defaults.conf) in the node-scala repository. Pass your own config file (based on the mainnet/testnet template) as the argument to the JAR to override generating-node settings such as the {ref}`block reward vote <02_decentralchain/05_node:Voting>` and wallet seed."
+msgstr "Los defectos de red específicos se definen en [`network-defaults.conf`](https://github.com/Decentral-America/node-scala/blob/main/node/src/main/resources/network-defaults.conf) en el repositorio node-scala. Pase su propio archivo de configuración (basado en la plantilla mainnet/testnet) como el argumento al JAR para anular los ajustes de nodos generados como el {ref}`Bloque el voto de recompensa <02_decentralchain/05_node:Voting>` y la semilla de cartera."
+
+#~ msgid "Disk (Mainnet, SSD)"
+#~ msgstr ""
+
+#~ msgid "200 GB"
+#~ msgstr ""
+
+#~ msgid "500 GB"
+#~ msgstr ""
+
+#~ msgid "`mainnet-latest`"
+#~ msgstr ""
+
+#~ msgid "Latest build for Mainnet"
+#~ msgstr ""
+
+#~ msgid "`testnet-latest`"
+#~ msgstr ""
+
+#~ msgid "Latest build for Testnet"
+#~ msgstr ""
+
+#~ msgid "A build pinned to one git commit — use this for reproducible deployments and rollbacks"
+#~ msgstr ""
+
+#~ msgid "All images live at `ghcr.io/decentral-america/node-scala`. Confirmed live: `ghcr.io/v2/decentral-america/node-scala/tags/list` returns `mainnet-latest`, `testnet-latest`, `stagenet-latest`, `1.7.0` and per-commit `sha-*` tags. No image is published under any Docker Hub name tried (`decentral-america/node-scala`, `decentralamerica/*`, `decentralchain/*`)."
+#~ msgstr ""
+
+#~ msgid "P2P (Mainnet and the public Testnet)"
+#~ msgstr ""
+
+#~ msgid "Open to the internet so peers can reach you"
+#~ msgstr ""
+
+#~ msgid "The examples below run a Mainnet node. To run a node on the public Testnet, follow [Join the Public Testnet](15_join-testnet) instead: it needs a configuration file, not just `DCC_NETWORK=testnet`."
+#~ msgstr ""
+
+#~ msgid "Data is stored in the `/var/lib/dcc` volume and logs in `/var/log/dcc`. Keep the data volume between restarts and upgrades — losing it forces a full re-sync."
+#~ msgstr ""
+
+#~ msgid "`DCC_WALLET_SEED` and `DCC_WALLET_PASSWORD` only take effect when a config file is mounted at `/etc/dcc/dcc.conf` (and no command arguments are passed to the container): the entrypoint layers the wallet secrets on top of that file. Without a mounted config they are silently ignored. See [Configuration](05_configuration)."
+#~ msgstr ""
+
+#~ msgid "The image's built-in `HEALTHCHECK` polls `/node/status`. See [Configuration](05_configuration) for every environment variable and [Sync and Rollback](06_sync-and-rollback) for what to expect on first start."
+#~ msgstr ""
+
+#~ msgid "Verified against node-scala v1.8.0's `README.md` and `build.sbt`. Not run on a clean machine as part of this documentation pass — if a step doesn't match what you see, please report it."
+#~ msgstr ""
+
+#~ msgid "**Java 25 JDK** — [Eclipse Temurin 25](https://adoptium.net/temurin/releases/?version=25) is the distribution node-scala recommends and tests against."
+#~ msgstr ""
+
+#~ msgid "Supported path: Docker"
+#~ msgstr ""
+
+#~ msgid "node-scala releases do not ship a node DEB package or JAR — the v1.7.0 release assets are only `dcc-grpc-server` tarballs. The supported way to run a node is the [Docker image](04_install-docker) `ghcr.io/decentral-america/node-scala`. To run the node directly on the host, build it from source as below."
+#~ msgstr ""
+
+#~ msgid "Building from source additionally requires [SBT](https://www.scala-sbt.org/1.x/docs/Installing-sbt-on-Linux.html). See the [node-scala README](https://github.com/Decentral-America/node-scala#readme) for integration-test setup and IDE configuration."
+#~ msgstr ""
+
+#~ msgid "Installing the package sets up the node as a system service named after the package; see its post-install scripts for the exact paths on your distribution."
+#~ msgstr ""
+
+#~ msgid "If you'd rather not install a package, extract the tarball and start the node with its `bin/` launcher:"
+#~ msgstr ""
+
+#~ msgid "Verified against node-scala v1.8.0's `README.md`. Not run on a clean machine as part of this documentation pass — if a step doesn't match what you see, please report it."
+#~ msgstr ""
+
+#~ msgid "node-scala releases do not ship a node JAR or package (the v1.7.0 release assets are only `dcc-grpc-server` tarballs), and node-scala doesn't publish a macOS package (`.pkg`/Homebrew formula). The supported way to run a node is the [Docker image](04_install-docker) `ghcr.io/decentral-america/node-scala`. To run it directly on macOS, [build from source](#build-from-source) below, then extract the universal tarball and start the node with its `bin/` launcher:"
+#~ msgstr ""
+
+#~ msgid "node-scala releases do not ship a node JAR or a Windows installer (the v1.7.0 release assets are only `dcc-grpc-server` tarballs). The supported way to run a node is Docker Desktop with the [Docker image](04_install-docker) `ghcr.io/decentral-america/node-scala`. To run it directly, [build from source](#build-from-source) below, extract the universal tarball `node/target/universal/decentralchain-<version>.tgz`, and start the node from a terminal (Command Prompt or PowerShell) with the Windows launcher in its `bin\\` directory:"
+#~ msgstr ""
+
+#~ msgid "Every value on this page was checked against the live Testnet on 2026-10-18. The configuration mirrors the Testnet operators' own node configuration (`node-config/testnet/dcc.conf` in the [infra repository](https://github.com/Decentral-America/infra)). If the two ever disagree, the infra file is authoritative."
+#~ msgstr ""
+

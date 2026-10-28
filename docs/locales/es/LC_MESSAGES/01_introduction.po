@@ -1,7 +1,25 @@
+# Spanish translations for DecentralChain docs.
+# Copyright (C) 2026 ORGANIZATION
+# This file is distributed under the same license as the DecentralChain docs project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: DecentralChain docs VERSION\n"
+"Report-Msgid-Bugs-To: https://github.com/Decentral-America/docs/issues\n"
+"POT-Creation-Date: 2026-10-27 21:54-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: es\n"
+"Language-Team: Spanish <https://github.com/Decentral-America/docs>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
 
-
-#: ../../01_introduction.md:1 ../../01_introduction/index.md:1
-#: ../../01_introduction/index.md:3
+#: ../../01_introduction.md:1
 msgid "Introduction"
 msgstr "Introducción"
 
@@ -87,7 +105,9 @@ msgstr "Lo que finalmente acabó con el patrón oro fue la Primera Guerra Mundia
 
 #: ../../01_introduction.md:41
 msgid "In the United States, for example, that means the government accepts only dollars as payment for taxes and requires its creditors to accept dollars in payment for debts. But if people were to lose faith in the dollar and stop accepting it in everyday transactions, it would eventually become worthless. The reliance on fiat money, we're told, gives too much power to the government, which can recklessly print as much money as it wants. Yet the truth is that this has always been possible. Even with the gold standard, governments revalued their currencies from time to time, in effect dictating a new price for gold, or they ignored the standard when it proved too limiting, as during the First World War. What's more, the notion that gold is somehow more “real\" than paper is, well, a mirage. Gold is valuable because we've collectively decided that it's valuable and that we'll accept goods and services in exchange for it. And that's no different, ultimately, from our collective decision that colorful rectangles of paper are valuable and that we'll accept goods and services in exchange for them."
-msgstr "En Estados Unidos, por ejemplo, eso significa que el gobierno sólo acepta dólares para el pago de impuestos y exige a sus acreedores que acepten dólares para el pago de deudas. Pero si la gente perdiera la fe en el dólar y dejara de aceptarlo en las transacciones cotidianas, acabaría por perder su valor. La dependencia del dinero fiduciario otorga demasiado poder al gobierno, que puede imprimir imprudentemente todo el dinero que quiera. Pero la verdad es que esto siempre ha sido posible. Incluso con el patrón oro, los gobiernos revalorizaban sus monedas cuando era necesario, dictando de hecho un nuevo precio para el oro, o ignoraban el patrón cuando resultaba demasiado limitante, como durante la Primera Guerra Mundial. Además, la idea de que el oro es de alguna manera más \real\\ que el papel es, bueno, un espejismo. El oro es valioso porque hemos decidido colectivamente que lo es y que aceptaremos bienes y servicios a cambio de él. Y eso no es diferente, en última instancia, de nuestra decisión colectiva de que los rectángulos de papel de colores son valiosos y que aceptaremos bienes y servicios a cambio de ellos."
+msgstr ""
+"En Estados Unidos, por ejemplo, eso significa que el gobierno sólo acepta dólares para el pago de impuestos y exige a sus acreedores que acepten dólares para el pago de deudas. Pero si la gente perdiera la fe en el dólar y dejara de aceptarlo en las transacciones cotidianas, acabaría por perder su valor. La dependencia del dinero fiduciario otorga demasiado poder al gobierno, que puede imprimir imprudentemente todo el dinero que quiera. Pero la verdad es que esto siempre ha sido posible. Incluso con el patrón oro, los gobiernos revalorizaban sus monedas cuando era necesario, dictando de hecho un nuevo precio para el oro, o ignoraban el patrón cuando resultaba demasiado limitante, como durante la Primera Guerra Mundial. Además, la idea de que el oro es de alguna manera más \r"
+"eal\\ que el papel es, bueno, un espejismo. El oro es valioso porque hemos decidido colectivamente que lo es y que aceptaremos bienes y servicios a cambio de él. Y eso no es diferente, en última instancia, de nuestra decisión colectiva de que los rectángulos de papel de colores son valiosos y que aceptaremos bienes y servicios a cambio de ellos."
 
 #: ../../01_introduction.md:43
 msgid "Difference Between Money and Currency"
@@ -131,7 +151,9 @@ msgstr "Definición de Protocolo de Consenso"
 
 #: ../../01_introduction.md:63
 msgid "Consensus is a pervasive problem in many areas of human endeavor; consensus is the process of agreeing to one of several alternates proposed by a number of agents. Consensus can be defined as an agreement, protocols are rules which describe how an activity should be performed. Simply put, consensus protocols could be viewed as “agreement rules”."
-msgstr "\\El consenso es un problema dominante en muchos ámbitos del quehacer humano; el consenso es el proceso de acordar en una de varias alternativas propuestas por varios agentes. El consenso puede definirse como un acuerdo, los protocolos son reglas que describen cómo debe realizarse una actividad. En pocas palabras, los protocolos de consenso pueden verse como las \reglas del acuerdo\\."
+msgstr ""
+"\\El consenso es un problema dominante en muchos ámbitos del quehacer humano; el consenso es el proceso de acordar en una de varias alternativas propuestas por varios agentes. El consenso puede definirse como un acuerdo, los protocolos son reglas que describen cómo debe realizarse una actividad. En pocas palabras, los protocolos de consenso pueden verse como las \r"
+"eglas del acuerdo\\."
 
 #: ../../01_introduction.md:65
 msgid "A consensus protocol (also known as consensus mechanism or consensus algorithm) is used to achieve the necessary agreement on a single data value or a single state of the distributed ledger at any given time. It provides a method of review and confirmation of what data should be added to a blockchain's record. Because blockchain networks typically don't have a centralized authority dictating who is right or wrong, nodes on a blockchain all must agree on the state of the network, following the predefined rules, or protocol."
@@ -207,21 +229,27 @@ msgstr "El ecosistema DecentralChain permite la comunicación segura y la intero
 
 #: ../../01_introduction.md:100
 msgid "Here are some of our most visited websites:"
-msgstr ""
+msgstr "Estos son algunos de nuestros sitios web más visitados:"
 
-#: ../../01_introduction.md:110 ../../01_introduction.md:121
+#: ../../01_introduction.md:110
+msgid "DecentralChain Website"
+msgstr "Sitio web de DecentralChain"
+
+#: ../../01_introduction.md:121
+msgid "Decentral Exchange"
+msgstr "Decentral Exchange"
+
 #: ../../01_introduction.md:132
-msgid "card-img-bottom"
-msgstr ""
+msgid "Decentral Scan"
+msgstr "Decentral Scan"
 
 #: ../../01_introduction.md:107
 msgid "Wallet and Exchange"
 msgstr "Billetera e Intercambio"
 
 #: ../../01_introduction.md:109
-#, fuzzy
 msgid "[Decentral.Exchange](<https://decentral.exchange/>) is an all-in-one platform that combines the features of a wallet, decentralized exchange, and cryptocurrency management tool into a single, seamless platform. Built on the DecentralChain blockchain, this platform offers numerous benefits to its users, including fast execution rates, multi-chain capability, low fees, and interoperability."
-msgstr "`Decentral.Exchange <https://decentral.exchange/>`_ es una plataforma todo en uno que combina las características de una billetera, un intercambio descentralizado y una herramienta de administración de criptomonedas en una sola plataforma sin problemas. Construida sobre la cadena de bloques DecentralChain, esta plataforma ofrece numerosos beneficios a sus usuarios, que incluyen tasas de ejecución rápidas, capacidad de cadena múltiple, tarifas bajas e interoperabilidad."
+msgstr "[Decentral.Exchange](<https://decentral.exchange/>) es una plataforma todo en uno que reúne las funciones de una billetera, un exchange descentralizado y una herramienta de gestión de criptomonedas en una sola plataforma integrada. Construida sobre la blockchain de DecentralChain, ofrece numerosas ventajas a sus usuarios, como una ejecución rápida, capacidad multicadena, tarifas bajas e interoperabilidad."
 
 #: ../../01_introduction.md:111
 msgid "One of the most significant advantages of decentralized exchanges is that they are not controlled by any central authority, giving users complete control over their assets. Unlike centralized exchanges, there is no risk of funds being frozen or confiscated by a centralized entity. With Decentral.Exchange, users can also enjoy enhanced security, as their private keys are stored locally on their device, reducing the risk of cybercrime. Decentralized exchanges also provide access to a wider range of assets, thanks to the absence of restrictions on the number of tokens that can be traded. Decentral.Exchange takes this further with its multi-chain capability, allowing users to trade tokens across different blockchains seamlessly. Decentral.Exchange's interoperability enables users to trade tokens across various chains and different decentralized exchanges, making it possible to access a broader range of assets effortlessly."
@@ -240,9 +268,8 @@ msgid "Blockchain Explorer"
 msgstr "Explorador Blockchain"
 
 #: ../../01_introduction.md:119
-#, fuzzy
 msgid "[DecentralScan.com](<https://decentralscan.com/>) is the official block explorer of the DecentralChain blockchain. It is a powerful tool that allows users to view, track, and analyze transactions on the DecentralChain blockchain. The block explorer provides a user-friendly interface that simplifies the navigation of the complex data stored on the blockchain."
-msgstr "`DecentralScan.com <https://decentralscan.com/>`_ es el explorador de bloques oficial de la cadena de bloques DecentralChain. Es una herramienta poderosa que permite a los usuarios ver, rastrear y analizar transacciones en la cadena de bloques DecentralChain. El explorador de bloques proporciona una interfaz fácil de usar que simplifica la navegación de los datos complejos almacenados en la cadena de bloques."
+msgstr "[DecentralScan.com](<https://decentralscan.com/>) es el explorador de bloques oficial de la blockchain de DecentralChain. Es una herramienta potente que permite ver, seguir y analizar las transacciones de la blockchain de DecentralChain. El explorador ofrece una interfaz sencilla que facilita navegar por los datos complejos almacenados en la blockchain."
 
 #: ../../01_introduction.md:121
 msgid "One of the key benefits of DecentralScan.com is its ability to provide transparency to the DecentralChain ecosystem. It enables users to view all the transactions that have occurred on the blockchain in real-time, including the number of DecentralCoins (DCC) transferred, the addresses involved in the transaction, and the transaction timestamp. This makes it easy to track the movement of DCC and understand how the ecosystem is being used."
@@ -379,4 +406,7 @@ msgstr "Se planea que el lanzamiento de CR Coin involucre una estrategia de mark
 #: ../../01_introduction.md:187
 msgid "Moreover, the education and awareness initiatives and partnerships with schools and non-profit organizations planned by CR Coin will help raise awareness about the importance of preserving the environment and promoting sustainable practices. By combining technology, community engagement and education, CR Coin aims to be a driving force for sustainable development and environmental conservation in Costa Rica."
 msgstr "Además, las iniciativas de educación y concientización y las asociaciones con escuelas y organizaciones sin fines de lucro planificadas por CR Coin ayudarán a crear conciencia sobre la importancia de preservar el medio ambiente y promover prácticas sostenibles. Al combinar tecnología, participación comunitaria y educación, CR Coin pretende ser una fuerza impulsora para el desarrollo sostenible y la conservación del medio ambiente en Costa Rica."
+
+#~ msgid "card-img-bottom"
+#~ msgstr ""
 

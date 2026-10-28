@@ -1,0 +1,2813 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Blockchain Costa Rica
+# This file is distributed under the same license as the DecentralChain package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: DecentralChain docs dev\n"
+"Report-Msgid-Bugs-To: https://github.com/Decentral-America/docs/issues\n"
+"POT-Creation-Date: 2026-10-28 01:36-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ar\n"
+"Language-Team: Arabic <https://github.com/Decentral-America/docs>\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=0 && n%100<=2 ? 4 : 5);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../05_node-guide/01_node-rest-api.md:1
+msgid "Node REST API"
+msgstr "Node REST API"
+
+#: ../../05_node-guide/01_node-rest-api.md:3
+msgid "Every DecentralChain node exposes an HTTP REST API, compatible in shape with the Dcc node API it was forked from. It's how wallets, explorers, and SDKs read chain state (balances, blocks, transactions) and broadcast signed transactions, without needing their own indexer."
+msgstr "كل عقدة DecentralChainتكشف عن مُنظمة (هاتف ريست) متوافقة مع نموذج (دي سي إي تي أي إي إيه) التي تم إستبعادها منها هكذا تُقرأ المحفظات والمستكشفين و الـ (س.د.ك) سلسلتها (التوازنات، القطع، الصفقات) وبث المعاملات الموقعة دون الحاجة إلى فهرسة خاصة بهم"
+
+#: ../../05_node-guide/01_node-rest-api.md:5
+msgid "You normally don't call this API with raw HTTP requests — use [`@decentralchain/node-api-js`](https://www.npmjs.com/package/@decentralchain/node-api-js), the typed JavaScript/TypeScript client (soon to be renamed `node-api` in the monorepo, but install it under its current published name for now — see [Client Libraries and SDK](../04_building-apps/02_client-libraries-and-sdk)), as shown in [How-To Guides](../04_building-apps/03_how-to-guides). Its namespaces map directly onto the REST API's resource areas:"
+msgstr "وعادة ما لا تدعون هذه الآلية بطلبات من شركة HTTP الخام - استخدام [`@decentralchain/node-api-js`](https://www.npmjs.com/package/@decentralchain/node-api-js)، العميل الكاتب JavaScript/TypeScript (يعاد تسميته بالشهر `node-api` في الاحتكار، ولكن تركيبها تحت اسمها المنشور الحالي حالياً - انظر [مكتبات العملاء وشركة SDK](../04_building-apps/02_client-libraries-and-sdk))، كما هو مبين في [How-To Guides](../04_building-apps/03_how-to-guides). \"ترسم خرائطها لأماكن الاسم مباشرةً على مناطق موارد \"آرتي إي آي"
+
+#: ../../05_node-guide/01_node-rest-api.md
+msgid "Namespace"
+msgstr "منطقة الاسم"
+
+#: ../../05_node-guide/01_node-rest-api.md
+msgid "Covers"
+msgstr "Covers"
+
+#: ../../05_node-guide/01_node-rest-api.md
+msgid "`addresses`"
+msgstr "`addresses`"
+
+#: ../../05_node-guide/01_node-rest-api.md
+#, python-brace-format
+msgid "Address info, {ref}`balances <02_decentralchain/01_account:Account Balance>`, on-chain data entries"
+msgstr "معلومات عن العناوين، {ref}`الأرصدة <02_decentralchain/01_account:Account Balance>`، قيود البيانات المتعلقة بالفصول"
+
+#: ../../05_node-guide/01_node-rest-api.md
+msgid "`alias`"
+msgstr "`alias`"
+
+#: ../../05_node-guide/01_node-rest-api.md
+#, python-brace-format
+msgid "{ref}`Alias <02_decentralchain/01_account:Alias>` lookup by address or name"
+msgstr "{ref}`Alias <02_decentralchain/01_account:Alias>` البحث عن العنوان أو الاسم"
+
+#: ../../05_node-guide/01_node-rest-api.md
+msgid "`assets`"
+msgstr "`assets`"
+
+#: ../../05_node-guide/01_node-rest-api.md
+#, python-brace-format
+msgid "{ref}`Asset <02_decentralchain/02_token(asset):Token (Asset)>` details, distributions, balances"
+msgstr "{ref}`الأصول <02_decentralchain/02_token(asset):Token (Asset)>` التفاصيل، التوزيع، الأرصدة"
+
+#: ../../05_node-guide/01_node-rest-api.md
+msgid "`blocks`"
+msgstr "`blocks`"
+
+#: ../../05_node-guide/01_node-rest-api.md
+#, python-brace-format
+msgid "{ref}`Block <02_decentralchain/04_block:Block>` headers, height, sequences"
+msgstr "{ref}`Block <02_decentralchain/04_block:Block>` الرؤس، الطول، التسلسل"
+
+#: ../../05_node-guide/01_node-rest-api.md
+msgid "`consensus`"
+msgstr "`consensus`"
+
+#: ../../05_node-guide/01_node-rest-api.md
+msgid "Consensus algorithm parameters, generating balance"
+msgstr "معايير خوارزمية توافق الآراء، مولِّدة التوازن"
+
+#: ../../05_node-guide/01_node-rest-api.md
+msgid "`leasing`"
+msgstr "`leasing`"
+
+#: ../../05_node-guide/01_node-rest-api.md
+#, python-brace-format
+msgid "Active leases, {ref}`lease <02_decentralchain/05_node:Leased Proof of Stake>` info"
+msgstr "الإيجارات الفعلية، {ref}`الإيجار <02_decentralchain/05_node:Leased Proof of Stake>` معلومات"
+
+#: ../../05_node-guide/01_node-rest-api.md
+msgid "`transactions`"
+msgstr "`transactions`"
+
+#: ../../05_node-guide/01_node-rest-api.md
+msgid "Broadcast, transaction info, status, unconfirmed pool"
+msgstr "بث، معلومات عن المعاملات، حالة، مجمع غير مؤكّد"
+
+#: ../../05_node-guide/01_node-rest-api.md
+#: ../../05_node-guide/03_custom-blockchain.md
+msgid "`rewards`"
+msgstr "`rewards`"
+
+#: ../../05_node-guide/01_node-rest-api.md
+#, python-brace-format
+msgid "{ref}`Block reward <02_decentralchain/05_node:Block Reward>` — current size and voting state"
+msgstr "{ref}`جائزة القفل <02_decentralchain/05_node:Block Reward>` - الحجم الحالي وحالة التصويت"
+
+#: ../../05_node-guide/01_node-rest-api.md
+msgid "`node`"
+msgstr "`node`"
+
+#: ../../05_node-guide/01_node-rest-api.md
+msgid "Node status and version"
+msgstr "الحالة والنسخة"
+
+#: ../../05_node-guide/01_node-rest-api.md
+msgid "`peers`"
+msgstr "`peers`"
+
+#: ../../05_node-guide/01_node-rest-api.md
+msgid "Connected, known, and blacklisted peers"
+msgstr "أقران متصلون ومعروفون ومزدحمون"
+
+#: ../../05_node-guide/01_node-rest-api.md
+msgid "`eth`"
+msgstr "`eth`"
+
+#: ../../05_node-guide/01_node-rest-api.md
+msgid "Ethereum-compatibility endpoints"
+msgstr "نقاط نهاية التوافق"
+
+#: ../../05_node-guide/01_node-rest-api.md
+msgid "`activation`"
+msgstr "`activation`"
+
+#: ../../05_node-guide/01_node-rest-api.md
+msgid "Feature activation status"
+msgstr "حالة تنشيط الحركة"
+
+#: ../../05_node-guide/01_node-rest-api.md
+msgid "`utils`"
+msgstr "`utils`"
+
+#: ../../05_node-guide/01_node-rest-api.md
+msgid "Hashing, seed generation, script compilation"
+msgstr "\"هستنج\", توليد البذور, تجميع النصوص"
+
+#: ../../05_node-guide/01_node-rest-api.md:23
+msgid "If you're running your own node, point the client at its own host and port instead of a public endpoint like `https://testnet-node.decentralchain.io` — check your node's configuration file for the REST API port it's bound to."
+msgstr "إذا كنت تدير عقدة الخاص بك، توجيه العميل في مضيفه وميناءه الخاصة بدلا من نقطة نهاية عامة مثل `https://testnet-node.decentralchain.io` - تحقق من ملف تشكيلة العقد الخاص بك ل ميناء REST API الذي هو ملزم."
+
+#: ../../05_node-guide/01_node-rest-api.md:25
+msgid "Base URL, port and interactive docs"
+msgstr "القاعدة URL، الموانئ والأطباء التفاعليين"
+
+#: ../../05_node-guide/01_node-rest-api.md:27
+msgid "A node listens on port `6869` (`dcc.rest-api.port`) and, by default, only on `127.0.0.1`. The node bundles an OpenAPI description (`openapi.yaml`) and Swagger UI; open the node's API root in a browser to explore every endpoint."
+msgstr ""
+
+#: ../../05_node-guide/01_node-rest-api.md:30
+msgid "Verified against node-scala v1.8.1, the version the public Testnet runs, on 2026-10-27."
+msgstr "تم التحقق من صحتها ضد النود-scala v1.8.1، والنسخة العامة Testnet تعمل، في 2026-10-27."
+
+#: ../../05_node-guide/01_node-rest-api.md:33
+msgid "Authentication"
+msgstr "التوثيق"
+
+#: ../../05_node-guide/01_node-rest-api.md:35
+msgid "Most read-only endpoints are public. Privileged ones — wallet and address management (`GET/POST /addresses`, `GET /wallet/seed`), transaction signing on behalf of the node wallet (`POST /transactions/sign`), `/debug/*`, `GET /addresses/seq/*` and `GET /utils/seed*` (since v1.8.0), all `/peers/*` endpoints (including the read-only `GET /peers/all`, `/peers/connected`, `/peers/blacklisted` and `/peers/suspended`, plus `/peers/connect` and `/peers/clearblacklist`) and `/node/stop` — require an `X-Api-Key` header matching the hash in `dcc.rest-api.api-key-hash`. See [Configuration](05_configuration). Requests with a wrong key get `403`. Fee estimation (`POST /transactions/calculateFee`) does not need a key."
+msgstr ""
+
+#: ../../05_node-guide/01_node-rest-api.md:37
+msgid "The public Testnet gateway (`https://testnet-node.decentralchain.io`) deliberately exposes the read-only `GET /peers/*` lists without a key; on your own node they require `X-Api-Key`. The gateway does not route the write endpoints (`POST /peers/connect` returns `404`)."
+msgstr ""
+
+#: ../../05_node-guide/01_node-rest-api.md:39
+msgid "Set Up an API Key"
+msgstr "وضع مفتاح للتسجيلات"
+
+#: ../../05_node-guide/01_node-rest-api.md:41
+msgid "The node stores only a hash of the key, never the key itself:"
+msgstr "لا يخزن العقد سوى حشيش من المفتاح، أبداً المفتاح نفسه:"
+
+#: ../../05_node-guide/01_node-rest-api.md:43
+msgid "Choose a long random key, for example with `openssl rand -hex 32` or a password manager."
+msgstr "اختر مفتاح عشوائي طويل، على سبيل المثال مع `openssl rand -hex 32` أو مدير كلمة السر."
+
+#: ../../05_node-guide/01_node-rest-api.md:44
+msgid "Hash it with your own node's `POST /utils/hash/secure`, which needs no key:"
+msgstr "اسحبه مع موكب الخاص بك `POST /utils/hash/secure`، الذي لا يحتاج إلى مفتاح:"
+
+#: ../../05_node-guide/01_node-rest-api.md:54
+msgid "Run this against your own node rather than a public one, so the key never leaves your machine."
+msgstr "أديري هذا ضد مظهركِ الخاص بدلاً من شخص عام، لذا المفتاح لا يترك آلتك أبداً"
+
+#: ../../05_node-guide/01_node-rest-api.md:55
+msgid "Put the `hash` value in the configuration as `dcc.rest-api.api-key-hash` and restart the node."
+msgstr "(ب) أن تكون قيمة `hash` في التشكيلة `dcc.rest-api.api-key-hash` وأن تعيد فتح العقد."
+
+#: ../../05_node-guide/01_node-rest-api.md:56
+msgid "Send the key itself, not the hash, in the `X-Api-Key` header:"
+msgstr "أرسل المفتاح نفسه، وليس العجلة، في `X-Api-Key` الرأس:"
+
+#: ../../05_node-guide/01_node-rest-api.md:62
+msgid "The node compares the hash of the header value with `api-key-hash`. While `api-key-hash` is empty (the default), every protected endpoint answers `403` with error `2`, whatever key is sent. The legacy header name `api_key` is still accepted, but use `X-Api-Key`."
+msgstr ""
+
+#: ../../05_node-guide/01_node-rest-api.md:64
+msgid "Anyone with the key can sign transactions with the node's wallet and stop the node. Keep the REST API bound to `127.0.0.1`, or put it behind a reverse proxy that blocks the protected paths, before you expose a node to the internet."
+msgstr "أي شخص لديه المفتاح يمكنه التوقيع على معاملات مع محفظة العقد و إيقاف العقد أبقوا فريق (آر تي آي) متجهاً إلى `127.0.0.1`، أو وضعوه خلف عميل عكسي يحجب مسارات الحماية قبل أن تعرضوا عقداً على الإنترنت"
+
+#: ../../05_node-guide/01_node-rest-api.md:66
+msgid "Commonly used endpoints"
+msgstr "نقاط نهاية مستعملة بصورة مشتركة"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Endpoint"
+msgstr "نقطة النهاية"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+#: ../../05_node-guide/02_node-extensions.md:11
+#: ../../05_node-guide/03_custom-blockchain.md
+#: ../../05_node-guide/04_install-docker.md:5
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "Purpose"
+msgstr "الغرض"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`GET /node/status`"
+msgstr "`GET /node/status`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Blockchain height, state height, update time and `generationPeriodLength`"
+msgstr "ارتفاع البلوكشاين، طول الولاية، تحديث الوقت و `generationPeriodLength`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`GET /node/version`"
+msgstr "`GET /node/version`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Node version"
+msgstr "نسخة رقمية"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`GET /blocks/height`, `/blocks/last`"
+msgstr "`GET /blocks/height`, `/blocks/last`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Current height and last block"
+msgstr "الارتفاع الحالي والجمود الأخير"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`GET /blocks/height/finalized`, `/blocks/headers/finalized`"
+msgstr "`GET /blocks/height/finalized`, `/blocks/headers/finalized`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Finalized height and header"
+msgstr "الارتفاع النهائي والرؤس"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+#, python-brace-format
+msgid "`GET /addresses/balance/{address}`"
+msgstr "`GET /addresses/balance/{address}`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Address balance"
+msgstr "رصيد العنوان"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`GET /assets/details`"
+msgstr "`GET /assets/details`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Asset information"
+msgstr "معلومات عن الأصول"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+#, python-brace-format
+msgid "`GET /transactions/info/{id}`, `/transactions/status`"
+msgstr "`GET /transactions/info/{id}`, `/transactions/status`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Transaction lookup and confirmation status"
+msgstr "حالة البحث عن المعاملات وإقرارها"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`POST /transactions/broadcast`"
+msgstr "`POST /transactions/broadcast`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Submit a signed transaction"
+msgstr "تقديم معاملة موقعة"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`POST /transactions/calculateFee`"
+msgstr "`POST /transactions/calculateFee`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Fee estimate for an unsigned transaction"
+msgstr "تقدير رسوم المعاملة غير الموقعة"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`GET /transactions/unconfirmed`"
+msgstr "`GET /transactions/unconfirmed`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Unconfirmed pool"
+msgstr "حمام سباحة غير مؤكد"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`GET /blockchain/rewards`"
+msgstr "`GET /blockchain/rewards`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Block reward state"
+msgstr "جائزة القفل الولاية"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`GET /activation/status`"
+msgstr "`GET /activation/status`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "[Feature activation](10_features-and-activation)"
+msgstr "[النشاط التخصصي](10_features-and-activation)"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`GET /peers/all`, `/peers/connected`"
+msgstr "`GET /peers/all`, `/peers/connected`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Peer lists (require `X-Api-Key` on a node)"
+msgstr "قوائم الأقران (يطلب `X-Api-Key` على عقد معين)"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`POST /utils/script/compileCode`"
+msgstr "`POST /utils/script/compileCode`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Compile Ride source"
+msgstr "المصدر Ride"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`POST /utils/hash/secure`, `/utils/hash/fast`"
+msgstr "`POST /utils/hash/secure`, `/utils/hash/fast`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Hashing helpers"
+msgstr "مساعِدة الهتاف"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`GET /utils/time`"
+msgstr "`GET /utils/time`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Node time"
+msgstr "وقت العقد"
+
+#: ../../05_node-guide/01_node-rest-api.md:87
+msgid "Limits"
+msgstr "الحدود"
+
+#: ../../05_node-guide/01_node-rest-api.md:89
+msgid "Several endpoints cap result sizes through settings such as `transactions-by-address-limit` (1000), `blocks-request-limit` (100), `asset-details-limit` (100) and `data-keys-request-limit` (1000). A request above a limit is rejected with error `10`, `Too big sequence requested`; page through the results instead."
+msgstr "(أ) عدد من أحجام النتائج النهائية عن طريق تحديدات مثل `transactions-by-address-limit` (1000)، `blocks-request-limit` (100)، `asset-details-limit` (100) و `data-keys-request-limit` (1000). ويُرفض الطلب الوارد أعلاه بالخطأ `10`، `Too big sequence requested`؛ وبدلاً من ذلك يُرجى الرجوع إلى النتائج."
+
+#: ../../05_node-guide/01_node-rest-api.md:91
+msgid "Pagination"
+msgstr "الهجرات"
+
+#: ../../05_node-guide/01_node-rest-api.md:93
+msgid "List endpoints page with a cursor rather than a page number: pass the last item you received as `after` to get the next page."
+msgstr "تُدرج الصفحات النهائية مع الضمادات بدلاً من رقم الصفحة: تمرر آخر بند تلقيته `after` للحصول على الصفحة التالية."
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Page size limit"
+msgstr "الحد الأقصى للحجم"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Cursor"
+msgstr "كورس"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+#, python-brace-format
+msgid "`GET /transactions/address/{address}/limit/{limit}`"
+msgstr "`GET /transactions/address/{address}/limit/{limit}`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`transactions-by-address-limit` (1000)"
+msgstr "`transactions-by-address-limit` (1000)"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+#, python-brace-format
+msgid "`?after={transaction ID}`"
+msgstr "`?after={transaction ID}`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+#, python-brace-format
+msgid "`GET /assets/nft/{address}/limit/{limit}`"
+msgstr "`GET /assets/nft/{address}/limit/{limit}`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+#, python-brace-format
+msgid "`?after={asset ID}`"
+msgstr "`?after={asset ID}`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+#, python-brace-format
+msgid "`GET /assets/{assetId}/distribution/{height}/limit/{limit}`"
+msgstr "`GET /assets/{assetId}/distribution/{height}/limit/{limit}`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`distribution-address-limit` (1000)"
+msgstr "`distribution-address-limit` (1000)"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+#, python-brace-format
+msgid "`?after={address}`"
+msgstr "`?after={address}`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+#, python-brace-format
+msgid "`GET /blocks/seq/{from}/{to}`, `/blocks/headers/seq/{from}/{to}`"
+msgstr "`GET /blocks/seq/{from}/{to}`, `/blocks/headers/seq/{from}/{to}`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`blocks-request-limit` (100 blocks)"
+msgstr "`blocks-request-limit` (100 كتلة)"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Next height range"
+msgstr "النطاق التالي للطول"
+
+#: ../../05_node-guide/01_node-rest-api.md:102
+msgid "`/transactions/address` returns the newest transactions first, wrapped in an outer array: `[[tx, tx, ...]]`. To read an address's full history, request a page, then pass the ID of the last transaction in it as `after`, and stop when a page comes back shorter than `limit`:"
+msgstr "`/transactions/address` يعيد أحدث المعاملات أولاً، ملفوفة في صفيفة خارجية: `[[tx, tx, ...]]`. لقراءة عنوان كامل التاريخ، وطلب صفحة، ثم تمرير الهوية من آخر صفقة في ذلك مثل `after`، والتوقف عندما تعود صفحة أقصر من `limit`:"
+
+#: ../../05_node-guide/01_node-rest-api.md:109
+#, python-brace-format
+msgid "The distribution endpoint returns `{\"hasNext\": true, \"lastItem\": \"<address>\", \"items\": {\"<address>\": <balance>, ...}}`: pass `lastItem` as `after` while `hasNext` is `true`. `{height}` must be at most the current height minus one; a later height returns error `199`."
+msgstr "وتعود نقطة النهاية للتوزيع `{\"hasNext\": true, \"lastItem\": \"<address>\", \"items\": {\"<address>\": <balance>, ...}}`: تمر `lastItem` على أنها `after` بينما `hasNext` هي `true`. `{height}` يجب أن يكون في معظم الطول الحالي ناقص واحد؛ خطأ في الارتفاع فيما بعد `199`."
+
+#: ../../05_node-guide/01_node-rest-api.md:111
+#, python-brace-format
+msgid "`GET /addresses/data/{address}` has no pages. It returns every data entry of the address unless you filter with `?key=` (repeatable) or `?matches=<regular expression>` (at most 200 characters)."
+msgstr "`GET /addresses/data/{address}` لَيْسَ لهُ صفحات. يُعيدُ كُلّ مدخل بياناتِ العنوانِ مالم تَقْفزُ بـ `?key=` (قابلة للعادة) أَو `?matches=<regular expression>` (على الأكثر 200 شخص)."
+
+#: ../../05_node-guide/01_node-rest-api.md:113
+msgid "Error Responses"
+msgstr "الردود الخاطئة"
+
+#: ../../05_node-guide/01_node-rest-api.md:115
+msgid "An error comes back with an HTTP status and a JSON body holding a numeric `error` code and a `message`:"
+msgstr "ويعود الخطأ إلى وضعية شركة HTTP وهيئة تابعة للشركة تحمل رمزا رقميا من `error` ورمزا من طراز `message`:"
+
+#: ../../05_node-guide/01_node-rest-api.md:121
+msgid "Match on `error` rather than on `message`: messages often include details such as the transaction or the balance."
+msgstr "المطابقة على `error` بدلا من `message`: كثيرا ما تتضمن الرسائل تفاصيل مثل المعاملة أو الرصيد."
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`error`"
+msgstr "`error`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "HTTP"
+msgstr "HTTP"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+#: ../../05_node-guide/04_install-docker.md:5
+#: ../../05_node-guide/06_sync-and-rollback.md:3
+msgid "Meaning"
+msgstr "معنى"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`0`"
+msgstr "`0`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "500"
+msgstr "500"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Unknown error"
+msgstr "خطأ غير معروف"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`1`"
+msgstr "`1`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "400"
+msgstr "400"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "The JSON body is malformed or misses fields; `validationErrors` lists them"
+msgstr ""
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`2`"
+msgstr "`2`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "403"
+msgstr "403"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+#, python-brace-format
+msgid "API key missing or wrong (see {ref}`Authentication <05_node-guide/01_node-rest-api:Authentication>`)"
+msgstr "(انظر {ref}`التوثيق <05_node-guide/01_node-rest-api:Authentication>`)"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`10`"
+msgstr "`10`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Too big sequence requested: a limit was exceeded"
+msgstr "طلب تسلسل كبير جدا: تجاوز الحد"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`101`"
+msgstr "`101`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Invalid signature"
+msgstr "التوقيع غير القابل للتداول"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`102`"
+msgstr "`102`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Invalid address"
+msgstr "العنوان غير الرسمي"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`107`"
+msgstr "`107`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "The request or transaction is too big"
+msgstr "الطلب أو الصفقة كبيرة جدا"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`108`"
+msgstr "`108`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Invalid public key"
+msgstr "مفتاح عام غير مستقر"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`111`"
+msgstr "`111`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Invalid name, or a negative amount"
+msgstr "الاسم غير الرسمي، أو المبلغ السلبي"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`112`"
+msgstr "`112`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Insufficient fee, or the transaction failed a state check such as `negative dcc balance`"
+msgstr "عدم كفاية الرسوم، أو أن الصفقة أخفقت في إجراء تحقق من جانب الدولة مثل `negative dcc balance`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`113`"
+msgstr "`113`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Overflow error"
+msgstr "خطأ في التدفق"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`114`"
+msgstr "`114`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "A transaction to yourself, or a negative fee"
+msgstr "معاملة لنفسك، أو رسوم سلبية"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`115`"
+msgstr "`115`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "A non-positive amount, or the node wallet has no key for the sender"
+msgstr "كمية غير مُؤقتة، أو محفظة العقد ليس لديها مفتاح للمرسل"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`116`"
+msgstr "`116`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "The request contains invalid IDs"
+msgstr "ويتضمن الطلب هوية غير صحيحة"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`117`"
+msgstr "`117`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Invalid decimals"
+msgstr "العشرات الفاشلة"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`199`"
+msgstr "`199`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Other validation error; the message says what is wrong"
+msgstr "خطأ آخر في التثبيت والرسالة تقول ما هو الخطأ"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`301`"
+msgstr "`301`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "404"
+msgstr "404"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Block does not exist"
+msgstr "القفل لا وجود له"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`302`"
+msgstr "`302`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Alias does not exist"
+msgstr "ألياس لا وجود له"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`303`"
+msgstr "`303`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "The transaction's timestamp is too far from the node's time"
+msgstr "زمن الصفقة بعيد جداً عن وقت العقد"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`304`"
+msgstr "`304`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "No data for this key"
+msgstr "لا توجد بيانات عن هذا المفتاح"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`305`"
+msgstr "`305`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Ride compilation error"
+msgstr "Rideخطأ تجميعي"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`306`"
+msgstr "`306`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "A script failed while executing (account script, asset script or dApp)"
+msgstr "فشل السيناريو أثناء تنفيذه (خط الحساب، أو نص الأصول أو dApp)"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`307`, `308`"
+msgstr "`307`, `308`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "The transaction is not allowed by the account's or the asset's script"
+msgstr "الصفقة غير مسموح بها من قبل حساب أو نص الأصول"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`311`"
+msgstr "`311`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Transaction does not exist"
+msgstr "المعاملات غير موجودة"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`312`"
+msgstr "`312`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "501"
+msgstr "501"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Transaction type not supported"
+msgstr "نوع المعاملات غير المدعومة"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`400`"
+msgstr "`400`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "The transaction is already in the state at the given height"
+msgstr "الصفقة موجودة بالفعل في الولاية عند الطول المحدد"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`402`"
+msgstr "`402`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Account balance errors"
+msgstr "أخطاء في ميزان الحساب"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`403`"
+msgstr "`403`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Order validation error"
+msgstr "خطأ في التحقق من النظام"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`404`"
+msgstr "`404`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Wrong chain ID: the transaction was built for another network"
+msgstr "هوية السلسلة الخاطئة: تم بناء الصفقة لشبكة أخرى"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`405`"
+msgstr "`405`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Invalid proofs (too many, or too big)"
+msgstr "اثبات غير صالحة (الكثير منها، أو كبيرة جدا)"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`406`"
+msgstr "`406`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Not finalized"
+msgstr "لم تكتمل بعد"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`4001`, `4002`, `4007`"
+msgstr "`4001`, `4002`, `4007`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "Invalid transaction ID, block ID or asset ID"
+msgstr "الهوية غير المستقرة للمعاملات، أو الهوية الأساسية أو هوية الأصول"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`4008`, `4009`"
+msgstr "`4008`, `4009`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "A required key or asset ID was not given"
+msgstr "لم يُعط أي هوية ضرورية أو أصلية"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "`5031`"
+msgstr "`5031`"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "503"
+msgstr "503"
+
+#: ../../05_node-guide/01_node-rest-api.md:29
+msgid "The node did not respond in time; retry later"
+msgstr "ولم يرد العقد في الوقت المناسب؛ ثم ارجع بعد ذلك"
+
+#: ../../05_node-guide/01_node-rest-api.md:160
+msgid "A successful `200` from `POST /transactions/broadcast` only means the node accepted the transaction into its pool. Check `GET /transactions/status?id=<id>` (or use `waitForTx` in the SDK) to see when it is in a block."
+msgstr "والنجاح في `200` من `POST /transactions/broadcast` يعني فقط أن العقد قبل الصفقة في مجمعها. التحقق من `GET /transactions/status?id=<id>` (أو استخدام `waitForTx` في SDK) لمعرفة متى هو في مربع."
+
+#: ../../05_node-guide/01_node-rest-api.md:162
+msgid "CORS"
+msgstr "CORS"
+
+#: ../../05_node-guide/01_node-rest-api.md:164
+msgid "`access-control-allow-origin` is empty by default, so browsers on other origins are blocked. Set it to your application's origin rather than echoing every origin."
+msgstr "`access-control-allow-origin` فارغة من قِبَل الفشل، لذا مُحْرَقَة المُتَوَجِّرات على منشأ أخرى. ضعه على مصدر طلبك بدلاً من أن يردد كل مصدر"
+
+#: ../../05_node-guide/02_node-extensions.md:1
+msgid "Node Extensions"
+msgstr "تمديد العقد"
+
+#: ../../05_node-guide/02_node-extensions.md:3
+#, python-brace-format
+msgid "Extensions are optional modules a node operator can enable alongside the core {ref}`REST API <05_node-guide/01_node-rest-api:Node REST API>` for consumers that need direct access to binary data instead of JSON."
+msgstr "والتمديدات هي وحدات نموذجية اختيارية يمكن لمشغل عقدة أن يمكّن المستهلكون الذين يحتاجون إلى الوصول المباشر إلى البيانات الثنائية بدلاً من شركة JSON، إلى جانب الجوهر {ref}`REST API <05_node-guide/01_node-rest-api:Node REST API>`."
+
+#: ../../05_node-guide/02_node-extensions.md:5
+msgid "gRPC Server"
+msgstr "gRPC Server"
+
+#: ../../05_node-guide/02_node-extensions.md:7
+#, python-brace-format
+msgid "The node ships a `grpc-server` module (built alongside the core node in [node-scala](https://github.com/Decentral-America/node-scala/tree/main/grpc-server)) that exposes {ref}`blocks <02_decentralchain/10_binary-format:Block Binary Format>` and {ref}`transactions <02_decentralchain/10_binary-format:Transaction Binary Format>` directly in their protobuf-serialized binary format, rather than the JSON representation the REST API returns. This is the recommended way to consume chain data for a service that needs to process a large volume of blocks or transactions efficiently."
+msgstr ""
+
+#: ../../05_node-guide/02_node-extensions.md:9
+msgid "If you use your own node with the gRPC server enabled, you can send it a `SignedTransaction` object directly instead of composing a JSON transaction for the REST API's `POST /transactions/broadcast` method. See [`@decentralchain/protobuf-serialization`](https://www.npmjs.com/package/@decentralchain/protobuf-serialization) (published on npm today; the monorepo is renaming it to `protobuf-schemas`) for building and parsing these binary structures from JavaScript/TypeScript, or [Node gRPC API](../04_building-apps/05_node-grpc) for the typed client."
+msgstr ""
+
+#: ../../05_node-guide/02_node-extensions.md:12
+msgid "Verified against node-scala v1.8.0 (`grpc-server/src/main/resources/application.conf`)."
+msgstr ""
+
+#: ../../05_node-guide/02_node-extensions.md:15
+msgid "The module listens on two ports:"
+msgstr ""
+
+#: ../../05_node-guide/02_node-extensions.md:11
+msgid "Setting"
+msgstr "Setting"
+
+#: ../../05_node-guide/02_node-extensions.md:11
+#: ../../05_node-guide/05_configuration.md:5
+#: ../../05_node-guide/05_configuration.md:34
+msgid "Default"
+msgstr "التقصير"
+
+#: ../../05_node-guide/02_node-extensions.md:11
+msgid "`dcc.grpc.port`"
+msgstr "`dcc.grpc.port`"
+
+#: ../../05_node-guide/02_node-extensions.md:11
+msgid "`6870`"
+msgstr "`6870`"
+
+#: ../../05_node-guide/02_node-extensions.md:11
+msgid "AccountsApi, AssetsApi, BlockchainApi, BlocksApi, TransactionsApi"
+msgstr "AccountsApi, AssetsApi, BlockchainApi, BlocksApi, TransactionsApi"
+
+#: ../../05_node-guide/02_node-extensions.md:11
+msgid "`dcc.blockchain-updates.grpc-port`"
+msgstr "`dcc.blockchain-updates.grpc-port`"
+
+#: ../../05_node-guide/02_node-extensions.md:11
+msgid "`6881`"
+msgstr "`6881`"
+
+#: ../../05_node-guide/02_node-extensions.md:11
+msgid "BlockchainUpdates — a real-time stream of block-level events"
+msgstr "BlockchainUpdates - تيار زمني حقيقي للأحداث على مستوى الكتل"
+
+#: ../../05_node-guide/02_node-extensions.md:11
+msgid "`dcc.grpc.host`"
+msgstr "`dcc.grpc.host`"
+
+#: ../../05_node-guide/02_node-extensions.md:11
+msgid "`localhost`"
+msgstr "`localhost`"
+
+#: ../../05_node-guide/02_node-extensions.md:11
+msgid "Interface the main gRPC service binds to"
+msgstr "تداخل بين الخدمات الرئيسية gRPC"
+
+#: ../../05_node-guide/02_node-extensions.md:11
+msgid "`dcc.grpc.worker-threads`"
+msgstr "`dcc.grpc.worker-threads`"
+
+#: ../../05_node-guide/02_node-extensions.md:11
+msgid "`4`"
+msgstr "`4`"
+
+#: ../../05_node-guide/02_node-extensions.md:11
+msgid "Worker threads for the gRPC service"
+msgstr "خبزات العاملين لدائرة gRPC"
+
+#: ../../05_node-guide/02_node-extensions.md:11
+msgid "`dcc.blockchain-updates.min-keep-alive`"
+msgstr "`dcc.blockchain-updates.min-keep-alive`"
+
+#: ../../05_node-guide/02_node-extensions.md:11
+msgid "`5m`"
+msgstr "`5m`"
+
+#: ../../05_node-guide/02_node-extensions.md:11
+msgid "Shortest interval at which a BlockchainUpdates client may send keep-alive pings"
+msgstr "أقصر فترة يمكن فيها لزبون BlockchainUpdates أن يرسل أصابعاً مُستمرة"
+
+#: ../../05_node-guide/02_node-extensions.md:25
+msgid "The `grpc-server` module is not a separate process: it is an in-process node extension. The official Docker image already contains it; for other installs, put its JARs on the node's classpath (the Docker image also loads extra JARs from `lib/plugins/`). The module holds two extensions, each enabled by adding its class to `dcc.extensions`: `com.decentralchain.api.grpc.GRPCServerExtension` for the APIs on port 6870 (commented out in the node's default `application.conf`), and `com.decentralchain.events.BlockchainUpdates` for port 6881 (see [Blockchain Updates](../04_building-apps/11_blockchain-updates)). Enabling them is a deployment decision for the node operator, not a REST API toggle."
+msgstr ""
+
+#: ../../05_node-guide/03_custom-blockchain.md:1
+msgid "Custom Blockchain"
+msgstr "Custom Blockchain"
+
+#: ../../05_node-guide/03_custom-blockchain.md:3
+msgid "Besides Mainnet and Testnet, the node software supports running a fully private, custom network — useful for local development or an isolated test environment. This is configured by setting the blockchain type to `CUSTOM` in the node configuration file, as seen in the `devnet` template shipped in [`network-defaults.conf`](https://github.com/Decentral-America/node-scala/blob/main/node/src/main/resources/network-defaults.conf):"
+msgstr "وإلى جانب Mainnet وTestnet، تدعم برامجيات العقد إدارة شبكة خاصة تماماً ومعتادة - مفيدة للتنمية المحلية أو لبيئة اختبار معزولة. ويتم تشكيل هذا من خلال تحديد نوع الاختناق إلى `CUSTOM` في ملف تشكيلة العقيدات، على النحو المبين في النموذج `devnet` المشحون في [`network-defaults.conf`](https://github.com/Decentral-America/node-scala/blob/main/node/src/main/resources/network-defaults.conf):"
+
+#: ../../05_node-guide/03_custom-blockchain.md:41
+msgid "Key fields:"
+msgstr "المجالات الرئيسية:"
+
+#: ../../05_node-guide/03_custom-blockchain.md
+msgid "Field"
+msgstr "الميدان"
+
+#: ../../05_node-guide/03_custom-blockchain.md
+msgid "`address-scheme-character`"
+msgstr "`address-scheme-character`"
+
+#: ../../05_node-guide/03_custom-blockchain.md
+msgid "The network byte that distinguishes your custom network's addresses from Mainnet/Testnet — every address on your network is derived using this character"
+msgstr "الشبكة التي تميز عناوين شبكة العرف الخاصة بك من Mainnet/Testnet - كل عنوان على شبكتك مستمد باستخدام هذا الطابع"
+
+#: ../../05_node-guide/03_custom-blockchain.md
+msgid "`functionality`"
+msgstr "`functionality`"
+
+#: ../../05_node-guide/03_custom-blockchain.md
+msgid "Protocol feature activation thresholds, transaction time offsets, and related consensus parameters"
+msgstr "ويتضمن البروتوكول عتبات تنشيطية، ومقابلات زمنية للمعاملات، وما يتصل بها من معايير توافق في الآراء"
+
+#: ../../05_node-guide/03_custom-blockchain.md
+#, python-brace-format
+msgid "Initial {ref}`block reward <02_decentralchain/05_node:Block Reward>` size, minimum increment, and voting interval — same mechanism as Mainnet"
+msgstr "الحجم الأولي {ref}`المكافأة <02_decentralchain/05_node:Block Reward>`، الحد الأدنى للزيادة وفترة التصويت - نفس آلية Mainnet"
+
+#: ../../05_node-guide/03_custom-blockchain.md
+msgid "`genesis`"
+msgstr "`genesis`"
+
+#: ../../05_node-guide/03_custom-blockchain.md
+#, python-brace-format
+msgid "The network's {ref}`genesis block <02_decentralchain/04_block:Block>`: initial balances, timestamp, and difficulty"
+msgstr "الشبكة {ref}`جيم - حجر الجينات <02_decentralchain/04_block:Block>`: الأرصدة الأولية، والوقت، والصعوبة"
+
+#: ../../05_node-guide/03_custom-blockchain.md
+msgid "`network.known-peers`"
+msgstr "`network.known-peers`"
+
+#: ../../05_node-guide/03_custom-blockchain.md
+msgid "Seed peers for nodes on your custom network to discover each other — leave empty for a single-node development network"
+msgstr "النظراء البدائيون على شبكة العرف الخاصة بك لاكتشاف بعضها البعض - ترك فارغة لشبكة تنمية وحيدة العقد"
+
+#: ../../05_node-guide/03_custom-blockchain.md:51
+msgid "For a full field reference, use `network-defaults.conf`'s `devnet` block as a starting template and adjust the values for your own network, then point your node at a config file that sets `blockchain.type = CUSTOM` with your own `custom` block instead of `blockchain.type = TESTNET` or `MAINNET`."
+msgstr "لإشارة ميدانية كاملة، استخدام `network-defaults.conf` `devnet` مربع كنموذج البداية وتعديل القيم لشبكتك الخاصة، ثم توجيه عقدة الخاص بك في ملف الوصية الذي يحدد `blockchain.type = CUSTOM` مع `custom` لبنك الخاص بدلا من `blockchain.type = TESTNET` أو `MAINNET`."
+
+#: ../../05_node-guide/04_install-docker.md:1
+msgid "Run a Node with Docker"
+msgstr "(أدير (نود) مع (دوكر"
+
+#: ../../05_node-guide/04_install-docker.md:3
+msgid "Docker is the recommended way to run a DecentralChain node. The image is built from `docker/Dockerfile` in [node-scala](https://github.com/Decentral-America/node-scala) and runs the node as the unprivileged user `dcc`."
+msgstr ""
+
+#: ../../05_node-guide/04_install-docker.md:6
+msgid "Verified on a clean Docker host (macOS 15.5, Docker Desktop 29.2.1, no earlier node images or volumes) against node-scala v1.8.1, 2026-10-27: following [Join the Public Testnet](15_join-testnet), the node synced the public Testnet from genesis to the tip, height 99,976, in 31 minutes, and its block IDs matched the public node."
+msgstr ""
+
+#: ../../05_node-guide/04_install-docker.md:9
+msgid "Which Network You Can Join"
+msgstr "أي شبكة يمكنك الانضمام إليها"
+
+#: ../../05_node-guide/04_install-docker.md:5
+#: ../../05_node-guide/05_configuration.md:5
+msgid "Network"
+msgstr "الشبكة"
+
+#: ../../05_node-guide/04_install-docker.md:5
+msgid "Status"
+msgstr "الحالة"
+
+#: ../../05_node-guide/04_install-docker.md:5
+#: ../../05_node-guide/05_configuration.md:5
+msgid "Public Testnet"
+msgstr "عام Testnet"
+
+#: ../../05_node-guide/04_install-docker.md:5
+msgid "Supported. Follow [Join the Public Testnet](15_join-testnet): it gives the configuration file the node needs."
+msgstr ""
+
+#: ../../05_node-guide/04_install-docker.md:5
+#: ../../05_node-guide/05_configuration.md:5
+msgid "Mainnet"
+msgstr "Mainnet"
+
+#: ../../05_node-guide/04_install-docker.md:5
+msgid "Not with this image yet. The live DCC Mainnet runs an earlier node line (its public node reports `DCC v1.3.5`). node-scala's built-in Mainnet profile ships no peers until the Mainnet migration, and the peers in its packaged `node/decentralchain-mainnet.conf` refused connections when tested on 2026-10-27. A v1.8.1 container started with that file stayed at the genesis block."
+msgstr ""
+
+#: ../../05_node-guide/04_install-docker.md:16
+msgid "Requirements"
+msgstr "الاحتياجات"
+
+#: ../../05_node-guide/04_install-docker.md:5
+msgid "Requirement"
+msgstr "الاحتياج"
+
+#: ../../05_node-guide/04_install-docker.md:5
+msgid "Minimum"
+msgstr "الحد الأدنى"
+
+#: ../../05_node-guide/04_install-docker.md:5
+msgid "Recommended"
+msgstr "الموصى بها"
+
+#: ../../05_node-guide/04_install-docker.md:5
+msgid "Docker Engine"
+msgstr "Docker Engine"
+
+#: ../../05_node-guide/04_install-docker.md:5
+msgid "25.x"
+msgstr "25.x"
+
+#: ../../05_node-guide/04_install-docker.md:5
+msgid "Latest stable"
+msgstr "آخر مستقر"
+
+#: ../../05_node-guide/04_install-docker.md:5
+msgid "RAM"
+msgstr "RAM"
+
+#: ../../05_node-guide/04_install-docker.md:5
+msgid "4 GB"
+msgstr "4 خ م"
+
+#: ../../05_node-guide/04_install-docker.md:5
+msgid "8 GB"
+msgstr "8 ح"
+
+#: ../../05_node-guide/04_install-docker.md:5
+msgid "CPU"
+msgstr "CPU"
+
+#: ../../05_node-guide/04_install-docker.md:5
+msgid "2 cores"
+msgstr "نواة"
+
+#: ../../05_node-guide/04_install-docker.md:5
+msgid "4+ cores"
+msgstr "4+ النواة"
+
+#: ../../05_node-guide/04_install-docker.md:5
+msgid "Disk (SSD)"
+msgstr "قرص (SSD)"
+
+#: ../../05_node-guide/04_install-docker.md:5
+msgid "1 GB for the Testnet (its data was 131 MB at height 99,976)"
+msgstr ""
+
+#: ../../05_node-guide/04_install-docker.md:5
+msgid "10 GB, to leave room for the chain to grow"
+msgstr ""
+
+#: ../../05_node-guide/04_install-docker.md:5
+msgid "100 Mbit/s"
+msgstr "100 مبتدئ"
+
+#: ../../05_node-guide/04_install-docker.md:5
+msgid "1 Gbit/s"
+msgstr "1 ح"
+
+#: ../../05_node-guide/04_install-docker.md:26
+msgid "Image tags"
+msgstr "العلامة الصورية"
+
+#: ../../05_node-guide/04_install-docker.md:28
+msgid "All images live at `ghcr.io/decentral-america/node-scala`. No image is published on Docker Hub."
+msgstr "جميع الصور تعيش في `ghcr.io/decentral-america/node-scala`. لا توجد صورة تنشر على (دكر هوب)"
+
+#: ../../05_node-guide/04_install-docker.md:5
+msgid "Tag"
+msgstr "Tag"
+
+#: ../../05_node-guide/04_install-docker.md:5
+msgid "`1.8.1`, `1.8.0`, ..."
+msgstr "`1.8.1`, `1.8.0`, ..."
+
+#: ../../05_node-guide/04_install-docker.md:5
+msgid "One release. Use a release tag, or a digest, for a node you want to keep stable"
+msgstr "إطلاق واحد. إستخدم بطاقة إطلاق، أو الهضم، للعقيدة التي تريد أن تبقيها مستقرة"
+
+#: ../../05_node-guide/04_install-docker.md:5
+msgid "`testnet-latest`, `mainnet-latest`, `latest`"
+msgstr "`testnet-latest`, `mainnet-latest`, `latest`"
+
+#: ../../05_node-guide/04_install-docker.md:5
+msgid "The newest build. On 2026-10-27 all three were the same v1.8.1 image (`sha256:3b04d066…`): the network a container joins comes from its configuration, not from the tag"
+msgstr "أحدث بناء. وفي الفترة من 2026 إلى 10-27، كانت جميع الثلاثة نفس الصورة من طراز v1.8.1 (`sha256:3b04d066…`): إن الشبكة التي تجمع الحاويات تأتي من تشكيلها وليس من العلامة."
+
+#: ../../05_node-guide/04_install-docker.md:5
+msgid "`sha-<commit>`"
+msgstr "`sha-<commit>`"
+
+#: ../../05_node-guide/04_install-docker.md:5
+msgid "A build of one git commit"
+msgstr "بناء لغز واحد"
+
+#: ../../05_node-guide/04_install-docker.md:36
+#: ../../05_node-guide/15_join-testnet.md:156
+msgid "Ports"
+msgstr "الموانئ"
+
+#: ../../05_node-guide/04_install-docker.md:5
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "Port"
+msgstr "الميناء"
+
+#: ../../05_node-guide/04_install-docker.md:5
+msgid "Exposure"
+msgstr "التعرض"
+
+#: ../../05_node-guide/04_install-docker.md:5
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "`6868`"
+msgstr "`6868`"
+
+#: ../../05_node-guide/04_install-docker.md:5
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "P2P"
+msgstr "P2P"
+
+#: ../../05_node-guide/04_install-docker.md:5
+msgid "Open to the internet if other nodes should be able to dial you; outbound only is enough to sync"
+msgstr "افتحوا الانترنت اذا كان يمكن للوريد الاخرى الاتصال بك"
+
+#: ../../05_node-guide/04_install-docker.md:5
+#: ../../05_node-guide/05_configuration.md:34
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "`6869`"
+msgstr "`6869`"
+
+#: ../../05_node-guide/04_install-docker.md:5
+#: ../../05_node-guide/15_join-testnet.md:9 ../../05_node-guide/index.md:50
+msgid "REST API"
+msgstr "REST API"
+
+#: ../../05_node-guide/04_install-docker.md:5
+msgid "Keep private: bind to localhost, or place behind a reverse proxy"
+msgstr "إبقوا على إنفراد، إربطوا بالمستشفى أو مكان خلف عميل عكسي"
+
+#: ../../05_node-guide/04_install-docker.md:43
+msgid "The Configuration File Is Required"
+msgstr "ملف الإتحاد مطلوب"
+
+#: ../../05_node-guide/04_install-docker.md:45
+msgid "Mount a configuration file at `/etc/dcc/dcc.conf`. Besides selecting the network, it must set the wallet password (`dcc.wallet.password`, which may be `\"\"`). Without a mounted file the node has no wallet password, can't ask for one, and exits with code 61 (`CANNOT GET CONSOLE TO ASK WALLET PASSWORD` in the log); with `--restart unless-stopped`, Docker then restarts it in a loop. `DCC_WALLET_PASSWORD` doesn't help on its own: the entrypoint applies it only on top of a mounted file. See [Configuration](05_configuration)."
+msgstr ""
+
+#: ../../05_node-guide/04_install-docker.md:47
+msgid "Quick start"
+msgstr "البداية السريعة"
+
+#: ../../05_node-guide/04_install-docker.md:49
+msgid "Write `dcc.conf` as shown in [Join the Public Testnet](15_join-testnet), then start the node from the same directory:"
+msgstr ""
+
+#: ../../05_node-guide/04_install-docker.md:66
+msgid "Inside the container the REST API binds to `127.0.0.1` by default (`DCC_REST_API_BIND`). Docker cannot forward a published port to a service listening only on the container's loopback interface, so without `DCC_REST_API_BIND=0.0.0.0` the API is unreachable from the host. The example above then publishes the port only on the host's loopback (`-p 127.0.0.1:6869:6869`), which keeps the API off the public internet."
+msgstr ""
+
+#: ../../05_node-guide/04_install-docker.md:69
+msgid "Data is stored in the `/var/lib/dcc` volume and logs in `/var/log/dcc`. Keep the data volume between restarts and upgrades: losing it forces a full re-sync."
+msgstr "وتخزن البيانات في `/var/lib/dcc` الحجم والسجلات في `/var/log/dcc`. الحفاظ على حجم البيانات بين إعادة رسم الخرائط والتحسينات: فقدانها يدفع إلى إعادة النظام بالكامل."
+
+#: ../../05_node-guide/04_install-docker.md:71
+msgid "Docker Compose"
+msgstr "Docker Compose"
+
+#: ../../05_node-guide/04_install-docker.md:73
+msgid "The same node with Docker Compose, with `dcc.conf` next to `compose.yaml`:"
+msgstr "نفس العقد مع شركة (دوكر) مع `dcc.conf` بجوار `compose.yaml`:"
+
+#: ../../05_node-guide/04_install-docker.md:102
+msgid "To give the node a wallet seed and password without writing them into `dcc.conf`, add `env_file: .env` with `DCC_WALLET_SEED` and `DCC_WALLET_PASSWORD` (and `chmod 600 .env`). The entrypoint layers them on top of the mounted `dcc.conf`; without the mounted file they are ignored."
+msgstr "(أ) أن تعطي العقدة بذور المحفظة وكلمة السر دون أن تكتبها إلى `dcc.conf`، تضاف `env_file: .env` مع `DCC_WALLET_SEED` و `DCC_WALLET_PASSWORD` (و `chmod 600 .env`). وتطبق نقاط الدخول هذه على أعلى `dcc.conf`؛ وبدون الملف المركب يتم تجاهلها."
+
+#: ../../05_node-guide/04_install-docker.md:105
+msgid "Verify it is running"
+msgstr "تحقق من أنها تعمل"
+
+#: ../../05_node-guide/04_install-docker.md:113
+msgid "The image's built-in `HEALTHCHECK` polls `/node/status`. On the first start the node replays the chain from genesis; [Join the Public Testnet](15_join-testnet) shows how to check it has reached the tip. See [Configuration](05_configuration) for every environment variable and [Sync and Rollback](06_sync-and-rollback) for what to expect on first start."
+msgstr ""
+
+#: ../../05_node-guide/05_configuration.md:1 ../../05_node-guide/index.md:29
+msgid "Configuration"
+msgstr "الاتحاد"
+
+#: ../../05_node-guide/05_configuration.md:3
+msgid "A node reads a [HOCON](https://github.com/lightbend/config/blob/master/HOCON.md) configuration file whose settings live under the `dcc` key. Built-in defaults (`application.conf` and `network-defaults.conf`) are merged with your file, so your file only needs the settings you want to change."
+msgstr ""
+
+#: ../../05_node-guide/05_configuration.md:6
+msgid "Verified against node-scala v1.8.0. Do not use the shipped `application.conf` as your own config file; it is a defaults file."
+msgstr ""
+
+#: ../../05_node-guide/05_configuration.md:9
+msgid "Environment variables (Docker)"
+msgstr "المتغيرات البيئية (دوكر)"
+
+#: ../../05_node-guide/05_configuration.md:11
+msgid "The Docker entrypoint translates these variables into JVM options:"
+msgstr "ونقطة دخول دوكر تترجم هذه المتغيرات إلى خيارات الآلية المشتركة:"
+
+#: ../../05_node-guide/05_configuration.md:5
+msgid "Variable"
+msgstr "الفرق"
+
+#: ../../05_node-guide/05_configuration.md:5
+msgid "Effect"
+msgstr "الأثر"
+
+#: ../../05_node-guide/05_configuration.md:5
+msgid "`DCC_NETWORK`"
+msgstr "`DCC_NETWORK`"
+
+#: ../../05_node-guide/05_configuration.md:5
+msgid "`mainnet`"
+msgstr "`mainnet`"
+
+#: ../../05_node-guide/05_configuration.md:5
+msgid "Sets `dcc.defaults.blockchain.type` — the network the node joins"
+msgstr "مجموعة `dcc.defaults.blockchain.type` - الشبكة التي ينضم إليها العقد"
+
+#: ../../05_node-guide/05_configuration.md:5
+msgid "`DCC_HEAP_SIZE`"
+msgstr "`DCC_HEAP_SIZE`"
+
+#: ../../05_node-guide/05_configuration.md:5
+msgid "`2g`"
+msgstr "`2g`"
+
+#: ../../05_node-guide/05_configuration.md:5
+msgid "JVM `-Xmx`"
+msgstr "JVM `-Xmx`"
+
+#: ../../05_node-guide/05_configuration.md:5
+msgid "`DCC_LOG_LEVEL`"
+msgstr "`DCC_LOG_LEVEL`"
+
+#: ../../05_node-guide/05_configuration.md:5
+msgid "`INFO`"
+msgstr "`INFO`"
+
+#: ../../05_node-guide/05_configuration.md:5
+msgid "Console log level: `OFF`, `ERROR`, `WARN`, `INFO`, `DEBUG`, `TRACE`"
+msgstr "مستوى سجل كونسول: `OFF`، `ERROR`، `WARN`، `INFO`، `DEBUG`، `TRACE`"
+
+#: ../../05_node-guide/05_configuration.md:5
+msgid "`DCC_REST_API_BIND`"
+msgstr "`DCC_REST_API_BIND`"
+
+#: ../../05_node-guide/05_configuration.md:5
+#: ../../05_node-guide/05_configuration.md:34
+msgid "`127.0.0.1`"
+msgstr "`127.0.0.1`"
+
+#: ../../05_node-guide/05_configuration.md:5
+msgid "Sets `dcc.rest-api.bind-address`"
+msgstr "مجموعات `dcc.rest-api.bind-address`"
+
+#: ../../05_node-guide/05_configuration.md:5
+msgid "`DCC_WALLET_SEED`"
+msgstr "`DCC_WALLET_SEED`"
+
+#: ../../05_node-guide/05_configuration.md:5
+msgid "—"
+msgstr "—"
+
+#: ../../05_node-guide/05_configuration.md:5
+msgid "Base58 wallet seed, written to a private temporary config file at start-up and then unset"
+msgstr "بذور محفظة القاعدة 58، مكتوبة إلى ملف خاص مؤقت للثقب في البداية وبعد ذلك غير محدد"
+
+#: ../../05_node-guide/05_configuration.md:5
+msgid "`DCC_WALLET_PASSWORD`"
+msgstr "`DCC_WALLET_PASSWORD`"
+
+#: ../../05_node-guide/05_configuration.md:5
+msgid "Wallet file password, handled the same way"
+msgstr "كلمة السر في ملف \"والت\" تعاملت مع نفس الطريقة"
+
+#: ../../05_node-guide/05_configuration.md:5
+msgid "`JAVA_OPTS`"
+msgstr "`JAVA_OPTS`"
+
+#: ../../05_node-guide/05_configuration.md:5
+msgid "Extra JVM options"
+msgstr "خيارات إضافية في إطار الآلية المشتركة"
+
+#: ../../05_node-guide/05_configuration.md:23
+msgid "To use your own file, mount it at `/etc/dcc/dcc.conf`. The entrypoint loads it automatically and layers wallet secrets on top. `DCC_WALLET_SEED` and `DCC_WALLET_PASSWORD` only take effect when such a file is mounted (and no command arguments are passed to the container); without `/etc/dcc/dcc.conf` they are ignored."
+msgstr "لاستعمال ملفك الخاص، ضخه في `/etc/dcc/dcc.conf` نقطة الدخول تُحمّلُه تلقائياً و طبقات أسرار المحفظة على القمةِ. `DCC_WALLET_SEED` و `DCC_WALLET_PASSWORD` لا يبدأ نفاذه إلا عندما يكون هذا الملف مجهزاً (ولا تُنقل حججاً قيادية إلى الحاوية)؛ وبدون `/etc/dcc/dcc.conf` يتم تجاهلها."
+
+#: ../../05_node-guide/05_configuration.md:25
+msgid "Ports and network defaults"
+msgstr "إخفاقات الموانئ والشبكات"
+
+#: ../../05_node-guide/05_configuration.md:5
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "P2P port"
+msgstr "P2Pالموانئ"
+
+#: ../../05_node-guide/05_configuration.md:5
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "Peer to connect to"
+msgstr "(بير) يتواصل"
+
+#: ../../05_node-guide/05_configuration.md:5
+msgid "6868"
+msgstr "6868"
+
+#: ../../05_node-guide/05_configuration.md:5
+msgid "not published yet"
+msgstr "لم تنشر بعد"
+
+#: ../../05_node-guide/05_configuration.md:5
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "`50.116.30.244:6868`"
+msgstr "`50.116.30.244:6868`"
+
+#: ../../05_node-guide/05_configuration.md:32
+msgid "The REST API listens on port `6869` on every network."
+msgstr "يستمع فريق البحث والتطوير في مجال مكافحة الإرهاب إلى الميناء `6869` على كل شبكة."
+
+#: ../../05_node-guide/05_configuration.md:35
+msgid "The public DecentralChain Testnet (`testnet-node.decentralchain.io`) is a custom chain (`dcc.blockchain.type = CUSTOM`, chain ID `!`). The built-in `testnet` profile (`DCC_NETWORK=testnet` without a config file) is a different network and will not join it. [Join the Public Testnet](15_join-testnet) gives the complete configuration file."
+msgstr ""
+
+#: ../../05_node-guide/05_configuration.md:38
+msgid "Commonly changed settings"
+msgstr "البيئات المتغيّرة بصورة مشتركة"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "Key"
+msgstr "المفتاح"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "Description"
+msgstr "الوصف"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "`dcc.directory`"
+msgstr "`dcc.directory`"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "`\"\"`"
+msgstr "`\"\"`"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "Base directory for node data"
+msgstr "دليل قاعدة بيانات العقد"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "`dcc.db.max-rollback-depth`"
+msgstr "`dcc.db.max-rollback-depth`"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "`2000`"
+msgstr "`2000`"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "Maximum number of blocks a rollback can undo"
+msgstr "أقصى عدد من القطع يمكن أن تتراجع"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "`dcc.db.store-transactions-by-address`"
+msgstr "`dcc.db.store-transactions-by-address`"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "`true`"
+msgstr "`true`"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "Index transactions by address (needed by address history endpoints)"
+msgstr "معاملات الرقم القياسي حسب العنوان (مطلوب من خلال معالجة نقاط نهاية التاريخ)"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "`dcc.wallet.file`"
+msgstr "`dcc.wallet.file`"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "`<directory>/wallet/wallet.dat`"
+msgstr "`<directory>/wallet/wallet.dat`"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "Wallet file path"
+msgstr "مسار ملف الجدار"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "`dcc.wallet.password`"
+msgstr "`dcc.wallet.password`"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "unset"
+msgstr "غير مكتمل"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "Wallet file password"
+msgstr "كلمة السر في ملف الجدار"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "`dcc.wallet.seed`"
+msgstr "`dcc.wallet.seed`"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "Base58 seed; if unset the node generates one"
+msgstr "بذور القاعدة 58، إذا لم تُنشأ العقدة يولد واحدا"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "`dcc.rest-api.enable`"
+msgstr "`dcc.rest-api.enable`"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "`yes`"
+msgstr "`yes`"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "Turn the REST API on or off"
+msgstr "أطفأ جهاز تسجيل المكالمات أو أطفأ"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "`dcc.rest-api.bind-address`"
+msgstr "`dcc.rest-api.bind-address`"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "Interface the API listens on"
+msgstr "تقاطعاً لـ \"آداب آي\" يستمع"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "`dcc.rest-api.port`"
+msgstr "`dcc.rest-api.port`"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "API port"
+msgstr ""
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "`dcc.rest-api.api-key-hash`"
+msgstr "`dcc.rest-api.api-key-hash`"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "Hash of the API key that protects privileged endpoints"
+msgstr "هشاشة مفتاح نظام المعلومات المسبقة عن علم التي تحمي نقاط النهاية المميزة"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "`dcc.rest-api.cors-headers.access-control-allow-origin`"
+msgstr "`dcc.rest-api.cors-headers.access-control-allow-origin`"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "Set to a specific origin in production"
+msgstr "الموضع إلى مصدر محدد في الإنتاج"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "`dcc.rest-api.transactions-by-address-limit`"
+msgstr "`dcc.rest-api.transactions-by-address-limit`"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "`1000`"
+msgstr "`1000`"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "Max results for address transaction history"
+msgstr "أقصى النتائج من أجل معالجة تاريخ المعاملات"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "`dcc.rest-api.blocks-request-limit`"
+msgstr "`dcc.rest-api.blocks-request-limit`"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "`100`"
+msgstr "`100`"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "Max blocks per range request"
+msgstr "الحد الأقصى لكل طلب"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "`dcc.utx.max-size`"
+msgstr "`dcc.utx.max-size`"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "`100000`"
+msgstr "`100000`"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "Max unconfirmed transactions held"
+msgstr "(ماكس) المعاملات غير المؤكدة المحتفظ بها"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "`dcc.network.max-inbound-connections`"
+msgstr "`dcc.network.max-inbound-connections`"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "Inbound peer limit"
+msgstr "الحد الأقصى للأقران"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "`dcc.network.max-outbound-connections`"
+msgstr "`dcc.network.max-outbound-connections`"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "Outbound peer limit"
+msgstr "الحد الأقصى للأقران"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "`dcc.hotstuff.authoritative`"
+msgstr "`dcc.hotstuff.authoritative`"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "`false`"
+msgstr "`false`"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "Testnet-only: lets a HotStuff commit certificate raise the finalized height. Requires `enabled = true`. Never set it on Mainnet"
+msgstr "Testnet-فقط: يسمح بـHotStuff شهادة الالتزام برفع الارتفاع النهائي. تطلب `enabled = true` لا تضعه على Mainnet"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "`dcc.miner.self-commit-to-generation`"
+msgstr "`dcc.miner.self-commit-to-generation`"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "`no`"
+msgstr "`no`"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "The node's miner submits its own Commit To Generation transaction for each generation period"
+msgstr "المنجم في العقد يقدم صفقاته الخاصة من أجل التوليد لكل فترة"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "`dcc.network.peer-stall-threshold`"
+msgstr "`dcc.network.peer-stall-threshold`"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "`900`"
+msgstr "`900`"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "Ticks (about 1 s each) of peer-reconnection stall before the node clears suspensions and redials"
+msgstr "تذاكر (حوالي 1 سنتاً لكل منها) من مأزق إعادة ربط الأقران قبل أن يُبرِئ العقد التعليق وإعادة الترميم"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "`dcc.hotstuff.enabled`"
+msgstr "`dcc.hotstuff.enabled`"
+
+#: ../../05_node-guide/05_configuration.md:34
+msgid "HotStuff fast-finality engine. Leave it off on Mainnet. The public Testnet's own nodes run it enabled and authoritative (see [Features and Activation](10_features-and-activation))"
+msgstr ""
+
+#: ../../05_node-guide/05_configuration.md:63
+msgid "API key"
+msgstr "مفتاح API"
+
+#: ../../05_node-guide/05_configuration.md:65
+msgid "Privileged endpoints (wallet, rollback, `/debug/*`, `/node/stop`) require an `X-Api-Key` header. The node stores only a hash of the key. Generate the hash with the node itself:"
+msgstr "وتقتضي النقاط النهائية المحظورة (الرصيف، التراجع، `/debug/*`، `/node/stop`) رأساً `X-Api-Key`. الموكب لا يخزن سوى حشيش من المفتاح تولد الحمار مع العنبر نفسه:"
+
+#: ../../05_node-guide/05_configuration.md:72
+msgid "Put the `hash` value from the JSON response in `dcc.rest-api.api-key-hash`, restart, and send `my-secret-api-key` in `X-Api-Key`."
+msgstr "(أ) أن تضع `hash` قيمة من ردّ شركة JSON في `dcc.rest-api.api-key-hash`، وأن تعيد العمل وترسل `my-secret-api-key` في `X-Api-Key`."
+
+#: ../../05_node-guide/05_configuration.md:74
+msgid "Example: minimal Mainnet file"
+msgstr "مثال: حد أدنى من Mainnet ملف"
+
+#: ../../05_node-guide/06_sync-and-rollback.md:1
+msgid "Sync, Import, Export and Rollback"
+msgstr "سينك، الاستيراد والتصدير والانتعاش"
+
+#: ../../05_node-guide/06_sync-and-rollback.md:4
+#: ../../05_node-guide/07_upgrade.md:4
+#: ../../05_node-guide/08_wallet-and-generating.md:4
+#: ../../05_node-guide/09_logging.md:4
+#: ../../05_node-guide/10_features-and-activation.md:4
+#: ../../05_node-guide/11_troubleshooting.md:4
+msgid "Verified against node-scala v1.8.0."
+msgstr ""
+
+#: ../../05_node-guide/06_sync-and-rollback.md:7
+msgid "Initial sync"
+msgstr "المتزامنة الأولى"
+
+#: ../../05_node-guide/06_sync-and-rollback.md:9
+msgid "A new node downloads and validates the whole chain from its peers. This takes hours to days depending on hardware and network. Track progress with:"
+msgstr "هناك رمز جديد ينزل ويصدق على السلسلة بأكملها من أقرانها ويستغرق ذلك ساعات إلى أيام حسب المعدات والشبكات. تتابع التقدم المحرز فيما يتعلق بما يلي:"
+
+#: ../../05_node-guide/06_sync-and-rollback.md:16
+msgid "The node is fully synced when `stateHeight` equals `blockchainHeight` in `/node/status` and `/blocks/height` is within a few blocks of a public peer's height. If a node stalls after syncing, restart it and check the [logs](09_logging) for fork or invalid-block messages."
+msgstr "العقد متزامن تماما عندما `stateHeight` يساوي `blockchainHeight` في `/node/status` و `/blocks/height` في غضون بضعة كتل من ارتفاع النظراء العام. إذا توقف عقدة بعد مزامنة، إعادة تشغيلها والتحقق من [سجلات](09_logging) للرسائل الشوكية أو غير الصحيحة."
+
+#: ../../05_node-guide/06_sync-and-rollback.md:18
+msgid "Exporting blocks"
+msgstr "اللبنات المصدرة"
+
+#: ../../05_node-guide/06_sync-and-rollback.md:20
+msgid "The node ships an exporter that writes the blocks (and optionally state snapshots) of a stopped node to files:"
+msgstr "يُرسل المُصدّر الذي يَكْتبُ اللبناتَ (والإختباراتِ الاختياريةِ الدولةِ) من a عُقد متوقّف إلى الملفات:"
+
+#: ../../05_node-guide/06_sync-and-rollback.md:3
+msgid "Option"
+msgstr "الخيار"
+
+#: ../../05_node-guide/06_sync-and-rollback.md:3
+msgid "`-c`, `--config`"
+msgstr "`-c`, `--config`"
+
+#: ../../05_node-guide/06_sync-and-rollback.md:3
+msgid "Node config file"
+msgstr "ملف المحكمة رقم"
+
+#: ../../05_node-guide/06_sync-and-rollback.md:3
+msgid "`-o`, `--output-prefix`"
+msgstr "`-o`, `--output-prefix`"
+
+#: ../../05_node-guide/06_sync-and-rollback.md:3
+msgid "Blocks output file name prefix"
+msgstr "اسم ملف القفل"
+
+#: ../../05_node-guide/06_sync-and-rollback.md:3
+msgid "`-s`, `--snapshot-output-prefix`"
+msgstr "`-s`, `--snapshot-output-prefix`"
+
+#: ../../05_node-guide/06_sync-and-rollback.md:3
+msgid "Snapshots output file name prefix"
+msgstr "اسم ملف نواتج الناموسيات"
+
+#: ../../05_node-guide/06_sync-and-rollback.md:3
+msgid "`-h`, `--height`"
+msgstr "`-h`, `--height`"
+
+#: ../../05_node-guide/06_sync-and-rollback.md:3
+msgid "Export up to this height (must be > 0)"
+msgstr "التصدير حتى هذا الارتفاع (الدرجة صفر)"
+
+#: ../../05_node-guide/06_sync-and-rollback.md:29
+msgid "Importing blocks"
+msgstr "لبنات الاستيراد"
+
+#: ../../05_node-guide/06_sync-and-rollback.md:31
+msgid "The importer loads blocks from a file (or URL, or stdin with `-`) into an empty or partially synced database, which is much faster than downloading from peers:"
+msgstr "وتُجمّع حمولات المستورد من ملف (أو URL، أو تتأقلم مع `-`) إلى قاعدة بيانات فارغة أو متزامنة جزئياً، وهي أسرع بكثير من تحميلها من الأقران:"
+
+#: ../../05_node-guide/06_sync-and-rollback.md:3
+msgid "`-i`, `--input-file`"
+msgstr "`-i`, `--input-file`"
+
+#: ../../05_node-guide/06_sync-and-rollback.md:3
+msgid "Blockchain data file — **required**"
+msgstr ""
+
+#: ../../05_node-guide/06_sync-and-rollback.md:3
+msgid "`-s`, `--snapshots-file`"
+msgstr "`-s`, `--snapshots-file`"
+
+#: ../../05_node-guide/06_sync-and-rollback.md:3
+msgid "Snapshots data file"
+msgstr ""
+
+#: ../../05_node-guide/06_sync-and-rollback.md:3
+msgid "Import up to this height (must be > 0)"
+msgstr "استيراد حتى هذا الارتفاع (الدرجة صفر)"
+
+#: ../../05_node-guide/06_sync-and-rollback.md:3
+msgid "`-n`, `--no-verify`"
+msgstr "`-n`, `--no-verify`"
+
+#: ../../05_node-guide/06_sync-and-rollback.md:3
+msgid "Skip signature verification — only for files you trust"
+msgstr "التحقق من توقيع التزلج فقط للملفات التي تثق بها"
+
+#: ../../05_node-guide/06_sync-and-rollback.md:3
+msgid "`-q`, `--max-queue-size`"
+msgstr "`-q`, `--max-queue-size`"
+
+#: ../../05_node-guide/06_sync-and-rollback.md:3
+msgid "Size of the block queue (must be > 0)"
+msgstr "حجم الكتلة (يجب أن تكون صفر)"
+
+#: ../../05_node-guide/06_sync-and-rollback.md:42
+msgid "Import stops with an error if a block is not a child of the last stored block, so always import into a node that is stopped and whose database matches the file's starting point."
+msgstr "تتوقّف الإستيراد بخطأ إذا لم يكن هناك طفل من آخر قطعة مخزنة، لذا دائماً يستورد إلى عقدة توقف وقاعدة بياناتها تطابق نقطة بداية الملف."
+
+#: ../../05_node-guide/06_sync-and-rollback.md:44
+msgid "Rolling back"
+msgstr "ارجع"
+
+#: ../../05_node-guide/06_sync-and-rollback.md:46
+msgid "Rollback removes the most recent blocks. It is limited by `dcc.db.max-rollback-depth` (2000 blocks by default) and requires the API key:"
+msgstr "التراجع يزيل آخر المباني وهي محدودة بـ `dcc.db.max-rollback-depth` (2000 كتلة حسب التقصير) وتتطلب مفتاح التنفيذ:"
+
+#: ../../05_node-guide/06_sync-and-rollback.md:55
+msgid "With `returnTransactionsToUtx` set to `true`, transactions from the removed blocks go back to the unconfirmed pool. A successful call returns the `BlockId` of the new tip."
+msgstr "مع `returnTransactionsToUtx` المخطط لـ `true`، المعاملات من القطع المزالة تعود إلى المجمع غير المؤكد نداء ناجح يعيد `BlockId` من النصيحة الجديدة"
+
+#: ../../05_node-guide/06_sync-and-rollback.md:57
+msgid "Full re-sync"
+msgstr "إعادة النظام بالكامل"
+
+#: ../../05_node-guide/06_sync-and-rollback.md:59
+msgid "If the database is corrupted or you need to go deeper than the rollback depth, delete the data volume and let the node re-sync from genesis:"
+msgstr "إذا كانت قاعدة البيانات تفسد أو تحتاج إلى أن تذهب أعمق من عمق التراجع، حذف حجم البيانات وترك النويدة إعادة النظام من الجينسيس:"
+
+#: ../../05_node-guide/06_sync-and-rollback.md:62
+msgid "This destroys all local chain state. Never stop a node with `docker kill` or `SIGKILL` — an unclean shutdown can corrupt the database. Use `docker stop --time 60`."
+msgstr "هذا يدمر كل ولاية السلاسل المحلية لا تتوقف أبدا عن عقد مع `docker kill` أو `SIGKILL` - أي إغلاق الأعماق يمكن أن يفسد قاعدة البيانات. إستعملْ `docker stop --time 60`."
+
+#: ../../05_node-guide/07_upgrade.md:1
+msgid "Upgrade a Node"
+msgstr "رفع مستوى النواة"
+
+#: ../../05_node-guide/07_upgrade.md:7
+msgid "Upgrading replaces the software, not the data: keep the data volume and configuration."
+msgstr "ويستعيض عن تحسين البرنامج الحاسوبي، وليس البيانات: الاحتفاظ بحجم البيانات وتشكيلها."
+
+#: ../../05_node-guide/07_upgrade.md:9 ../../05_node-guide/09_logging.md:7
+msgid "Docker"
+msgstr "(دوكر)"
+
+#: ../../05_node-guide/07_upgrade.md:11
+msgid "Record the current height: `curl -s http://localhost:6869/blocks/height`"
+msgstr "تسجيل الارتفاع الحالي: `curl -s http://localhost:6869/blocks/height`"
+
+#: ../../05_node-guide/07_upgrade.md:12
+msgid "Pull the new image, and note its digest so you can pin it:"
+msgstr "اسحب الصورة الجديدة و لاحظ نبذتها حتى تستطيع أن تلصقها"
+
+#: ../../05_node-guide/07_upgrade.md:19
+msgid "Stop the node gracefully. The image uses `STOPSIGNAL SIGINT` to trigger a clean JVM shutdown; give it time to flush and close the database:"
+msgstr "اوقفوا الموكب بنعمة وتستخدم الصورة `STOPSIGNAL SIGINT` لإحداث إغلاق نظيف للحركة؛ وإعطائها وقتاً لتفريغ وإغلاق قاعدة البيانات:"
+
+#: ../../05_node-guide/07_upgrade.md:25
+msgid "Start a new container with the same volume, environment and ports as before (see [Run a Node with Docker](04_install-docker))."
+msgstr "ابدأ حاوية جديدة بنفس الحجم والبيئة والموانئ كما كان الحال في السابق (انظر [(أدير (نود) مع (دوكر](04_install-docker))."
+
+#: ../../05_node-guide/07_upgrade.md:26
+msgid "Confirm the height continues from where it stopped."
+msgstr "تأكد أن الطول مستمر من حيث توقف"
+
+#: ../../05_node-guide/07_upgrade.md:28
+msgid "Reverting an upgrade"
+msgstr "إعادة ترقية"
+
+#: ../../05_node-guide/07_upgrade.md:30
+msgid "If the new version fails to start, stop it and start the previous image using its pinned `sha-<commit>` tag against the same volume. Only if the state itself is corrupted should you fall back to a [full re-sync](06_sync-and-rollback)."
+msgstr "إذا فشلت النسخة الجديدة في البدء، أوقفها وابدأ الصورة السابقة باستخدام علامة `sha-<commit>` مثبتة ضد نفس الحجم. فقط إذا كانت الدولة نفسها فاسدة... ... يجب أن تتراجع إلى [إعادة تشكيل كامل](06_sync-and-rollback)."
+
+#: ../../05_node-guide/07_upgrade.md:32
+msgid "From a JAR"
+msgstr ""
+
+#: ../../05_node-guide/07_upgrade.md:34
+msgid "Stop the process with a normal `SIGINT`/`SIGTERM` (not `kill -9`), replace the JAR with the new release, and start it again with the same configuration file."
+msgstr "(ب) وقف العملية بـ `SIGINT`/`SIGTERM` عادي (ليس `kill -9`)، والاستعاضة عن تقرير التقييم المشترك بالإفراج الجديد، والبدء من جديد بملف التشكيل نفسه."
+
+#: ../../05_node-guide/07_upgrade.md:36
+msgid "Network upgrades"
+msgstr "تحديث الشبكات"
+
+#: ../../05_node-guide/07_upgrade.md:38
+msgid "New protocol behaviour is switched on by [feature activation](10_features-and-activation), not by upgrading alone. A node that does not support an activated feature stops following the chain, so upgrade before an announced activation height."
+msgstr "ويتحول سلوك البروتوكول الجديد إلى [النشاط الرئيسي](10_features-and-activation)، وليس عن طريق الارتقاء وحده. أي عقدة لا تدعم المميزة المنشطة توقف بعد السلسلة، لذا تطوّر قبل ذروة تنشيطية مُعلنة."
+
+#: ../../05_node-guide/08_wallet-and-generating.md:1
+msgid "Node Wallet and Block Generation"
+msgstr ""
+
+#: ../../05_node-guide/08_wallet-and-generating.md:7
+msgid "The node wallet"
+msgstr "محفظة العقد"
+
+#: ../../05_node-guide/08_wallet-and-generating.md:9
+msgid "A node keeps an encrypted wallet file at `dcc.wallet.file` (default `<directory>/wallet/wallet.dat`). It holds the accounts the node may sign for — most importantly the account that generates blocks."
+msgstr "ويحتفظ العقد بملف محفظة مشفرة في `dcc.wallet.file` (قصير `<directory>/wallet/wallet.dat`). وهو يحتفظ بالحسابات التي يمكن أن يوقع عليها العقد - وأهم من ذلك الحساب الذي يولد لبنات."
+
+#: ../../05_node-guide/08_wallet-and-generating.md:11
+msgid "The wallet stores a **base seed**, from which account keys are derived. It is not an account seed itself. If `dcc.wallet.seed` is not set, the node generates a new one on first start. To use an existing seed, set `dcc.wallet.seed` (Base58) and `dcc.wallet.password`, or pass `DCC_WALLET_SEED` and `DCC_WALLET_PASSWORD` to the Docker image."
+msgstr ""
+
+#: ../../05_node-guide/08_wallet-and-generating.md:14
+msgid "Whoever holds the seed controls the funds. Keep secrets in a `chmod 600` `.env` file or a secrets manager, never in shell history or a committed file."
+msgstr "من يحمل البذور يسيطر على الأموال احتفظ بالأسرار في ملف `chmod 600` `.env` أو مدير أسرار، أبدا في تاريخ القصف أو الملف المرتكب."
+
+#: ../../05_node-guide/08_wallet-and-generating.md:17
+msgid "Wallet endpoints"
+msgstr "نقاط نهاية الجدارة"
+
+#: ../../05_node-guide/08_wallet-and-generating.md:19
+msgid "These require the [API key](05_configuration):"
+msgstr "هذه تتطلب [مفتاح API](05_configuration):"
+
+#: ../../05_node-guide/08_wallet-and-generating.md:27
+msgid "Generating blocks"
+msgstr "جيم - تكوين الكتل"
+
+#: ../../05_node-guide/08_wallet-and-generating.md:29
+#, python-brace-format
+msgid "A node produces blocks when a wallet account meets the generating-balance requirement under {ref}`Leased Proof of Stake <02_decentralchain/05_node:Leased Proof of Stake>` — its own DCC plus DCC leased to it. To grow a generating balance, other accounts can lease to the node's address."
+msgstr "وينتج العقد اللبنات عندما يفي حساب المحفظة بشرط تحقيق التوازن في التوليد بموجب {ref}`دليل المأخوذة <02_decentralchain/05_node:Leased Proof of Stake>` - أي DCC منه زائد DCC مستأجرا له. لكي ينمو رصيد مُولّد، حسابات أخرى يمكن أن تستأجر عنوان العقد."
+
+#: ../../05_node-guide/08_wallet-and-generating.md:31
+msgid "Check what the miner sees with the privileged `/debug/minerInfo` endpoint, which lists each generating account and its mining balance."
+msgstr "تحقق من ما يراه المنجم مع نقطة النهاية (`/debug/minerInfo`) المميزة، التي تُدرج كل حساب مُولِّد وتوازنه التعديني."
+
+#: ../../05_node-guide/08_wallet-and-generating.md:33
+#, python-brace-format
+msgid "For reward economics and the block-reward vote, see the {ref}`Node <02_decentralchain/05_node:Node>` article."
+msgstr "وللاطلاع على المكافأه الاقتصادية والتصويت من أجل إعادة البناء، انظر المادة {ref}`Node <02_decentralchain/05_node:Node>`."
+
+#: ../../05_node-guide/09_logging.md:1
+msgid "Logging"
+msgstr "التعبئة"
+
+#: ../../05_node-guide/09_logging.md:9
+msgid "The image writes two streams:"
+msgstr "الصورة تَكْتبُ مسارين:"
+
+#: ../../05_node-guide/09_logging.md:11
+msgid "**Console** — at the level in `DCC_LOG_LEVEL` (default `INFO`). Read it with `docker logs`."
+msgstr "**Console** - على المستوى في `DCC_LOG_LEVEL` (العجز `INFO`). اقرأها بـ `docker logs`"
+
+#: ../../05_node-guide/09_logging.md:12
+msgid "**Files** — under `/var/log/dcc` (volume), written at `TRACE` level by the entrypoint."
+msgstr "**الملفات** - تحت `/var/log/dcc` (المجلد)، مكتوبة على مستوى `TRACE` عند نقطة الدخول."
+
+#: ../../05_node-guide/09_logging.md:19
+msgid "Levels, from quietest to noisiest: `OFF`, `ERROR`, `WARN`, `INFO`, `DEBUG`, `TRACE`. Use `INFO` in production; `DEBUG` helps with sync and peer issues but is very verbose."
+msgstr "المستويات، من أصمت إلى أبعد درجة: `OFF`، `ERROR`، `WARN`، `INFO`، `DEBUG`، `TRACE`. (أ) استخدام `INFO` في الإنتاج؛ `DEBUG` يساعد على معالجة قضايا المزامنة والأقران، ولكنه فعل شديد."
+
+#: ../../05_node-guide/09_logging.md:21
+msgid "Custom logback configuration"
+msgstr "تشكيلة الوصلات الجمركية"
+
+#: ../../05_node-guide/09_logging.md:23
+msgid "Logging is configured with [Logback](https://logback.qos.ch/). Point the JVM at your own file through `JAVA_OPTS`:"
+msgstr "تم تشكيل اللوزة مع [Logback](https://logback.qos.ch/). نوجه الـ(جي في إم) في ملفك الخاص من خلال `JAVA_OPTS`:"
+
+#: ../../05_node-guide/09_logging.md:29
+msgid "For a JAR install, pass the same `-Dlogback.configurationFile=...` system property to `java`."
+msgstr ""
+
+#: ../../05_node-guide/09_logging.md:31
+msgid "Logs worth watching"
+msgstr "الأكواب تستحق مشاهدة"
+
+#: ../../05_node-guide/09_logging.md:33
+msgid "`Fork` and `InvalidBlock` messages — the node is on a different chain or received a bad block."
+msgstr "`Fork` و `InvalidBlock` رسائل - العقد على سلسلة مختلفة أو تلقى كتلة سيئة."
+
+#: ../../05_node-guide/09_logging.md:34
+msgid "Out-of-memory exits — the entrypoint starts the JVM with `ExitOnOutOfMemoryError`, so raise `DCC_HEAP_SIZE`."
+msgstr "مخارج خارج الذاكرة - نقطة الدخول تبدأ بـ \"الآلية المشتركة\" مع `ExitOnOutOfMemoryError`، لذا إرفع `DCC_HEAP_SIZE`."
+
+#: ../../05_node-guide/10_features-and-activation.md:1
+msgid "Features and Activation"
+msgstr "المعالم والنشاط"
+
+#: ../../05_node-guide/10_features-and-activation.md:7
+msgid "Protocol changes ship as numbered **blockchain features**. A feature is not active just because a node supports it: it must be activated on the network, either by a generator vote or because the network defaults pre-activate it."
+msgstr "البروتوكول يغيّر السفينة كما هو مرقم **السمات الأساسية**. ولا توجد ميزة نشطة لمجرد أن عقداً يدعمه: فلا بد من تفعيله على الشبكة، إما بتصويت المولد أو بسبب تقصير الشبكة قبل تنشيطها."
+
+#: ../../05_node-guide/10_features-and-activation.md:9
+msgid "How activation works"
+msgstr "كيف يعمل التفعيل"
+
+#: ../../05_node-guide/10_features-and-activation.md:11
+msgid "Generators signal support for features they implement in the blocks they produce."
+msgstr "وتُشير المولدات إلى دعم المعالم التي تنفذها في المباني التي تنتجها."
+
+#: ../../05_node-guide/10_features-and-activation.md:12
+msgid "At the end of each voting period, a feature that reached the voting threshold is scheduled for activation."
+msgstr "وفي نهاية كل فترة من فترات التصويت، من المقرر أن تنشط إحدى السمات التي بلغت عتبة التصويت."
+
+#: ../../05_node-guide/10_features-and-activation.md:13
+msgid "After activation, the new rules apply to every node."
+msgstr "بعد التفعيل، تنطبق القواعد الجديدة على كل عقد."
+
+#: ../../05_node-guide/10_features-and-activation.md:15
+msgid "Inspect the current state at any time:"
+msgstr ""
+
+#: ../../05_node-guide/10_features-and-activation.md:21
+msgid "The response includes `height`, `votingInterval`, `votingThreshold`, `nextCheck` and a `features` list with each feature's status."
+msgstr "الرد يتضمن `height`، `votingInterval`، `votingThreshold`، `nextCheck` و `features` قائمة مع كل سمة."
+
+#: ../../05_node-guide/10_features-and-activation.md:23
+msgid "Unsupported features"
+msgstr "السمات غير المدعومة"
+
+#: ../../05_node-guide/10_features-and-activation.md:25
+msgid "By default `dcc.features.auto-shutdown-on-unsupported-feature = yes`: if the network activates a feature your node does not know, the node shuts down rather than follow a chain it cannot validate. The fix is to [upgrade](07_upgrade). Generators can list the features they vote for in `dcc.features.supported`."
+msgstr "بالخطأ `dcc.features.auto-shutdown-on-unsupported-feature = yes`: إذا قامت الشبكة بتفعيل خاصّة لا يعرفها رمزك، يغلق العقد بدلاً من اتباع سلسلة لا يمكن التحقق منها. المعالج هو ل [رفع المستوى](07_upgrade). ويمكن للمولدات أن تورد قائمة بالمعالم التي يصوتون عليها في `dcc.features.supported`."
+
+#: ../../05_node-guide/10_features-and-activation.md:27
+msgid "Feature list in v1.8.0"
+msgstr "قائمة الترشيحات"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "ID"
+msgstr "ID"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "Feature"
+msgstr "Feature"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "1"
+msgstr "1"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "Minimum generating balance of 1000 DCC"
+msgstr "الحد الأدنى من الرصيد المولِّد البالغ 000 1 DCC"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "2"
+msgstr "2"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "NG protocol"
+msgstr ""
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "3"
+msgstr "3"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "Mass Transfer transaction"
+msgstr "معاملة النقل الجماعي"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "4"
+msgstr "4"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "Smart accounts"
+msgstr "الحسابات الذكية"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "5"
+msgstr "5"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "Data transaction"
+msgstr "معاملة البيانات"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "6"
+msgstr "6"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "Burn any tokens"
+msgstr "أحرقوا أيّ مداخل"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "7"
+msgstr "7"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "Fee sponsorship"
+msgstr "الرعاية المقدمة"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "8"
+msgstr "8"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "Fair PoS"
+msgstr "عادل PoS"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "9"
+msgstr "9"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "Smart assets"
+msgstr "الأصول الذكية"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "10"
+msgstr "10"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "Smart account trading"
+msgstr "تجارة الحساب الذكي"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "11"
+msgstr "11"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "Ride 4 dApps"
+msgstr "Ride 4 dApps"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "12"
+msgstr "12"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "Order version 3"
+msgstr "النسخة 3 من النظام"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "13"
+msgstr "13"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "Reduced NFT fee"
+msgstr "انخفاض رسوم معاملات النيتروز الوطنية"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "14"
+msgstr "14"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "Block reward and community-driven monetary policy"
+msgstr "مكافأة القفل والسياسة النقدية التي تحركها المجتمعات المحلية"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "15"
+msgstr "15"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "Ride V4, VRF, Protobuf, failed transactions"
+msgstr ""
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "16"
+msgstr "16"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "Ride V5, dApp-to-dApp invocations"
+msgstr "RideF5, dApp إلى dApp"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "17"
+msgstr "17"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "Ride V6, MetaMask support"
+msgstr "RideF6، دعم MetaMask"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "18"
+msgstr "18"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "Consensus and MetaMask updates"
+msgstr "توافق الآراء وMetaMask تحديثات"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "19"
+msgstr "19"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "Block reward distribution"
+msgstr "توزيع مكافآت القفل"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "20"
+msgstr "20"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "Capped buy-back and DAO amounts"
+msgstr "المبالغ المستردة والمبالغ المستحقة الدفع من إدارة الشؤون الإدارية"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "21"
+msgstr "21"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "Cease buy-back"
+msgstr "الرجاء شراء"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "22"
+msgstr "22"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "Light node"
+msgstr "نواة خفيفة"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "23"
+msgstr "23"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "Boost block reward"
+msgstr "مكافأه"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "24"
+msgstr "24"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "`ecrecover` fix"
+msgstr "`ecrecover` أصلح"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "25"
+msgstr "25"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "Deterministic finality and Ride V9"
+msgstr "نهائي محدد وRide V9"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "26"
+msgstr "26"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "Adjusted block reward distribution"
+msgstr "توزيع المكافآت على أساس مُعدَّل"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "27"
+msgstr "27"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "Continuation transaction (not exposed)"
+msgstr "معاملة مستمرة (غير معرّضة)"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "28"
+msgstr "28"
+
+#: ../../05_node-guide/10_features-and-activation.md:3
+msgid "Lease expiration (not exposed)"
+msgstr "انتهاء الإجازات (غير مكشوف)"
+
+#: ../../05_node-guide/10_features-and-activation.md:61
+msgid "Since v1.8.0 the numbering of the last features differs from v1.7.0: **26 = Adjusted Block Reward Distribution**, 27 = Continuation transaction, 28 = Lease expiration, and the Groth16 verifier is no longer a feature. Only feature 26 is votable and reported in `/activation/status`; 27 and 28 are defined in the source but not exposed."
+msgstr "ونظراً إلى أن رقم الملامح الأخيرة يختلف من 1.7.0: **26 = التوزيع المعدل لعمود القفل**، و27 = معاملة مستمرة، و28 = مدة صلاحية الإيجار، ومصدّق غروث16 لم يعد سمة. والسمة 26 هي الوحيدة التي تتبخر وتُبلغ عنها في `/activation/status`؛ و 27 و 28 محددة في المصدر ولكنها غير معرّضة."
+
+#: ../../05_node-guide/10_features-and-activation.md:64
+msgid "Which of these are active on a given network is a runtime fact — read it from `/activation/status` rather than from this table."
+msgstr "أي من هذه الناشطين على شبكة معينة هو حقيقة غير متكررة - قرأها من `/activation/status` بدلاً من هذا الجدول."
+
+#: ../../05_node-guide/10_features-and-activation.md:66
+msgid "Finality and HotStuff"
+msgstr "الصيغة النهائية وHotStuff"
+
+#: ../../05_node-guide/10_features-and-activation.md:68
+msgid "Finality is provided by **Deterministic Finality (feature 25)**. The node also contains a HotStuff BFT fast-finality engine, controlled by `dcc.hotstuff.enabled`. It is **off by default** and gated on an external audit before any Mainnet use. Do not enable it on a Mainnet node. When it is enabled, `/node/status` additionally reports `hotStuffFinalizedHeight`."
+msgstr "(أ) تُقدّم الصيغة النهائية من **Deterministic Finality (feature 25)**. ويحتوي العقد أيضا على محرك ثابت سريع من طراز HotStuff BFT، يتحكم فيه `dcc.hotstuff.enabled`. وهو **مِن قَبل** ويدخل على مراجعة خارجية للحسابات قبل أي استخدام Mainnet. لا تُمكّنْه على a Mainnet node. وعندما يُمكن ذلك، `/node/status` تقارير إضافية `hotStuffFinalizedHeight`."
+
+#: ../../05_node-guide/10_features-and-activation.md:71
+msgid "**On the public Testnet, HotStuff is enabled and authoritative.** The Testnet's own nodes run `dcc.hotstuff.enabled = true` and `dcc.hotstuff.authoritative = true`, so a HotStuff commit certificate raises the finalized height that `/blocks/height/finalized` reports. That is why Testnet finality runs only a few blocks behind the tip (`hotStuffFinalizedHeight` in `/node/status`). Mainnet does not run HotStuff. Integrators should not expect Testnet finality latency on Mainnet."
+msgstr ""
+
+#: ../../05_node-guide/11_troubleshooting.md:1
+msgid "Troubleshooting"
+msgstr "اضطرابات"
+
+#: ../../05_node-guide/11_troubleshooting.md:3
+msgid "Symptom"
+msgstr "الرمز"
+
+#: ../../05_node-guide/11_troubleshooting.md:3
+msgid "Likely cause"
+msgstr "من المحتمل أن يكون سببًا"
+
+#: ../../05_node-guide/11_troubleshooting.md:3
+msgid "What to do"
+msgstr "ما العمل"
+
+#: ../../05_node-guide/11_troubleshooting.md:3
+msgid "`curl localhost:6869` fails from the host while the container is healthy"
+msgstr "`curl localhost:6869` يفشل من المضيف بينما الحاوية صحية"
+
+#: ../../05_node-guide/11_troubleshooting.md:3
+msgid "REST API bound to the container's loopback"
+msgstr "\"مُرتبطة بـ (آرت إي آي)\" \"إلى حلقة الحاوية\""
+
+#: ../../05_node-guide/11_troubleshooting.md:3
+msgid "Set `DCC_REST_API_BIND=0.0.0.0` and publish `-p 127.0.0.1:6869:6869`"
+msgstr "وضع `DCC_REST_API_BIND=0.0.0.0` ونشر `-p 127.0.0.1:6869:6869`"
+
+#: ../../05_node-guide/11_troubleshooting.md:3
+msgid "Node stays behind after hours"
+msgstr "(نود) يبقى خلفه بعد ساعات"
+
+#: ../../05_node-guide/11_troubleshooting.md:3
+msgid "Still in initial sync, or few peers"
+msgstr "لا يزال في مزامنة أولية، أو عدد قليل من النظراء"
+
+#: ../../05_node-guide/11_troubleshooting.md:3
+msgid "Check `/node/status` and `/peers/connected`; open inbound port 6868"
+msgstr "شيك `/node/status` و `/peers/connected`؛ مفتوح في الميناء رقم 6868"
+
+#: ../../05_node-guide/11_troubleshooting.md:3
+msgid "No peers"
+msgstr "لا أقران"
+
+#: ../../05_node-guide/11_troubleshooting.md:3
+msgid "Firewall, wrong network"
+msgstr "\"فاير وول\" شبكة خاطئة"
+
+#: ../../05_node-guide/11_troubleshooting.md:3
+msgid "Confirm `DCC_NETWORK`; add a peer with `POST /peers/connect`"
+msgstr "تأكيد `DCC_NETWORK`؛ إضافة نظراء إلى `POST /peers/connect`"
+
+#: ../../05_node-guide/11_troubleshooting.md:3
+msgid "Node exits shortly after start"
+msgstr "مخرج (نود) بعد فترة وجيزة من بدء"
+
+#: ../../05_node-guide/11_troubleshooting.md:3
+msgid "JVM out of memory (`ExitOnOutOfMemoryError`)"
+msgstr "JVM خارج الذاكرة (`ExitOnOutOfMemoryError`)"
+
+#: ../../05_node-guide/11_troubleshooting.md:3
+msgid "Raise `DCC_HEAP_SIZE`"
+msgstr "الارتفاع `DCC_HEAP_SIZE`"
+
+#: ../../05_node-guide/11_troubleshooting.md:3
+msgid "Node stops after a network activation"
+msgstr "توقف (نود) بعد تنشيط الشبكة"
+
+#: ../../05_node-guide/11_troubleshooting.md:3
+msgid "Unsupported feature, auto-shutdown"
+msgstr "سمة غير مدعومة، مقسم آلي"
+
+#: ../../05_node-guide/11_troubleshooting.md:3
+msgid "[Upgrade](07_upgrade) the node"
+msgstr "[أعلى](07_upgrade) العقدة"
+
+#: ../../05_node-guide/11_troubleshooting.md:3
+msgid "`403` from an API call"
+msgstr "`403` من مكالمة هاتفية"
+
+#: ../../05_node-guide/11_troubleshooting.md:3
+msgid "Missing or wrong `X-Api-Key`, or `api-key-hash` unset"
+msgstr "مفقودة أو خاطئة `X-Api-Key`، أو `api-key-hash`"
+
+#: ../../05_node-guide/11_troubleshooting.md:3
+msgid "[Configure the API key](05_configuration)"
+msgstr "[(أ) الثقة بمفتاح نظام المعلومات المسبقة عن علم](05_configuration)"
+
+#: ../../05_node-guide/11_troubleshooting.md:3
+msgid "Database errors after a crash"
+msgstr "أخطاء في قاعدة البيانات بعد حادث"
+
+#: ../../05_node-guide/11_troubleshooting.md:3
+msgid "Unclean shutdown"
+msgstr "العمّ يغلق"
+
+#: ../../05_node-guide/11_troubleshooting.md:3
+msgid "Roll back if within depth, otherwise [re-sync](06_sync-and-rollback)"
+msgstr "ارجعي لو كان في العمق، وإلا [إعادة النظام](06_sync-and-rollback)"
+
+#: ../../05_node-guide/11_troubleshooting.md:3
+msgid "Node produces no blocks"
+msgstr "النويدات لا تنتج أي لبنات"
+
+#: ../../05_node-guide/11_troubleshooting.md:3
+msgid "Generating balance too low, wallet not loaded, or still syncing"
+msgstr "توازن التوليد منخفض جدا، المحفظة غير محشوة، أو ما زالت متزامنة"
+
+#: ../../05_node-guide/11_troubleshooting.md:3
+msgid "Check `/debug/minerInfo` and [wallet setup](08_wallet-and-generating)"
+msgstr "تحقق `/debug/minerInfo` و [محفظة جاهزة](08_wallet-and-generating)"
+
+#: ../../05_node-guide/11_troubleshooting.md:18
+msgid "Useful checks"
+msgstr "شيكات مفيدة"
+
+#: ../../05_node-guide/11_troubleshooting.md:27
+msgid "Adding a peer at runtime"
+msgstr "أضف النظراء في وقت غير مناسب"
+
+#: ../../05_node-guide/11_troubleshooting.md:35
+msgid "Reporting an issue"
+msgstr "الإبلاغ عن مسألة"
+
+#: ../../05_node-guide/11_troubleshooting.md:37
+msgid "Include the node version, network, `/node/status` output and the relevant log excerpt when opening an issue at [Decentral-America/node-scala](https://github.com/Decentral-America/node-scala)."
+msgstr "(أ) إدراج صيغة العقد، والشبكة، والناتج `/node/status`، والمقتطفات ذات الصلة من السجل عند فتح مسألة في [Decentral-America/node-scala](https://github.com/Decentral-America/node-scala)."
+
+#: ../../05_node-guide/12_install-linux.md:1
+msgid "Installing on Linux"
+msgstr "(إسقاط (لينكس"
+
+#: ../../05_node-guide/12_install-linux.md:4
+msgid "Verified on a clean Ubuntu 24.04 (the `ubuntu:24.04` image, plus `sudo`, `curl` and `git`) against node-scala v1.8.1, 2026-10-27: Temurin 25.0.5, SBT from its APT repository, `sbt packageAll` in 12 minutes, then the tarball synced the public Testnet from genesis to the tip, height 100,132, in 22 minutes, with block IDs matching the public node. The DEB package did not install (see below)."
+msgstr ""
+
+#: ../../05_node-guide/12_install-linux.md:7
+msgid "For most operators, [Docker](04_install-docker) is simpler than a bare-metal install. Use this page if you need to run the node directly on the host, for example to package it for your own init system."
+msgstr "بالنسبة لمعظم المشغلين، [(دوكر)](04_install-docker) هو أبسط من تركيبة العينات. استخدم هذه الصفحة إذا كنت بحاجة لتشغيل العقد مباشرة على المضيف، مثلا لحزمه لنظامك الداخلي الخاص."
+
+#: ../../05_node-guide/12_install-linux.md:9
+#: ../../05_node-guide/13_install-macos.md:9
+#: ../../05_node-guide/14_install-windows.md:9
+msgid "Prerequisites"
+msgstr "الشروط المسبقة"
+
+#: ../../05_node-guide/12_install-linux.md:11
+msgid "**Java 25 JDK**: [Eclipse Temurin 25](https://adoptium.net/temurin/releases/?version=25) is the distribution node-scala recommends and tests against."
+msgstr "**Java 25 JDK**: [Eclipse Temurin 25](https://adoptium.net/temurin/releases/?version=25) هو توصي واختبارات التوزيع"
+
+#: ../../05_node-guide/12_install-linux.md:12
+msgid "**[SBT](https://www.scala-sbt.org/1.x/docs/Installing-sbt-on-Linux.html)** and **Git**, to build the node: node-scala releases ship no node package (the v1.7.0 to v1.8.1 release assets are only `dcc-grpc-server` tarballs)."
+msgstr "**[SBT](https://www.scala-sbt.org/1.x/docs/Installing-sbt-on-Linux.html)** و **Git** لبناء العقد: إطلاق سفينة النود-سكالا أيّ حزمة معدنية (الملف من 1.7.0 إلى v1.8.1 أصول الإطلاق هي فقط `dcc-grpc-server` كرات تار."
+
+#: ../../05_node-guide/12_install-linux.md:13
+msgid "**A configuration file** for the network. For the public Testnet, use the one in [Join the Public Testnet](15_join-testnet); the node's built-in `testnet` profile is a different network."
+msgstr ""
+
+#: ../../05_node-guide/12_install-linux.md:14
+msgid "About 4 GB of free memory and 10 GB of disk for the build; the Testnet data itself was 131 MB at height 99,976."
+msgstr "وكان نحو 4 بروميد الميثيل من الذاكرة الحرة و10 غيلدر من أقراص البناء؛ وكانت بيانات Testnet ذاتها 131 ميغابايت في ارتفاع 976 99."
+
+#: ../../05_node-guide/12_install-linux.md:16
+msgid "Install the JDK (Ubuntu/Debian)"
+msgstr ""
+
+#: ../../05_node-guide/12_install-linux.md:26
+msgid "This adds Adoptium's signing key as a keyring file. Older instructions pipe it into `apt-key add`, which Ubuntu 24.04 still accepts but reports as deprecated on every `apt-get update`."
+msgstr "هذا يضيف مفتاح توقيع (تاغيوم) كملف مفاتيح. التعليمات القديمة تضخها إلى `apt-key add`، التي لا تزال Ubuntu 24.04 تقبلها، ولكن التقارير تستهلك في كل `apt-get update`."
+
+#: ../../05_node-guide/12_install-linux.md:28
+msgid "For a distribution without APT, install Eclipse Temurin 25 through your package manager or from the [Adoptium releases page](https://adoptium.net/temurin/releases/?version=25)."
+msgstr "من أجل توزيع بدون (إيب تي) و ضعي (إكليبسي تيمورين) 25 من خلال مدير الطرد أو من [موقع الإطلاقات في نظام &quot; تونييوم &quot;](https://adoptium.net/temurin/releases/?version=25)"
+
+#: ../../05_node-guide/12_install-linux.md:30
+msgid "Install SBT (Ubuntu/Debian)"
+msgstr ""
+
+#: ../../05_node-guide/12_install-linux.md:32
+msgid "These are the commands from the [SBT installation page](https://www.scala-sbt.org/1.x/docs/Installing-sbt-on-Linux.html):"
+msgstr ""
+
+#: ../../05_node-guide/12_install-linux.md:42
+#: ../../05_node-guide/13_install-macos.md:33
+#: ../../05_node-guide/14_install-windows.md:24
+msgid "Build from source"
+msgstr "البناء من المصدر"
+
+#: ../../05_node-guide/12_install-linux.md:52
+msgid "`sbt packageAll` produces:"
+msgstr "`sbt packageAll` ينتج:"
+
+#: ../../05_node-guide/12_install-linux.md:54
+msgid "the universal tarball `node/target/universal/decentralchain-<version>.tgz` (also copied to `docker/target/dcc.tgz`), and"
+msgstr "الكرة الأرضية العالمية `node/target/universal/decentralchain-<version>.tgz` (المنسخة أيضا إلى `docker/target/dcc.tgz`)، و"
+
+#: ../../05_node-guide/12_install-linux.md:55
+msgid "DEB packages for `amd64` and `arm64` in `node/target/`. The node package is named `decentralchain` for Mainnet and `decentralchain-<network>` for other networks (for example `decentralchain-testnet`)."
+msgstr "حزمة من دي بي ل `amd64` و `arm64` في `node/target/`. وتسمى مجموعة العقد `decentralchain` لMainnet و `decentralchain-<network>` للشبكات الأخرى (مثلاً `decentralchain-testnet`)."
+
+#: ../../05_node-guide/12_install-linux.md:57
+msgid "`sbt -Dnetwork=testnet packageAll` builds packages whose defaults are the built-in `testnet` profile, not the public Testnet. To join the public Testnet, any build works: the configuration file selects the chain."
+msgstr "`sbt -Dnetwork=testnet packageAll` يبني حزماً من قِبَلَها هي مواصفات مُبنى في `testnet`، وليس الجمهور Testnet. وللانضمام إلى القطاع العام من طراز Testnet، أي أعمال بناء: يقوم ملف التشكيل باختيار السلسلة."
+
+#: ../../05_node-guide/12_install-linux.md:59
+msgid "There is no single \"fat\" JAR; the node runs from its `lib/` directory through the launcher script."
+msgstr "لا يوجد \"الدجاجة\" الوحيدة التي تدور من دليلها `lib/` خلال نص القاذفة"
+
+#: ../../05_node-guide/12_install-linux.md:61
+msgid "To also run the unit tests, run `sbt checkPR` before `packageAll`. It took 81 minutes on the same machine and needs [Node.js](https://nodejs.org/) on the `PATH` as well, for the JavaScript build of the Ride compiler. See the [node-scala README](https://github.com/Decentral-America/node-scala#readme) for integration tests and IDE setup."
+msgstr ""
+
+#: ../../05_node-guide/12_install-linux.md:63
+#: ../../05_node-guide/13_install-macos.md:22
+#: ../../05_node-guide/14_install-windows.md:14
+msgid "Run from the tarball"
+msgstr "اهرب من كرة المضرب"
+
+#: ../../05_node-guide/12_install-linux.md:65
+msgid "Extract the tarball and start the node with its `bin/node` launcher and your configuration file:"
+msgstr "اسحب الكرة و ابدأ العقد مع جهاز إطلاقها `bin/node` وملف تشكيلك"
+
+#: ../../05_node-guide/12_install-linux.md:72
+msgid "Unless the configuration sets `dcc.directory`, the node keeps its data under `~/.local/share/dcc-<network>`: `~/.local/share/dcc-custom-21` for the public Testnet. To check that it follows the chain, compare its height and block IDs with the public node, as shown in [Join the Public Testnet](15_join-testnet)."
+msgstr ""
+
+#: ../../05_node-guide/12_install-linux.md:74
+msgid "Install the DEB package you built"
+msgstr "جهزوا حزمة دي بي التي بنيتموها"
+
+#: ../../05_node-guide/12_install-linux.md:77
+msgid "The v1.8.1 DEB package doesn't install: its post-install script copies `/usr/share/decentralchain/doc/dcc.conf.sample`, but the package ships `decentralchain.conf.sample`, so `dpkg -i` stops with `post-installation script subprocess returned error exit status 1` before it installs the systemd service. Until the package is fixed, run the node from the tarball as above."
+msgstr "حزمة الـ \"دي بي\" لا تُركّز: نسخ نصية ما بعد التركيب `/usr/share/decentralchain/doc/dcc.conf.sample`، لكن رزمة السفن `decentralchain.conf.sample`، لذا `dpkg -i` يتوقّف مع `post-installation script subprocess returned error exit status 1` قبل أن يُنشئ الخدمة النظامية حتى يتم إصلاح الطرد، تشغيل العقدة من كرة القدم كما أعلاه."
+
+#: ../../05_node-guide/12_install-linux.md:85
+msgid "Once installed, the package runs the node as a systemd service named after the package (`decentralchain`), as the unprivileged user of the same name, and creates its configuration file at `/etc/decentralchain/dcc.conf` from the sample."
+msgstr "وبمجرد تركيبها، تُدير الرزمة العقد كخدمة نظامية تُدعى بعد الطرد (`decentralchain`)، كمستخدم غير مرخص لنفس الاسم، وتُنشئ ملف تشكيلها في `/etc/decentralchain/dcc.conf` من العينة."
+
+#: ../../05_node-guide/12_install-linux.md:87
+#: ../../05_node-guide/13_install-macos.md:49
+#: ../../05_node-guide/14_install-windows.md:37
+msgid "Next steps"
+msgstr "الخطوات التالية"
+
+#: ../../05_node-guide/12_install-linux.md:89
+#: ../../05_node-guide/13_install-macos.md:51
+#: ../../05_node-guide/14_install-windows.md:39
+msgid "[Configuration](05_configuration) · [Sync and Rollback](06_sync-and-rollback) · [Wallet and Generating](08_wallet-and-generating)"
+msgstr "[الاتحاد](05_configuration) · [الحلقة الثانية:](06_sync-and-rollback) · [الجدارة والتوليد](08_wallet-and-generating)"
+
+#: ../../05_node-guide/13_install-macos.md:1
+msgid "Installing on macOS"
+msgstr "تركيب على macOS"
+
+#: ../../05_node-guide/13_install-macos.md:4
+msgid "Not yet verified on a clean macOS machine. The steps follow node-scala v1.8.1's `README.md`; the build and run steps match the ones verified on a clean Ubuntu 24.04 (see [Linux](12_install-linux)). If a step doesn't match what you see, please report it."
+msgstr "لم يتم التحقق بعد على آلة macOS نظيفة الخطوات تَتْبعُ node-scala v1.8.1 ' `README.md`؛ البنايةِ وخطوات التشغيلِ يُطابقُ الواحد التي تم التحقق منها على a نظيف Ubuntu 24.04 (انظر [لينكس](12_install-linux)). إذا لم تتطابق خطوة ما تراه، يرجى الإبلاغ عنه."
+
+#: ../../05_node-guide/13_install-macos.md:7
+msgid "[Docker](04_install-docker) is the simplest way to run a node; this page is for running it directly on macOS."
+msgstr "[(دوكر)](04_install-docker) هو أبسط طريقة لتشغيل عقدة؛ هذه الصفحة هي لتشغيلها مباشرة على macOS."
+
+#: ../../05_node-guide/13_install-macos.md:11
+msgid "[Homebrew](https://brew.sh/)"
+msgstr "[Homebrew](https://brew.sh/)"
+
+#: ../../05_node-guide/13_install-macos.md:12
+#: ../../05_node-guide/14_install-windows.md:12
+msgid "A network configuration file — the repository ships defaults for Mainnet and Testnet in `node/src/main/resources/network-defaults.conf`."
+msgstr ""
+
+#: ../../05_node-guide/13_install-macos.md:14
+msgid "Install the JDK"
+msgstr ""
+
+#: ../../05_node-guide/13_install-macos.md:20
+msgid "This installs [Eclipse Temurin 25](https://adoptium.net/temurin/releases/?version=25), the JDK version node-scala is built and tested against."
+msgstr "هذه التركات [Eclipse Temurin 25](https://adoptium.net/temurin/releases/?version=25)، تم بناء وفحص نسخة JDK Node-scala."
+
+#: ../../05_node-guide/13_install-macos.md:24
+msgid "node-scala releases do not ship a node JAR or package (the v1.7.0 to v1.8.1 release assets are only `dcc-grpc-server` tarballs), and node-scala doesn't publish a macOS package (`.pkg`/Homebrew formula). The supported way to run a node is the [Docker image](04_install-docker) `ghcr.io/decentral-america/node-scala`. To run it directly on macOS, [build from source](#build-from-source) below, then extract the universal tarball and start the node with its `bin/` launcher:"
+msgstr "ولا تشحن الإطلاقات من طراز node-scala علامة JAR أو طرداً (الملف من 1.7 إلى 1.8.1 أصول الإفراج هي فقط `dcc-grpc-server` كرات، وNde-scala لا تنشر حزمة macOS (`.pkg`/صيغة هومبريو). والطريقة المدعومة لتشغيل عقد هو [صورة (دوكر)](04_install-docker) `ghcr.io/decentral-america/node-scala`. (أ) أن يديرها مباشرة على macOS، [البناء من المصدر](#build-from-source) أدناه، ثم يستخرج الكرة العالمية ويبدأ العقدة مع جهاز إطلاقه `bin/`:"
+
+#: ../../05_node-guide/13_install-macos.md:31
+msgid "There is no single \"fat\" JAR; the launcher runs the node from the tarball's `lib/` directory."
+msgstr ""
+
+#: ../../05_node-guide/13_install-macos.md:45
+#: ../../05_node-guide/14_install-windows.md:33
+msgid "The network comes from the configuration file you start the node with; for the public Testnet, use the one in [Join the Public Testnet](15_join-testnet). To also run the unit tests, run `sbt checkPR` first: it takes over an hour and needs [Node.js](https://nodejs.org/) on the `PATH`."
+msgstr ""
+
+#: ../../05_node-guide/13_install-macos.md:47
+msgid "Building from source additionally requires [SBT](https://www.scala-sbt.org/1.x/docs/Installing-sbt-on-Mac.html). See the [node-scala README](https://github.com/Decentral-America/node-scala#readme) for integration-test setup."
+msgstr ""
+
+#: ../../05_node-guide/14_install-windows.md:1
+msgid "Installing on Windows"
+msgstr "تركيب النوافذ"
+
+#: ../../05_node-guide/14_install-windows.md:4
+msgid "Not yet verified on a clean Windows machine. The steps follow node-scala v1.8.1's `README.md`; the build steps match the ones verified on a clean Ubuntu 24.04 (see [Linux](12_install-linux)). If a step doesn't match what you see, please report it."
+msgstr "لم يتم التحقق بعد على آلة النوافذ النظيفة. الخطوات تَتْبعُ node-scala v1.8.1 `README.md`؛ خطوات البناء تطابق تلك التي تم التحقق منها على a نظيفة Ubuntu 24.04 (انظر [لينكس](12_install-linux)). إذا لم تتطابق خطوة ما تراه، يرجى الإبلاغ عنه."
+
+#: ../../05_node-guide/14_install-windows.md:7
+msgid "[Docker](04_install-docker) (via Docker Desktop) is the simplest way to run a node on Windows; this page is for running it directly."
+msgstr "[(دوكر)](04_install-docker) (عن طريق دوكر ديسكبوتوب) هو أبسط طريقة لتشغيل موكب على ويندوز؛ هذه الصفحة هي لتشغيله مباشرة."
+
+#: ../../05_node-guide/14_install-windows.md:11
+msgid "**Java 25 JDK** — install [Eclipse Temurin 25](https://adoptium.net/temurin/releases/?version=25) using its Windows installer."
+msgstr "**Java 25 JDK** - تركيب } [Eclipse Temurin 25](https://adoptium.net/temurin/releases/?version=25) باستخدام نسيج ويندوز"
+
+#: ../../05_node-guide/14_install-windows.md:16
+msgid "node-scala releases do not ship a node JAR or a Windows installer (the v1.7.0 to v1.8.1 release assets are only `dcc-grpc-server` tarballs). The supported way to run a node is Docker Desktop with the [Docker image](04_install-docker) `ghcr.io/decentral-america/node-scala`. To run it directly, [build from source](#build-from-source) below, extract the universal tarball `node/target/universal/decentralchain-<version>.tgz`, and start the node from a terminal (Command Prompt or PowerShell) with the Windows launcher in its `bin\\` directory:"
+msgstr "ولا تشحن الإطلاقات من طراز node-scala أي مركب من طراز JAR أو صانع ويندوز (الملف من 1.7 إلى 1.8.1 أصول الإطلاق هي فقط `dcc-grpc-server` كرات. والطريقة المدعومة لتشغيل عقدة هو دوكر ديسكبوت مع [صورة (دوكر)](04_install-docker) `ghcr.io/decentral-america/node-scala`. (أ) أن تُديرها مباشرة، [البناء من المصدر](#build-from-source) أدناه، وأن تستخرج الكرة الأرضية العالمية `node/target/universal/decentralchain-<version>.tgz`، وتبدأ العقدة من محطة طرفية (Command Prompt أو PowerShell) مع جهاز الإطلاق في ويندوز في دليلها `bin\\`:"
+
+#: ../../05_node-guide/14_install-windows.md:22
+msgid "There is no single \"fat\" JAR; the launcher runs the node from the tarball's `lib\\` directory."
+msgstr ""
+
+#: ../../05_node-guide/14_install-windows.md:35
+msgid "Building from source additionally requires [SBT](https://www.scala-sbt.org/1.x/docs/Installing-sbt-on-Windows.html). See the [node-scala README](https://github.com/Decentral-America/node-scala#readme) for integration-test setup and IntelliJ IDEA configuration."
+msgstr ""
+
+#: ../../05_node-guide/15_join-testnet.md:1
+msgid "Join the Public Testnet"
+msgstr ""
+
+#: ../../05_node-guide/15_join-testnet.md:3
+msgid "This page shows how to run your own node on the public DecentralChain Testnet, the network behind `testnet-node.decentralchain.io`. Your node follows the chain and serves its own REST API (and gRPC, if you enable it). It does not forge blocks."
+msgstr "وتبين هذه الصفحة كيفية إدارة شعار الخاص بك على الجمهور DecentralChain Testnet، الشبكة وراء `testnet-node.decentralchain.io`. عقدك يتبع السلسلة ويخدم جهازه الخاص (و gRPC، إذا كنت تستطيع ذلك إنها لا تُشكّل مبانٍ."
+
+#: ../../05_node-guide/15_join-testnet.md:6
+msgid "The public Testnet is a **custom chain** (`dcc.blockchain.type = CUSTOM`). The node's built-in `testnet` profile (`DCC_NETWORK=testnet` with no config file) is a different network and **will not join it**. Use the configuration file below."
+msgstr ""
+
+#: ../../05_node-guide/15_join-testnet.md:10
+msgid "Verified on a clean Docker host (macOS 15.5, Docker Desktop 29.2.1) against node-scala v1.8.1, 2026-10-27: following this page word for word, the node synced from genesis to the tip, height 99,976, in 31 minutes, and the block IDs it reported matched the public node's. The same configuration, run from a tarball built on a clean Ubuntu 24.04, synced to height 100,132 in 22 minutes. Every value on this page was checked against the live Testnet on 2026-10-18. The configuration mirrors the Testnet operators' own node configuration (`node-config/testnet/dcc.conf` in the [infra repository](https://github.com/Decentral-America/infra)). If the two ever disagree, the infra file is authoritative."
+msgstr ""
+
+#: ../../05_node-guide/15_join-testnet.md:13
+msgid "Network facts"
+msgstr "وقائع الشبكة"
+
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "Item"
+msgstr "البند"
+
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "Value"
+msgstr "القيمة"
+
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "Chain ID"
+msgstr "هويّة شاين"
+
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "`!` (ASCII 33)"
+msgstr "`!` (ASCII 33)"
+
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "Address prefix"
+msgstr "العنوان: prefix"
+
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "`31`"
+msgstr "`31`"
+
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "Genesis block ID"
+msgstr "الهوية الشخصية"
+
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "`5be1Fs9oqWGnUt1vVpBDXaJNN583tqic72hFwY9mmMf56n5WevrmwqMzdLSRVdEu7DWGhuQkVL1zhYBn4iuz9DX4`"
+msgstr "`5be1Fs9oqWGnUt1vVpBDXaJNN583tqic72hFwY9mmMf56n5WevrmwqMzdLSRVdEu7DWGhuQkVL1zhYBn4iuz9DX4`"
+
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "Genesis timestamp"
+msgstr "مصباح الوراثة"
+
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "`1788539579643` (2026-09-04)"
+msgstr "`1788539579643` (2026-09-04)"
+
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "Target block time"
+msgstr "الوقت المحدد للمجموعات المستهدفة"
+
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "30 seconds"
+msgstr "30 ثانية"
+
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "Public REST API"
+msgstr "مكتب المدعي العام"
+
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "`https://testnet-node.decentralchain.io`"
+msgstr "`https://testnet-node.decentralchain.io`"
+
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "Node image"
+msgstr "صورة عارية"
+
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "`ghcr.io/decentral-america/node-scala:testnet-latest`"
+msgstr "`ghcr.io/decentral-america/node-scala:testnet-latest`"
+
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "Finality"
+msgstr "النهــاية"
+
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "Deterministic Finality (feature 25) plus HotStuff fast finality, enabled and authoritative on the Testnet only"
+msgstr ""
+
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "Data service"
+msgstr "خدمات البيانات"
+
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "`https://testnet-data-service.decentralchain.io/v0`"
+msgstr "`https://testnet-data-service.decentralchain.io/v0`"
+
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "WebSocket API"
+msgstr "WebSocket API"
+
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "`wss://testnet-ws.decentralchain.io/ws`"
+msgstr "`wss://testnet-ws.decentralchain.io/ws`"
+
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "Matcher API"
+msgstr "ماتشر API"
+
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "`https://testnet-matcher.decentralchain.io/matcher`"
+msgstr "`https://testnet-matcher.decentralchain.io/matcher`"
+
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "Matcher public key"
+msgstr "مفتاح \"ماتشير\" العام"
+
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "`BEtB5b2kX8Yge4sb5RRbTUqd5Va8Ah8PhphowcW31z6Y`"
+msgstr "`BEtB5b2kX8Yge4sb5RRbTUqd5Va8Ah8PhphowcW31z6Y`"
+
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "Matcher address"
+msgstr "عنوان ماتشير"
+
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "`31VMNVAvVh67dPZ41nMnYZvhoZFW7wwPrmq`"
+msgstr "`31VMNVAvVh67dPZ41nMnYZvhoZFW7wwPrmq`"
+
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "Explorer"
+msgstr "Explorer"
+
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "`https://testnet.decentralscan.com/`"
+msgstr "`https://testnet.decentralscan.com/`"
+
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "Faucet"
+msgstr "Faucet"
+
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "`https://testnet.decentralscan.com/faucet`"
+msgstr "`https://testnet.decentralscan.com/faucet`"
+
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "Wallet and DEX"
+msgstr ""
+
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "`https://testnet.decentral.exchange/`"
+msgstr "`https://testnet.decentral.exchange/`"
+
+#: ../../05_node-guide/15_join-testnet.md:36
+msgid "The exact image digest the Testnet runs is recorded in `node-config/testnet/vps-image.env` in the infra repository. Use that digest instead of `testnet-latest` if you want to run byte-for-byte the same build."
+msgstr "الرقم الدقيق للصور (Testnet) يتم تسجيله في `node-config/testnet/vps-image.env` في مستودع تحت الحمراء. إستخدم هذا الهضم بدلاً من `testnet-latest` إذا كنت تريد أن تركض إلى جانب المبنى نفسه."
+
+#: ../../05_node-guide/15_join-testnet.md:38
+msgid "1. Write the configuration file"
+msgstr "1. كتابة ملف التشكيلة"
+
+#: ../../05_node-guide/15_join-testnet.md:40
+msgid "Save this as `dcc.conf`. The `blockchain` section must match the Testnet exactly; any difference (a genesis value, a functionality parameter or the reward settings) makes your node reject the chain."
+msgstr "احفظ هذا `dcc.conf`. يجب أن يطابق القسم `blockchain` Testnet بالضبط؛ أي فرق (قيمة جينات، بارامتر وظيفي أو بيئات المكافآت) يجعل عقدك يرفض السلسلة."
+
+#: ../../05_node-guide/15_join-testnet.md:112
+msgid "2. Start the node"
+msgstr "2. ابدأي العقد"
+
+#: ../../05_node-guide/15_join-testnet.md:128
+msgid "`DCC_NETWORK=custom` keeps the built-in `testnet` profile's peers and port out of the merged configuration; the `blockchain` section of your file selects the chain."
+msgstr "`DCC_NETWORK=custom` يُبقي النظراء في `testnet` ملفّ الشخصيّةِ وميناء خارج التشكيلةِ المدمجةِ؛ القسم `blockchain` مِنْ ملفِكَ يَختارُ السلسلةَ."
+
+#: ../../05_node-guide/15_join-testnet.md:130
+msgid "3. Check that it follows the chain"
+msgstr "3. تحقق من أنها تتبع السلسلة"
+
+#: ../../05_node-guide/15_join-testnet.md:132
+msgid "Your node replays the chain from genesis, then follows the tip. Compare it with the public node:"
+msgstr "شعارك يعيد التلاعب بالسلسلة من الجينسيس ثم يتبع النصيحة قارنها بالعقيدة العامة:"
+
+#: ../../05_node-guide/15_join-testnet.md:144
+msgid "Once the two heights match, pick a height a few blocks below the tip and compare the block IDs. They must be identical:"
+msgstr "بمجرد أن يتطابق الإرتفاعان، إلتقط ارتفاعاً على بعد بضعة أحياء أسفل البقشيش وقارن هويات المبنى. ويجب أن تكون متطابقة:"
+
+#: ../../05_node-guide/15_join-testnet.md:152
+msgid "Getting Testnet DCC"
+msgstr "الحصول على Testnet DCC"
+
+#: ../../05_node-guide/15_join-testnet.md:154
+msgid "Open the [faucet](https://testnet.decentralscan.com/faucet) and enter a Testnet address (it starts with `31`). To create an address, use the [wallet](https://testnet.decentral.exchange/) or `libs.crypto.address(seed, '!')` from `@decentralchain/transactions` (see [How-To Guides](../04_building-apps/03_how-to-guides))."
+msgstr ""
+
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "Open to the internet?"
+msgstr "افتحي الانترنت؟"
+
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "Yes, if you set `declared-address`; otherwise outbound only is enough"
+msgstr "نعم، إذا كنت قد وضعت `declared-address`؛ خلافا لذلك لا يكفي"
+
+#: ../../05_node-guide/15_join-testnet.md:9
+msgid "No: keep it on localhost or behind a reverse proxy"
+msgstr "لا، أبقيه على \"المصدر المحلي\" أو خلف الوكيل العكسي"
+
+#: ../../05_node-guide/index.md:1 ../../05_node-guide/index.md:33
+msgid "Node Guide"
+msgstr "الدليل العقدي"
+
+#: ../../05_node-guide/index.md:3
+#, python-brace-format
+msgid "A {ref}`node <02_decentralchain/05_node:Node>` is a host connected to the DecentralChain network that validates transactions, stores blocks, and — if it meets the generating-balance requirement — produces new blocks under {ref}`Leased Proof of Stake <02_decentralchain/05_node:Leased Proof of Stake>`. This section covers running your own node: getting the software, building it, and configuring it. For the economics of block generation (rewards, leasing), see the {ref}`Node <02_decentralchain/05_node:Node>` article in the DecentralChain fundamentals section."
+msgstr ""
+
+#: ../../05_node-guide/index.md:18
+msgid "Open Source"
+msgstr "المصدر المفتوح"
+
+#: ../../05_node-guide/index.md:22
+msgid "The node is built and maintained in the open at Decentral-America/node-scala."
+msgstr "ويُبنى هذا العقد ويُحتفظ به في مفتوحة المركز الأمريكي/العالمي."
+
+#: ../../05_node-guide/index.md:34
+msgid "JVM-Based"
+msgstr "JVM-Based"
+
+#: ../../05_node-guide/index.md:38
+msgid "Written in Scala, packaged as a runnable JAR or DEB."
+msgstr "مكتوبة في سكالا، محزمة كجيش جاروب أو دي بي قابل للهرب."
+
+#: ../../05_node-guide/index.md:54
+msgid "Every node exposes an HTTP API compatible with the Dcc node API shape."
+msgstr "كلّ عقدة تكشف عن مُهمّة (هاتف بي) تتوافق مع شكل (دي سي إي إي إي تي)."
+
+#: ../../05_node-guide/index.md:66
+msgid "Mainnet & Testnet"
+msgstr "Mainnet & Testnet"
+
+#: ../../05_node-guide/index.md:70
+msgid "The same codebase builds packages for either network."
+msgstr "نفس قاعدة الشفرة تُبني حزمة لكلا الشبكة."
+
+#: ../../05_node-guide/index.md:18
+msgid "Getting the Node"
+msgstr "الحصول على النواة"
+
+#: ../../05_node-guide/index.md:20
+msgid "The node implementation lives at [Decentral-America/node-scala](https://github.com/Decentral-America/node-scala), forked from Dcc 1.6.x. [Docker](04_install-docker) is the simplest way to run it; to install directly, see [Linux](12_install-linux), [macOS](13_install-macos) or [Windows](14_install-windows). All are written in Scala, built with SBT, and packaged from the same source for either network:"
+msgstr ""
+
+#: ../../05_node-guide/index.md:27
+msgid "To run a node on the public Testnet, use the Docker image with the configuration file in [Join the Public Testnet](15_join-testnet)."
+msgstr ""
+
+#: ../../05_node-guide/index.md:31
+#, python-brace-format
+msgid "Network-specific defaults are defined in [`network-defaults.conf`](https://github.com/Decentral-America/node-scala/blob/main/node/src/main/resources/network-defaults.conf) in the node-scala repository. Pass your own config file (based on the mainnet/testnet template) as the argument to the JAR to override generating-node settings such as the {ref}`block reward vote <02_decentralchain/05_node:Voting>` and wallet seed."
+msgstr "وتُعرَّف حالات التقصير الخاصة بالشبكات في [`network-defaults.conf`](https://github.com/Decentral-America/node-scala/blob/main/node/src/main/resources/network-defaults.conf) في مستودع العقد. مرر ملفك الخاص (على أساس النتة الرئيسية/النموذج الاستنتي) كحجة لـ(JAR) لتجاوز الظروف المولِّدة مثل {ref}`الجائزة الأولى <02_decentralchain/05_node:Voting>` وبذور المحفظة."
+
+#~ msgid "Disk (Mainnet, SSD)"
+#~ msgstr ""
+
+#~ msgid "200 GB"
+#~ msgstr ""
+
+#~ msgid "500 GB"
+#~ msgstr ""
+
+#~ msgid "`mainnet-latest`"
+#~ msgstr ""
+
+#~ msgid "Latest build for Mainnet"
+#~ msgstr ""
+
+#~ msgid "`testnet-latest`"
+#~ msgstr ""
+
+#~ msgid "Latest build for Testnet"
+#~ msgstr ""
+
+#~ msgid "A build pinned to one git commit — use this for reproducible deployments and rollbacks"
+#~ msgstr ""
+
+#~ msgid "All images live at `ghcr.io/decentral-america/node-scala`. Confirmed live: `ghcr.io/v2/decentral-america/node-scala/tags/list` returns `mainnet-latest`, `testnet-latest`, `stagenet-latest`, `1.7.0` and per-commit `sha-*` tags. No image is published under any Docker Hub name tried (`decentral-america/node-scala`, `decentralamerica/*`, `decentralchain/*`)."
+#~ msgstr ""
+
+#~ msgid "P2P (Mainnet and the public Testnet)"
+#~ msgstr ""
+
+#~ msgid "Open to the internet so peers can reach you"
+#~ msgstr ""
+
+#~ msgid "The examples below run a Mainnet node. To run a node on the public Testnet, follow [Join the Public Testnet](15_join-testnet) instead: it needs a configuration file, not just `DCC_NETWORK=testnet`."
+#~ msgstr ""
+
+#~ msgid "Data is stored in the `/var/lib/dcc` volume and logs in `/var/log/dcc`. Keep the data volume between restarts and upgrades — losing it forces a full re-sync."
+#~ msgstr ""
+
+#~ msgid "`DCC_WALLET_SEED` and `DCC_WALLET_PASSWORD` only take effect when a config file is mounted at `/etc/dcc/dcc.conf` (and no command arguments are passed to the container): the entrypoint layers the wallet secrets on top of that file. Without a mounted config they are silently ignored. See [Configuration](05_configuration)."
+#~ msgstr ""
+
+#~ msgid "The image's built-in `HEALTHCHECK` polls `/node/status`. See [Configuration](05_configuration) for every environment variable and [Sync and Rollback](06_sync-and-rollback) for what to expect on first start."
+#~ msgstr ""
+
+#~ msgid "Verified against node-scala v1.8.0's `README.md` and `build.sbt`. Not run on a clean machine as part of this documentation pass — if a step doesn't match what you see, please report it."
+#~ msgstr ""
+
+#~ msgid "**Java 25 JDK** — [Eclipse Temurin 25](https://adoptium.net/temurin/releases/?version=25) is the distribution node-scala recommends and tests against."
+#~ msgstr ""
+
+#~ msgid "Supported path: Docker"
+#~ msgstr ""
+
+#~ msgid "node-scala releases do not ship a node DEB package or JAR — the v1.7.0 release assets are only `dcc-grpc-server` tarballs. The supported way to run a node is the [Docker image](04_install-docker) `ghcr.io/decentral-america/node-scala`. To run the node directly on the host, build it from source as below."
+#~ msgstr ""
+
+#~ msgid "Building from source additionally requires [SBT](https://www.scala-sbt.org/1.x/docs/Installing-sbt-on-Linux.html). See the [node-scala README](https://github.com/Decentral-America/node-scala#readme) for integration-test setup and IDE configuration."
+#~ msgstr ""
+
+#~ msgid "Installing the package sets up the node as a system service named after the package; see its post-install scripts for the exact paths on your distribution."
+#~ msgstr ""
+
+#~ msgid "If you'd rather not install a package, extract the tarball and start the node with its `bin/` launcher:"
+#~ msgstr ""
+
+#~ msgid "Verified against node-scala v1.8.0's `README.md`. Not run on a clean machine as part of this documentation pass — if a step doesn't match what you see, please report it."
+#~ msgstr ""
+
+#~ msgid "node-scala releases do not ship a node JAR or package (the v1.7.0 release assets are only `dcc-grpc-server` tarballs), and node-scala doesn't publish a macOS package (`.pkg`/Homebrew formula). The supported way to run a node is the [Docker image](04_install-docker) `ghcr.io/decentral-america/node-scala`. To run it directly on macOS, [build from source](#build-from-source) below, then extract the universal tarball and start the node with its `bin/` launcher:"
+#~ msgstr ""
+
+#~ msgid "node-scala releases do not ship a node JAR or a Windows installer (the v1.7.0 release assets are only `dcc-grpc-server` tarballs). The supported way to run a node is Docker Desktop with the [Docker image](04_install-docker) `ghcr.io/decentral-america/node-scala`. To run it directly, [build from source](#build-from-source) below, extract the universal tarball `node/target/universal/decentralchain-<version>.tgz`, and start the node from a terminal (Command Prompt or PowerShell) with the Windows launcher in its `bin\\` directory:"
+#~ msgstr ""
+
+#~ msgid "Every value on this page was checked against the live Testnet on 2026-10-18. The configuration mirrors the Testnet operators' own node configuration (`node-config/testnet/dcc.conf` in the [infra repository](https://github.com/Decentral-America/infra)). If the two ever disagree, the infra file is authoritative."
+#~ msgstr ""
+

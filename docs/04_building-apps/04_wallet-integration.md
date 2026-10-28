@@ -3,7 +3,7 @@
 In a browser dApp, never ask a user for their seed phrase or private key. Instead, let the user sign transactions with their own wallet through [Cubensis Connect](https://github.com/Decentral-America/cubensis-connect), DecentralChain's browser extension wallet. There are two ways to integrate it.
 
 ```{note}
-Cubensis Connect is not listed in the Chrome, Firefox or Edge extension stores yet. Until it is, users install it from a release build of the [Cubensis Connect repository](https://github.com/Decentral-America/cubensis-connect).
+Cubensis Connect is not listed in the Chrome, Firefox or Edge extension stores yet, and has no published release package. Until it does, users build it from the [DecentralChain repository](https://github.com/Decentral-America/DecentralChain/tree/main/apps/cubensis-connect); see the {doc}`Cubensis Connect User Guide <../09_user-guides/02_cubensis-connect>`, which also covers what users see when your dApp asks for a signature.
 ```
 
 ## Recommended: Signer + Provider

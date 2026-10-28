@@ -1,0 +1,30 @@
+# Illustrates: docs/04_building-apps/how-to/04_voting.md, "Write the Script"
+{-# STDLIB_VERSION 6 #-}
+{-# CONTENT_TYPE DAPP #-}
+{-# SCRIPT_TYPE ACCOUNT #-}
+
+# One vote per address, for one of a fixed set of options, until the deadline
+# height. The poll account writes "deadline" with a Data transaction before it
+# sets this script: the verifier below then locks the account for good, so
+# nobody, the poll's creator included, can change a vote or a count.
+
+let options = ["yes", "no", "abstain"]
+
+@Callable(i)
+func vote(option: String) = {
+  let deadline = getIntegerValue(this, "deadline")
+  let voterKey = "vote_" + toString(i.caller)
+  if (height > deadline) then throw("Voting closed at height " + toString(deadline))
+  else if (!containsElement(options, option)) then throw("Unknown option: " + option)
+  else if (isDefined(getString(this, voterKey))) then throw("This address has already voted")
+  else {
+    let count = valueOrElse(getInteger(this, "count_" + option), 0)
+    [
+      StringEntry(voterKey, option),
+      IntegerEntry("count_" + option, count + 1)
+    ]
+  }
+}
+
+@Verifier(tx)
+func verify() = false

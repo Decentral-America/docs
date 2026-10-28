@@ -128,6 +128,15 @@ Introduction
 
    01_introduction
 
+***********
+User Guides
+***********
+
+.. toctree::
+   :maxdepth: 2
+
+   09_user-guides/index
+
 **************
 DecentralChain
 **************
