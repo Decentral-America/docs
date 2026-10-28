@@ -41,6 +41,9 @@ jobs:
           echo "::error::Forbidden third-party reference found"; exit 1
         fi
 
+    - name: No stub pages (under 60 lines and not in docs/scripts/short_pages_allowlist.txt)
+      run: python3 docs/scripts/check_page_length.py
+
   samples_typecheck:
     # Confirms docs/_samples/*.ts compiles against the pinned, *published*
     # npm versions, that those packages load at runtime on Node.js 24, and
