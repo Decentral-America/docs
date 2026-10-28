@@ -40,4 +40,5 @@ New to smart contracts on DecentralChain? Start with the {doc}`Smart Contracts O
 09_smart-accounts
 10_smart-assets
 11_blockchain-updates
+12_matcher-api
 ```

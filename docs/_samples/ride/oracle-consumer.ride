@@ -1,0 +1,24 @@
+# Illustrates: docs/02_decentralchain/07_oracle.rst, "Example: A Price Oracle"
+{-# STDLIB_VERSION 6 #-}
+{-# CONTENT_TYPE DAPP #-}
+{-# SCRIPT_TYPE ACCOUNT #-}
+
+# The account that publishes the price. A dApp trusts whoever writes here.
+let oracle = addressFromStringValue("31gSFbvTohHJfF74ha1D5b2oJUYsp7UNRxt")
+let maxAgeMs = 3600000  # reject prices older than one hour
+
+# Sells a fixed 10 USD voucher, paid in DCC at the oracle's current price.
+@Callable(i)
+func buyVoucher() = {
+  let price = getIntegerValue(oracle, "price_DCC_USD")            # USD per DCC, 8 decimals
+  let observedAt = getIntegerValue(oracle, "price_DCC_USD_timestamp")
+  strict fresh = lastBlock.timestamp - observedAt <= maxAgeMs || throw("Oracle price is stale")
+
+  # 10 USD in Decentralites: 10 * 10^8 * 10^8 / price
+  let cost = fraction(10 * 100000000, 100000000, price)
+  strict onePayment = size(i.payments) == 1 || throw("Attach one DCC payment")
+  let pmt = i.payments[0]
+  strict paid = pmt.assetId == unit && pmt.amount >= cost || throw("Pay at least " + toString(cost) + " Decentralites")
+
+  [StringEntry("voucher_" + toBase58String(i.transactionId), toString(i.caller))]
+}
