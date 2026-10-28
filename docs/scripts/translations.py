@@ -48,30 +48,62 @@ from published_locales import published_locales  # noqa: E402
 PUBLISH_THRESHOLD = 80.0
 SOURCE_LOCALE = "en"
 
-ROLE = re.compile(r":([A-Za-z][\w.+-]*):`((?:[^`\\]|\\.)*)`")
+# Inline markup, scanned left to right so a span is never read inside another one: ``literal``
+# (reST), :role:`body` (reST), {role}`body` (MyST) and `literal` (Markdown).
+SPAN = re.compile(
+    r"``(?P<literal>.+?)``"
+    r"|(?::(?P<rst>[A-Za-z][\w.+-]*):|(?<![\w}])\{(?P<myst>[a-z][\w.+-]*)\})?`(?P<body>[^`]*)`"
+)
 REF_TARGET = re.compile(r"<([^<>]+)>\s*$")
 LINK_ROLES = {"ref", "doc", "term", "numref"}
+URL = re.compile(r"\]\((\S+?)\)|<(https?://[^>\s]+)>`_")              # [text](url), `text <url>`_
+
+
+def spans(text: str) -> tuple[list[tuple[str, str]], list[str]]:
+    """The roles (name, body) and the code literals of a message. A `text <url>`_ hyperlink
+    reference is neither: its text is translated, and urls() checks its URL."""
+    roles, literals = [], []
+    for m in SPAN.finditer(text):
+        if m.group("literal") is not None:
+            literals.append(m.group("literal"))
+        elif m.group("rst") or m.group("myst"):
+            roles.append((m.group("rst") or m.group("myst"), m.group("body")))
+        elif not text.startswith("_", m.end()):
+            literals.append(m.group("body"))
+    return roles, literals
 
 
 def markup(text: str) -> list[tuple[str, str | None]]:
-    """The roles in a message, in order: (name, target) for links, (name, None) otherwise."""
+    """The roles in a message: (name, target) for links, (name, None) otherwise. Sorted, since a
+    translation may change their order; Sphinx matches references by target, not position."""
     out = []
-    for m in ROLE.finditer(text):
-        name, body = m.group(1), m.group(2)
+    for name, body in spans(text)[0]:
         if name in LINK_ROLES:
             target = REF_TARGET.search(body)
             out.append((name, target.group(1) if target else body))
         else:
             out.append((name, None))
-    return out
+    return sorted(out, key=lambda r: (r[0], r[1] or ""))
+
+
+def literals(text: str) -> list[str]:
+    return sorted(spans(text)[1])
+
+
+def urls(text: str) -> list[str]:
+    return sorted(a or b for a, b in URL.findall(text))
 
 
 def markup_problem(msgid: str, msgstr: str) -> str | None:
     if markup(msgid) != markup(msgstr):
         return f"roles or link targets differ from the English: {markup(msgid)} vs {markup(msgstr)}"
-    for m in ROLE.finditer(msgstr):
-        if m.group(2) != m.group(2).strip():
-            return f"space just inside the backticks of :{m.group(1)}:`{m.group(2)}`"
+    for name, body in spans(msgstr)[0]:
+        if body != body.strip():
+            return f"space just inside the backticks of the {name} role `{body}`"
+    if literals(msgid) != literals(msgstr):
+        return f"code literals differ from the English: {literals(msgid)} vs {literals(msgstr)}"
+    if urls(msgid) != urls(msgstr):
+        return f"link URLs differ from the English: {urls(msgid)} vs {urls(msgstr)}"
     if msgid.count("`") % 2 == 0 and msgstr.count("`") % 2:
         return "unbalanced backticks"
     return None

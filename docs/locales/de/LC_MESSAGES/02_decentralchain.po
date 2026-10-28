@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: DecentralChain docs VERSION\n"
 "Report-Msgid-Bugs-To: https://github.com/Decentral-America/docs/issues\n"
-"POT-Creation-Date: 2026-10-27 21:54-0600\n"
+"POT-Creation-Date: 2026-10-27 22:33-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
@@ -2272,10 +2272,10 @@ msgstr ""
 #: ../../02_decentralchain/03_transaction.rst:736
 #: ../../02_decentralchain/03_transaction.rst:807
 #: ../../02_decentralchain/03_transaction.rst:875
-#: ../../02_decentralchain/03_transaction.rst:925
-#: ../../02_decentralchain/03_transaction.rst:1036
-#: ../../02_decentralchain/03_transaction.rst:1088
-#: ../../02_decentralchain/03_transaction.rst:1150
+#: ../../02_decentralchain/03_transaction.rst:927
+#: ../../02_decentralchain/03_transaction.rst:1038
+#: ../../02_decentralchain/03_transaction.rst:1090
+#: ../../02_decentralchain/03_transaction.rst:1152
 msgid ":strong:`Fee`"
 msgstr ""
 
@@ -2294,9 +2294,9 @@ msgstr ""
 #: ../../02_decentralchain/03_transaction.rst:740
 #: ../../02_decentralchain/03_transaction.rst:811
 #: ../../02_decentralchain/03_transaction.rst:879
-#: ../../02_decentralchain/03_transaction.rst:1040
-#: ../../02_decentralchain/03_transaction.rst:1092
-#: ../../02_decentralchain/03_transaction.rst:1154
+#: ../../02_decentralchain/03_transaction.rst:1042
+#: ../../02_decentralchain/03_transaction.rst:1094
+#: ../../02_decentralchain/03_transaction.rst:1156
 msgid "If the transaction sender is a :ref:`dApp or smart account <02_decentralchain/01_account:dApp and Smart Account>`, and the complexity of the account script or dApp script verifier function exceeds the :ref:`sender complexity threshold <03_ride-language/07_dapp-to-app-invocation:Limitations>`, the minimum fee is increased by :math:`0.004` DecentralCoins."
 msgstr ""
 
@@ -2311,10 +2311,10 @@ msgstr ""
 #: ../../02_decentralchain/03_transaction.rst:742
 #: ../../02_decentralchain/03_transaction.rst:813
 #: ../../02_decentralchain/03_transaction.rst:881
-#: ../../02_decentralchain/03_transaction.rst:940
-#: ../../02_decentralchain/03_transaction.rst:1042
-#: ../../02_decentralchain/03_transaction.rst:1094
-#: ../../02_decentralchain/03_transaction.rst:1156
+#: ../../02_decentralchain/03_transaction.rst:942
+#: ../../02_decentralchain/03_transaction.rst:1044
+#: ../../02_decentralchain/03_transaction.rst:1096
+#: ../../02_decentralchain/03_transaction.rst:1158
 msgid ":strong:`JSON Representation`"
 msgstr ""
 
@@ -2412,12 +2412,12 @@ msgstr ""
 #: ../../02_decentralchain/03_transaction.rst:723
 #: ../../02_decentralchain/03_transaction.rst:790
 #: ../../02_decentralchain/03_transaction.rst:862
-#: ../../02_decentralchain/03_transaction.rst:910
-#: ../../02_decentralchain/03_transaction.rst:1012
-#: ../../02_decentralchain/03_transaction.rst:1075
-#: ../../02_decentralchain/03_transaction.rst:1135
-#: ../../02_decentralchain/03_transaction.rst:1185
-#: ../../02_decentralchain/03_transaction.rst:1207
+#: ../../02_decentralchain/03_transaction.rst:912
+#: ../../02_decentralchain/03_transaction.rst:1014
+#: ../../02_decentralchain/03_transaction.rst:1077
+#: ../../02_decentralchain/03_transaction.rst:1137
+#: ../../02_decentralchain/03_transaction.rst:1187
+#: ../../02_decentralchain/03_transaction.rst:1209
 msgid ":strong:`Binary Format`"
 msgstr ""
 
@@ -2435,11 +2435,11 @@ msgstr ""
 #: ../../02_decentralchain/03_transaction.rst:727
 #: ../../02_decentralchain/03_transaction.rst:794
 #: ../../02_decentralchain/03_transaction.rst:866
-#: ../../02_decentralchain/03_transaction.rst:914
-#: ../../02_decentralchain/03_transaction.rst:1016
-#: ../../02_decentralchain/03_transaction.rst:1079
-#: ../../02_decentralchain/03_transaction.rst:1139
-#: ../../02_decentralchain/03_transaction.rst:1189
+#: ../../02_decentralchain/03_transaction.rst:916
+#: ../../02_decentralchain/03_transaction.rst:1018
+#: ../../02_decentralchain/03_transaction.rst:1081
+#: ../../02_decentralchain/03_transaction.rst:1141
+#: ../../02_decentralchain/03_transaction.rst:1191
 msgid ":strong:`Ride Structure`"
 msgstr ""
 
@@ -2485,11 +2485,11 @@ msgstr ""
 #: ../../02_decentralchain/03_transaction.rst:721
 #: ../../02_decentralchain/03_transaction.rst:788
 #: ../../02_decentralchain/03_transaction.rst:860
-#: ../../02_decentralchain/03_transaction.rst:908
-#: ../../02_decentralchain/03_transaction.rst:1010
-#: ../../02_decentralchain/03_transaction.rst:1073
-#: ../../02_decentralchain/03_transaction.rst:1133
-#: ../../02_decentralchain/03_transaction.rst:1183
+#: ../../02_decentralchain/03_transaction.rst:910
+#: ../../02_decentralchain/03_transaction.rst:1012
+#: ../../02_decentralchain/03_transaction.rst:1075
+#: ../../02_decentralchain/03_transaction.rst:1135
+#: ../../02_decentralchain/03_transaction.rst:1185
 msgid "The fields that are common to all types of transactions are described in the :ref:`transaction <02_decentralchain/03_transaction:Transaction>` article."
 msgstr ""
 
@@ -3027,7 +3027,7 @@ msgstr ""
 msgid "The :ref:`minimum fee <02_decentralchain/03_transaction:Minimum Fee>` for a Set Script transaction is :math:`0.001` :ref:`DecentralCoins <02_decentralchain/02_token(asset):DecentralCoin>`."
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:902
+#: ../../02_decentralchain/03_transaction.rst:904
 msgid "Set Script Transaction JSON Representation"
 msgstr ""
 
@@ -3035,55 +3035,55 @@ msgstr ""
 msgid "Compiled script, base64 encoded. Account script up to :math:`8192` bytes, dApp script up to :math:`32,767` bytes. null – delete script."
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:912
+#: ../../02_decentralchain/03_transaction.rst:914
 msgid "See the :ref:`set script transaction binary format <02_decentralchain/10_binary-format:Set Script Transaction Binary Format>`."
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:916
+#: ../../02_decentralchain/03_transaction.rst:918
 msgid "The :ref:`SetScriptTransaction <03_ride-language/05_structures:SetScriptTransaction>` structure is used for transaction handling in smart contracts."
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:919
+#: ../../02_decentralchain/03_transaction.rst:921
 msgid "Invoke Script Transaction"
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:921
+#: ../../02_decentralchain/03_transaction.rst:923
 msgid "Invoke script transaction invokes the :ref:`callable function <03_ride-language/03_functions:Callable Functions>` of the :ref:`dApp <02_decentralchain/01_account:dApp and Smart Account>`."
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:923
+#: ../../02_decentralchain/03_transaction.rst:925
 msgid "In addition to the dApp address, callable function name, and arguments, the Invoke Script transaction can contain payments to dApp. The maximum number of payments is 10."
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:927
+#: ../../02_decentralchain/03_transaction.rst:929
 msgid "The sender can specify a transaction fee nominated in a sponsored asset instead of DecentralCoins, see the :ref:`sponsored fee <02_decentralchain/03_transaction:Sponsored Fees>` article."
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:929
+#: ../../02_decentralchain/03_transaction.rst:931
 msgid "The :ref:`minimum fee <02_decentralchain/03_transaction:Minimum Fee>` in :ref:`DecentralCoins <02_decentralchain/02_token(asset):DecentralCoin>` for an invoke script transaction is Fee :math:`= 0.005 + S + 1 × I`."
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:931
+#: ../../02_decentralchain/03_transaction.rst:933
 msgid "If the transaction sender is a dApp or smart account, and that the complexity of the account script or dApp script verifier function exceeds the sender complexity threshold, then :math:`S = 0.004`, otherwise :math:`S = 0`."
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:932
+#: ../../02_decentralchain/03_transaction.rst:934
 msgid ":math:`I` is the number of issued assets that are not :ref:`NFT <02_decentralchain/02_token(asset):Non-Fungible Token>`."
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:934
+#: ../../02_decentralchain/03_transaction.rst:936
 msgid ":strong:`Total Complexity`"
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:936
+#: ../../02_decentralchain/03_transaction.rst:938
 msgid "A dApp callable function can invoke a callable function of another dApp, or another callable function of the same dApp, or even itself. All invoked functions are executed within a single Invoke Script transaction. :ref:`More about dApp-to-dApp invocation <03_ride-language/07_dapp-to-app-invocation:dApp-to-App Invocation>`."
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:938
+#: ../../02_decentralchain/03_transaction.rst:940
 msgid "The total :ref:`complexity <03_ride-language/07_dapp-to-app-invocation:Script Complexity>` is limited by :math:`26,000` for all callable functions and asset scripts of involved smart assets in a single invoke script transaction. The sender's account script complexity is not included in that limit."
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:1002
+#: ../../02_decentralchain/03_transaction.rst:1004
 msgid "Invoke Script Transaction JSON Representation"
 msgstr ""
 
@@ -3144,20 +3144,20 @@ msgstr ""
 msgid "Script actions performed by the callable function and dApp-to-dApp invocation results."
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:1008
+#: ../../02_decentralchain/03_transaction.rst:1010
 msgid "The stateChanges structure does not need to be filled when sending a transaction, and it is not stored on the blockchain. The node returns this structure when providing transaction data via the REST API."
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:1014
+#: ../../02_decentralchain/03_transaction.rst:1016
 msgid "See the :ref:`invoke script transaction binary format <02_decentralchain/10_binary-format:Invoke Script Transaction Binary Format>`."
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:1018
+#: ../../02_decentralchain/03_transaction.rst:1020
 msgid "The :ref:`InvokeScriptTransaction <03_ride-language/05_structures:InvokeScriptTransaction>` structure is used for transaction handling in smart contracts."
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:1021
 #: ../../02_decentralchain/03_transaction.rst:1023
+#: ../../02_decentralchain/03_transaction.rst:1025
 msgid "Network"
 msgstr ""
 
@@ -3173,23 +3173,23 @@ msgstr ""
 msgid "Configures sponsorship."
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:1030
+#: ../../02_decentralchain/03_transaction.rst:1032
 msgid "Lease Transaction"
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:1032
+#: ../../02_decentralchain/03_transaction.rst:1034
 msgid "Lease transaction leases :ref:`DecentralCoins <02_decentralchain/02_token(asset):DecentralCoin>` to another account. After :math:`1000` block the leased tokens are accounted for by the recipient's generating balance. The larger the generating balance of the node is, the higher the chances for that node to be selected to generate the next block. Commonly node owners share the reward for generated blocks with lessors. :ref:`More about leasing <02_decentralchain/05_node:Leased Proof of Stake>`."
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:1034
+#: ../../02_decentralchain/03_transaction.rst:1036
 msgid "Leased tokens remain locked on the sender's account with the full control of their owner. The sender can cancel the lease at any time by the :ref:`lease cancel transaction <02_decentralchain/03_transaction:Lease Cancel Transaction>`."
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:1038
+#: ../../02_decentralchain/03_transaction.rst:1040
 msgid "The :ref:`minimum fee <02_decentralchain/03_transaction:Minimum Fee>` for a lease transaction is :math:`0.001` :ref:`DecentralCoins <02_decentralchain/02_token(asset):DecentralCoin>`."
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:1065
+#: ../../02_decentralchain/03_transaction.rst:1067
 msgid "Lease Transaction JSON Representation"
 msgstr ""
 
@@ -3209,31 +3209,31 @@ msgstr ""
 msgid "Lease status: 1) active: lease is active. 2) canceled: lease is cancelled, see :ref:`lease cancel transaction <02_decentralchain/03_transaction:Lease Cancel Transaction>`."
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:1071
+#: ../../02_decentralchain/03_transaction.rst:1073
 msgid "The status field does not need to be filled when sending a transaction, and it is not stored on the blockchain. The node calculates these fields when providing transaction data via the REST API."
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:1077
+#: ../../02_decentralchain/03_transaction.rst:1079
 msgid "See the :ref:`lease transaction binary format <02_decentralchain/10_binary-format:Lease Transaction Binary Format>`."
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:1081
+#: ../../02_decentralchain/03_transaction.rst:1083
 msgid "The :ref:`LeaseTransaction <03_ride-language/05_structures:LeaseTransaction>` structure is used for transaction handling in smart contracts."
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:1084
+#: ../../02_decentralchain/03_transaction.rst:1086
 msgid "Lease Cancel Transaction"
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:1086
+#: ../../02_decentralchain/03_transaction.rst:1088
 msgid "Lease cancel transaction cancels the leasing. See the :ref:`lease transaction <02_decentralchain/03_transaction:Lease Transaction>` article."
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:1090
+#: ../../02_decentralchain/03_transaction.rst:1092
 msgid "The :ref:`minimum fee <02_decentralchain/03_transaction:Minimum Fee>` for a lease cancel transaction is :math:`0.001` :ref:`DecentralCoins <02_decentralchain/02_token(asset):DecentralCoin>`."
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:1125
+#: ../../02_decentralchain/03_transaction.rst:1127
 msgid "Lease Cancel Transaction JSON Representation"
 msgstr ""
 
@@ -3253,35 +3253,35 @@ msgstr ""
 msgid "Parameters of canceled lease."
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:1131
+#: ../../02_decentralchain/03_transaction.rst:1133
 msgid "The lease structure does not need to be filled when sending a transaction, and it is not stored on the blockchain. The node returns this structure when providing transaction data via the REST API."
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:1137
+#: ../../02_decentralchain/03_transaction.rst:1139
 msgid "See the :ref:`lease cancel transaction binary format <02_decentralchain/10_binary-format:Lease Cancel Transaction Binary Format>`."
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:1141
+#: ../../02_decentralchain/03_transaction.rst:1143
 msgid "The :ref:`LeaseCancelTransaction <03_ride-language/05_structures:LeaseCancelTransaction>` structure is used for transaction handling in smart contracts."
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:1144
+#: ../../02_decentralchain/03_transaction.rst:1146
 msgid "Sponsor Fee Transaction"
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:1146
+#: ../../02_decentralchain/03_transaction.rst:1148
 msgid "Sponsor fee transaction enables or disables sponsorship. Sponsorship allows any user to pay a fee in the sponsored asset (instead of DecentralCoins) for invoke script transactions and transfer transactions. :ref:`More about sponsorship <02_decentralchain/03_transaction:Sponsored Fees>`."
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:1148
+#: ../../02_decentralchain/03_transaction.rst:1150
 msgid "Only the asset issuer can set up sponsorship. Smart asset cannot be a sponsored asset."
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:1152
+#: ../../02_decentralchain/03_transaction.rst:1154
 msgid "The :ref:`minimum fee <02_decentralchain/03_transaction:Minimum Fee>` for the sponsor fee transaction is :math:`0.001` :ref:`DecentralCoins <02_decentralchain/02_token(asset):DecentralCoin>`."
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:1177
+#: ../../02_decentralchain/03_transaction.rst:1179
 msgid "Sponsor Fee Transaction JSON Representation"
 msgstr ""
 
@@ -3289,16 +3289,16 @@ msgstr ""
 msgid "Amount of asset that is equivalent to :math:`0.001` :ref:`DecentralCoins <02_decentralchain/02_token(asset):DecentralCoin>` (:math:`100,000` Decentralites): an integer value specified in the minimum fraction (“cents”) of asset. null – disable sponsorship."
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:1187
+#: ../../02_decentralchain/03_transaction.rst:1189
 msgid "See the :ref:`sponsor fee transaction binary format <02_decentralchain/10_binary-format:Sponsor Fee Transaction Binary Format>`."
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:1191
+#: ../../02_decentralchain/03_transaction.rst:1193
 msgid "The :ref:`SponsorFeeTransaction <03_ride-language/05_structures:SponsorFeeTransaction>` structure is used for transaction handling in smart contracts."
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:1194
 #: ../../02_decentralchain/03_transaction.rst:1196
+#: ../../02_decentralchain/03_transaction.rst:1198
 msgid "Genesis"
 msgstr ""
 
@@ -3310,182 +3310,182 @@ msgstr ""
 msgid "Accrues :ref:`DecentralCoins <02_decentralchain/02_token(asset):DecentralCoin>` to an account upon the initial distribution during the creation of the blockchain."
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:1203
+#: ../../02_decentralchain/03_transaction.rst:1205
 msgid "Genesis Transaction"
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:1205
+#: ../../02_decentralchain/03_transaction.rst:1207
 msgid "Genesis transaction accrues :ref:`DecentralCoins <02_decentralchain/02_token(asset):DecentralCoin>` to account upon the initial distribution of DecentralCoins during the creation of the blockchain. The first block of the blockchain, the genesis block, consists of genesis transactions."
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:1209
+#: ../../02_decentralchain/03_transaction.rst:1211
 msgid "See the :ref:`genesis transaction binary format <02_decentralchain/10_binary-format:Genesis Transaction Binary Format>`."
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:1212
+#: ../../02_decentralchain/03_transaction.rst:1214
 msgid "Transaction Validation"
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:1214
+#: ../../02_decentralchain/03_transaction.rst:1216
 msgid "A DecentralChain node validates each transaction in the following cases:"
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:1216
+#: ../../02_decentralchain/03_transaction.rst:1218
 msgid "The node receives the transaction via the broadcast endpoint of :ref:`Node extensions <05_node-guide/02_node-extensions:Node Extensions>` or :ref:`gRPC server <05_node-guide/02_node-extensions:gRPC Server>`."
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:1217
+#: ../../02_decentralchain/03_transaction.rst:1219
 msgid "The node receives the transaction from another node of the blockchain network using the binary protocol."
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:1218
+#: ../../02_decentralchain/03_transaction.rst:1220
 msgid "The block generator adds the transaction to a block."
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:1219
+#: ../../02_decentralchain/03_transaction.rst:1221
 msgid "The node receives a block (or microblock) from another node in the network."
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:1221
+#: ../../02_decentralchain/03_transaction.rst:1223
 msgid "Full transaction validation includes the following checks:"
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:1223
+#: ../../02_decentralchain/03_transaction.rst:1225
 msgid "Transaction fields check including:"
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:1225
+#: ../../02_decentralchain/03_transaction.rst:1227
 msgid "Timestamp check: the transaction timestamp should be not more than :math:`2` hours ago or :math:`1.5` hours ahead from the current block timestamp."
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:1226
+#: ../../02_decentralchain/03_transaction.rst:1228
 msgid "Transaction version check: all the features required to support this version should be activated."
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:1227
+#: ../../02_decentralchain/03_transaction.rst:1229
 msgid "Transaction type check: all the features required to support this type should be activated."
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:1228
+#: ../../02_decentralchain/03_transaction.rst:1230
 msgid "Check of token amounts: the values must be non-negative."
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:1229
+#: ../../02_decentralchain/03_transaction.rst:1231
 msgid "Check different fields depending on the transaction type."
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:1231
+#: ../../02_decentralchain/03_transaction.rst:1233
 msgid "Sender's balance check."
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:1233
+#: ../../02_decentralchain/03_transaction.rst:1235
 msgid "The sender should have enough funds to pay the fee. If a sponsored asset is used for the fee, the sponsor's balance is also checked."
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:1234
+#: ../../02_decentralchain/03_transaction.rst:1236
 msgid "Depending on the type of transaction, the sender should have enough assets for transfer or for payments attached to the :ref:`invoke script transactions <02_decentralchain/03_transaction:Invoke Script Transaction>`. Order senders in the :ref:`exchange transaction <02_decentralchain/03_transaction:Exchange Transaction>` should have enough funds to exchange."
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:1236
+#: ../../02_decentralchain/03_transaction.rst:1238
 msgid "The sender's signature verification"
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:1238
+#: ../../02_decentralchain/03_transaction.rst:1240
 msgid "For ordinary accounts (without script)."
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:1239
+#: ../../02_decentralchain/03_transaction.rst:1241
 msgid "For account script execution if the sender is a :ref:`smart account <02_decentralchain/01_account:dApp and Smart Account>`."
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:1240
+#: ../../02_decentralchain/03_transaction.rst:1242
 msgid "For verifier function execution if the sender is :ref:`dApp <02_decentralchain/01_account:dApp and Smart Account>`."
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:1241
+#: ../../02_decentralchain/03_transaction.rst:1243
 msgid "A similar check is performed for orders in an :ref:`exchange transaction <02_decentralchain/03_transaction:Exchange Transaction>`."
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:1243
-#: ../../02_decentralchain/03_transaction.rst:1263
+#: ../../02_decentralchain/03_transaction.rst:1245
+#: ../../02_decentralchain/03_transaction.rst:1265
 msgid "For the invoke script transaction:"
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:1245
+#: ../../02_decentralchain/03_transaction.rst:1247
 msgid "Calculation of the result of dApp callable function."
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:1246
+#: ../../02_decentralchain/03_transaction.rst:1248
 msgid "dApp balance check: dApp account should have enough funds for :ref:`dApp script actions <03_ride-language/05_structures:Script Actions>`."
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:1247
+#: ../../02_decentralchain/03_transaction.rst:1249
 msgid "Check that the transaction fee is not less than the :ref:`minimum fee <02_decentralchain/03_transaction:Minimum Fee>` based on script actions."
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:1249
+#: ../../02_decentralchain/03_transaction.rst:1251
 msgid "Execution of asset scripts if the transaction uses :ref:`smart assets <02_decentralchain/02_token(asset):Smart Asset>`, including scripts of assets used in dApp script actions."
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:1251
+#: ../../02_decentralchain/03_transaction.rst:1253
 msgid "When receiving the transaction via the broadcast endpoint, or adding a transaction to a block, or receiving a block over the network, the node performs full validation of the transaction. When receiving an invoke script transaction over the network, the node performs calculations of the callable function (check 4.1) up to the :ref:`threshold for saving unsuccessful transactions <03_ride-language/07_dapp-to-app-invocation:Limitations>`."
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:1254
+#: ../../02_decentralchain/03_transaction.rst:1256
 msgid "Validation Result"
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:1256
+#: ../../02_decentralchain/03_transaction.rst:1258
 msgid "When the transaction is received via broadcast or over the network:"
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:1258
-#: ../../02_decentralchain/03_transaction.rst:1278
+#: ../../02_decentralchain/03_transaction.rst:1260
+#: ../../02_decentralchain/03_transaction.rst:1280
 msgid "If one of the checks fails, the transaction is discarded."
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:1259
+#: ../../02_decentralchain/03_transaction.rst:1261
 msgid "If all the checks passed, the transaction is added to the UTX pool, which is the list of transactions waiting to be added to the block."
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:1261
+#: ../../02_decentralchain/03_transaction.rst:1263
 msgid "When adding the transaction to the block, the result of validation depends on the transaction type."
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:1265
-#: ../../02_decentralchain/03_transaction.rst:1272
+#: ../../02_decentralchain/03_transaction.rst:1267
+#: ../../02_decentralchain/03_transaction.rst:1274
 msgid "If one of the checks 1–3 failed, the transaction is discarded."
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:1266
+#: ../../02_decentralchain/03_transaction.rst:1268
 msgid "If checks 1–3 passed, and the calculation of the result of the dApp callable function (check 4.1) failed with an error or :ref:`throwing an exception <03_ride-language/01_syntax-basics:Exceptions>` before the :ref:`complexity <03_ride-language/07_dapp-to-app-invocation:Script Complexity>` of performed calculations exceeded the :ref:`threshold for saving failed transactions <03_ride-language/07_dapp-to-app-invocation:Limitations>`, the transaction is also discarded."
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:1267
+#: ../../02_decentralchain/03_transaction.rst:1269
 msgid "If checks 1–3 passed but checks 4–5 failed and besides the result of the callable function is calculated successfully or the complexity exceeded the threshold, the transaction is saved on the blockchain but marked as failed: \"applicationStatus\": \"script_execution_failed\". The sender is charged the transaction fee. The transaction doesn't entail any other changes to the state of the blockchain."
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:1268
+#: ../../02_decentralchain/03_transaction.rst:1270
 msgid "If all checks passed, the transaction is saved on the blockchain as successful: \"applicationStatus\": \"succeeded\" and the sender is charged the fee."
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:1270
+#: ../../02_decentralchain/03_transaction.rst:1272
 msgid "For the exchange transaction:"
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:1273
+#: ../../02_decentralchain/03_transaction.rst:1275
 msgid "If checks 1–3 passed but check 5 failed, the transaction is saved on the blockchain but marked as failed: \"applicationStatus\": \"script_execution_failed\". The sender of the transaction (matcher) is charged the transaction fee. The transaction doesn't entail any other changes in balances, in particular, the order senders don't pay the matcher fee."
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:1274
+#: ../../02_decentralchain/03_transaction.rst:1276
 msgid "If all checks passed, the transaction is saved on the blockchain as successful: \"applicationStatus\": \"succeeded\". The matcher is charged the transaction fee as well as the order senders are charged the matcher fee."
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:1276
+#: ../../02_decentralchain/03_transaction.rst:1278
 msgid "For the other transactions:"
 msgstr ""
 
-#: ../../02_decentralchain/03_transaction.rst:1279
+#: ../../02_decentralchain/03_transaction.rst:1281
 msgid "If all checks passed, the transaction is saved on the blockchain as successful and the sender is charged the fee."
 msgstr ""
 
@@ -4073,7 +4073,7 @@ msgstr ""
 
 #: ../../02_decentralchain/06_order.rst:39
 #, python-brace-format
-msgid "Consider buying :math:`2.13` TDX at the price of :math:`0.35016774` DecentralCoins for one TDX. Here the asset pair is TDX / DecentralCoins. The amount in the order is the number of units sold or bought in conventional \"pennies\". This value in the current case is :math:`213`, since :math:`2.13` TDX :math:`= 2.13 × 10^{2}` = 213` \"pennies\" of TDX. So, to bring the amount to the normalized form, it is multiplied by :math:`10^{amountAssetDecimals}`."
+msgid "Consider buying :math:`2.13` TDX at the price of :math:`0.35016774` DecentralCoins for one TDX. Here the asset pair is TDX / DecentralCoins. The amount in the order is the number of units sold or bought in conventional \"pennies\". This value in the current case is :math:`213`, since :math:`2.13` TDX :math:`2.13 × 10^{2} = 213` \"pennies\" of TDX. So, to bring the amount to the normalized form, it is multiplied by :math:`10^{amountAssetDecimals}`."
 msgstr ""
 
 #: ../../02_decentralchain/06_order.rst:42
@@ -10308,5 +10308,8 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "If you use :ref:`Node REST API <documentation:placeholder>`, compose the JSON representation of the transaction and add the base58-encoded signature to the proof array. Send the transaction to a node using POST /transactions/broadcast method."
+#~ msgstr ""
+
+#~ msgid "Consider buying :math:`2.13` TDX at the price of :math:`0.35016774` DecentralCoins for one TDX. Here the asset pair is TDX / DecentralCoins. The amount in the order is the number of units sold or bought in conventional \"pennies\". This value in the current case is :math:`213`, since :math:`2.13` TDX :math:`= 2.13 × 10^{2}` = 213` \"pennies\" of TDX. So, to bring the amount to the normalized form, it is multiplied by :math:`10^{amountAssetDecimals}`."
 #~ msgstr ""
 
