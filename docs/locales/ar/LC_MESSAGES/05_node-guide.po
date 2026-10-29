@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: DecentralChain docs dev\n"
 "Report-Msgid-Bugs-To: https://github.com/Decentral-America/docs/issues\n"
-"POT-Creation-Date: 2026-10-28 01:36-0600\n"
+"POT-Creation-Date: 2026-10-28 16:49-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ar\n"
@@ -497,7 +497,7 @@ msgstr "400"
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "The JSON body is malformed or misses fields; `validationErrors` lists them"
-msgstr ""
+msgstr "وتعاني الهيئة التابعة للرابطة من سوء في الحقول أو تفتقدها؛ وتذكرها شركة `validationErrors`."
 
 #: ../../05_node-guide/01_node-rest-api.md:29
 msgid "`2`"
@@ -2288,7 +2288,7 @@ msgid "For most operators, [Docker](04_install-docker) is simpler than a bare-me
 msgstr "بالنسبة لمعظم المشغلين، [(دوكر)](04_install-docker) هو أبسط من تركيبة العينات. استخدم هذه الصفحة إذا كنت بحاجة لتشغيل العقد مباشرة على المضيف، مثلا لحزمه لنظامك الداخلي الخاص."
 
 #: ../../05_node-guide/12_install-linux.md:9
-#: ../../05_node-guide/13_install-macos.md:9
+#: ../../05_node-guide/13_install-macos.md:11
 #: ../../05_node-guide/14_install-windows.md:9
 msgid "Prerequisites"
 msgstr "الشروط المسبقة"
@@ -2330,8 +2330,7 @@ msgid "These are the commands from the [SBT installation page](https://www.scala
 msgstr ""
 
 #: ../../05_node-guide/12_install-linux.md:42
-#: ../../05_node-guide/13_install-macos.md:33
-#: ../../05_node-guide/14_install-windows.md:24
+#: ../../05_node-guide/13_install-macos.md:38
 msgid "Build from source"
 msgstr "البناء من المصدر"
 
@@ -2360,8 +2359,8 @@ msgid "To also run the unit tests, run `sbt checkPR` before `packageAll`. It too
 msgstr ""
 
 #: ../../05_node-guide/12_install-linux.md:63
-#: ../../05_node-guide/13_install-macos.md:22
-#: ../../05_node-guide/14_install-windows.md:14
+#: ../../05_node-guide/13_install-macos.md:25
+#: ../../05_node-guide/14_install-windows.md:15
 msgid "Run from the tarball"
 msgstr "اهرب من كرة المضرب"
 
@@ -2386,14 +2385,14 @@ msgid "Once installed, the package runs the node as a systemd service named afte
 msgstr "وبمجرد تركيبها، تُدير الرزمة العقد كخدمة نظامية تُدعى بعد الطرد (`decentralchain`)، كمستخدم غير مرخص لنفس الاسم، وتُنشئ ملف تشكيلها في `/etc/decentralchain/dcc.conf` من العينة."
 
 #: ../../05_node-guide/12_install-linux.md:87
-#: ../../05_node-guide/13_install-macos.md:49
-#: ../../05_node-guide/14_install-windows.md:37
+#: ../../05_node-guide/13_install-macos.md:55
+#: ../../05_node-guide/14_install-windows.md:45
 msgid "Next steps"
 msgstr "الخطوات التالية"
 
 #: ../../05_node-guide/12_install-linux.md:89
-#: ../../05_node-guide/13_install-macos.md:51
-#: ../../05_node-guide/14_install-windows.md:39
+#: ../../05_node-guide/13_install-macos.md:57
+#: ../../05_node-guide/14_install-windows.md:47
 msgid "[Configuration](05_configuration) · [Sync and Rollback](06_sync-and-rollback) · [Wallet and Generating](08_wallet-and-generating)"
 msgstr "[الاتحاد](05_configuration) · [الحلقة الثانية:](06_sync-and-rollback) · [الجدارة والتوليد](08_wallet-and-generating)"
 
@@ -2402,45 +2401,56 @@ msgid "Installing on macOS"
 msgstr "تركيب على macOS"
 
 #: ../../05_node-guide/13_install-macos.md:4
-msgid "Not yet verified on a clean macOS machine. The steps follow node-scala v1.8.1's `README.md`; the build and run steps match the ones verified on a clean Ubuntu 24.04 (see [Linux](12_install-linux)). If a step doesn't match what you see, please report it."
-msgstr "لم يتم التحقق بعد على آلة macOS نظيفة الخطوات تَتْبعُ node-scala v1.8.1 ' `README.md`؛ البنايةِ وخطوات التشغيلِ يُطابقُ الواحد التي تم التحقق منها على a نظيف Ubuntu 24.04 (انظر [لينكس](12_install-linux)). إذا لم تتطابق خطوة ما تراه، يرجى الإبلاغ عنه."
+msgid "Verified on macOS 15.5 (Intel, x86_64) against node-scala v1.8.1, 2026-10-28, in a clean environment rather than a new machine: an empty home directory, with Temurin 25.0.5 and Homebrew's `sbt` the only JDK and build tool on the `PATH`, `sbt packageAll` built the tarball in 8 minutes. Started with the configuration from [Join the Public Testnet](15_join-testnet), the node synced from genesis to the tip, height 100,688, in 17 minutes, and its block IDs matched the public node's. The JDK came from the Temurin 25 tarball, the same build `brew install --cask temurin@25` installs (the cask needs an administrator password)."
+msgstr ""
 
-#: ../../05_node-guide/13_install-macos.md:7
+#: ../../05_node-guide/13_install-macos.md:6
+msgid "Also verified on Apple silicon (macOS 15.7.9 on an Apple M1, a GitHub Actions `macos-15` runner), 2026-10-28, following this page with its own commands: `brew install --cask temurin@25` (Temurin 25.0.4.1, set as `JAVA_HOME` because the runner ships other JDKs) and `brew install sbt` (SBT 2.0.8, which builds node-scala's SBT 1.13 project). `sbt packageAll` took 2 minutes, and the node synced from genesis to the tip, height 102,301, in 4 minutes, with block IDs matching the public node's."
+msgstr ""
+
+#: ../../05_node-guide/13_install-macos.md:9
 msgid "[Docker](04_install-docker) is the simplest way to run a node; this page is for running it directly on macOS."
 msgstr "[(دوكر)](04_install-docker) هو أبسط طريقة لتشغيل عقدة؛ هذه الصفحة هي لتشغيلها مباشرة على macOS."
 
-#: ../../05_node-guide/13_install-macos.md:11
+#: ../../05_node-guide/13_install-macos.md:13
 msgid "[Homebrew](https://brew.sh/)"
 msgstr "[Homebrew](https://brew.sh/)"
 
-#: ../../05_node-guide/13_install-macos.md:12
-#: ../../05_node-guide/14_install-windows.md:12
-msgid "A network configuration file — the repository ships defaults for Mainnet and Testnet in `node/src/main/resources/network-defaults.conf`."
+#: ../../05_node-guide/13_install-macos.md:14
+msgid "[SBT](https://www.scala-sbt.org/1.x/docs/Installing-sbt-on-Mac.html), to build the node: `brew install sbt`"
+msgstr "[SBT](https://www.scala-sbt.org/1.x/docs/Installing-sbt-on-Mac.html) لبناء العقد: `brew install sbt`"
+
+#: ../../05_node-guide/13_install-macos.md:15
+#: ../../05_node-guide/14_install-windows.md:13
+msgid "A node configuration file. For the public Testnet, use the one in [Join the Public Testnet](15_join-testnet): the node's built-in `testnet` profile is a different network."
 msgstr ""
 
-#: ../../05_node-guide/13_install-macos.md:14
+#: ../../05_node-guide/13_install-macos.md:17
 msgid "Install the JDK"
 msgstr ""
 
-#: ../../05_node-guide/13_install-macos.md:20
+#: ../../05_node-guide/13_install-macos.md:23
 msgid "This installs [Eclipse Temurin 25](https://adoptium.net/temurin/releases/?version=25), the JDK version node-scala is built and tested against."
 msgstr "هذه التركات [Eclipse Temurin 25](https://adoptium.net/temurin/releases/?version=25)، تم بناء وفحص نسخة JDK Node-scala."
 
-#: ../../05_node-guide/13_install-macos.md:24
+#: ../../05_node-guide/13_install-macos.md:27
 msgid "node-scala releases do not ship a node JAR or package (the v1.7.0 to v1.8.1 release assets are only `dcc-grpc-server` tarballs), and node-scala doesn't publish a macOS package (`.pkg`/Homebrew formula). The supported way to run a node is the [Docker image](04_install-docker) `ghcr.io/decentral-america/node-scala`. To run it directly on macOS, [build from source](#build-from-source) below, then extract the universal tarball and start the node with its `bin/` launcher:"
 msgstr "ولا تشحن الإطلاقات من طراز node-scala علامة JAR أو طرداً (الملف من 1.7 إلى 1.8.1 أصول الإفراج هي فقط `dcc-grpc-server` كرات، وNde-scala لا تنشر حزمة macOS (`.pkg`/صيغة هومبريو). والطريقة المدعومة لتشغيل عقد هو [صورة (دوكر)](04_install-docker) `ghcr.io/decentral-america/node-scala`. (أ) أن يديرها مباشرة على macOS، [البناء من المصدر](#build-from-source) أدناه، ثم يستخرج الكرة العالمية ويبدأ العقدة مع جهاز إطلاقه `bin/`:"
 
-#: ../../05_node-guide/13_install-macos.md:31
+#: ../../05_node-guide/13_install-macos.md:34
 msgid "There is no single \"fat\" JAR; the launcher runs the node from the tarball's `lib/` directory."
 msgstr ""
 
-#: ../../05_node-guide/13_install-macos.md:45
-#: ../../05_node-guide/14_install-windows.md:33
+#: ../../05_node-guide/13_install-macos.md:36
+msgid "The node keeps its chain data, wallet and logs in `~/Library/Application Support/dcc-custom-21` with the Testnet configuration (`21` is the chain ID `!` in hexadecimal). Stop the node and delete that folder to sync again from scratch."
+msgstr "ويحتفظ العقد ببياناته السلاسل ومحفظته وسجلاته في `~/Library/Application Support/dcc-custom-21` مع تركيبة Testnet (`21`) هي سلسلة ID `!` في سداسي كلور. اوقفوا العقد و احذفوا ذلك الملف ليتزامن مرة أخرى من الصفر"
+
+#: ../../05_node-guide/13_install-macos.md:51
 msgid "The network comes from the configuration file you start the node with; for the public Testnet, use the one in [Join the Public Testnet](15_join-testnet). To also run the unit tests, run `sbt checkPR` first: it takes over an hour and needs [Node.js](https://nodejs.org/) on the `PATH`."
 msgstr ""
 
-#: ../../05_node-guide/13_install-macos.md:47
-msgid "Building from source additionally requires [SBT](https://www.scala-sbt.org/1.x/docs/Installing-sbt-on-Mac.html). See the [node-scala README](https://github.com/Decentral-America/node-scala#readme) for integration-test setup."
+#: ../../05_node-guide/13_install-macos.md:53
+msgid "See the [node-scala README](https://github.com/Decentral-America/node-scala#readme) for integration-test setup."
 msgstr ""
 
 #: ../../05_node-guide/14_install-windows.md:1
@@ -2448,27 +2458,51 @@ msgid "Installing on Windows"
 msgstr "تركيب النوافذ"
 
 #: ../../05_node-guide/14_install-windows.md:4
-msgid "Not yet verified on a clean Windows machine. The steps follow node-scala v1.8.1's `README.md`; the build steps match the ones verified on a clean Ubuntu 24.04 (see [Linux](12_install-linux)). If a step doesn't match what you see, please report it."
-msgstr "لم يتم التحقق بعد على آلة النوافذ النظيفة. الخطوات تَتْبعُ node-scala v1.8.1 `README.md`؛ خطوات البناء تطابق تلك التي تم التحقق منها على a نظيفة Ubuntu 24.04 (انظر [لينكس](12_install-linux)). إذا لم تتطابق خطوة ما تراه، يرجى الإبلاغ عنه."
+msgid "Verified on Windows Server 2025 (x64, a GitHub Actions `windows-2025` runner) against node-scala v1.8.1, 2026-10-28: Temurin 25.0.5 from its Windows installer, and the node tarball (built on Ubuntu 24.04, see [Build the tarball](#build-the-tarball)) extracted with Windows' `tar` and started from Command Prompt with the `java` command below and the configuration from [Join the Public Testnet](15_join-testnet). The node synced from genesis to the tip, height 102,325, in 5 minutes, and its block IDs matched the public node's. Two of node-scala's own steps don't work on Windows in v1.8.1: the repository can't be cloned, and the tarball's `bin\\node.bat` launcher can't start. This page works around both."
+msgstr ""
 
 #: ../../05_node-guide/14_install-windows.md:7
 msgid "[Docker](04_install-docker) (via Docker Desktop) is the simplest way to run a node on Windows; this page is for running it directly."
 msgstr "[(دوكر)](04_install-docker) (عن طريق دوكر ديسكبوتوب) هو أبسط طريقة لتشغيل موكب على ويندوز؛ هذه الصفحة هي لتشغيله مباشرة."
 
 #: ../../05_node-guide/14_install-windows.md:11
-msgid "**Java 25 JDK** — install [Eclipse Temurin 25](https://adoptium.net/temurin/releases/?version=25) using its Windows installer."
-msgstr "**Java 25 JDK** - تركيب } [Eclipse Temurin 25](https://adoptium.net/temurin/releases/?version=25) باستخدام نسيج ويندوز"
+msgid "**Java 25 JDK** — install [Eclipse Temurin 25](https://adoptium.net/temurin/releases/?version=25) using its Windows installer. Its default options put `java` on the `PATH`."
+msgstr "**Java 25 JDK** - تركيب } [Eclipse Temurin 25](https://adoptium.net/temurin/releases/?version=25) باستخدام نسيج ويندوز وقد وضعت خياراته غير المباشرة `java` على `PATH`."
 
-#: ../../05_node-guide/14_install-windows.md:16
-msgid "node-scala releases do not ship a node JAR or a Windows installer (the v1.7.0 to v1.8.1 release assets are only `dcc-grpc-server` tarballs). The supported way to run a node is Docker Desktop with the [Docker image](04_install-docker) `ghcr.io/decentral-america/node-scala`. To run it directly, [build from source](#build-from-source) below, extract the universal tarball `node/target/universal/decentralchain-<version>.tgz`, and start the node from a terminal (Command Prompt or PowerShell) with the Windows launcher in its `bin\\` directory:"
-msgstr "ولا تشحن الإطلاقات من طراز node-scala أي مركب من طراز JAR أو صانع ويندوز (الملف من 1.7 إلى 1.8.1 أصول الإطلاق هي فقط `dcc-grpc-server` كرات. والطريقة المدعومة لتشغيل عقدة هو دوكر ديسكبوت مع [صورة (دوكر)](04_install-docker) `ghcr.io/decentral-america/node-scala`. (أ) أن تُديرها مباشرة، [البناء من المصدر](#build-from-source) أدناه، وأن تستخرج الكرة الأرضية العالمية `node/target/universal/decentralchain-<version>.tgz`، وتبدأ العقدة من محطة طرفية (Command Prompt أو PowerShell) مع جهاز الإطلاق في ويندوز في دليلها `bin\\`:"
-
-#: ../../05_node-guide/14_install-windows.md:22
-msgid "There is no single \"fat\" JAR; the launcher runs the node from the tarball's `lib\\` directory."
+#: ../../05_node-guide/14_install-windows.md:12
+msgid "The node tarball, built on Linux, macOS or in WSL: see [Build the tarball](#build-the-tarball)."
 msgstr ""
 
-#: ../../05_node-guide/14_install-windows.md:35
-msgid "Building from source additionally requires [SBT](https://www.scala-sbt.org/1.x/docs/Installing-sbt-on-Windows.html). See the [node-scala README](https://github.com/Decentral-America/node-scala#readme) for integration-test setup and IntelliJ IDEA configuration."
+#: ../../05_node-guide/14_install-windows.md:17
+msgid "node-scala releases do not ship a node JAR or a Windows installer (the v1.7.0 to v1.8.1 release assets are only `dcc-grpc-server` tarballs). The supported way to run a node is Docker Desktop with the [Docker image](04_install-docker) `ghcr.io/decentral-america/node-scala`. To run it directly, extract the tarball and start the node from Command Prompt:"
+msgstr "ولا تشحن الإطلاقات من طراز node-scala أي مركب من طراز JAR أو صانع ويندوز (الملف من 1.7 إلى 1.8.1 أصول الإطلاق هي فقط `dcc-grpc-server` كرات. والطريقة المدعومة لتشغيل عقدة هو دوكر ديسكبوت مع [صورة (دوكر)](04_install-docker) `ghcr.io/decentral-america/node-scala`. لتديره مباشرة، إخرج الكرة وأبدأ العقدة من القيادة"
+
+#: ../../05_node-guide/14_install-windows.md:24
+msgid "These are the options in the tarball's `conf\\application.ini`, the ones its launcher would pass. Don't use the launcher, `bin\\node.bat`: in v1.8.1 it lists every JAR in `lib\\` on one line, longer than Command Prompt's 8,191-character limit, and stops with `The input line is too long.` There is no single \"fat\" JAR; the node runs from the tarball's `lib\\` directory."
+msgstr ""
+
+#: ../../05_node-guide/14_install-windows.md:26
+msgid "The node keeps its chain data, wallet and logs in `%LOCALAPPDATA%\\dcc-custom-21` with the Testnet configuration (`21` is the chain ID `!` in hexadecimal). Stop the node with Ctrl+C and delete that folder to sync again from scratch."
+msgstr "ويحتفظ العقد ببياناته السلاسل ومحفظته وسجلاته في `%LOCALAPPDATA%\\dcc-custom-21` مع تركيبة Testnet (`21`) هي سلسلة ID `!` في سداسي كلور. اوقفوا العقدة مع (سيترل) و احذفوا ذلك الملف ليتزامن مرة أخرى من الصفر"
+
+#: ../../05_node-guide/14_install-windows.md:28
+msgid "Build the tarball"
+msgstr "\"ابنوا كرة المضرب\""
+
+#: ../../05_node-guide/14_install-windows.md:30
+msgid "node-scala can't be built on Windows itself in v1.8.1. Its repository holds a file whose name contains `?` (`node/src/main/resources/patches/CancelLeasesToDisabledAliases-?.json`, a patch for the Mainnet, whose chain ID is `?`), and a Windows file name can't contain `?`. `git clone` stops with `error: invalid path` and leaves no files to build."
+msgstr "لا يمكن بناء العقد على (ويندوز) نفسه في الصف 1.8 ويحتفظ مستودعه بملف يحتوي على `?` (`node/src/main/resources/patches/CancelLeasesToDisabledAliases-?.json`)، وقطعة لـ Mainnet، التي هي سلسلة هوياتها `?`)، ولا يمكن أن يتضمن اسم ملف ويندوز `?`. `git clone` يتوقّف مع `error: invalid path` و لا يترك أي ملفات لبناء."
+
+#: ../../05_node-guide/14_install-windows.md:32
+msgid "Build the tarball with the [Linux](12_install-linux) steps instead, on a Linux or macOS machine or in [WSL](https://learn.microsoft.com/windows/wsl/install) on the same PC (clone into your WSL home directory, not onto a Windows drive under `/mnt/`):"
+msgstr "بناء الكرة مع [لينكس](12_install-linux) الخطوات بدلا من ذلك، على آلة لينكس أو macOS أو في [WSL](https://learn.microsoft.com/windows/wsl/install) على نفس PC (تُركّب إلى دليل منزلك الخاص ب WSL، وليس على محرك ويندوز تحت `/mnt/`:"
+
+#: ../../05_node-guide/14_install-windows.md:41
+msgid "Then copy `node/target/universal/decentralchain-<version>.tgz` to Windows. The tarball holds only JAR files and launchers, so the same file runs on every operating system."
+msgstr "ثمّ نُسخْ `node/target/universal/decentralchain-<version>.tgz` إلى Windows. الـ (تاربول) يمسك فقط ملفات وقاذفات (جي آر)، لذا نفس الملف يعمل على كل نظام تشغيلي."
+
+#: ../../05_node-guide/14_install-windows.md:43
+msgid "The network comes from the configuration file you start the node with; for the public Testnet, use the one in [Join the Public Testnet](15_join-testnet). To also run the unit tests, run `sbt checkPR` first: it takes over an hour and needs [Node.js](https://nodejs.org/) on the `PATH`. See the [node-scala README](https://github.com/Decentral-America/node-scala#readme) for integration-test setup and IntelliJ IDEA configuration."
 msgstr ""
 
 #: ../../05_node-guide/15_join-testnet.md:1
@@ -2809,5 +2843,26 @@ msgstr "وتُعرَّف حالات التقصير الخاصة بالشبكات
 #~ msgstr ""
 
 #~ msgid "Every value on this page was checked against the live Testnet on 2026-10-18. The configuration mirrors the Testnet operators' own node configuration (`node-config/testnet/dcc.conf` in the [infra repository](https://github.com/Decentral-America/infra)). If the two ever disagree, the infra file is authoritative."
+#~ msgstr ""
+
+#~ msgid "Not yet verified on a clean macOS machine. The steps follow node-scala v1.8.1's `README.md`; the build and run steps match the ones verified on a clean Ubuntu 24.04 (see [Linux](12_install-linux)). If a step doesn't match what you see, please report it."
+#~ msgstr "لم يتم التحقق بعد على آلة macOS نظيفة الخطوات تَتْبعُ node-scala v1.8.1 ' `README.md`؛ البنايةِ وخطوات التشغيلِ يُطابقُ الواحد التي تم التحقق منها على a نظيف Ubuntu 24.04 (انظر [لينكس](12_install-linux)). إذا لم تتطابق خطوة ما تراه، يرجى الإبلاغ عنه."
+
+#~ msgid "Building from source additionally requires [SBT](https://www.scala-sbt.org/1.x/docs/Installing-sbt-on-Mac.html). See the [node-scala README](https://github.com/Decentral-America/node-scala#readme) for integration-test setup."
+#~ msgstr ""
+
+#~ msgid "Verified on macOS 15.5 (Intel, x86_64) against node-scala v1.8.1, 2026-10-28, in a clean environment rather than a new machine: an empty home directory, with Temurin 25.0.5 and Homebrew's `sbt` the only JDK and build tool on the `PATH`, `sbt packageAll` built the tarball in 8 minutes. Started with the configuration from [Join the Public Testnet](15_join-testnet), the node synced from genesis to the tip, height 100,688, in 17 minutes, and its block IDs matched the public node's. The JDK came from the Temurin 25 tarball, the same build `brew install --cask temurin@25` installs (the cask needs an administrator password). Not yet verified on Apple silicon."
+#~ msgstr ""
+
+#~ msgid "Not yet verified on a clean Windows machine. The steps follow node-scala v1.8.1's `README.md`; the build steps match the ones verified on a clean Ubuntu 24.04 (see [Linux](12_install-linux)). If a step doesn't match what you see, please report it."
+#~ msgstr "لم يتم التحقق بعد على آلة النوافذ النظيفة. الخطوات تَتْبعُ node-scala v1.8.1 `README.md`؛ خطوات البناء تطابق تلك التي تم التحقق منها على a نظيفة Ubuntu 24.04 (انظر [لينكس](12_install-linux)). إذا لم تتطابق خطوة ما تراه، يرجى الإبلاغ عنه."
+
+#~ msgid "A network configuration file — the repository ships defaults for Mainnet and Testnet in `node/src/main/resources/network-defaults.conf`."
+#~ msgstr ""
+
+#~ msgid "There is no single \"fat\" JAR; the launcher runs the node from the tarball's `lib\\` directory."
+#~ msgstr ""
+
+#~ msgid "Building from source additionally requires [SBT](https://www.scala-sbt.org/1.x/docs/Installing-sbt-on-Windows.html). See the [node-scala README](https://github.com/Decentral-America/node-scala#readme) for integration-test setup and IntelliJ IDEA configuration."
 #~ msgstr ""
 
