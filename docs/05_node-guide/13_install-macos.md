@@ -1,7 +1,9 @@
 # Installing on macOS
 
 ```{note}
-Verified on macOS 15.5 (Intel, x86_64) against node-scala v1.8.1, 2026-10-28, in a clean environment rather than a new machine: an empty home directory, with Temurin 25.0.5 and Homebrew's `sbt` the only JDK and build tool on the `PATH`, `sbt packageAll` built the tarball in 8 minutes. Started with the configuration from [Join the Public Testnet](15_join-testnet), the node synced from genesis to the tip, height 100,688, in 17 minutes, and its block IDs matched the public node's. The JDK came from the Temurin 25 tarball, the same build `brew install --cask temurin@25` installs (the cask needs an administrator password). Not yet verified on Apple silicon.
+Verified on macOS 15.5 (Intel, x86_64) against node-scala v1.8.1, 2026-10-28, in a clean environment rather than a new machine: an empty home directory, with Temurin 25.0.5 and Homebrew's `sbt` the only JDK and build tool on the `PATH`, `sbt packageAll` built the tarball in 8 minutes. Started with the configuration from [Join the Public Testnet](15_join-testnet), the node synced from genesis to the tip, height 100,688, in 17 minutes, and its block IDs matched the public node's. The JDK came from the Temurin 25 tarball, the same build `brew install --cask temurin@25` installs (the cask needs an administrator password).
+
+Also verified on Apple silicon (macOS 15.7.9 on an Apple M1, a GitHub Actions `macos-15` runner), 2026-10-28, following this page with its own commands: `brew install --cask temurin@25` (Temurin 25.0.4.1, set as `JAVA_HOME` because the runner ships other JDKs) and `brew install sbt` (SBT 2.0.8, which builds node-scala's SBT 1.13 project). `sbt packageAll` took 2 minutes, and the node synced from genesis to the tip, height 102,301, in 4 minutes, with block IDs matching the public node's.
 ```
 
 [Docker](04_install-docker) is the simplest way to run a node; this page is for running it directly on macOS.
