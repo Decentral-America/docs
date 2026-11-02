@@ -51,7 +51,7 @@ jobs:
     # Same JDK as node-scala's own CI at the pinned commit. Only the lang
     # module is built, and its io.decentralchain dependencies are on Maven
     # Central, so node-scala's native/mvn-install setup steps aren't needed.
-    - uses: actions/setup-java@de7274f081f381c8f8158605e0321c36c376e2e6  # v6.0.1
+    - uses: actions/setup-java@b843ebf9b913146b38da2eaa7aeddf76074ae1ad  # v6.1.0
       with:
         distribution: 'temurin'
         java-version: '25'
@@ -60,7 +60,7 @@ jobs:
           node-scala/build.sbt
           node-scala/project/*.scala
           node-scala/project/build.properties
-    - uses: sbt/setup-sbt@af116cce31c00823d3903ce687f9cda3a4f19f1b  # v1.2.1
+    - uses: sbt/setup-sbt@b113b960ba361e87e08ce02a390d51871b7ee459  # v1.5.13
 
     - name: Generated Ride pages match a fresh regeneration
       run: python3 docs/scripts/generate_ride_reference.py --node-scala node-scala --check
